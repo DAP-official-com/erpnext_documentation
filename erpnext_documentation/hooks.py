@@ -51,7 +51,7 @@ web_include_js = "/assets/erpnext_documentation/js/erpnext_documentation.js"
 # }
 
 # Website user home page (by function)
- get_website_user_home_page = "erpnext_documentation.utils.get_home_page"
+get_website_user_home_page = "erpnext_documentation.utils.get_home_page"
 
 base_template_map = {
 	r'docs/user/manual.*': 'templates/erpnext_docs.html'
@@ -138,4 +138,3 @@ base_template_map = {
 # override_doctype_dashboards = {
 # 	"Task": "erpnext_documentation.task.get_dashboard_data"
 # }
-
