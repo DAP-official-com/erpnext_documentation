@@ -26,8 +26,9 @@ website_context = {
 # app_include_js = "/assets/erpnext_documentation/js/erpnext_documentation.js"
 
 # include js, css files in header of web template
- web_include_css = "/assets/erpnext_documentation/css/erpnext_documentation.css"
- web_include_js = "/assets/erpnext_documentation/js/erpnext_documentation.js"
+
+web_include_css = "/assets/erpnext_documentation/css/erpnext_documentation.css"
+web_include_js = "/assets/erpnext_documentation/js/erpnext_documentation.js"
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
