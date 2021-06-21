@@ -1,0 +1,193 @@
+---
+full_width: 1
+title: ERPNext User Manual (English)
+---
+{% from "templates/includes/macros.html" import cards %}
+
+{{ web_blocks([
+	{
+		'template': 'Hero',
+		'values': {
+			'title': 'คู่มือการใช้งาน',
+			'subtitle': 'โมดูลและคุณสมบัติ ERPNext'
+		},
+		'add_bottom_padding': 0,
+		'add_container': 0
+	}
+]) }}
+
+<section class="section section-padding-top">
+	<h2 class="section-title">เริ่มต้นใช้งาน</h2>
+	{{ cards([
+		{
+			'title': 'บทนำ',
+			'content': 'บทนำสู่ ERPNext และสิ่งที่ต้องทำความเข้าใจก่อนเริ่มใช้งาน',
+			'link': '/docs/user/manual/th/introduction',
+		},
+		{
+			'title': 'การตั้งค่า',
+			'content': 'เรียนรู้วิธีกำหนดค่า ERPNext สำหรับบริษัทและโครงสร้างองค์กรของคุณ',
+			'link': '/docs/user/manual/th/setting-up',
+		},
+		{
+			'title': 'เริ่มต้นใช้งาน ERPNext',
+			'content': 'เรียนรู้วิธีนำทางไปยังส่วนต่อประสานผู้ใช้และยูทิลิตี้ที่เป็นประโยชน์',
+			'link': '/docs/user/manual/th/using-erpnext',
+		},
+		{
+			'title': 'ระบบอัตโนมัติ (Automation)',
+			'content': 'เรียนรู้วิธีทำให้ ERPNext เป็นอัตโนมัติเพื่อประหยัดเวลาของคุณจากการทำงานปกติเป็นระยะ',
+			'link': '/docs/user/manual/th/automation',
+		},
+	]) }}
+</section>
+
+	
+<section class="section section-padding-top">
+	<h2 class="section-title">โมดูลหลัก</h2>
+	{{ cards([
+		{
+			'title': 'บัญชี',
+			'link': '/docs/user/manual/th/accounts',
+			'content': 'การบัญชีการเงินตั้งแต่การตั้งค่าไปจนถึงการเรียกเก็บเงิน สมุดรายวัน บัญชีแยกประเภท และรายงาน'
+		},
+		{
+			'title': 'คลังสินค้า',
+			'link': '/docs/user/manual/th/stock',
+			'content': 'การจัดการสินค้าคงคลังด้วยแผนผังลำดับชั้น การเคลื่อนไหวของสต็อก อนุกรมและแบทช์'
+		},
+		{
+			'title': 'การจัดการลูกค้าสัมพันธ์ (CRM)',
+			'link': '/docs/user/manual/th/CRM',
+			'content': 'ติดตามกระบวนการขายล่วงหน้าตั้งแต่การจับลูกค้าเป้าหมาย การติดตามโอกาสที่เปิดอยู่ ไปจนถึงอีเมลและการโทร'
+		},
+		{
+			'title': 'การขาย',
+			'link': '/docs/user/manual/th/selling',
+			'content': 'การขายครอบคลุมการดำเนินการขาย เช่น ใบเสนอราคา (ข้อเสนอ) ใบสั่งขาย และการติดตามการจัดส่ง'
+		},
+		{
+			'title': 'การซื้อ',
+			'link': '/docs/user/manual/th/buying',
+			'content': 'จัดการการจัดซื้อใน ERPNext ได้ตั้งแต่การขอวัสดุ การเสนอราคาซัพพลายเออร์ไปจนถึงใบสั่งซื้อ'
+		},
+		{
+			'title': 'ทรัพยากรมนุษย์ (Human Resource)',
+			'link': '/docs/user/manual/th/human-resources',
+			'content': 'การติดตามการลาออกและการเข้าร่วม, การเรียกร้องค่าใช้จ่าย, เงินเดือนและเงินเดือน, การสรรหา, ผลการปฏิบัติงานและอื่น ๆ'
+		},
+		{
+			'title': 'โปรเจคและโครงการ',
+			'link': '/docs/user/manual/th/projects',
+			'content': 'การจัดการโครงการและงานด้วยการผสานรวมกับศูนย์การเรียกเก็บเงินและต้นทุน'
+		},
+		{
+			'title': 'การสนับสนุน',
+			'link': '/docs/user/manual/th/support',
+			'content': 'ติดตามตั๋วและปัญหาของลูกค้า (issue ticket) รักษาระดับเซิร์ฟเวอร์ และติดตามการตอบสนองและการแก้ปัญหา'
+		},
+		{
+			'title': 'สินทรัพย์',
+			'link': '/docs/user/manual/th/asset',
+			'content': 'การจัดการและติดตามสินทรัพย์ถาวรพร้อมค่าเสื่อมราคา การจัดสรรสินทรัพย์ และการติดตามการเคลื่อนไหว'
+		},
+		{
+			'title': 'คุณภาพการทำงาน',
+			'link': '/docs/user/manual/th/quality-management',
+			'content': 'ระบบบริหารคุณภาพการทำงานด้วยขั้นตอน เป้าหมาย ติดตามและทบทวน'
+		},
+	])
+	}}
+</section>
+
+<section class="section section-padding-top">
+	<h2 class="section-title">ERPNext ออกแบบเพื่อให้เหมาะกับธุรกิจของคุณ</h2>
+	{{
+		cards([
+			{
+				'title': 'สายการผลิต',
+				'link': '/docs/user/manual/th/manufacturing',
+				'content': 'จัดการ Bill of Materials หลายระดับ วางแผนและติดตามการผลิตด้วย Work Orders',
+			},
+			{
+				'title': 'สายการศึกษา',
+				'link': '/docs/user/manual/th/education',
+				'content': 'จัดการชีวิตของนักเรียนทั้งหมดตั้งแต่การรับเข้าเรียน การลงทะเบียนจนถึงการเข้าชั้นเรียน และการประเมิน',
+			},
+			{
+				'title': 'สายสุขภาพ',
+				'link': '/docs/user/manual/th/healthcare',
+				'content': 'จัดการผู้ป่วย ตารางเวลาของผู้ปฏิบัติงานและรายงานของพวกเขาด้วยการนัดหมาย การปรึกษา ขั้นตอนและรายงานในห้องปฏิบัติการ',
+			},
+			{
+				'title': 'การเกษตร',
+				'link': '/docs/user/manual/th/agriculture',
+				'content': 'จัดการฟาร์ม พืชผล วงจรการปลูก โรคพืช และอื่นๆ อีกมากมาย',
+				'badge': 'beta',
+			},
+			{
+				'title': 'องค์กรไม่แสวงหาผลกำไร',
+				'link': '/docs/user/manual/th/non_profit',
+				'content': 'ติดตามสมาชิก สมาชิก อาสาสมัคร ทุนสำหรับองค์กรไม่แสวงหากำไรของคุณ',
+				'badge': 'beta',
+			},
+			{
+				'title': 'การบริการ',
+				'link': '/docs/user/manual/th/hospitality',
+				'content': 'จัดการร้านอาหารและโรงแรมหลายแห่งด้วยการจองโต๊ะและห้อง (เบต้า)',
+				'badge': 'beta'
+			},
+		])
+	}}
+</section>
+
+<section class="section section-padding-top">
+	<h2 class="section-title">การปรับแต่งและการบูรณาการ</h2>
+	{{
+		cards([
+			{
+				'title': 'ออกแบบ ERPNext ของคุณ',
+				'link': '/docs/user/manual/th/customize-erpnext',
+				'content': 'เรียนรู้วิธีปรับแต่ง ERPNext ด้วยฟิลด์ที่กำหนดเอง รูปแบบการพิมพ์ สคริปต์ที่กำหนดเอง ฯลฯ'
+			},
+			{
+				'title': 'Regional',
+				'link': '/docs/user/manual/th/regional',
+				'content': 'ERPNext มีการรองรับการผสานการทำงานในตัวสำหรับภูมิภาคต่างๆ เช่น อินเดีย สหรัฐอเมริกา สหรัฐอาหรับเอมิเรตส์ อิตาลี'
+			},
+			{
+				'title': 'บูรณาการ',
+				'link': '/docs/user/manual/th/erpnext_integration',
+				'content': 'เรียนรู้วิธีใช้ประโยชน์จากการผสานรวมในตัวกับเกตเวย์การชำระเงิน, Google, AWS และอื่นๆ'
+			},
+			{
+				'title': 'การแปล',
+				'link': '/docs/user/manual/th/translations',
+				'content': 'เรียนรู้วิธีร่วมแปลใน ERPNext'
+			},
+			{
+				'title': 'Developer',
+				'link': 'https://frappe.io/docs',
+				'content': 'เรียนรู้วิธีขยายและสนับสนุน ERPNext หรือสร้างส่วนขยายของคุณเอง'
+			}
+		])
+	}}
+</section>
+
+<section class="section section-padding-top">
+	<h2 class="section-title">เว็บไซต์และพอร์ทัล</h2>
+	{{
+		cards([
+			{
+				'title': 'เว็บไซต์ (Website)',
+				'link': '/docs/user/manual/th/website',
+				'content': 'จัดการหน้าเว็บไซต์ แค็ตตาล็อกสินค้า ตะกร้าสินค้า เว็บฟอร์ม และอื่นๆ ด้วยพอร์ทัลในตัว'
+			},
+			{
+				'title': 'พอร์ทัล (Portals)',
+				'link': '/docs/user/manual/th/customer-portal',
+				'content': 'ให้ลูกค้าและผู้ขายของคุณซื้อสินค้าออนไลน์โดยตรง ส่งการเสนอราคา ฯลฯ ด้วย ERPNext Portals'
+			}
+		])
+	}}
+</section>

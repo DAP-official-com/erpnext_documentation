@@ -1,0 +1,91 @@
+[
+ {
+  "route": "/docs",
+  "title": "Docs Home"
+ },
+ {
+   "route": "/docs/user/manual/th",
+   "title": "Manual (Thai)"
+  },
+
+ {
+  "route": "/docs/user/manual/th/introduction",
+  "title": "Introduction"
+ },
+ {
+  "route": "/docs/user/manual/th/setting-up",
+  "title": "Setting Up"
+ },
+ {
+   "route": "/docs/user/manual/th/accounts",
+   "title": "Accounts"
+  },
+  {
+   "route": "/docs/user/manual/th/stock",
+   "title": "Stock"
+  },
+  {
+   "route": "/docs/user/manual/th/CRM",
+   "title": "CRM"
+  },
+  {
+   "route": "/docs/user/manual/th/selling",
+   "title": "Selling"
+  },
+  {
+   "route": "/docs/user/manual/th/buying",
+   "title": "Buying"
+  },
+  {
+   "route": "/docs/user/manual/th/human-resources",
+   "title": "Human Resources"
+  },
+  {
+   "route": "/docs/user/manual/th/projects",
+   "title": "Projects"
+  },
+  {
+   "route": "/docs/user/manual/th/support",
+   "title": "Support"
+  },
+  {
+    "route": "/docs/user/manual/th/asset",
+    "title": "Asset"
+  },
+ {
+   "route": "/docs/user/manual/th/quality-management",
+   "title": "Quality Management"
+ },
+ {
+  "route": "/docs/user/manual/th/manufacturing",
+  "title": "Manufacturing"
+ },
+ {
+  "route": "/docs/user/manual/th/education",
+  "title": "Education"
+ },
+ {
+   "route": "/docs/user/manual/th/healthcare",
+   "title": "Healthcare"
+  },
+  {
+   "route": "/docs/user/manual/th/agriculture",
+   "title": "Agriculture"
+  },
+ {
+  "route": "/docs/user/manual/th/non_profit",
+  "title": "Non Profit"
+ },
+ {
+  "route": "/docs/user/manual/th/hospitality",
+  "title": "Hospitality"
+ },
+ {
+   "route": "/docs/user/manual/th/erpnext_integration",
+   "title": "Integrations"
+  },
+ {
+  "route": "/docs/user/manual/th/customize-erpnext",
+  "title": "Customize"
+ }
+]

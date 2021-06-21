@@ -1,0 +1,260 @@
+{% set doc=[
+	{
+		"links": [
+			{
+				"content": "บริษัท เป็นนิติบุคคลที่ประกอบด้วยสมาคมของบุคคลเพื่อประกอบกิจการเชิงพาณิชย์หรืออุตสาหกรรม",
+				"link": "/docs/user/manual/th/setting-up/company-setup",
+				"title": "การตั้งค่าบริษัท"
+			},
+			{
+				"content": "ภาษีเป็นเงินสมทบภาคบังคับสำหรับรายได้ของรัฐ/ประเทศ ERPNext ให้คุณจัดการภาษีกับแต่ละธุรกรรม",
+				"link": "/docs/user/manual/th/setting-up/setting-up-taxes",
+				"title": "การจัดการภาษี"
+			},
+			{
+				"content": "การกำหนดเป้าหมายและทำตามเป้าหมายการขายสามารถช่วยให้บริษัทของคุณบรรลุเป้าหมายใหม่และเพิ่มรายได้",
+				"link": "/docs/user/manual/th/setting-up/setting-company-sales-goal",
+				"title": "ตั้งเป้าหมายของบริษัทคุณ"
+			},
+			{
+				"content": "ค่าเริ่มต้นของเอกสารเช่น สกุลเงิน ที่จะถูกใช้ทั่วทั้งระบบ",
+				"link": "/docs/user/manual/th/setting-up/settings/global-defaults",
+				"title": "ข้อมูลทั่วไป"
+			},
+			{
+				"content": "การตั้งค่าระบบประกอบด้วยการตั้งค่าสำหรับการกำหนดค่าทั้งระบบของบัญชีที่เกี่ยวข้องกับการตั้งค่าที่เกี่ยวข้องกับความปลอดภัยและการดูแลระบบ",
+				"link": "/docs/user/manual/th/setting-up/settings/system-settings",
+				"title": "ตั้งค่าระบบ"
+			},
+			{
+				"content": "หัวจดหมายประกอบด้วยชื่อองค์กร โลโก้ ที่อยู่ ฯลฯ ซึ่งปรากฏอยู่ที่ส่วนบนสุดในเอกสาร",
+				"link": "/docs/user/manual/th/setting-up/print/letter-head",
+				"title": "หัวกระดาษ"
+			}
+		],
+		"title": "การตั้งค่าเริ่มต้น"
+	},
+	{
+		"links": [
+			{
+				"content": "การนำเข้าข้อมูลเป็นวิธีที่ง่ายในการอัปโหลด (หรือแก้ไข) ข้อมูลจำนวนมาก (โดยเฉพาะข้อมูลหลัก) เข้าสู่ระบบ",
+				"link": "/docs/user/manual/th/setting-up/data/data-import",
+				"title": "การนำเข้าข้อมูลเในระบบ"
+			},
+			{
+				"content": "การส่งออกข้อมูลช่วยให้คุณสามารถส่งออกข้อมูลจากต้นแบบ ERPNext ต่างๆ เป็นรูปแบบ CSV หรือ Excel",
+				"link": "/docs/user/manual/th/setting-up/data/data-export",
+				"title": "การนำข้อมูลออก"
+			},
+			{
+				"content": "ผู้นำเข้านี้อนุญาตให้คุณสร้างผังบัญชีของคุณเองตามความต้องการของคุณและนำเข้าเข้าสู่ระบบ",
+				"link": "/docs/user/manual/th/setting-up/chart-of-accounts-importer",
+				"title": "ผังบัญชีของคุณ"
+			},
+			{
+				"content": "ใน ERPNext คุณสามารถดาวน์โหลดการสำรองฐานข้อมูลด้วยตนเอง และสามารถกู้คืนไปยังไซต์ใหม่ได้ในภายหลัง",
+				"link": "/docs/user/manual/th/setting-up/data/download-backup",
+				"title": "การสำรองข้อมูล"
+			}
+		],
+		"title": "การเพิ่มแนะนำข้อมูลไปใช้"
+	},
+	{
+		"links": [
+			{
+				"content": "คุณสามารถเพิ่มผู้ใช้ได้โดยตัวจัดการระบบ และสามารถให้สิทธิ์แยกตามบทบาทในองค์กร",
+				"link": "/docs/user/manual/th/setting-up/users-and-permissions/adding-users",
+				"title": "การเพิ่มผู้ใช้"
+			},
+			{
+				"content": "สิทธิ์ในเอกสารต่างๆ สามารถควบคุมได้โดยใช้การอนุญาตตามบทบาท",
+				"link": "/docs/user/manual/th/setting-up/users-and-permissions/role-based-permissions",
+				"title": "สิทธิตามบทบาทในบริษัท"
+			},
+			{
+				"content": "คุณสามารถแชร์เอกสารกับผู้ใช้รายอื่นผ่านการแชร์ใน ERPNext",
+				"link": "/docs/user/manual/th/setting-up/users-and-permissions/sharing",
+				"title": "การแชร์เอกสาย"
+			},
+			{
+				"content": "เพื่อให้สิทธิ์การเข้าถึงเอกสารแก่ผู้ใช้อย่างจำกัด",
+				"link": "/docs/user/manual/th/setting-up/users-and-permissions/limited-user",
+				"title": "จำกัดสิทธิผู้ใช้งาน"
+			},
+			{
+				"content": "ผู้ดูแลระบบอยู่เหนือ System Manager และมีสิทธิ์และการอนุญาตทั้งหมดสำหรับบัญชีใน ERPNext",
+				"link": "/docs/user/manual/th/setting-up/users-and-permissions/administrator",
+				"title": "ผู้ดูแลระบบ (แอดมิน)"
+			}
+		],
+		"title": "ผู้ใช้และการอนุญาต"
+	},
+	{
+		"links": [
+			{
+				"content": "ในการตั้งค่าการพิมพ์ คุณสามารถตั้งค่ากำหนดการพิมพ์ของคุณ เช่น ขนาดกระดาษ ขนาดข้อความเริ่มต้น ไม่ว่าคุณต้องการส่งออกเป็น PDF หรือ HTML เป็นต้น",
+				"link": "/docs/user/manual/th/setting-up/print/print-settings",
+				"title": "การตั้งค่าการพิมพ์"
+			},
+			{
+				"content": "คุณสามารถกำหนดลักษณะที่ปรากฏของเอกสารเมื่อทำการพิมพ์ด้วยรูปแบบการพิมพ์",
+				"link": "/docs/user/manual/th/setting-up/print/print-format",
+				"title": "รูปแบบการพิมพ์"
+			},
+			{
+				"content": "ตัวสร้างรูปแบบการพิมพ์ช่วยให้คุณสร้างรูปแบบการพิมพ์ที่กำหนดเองอย่างง่ายได้อย่างรวดเร็วโดยการลากและวางฟิลด์ข้อมูลและเพิ่มข้อความที่กำหนดเองหรือ HTML",
+				"link": "/docs/user/manual/th/setting-up/print/print-format-builder",
+				"title": "สร้างรูปแบบการพิมพ์ของคุณ"
+			},
+			{
+				"content": "เทมเพลตที่อยู่สามารถจัดเก็บที่อยู่รูปแบบต่างๆ ตามภูมิภาค",
+				"link": "/docs/user/manual/th/setting-up/print/address-template",
+				"title": "การจัดการที่อยู่"
+			},
+			{
+				"content": "ข้อกำหนดและเงื่อนไขประกอบด้วยข้อกำหนดในการให้บริการ/ผลิตภัณฑ์ที่นำเสนอโดยผู้ขายให้กับผู้ซื้อ",
+				"link": "/docs/user/manual/th/setting-up/print/terms-and-conditions",
+				"title": "ข้อกำหนดและเงื่อนไขของเทมเพลต"
+			},
+			{
+				"content": "ด้วย Custom Translations ผู้ใช้สามารถพิมพ์เอกสารของลูกค้าและซัพพลายเออร์ในภาษาท้องถิ่นของตน",
+				"link": "/docs/user/manual/th/setting-up/print/custom-translations",
+				"title": "การแปลข้อมูล"
+			},
+			{
+				"content": "ERPNext ให้คุณส่งคำสั่งดิบไปยังเครื่องพิมพ์เทอร์มอลโดยตรงเพื่อพิมพ์บาร์โค้ด ฉลาก และอื่นๆ อีกมากมาย",
+				"link": "/docs/user/manual/th/setting-up/print/raw-printing",
+				"title": "การพิมพ์ทั่วไป"
+			}
+		],
+		"title": "การพิมพ์"
+	},
+	{
+		"links": [
+			{
+				"content": "ด้วยเวิร์กโฟลว์ คุณสามารถเขียนใหม่ว่ากระบวนการ/เวิร์กโฟลว์นั้นได้รับการอนุมัติใน ERPNext อย่างไร",
+				"link": "/docs/user/manual/th/setting-up/workflows",
+				"title": "เวิร์กโฟลว์"
+			},
+			{
+				"content": "การดำเนินการเวิร์กโฟลว์เป็นที่เดียวในการจัดการการดำเนินการที่รอดำเนินการทั้งหมดที่คุณสามารถทำได้บนเวิร์กโฟลว์",
+				"link": "/docs/user/manual/th/setting-up/workflow-actions",
+				"title": "การดำเนินการในเวิร์กโฟลว์"
+			},
+			{
+				"content": "สถานะเวิร์กโฟลว์คือสถานะในเวิร์กโฟลว์ที่คุณสร้างขึ้น",
+				"link": "/docs/user/manual/th/setting-up/workflow-state",
+				"title": "ขั้นตอนในเวิร์กโฟลว์"
+			},
+			{
+				"content": "กฎการกำหนดให้คุณตั้งค่าการมอบหมายเอกสารให้กับผู้ใช้โดยอัตโนมัติ",
+				"link": "/docs/user/manual/th/automation/assignment-rule",
+				"title": "ตั้งค่าการมอบหมายเอกสารให้กับผู้ใช้"
+			}
+		],
+		"title": "เวิร์กโฟลว์"
+	},
+	{
+		"links": [
+			{
+				"content": "โดเมนอีเมลคือชื่อของเครือข่าย/บริการที่คุณใช้สำหรับบัญชีอีเมลของคุณ",
+				"link": "/docs/user/manual/th/setting-up/email/email-domain",
+				"title": "อีเมล์โดเมน"
+			},
+			{
+				"content": "คุณสามารถซิงค์บัญชีอีเมลของคุณกับ ERPNext เพื่อส่งและรับอีเมลจาก ERPNext",
+				"link": "/docs/user/manual/th/setting-up/email/email-account",
+				"title": "บัญชีอีเมล์"
+			},
+			{
+				"content": "อีเมลสามารถเชื่อมโยงกับเอกสารหลายฉบับใน ERPNext ทั้งด้วยตนเองและโดยอัตโนมัติ",
+				"link": "/docs/user/manual/th/setting-up/email/linking-emails-to-document",
+				"title": "การเชื่อมอีเมล์เข้าเอกสาร"
+			},
+			{
+				"content": "คุณสามารถสมัครใช้บริการ SMS เพื่อส่ง SMS ไปยังหมายเลขโทรศัพท์มือถือ",
+				"link": "/docs/user/manual/th/setting-up/sms-setting",
+				"title": "การตั้งค่า SMS"
+			},
+			{
+				"content": "คุณสามารถกำหนดค่าการแจ้งเตือนต่างๆ ในระบบของคุณเพื่อเตือนกิจกรรมที่สำคัญ",
+				"link": "/docs/user/manual/th/setting-up/notifications",
+				"title": "การแจ้งเตือน"
+			},
+			{
+				"content": "การติดตามเอกสารเป็นคุณสมบัติที่ช่วยให้ผู้ใช้สามารถติดตามการเปลี่ยนแปลงในเอกสารเช่นผ่านการแจ้งเตือนทางอีเมล",
+				"link": "/docs/user/manual/th/setting-up/email/document-follow",
+				"title": "การติดตามเอกสาร"
+			}
+		],
+		"title": "อีเมล์และ SMS"
+	},
+	{
+		"links": [
+			{
+				"content": "คุณสามารถซ่อนหรือยกเลิกการซ่อนบางโมดูลได้ทั่วโลกโดยคลิกที่แสดง/ซ่อนการ์ดในหน้าแรก ERPNext ของคุณ",
+				"link": "/docs/user/manual/th/setting-up/settings/show-hide-modules",
+				"title": "แสดงหรือซ่อนโมดูล"
+			},
+			{
+				"content": "มาสเตอร์และธุรกรรมสามารถให้คำนำหน้าในรูปแบบของการตั้งชื่อชุด",
+				"link": "/docs/user/manual/th/setting-up/settings/naming-series",
+				"title": "การตั้งชื่อ"
+			},
+			{
+				"content": "ค่าเริ่มต้นของเซสชันคือค่าเริ่มต้นที่กำหนดค่าได้ระหว่างเซสชันของผู้ใช้",
+				"link": "/docs/user/manual/th/setting-up/settings/session-defaults",
+				"title": "ค่าเริ่มต้นของเซสชัน"
+			},
+			{
+				"content": "การเปลี่ยนชื่อเป็นกลุ่มช่วยให้สามารถเปลี่ยนชื่อหลายระเบียนในครั้งเดียว",
+				"link": "/docs/user/manual/th/setting-up/settings/bulk-rename",
+				"title": "การเปลี่ยนชื่อเป็นกลุ่ม"
+			},
+			{
+				"content": "การอัปเดตเป็นกลุ่มช่วยให้คุณสามารถอัปเดตฟิลด์เฉพาะของ DocType สำหรับเอกสารทั้งหมด",
+				"link": "/docs/user/manual/th/setting-up/bulk-update",
+				"title": "การอัปเดตเป็นกลุ่ม"
+			},
+			{
+				"content": "คุณสามารถติดตามเหตุการณ์สำคัญโดยอัตโนมัติตามวงจรชีวิตของเอกสารหากผ่านหลายขั้นตอน",
+				"link": "/docs/user/manual/th/automation/milestone-tracker",
+				"title": "การติดตามเหตุการณ์สำคัญ (Milestone)"
+			},
+			{
+				"content": "คุณสมบัติทำซ้ำอัตโนมัติช่วยให้คุณสร้างเอกสารบางอย่างโดยอัตโนมัติในช่วงเวลาที่กำหนด",
+				"link": "/docs/user/manual/th/automation/auto-repeat",
+				"title": "การทำซ้ำ (Auto Repeat)"
+			},
+			{
+				"content": "คุณสามารถเลือกโดเมนที่จะใช้งานได้ทั่วโลกภายใต้การตั้งค่าโดเมน",
+				"link": "/docs/user/manual/th/setting-up/domain-settings",
+				"title": "การตั้งค่าโดเมน"
+			},
+			{
+				"content": "ระบบคะแนนพลังงานเป็นระบบการให้คะแนน/กรรมที่คุณสามารถเปิดใช้งานสำหรับองค์กรของคุณ",
+				"link": "/docs/user/manual/th/setting-up/energy-point-system",
+				"title": "ค่าพ้อยให้แก่ผู้ใช้"
+			}
+		],
+		"title": "การกำหนดค่าระบบ"
+	},
+	{
+		"links": [
+			{
+				"content": "เครื่องมือดาวน์โหลดข้อมูลส่วนบุคคลทำให้ผู้ใช้สามารถดาวน์โหลดข้อมูลส่วนบุคคลทั้งหมดที่สร้างขึ้นขณะใช้ ERPNext ได้โดยอัตโนมัติ",
+				"link": "/docs/user/manual/th/setting-up/personal-data-download",
+				"title": "ความเป็นส่วนตัวของข้อมูล"
+			},
+			{
+				"content": "เครื่องมือลบข้อมูลส่วนบุคคลช่วยให้ผู้ใช้สามารถระบุข้อมูลส่วนบุคคลทั้งหมดที่ผู้ใช้สร้างขึ้นในขณะที่ใช้ ERPNext โดยไม่เปิดเผยชื่อ",
+				"link": "/docs/user/manual/th/setting-up/personal-data-deletion",
+				"title": "การลบข้อมูล"
+			}
+		],
+		"title": "ความเป็นส่วนตัวของข้อมูล"
+	}
+] %}
+
+{% from 'erpnext_documentation/templates/includes/macros.html' import doc_page %}
+{{ doc_page('การตั้งค่า', 'เรียนรู้วิธีกำหนดค่า ERPNext สำหรับความต้องการทางธุรกิจของคุณ', doc, '/docs/user/manual/th/setting-up/contents') }}
