@@ -1,49 +1,48 @@
 <!-- add-breadcrumbs -->
-#Overwriting Data from Data Import Tool
+#เขียนทับข้อมูลจากเครื่องมือนำเข้าข้อมูล
 
-The Data Import Tool allows importing documents (like customers, Suppliers, Orders, Invoices, etc.) from an Excel/CSV file into ERPNext. The very same tool can also be used for overwriting values in the existing documents.
+เครื่องมือนำเข้าข้อมูลอนุญาตให้นำเข้าเอกสาร (เช่น ลูกค้า ซัพพลายเออร์ คำสั่งซื้อ ใบแจ้งหนี้ ฯลฯ) จากไฟล์ Excel/CSV ไปยัง ERPNext เครื่องมือเดียวกันนี้ยังสามารถใช้สำหรับเขียนทับค่าในเอกสารที่มีอยู่
 
-Overwriting data from Data Import Tool works only for the saved transactions, and not for Submitted ones.
+การเขียนทับข้อมูลจาก Data Import Tool ใช้ได้กับธุรกรรมที่บันทึกไว้เท่านั้น ไม่ใช่สำหรับรายการที่ส่ง
 
-Let's assume there are no. of items for which we need to overwrite Item Group. Following are the steps to overwrite Item Groups for existing Items.
+สมมติว่าไม่มี ของรายการที่เราจำเป็นต้องเขียนทับ Item Group ต่อไปนี้เป็นขั้นตอนในการเขียนทับกลุ่มรายการสำหรับรายการที่มีอยู่
 
+##ขั้นตอนที่ 1: ดาวน์โหลดเทมเพลต
 
-##Step 1: Download Template
+เทมเพลตที่ใช้สำหรับเขียนทับข้อมูลจะเหมือนกับที่ใช้สำหรับการนำเข้ารายการใหม่ ดังนั้น คุณควรดาวน์โหลดเทมเพลตก่อน
 
-Template Used for overwriting data will be the same as one used for importing new items. Hence, you should first download the template.
+> หน้าหลัก > การตั้งค่า > ข้อมูล > นำเข้า/ส่งออกข้อมูล
 
-> Home > Settings > Data > Import/Export Data
-
-Since items to be over-written will be already available in the system, while downloading the template, click on "Download with data" to get all the existing items in the template.
+เนื่องจากรายการที่จะเขียนทับจะมีอยู่ในระบบแล้ว ในขณะที่ดาวน์โหลดเทมเพลต ให้คลิกที่ "ดาวน์โหลดพร้อมข้อมูล" เพื่อรับรายการที่มีอยู่ทั้งหมดในเทมเพลต
 
 <img alt="Download Template" class="screenshot" src="{{docs_base_url}}/assets/img/articles/overwrite-1.gif">
     
-##Step 2: Prepare Data
+##ขั้นตอนที่ 2: เตรียมข้อมูล
 
-Enter the new value in the Item Group column for an item. Since Item Group is a master in itself, ensure Item Group entered in the spreadsheet file is already added in the Item Group master.
+ป้อนค่าใหม่ในคอลัมน์กลุ่มรายการสำหรับรายการ เนื่องจากกลุ่มสินค้า (Item Group) เป็นหลักในตัวเอง ตรวจสอบให้แน่ใจว่า กลุ่มสินค้า (Item Group) ที่ป้อนในไฟล์สเปรดชีตถูกเพิ่มใน กลุ่มสินค้าทั้งหมด (Item Group Master) แล้ว
 
 <img alt="Update Values" class="screenshot" src="{{docs_base_url}}/assets/img/articles/overwrite-2.png">
 
-Since we are overwriting only Item Group, only the following columns will be mandatory:
+เนื่องจากเราเขียนทับเฉพาะ Item Group จึงจำเป็นต้องระบุเฉพาะคอลัมน์ต่อไปนี้:
 
-1. Column A (since it has main values of the template)
-1. Name (Column B)
-1. Item Group
+1. คอลัมน์ A (เนื่องจากมีค่าหลักของเทมเพลต)
+1. ชื่อ (คอลัมน์ B)
+1. กลุ่มสินค้า
 
-Columns of other fields which won't have any impact can be removed, even if they are mandatory. This is applicable only for overwriting, and not when importing new records.
+คอลัมน์ของฟิลด์อื่นๆ ที่ไม่มีผลกระทบใดๆ สามารถลบออกได้ แม้ว่าจะเป็นฟิลด์บังคับก็ตาม ใช้ได้สำหรับการเขียนทับเท่านั้น ไม่สามารถใช้เมื่อนำเข้าบันทึกใหม่
 
-##Step 3: Browse Template
+##ขั้นตอนที่ 3: เรียกดูเทมเพลต
 
-After updating Item Groups in the spreadsheet, come back to Data Import Tool in ERPNext. Browse and select the File/template which has data to be overwritten.
+หลังจากอัปเดตกลุ่มรายการในสเปรดชีตแล้ว ให้กลับมาที่เครื่องมือนำเข้าข้อมูลใน ERPNext เรียกดูและเลือกไฟล์/เทมเพลตที่มีข้อมูลที่จะเขียนทับ
 
 <img alt="Browse template" class="screenshot" src="{{docs_base_url}}/assets/img/articles/overwrite-3.gif">
 
-##Step 4: Upload
+##ขั้นตอนที่ 4: อัปโหลด
 
-On clicking Import, Item Group will be over-written.
+เมื่อคลิก "นำเข้า (Import)" กลุ่มรายการจะถูกเขียนทับ
 
 <img alt="Upload" class="screenshot" src="{{docs_base_url}}/assets/img/articles/overwrite-4.png">
 
-If validation of values fails, then it will indicate row no. of the spreadsheet for which validation failed and needs correction. In that case, you should correct value in that row of the spreadsheet, and then import the same file again. If validation fails even for one row, none of the records are imported/overwritten.
+หากการตรวจสอบค่าล้มเหลว จะระบุแถวที่ ของสเปรดชีตที่การตรวจสอบล้มเหลวและจำเป็นต้องแก้ไข ในกรณีนั้น คุณควรแก้ไขค่าในแถวของสเปรดชีตนั้น แล้วนำเข้าไฟล์เดิมอีกครั้ง หากการตรวจสอบล้มเหลวแม้เพียงแถวเดียว จะไม่มีการนำเข้า/เขียนทับระเบียนใดเลย
 
 <!-- markdown -->

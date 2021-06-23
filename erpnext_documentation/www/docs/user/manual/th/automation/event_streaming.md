@@ -1,215 +1,217 @@
  <!-- add-breadcrumbs -->
-# Event Streaming
+# สตรีมมิ่ง
 
 > Introduced in Version 13
 
-Event Streaming enables inter site communications between two or more sites. You can **subscribe** to Document Types and **stream** Documents between different sites.
+การสตรีมเหตุการณ์ช่วยให้สามารถสื่อสารระหว่างไซต์ระหว่างสองไซต์ขึ้นไป คุณสามารถ **สมัครใช้งาน** ประเภทเอกสารและ **สตรีม** เอกสารระหว่างไซต์ต่างๆ ได้
 
-For Example: Consider you have more than one Company hosted on different sites, one among them is the main site where you want to do ledger posting and on other sites, the Sales Invoices are generated. You can use Event Streaming in this case. For this, your child company sites can subscribe to the main company site for Item, Customer, and Supplier Document Types. The main Company in turn can subscribe to the child companies for Sales Invoices.
+ตัวอย่างเช่น: พิจารณาว่าคุณมีบริษัทมากกว่าหนึ่งแห่งที่โฮสต์อยู่ในไซต์ต่างๆ กัน หนึ่งในนั้นคือไซต์หลักที่คุณต้องการโพสต์บัญชีแยกประเภท และบนไซต์อื่นๆ จะมีการสร้างใบแจ้งหนี้การขาย คุณสามารถใช้ สตรีมมิ่ง ได้ในกรณีนี้ สำหรับสิ่งนี้ ไซต์บริษัทลูกของคุณสามารถสมัครใช้งานไซต์บริษัทหลักสำหรับประเภทเอกสารของสินค้า ลูกค้า และผู้จัดจำหน่ายได้ บริษัทหลักสามารถสมัครบริษัทย่อยสำหรับใบแจ้งหนี้การขายได้
 
-To access Event Streaming, go to:
-> Home > Automation > Event Streaming
+ในการเข้าถึงการสตรีมกิจกรรม ไปที่:
+> หน้าหลัก > ระบบอัตโนมัติ > การสตรีมเหตุการณ์
 
-## 1. Prerequisites
-Before creating an Event Producer, a common user needs to be created on both the sites which will be used to access the site and will act as an Event Subscriber. Make sure the user is a System Manager and has the necessary permissions for creation, updation, and deletion of the subscribed DocTypes.
+## 1. ข้อกำหนดเบื้องต้น
 
-## 2. How to set up Event Streaming
+ก่อนสร้าง Event Producer ผู้ใช้ทั่วไปจะต้องถูกสร้างขึ้นบนทั้งสองไซต์ซึ่งจะใช้ในการเข้าถึงไซต์และจะทำหน้าที่เป็นผู้สมัครสมาชิกกิจกรรม ตรวจสอบว่าผู้ใช้เป็นผู้ดูแลระเบบ (System Manager) และมีสิทธิ์ที่จำเป็นสำหรับการสร้าง อัปเดต และลบเอกสาร DocTypes ที่สมัครรับข้อมูล
 
-Let's take two sites for explaining the process. http://test_site:8000 (Consumer site) and http://test_site_producer:8000 (Producer site)
+## 2. วิธีตั้งค่าการสตรีมมิ่ง
 
-### 2.1 Obtain the Event Subscriber's keys from the Producer Site
+ลองใช้ไซต์สองไซต์เพื่ออธิบายกระบวนการ http://test site:8000 (ไซต์ผู้บริโภค) และ http://test site_producer:8000 (ไซต์ผู้ผลิต)
 
-1. On http://test_site_producer:8000 (producer site), go to the User list.
-2. Open the user document you are going to use as an Event Subscriber. Scroll down to the section labelled "API Access". In that section, generate keys for the user by clicking on **Generate Keys** button. You will get a prompt with the user secret, copy the user secret and save it with you. It will also generate an API key.
+### 2.1 รับรหัสสมาชิกกิจกรรมจากไซต์ผู้ผลิต
 
-### 2.2 Generate Keys for the Event Subscriber on the Consumer Site
+1. บน http://test ไซต์โปรดิวเซอร์:8000 (ไซต์ผู้ผลิต) ไปที่รายการผู้ใช้
+2. เปิดเอกสารผู้ใช้ที่คุณจะใช้เป็น Event Subscriber เลื่อนลงไปที่ส่วน "การเข้าถึง API" ในส่วนที่สร้างคีย์สำหรับผู้ใช้โดยการคลิกที่สร้างคีย์ปุ่ม คุณจะได้รับข้อความแจ้งพร้อมข้อมูลลับผู้ใช้ คัดลอกข้อมูลลับผู้ใช้ และบันทึกกับคุณ นอกจากนี้ยังจะสร้างคีย์ API
 
-1. On http://test_site:8000 (consumer site), go to the User list and follow the same process specified in the previous step.
+### 2.2 สร้างคีย์สำหรับสมาชิกเหตุการณ์บนเว็บไซต์ผู้บริโภค
 
-### 2.3 Create an Event Producer on the Consumer Site
+1. บน http://test_site:8000 (ไซต์สำหรับผู้บริโภค) ให้ไปที่รายการผู้ใช้ และทำตามขั้นตอนเดียวกันกับที่ระบุไว้ในขั้นตอนก่อนหน้า
 
-1. The site which you want to subscribe to, is called as the Event Producer. Create an Event Producer document for the site you wish to get the updates from.
-2. On http://test_site:8000 (consumer site), go to **Home > Automation > Event Streaming > Event Producer**.
-3. Enter the URL of the site you want to subscribe to (in this case http://test_site_producer:8000), in the Producer URL field.
-4. Add all the Document Types you want to subscribe to, in the Event Producer Document Types table.
-5. If you want to have the created documents with the same name as it is on the remote Event Producer site, check the 'Use Same Name' checkbox in the  table against the required Document Type.
-6. Set the Event Subscriber field to the user that will be used to create the documents fetched from the Event Producer. You need to create the same user both ways, i.e. on the Event Consumer as well as the Event Producer site before creating the Event Producer.
-7. Paste the API key and API Secret you generated in the first step (2.1) in the API key and API secret fields respectively.
-8. Save.
-9. After saving, an Event Consumer is created on the producer site (http://test_site_producer:8000). The keys of the user on the consumer site are automatically copied to the Event Consumer document on the producer site in this process.
+### สร้างผู้ผลิตเหตุการณ์บนเว็บไซต์ผู้บริโภค
+
+1. ไซต์ที่คุณต้องการสมัครรับข้อมูล เรียกว่า Event Producer สร้างเอกสาร Event Producer สำหรับไซต์ที่คุณต้องการรับการอัปเดต
+2. เมื่อวันที่ http: // test_site: 8000 (เว็บไซต์ผู้บริโภค) ให้ไปที่หน้าแรก > อัตโนมัติ > Event Streaming > เหตุการณ์ผลิต
+3. ป้อน URL ของไซต์ที่คุณต้องการสมัครรับข้อมูล (ในกรณีนี้คือ http://test siteโปรดิวเซอร์:8000) ในฟิลด์ URL ของผู้ผลิต
+4. เพิ่มประเภทเอกสารทั้งหมดที่คุณต้องการสมัครใช้งาน ในตาราง Event Producer Document Types
+5. หากคุณต้องการสร้างเอกสารที่มีชื่อเดียวกับที่อยู่ในไซต์ Event Producer ระยะไกล ให้เลือกช่องกาเครื่องหมาย 'ใช้ชื่อเดียวกัน' ในตารางเทียบกับประเภทเอกสารที่ต้องการ
+6.  ตั้งค่าฟิลด์ Event Subscriber เป็นผู้ใช้ที่จะใช้ในการสร้างเอกสารที่ดึงมาจาก Event Producer คุณต้องสร้างผู้ใช้เดียวกันทั้งสองวิธี เช่น บน Event   Consumer และไซต์ Event Producer ก่อนที่จะสร้าง Event Producer
+7. วางคีย์ API และ API Secret ที่คุณสร้างในขั้นตอนแรก (2.1) ในคีย์ API และฟิลด์ข้อมูลลับของ API ตามลำดับ
+8. บันทึก
+9. หลังจากบันทึกแล้ว Event Consumer จะถูกสร้างขึ้นบนไซต์ผู้ผลิต (http://test siteโปรดิวเซอร์:8000) คีย์ของผู้ใช้บนไซต์ผู้บริโภคจะถูกคัดลอกโดยอัตโนมัติไปยังเอกสาร Event Consumer บนไซต์ผู้ผลิตในกระบวนการนี้
 
     ![Event Producer](/docs/assets/img/automation/event-producer-doc.png)
 
->**Note**: If at all the API Secret is changed for the users on any of these sites, you will have to manually update the keys in the Event Producer as well as the Event Consumer on both the sites.
+> **หมายเหตุ** : หากมีการเปลี่ยนแปลงความลับของ API สำหรับผู้ใช้ในไซต์เหล่านี้ คุณจะต้องอัปเดตคีย์ด้วยตนเองใน Event Producer เช่นเดียวกับ Event Consumer บนไซต์ทั้งสอง
 
-### 2.4 Approve Event Consumer on the Event Producer site
+### อนุมัติผู้บริโภคเหตุการณ์บนไซต์ผู้ผลิตเหตุการณ์
 
-1. After the Event Producer has been created, an Event Consumer automatically gets created on the producer site. By default, all the Subscribed Document Types have the status as 'Pending'. In order to enable the Event Consumer to consume the documents of these Document Types, their Status needs to be updated to 'Approved'.
-2. Go to: **Home > Automation > Event Streaming > Event Consumer**.
-3. Once you open the Event Consumer document you will see all the Document Types that the consumer has subscribed to. Change the status from 'Pending' to 'Approved' for all the Document Types that you want to approve to be consumed. You can change the status to 'Rejected' if you do not want the documents of that Document Type to be consumed.
-4. Save.
+1. หลังจากสร้าง Event Producer แล้ว Event Consumer จะถูกสร้างขึ้นบนไซต์ผู้ผลิตโดยอัตโนมัติ โดยค่าเริ่มต้น ชนิดเอกสารที่สมัครรับข้อมูลทั้งหมดจะมีสถานะเป็น 'รอดำเนินการ' เพื่อให้ผู้บริโภคเหตุการณ์สามารถใช้เอกสารประเภทเอกสารเหล่านี้ได้ สถานะของพวกเขาจะต้องได้รับการอัปเดตเป็น 'อนุมัติ'
+2. ไปที่: **หน้าแรก> อัตโนมัติ > Event Streaming > กิจกรรมของผู้บริโภค**
+3. เมื่อคุณเปิดเอกสาร Event Consumer คุณจะเห็นประเภทเอกสารทั้งหมดที่ผู้ใช้บริการสมัครรับข้อมูล เปลี่ยนสถานะจาก 'รอดำเนินการ' เป็น 'อนุมัติ' สำหรับเอกสารทุกประเภทที่คุณต้องการอนุมัติให้ใช้งาน คุณสามารถเปลี่ยนสถานะเป็น 'ปฏิเสธ' ได้ หากคุณไม่ต้องการให้มีการใช้เอกสารประเภทเอกสารนั้น
+4. บันทึก
 
     ![Event Consumer](/docs/assets/img/automation/event-consumer-doc.png)
 
->**Note**: Document updates for Subscribed Document Types won't be synced unless they are Approved.
+>**หมายเหตุ** : การอัปเดตเอกสารสำหรับประเภทเอกสารที่สมัครจะไม่ซิงค์เว้นแต่จะได้รับอนุมัติ
 
-### 2.5 Offline access with single site
-If you have some places where internet connectivity is low, for example, a store in a remote area where sales invoices are generated and you want to sync these invoices from the store to the hosted account, you could setup offline syncing using the following steps:
+### 2.5 การเข้าถึงแบบออฟไลน์ด้วยไซต์เดียว 
+หากคุณมีสถานที่บางแห่งที่การเชื่อมต่ออินเทอร์เน็ตต่ำ เช่น ร้านค้าในพื้นที่ห่างไกลที่มีการสร้างใบแจ้งหนี้การขาย และคุณต้องการซิงค์ใบแจ้งหนี้เหล่านี้จากร้านค้าไปยังบัญชีที่โฮสต์ คุณสามารถตั้งค่าการซิงค์ออฟไลน์โดยใช้ขั้นตอนต่อไปนี้::
 
-1. Set up an ERPNext local instance. You can refer [this guide](https://github.com/frappe/bench) for local setup.
-2. You need to have hosted account with your company set up.
-3. Now create an Event Producer on the hosted account and set the producer URL to the URL of your local account.
-4. Add whatever doctypes you want to sync in the Event Producer Document Types child table.
-5. Approve the doctypes.
+1. ตั้งค่าอินสแตนซ์ภายในเครื่อง ERPNext คุณสามารถอ้างอิง [ที่นี่](https://github.com/frappe/bench) สำหรับการตั้งค่า
+2. คุณต้องมีบัญชีโฮสต์กับบริษัทของคุณตั้งค่า
+3. ตอนนี้สร้าง Event Producer ในบัญชีที่โฮสต์และตั้งค่า URL ผู้ผลิตเป็น URL ของบัญชีท้องถิ่นของคุณ
+4. เพิ่มเอกสาร (doctypes) ใดๆ ที่คุณต้องการซิงค์ในตารางย่อย Event Producer Document Types
+5. อนุมัติประเภทเอกสาร
 
-## 3. Features
+## 3. คุณสมบัติ
 
 
-### 3.1 Unsubscribe from the updates
+### 3.1 ยกเลิกการดัปเดท
 
-As an Event Consumer, if you wish to unsubscribe from the updates for any doctypes you had previously subscribed to, check unsubscribe against the doctype. You will not receive any more updates from the producer site for that particular doctype once you have unsubscribed.
+ในฐานะผู้บริโภคกิจกรรม หากคุณต้องการยกเลิกการสมัครรับการอัปเดตสำหรับเอกสารประเภทใดก็ตามที่คุณเคยสมัครรับข้อมูลก่อนหน้านี้ ให้ตรวจสอบการยกเลิกการสมัครกับประเภทเอกสารนั้น คุณจะไม่ได้รับการอัปเดตใด ๆ เพิ่มเติมจากไซต์ผู้ผลิตสำหรับประเภทเอกสารนั้น ๆ เมื่อคุณยกเลิกการสมัครแล้ว
 
 ![Unsubscribe](/docs/assets/img/automation/unsubscribe-event.png)
 
-### 3.2 Event Update Log
-"Event Update Log" logs every create, update, and delete action for documents that have consumers on the Event Producer site.
-In order to view the Event Update Log:
+### 3.2 บันทึกการอัปเดตกิจกรรม
 
-Go to: **Home > Automation > Event Streaming > Event Update Log**.
+"บันทึกการอัปเดตกิจกรรม" จะบันทึกทุกการดำเนินการที่สร้าง อัปเดต และลบสำหรับเอกสารที่มีผู้ใช้บริการบนไซต์ Event Producer เพื่อดูบันทึกการอัปเดตกิจกรรม:
 
-- For 'Create' type the Update Type, Document Type, Document Name and the entire document (as JSON) is logged.
-- For 'Update' type the Update Type, Document Type, Document Name and the updated data (difference between the previous state and current state of the document) is logged.
-- For 'Delete' type only the Update Type, Document Type, and Document Name is logged.
+ไปที่: **หน้าหลัก> อัตโนมัติ> Event Streaming> กิจกรรมปรับปรุงเข้าสู่ระบบ**
+
+- สำหรับ 'สร้าง' ให้พิมพ์ประเภทการอัปเดต ประเภทเอกสาร ชื่อเอกสาร และเอกสารทั้งหมด (ตาม JSON)
+- สำหรับ 'อัปเดต' ให้พิมพ์ประเภทการอัปเดต ประเภทเอกสาร ชื่อเอกสาร และข้อมูลที่อัปเดต (ความแตกต่างระหว่างสถานะก่อนหน้าและสถานะปัจจุบันของเอกสาร)
+- สำหรับ 'ลบ' ให้บันทึกเฉพาะประเภทการอัปเดต ประเภทเอกสาร และชื่อเอกสารเท่านั้น
 
 ![Event Update Log](/docs/assets/img/automation/event-update-log-doc.png)
 
-### 3.3 Event Sync Log
-Like the Update Log, Event Sync Log logs every document synced from the Event Producer on the Event Consumer site.
-In order to view the Event Sync Log:
+### 3.3 บันทึกการซิงค์เหตุการณ์
 
-Go to: **Home > Automation > Event Streaming > Event Sync Log**.
+เช่นเดียวกับบันทึกการอัปเดต Event Sync Log จะบันทึกทุกเอกสารที่ซิงค์จาก Event Producer บนไซต์ Event Consumer ในการดูบันทึกการซิงค์เหตุการณ์:
+
+**ไปที่: หน้าหลัก > อัตโนมัติ> Event Streaming > กิจกรรมซิงค์เข้าสู่ระบบ**
 
 ![Event Sync Log](/docs/assets/img/automation/event-sync-log.png)
 
-A successfully synced event generates a log document with:
+หากซิงค์สำเร็จจะสร้างเอกสารบันทึกด้วย:
 
-- **Update Type**: Create, Update or Delete
-- **Status**: Sync Status
-- **DocType**
-- **Event Producer**: The site URL from where the document was created
-- **Document Name**
-- **Remote Document Name**: If 'Use Same Name' is unchecked
-- **Use Same Name**
-- **Data**: The document data as JSON
+- **ประเภทการอัปเดต** : สร้าง อัปเดต หรือลบ
+- **สถานะ** : สถานะการซิงค์
+- **เอกสาร (DocType)**
+- **Event Producer** : URL ของไซต์ที่สร้างเอกสาร
+- **ชื่อเอกสาร**
+- **ชื่อเอกสารระยะไกล** : หากไม่ได้เลือก 'ใช้ชื่อเดียวกัน'
+- **ใช้ชื่อเดียวกัน**
+- **ข้อมูล** : ข้อมูลเอกสารเป็น JSON
 
     ![Event Sync Log](/docs/assets/img/automation/event-synced.png)
 
-A failed event generates a log doc with the above fields along with:
+เหตุการณ์ที่ล้มเหลวจะสร้างเอกสารบันทึกที่มีฟิลด์ด้านบนพร้อมกับ:
 
-- **Error**: The error because of which the document was not synced.
+- **ข้อผิดพลาด** : ข้อผิดพลาดเนื่องจากการไม่ซิงค์เอกสาร
     ![Event Synced](/docs/assets/img/automation/event-failed-error.png)
 
-- **Resync Button**: It also provides a 'Resync' button in order to resync the failed event.
+- **ปุ่ม ซิงค์อีกครั้ง** : นอกจากนี้ยังมีปุ่ม 'Resync' เพื่อซิงค์เหตุการณ์ที่ล้มเหลวอีกครั้ง
     ![Event Failed](/docs/assets/img/automation/event-failed.png)
 
-### 3.4 Dependency Syncing
-Certain Document Types have dependencies. For example, before syncing a Sales Invoice, the Item and Customer need to be present in the current site. So, Item and Customer are dependencies for Sales Invoice. Event Streaming handles this by on-demand dependency syncing. Whenever any document is to be synced, it first checks whether the document has any dependencies (Link fields, Dynamic Link fields, Child Table fields, etc.). If that dependency is not fullfilled i.e. the dependent document (eg: Item) is not present on your consumer site, it will be synced first and then the Sales Invoice will be synced.
+### 3.4 การซิงค์แบบมีเงื่อนไข
 
-For example: Sales Invoice syncing with Item dependency:
+เอกสารบางประเภทมีการขึ้นต่อกัน ตัวอย่างเช่น ก่อนที่จะซิงค์ใบกำกับสินค้า รายการและลูกค้าจะต้องมีอยู่ในไซต์ปัจจุบัน ดังนั้น รายการและลูกค้าจึงเป็นการพึ่งพาสำหรับใบกำกับสินค้า การสตรีมเหตุการณ์จัดการสิ่งนี้ด้วยการซิงค์การขึ้นต่อกันแบบออนดีมานด์ เมื่อใดก็ตามที่ต้องการซิงค์เอกสาร อันดับแรกจะตรวจสอบว่าเอกสารมีการขึ้นต่อกันหรือไม่ (ฟิลด์ลิงก์ ฟิลด์ลิงก์ไดนามิก ฟิลด์ตารางย่อย ฯลฯ) หากการขึ้นต่อกันนั้นไม่ครบถ้วน เช่น เอกสารอ้างอิง (เช่น: รายการ) ไม่มีอยู่ในไซต์ผู้บริโภคของคุณ เอกสารนั้นจะถูกซิงค์ก่อน จากนั้นจึงซิงค์ใบแจ้งหนี้การขาย
+
+ตัวอย่างเช่น: การซิงค์ใบแจ้งหนี้การขายกับการพึ่งพาสินค้า:
     ![Event Dependency](/docs/assets/img/automation/event-dependency-sync.gif)
 
-### 3.5 Naming Configuration
-Check the 'Use Same Name' checkbox to let the documents have same name on both Event Producer and Event Consumer sites. If this is not checked, then the document will be created using the naming conventions of the current site.
+### 3.5 การกำหนดค่าการตั้งชื่อ
+
+ทำเครื่องหมายที่ช่อง 'ใช้ชื่อเดียวกัน' เพื่อให้เอกสารมีชื่อเหมือนกันทั้งบนไซต์ Event Producer และ Event Consumer หากไม่ได้ตรวจสอบ เอกสารจะถูกสร้างขึ้นโดยใช้หลักการตั้งชื่อของไซต์ปัจจุบัน
 
 ![Use Same Name Config](/docs/assets/img/automation/event-use-same-name.png)
 
-> **Note**: For Document Types that have naming series, it is advised to keep the 'Use Same Name' checkbox unchecked, to prevent naming conflicts. If this is unchecked, the Documents are created by following the naming conventions on the current site and the 'Remote Site Name' and 'Remote Document Name' custom fields are set in the synced document to store the Event Producer site URL and the document name on the remote site respectively.
+> **หมายเหตุ** : สำหรับประเภทเอกสารที่มีการตั้งชื่อชุดข้อมูล ขอแนะนำให้ยกเลิกการเลือกช่องทำเครื่องหมาย 'ใช้ชื่อเดียวกัน' เพื่อป้องกันความขัดแย้งในการตั้งชื่อ หากไม่ได้เลือก เอกสารจะถูกสร้างขึ้นโดยปฏิบัติตามข้อตกลงการตั้งชื่อบนไซต์ปัจจุบัน และฟิลด์แบบกำหนดเอง 'Remote Site Name' และ 'Remote Document Name' จะถูกตั้งค่าในเอกสารที่ซิงค์เพื่อเก็บ URL ไซต์ Event Producer และชื่อเอกสาร บนไซต์ระยะไกลตามลำดับ
 
 ![Subscribed Document](/docs/assets/img/automation/event-subscribed-doc.png)
 
-### 3.6 Mapping Configuration
+### 3.6 การกำหนดค่าการตั้งค่า
 
-If you want to stream documents between an ERPNext instance and another Frappe app for a particular Document Type with same or different structures, or if field names are different in both the sites, you can use Event Streaming with Mapping Configuration.
+หากคุณต้องการสตรีมเอกสารระหว่างอินสแตนซ์ ERPNext และแอป Frappe อื่นสำหรับประเภทเอกสารเฉพาะที่มีโครงสร้างเหมือนกันหรือต่างกัน หรือหากชื่อฟิลด์ต่างกันในทั้งสองไซต์ คุณสามารถใช้การสตรีมเหตุการณ์ด้วยการกำหนดค่าการแมป
 
-For this you need to first set up a Document Type Mapping.
+สำหรับสิ่งนี้ คุณต้องตั้งค่าการแมปประเภทเอกสารก่อน
 
-To access Document Type Mapping, go to:
+ในการเข้าถึงการแมปประเภทเอกสาร ไปที่:
 
-> Home > Automation > Event Streaming > Document Type Mapping.
+> หน้าหลัก > ระบบอัตโนมัติ > การสตรีมเหตุการณ์ > การแมปประเภทเอกสาร
 
-#### 3.6.1 Mapping for DocTypes with similar structure
+#### 3.6.1 การแมปสำหรับเอกสาร (DocTypes) ที่มีโครงสร้างคล้ายกัน
 
-- **Mapping Name**: Give a unique name to the mapping
-- **Local Document Type**: The Document Type in your current site
-- **Remote Document Type**: The Document Type on the Event Producer site which you want to sync
+- **Mapping Name** : ตั้งชื่อเฉพาะให้กับแผนที่ the
+- **Local Document Type** : ประเภทเอกสารในไซต์ปัจจุบันของคุณ
+- **Remote Document Type** : ประเภทเอกสารบนไซต์ Event Producer ที่คุณต้องการซิงค์
 
-In the Field Mapping child table:
+ในตารางย่อยการแมปฟิลด์:
 
-- **Local Fieldname**: The fieldname in the Local Document type of your current site.
-- **Remote Fieldname**: The fieldname in the Remote Document type of the Event Producer site which you want to map to the Local Fieldname. During the sync, the value of the remote fieldname gets copied to the local fieldname.
+- **Local Fieldname** : ชื่อฟิลด์ในประเภท Local Document ของไซต์ปัจจุบันของคุณ
+- **Remote Fieldname** : ชื่อฟิลด์ในประเภท Remote Document ของไซต์ Event Producer ที่คุณต้องการแมปกับ Local Fieldname ในระหว่างการซิงค์ ค่าของชื่อฟิลด์ระยะไกลจะถูกคัดลอกไปยังชื่อฟิลด์ในเครื่อง
 
 ![Document Type Mapping](/docs/assets/img/automation/event-field-mapping.png)
 
-#### 3.6.2 Default value for some field
+#### 3.6.2 ค่าเริ่มต้นสำหรับบางฟิลด์
 
-If your field is not mapped to any other remote fieldname and you always want the field to have the same value, set the set the same in the default value field. Event if you have set the remote fieldname, in case during the sync, remote field's value is not found and if the "Default Value" has been specified, it will be set.
+ถ้าฟิลด์ของคุณไม่ได้ถูกแมปกับชื่อฟิลด์ระยะไกลอื่น ๆ และคุณต้องการให้ฟิลด์มีค่าเท่ากันเสมอ ให้ตั้งค่าชุดเดียวกันในฟิลด์ค่าเริ่มต้น เหตุการณ์ หากคุณได้ตั้งค่าชื่อฟิลด์ระยะไกล ในกรณีที่ในระหว่างการซิงค์ ไม่พบค่าของฟิลด์ระยะไกล และหากระบุ "ค่าเริ่มต้น" ไว้ จะถูกตั้งค่า
 
 ![Child Table Mapping Link](/docs/assets/img/automation/default.png)
 
 
-#### 3.6.3 Mapping for DocTypes having child tables
+#### 3.6.3 การแมปสำหรับเอกสาร DocTypes ที่มีตารางลูก
 
-If the field you are trying to map is a child table, you need to create another Document Type Mapping for the child table fields.
+ถ้าเขตข้อมูลที่คุณพยายามแมปเป็นตารางย่อย คุณต้องสร้างการแมปชนิดเอกสารอื่นสำหรับเขตข้อมูลตารางรอง
 
 ![Child Table Mapping Link](/docs/assets/img/automation/child_table_map_doc.png)
 
-- **Mapping Type**: Select the Mapping Type as Child Table.
-- **Mapping**: Select the Document Type Mapping document you created for the child table.
+- **ประเภทการทำแมปปิ้ง** : เลือกประเภทการทำแผนที่เป็นตารางย่อย
+- **การทำแมปปิ้ง** : เลือกเอกสารการแมปประเภทเอกสารที่คุณสร้างขึ้นสำหรับตารางรอง
 
 ![Child Table Mapping Link](/docs/assets/img/automation/event-map-is-child-table.png)
 
-#### 3.6.4 Mapping for DocTypes having dependencies (Link, Dynamic Link fields)
+#### 3.6.4 การแมปสำหรับเอกสาร (DocTypes) ที่มีการขึ้นต่อกัน (ลิงก์ ฟิลด์ลิงก์แบบไดนามิก) 
 
-If the DocTypes you are trying to map have any kind of dependencies like Link or Dynamic Link fields, you need to set up another Document Type Mapping for syncing the dependencies.
+หากเอกสาร (DocTypes) ที่คุณพยายามแมปมีการขึ้นต่อกันประเภทใดก็ตาม เช่น ช่องลิงก์หรือลิงก์แบบไดนามิก คุณต้องตั้งค่าการแมปประเภทเอกสารอื่นสำหรับการซิงค์การขึ้นต่อกัน
 
-For example, let's assume that the local doctype is Opportunity and the remote doctype is ERPNext Opportunity. The field `party_name` (Link field for DocType Lead) in Opportunity is mapped to `full_name` (Data field) in ERPNext Opportunity. During the sync, this Lead has to be created for the main Opportunity to sync. So you need to set up a mapping for this Link Field too.
+ตัวอย่างเช่น สมมติว่า doctype ในเครื่องคือ Opportunity และเอกสาร doctype ระยะไกลคือ ERPNext Opportunity ฟิลด์ `party_name` (( ฟิลด์ลิงก์สำหรับ DocType Lead) ในโอกาสถูกแมปกับ `full_name` (ฟิลด์ข้อมูล) ในโอกาส ERPNext ในระหว่างการซิงค์ ต้องสร้างลูกค้าเป้าหมายนี้เพื่อให้โอกาสหลักในการซิงค์ ดังนั้นคุณต้องตั้งค่าการแมปสำหรับฟิลด์ลิงก์นี้ด้วย
 
 ![Lead Dependency Creation](/docs/assets/img/automation/lead_dependency_creation.png)
 
-- **Mapping Type**: In this case, the Mapping Type is Document.
-- **Mapping**: Select the mapping you just created.
-- **Remote Value Filters**: You need to specify the filters that will fetch the exact remote document to be mapped. Like in this case, the remote DocType is ERPNext Opportunity which can be uniquely fetched using name, phone number and country.
+- **ประเภทการทำการแมปปิ้ง** : ในกรณีนี้ ประเภทการทำแผนที่คือเอกสาร
+- **การทำการแมปปิ้ง** : เลือกการทำแผนที่ที่คุณเพิ่งสร้างขึ้น
+- **ตัวกรองค่าระยะไกล** : คุณต้องระบุตัวกรองที่จะดึงเอกสารระยะไกลที่แน่นอนที่จะจับคู่ เช่นเดียวกับในกรณีนี้ DocType ระยะไกลคือ ERPNext Opportunity ซึ่งสามารถดึงข้อมูลโดยไม่ซ้ำกันโดยใช้ชื่อ หมายเลขโทรศัพท์ และประเทศ
 
-The format is:
+รูปแบบคือ:
 
-{ "remote fieldname": "field or expression from where we will get the value for that fieldname"}
+{ "remote fieldname": "field หรือ expression จากตำแหน่งที่เราจะรับค่าสำหรับ fieldname นั้น"}
 
-If you want to fetch the value from somewhere, start the expression with eval:
+หากคุณต้องการดึงค่าจากที่ใดที่หนึ่ง ให้เริ่มนิพจน์ด้วย eval:
 
-Like in this case it is: `eval:frappe.db.get_value('Global Defaults', None, 'country')`
+เช่นในกรณีนี้คือ: `eval:frappe.db.get_value('Global Defaults', None, 'country')`
 
 ![Document Mapping Type](/docs/assets/img/automation/document_mapping_type.png)
 
-Lastly, enable the 'Has Mapping' option in the Event Configuration child table in Event Producer against the required Document Type and select the Document Type Mapping you just created.
+สุดท้าย เปิดใช้งานตัวเลือก 'มีการแมป' ในตารางย่อยการกำหนดค่าเหตุการณ์ใน Event Producer กับประเภทเอกสารที่จำเป็น และเลือกการแมปประเภทเอกสารที่คุณเพิ่งสร้างขึ้น
 
 ![Mapping Configuration](/docs/assets/img/automation/event-mapping-conf.png)
 
-### 3.6 Conditional Events Configuration
+### 3.6 การกำหนดค่าเหตุการณ์ตามเงื่อนไข
 
-If you are in scenario when you do not want to send over all the documents in a doctype over to the consumer, you can specify the conditions for them.
+หากคุณอยู่ในสถานการณ์ที่ไม่ต้องการส่งเอกสารทั้งหมดในประเภทเอกสารไปให้ผู้บริโภค คุณสามารถระบุเงื่อนไขสำหรับเอกสารเหล่านั้นได้
 
-For example, if you would like to emit only those `Note` documents that are public, you can specify them within the Producer/Consumer document.
+ตัวอย่างเช่น หากคุณต้องการ `Note` เผยแพร่เฉพาะเอกสารที่เป็นสาธารณะ คุณสามารถระบุได้ในเอกสารผู้ผลิต/ผู้บริโภค
 
 ![Child Table Mapping Link](/docs/assets/img/automation/event-streaming-conditions.png)
 
-> If a document satisfies a condition down the line in its lifetime, all the old `Event Update Logs` are synced to the consumer
+> หากเอกสารตรงตามเงื่อนไขตลอดอายุการใช้งาน เอกสารเก่าทั้งหมด `Event Update Logs` จะซิงค์กับผู้บริโภค
 
-Let's consider another example. You want to sync only those Sales Invoices that are submitted.
-You can specify `doc.docstatus == 1` as the condition. The invoices will not be synced until they are submitted.
+ลองพิจารณาอีกตัวอย่างหนึ่ง คุณต้องการซิงค์เฉพาะใบแจ้งหนี้การขายที่ส่ง คุณสามารถระบุ `doc.docstatus == 1` เป็นเงื่อนไข ใบแจ้งหนี้จะไม่ถูกซิงค์จนกว่าจะส่ง
 
-For each update log, you can see its Consumers within the Update Log document.
+สำหรับบันทึกการอัปเดตแต่ละรายการ คุณสามารถดู Consumers ได้ในเอกสารบันทึกการอัปเดต
 
-If you need more fine control over the conditions, you can hook up a custom function. Your function will be executed with parameters `consumer`, `doc` & `update_log`. For example, you want to sync only those Notes that are `odd`
+หากคุณต้องการควบคุมเงื่อนไขที่ละเอียดยิ่งขึ้น คุณสามารถเชื่อมต่อฟังก์ชันแบบกำหนดเองได้ ฟังก์ชั่นของคุณจะถูกดำเนินการด้วยพารามิเตอร์ `consumer`, `doc` และ `update_log` ตัวอย่างเช่น คุณต้องการซิงค์เฉพาะบันทึกย่อที่เป็น `odd`
 
 ```py
 def is_odd_note(consumer, doc, update_log):
@@ -221,7 +223,8 @@ def is_odd_note(consumer, doc, update_log):
     """, { "creation": doc.creation })[0][0] % 2 != 0
 ```
 
-Then, you could specify the condition:
+จากนั้นคุณสามารถระบุเงื่อนไข:
+
 ```js
 cmd: my_custom_app.note.is_odd_note
 ```

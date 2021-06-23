@@ -1,71 +1,71 @@
 <!-- add-breadcrumbs -->
-# Dashboard
+# แดชบอร์ด
 
 > Introduced in Version 12
 
-**Dashboard provides an at-a-glance view of key performance indicators relevant to the business process.**
+**แดชบอร์ดให้มุมมองโดยย่อของตัวบ่งชี้ประสิทธิภาพหลักที่เกี่ยวข้องกับกระบวนการทางธุรกิจ**
 
-Each Dashboard consists of one or more than one Dashboard Charts each of which are configured with a data source known as Dashboard Chart Source.
+แต่ละแดชบอร์ดประกอบด้วยกราฟแดชบอร์ดอย่างน้อย 1 อัน ซึ่งแต่ละกราฟแดชบอร์ดได้รับการกำหนดค่าด้วยแหล่งข้อมูลที่เรียกว่าข้อมูลกราฟแดชบอร์ด
 
-To access Dashboard, go to,
+ในการเข้าถึงแดชบอร์ด ให้ไปที่
 
-> Home > Customization > Dashboards > Dashboard
+> หน้าหลัก > การปรับแต่ง > แดชบอร์ด > แดชบอร์ด
 
-## 1. How to Create a New Dashboard
+## 1. วิธีสร้างแดชบอร์ดใหม่
 
-1. Go to Dashboards List and click on New.
-2. Enter the Module Name for which you would want to see the Dashboard.
-3. Enter the Dashboard Charts that you would want to be parameterized for this Dashboard. 
-4. Save.
+1. ไปที่รายการแดชบอร์ดแล้วคลิกใหม่
+2. ป้อนชื่อโมดูลที่คุณต้องการดูแดชบอร์ด
+3. ป้อนกราฟภูมิแดชบอร์ดที่คุณต้องการให้เป็นพารามิเตอร์สำหรับแดชบอร์ดนี้
+4. บันทึก
 
-When you click on `Show Dashboard`, you will be able to see the Dashboard giving the graphic representation of your transactions.
+เมื่อคุณคลิก `แสดงแดชบอร์ด` คุณจะสามารถเห็นแดชบอร์ดแสดงภาพธุรกรรมของคุณ
 
 <img class="screenshot" alt="Accounting Dashboard" src="{{docs_base_url}}/assets/img/customize/dashboard-0.png">
 
-## 2. Adding Charts to Dashboard
+## 2. การเพิ่มข้อมูลไปยังแดชบอร์ด
 
-Add charts to this dashboard by either selecting existing `Dashboard Chart` or creating new ones.
+เพิ่มแผนภูมิลงในแดชบอร์ดนี้โดยเลือกที่มีอยู่กราฟแดชบอร์ดหรือสร้างใหม่
 
 <img class="screenshot" alt="Add Chart To Dashboard" src="{{docs_base_url}}/assets/img/customize/dashboard-1.png">
 
-Save changes and click on `Show Dashboard` button to see the dashboard.
+บันทึกการเปลี่ยนแปลงและคลิกที่ปุ่ม `แสดงแดชบอร์ด` เพื่อดูแดชบอร์ด
 
 <img class="screenshot" alt="Show Dashboard Button" src="{{docs_base_url}}/assets/img/customize/dashboard-6.png">
 
-## 3. Creating a New Dashboard Chart
+## 3. การสร้างแดชบอร์ดใหม่
 
-To create a new Dashboard Chart, go to
+ในการสร้างแดชบอร์ดใหม่ใหม่ ให้ไปที่
 
-> Home > Customizations > Dashboards > Dashboard Chart > New
+> หน้าหลัก > การปรับแต่ง > แดชบอร์ด > แดชบอร์ด > ใหม่
 
-Provide a name for the chart, this will show up in the dashboard as the chart label and select a `Dashboard Chart Source` as the data source for this chart.
+ระบุชื่อแผนภูมิ ซึ่งจะแสดงในแดชบอร์ดเป็นป้ายชื่อแผนภูมิ และเลือก `แหล่งข้อมูลแดชบอร์ด (Dashboard Chart Source)` เป็นแหล่งข้อมูลสำหรับแผนภูมินี้
 
-**Note:** New `Dashboard Chart Source` can only be created by the Administrator User in Developer Mode.
+**หมายเหตุ:** `แหล่งข้อมูลแดชบอร์ด (Dashboard Chart Source)` มีแค่ผู้ใช้ผู้ดูแลระบบเท่านั้นที่สร้างใหม่ได้ในโหมดนักพัฒนาซอฟต์แวร์
 
 <img class="screenshot" alt="Select Dashboard Chart Source" src="{{docs_base_url}}/assets/img/customize/dashboard-2.png">
 
-After setting the Chart Source field, the filters table will be shown.
+หลังจากตั้งค่าฟิลด์แหล่งที่มาของแผนภูมิแล้ว ตารางตัวกรองจะแสดงขึ้น
 
-Click the table to edit filters.
+คลิกตารางเพื่อแก้ไขตัวกรอง
 
 <img class="screenshot" alt="Filters Table" src="{{docs_base_url}}/assets/img/customize/dashboard-3.png">
 
-A modal will be shown to set filters. Click `Set` to set filters.
+จะแสดงการตั้งค่าตัวกรอง คลิก `ตั้งค่า` เพื่อตั้งค่าตัวกรอง
 <img class="screenshot" alt="Filters Modal" src="{{docs_base_url}}/assets/img/customize/dashboard-4.png">
 
-After setting Chart Source field, Filters table will be updated with selected filter values.
+หลังจากตั้งค่าฟิลด์แหล่งที่มาของแผนภูมิแล้ว ตารางตัวกรองจะได้รับการอัปเดตด้วยค่าตัวกรองที่เลือก
 <img class="screenshot" alt="Filters Table With Selected Filter Values" src="{{docs_base_url}}/assets/img/customize/dashboard-5.png">
 
-## 4. Using Dashboards
+## 4. การใช้แดชบอร์ด
 
-Every chart will be shown according to the fields set in the corresponding Dashboard Chart. The result from the dashboard chart source is cached to avoid redundant queries. Since the chart data can be stale, each chart will also show the last synced time.
+ทุกกราฟจะแสดงตามฟิลด์ที่กำหนดในกราฟแดชบอร์ดที่เกี่ยวข้อง ผลลัพธ์จากแหล่งที่มาของกราฟแดชบอร์ดจะถูกแคชเพื่อหลีกเลี่ยงการสืบค้นที่ซ้ำซ้อน เนื่องจากแต่ละกราฟอาจจะไม่ได้อัปเดท และแต่ละกราฟจะแสดงข้อมูลที่ซิงค์ล่าสุด
 
 <img class="screenshot" alt="Chart Options" src="{{docs_base_url}}/assets/img/customize/dashboard-7.png">
 
-The filters used to generate the chart data can also be changed by clicking `Set Filters`. The chart will be refreshed automatically according to the recently set filters.
+ฟิลเตอร์ที่ใช้ในการสร้างข้อมูลแผนภูมินอกจากนี้ยังสามารถเปลี่ยนแปลงได้โดยการคลิกที่ `ตัวกรองที่ตั้งไว้` แผนภูมิจะรีเฟรชโดยอัตโนมัติตามตัวกรองที่ตั้งไว้ล่าสุด
 
 <img class="screenshot" alt="Modal For Chart Filters" src="{{docs_base_url}}/assets/img/customize/dashboard-8.png">
 
-To get the most recent data each chart has to be refreshed forcefully by clicking **Force Refresh** button from the dropdown menu.
+ในการรับข้อมูลล่าสุด แผนภูมิแต่ละรายการจะต้องได้รับการรีเฟรชโดยคลิกปุ่ม **บังคับให้รีเฟรช** จากเมนูดรอปดาวน์
 
 {next}

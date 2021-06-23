@@ -1,13 +1,13 @@
 <!-- add-breadcrumbs -->
-#Letterhead
+#หัวจดหมาย
 
-##### Creating Letter Head in ERPNext:
+##### การสร้างหัวจดหมายใน ERPNext:
 
 <img class="screenshot" alt="Letter Head" src="{{docs_base_url}}/assets/img/setup/managing-letterhead-te.png">
 
-##### Customize Letter Head: 
+##### ปรับแต่งหัวจดหมาย: 
 
-We can customise the Letter Head so that we can use HTML content as well, check out the GIF to learn more:
+สามารถปรับแต่งหัวจดหมายเพื่อให้สามารถใช้เนื้อหา HTML ได้เช่นกัน ลองดูด้านล่างเพื่อเรียนรู้เพิ่มเติม:
 
 <img class="screenshot" alt="Letter Head - " src="{{docs_base_url}}/assets/img/setup/managing-letterhead-1.gif">
 

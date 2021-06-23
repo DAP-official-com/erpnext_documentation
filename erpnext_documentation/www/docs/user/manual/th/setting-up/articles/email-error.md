@@ -1,10 +1,10 @@
 <!-- add-breadcrumbs -->
-# Email Error in Sending or Receiving
+# ข้อผิดพลาดในการส่งหรือรับอีเมล
 
-In ERPNext, you can customize the Incoming and Outgoing Email Gateway. On saving an Email Account, ERPNext tries establishing a connection with your email gateway. If your ERPNext account is able to connect fine, then Email Account is saved successfully. If not, then you might receive an error as below.  
+ใน ERPNext คุณสามารถปรับแต่งเกตเวย์อีเมลขาเข้าและขาออกได้ ในการบันทึกบัญชีอีเมล ERPNext จะพยายามสร้างการเชื่อมต่อกับเกตเวย์อีเมลของคุณ หากบัญชี ERPNext ของคุณสามารถเชื่อมต่อได้ บัญชีอีเมลจะถูกบันทึกสำเร็จ หากไม่เป็นเช่นนั้น คุณอาจได้รับข้อผิดพลาดดังต่อไปนี้  
 
 <img class="screenshot" alt="Email Error" src="{{docs_base_url}}/assets/img/articles/email-error.png">
 
-This indicates that using login credentials and other email gateway details provided in the Email Account, ERPNext is not able to connect to your email server. Please ensure that you have entered valid email credentials for your Email Gateway. Once you have configured Email Account successfully, you should be able to send and receive emails from your ERPNext account fine.
+สิ่งนี้บ่งชี้ว่าการใช้ข้อมูลรับรองการเข้าสู่ระบบและรายละเอียดเกตเวย์อีเมลอื่น ๆ ที่ให้ไว้ในบัญชีอีเมล ERPNext จะไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์อีเมลของคุณได้ โปรดตรวจสอบให้แน่ใจว่าคุณได้ป้อนข้อมูลรับรองอีเมลที่ถูกต้องสำหรับเกตเวย์อีเมลของคุณ เมื่อคุณกำหนดค่าบัญชีอีเมลสำเร็จแล้ว คุณควรสามารถส่งและรับอีเมลจากบัญชี ERPNext ของคุณได้
 
-Note: Your ERPNext account is connected with an ERPNext email server by default. If you don't want to use your own email server, you can continue sending emails using ERPNext email server, without any configuration required in the Email Account.
+หมายเหตุ: บัญชี ERPNext ของคุณเชื่อมต่อกับเซิร์ฟเวอร์อีเมล ERPNext โดยค่าเริ่มต้น หากคุณไม่ต้องการใช้เซิร์ฟเวอร์อีเมลของคุณเอง คุณสามารถส่งอีเมลต่อโดยใช้เซิร์ฟเวอร์อีเมล ERPNext โดยไม่ต้องกำหนดค่าใดๆ ในบัญชีอีเมล

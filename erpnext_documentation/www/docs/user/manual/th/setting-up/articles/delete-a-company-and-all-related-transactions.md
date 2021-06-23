@@ -1,20 +1,20 @@
 <!-- add-breadcrumbs -->
-#Delete All Related Transactions for a Company
+#ลบรายการที่เกี่ยวข้องทั้งหมดของบริษัท
 
-Often, users setup all the master data and then create a few dummy records. Then they want to delete the dummy records and the company and start over again, keeping the other master data like Customers, Items, BOMs intact.
+ผู้ใช้ตั้งค่าข้อมูลหลักทั้งหมดแล้วสร้างเรคคอร์ดจำลองสองสามรายการ จากนั้นพวกเขาต้องการลบเรคคอร์ดจำลองและบริษัทและเริ่มต้นใหม่อีกครั้ง โดยเก็บข้อมูลหลักอื่นๆ เช่น ลูกค้า รายการ BOM ไว้เหมือนเดิม
 
-Version 5 onwards, you can now delete all dummy transactions related to a company.
+คุณสามารถลบธุรกรรมจำลองทั้งหมดที่เกี่ยวข้องกับบริษัทได้
 
-To do that, open the company record.
+ในการทำเช่นนั้น ให้เปิดเรกคอร์ดบริษัท
  
-`Setup > Accounting > Company` or  `Accounts > Setup > Company`
+`ตั้งค่า > บัญชี > บริษัท หรือ บัญชี > ตั้งค่า > บริษัท`
 
-In Company master, click on the **Delete Company Transactions** button right at the bottom of the form. Then you must re-type the company name to confirm if you are sure you want to continue with this.
+ในข้อมูลหลักของบริษัท ให้คลิกปุ่ม **ลบธุรกรรมของบริษัท** ที่ด้านล่างของแบบฟอร์ม จากนั้น คุณต้องพิมพ์ชื่อบริษัทอีกครั้งเพื่อยืนยันว่าคุณต้องการดำเนินการต่อหรือไม่
 
-This action will wipe out all the data related to that company like Quotation, Invoices, Purchase Orders etc. So be careful
+การดำเนินการนี้จะล้างข้อมูลทั้งหมดที่เกี่ยวข้องกับบริษัทนั้น เช่น Quotation, Invoices, Purchase Orders เป็นต้น ดังนั้นควรระมัดระวัง
 
 <img alt="Delete Transactions" class="screenshot" src="{{docs_base_url}}/assets/img/articles/delete-transactions.gif">
 
-**Note:** If you want to delete the company record itself, use the normal "Delete" button from Menu options. It will also delete Chart of Accounts, Chart of Cost Centers and Warehouse records for that company.
+**หมายเหตุ:** หากคุณต้องการลบระเบียนของบริษัทเอง ให้ใช้ปุ่ม "ลบ" ปกติจากตัวเลือกเมนู นอกจากนี้ยังจะลบผังบัญชี ผังศูนย์ต้นทุน และบันทึกคลังสินค้าสำหรับบริษัทนั้นด้วย
 
 <!-- markdown -->

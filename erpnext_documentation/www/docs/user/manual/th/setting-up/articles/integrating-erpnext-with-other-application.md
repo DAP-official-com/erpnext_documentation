@@ -1,8 +1,8 @@
 <!-- add-breadcrumbs -->
-#Integrating ERPNext with other Applications
+#การรวม ERPNext กับแอปพลิเคชันอื่น
 
-For now, ERPNext has out-of-the-box integration available for some applications like Shopify, your SMS gateway and payment gateway. To integrate ERPNext with other application, you can use REST API of Frappe. Check following links to learn more about REST API of Frappe.
+สำหรับตอนนี้ ERPNext มีการผสานการทำงานแบบสำเร็จรูปสำหรับบางแอปพลิเคชัน เช่น Shopify เกตเวย์ SMS และเกตเวย์การชำระเงิน ในการผสานรวม ERPNext กับแอปพลิเคชันอื่น คุณสามารถใช้การเรียก API ของ Frappe ตรวจสอบลิงก์ต่อไปนี้เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับ 
 
-[Frappe Rest API](https://frappe.io/docs/user/en/guides/integration/rest_api.html)
+[เรียก API ของ Frappe](https://frappe.io/docs/user/en/guides/integration/rest_api.html)
 
 <!-- markdown -->

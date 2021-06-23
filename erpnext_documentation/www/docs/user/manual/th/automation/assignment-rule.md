@@ -72,5 +72,5 @@
 
 ### 2. หัวข้อที่เกี่ยวข้อง
 
-1. [เวิร์กโฟลว์](/docs/user/manual/en/setting-up/workflows)
-1. [การดำเนินการเวิร์กโฟลว์](/docs/user/manual/en/setting-up/workflow-actions)
+1. [เวิร์กโฟลว์](/docs/user/manual/th/setting-up/workflows)
+1. [การดำเนินการเวิร์กโฟลว์](/docs/user/manual/th/setting-up/workflow-actions)

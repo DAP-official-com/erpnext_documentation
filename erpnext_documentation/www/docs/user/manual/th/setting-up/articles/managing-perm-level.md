@@ -1,30 +1,30 @@
 <!-- add-breadcrumbs -->
-#Managing Perm Level in Permission Manager
+#การจัดการระดับการอนุญาตในตัวจัดการการอนุญาต
 
-Perm Level is way of reducing the amount information visible or changeable in a specific DocType for certain User Groups. Where as you can define visibility or changability for each DocType by customizing the DocType-specific Permissions Rule, with the Perm Level you can change these for specific Sections or Fields.
+ระดับการใช้งานเป็นวิธีการลดข้อมูลจำนวนที่มองเห็นหรือเปลี่ยนแปลงได้ในเอกสาร (DocType) เฉพาะสำหรับกลุ่มผู้ใช้บางกลุ่ม ในขณะที่คุณสามารถกำหนดการมองเห็นหรือการเปลี่ยนแปลงสำหรับเอกสาร (DocType)แต่ละรายการโดยกำหนดกฎการอนุญาตเฉพาะเอกสาร (DocType) ด้วยระดับการใช้งาน คุณสามารถเปลี่ยนสิ่งเหล่านี้สำหรับส่วนหรือฟิลด์เฉพาะ
 
-In each document, you can group fields by "levels". Each group of fields or field group is denoted by a unique number (0, 1, 2, 3 etc.). A separate set of permission rules can be applied to each field group. By default all fields are of level 0.
+ในแต่ละเอกสาร คุณสามารถจัดกลุ่มฟิลด์ตาม "ระดับ" กลุ่มฟิลด์หรือกลุ่มฟิลด์แต่ละกลุ่มจะแสดงด้วยตัวเลขที่ไม่ซ้ำกัน (0, 1, 2, 3 เป็นต้น) กฎการอนุญาตชุดแยกต่างหากสามารถนำไปใช้กับกลุ่มฟิลด์แต่ละกลุ่มได้ โดยค่าเริ่มต้น ฟิลด์ทั้งหมดมีระดับ 0
 
-Perm Level (Abbreviated form of Permission Level) for a field can be defined in the [Customize Form](/docs/user/manual/en/customize-erpnext/customize-form.html).
+ระดับการใช้งานระดับ (แบบย่อของระดับการอนุญาต) สำหรับเขตข้อมูลสามารถกำหนดไว้ใน [แบบฟอร์มที่กำหนดเอง](/docs/user/manual/en/customize-erpnext/customize-form.html).
 
 <img alt="Perm Level Field" class="screenshot" src="{{docs_base_url}}/assets/img/articles/perm-level-1.gif">
 
-If you need to assign different permission of particular field to different users, you can achieve it via Perm Level. Let's consider an example for better understanding.
+หากคุณต้องการกำหนดสิทธิ์อนุญาตที่แตกต่างกันในแต่ละฟิลด์ให้กับผู้ใช้ที่แตกต่างกัน คุณสามารถทำได้ผ่านระดับการใช้งาน ลองพิจารณาตัวอย่างเพื่อความเข้าใจที่ดีขึ้น
 
-Delivery Note is accessible to Stock Manager as well as Stock User. You don't wish Stock User to access Amount related field in Delivery Note, but other field should be visible just like it is visible Stock Manager.
+รายระเอียดการจัดส่ง (Delivery Note) สามารถเข้าถึงได้โดย "จัดการสต๊อก (Stock Manager)" และ "ผู้ใช้งานสต๊อก (Stock User)" คุณไม่ต้องการให้ผู้ใช้สต็อกเข้าถึงช่องที่เกี่ยวข้องกับจำนวนเงินในบันทึกการจัดส่ง แต่ช่องอื่นๆ ควรมองเห็นได้เหมือนกับที่ตัวจัดการสต็อกมองเห็นได้
 
-For all related fields, that should not be seen, you can set Perm Level as (say) 2. 
+สำหรับฟิลด์ที่เกี่ยวข้องทั้งหมด ที่ไม่ควรมองเห็น คุณสามารถตั้งค่าระดับการใช้งานเป็น 2
 
-For Stock Managers, they will have permission on fields on Delivery Note with Perm Level 2, whereas a Stock User will not have any permission on Perm Level 2 for Delivery Note, because their role has not been assigned with a rule allowing them to read or write in Field with Perm Level of 2, as shown below.
+สำหรับผู้จัดการสต็อค พวกเขาจะมีสิทธิ์บนฟิลด์ใน Delivery Note ด้วยระดับการใช้งาน 2 ในขณะที่ผู้ใช้สต็อกจะไม่ได้รับอนุญาตใดๆ ในระดับ Perm 2 สำหรับ Delivery Note เนื่องจากไม่ได้กำหนดบทบาทของพวกเขาด้วยกฎที่อนุญาตให้อ่านหรือ เขียนลงในฟิลด์ด้วยการอนุญาตระดับ 2 ดังรูปด้านล่าง
 
 <img alt="Perm Level Rule" class="screenshot" src="{{docs_base_url}}/assets/img/articles/perm-level-2.png">
 
-Considering the same scenario, if you want a Stock User to access a field at Perm Level 2, but do not want to give permission to edit it, the Stock User will be assigned with permission to only be able to read on Perm Level 2, but not to write/edit.
+พิจารณาสถานการณ์เดียวกัน ถ้าคุณต้องการให้ผู้ใช้สต็อกเข้าถึงฟิลด์ที่ระดับการใช้งาน 2 แต่ไม่ต้องการอนุญาตให้แก้ไข ผู้ใช้สต็อกจะได้รับมอบหมายให้สามารถอ่านได้ในระดับระดับ 2 เท่านั้น แต่ห้ามเขียน/แก้ไข
 
 <img alt="Perm Level Rule 2" class="screenshot" src="{{docs_base_url}}/assets/img/articles/perm-level-3.png">
 
-Perm Levels (1, 2, 3 or 2, 1, 3 or 3,2,1) do not need to be in any particular order. They do not imply hierarchy. Perm Level is primarily used for grouping number of fields together, and then assigning permission to Roles for that group. Hence, you can set any perm level for an item, and then do permission setting for it.
+ระดับการใช้งาน (1, 2, 3 หรือ 2, 1, 3 หรือ 3,2,1) ไม่จำเป็นต้องอยู่ในลำดับใดโดยเฉพาะ พวกเขาไม่ได้หมายความถึงลำดับชั้น ระดับการใช้งานจะใช้เป็นหลักในการจัดกลุ่มจำนวนฟิลด์เข้าด้วยกัน จากนั้นจึงกำหนดสิทธิ์ให้กับบทบาทสำหรับกลุ่มนั้น ดังนั้น คุณสามารถตั้งค่าระดับการอนุญาตใดๆ สำหรับรายการ จากนั้นทำการตั้งค่าการอนุญาตสำหรับรายการนั้น
 
-If you want to change permissions for all fields in a section, you can simply change the perm level for the section field and it will be applied to all fields in the section.
+ถ้าคุณต้องการเปลี่ยนการอนุญาตสำหรับทุกฟิลด์ในส่วน คุณสามารถเปลี่ยนระดับการใช้งานสำหรับฟิลด์ส่วน และจะถูกนำไปใช้กับฟิลด์ทั้งหมดในส่วน
 
 <!-- markdown -->

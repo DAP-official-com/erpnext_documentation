@@ -1,31 +1,32 @@
 <!-- add-breadcrumbs -->
-# Delete Submitted Document
+# ลบเอกสารที่ส่ง
 
-To delete a submitted document, you need to cancel it first. Following are the steps to delete a submitted document. These steps assume that you have the appropriate permissions on the document that you wish to cancel and delete.
+หากต้องการลบเอกสารที่ส่ง คุณต้องยกเลิกก่อน ต่อไปนี้เป็นขั้นตอนในการลบเอกสารที่ส่ง ขั้นตอนเหล่านี้ถือว่าคุณมีสิทธิ์ที่เหมาะสมในเอกสารที่คุณต้องการยกเลิกและลบ
 
-#### Step 1: Cancel Submitted Document
+#### Step 1: ยกเลิกเอกสารที่ส่ง
 
-You will find Cancel button on upper right corner of submitted document.
+คุณจะพบปุ่มยกเลิกที่มุมบนขวาของเอกสารที่ส่ง
 
 <img alt="Delete Doc" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cancel-delete-submitted-doc-1.png">
 
-#### Step 2: Delete the document
+#### Step 2: ลบเอกสาร
 
-On cancellation of submitted document, Amend button becomes visible with the document status set to Cancelled. This means that the document has been cancelled successfully.
+เมื่อยกเลิกเอกสารที่ส่ง ปุ่มแก้ไขจะปรากฏพร้อมสถานะเอกสารที่ตั้งค่าเป็นยกเลิกแล้ว ซึ่งหมายความว่าเอกสารถูกยกเลิกเรียบร้อยแล้ว
 
-To delete the document, now click on Menu, then Delete. This will delete the selected document.
+หากต้องการลบเอกสาร ให้คลิกที่เมนู แล้วคลิกลบ การดำเนินการนี้จะลบเอกสารที่เลือก
 
 <img alt="Delete Doc" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cancel-delete-submitted-doc-2.png">
 
-<div class="well"><b>Note:</b> To delete multiple submitted documents in one go, you can select them in the list view and proceed to cancel and delete.
+<div class="well"><b>หมายเหตุ:</b> หากต้องการลบเอกสารที่ส่งหลายฉบับในครั้งเดียว คุณสามารถเลือกได้ในมุมมองรายการและดำเนินการยกเลิกและลบ
 
 <img alt="Cancel Doc" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cancel-list-view.gif">
 
 
-If your document is linked with other documents, then you will need to cancel dependent document before trying to delete the parent document.
+หากเอกสารของคุณเชื่อมโยงกับเอกสารอื่น คุณจะต้องยกเลิกเอกสารอ้างอิงก่อนที่จะพยายามลบเอกสารหลัก
 
 <br><br>
 	
-Example: If you have created Delivery Note and Sales Invoice against Sales Order, which you need to amend, then you should first Cancel Delivery Note and Sales Invoice made for that Sales Order. Then amend Sales Order, re-save and re-submit it.
+ตัวอย่าง: หากคุณได้สร้างใบส่งของและใบกำกับสินค้าขายโดยเทียบกับใบสั่งขาย ซึ่งคุณจำเป็นต้องแก้ไข คุณควรยกเลิกใบส่งสินค้าและใบกำกับสินค้าที่ทำขึ้นสำหรับใบสั่งขายนั้นก่อน จากนั้นแก้ไขคำสั่งขาย บันทึกใหม่ และส่งใหม่อีกครั้ง
+
 </div>
 <!-- markdown -->

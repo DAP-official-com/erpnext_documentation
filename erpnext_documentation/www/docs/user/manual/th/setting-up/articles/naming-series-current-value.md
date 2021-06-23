@@ -1,62 +1,62 @@
 <!-- add-breadcrumbs -->
-#Setting the Current Value for Naming Series
+#การตั้งค่าปัจจุบันสำหรับการตั้งชื่อซีรีส์
 
-Naming Series feature allows you to define prefix for naming of a documents. For example, if a Sales Order has prefix "SO", then the series will be generated as SO-00001, SO-00002... and so on. Click [here](/docs/user/manual/en/setting-up/settings/naming-series.html) to learn how you can customize Number Series for a transaction/master in ERPNext.
+คุณสมบัติ Naming Series ให้คุณกำหนดคำนำหน้าสำหรับการตั้งชื่อเอกสาร ตัวอย่างเช่น หากใบสั่งขายมีคำนำหน้า "SO" ชุดจะถูกสร้างขึ้นเป็น SO-00001, SO-00002... และอื่นๆ คลิก[ที่นี่](/docs/user/manual/en/setting-up/settings/naming-series.html) เพื่อเรียนรู้วิธีปรับแต่ง Number Series สำหรับธุรกรรมต่างๆ ใน ERPNext
 
-### 1. Setting the Current Value
+### 1. การตั้งค่าข้อมูลปัจจุบัน
 
-Naming Series feature also offers a tool where you can set Current Value for specific prefix. This is generally required if you have recently started using ERPNext, and have old transactions in the previous system, and you want the numbering series to start in from where it ended in the old system. Let's consider a scenario to learn this better.
+เครื่องมือการตั้งชื่อ ยังมีเครื่องมือที่คุณสามารถตั้งค่าข้อมูลปัจจุบัน สำหรับคำนำหน้าเฉพาะได้ โดยทั่วไปจำเป็นต้องใช้หากคุณเพิ่งเริ่มใช้ ERPNext และมีธุรกรรมเก่าในระบบก่อนหน้า และคุณต้องการให้ชุดลำดับเลขเริ่มต้นจากจุดสิ้นสุดในระบบเก่า ลองพิจารณาสถานการณ์สมมติเพื่อเรียนรู้สิ่งนี้ดีกว่า
 
-For example, you have 322 Sales Orders created in your old system with SO00322 as highest Sales Order Id. In ERPNext, you need the first Sales Order to pick up #323 when it is saved. To enable this, you should set Current Value for SO series in following steps.
+ตัวอย่างเช่น คุณมี 322 ใบสั่งขายที่สร้างขึ้นในระบบเก่าของคุณโดยมี SO00322 เป็นรหัสใบสั่งขายสูงสุด ใน ERPNext คุณต้องมีใบสั่งขายแรกเพื่อรับ #323 เมื่อได้รับการบันทึก เพื่อเปิดใช้งานสิ่งนี้ คุณควรตั้งค่า Current Value สำหรับ SO series ในขั้นตอนต่อไปนี้
 
-#### Go to Naming Series Tool
+#### ไปที่เครื่องมือการตั้งชื่อ
 
-`Setup > System > Naming Series`
+`การตั้งค่า > ระบบ > การตั้งชื่อ`
 
-#### Update Series Section
+#### อัปเดตส่วนซีรี่ส์
 
 <img alt="Update Series Section" class="screenshot" src="{{docs_base_url}}/assets/img/articles/current-no-1.png">
 
-#### Select Prefix
+#### เลือกคำนำหน้า
 
-Considering our scenario, prefix for Sales Order will be "SO".
+เมื่อพิจารณาจากสถานการณ์จำลองของเรา คำนำหน้าสำหรับใบสั่งขายจะเป็น "SO"
 
 <img alt="Series Prefix" class="screenshot" src="{{docs_base_url}}/assets/img/articles/current-no-2.png">
 
-#### Current Value
+#### ค่าปัจจุบัน
 
-If you have currently 12 Sales Orders created in your account, then current value updated will be 12. You can edit Current Value to 322, and then click on Update Series Number.
+หากคุณมีใบสั่งขายที่สร้างในบัญชีของคุณ 12 รายการ มูลค่าปัจจุบันที่อัปเดตจะเป็น 12 คุณสามารถแก้ไขมูลค่าปัจจุบันเป็น 322 จากนั้นคลิกที่อัปเดตหมายเลขชุด
 
 <img alt="Series Current Value" class="screenshot" src="{{docs_base_url}}/assets/img/articles/current-no-3.png">
 
-With this setting, you will have numbering for the New Sales Orders starting with #323.
+ด้วยการตั้งค่านี้ คุณจะมีการกำหนดหมายเลขสำหรับใบสั่งขายใหม่ที่เริ่มต้นด้วย #323
 
-### 2. Error Due Series Number
+### 2. ข้อผิดพลาดเนื่องจากหมายเลขซีรี่ส์
 
-If you receive a Duplicate Name error while saving a transaction, for example, while saving Item Price, you receive an error saying:
+หากคุณได้รับข้อผิดพลาดชื่อซ้ำขณะบันทึกธุรกรรม เช่น ขณะบันทึกราคาสินค้า คุณจะได้รับข้อผิดพลาดว่า:
 
 `Duplicate name Item Price RFD/00016`
 
-This error message indicates that when you are saving Item Price, system is trying to allocate "RFD/00016" to that Item Price record. But it is finding that Item Price with this ID is already existing in your system.
+ข้อความแสดงข้อผิดพลาดนี้ระบุว่าเมื่อคุณบันทึกราคาสินค้า ระบบกำลังพยายามจัดสรร "RFD/00016" ให้กับเรกคอร์ดราคาสินค้านั้น แต่พบว่าราคาสินค้าที่มีรหัสนี้มีอยู่แล้วในระบบของคุณ
 
-This error could arise because Current Value for Series/Prefix of Item Price is disturbed and not in sync with actual Current Value. While actual Current Value for Item Price could be 20 (or any number more than 16), someone has set Current Value for this series as 15. 
+ข้อผิดพลาดนี้อาจเกิดขึ้นเนื่องจากมูลค่าปัจจุบันสำหรับซีรี่ส์/ส่วนนำหน้าราคาสินค้าถูกรบกวนและไม่สอดคล้องกับมูลค่าปัจจุบันจริง แม้ว่ามูลค่าปัจจุบันที่แท้จริงสำหรับราคาสินค้าอาจเป็น 20 (หรือตัวเลขใดๆ ที่มากกว่า 16) มีคนกำหนดมูลค่าปัจจุบันสำหรับชุดข้อมูลนี้เป็น 15
 
-To confirm actual Current Value for particular Series, you should check report for document in question (Item Price in this case), and check for the Item Price ID with highest value. 
+เพื่อยืนยันมูลค่าปัจจุบันจริงสำหรับซีรี่ส์เฉพาะ คุณควรตรวจสอบรายงานสำหรับเอกสารที่เป็นปัญหา (ราคาสินค้าในกรณีนี้) และตรวจสอบรหัสราคาสินค้าที่มีมูลค่าสูงสุด
 
-Let's assume we find that actual Current Value for Item price is 22, then you go Naming Series, and set Current Value for the Prefix/Series of Item Price to 22, and Update Series Number.
+สมมติว่าเราพบว่ามูลค่าปัจจุบันที่แท้จริงสำหรับราคาสินค้าคือ 22 จากนั้นคุณไปที่การตั้งชื่อชุดข้อมูล และตั้งค่าปัจจุบันสำหรับคำนำหน้า/ชุดราคาสินค้าเป็น 22 และอัปเดตหมายเลขชุดข้อมูล
 
-These instructions is applicable for all the documents in ERPNext for which user can customize Series and its Current Value.
+คำแนะนำเหล่านี้ใช้ได้กับเอกสารทั้งหมดใน ERPNext ซึ่งผู้ใช้สามารถปรับแต่ง Series และค่าปัจจุบันได้
 
-Let's consider another scenario to learn this better. On assigning a document to another user, error message says:
+ลองพิจารณาสถานการณ์อื่นเพื่อเรียนรู้สิ่งนี้ดีกว่า ในการมอบหมายเอกสารให้กับผู้ใช้รายอื่น ข้อความแสดงข้อผิดพลาดระบุว่า:
 
 `Duplicate name ToDo TDI00014286`
 
-This indicate the Current Value for Series/Prefix of ToDo (TDI) has been disturbed. You should follow these steps to correct value for Current Value for TDI prefix.
+แสดงว่าค่าปัจจุบันสำหรับซีรี่ส์/คำนำหน้าของสิ่งที่ต้องทำ (TDI) ถูกรบกวน คุณควรทำตามขั้นตอนเหล่านี้เพื่อแก้ไขค่าสำหรับค่านำหน้าค่าปัจจุบันสำหรับ TDI
 
-1. Check ToDo report for the highest ToDo id value.
-1. Setup >> Settings >> Naming Series
-1. Check section B of Update Series
-1. Select Prefix for ToDo "TDI"
-1. Ensure that highest number for ToDo is updated as Current Value in Naming Series. If not, correct Current Value, and click on "Update Series Numbering".
+1. ตรวจสอบรายงานสิ่งที่ต้องทำสำหรับค่ารหัส ToDo สูงสุด
+1. ตั้งค่า >> ตั้งค่า >> ตั้งชื่อซีรีส์
+1. ตรวจสอบส่วน B ของ Update Series
+1. เลือกคำนำหน้าสำหรับสิ่งที่ต้องทำ "TDI"
+1. ตรวจสอบให้แน่ใจว่าจำนวนสูงสุดของสิ่งที่ต้องทำได้รับการอัปเดตเป็นค่าปัจจุบันในการตั้งชื่อชุดข้อมูล หากไม่ใช่ ให้แก้ไขค่าปัจจุบัน แล้วคลิก "อัปเดตหมายเลขชุดข้อมูล"
 
 <!-- markdown -->

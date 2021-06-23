@@ -1,71 +1,71 @@
 <!-- add-breadcrumbs -->
-# Calendar
+# ปฏิทิน
 
-**The Calendar is a Tool which helps you to create, share and keep track of events in your ERPNext account.**
+**ปฏิทินเป็นเครื่องมือที่ช่วยให้คุณสร้าง แบ่งปัน และติดตามกิจกรรมในบัญชี ERPNext ของคุณ**
 
-You can have a Day, Week or Month view in a calendar.
+คุณสามารถมีมุมมองวัน สัปดาห์ หรือเดือนในปฏิทิน
 
 ![Calendar](/docs/assets/img/using-erpnext/using-calender-1.png)
 
-To access calendar, go to:
+ในการเข้าถึงปฏิทิน ไปที่:
 
-> Home > Tools > Calendar
+> หน้าหลัก > เครื่องมือ > ปฏิทิน
 
-## 1. Creating Events in Calendar
+## 1. การสร้างกิจกรรมในปฏิทิน
 
-1. Go to Calendar and click on New.
-2. Enter the Subject and the Start Date of the event.
-3. Save.
+1. ไปที่ปฏิทินแล้วคลิกใหม่
+2. ใส่หัวเรื่องและวันที่เริ่มต้นของกิจกรรม
+3. บันทึก
 
 ![Calendar](/docs/assets/img/using-erpnext/using-calender-2.gif)
 
-Alternatively, you can also create an event from the 'Day View' of the Calendar. This view is broken into various slots throughout the day. You can select the slot for the start of the event, enter the subject of the event and drag it own till the event end time.
+หรือคุณสามารถสร้างกิจกรรมจาก 'มุมมองวัน' ของปฏิทินได้ มุมมองนี้แบ่งเป็นช่องต่างๆ ตลอดทั้งวัน คุณสามารถเลือกช่องสำหรับเริ่มกิจกรรม ป้อนหัวข้อของกิจกรรมแล้วลากไปเองจนถึงเวลาสิ้นสุดของกิจกรรม
 
 ![Calendar](/docs/assets/img/using-erpnext/using-calender-3.gif)
 
-### 1.1. Event Based on a Lead
+### 1.1. เหตุการณ์ขึ้นอยู่กับลูกค้าเป้าหมาย
 
-In the Lead form, you will find a field called Next Contact By and Next Contact Date. Once you specify the date and the User in these fields, an event will automatically be created for the User on the given date and time.
+ในแบบฟอร์มลูกค้าเป้าหมาย คุณจะพบฟิลด์ที่เรียกว่า "ติดต่อ" และ "วันที่ต้องติดต่อ" เมื่อคุณระบุวันที่และผู้ใช้ในฟิลด์เหล่านี้ กิจกรรมจะถูกสร้างขึ้นโดยอัตโนมัติสำหรับผู้ใช้ในวันที่และเวลาที่กำหนด
 
 ![Calendar](/docs/assets/img/using-erpnext/using-calender-4.png)
 
-### 1.2. Event Based on Job Cards
+### 1.2. เหตุการณ์ตามการ์ดงาน
 
-For every Job Card that gets created for a User in the ERPNext account, a corresponding event will be created in the Calendar. 
+สำหรับบัตรงานทุกใบที่สร้างขึ้นสำหรับผู้ใช้ในบัญชี ERPNext กิจกรรมที่เกี่ยวข้องจะถูกสร้างขึ้นในปฏิทิน
 
 ![Calendar](/docs/assets/img/using-erpnext/using-calender-job-card.png)
 
-### 1.3. Birthday Event
+### 1.3. งานวันเกิด
 
-Birthday Event is created based on Date of Birth specified in the Employee master.
+กิจกรรมวันเกิดถูกสร้างขึ้นตามวันเดือนปีเกิดที่ระบุในข้อมูลหลักของพนักงาน
 
-### 1.4. Recurring Events
+### 1.4. เหตุการณ์ที่เกิดซ้ำ
 
-There are various events in an organization that occur regularly at periodic intervals. In ERPNext, you can create such events by enabling the 'Repeat this Event' property for that particular event. 
+มีเหตุการณ์ต่าง ๆ ในองค์กรที่เกิดขึ้นเป็นประจำเป็นระยะ ๆ ใน ERPNext คุณสามารถสร้างเหตุการณ์ดังกล่าวได้โดยเปิดใช้งานคุณสมบัติ 'ทำซ้ำเหตุการณ์นี้' สำหรับเหตุการณ์นั้น ๆ
 
-When you do this, you will ve asked to enter the periodicity of this event in the 'Repeat On'. This could be daily, monthly, weekly or Yearly. 
+เมื่อคุณทำเช่นนี้ คุณจะต้องป้อนช่วงเวลาของกิจกรรมนี้ใน 'ทำซ้ำ' อาจเป็นรายวัน รายเดือน รายสัปดาห์ หรือรายปี
 
-You can also enter the last day of the repeated occurrence in the 'Repeat Till' field. In case of infinite repetitions, you may choose to leave this field blank.
+คุณยังสามารถป้อนวันสุดท้ายของเหตุการณ์ที่เกิดซ้ำในช่อง 'ทำซ้ำจนถึง' ในกรณีที่มีการทำซ้ำไม่สิ้นสุด คุณอาจเลือกที่จะเว้นฟิลด์นี้ว่างไว้
 
 ![Calendar](/docs/assets/img/using-erpnext/using-calender-5.gif)
 
-### 1.5. Event Reminders
+### 1.5. การแจ้งเตือนเหตุการณ์
 
-There are two ways you can receive email reminder for an event.
+คุณสามารถรับอีเมลเตือนความจำสำหรับกิจกรรมได้สองวิธี
 
-1. Enable Reminder in Event
+1. เปิดใช้งานการเตือนความจำในกิจกรรม
 
- In the Event master, checking "Send an email reminder in the morning" will trigger a notification email to all the participants for this event.
+ ในต้นแบบกิจกรรม การทำเครื่องหมายที่ "ส่งอีเมลเตือนความจำในตอนเช้า" จะทริกเกอร์อีเมลแจ้งเตือนไปยังผู้เข้าร่วมทั้งหมดสำหรับกิจกรรมนี้
 
  ![Calendar](/docs/assets/img/using-erpnext/using-calender-6.png)
 
-2. Create Email Digest
+2. สร้างอีเมลสรุป
 
- To get email reminders for event, you should set Email Digest for Calendar Events.
+ หากต้องการรับอีเมลเตือนความจำสำหรับกิจกรรม คุณควรตั้งค่าอีเมลสรุปสำหรับกิจกรรมในปฏิทิน
 
- Email Digest can be set from:
+อีเมลไดเจสต์สามารถตั้งค่าได้จาก:
 
- > Setup > Email > Email Digest
+ > การตั้งค่า > อีเมล > อีเมลสรุป
 
  ![Calendar](/docs/assets/img/using-erpnext/using-calender-7.png)
 

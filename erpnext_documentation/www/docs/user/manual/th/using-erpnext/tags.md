@@ -1,24 +1,25 @@
 <!-- add-breadcrumbs -->
-# Tags
+# แท็ก
 
-**Using Tags easy way to classify different kinds of documents in their respective categories.**
+**การใช้แท็กเป็นวิธีง่ายๆ ในการจัดประเภทเอกสารประเภทต่างๆ ในหมวดหมู่ที่เกี่ยวข้อง**
 
-You can add any tag to a DocType just like Assignments and Comments.
+คุณสามารถเพิ่มแท็กใดๆ ลงในเอกสาร (DocType) ได้เช่นเดียวกับ งานที่มอบหมายและคอมเม้น
 
 ![Tags](/docs/assets/img/using-erpnext/using-tags-1.gif)
 
-While going through a document list, you may filter the same by using tags. At a glance, you will be able to see the number of documents tagged to each classification.
+ขณะดูรายการเอกสาร คุณอาจกรองสิ่งเดียวกันได้โดยใช้แท็ก คุณจะสามารถเห็นจำนวนเอกสารที่แท็กในแต่ละหมวดหมู่ได้อย่างรวดเร็ว
 
 ![Tags](/docs/assets/img/using-erpnext/using-tags-2.png)
 
-## Find all tagged documents
-Once you've tagged a couple of documents with a specific tag, you can find all the tagged documents by searching for "#tagname" in the global search bar on the top. For example, consider you've tagged some documents with the tag "project 19". Simply type "#project 19" in the global search bar without quotes and select #project 19 from the results.
+## ค้นหาเอกสารที่ติดแท็กทั้งหมด
+
+เมื่อคุณแท็กเอกสารสองสามฉบับด้วยแท็กเฉพาะแล้ว คุณสามารถค้นหาเอกสารที่ติดแท็กทั้งหมดได้โดยค้นหา "#tagname" ในแถบค้นหาส่วนกลางที่ด้านบน ตัวอย่างเช่น พิจารณาว่าคุณได้แท็กเอกสารบางฉบับที่มีแท็ก "โครงการ 19" เพียงพิมพ์ "#project 19" ในแถบค้นหาทั่วโลกโดยไม่ใส่เครื่องหมายคำพูด แล้วเลือก #project 19 จากผลการค้นหา
 
 ![Tags](/docs/assets/img/using-erpnext/find-tagged-documents.png)
 
-## Tags in Reports
+## แท็กในรายงาน
 
-All the tags that get created in your ERPNext account can also be searched when fetching a report. These tags can also be searched as a filter in the report.
+แท็กทั้งหมดที่สร้างขึ้นในบัญชี ERPNext ของคุณยังสามารถค้นหาได้เมื่อดึงรายงาน แท็กเหล่านี้ยังสามารถค้นหาเป็นตัวกรองในรายงานได้อีกด้วย
 
 ![Tags](/docs/assets/img/using-erpnext/using-tags-5.png)
 

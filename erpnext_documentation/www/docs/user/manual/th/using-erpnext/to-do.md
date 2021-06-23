@@ -1,60 +1,60 @@
 <!-- add-breadcrumbs -->
-# To Do
+# สิ่งที่ต้องทำ
 
-ToDo is a list of activities that is to be done by a particular individual.
+สิ่งที่ต้องทำคือรายการกิจกรรมที่บุคคลใดบุคคลหนึ่งต้องทำ
 
-**In ERPNext, a ToDo is a simple tool where you can define the activities to be done. The ToDo List will enlist all the activities assigned to you and by you.**
+**ใน ERPNext สิ่งที่ต้องทำคือเครื่องมือง่ายๆ ที่คุณสามารถกำหนดกิจกรรมที่ต้องทำ รายการสิ่งที่ต้องทำจะเกณฑ์กิจกรรมทั้งหมดที่ได้รับมอบหมายให้คุณและโดยคุณ**
 
 ![ToDo](/docs/assets/img/using-erpnext/using-to-do-1.png)
 
-A ToDo also gets auto-created when any other Document is assigned to you. Checkout [ToDo-Auto Creation](/docs/user/manual/en/using-erpnext/articles/todo-auto-creation)
+สิ่งที่ต้องทำจะถูกสร้างขึ้นโดยอัตโนมัติเมื่อมีการมอบหมายเอกสารอื่นให้กับคุณ อ่านข้อมูลเพิ่มเติมได้ที่ [การสร้างสิ่งที่ต้องทำอัตโนมัติ](/docs/user/manual/th/using-erpnext/articles/todo-auto-creation)
 
-To access ToDo, go to
+ในการเข้าถึงสิ่งที่ต้องทำ ให้ไปที่
 
-> Home > Tools > ToDo
+> หน้าหลัก > เครื่องมือ > สิ่งที่ต้องทำ
 
-## 1. How to create a ToDo
+## 1. วิธีสร้างสิ่งที่ต้องทำ
 
-1. Go to the ToDo list, and click new.
-2. You will be redirected to a Quick Entry for ToDo, wherein you will be required to enter the description of the ToDo.
-3. Save.
+1. ไปที่รายการสิ่งที่ต้องทำ แล้วคลิกใหม่
+2. คุณจะถูกพาไปยังรายการด่วนสำหรับสิ่งที่ต้องทำ ซึ่งคุณจะต้องป้อนคำอธิบายของสิ่งที่ต้องทำ
+3. บันทึก
 
  ![ToDo](/docs/assets/img/using-erpnext/using-to-do-2.gif)
 
-> Note: While creating a ToDo using the Quick Entry, the ToDo by default gets assigned to the creator. To prevent the same, and assign it to other users, ensure that you edit the ToDo in Full Page.
+> หมายเหตุ: ขณะสร้างสิ่งที่ต้องทำโดยใช้รายการด่วน สิ่งที่ต้องทำตามค่าเริ่มต้นจะถูกกำหนดให้กับผู้สร้าง เพื่อป้องกันสิ่งเดียวกันนี้ และกำหนดให้กับผู้ใช้รายอื่น ตรวจสอบให้แน่ใจว่าคุณแก้ไขสิ่งที่ต้องทำในแบบเต็มหน้า
 
-### ToDo Notification
+### การแจ้งเตือนสิ่งที่ต้องทำ
 
-Once a ToDo is created, the assigned user will get a notification for the ToDo.
+เมื่อสร้างสิ่งที่ต้องทำแล้ว ผู้ใช้ที่ได้รับมอบหมายจะได้รับการแจ้งเตือนสำหรับสิ่งที่ต้องทำ
 
 ![ToDo](/docs/assets/img/using-erpnext/using-todo-notification.png)
 
-### 1.1. Additional Options while creating a ToDo
+### 1.1. ตัวเลือกเพิ่มเติมขณะสร้างสิ่งที่ต้องทำ
 
-1. **Status**: You can define the status of the ToDo. While creation, the status of the ToDo would be 'Open' by default. The user can change it to 'Closed' when the assignment is completed.
-2. **Priority**: You can define the Priority of this task as Low, Medium or High.
-3. **Color**: You can choose to assign a color to each of your ToDos. E.g., a ToDo created as a weekly reminder for sending reports can be assigned the color Purple, whereas all the personal ToDos can be assigned the Color Yellow.
-4. **Due Date**: You can add the Due Date to all the ToDos.
-5. **Allocated To**: In cases where you are assigning a ToDo to another ERPNext User, you can do so here.
+1. **สถานะ**: คุณสามารถกำหนดสถานะของสิ่งที่ต้องทำ ขณะสร้าง สถานะของสิ่งที่ต้องทำจะเป็น 'เปิด' โดยค่าเริ่มต้น ผู้ใช้สามารถเปลี่ยนเป็น 'ปิด' เมื่องานเสร็จสิ้น
+2. **ลำดับความสำคัญ**: คุณสามารถกำหนดลำดับความสำคัญของงานนี้เป็น ต่ำ ปานกลาง หรือสูง
+3. **สี**: คุณสามารถเลือกกำหนดสีให้กับแต่ละสิ่งที่ต้องทำของคุณ เช่น สิ่งที่ต้องทำที่สร้างขึ้นเพื่อเตือนความจำรายสัปดาห์สำหรับการส่งรายงานสามารถกำหนดเป็นสีม่วงได้ ในขณะที่สิ่งที่ต้องทำส่วนบุคคลทั้งหมดสามารถกำหนดเป็นสีเหลืองได้
+4. **วันที่ครบกำหนด**: คุณสามารถเพิ่มวันที่ครบกำหนดในสิ่งที่ต้องทำทั้งหมดได้
+5. **มอบหมายไปยีง**: ในกรณีที่คุณกำหนดสิ่งที่ต้องทำให้กับผู้ใช้ ERPNext อื่น คุณสามารถทำได้ที่นี่
 
  ![ToDo](/docs/assets/img/using-erpnext/using-to-do-3.png)
 
-### 1.2. References
+### 1.2. อ้างอิง
 
-Every Document in ERPNext has an option called 'Assign To' in the side-bar. Using this option, any Dcoument can be assigned to the user. The User would be assigned a ToDo simultaneously.
+ทุกเอกสารใน ERPNext มีตัวเลือกที่เรียกว่า 'มอบหมายให้' ในแถบด้านข้าง การใช้ตัวเลือกนี้เอกสารสามารถกำหนดให้กับผู้ใช้ได้ ผู้ใช้จะได้รับมอบหมายสิ่งที่ต้องทำพร้อมกัน
 
-1. **Reference Type**: When a ToDo is created from another document, say a Task or an Issue, the Reference Document Type gets linked to the ToDo here. You can also choose to add a Reference Document Type manually.
-2. **Reference Name**: On assignment via another DocType, the name of the Reference DocType also gets linked over here.
-3. **Assignment By**: When you get assigned aa ToDo via another Document Type, the name of the person making the assignment also gets tagged.
+1. **ประเภทการอ้างอิง**: เมื่อมีการสร้างสิ่งที่ต้องทำจากเอกสารอื่น เช่น งานหรือปัญหา ประเภทเอกสารอ้างอิงจะเชื่อมโยงกับสิ่งที่ต้องทำที่นี่ คุณยังสามารถเลือกที่จะเพิ่มประเภทเอกสารอ้างอิงได้ด้วยตนเอง
+2. **ชื่ออ้างอิง**: ในการมอบหมายงานผ่านเอกสาร (DocType) อื่น ชื่อของเอกสารอ้างอิงจะเชื่อมโยงอยู่ที่นี่ด้วย
+3. **มอบหมายงานโดย**: เมื่อคุณได้รับมอบหมายสิ่งที่ต้องทำผ่านประเภทเอกสารอื่น ชื่อของผู้มอบหมายงานจะถูกแท็กด้วย
 
  ![ToDo](/docs/assets/img/using-erpnext/using-to-do-4.png)
 
-## 2. ToDo Statuses
-ToDo has 3 statuses, each describing the current state of a task.
+## 2. สถานะของสิ่งที่ต้องทำ
+สิ่งที่ต้องทำมี 3 สถานะ โดยแต่ละสถานะจะอธิบายสถานะปัจจุบันของงาน
 
-* **Open**: A ToDo by default is marked Open when it is created.
-* **Closed**: When an activity is completed, the ToDo can be marked as 'Closed' or 'Resolved' or 'Completed'. Further, for conditions like Issue Resolved or task Completed; the ToDo gets closed automatically. It can also be Reopened if required.
-* **Cancelled**: When a user gets removed from the assignment of a ToDo/Task/Issue, the ToDo linked to that Document automatically gets 'Cancelled'.
+* **เปิด**: สิ่งที่ต้องทำตามค่าเริ่มต้นจะถูกทำเครื่องหมายเป็นเปิดเมื่อสร้างขึ้น
+* **ปิด**: เมื่อกิจกรรมเสร็จสิ้น สิ่งที่ต้องทำสามารถทำเครื่องหมายเป็น 'ปิด' หรือ 'แก้ไขแล้ว' หรือ 'เสร็จสิ้น' นอกจากนี้ สำหรับเงื่อนไข เช่น ปัญหาได้รับการแก้ไข หรืองานที่เสร็จสมบูรณ์ ToDo จะถูกปิดโดยอัตโนมัติ นอกจากนี้ยังสามารถเปิดใหม่ได้หากต้องการ
+* **ยกเลิก**: เมื่อผู้ใช้ถูกลบออกจากการมอบหมายสิ่งที่ต้องทำ/งาน/ปัญหา สิ่งที่ต้องทำที่เชื่อมโยงกับเอกสารนั้นจะ 'ยกเลิก' โดยอัตโนมัติ
 
  ![ToDo](/docs/assets/img/using-erpnext/using-to-do-5.png)
 

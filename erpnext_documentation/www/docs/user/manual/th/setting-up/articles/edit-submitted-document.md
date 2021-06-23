@@ -1,28 +1,25 @@
 <!-- add-breadcrumbs -->
-# Edit Submitted Document
+# แก้ไขเอกสารที่ส่งมา
 
-To edit a submitted document, you need to cancel it first. Following are steps to edit submitted document. These steps assume you have the appropriate permissions for cancelling and editing a document.
+หากต้องการแก้ไขเอกสารที่ส่ง คุณต้องยกเลิกก่อน ต่อไปนี้เป็นขั้นตอนในการแก้ไขเอกสารที่ส่ง ขั้นตอนเหล่านี้ถือว่าคุณมีสิทธิ์ที่เหมาะสมสำหรับการยกเลิกและแก้ไขเอกสาร
 
-#### Step 1: Cancel Submitted Document
+#### 1. ยกเลิกเอกสารที่ส่ง 
 
-You will find Cancel button on upper right corner of submitted document.
+คุณจะพบปุ่มยกเลิกที่มุมบนขวาของเอกสารที่ส่ง
 
 <img alt="Cancel Doc" class="screenshot" src="{{docs_base_url}}/assets/img/articles/edit-submitted-doc-1.png">
 
-#### Step 2: Amend the document
+#### 2. แก้ไขเอกสาร
 
-On cancellation of submitted document, Amend button will be became visible.
+เมื่อยกเลิกเอกสารที่ส่ง ปุ่มแก้ไขจะปรากฏให้เห็น
 
 <img alt="Amend Doc" class="screenshot" src="{{docs_base_url}}/assets/img/articles/edit-submitted-doc-2.png">
 
-#### Step 3: Save and Submit the document
+#### 3. บันทึกและส่งเอกสาร
 
-On clicking Amend button, same document will become editable again. After Making required changes, save and submit the document.
+เมื่อกดปุ่มแก้ไข เอกสารเดิมจะสามารถแก้ไขได้อีกครั้ง หลังจากทำการเปลี่ยนแปลงที่จำเป็นแล้ว ให้บันทึกและส่งเอกสาร
 
 <img alt="Resave and Submit Doc" class="screenshot" src="{{docs_base_url}}/assets/img/articles/edit-submitted-doc-3.png">
 
-<div class="well">Note: If your document is linked with other documents, then you will need to cancel the dependant document before cancelling the parrent document.
-	
-Example: If you have created Delivery Note and Sales Invoice against Sales Order, which you need to amend, then you should first Cancel Delivery Note and Sales Invoice made for that Sales Order. Then amend Sales Order, re-save and re-submit it.
-</div>
+<div class="well">หมายเหตุ: หากเอกสารของคุณเชื่อมโยงกับเอกสารอื่น คุณจะต้องยกเลิกเอกสารที่ต้องพึ่งพาก่อนที่จะยกเลิกเอกสารพาเรนต์ ตัวอย่าง: หากคุณได้สร้างใบนำส่งสินค้าและใบกำกับสินค้าสำหรับใบสั่งขายซึ่งคุณต้องแก้ไข คุณควรยกเลิกใบส่งสินค้าและใบกำกับสินค้าสำหรับใบสั่งขายนั้นก่อน จากนั้นแก้ไขคำสั่งขาย บันทึกใหม่ และส่งใหม่อีกครั้ง
 <!-- markdown -->

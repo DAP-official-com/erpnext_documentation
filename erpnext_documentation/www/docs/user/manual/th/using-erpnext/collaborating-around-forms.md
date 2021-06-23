@@ -1,39 +1,39 @@
 <!-- add-breadcrumbs -->
-# Collaborating Around Forms
+# การทำงานร่วมกันในแบบฟอร์ม
 
-**In ERPNExt, every form comes with certain tools embedded in the system which allows you to collaborate with other users within your account to have quick and transparent operations.** 
+**ใน ERPExt ทุกรูปแบบมาพร้อมกับเครื่องมือบางอย่างที่ฝังอยู่ในระบบ ซึ่งช่วยให้คุณทำงานร่วมกับผู้ใช้รายอื่นภายในบัญชีของคุณเพื่อให้ดำเนินการได้อย่างรวดเร็วและโปร่งใส** 
 
-Following are the tools in each document using which you can collaborate with other Users in your ERPNext account.
+หัวข้อต่อไปนี้เป็นเครื่องมือในแต่ละเอกสารซึ่งคุณสามารถทำงานร่วมกับผู้ใช้รายอื่นในบัญชี ERPNext ของคุณ
 
-### Assigned to
+### มอบหมายให้
 
-If a Document requires some action from a particular user, you can assign that document to that User. On assignment, the user shall be intimated of the same via an email. [Click here](docs/user/manual/en/using-erpnext/assignment.html) to learn more about this feature.
+ถ้าเอกสารต้องมีการดำเนินการบางอย่างจากผู้ใช้รายใดรายหนึ่ง คุณสามารถมอบหมายเอกสารนั้นให้กับผู้ใช้รายนั้นได้ ในการมอบหมาย ผู้ใช้จะได้รับแจ้งข้อมูลดังกล่าวทางอีเมล [คลิกที่นี่](docs/user/manual/th/using-erpnext/assignment.html) เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับคุณลักษณะนี้
 
-E.g., an incoming [Lead](/docs/user/manual/en/CRM/lead) can e assigned to a particular user to ensure that the same is being pursued by them.
+เช่น  [สิ่งที่ลูกค้าต้องการ](/docs/user/manual/th/CRM/lead) สามารถมอบหมายให้กับผู้ใช้โดยเฉพาะอย่างยิ่งเพื่อให้แน่ใจว่าเดียวกันจะถูกไล่ล่าโดยพวกเขา
 
 ![Collaborating Around Forms](/docs/assets/img/using-erpnext/using-assignment-1.png)
 
-### Comments
+### ความคิดเห็น
 
-For a lot of Documents, there can be information that is not a part of the transaction. To record such information, the 'Comments' feature is a great alternative. Checkout [Comments](/docs/user/manual/en/using-erpnext/articles/comments) for more.
+สำหรับเอกสารจำนวนมาก อาจมีข้อมูลที่ไม่ได้เป็นส่วนหนึ่งของรายการ ในการบันทึกข้อมูลดังกล่าว คุณลักษณะ 'ความคิดเห็น' เป็นทางเลือกที่ดี สามารถอ่าน[ความคิดเห็น](/docs/user/manual/th/using-erpnext/articles/comments) เพื่อหาข้อมูลเพิ่มเติม
 
 ![Collaborating Around Forms](/docs/assets/img/using-erpnext/using-collaborating-2.png)
 
-### Share
+### แชร์
 
-You can share a document with the aspecific user in your ERPNext account. Irrespective of their roles or permissions, a User will be able to access a document shared with them.
+คุณสามารถแชร์เอกสารกับผู้ใช้ที่ระบุในบัญชี ERPNext ของคุณ โดยไม่คำนึงถึงบทบาทหรือการอนุญาต ผู้ใช้จะสามารถเข้าถึงเอกสารที่แชร์กับพวกเขาได้
 
 ![Notes](/docs/assets/img/using-erpnext/using-notes-4.png)
 
-### Tags
+### แท็ค
 
-You can also add tags to different Documents to classify them into categories. [Click here](/docs/user/manual/en/using-erpnext/tags.html) to know more about tags.
+คุณยังสามารถเพิ่มแท็กในเอกสารต่างๆ เพื่อจัดเป็นหมวดหมู่ได้ [คลิกที่นี่(/docs/user/manual/th/using-erpnext/tags.html) เพื่อทราบข้อมูลเพิ่มเติมเกี่ยวกับแท็ก
 
 ![Tags](/docs/assets/img/using-erpnext/using-tags-2.png)
 
-### Reviews
+### รีวิว (Reviews)
 
-For every Document, there is an option to add Reviews for any User involved in the Document. This includes all the Users to whom this Document was assigned, and to all the Users who have Commented on this Document. Review Points can be gained by a User using the [Energy Point System](/docs/user/manual/en/setting-up/energy-point-system).
+สำหรับเอกสารทุกฉบับ จะมีตัวเลือกในการเพิ่มคำวิจารณ์สำหรับผู้ใช้ที่เกี่ยวข้องกับเอกสาร ซึ่งรวมถึงผู้ใช้ทั้งหมดที่ได้รับมอบหมายเอกสารนี้ และผู้ใช้ทุกคนที่แสดงความคิดเห็นในเอกสารนี้ คะแนนรีวิวจะได้รับจากผู้ใช้โดยใช้ [ระบบค่าพลังงาน](/docs/user/manual/th/setting-up/energy-point-system).
 
 ![Collaborating Around Forms](/docs/assets/img/using-erpnext/using-collaborating-5.png)
 

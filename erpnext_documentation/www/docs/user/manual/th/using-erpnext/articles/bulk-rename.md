@@ -1,25 +1,25 @@
 <!-- add-breadcrumbs -->
-# Bulk Rename
+# เปลี่ยนชื่อเป็นกลุ่ม
 
-Using the Bulk Rename tool, you can choose to rectify/change multiple document IDs at once. This tool is only accessible to the User who has the System Manager role assigned.
+การใช้เครื่องมือเปลี่ยนชื่อเป็นกลุ่ม คุณสามารถเลือกแก้ไข/เปลี่ยน ID เอกสารหลายรายการพร้อมกันได้ เครื่องมือนี้เข้าถึงได้เฉพาะผู้ใช้ที่ได้รับมอบหมายบทบาทผู้จัดการระบบ
 
-### Rename Tool
+### เครื่องมือในการเปลี่ยนชื่อ
 
-You can rename IDs of up to 500 records at a time. The following are steps to bulk rename bulk records. Let's assume we are renaming Item Codes for the existing items.
+คุณสามารถเปลี่ยนชื่อ ID ได้ถึง 500 ระเบียนในแต่ละครั้ง ต่อไปนี้เป็นขั้นตอนในการเปลี่ยนชื่อระเบียนจำนวนมาก สมมติว่าเรากำลังเปลี่ยนชื่อรหัสรายการสำหรับรายการที่มีอยู่
 
-#### Step 1: Open Excel File
+#### ขั้นตอนที่ 1: เปิดไฟล์ Excel 
 
-In a spreadsheet file, enter old Item IDs in the first column, and new Item Ids in the second column. Save spreadsheet file in a CSV format.
+ในไฟล์สเปรดชีต ให้ป้อนรหัสรายการเก่าในคอลัมน์แรก และป้อนรหัสรายการใหม่ในคอลัมน์ที่สอง บันทึกไฟล์สเปรดชีตในรูปแบบ CSV
 
 ![Upload Data](/docs/assets/img/using-erpnext/using-bulk-rename-1.png)
 
-#### Step 2: Upload Data File
+#### ขั้นตอนที่ 2: อัปโหลดไฟล์ข้อมูล
 
-To upload data file go to,
+ในการอัปโหลดไฟล์ข้อมูลไปที่
 
-> Settings > Data > Bulk Rename
+> ตั้งค่า > ข้อมูล > เปลี่ยนชื่อเป็นกลุ่ม
 
-Select DocType which you want to rename. Here, DocType will be Item. Then Browse and Upload data file.
+เลือกเอกสาร DocType ที่คุณต้องการเปลี่ยนชื่อ ที่นี่ DocType จะเป็นรายการ จากนั้นเรียกดูและอัปโหลดไฟล์ข้อมูล
 
 ![Upload Data](/docs/assets/img/using-erpnext/using-bulk-rename-2.gif)
 

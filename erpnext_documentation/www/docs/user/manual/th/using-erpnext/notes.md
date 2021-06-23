@@ -1,40 +1,40 @@
 <!-- add-breadcrumbs -->
-# Notes
+# โน๊ต
 
-Notes is a tool that can be used for Personal Note Taking purposes. You can use it to save your lists, frequently used passwords, terms, and conditions, or any other document which needs to be shared or kept for reference.
+โน้ตเป็นเครื่องมือที่สามารถใช้เพื่อวัตถุประสงค์ในการจดบันทึกส่วนตัว คุณสามารถใช้เพื่อบันทึกรายการ รหัสผ่านที่ใช้บ่อย ข้อกำหนดและเงื่อนไข หรือเอกสารอื่นๆ ที่จำเป็นต้องแชร์หรือเก็บไว้เพื่อใช้อ้างอิง
 
-To access Notes, go to:
+ในการเข้าถึงบันทึกย่อ ให้ไปที่:
 
-> Home > Tools > Note 
+> หน้าหลัก > เครื่องมือ > โน๊ต
 
 ![Notes](/docs/assets/img/using-erpnext/using-notes-1.png)
 
-## How to create a new Note
+## วิธีสร้างโน้ตใหม่
 
-1. Go to Note list and click on New.
-1. Enter the Title of the Note.
-1. Enter the Content of the Note. The content box is a Text Editor box to enable you to format the content as per your requirements.
-1. Save.
+1. ไปที่รายการโน้ตและคลิกที่ใหม่
+1. ป้อนชื่อเรื่องของโน้ต
+1. ป้อนเนื้อหาของโน้ต กล่องเนื้อหาเป็นกล่องตัวแก้ไขข้อความเพื่อให้คุณสามารถจัดรูปแบบเนื้อหาได้ตามความต้องการของคุณ
+1. บันทึก
 
 ![Notes](/docs/assets/img/using-erpnext/using-notes-2.png)
 
-### Visibility of Notes
+### การมองเห็นของโน๊ต
 
-You can select whether or not you want this particular Note to be Public. Making a Note public will allow you to share it across Users in your ERPNext account.
+คุณสามารถเลือกได้ว่าต้องการให้บันทึกย่อนี้เป็นสาธารณะหรือไม่ การทำให้บันทึกย่อเป็นสาธารณะจะอนุญาตให้คุณแชร์กับผู้ใช้ในบัญชี ERPNext ของคุณ
 
 ![Notes](/docs/assets/img/using-erpnext/using-notes-3.png)
 
-Once you enable making a Note Public, there will be another checkbox, saying 'Notify users with a popup when they log in'. 
+เมื่อคุณเปิดใช้งานการสร้างบันทึกย่อเป็นสาธารณะ จะมีช่องทำเครื่องหมายอื่นโดยระบุว่า 'แจ้งผู้ใช้ด้วยป๊อปอัปเมื่อพวกเขาเข้าสู่ระบบ' 
 
 ![Notes](/docs/assets/img/using-erpnext/using-notes-5.png)
 
-You can also select if you wish to give some specific users, the right to read, write or share your note. This can be done from the 'Share' option in the left sidebar.
+คุณยังสามารถเลือกได้ว่าต้องการให้ผู้ใช้บางคนมีสิทธิ์ในการอ่าน เขียน หรือแบ่งปันบันทึกย่อของคุณ ซึ่งสามารถทำได้จากตัวเลือก 'แบ่งปัน' ในแถบด้านข้างทางซ้าย
 
 ![Notes](/docs/assets/img/using-erpnext/using-notes-4.png)
 
-### Notification for Notes
+### การแจ้งเตือนของโน๊ต
 
-Enabling this property would ensure that whenever any User logs into their account, there will be a Pop-Up notification for the note.
+การเปิดใช้งานคุณสมบัตินี้จะช่วยให้มั่นใจได้ว่าเมื่อใดก็ตามที่ผู้ใช้ลงชื่อเข้าใช้บัญชี จะมีป๊อปอัปแจ้งเตือนสำหรับโน้ต
 
 ![Notes](/docs/assets/img/using-erpnext/using-notes-7.png)
 

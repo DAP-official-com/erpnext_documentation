@@ -1,28 +1,28 @@
 <!-- add-breadcrumbs -->
-# Filter by 
+# กรอง
 
-**Filter By is an option wherein you can filter your search results while viewing a list or a report.** 
+**กรองโดย คือตัวเลือกที่คุณสามารถกรองผลการค้นหาของคุณในขณะที่ดูรายการหรือรายงาน** 
 
-The 'Filter By' option is present on the left sidebar of all the lists and reports. 
+ตัวเลือก 'กรองตาม' จะแสดงอยู่ที่แถบด้านข้างทางซ้ายของรายการและรายงานทั้งหมด
 
 ![Filter By](/docs/assets/img/using-erpnext/using-filter-by-1.png)
 
-By default, there are two classification options present in the system.
+ตามค่าเริ่มต้น มีสองตัวเลือกการจัดประเภทที่มีอยู่ในระบบ
 
-## Assigned to
+## มอบหมายให้
 
-When viewing a list or a report of documents like Issues, Leads, Opportunities, you can filter the search result to only see the documents assigned to a certain individual. The Assigned to drop-down will also show you the number of documents assigned to each individual.
+เมื่อดูรายการหรือรายงานของเอกสาร เช่น ปัญหา ลูกค้าเป้าหมาย โอกาส คุณสามารถกรองผลการค้นหาเพื่อดูเฉพาะเอกสารที่กำหนดให้กับบุคคลใดบุคคลหนึ่งได้ เมนูดรอปดาวน์ มอบหมายให้ จะแสดงจำนวนเอกสารที่กำหนดให้กับแต่ละคนด้วย
 
 ![Filter By](/docs/assets/img/using-erpnext/using-filter-by-2.png)
 
-## Created By
+## สร้างโดย
 
-Just like Assigned To, you will also be able to classify the document based on the entity that has created them. E.g., if you want to check all the Issues raised by a particular entity, you can do so here.
+เช่นเดียวกับ "การมอบหมายไปยัง" คุณจะสามารถจัดประเภทเอกสารตามเอนทิตีที่สร้างขึ้นได้ เช่น หากคุณต้องการตรวจสอบปัญหาทั้งหมดที่เกิดขึ้นโดยนิติบุคคลใดบุคคลหนึ่ง คุณสามารถทำได้ที่นี่
 
 ![Filter By](/docs/assets/img/using-erpnext/using-filter-by-3.png)
 
-## Add fields
+## เพิ่มฟิลด์
 
-Apart from the two default Filter By options, as per your requirement, you can also add other Filter By fields for any document list or report.
+นอกเหนือจากตัวเลือก กรองตามเริ่มต้น สองตัวเลือก ตามความต้องการของคุณ คุณยังสามารถเพิ่มฟิลด์ กรองตาม อื่นๆ สำหรับรายการเอกสารหรือรายงานใดๆ ก็ได้
 
 ![Filter By](/docs/assets/img/using-erpnext/using-filter-by-1.gif)

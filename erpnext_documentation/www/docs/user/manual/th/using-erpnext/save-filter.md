@@ -1,16 +1,16 @@
 <!-- add-breadcrumbs -->
-# Save Filter 
+# บันทึกตัวกรอง
 
-**Save Filter is a tool that will allow you to save a certain set of filters which are applied often in a document list or a report so that you can reuse them.** 
+**บันทึกตัวกรองเป็นเครื่องมือที่จะช่วยให้คุณบันทึกชุดตัวกรองบางชุดซึ่งมักใช้ในรายการเอกสารหรือรายงาน เพื่อให้คุณสามารถนำกลับมาใช้ใหม่ได้** 
 
 ![Save Filter](/docs/assets/img/using-erpnext/using-save-filter-1.png)
 
-To learn more about filters, checkout [Search Filter](/docs/user/manual/en/using-erpnext/articles/search-filter)
+หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับตัวกรอง สามารถอ่านเพิ่มเติมได้ที่ [ตัวกรองการค้นหา](/docs/user/manual/th/using-erpnext/articles/search-filter)
 
-Let's say, in purchase orders, you need to search for all the purchase orders where the Grand Total is more than ₹ 10000. However, as we know, there is no filter that is present for it out of the box. 
+สมมติว่าในใบสั่งซื้อ คุณต้องค้นหาใบสั่งซื้อทั้งหมดที่ยอดรวมทั้งหมดมากกว่า ₹ 10000 อย่างไรก็ตาม อย่างที่เราทราบ ไม่มีตัวกรองที่มีอยู่สำหรับรายการดังกล่าว
 
-In this case, you can create a custom filter for it and save the same condition in the 'Save Filter' option for you to easily access this filter every time you open the Purchase Order list.
+ในกรณีนี้ คุณสามารถสร้างตัวกรองแบบกำหนดเองสำหรับตัวกรองนั้นและบันทึกเงื่อนไขเดียวกันในตัวเลือก 'บันทึกตัวกรอง' เพื่อให้คุณเข้าถึงตัวกรองนี้ได้อย่างง่ายดายทุกครั้งที่คุณเปิดรายการใบสั่งซื้อ
 
-To save a Custom Filter, you may go to the 'Save Filter' option in the Left Sidebar of the list or the report.
+หากต้องการบันทึกตัวกรองแบบกำหนดเอง คุณสามารถไปที่ตัวเลือก 'บันทึกตัวกรอง' ในแถบด้านข้างซ้ายของรายการหรือรายงาน
 
 ![Save Filter](/docs/assets/img/using-erpnext/using-save-filter-1.gif)

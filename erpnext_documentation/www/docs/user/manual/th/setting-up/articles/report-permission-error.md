@@ -1,20 +1,20 @@
 <!-- add-breadcrumbs -->
-# Solving Permission Error Problems
+# การแก้ไขปัญหาข้อผิดพลาดในการอนุญาต
 
-**Question:** User has roles like Account User and Account Manager assigned. Still, when accessing  Account Receivable report, User is getting an error message of no permission the territory master.
+**คำถาม:** ผู้ใช้มีบทบาทเช่นผู้ใช้บัญชีและผู้จัดการบัญชีที่ได้รับมอบหมาย ถึงกระนั้น เมื่อเข้าถึงรายงานบัญชีลูกหนี้ ผู้ใช้จะได้รับข้อความแสดงข้อผิดพลาดว่าไม่ได้รับอนุญาตจากเจ้าของอาณาเขต
 
 <img alt="Report Permission Error" class="screenshot" src="{{docs_base_url}}/assets/img/articles/report-permission-1.png">
 
-**Answer:**
+**ตอบ:**
 
-As per the permission system in ERPNext, for the User to be able to access a form or a report, s(he) should have at-least read permission on all the link field in that form/report. Since Territory is a link field in Account Receivable report, please add a permission rule to let Account User/Manager have at-least Read permission on the Territory master. Please follow below-given steps to resolve this issue.
+ตามระบบการอนุญาตใน ERPNext เพื่อให้ผู้ใช้สามารถเข้าถึงแบบฟอร์มหรือรายงานได้ ผู้ใช้ควรมีสิทธิ์อ่านอย่างน้อยในช่องลิงก์ทั้งหมดในแบบฟอร์ม/รายงานนั้น เนื่องจากอาณาเขตเป็นฟิลด์ลิงก์ในรายงานบัญชีลูกหนี้ โปรดเพิ่มกฎการอนุญาตเพื่อให้ผู้ใช้บัญชี/ผู้จัดการมีสิทธิ์อ่านอย่างน้อยในหลักอาณาเขต โปรดทำตามขั้นตอนที่ระบุด้านล่างเพื่อแก้ไขปัญหานี้
 
-1.  Roles assigned to User are Account User and Account Manager.  
+1.  บทบาทที่กำหนดให้กับผู้ใช้คือผู้ใช้บัญชีและผู้จัดการบัญชี
 
-2.  As indicates in the Error message, the user didn't have permission on the territory master. As per the default permission, none of the above role assigned to that User has any permission on the Territory master.  
+2.  ตามที่ระบุในข้อความแสดงข้อผิดพลาด ผู้ใช้ไม่ได้รับอนุญาตในอาณาเขตหลัก ตามการอนุญาตเริ่มต้น ไม่มีบทบาทใดข้างต้นที่กำหนดให้กับผู้ใช้รายนั้นที่มีสิทธิ์ใดๆ บนต้นแบบอาณาเขต
 
-3.  To resolve this issue, I have assigned Account User permission to Read Territory master.  
+3.  เพื่อแก้ไขปัญหานี้ ฉันได้มอบหมายสิทธิ์ผู้ใช้บัญชีให้กับต้นแบบอาณาเขตการอ่าน
 
     <img alt="Permission Manager" class="screenshot" src="{{docs_base_url}}/assets/img/articles/report-permission-2.png">
 
-As per this permission update, User should be able to access Account Receivable report fine.
+ตามการอัปเดตการอนุญาตนี้ ผู้ใช้ควรสามารถเข้าถึงรายงานบัญชีลูกหนี้ได้

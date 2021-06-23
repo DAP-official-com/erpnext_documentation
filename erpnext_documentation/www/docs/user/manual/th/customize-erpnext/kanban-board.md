@@ -1,51 +1,51 @@
 <!-- add-breadcrumbs -->
 #Kanban Board
 
-**Kanban Board is a tool which will give you a descriptive layout of your data in ERPNext based on status and a virtual board.**
+**Kanban Board เป็นเครื่องมือที่จะให้เค้าโครงคำอธิบายของข้อมูลของคุณใน ERPNext ตามสถานะและกระดานรายงานข้อมูลในบริษัท**
 
-This board shall consist of cards which represent the various Documents listed in a particular Document Type aligned as per the stage of operation of the transactions represented by Status Columns. The card status can be changed easily by dragging and dropping the cards across the board.
+กระดานนี้จะประกอบด้วยการ์ดที่แสดงถึงเอกสารต่างๆ ที่ระบุไว้ในประเภทเอกสารเฉพาะซึ่งจัดชิดตามขั้นตอนของการทำธุรกรรมที่แสดงโดยคอลัมน์สถานะ สถานะการ์ดสามารถเปลี่ยนแปลงได้อย่างง่ายดายโดยการลากและวางการ์ดบนกระดาน
 
-A Kanban Board helps to visualize, control and optimize work-flow while collaborating with the entire team on a real-time basis.
+บอร์ด Kanban ช่วยให้เห็นภาพ ควบคุม และเพิ่มประสิทธิภาพเวิร์กโฟลว์ในขณะที่ทำงานร่วมกับทั้งทีมแบบเรียลไทม์
 
-## Creating a new Kanban Board
+## การสร้าง Kanban Board ใหม่
 
-To create a Kanban board in ERPNext click the Kanban dropdown on the sidebar, and select New Kanban Board.
+การสร้างบอร์ด Kanban ใหม่ใน ERPNext ให้กดดรอปดาวน์ด้านข้างและเลือก บอร์ด Kanban ใหม่
 
 <img class="screenshot" alt="Add New Kanban Board" src="{{docs_base_url}}/assets/img/customize/customize erpnext-kanban-board.gif">
 
-## Adding new Card/Document
+## การเพิ่มบัตร/เอกสารใหม่
 
-To add Cards on Kanban Board click Add Tasks. You can Edit card details by click on the card and it will take you to the Task Doctype where you can further add and edit card details.
+หากต้องการเพิ่มการ์ดบนบอร์ด Kanban ให้คลิกเพิ่มงาน คุณสามารถแก้ไขรายละเอียดบัตรได้โดยคลิกที่การ์ด จากนั้นระบบจะนำคุณไปยังเอกสาร Doctype ซึ่งคุณสามารถเพิ่มและแก้ไขรายละเอียดบัตรเพิ่มเติมได้
 
 <img class="screenshot" alt="Add card in Kanban Board" src="{{docs_base_url}}/assets/img/customize/customize erpnext-kanban-board-1.gif">
 
-## Update Cards/Document Status
+## อัปเดตสถานะการ์ด/เอกสาร
 
-Based on the Task status you can drag and drop the cards in the respective column. For example, if the task is work in progress you can move the card for the task from the status Open to Working.
+ตามสถานะงาน คุณสามารถลากและวางการ์ดในคอลัมน์ที่เกี่ยวข้อง ตัวอย่างเช่น ถ้างานอยู่ในระหว่างดำเนินการ คุณสามารถย้ายการ์ดสำหรับงานจากสถานะ เปิด เป็น กำลังทำงาน
 
 <img class="screenshot" alt="Move Cards on Kanban Board" src="{{docs_base_url}}/assets/img/customize/customize erpnext-kanban-board-2.gif">
 
-## Manage Columns
+## จัดการคอลัมน์ 
 
-To add more columns in the Kanban board click on Add columns. 
+หากต้องการเพิ่มคอลัมน์ในบอร์ด Kanban ให้คลิกที่เพิ่มคอลัมน์
 
 <img class="screenshot" alt="Add New column in Kanban Board" src="{{docs_base_url}}/assets/img/customize/customize-kanban-add-column.png">
 
-You can move the columns as per your priority.
+สามารถปรับคอลัมน์ตามความเหมาะสม
 
 <img class="screenshot" alt="Add New column in Kanban Board" src="{{docs_base_url}}/assets/img/customize/customize erpnext-kanban-board-3.gif">
 
-You can also assign colors to columns.
+คุณยังสามารถกำหนดสีให้กับคอลัมน์ได้อีกด้วย
 
 <img class="screenshot" alt="Add color to cards in Kanban Board" src="{{docs_base_url}}/assets/img/customize/kanban-board-6.gif">
 
-You can also Archive and Restore the columns added in a Kanban board. To do so click Archive in the drop-down menu on the card. Once archived you can restore the column from the list of the archived columns in the Kanban board.
+คุณยังสามารถเก็บถาวรและกู้คืนคอลัมน์ที่เพิ่มในบอร์ด Kanban ได้อีกด้วย โดยคลิกเก็บถาวรในเมนูแบบเลื่อนลงบนการ์ด เมื่อเก็บถาวรแล้ว คุณสามารถกู้คืนคอลัมน์ได้จากรายการคอลัมน์ที่เก็บถาวรในบอร์ด Kanban
 
 <img class="screenshot" alt="Archive and Restore in Kanban Board" src="{{docs_base_url}}/assets/img/customize/customize erpnext-kanban-board-4.gif">
 
-## Filters
+## ตัวกรอง
 
-You can create multiple Kanban Boards based on different filters. To save filters for a Kanban Board, click on Menu and then "Save filters".
+คุณสามารถสร้างบอร์ด Kanban ได้หลายแบบตามตัวกรองต่างๆ หากต้องการบันทึกตัวกรองสำหรับ Kanban Board ให้คลิกที่เมนูแล้วคลิก "บันทึกตัวกรอง"
 
 <img class="screenshot" alt="Save filters in Kanban Board" src="{{docs_base_url}}/assets/img/customize/customize erpnext-kanban-board-5.gif">
 

@@ -1,23 +1,23 @@
 <!-- add-breadcrumbs -->
-# Tree Master Renaming
+# การเปลี่ยนชื่อตามโครงสร้างต้นไม้ (Tree Structure)
 
-**There are various documents in ERPNext which are maintained in a tree structure.**
+**มีเอกสารต่าง ๆ ใน ERPNext ซึ่งได้รับการดูแลในโครงสร้างแบบต้นไม้**
 
-Read about [managing tree structures](/docs/user/manual/en/setting-up/articles/managing-tree-structure-masters.html) to learn more.
+อ่านเกี่ยวกับ [การจัดการโครงสร้างต้นไม้](/docs/user/manual/th/setting-up/articles/managing-tree-structure-masters.html) เพื่อเรียนรู้เพิ่มเติม
 
-Following are the steps to be followed for renaming the ID of a master which is maintained in a tree structure. Let's rename an Account for the instance.
+ต่อไปนี้เป็นขั้นตอนที่ต้องปฏิบัติตามสำหรับการเปลี่ยนชื่อ ID ของต้นแบบซึ่งคงอยู่ในโครงสร้างแบบต้นไม้ มาเปลี่ยนชื่อบัญชีสำหรับอินสแตนซ์กัน
 
-* **Step 1:** Go to the Tree View of the Document
+* **ขั้นตอนที่ 1:** ไปที่มุมมองแบบต้นไม้ของเอกสาร
 
-* **Step 2:** Go to the node of the Document which you wish to rename
+* **ขั้นตอนที่ 2:** ไปที่โหนดของเอกสารที่คุณต้องการเปลี่ยนชื่อ
 
- When you click on that node, you will have an option to 'Rename' the document. 
+ เมื่อคุณคลิกที่โหนดนั้น คุณจะมีตัวเลือกในการ 'เปลี่ยนชื่อ' เอกสาร 
 
  ![Tree Master Renaming](/docs/assets/img/using-erpnext/using-tree-renaming-1.png)
 
-* **Step 3:** Rename Account
+* **ขั้นตอนที่ 3:** เปลี่ยนชื่อบัญชี
 
- When you click on rename, a box will pop-up wherein you will be allowed to rename the document.
+ เมื่อคุณคลิกเปลี่ยนชื่อ กล่องจะปรากฏขึ้นเพื่อให้คุณเปลี่ยนชื่อเอกสารได้
 
  ![Tree Master Renaming](/docs/assets/img/using-erpnext/using-tree-renaming-2.gif)
 

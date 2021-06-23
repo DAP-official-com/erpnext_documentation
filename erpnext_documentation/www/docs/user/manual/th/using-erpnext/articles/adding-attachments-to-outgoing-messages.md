@@ -1,9 +1,9 @@
 <!-- add-breadcrumbs -->
-# Adding Attachments to Outgoing Messages
+# การเพิ่มสิ่งที่แนบมากับข้อความที่ส่งออก
 
-**You can add attachments to outgoing emails on-the-go in ERPNext.**
+**คุณสามารถเพิ่มสิ่งที่แนบมากับอีเมลขาออกขณะเดินทางใน ERPNext**
 
-If you have certain files attached to your document and wish to attach the same to the outgoing email, you can do so by simply picking it from the attachments list.
+หากคุณมีไฟล์แนบมากับเอกสารของคุณ และต้องการแนบไฟล์นั้นกับอีเมลขาออก คุณสามารถทำได้โดยเลือกจากรายการไฟล์แนบ
 
 ![Attachments in Outgoing Messages](/docs/assets/img/using-erpnext/using-add-attachments-in-message.gif)
 

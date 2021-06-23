@@ -1,62 +1,63 @@
 <!-- add-breadcrumbs -->
-# Video
+# วีดีโอ
 
-**Videos can be added from both Vimeo and YouTube, using the Video DocType.**
+**คุณสามารถเพิ่มวิดีโอจากทั้ง Vimeo และ YouTube โดยใช้ Video DocType**
 
-You can add Videos with their URLs, descriptions, thumbnails, etc. Some of its uses are to maintain educational course material and to track personal YouTube video engagement.
+คุณสามารถเพิ่มวิดีโอด้วย URL คำอธิบาย ภาพขนาดย่อ ฯลฯ การใช้งานบางอย่างคือการรักษาเนื้อหาหลักสูตรการศึกษาและเพื่อติดตามการมีส่วนร่วมของวิดีโอ YouTube ส่วนบุคคล
 
-To access Videos, go to:
+ในการเข้าถึงวิดีโอ ไปที่:
 
-> Home > Tools > Video
+> หน้าหลัก > เครื่องมือ > วิดีโอ
 
-## 1. How to create a new Video
+## 1. วิธีสร้างวิดีโอใหม่
 
-1. Go to the Video list and click on New.
-2. Enter the title for the Video.
-3. Select the Provider. The default Video Provider is YouTube.
-4. Enter the URL to access the Video.
-5. You can optionally add a publishing date and duration of the Video in days-hours-minutes-seconds.
-6. You must also add some description for it.
-7. Save.
+1. ไปที่รายการวิดีโอแล้วคลิกใหม่
+2. ป้อนชื่อสำหรับวิดีโอ
+3. เลือกผู้ให้บริการ ผู้ให้บริการวิดีโอเริ่มต้นคือ YouTube
+4. ป้อน URL เพื่อเข้าถึงวิดีโอ
+5. คุณสามารถเลือกเพิ่มวันที่เผยแพร่และระยะเวลาของวิดีโอในหน่วยวัน-ชั่วโมง-นาที-วินาที
+6. คุณต้องเพิ่มคำอธิบาย
+7. บันทึก
 
-After Saving, you will get a provision to add an image/thumbnail for the Video.
+หลังจากบันทึก คุณจะได้รับข้อกำหนดในการเพิ่มรูปภาพ/ภาพขนาดย่อสำหรับวิดีโอ
 ![Video](/docs/assets/img/education/video-after-save.png)
 
-You can also watch the Video in the Document itself after saving it.
+คุณยังสามารถดูวิดีโอในเอกสารได้เองหลังจากบันทึก
 ![Video](/docs/assets/img/education/video-watch.gif)
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Tracking Video Analytics via YouTube
+### 2.1 การติดตามการวิเคราะห์วิดีโอผ่าน YouTube
 
-YouTube Video statistics can be tracked and analysed. This is useful to track the view count and engagement of a Video you published.
+สามารถติดตามและวิเคราะห์สถิติวิดีโอ YouTube ได้ วิธีนี้มีประโยชน์ในการติดตามจำนวนการดูและการมีส่วนร่วมของวิดีโอที่คุณเผยแพร่
 
-For this you must first enable YouTube Tracking in **Video Settings**:
-> Video Settings > Enable YouTube Tracking
+สำหรับสิ่งนี้ คุณต้องเปิดใช้งานการติดตาม YouTube **ในการตั้งค่าวิดีโอ** :
+> การตั้งค่าวิดีโอ > เปิดใช้งานการติดตาม YouTube
 
-Once you enable this, the **API Key** and **Frequency** fields will be visible.
+เมื่อคุณเปิดใช้งานสิ่งนี้ฟิลด์ **คีย์ API** และ **ความถี่** จะปรากฏขึ้น
 ![Video](/docs/assets/img/education/video-settings.png)
 
-**API Key** : You can generate an API Key in your [Google Developers Console](https://console.developers.google.com/). You can refer to the [YouTube Data API Documentation](https://developers.google.com/youtube/v3/getting-started) for steps to generate the same.
+**คีย์ API** : คุณสามารถสร้างคีย์ API ใน [Google Developers Console](https://console.developers.google.com/). คุณสามารถอ้างอิง [YouTube Data API Documentation](https://developers.google.com/youtube/v3/getting-started) สำหรับขั้นตอนในการสร้าง
 
-**Frequency**: You can choose how often the system must automatically update your statistics. The available options are every 30 minutes, 1 hour, 6 hours and Daily (once everyday).
+**ความถี่**: สามารถเลือกความถี่ที่ระบบต้องอัปเดตสถิติของคุณโดยอัตโนมัติ ตัวเลือกที่มีคือทุก ๆ 30 นาที 1 ชั่วโมง 6 ชั่วโมงและทุกวัน (วันละครั้ง)
 
-Apart from automatic updation, the statistics are updated on Save. So, all the Videos created/updated **after** enabling YouTube tracking, will have statistics updated on Save.
+นอกจากการอัปเดตอัตโนมัติแล้ว สถิติยังได้รับการอัปเดตในบันทึกอีกด้วย ดังนั้น วิดีโอทั้งหมดที่สร้าง/อัปเดต **หลังจาก** เปิดใช้งานการติดตาม YouTube จะมีการอัปเดตสถิติในบันทึก
 ![Video](/docs/assets/img/education/video-stats.png)
 
-### 2.2 YouTube Interactions Report
+### 2.2 วิเคราะห์ผ่าน YouTube
 
-The YouTube Interactions Report provides a consolidated view of all the videos' engagements. The bar chart provides visual analysis of Likes vs Views.
+รายงานการโต้ตอบของ YouTube จะแสดงภาพรวมของการมีส่วนร่วมของวิดีโอทั้งหมด แผนภูมิแท่งแสดงการวิเคราะห์ภาพการชอบเทียบกับการดู
 
-You can filter the report data by the Published Date range.
+คุณสามารถกรองข้อมูลรายงานตามช่วงวันที่เผยแพร่
+
 ![Video](/docs/assets/img/education/youtube-interactions.png)
 
-> **Note** : The quota for the number of **non-billable** requests to the YouTube Data API is 10,000 requests as of September 2020. ERPNext automatically updates upto 50 videos in 1 request. Similarly, for 100 videos it would take 2 requests.<br>
-Assuming 100 videos are updated **every hour** (frequency = 1 hour):<br>
+> **หมายเหตุ** : โควต้าสำหรับจำนวนคำขอที่เรียก **เก็บเงินไม่ได้** ไปยัง YouTube Data API คือ 10,000 คำขอ ณ เดือนกันยายน 2020 ERPNext จะอัปเดตวิดีโอสูงสุด 50 รายการโดยอัตโนมัติใน 1 คำขอ ในทำนองเดียวกัน สำหรับวิดีโอ 100 รายการ จะใช้เวลา 2 คำขอ<br>
+สมมติว่ามีการอัปเดตวิดีโอ 100 รายการ **ทุกชั่วโมง** (ความถี่ = 1 ชั่วโมง):<br>
 >
-- 2 requests will be sent per hour<br>
-- 48 requests will be sent per a day<br>
+- 2 คำขอจะถูกส่งต่อชั่วโมง<br>
+- จะส่งคำขอ 48 รายการต่อวัน<br>
 
-> Please set the frequency accordingly.
+> กรุณาตั้งค่าความถี่ตามด้านบน
 
 {next}

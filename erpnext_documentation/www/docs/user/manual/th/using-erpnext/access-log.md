@@ -8,34 +8,34 @@ metatags:
  keywords: frappe, access log, erpnext v12, erpnext release notes, erpnext new features, erp, open source erp, free erp, security
 ---
 
-# Access Log
+# บันทึกการเข้าถึง
 
 > Introduced in Version 13
 
-**Access Log is a security feature that logs all data exports by all users in the system.**
+**บันทึกการเข้าถึงเป็นคุณลักษณะด้านความปลอดภัยที่บันทึกการส่งออกข้อมูลทั้งหมดโดยผู้ใช้ทุกคนในระบบ**
 
-It is a tool for System Managers to track which files were accessed or exported by users on the system. This is useful for tracking your company's sensitive information like transactions or financials.
+เป็นเครื่องมือสำหรับผู้จัดการระบบเพื่อติดตามว่าผู้ใช้เข้าถึงหรือส่งออกไฟล์ใดในระบบ สิ่งนี้มีประโยชน์ในการติดตามข้อมูลที่ละเอียดอ่อนของบริษัทของคุณ เช่น ธุรกรรมหรือการเงิน
 
-Access logs are created in the following events:
+บันทึกการเข้าถึงถูกสร้างขึ้นในเหตุการณ์ต่อไปนี้:
 
- - Printing of all Forms and Reports
- - Private file downloading
- - Exporting via XLSX/CSV formats
+ - การพิมพ์แบบฟอร์มและรายงานทั้งหมด
+ - ดาวน์โหลดไฟล์ส่วนตัว
+ - การส่งออกผ่านรูปแบบ XLSX/CSV
 
-In ERPNext, Access Log is available to System Managers, it can be accessed using the Global Search or through:
+ใน ERPNext Access Log พร้อมใช้งานสำหรับ System Managers ซึ่งสามารถเข้าถึงได้โดยใช้ Global Search หรือผ่าน:
 
-> Home > Users and Permissions > Logs > Access Log
+> หน้าหลัก > ผู้ใช้และการอนุญาต > บันทึก > บันทึกการเข้าถึง
 
 ![Access Log](/docs/assets/img/using-erpnext/using-access-log-3.png)
 
-In case an access log is created on the event of exporting a Report, a **Show Report** button will be generated in the respective log. On clicking this button, the exported report can be viewed along with the set filters.
+ในกรณีที่มีการสร้างบันทึกการเข้าใช้ในกรณีที่ส่งออก **รายงานปุ่มแสดงรายงาน** จะถูกสร้างขึ้นในบันทึกที่เกี่ยวข้อง เมื่อคลิกปุ่มนี้ คุณสามารถดูรายงานที่ส่งออกพร้อมกับตัวกรองที่ตั้งไว้
 
 ![Access Log](/docs/assets/img/using-erpnext/using-access-log-1.png)
 
-Similarly, a **Show Document** button is generated in case of events related to documents directly such as document Printing and Private File download.
+ในทำนองเดียวกันปุ่ม **แสดงเอกสาร** จะถูกสร้างขึ้นในกรณีของเหตุการณ์ที่เกี่ยวข้องกับเอกสารโดยตรง เช่น การพิมพ์เอกสารและการดาวน์โหลดไฟล์ส่วนตัว
 
 ![Access Log](/docs/assets/img/using-erpnext/using-access-log-2.png)
 
-Events such as [Raw Printing](/docs/user/manual/en/setting-up/print/raw-printing) save information along with the chosen template for the document.
+เหตุการณ์เช่น [การพิมพ์ทั่วไป](/docs/user/manual/en/setting-up/print/raw-printing) บันทึกข้อมูลพร้อมกับเทมเพลตที่เลือกสำหรับเอกสาร
 
 ![Access Log](/docs/assets/img/using-erpnext/using-acces-log-4.png)

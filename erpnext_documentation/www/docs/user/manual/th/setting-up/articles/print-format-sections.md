@@ -1,12 +1,12 @@
 <!-- add-breadcrumbs -->
-# Disabling Line Breaks in Print Format Sections
+# ปิดการใช้งานตัวแบ่งบรรทัดในส่วนรูปแบบการพิมพ์
 
-**Question:** In the Print Format, I am getting link breaks for each section. How can I disable it?
+**คำถาม:** ในรูปแบบการพิมพ์ ฉันได้รับตัวแบ่งลิงก์สำหรับแต่ละส่วน ฉันจะปิดการใช้งานได้อย่างไร
 
 <img alt="Email Setup Error" class="screenshot" src="{{docs_base_url}}/assets/img/articles/sections-1.png">
 
-**Answer:** To disable line breaks for the section breaks, you should uncheck field "Show Line Breaks after Sections" in its Print Format.
+**ตอบ:** หากต้องการปิดใช้งานตัวแบ่งบรรทัดสำหรับตัวแบ่งส่วน คุณควรยกเลิกการเลือกฟิลด์ "แสดงตัวแบ่งบรรทัดหลังส่วน" ในรูปแบบการพิมพ์
 
-Print Format Builder > Select Print Format > Edit Settings > Uncheck field "Show Line Breaks after Sections"
+ตัวสร้างรูปแบบการพิมพ์ > เลือกรูปแบบการพิมพ์ > แก้ไขการตั้งค่า > ยกเลิกการเลือกช่อง "แสดงตัวแบ่งบรรทัดหลังส่วน"
 
 <img alt="Email Setup Error" class="screenshot" src="{{docs_base_url}}/assets/img/articles/sections-2.gif">

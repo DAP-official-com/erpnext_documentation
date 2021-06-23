@@ -1,16 +1,16 @@
 <!-- add-breadcrumbs -->
-# Using Custom Domain On ERPNext
+# การใช้โดเมนที่กำหนดเองบน ERPNext
 
 <!-- markdown -->
 
-If you have subscribed to any of the plans at [ERPNext](https://erpnext.com), you can have us serve your site on your custom domain (for example at http://example.com). This enables your website to be served on a custom domain.
+หากคุณสมัครแผนใดๆ ที่ [ERPNext](https://erpnext.com) คุณสามารถให้เราให้บริการไซต์ของคุณในโดเมนที่คุณกำหนดเองได้ (เช่น ที่ http://example.com) ซึ่งจะช่วยให้เว็บไซต์ของคุณสามารถให้บริการบนโดเมนที่กำหนดเองได้
 
-To enable this feature, you will first have to edit DNS settings of your domain as follows.
+ในการเปิดใช้งานคุณลักษณะนี้ คุณจะต้องแก้ไขการตั้งค่า DNS ของโดเมนของคุณก่อนดังนี้
 
-- Make a CNAME record for a subdomain (www in most cases) to {youraccountname}.erpnext.com
-- If you want serve the website on a naked domain (ie. http://example.com), set a URL redirect to http://www.example.com and not a CNAME record. Making a CNAME record in this case can have unexpected consequences including you not being able to receive emails anymore.
+- สร้างระเบียน CNAME สำหรับโดเมนย่อย (ในกรณีส่วนใหญ่ www) ไปที่ {youraccountname}.erpnext.com
+- หากคุณต้องการให้บริการเว็บไซต์ในโดเมนเปล่า (เช่น http://example.com) ให้ตั้งค่าการเปลี่ยนเส้นทาง URL เป็น http://www.example.com ไม่ใช่ระเบียน CNAME การสร้างระเบียน CNAME ในกรณีนี้อาจมีผลที่ไม่คาดคิด รวมทั้งคุณไม่สามารถรับอีเมลได้อีก
 
-After you've setup the DNS records, you will have to raise a support ticket by sending an email to support@erpnext.com and we'll take it from there.
+หลังจากที่คุณได้ตั้งค่าระเบียน DNS แล้ว คุณจะต้องเพิ่มตั๋วสนับสนุนโดยส่งอีเมลไปที่ support@erpnext.com แล้วเราจะนำไปจากที่นั่น
 
-**Note**: We do not support HTTPS on custom domains. HTTPS enables end to end encryption (from your browser to our server). Although not critical for the website but we strongly recommend against using the ERPNext app over an unencrypted protocol. To be safe always use the ERP at your erpnext.com address.
+**หมายเหตุ**: เราไม่รองรับ HTTPS ในโดเมนที่กำหนดเอง HTTPS เปิดใช้งานการเข้ารหัสตั้งแต่ต้นทางถึงปลายทาง (จากเบราว์เซอร์ของคุณไปยังเซิร์ฟเวอร์ของเรา) แม้ว่าจะไม่สำคัญสำหรับเว็บไซต์ แต่เราขอแนะนำอย่างยิ่งว่าอย่าใช้แอป ERPNext ผ่านโปรโตคอลที่ไม่ได้เข้ารหัส เพื่อความปลอดภัย โปรดใช้ ERP ตามที่อยู่ erpnext.com ของคุณเสมอ
 

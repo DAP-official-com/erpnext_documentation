@@ -1,20 +1,14 @@
 <!-- add-breadcrumbs -->
-# Difference Between System User and Website User
+# ความแตกต่างระหว่างผู้ใช้ระบบและผู้ใช้เว็บไซต์
 
-**Question:** I have added my Employee as a User and have assigned them Roles as well. Still, they are not able to view Dashboard on the login.
+มีผู้ใช้สองประเภทใน ERPNext
 
-**Answer:**
+* **ผู้ใช้ระบบ**: พวกเขาเป็นพนักงานของบริษัทคุณ ตัวอย่างบทบาทที่กำหนดให้กับผู้ใช้ระบบ ได้แก่ ผู้ใช้บัญชี, ผู้จัดการฝ่ายขาย, ผู้ใช้จัดซื้อ, ทีมสนับสนุน เป็นต้น
 
-There are two type of Users in ERPNext.
+* **ผู้ใช้เว็บไซต์**: พวกเขาเป็นผู้ที่เกี่ยวข้อง(เช่นลูกค้าและซัพพลายเออร์) ของบริษัทของคุณ
 
-* **System User**: They are Employees of your company. Example of Roles assigned to System Users are Account User, Sales Manager, Purchase User, Support Team etc.
+วิธีตรวจสอบว่าควนจะเป็น ผู้ใช้ระบบ หรือ ผู้ใช้เว็บไซต์?
 
-* **Website User**: They are to parties (like Customer and Suppliers) of your Company. 
-
-Example Website User Roles are Customer and Suppliers.
-
-How to check if Role is for System User or Website User?
-
-In the Role master, if field "Desk Access" is checked, that Role is for System User. If Desk Access field is unchecked, then that Role is for Website User.
+ในต้นแบบบทบาท หากเลือกฟิลด์ "การเข้าถึงเดสก์ท็อป" บทบาทนั้นมีไว้สำหรับผู้ใช้ระบบ หากไม่ได้เลือกช่อง Desk Access แสดงว่าบทบาทนั้นมีไว้สำหรับผู้ใช้เว็บไซต์
 
 <img alt="Role Desk Permission" class="screenshot" src="{{docs_base_url}}/assets/img/articles/role-deskperm.png">

@@ -1,65 +1,63 @@
 <!-- add-breadcrumbs -->
-# Chat
+# แชท
 
-**The Chat room is a tool, which allows you to send and receive messages to other Users within your ERPNext account.**
+**ห้องสนทนาเป็นเครื่องมือที่ให้คุณส่งและรับข้อความถึงผู้ใช้รายอื่นภายในบัญชี ERPNext ของคุณ**
 
-Explore > Tools > Chat
+> สำรวจ > เครื่องมือ > แชท
 
-If you send a message to a user, and the user is logged in, it will appear as a pop-up message and the unread messages counter in the top toolbar will be
-updated.
-This tool can also be used to maintain internal communications within your organization.
+หากคุณส่งข้อความถึงผู้ใช้ และผู้ใช้เข้าสู่ระบบอยู่ ข้อความนั้นจะปรากฏเป็นข้อความป๊อปอัปและตัวนับข้อความที่ยังไม่ได้อ่านในแถบเครื่องมือด้านบนจะได้รับการอัปเดต เครื่องมือนี้สามารถใช้เพื่อรักษาการสื่อสารภายในภายในองค์กรของคุณ
 
-To start a Chat, you can click on the Chat icon on the Desk. When you do this, a Chatbox will Pop Up, which will have a list of all the Users you have been chatting with. 
+ในการเริ่มแชท คุณสามารถคลิกที่ไอคอนแชทบนโต๊ะทำงาน เมื่อคุณทำเช่นนี้ กล่องแชทจะปรากฏขึ้น ซึ่งจะมีรายชื่อผู้ใช้ทั้งหมดที่คุณได้สนทนาด้วย
 
-This tool can be used to maintain internal communications within your organization.
+เครื่องมือนี้สามารถใช้เพื่อรักษาการสื่อสารภายในภายในองค์กรของคุณ
 
-To start a Chat, you can click on the Chat icon on the Desk. When you do this, a Chatbox will Pop Up, which will have a list of all the Users you have been chatting with. To start a new chat, simply type the name of the User in the search bar of chatbox and start communicating.
+ในการเริ่มแชท คุณสามารถคลิกที่ไอคอนแชทบนโต๊ะทำงาน เมื่อคุณทำเช่นนี้ กล่องแชทจะปรากฏขึ้น ซึ่งจะมีรายชื่อผู้ใช้ทั้งหมดที่คุณได้สนทนาด้วย ในการเริ่มแชทใหม่ เพียงพิมพ์ชื่อของผู้ใช้ในแถบค้นหาของกล่องแชท และเริ่มสื่อสาร
 
 ![Chat](/docs/assets/img/using-erpnext/using-chat-1.gif)
 
-When you are using the Tool for the first time, you will be required to start a New Chat in the following way:
+เมื่อคุณใช้เครื่องมือเป็นครั้งแรก คุณจะต้องเริ่มการแชทใหม่ด้วยวิธีต่อไปนี้:
 
-1. Click on 'New' in the Chatbox.
-2. Select Chat Type: Group or Direct Chat
-3. If you select Direct Chat, you will be required to add the name of the User with whom you wish to start the chat.
-4. If you select Group, you will be required to add the name of the group and the Users that you need to add to the Chat box.
-5. Click on create to create the New Group or the New Direct Chat.
+1. คลิกที่ 'ใหม่' ในกล่องแชท
+2. เลือกประเภทการแชท: กลุ่มหรือแชทโดยตรง
+3. หากคุณเลือกการแชทโดยตรง คุณจะต้องเพิ่มชื่อผู้ใช้ที่คุณต้องการเริ่มการแชทด้วย
+4. หากคุณเลือกกลุ่ม คุณจะต้องเพิ่มชื่อกลุ่มและผู้ใช้ที่คุณต้องการเพิ่มลงในกล่องแชท
+5. คลิกที่สร้างเพื่อสร้างกลุ่มใหม่หรือแชทโดยตรงใหม่
 
-Follow the same steps every time you wish to create start a new chat.
+ทำตามขั้นตอนเดิมทุกครั้งที่คุณต้องการสร้างการแชทใหม่
 
-## Chat Rooms
+## ห้องแชท
 
-For every new Chat that has been opened in the system, a Chat Room gets created. A list of all your Chat Rooms can be fetched in the Chat Room List when you search for it from the Global search.
-
-<img class="screenshot" alt="Assign" src="{{docs_base_url}}/assets/img/collaboration-tools/chat-1.png">
-
-## Chat Message 
-
-Every message that has been sent by a User gets reflected in the Chat Message List. Herein, you will also be allowed to make changes to a sent message.
+สำหรับทุกแชทใหม่ที่เปิดอยู่ในระบบ ห้องแชทจะถูกสร้างขึ้น รายชื่อห้องสนทนาทั้งหมดของคุณสามารถดึงมาจากรายการห้องสนทนาเมื่อคุณค้นหาจากการค้นหาทั้งหมด
 
 <img class="screenshot" alt="Assign" src="{{docs_base_url}}/assets/img/collaboration-tools/chat-1.png">
 
-## Chat Profile Report
+## ข้อความ
 
-This report shall show you a list of all the active profiles in your ERPNext account with whom you can start a chat.
+ทุกข้อความที่ส่งโดยผู้ใช้จะปรากฏในรายการข้อความแชท ในที่นี้ คุณจะได้รับอนุญาตให้เปลี่ยนแปลงข้อความที่ส่งได้
 
-To start a new chat, simply type the name of the User in the search bar of chatbox and start communicating.
+<img class="screenshot" alt="Assign" src="{{docs_base_url}}/assets/img/collaboration-tools/chat-1.png">
 
-## Chat Rooms
+## รายงานโปรไฟล์แชท
 
-For every new Chat that has been opened in the system, a Chat Room gets created in the backend. 
+รายงานนี้จะแสดงรายการโปรไฟล์ที่ใช้งานอยู่ทั้งหมดในบัญชี ERPNext ของคุณซึ่งคุณสามารถเริ่มแชทได้
+
+ในการเริ่มแชทใหม่ เพียงพิมพ์ชื่อของผู้ใช้ในแถบค้นหาของกล่องแชท และเริ่มสื่อสาร
+
+## ห้องแชท
+
+สำหรับทุกแชทใหม่ที่เปิดอยู่ในระบบ ห้องแชทจะถูกสร้างขึ้นในแบ็กเอนด์
 
 ![Chat](/docs/assets/img/using-erpnext/using-chat-2.png)
 
-## Chat Message 
+## ข้อความแชท
 
-Every message that has been sent by a User gets reflected in the Chat Message List. Herein, you will also be allowed to make changes to a sent message.
+ทุกข้อความที่ส่งโดยผู้ใช้จะปรากฏในรายการข้อความแชท ในที่นี้ คุณจะได้รับอนุญาตให้เปลี่ยนแปลงข้อความที่ส่งได้
 
 ![Chat](/docs/assets/img/using-erpnext/using-chat-3.png)
 
-## Chat Profile Report
+## รายงานโปรไฟล์แชท
 
-This report shall show you a list of all the active profiles in your ERPNext account with whom you can start a chat.
+รายงานนี้จะแสดงรายการโปรไฟล์ที่ใช้งานอยู่ทั้งหมดในบัญชี ERPNext ของคุณซึ่งคุณสามารถเริ่มแชทได้
 
 ![Chat](/docs/assets/img/using-erpnext/using-chat-4.png)
 

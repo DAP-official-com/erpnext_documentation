@@ -1,30 +1,30 @@
 <!-- add-breadcrumbs -->
-# Document Versioning
+# การกำหนดเวอร์ชันเอกสาร
 
-**In ERPNext, Document Versioning is a feature that allows you to track all the changes made in a form or a document.**
+**ใน ERPNext การกำหนดเวอร์ชันเอกสารเป็นคุณลักษณะที่ช่วยให้คุณสามารถติดตามการเปลี่ยนแปลงทั้งหมดที่ทำในแบบฟอร์มหรือเอกสารได้**
 
-This feature comes handy while conducting an Audit Tail to check on what changes were made in a document along with the time of change and the stakeholder responsible.
+คุณลักษณะนี้มีประโยชน์ในขณะที่ดำเนินการ ตรวจสอบบัญชี (Audit Tail) เพื่อตรวจสอบการเปลี่ยนแปลงที่เกิดขึ้นในเอกสารพร้อมกับเวลาที่เปลี่ยนแปลงและผู้มีส่วนได้ส่วนเสียที่รับผิดชอบ
 
 ![Document Versioning](/docs/assets/img/using-erpnext/using-document-versioning-1.png)
 
-## How to Enable Document Versioning
+## วิธีเปิดใช้งานการกำหนดเวอร์ชันเอกสาร
 
-Let's assume that we need to enable Document Versioning for Purchase Order.
+สมมติว่าเราจำเป็นต้องเปิดใช้งานการกำหนดเวอร์ชันเอกสารสำหรับใบสั่งซื้อ
 
-1. Go to Purchase Order List.
-2. Click on Customize from the drop-down menu.
-3. You shall be directed to the [Customize Form](/docs/user/manual/en/customize-erpnext/customize-form) page for Purchase Order.
-4. Check the field "Track changes" in the Properties.
+1. ไปที่รายการสั่งซื้อ
+2. คลิกที่ปรับแต่งจากเมนูแบบเลื่อนลง
+3. คุณจะถูกนำไปที่หน้า [แบบฟอร์มกำหนดเอง](/docs/user/manual/en/customize-erpnext/customize-form) สำหรับใบสั่งซื้อ
+4. ตรวจสอบช่อง "ติดตามการเปลี่ยนแปลง" ในคุณสมบัติ
 
  ![Document Versioning](/docs/assets/img/using-erpnext/using-document-versioning-2.gif)
 
-With this, Document Versioning shall be enabled for all the Purchase Orders edited henceforth.
+ด้วยเหตุนี้ การกำหนดเวอร์ชันเอกสารจะถูกเปิดใช้งานสำหรับใบสั่งซื้อทั้งหมดที่แก้ไขจากนี้ไป
 
-### Version Log
+### บันทึกเวอร์ชัน
 
-For each document that has Document Versioning enabled, a Version Log is created. Herein, there will be links to specific versions of the document.
+สำหรับแต่ละเอกสารที่เปิดใช้งานการกำหนดเวอร์ชันเอกสาร จะมีการสร้างบันทึกเวอร์ชัน ในที่นี้จะมีลิงก์ไปยังเวอร์ชันเฉพาะของเอกสาร
 
-When you click on these links, you will be directed to a log of all the fields and the changes made therein.
+เมื่อคุณคลิกที่ลิงค์เหล่านี้ คุณจะถูกนำไปยังบันทึกของฟิลด์ทั้งหมดและการเปลี่ยนแปลงที่เกิดขึ้นในนั้น
 
 ![Document Versioning](/docs/assets/img/using-erpnext/using-document-versioning-3.gif)
 

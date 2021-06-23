@@ -1,16 +1,16 @@
 <!-- add-breadcrumbs -->
 
-# Duplicate Records
+# บันทึกซ้ำ
 
-**'Duplicate' is a feature that helps you to copy values of existing document as-is into a new document.**
+**'บันทึกซ้ำ' เป็นคุณสมบัติที่ช่วยให้คุณคัดลอกค่าของเอกสารที่มีอยู่ตามที่เป็นอยู่ในเอกสารใหม่**
 
-## Scenario
+## สถานการณ์
 
-A customer has placed a 'reorder' for certain items with an electronic items supplier.
+ลูกค้าได้ทำการ 'สั่งซื้อใหม่' สำหรับสินค้าบางรายการกับซัพพลายเออร์สินค้าอิเล็กทรอนิกส์
 
-Since the new Sales Order will have all the details the same as that of the original Sales order, the supplier can simply open the original one and 'Duplicate' the order. The values of the original document will get updated as it is in the new Sales Order. Any changes, if required can be made thereafter.
+เนื่องจากใบสั่งขายใหม่จะมีรายละเอียดทั้งหมดเหมือนกับใบสั่งขายเดิม ซัพพลายเออร์จึงสามารถเปิดใบสั่งขายเดิมและ 'ทำซ้ำ' ใบสั่งได้ ค่าของเอกสารต้นฉบับจะได้รับการอัปเดตเช่นเดียวกับในใบสั่งขายใหม่ การเปลี่ยนแปลงใด ๆ หากจำเป็นสามารถทำได้หลังจากนั้น
 
-To make a Duplicate document, you can go to the original document and click on 'Duplicate' from the Drop-Down menu.
+ในการทำเอกสารซ้ำ คุณสามารถไปที่เอกสารต้นฉบับและคลิกที่ 'ทำซ้ำ' จากเมนูแบบเลื่อนลง
 
 ![Duplicate Record](/docs/assets/img/using-erpnext/using-duplicate-record-1.gif)
 

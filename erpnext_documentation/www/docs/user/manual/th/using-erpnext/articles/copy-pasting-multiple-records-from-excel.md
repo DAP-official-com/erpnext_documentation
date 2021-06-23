@@ -1,29 +1,29 @@
 <!-- add-breadcrumbs -->
 
-# Copy Pasting Multiple Records From Excel
+# คัดลอกการวางหลายระเบียนจาก Excel
 
-**If you have a sequence of records saved in an excel sheet, that need to be mapped into a Child Table in ERPNext, the same can be done using this feature.**
+**หากคุณมีลำดับของระเบียนที่บันทึกไว้ในแผ่นงาน Excel ซึ่งจำเป็นต้องจับคู่กับตารางย่อยใน ERPNext ก็สามารถทำได้เช่นเดียวกันโดยใช้คุณลักษณะนี้**
 
-Let's say, you have a list of items saved in an Excel sheet, and you need to copy the same to the 'Items' Child Table in the Sales Order.
+สมมติว่า คุณมีรายการของรายการที่บันทึกไว้ในแผ่นงาน Excel และคุณจำเป็นต้องคัดลอกรายการดังกล่าวไปยังตารางย่อย 'รายการ' ในใบสั่งขาย
 
-## Steps to Copy Paste records from excel
+## ขั้นตอนในการคัดลอกวางบันทึกจาก excel
 
-* Prepare the source data in Excel or text editor with each column separated by a tab.
+* เตรียมข้อมูลต้นฉบับใน Excel หรือโปรแกรมแก้ไขข้อความโดยคั่นแต่ละคอลัมน์ด้วยแท็บ
 
  ![Copy Pasting](/docs/assets/img/using-erpnext/using-copy-paste-1.png)
 
-* Drag to select the records, and click the copy menu button or by Ctrl + C (Cmd + C) for 
+* ลากเพื่อเลือกระเบียน แล้วคลิกปุ่มเมนูคัดลอกหรือโดย Ctrl + C (Cmd + C) สำหรับ
 
- Case 1. The first column of the excel sheet should be the Column header and the contents therein.
+กรณีที่ 1 คอลัมน์แรกของแผ่นงาน Excel ควรเป็นส่วนหัวของคอลัมน์และเนื้อหาในนั้น
 
- Case 2. When there is no defined column header, the data will be mapped to the visible columns.
+กรณีที่ 2 เมื่อไม่มีส่วนหัวของคอลัมน์ที่กำหนดไว้ ข้อมูลจะถูกแมปกับคอลัมน์ที่มองเห็นได้
 
  ![Copy Pasting](/docs/assets/img/using-erpnext/using-copy-paste-4.png)
 
-* Place the cursor to the target input field of the child table, and paste it. Unlike the import via upload file feature, this copy & paste feature will trigger field change events automatically. 
+* วางเคอร์เซอร์ไปที่ช่องป้อนข้อมูลเป้าหมายของตารางย่อย และวาง คุณลักษณะการคัดลอกและวางนี้แตกต่างจากการนำเข้าผ่านคุณลักษณะไฟล์อัปโหลด ซึ่งจะทริกเกอร์เหตุการณ์การเปลี่ยนแปลงฟิลด์โดยอัตโนมัติ
 
  ![Copy Pasting](/docs/assets/img/using-erpnext/using-copy-paste-3.gif)
 
-For performance consideration, you should only paste less than or equal to 100 records at a time.
+สำหรับการพิจารณาประสิทธิภาพ คุณควรวางระเบียนน้อยกว่าหรือเท่ากับ 100 ต่อครั้งเท่านั้น
 
 {next}

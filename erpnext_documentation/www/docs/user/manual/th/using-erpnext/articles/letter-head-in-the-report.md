@@ -1,20 +1,20 @@
 <!-- add-breadcrumbs -->
-# Letter Head in the Report
+# หัวจดหมายในรายงาน
 
-In the reports, Letter Head is fetched from the Company master. 
+ในรายงาน จะมีการดึงหัวจดหมายจากต้นแบบของบริษัท
 
-To have the company's Letter Head fetched correctly in the report, please ensure that you have updated the default Letter Head in the Company master. 
+หากต้องการให้ดึงหัวจดหมายของบริษัทอย่างถูกต้องในรายงาน โปรดตรวจสอบให้แน่ใจว่าคุณได้อัปเดตหัวจดหมายเริ่มต้นในข้อมูลหลักของบริษัทแล้ว
 
-> Explore > Accounting > Company
+> สำรวจ > บัญชี > บริษัท
 
 ![Letter Head](/docs/assets/img/using-erpnext/using-print-format.png)
 
-In a Company master, if no Letter Head is set as default, then in the reports, Letter Head having Default field checked will be fetched.
+ในข้อมูลหลักของบริษัท หากไม่มีการตั้งค่าหัวจดหมายเป็นค่าเริ่มต้น ดังนั้นในรายงาน หัวจดหมายที่มีช่องเริ่มต้นที่เลือกไว้จะถูกดึงข้อมูล
 
 ![Letter Head](/docs/assets/img/using-erpnext/using-print-format-1.png)
 
-If you are managing multiple companies in a single ERPNext account, then ensure that for each Company, default Letter Head is set in the Company master.
+หากคุณกำลังจัดการบริษัทหลายแห่งในบัญชี ERPNext บัญชีเดียว ตรวจสอบให้แน่ใจว่าสำหรับแต่ละบริษัท หัวจดหมายเริ่มต้นถูกตั้งค่าไว้ในข้อมูลหลักของบริษัท
 
-After updating Letter Head in the Company master, refresh your ERPNext account, and then check the print format of a report.
+หลังจากอัปเดตหัวจดหมายในข้อมูลหลักของบริษัทแล้ว ให้รีเฟรชบัญชี ERPNext ของคุณ แล้วตรวจสอบรูปแบบการพิมพ์ของรายงาน
 
 {next}

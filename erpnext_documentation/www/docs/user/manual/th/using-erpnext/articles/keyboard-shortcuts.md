@@ -1,33 +1,33 @@
 <!-- add-breadcrumbs -->
-# Keyboard Shortcuts
+# แป้นพิมพ์ลัด
 
-**ERPNext Version 12 is almost fully accessible using keyboard shortcuts.**
+**ERPNext เวอร์ชัน 12 สามารถเข้าถึงได้เกือบทั้งหมดโดยใช้แป้นพิมพ์ลัด**
 
-## Keyboard Shortcuts Dialog
+## กล่องโต้ตอบแป้นพิมพ์ลัด
 
-The keyboard shortcuts for any page can be viewed by opening the keyboard shortcuts dialog from the Help dropdown on the navigation bar.
+คุณสามารถดูแป้นพิมพ์ลัดสำหรับหน้าใดก็ได้โดยเปิดกล่องโต้ตอบแป้นพิมพ์ลัดจากดรอปดาวน์ "ช่วยเหลือ" บนแถบนำทาง
 
 ![keyboard shortcuts](/docs/assets/img/using-erpnext/using-keyboard-shortcuts-6.gif)
 
-The dialog displays a list of global shortcuts that can be used over the entire app. It also displays a list of shortcuts that are specific to the current page.
+กล่องโต้ตอบแสดงรายการทางลัดส่วนกลางที่สามารถใช้ได้ทั่วทั้งแอป นอกจากนี้ยังแสดงรายการทางลัดเฉพาะสำหรับหน้าปัจจุบัน
 
 ![keyboard shortcuts](/docs/assets/img/using-erpnext/keyboard-shortcuts-dialog.png)
 
-## Using Alt for Shortcuts
+## การใช้ Alt สำหรับปุ่มลัด
 
-Similar to the pattern used by Windows, Alt is an important key for keyboard shortcuts on ERPNext. Pressing Alt on any page underlines a single character on the Page Menu buttons as well as the buttons on the sidebar. Pressing the underlined character while keeping Alt pressed triggers the button click.
+คล้ายกับรูปแบบที่ Windows ใช้ Alt เป็นคีย์ที่สำคัญสำหรับแป้นพิมพ์ลัดบน ERPNext การกด Alt บนหน้าใดๆ จะเป็นการขีดเส้นใต้อักขระตัวเดียวบนปุ่มเมนูเพจ เช่นเดียวกับปุ่มบนแถบด้านข้าง การกดตัวอักษรที่ขีดเส้นใต้ในขณะที่กดปุ่ม Alt ค้างไว้จะทำให้เกิดการคลิกปุ่ม
 
-Here, N on the New button is underlined, so pressing Alt + N opens the New Customer dialog:
+ที่นี่ N บนปุ่มใหม่จะถูกขีดเส้นใต้ ดังนั้นการกด Alt + N จะเป็นการเปิดกล่องโต้ตอบลูกค้าใหม่:
 
 ![keyboard shortcuts](/docs/assets/img/using-erpnext/using-keyboard-shortcuts-1.gif)
 
-For the Menu drop-down, a single character on each drop-down item is underlined. So when the Menu is open, the items in the Menu can be clicked by pressing the underlined character while keeping Alt pressed:
+สำหรับเมนูแบบเลื่อนลง อักขระตัวเดียวในแต่ละรายการแบบเลื่อนลงจะถูกขีดเส้นใต้ ดังนั้นเมื่อเมนูเปิดขึ้น รายการในเมนูสามารถคลิกได้โดยการกดตัวอักขระที่ขีดเส้นใต้ในขณะที่กด Alt ค้างไว้:
 
 ![keyboard shortcuts](/docs/assets/img/using-erpnext/using-keyboard-shortcuts-2.gif)
 
-##List View
+##เลือกดูแบบรายการ
 
-As specified in the Keyboard Shortcuts Dialog, List View is navigable using the *Up* and *Down* arrow keys. *Enter* opens the list item and *Space* selects the list item. *Shift* + *Down* or *Shift* + *Up* can be used to select multiple list items.
+ตามที่ระบุไว้ในกล่องโต้ตอบแป้นพิมพ์ลัด มุมมองรายการสามารถนำทางได้โดยใช้ปุ่มลูกศรขึ้นและลง EnterเปิดรายการและSpaceเลือกรายการ Shift + DownหรือShift + Upสามารถใช้เพื่อเลือกหลายรายการ
 
 ![keyboard shortcuts](/docs/assets/img/using-erpnext/using-keyboard-shortcuts-5.png)
 

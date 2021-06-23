@@ -1,40 +1,40 @@
 <!-- add-breadcrumbs -->
-# Assignment
+# งานที่มอบหมาย
 
-**Assign To is a feature in ERPNext that allows you to assign a particular document to a specific user, who needs to further work on that document.**
+**งานที่มอบหมายเป็นคุณลักษณะใน ERPNext ที่ช่วยให้คุณสามารถกำหนดเอกสารเฉพาะให้กับผู้ใช้เฉพาะที่ต้องการทำงานเพิ่มเติมในเอกสารนั้นได้**
 
-For example, if a Sales Order needs to be approved or submitted by the Sales Manager, the first draft user can assign that Sales Order to the Sales Manager. 
+ตัวอย่างเช่น ถ้าผู้จัดการฝ่ายขายต้องได้รับการอนุมัติหรือส่งคำสั่งขาย ผู้ใช้แบบร่างแรกสามารถกำหนดคำสั่งขายนั้นให้กับผู้จัดการฝ่ายขายได้
 
-On assigning this document to the Sales Manager, it will be added to that user's ToDo list. 
+ในการมอบหมายเอกสารนี้ให้กับผู้จัดการฝ่ายขาย เอกสารจะถูกเพิ่มไปยังรายการสิ่งที่ต้องทำของผู้ใช้นั้น
 
-Similarly, for a Delivery Note and a Sales Invoice against this sales Order, the assignment can be done to a Material User and an Account User.
+ในทำนองเดียวกัน สำหรับใบส่งมอบและใบกำกับสินค้าสำหรับใบสั่งขายนี้ มอบหมายให้ผู้ใช้วัสดุและผู้ใช้บัญชีได้
 
 ![Assignment](/docs/assets/img/using-erpnext/using-assignment-1.png)
 
-> Note: Assignment can be done irrespective of Permission Restrictions.
+> หมายเหตุ: การมอบหมายสามารถทำได้โดยไม่คำนึงถึงข้อจำกัดการอนุญาต
 
-## New Assignment
+## งานใหม่
 
-To make a new assignment, go to the document for which you wish to make the assignment and click on the 'Assigned to' button located at the left sidebar. Select the name of the User to whom you want to make this assignment.
+หากต้องการมอบหมายงานใหม่ ให้ไปที่เอกสารที่คุณต้องการมอบหมายงาน แล้วคลิกปุ่ม 'มอบหมายให้' ซึ่งอยู่ที่แถบด้านข้างทางซ้าย เลือกชื่อผู้ใช้ที่คุณต้องการมอบหมายงานนี้ให้
 
 ![Assignment](/docs/assets/img/using-erpnext/using-assignment-2.gif)
 
-Along with assignment, you can also leave a comment for the review of the assignee.
+นอกจากงานแล้ว คุณยังสามารถแสดงความคิดเห็นเพื่อตรวจสอบผู้รับมอบหมายได้
 
 ![Assignment](/docs/assets/img/using-erpnext/using-assignment-3.gif)
 
-### ToDo List of Assignee
+### รายการสิ่งที่ต้องทำของผู้ได้รับมอบหมาย
 
-Every assignment made to a particular User will be reflected in their ToDo section.
+การมอบหมายงานทั้งหมดให้กับผู้ใช้รายใดรายหนึ่งจะแสดงอยู่ในส่วนสิ่งที่ต้องทำ
 
 ![Assignment](/docs/assets/img/using-erpnext/using-assignment-4.png)
 
-### Removing Assignment
+### การนำงานออก
 
-Users will be able to remove assignments by clicking on the "Closed" button in the document.
+ผู้ใช้จะสามารถลบงานโดยคลิกที่ปุ่ม "ปิด" ในเอกสาร
 
 ![Assignment](/docs/assets/img/using-erpnext/using-assignment-5.png)
 
-Once the assignment is set as completed, the corresponding ToDo will simultaneously be updated as 'Closed'.
+เมื่อตั้งค่าการมอบหมายเสร็จสมบูรณ์แล้ว งานที่เกี่ยวข้องทั้งหมดจะได้รับการอัปเดตพร้อมกันเป็น 'ปิด'
 
 {next}

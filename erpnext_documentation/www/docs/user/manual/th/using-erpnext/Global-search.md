@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-# Global Search
+# ค้นหาทั้งหมด
 
-**Global search is a powerful word-processing operation in ERPNext which will help you in searching for a particular Document Type or Document.**
+**การค้นหาทั้งหมดคือการประมวลผลคำทั้งหมดที่มีใน ERPNext ซึ่งจะช่วยคุณในการค้นหาประเภทเอกสารหรือเอกสารเฉพาะ**
 
-For every sequence of a particular word or a set of characters, you will have a search result. 
+สำหรับทุกลำดับของคำบางคำหรือชุดอักขระ คุณจะมีผลการค้นหา
 
-### Using Awesome Bar for Global Search.
+### การใช้ Awesome Bar สำหรับการค้นหาทั้งหมด
 
 ![Tree Master Renaming](/docs/assets/img/using-erpnext/using-global-search-2.gif)
 
-Global Search helps users find information quickly. It’s located in the upper right-hand corner in ERPNext. Simply entering a few characters in the Search Bar will show results from several different record types (Contact, Customer, Issues, etc.) related to that keyword. You can also customize the fields based on which search will be shown.
+การค้นหาทั้งหมดช่วยให้ผู้ใช้ค้นหาข้อมูลได้อย่างรวดเร็ว อยู่ที่มุมขวาบนใน ERPNext เพียงป้อนอักขระสองสามตัวในแถบค้นหาจะแสดงผลลัพธ์จากระเบียนหลายประเภท (ติดต่อ ลูกค้า ปัญหา ฯลฯ) ที่เกี่ยวข้องกับคำหลักนั้น คุณยังสามารถปรับแต่งฟิลด์ตามการค้นหาที่จะแสดง
 
-You can also type in multiple keywords separated by & operator to find your desired results. You may refer to the following cases for examples:
+คุณยังสามารถพิมพ์คำหลักหลายคำโดยคั่นด้วยตัวดำเนินการ & เพื่อค้นหาผลลัพธ์ที่คุณต้องการ คุณอาจอ้างถึงกรณีต่อไปนี้เป็นตัวอย่าง:
 
-- Input "apple & iPod" can return documents with one field contain Apple and the other contains iPod( PO's vendor and item).
-- Input "iPhone & iPod" can return target documents that contain both item iPhone and iPod (child table items).
-- Input "iPhone & black" can return the item with description contains both iPhone and black(long text field).
-- Input 'foo & bar" can return any docs with both tags foo and bar assigned. (special long text field _usertags).
+- ป้อนข้อมูล "apple & iPod" สามารถส่งคืนเอกสารโดยมีช่องหนึ่งที่มี Apple และอีกช่องหนึ่งมี iPod (ผู้ขายและรายการของ PO)
+- ป้อนข้อมูล "iPhone & iPod" สามารถส่งคืนเอกสารเป้าหมายที่มีทั้งรายการ iPhone และ iPod (รายการตารางย่อย)
+- ป้อนข้อมูล "iPhone & สีดำ" สามารถส่งคืนสินค้าพร้อมคำอธิบายมีทั้ง iPhone และสีดำ (ช่องข้อความยาว)
+- ป้อนข้อมูล 'foo & bar" สามารถส่งคืนเอกสารใด ๆ ที่มีทั้งแท็ก foo และ bar ที่กำหนด (ฟิลด์ข้อความยาวพิเศษ _usertags)
 
-### Enable Global Search for fields in a Doctype.
+### เปิดใช้งานการค้นหาทั้งหมดสำหรับฟิลด์ใน Doctype
 
 ![Tree Master Renaming](/docs/assets/img/using-erpnext/using-global-search-1.gif)
 

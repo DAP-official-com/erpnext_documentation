@@ -1,28 +1,28 @@
 <!-- add-breadcrumbs -->
-#Rename User
+#เปลี่ยนชื่อผู้ใช้
 
-Renaming functionality allows you to edit id of specific record. User is saved with person's Email Address. Only User with System Manager's role will be able to rename User IDs.
+ฟังก์ชันการเปลี่ยนชื่อทำให้คุณสามารถแก้ไข id ของเรกคอร์ดเฉพาะได้ ผู้ใช้จะถูกบันทึกด้วยที่อยู่อีเมลของบุคคล เฉพาะผู้ใช้ที่มีบทบาทผู้จัดการระบบเท่านั้นที่จะสามารถเปลี่ยนชื่อ ID ผู้ใช้ได้
 
-Following are the steps to rename user id.
+ต่อไปนี้เป็นขั้นตอนในการเปลี่ยนชื่อ ID ผู้ใช้
 
-#### Step 1: Users
+#### ขั้นตอนที่ 1: ผู้ใช้
 
-`Setup > Users > User`
+`ตั้งค่า > ผู้ใช้ > ผู้ใช้`
 
-Open User to be renamed.
+เปิด "ผู้ใช้" เพื่อเปลี่ยนชื่อ
 
-#### Step 2: Rename
+#### ขั้นตอนที่ 2: เปลี่ยนชื่อ
 
-From Menu, select Rename.
+จากเมนู เลือกเปลี่ยนชื่อ
 
 <img alt="Rename" class="screenshot" src="{{docs_base_url}}/assets/img/articles/rename-user-1.png">
 
-#### Step 3: Update
+#### ขั้นตอนที่ 3: อัปเดต
 
-Enter valid Email Address and click on Rename.
+ป้อนที่อยู่อีเมลที่ถูกต้องและคลิกที่เปลี่ยนชื่อ
 
 <img alt="Update" class="screenshot" src="{{docs_base_url}}/assets/img/articles/rename-user-2.png"> 
 
-After successful renaming, User will be able login using updated user id.
+หลังจากเปลี่ยนชื่อสำเร็จแล้ว ผู้ใช้จะสามารถเข้าสู่ระบบโดยใช้ ID ผู้ใช้ที่อัปเดต
 
 <!-- markdown -->

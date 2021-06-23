@@ -1,36 +1,36 @@
 <!-- add-breadcrumbs -->
-# Deleting and Restoring Documents
+# การลบและกู้คืนเอกสาร
 
-**In ERPNext, you can delete a document if not needed. They can be masters like Items, Customer or transactions like Sales Order, Payment Entries, etc.**
+**ใน ERPNext คุณสามารถลบเอกสารได้หากไม่ต้องการ พวกเขาสามารถเป็นผู้เชี่ยวชาญเช่น รายการ ลูกค้า หรือธุรกรรมเช่น ใบสั่งขาย รายการชำระเงิน ฯลฯ**
 
-To delete a document, you can go to the dropdown menu of the document and select 'Delete'.
+หากต้องการลบเอกสาร คุณสามารถไปที่เมนูดรอปดาวน์ของเอกสารและเลือก 'ลบ'
 
 ![Restore Deleted Document](/docs/assets/img/using-erpnext/using-restore-1.png)
 
-For bulk deletion, you can select multiple Cancelled records and delete them at once from the List View.
+สำหรับการลบจำนวนมาก คุณสามารถเลือกหลายระเบียนที่ยกเลิกแล้วลบออกพร้อมกันจากมุมมองรายการ
 
 ![Restore Deleted Documents](/docs/assets/img/using-erpnext/using-restore-3.gif)
 
-> Note: Any submittable document will not be deleted after submission. To delete a submitted document, you will be required to first 'cancel' the document.
+> หมายเหตุ: เอกสารที่ส่งได้จะไม่ถูกลบหลังจากส่ง หากต้องการลบเอกสารที่ส่ง คุณจะต้อง 'ยกเลิก' เอกสารก่อน
 
-## Restoration of Deleted Documents
+## การกู้คืนเอกสารที่ถูกลบ
 
-Further, any document, if deleted by mistake, or is required after deletion, can also be restored from the Deleted Documents list.
+นอกจากนี้ เอกสารใดๆ หากถูกลบโดยไม่ได้ตั้งใจ หรือจำเป็นหลังจากลบ ก็สามารถกู้คืนได้จากรายการเอกสารที่ถูกลบ
 
-To access Deleted Documents, go to: 
+ในการเข้าถึงเอกสารที่ถูกลบ ให้ไปที่: 
 
-> Home > Settings > Data > Deleted Documents
+> หน้าหลัก > การตั้งค่า > ข้อมูล > เอกสารที่ถูกลบ
 
-### 1. How to Restore Deleted Documents
+### 1. วิธีคืนค่าเอกสารที่ถูกลบ
 
-1. Go to Deleted Documents List
-2. Open the deleted Document
-3. Click on the **Restore** button.
+1. ไปที่รายการเอกสารที่ถูกลบ
+2. เปิดเอกสารที่ถูกลบ
+3. คลิกที่ปุ่ม **คืนค่า**
 
 ![Restore Deleted Document](/docs/assets/img/using-erpnext/using-restore-2.gif)
 
-> Note: If the document was deleted after getting ** canceled**, it would be restored with a new name.
+> หมายเหตุ: หากเอกสารถูกลบหลังจากได้รับการ* ยกเลิก * เอกสารนั้นจะถูกกู้คืนด้วยชื่อใหม่
 
-> Further, Only those Users having System Manager Role assigned to them can restore deleted documents.
+> นอกจากนี้ เฉพาะผู้ใช้ที่มีบทบาทผู้จัดการระบบที่กำหนดให้กับพวกเขาเท่านั้นที่สามารถกู้คืนเอกสารที่ถูกลบได้
 
 {next}

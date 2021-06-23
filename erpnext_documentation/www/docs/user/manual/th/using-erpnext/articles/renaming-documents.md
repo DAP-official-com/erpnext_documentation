@@ -1,69 +1,69 @@
 <!-- add-breadcrumbs -->
-# Renaming Documents
+# การเปลี่ยนชื่อเอกสาร
 
-**Using Renaming feature, you can change the name of a master document.** 
+**เมื่อใช้คุณสมบัติการเปลี่ยนชื่อ คุณสามารถเปลี่ยนชื่อของเอกสารหลักได้** 
 
-Using this feature you can also merge two master documents into a single one.
+การใช้คุณสมบัตินี้ คุณยังสามารถรวมเอกสารหลักสองฉบับเป็นเอกสารเดียวได้
 
-Check [List of Renamable Documents](/docs/user/manual/en/using-erpnext/articles/renaming-documents#list-of-renamable-documents) for the list of all the documents that can be renamed in the system.
+สามารถดู [ลิสต์เอกสารที่สามารถเปลี่ยนชื่อได้](/docs/user/manual/en/using-erpnext/articles/renaming-documents#list-of-renamable-documents) สำหรับรายการเอกสารทั้งหมดที่สามารถเปลี่ยนชื่อได้ในระบบ
 
-### Steps to rename a Document
+### ขั้นตอนการเปลี่ยนชื่อเอกสาร
 
-**Step 1**: Go to the document that you wish to rename. 
+**ขั้นตอนที่ 1 :** ไปที่เอกสารที่คุณต้องการเปลี่ยนชื่อ 
 
-**Step 2**: From the drop-down menu, select the option 'Rename'. 
+**ขั้นตอนที่ 2**: จากเมนูแบบเลื่อนลง ให้เลือกตัวเลือก 'เปลี่ยนชื่อ'
 
 ![Document Renaming](/docs/assets/img/using-erpnext/using-rename-documents-1.gif)
 
-Alternatively, you can also click on the Title of the document, which will result in a pop-up, wherein you will be able to change the name of the document that you wish to rename.
+อีกวิธีหนึ่ง คุณยังสามารถคลิกที่ชื่อเอกสาร ซึ่งจะส่งผลให้ป๊อปอัป ซึ่งคุณจะสามารถเปลี่ยนชื่อเอกสารที่คุณต้องการเปลี่ยนชื่อได้
 
 ![Document Renaming](/docs/assets/img/using-erpnext/using-rename-documents-2.gif)
 
-### Effect of Renaming
+### ผลของการเปลี่ยนชื่อ
 
-Renaming a document will affect all the existing transactions liked to this document. E.g., If you are changing the Item Code for an Item, the same will be updated in all the existing transactions wherein this Item is linked.
+การเปลี่ยนชื่อเอกสารจะส่งผลต่อธุรกรรมที่มีอยู่ทั้งหมดที่ชอบในเอกสารนี้ เช่น หากคุณกำลังเปลี่ยนรหัสรายการสำหรับรายการ รายการเดียวกันจะได้รับการอัปเดตในธุรกรรมที่มีอยู่ทั้งหมดที่เชื่อมโยงรายการนี้
 
-### List of Renamable Documents
+### รายการเอกสารที่เปลี่ยนชื่อได้
 
-Following is the list of all the documents that can be renamed.
+รายการเอกสารทั้งหมดที่สามารถเปลี่ยนชื่อได้
 
-1. Contact        					     	
-2. Address         					     	
-3. Warehouse       			   
-4. Supplier        		
-5. Customer      						    	
-6. User           				    	
-7. Sales Partner  		
-8. Project	   		
-9. Cost Center	   	
-10. Item Group
-11. Item	   	
-12. Company
-13. Role
-14. Earning Type
-15. Note 
-16. Serial No
-17. Account
-18. Territory
-19. Terms and Conditions
-20. Supplier Group	
-21. Workstation		
-22. Employee
-23. Sales Taxes and Charges Master
-24. Purchase Taxes and Charges Master
-25. Price List
-26. Party Type	
-27. Mode of Payment
-28. Designation
-29. Department
-30. Deduction Type
-31. Customer Group
-32. Brand	
-33. Branch
-34. Sales Person
+1. รายชื่อ        					     	
+2. ที่อยู่         					     	
+3. คลังสินค้า       			   
+4. ผู้ผลิต       		
+5. ลูกค้า     						    	
+6. ผู้ใช้           				    	
+7. พันธมิตรการขาย  		
+8. โครงการ   		
+9. ศูนย์ต้นทุน (Cost Center)   	
+10. กลุ่มสินค้า
+11. สินค้า	   	
+12. บริษัท
+13. บทบาท
+14. ประเภทรายได้
+15. โน๊ต
+16. หมายเลขซีเรียล
+17. บัญชีผู้ใช้
+18. อาณาเขต
+19. ข้อกำหนดและเงื่อนไข
+20. กลุ่มซัพพลายเออร์	
+21. เวิร์คสเตชั่น	
+22. พนักงาน
+23. ภาษีขายและค่าธรรมเนียมหลัก
+24. ซื้อภาษีและค่าธรรมเนียม
+25. รายการราคา
+26. ประเภทของผู้ที่เกี่ยวข้อง	
+27. วิธีการชำระเงิน
+28. การกำหนด
+29. สาขา
+30. ประเภทการหักเงิน
+31. กลุ่มลูกค้า
+32. ยี่ห้อ	
+33. สาขา
+34. พนักงานขาย
 
-## See also
+## ข้อมูลที่เกี่ยวข้อง
 
-1. [Bulk Rename](/docs/user/manual/en/using-erpnext/articles/bulk-rename)
+1. [เปลี่ยนชื่อเป็นกลุ่ม](/docs/user/manual/en/using-erpnext/articles/bulk-rename)
 
 <!-- markdown -->

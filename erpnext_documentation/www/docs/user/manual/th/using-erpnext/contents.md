@@ -1,50 +1,46 @@
 <!-- add-breadcrumbs -->
-# Using ERPNext
+# การใช้ ERPNext
 
-In any organization, it is very important to ensure transparency and accountability towards transactions and operations. To facilitate the same, there is a need to have ease of communication across teams and discussions, and for assignments and feedbacks to have minimal turn-round time.
+ในองค์กรใด ๆ สิ่งสำคัญคือต้องสร้างความโปร่งใสและความรับผิดชอบต่อธุรกรรมและการดำเนินงาน เพื่ออำนวยความสะดวกในสิ่งเดียวกัน จำเป็นต้องมีความสะดวกในการสื่อสารระหว่างทีมและการสนทนา และเพื่อให้การมอบหมายและการตอบกลับมีเวลาน้อยที่สุด
 
-Taking this concept into an ERP system, we have designed a bunch of tools whereby you can Assign transactions,
-manage your To Dos, share and maintain a Calendar, maintain a company-wise Knowledge Base, Tag and Comment on transactions and send your Orders, Invoices
-etc via Email. You can also send instant messages to other users using the
-Messaging tool.
+การนำแนวคิดนี้เข้าสู่ระบบ ERP เราได้ออกแบบเครื่องมือมากมายซึ่งคุณสามารถกำหนดธุรกรรม จัดการสิ่งที่ต้องทำ แบ่งปันและดูแลปฏิทิน รักษาฐานความรู้ที่ชาญฉลาดของบริษัท แท็กและแสดงความคิดเห็นเกี่ยวกับธุรกรรม และส่งคำสั่งซื้อของคุณ ใบแจ้งหนี้ ฯลฯ ทางอีเมล คุณยังสามารถส่งข้อความโต้ตอบแบบทันทีไปยังผู้ใช้รายอื่นโดยใช้เครื่องมือการส่งข้อความ
 
-These tools are integrated into all aspects of the product so that you can
-effectively manage your data and collaborate with your co-workers.
+เครื่องมือเหล่านี้ถูกรวมเข้ากับทุกด้านของผลิตภัณฑ์ เพื่อให้คุณสามารถจัดการข้อมูลของคุณได้อย่างมีประสิทธิภาพและทำงานร่วมกับเพื่อนร่วมงานของคุณ
 
-## 1. Tools
-1. [To Do](/docs/user/manual/en/using-erpnext/to-do)
-1. [Notes](/docs/user/manual/en/using-erpnext/notes)
-1. [Video](/docs/user/manual/en/using-erpnext/video)
-1. [Calendar](/docs/user/manual/en/using-erpnext/calendar)
-1. [Chat](/docs/user/manual/en/using-erpnext/chat)
-1. [Dashboard](/docs/user/manual/en/using-erpnext/dashboard)
-1. [Global Search](/docs/user/manual/en/using-erpnext/Global-search)
-1. [Desktop](/docs/user/manual/en/using-erpnext/desktop)
+## 1. เครื่องมือ
+1. [สิ่งที่ต้องทำ](/docs/user/manual/th/using-erpnext/to-do)
+1. [โน๊ต](/docs/user/manual/th/using-erpnext/notes)
+1. [วิดีโอ](/docs/user/manual/th/using-erpnext/video)
+1. [ปฏิทิน](/docs/user/manual/th/using-erpnext/calendar)
+1. [แชท](/docs/user/manual/th/using-erpnext/chat)
+1. [แดชบอร์ด](/docs/user/manual/th/using-erpnext/dashboard)
+1. [ค้นหาทั้งหมด](/docs/user/manual/th/using-erpnext/Global-search)
+1. [เดสก์ทอป](/docs/user/manual/th/using-erpnext/desktop)
 
-## 2. Collaboration Tools
-1. [Assignment](/docs/user/manual/en/using-erpnext/assignment)
-1. [Tags](/docs/user/manual/en/using-erpnext/tags)
-1. [Kanban Board](/docs/user/manual/en/customize-erpnext/kanban-board)
-1. [Filter By](/docs/user/manual/en/using-erpnext/filter-by)
-1. [Save Filter](/docs/user/manual/en/using-erpnext/save-filter)
-1. [Search Filter](/docs/user/manual/en/using-erpnext/search-filter)
-1. [Collaborating Around Forms](/docs/user/manual/en/using-erpnext/collaborating-around-forms)
+## 2. เครื่องมือการทำงานร่วมกัน
+1. [งานที่มอบหมาย](/docs/user/manual/th/using-erpnext/assignment)
+1. [แท็ก](/docs/user/manual/th/using-erpnext/tags)
+1. [Kanban Board](/docs/user/manual/th/customize-erpnext/kanban-board)
+1. [กรองตาม](/docs/user/manual/th/using-erpnext/filter-by)
+1. [บันทึกตัวกรอง](/docs/user/manual/th/using-erpnext/save-filter)
+1. [ตัวกรองการค้นหา](/docs/user/manual/th/using-erpnext/search-filter)
+1. [การทำงานร่วมกันในแบบฟอร์ม](/docs/user/manual/th/using-erpnext/collaborating-around-forms)
 
-## 3. Navigation Guidance
-1. [Keyboard Shortcuts](/docs/user/manual/en/using-erpnext/articles/keyboard-shortcuts)
+## 3. คำแนะนำการนำทาง
+1. [แป้นพิมพ์ลัด](/docs/user/manual/th/using-erpnext/articles/keyboard-shortcuts)
 
-## Articles
+## บทความ
 
-1. [Check Link Between Documents](/docs/user/manual/en/using-erpnext/articles/check-link-between-documents)
-1. [Access Log](/docs/user/manual/en/using-erpnext/access-log)
-1. [Duplicate Record](/docs/user/manual/en/using-erpnext/articles/duplicate-record)
-1. [Auto-Creation of ToDo Based on Assignment](/docs/user/manual/en/using-erpnext/articles/todo-auto-creation)
-1. [Document Versioning](/docs/user/manual/en/using-erpnext/document-versioning)
-1. [Deleting and Restoring Documents](/docs/user/manual/en/using-erpnext/restore-deleted-docs)
-1. [Attachment of Files](https://www.frappeframework.com/docs/user/en/desk/attachments)
-1. [Bulk Rename](/docs/user/manual/en/using-erpnext/articles/bulk-rename)
-1. [Renaming Documents](/docs/user/manual/en/using-erpnext/articles/renaming-documents)
-1. [Tree Master Renaming](/docs/user/manual/en/using-erpnext/articles/tree-master-renaming)
-1. [Letter Head In The Report](/docs/user/manual/en/using-erpnext/articles/letter-head-in-the-report)
-1. [Copy Pasting Multiple Records From Excel](/docs/user/manual/en/using-erpnext/articles/copy-pasting-multiple-records-from-excel)
-1. [Adding Attachments To Outgoing Messages](/docs/user/manual/en/using-erpnext/articles/adding-attachments-to-outgoing-messages)
+1. [การเชื่อมโยงระหว่างเอกสาร](/docs/user/manual/th/using-erpnext/articles/check-link-between-documents)
+1. [บันทึกการเข้าถึง](/docs/user/manual/th/using-erpnext/access-log)
+1. [บันทึกซ้ำ(Duplicate Record)](/docs/user/manual/th/using-erpnext/articles/duplicate-record)
+1. [การสร้างสิ่งที่ต้องทำโดยอัตโนมัติตามการมอบหมาย](/docs/user/manual/th/using-erpnext/articles/todo-auto-creation)
+1. [การกำหนดเวอร์ชันเอกสาร](/docs/user/manual/th/using-erpnext/document-versioning)
+1. [การลบและกู้คืนเอกสาร](/docs/user/manual/th/using-erpnext/restore-deleted-docs)
+1. [ไฟล์แนบ](https://www.frappeframework.com/docs/user/th/desk/attachments)
+1. [เปลี่ยนชื่อเป็นกลุ่ม](/docs/user/manual/th/using-erpnext/articles/bulk-rename)
+1. [การเปลี่ยนชื่อเอกสาร](/docs/user/manual/th/using-erpnext/articles/renaming-documents)
+1. [เปลี่ยนชื่อโครงสร้างต้นไม้](/docs/user/manual/th/using-erpnext/articles/tree-master-renaming)
+1. [หัวจดหมายในรายงาน](/docs/user/manual/th/using-erpnext/articles/letter-head-in-the-report)
+1. [คัดลอกการวางหลายระเบียนจาก Excel](/docs/user/manual/th/using-erpnext/articles/copy-pasting-multiple-records-from-excel)
+1. [การเพิ่มสิ่งที่แนบมากับข้อความขาออก](/docs/user/manual/th/using-erpnext/articles/adding-attachments-to-outgoing-messages)

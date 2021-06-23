@@ -1,47 +1,46 @@
 <!-- add-breadcrumbs -->
-# Desktop 
+# เดสก์ทอป 
 
-**The moment a User logs into the system they will be able to see a Home Screen wherein all the Modules and Domains will be listed in the form of cards.**
+**ทันทีที่ผู้ใช้เข้าสู่ระบบ พวกเขาจะสามารถมองเห็นหน้าจอหลักซึ่งโมดูลและโดเมนทั้งหมดจะแสดงอยู่ในรูปของการ์ด**
 
-Their cards are a replacement to the erstwhile Module icons which were present in ERPNext versions before version 12.
+การ์ดของพวกเขาใช้แทนไอคอนโมดูลในอดีตซึ่งมีอยู่ในเวอร์ชัน ERPNext ก่อนเวอร์ชัน 12
 
 ![New Desktop](/docs/assets/img/using-erpnext/desktop/desktop.png)
 
-These cards can be classified into four categories, namely:
+การ์ดเหล่านี้สามารถแบ่งออกเป็นสี่ประเภท ได้แก่:
 
-- **Modules**: These are all the domain agnostic modules available in ERPNext that are common to all types of businesses. Modules like Human Resources, CRM, Buying, Selling, etc. are put under this category.
-- **Domains**: This is where you can find all domain-specific modules like Education and Manufacturing. You can learn more about all industry-specific modules [here](/docs/user/manual/en#3-industry-specific-modules).
-- **Places**: Places is where you can find features that are not industry-specific and are not required in day to day operations of your company. Features like Website, Dashboards, and Marketplace can be found here.
-- **Administration**: Here you can find modules related to your ERPNext setup and administration.
+- **โมดูล**: โมดูลเหล่านี้คือโมดูลไม่เชื่อเรื่องพระเจ้าของโดเมนทั้งหมดที่มีอยู่ใน ERPNext ซึ่งเป็นเรื่องปกติสำหรับธุรกิจทุกประเภท โมดูลต่างๆ เช่น ทรัพยากรบุคคล, CRM, การซื้อ, การขาย ฯลฯ อยู่ภายใต้หมวดหมู่นี้
+- **โดเมน**: นี่คือที่ที่คุณสามารถค้นหาโมดูลเฉพาะโดเมนทั้งหมด เช่น การศึกษาและการผลิต คุณสามารถเรียนรู้เพิ่มเติมเกี่ยวกับทุกโมดูลเฉพาะอุตสาหกรรม [ที่นี่](/docs/user/manual/en#3-industry-specific-modules).
+- **สถานที่**: สถานที่เป็นที่ที่คุณสามารถค้นหาคุณลักษณะที่ไม่เฉพาะเจาะจงของอุตสาหกรรม และไม่จำเป็นในการดำเนินงานประจำวันของบริษัทของคุณ คุณสมบัติต่างๆ เช่น เว็บไซต์ แดชบอร์ด และ Marketplace สามารถพบได้ที่นี่
+- **ผู้ดูแลระบบ (แอดมิน)**: คุณจะพบโมดูลที่เกี่ยวข้องกับการตั้งค่าและการจัดการ ERPNext ได้ที่นี่
 
-These cards allow better navigation with shortcut items in the drop-down menu. You can customize this drop-down to add or remove links to various DocType for that module.
+การ์ดเหล่านี้ช่วยให้นำทางได้ดีขึ้นด้วยรายการทางลัดในเมนูแบบเลื่อนลง คุณสามารถปรับแต่งรายการแบบเลื่อนลงนี้เพื่อเพิ่มหรือลบลิงก์ไปยังเอกสาร (DocType) ต่างๆ สำหรับโมดูลนั้น
 
 ![Desktop Dropdown](/docs/assets/img/using-erpnext/desktop/desktop-dropdown.png)
 
-You can reorder as well as show or hide these module cards.
+คุณสามารถเรียงลำดับใหม่รวมทั้งแสดงหรือซ่อนการ์ดโมดูลเหล่านี้ได้
 
 ![Drag and Drop](/docs/assets/img/using-erpnext/desktop/drag-and-drop.gif)
 
-## Module Page
+## หน้าโมดูล
 
-Clicking on any module card will take you to the module page. Here the user can navigate through all the doctypes, reports, and settings associated with a particular module.
+การคลิกที่การ์ดโมดูลใดๆ จะนำคุณไปยังหน้าโมดูล ที่นี่ผู้ใช้สามารถนำทางผ่าน doctypes รายงานและการตั้งค่าทั้งหมดที่เกี่ยวข้องกับโมดูลเฉพาะ
 
-For example, here is how the Accounting module page looks like.
+ตัวอย่างเช่น นี่คือลักษณะของหน้าโมดูลการบัญชี
 
 ![Accounts Module](/docs/assets/img/using-erpnext/desktop/accounts-module-page.png)
 
-### Navigating the page
-
-Some links of these modules may be marked grey, clicking on these links won't open any new page. They are marked so because there is a dependent document that needs to be created first. For example, you will need to build a Sales Invoice before accessing the sales register. Hovering on any of these links will show a pop-up guiding the user to the dependent document.
+### ไปยังเพจอื่น
+ลิงก์บางส่วนของโมดูลเหล่านี้อาจถูกทำเครื่องหมายเป็นสีเทา การคลิกที่ลิงก์เหล่านี้จะไม่เปิดหน้าใหม่ใดๆ มีการทำเครื่องหมายไว้เนื่องจากมีเอกสารที่ต้องพึ่งพาซึ่งจำเป็นต้องสร้างก่อน ตัวอย่างเช่น คุณจะต้องสร้างใบกำกับสินค้าก่อนที่จะเข้าถึงการลงทะเบียนการขาย การวางเมาส์เหนือลิงก์ใด ๆ เหล่านี้จะแสดงป๊อปอัปแนะนำผู้ใช้ไปยังเอกสารที่เกี่ยวข้อง
 
 ![Muted Link in Module Page](/docs/assets/img/using-erpnext/desktop/module-link-hover.png)
 
-You shall also notice a color indicator before some of the links. These indicators are used to inform the user if any open or urgent documents need to be looked at.
+คุณจะต้องสังเกตเห็นตัวบ่งชี้สีก่อนลิงก์บางลิงก์ ตัวบ่งชี้เหล่านี้ใช้เพื่อแจ้งให้ผู้ใช้ทราบหากต้องการดูเอกสารที่เปิดอยู่หรือเร่งด่วน
 
 ![Color Indicators](/docs/assets/img/using-erpnext/desktop/color-indicator.png)
 
-* The **red** indicator in the above example indicated that there are open or overdue tasks on the list. 
-* Similarly, a **blue** indicator would mean that there are no open tasks. 
-* An **orange** indicator means that the report has not been accessed or no document is created in the corresponding doctype.
+* **สีแดง** เป็นตัวบ่งชี้ในตัวอย่างข้างต้นแสดงให้เห็นว่ามีงานเปิดหรือค้างชำระในรายการ
+* **สีน้ำเงิน** หมายความว่าไม่มีงานที่เปิดอยู่
+* **สีส้ม** ตัวบ่งชี้ที่หมายถึงว่ารายงานไม่ได้รับการเข้าถึงหรือไม่มีเอกสารที่ถูกสร้างขึ้นในประเภทเอกสารที่สอดคล้องกัน
 
 {next}

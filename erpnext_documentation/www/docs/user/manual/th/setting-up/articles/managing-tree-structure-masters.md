@@ -1,54 +1,53 @@
 <!-- add-breadcrumbs -->
-#Managing Tree Structure Masters
+#การจัดการด้านโครงสร้างต้นไม้ (Tree Structure)
 
-Some of the masters in ERPNext are maintained in tree structure. Tree structured masters allow you to set Parent master, and Child masters under those Parents. Setting up this structure allows you creating intelligent report, and track growth at each level in the hierarchy. 
+ข้อมูลหลักของ ERPNext บางรายการถูกเก็บในรูปแบบโครงสร้างแบบต้นไม้ ต้นแบบที่มีโครงสร้างแบบต้นไม้ช่วยให้คุณสามารถตั้งค่าต้นแบบหลักและต้นแบบย่อยภายใต้ผู้ปกครองเหล่านั้น การตั้งค่าโครงสร้างนี้ช่วยให้คุณสร้างรายงานอัจฉริยะ และติดตามการเติบโตในแต่ละระดับในลำดับชั้น 
 
-Following is the partial list of masters which are maintained in the tree structure.
+ตัวอย่างของข้อมูลที่ถูกจัดเก็บในรูปแบบต้นไม้
 
-* Chart of Accounts
+* ผังบัญชี
 
-* Chart of Cost Centers
+* ผังศูนย์ต้นทุน (Chart of Cost Centers)
 
-* Customer Group
+* กลุ่มลูกค้า (Customer Group)
 
-* Territory
+* อาณาเขต (Territory)
 
-* Sales Person
+* พนักงานขาย
 
-* Item Group
+* กลุ่มสินค้า
 
-Following are the steps to manage and create record in the tree structured master. Let's consider Territory master to understand managing tree masters.
+ต่อไปนี้เป็นขั้นตอนในการจัดการและสร้างเรกคอร์ดในต้นแบบที่มีโครงสร้างแบบต้นไม้ ลองพิจารณาต้นแบบของอาณาเขตเพื่อทำความเข้าใจการจัดการด้านโครงสร้างต้นไม้
 
-####Step 1 : Go to Master
+####ขั้นตอนที่ 1 : ไปที่ข้อมูลหลัก (Master) 
 
-`Selling > Setup > Territory`
+`การขาย > ตั้งค่า > อาณาเขต (Territory)`
 
-####Step 2 : Parent Territory
+####ขั้นตอนที่ 2 : เขตปกครองผู้ปกครอง
 
 <img alt="Default Territories" class="screenshot" src="{{docs_base_url}}/assets/img/articles/territory-2.png">
 
-When click on Parent territory, you will see option to add child territory under it. All default Territory groups will be listed under Parent group called "All Territories". You can add further Parent or child Territory Groups under it.
+เมื่อคลิกที่อาณาเขตหลัก คุณจะเห็นตัวเลือกในการเพิ่มอาณาเขตย่อยภายใต้อาณาเขตนั้น กลุ่มดินแดนเริ่มต้นทั้งหมดจะแสดงอยู่ภายใต้กลุ่มหลักที่เรียกว่า "ดินแดนทั้งหมด" คุณสามารถเพิ่มกลุ่มอาณาเขตระดับบนสุดหรือระดับล่างได้
 
-####Step 3: Add new Territory
+####ขั้นตอนที่ 3: เพิ่มอาณาเขตใหม่
 
-When click on Add Child, a dialog box will provide two fields.
+เมื่อคลิกที่ Add Child กล่องโต้ตอบจะมีสองฟิลด์
 
-**Territory Group Name**
+**ชื่อกลุ่มอาณาเขต**
 
-Territory will be saved with Territory Name provided here.
+อาณาเขตจะถูกบันทึกด้วยชื่ออาณาเขตที่ให้ไว้ที่นี่
 
-**Group Node**
+**โหนดกลุ่ม**
 
-If Group Node selected as Yes, then this Territory will be created as Parent, which means you can further create sub-territories under it. If select No, then it will become child Territory which you will be able to select in another masters.
+หากเลือกโหนดกลุ่มเป็นใช่ พื้นที่นี้จะถูกสร้างขึ้นเป็นพาเรนต์ ซึ่งหมายความว่าคุณสามารถสร้างอาณาเขตย่อยเพิ่มเติมภายใต้อาณาเขตนี้ได้ ถ้าเลือก No ก็จะกลายเป็น Child Territory ซึ่งคุณจะสามารถเลือก Master อื่นได้
 
-<div class="well">Only child Territory Groups are selectable in another masters and transactions.</div>
+<div class="well">เฉพาะกลุ่มอาณาเขตรองเท่านั้นที่สามารถเลือกได้ในหลักและธุรกรรมอื่น</div>
 
 <img alt="Default Territories" class="screenshot" src="{{docs_base_url}}/assets/img/articles/territory-1.gif">
 
-Following is how Child Territories will be listed under a Parent Territory.
+วิธีที่ Child Territories จะแสดงภายใต้ Parent Territory
 
 <img alt="Adding new Territories" class="screenshot" src="{{docs_base_url}}/assets/img/articles/territory-3.png">
 
-Following this steps, you can manage other tree masters as well in ERPNext.
-
+ทำตามขั้นตอนนี้ คุณสามารถจัดการทรีมาสเตอร์อื่นๆ ได้เช่นกันใน ERPNext
 <!-- markdown -->
