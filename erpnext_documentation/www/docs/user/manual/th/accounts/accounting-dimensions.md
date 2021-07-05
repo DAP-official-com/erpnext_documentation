@@ -1,63 +1,65 @@
 <!-- add-breadcrumbs -->
-# Accounting Dimensions
+# ลำดับขั้นทางบัญชี
 
 > Introduced in Version 12
 
-Dimensional accounting means tagging each transaction with appropriate dimensions like Branch, Business Unit, etc. This allows you to maintain each segment separately, thereby limiting the overall maintenance on GL accounts and your Chart of Accounts remains pure.
+การบัญชีตามลำดับขั้นหมายถึงการติดแท็กแต่ละรายการด้วยลำดับขั้นที่เหมาะสม เช่น สาขา หน่วยธุรกิจ ฯลฯ ซึ่งช่วยให้คุณรักษาแต่ละส่วนแยกจากกัน ดังนั้นจึงเป็นการจำกัดการบำรุงรักษาโดยรวมในบัญชี GL และผังบัญชีของคุณยังคงบริสุทธิ์
 
-Cost Center and Project are treated as dimensions by default in ERPNext. On setting a field in Accounting Dimension, that field will be added in transactions reports where applicable. 
+ศูนย์ต้นทุนและโครงการจะถือเป็นลำดับขั้นตามค่าเริ่มต้นใน ERPNext ในการตั้งค่าฟิลด์ในลำดับขั้นทางบัญชี ฟิลด์นั้นจะถูกเพิ่มในรายงานธุรกรรมที่เกี่ยวข้อง
 
-In ERPNext you can create configurable accounting dimensions and use them in transactions and reports.
+ใน ERPNext คุณสามารถสร้างลำดับขั้นทางบัญชีที่กำหนดค่าได้ และใช้ในธุรกรรมและรายงาน
 
-To access the Accounting Dimension list, go to:
-> Home > Accounting > Settings > Accounting Dimensions
+ในการเข้าถึงรายการลำดับขั้นทางบัญชี ไปที่:
 
-## 1. How to create Accounting Dimension in ERPNext.
+> หน้าหลัก > การบัญชี > การตั้งค่า > ลำดับขั้นการบัญชี
 
-1. Go to the Accounting Dimension list and click on New.
-1. Select the Reference Document which you want to use as a custom dimension. For example, if you select Department as Reference Document, the dimension will be based on Department.
-1. Enter the name of the dimension (This name will appear in the transactions for which dimensions are created).
-1. Inside the Dimension Defaults table you can mention company specific default dimensions as shown in the screenshot below. This dimension will be automatically fetched in the transaction against that specific company.
-1. Check "Mandatory" checkbox if you want the dimension to be mandatory in the transactions.
+## 1. วิธีการสร้างลำดับขั้นทางบัญชีใน ERPNext
+
+1. ไปที่รายการลำดับขั้นทางบัญชีและคลิกที่ใหม่
+1. เลือกเอกสารอ้างอิงที่คุณต้องการใช้เป็นลำดับขั้นข้อมูลที่กำหนดเอง ตัวอย่างเช่น หากคุณเลือกแผนกเป็นเอกสารอ้างอิง ลำดับขั้นข้อมูลจะขึ้นอยู่กับแผนก
+1. ป้อนชื่อของลำดับขั้น (ชื่อนี้จะปรากฏในธุรกรรมที่สร้างลำดับขั้น)
+1. ภายในตาราง ค่าเริ่มต้นของไดเมนชัน คุณสามารถระบุไดเมนชันเริ่มต้นเฉพาะของบริษัทดังที่แสดงในภาพหน้าจอด้านล่าง ลำดับขั้นข้อมูลนี้จะถูกดึงโดยอัตโนมัติในการทำธุรกรรมกับบริษัทนั้น ๆ
+1. เลือกช่องกาเครื่องหมาย "บังคับ" หากคุณต้องการให้ลำดับขั้นข้อมูลบังคับในธุรกรรม
 
 <img alt="Create custom dimension" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/accounting-dimension.png">
 
 
-## 2. Features
+## 2. คุณสมบัติ
 
-As you create the dimension, custom fields will be created using a background job for that specific dimension. You can see them in Accounting Dimensions section inside the transactions which have an impact on Accounting entries (GL Entry).
+เมื่อคุณสร้างลำดับขั้นข้อมูล ฟิลด์ที่กำหนดเองจะถูกสร้างขึ้นโดยใช้งานพื้นหลังสำหรับลำดับขั้นข้อมูลนั้นโดยเฉพาะ คุณสามารถดูได้ในส่วนลำดับขั้นทางบัญชีภายในธุรกรรมที่มีผลกระทบต่อรายการบัญชี (รายการ GL)
 
-### 2.1 Using dimensions in transactions
+### 2.1 การใช้ลำดับขั้นในการทำธุรกรรม
 
-To tag a transaction with a dimension you can select the specific dimension in Accounting Dimensions section as shown in the screenshot below.
+ในการแท็กธุรกรรมด้วยลำดับขั้น คุณสามารถเลือกลำดับขั้นเฉพาะในส่วนลำดับขั้นทางบัญชีตามที่แสดงในภาพหน้าจอด้านล่าง
 
 <img alt="Create custom dimension" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/dimension-section.png">
 
 <img alt="Create custom dimension" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/dimension-transaction.png">
 
-### 2.2 Filtering Reports based on dimensions
+### 2.2 การกรองรายงานตามลำดับขั้นข้อมูล
 
-You can also filter various financial reports like Profit and Loss Statement, Balance Sheet, General Ledger based on these dimensions.
+คุณยังสามารถกรองรายงานทางการเงินต่างๆ เช่น งบกำไรขาดทุน งบดุล บัญชีแยกประเภททั่วไปตามลำดับขั้นเหล่านี้
 
 <img alt="Create custom dimension" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/report-dimensions.png">
 
-### 2.3 Making accounting dimensions mandatory for "Profit and Loss" and "Balance Sheet" Accounts
-Profit and Loss is the group of Income and Expense accounts that represent your accounting transactions over a period.
+### 2.3 การกำหนดลำดับขั้นทางบัญชีที่จำเป็นสำหรับบัญชี "กำไรขาดทุน" และ "งบดุล"
 
-The Balance Sheet accounts are Application of Funds (Assets) and Sources of Funds (Liabilities) that signify the net-worth of your company at any given time.
+กำไรขาดทุนเป็นกลุ่มของบัญชีรายรับและรายจ่ายที่แสดงถึงธุรกรรมทางบัญชีของคุณในช่วงเวลาหนึ่ง
 
-By selecting the check boxes 'Mandatory for Profit and Loss Account' or 'Mandatory for Balance Sheet' you can configure your dimensions to be mandatory for 'Profit and Loss' and 'Balance Sheet Accounts'.
+บัญชีงบดุลคือ ทรัพย์สิน และ หนี้สิน ที่แสดงถึงมูลค่าสุทธิของบริษัทของคุณในเวลาใดก็ตาม
+
+โดยการเลือกช่องทำเครื่องหมาย 'บังคับสำหรับบัญชีกำไรและขาดทุน' หรือ 'บังคับสำหรับงบดุล' คุณสามารถกำหนดค่าลำดับขั้นข้อมูลของคุณให้บังคับสำหรับ 'กำไรขาดทุน' และ 'บัญชีงบดุล'
 
 <img alt="Create custom dimension" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/dimension-mandatory.png">
 
-### 2.4 Disabling accounting dimensions when no longer required
+### 2.4 การปิดใช้งานลำดับขั้นทางบัญชีเมื่อไม่ต้องการอีกต่อไป
 
-You can also disable the dimensions if you don't require them anymore. The old transactions having accounting dimensions will remain intact.
+คุณยังสามารถปิดใช้งานลำดับขั้นข้อมูลได้หากไม่ต้องการอีกต่อไป ธุรกรรมเก่าที่มีลำดับขั้นทางบัญชีจะยังคงไม่เปลี่ยนแปลง
 
 <img alt="Create custom dimension" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/dimension-disable.png">
 
 
-### Related Topics
-1. [Cost Center](/docs/user/manual/en/accounts/cost-center)
-1. [Budgeting](/docs/user/manual/en/accounts/budgeting)
-1. [Accounting Reports](/docs/user/manual/en/accounts/accounting-reports)
+### หัวข้อที่เกี่ยวข้อง
+1. [ศูนย์ต้นทุน](/docs/user/manual/th/accounts/cost-center)
+1. [การจัดทำงบประมาณ](/docs/user/manual/th/accounts/budgeting)
+1. [รายงานการบัญชี](/docs/user/manual/th/accounts/accounting-reports)

@@ -1,67 +1,66 @@
 <!-- add-breadcrumbs -->
-# Accounting Of Inventory Stock
+# การบัญชีสินค้าคงคลัง
 
-The value of available inventory is treated as a Current Asset in the company's [Chart of
-Accounts](/docs/user/manual/en/accounts/chart-of-accounts). To prepare a Balance Sheet, you should make the accounting entries for those assets. There are generally two different methods of
-accounting for inventory.
+มูลค่าของสินค้าคงคลังที่มีอยู่จะถือเป็นสินทรัพย์หมุนเวียนใน [ผังบัญชี](/docs/user/manual/th/accounts/chart-of-accounts) ของบริษัท ในการจัดทำงบดุล คุณควรจัดทำรายการบัญชีสำหรับสินทรัพย์เหล่านั้น โดยทั่วไปมีสองวิธีที่แตกต่างกันของ
+การบัญชีสำหรับสินค้าคงคลัง
 
-## 1. Auto/Perpetual Inventory
+## 1. สินค้าคงคลังอัตโนมัติ/ถาวร
 
-In this process, for each stock transaction, the system posts relevant
-accounting entries to sync stock balance and accounting balance. This is the
-default setting in ERPNext for new accounts. By default, Perpetual Inventory is enabled in the [Company](/docs/user/manual/en/setting-up/company-setup#23-stock-settings).
+ในขั้นตอนนี้ สำหรับแต่ละธุรกรรมหุ้น ระบบจะโพสต์ที่เกี่ยวข้อง
+รายการบัญชีเพื่อซิงค์ยอดสต็อกและยอดดุลบัญชี นี้เป็น
+การตั้งค่าเริ่มต้นใน ERPNext สำหรับบัญชีใหม่ โดยค่าเริ่มต้น Perpetual Inventory จะเปิดใช้งานใน [บริษัท](/docs/user/manual/th/setting-up/company-setup#23-stock-settings)
 
-When you buy and receive items, those items are booked as the company’s assets
-(stock-in-hand). When you sell and deliver those items, an
-expense (Cost of Goods Sold) equal to the landed cost of the items is booked.
-General Ledger entries are created after every stock transaction. As a result,
-the value as per Stock Ledger always remains the same with the relevant account
-balance. This improves the accuracy of the Balance Sheet and the Profit and Loss
-statement.
+เมื่อคุณซื้อและรับสินค้า รายการเหล่านั้นจะถูกจองเป็นทรัพย์สินของบริษัท
+(สต็อกในมือ) เมื่อคุณขายและส่งมอบสิ่งของเหล่านั้น
+ค่าใช้จ่าย (ต้นทุนขาย) เท่ากับต้นทุนที่ดินของรายการที่จองไว้
+รายการบัญชีแยกประเภททั่วไปถูกสร้างขึ้นหลังจากการทำธุรกรรมหุ้นทุกครั้ง ผลที่ตามมา,
+มูลค่าตามบัญชีแยกประเภทจะยังคงเหมือนเดิมกับบัญชีที่เกี่ยวข้องเสมอ
+สมดุล. สิ่งนี้ช่วยปรับปรุงความถูกต้องของงบดุลและกำไรขาดทุน
+คำให้การ.
 
-Read [Perpetual Inventory documentation](/docs/user/manual/en/stock/perpetual-inventory)
-to check accounting entries for a particular stock transaction.
+อ่าน [เอกสาร Perpetual Inventory](/docs/user/manual/th/stock/perpetual-inventory)
+เพื่อตรวจสอบรายการบัญชีสำหรับธุรกรรมสินค้าโดยเฉพาะ
 
 
-### 1.2 Advantages of Perpetual Inventory
+### 1.2 ข้อดีของสินค้าคงคลังถาวร
 
-Perpetual Inventory system will make it easier for you to maintain the accuracy of the company's asset and expense values. Stock balances will always be synced with relevant account balances, so no more periodic manual entry needs to be done to balance them.
+ระบบ สินค้าคงคลังถาวร จะช่วยให้คุณรักษาความถูกต้องของมูลค่าทรัพย์สินและค่าใช้จ่ายของบริษัทได้ง่ายขึ้น ยอดคงเหลือในสต็อคจะซิงค์กับยอดคงเหลือในบัญชีที่เกี่ยวข้องเสมอ ดังนั้นจึงไม่จำเป็นต้องป้อนข้อมูลด้วยตนเองเป็นระยะๆ เพื่อให้สมดุล
 
-In case of new back-dated stock transactions or cancellation/amendment of an existing transaction, all the future Stock Ledger entries and GL Entries will
-be recalculated for all items of that transaction. The same is applicable if
-any cost is added to the submitted Purchase Receipt later through the Landed
-Cost Voucher.
+ในกรณีของธุรกรรมหุ้นย้อนหลังใหม่หรือการยกเลิก/แก้ไขธุรกรรมที่มีอยู่ รายการบัญชีแยกประเภทหุ้นในอนาคตทั้งหมดและรายการ GL จะ
+คำนวณใหม่สำหรับรายการทั้งหมดของธุรกรรมนั้น เช่นเดียวกับถ้า is
+ค่าใช้จ่ายใด ๆ จะถูกเพิ่มเข้าไปในใบเสร็จการซื้อที่ส่งมาภายหลังผ่านทาง Landed
+บัตรกำนัลค่าใช้จ่าย
 
-> Note: Perpetual Inventory completely depends upon the item valuation rate.
-Hence, you have to be more careful entering the valuation rate while making any
-incoming stock transactions like Purchase Receipt, Material Receipt, or
-Manufacturing/Repack.
+> หมายเหตุ: สินค้าคงคลังถาวรขึ้นอยู่กับอัตราการประเมินมูลค่าของสินค้า
+ดังนั้นคุณต้องระมัดระวังมากขึ้นในการป้อนอัตราการประเมินในขณะที่ทำสิ่งใด
+ธุรกรรมสต็อคที่เข้ามา เช่น ใบเสร็จการซื้อ ใบเสร็จวัสดุ หรือ
+ผลิต/บรรจุหีบห่อ.
 
 * * *
 
-## 2. Periodic Inventory
+## 2. สินค้าคงคลังแบบสิ้นงวด
 
-In this method, accounting entries need to be created manually in order to sync stock balance and relevant account balance. The system does not create
-accounting entries automatically for assets at the time of material purchases
-or sales.
+ในวิธีนี้ จะต้องสร้างรายการบัญชีด้วยตนเองเพื่อซิงค์ยอดคงเหลือของสต็อคและยอดคงเหลือในบัญชีที่เกี่ยวข้อง ระบบไม่สร้าง
+รายการบัญชีโดยอัตโนมัติสำหรับสินทรัพย์ ณ เวลาที่ซื้อวัสดุ
+หรือขาย.
 
-In an accounting period, when you buy and receive items, an expense is booked
-in your accounting system. You sell and deliver some of these items.
+ในรอบระยะเวลาบัญชีเมื่อคุณซื้อและรับสินค้าจะมีการบันทึกค่าใช้จ่าย
+ในระบบบัญชีของคุณ คุณขายและส่งมอบสินค้าเหล่านี้บางส่วน
 
-At the end of an accounting period, the total value of items to be sold, need
-to be booked as the company’s assets, often known as stock-in-hand.
+เมื่อสิ้นสุดรอบระยะเวลาบัญชี มูลค่ารวมของสินค้าที่จะขาย ความต้องการ
+เพื่อจองเป็นทรัพย์สินของบริษัท มักเรียกว่าสต็อกในมือ
 
-The difference between the value of the items remaining to be sold and the
-previous period’s stock-in-hand value can be positive or negative. If
-positive, this value is removed from expenses (Cost of Goods Sold) and is
-added to assets (stock-in-hand). If negative, a reverse entry
-is passed.
+ความแตกต่างระหว่างมูลค่าของสินค้าคงเหลือที่จะขายและ
+มูลค่าสต็อกในมือของช่วงเวลาก่อนหน้าอาจเป็นบวกหรือลบ ถ้า
+บวก ค่านี้จะถูกลบออกจากค่าใช้จ่าย (ต้นทุนขาย) และ is
+เพิ่มไปยังสินทรัพย์ (สต็อกในมือ) ถ้าติดลบ ให้กลับรายการ
+ผ่านไปแล้ว
 
-This complete process is called **Periodic Inventory**.
+กระบวนการที่สมบูรณ์นี้เรียกว่า **สินค้าคงคลังตามงวด**
 
-If you are an existing user using Periodic Inventory and want to use Perpetual
-Inventory, you need to follow [a few steps](/docs/user/manual/en/stock/articles/migrate-to-perpetual-inventory) to migrate. 
+หากคุณเป็นผู้ใช้ที่มีอยู่โดยใช้สินค้าคงคลังเป็นระยะและต้องการใช้ Perpetual
+พื้นที่โฆษณา คุณต้องทำตาม [ไม่กี่ขั้นตอน](/docs/user/manual/th/stock/articles/migrate-to-perpetual-inventory) เพื่อย้ายข้อมูล 
 
-### 3. Related Topics
-1. [Perpetual Inventory](/docs/user/manual/en/stock/perpetual-inventory)
-1. [Migrate to Perpetual Inventory](/docs/user/manual/en/stock/articles/migrate-to-perpetual-inventory)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [สินค้าคงคลังถาวร](/docs/user/manual/th/stock/perpetual-inventory)
+1. [ย้ายไปยังคลังสินค้าคงคลังถาวร]](/docs/user/manual/th/stock/articles/migrate-to-perpetual-inventory)

@@ -1,108 +1,109 @@
 <!-- add-breadcrumbs -->
-# Bank Reconciliation
+# การกระทบยอดธนาคาร
 
-**A Bank Reconciliation entry is used to match ERPNext account statements with your bank account statements.**
+**รายการกระทบยอดธนาคารใช้เพื่อจับคู่ใบแจ้งยอดบัญชี ERPNext กับใบแจ้งยอดบัญชีธนาคารของคุณ**
 
-If you are receiving payments or making payments via cheques, the bank statements will not accurately match the dates of your entry, this is because the bank usually takes time to “clear” these payments.
+หากคุณได้รับการชำระเงินหรือชำระเงินด้วยเช็ค ใบแจ้งยอดจากธนาคารจะไม่ตรงกับวันที่ที่คุณเข้ามา เนื่องจากโดยปกติแล้วธนาคารจะใช้เวลาในการ "หักล้าง" การชำระเงินเหล่านี้
 
-Also, you may have mailed a cheque to your Supplier and it may be a few days before it is received and deposited by the Supplier. In ERPNext you can synchronize your bank statements and your Journal Entries using the transaction dates.
+นอกจากนี้ คุณอาจส่งเช็คไปยังซัพพลายเออร์ของคุณ และอาจใช้เวลาสองสามวันก่อนที่ซัพพลายเออร์จะได้รับและฝากเช็ค ใน ERPNext คุณสามารถซิงโครไนซ์ใบแจ้งยอดธนาคารและรายการบันทึกประจำวันของคุณโดยใช้วันที่ทำธุรกรรม
 
-## 1. What is a Bank Reconciliation Statement?
-The Bank Reconciliation Report provides the difference between the bank balance shown in an organization's bank statement, as provided by the bank against the amount shown in the companies Chart of Accounts.
+## 1. ใบแจ้งยอดการกระทบยอดธนาคารคืออะไร?
+รายงานการกระทบยอดธนาคารจะแสดงความแตกต่างระหว่างยอดคงเหลือในธนาคารที่แสดงในใบแจ้งยอดจากธนาคารขององค์กร ตามที่ธนาคารระบุกับจำนวนเงินที่แสดงในผังบัญชีของบริษัท
 
-This is what a Bank Reconciliation statement looks like:
+นี่คือลักษณะของใบแจ้งยอดการกระทบยอดธนาคาร:
 
 <img class="screenshot" alt="Bank Reconciliation statement" src="{{docs_base_url}}/assets/img/accounts/bank-reconciliation-2.png"> 
 
-In the report, check whether the field 'Balance as per bank' matches the Bank Account Statement. If it is matching, it means that the Clearance Date is correctly updated for all the bank entries. If there is a mismatch, it's because of bank entries for which Clearance Date is not yet updated.
+ในรายงาน ให้ตรวจสอบว่าฟิลด์ 'ยอดคงเหลือตามธนาคาร' ตรงกับใบแจ้งยอดบัญชีธนาคารหรือไม่ หากตรงกัน แสดงว่าวันที่เคลียร์มีการปรับปรุงอย่างถูกต้องสำหรับรายการธนาคารทั้งหมด หากมีข้อมูลที่ไม่ตรงกัน อาจเป็นเพราะรายการธนาคารที่ยังไม่ได้อัปเดตวันที่เคลียร์
 
-To access Bank Reconciliation, go to:
-> Home > Accounting > Banking and Payments > Update Bank Transaction Date
+ในการเข้าถึงการกระทบยอดธนาคาร ไปที่:
+> หน้าหลัก > การบัญชี > การธนาคารและการชำระเงิน > อัปเดตวันที่ทำธุรกรรมของธนาคาร
 
-## 2. How to Update Bank Transaction Dates
+## 2. วิธีอัปเดตวันที่ทำธุรกรรมของธนาคาร
 
-1. Go to Update Bank Transaction Dates.
-1. Select your Bank Account.
-1. Select a from and to date.
-1. You can choose to include reconciled entries and POS transactions.
-1. Click on the **Get Payment Entries** button.
-1. Now you will get all the “Bank Voucher” type entries.
-1. In each of the entries, on the rightmost column, update the “Clearance Date” field and click on the **Update Clearance Date** button.
+1. ไปที่อัปเดตวันที่ทำธุรกรรมธนาคาร
+1. เลือกบัญชีธนาคาร
+1. เลือก จากวันที่ และ ถึงวันที่
+1. คุณสามารถเลือกที่จะรวมรายการกระทบยอดและธุรกรรม POS ได้
+1. คลิกที่ปุ่ม **รับรายการชำระเงิน**
+1. ตอนนี้คุณจะได้รับรายการประเภท "บัตรกำนัลธนาคาร" ทั้งหมด
+1. ในแต่ละรายการ ที่คอลัมน์ขวาสุด อัปเดตฟิลด์ "วันที่เคลียร์" และคลิกที่ปุ่ม **อัปเดตวันที่เคลียร์**
 
-By doing this you will be able to sync your bank statements and entries into the system.
+การทำเช่นนี้ คุณจะสามารถซิงค์ใบแจ้งยอดธนาคารและรายการของคุณเข้าสู่ระบบได้
 
 <img class="screenshot" alt="Bank Reconciliation" src="{{docs_base_url}}/assets/img/accounts/bank-reconciliation.png">
 
-## 3. Types of reconciliation tools
+## 3. ประเภทของเครื่องมือการกระทบยอด
 
-ERPNext has two reconciliation tools:
+ERPNext มีเครื่องมือกระทบยอดสองอย่าง:
 
-1. A manual reconciliation tool allowing to set clearance dates against payment entries, sales invoice payments or journal entries
-2. A semi-automatic reconciliation tool allowing to clear bank transactions against payment entries, sales, and purchase invoices payments, journal entries or expense claims.
+1. เครื่องมือกระทบยอดด้วยตนเองที่อนุญาตให้ตั้งค่าวันที่เคลียร์กับรายการการชำระเงิน การชำระเงินตามใบแจ้งหนี้การขาย หรือรายการบันทึกประจำวัน
+1. เครื่องมือกระทบยอดกึ่งอัตโนมัติที่ช่วยให้ล้างธุรกรรมธนาคารกับรายการการชำระเงิน การขาย และการชำระเงินตามใบแจ้งหนี้การซื้อ รายการบันทึกประจำวัน หรือการเรียกร้องค่าใช้จ่าย
 
-### 3.1 Manual Bank Reconciliation Tool
+### 3.1 เครื่องมือกระทบยอดธนาคารด้วยตนเอง
 
-To view this report, go to **Accounts > Banking and Payments > Bank Reconciliation Statement**. In the report, check whether the field 'Balance as per bank' matches the Bank Account Statement. If it is matching, it means that the Clearance Date is correctly updated for all the bank entries. If there is a mismatch, it's because the Clearance Date is not yet updated for the bank entries.
+หากต้องการดูรายงานนี้ไปที่ **บัญชี > การธนาคารและการชำระเงิน > งบกระทบยอดธนาคาร** ในรายงาน ให้ตรวจสอบว่าฟิลด์ 'ยอดคงเหลือตามธนาคาร' ตรงกับใบแจ้งยอดบัญชีธนาคารหรือไม่ หากตรงกัน แสดงว่าวันที่เคลียร์มีการปรับปรุงอย่างถูกต้องสำหรับรายการธนาคารทั้งหมด หากมีความไม่ตรงกัน นั่นเป็นเพราะยังไม่ได้อัปเดตวันที่เคลียร์สำหรับรายการธนาคาร
 
+### 3.2 เครื่องมือกระทบยอดบัญชีธนาคารกึ่งอัตโนมัติ
 
-### 3.2 Semi-automatic Bank Reconciliation Tool
+เป็นกระบวนการสองขั้นตอน
+1. เพิ่มธุรกรรมธนาคารใน ERPNext ผ่านการนำเข้าใบแจ้งยอดธนาคารหรือการซิงโครไนซ์บัญชีธนาคาร 
+1. กระทบยอดใบแจ้งยอดธนาคาร
 
-It is a two-step process
-1. Add Bank Transactions into ERPNext via Bank Statement Import or Bank Account Synchronization
-1. Reconcile the Bank Statement
+#### 3.2.1 การนำเข้าใบแจ้งยอดธนาคาร
 
-#### 3.2.1 Bank Statement Import
-
-
-1. Download a bank statement from your bank's website
+1. ดาวน์โหลดใบแจ้งยอดธนาคารจากเว็บไซต์ธนาคารของคุณ
 
  <img class="screenshot" alt="Reconcile bank transactions" src="{{docs_base_url}}/assets/img/accounts/sample_bank_statement.png">
- Make sure you have at least the date, the debit/credit and the currency on every row of your bank statement.
+ ตรวจสอบให้แน่ใจว่าคุณมีวันที่ เดบิต/เครดิต และสกุลเงินในทุกแถวของใบแจ้งยอดจากธนาคาร
 
-To upload your Bank Statement, go to:
-> Accounting > Bank Statement > Bank Statement Import
+ในการอัปโหลดใบแจ้งยอดธนาคารของคุณ ไปที่:
+> การบัญชี > ใบแจ้งยอดธนาคาร > การนำเข้าใบแจ้งยอดธนาคาร
 
-or simply search for 'Bank Statement Import' in the awesomebar.
+หรือเพียงแค่ค้นหา 'การนำเข้าใบแจ้งยอดธนาคาร' awesomebar
 
-1. Select your Company and Bank Account
-1. Click Save
-1. Attach the Bank Statement
-1. Click on 'Map Columns' to enter the mapping between columns in the uploaded Bank Statement and the Bank Transaction DocType
-1. Click on Start Import to start the import process. The Bank Transactions will be created via a background job, although the progress will be shown here
+1. เลือกบริษัทและบัญชีธนาคารของคุณ
+1. คลิกบันทึก
+1. แนบใบแจ้งยอดธนาคาร
+1. คลิกที่ 'จับคู่คอลัมน์' เพื่อเข้าสู่การแมประหว่างคอลัมน์ในใบแจ้งยอดธนาคารที่อัปโหลดและประเภทเอกสารธุรกรรมธนาคาร
+1. คลิกที่ 'เริ่มการนำเข้า' เพื่อเริ่มกระบวนการนำเข้า ธุรกรรมธนาคารจะถูกสร้างขึ้นผ่านงานพื้นหลัง แม้ว่าความคืบหน้าจะแสดงที่นี่
 
  <img class="screenshot" alt="Reconcile bank transactions" src="{{docs_base_url}}/assets/img/accounts/bank_transaction_upload.gif">
 
-1. The mapping that is done is stored in the Bank document linked to the corresponding Bank Account. In the next upload, the mapping is taken from here but the system allows the user to change it if needed. The changed mapping is updated in the Bank document too.
+1. การจับคู่ที่ทำเสร็จแล้วจะถูกเก็บไว้ในเอกสารธนาคารที่เชื่อมโยงกับบัญชีธนาคารที่เกี่ยวข้อง ในการอัปโหลดครั้งต่อไป การจับคู่จะถูกนำมาจากที่นี่ แต่ระบบอนุญาตให้ผู้ใช้เปลี่ยนแปลงได้หากจำเป็น การแมปที่เปลี่ยนแปลงจะได้รับการอัปเดตในเอกสารธนาคารด้วย
  <img class="screenshot" alt="Reconcile bank transactions" src="{{docs_base_url}}/assets/img/accounts/bank_configuration.png">
 
 
-#### 3.2.2 Bank Account Synchronization
+#### 3.2.2 การซิงค์บัญชีธนาคาร
 
-You can use Plaid (see [Plaid Integrations page](/docs/user/manual/en/erpnext_integration/plaid_integration)) to automatically synchronize your bank account with ERPNext. All your bank transactions will be automatically imported into ERPNext.
+คุณสามารถใช้ Plaid (อ่าน [Plaid Integrations page](/docs/user/manual/th/erpnext_integration/plaid_integration) เพื่อทราบข้อมูลเพิ่มเติม) เพื่อซิงค์บัญชีธนาคารของคุณกับ ERPNext โดยอัตโนมัติ ธุรกรรมธนาคารทั้งหมดของคุณจะถูกนำเข้าสู่ ERPNext โดยอัตโนมัติ
 
-#### 3.2.3 Reconcile the Bank Statement
+#### 3.2.3 กระทบยอดใบแจ้งยอดธนาคาร
 
-Once all your bank transactions are imported into ERPNext, you can reconcile them with your existing vouchers. Go to:
-> Accounting > Bank Statement > Bank Reconciliation Tool
+เมื่อนำเข้าธุรกรรมธนาคารทั้งหมดของคุณเข้าสู่ ERPNext แล้ว คุณสามารถกระทบยอดกับบัตรกำนัลที่มีอยู่ของคุณได้ ไปที่:
 
-or simply search for 'Bank Reconciliation Tool' in the awesomebar.
+ > การบัญชี > ใบแจ้งยอดธนาคาร > เครื่องมือกระทบยอดธนาคาร
 
-1. Select your Company, Bank Account, Bank Statement Start and End Date.
-1. Make sure that the opening balance from ERPNext matches the opening balance of your Bank Statement.
-1. Enter the Closing Balance of the Bank Statement.
-1. Saving the document will show the matching bank transactions.
+หรือเพียงแค่ค้นหา 'เครื่องมือกระทบยอดธนาคาร' awesomebar.\
+
+1. เลือกบริษัท บัญชีธนาคาร วันที่เริ่มต้นและสิ้นสุดใบแจ้งยอดธนาคาร
+1. ตรวจสอบให้แน่ใจว่ายอดยกมาจาก ERPNext ตรงกับยอดดุลยกมาของใบแจ้งยอดธนาคารของคุณ
+1. ป้อนยอดคงเหลือปิดของใบแจ้งยอดธนาคาร
+1. การบันทึกเอกสารจะแสดงธุรกรรมธนาคารที่ตรงกัน
  <img class="screenshot" alt="Reconcile bank transactions" src="{{docs_base_url}}/assets/img/accounts/bank_reconciliation_tool.png">
 
-1. The final goal of Bank Reconciliation is to make the difference amount zero (green) by either matching to an existing voucher or creating a new voucher.
-1. For all the bank transactions which are present in the Bank Statement but do not have a clearance date, click on the Actions Button to Match/ Create Vouchers
-1. For matching, choose 'Match Against Voucher' in 'Action'. The vouchers that are related to this transaction will be displayed. They will be ranked on the basis of the maximum number of fields matched. You can match one or multiple vouchers against the same Bank Transaction using the checkboxes.
+1. เป้าหมายสุดท้ายของการกระทบยอดธนาคารคือการทำให้ยอดส่วนต่างเป็นศูนย์ (สีเขียว) โดยการจับคู่กับใบสำคัญที่มีอยู่หรือการสร้างใบสำคัญใหม่
+1. สำหรับธุรกรรมธนาคารทั้งหมดที่อยู่ในใบแจ้งยอดธนาคารแต่ไม่มีวันได้รับการอนุมัติ ให้คลิกที่ปุ่มการดำเนินการเพื่อจับคู่/สร้างบัตรกำนัล
+1. สำหรับการจับคู่ ให้เลือก 'Match Against Voucher' ใน 'Action' บัตรกำนัลที่เกี่ยวข้องกับธุรกรรมนี้จะปรากฏขึ้น พวกเขาจะจัดอันดับตามจำนวนฟิลด์สูงสุดที่ตรงกัน คุณสามารถจับคู่บัตรกำนัลหนึ่งใบหรือหลายใบกับธุรกรรมธนาคารเดียวกันได้โดยใช้ช่องทำเครื่องหมาย
 <img class="screenshot" alt="Reconcile bank transactions" src="{{docs_base_url}}/assets/img/accounts/match_voucher.png">
-1. To create a new voucher, choose 'Create Voucher' in the 'Action' and then choose the document type. Fill in the details that were not available in the Bank Transaction. Clicking on Submit will create the corresponding voucher and update its clearance date.
+
+1. ในการสร้าง voucher ใหม่ เลือก 'สร้าง voucher' ใน 'การดำเนินการ' จากนั้นเลือกประเภทเอกสาร กรอกรายละเอียดที่ไม่มีในธุรกรรมธนาคาร การคลิกที่ส่งจะสร้างบัตรกำนัลที่เกี่ยวข้องและอัปเดตวันที่อนุญาต
  <img class="screenshot" alt="Reconcile bank transactions" src="{{docs_base_url}}/assets/img/accounts/create_voucher.png">
-1. It is also possible to update the Bank Transactions. Updating the Bank Transaction might help ERPNext in finding better matches. To Update a Bank transaction, choose 'Update Bank Transaction' in 'Action', fill in the required details, and click on Submit to save the Bank Transaction.
+
+1. นอกจากนี้ยังสามารถอัปเดตธุรกรรมธนาคาร การอัปเดตธุรกรรมธนาคารอาจช่วยให้ ERPNext ค้นหารายการที่ตรงกันได้ดีขึ้น หากต้องการอัปเดตธุรกรรมธนาคาร เลือก 'อัปเดตธุรกรรมธนาคาร' ใน 'การดำเนินการ' กรอกรายละเอียดที่จำเป็น แล้วคลิก ส่ง เพื่อบันทึกธุรกรรมธนาคาร
  <img class="screenshot" alt="Reconcile bank transactions" src="{{docs_base_url}}/assets/img/accounts/update_bank_transaction.png">
 
-### 4. Related Topics
-1. [Payment Reconciliation](/docs/user/manual/en/accounts/payment-reconciliation)
-1. [Bank Guarantee](/docs/user/manual/en/accounts/bank-guarantee)
-1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [การกระทบยอดการชำระเงิน](/docs/user/manual/th/accounts/payment-reconciliation)
+1. [ค้ำประกันธนาคาร](/docs/user/manual/th/accounts/bank-guarantee)
+1. [รายการชำระเงิน](/docs/user/manual/th/accounts/payment-entry)

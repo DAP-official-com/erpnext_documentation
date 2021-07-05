@@ -1,40 +1,38 @@
 <!-- add-breadcrumbs -->
-# Accounting Period
+# รอบระยะเวลาบัญชี
 
-**An Accounting Period defines a time period in which financial statements are recorded.**
+**รอบระยะเวลาบัญชีกำหนดช่วงเวลาที่บันทึกงบการเงิน**
 
-In ERPNext, Accounting Period is a timeframe outside which selected submittable transactions (like Sales/Purchase Invoice, Stock Entry, Payroll Entry, Journal Entry etc) are not allowed to be created. In other words, the selected transactions are only allowed to be created within the defined Accounting Period.
+ใน ERPNext รอบระยะเวลาบัญชีเป็นกรอบเวลานอกที่เลือกธุรกรรมที่ส่งได้ (เช่น ใบกำกับการขาย/การซื้อ รายการสต็อก รายการบัญชีเงินเดือน รายการบันทึก ฯลฯ) กล่าวคือ อนุญาตให้สร้างธุรกรรมที่เลือกได้ภายในรอบระยะเวลาบัญชีที่กำหนดเท่านั้น
 
-**Why is Accounting Period needed?**
+**เหตุใดจึงต้องมีรอบระยะเวลาบัญชี**
 
-When transactions are submitted, they affect the ledgers and the reports which process the ledger data.
-This can cause issues when financial reports have to be generated for audit by authorities or for closing the accounting books for the financial year.
+เมื่อมีการส่งธุรกรรม จะส่งผลต่อบัญชีแยกประเภทและรายงานที่ประมวลผลข้อมูลบัญชีแยกประเภท ซึ่งอาจทำให้เกิดปัญหาเมื่อต้องสร้างรายงานทางการเงินสำหรับการตรวจสอบโดยหน่วยงานที่มีอำนาจหรือเพื่อปิดบัญชีสำหรับปีบัญชี
 
-Here Accounting Period can be used to limit the time period within which transactions can be submitted to preserve
-the integrity of the corresponding reports.
+คุณสามารถใช้รอบระยะเวลาบัญชีเพื่อจำกัดช่วงเวลาที่สามารถส่งธุรกรรมได้ เพื่อรักษาความสมบูรณ์ของรายงานที่เกี่ยวข้อง
 
-## 1. How to create an Accounting Period
+## 1. วิธีสร้างรอบระยะเวลาบัญชี
 
-### 1.1 What is the "Closed" option for the selected transactions used for?
+### 1.1 ตัวเลือก "ปิด" สำหรับธุรกรรมที่เลือกใช้สำหรับอะไร?
 
 ![Accounting Period Child Table](/docs/assets/img/accounts/accounting-period-closed.png)
 
-The "Closed" option in the childtable for transaction doctypes is used to select which of them are to be restricted after the end of the Accounting Period.
+ตัวเลือก "ปิด" ในตารางย่อยสำหรับประเภทเอกสารธุรกรรมจะใช้เพื่อเลือกว่ารายการใดจะถูกจำกัดหลังจากสิ้นสุดรอบระยะเวลาบัญชี
 
-Do note that if the Accounting Period ends and if any of the selected transactions in the child table don't have "Closed" checked, then they won't be restricted after the Accounting Period ends.
+โปรดทราบว่า หากรอบระยะเวลาบัญชีสิ้นสุดลง และหากธุรกรรมใดๆ ที่เลือกในตารางย่อยไม่ได้เลือก "ปิด" ไว้ จะไม่ถูกจำกัดหลังจากรอบระยะเวลาบัญชีสิ้นสุดลง
 
-1. Enter a name for the Accounting Period.
-1. Define a time frame by setting Start and End Dates.
-1. Add or remove transactions from the table. Note that all transactions listed in the table with "Closed" option checked will be restricted after the accounting period ends.
-1. Save and Submit.
+1. ป้อนชื่อสำหรับรอบระยะเวลาบัญชี
+1. กำหนดกรอบเวลาโดยการตั้งค่าวันที่เริ่มต้นและสิ้นสุด
+1. เพิ่มหรือลบธุรกรรมออกจากตาราง โปรดทราบว่าธุรกรรมทั้งหมดที่แสดงรายการในตารางโดยเลือกตัวเลือก "ปิด" ไว้จะถูกจำกัดหลังจากรอบระยะเวลาบัญชีสิ้นสุดลง
+1. บันทึกและส่ง
     ![Accounting Period](/docs/assets/img/accounts/accounting-period.png)
 
 
-If you try to submit a closed transaction after its Accounting Period ends, you will see a validation error preventing you from doing so.
+หากคุณพยายามส่งธุรกรรมที่ปิดหลังจากรอบระยะเวลาบัญชีสิ้นสุดลง คุณจะเห็นข้อผิดพลาดในการตรวจสอบความถูกต้องซึ่งขัดขวางไม่ให้คุณทำเช่นนั้น
 ![Accounting Period](/docs/assets/img/accounts/accounting-period-1.png)
 
-> Note: No role can submit transactions defined in the Accounting Period, even the Role set in 'Role Allowed to Set Frozen Accounts & Edit Frozen Entries' in [Account Settings](/docs/user/manual/en/accounts/accounts-settings).
+> หมายเหตุ: ไม่มีบทบาทสามารถส่งการทำธุรกรรมที่กำหนดไว้ในรอบระยะเวลาบัญชีแม้ชุดบทบาทในบทบาทอนุญาตให้ตั้งค่าบัญชีแช่แข็งและแช่แข็งแก้ไขรายการใน [การตั้งค่าบัญชี](/docs/user/manual/th/accounts/accounts-settings).
 
-## 2. Related Topics
-* [How Accounting Period is used for Closing Accounting Books](https://frappe.io/blog/erpnext-features/closing-accounting-books-in-erpnext)
-* [Period Closing Voucher](/docs/user/manual/en/accounts/period-closing-voucher)
+## 2. หัวข้อที่เกี่ยวข้อง
+* [วิธีการใช้รอบระยะเวลาบัญชีในการปิดสมุดบัญชี](https://frappe.io/blog/erpnext-features/closing-accounting-books-in-erpnext)
+* [Period Closing Voucher](/docs/user/manual/th/accounts/period-closing-voucher)

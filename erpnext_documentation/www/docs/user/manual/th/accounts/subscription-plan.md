@@ -1,22 +1,22 @@
 <!-- add-breadcrumbs -->
-# Subscription Plan
+# แผนการสมัครสมาชิก
 
-A Subscription Plan stores information about the Item being subscribed, its price, and billing interval.
+แผนการสมัครสมาชิกจะเก็บข้อมูลเกี่ยวกับรายการที่สมัคร ราคา และรอบการเรียกเก็บเงิน
 
-To access the Subscription Plan list, go to:
-> Home > Accounting > Subscription Management > Subscription Plan
+ในการเข้าถึงรายการแผนการสมัครสมาชิก ไปที่:
+> หน้าแรก > การบัญชี > การจัดการการสมัครสมาชิก > แผนการสมัครสมาชิก
 
-## 1. How to create a Subscription Plan
-Before you can set a Subscription, you need a Subscription Plan.
+## 1. วิธีสร้างแผนการสมัครสมาชิก
+ก่อนที่คุณจะสามารถตั้งค่าการสมัครสมาชิก คุณต้องมีแผนการสมัครสมาชิก
 
-1. Go to the Subscription Plan list and click on New.
-1. Select the item that will be subscribed.
-1. Select a Price Determination whether Fixed or based on a [Price List](/docs/user/manual/en/stock/price-lists).
-1. Set a Billing Interval whether Daily, Weekly, Monthly, or Yearly.
-1. Set a Billing Interval Count. If you select Year as your interval and count as 5, the billing will be done for every 5 years.
-1. Save.
+1. ไปที่รายการแผนการสมัครสมาชิกและคลิกที่ใหม่
+1. เลือกรายการที่จะสมัคร
+1. เลือกการกำหนดไม่ว่าจะเป็นราคาคงที่หรือ [ขึ้นอยู่กับราคา](/docs/user/manual/th/stock/price-lists).
+1. กำหนดช่วงการเรียกเก็บเงินเป็นรายวัน รายสัปดาห์ รายเดือน หรือรายปี
+1. ตั้งค่าการนับช่วงการเรียกเก็บเงิน หากคุณเลือกปีเป็นช่วงเวลาของคุณและนับเป็น 5 การเรียกเก็บเงินจะสิ้นสุดทุกๆ 5 ปี
+1. บันทึก
     ![Subscription Plan](/docs/assets/img/accounts/subscription-plan.png)
 
-You can also set up additional payment details and link a Payment Gateway.
+คุณยังสามารถตั้งค่ารายละเอียดการชำระเงินเพิ่มเติมและเชื่อมโยงเกตเวย์การชำระเงินได้อีกด้วย
 
-A Subscription Plan is linked to an Item, for which a Sales Invoice is created.
+แผนการสมัครสมาชิกเชื่อมโยงกับรายการซึ่งมีการสร้างใบแจ้งหนี้การขาย

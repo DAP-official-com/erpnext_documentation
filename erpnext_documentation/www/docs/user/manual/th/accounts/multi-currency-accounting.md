@@ -1,92 +1,92 @@
 <!-- add-breadcrumbs -->
-# Multi Currency Accounting
+# การบัญชีหลายสกุลเงิน
 
-**Transacting in two different currencies is known as Multi Currency Accounting.**
+**การทำธุรกรรมในสองสกุลเงินที่แตกต่างกันเรียกว่าการบัญชีหลายสกุลเงิน**
 
-In ERPNext, you can make accounting entries in multiple currencies. For example, if you have a bank account in foreign currency, you can make transactions in that currency and the system will show bank balance in that specific currency only.
+ใน ERPNext คุณสามารถทำรายการบัญชีได้หลายสกุลเงิน ตัวอย่างเช่น หากคุณมีบัญชีธนาคารในสกุลเงินต่างประเทศ คุณสามารถทำธุรกรรมในสกุลเงินนั้นได้ และระบบจะแสดงยอดเงินในธนาคารในสกุลเงินนั้น ๆ เท่านั้น
 
-Bank accounts in foreign currencies can be for other branches of your own company or Debtors/Creditors account for foreign Customers/Suppliers.
+บัญชีธนาคารที่เป็นเงินตราต่างประเทศสำหรับสาขาอื่นของบริษัทของคุณเองหรือบัญชีลูกหนี้/เจ้าหนี้สำหรับลูกค้า/ซัพพลายเออร์ต่างประเทศ
 
-## 1. Setup
-### 1.1 Set currency in Chart of Accounts
-To get started with multi-currency accounting, you need to assign accounting currency in the Account record. You can define Currency from [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts) while creating an Account.
+## 1. ตั้งค่า
+### 1.1 กำหนดสกุลเงินในผังบัญชี
+ในการเริ่มต้นการบัญชีแบบหลายสกุลเงิน คุณต้องกำหนดสกุลเงินทางบัญชีในรายการบัญชี คุณสามารถกำหนดสกุลเงินจาก [ผังบัญชี](/docs/user/manual/th/accounts/chart-of-accounts) ขณะสร้างบัญชี
 
 <img class="screenshot" alt="Modify Account Currency" src="{{docs_base_url}}/assets/img/accounts/multi-currency/account-set-currency.png">
 
 
-### 1.2 New account with different currency
-You can also assign/modify the currency by opening specific Account records for existing Accounts.
+### 1.2 บัญชีใหม่ที่มีสกุลเงินต่างกัน
+คุณยังสามารถกำหนด/แก้ไขสกุลเงินโดยเปิดบันทึกบัญชีเฉพาะสำหรับบัญชีที่มีอยู่
 
 <img class="screenshot" alt="Set Currency from Chart of Accounts" src="{{docs_base_url}}/assets/img/accounts/multi-currency/account-set-currency-1.png">
 
-### 1.3 Currency for Customer/Supplier
-For Customer/Supplier (Party), you can also define its billing currency in the party record. If the party's accounting currency is different from Company Currency, you should mention Default Receivable/Payable Account in that currency.
+### 1.3 สกุลเงินสำหรับลูกค้า/ซัพพลายเออร์
+สำหรับลูกค้า/ซัพพลายเออร์ (ผู้ที่เกี่ยวข้อง) คุณยังสามารถกำหนดสกุลเงินสำหรับการเรียกเก็บเงินในบันทึกฝ่าย หากสกุลเงินทางบัญชีของคู่สัญญาแตกต่างจากสกุลเงินของบริษัท คุณควรระบุบัญชีลูกหนี้/เจ้าหนี้เริ่มต้นในสกุลเงินนั้น
 
 <img class="screenshot" alt="Customer Accounting Currency"    src="{{docs_base_url}}/assets/img/accounts/multi-currency/customer-currency.png">
 
-### 1.4 After setup
-Once you define Currency in the required account(s) and select relevant accounts in the Party record, you are ready to make transactions against them. If party account currency is different from the Company currency, the system will restrict from making transactions with that party.
+### 1.4 หลังจากตั้งค่า
+เมื่อคุณกำหนดสกุลเงินในบัญชีที่ต้องการและเลือกบัญชีที่เกี่ยวข้องในบันทึกของผู้ที่เกี่ยวข้อง คุณก็พร้อมที่จะทำธุรกรรมกับพวกเขา หากสกุลเงินของบัญชีผู้ที่เกี่ยวข้องแตกต่างจากสกุลเงินของบริษัท ระบบจะจำกัดไม่ให้ทำธุรกรรมกับฝ่ายนั้น
 
-You need to change the currency to party currency in the transaction (Sales or Purchase Order/Invoice). If party account currency is the same as company currency, you can make transactions for that Party in any currency. But accounting entries (GL Entries) will always be in Party Account Currency.
+คุณต้องเปลี่ยนสกุลเงินเป็นสกุลเงินของฝ่ายในการทำธุรกรรม (การขายหรือใบสั่งซื้อ/ใบแจ้งหนี้) หากสกุลเงินของบัญชีผู้ที่เกี่ยวข้องเหมือนกับสกุลเงินของบริษัท คุณสามารถทำธุรกรรมสำหรับที่เกี่ยวข้องนั้นในสกุลเงินใดก็ได้ แต่รายการบัญชี (รายการ GL) จะเป็นสกุลเงินของบัญชีผู้ที่เกี่ยวข้องสมอ
 
-> **Note**: Ensure that the correct account with currency is set in the 'Debit To' field when making invoices/payments.
+> **หมายเหตุ** : ตรวจสอบให้แน่ใจว่าได้ตั้งค่าบัญชีที่ถูกต้องด้วยสกุลเงินในช่อง 'เดบิตไปยัง' เมื่อทำใบแจ้งหนี้/การชำระเงิน
 
-You can change accounting currency in Party/Account record before you make any transactions against them. After making accounting entries, the system will not allow you to change the currency for both Party/Account records. In case of multi-company setup, the accounting currency of the party must be the same for all the companies. 
+คุณสามารถเปลี่ยนสกุลเงินทางบัญชีในบันทึกของฝ่าย/บัญชีก่อนที่คุณจะทำธุรกรรมใดๆ กับพวกเขา หลังจากทำรายการบัญชีแล้ว ระบบจะไม่อนุญาตให้คุณเปลี่ยนสกุลเงินสำหรับบันทึกฝ่าย/บัญชี ในกรณีของการตั้งค่าหลายบริษัท สกุลเงินทางบัญชีของฝ่ายต่างๆ จะต้องเหมือนกันสำหรับทุกบริษัท
 
-## 2. Exchange Rates
-When dealing with multiple currencies, ERPNext has the Currency Exchange page for managing exchange rates. It allows you to save the exchange rate quotes you require. To know more, visit the [Currency Exchange](/docs/user/manual/en/accounts/currency-exchange) page.
+## 2. อัตราแลกเปลี่ยน
+เมื่อจัดการกับหลายสกุลเงิน ERPNext มีหน้าแลกเปลี่ยนสกุลเงินสำหรับจัดการอัตราแลกเปลี่ยน ช่วยให้คุณบันทึกราคาอัตราแลกเปลี่ยนที่คุณต้องการ อ่าน [อัตราแลกเปลี่ยน](/docs/user/manual/th/accounts/currency-exchange) เพื่อทราบข้อมูลเพิ่มเติม
 
-For foreign currency transactions, ERPNext checks exchange rates from:
+สำหรับธุรกรรมสกุลเงินต่างประเทศ ERPNext จะตรวจสอบอัตราแลกเปลี่ยนจาก:
 
-1. From the Currency Exchange for any matching record (if created by a User).
-1. If this fails, ERPNext will attempt to get the current market exchange rate from [Frankfurter](https://www.frankfurter.app).
-1. If this still fails, then the exchange rate will have to be entered manually.
+1. จากการแลกเปลี่ยนสกุลเงินสำหรับเรกคอร์ดที่ตรงกัน (หากสร้างโดยผู้ใช้)
+1. หากล้มเหลว ERPNext จะพยายามที่จะได้รับอัตราแลกเปลี่ยนของตลาดในปัจจุบันจาก [Frankfurter](https://www.frankfurter.app).
+1. หากยังคงล้มเหลว จะต้องป้อนอัตราแลกเปลี่ยนด้วยตนเอง
 
-The rates in the Currency Exchange master are fetched based on whether 'Allow Stale Exchange Rate' is enabled in Accounts Settings. To know more, visit the [Accounts Settings](/docs/user/manual/en/accounts/accounts-settings) page.
+อัตราในการแลกเปลี่ยนสกุลเงินหลักจะถูกดึงโดยขึ้นอยู่กับว่า 'อนุญาตอัตราแลกเปลี่ยนเก่า' ถูกเปิดใช้งานในการตั้งค่าบัญชีหรือไม่ อ่าน [Accounts Settings](/docs/user/manual/th/accounts/accounts-settings) เพื่อทราบข้อมูลเพิ่มเติม
 
-## 3. Transactions
+## 3. ธุรกรรม
 
-### 3.1 Sales Invoice
+### 3.1 ใบแจ้งหนี้การขาย
 
-In a Sales Invoice, transaction currency must be the same as the accounting currency of Customer if Customer's accounting currency is different from Company currency. Otherwise, you can select any currency in a Sales Invoice. On selection of Customer, system will fetch a Receivable account from Customer/Company. The Currency of the receivable account must be the same as the Customer's accounting currency.
+ในใบแจ้งหนี้การขาย สกุลเงินของธุรกรรมจะต้องเหมือนกับสกุลเงินทางบัญชีของลูกค้า ถ้าสกุลเงินทางบัญชีของลูกค้าแตกต่างจากสกุลเงินของบริษัท คุณสามารถเลือกสกุลเงินใดก็ได้ในใบกำกับสินค้า ในการเลือกลูกค้า ระบบจะเรียกบัญชีลูกหนี้จากลูกค้า/บริษัท สกุลเงินของบัญชีลูกหนี้จะต้องเหมือนกับสกุลเงินทางบัญชีของลูกค้า
 
-Now, in Invoice, Paid Amount will be entered in transaction currency, instead of earlier Company Currency. Write Off Amount will also be entered in the transaction currency.
+ตอนนี้ ในใบแจ้งหนี้ จำนวนเงินที่ชำระแล้วจะถูกป้อนในสกุลเงินของธุรกรรม แทนที่จะเป็นสกุลเงินของบริษัทก่อนหน้า จำนวนเงินที่ตัดจำหน่ายจะถูกป้อนในสกุลเงินของธุรกรรมด้วย
 
-Outstanding Amount and Advance Amount will always be calculated and shown in Customer's Account Currency. The paid amounts will be reflected in the [Payment Entry](/docs/user/manual/en/accounts/payment-entry):
+ยอดค้างชำระและจำนวนเงินล่วงหน้าจะถูกคำนวณและแสดงในสกุลเงินบัญชีของลูกค้าเสมอ จำนวนเงินที่ชำระแล้วจะแสดงใน [Payment Entry](/docs/user/manual/th/accounts/payment-entry):
 
 <img class="screenshot" alt="Sales Invoice Outstanding"   src="{{docs_base_url}}/assets/img/accounts/multi-currency/paid-amount.png">
 
-### 3.2 Purchase Invoice
+### 3.2 ใบแจ้งหนี้การขาย
 
-Similarly, in a Purchase Invoice, accounting entries will be made based on Supplier's accounting currency. Outstanding Amount and Advance Amount will also be shown in the supplier's accounting currency. Write Off Amount will now be entered in the transaction currency.
+ในทำนองเดียวกัน ในใบแจ้งหนี้การขาย รายการบัญชีจะถูกสร้างขึ้นตามสกุลเงินทางบัญชีของผู้จัดหา จำนวนเงินคงค้างและจำนวนเงินล่วงหน้าจะแสดงในสกุลเงินทางบัญชีของซัพพลายเออร์ด้วย จำนวนเงินที่ตัดจำหน่ายจะถูกป้อนในสกุลเงินของธุรกรรม
 
-### 3.3 Journal Entry
+### 3.3 รายการบันทึก
 
-In Journal Entry, you can make transactions in different currencies. There is a checkbox 'Multi Currency', to enable multi-currency entries. Only when 'Multi Currency' option selected, you will be able to select accounts which have different currencies.
+ในคุณสามารถทำธุรกรรมในสกุลเงินต่างๆ ได้ มีช่องกาเครื่องหมาย 'หลายสกุลเงิน' เพื่อเปิดใช้งานรายการหลายสกุลเงิน เมื่อเลือกตัวเลือก 'หลายสกุลเงิน' เท่านั้น คุณจะสามารถเลือกบัญชีที่มีสกุลเงินต่างกันได้
 
 <img class="screenshot" alt="Journal Entry Exchange Rate" src="{{docs_base_url}}/assets/img/accounts/multi-currency/journal-entry-multi-currency.png">
  
-In the Accounts table, on the selection of a foreign currency account, the system will show the Currency section and fetch Account Currency and Exchange Rate automatically. You can change/modify the Exchange Rate later manually. Debit/Credit amount should be entered in Account Currency, the system will calculate and show the Debit/Credit amount in Company Currency automatically.
+ในตารางบัญชี ในการเลือกบัญชีสกุลเงินต่างประเทศ ระบบจะแสดงส่วนสกุลเงินและดึงข้อมูลสกุลเงินของบัญชีและอัตราแลกเปลี่ยนโดยอัตโนมัติ คุณสามารถเปลี่ยน/แก้ไขอัตราแลกเปลี่ยนในภายหลังได้ด้วยตนเอง ควรป้อนจำนวนเดบิต/เครดิตในสกุลเงินของบัญชี ระบบจะคำนวณและแสดงจำนวนเดบิต/เครดิตในสกุลเงินของบริษัทโดยอัตโนมัติ
 
 <img class="screenshot" alt="Journal Entry in multi currency" src="{{docs_base_url}}/assets/img/accounts/multi-currency/journal-entry-row.png">
 
-## 4. Reports
+## 4. รายงาน
 
-### 4.1 General Ledger
+### 4.1 บัญชีแยกประเภททั่วไป
 
-In General Ledger, the system shows debit/credit amount in party currency **if filtered** by an Account and that Account Currency is different from Company Currency.
+ในบัญชีแยกประเภททั่วไป ระบบจะแสดงจำนวนเดบิต/เครดิตในสกุลเงินของฝ่าย **หากกรองข้อมูล**โดยบัญชีและสกุลเงินของบัญชีนั้นแตกต่างจากสกุลเงินของบริษัท
 
 <img class="screenshot" alt="General Ledger Report"   src="{{docs_base_url}}/assets/img/accounts/multi-currency/general-ledger.png">
 
-### 4.2 Accounts Receivable/Payable
+### 4.2 บัญชีลูกหนี้/เจ้าหนี้
 
-In Accounts Receivable/Payable report, the system shows all the amounts in Party/Account Currency.
+ในรายงานบัญชีลูกหนี้/เจ้าหนี้ ระบบจะแสดงจำนวนเงินทั้งหมดในสกุลเงินของคู่สัญญา/บัญชี
 
 <img class="screenshot" alt="Accounts Receivable Report"  src="{{docs_base_url}}/assets/img/accounts/multi-currency/accounts-receivable.png">
 
-### 5. Related Topics
-1. [Exchange Rate Revaluation](/docs/user/manual/en/accounts/exchange-rate-revaluation)
-1. [Currency Exchange](/docs/user/manual/en/accounts/currency-exchange)
-1. [Currency](/docs/user/manual/en/accounts/currency)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+### 5. หัวข้อที่เกี่ยวข้อง
+1. [การประเมินค่าอัตราแลกเปลี่ยนใหม่](/docs/user/manual/th/accounts/exchange-rate-revaluation)
+1. [แลกเปลี่ยนเงินตรา](/docs/user/manual/th/accounts/currency-exchange)
+1. [สกุลเงิน](/docs/user/manual/th/accounts/currency)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)

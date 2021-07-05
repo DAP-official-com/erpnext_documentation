@@ -1,71 +1,71 @@
 <!-- add-breadcrumbs -->
-# Payment Terms
+# เงื่อนไขการชำระเงิน
 
-**A Payment Term helps to set a schedule according to which payments will be made.**
+**เงื่อนไขการชำระเงินช่วยในการกำหนดตารางเวลาตามการชำระเงินที่จะต้องทำ**
 
-A Payment Term defines a specific payment slab. For example, 50% payment on shipping and 50% on delivery of the item. You can save your business's payment terms on ERPNext and include them in all documents in the sales/purchase cycle. ERPNext will make all the General Ledger entries accordingly.
+เงื่อนไขการชำระเงินกำหนดการชำระเงินเฉพาะ ตัวอย่างเช่น ชำระเงิน 50% สำหรับการจัดส่ง และ 50% เมื่อส่งสินค้า คุณสามารถบันทึกเงื่อนไขการชำระเงินของธุรกิจของคุณใน ERPNext และรวมไว้ในเอกสารทั้งหมดในรอบการขาย/การซื้อ ERPNext จะสร้างรายการบัญชีแยกประเภททั่วไปทั้งหมดตามลำดับ
 
-In ERPNext, the Payment Terms form only defines portion percentages. The actual payment schedule can easily be applied using the Payment Terms Template.
+ใน ERPNext แบบฟอร์มเงื่อนไขการชำระเงินจะกำหนดเปอร์เซ็นต์ส่วนเท่านั้น กำหนดการชำระเงินจริงสามารถนำไปใช้ได้อย่างง่ายดายโดยใช้เทมเพลตเงื่อนไขการชำระเงิน
 
-You can use Payment Terms in the following documents:
+คุณสามารถใช้เงื่อนไขการชำระเงินในเอกสารต่อไปนี้:
 
-- Sales Invoice
-- Purchase Invoice
-- Sales Order
-- Purchase Order
-- Quotation
+- ใบแจ้งหนี้การขาย
+- ใบกำกับสินค้า
+- ใบสั่งขาย
+- ใบสั่งซื้อ
+- คำอ้างอิง
 
-To access Payment Term go to:
-> Home > Accounting > Accounting Masters > Payment Term
+ในการเข้าถึงเงื่อนไขการชำระเงินไปที่:
+> หน้าหลัก > การบัญชี > การบัญชีหลัก > เงื่อนไขการชำระเงิน
 
 <img class="screenshot" alt="Payment Terms" src="{{docs_base_url}}/assets/img/accounts/payment-terms.png">
 
-## 1. How to create a Payment Term
+## 1. วิธีสร้างเงื่อนไขการชำระเงิน
 
-1. Go to the Payment Term list and click on New.
-1. Enter a name for the Payment Term (eg: 50% post-shipment).
-1. Enter the Invoice portion. If you enter 50, the portion will be 50 percent of the Invoice amount.
-1. Select a Due Date type.
-1. Under Credit Days enter the number of days after which the remaining amount has to be paid.
-1. Save.
+1. ไปที่รายการเงื่อนไขการชำระเงินและคลิกที่ใหม่
+1. ป้อนชื่อสำหรับเงื่อนไขการชำระเงิน (เช่น 50% หลังการจัดส่ง)
+1. ป้อนส่วนใบแจ้งหนี้ หากคุณป้อน 50 ส่วนจะเป็น 50 เปอร์เซ็นต์ของจำนวนเงินในใบแจ้งหนี้
+1. เลือกประเภทวันครบกำหนด
+1. ภายใต้ วันที่ต้องชำระ ให้ป้อนจำนวนวันที่จะต้องชำระส่วนที่เหลือ
+1. บันทึก
 
-The fields are explained as follows:
+คำอธิบายของฟิลด์ต่างๆ: 
 
-* **Payment Term Name:** The name for this Payment Term.
-* **Due Date Based On:** The basis by which the due date for the Payment Term is to be calculated. This is calculated X number of days from the **posting date** of the invoice/order. There are three options:
- - **Day(s) after invoice date**: Due date should be calculated in days concerning the posting date of the invoice. For example, if 7 is entered on date 20th, the due date will be 27.
- - **Day(s) after the end of the invoice month**: Due date should be calculated in days concerning the last day of the month in which the invoice was created. For example, if 7 is entered in the current month and the last day of the month is 30th, the due date will be the 7th of the next month.
- - **Month(s) after the end of the invoice month**: Due date should be calculated in months concerning the last day of the month in which the invoice was created. For example, if 3 is entered on the 20th of January, the due date will be on 20th March.
-* **Invoice Portion:** The portion of the total invoice amount for which this Payment Term should be applied. The value given will be regarded as percentage i.e 50 = 50% of the invoice/orders Grand Total
-* **Credit Days (optional):** The number of days or month credit is allowed depending on the option chosen in the Due Date Based On the field. 0 means no credit allowed.
-* **Description:** (optional) A brief description of the Payment Term.
+* **ชื่อเงื่อนไขการชำระเงิน** : ชื่อของเงื่อนไขการชำระเงินนี้
+* **วันที่ครบกำหนดขึ้นอยู่กับ** : เกณฑ์การคำนวณวันที่ครบกำหนดสำหรับเงื่อนไขการชำระเงิน ซึ่งคำนวณ X จำนวนวันนับจากวันที่ผ่านรายการในใบแจ้งหนี้/ใบสั่งซื้อ มีสามตัวเลือก:
+    * **วันหลังจากวันที่ในใบแจ้งหนี้** : วันที่ครบกำหนดควรคำนวณเป็นวันที่เกี่ยวกับวันที่ลงรายการบัญชีของใบแจ้งหนี้ ตัวอย่างเช่น หากป้อน 7 ในวันที่ 20 วันที่ครบกำหนดจะเป็น 27
+    * **วันหลังจากสิ้นเดือนในใบแจ้งหนี้** : วันที่ครบกำหนดควรคำนวณเป็นวันที่เกี่ยวกับวันสุดท้ายของเดือนที่สร้างใบแจ้งหนี้ ตัวอย่างเช่น หากป้อน 7 ในเดือนปัจจุบันและวันสุดท้ายของเดือนคือวันที่ 30 วันที่ครบกำหนดจะเป็นวันที่ 7 ของเดือนถัดไป
+    * **เดือนหลังสิ้นเดือนในใบแจ้งหนี้** : วันที่ครบกำหนดควรคำนวณเป็นเดือนที่เกี่ยวข้องกับวันสุดท้ายของเดือนที่สร้างใบแจ้งหนี้ ตัวอย่างเช่น หากป้อน 3 ในวันที่ 20 มกราคม วันที่ครบกำหนดจะเป็นวันที่ 20 มีนาคม
+* **ส่วนของใบแจ้งหนี้** : ส่วนของจำนวนเงินในใบแจ้งหนี้ทั้งหมดที่ควรใช้เงื่อนไขการชำระเงินนี้ มูลค่าที่กำหนดจะถือเป็นเปอร์เซ็นต์ เช่น 50 = 50% ของใบแจ้งหนี้/ใบสั่งซื้อทั้งหมด
+* **วันที่ต้องชำระ (ไม่บังคับ)** : จำนวนวันหรือเครดิตเดือนได้รับอนุญาตขึ้นอยู่กับตัวเลือกที่เลือกในวันครบกำหนดตามฟิลด์ 0 หมายถึงไม่อนุญาตให้มีเครดิต
+* **คำอธิบาย** : คำอธิบายสั้น ๆ ของเงื่อนไขการชำระเงิน
 
-### 1.1 Setting up Discount on Early Payments
+### 1.1 การตั้งค่าส่วนลดสำหรับการชำระเงินก่อนกำหนด
 
-You can set up a discounted payment terms such that if payment is done within the specified period then some amount/percentage of the invoice value will be discounted. The following fields define the discount configuration:
+คุณสามารถตั้งค่าเงื่อนไขการชำระเงินที่มีส่วนลดได้ เช่น หากการชำระเงินเสร็จสิ้นภายในระยะเวลาที่กำหนด จำนวนเงิน/เปอร์เซ็นต์ของมูลค่าใบแจ้งหนี้บางส่วนจะถูกลดราคา ฟิลด์ต่อไปนี้กำหนดการตั้งค่าคอนฟิกส่วนลด:
 
-* **Discount Type:** Default is Percentage. You can also change it to Amount.
-* **Discount:** In terms of Percentage or Amount (eg. 10% or ₹ 5,000).
-* **Discount Validity Based On:** This field acts similar to the Due Date Based On the field in the previous section.
-* **Discount Validity:** The number of days or months the discount is valid with respect to the invoice date (eg. 10 days after the invoice date).
+* **ประเภทส่วนลด** : ค่าเริ่มต้นคือเปอร์เซ็นต์ คุณยังสามารถเปลี่ยนเป็นจำนวนเงิน
+* **ส่วนลด** : ในแง่ของเปอร์เซ็นต์หรือจำนวนเงิน (เช่น 10% หรือ ₹ 5,000)
+* **ความถูกต้องของส่วนลดจะขึ้นอยู่กับ** : ฟิลด์นี้ทำหน้าที่คล้ายกับวันครบกำหนดตามฟิลด์ในส่วนก่อนหน้า
+* **ความถูกต้องของส่วนลด** : จำนวนวันหรือเดือนที่ส่วนลดสามารถใช้ได้ตามวันที่ในใบแจ้งหนี้ (เช่น 10 วันหลังจากวันที่ในใบแจ้งหนี้)
 
 <img class="screenshot" alt="Payment Terms with Discount" src="{{docs_base_url}}/assets/img/accounts/payment-terms-with-discount.png">
 
-You can now link the Payment Terms with an Invoice and on creating the payment against such invoice, the discount will be applied automatically.
+คุณสามารถเชื่อมโยงเงื่อนไขการชำระเงินกับใบแจ้งหนี้ และในการสร้างการชำระเงินกับใบแจ้งหนี้ดังกล่าว ส่วนลดจะถูกนำไปใช้โดยอัตโนมัติ
 
-### 1.2 Payment Terms in Converted Documents
-When converting or copying documents in the sales/purchase cycle, the attached Payment Term(s) will be copied. When creating a Sales Order from a Quotation, the Due Date in the Payment Terms will be according to the Quotation, this needs to be updated.
+### 1.2 เงื่อนไขการชำระเงินในเอกสารที่แปลงแล้ว
+เมื่อแปลงหรือคัดลอกเอกสารในรอบการขาย/การซื้อ เงื่อนไขการชำระเงินที่แนบมานี้จะถูกคัดลอก เมื่อสร้างใบสั่งขายจากใบเสนอราคา วันที่ครบกำหนดในเงื่อนไขการชำระเงินจะเป็นไปตามใบเสนอราคา ซึ่งจำเป็นต้องได้รับการอัปเดต
 
-For ease of use, you can also set a Payment Terms Template and simply reselect it.
+เพื่อความสะดวกในการใช้งาน คุณยังสามารถตั้งค่าเทมเพลตเงื่อนไขการชำระเงินและเลือกใหม่ได้อย่างง่ายดาย
 
-### 1.3 Adding Payment Terms To Documents
+### 1.3 การเพิ่มเงื่อนไขการชำระเงินลงในเอกสาร 
 
-Once you have composed the Payment Terms Template, you can use them in sales and purchase transactions. Based on the value defined for Payment Terms and transaction value, the payment schedule will be defined, with a Due Date for each payment slab.
+เมื่อคุณสร้างเทมเพลตเงื่อนไขการชำระเงินแล้ว คุณสามารถใช้เทมเพลตดังกล่าวในธุรกรรมการขายและการซื้อได้ ตามมูลค่าที่กำหนดไว้สำหรับเงื่อนไขการชำระเงินและมูลค่าธุรกรรม กำหนดการชำระเงินจะถูกกำหนด โดยมีวันครบกำหนดสำหรับแต่ละแผ่นการชำระเงิน
 
 ![Payment Schedule]({{docs_base_url}}/assets/img/accounts/payment-term-table.png)
 
-Note: The Payment Schedule can be shown in the Print View using the [Print Format Builder](/docs/user/manual/en/setting-up/print/print-format-builder).
+หมายเหตุ: กำหนดการชำระเงินสามารถแสดงในพิมพ์ดูโดยใช้ [ตัวสร้างรูปแบบการพิมพ์](/docs/user/manual/th/setting-up/print/print-format-builder).
 
-### 2. Related Topics
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+### 2. หัวข้อที่เกี่ยวข้อง
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบกำกับสินค้า](/docs/user/manual/th/accounts/purchase-invoice)

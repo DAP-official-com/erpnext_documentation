@@ -1,46 +1,46 @@
 <!-- add-breadcrumbs -->
-# Share Transfer
+# การโอนหุ้น
 
-**A Share Transfer is the Issue, Transfer, or Purchase of Company shares from one party to another.** 
+**การโอนหุ้นคือการออก โอน หรือซื้อหุ้นของบริษัทจากฝ่ายหนึ่งไปยังอีกฝ่ายหนึ่ง** 
 
-There may be times when you want to change the share structure of your Company; either by adding new Shareholders or by changing the existing proportion of shares between Shareholders. A Share Transfer is the process of transferring existing shares from one person to another; either by sale or gift.
+อาจมีบางครั้งที่คุณต้องการเปลี่ยนโครงสร้างการถือหุ้นของบริษัท โดยการเพิ่มผู้ถือหุ้นใหม่หรือโดยการเปลี่ยนสัดส่วนการถือหุ้นที่มีอยู่ระหว่างผู้ถือหุ้น การโอนหุ้นเป็นกระบวนการโอนหุ้นที่มีอยู่จากบุคคลหนึ่งไปยังอีกบุคคลหนึ่ง ไม่ว่าจะโดยการขายหรือของขวัญ
 
-When creating a new Shareholder, they need to be issued shares first. Only then a Folio Number is visible and further transfer can be done using that Shareholder.
+เมื่อสร้างผู้ถือหุ้นใหม่ จะต้องออกหุ้นก่อน เฉพาะหมายเลขโฟลิโอเท่านั้นที่สามารถมองเห็นได้และสามารถโอนต่อไปได้โดยใช้ผู้ถือหุ้นรายนั้น
 
-To access the Share Transfer list, go to:
-> Home > Accounting > Share Management > Share Transfer
+หากต้องการเข้าถึงรายการแชร์การโอน ให้ไปที่:
+> หน้าแรก > การบัญชี > การจัดการหุ้น > การโอนหุ้น
 
 ## 1. How to create a Share Transfer
-1. Go to the Share Transfer list and click on New.
-1. Select the Transfer Type, for first ever Shareholder transaction this will be 'Issue'.
-1. Set a date for the transfer.
-1. Select the From and To Shareholders.
-1. Select the from and to Folio Numbers.
-1. Set the Liability and Asset accounts.
-1. Select the share type whether Preference or Equity (more share types can be added if needed).
-1. Select the number of shares to be transferred.
-1. Select the From and To number of shares. For example 1 to 3,000.
-1. Set the rate of one share, the amount will be calculated based on the number of shares.
-1. Save and Submit.
+1. ไปที่รายการ การโอนหุ้น และคลิกที่ ใหม่
+1. เลือกประเภทการโอน สำหรับการทำธุรกรรมของผู้ถือหุ้นครั้งแรก นี่จะเป็น 'ออกหุ้น'
+1. กำหนดวันโอน.
+1. เลือกจากและถึงผู้ถือหุ้น
+1. เลือกจากและไปยังหมายเลขโฟลิโอ
+1. ตั้งค่าบัญชีความรับผิดและสินทรัพย์
+1. เลือกประเภทหุ้นว่าต้องการหรือส่วนทุน (สามารถเพิ่มประเภทหุ้นเพิ่มเติมได้หากต้องการ)
+1. เลือกจำนวนหุ้นที่จะโอน
+1. เลือกจากและถึงจำนวนหุ้น เช่น 1 ถึง 3,000
+1. กำหนดอัตราหนึ่งหุ้น จำนวนเงินจะคำนวณตามจำนวนหุ้น
+1. บันทึกและส่ง
 
  <img class="screenshot" alt="Create Shareholder" src="/docs/assets/img/accounts/shareholder/sharetransfer_issue.png">
 
-After submitting, a Journal Entry can be created to update the ledger using the **Create Journal Entry** button.
+หลังจากส่งแล้ว คุณสามารถสร้างรายการบันทึกประจำวันเพื่ออัปเดตบัญชีแยกประเภทโดยใช้ปุ่ม **สร้างรายการบันทึกประจำวัน**
 
 > Note: Before you can Purchase or Transfer shares between shareholders, shares need to be issued.
 
-### 1.1 Terminology
+### 1.1 คำศัพท์
 
-Transfer Types:
+ประเภทการโอน:
 
-* **Issue**: Shares are being issued to an existing Shareholder by the Company.
-* **Purchase**: The Company is purchasing back shares from an existing Shareholder.
-* **Transfer**: Shares are being transferred from one Shareholder to another.
+* **ออก** : บริษัทฯ ออกหุ้นให้ผู้ถือหุ้นเดิม
+* **ซื้อ** : บริษัทกำลังซื้อคืนหุ้นจากผู้ถือหุ้นเดิม
+* **การโอน** : หุ้นจะถูกโอนจากผู้ถือหุ้นรายหนึ่งไปยังอีกรายหนึ่ง
 
-**Folio Number**: This is a number used to uniquely identify a Shareholder and their transaction.
+**Folio Number**: เป็นตัวเลขที่ใช้ระบุผู้ถือหุ้นและการทำธุรกรรม
 
-**Share Type**: The two default options in ERPNext are Preference and Equity. This only indicates the type of share, more can be added as per your Company structure. 
+**ประเภทของหุ้น**: สองตัวเลือกเริ่มต้นใน ERPNext คือ Preference และ Equity ระบุเฉพาะประเภทการแชร์เท่านั้น สามารถเพิ่มได้อีกตามโครงสร้างบริษัทของคุณ 
 
-### 2. Related Topics
-1. [Shareholder](/docs/user/manual/en/accounts/shareholder)
-1. [Share Reports](/docs/user/manual/en/accounts/share-reports)
+### 2. หัวข้อที่เกี่ยวข้อง
+1. [ผู้ถือหุ้น](/docs/user/manual/en/accounts/shareholder)
+1. [รายงานหุ้น](/docs/user/manual/en/accounts/share-reports)

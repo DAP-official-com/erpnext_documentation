@@ -1,344 +1,329 @@
 <!-- add-breadcrumbs -->
-# Sales Invoice
+# ใบแจ้งหนี้การขาย
 
-**A Sales Invoice is a bill that you send to your Customers against which the Customer makes the payment.**
+**ใบแจ้งหนี้การขายคือใบเรียกเก็บเงินที่คุณส่งให้กับลูกค้าของคุณซึ่งลูกค้าเป็นผู้ชำระเงิน**
 
-Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivable and books income against a Customer Account.
+ใบแจ้งหนี้การขายเป็นรายการทางบัญชี ในการส่งใบกำกับสินค้า ระบบจะอัปเดตบัญชีลูกหนี้และบัญชีรายรับจากบัญชีลูกค้า
 
-To access the Sales Invoice list, go to:
-> Home > Accounting > Accounts Receivable > Sales Invoice
+หากต้องการเข้าถึงรายการใบกำกับสินค้า ให้ไปที่:
+> หน้าหลัก > การบัญชี > บัญชีลูกหนี้ > ใบแจ้งหนี้การขาย
 
 ![SO Flow](/docs/assets/img/accounts/so-flow.png)
 
-## 1. Prerequisites
-Before creating and using a Sales Invoice, it is advised to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
 
-* [Item](/docs/user/manual/en/stock/item)
-* [Customer](/docs/user/manual/en/CRM/customer)
+ก่อนสร้างและใช้ใบแจ้งหนี้การขาย ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* Optional:
- * [Sales Order](/docs/user/manual/en/selling/sales-order)
- * [Delivery Note](/docs/user/manual/en/stock/delivery-note)
+* [สินค้า](/docs/user/manual/th/stock/item)
+* [ลูกค้า](/docs/user/manual/th/CRM/customer)
 
-## 2. How to create a Sales Invoice
-A Sales Invoice is usually created from a Sales Order or a Delivery Note. The Customer's Item details will be fetched into the Sales Invoice. However, you can also create a Sales Invoice directly, for example, a POS invoice.
+* ตัวเลือก:
+ * [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order)
+ * [บันทึกการส่งมอบ](/docs/user/manual/th/stock/delivery-note)
 
-To fetch the details automatically in a Sales Invoice, click on the **Get Items from**. The details can be fetched from a Sales Order, Delivery Note, or a Quotation.
+## 2. วิธีสร้างใบแจ้งหนี้การขาย
+ใบแจ้งหนี้การขายมักจะสร้างจากใบสั่งขายหรือใบส่งสินค้า รายละเอียดรายการของลูกค้าจะถูกดึงเข้าไปในใบกำกับสินค้า อย่างไรก็ตาม คุณยังสามารถสร้างใบแจ้งหนี้การขายได้โดยตรง เช่น ใบแจ้งหนี้ POS
 
-For manual creation, follow these steps:
+สามารถดึงข้อมูลรายละเอียดโดยอัตโนมัติในใบแจ้งหนี้การขายให้คลิกที่รายการที่ได้รับจาก รายละเอียดสามารถดึงมาจากใบสั่งขาย ใบส่งสินค้า หรือใบเสนอราคา
 
-1. Go to the Sales Invoice list and click on New.
-1. Select the Customer.
-1. Set the Payment Due Date.
-1. In the Items table, select the Items and set the quantities.
-1. The prices will be fetched automatically if [Item Price](/docs/user/manual/en/stock/item-price) is added, else add a price in the table.
-1. The posting date and time will be set to current, you can edit after you tick the checkbox below Posting Time to make a backdated entry.
-1. Save and Submit.
+สำหรับการสร้างด้วยตนเอง ให้ทำตามขั้นตอนเหล่านี้:
+
+1. ไปที่รายการ ใบแจ้งหนี้การขาย แล้วคลิก ใหม่
+1. เลือกลูกค้า
+1. กำหนดวันครบกำหนดชำระเงิน
+1. ในตารางรายการ เลือกรายการและกำหนดปริมาณ
+1. ราคาจะถูกดึงโดยอัตโนมัติ หากมีการเพิ่ม[ราคาสินค้า](/docs/user/manual/th/stock/item-price)หรือไม่เช่นนั้นให้เพิ่มราคาในตาราง
+1. วันที่และเวลาโพสต์จะถูกตั้งค่าเป็นปัจจุบัน คุณสามารถแก้ไขได้หลังจากทำเครื่องหมายที่ช่องด้านล่าง เวลาในการโพสต์ เพื่อสร้างรายการย้อนหลัง
+1. บันทึกและส่ง
  ![SI](/docs/assets/img/accounts/sales-invoice-1.png)
 
-### 2.1 Additional options when creating a Sales Invoice
+### 2.1 ตัวเลือกเพิ่มเติมเมื่อสร้างใบแจ้งหนี้การขาย
 
-* **Include Payment (POS)**: If this invoice is for retail sales / Point of Sale. [Know more here](/docs/user/manual/en/accounts/sales-invoice#324-pos-invoices).
-* **Is Return Credit Note**: Tick this if the customer has returned the Items. To know more details, visit the [Credit Note](/docs/user/manual/en/accounts/credit-note) page.
+* **เพิ่มการชำระเงิน (POS)**: หากใบแจ้งหนี้นี้ใช้สำหรับขายปลีก / ระบบการขายหน้าร้าน รู้เพิ่มเติมได้ [ที่นี่](/docs/user/manual/th/accounts/sales-invoice#324-pos-invoices).
+* **เครดิตโน๊คที่ถูกคืน**: ทำเครื่องหมายนี้หากลูกค้าได้ส่งคืนสินค้าแล้ว สามารถอ่านรายละเอียดเพิ่มเติมได้ที่[เครดิตโน๊ต](/docs/user/manual/th/accounts/credit-note)
 
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/accounts/sales-invoice.png">
 
-For India:
-**e-Way Bill No**: According to GST rules, transporters need to carry an e-Way Bill. To know how to generate an e-Way Bill, [visit this page](/docs/user/manual/en/regional/india/auto-generate-e-way-bill-JSON).
+<!--For India:
+**e-Way Bill No**: According to GST rules, transporters need to carry an e-Way Bill. To know how to generate an e-Way Bill, [visit this page](/docs/user/manual/th/regional/india/auto-generate-e-way-bill-JSON).-->
 
-### 2.2 Statuses
+### 2.2 สถานะ
 
-These are the statuses that are auto-assigned to Sales Invoice.
+สถานะเหล่านี้เป็นสถานะที่กำหนดอัตโนมัติให้กับใบแจ้งหนี้การขาย
 
-* **Draft**: A draft is saved but yet to be submitted.
-* **Submitted**: The invoice is submitted to the system and the general ledger has been updated.
-* **Paid**: Customer has made the payment and a [Payment Entry](/docs/user/manual/en/accounts/payment-entry) has been submitted.
-* **Unpaid**: Invoice is generated but payment is pending but within the payment due date.
-* **Overdue**: Payment is pending beyond the payment due date.
-* **Canceled**: The Sales Invoice is canceled due to any reason. Once an invoice is canceled, it's impact on Account and Stock is undone.
-* **Credit Note Issued**: The Item is returned by the Customer and a [Credit Note](/docs/user/manual/en/accounts/credit-note) is created against this invoice.
-* **Return**: It is assigned to Credit Note created against the original Sales Invoice. Though you can also create a standalone Credit Note.
-* **Unpaid and Discounted**: Payment is pending and any ongoing subscription has been discounted using [Invoice Discounting](/docs/user/manual/en/accounts/invoice_discounting).
-* **Overdue and Discounted**: Payment is pending beyond the payment due date and any ongoing subscription has been discounted using [Invoice Discounting](/docs/user/manual/en/accounts/invoice_discounting).
+* **ร่าง**: บันทึกแบบร่างแล้วแต่ยังไม่ได้ส่ง
+* **ส่งแล้ว**: ส่งใบแจ้งหนี้ไปยังระบบและอัปเดตบัญชีแยกประเภททั่วไปแล้ว
+* **ชำระเงินแล้ว**: ลูกค้าชำระเงินแล้วและได้ส่ง[รายการชำระเงิน](/docs/user/manual/th/accounts/payment-entry)แล้ว
+* **ยังไม่ได้ชำระ** : มีการสร้างใบแจ้งหนี้แต่การชำระเงินอยู่ระหว่างดำเนินการแต่ภายในวันที่ครบกำหนดชำระเงิน
+* **เกินกำหนดชำระ** : การชำระเงินอยู่ระหว่างดำเนินการเกินกำหนดชำระ
+* **ยกเลิกแล้ว** : ใบกำกับสินค้าถูกยกเลิกเนื่องจากสาเหตุใดก็ตาม เมื่อใบแจ้งหนี้ถูกยกเลิก จะส่งผลกระทบต่อบัญชีและสต็อกจะถูกยกเลิก
+* **หมายเหตุเครดิตโน๊ต**: รายการที่ถูกส่งกลับโดยลูกค้าและ [เครดิตโน๊ต](/docs/user/manual/th/accounts/credit-note) จะถูกสร้างขึ้นกับใบแจ้งหนี้นี้
+* **การส่งคืน** : ถูกกำหนดให้กับใบลดหนี้ที่สร้างโดยเทียบกับใบกำกับสินค้าเดิม แม้ว่าคุณสามารถสร้างใบลดหนี้แบบสแตนด์อโลนได้
+* **ที่ค้างชำระและส่วนลด**: การจ่ายอยู่ระหว่างการพิจารณาและการสมัครอย่างต่อเนื่องใด ๆ ที่ได้รับการลดการใช้ [ส่วนลดใบแจ้งหนี้](/docs/user/manual/th/accounts/invoice_discounting).
+* **เกินกำหนดการชำระและส่วนลด**: การจ่ายอยู่ระหว่างรอการชำระเงินเกินกว่าวันที่ครบกำหนดและการสมัครอย่างต่อเนื่องใด ๆ ที่ได้รับการลดการใช้[ส่วนลดใบแจ้งหนี้](/docs/user/manual/th/accounts/invoice_discounting).
 
-## 3. Features
-### 3.1 Dates
+## 3. คุณสมบัติ
+### 3.1 วันที่
 
-* **Posting Date**: The date on which the Sales Invoice will affect your books of
-accounts i.e. your General Ledger. This will affect all your balances in that
-accounting period.
+* **วันที่รับรู้รายการบัญชี** : วันที่ใบกำกับสินค้าจะมีผลต่อสมุดบัญชี เช่น บัญชีแยกประเภททั่วไปของคุณ ซึ่งจะส่งผลต่อยอดคงเหลือทั้งหมดของคุณในรอบระยะเวลาบัญชีนั้น
 
-* **Due Date**: The date on which the payment is due (if you have sold on credit).
-The credit limit can be set from the [Customer](/docs/user/manual/en/CRM/customer#24-credit-limit-and-payment-terms) master.
+* **วันที่ครบกำหนดชำระเงิน**: นที่ครบกำหนดชำระเงิน (หากคุณขายด้วยเครดิต) สามารถกำหนดวงเงินสินเชื่อได้จากข้อมูลหลักของ [ลูกค้า](/docs/user/manual/th/CRM/customer#24-credit-limit-and-payment-terms)
 
-### 3.2 Accounting Dimensions
-Accounting Dimensions lets you tag transactions based on a specific Territory, Branch, Customer, etc. This helps in viewing accounting statements separately based on the selected dimension(s). To know more, check help on [Accounting Dimensions](/docs/user/manual/en/accounts/accounting-dimensions) feature.
+### 3.2 ลำดับขั้นบัญชี
 
-> Note: Project and Cost Center are treated as dimensions by default.
+ลำดับขั้นข้อมูลทางบัญชีช่วยให้คุณแท็กธุรกรรมตามเขตแดน สาขา ลูกค้า ฯลฯ ซึ่งช่วยในการดูใบแจ้งยอดบัญชีแยกกันตามมิติที่เลือก หากต้องการทราบข้อมูลเพิ่มเติม ตรวจสอบความช่วยเหลือเกี่ยวกับคุณลักษณะ [ลำดับขั้นบัญชี](/docs/user/manual/th/accounts/accounting-dimensions)
 
-### 3.3 Customer PO Details
+> หมายเหตุ: โครงการและศูนย์ต้นทุนจะถือเป็นลำดับขั้นตามค่าเริ่มต้น
 
-* **Customer's Purchase Order**: Track customer's PO No. received, primarily to prevent the creation of duplicate Sales Order or Invoice for the same PO received from the Customer. You can do more configuration related to customer's PO No. validation in [Selling Settings](/docs/user/manual/en/selling/selling-settings#44-allow-multiple-sales-orders-against-a-customers-purchase-order)
-* **Customer's Purchase Order Date**: The date on which the Customer placed the Purchase Order.
+### 3.3 รายละเอียดใบสั่งซื้อของลูกค้า
+
+* **ใบสั่งซื้อของลูกค้า**: ติดตามหมายเลข PO ของลูกค้าที่ได้รับ เพื่อป้องกันการสร้างใบสั่งขายหรือใบแจ้งหนี้ที่ซ้ำกันสำหรับ PO เดียวกันที่ได้รับจากลูกค้า คุณสามารถกำหนดค่าเพิ่มเติมที่เกี่ยวข้องกับการตรวจสอบหมายเลข PO ของลูกค้าได้ใน [การตั้งค่าการขาย](/docs/user/manual/th/selling/selling-settings#44-allow-multiple-sales-orders-against-a-customers-purchase-order)
+* **วันที่สั่งซื้อของลูกค้า**: วันที่ลูกค้าทำการสั่งซื้อ
 
  ![Customer Address](/docs/assets/img/accounts/si-customer.png)
 
-### 3.4 Address and Contact
+### 3.4 ที่อยู่และรายชื่อติดต่อ
 
-* **Customer Address:** This is the Billing Address of the Customer.
-* **Contact Person**: If the Customer is a company, the person to be contacted is fetched in this field if set in the [Customer](/docs/user/manual/en/CRM/customer) form.
-* **Territory:** A [Territory](/docs/user/manual/en/selling/territory) is the region where the Customer belongs to, fetched from the Customer form. The default value is All Territories.
-* **Shipping Address:** Address where the items will be shipped to.
+* **ที่อยู่ลูกค้า:** ที่อยู่สำหรับการเรียกเก็บเงินของลูกค้า
+* **ผู้ติดต่อ**: หากลูกค้าเป็นบริษัท บุคคลที่จะติดต่อจะถูกดึงข้อมูลในช่องนี้หากตั้งค่าไว้ใน [แบบฟอร์มลูกค้า](/docs/user/manual/th/CRM/customer)
+* **อาณาเขต:** [อาณาเขต](/docs/user/manual/th/selling/territory) เป็นพื้นที่ที่ลูกค้าเป็นของลึกซึ้งจากรูปแบบของลูกค้า ค่าเริ่มต้นคืออาณาเขตทั้งหมด
+* **ที่อยู่จัดส่ง:** ที่อยู่สำหรับจัดส่งของ
 
-For India, the following details can be recorded for GST purposes. You can capture these details in the Address and Customer master, which would be fetched in the Sales Invoice.
+<!--For India, the following details can be recorded for GST purposes. You can capture these details in the Address and Customer master, which would be fetched in the Sales Invoice.
 
 * Billing Address GSTIN
 * Customer GSTIN
 * Place of Supply
-* Company GSTIN
+* Company GSTIN-->
 
-### 3.5 Currency
-You can set the currency in which the Sales Invoice order is to be sent. This can be fetched from the Customer master or preceding transactions like Sales Order.
+### 3.5 สกุลเงิน
+คุณสามารถตั้งค่าสกุลเงินที่จะส่งใบสั่งใบแจ้งหนี้การขาย สามารถดึงข้อมูลจากข้อมูลหลักของลูกค้าหรือธุรกรรมก่อนหน้า เช่น ใบสั่งขาย
 
-* Wish to select Customer's currency just for the reference of the Customer, whereas accounts posting will be done in the Company's base currency only. Learn more [here](/docs/user/manual/en/accounts/articles/managing-transactions-in-multiple-currency).
-* Maintain separate receivable account in the Customer's currency. The Receivable for this invoice should be posted in that currency itself. Read [Multi Currency Accounting](/docs/user/manual/en/accounts/multi-currency-accounting) to learn more.
+* ต้องการเลือกสกุลเงินของลูกค้าเพียงเพื่อการอ้างอิงของลูกค้า ในขณะที่การลงรายการบัญชีจะทำในสกุลเงินหลักของบริษัทเท่านั้น เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/accounts/articles/managing-transactions-in-multiple-currency).
+* รักษาบัญชีลูกหนี้แยกต่างหากในสกุลเงินของลูกค้า ลูกหนี้สำหรับใบแจ้งหนี้นี้ควรผ่านรายการในสกุลเงินนั้นเอง อ่าน [บัญชีหลายสกุลเงิน](/docs/user/manual/th/accounts/multi-currency-accounting) เพื่อเรียนรู้เพิ่มเติม
 
-### 3.6 Price list
+### 3.6 รายการราคา
 
-If you select a Price List, then the item prices will be fetched from that list. Ticking on 'Ignore Pricing Rule' will ignore the [Pricing Rules](/docs/user/manual/en/accounts/pricing-rule) set in Accounts > Pricing Rule.
+หากคุณเลือกรายการราคา ราคาสินค้าจะถูกดึงมาจากรายการนั้น การทำเครื่องหมายที่ 'ละเว้น [กฎการกำหนดราคา'](/docs/user/manual/th/accounts/pricing-rule) 
+ที่ตั้งไว้ใน งบัญชี > กฎการกำหนดราคาง
 
-Read [Price List documentation](/docs/user/manual/en/stock/price-lists) to know more.
+อ่าน [รายการราคา](/docs/user/manual/th/stock/price-lists) เพื่อเรียนรู้เพิ่มเติม
 
 
-### 3.7 The Items table
+### 3.7 ตารางรายการ
 
-> Note: From version-13 onwards we have introduced immutable ledger which changes the rules for cancellation of stock entries and posting backdated stock transactions in ERPNext. [Learn more here](/docs/user/manual/en/accounts/articles/immutable-ledger-in-erpnext).
+> หมายเหตุ: ตั้งแต่เวอร์ชัน 13 เป็นต้นไป เราได้แนะนำบัญชีแยกประเภทที่ไม่เปลี่ยนรูปแบบ ซึ่งจะเปลี่ยนกฎสำหรับการยกเลิกรายการสต็อกและการผ่านรายการธุรกรรมสต็อคย้อนหลังใน ERPNext เรียนรู้เพิ่มเติมได้ [ที่นี่](/docs/user/manual/th/accounts/articles/immutable-ledger-in-erpnext).
 
-#### Update Stock
-Ticking this checkbox will update the Stock Ledger on submitting the Sales Invoice. If you've created a Delivery Note, the Stock Ledger will be changed. If you're **skipping** the creation of Delivery Note, tick this checkbox.
+#### อัพเดทสต็อก
+การทำเครื่องหมายที่ช่องนี้จะอัปเดตบัญชีแยกประเภทสต็อกเมื่อส่งใบกำกับสินค้า หากคุณได้สร้างใบนำส่งสินค้า บัญชีแยกประเภทสินค้าจะมีการเปลี่ยนแปลง หากคุณ**ข้าม**การสร้าง ใบส่งของ ให้เลือกช่องทำเครื่องหมายนี้
 
-* **scan barcode**: You can add Items in the Items table by scanning their barcodes if you have a barcode scanner. Read documentation for [tracking items using barcode](/docs/user/manual/en/stock/articles/track-items-using-barcode) to know more.
+* **สแกนบาร์โค้ด **: คุณสามารถเพิ่มรายการในตารางรายการโดยการสแกนบาร์โค้ดหากคุณมีเครื่องสแกนบาร์โค้ด อ่านเอกสารสำหรับ [ติดตามสินค้าโดยใช้บาร์โค้ด](/docs/user/manual/th/stock/articles/track-items-using-barcode) เพื่อทราบข้อมูลเพิ่มเติม
 
-* The Item Code, name, description, Image, and Manufacturer will be fetched from the [Item master](/docs/user/manual/en/stock/item).
+* รายการรหัสชื่อคำอธิบายภาพและผู้ผลิตจะดึงมาจาก [รายการสินค้าหลัก](/docs/user/manual/th/stock/item).
 
-* **Discount and Margin**: You can apply a discount on individual Items percentage-wise or on the total amount of the Item. Read [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) for more details.
+* **ส่วนลดและส่วนต่าง**: คุณสามารถใช้ส่วนลดกับสินค้าแต่ละรายการเป็นเปอร์เซ็นต์หรือตามยอดรวมของสินค้าได้ อ่าน [การใช้ส่วนลด](/docs/user/manual/th/selling/articles/applying-discount) สำหรับรายละเอียดเพิ่มเติม
 
-* **Rate**: The Rate is fetched if set in the [Price List](/docs/user/manual/en/stock/price-lists) and the total Amount is calculated.
+* **เรทราคา**: จะถูกดึงมาหากตั้งค่าไว้ใน [รายการราคา](/docs/user/manual/th/stock/price-lists) และคำนวณจำนวนเงินทั้งหมด
 
-* **Drop Ship**: Drop Shipping is when you make the sales transaction, but the Item is delivered by the Supplier. To know more, visit the [Drop Shipping](/docs/user/manual/en/selling/articles/drop-shipping) page.
+* **Drop Ship**: คือเมื่อคุณทำธุรกรรมการขาย แต่สินค้าถูกส่งโดยซัพพลายเออร์ หากต้องการทราบข้อมูลเพิ่มเติม ไปที่[Drop Shipping](/docs/user/manual/th/selling/articles/drop-shipping) สำหรับรายละเอียดเพิ่มเติม
 
-* **Accounting Details**: The Income and Expense accounts can be changed here you you wish to. If this Item is an [Asset](/docs/user/manual/en/asset/asset), it can be linked here. This is useful when you're [selling an Asset](/docs/user/manual/en/asset/selling-an-asset).
+* **รายละเอียดการบัญชี**: บัญชีรายรับและรายจ่ายสามารถเปลี่ยนแปลงได้ตามที่คุณต้องการ ถ้ารายการนี้เป็น [สินทรัพย์](/docs/user/manual/th/asset/asset)สามารถเชื่อมโยงที่นี่ นี้จะเป็นประโยชน์เมื่อคุณ [กำลังขายสินทรัพย์](/docs/user/manual/th/asset/selling-an-asset).
 
-* **Deferred Revenue**: If the income for this Item will be billed over the coming months in parts, then tick on 'Enable Deferred Revenue'. To know more, visit the [Deferred Revenue page](/docs/user/manual/en/accounts/deferred-revenue).
+* **รายได้รอตัดบัญชี**: หากรายได้สำหรับรายการนี้ถูกเรียกเก็บเงินในช่วงหลายเดือนข้างหน้า ให้เลือก 'เปิดใช้งานรายได้รอตัดบัญชี' อ่าน [รายได้รอตัดบัญชี](/docs/user/manual/th/accounts/deferred-revenue) สำหรับรายละเอียดเพิ่มเติม
 
-* **Item Weight**: The Item Weight details per unit and Weight UOM are fetched if set in the Item master.
+* **น้ำหนักสินค้า**: น้ำหนักสินค้าต่อหน่วยและน้ำหนัก UOM จะถูกดึงออกมาหากตั้งค่าไว้ในหลักรายการ
 
-* **Stock Details**: The following details will be fetched from the Item master:
- * **Warehouse**: The Warehouse from where the stock will be sent.
- * **Available Qty at Warehouse**: The quantity available in the selected Warehouse.
+* **รายละเอียดสินค้า**: รายละเอียดต่อไปนี้จะถูกดึงมาจากสินค้าหลัก
+ * **คลังสินค้า**: คลังสินค้าที่จะส่งสต็อค
+ * **ปริมาณที่มีจำหน่ายที่คลังสินค้า**: ปริมาณที่มีอยู่ในคลังสินค้าที่เลือก
 
-* **Batch No and Serial No**: If your Item is serialized or batched, you will have to enter [Serial Number](/docs/user/manual/en/stock/serial-no) and [Batch](/docs/user/manual/en/stock/batch) in the Items table. You are allowed to enter multiple Serial Numbers in one row (each on a separate line) and you must enter the same number of Serial Numbers as the quantity.
+* **Batch No and Serial No**: หากรายการของคุณเป็นแบบซีเรียลไลซ์หรือแบทช์ คุณจะต้องใส่ [หมายเลขซีเรียล](/docs/user/manual/th/stock/serial-no) และ [แบทช์](/docs/user/manual/th/stock/batch) ในตารางรายการ คุณสามารถใส่ หมายเลขซีเรียล หลายหมายเลขในแถวเดียว (แต่ละบรรทัดแยกกัน) และคุณต้องป้อนหมายเลข หมายเลขซีเรียล เดียวกันกับปริมาณ
 
-* **Item Tax Template**: You can set an Item Tax Template to apply a specific Tax amount to this particular Item. To know more, visit [this page](/docs/user/manual/en/accounts/item-tax-template).
+* **เทมเพลตภาษีสินค้า**: คุณสามารถตั้งค่าเทมเพลตภาษีสินค้าเพื่อใช้จำนวนภาษีเฉพาะกับรายการนี้ อ่าน [หน้านี้](/docs/user/manual/th/accounts/item-tax-template) สำหรับรายละเอียดเพิ่มเติม
 
-* References: If this Sales Invoice was created from a Sales Order/Delivery Note, it'll be referred here. Also, the Delivered Quantity will be shown.
+* **ข้อมูลอ้างอิง** : หากใบแจ้งหนี้การขายนี้สร้างขึ้นจากใบสั่งขาย/ใบส่งสินค้า จะมีการอ้างถึงที่นี่ นอกจากนี้ จะแสดงจำนวนที่จัดส่ง
 
-* **Page Break** will create a page break just before this Item when printing.
+* **ตัวแบ่งหน้า** : สร้างตัวแบ่งหน้าก่อนรายการนี้เมื่อพิมพ์
 
-### 3.8 Timesheet
+### 3.8 ตารางเวลา
 
-If you want to bill Employees working on Projects on an hourly basis (contract based),
-they can fill out Timesheets which consists of their billing rate. When you make a new
-Sales Invoice, select the Project for which the billing is to be made, and the
-corresponding Timesheet entries for that Project will be fetched.
+หากคุณต้องการเรียกเก็บเงินพนักงานที่ทำงานในโครงการเป็นรายชั่วโมง (ตามสัญญา) พวกเขาสามารถกรอกใน ตารางเวลา ซึ่งประกอบด้วยอัตราการเรียกเก็บเงินของพวกเขา เมื่อคุณสร้างใบกำกับสินค้าใหม่ ให้เลือกโครงการที่จะทำการเรียกเก็บเงิน จากนั้นระบบจะดึงข้อมูลรายการแผ่นเวลาที่เกี่ยวข้องสำหรับโครงการนั้น
 
-If your Company's Employees are working at a location and it needs to be billed, you can create an Invoice based on the Timesheet.
+หากพนักงานของบริษัทของคุณกำลังทำงานอยู่ในสถานที่และต้องมีการเรียกเก็บเงิน คุณสามารถสร้างใบแจ้งหนี้ตามไทม์ชีทได้
 
 ![SI Timesheet](/docs/assets/img/accounts/si-timesheet.png)
 
-To know more, [visit this page](/docs/user/manual/en/projects/sales-invoice-from-timesheet).
+อ่าน [ที่นี่](/docs/user/manual/th/projects/sales-invoice-from-timesheet) สำหรับรายละเอียดเพิ่มเติม
 
-### 3.9 Taxes and Charges
-The Taxes and Charges will be fetched from the [Sales Order](/docs/user/manual/en/selling/sales-order) or [Delivery Note](/docs/user/manual/en/stock/delivery-note).
+### 3.9 ภาษีและค่าธรรมเนียม
+ภาษีและค่าใช้จ่ายจะถูกเรียกจาก [ใบคำสั่งขาย](/docs/user/manual/th/selling/sales-order) หรือ [เอกสารการส่งของ](/docs/user/manual/th/stock/delivery-note).
 
-Visit the [Sales Taxes and Charges Template](/docs/user/manual/en/selling/sales-taxes-and-charges-template) page to know more about taxes.
+อ่าน [ภาษีและค่าธรรมเนียม](/docs/user/manual/th/selling/sales-taxes-and-charges-template) สำหรับรายละเอียดเพิ่มเติม
 
-The total taxes and charges will be displayed below the table.
+ภาษีและค่าธรรมเนียมทั้งหมดจะแสดงอยู่ใต้ตาราง
 
-To add taxes automatically via a Tax Category, visit [this page](/docs/user/manual/en/accounts/tax-category).
+หากต้องการเพิ่มภาษีโดยอัตโนมัติผ่านหมวดหมู่ภาษี ให้ไปที่ [หน้านี้](/docs/user/manual/th/accounts/tax-category)
 
-Make sure to mark all your taxes in the Taxes and Charges table correctly for an accurate valuation.
+ตรวจสอบให้แน่ใจว่าได้ทำเครื่องหมายภาษีทั้งหมดของคุณในตารางภาษีและค่าธรรมเนียมอย่างถูกต้องเพื่อการประเมินที่ถูกต้อง
 
 ![SI Tax](/docs/assets/img/accounts/si-tax.png)
 
-#### Shipping Rule
-A Shipping Rule helps set the cost of shipping an Item. The cost will usually increase with the distance of shipping. To know more, visit the [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) page.
+#### กฎการจัดส่งสินค้า
+กฎการจัดส่งช่วยกำหนดต้นทุนในการจัดส่งสินค้า ค่าใช้จ่ายมักจะเพิ่มขึ้นตามระยะทางในการขนส่ง หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่ [กฎการจัดส่ง](/docs/user/manual/th/selling/shipping-rule)
 
-### 3.10 Loyalty Points Redemption
+### 3.10 การแลกคะแนนสะสม
 
-If the Customer is enrolled in a Loyalty Program, they can choose to redeem it. To know more, visit the [Loyalty Program](/docs/user/manual/en/accounts/loyalty-program) page.
+หากลูกค้าลงทะเบียนในโปรแกรมความภักดี พวกเขาสามารถเลือกที่จะแลกได้ หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [โปรแกรมความภักดี (Loyalty Program)](/docs/user/manual/th/accounts/loyalty-program)
 
-### 3.11 Additional Discount
-Any additional discounts to the whole Invoice can be set in this section. This discount could be based on the Grand Total i.e., post tax/charges or Net total i.e., pre tax/charges. The additional discount can be applied as a percentage or an amount.
-Visit the [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) page for more details.
+### 3.11 ส่วนลดเพิ่มเติม
+คุณสามารถตั้งค่าส่วนลดเพิ่มเติมสำหรับใบแจ้งหนี้ทั้งหมดได้ในส่วนนี้ ส่วนลดนี้อาจขึ้นอยู่กับยอดรวมทั้งหมด เช่น ภาษีหลังหัก/ค่าบริการ หรือยอดรวมสุทธิ เช่น ภาษี/ค่าบริการก่อน ส่วนลดเพิ่มเติมสามารถใช้เป็นเปอร์เซ็นต์หรือจำนวนเงินได้ ไปที่หน้า [การใช้ส่วนลด](/docs/user/manual/th/selling/articles/applying-discount) สำหรับรายละเอียดเพิ่มเติม
 
 ![SI Add Discount](/docs/assets/img/accounts/si-add-discount.png)
 
-### 3.12 Advance Payment
-For high-value Items, the seller can request an advance payment before processing the order. The **Get Advances Received** button opens a popup from where you can fetch the orders where the advance payment was made. To know more, visit the [Advance Payment Entry](/docs/user/manual/en/accounts/advance-payment-entry) page.
+### 3.12 การชำระเงินล่วงหน้า
+สำหรับสินค้าที่มีมูลค่าสูง ผู้ขายสามารถขอชำระเงินล่วงหน้าก่อนดำเนินการสั่งซื้อได้ คุณสามารถดึงข้อมูลคำสั่งซื้อที่ชำระเงินล่วงหน้าถูกสร้างขึ้นมา หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [รายการชำระเงินล่วงหน้า](/docs/user/manual/th/accounts/advance-payment-entry)
 
-### 3.13 Payment Terms
-The payment for an invoice may be made in parts depending on your understanding with the Supplier. This is fetched if set in the Sales Order. To know more, visit the [Payment Terms](/docs/user/manual/en/accounts/payment-terms) page.
+### 3.13 เงื่อนไขการชำระเงิน
+การชำระเงินสำหรับใบแจ้งหนี้อาจทำเป็นบางส่วนขึ้นอยู่กับความเข้าใจของคุณกับซัพพลายเออร์ สิ่งนี้จะถูกดึงออกมาหากตั้งค่าไว้ในใบสั่งขาย หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า[เงื่อนไขการชำระเงิน](/docs/user/manual/th/accounts/payment-terms)
 
-### 3.14 Write Off
-Write off happens when the Customer pays an amount less than the invoice amount. This may be a small difference like 0.50. Over several orders, this might add up to a big number. For accounting accuracy, this difference amount is 'written off'. To know more, visit the [Payment Terms](/docs/user/manual/en/accounts/payment-entry#25-deductions-or-loss) page.
+### 3.14 ตัดจำหน่าย
+การตัดจำหน่ายเกิดขึ้นเมื่อลูกค้าชำระเงินน้อยกว่าจำนวนเงินในใบแจ้งหนี้ นี่อาจเป็นความแตกต่างเล็กน้อยเช่น 0.50 คำสั่งซื้อหลายรายการอาจรวมกันเป็นจำนวนมาก เพื่อความถูกต้องทางบัญชี จำนวนเงินส่วนต่างนี้จะถูก 'ตัดจำหน่าย' หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [เงื่อนไขการชำระเงิน](/docs/user/manual/th/accounts/payment-entry#25-deductions-or-loss)
 
-### 3.15 Terms and Conditions
-There may be certain terms and conditions on the Item you're selling, these can be applied here. Read [Terms and Condition documentation](/docs/user/manual/en/setting-up/print/terms-and-conditions) to know how to add them.
+### 3.15 ข้อกำหนดและเงื่อนไข
+อาจมีข้อกำหนดและเงื่อนไขบางประการสำหรับสินค้าที่คุณกำลังขาย ซึ่งสามารถใช้ได้ที่นี่ อ่าน [ข้อกำหนดและเงื่อนไข](/docs/user/manual/th/setting-up/print/terms-and-conditions) สำหรับรายละเอียดเพิ่มเติม
 
-### 3.16 Transporter Information
+### 3.16 ข้อมูลผู้ขนส่ง
 
-If you outsource transporting Items to their delivery location, the transporter details can be added. This is not the same as [drop shipping](/docs/user/manual/en/selling/articles/drop-shipping).
+หากคุณจ้างบริษัทภายนอกเพื่อขนส่งสินค้าไปยังสถานที่จัดส่ง คุณสามารถเพิ่มรายละเอียดผู้ขนส่งได้ นี้ไม่ได้เป็นเช่นเดียวกับ [drop shipping](/docs/user/manual/th/selling/articles/drop-shipping).
 
-* **Transporter**: The Supplier who will transport the Item to your Customer. The transporter feature should be enabled in the Supplier master to select the [Supplier](/docs/user/manual/en/buying/supplier) here.
-* **Driver**: You can add a Driver here who will drive the mode of transport.
+* **ผู้ขนส่ง**: ซัพพลายเออร์ที่จะขนส่งสินค้าไปยังลูกค้าของคุณ ควรเปิดใช้งานคุณสมบัติผู้ขนส่งในผู้จัดหาหลักเพื่อเลือก [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier) ที่นี่
+* **คนขับ**: คุณสามารถเพิ่มคนขับได้ที่นี่ ซึ่งจะเป็นผู้ขับโหมดการขนส่ง
 
-The details are usually fetched from the Delivery Note.
+รายละเอียดมักจะดึงมาจากใบส่งมอบ
 
  ![Delivery Note Transport](/docs/assets/img/accounts/si-transporter.png)
 
-The following details can be recorded:
+สามารถบันทึกรายละเอียดต่อไปนี้:
 
-* Distance in km
-* Mode of Transport whether road, air, rail, or ship.
+* ระยะทางเป็นกม.
+* รูปแบบการคมนาคมทั้งทางถนน ทางอากาศ ทางราง หรือทางเรือ
 
-For India, GST:
+<!--For India, GST:
 
 * GST Transporter ID
 * Transport Receipt No
 * Vehicle No
- The GST Vehicle Type can be changed
+ The GST Vehicle Type can be changed-->
 
-The Transport Receipt Date and Driver Name will be fetched.
+วันที่รับขนส่งและชื่อผู้ขับขี่จะถูกเรียก
 
-### 3.17 Printing Settings
+### 3.17 การตั้งค่าการพิมพ์
 
-#### Letterhead
-You can print your Sales Invoice on your Company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+#### หัวจดหมาย
 
-'Group same items' will group the same items added multiple times in the Items table. This can be seen when your print.
+คุณสามารถพิมพ์ใบกำกับสินค้าของคุณบนหัวจดหมายของบริษัทของคุณ อ่านข้อมูลเพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/letter-head).
 
-#### Print Headings
-Sales Invoice headings can also be changed when printing the document. You can do this by selecting a **Print Heading**. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+'จัดกลุ่มรายการเดียวกัน' จะจัดกลุ่มรายการเดียวกันที่เพิ่มหลายครั้งในตารางรายการ สิ่งนี้สามารถเห็นได้เมื่อคุณพิมพ์
 
-There are additional checkboxes for printing the Sales Invoice without the amount, this might be useful when the Item is of high value. You can also group the same Items in one row when printing.
+#### พิมพ์หัวเรื่อง
+ส่วนหัวของใบแจ้งหนี้ขายยังสามารถเปลี่ยนแปลงได้เมื่อพิมพ์เอกสาร คุณสามารถทำได้โดยการเลือก**พิมพ์หัวเรื่อง** 
+สร้างหัวพิมพ์ใหม่ ให้ไปที่ : หน้าหลัก > การตั้งค่า > การพิมพ์ > พิมพ์หัวเรื่อง อ่านข้อมูลเพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/print-headings).
+
+มีกล่องเครื่องหมายเพิ่มเติมสำหรับการพิมพ์ใบกำกับสินค้าโดยไม่มีจำนวนเงิน ซึ่งอาจเป็นประโยชน์เมื่อสินค้ามีมูลค่าสูง คุณยังสามารถจัดกลุ่มรายการเดียวกันในแถวเดียวเมื่อพิมพ์
 
 ### 3.18 GST Details (for India)
 
-The following details can be set for GST:
+<!--The following details can be set for GST:
 
 * GST Category
 * Invoice Copy
 * Reverse Charge
 * E-commerce GSTIN
-* Print Heading
+* Print Heading-->
 
-### 3.19 More Information
-The following Sales details can be recorded:
+### 3.19 ข้อมูลเพิ่มเติม
 
-* **Campaign**: If this invoice is a part of on ongoing sales Campaign, it can be linked. To know more, visit the [Campaign page](/docs/user/manual/en/CRM/campaign).
-* **Source**: A Lead Source can be tagged here to know the source of sales. To know more, visit the [Lead Source](/docs/user/manual/en/CRM/lead_source) page.
+สามารถบันทึกรายละเอียดการขายต่อไปนี้:
+
+* **แคมเปญ**: หากใบแจ้งหนี้นี้เป็นส่วนหนึ่งของแคมเปญการขายต่อเนื่อง ก็สามารถเชื่อมโยงได้ หากต้องการทราบข้อมูลเพิ่มเติมสามารถอ่านได้ที่ [แคมเปญ](/docs/user/manual/th/CRM/campaign).
+* **แหล่งที่มา**: สามารถติดแท็กแหล่งที่มาของโอกาสในการขายได้ที่นี่เพื่อทราบแหล่งที่มาของการขาย หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้าแหล่งที่มาของ [โอกาสในการขาย](/docs/user/manual/th/CRM/lead_source) page.
 
  ![SI More info](/docs/assets/img/accounts/si-more-info.png)
 
-### 3.20 Accounting Details
+### 3.20 รายละเอียดการบัญชี
 
-* **Debit To**: The account against which receivable will be booked for this Customer.
-* **Is Opening Entry**: If this is an opening entry to affect your accounts select 'Yes'. i.e. if you're migrating from another ERP to ERPNext mid year, you might want to use an Opening Entry to update account balances in ERPNext.
+* **เดบิตไปยัง** : บัญชีที่ลูกหนี้จะถูกจองสำหรับลูกค้ารายนี้
+* **รายการบันทึกที่เปิดไว้**: หากรายการนี้เป็นรายการเปิดที่ส่งผลต่อบัญชีของคุณ ให้เลือก 'ใช่' เช่น หากคุณกำลังย้ายจาก ERP อื่นไปยัง ERPNext ในช่วงกลางปี ​​คุณอาจต้องการใช้รายการเปิดเพื่ออัปเดตยอดคงเหลือในบัญชีใน ERPNext
 <!-- deprecated * **C-Form Applicable**: A C Form is used for the reduction of applicable taxes, select yes if applicable to your transaction. Note: C Form is not applicable in India since GST. -->
-* **Remarks**: Any additional remarks about the Sales Invoice can be added here.
+* **หมายเหตุ** : สามารถเพิ่มหมายเหตุเพิ่มเติมเกี่ยวกับใบกำกับสินค้าได้ที่นี่
 
  ![SI Accounting Details](/docs/assets/img/accounts/si-acc-details.png)
 
-### 3.21 Commission
+### 3.21 ค่าคอมมิชชั่น
 
-If the sale took place via one of your Sales Partners, you can add their commission details here. This is usually fetched from the Sales Order/Delivery Note.
+หากการขายเกิดขึ้นผ่านพาร์ทเนอร์การขายรายใดรายหนึ่งของคุณ คุณสามารถเพิ่มรายละเอียดค่าคอมมิชชันได้ที่นี่ โดยปกติแล้วจะดึงมาจากใบสั่งขาย/ใบส่งสินค้า
 
-### 3.22 Sales Team
+### 3.22 ทีมขาย
 
-**Sales Persons:** ERPNext allows you to add multiple Sales Persons who may have worked on this deal. This is also fetched from the Sales Order/Delivery Note.
+**พนักงานขาย:** ERPNext ให้คุณเพิ่มพนักงานขายหลายคนที่อาจเคยทำงานในข้อตกลงนี้ นอกจากนี้ยังดึงมาจากใบสั่งขาย/ใบส่งสินค้าอีกด้วย
 
-### 3.23 Automatically Fetching Item Batch Numbers
+### 3.23 ดึงหมายเลขแบทช์ของรายการโดยอัตโนมัติ
 
-If you are selling an Item from a [Batch](/docs/user/manual/en/stock/batch),
-ERPNext will automatically fetch a batch number for you if "Update Stock"
-is checked. The batch number will be fetched on a First Expiring First Out
-(FEFO) basis. This is a variant of First In First Out (FIFO) that gives the highest priority to the soonest to expire Items.
+หากคุณกำลังขายสินค้าจาก [แบทช์](/docs/user/manual/th/stock/batch),
+RPNext จะดึงหมายเลขแบทช์ให้คุณโดยอัตโนมัติ หากเลือก "อัปเดตสต็อค" หมายเลขแบทช์จะถูกดึงข้อมูลแบบ First Expiring First Out (FEFO) นี่คือตัวแปรของการเข้าก่อนออกก่อน (FIFO) ที่ให้ความสำคัญสูงสุดกับรายการที่เร็วที่สุดที่หมดอายุ
 
-Note that if the first batch in the queue cannot satisfy the order on the invoice,
-the next batch in the queue that can satisfy the order will be selected. If no batch can satisfy the order, ERPNext will cancel its attempt to automatically fetch a suitable batch number.
+โปรดทราบว่าหากชุดแรกในคิวไม่สามารถตอบสนองคำสั่งซื้อในใบแจ้งหนี้ได้ ชุดถัดไปในคิวที่สามารถตอบสนองคำสั่งซื้อได้จะถูกเลือก หากไม่มีชุดงานใดที่ตรงตามคำสั่งซื้อ ERPNext จะยกเลิกการพยายามดึงหมายเลขชุดงานที่เหมาะสมโดยอัตโนมัติ
 
-### 3.24 POS Invoices
+### 3.24 ใบแจ้งหนี้ใน POS
 
-Consider a scenario where the retail transaction is carried out. For e.g: A retail shop.
-If you check the **Is POS** checkbox, then all your **POS Profile** data is fetched
-into the Sales Invoice and you can easily make payments.
+พิจารณาสถานการณ์สมมติที่มีการดำเนินการธุรกรรมการขายปลีก เช่น ร้านค้าปลีก หากคุณเลือกช่องทำเครื่องหมาย **Is POS** แล้ว **ข้อมูลโปรไฟล์ POS** ทั้งหมดของคุณจะถูกดึงเข้าสู่ใบกำกับสินค้าและคุณสามารถชำระเงินได้อย่างง่ายดาย
 
-Also, if you check the **Update Stock** the stock will also update automatically,
-without the need for a Delivery Note.
+นอกจากนี้ หากคุณตรวจสอบการอัปเดตสต็อก สต็อกจะอัปเดตโดยอัตโนมัติด้วย โดยไม่ต้องใช้ใบส่งมอบ
 
 <img class="screenshot" alt="POS Invoice" src="{{docs_base_url}}/assets/img/accounts/pos-sales-invoice.png">
 
-### 3.25 After Submitting
+### 3.25 หลังจากส่ง
 
-On submitting a Sales Invoice, the following documents can be created against it:
+ในการส่งใบแจ้งหนี้การขาย คุณสามารถสร้างเอกสารดังต่อไปนี้:
 
-1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
-1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
-1. [Payment Request](/docs/user/manual/en/accounts/payment-request)
-1. [Invoice Discounting](/docs/user/manual/en/accounts/invoice_discounting)
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
+1. [รายการบันทึก](/docs/user/manual/th/accounts/journal-entry)
+1. [รายการชำระเงิน](/docs/user/manual/th/accounts/payment-entry)
+1. [คำขอชำระเงิน](/docs/user/manual/th/accounts/payment-request)
+1. [ส่วนลดใบแจ้งหนี้](/docs/user/manual/th/accounts/invoice_discounting)
+1. [ใบ](/docs/user/manual/th/stock/delivery-note)
 
 ![SI Submit](/docs/assets/img/accounts/si-submit.png)
 
 
-## 4. More
-### Accounting Impact
+## 4. เพิ่มเติม
+### ผลกระทบทางบัญชี
 
-All Sales must be booked against an “Income Account”. This refers to an
-Account in the “Income” section of your Chart of Accounts. It is a good
-practice to classify your income by type (like product income, service income, etc). The Income Account must be set for each row of the Items table.
+การขายทั้งหมดจะต้องจองกับ "บัญชีรายได้" หมายถึงบัญชีในส่วน "รายได้" ของผังบัญชี แนวทางปฏิบัติที่ดีในการจำแนกรายได้ของคุณตามประเภท (เช่น รายได้จากผลิตภัณฑ์ รายได้ค่าบริการ ฯลฯ) ต้องตั้งค่าบัญชีรายได้สำหรับแต่ละแถวของตารางรายการ
 
-> Tip: To set default Income Accounts for Items, you can set it in the Item or
-Item Group.
+> หมายเหตุ: ในการตั้งค่าบัญชีรายได้เริ่มต้นสำหรับรายการ คุณสามารถตั้งค่าได้ในรายการหรือกลุ่มรายการ
 
-The other account that is affected is the Account of the Customer. That is
-automatically set from “Debit To” in the heading section.
+บัญชีอื่นที่ได้รับผลกระทบคือบัญชีของลูกค้า ที่ตั้งค่าโดยอัตโนมัติจาก “เดบิตไปยัง” ในส่วนหัว
 
-You can also mention the Cost Centers in which your Income must be booked.
-Remember that your Cost Centers tell you the profitability of the different
-lines of business or product. You can also set a default Cost Center in the
-Item master. See also: [Accounting Dimensions](/docs/user/manual/en/accounts/accounting-dimensions).
+คุณยังสามารถพูดถึงศูนย์ต้นทุนที่ต้องจองรายได้ของคุณ โปรดจำไว้ว่าศูนย์ต้นทุนของคุณจะบอกคุณถึงความสามารถในการทำกำไรของสายธุรกิจหรือผลิตภัณฑ์ต่างๆ คุณยังสามารถตั้งค่าศูนย์ต้นทุนเริ่มต้นในข้อมูลหลักรายการได้อีกด้วย ดูเพิ่มเติมที่ [ลำดับขั้นบัญชี](/docs/user/manual/th/accounts/accounting-dimensions).
 
-### Accounting entries (GL Entry) for a typical double entry “Sale”:
-When booking a sale (accrual):
+### รายการบัญชี (GL Entry) สำหรับรายการคู่ทั่วไป "การขาย"::
+เมื่อจองการขาย (คงค้าง):
 
-* **Debit:** Customer (grand total)
-* **Credit:** Income (net total, minus taxes for each Item)
-* **Credit:** Taxes (liabilities to be paid to the government)
+* **เดบิต:** ลูกค้า (ยอดรวม)
+* **เครดิต:** รายได้ (ยอดสุทธิ หักภาษีแต่ละรายการ)
+* **เครดิต:** ภาษี (หนี้สินที่จะต้องจ่ายให้กับรัฐบาล)
 
  ![SI Ledger](/docs/assets/img/accounts/si-ledger.png)
 
-> To see entries in your Sales Invoice after you “Submit”, click on “View
-Ledger”.
+> หากต้องการดูรายการในใบแจ้งหนี้การขายของคุณหลังจากที่คุณ "ส่ง" ให้คลิกที่ "ดูบัญชีแยกประเภท"
 
-## 5. Related Topics
-1. [Cost Center](/docs/user/manual/en/accounts/cost-center)
-1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
-1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
-1. [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
-1. [Item Wise Taxation](/docs/user/manual/en/accounts/item-tax-template)
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Quotation](/docs/user/manual/en/selling/quotation)
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
+## 5. หัวข้อที่เกี่ยวข้อง
+1. [ศูนย์ต้นทุน](/docs/user/manual/th/accounts/cost-center)
+1. [รายการบันทึก](/docs/user/manual/th/accounts/journal-entry)
+1. [รายการชำระเงิน](/docs/user/manual/th/accounts/payment-entry)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)
+1. [ใบเสร็จการซื้อ](/docs/user/manual/th/stock/purchase-receipt)
+1. [เทมเพลตภาษีสินค้า](/docs/user/manual/th/accounts/item-tax-template)
+1. [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order)
+1. [คำอ้างอิง](/docs/user/manual/th/selling/quotation)
+1. [ใบส่งมอบ](/docs/user/manual/th/stock/delivery-note)

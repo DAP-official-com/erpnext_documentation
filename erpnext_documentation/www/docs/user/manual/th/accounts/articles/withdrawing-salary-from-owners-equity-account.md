@@ -1,23 +1,23 @@
 <!-- add-breadcrumbs -->
-#Withdrawing Salary from Owner's Equity Account
+#ถอนเงินเดือนจากบัญชีส่วนของเจ้าของ
 
-### Question
+### คำถามที่พบบ่อย
 
-After meeting with my accountant here in the US, I was informed that with my company being a sole member, I should not pay myself a salary that would hit the direct expenses account but instead should take a "draw" that hits the balance sheet and not the expenses. Can you please advise how I should set this up in ERP Next please?
+หลังจากพบนักบัญชีที่นี่ในสหรัฐอเมริกา ฉันได้รับแจ้งว่าบริษัทของฉันเป็นสมาชิกเพียงคนเดียว ฉันไม่ควรจ่ายเงินเดือนให้ตัวเองที่จะกระทบกับบัญชีรายจ่ายโดยตรง แต่ควร "เสมอ" ที่กระทบงบดุลและ ไม่ใช่ค่าใช้จ่าย คุณช่วยแนะนำว่าควรตั้งค่านี้ใน ERP อย่างไร?
 
-### Answer
+### คำตอบ
 
-1. Create an account for **Owner's Equity** under Liabilities if you already do not have. This account will be your investment in the business and the accumulated profits (or losses). It will have a "Credit" type balance.
-2. In an Version 5, Equity will be a new head (not under Liabilities). (In either case Assets = Owner's Equity + Liabilities, so your balance sheet will be okay [Learn more about owner's equity account](http://www.accountingcoach.com/blog/what-is-owners-equity)).
-3. Create an account for **Owner's Draws** under **Owner's Equity**.
-4. Note that the balance of **Owner's Draws** will always be negative since you are reducing money from your total equity / profits.
+1. สร้างบัญชีสำหรับ **ส่วนของเจ้าของ** ภายใต้หนี้สิน หากคุณยังไม่มี บัญชีนี้จะเป็นการลงทุนของคุณในธุรกิจและผลกำไร (หรือขาดทุน) สะสม จะมียอดดุลประเภท "เครดิต"
+2. ในเวอร์ชัน 5 ส่วนของผู้ถือหุ้นจะเป็นหัวหน้าคนใหม่ (ไม่อยู่ภายใต้หนี้สิน) (ไม่ว่ากรณีใด สินทรัพย์ = ส่วนของเจ้าของ + หนี้สิน ดังนั้นงบดุลของคุณจะไม่เป็นไร [เรียนรู้เพิ่มเติมเกี่ยวกับบัญชีส่วนของเจ้าของ](http://www.accountingcoach.com/blog/what-is-owners-equity))
+3. สร้างบัญชีสำหรับ **Owner's Draws** ภายใต้ **Owner's Equity**
+4. โปรดทราบว่ายอดคงเหลือของ **Owner's Draws** จะเป็นค่าลบเสมอ เนื่องจากคุณกำลังลดเงินจากส่วนทุน / กำไรทั้งหมดของคุณ
 
-### Example
+### ตัวอย่าง
 
-Example journal entry (using Journal Voucher in ERPNext) for a withdrawal of $1000 would be:
+ตัวอย่างรายการบันทึกประจำวัน (โดยใช้ Journal Voucher ใน ERPNext) สำหรับการถอนเงิน 1,000 ดอลลาร์จะเป็น:
 
-1. Credit **Cash** $1000
-2. Debit **Owner's Draws** $1000
+1. เครดิต **เงินสด** $1000
+2. เดบิต **การจับฉลากของเจ้าของ** $1,000
 
 <!-- markdown -->
 

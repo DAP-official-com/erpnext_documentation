@@ -1,38 +1,38 @@
 <!-- add-breadcrumbs -->
-# Manufacturer
+#ผู้ผลิต
 
-**A manufacturer created or produces an Item.**
+**ผู้ผลิตสร้างหรือผลิตสินค้า**
 
-A Manufacturer may not be the same person/company that sells the Item under a specific [Brand](/docs/user/manual/en/selling/brand). For example, Unico Plastics can be the Manufacturer of plastic brushes but it may be sold under a Brand, say, Super Brushes.
+ผู้ผลิตอาจไม่ใช่บุคคล/บริษัทเดียวกันกับที่ขายสินค้าภายใต้ [แบรนด์](/docs/user/manual/th/selling/brand) ที่เฉพาะเจาะจง ตัวอย่างเช่น Unico Plastics สามารถเป็นผู้ผลิตแปรงพลาสติกได้ แต่อาจขายภายใต้แบรนด์ Super Brushes
 
-In ERPNext, a Manufacturer can be used to identify Items using a specific part number.
+ใน ERPNext ผู้ผลิตสามารถใช้เพื่อระบุรายการโดยใช้หมายเลขชิ้นส่วนเฉพาะ
 
-To access the Manufacturer list, go to:
-> Home > Stock > Manufacturer
+ในการเข้าถึงรายชื่อผู้ผลิต ไปที่:
+> หน้าหลัก > สต๊อก > ผู้ผลิต
 
-## 1. How to Create a Manufacturer
-1. Go to the Manufacturer list and click on New.
-1. Enter a Manufacturer name and enter a description if needed.
-1. Save.
+## 1. วิธีสร้างผู้ผลิต
+1. ไปที่รายชื่อผู้ผลิตและคลิกที่ใหม่
+1. ป้อนชื่อผู้ผลิตและป้อนคำอธิบายหากจำเป็น
+1. บันทึก
 
     ![Manufacturer](/docs/assets/img/stock/manufacturer.png)
 
-After creating a Manufacturer, it can be set in the Item form with a Manufacturer Part Number for identification.
+หลังจากสร้างผู้ผลิตแล้ว สามารถตั้งค่าได้ในแบบฟอร์มรายการพร้อมหมายเลขชิ้นส่วนของผู้ผลิตเพื่อระบุตัวตน
 ![Manufacturer](/docs/assets/img/stock/manufacturer-part.png)
 
-### 1.1 Additional details
-The following details can be set for a Manufacturer:
+### 1.1 รายละเอียดเพิ่มเติม
+รายละเอียดต่อไปนี้สามารถตั้งค่าสำหรับผู้ผลิต:
 
-* Website
-* Country
-* Logo
+* เว็บไซต์
+* ประเทศ
+* โลโก้
 
-## 2. Features
-### 2.1 Address and Contacts
+## 2. คุณสมบัติ
+### 2.1 ที่อยู่และการติดต่อ
 
-An [Address](/docs/user/manual/en/CRM/address) and [Contact](/docs/user/manual/en/CRM/contact) can be set for this Manufacturer.
+สามารถตั้งค่า [ที่อยู่](/docs/user/manual/th/CRM/address) และ [ผู้ติดต่อ](/docs/user/manual/th/CRM/contact) สำหรับผู้ผลิตรายนี้ได้
 
-## 3. Related Topics
-1. [Item](/docs/user/manual/en/stock/item)
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Brand](/docs/user/manual/en/selling/brand)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [รายการ](/docs/user/manual/th/stock/item)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+1. [ยี่ห้อ](/docs/user/manual/th/selling/brand)

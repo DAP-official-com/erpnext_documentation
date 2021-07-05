@@ -1,8 +1,9 @@
 <!-- add-breadcrumbs -->
-# Fiscal Year Creation
 
-New Fiscal Year should be created each year, at the end of the current fiscal year. Creation of new Fiscal Year before its begining has been automated in ERPNext.
+# การสร้างปีงบประมาณ
 
-Three days prior to the end of the current Fiscal Year, system checks if new Fiscal Year for the incoming year is already created. If not, then system auto-creates new Fiscal Year.
+ควรสร้างปีบัญชีใหม่ในแต่ละปี ณ สิ้นปีบัญชีปัจจุบัน การสร้างปีบัญชีใหม่ก่อนการเริ่มต้นจะเป็นไปโดยอัตโนมัติใน ERPNext
+
+สามวันก่อนสิ้นปีงบประมาณปัจจุบัน ระบบจะตรวจสอบว่าปีบัญชีใหม่สำหรับปีที่เข้ามานั้นสร้างไว้แล้วหรือไม่ ถ้าไม่เช่นนั้น ระบบจะสร้างปีบัญชีใหม่โดยอัตโนมัติ
 
 {next}

@@ -1,34 +1,34 @@
 <!-- add-breadcrumbs -->
-#Managing Transactions In Multiple Currency
+# การจัดการธุรกรรมในหลายสกุลเงิน
 
-In ERPNext, transactions can be created in the base currency as well as in parties' (customer or supplier) currency. If the transaction is created in the parties' currency, their currency symbol is updated in the print format as well.
+ใน ERPNext ธุรกรรมสามารถสร้างขึ้นในสกุลเงินหลักเช่นเดียวกับในสกุลเงินของคู่สัญญา (ลูกค้าหรือซัพพลายเออร์) หากธุรกรรมถูกสร้างขึ้นในสกุลเงินของคู่สัญญา สัญลักษณ์สกุลเงินของพวกเขาจะได้รับการอัปเดตในรูปแบบการพิมพ์เช่นกัน
 
-If you are quoting to a Customer in a different currency, you will have to update the conversion rates to enable ERPNext to save the information in your standard currency. This will help you to analyze the value of your Quotations in your currency.
+หากคุณกำลังเสนอราคาให้กับลูกค้าในสกุลเงินอื่น คุณจะต้องอัปเดตอัตราการแปลงเพื่อเปิดใช้งาน ERPNext เพื่อบันทึกข้อมูลในสกุลเงินมาตรฐานของคุณ สิ่งนี้จะช่วยคุณวิเคราะห์มูลค่าของใบเสนอราคาในสกุลเงินของคุณ
 
-Let's consider a Sales Invoice, where your base currency is USD and party currency is EUR.
+ลองพิจารณาใบกำกับสินค้าโดยที่สกุลเงินหลักของคุณคือ USD และสกุลเงินของพรรคคือ EUR
 
-1. Create a new Sales Invoice: **Home > Accounting > Billing > Sales Invoice > New**.
+1. สร้างใบกำกับสินค้าใหม่: **หน้าแรก > การบัญชี > การเรียกเก็บเงิน > ใบกำกับสินค้า > ใหม่**
 
-1. Select Customer from the Customer master. If default Currency is updated in the Customer master, it'll be fetched here.
+1. เลือกลูกค้าจากข้อมูลหลักของลูกค้า หากมีการอัปเดตสกุลเงินเริ่มต้นในข้อมูลหลักของลูกค้า สกุลเงินนั้นจะถูกดึงมาที่นี่
 
-1. Currency Exchange between base currency and customer currency will auto-fetched.
+1. การแลกเปลี่ยนสกุลเงินระหว่างสกุลเงินหลักและสกุลเงินของลูกค้าจะถูกดึงข้อมูลโดยอัตโนมัติ
 
     <img alt="Accounts Frozen Date" class="screenshot" src="{{docs_base_url}}/assets/img/articles/multiple-currency-1.png">
 
-1. Update other details like Item, Taxes, Terms. In the Taxes and other Charges table. Charges of type Actual should be updated in the Customer's currency.
+1. อัพเดทรายละเอียดอื่นๆ เช่น รายการ ภาษี ข้อกำหนด ในตารางภาษีและค่าธรรมเนียมอื่นๆ ค่าบริการประเภทตามจริงควรปรับปรุงในสกุลเงินของลูกค้า
 
-1. Save Sales Invoice and then check Print Format. For all the Currency field (rate, amount, totals) Customer's Currency symbol will be updated as well.
+1. บันทึก ใบแจ้งหนี้การซื้อ แล้วตรวจสอบ รูปแบบการพิมพ์ สำหรับช่องสกุลเงินทั้งหมด (อัตรา จำนวนเงิน ยอดรวม) สัญลักษณ์สกุลเงินของลูกค้าจะได้รับการอัปเดตด้วยเช่นกัน
 
     <img alt="Accounts Frozen Date" class="screenshot" src="{{docs_base_url}}/assets/img/articles/multiple-currency-2.png">
 
-## Currency Exchange Masters
+## การแลกเปลี่ยนเงินตราหลัก
 
-If you have come to terms with party to follow standard exchange rate throughout, you can capture it by creating a Currency Exchange master. To create one, go to:
+หากคุณได้ตกลงกับฝ่ายต่าง ๆ เพื่อปฏิบัติตามอัตราแลกเปลี่ยนมาตรฐานมาตลอด คุณสามารถจับภาพได้โดยการสร้างต้นแบบการแลกเปลี่ยนสกุลเงิน หากต้องการสร้าง ให้ไปที่:
 
-> Home > Accounting > Settings > Currency Exchange
+> หน้าแรก > การบัญชี > การตั้งค่า > การแลกเปลี่ยนเงินตรา
 
-In ERPNext, real-time exchange rates are fetched.
+ใน ERPNext อัตราแลกเปลี่ยนแบบเรียลไทม์จะถูกดึงออกมา
 
-**Note**: If you create a Currency Exchange master with a specific rate, it will be given preference over real-time exchange rates. For example, if you set $1 = ₹65 in Currency Exchange, then even if live rate is ₹69, ₹65 will be used in transactions.
+**หมายเหตุ**: หากคุณสร้างต้นแบบการแลกเปลี่ยนสกุลเงินด้วยอัตราเฉพาะ จะได้รับสิทธิพิเศษเหนืออัตราแลกเปลี่ยนแบบเรียลไทม์ ตัวอย่างเช่น หากคุณตั้งค่า $1 = ₹65 ในการแลกเปลี่ยนสกุลเงิน แม้ว่าอัตราแลกเปลี่ยนจริงคือ ₹69 ก็ตาม ₹65 จะถูกใช้ในการทำธุรกรรม
 
 {next}

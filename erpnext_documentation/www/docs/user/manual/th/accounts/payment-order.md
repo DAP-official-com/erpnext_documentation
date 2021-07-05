@@ -1,29 +1,29 @@
 <!-- add-breadcrumbs -->
-# Payment Order
+# ใบสั่งจ่ายเงิน
 
-**A Payment Order is an internal document to record bulk payments against Suppliers.**
+**คำสั่งจ่ายเงินเป็นเอกสารภายในเพื่อบันทึกการชำระเงินจำนวนมากกับซัพพลายเออร์**
 
-In big corporations, the decision of making payment to Suppliers is done by someone like the Purchase Manager. The action of making the payments is done by an Accountant (Accounts User). 
+ในบริษัทขนาดใหญ่ การตัดสินใจชำระเงินให้กับซัพพลายเออร์นั้นกระทำโดยบุคคลเช่นผู้จัดการฝ่ายจัดซื้อ การดำเนินการชำระเงินนั้นดำเนินการโดยนักบัญชี (ผู้ใช้บัญชี)
 
-The Payment Order is the communication between the Purchase Manager and the Account notifying the Accountant to proceed with the Payment.
+คำสั่งชำระเงินเป็นการสื่อสารระหว่างผู้จัดการการจัดซื้อและบัญชีที่แจ้งให้นักบัญชีดำเนินการชำระเงิน
 
-In ERPNext, using the Payment Order, you can fetch multiple Payment Requests created against a Supplier.
+ใน ERPNext โดยใช้คำสั่งการชำระเงิน คุณสามารถดึงคำขอการชำระเงินหลายรายการที่สร้างขึ้นจากซัพพลายเออร์
 
-## 1. Prerequisites
-Before creating and using the Payment Order, it is advisable to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้คำสั่งจ่ายเงิน ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
+1. [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)
 
- Or
+ หรือ
 
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)
 
-## 2. How to create a Payment Order
-1. Go to the Payment Order list and click on New.
-1. Select the Company bank account.
-1. Click on the **Get from** button and select Payment Request. Apply filters if needed and select the Payment Requests.
+## 2. วิธีสร้างคำสั่งชำระเงิน
+1. ไปที่รายการคำสั่งชำระเงินและคลิกที่ใหม่
+1. เลือกบัญชีธนาคารของบริษัท
+1. คลิกที่ปุ่ม **รับจาก** และเลือกคำขอชำระเงิน ใช้ตัวกรองหากจำเป็นและเลือกคำขอชำระเงิน
  ![Payment Order Fetch](/docs/assets/img/accounts/payment-order-fetch.png)
-1. The Payment Requests will be fetched into the Payment Order.
+1. คำขอชำระเงินจะถูกดึงเข้าสู่คำสั่งการชำระเงิน
  ![Payment Order Fetch](/docs/assets/img/accounts/payment-order.png)
-1. Save and Submit the Payment Order. Now, you'll see a button to make the Payment Entries in bulk.
+1. บันทึกและส่งคำสั่งการชำระเงิน ตอนนี้ คุณจะเห็นปุ่มสำหรับสร้างรายการชำระเงินจำนวนมาก
  ![Payment Order Fetch](/docs/assets/img/accounts/payment-order-submit.png)

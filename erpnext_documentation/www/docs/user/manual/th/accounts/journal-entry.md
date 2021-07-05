@@ -1,279 +1,264 @@
 <!-- add-breadcrumbs -->
-# Journal Entry
+# รายการบันทึก
 
-**A Journal Entry is an entry made in the general ledger and it indicated the affected accounts.**
+**รายการบันทึกประจำวันเป็นรายการที่ทำในบัญชีแยกประเภททั่วไปและระบุบัญชีที่ได้รับผลกระทบ**
 
-A Journal Entry is a multi purpose transaction where the debit and credit accounts can be selected.
+รายการบันทึกประจำวันเป็นธุรกรรมอเนกประสงค์ที่สามารถเลือกบัญชีเดบิตและเครดิตได้
 
-All types of accounting entries other than Sales and Purchase transactions are made using the **Journal Entry**. A **Journal Entry** is a standard accounting transaction that affects multiple Accounts and the sum of debits is equal to the sum of credits. A Journal Entry Impacts the main ledger.
+รายการทางบัญชีทุกประเภทนอกเหนือจากธุรกรรมการขายและการซื้อจะทำโดยใช้ **รายการบันทึกประจำวัน** **รายการบันทึกประจำวัน**เป็นรายการที่มาตรฐานการบัญชีที่มีผลต่อหลายบัญชีและผลรวมของเดบิตเท่ากับผลรวมของสินเชื่อ รายการบันทึกประจำวันส่งผลกระทบต่อบัญชีแยกประเภทหลัก
 
-Journal Entries can be used for entering expenses, opening entries, contra entries, bank payments, excise entries, etc. For example, booking running expenses, direct expenses like petrol/transport, sundry expenses, adjustment entries, and adjusting invoice amount.
+รายการบันทึกประจำวันสามารถใช้สำหรับการป้อนค่าใช้จ่าย รายการเปิด รายการตรงกันข้าม การชำระเงินผ่านธนาคาร รายการสรรพสามิต ฯลฯ ตัวอย่างเช่น ค่าใช้จ่ายในการจอง ค่าใช้จ่ายโดยตรง เช่น ค่าน้ำมัน/ค่าขนส่ง ค่าใช้จ่ายเบ็ดเตล็ด รายการปรับปรุง และการปรับจำนวนเงินในใบแจ้งหนี้
 
-> Note: From version-13 onwards we have introduced immutable ledger which changes the way cancellation of accounting entries works in ERPNext. [Learn more here](/docs/user/manual/en/accounts/articles/immutable-ledger-in-erpnext).
+> หมายเหตุ: ตั้งแต่เวอร์ชัน 13 เป็นต้นไป เราได้แนะนำบัญชีแยกประเภทที่ไม่เปลี่ยนรูปแบบ ซึ่งจะเปลี่ยนวิธีการทำงานของการยกเลิกรายการบัญชีใน ERPNext  [เรียนรู้เพิ่มเติมได้ที่นี่](/docs/user/manual/th/accounts/articles/immutable-ledger-in-erpnext).
 
-To access the Journal Entry list, go to:
-> Home > Accounting > General Ledger > Journal Entry
+หากต้องการเข้าถึงรายการบันทึกประจำวันให้ไปที่:
+> หน้าหลัก > การบัญชี > บัญชีแยกประเภททั่วไป > รายการบันทึกประจำวัน
 
-## 1. How to create a Journal Entry
-1. Go to the Journal Entry list, click on New.
-1. The default Entry Type will be 'Journal Entry'. This is a general purpose entry type. Visit [section 3](/docs/user/manual/en/accounts/journal-entry#3-journal-entry-types) to know more about entry types.
-1. You can change the Posting Date.
-1. Expand the table, select an Account from which amount is debited.
-1. The above details can be added from a [Journal Entry Template](/docs/user/manual/en/accounts/journal-entry-template) too with the 'From Template' field.
-1. Select the Party Type and Party if it's a Debtor entry.
-1. Add a row where the amount will be credited.
-1. Note that, in the end, total debit and credit amounts should add up to be the same.
-1. Save and Submit.
+## 1. วิธีสร้างรายการบันทึกประจำวัน
+1. ไปที่รายการบันทึกรายการคลิกใหม่
+1. ประเภทรายการเริ่มต้นจะเป็น 'รายการบันทึก' นี่คือประเภทรายการวัตถุประสงค์ทั่วไป ไปที่[section 3](/docs/user/manual/th/accounts/journal-entry#3-journal-entry-types) เพื่อทราบข้อมูลเพิ่มเติมเกี่ยวกับประเภทรายการ
+1. คุณสามารถเปลี่ยนวันที่โพสต์ได้
+1. ขยายตาราง เลือกบัญชีที่จะหักจำนวนเงิน
+1. คุณสามารถเพิ่มรายละเอียดข้างต้นจาก [เทมเพลตรายการบันทึก](/docs/user/manual/th/accounts/journal-entry-template) ด้วยฟิลด์ 'จากเทมเพลต'
+1. เลือกประเภทคู่สัญญาและคู่กรณีหากเป็นรายการลูกหนี้
+1. เพิ่มแถวที่จะให้เครดิตจำนวนเงิน
+1. ในท้ายที่สุด จำนวนเดบิตและเครดิตทั้งหมดควรรวมกันเป็นจำนวนเท่ากัน
+1. บันทึกและส่ง
 
   <img class="screenshot" alt="Journal Entry" src="{{docs_base_url}}/assets/img/accounts/journal-entry.png">
 
-**Finance Book**: You can post this entry to a specific [Finance Book](/docs/user/manual/en/accounts/finance-book). On leaving this field blank, this Journal Entry will show up in all Finance Books.
+**หนังสือการเงิน**: สามารถโพสต์รายการนี้เพื่อที่เฉพาะเจาะจง [หนังสือการเงิน](/docs/user/manual/th/accounts/finance-book)เมื่อเว้นฟิลด์นี้ว่างไว้ รายการบันทึกประจำวันนี้จะแสดงขึ้นในหนังสือการเงินทั้งหมด
 
-### 1.1 Quick Entry
-When creating a Journal Entry, a **Quick Entry** button can be seen on the top right. This makes creating the Journal Entry a bit easier. Enter the amount, select the accounts, add a remark. This will populate the 'Accounting Entries' table with the selected details.
+### 1.1 รายการด่วน
+เมื่อสร้างรายการบันทึกประจำวันปุ่ม**รายการด่วน**จะปรากฏที่ด้านบนขวา สิ่งนี้ทำให้การสร้างรายการบันทึกประจำวันง่ายขึ้นเล็กน้อย ใส่จำนวนเงิน เลือกบัญชี ใส่หมายเหตุ ซึ่งจะเติมข้อมูลในตาราง 'รายการบัญชี' พร้อมรายละเอียดที่เลือก
 
 ![Quick Entry](/docs/assets/img/accounts/quick-entry.png)
 
-## 2. Features
-### 2.1 Accounting Entries
+## 2. คุณสมบัติ
+### 2.1 รายการบัญชี
 
-* **Accounting Dimensions**: A Project or Cost Center can be linked here to track the costing separately. To know more, [visit this page](/docs/user/manual/en/accounts/accounting-dimensions).
+* **ลำดับขั้นทางบัญชี**: โครงการหรือศูนย์ต้นทุนสามารถเชื่อมโยงได้ที่นี่เพื่อติดตามการคิดต้นทุนแยกกัน หากต้องการทราบข้อมูลเพิ่มเติมโปรดไปที่ [หน้านี้](/docs/user/manual/th/accounts/accounting-dimensions).
   ![Acc Dim](/docs/assets/img/accounts/je-acc-dim.png)
 
-* **Bank Account No**: If you've added a [Bank Account](/docs/user/manual/en/accounts/bank-account), the number associated with that bank account will be fetched.
-* **Reference Type**: If this Accounting Entry is associated with another transaction, it can be referenced here. Select the Reference Type and select the specific document. For example, if you're creating a Journal Entry against a specific Sales Invoice. Link this Journal Entry to the invoice. The “outstanding” amount of that invoice will be affected.
+* **หมายเลขบัญชีธนาคาร**: หากคุณได้เพิ่ม [บัญชีธนาคาร](/docs/user/manual/th/accounts/bank-account)หมายเลขที่เชื่อมโยงกับบัญชีธนาคารนั้นจะถูกดึงออกมา
+* **ประเภทการอ้างอิง**: หากรายการบัญชีนี้เชื่อมโยงกับธุรกรรมอื่น สามารถอ้างอิงได้ที่นี่ เลือกประเภทอ้างอิงและเลือกเอกสารเฉพาะ ตัวอย่างเช่น หากคุณกำลังสร้างรายการบันทึกประจำวันโดยเทียบกับใบกำกับสินค้าเฉพาะ เชื่อมโยงรายการบันทึกประจำวันนี้กับใบแจ้งหนี้ จำนวนเงิน "คงค้าง" ของใบแจ้งหนี้นั้นจะได้รับผลกระทบ
 
   ![Reference](/docs/assets/img/accounts/je_table_reference.png)
 
-Following are the documents that can be selected in the Journal Entry under Reference Type:
+ต่อไปนี้เป็นเอกสารที่สามารถเลือกได้ในรายการบันทึกภายใต้ประเภทการอ้างอิง:
 
-  * [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-  * [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
-  * Journal Entry
-  * [Sales Order](/docs/user/manual/en/selling/sales-order)
-  * [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-  * [Expense Claim](/docs/user/manual/en/human-resources/expense-claim)
-  * [Asset](/docs/user/manual/en/asset/asset)
-  * [Loan](/docs/user/manual/en/loan-management/loan)
-  * [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
-  * [Employee Advance](/docs/user/manual/en/human-resources/employee-advance)
-  * [Exchange Rate Revaluation](/docs/user/manual/en/accounts/exchange-rate-revaluation)
-  * [Invoice Discounting](/docs/user/manual/en/accounts/invoice_discounting)
+  * [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+  * [ใบกำกับสินค้า](/docs/user/manual/th/accounts/purchase-invoice)
+  * รายการบันทึก
+  * [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order)
+  * [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)
+  * [ค่าใช้จ่ายในการเรียกร้อง](/docs/user/manual/th/human-resources/expense-claim)
+  * [สินทรัพย์](/docs/user/manual/th/asset/asset)
+  * [เงินกู้](/docs/user/manual/th/loan-management/loan)
+  * [รายการเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)
+  * [ความก้าวหน้าของพนักงาน](/docs/user/manual/th/human-resources/employee-advance)
+  * [การประเมินค่าอัตราแลกเปลี่ยนใหม่](/docs/user/manual/th/accounts/exchange-rate-revaluation)
+  * [ส่วนลดใบแจ้งหนี้](/docs/user/manual/th/accounts/invoice_discounting)
 
-* **Is Advance**: If this is an advance payment by a Customer, set this option to 'Yes'. This is useful when you have linked a 'Reference Type' form to this Journal Entry. Selecting “Yes” will link this Journal Entry to the transaction selected in the 'Reference Name' field. To know more, visit the [Advance Payment Entry](/docs/user/manual/en/accounts/advance-payment-entry) page.
+* **เป็นเงินล่วงหน้า**: หากเป็นการชำระเงินล่วงหน้าโดยลูกค้า ให้ตั้งค่าตัวเลือกนี้เป็น 'ใช่' สิ่งนี้มีประโยชน์เมื่อคุณได้เชื่อมโยงแบบฟอร์ม 'ประเภทการอ้างอิง' กับรายการบันทึกประจำวันนี้ การเลือก "ใช่" จะเชื่อมโยงรายการบันทึกประจำวันนี้กับธุรกรรมที่เลือกในฟิลด์ 'ชื่ออ้างอิง' หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า[รายการชำระเงินล่วงหน้า](/docs/user/manual/th/accounts/advance-payment-entry)
 
-* **User Remark**: Any additional remarks about the entry can be added in this field.
+* **หมายเหตุ**: หมายเหตุเพิ่มเติมเกี่ยวกับรายการสามารถเพิ่มในฟิลด์นี้
 
-### 2.2 Reverse Journal Entry
-In any submitted Journal Entry, there is a dedicated button to reverse the Journal Entry. On clicking the 'Reverse Journal Entry' button, the system creates a new Journal Entry by reversing debit and credit amount against the respective accounts.
+### 2.2 รายการบันทึกย้อนหลัง
+ในรายการบันทึกประจำวันที่ส่ง จะมีปุ่มเฉพาะเพื่อย้อนกลับรายการบันทึกประจำวัน เมื่อคลิกปุ่ม 'รายการบันทึกย้อนหลัง' ระบบจะสร้างรายการบันทึกใหม่โดยการกลับรายการเดบิตและเครดิตกับบัญชีที่เกี่ยวข้อง
 
 <img alt="Reverse Journal Entry" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reverse-journal-entry.png">
 
-### 2.3 Difference Entry
-The “Difference” is the difference that remains after summing all debit and credit amounts.
+### 2.3 รายการส่วนต่าง
+“ความแตกต่าง” คือความแตกต่างที่ยังคงอยู่หลังจากรวมยอดเดบิตและเครดิตทั้งหมดแล้ว
 
-As per double entry accounting system, the total debit should be equal to the total credit.
+ตามระบบบัญชีสองรายการ เดบิตทั้งหมดควรเท่ากับเครดิตทั้งหมด
 
-This should be zero if the Journal Entry is to be “Submitted”. If this
-number is not zero, you can click on “Make Difference Entry” and the system will automatically add a new row
-with the amount required to make the total as zero. Select the account to debit/credit and proceed.
+ควรเป็นศูนย์หากรายการบันทึกประจำวันเป็น "ส่ง" หากตัวเลขนี้ไม่ใช่ศูนย์ คุณสามารถคลิกที่ "สร้างรายการส่วนต่าง" และระบบจะเพิ่มแถวใหม่โดยอัตโนมัติด้วยจำนวนเงินที่ต้องการเพื่อทำให้ยอดรวมเป็นศูนย์ เลือกบัญชีที่จะเดบิต/เครดิตและดำเนินการต่อ
 
   ![Make Difference](/docs/assets/img/accounts/make-difference.png)
 
-### 2.4 Referencing
+### 2.4 การอ้างอิง
 
-A Reference Number can be entered manually and a Reference Date can be set. On entering a Reference Number here, a 'Remark' will be seen, for example:
+สามารถป้อนหมายเลขอ้างอิงได้ด้วยตนเองและสามารถตั้งค่าวันที่อ้างอิงได้ เมื่อป้อนหมายเลขอ้างอิงที่นี่ คุณจะเห็น 'หมายเหตุ' เช่น:
 
-> Note: supplier
+> หมายเหตุ: ซัพพลายเออร์
 
-> Reference #2321 dated 30-09-2019 ₹ 1,000.00 against Sales Invoice ACC-SINV-2019-00064
+> อ้างอิง #2321 ลงวันที่ 30-09-2019 ₹ 1,000.00 กับใบกำกับสินค้า ACC-SINV-2019-00064
 
-In th Reference section, the following fields can be entered manually if the bill was recorded offline and not in the ERPNext system. This is only for reference purposes.
+ในส่วนอ้างอิง ฟิลด์ต่อไปนี้สามารถป้อนได้ด้วยตนเอง หากบิลถูกบันทึกแบบออฟไลน์และไม่ได้อยู่ในระบบ ERPNext นี่เป็นเพียงเพื่อการอ้างอิงเท่านั้น
 
-* Bill No
-* Bill Date
-* Due Date
+* หมายเลขบิล
+* วันที่บนบิล
+* วันครบกำหนด
 
-### 2.5 Multi Currency entries
+### 2.5 รายการหลายสกุลเงิน
 
-If the accounts selected are in different currencies, tick the 'Multi Currency' checkbox. If this checkbox is not enabled, you will not be able to select any foreign currencies in the Journal Entry. This will show the different currency and fetch the 'Exchange Rate'. To know more, visit the [Multi Currency Accounting](/docs/user/manual/en/accounts/multi-currency-accounting) page.
+หากบัญชีที่เลือกอยู่ในสกุลเงินต่างกัน ให้ทำเครื่องหมายที่ช่อง 'หลายสกุลเงิน' หากไม่ได้เปิดใช้งานช่องทำเครื่องหมายนี้ คุณจะไม่สามารถเลือกสกุลเงินต่างประเทศในรายการบันทึกประจำวันได้ ซึ่งจะแสดงสกุลเงินที่แตกต่างกันและเรียก 'อัตราแลกเปลี่ยน' หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [การบัญชีหลายสกุลเงิน](/docs/user/manual/th/accounts/multi-currency-accounting) page.
 
 ![Multi Currency](/docs/assets/img/accounts/je-multi-currency.png)
 
-### 2.6 Journal Entry Template
+### 2.6 เทมเพลตรายการบันทึก
 
-**From Template** field: Selecting an option in this will load details from a Journal Entry Template.
+**ฟิลด์เทมเพลต** : การเลือกตัวเลือกนี้จะโหลดรายละเอียดจากเทมเพลตรายการบันทึกประจำวัน
 
-It will fetch and add the following details to the entry:
+มันจะดึงและเพิ่มรายละเอียดต่อไปนี้ในรายการ:
 
-- Entry Type
-- Company
-- Series
-- Accounts in Accounting Entries
-- Is Opening
+- ประเภทรายการ
+- บริษัท
+- ชุดข้อมูล
+- บัญชีในรายการบัญชี
+- รายการที่เปิด
 
-To learn more go to the [Journal Entry Template](/docs/user/manual/en/accounts/journal-entry-template) page.
+หากต้องการเรียนรู้เพิ่มเติม ไปที่หน้า [เทมเพลตรายการบันทึก](/docs/user/manual/th/accounts/journal-entry-template) page.
 
-### 2.7 Print Settings
+### 2.7 การตั้งค่าการพิมพ์ 
 
 ![Journal Print Settings](/docs/assets/img/accounts/je_print_settings.png)
 
-**Pay To / Recd From**: The name entered here will show up in the Sales Invoice. This is useful for printing cheques. Go to the print view in the Journal Entry and select the 'Cheque Printing Format'.
+**สั่งจ่าย / ได้รับจาก**: ชื่อที่ป้อนที่นี่จะปรากฏในใบกำกับสินค้า สิ่งนี้มีประโยชน์สำหรับการพิมพ์เช็ค ไปที่มุมมองการพิมพ์ในรายการบันทึกประจำวันและเลือก รูปแบบการพิมพ์เช็ค'
 
-#### Letterhead
-You can print your Journal Entry on your company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+#### Letterheadหัวจดหมาย
+คุณสามารถพิมพ์รายการบันทึกประจำวันบนหัวจดหมายของบริษัทคุณได้ ทราบข้อมูลเพิ่มเติม[ที่นี่](/docs/user/manual/th/setting-up/print/letter-head).
 
-#### Print Headings
-Journal Entries can also be titled differently for printing purposes.
-You can do this by selecting a **Print Heading**. To create new Print Headings go to:
+#### พิมพ์หัวเรื่อง
+รายการวารสารสามารถตั้งชื่อแตกต่างกันเพื่อวัตถุประสงค์ในการพิมพ์ คุณสามารถทำได้โดยการเลือกหัวเรื่องพิมพ์ ในการสร้างหัวพิมพ์ใหม่ให้ไปที่:
 
-Home > Settings > Printing > Print Heading
+หน้าหลัก > การตั้งค่า > การพิมพ์ > หัวเรื่องการพิมพ์
 
-Read [Print Headings](/docs/user/manual/en/setting-up/print/print-headings) to know more.
+อ่าน [การพิมพ์หัวเรื่อง](/docs/user/manual/th/setting-up/print/print-headings) to know more.
 
-### 2.7 More Information
+### 2.7 ข้อมูลเพิ่มเติม
 
-* **Mode of Payment**: Whether the payment was done using Wire Transfer, Bank Draft, Credit Card, Cheque, or Cash. New Modes of Payment can also be created. If a Bank Account is set in Mode of Payment, it will be fetched here when the Mode of Payment is selected.
-* **Is Opening**: If the Journal Entry is of type 'Opening Entry' this field will be set to 'Yes'. To know more, visit the [Opening Balance](/docs/user/manual/en/accounts/opening-balance) page.
-* **From Template**: When a template is selected, the 'Accounting Entries' table will be emptied first before loading the accounts from the template. You can add more account entries after that.
+* **วิธีการชำระเงิน**: ไม่ว่าจะชำระเงินโดยใช้การโอนเงินผ่านธนาคาร ดราฟต์ธนาคาร บัตรเครดิต เช็ค หรือเงินสด สามารถสร้างรูปแบบการชำระเงินใหม่ได้ หากบัญชีธนาคารถูกตั้งค่าในโหมดการชำระเงิน จะถูกดึงมาที่นี่เมื่อเลือกโหมดการชำระเงิน
+* **รายการที่เปิดอยู่**: หากรายการบันทึกประจำวันเป็นประเภท 'กำลังเปิดรายการ' ฟิลด์นี้จะถูกตั้งค่าเป็น 'ใช่' หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า[ยอดที่ยกมา](/docs/user/manual/th/accounts/opening-balance)
+* **เทมเพลต**: เมื่อเลือกเทมเพลตแล้ว ตาราง 'รายการบัญชี' จะว่างเปล่าก่อนโหลดบัญชีจากเทมเพลต คุณสามารถเพิ่มรายการบัญชีเพิ่มเติมหลังจากนั้น
 
-## 3. Journal Entry Types
-Let's take a look at some of the common accounting entries that can be done via Journal Entry in ERPNext.
+## 3. ประเภทรายการบันทึก
+รายการบัญชีทั่วไปที่สามารถทำได้ผ่านรายการบันทึกประจำวันใน ERPNext
 
-### 3.1 Journal Entry
+### 3.1 รายการบันทึกประจำวัน
 
-This is a general purpose entry type which can be used for different purposes. Let's see a few examples.
+ประเภทรายการวัตถุประสงค์ทั่วไปที่สามารถใช้เพื่อวัตถุประสงค์ที่แตกต่างกัน 
 
-#### Expenses (non accruing)
+ตัวอย่างด้านล่างดังนี้:
 
-Many times it may not be necessary to accrue an expense, but it can be
-directly booked against an expense Account on payment. For example, a travel
-allowance or a telephone bill. You can directly debit Telephone Expense
-(instead of your telephone company) and credit your Bank on payment.
+#### ค่าใช้จ่าย (ไม่สะสม) 
 
-  * Debit: Expense Account (like Telephone expense).
-  * Credit: Bank or Cash Account.
+หลายครั้งอาจไม่จำเป็นต้องสะสมค่าใช้จ่าย แต่สามารถจองโดยตรงกับบัญชีค่าใช้จ่ายในการชำระเงิน ตัวอย่างเช่น ค่าเดินทางหรือค่าโทรศัพท์ คุณสามารถหักค่าโทรศัพท์ได้โดยตรง (แทนบริษัทโทรศัพท์ของคุณ) และเครดิตธนาคารของคุณในการชำระเงิน
 
-#### Crediting Salaries
+  * เดบิต: บัญชีค่าใช้จ่าย (เช่น ค่าโทรศัพท์)
+  * เครดิต: บัญชีธนาคารหรือบัญชีเงินสด
 
-For crediting employee salaries, 'Journal Entry' type is used. In this case,
+#### เครดิตเงินเดือน
 
-  * Debit: The salary components.
-  * Credit: The bank account.
+สำหรับการให้เครดิตเงินเดือนพนักงาน จะใช้ประเภท 'รายการบันทึกประจำวัน' ในกรณีนี้,
 
-### 3.2 Inter Company Journal Entry
-If a transaction occurs between a parent and child company, or sister companies, or two companies belonging to the same group, this option can be used to make an Inter Company Journal Entry.
+  * เดบิต: องค์ประกอบเงินเดือน
+  * เครดิต: บัญชีธนาคาร
 
-To know more visit the [Inter Company Journal Entry](/docs/user/manual/en/accounts/inter-company-journal-entry) page.
+### 3.2 รายการบันทึกระหว่างบริษัทภายใน
 
-### 3.3 Bank Entry
-Use this type when making or receiving a payment using a [Bank Account](/docs/user/manual/en/accounts/bank-account). For example, paying for a entertainment charges etc using the Company's bank account.
+หากธุรกรรมเกิดขึ้นระหว่างบริษัทแม่และบริษัทลูก หรือบริษัทในเครือ หรือบริษัทสองแห่งที่อยู่ในกลุ่มเดียวกัน สามารถใช้ตัวเลือกนี้เพื่อสร้างรายการบันทึกประจำวันระหว่างบริษัทได้
 
-### 3.4 Cash Entry
-This is the same as 'Bank Entry' but the payment is made via Cash Account.
+หากต้องการทราบข้อมูลเพิ่มเติมสามารถอ่านได้ที่ [รายการบันทึกระหว่างบริษัทภายใน](/docs/user/manual/th/accounts/inter-company-journal-entry)
 
-### 3.5 Credit Card Entry
-This is a type of entry to easily identify all credit card entries.
+### 3.3 รายการจากธนาคาร
+ใช้ชนิดนี้เมื่อทำหรือรับชำระเงินโดยใช้ [บัญชีธนาคาร](/docs/user/manual/th/accounts/bank-account) ตัวอย่างเช่น การชำระค่าความบันเทิง ฯลฯ โดยใช้บัญชีธนาคารของบริษัท
 
-### 3.6 Debit Note
+### 3.4 รายการเงินสด
+เหมือนกับ 'รายการธนาคาร' แต่ชำระเงินผ่านบัญชีเงินสด
 
-This is a document sent by a customer (your Company) to a supplier (your Supplier) when returning goods/items.
+### 3.5 รายการบัตรเครดิต
+นี่คือประเภทของรายการเพื่อระบุรายการบัตรเครดิตทั้งหมดได้
 
-You can also create a Debit Note directly from a Purchase Invoice.
+### 3.6 เดบิตโน๊ต
 
-"Debit Note" is made for a Supplier against a Purchase Invoice or accepted
-as a credit note from Supplier when a company returns goods. When a Debit
-Note is made, the Company can either receive a payment from the Supplier or
-adjust the amount in another invoice.
+เอกสารที่ลูกค้า (บริษัทของคุณ) ส่งไปยังซัพพลายเออร์ (ซัพพลายเออร์ของคุณ) เมื่อส่งคืนสินค้า/รายการ
 
-  * Debit: Supplier Account.
-  * Credit: Purchase Return Account.
+คุณยังสามารถสร้างเดบิตโน๊ตได้โดยตรงจากใบกำกับสินค้า
 
-To know more, [visit this page](/docs/user/manual/en/accounts/debit-note).
+"เดบิตโน๊ต" จัดทำขึ้นสำหรับผู้จัดหาโดยเทียบกับใบกำกับสินค้าหรือรับเป็นใบลดหนี้จากซัพพลายเออร์เมื่อบริษัทส่งคืนสินค้า เมื่อมีการจัดทำใบเพิ่มหนี้ บริษัทสามารถรับการชำระเงินจากซัพพลายเออร์หรือปรับจำนวนเงินในใบแจ้งหนี้อื่น
 
-### 3.7 Credit Note
-This is a document sent by a supplier to a customer when returning goods/items.
+  * เดบิต: บัญชีซัพพลายเออร์
+  * เครดิต: บัญชีซื้อคืน
 
-"Credit Note" is made for a Customer against a Sales Invoice when the
-company needs to adjust a payment for returned goods. When a Credit Note
-is made, the seller can either make a payment to the customer or adjust
-the amount in another invoice.
+หากต้องการทราบข้อมูลเพิ่ม สามารถอ่านได้[ที่นี่](/docs/user/manual/th/accounts/debit-note).
 
-  * Debit: Sales Return Account.
-  * Credit: Customer Account.
+### 3.7 เครดิตโน๊ต
+นี่คือเอกสารที่ซัพพลายเออร์ส่งถึงลูกค้าเมื่อมีการส่งคืนสินค้า/รายการ
 
-To know more, [visit this page](/docs/user/manual/en/accounts/credit-note).
+"เครดิตโน๊ต" ถูกสร้างขึ้นสำหรับลูกค้าโดยเทียบกับใบกำกับสินค้าเมื่อบริษัทจำเป็นต้องปรับปรุงการชำระเงินสำหรับสินค้าที่ส่งคืน เมื่อมีการจัดทำเครดิตโน๊ต ผู้ขายสามารถชำระเงินให้กับลูกค้าหรือปรับจำนวนเงินในใบแจ้งหนี้อื่นได้
 
-> A debit/credit note is usually issued for the value of the goods returned or lesser.
+  * เดบิต: บัญชีส่งคืนการขาย
+  * เครดิต: บัญชีลูกค้า
 
-### 3.8 Contra Entry
+หากต้องการทราบข้อมูลเพิ่ม สามารถอ่านได้ [ที่นี่](/docs/user/manual/th/accounts/credit-note).
 
-A Contra Entry is booked when the transaction is booked within the same Company of types:
+> โดยปกติแล้ว ใบเดบิต/เครดิตจะออกสำหรับมูลค่าของสินค้าที่ส่งคืนหรือน้อยกว่า
 
-* Cash to Cash
-* Bank to Bank
-* Cash to Bank
-* Bank to Cash
+### 3.8 รายการต้าน
 
-This is used to record withdrawing or depositing money from a Bank Account. When this entry is used, the money does not leave the company unless it is again used to pay for something.
+รายการต้านจะถูกจองเมื่อมีการจองรายการภายในบริษัทประเภทเดียวกัน:
 
-### 3.9 Excise Entry
+* เงินสดไปยังเงินสด
+* ธนาคารไปยังธนาคาร
+* เงินสดไปยังธนาคาร
+* ธนาคารไปยังเงินสด
 
-When a Company buys goods from a Supplier, company pays excise duty
-on these goods to Supplier. And when a company sells these goods to Customers,
-it receives excise duty. Company will deduct payable excise duty and deposit balance
-in Govt. account.
+ใช้เพื่อบันทึกการถอนหรือฝากเงินจากบัญชีธนาคาร เมื่อใช้รายการนี้ เงินจะไม่ออกจากบริษัท เว้นแต่จะถูกนำมาใช้เพื่อจ่ายอะไรบางอย่างอีกครั้ง
 
-  * When a Company buys goods with Excise duty:
-    * Debit: Purchase Account, Excise Duty Account.
-  	* Credit: Supplier Account.
+### 3.9 รายการสรรพสามิต
 
-  * When a Company sells goods with Excise duty:
-    * Debit: Customer Account.
-    * Credit: Sales Account, Excise Duty Account.
+เมื่อบริษัทซื้อสินค้าจากซัพพลายเออร์ บริษัทจะจ่ายภาษีสรรพสามิตของสินค้าเหล่านี้ให้กับซัพพลายเออร์ และเมื่อบริษัทขายสินค้าเหล่านี้ให้กับลูกค้าก็จะได้รับภาษีสรรพสามิต บริษัทจะหักอากรสรรพสามิตเจ้าหนี้และยอดเงินฝากในรัฐบาล บัญชีผู้ใช้.
 
-> Note: Applicable in India, might not be applicable for your country.
-Please check your country regulations.
+* เมื่อบริษัทซื้อสินค้าที่มีภาษีสรรพสามิต:
+
+  * เดบิต: บัญชีซื้อ, บัญชีภาษีสรรพสามิต
+  * เครดิต: บัญชีซัพพลายเออร์
+
+* เมื่อบริษัทขายสินค้าที่มีภาษีสรรพสามิต:
+
+  * เดบิต: บัญชีลูกค้า
+  * เครดิต: บัญชีขาย บัญชีภาษีสรรพสามิต
+
+<!--> Note: Applicable in India, might not be applicable for your country.
+Please check your country regulations.-->
 
 
-### 3.10 Write Offs or Bad Debts
+### 3.10 การตัดจำหน่ายหรือหนี้สูญ
 
-If you are writing off an Invoice as a bad debt, you can create a Journal
-Voucher similar to a Payment, except instead of debiting your Bank, you can
-debit an Expense Account called Bad Debts.
+หากคุณกำลังตัดใบแจ้งหนี้เป็นหนี้เสีย คุณสามารถสร้าง Journal Voucher ได้เหมือนกับการชำระเงิน ยกเว้นแทนที่จะหักเงินจากธนาคารของคุณ คุณสามารถหักบัญชีค่าใช้จ่ายที่เรียกว่าหนี้สูญได้
 
-  * Debit: Bad Debts Written Off
-  * Credit: Customer
+  * เดบิต: หนี้เสียเขียนออก
+  * เครดิต: ลูกค้า
 
-> Note: There may be regulations in your country before you can write off bad
-debts.
+<!--> Note: There may be regulations in your country before you can write off bad
+debts.-->
 
-### 3.11 Opening Entry
+### 3.11 รายการที่เปิดอยู่
 
-This entry is useful when moving from an another software to ERPNext during any time of the year. Your outstanding bills, equities etc. can be recorded to ERPNext using this entry type. Selecting type will fetch the Balance Sheet accounts.
+รายการนี้มีประโยชน์เมื่อย้ายจากซอฟต์แวร์อื่นไปยัง ERPNext ในช่วงเวลาใดของปี บิลใบแจ้ง สินทรัพย์ที่ตัดหนี้สินทั้งหมดออกไปแล้ว ฯลฯ ของคุณสามารถบันทึกไปยัง ERPNext โดยใช้รายการนี้ การเลือกประเภทจะดึงข้อมูลบัญชีงบดุล
 
-### 3.12 Depreciation
+### 3.12 ค่าเสื่อมราคา
 
-Depreciation is when you write off certain value of your assets as an expense.
-For example if you have a computer that you will use for say 5 years, you can
-distribute its expense over the period and pass a Journal Entry at the end
-of each year reducing its value by a certain percentage.
+ค่าเสื่อมราคาคือเมื่อคุณตัดมูลค่าสินทรัพย์ของคุณออกเป็นค่าใช้จ่าย ตัวอย่างเช่น หากคุณมีคอมพิวเตอร์ที่คุณจะใช้เป็นเวลา 5 ปี คุณสามารถกระจายค่าใช้จ่ายของคอมพิวเตอร์ในช่วงเวลานั้น และส่งรายการบันทึกประจำวันเมื่อสิ้นปีของแต่ละปี ซึ่งจะลดมูลค่าลงเป็นเปอร์เซ็นต์
 
-  * Debit: Depreciation (Expense).
-  * Credit: Asset (the Account under which you had booked the asset to be depreciated).
+  * เดบิต: ค่าเสื่อมราคา (ค่าใช้จ่าย)
+  * เครดิต: สินทรัพย์ (บัญชีที่คุณจองสินทรัพย์ที่จะคิดค่าเสื่อมราคา)
 
-To know more, visit the [Asset Depreciation](/docs/user/manual/en/asset/asset-depreciation) page.
+หากต้องการทราบข้อมูลเพิ่มเติม ไปที่หน้า [ค่าเสื่อมราคาสินทรัพย์](/docs/user/manual/th/asset/asset-depreciation)
 
-> Note: There may be regulations in your country that define by how much
-amount you can depreciate a class of Assets.
+<!--> Note: There may be regulations in your country before you can write off bad
+debts.-->
 
-### 3.13 Exchange Rate Revaluation
-If your Chart of Accounts has accounts with multiple currencies, a Journal Entry of type 'Exchange Rate Revaluation' helps in dealing with this situation. This entry is intended to be created from an Exchange Rate Revaluation form. To know more [visit the Exchange Rate Revaluation page](/docs/user/manual/en/accounts/exchange-rate-revaluation).
+### 3.13 การประเมินค่าอัตราแลกเปลี่ยน
+หากผังบัญชีของคุณมีบัญชีที่มีหลายสกุลเงิน รายการบันทึกประจำวันประเภท 'การประเมินค่าอัตราแลกเปลี่ยนใหม่' จะช่วยในการจัดการกับสถานการณ์นี้ รายการนี้มีวัตถุประสงค์เพื่อสร้างจากแบบฟอร์มการประเมินค่าอัตราแลกเปลี่ยนใหม่ ต้องการทราบข้อมูลเพิ่มเติมสามารถอ่านได้ที่ [แลกเปลี่ยนเงินตราจากการตีราคา](/docs/user/manual/th/accounts/exchange-rate-revaluation).
 
-### 4. Related Topics
-1. [Inter Company Journal Entry](/docs/user/manual/en/accounts/inter-company-journal-entry)
-1. [Credit Note](/docs/user/manual/en/accounts/credit-note)
-1. [Debit Note](/docs/user/manual/en/accounts/debit-note)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Difference Entry Button](/docs/user/manual/en/accounts/articles/difference-entry-button)
-1. [Finance Book](/docs/user/manual/en/accounts/finance-book)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [รายการบันทึกประจำวันระหว่างบริษัทภายใน](/docs/user/manual/th/accounts/inter-company-journal-entry)
+1. [เครดิตโน๊ต](/docs/user/manual/th/accounts/credit-note)
+1. [เดบิทโน๊ต](/docs/user/manual/th/accounts/debit-note)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [Difference Entry Button](/docs/user/manual/th/accounts/articles/difference-entry-button)
+1. [หนังสือการเงิน](/docs/user/manual/th/accounts/finance-book)

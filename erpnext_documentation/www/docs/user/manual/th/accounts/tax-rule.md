@@ -1,77 +1,80 @@
 <!-- add-breadcrumbs -->
-# Tax Rule
+# กฎภาษี
 
-**A Tax Rule automatically applies taxes to transactions based on preset rules.**
+**กฎภาษีจะใช้ภาษีกับธุรกรรมโดยอัตโนมัติตามกฎที่ตั้งไว้ล่วงหน้า**
 
-You can define which [Tax Template](/docs/user/manual/en/setting-up/setting-up-taxes.html) must be applied on a Sales / Purchase transaction using Tax Rule. This is decided by various factors like Customer, Customer Group, Supplier, Supplier Group, Item, Item Group or a combination of these.
+คุณสามารถกำหนด[เทมเพลตภาษี](/docs/user/manual/th/setting-up/setting-up-taxes.html) ที่จะใช้กับธุรกรรมการขาย / ซื้อโดยใช้กฎภาษี ทั้งนี้ขึ้นอยู่กับปัจจัยต่างๆ เช่น ลูกค้า กลุ่มลูกค้า ซัพพลายเออร์ กลุ่มซัพพลายเออร์ รายการ กลุ่มรายการ หรือหลายปัจจัยรวมกัน
 
-To access the Tax Rule list, go to:
-> Home > Accounting > Taxes > Tax Rule
+ในการเข้าถึงรายการกฎภาษี ไปที่:
 
-## 1. Prerequisites
-Before creating and using a Tax Rule, it is advised to create the following first:
+> หน้าหลัก > การบัญชี > ภาษี > กฎภาษี
 
-1. [Sales Taxes and Charges Template](/docs/user/manual/en/selling/sales-taxes-and-charges-template)
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้กฎภาษี ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
+
+1. [เทมเพลตภาษีการขายและค่าธรรมเนียม](/docs/user/manual/th/selling/sales-taxes-and-charges-template)
     
-    Or
+    หรือ
 
-1. [Purchase Taxes and Charges Template](/docs/user/manual/en/buying/purchase-taxes-and-charges-template)
+1. [เทมเพลตภาษีการซื้อและค่าธรรมเนียม](/docs/user/manual/th/buying/purchase-taxes-and-charges-template)
 
-## 2. How to create a Tax Rule
-1. Go to the Tax Rule list and click on New.
-1. Under Tax Type select whether the tax will be applied at Sales or Purchase. 
-1. Select the Tax Template to be applied.
-1. Save.
+## 2. วิธีสร้างกฎภาษี
+1. ไปที่รายการกฎภาษีแล้วคลิกใหม่
+1. ที่ ประเภทภาษี เลือกว่าจะใช้ภาษีที่การขายหรือการซื้อ
+1. เลือกเทมเพลตภาษีที่จะใช้
+1. บันทึก
  <img class="screenshot" alt="Tax Rule" src="{{docs_base_url}}/assets/img/accounts/tax-rule.png">
 
-You can list Items online using the Website module. Selecting 'Use for Shopping Cart' will use this Tax Rule for Shopping Cart transactions also. To know more, visit the [Shopping Cart](/docs/user/manual/en/website/shopping-cart) page.
+คุณสามารถแสดงรายการออนไลน์โดยใช้โมดูลเว็บไซต์ การเลือก 'ใช้สำหรับรถเข็นช็อปปิ้ง' จะใช้กฎภาษีนี้สำหรับธุรกรรมรถเข็นช็อปปิ้งด้วย อ่าน [หน้าตะกร้าสินค้า](/docs/user/manual/th/website/shopping-cart) เพื่อทราบข้อมูลเพิ่มเติม
 
-> Note: It is advised to not use the Sales/Purchase Template selected here in [Item Tax Template](/docs/user/manual/en/accounts/item-tax-template), it may cause interference. If you want to use same tax rates for Tax Rule and Item Tax Template, use a different name for the Sales/Purchase Tax Templates.
+> หมายเหตุ: ขอแนะนำว่าอย่าใช้เทมเพลตการซื้อหรือการขายใน [เทมเพลตภาษีสินค้า](/docs/user/manual/th/accounts/item-tax-template)เพราะอาจทำให้เกิดข้อผิดพลาดได้ หากคุณต้องการใช้อัตราภาษีเดียวกันสำหรับกฎภาษีและเทมเพลตภาษีสินค้า ให้ใช้ชื่ออื่นสำหรับเทมเพลตภาษีการขาย/การซื้อ
 
-## 3. Features
-### 3.1 Auto applying Tax Rule based on Customer/Supplier
-Select a Customer/Supplier if tax is to be applied for a specific party. Leave it as All Customer Groups/All Supplier Groups if this Tax Rule is applicable to all Customers/Suppliers.
+## 3. คุณสมบัติ
+### 3.1 ใช้กฎภาษีตามลูกค้า/ซัพพลายเออร์อัตโนมัติ
 
-On selecting a Customer/Supplier their Billing and Shipping addresses will be fetched if saved in the Customer/Supplier master.
+เลือกลูกค้า/ซัพพลายเออร์หากต้องการเสียภาษีสำหรับฝ่ายใดฝ่ายหนึ่ง ปล่อยให้เป็นกลุ่มลูกค้าทั้งหมด/กลุ่มซัพพลายเออร์ทั้งหมด หากกฎภาษีนี้มีผลบังคับใช้กับลูกค้า/ซัพพลายเออร์ทั้งหมด
 
-### 3.2 Auto applying Tax Rule based on Item / Item Group
+ในการเลือกลูกค้า/ซัพพลายเออร์ ที่อยู่สำหรับการเรียกเก็บเงินและการจัดส่งจะถูกดึงออกมาหากบันทึกไว้ในข้อมูลหลักของลูกค้า/ซัพพลายเออร์
 
-On setting an Item or Item group in the Tax Rule, this Tax Rule will automatically be applied to new transactions that have the selected Item/Item Group.
+### 3.2 ใช้กฎภาษีตามรายการ / รายการกลุ่ม อัตโนมัติ
 
-### 3.3 Setting a Tax Category
-Setting a Tax Category allows applying multiple Tax Rules to a transaction based on different factors. To know more, visit the [Tax Category](/docs/user/manual/en/accounts/tax-category) page.
+ในการตั้งค่ากลุ่มสินค้าหรือรายการในกฎภาษี กฎภาษีนี้จะถูกนำไปใช้กับธุรกรรมใหม่ที่มีกลุ่มสินค้า/รายการที่เลือกโดยอัตโนมัติ
 
-### 3.4 Validity
-Set a Start and End Date if the tax is to be applied only for a specified period. Leaving both dates blank will result in the Tax Rule to have no time limits.
+### 3.3 การตั้งประเภทภาษี
+การตั้งค่าประเภทภาษีอนุญาตให้ใช้กฎภาษีหลายข้อกับธุรกรรมตามปัจจัยต่างๆ หากต้องการทราบข้อมูลเพิ่มเติม อ่าน [ประเภทภาษี](/docs/user/manual/th/accounts/tax-category) เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.5 Priority
-Setting a priority number here will decide on which order a Tax Rule will be applied in case multiple Tax Rules have similar criteria. '1' is the highest priority, '2' has lesser priority and so on.
+### 3.4 ควาสมบูรณ์ของข้อมูล
+กำหนดวันที่เริ่มต้นและสิ้นสุดหากจะใช้ภาษีในช่วงเวลาที่กำหนดเท่านั้น การเว้นวันที่ทั้งสองว่างไว้จะทำให้กฎภาษีไม่มีการจำกัดเวลา
 
-## 4. How does Tax Rule Work?
-It works like a filter to automatically apply tax templates:
+### 3.5 ลำดับความสำคัญ
+การตั้งค่าหมายเลขลำดับความสำคัญที่นี่จะตัดสินว่าจะใช้กฎภาษีใดในกรณีที่กฎภาษีหลายข้อมีเกณฑ์ที่คล้ายกัน '1' คือลำดับความสำคัญสูงสุด '2' มีลำดับความสำคัญน้อยกว่าและอื่นๆ
 
-1. Set a Customer or a specific region
-1. The selected tax template will be applied according to the conditions set in the Tax Rule
-1. It will be applied to new Sales/Purchase transactions based on the type selected in the Tax Rule
+## 4. กฎภาษีทำงานอย่างไร
 
-For example, selecting 'Nitin' as the Customer and 'All Item Groups' will cause the Tax Rule to be applied to all sales transactions with the Customer Nitin. Likewise, selecting a 'Plastic Crystal A' and 'All Customer Groups' will cause the Tax Rule to be applied to all Customers but only when the Item is 'Plastic Crystal A'. 
+กฎภาษีทำงานเหมือนตัวกรองอัตนโนมัติที่ใช้ในเทมเพลตภาษี:
 
-While creating a new transaction the system will select and apply tax template based on the tax rule defined.
+1. กำหนดลูกค้าหรือภูมิภาคเฉพาะ
+1. เทมเพลตภาษีที่เลือกจะถูกนำไปใช้ตามเงื่อนไขที่กำหนดไว้ในกฎภาษี
+1. กฎนี้จะถูกนำไปใช้กับธุรกรรมการขาย/การซื้อใหม่ตามประเภทที่เลือกในกฎภาษี
 
-Let us consider a scenario to understand Tax Rule Better. Suppose we define two Tax Rules as below.
+ตัวอย่างเช่น การเลือก 'Nitin' เป็นลูกค้าและ 'กลุ่มสินค้าทั้งหมด' จะทำให้กฎภาษีมีผลกับธุรกรรมการขายทั้งหมดที่มี Nitin เป็นลูกค้า ในทำนองเดียวกัน การเลือก 'Plastic Crystal A' และ 'All Customer Groups' จะทำให้กฎภาษีมีผลบังคับใช้กับลูกค้าทั้งหมด แต่เมื่อสินค้าเป็น 'Plastic Crystal A' เท่านั้น
+
+การสร้างธุรกรรมใหม่ ระบบจะเลือกและใช้เทมเพลตภาษีตามกฎภาษีที่กำหนดไว้
+
+พิจารณาสถานการณ์สมมติเพื่อให้เข้าใจกฎภาษีได้ดีขึ้น สมมติว่าเรากำหนดกฎภาษีสองข้อดังนี้
 
 <img class="screenshot" alt="Tax Rule" src="{{docs_base_url}}/assets/img/accounts/tax-rule-1.png">
 
 <img class="screenshot" alt="Tax Rule" src="{{docs_base_url}}/assets/img/accounts/tax-rule-2.png">
 
-Here In State GST has Billing Country as India and VAT 14% has Billing Country as Germany.
+<!--Here In State GST has Billing Country as India and VAT 14% has Billing Country as Germany.
 
 Now suppose we try to create a Sales Order for a Customer whose default Billing Country is India, system will select In State GST.
-In case the Customer's Billing Country was Germany, the system will select VAT 14%.
+In case the Customer's Billing Country was Germany, the system will select VAT 14%. -->
 
-### 5. Related Topics
-1. [Pricing Rule](/docs/user/manual/en/accounts/pricing-rule)
-1. [Item Tax Template](/docs/user/manual/en/accounts/item-tax-template)
-1. [Tax Category](/docs/user/manual/en/accounts/tax-category)
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Supplier](/docs/user/manual/en/buying/supplier)
+### 5. หัวข้อที่เกี่ยวข้อง
+1. [กฎการกำหนดราคา](/docs/user/manual/th/accounts/pricing-rule)
+1. [เทมเพลตภาษีสินค้า](/docs/user/manual/th/accounts/item-tax-template)
+1. [ประเภทภาษี](/docs/user/manual/th/accounts/tax-category)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)

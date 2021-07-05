@@ -1,59 +1,61 @@
-# Deferred Revenue
+# รายได้รอตัดบัญชี
 
-**Deferred revenue refers to advance payments a Company receives for products or services that are to be delivered or performed in the future.**
+**รายได้รอตัดบัญชีหมายถึงเงินจ่ายล่วงหน้าที่บริษัทได้รับสำหรับผลิตภัณฑ์หรือบริการที่จะส่งมอบหรือดำเนินการในอนาคต**
 
-It is also known as unearned revenue.
+หรือเรียกว่ารายได้รอดำเนินการ
 
-The company that receives the prepayment records the amount as Deferred Revenue on their balance sheet as a liability. Deferred revenue is a liability because it refers to revenue that has not been earned and represents products or services that are owed to a Customer. As the product or service is delivered over time, it is recognized as revenue on the income statement.
+บริษัทที่ได้รับการชำระเงินล่วงหน้าจะบันทึกจำนวนเงินเป็นรายได้รอตัดบัญชีในงบดุลเป็นหนี้สิน รายได้รอตัดบัญชีเป็นหนี้สินเนื่องจากหมายถึงรายได้ที่ไม่ได้รับและแสดงถึงผลิตภัณฑ์หรือบริการที่เป็นหนี้ลูกค้า เมื่อมีการส่งมอบผลิตภัณฑ์หรือบริการเมื่อเวลาผ่านไป จะรับรู้เป็นรายได้ในงบกำไรขาดทุน
 
-## 1. Configuring Deferred Accounting
+## 1. การกำหนดค่ารายได้รอตัดบัญชี
 
 > Introduced in Version 13
 
-Before you start using deferred accounting you should be aware of the below settings which will give you more control over how you manage your deferred accounting
+ก่อนที่คุณจะเริ่มใช้บัญชีรอตัดบัญชี คุณควรทราบการตั้งค่าด้านล่างซึ่งจะช่วยให้คุณควบคุมวิธีจัดการบัญชีรอตัดบัญชีได้มากขึ้น
 
 <img class="screenshot" alt="Deferred Accounting Settings" src="{{docs_base_url}}/assets/img/accounts/deferred-accounting-settings.png">
 
-1. **Automatically Process Deferred Accounting Entry:** This setting is enabled by default. In case you don't want the deferred accounting entries to be posted automatically you can disable this setting. If this setting is disabled deferred accounting will have to be processed manually using [Process Deferred Accounting](/docs/user/manual/en/accounts/process-deferred-accounting)
+1. **รายการบัญชีรอตัดบัญชีโดยอัตโนมัติ:** การตั้งค่านี้เปิดใช้งานโดยค่าเริ่มต้น ในกรณีที่คุณไม่ต้องการให้มีการผ่านรายการบัญชีที่รอการตัดบัญชีโดยอัตโนมัติ คุณสามารถปิดใช้งานการตั้งค่านี้ได้ หากการตั้งค่านี้ปิดใช้งานการบัญชีที่รอการตัดบัญชีจะต้องดำเนินการด้วยตนเองโดยใช้ [การบัญชีที่รอการตัดบัญชี](/docs/user/manual/th/accounts/process-deferred-accounting)
 
-1. **Book Deferred Entries Based On:** Deferred revenue amount can be booked based on two criteria. The default option here is "Days". If "Days" is selected, the deferred revenue amount will be booked based on the number of days in each month and if "Months" is selected, then it will be booked based on number of months. **For Eg:** If "Days" is selected and $12000 revenue has to be deferred over a period of 12 months, then $986.30 will be for the month having 30 days and $1019.17 will be booked for the month having 31 days. If "Months" is selected, $1000 deferred revenue will booked each month irrespective of the number of days in a month.
+1. **รายการรอตัดบัญชีขึ้นอยู่กับ:** จำนวนเงินรายได้รอการตัดบัญชีสามารถจองได้โดยใช้เกณฑ์สองข้อ ตัวเลือกเริ่มต้นที่นี่คือ "วัน" หากเลือก "วัน" จำนวนเงินรายได้รอตัดบัญชีจะถูกจองตามจำนวนวันในแต่ละเดือน และหากเลือก "เดือน" ระบบจะจองตามจำนวนเดือน **ตัวอย่างเช่น** หากเลือก "วัน" และต้องเลื่อนรายได้ $12,000 ออกไปในช่วง 12 เดือน ดังนั้น $986.30 จะเป็นเดือนที่มี 30 วัน และ $1019.17 จะถูกจองสำหรับเดือนที่มี 31 วัน หากเลือก "เดือน" รายได้รอการตัดบัญชี $1,000 จะถูกจองในแต่ละเดือนโดยไม่คำนึงถึงจำนวนวันในหนึ่งเดือน
 
-1. **Book Deferred Entries Via Journal Entry:** By default Ledger Entries are posted directly to book deferred revenue against an invoice. In order to book this deferred amount posting via Journal Entry, this option can be enabled.
+1. **รายการรอตัดบัญชีผ่านรายการบันทึกประจำวัน:** โดยค่าเริ่มต้น รายการบัญชีแยกประเภทจะถูกลงรายการบัญชีโดยตรงเพื่อจองรายได้รอตัดบัญชีกับใบแจ้งหนี้ ในการจองจำนวนเงินที่รอการตัดบัญชีผ่านรายการบันทึกประจำวัน ตัวเลือกนี้สามารถเปิดใช้งานได้
 
-1. **Submit Journal Entries:** This option is applicable only if deferred accounting entries are posted via Journal Entry. By default, the Journal Entries for deferred posting are kept in Draft state and a user has to verify those entries and submit them manually. If this option is enabled, Journal Entries will be automatically submitted without any user intervention.
+1. **ส่งรายการบันทึกประจำวัน:** ตัวเลือกนี้ใช้ได้เฉพาะเมื่อมีการผ่านรายการบัญชีรอตัดบัญชีผ่านรายการบันทึกประจำวัน โดยค่าเริ่มต้น รายการบันทึกประจำวันสำหรับการผ่านรายการรอการตัดบัญชีจะถูกเก็บไว้ในสถานะร่างและผู้ใช้ต้องตรวจสอบรายการเหล่านั้นและส่งด้วยตนเอง หากเปิดใช้งานตัวเลือกนี้ รายการบันทึกประจำวันจะถูกส่งโดยอัตโนมัติโดยที่ผู้ใช้ไม่ต้องดำเนินการใดๆ
 
-## 2. How to use Deferred Revenue
+## 2. วิธีใช้รายได้รอตัดบัญชี
 
-Internet and broadcasting service providers offer subscription plans on quarterly or yearly basis. They take complete payment in advance from the Customer for couple of months, but book income on monthly basis in their book of accounts. This is Deferred Revenue for the Supplier and [Deferred Expense](/docs/user/manual/en/accounts/deferred-expense) for the Customer. Following is how they should configure Deferred Revenue accounting in ERPNext to automate the process.
+ผู้ให้บริการอินเทอร์เน็ตและกระจายเสียงเสนอแผนการสมัครสมาชิกรายไตรมาสหรือรายปี พวกเขาชำระเงินทั้งหมดล่วงหน้าจากลูกค้าเป็นเวลาสองสามเดือน แต่บันทึกรายได้เป็นรายเดือนในบัญชีของพวกเขา นี่คือรายได้รอตัดบัญชีสำหรับซัพพลายเออร์และ [ค่าใช้จ่ายรอตัดบัญชี](/docs/user/manual/th/accounts/deferred-expense) สำหรับลูกค้า 
 
-### 2.1 Item
+ต่อไปนี้เป็นวิธีที่ควรกำหนดค่าการบัญชีรายรับรอตัดบัญชีใน ERPNext เพื่อทำให้กระบวนการเป็นไปโดยอัตโนมัติ
 
-In the Item master created for the subscription plan, under Deferred Revenue section, check field **Enable Deferred Revenue**. You can also select a Deferred Revenue account for this particular item and number of months.
+### 2.1 สินค้า
+
+ในรายการสินค้าหลักที่สร้างขึ้นสำหรับแผนการสมัครสมาชิกภายใต้ส่วนรายได้รอตัดบัญชีข้อมูลการตรวจสอบการเปิดใช้งานรอการตัดบัญชีรายได้ คุณยังสามารถเลือกบัญชีรายรับรอตัดบัญชีสำหรับรายการนี้และจำนวนเดือนได้อีกด้วย.
 
 <img class="screenshot" alt="Item - Deferred Revenue" src="{{docs_base_url}}/assets/img/accounts/deferred-item.png">
 
-### 2.2 Sales Invoice
+### 2.2 ใบแจ้งหนี้การขาย
 
-On creation of Sales Invoice for the Deferred Revenue Item, instead of posting in the Income Account, Deferred Revenue account is Credited by the sale amount. If you had set the account and period in Item, then the account and service start, end dates will be fetched automatically.
+ในการสร้างใบแจ้งหนี้การขายสำหรับรายการรายได้รอตัดบัญชี แทนที่จะลงรายการบัญชีในบัญชีรายได้ บัญชีรายได้รอตัดบัญชีจะได้รับเครดิตตามยอดขาย หากคุณตั้งค่าบัญชีและระยะเวลาในรายการ บัญชีและบริการจะเริ่มต้น วันที่สิ้นสุดจะถูกดึงข้อมูลโดยอัตโนมัติ
 
 <img class="screenshot" alt="Item - Deferred Revenue" src="{{docs_base_url}}/assets/img/accounts/deferred-invoice.gif">
 
-### 2.3 Journal Entry
+### 2.3 รายการบันทึกประจำวัน
 
-Based on the From Date and To Date set in the Sales Invoice Item table, Journal Entries are created automatically at the end of each month. It debits the value from Deferred Revenue account and credits Income Account selected for an Item in the Sales Invoice.
+ตามวันที่เริ่มต้นและวันที่สิ้นสุดที่กำหนดไว้ในตารางรายการในใบแจ้งหนี้การขาย รายการบันทึกประจำวันจะถูกสร้างขึ้นโดยอัตโนมัติทุกสิ้นเดือน จะหักค่าจากบัญชีรายได้รอตัดบัญชีและเครดิตบัญชีรายได้ที่เลือกสำหรับรายการในใบกำกับสินค้า
 
-Following is an example of Income for the Deferred Revenue Item booked via multiple Journal Entries.
+ต่อไปนี้เป็นตัวอย่างรายได้สำหรับรายการรายได้รอตัดบัญชีที่จองผ่านรายการบันทึกรายวันหลายรายการ
 
 <img class="screenshot" alt="Item - Deferred Revenue" src="{{docs_base_url}}/assets/img/accounts/deferred-jv.png">
 
-## 3.  Video
+## 3.  วิดีโอ
 
 <div class="embed-container">
   <iframe src="https://www.youtube.com/embed/j6mx-EHU4aY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
 </div>
 
-### 4. Related Topics
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
-1. [Chart Of Accounts](/docs/user/manual/en/accounts/chart-of-accounts)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [รายการบันทึกประจำวัน](/docs/user/manual/th/accounts/journal-entry)
+1. [ผังบัญชี](/docs/user/manual/th/accounts/chart-of-accounts)

@@ -1,31 +1,31 @@
 <!-- add-breadcrumbs -->
-# Mode of Payment
+# รูปแบบวิธีการชำระเงิน
 
-**The Mode of Payment stores the medium through which payments are made or received.**
+**รูปแบบการชำระเงินจะจัดเก็บสื่อที่ใช้ในการชำระเงินหรือรับเงิน**
 
-To access the Mode of Payment list, go to:
-> Home > Accounting > Settings > Mode of Payment
+ในการเข้าถึงวิธีการการชำระเงิน ไปที่:
+> หน้าหลัก > การบัญชี > การตั้งค่า > วิธีการชำระเงิน
 
-## 1. How to create a Mode of Payment
-1. Go to the Mode of Payment list and click on New.
-1. Enter a name for the Mode of Payment.
-1. Set a type whether Cash, Bank, or General. This is useful for knowing the mode of payment used in [Point Of Sales (PoS)](/docs/user/manual/en/accounts/point-of-sales).
-1. Set a default payment Account for all the companies.
-1. Save.
+## 1. วิธีสร้างรูปแบบการชำระเงิน
+1. ไปที่รายการรูปแบบการชำระเงินแล้วคลิกใหม่
+1. ป้อนชื่อสำหรับรูปแบบการชำระเงิน
+1. ตั้งค่าประเภทว่าเงินสด ธนาคาร หรือทั่วไป นี้จะเป็นประโยชน์ในการรู้โหมดของการชำระเงินที่ใช้ใน [ระบบขายหน้าร้าน (PoS)](/docs/user/manual/en/accounts/point-of-sales).
+1. ตั้งค่าบัญชีการชำระเงินเริ่มต้นสำหรับบริษัททั้งหมด
+1. บันทึก
 
     ![Mode of Payment]({{docs_base_url}}/assets/img/accounts/mode-of-payment.png)
 
-> **Tip**: Setting the default Account will this account fetched into [Payment Entries](/docs/user/manual/en/accounts/payment-entry).
+> **หมายเหตุ**: การตั้งบัญชีเริ่มต้นจะเรียกบัญชีนี้ลงใน [รายการชำระเงิน](/docs/user/manual/en/accounts/payment-entry).
 
 ![Mode of Payment](/docs/assets/img/accounts/mode-of-payment-pe.gif)
 
-> **Note**: When making Payment Entries, the default bank account will be fetched in the following order if set:
+> **หมายเหตุ**: เมื่อทำรายการชำระเงิน บัญชีธนาคารเริ่มต้นจะถูกดึงมาตามลำดับต่อไปนี้หากตั้งค่าไว้:
 
 >       * Company form
 >       * Mode of Payment default account
 >       * Customer/Supplier default bank account
 >       * Select manually in Payment Entry
 
-## 2. Related Topics
-1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
-1. [Payment Request](/docs/user/manual/en/accounts/payment-request)
+## 2. หัวข้อที่เกี่ยวข้อง
+1. [รายการชำระเงิน](/docs/user/manual/en/accounts/payment-entry)
+1. [คำขอชำระเงิน](/docs/user/manual/en/accounts/payment-request)

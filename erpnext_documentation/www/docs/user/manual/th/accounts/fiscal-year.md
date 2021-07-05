@@ -1,40 +1,27 @@
 <!-- add-breadcrumbs -->
-# Fiscal Year
+# ปีงบประมาณ
 
-**A Fiscal Year is used to record and report the transactions for the year.**
+**ปีงบประมาณใช้เพื่อบันทึกและรายงานธุรกรรมสำหรับปี**
 
-It is also known as a financial year or a budget year. It is used
-for calculating financial statements in businesses and other organizations.
-The Fiscal Year may or may not be the same as a calendar year.
+เรียกอีกอย่างว่าปีการเงินหรือปีงบประมาณ ใช้สำหรับคำนวณงบการเงินในธุรกิจและองค์กรอื่นๆ ปีงบประมาณอาจจะใช่หรือไม่ใช่ปีปฏิทินก็ได้
 
-For tax purposes, companies can choose to be calendar-year taxpayers or fiscal-year
-taxpayers depending on the jurisdiction. In many jurisdictions, regulatory laws regarding accounting and
-taxation require such reports once per twelve months. However, it is not
-mandatory that the period should be a calendar year (that is, 1 January to 31
-December).
+เพื่อวัตถุประสงค์ด้านภาษี บริษัทต่างๆ สามารถเลือกที่จะเป็นผู้เสียภาษีปีปฏิทินหรือผู้เสียภาษีปีงบประมาณ ทั้งนี้ขึ้นอยู่กับเขตอำนาจศาล ในเขตอำนาจศาลหลายแห่ง กฎหมายกำกับดูแลเกี่ยวกับการบัญชีและภาษีกำหนดให้รายงานดังกล่าวหนึ่งครั้งต่อสิบสองเดือน อย่างไรก็ตาม ไม่จำเป็นว่าช่วงเวลาควรเป็นปีปฏิทิน (นั่นคือ 1 มกราคม ถึง 31 ธันวาคม)
 
-A Fiscal Year usually starts at the beginning of a quarter, such as April 1,
-July 1 or October 1. However, most companies' Fiscal Year also coincides with
-the calendar year, which starts at January 1. For the most part, it is simpler
-and easier that way. For some organizations, there are advantages in starting
-the Fiscal Year at a different time.
+ปีงบประมาณมักจะเริ่มต้นที่ต้นไตรมาส เช่น 1 เมษายน 1 กรกฎาคม หรือ 1 ตุลาคม อย่างไรก็ตาม ปีงบประมาณของบริษัทส่วนใหญ่จะตรงกับปีปฏิทินซึ่งเริ่มในวันที่ 1 มกราคม โดยส่วนใหญ่คือ ง่ายกว่าและง่ายกว่านั้น สำหรับบางองค์กร มีข้อดีในการเริ่มต้นปีงบประมาณในเวลาที่ต่างกันออกไป
 
-For example, businesses that are seasonal might start their Fiscal Year on July 1 or October 1. A business that has most of its income in the fall and most of its expenses in the spring might also
-choose to start its Fiscal Year on October 1. That way, they know what their
-income will be for that year, and can adjust their expenses to maintain their
-desired profit margins.
+ตัวอย่างเช่น ธุรกิจตามฤดูกาลอาจเริ่มปีงบประมาณในวันที่ 1 กรกฎาคมหรือ 1 ตุลาคม ธุรกิจที่มีรายได้ส่วนใหญ่ในฤดูใบไม้ร่วงและค่าใช้จ่ายส่วนใหญ่ในฤดูใบไม้ผลิอาจเลือกที่จะเริ่มปีงบประมาณในวันที่ 1 ตุลาคมเช่นกัน ด้วยวิธีนี้ พวกเขารู้ว่ารายได้ของพวกเขาจะเป็นอย่างไรในปีนั้น และสามารถปรับค่าใช้จ่ายเพื่อรักษาอัตรากำไรที่ต้องการได้
 
-To access the Fiscal Year list, go to:
-> Home > Accounting > Setup > Fiscal Year
+หากต้องการเข้าถึงรายการปีงบประมาณ ให้ไปที่:
 
-## 1. How to set up Fiscal Year
-1. Go to the Fiscal Year list.
-1. To set the Fiscal Year as default, click on the **Set as Default** button.
-1. In case you have multiple companies sharing the same Fiscal Year, you can add
-it as shown in the following screenshot:
+> หน้าหลัก > การบัญชี > ตั้งค่า > ปีงบประมาณ
+
+## 1. วิธีการตั้งค่าปีงบประมาณ
+1. ไปที่รายการปีงบประมาณ
+1. ในการตั้งปีงบประมาณเป็นค่าเริ่มต้นให้คลิกที่ **ตั้งเป็นค่าเริ่มต้นปุ่ม**
+1. ในกรณีที่คุณมีบริษัทหลายแห่งที่ใช้ปีบัญชีเดียวกัน คุณสามารถเพิ่มได้ดังที่แสดงในภาพด้านล่าง:
     <img class="screenshot" alt="Fiscal Year" src="{{docs_base_url}}/assets/img/accounts/fiscal-year.png">
 
-### 2. Related Topics
-1. [Finance Book](/docs/user/manual/en/accounts/finance-book)
-1. [Accounting Reports](/docs/user/manual/en/accounts/accounting-reports)
-1. [Budgeting](/docs/user/manual/en/accounts/budgeting)
+### 2. หัวข้อที่เกี่ยวข้อง
+1. [หนังสือการเงิน](/docs/user/manual/en/accounts/finance-book)
+1. [รายงานการบัญชี](/docs/user/manual/en/accounts/accounting-reports)
+1. [การจัดทำงบประมาณ](/docs/user/manual/en/accounts/budgeting)

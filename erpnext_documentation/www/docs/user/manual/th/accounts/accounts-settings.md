@@ -1,75 +1,74 @@
 <!-- add-breadcrumbs -->
-# Accounts Settings
+# การตั้งค่าบัญชี
 
-There are various account settings in ERPNext to restrict and configure actions in the Accounting module.
+มีการตั้งค่าบัญชีต่างๆ ใน ​​ERPNext เพื่อจำกัดและกำหนดค่าการดำเนินการในโมดูลการบัญชี
 
 ![Account Settings]({{docs_base_url}}/assets/img/accounts/account-settings.png)
 
-## 1. Accounts Frozen Up to
-Freeze accounting transactions up to specified date, nobody can make/modify entry except the specified Role.
+## 1. บัญชีถูกระงับมากถึง 
+ระงับธุรกรรมทางบัญชีจนถึงวันที่ระบุ ไม่มีใครสามารถสร้าง/แก้ไขรายการได้ ยกเว้นบทบาทที่ระบุ
 
-## 2. Role Allowed to Set Frozen Accounts & Edit Frozen Entries
-Users with this Role are allowed to set frozen accounts and create/modify accounting entries against frozen accounts.
+## 2. บทบาทที่ได้รับอนุญาตให้ตั้งค่าบัญชีที่ถูกระงับและแก้ไขรายการที่ถูกระงับ 
+ผู้ใช้ที่มีบทบาทนี้ได้รับอนุญาตให้ตั้งค่าบัญชีที่ถูกระงับ และสร้าง/แก้ไขรายการบัญชีสำหรับบัญชีที่ถูกระงับ
 
-## 3. Determine Address Tax Category From
-[Tax category](/docs/user/manual/en/accounts/tax-category) can be set on Addresses. An address can be Shipping or Billing address. Set which addres to select when applying Tax Category.
+## 3. กำหนดที่อยู่ประเภทภาษี
+[ประเภทภาษี](/docs/user/manual/th/accounts/tax-category) สามารถตั้งค่าได้ที่ "ที่อยู่" ที่อยู่สามารถเป็นที่อยู่สำหรับจัดส่งหรือสำหรับการเรียกเก็บเงิน กำหนดที่อยู่ที่จะเลือกเมื่อใช้ประเภทภาษี
 
-## 4. Over Billing Allowance Percentage
-The percentage by which you can overbill transactions. For example, if the order value is $100 for an Item and percentage here is set as 10% then you are allowed to bill for $110.
+## 4. ค่าเปอร์เซ็นต์ค่าเผื่อการเรียกเก็บเงินที่อณุญาต
+เปอร์เซ็นต์ที่คุณสามารถเรียกเก็บเงินเกินธุรกรรมได้ ตัวอย่างเช่น หากมูลค่าการสั่งซื้อคือ $100 สำหรับสินค้าและเปอร์เซ็นต์ที่นี่ตั้งไว้ที่ 10% คุณจะได้รับอนุญาตให้เรียกเก็บเงิน $110
 
-## 5. Role Allowed to Over Bill
-Users with this role are allowed to over bill above the allowance percentage.
+## 5. บทบาทที่สามารถทำค่าเผื่อการเรียกเก็บเงิน
+ผู้ใช้ที่มีบทบาทนี้ได้รับอนุญาตให้เรียกเก็บเงินเกินเปอร์เซ็นต์ที่อนุญาต
 
-## 6. Credit Controller
-Select the role that is allowed to submit transactions that exceed credit limits set. The credit limit can be set in the Customer form.
+## 6. ผู้ควบคุมสินเชื่อ
+เลือกบทบาทที่ได้รับอนุญาตให้ส่งธุรกรรมที่เกินวงเงินสินเชื่อที่ตั้งไว้ สามารถกำหนดวงเงินสินเชื่อได้ในแบบฟอร์มลูกค้า
 
-## 7. Check Supplier Invoice Number Uniqueness
-When checked, Purchase Invoices with same 'Supplier Invoice No' will not be allowed. This is useful to avoid duplicate entries.
+## 7. ความแตกต่างของหมายเลขใบแจ้งหนี้ของซัพพลายเออร์
+เมื่อตรวจสอบแล้ว จะไม่อนุญาตให้ใช้ใบกำกับสินค้าที่มี 'หมายเลขใบแจงหนี้ของซัพพลายเออร์ ' สิ่งนี้มีประโยชน์เพื่อหลีกเลี่ยงรายการที่ซ้ำกัน
 
-## 8. Make Payment via Journal Entry
-When checked, if user proceeds to make payment from an invoice, the system will open a Journal Entry instead of a Payment Entry.
+## 8. ชำระเงินผ่านรายการบันทึกประจำวัน 
+เมื่อตรวจสอบแล้ว หากผู้ใช้ดำเนินการชำระเงินจากใบแจ้งหนี้ ระบบจะเปิดรายการบันทึกประจำวันแทนรายการชำระเงิน
 
-## 9. Unlink Payment on Cancellation of Invoice
-If checked, system will unlink the payment against the respective invoice. By default, if a Payment Entry is submitted, the linked invoice cannot be canceled until the Payment Entry is also canceled. On unlinking, you can now cancel and amend the invoices. But the payments not be linked and considered as advance payments.
+## 9. ยกเลิกการลิงก์การชำระเงินเมื่อยกเลิกใบแจ้งหนี้ 
+หากเลือก ระบบจะยกเลิกการเชื่อมโยงการชำระเงินกับใบแจ้งหนี้ที่เกี่ยวข้อง ตามค่าเริ่มต้น หากมีการส่งรายการการชำระเงิน ใบแจ้งหนี้ที่เชื่อมโยงจะไม่สามารถยกเลิกได้จนกว่ารายการการชำระเงินจะถูกยกเลิกด้วย เมื่อยกเลิกการเชื่อมโยง คุณสามารถยกเลิกและแก้ไขใบแจ้งหนี้ได้แล้ว แต่การชำระเงินไม่ได้เชื่อมโยงและถือเป็นการชำระเงินล่วงหน้า
 
-## 10. Unlink Advance Payment on Cancellation of Order
-Similar to the previous option, this unlinks any advance payments made against Purchase/Sales Orders.
+## 10. ยกเลิกการชำระเงินล่วงหน้าสำหรับการยกเลิกคำสั่งซื้อ 
+คล้ายกับตัวเลือกก่อนหน้านี้ ซึ่งจะยกเลิกการเชื่อมโยงการชำระเงินล่วงหน้าใดๆ กับคำสั่งซื้อ/คำสั่งขาย
 
+## 11. จองรายการค่าเสื่อมราคาสินทรัพย์โดยอัตโนมัติ 
+เมื่อเลือกตัวเลือกนี้ ระบบจะสร้างรายการค่าเสื่อมราคาสินทรัพย์โดยอัตโนมัติตามชุดวันแรก ตัวอย่างเช่น ค่าเสื่อมราคารายปีสำหรับสินค้าจะถูกจัดกำหนดการสำหรับ 3/4 ปีถัดไปตามชุดจำนวนค่าเสื่อมราคาที่จองในหลักสินทรัพย์ สำหรับรายละเอียดเพิ่มเติม ไปที่หน้า [ค่าเสื่อมราคาสินทรัพย์](/docs/user/manual/th/asset/asset-depreciation) page.
 
-## 11. Book Asset Depreciation Entry Automatically
-When checked, an automatic entry for an asset depreciation will be created based on the first date set. For example, yearly depreciation for an item will be scheduled for the next 3/4 years based on the Number of Depreciations Booked set in the Asset master. For more details, visit the [Asset Depreciation](/docs/user/manual/en/asset/asset-depreciation) page.
+## 12. อนุญาตศูนย์ต้นทุนในการเข้าบัญชีงบดุล 
+หากเลือก ระบบจะอนุญาตให้ผู้ใช้แท็กรายการในบัญชีงบดุลกับศูนย์ต้นทุน ตามค่าเริ่มต้นศูนย์ต้นทุนจะพร้อมใช้งานสำหรับบัญชีกำไร/ขาดทุนเท่านั้น
 
-## 12. Allow Cost Center in Entry of Balance Sheet Account
-If checked, system will allow user to tag entries in Balance Sheet Accounts against a Cost Center. By default Cost Center is available only for Profit/Loss account.
+## เพิ่มภาษีและค่าธรรมเนียมโดยอัตโนมัติจากเทมเพลตภาษีสินค้า 
+การเปิดใช้งานนี้จะเติมข้อมูลตารางภาษีในธุรกรรม ถ้า [เทมเพลตภาษีสินค้า](/docs/user/manual/th/accounts/item-tax-template) ถูกตั้งค่าสำหรับสินค้า และเลือกรายการนั้นในธุรกรรม
 
-## 13. Automatically Add Taxes and Charges from Item Tax Template
-Enabling this will populate the Taxes table in transactions if an [Item Tax Template](/docs/user/manual/en/accounts/item-tax-template) is set for an Item and that Item is selected in the transaction.
-
-## 14. Automatically Fetch Payment Terms
-Enabling this will automatically fetch the Payment Terms based on the Supplier.
+## การใช้เงื่อนไขการชำระเงินโดยอัตโนมัติ 
+การเปิดใช้งานนี้จะเรียกเงื่อนไขการชำระเงินตามซัพพลายเออร์โดยอัตโนมัติ
 
 ## 15. Print Settings
 
 ![Account Settings]({{docs_base_url}}/assets/img/accounts/account-settings-1.png)
 
-* **Show Inclusive Tax In Print**: The applied taxes will be shown in the print view.
-* **Show Payment Schedule in Print**: The Payment Schedule table is visible on using [Payment Terms](/docs/user/manual/en/accounts/payment-terms). Enabling this will show this table in print view.
+* **แสดงภาษีรวมในการพิมพ์** : ภาษีที่ใช้จะแสดงในมุมมองการพิมพ์
+* **แสดงกำหนดการชำระเงินในพิมพ์** : ตารางกำหนดการชำระเงินสามารถมองเห็นได้ในการใช้[เงื่อนไขการชำระเงิน ](/docs/user/manual/th/accounts/payment-terms). การเปิดใช้งานนี้จะแสดงตารางนี้ในมุมมองการพิมพ์
 
-## 16. Allow Stale Exchange Rate
-This should be unchecked if you want ERPNext to check the age of records fetched from Currency Exchange in foreign currency transactions. If it is unchecked, the exchange rate field will be read-only in documents.
+## 16. อนุญาตอัตราแลกเปลี่ยนที่ค้างอยู่ 
+สิ่งนี้ควรไม่ถูกเลือกหากคุณต้องการให้ ERPNext ตรวจสอบอายุของบันทึกที่ดึงมาจากการแลกเปลี่ยนสกุลเงินในธุรกรรมสกุลเงินต่างประเทศ หากไม่เลือก ช่องอัตราแลกเปลี่ยนจะเป็นแบบอ่านอย่างเดียวในเอกสาร
 
-Stale Days is the number of days to use when deciding if a Currency Exchange record is stale. This is valid when 'Allow Stale Rates' is **disabled**. So, if the Stale Days is set as 10, stale rates that are 10 days will be allowed. If Allow Stale Rates is enabled, there is no time limit on the age of stale rates.
+วันค้าง (Stale Days) คือจำนวนวันที่ใช้เมื่อตัดสินใจว่าบันทึกการแลกเปลี่ยนสกุลเงินนั้นเก่าแล้วหรือไม่ นี้ใช้งานได้เมื่อ 'อนุญาตเก่าราคา' เป็นคนพิการ ดังนั้น หากกำหนดวันค้างเป็น 10 อัตราที่ค้างอยู่ที่ 10 วันจะได้รับอนุญาต หากเปิดใช้ "อนุญาตอัตราค้าง" จะไม่มีการจำกัดอายุของอัตราค้าง
 
-If stale rates are enabled, the order of fetching is:
+หากเปิดใช้งานอัตราการค้าง ลำดับการดึงข้อมูลคือ:
 
-* Latest rate from Currency Exchange form
-* If no Currency Exchange is found latest rate as per market is fetched automatically
+* อัตราล่าสุดจากแบบฟอร์มแลกเปลี่ยนเงินตรา
+* หากไม่พบอัตราแลกเปลี่ยนเงินตราล่าสุดตามตลาดจะถูกเรียกโดยอัตโนมัติ
 
-If stale rates are disabled, the order of fetching is:
+หากปิดใช้งานอัตราการค้าง ลำดับการดึงข้อมูลคือ:
 
-* Latest rate from Currency Exchange form upto number of days set in 'Stale Days'
-* If no Currency Exchange is found Latest rate as per market is fetched automatically
+* อัตราล่าสุดจากรูปแบบการแลกเปลี่ยนเงินตราไม่เกินจำนวนวันที่กำหนดใน 'วันค้าง (Stale Days)'
+* หากไม่พบการแลกเปลี่ยนเงินตรา อัตราล่าสุดตามตลาดจะถูกเรียกโดยอัตโนมัติ
 
 
-## 17. Use Custom Cash Flow Format
-You may choose to use Custom Cash Flow Formats to customize what the Cash Flow report looks like. To know more, [visit this page](/docs/user/manual/en/accounts/articles/how-to-customise-cash-flow-report).
+## 17. ใช้รูปแบบกระแสเงินสดที่กำหนดเอง
+คุณอาจเลือกใช้รูปแบบกระแสเงินสดแบบกำหนดเองเพื่อกำหนดลักษณะของรายงานกระแสเงินสดได้ หากต้องการทราบข้อมูลเพิ่มเติมสามารถอ่านได้ [ที่นี่](/docs/user/manual/th/accounts/articles/how-to-customise-cash-flow-report).

@@ -1,22 +1,21 @@
 <!-- add-breadcrumbs -->
-# Bank
+# ธนาคาร
 
-In ERPNext, saving different banks lets you upload an excel sheet and map the transactions to the ledger. The transactions are created as Bank Transactions. These can then be used for reference and reports. This is done using [Bank Reconciliation](/docs/user/manual/en/accounts/bank-reconciliation).
+ใน ERPNext การบันทึกธนาคารต่างๆ ช่วยให้คุณสามารถอัปโหลดแผ่นงาน Excel และจับคู่ธุรกรรมกับบัญชีแยกประเภทได้ ธุรกรรมถูกสร้างขึ้นเป็นธุรกรรมธนาคาร สิ่งเหล่านี้สามารถใช้สำหรับการอ้างอิงและรายงานได้ นี้จะกระทำโดย [การกระทบยอดธนาคาร](/docs/user/manual/th/accounts/bank-reconciliation).
 
-To access Bank, go to:
-> Home > Accounting > Bank Statement > Bank
+ในการเข้าถึงธนาคาร ไปที่:
+> หน้าหลัก > การบัญชี > ใบแจ้งยอดธนาคาร > ธนาคาร
 
 ![Bank](/docs/assets/img/accounts/bank.png)
 
-## 1. How to create a Bank
-Creating a Bank is simple, go to the Bank list, click on New, and enter a name.
+## 1. วิธีสร้างธนาคาร
+การสร้างธนาคารเป็นเรื่องง่าย ไปที่รายการธนาคาร คลิกใหม่ แล้วป้อนชื่อ
 
-## 1.1 Configuring data import for a Bank
+## 1.1 การกำหนดค่าการนำเข้าข้อมูลสำหรับธนาคาร
 
-1. Under 'Field in Bank Transaction' select the field to be updated in the 'Bank Statement Transaction Entry' form.
-1. Under 'Column in Bank File', enter the column in the excel file exported from the bank.
+1. ภายใต้ 'ฟิลด์ในธุรกรรมธนาคาร' เลือกฟิลด์ที่จะปรับปรุงในแบบฟอร์ม 'รายการธุรกรรมใบแจ้งยอดจากธนาคาร'
+1. ภายใต้ 'คอลัมน์ในไฟล์ธนาคาร' ให้ป้อนคอลัมน์ในไฟล์ excel ที่ส่งออกจากธนาคาร
 
-On setting this up, [Bank Reconciliation](/docs/user/manual/en/accounts/bank-reconciliation) can be done smoothly.
-
-## 2. Related Topics
-1. [Bank Account](/docs/user/manual/en/accounts/bank-account)
+ในการตั้งค่า [การกระทบยอดธนาคาร](/docs/user/manual/th/accounts/bank-reconciliation) อ่านเพิ่มเติมได้ที่นี่
+## 2. หัวข้อที่เกี่ยวข้อง
+1. [บัญชีธนาคาร](/docs/user/manual/th/accounts/bank-account)

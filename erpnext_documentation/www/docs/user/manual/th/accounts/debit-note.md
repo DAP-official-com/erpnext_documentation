@@ -1,44 +1,45 @@
 <!-- add-breadcrumbs -->
-# Debit Note
+# เดบิตโน๊ต (ใบเพิ่มหนี้)
 
-**A Debit Note is a document sent by a buyer to the Supplier notifying that a debit has been recorded against the goods returned to the Supplier.**
+**เดบิตโน๊ตเป็นเอกสารที่ผู้ซื้อส่งไปยังซัพพลายเออร์เพื่อแจ้งให้ทราบว่ามีการบันทึกเดบิตกับสินค้าที่ส่งคืนไปยังซัพพลายเออร์แล้ว**
 
-A Debit Note is issued for the value of the goods returned. In some cases, sellers are seen sending Debit Notes which should be treated as like another invoice.
+เดบิตโน๊ตจะออกสำหรับมูลค่าของสินค้าที่ส่งคืน ในบางกรณี เห็นผู้ขายส่งใบเพิ่มหนี้ซึ่งควรปฏิบัติเหมือนใบแจ้งหนี้อื่น
 
-A Debit is for your record of the debit against the Items your return.
+เดบิตมีไว้สำหรับบันทึกการหักบัญชีกับรายการที่คุณส่งคืน
 
-## 1. How to create Debit Note
+## 1. วิธีสร้างเดบิตโน๊ต
 
-The user can make a Debit Note against the Purchase Invoice or they can directly make Debit Note from the Purchase Invoice without reference.
+ผู้ใช้สามารถทำใบลดหนี้กับใบกำกับสินค้าหรือทำใบเพิ่มหนี้จากใบกำกับสินค้าได้โดยตรงโดยไม่ต้องอ้างอิง
 
-1. Go to the respective Purchase Invoice and click on **Create > Return / Debit Note**.
+1. ปที่แต่ละใบแจ้งหนี้การซื้อและคลิกที่ **สร้าง > ส่งคืน / เดบิตโน๊ต**.
  ![Debit Note from Invoice](/docs/assets/img/accounts/debit-note-from-invoice.png)
-1. The Supplier and Item details will be fetched as set in the Purchase Invoice.
-1. If you had paid partially or fully, make a Payment Entry against the original Purchase Invoice.
-1. Save and Submit.
+1. รายละเอียดซัพพลายเออร์และรายการจะถูกดึงตามที่กำหนดไว้ในใบแจ้งหนี้การขาย
+1. หากคุณได้ชำระเงินบางส่วนหรือทั้งหมดแล้ว ให้ทำรายการชำระเงินกับใบกำกับสินค้าเดิม
+1. บันทึกและส่ง
  <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/accounts/debit-note.png">
 
-The other steps are similar to a [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice).
+ขั้นตอนอื่น ๆ ที่มีลักษณะคล้ายกับ [ใบแจ้งหนี้ซื้อ](/docs/user/manual/en/accounts/purchase-invoice).
 
 
-### 1.1 How does Debit Note affect ledger
-Once a Payment Entry is created against the original Purchase Invoice, the amount will be added to the Supplier's account in negative so that the next time you make a purchase, this amount will be adjusted. 
+### 1.1 ใบเพิ่มหนี้มีผลกระทบต่อบัญชีแยกประเภทอย่างไร
+เมื่อมีการสร้างรายการการชำระเงินกับใบแจ้งหนี้การซื้อเดิม จำนวนเงินจะถูกเพิ่มไปยังบัญชีซัพพลายเออร์เป็นค่าลบ ดังนั้นในครั้งต่อไปที่คุณทำการซื้อ จำนวนเงินนี้จะถูกปรับแทน
 
-This is how the ledger is affected after a payment entry against a returned invoice:
+ใบเพิ่มหนี้จะย้อนกลับผลกระทบของใบสั่งซื้อ
 ![Debit Note Ledger](/docs/assets/img/accounts/debit-note-ledger.png)
 
-Refer the [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice) page for any other details.
+อ่าน[ใบแจ้งหนี้การซื้อ](/docs/user/manual/en/accounts/purchase-invoice) เพื่อทราบข้อมูลเพิ่มเติม
 
-### 1.2 No payment was made against Sales Invoice
-In case **no payment** was made against the original invoice, you could just cancel the Sales Invoice. But, if only 5 out of 10 Items are being returned from an invoice, creating a Debit Note is useful for updating the ledger.
+### 1.2 ไม่มีการชำระเงินกับใบแจ้งหนี้การขาย
+ในกรณีที่ **ไม่มีการชำระเงิน** กับใบแจ้งหนี้เดิม คุณสามารถยกเลิกใบกำกับสินค้าได้ แต่ถ้ามีการส่งคืนสินค้าเพียง 5 ใน 10 รายการจากใบแจ้งหนี้ การสร้างใบลดหนี้จะมีประโยชน์สำหรับการอัปเดตบัญชีแยกประเภท
 
-## 2. Example
-From Supplier Blue Mills, you had purchased Cotton worth Rs 2400 + taxes and at the time of delivery, you found that the products were damaged. Now you returned the product a Debit Note will be issued.
+## 2. ตัวอย่าง
 
-Debit Note with payment entry in ERPNext for above example is as below:
+จากซัพพลายเออร์ Blue Mills คุณได้ซื้อ Cotton มูลค่า Rs 2400 + ภาษี และ ณ เวลาที่จัดส่ง คุณพบว่าผลิตภัณฑ์ได้รับความเสียหาย ตอนนี้คุณคืนสินค้าแล้วจะมีการออกใบลดหนี้ให้
+
+เดบิตโน๊ตพร้อมรายการชำระเงินใน ERPNext สำหรับตัวอย่างข้างต้นมีดังนี้:
 
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/accounts/debit_note_example1.gif">
 
-### 3. Related Topics
-1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
-1. [Credit Note](/docs/user/manual/en/accounts/credit-note)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [รายการชำระเงิน](/docs/user/manual/en/accounts/payment-entry)
+1. [เครดิตโน๊ต (ใบลดหนี้)](/docs/user/manual/en/accounts/credit-note)

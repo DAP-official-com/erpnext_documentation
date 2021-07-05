@@ -1,117 +1,109 @@
 <!-- add-breadcrumbs -->
-# Point of Sale Profile
+# โปรไฟล์การขายหน้าร้าน (Point of Sale (POS))
 
-**In ERPNext, a POS profile allows using the Point of Sale feature.**
+**ใน ERPNext โปรไฟล์ POS อนุญาตให้ใช้คุณสมบัติการขายหน้าร้าน**
 
-POS includes advanced features to cater to different functionality, such as
-inventory management, CRM, financials, warehousing, etc., all built into the
-POS software. Before modern POS, all of these functions were done
-independently and required the manual re-keying of information, which could
-lead to entry errors.
+POS มีคุณสมบัติขั้นสูงเพื่อรองรับการทำงานที่แตกต่างกัน เช่น การจัดการสินค้าคงคลัง, CRM, การเงิน, คลังสินค้า ฯลฯ ทั้งหมดนี้รวมอยู่ในซอฟต์แวร์ POS ก่อน POS สมัยใหม่ ฟังก์ชันทั้งหมดเหล่านี้ทำขึ้นโดยอิสระและจำเป็นต้องมีการคีย์ข้อมูลใหม่ด้วยตนเอง ซึ่งอาจนำไปสู่ข้อผิดพลาดในการป้อนข้อมูล
 
-If you are in retail operations, you want your Point of Sale to be as quick
-and efficient as possible. To do this, you can create a POS Profile for a user.
+หากคุณอยู่ในธุรกิจค้าปลีก คุณต้องการให้ระบบขายหน้าร้านของคุณรวดเร็วและมีประสิทธิภาพมากที่สุด ในการทำเช่นนี้ คุณสามารถสร้างโปรไฟล์ POS สำหรับผู้ใช้
 
-To access the POS Profile list, go to:
-> Home > Retail > Retail Operations > Point-of-Sale Profile
+ในการเข้าถึงรายการโปรไฟล์ POS ไปที่:
 
-## 1. How to create a POS Profile
-1. Go to the Point-of-Sale Profile and click on New.
-1. Enter a name for the profile.
-1. Select a [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series).
-1. Set a Write Off Account and Write Off Cost Center to which the transactions will be recorded.
-1. Set up payment modes in the table, the default will be cash if nothing is set here. Only the modes set here will be available when using POS. After adding payment modes, set one of them as the default payment method by ticking the checkbox.
+> หน้าแรก > การขายปลีก > การขายปลีก > โปรไฟล์การขายหน้าร้าน
+
+## 1. วิธีสร้างโปรไฟล์ POS
+1. ไปที่โปรไฟล์การขายหน้าร้าน แล้วคลิก ใหม่
+1. ป้อนชื่อสำหรับโปรไฟล์
+1. เลือก [การตั้งชื่อเป็นชุด](/docs/user/manual/th/setting-up/settings/naming-series).
+1. ตั้งค่าบัญชีตัดจำหน่ายและศูนย์ต้นทุนตัดจำหน่ายซึ่งจะมีการบันทึกธุรกรรม
+1. ตั้งค่าโหมดการชำระเงินในตาราง ค่าเริ่มต้นจะเป็นเงินสดหากไม่มีการตั้งค่าไว้ที่นี่ เฉพาะโหมดที่ตั้งค่าไว้ที่นี่เท่านั้นที่จะสามารถใช้ได้เมื่อใช้ POS หลังจากเพิ่มโหมดการชำระเงินแล้ว ให้ตั้งค่าวิธีใดวิธีหนึ่งเป็นวิธีการชำระเงินเริ่มต้นโดยทำเครื่องหมายที่ช่องทำเครื่องหมาย
  <img class="screenshot" alt="POS Setting" src="{{docs_base_url}}/assets/img/pos-setting/default_mop.png">
-1. Set the default amounts for the payment methods (recommended: 0).
-1. Save.
+1. กำหนดจำนวนเงินเริ่มต้นสำหรับวิธีการชำระเงิน (แนะนำ: 0)
+1. บันทึก
  <img class="screenshot" alt="POS Setting" src="{{docs_base_url}}/assets/img/pos-setting/pos_profile.png">
 
-### 1.1 Additional options when creating a POS Profile
+### 1.1 ตัวเลือกเพิ่มเติมเมื่อสร้างโปรไฟล์ POS
 
-* **Customer**: Users can sell particular products to the particular Customers from the POS by adding item groups, customer groups in the POS Profile.
-* **Warehouse**: The stock quantities in the selected Warehouse will be affected for POS transactions with this POS Profile.
-* **Campaign**: A sales [Campaign](/docs/user/manual/en/CRM/campaign) can be linked here to track total sales against it.
-* **Company Address**: If the POS counter is set up at a Company branch, the address can be selected here.
+* **ลูกค้า** : ผู้ใช้สามารถขายผลิตภัณฑ์เฉพาะให้กับลูกค้ารายใดรายหนึ่งจาก POS โดยการเพิ่มกลุ่มสินค้า กลุ่มลูกค้าในโปรไฟล์ POS
+* **คลังสินค้า** : ปริมาณสต็อคในคลังสินค้าที่เลือกจะได้รับผลกระทบสำหรับธุรกรรม POS ที่มีโปรไฟล์ POS นี้
+* **แคมเปญ**: สามารถเชื่อมโยง [แคมเปญ](/docs/user/manual/th/CRM/campaign) การขายได้ที่นี่เพื่อติดตามยอดขายทั้งหมดเทียบกับแคมเปญดังกล่าว
+* **ที่อยู่บริษัท**: หากตั้งเคาน์เตอร์ POS ที่สาขาของบริษัท สามารถเลือกที่อยู่ได้ที่นี่
+* **อัปเดตสต็อค** : หากเปิดใช้งาน ปริมาณสต็อคจะได้รับผลกระทบเมื่อมีการทำธุรกรรมกับโปรไฟล์ POS นั่นคือ รายการบัญชีแยกประเภทจะถูกสร้างขึ้นเมื่อคุณ "ส่ง" ใบกำกับสินค้านี้ ดังนั้นจึงไม่จำเป็นต้องมีใบส่งมอบแยกต่างหาก
+* **ละเว้นกฎการกำหนดราคา**: [กฎการกำหนดราคา](/docs/user/manual/th/accounts/pricing-rule) ที่ใช้งานอยู่จะถูกละเว้นสำหรับโปรไฟล์ POS นี้
+* **อนุญาตให้ลบ** : ในออฟไลน์ POS ข้อมูลจะถูกแคช การทำเครื่องหมายที่ช่องนี้จะทำให้ผู้ใช้สามารถลบใบกำกับสินค้าที่แคชไว้ในขั้นตอนแบบร่างได้
+* **อนุญาตให้ผู้ใช้แก้ไขอัตรา** : ผู้ใช้โปรไฟล์ POS จะได้รับอนุญาตให้แก้ไข 'อัตรา' ของรายการที่เพิ่มในธุรกรรม
+* **อนุญาตให้ผู้ใช้แก้ไขส่วนลด** : ผู้ใช้โปรไฟล์ POS จะได้รับอนุญาตให้แก้ไข 'ส่วนลด' ของรายการที่เพิ่มในธุรกรรม
+* **อนุญาตให้พิมพ์ก่อนชำระเงิน** : อนุญาตให้ผู้ใช้ POS พิมพ์ใบแจ้งหนี้ก่อนชำระเงิน
+* **แสดงรายการในสต็อก** : จำนวนรายการที่เหลือจากคลังสินค้าที่เลือกจะแสดงต่อผู้ใช้ POS
 
-* **Update Stock**: If enabled, the stock quantities will be affected when transactions are performed with the POS Profile. That is, Stock Ledger Entries will be made when you “Submit” this Sales Invoice thereby eliminating the need for a separate Delivery Note.
-* **Ignore Pricing Rule**: Any active [Pricing Rule](/docs/user/manual/en/accounts/pricing-rule) will be ignored for this POS Profile.
-* **Allow Delete**: In Offline POS, the data is cached. Ticking this checkbox will allow User to delete the Sales Invoice cached in the Draft stage.
-* **Allow user to edit Rate**: The POS Profile user will be allowed to edit the 'Rate' of Items added in transactions.
-* **Allow user to edit Discount**: The POS Profile user will be allowed to edit the 'Discount' of Items added in transactions.
-* **Allow Print Before Pay**: This will allow the POS User to print an invoice before the payment is made.
-* **Display Items In Stock**: The remaining quantity of Items from the selected Warehouse will be shown to the POS User.
+## 2. คุณสมบัติ
 
-## 2. Features
+### 2.1 ใช้ได้กับผู้ใช้
+ตามค่าเริ่มต้น ผู้ใช้การขายทั้งหมดสามารถเข้าถึงโปรไฟล์ POS ที่สร้างขึ้นใน ERPNext อย่างไรก็ตาม หากคุณต้องการให้ผู้ใช้บางรายเท่านั้นที่เข้าถึงโปรไฟล์ POS คุณสามารถเพิ่มพวกเขาลงในตารางได้ เมื่อตั้งค่าผู้ใช้รายเดียวในโปรไฟล์ POS แล้ว ผู้ใช้รายอื่นจะไม่สามารถใช้โปรไฟล์ POS นี้สำหรับธุรกรรมการขายปลีกได้
 
-### 2.1 Applicable for Users
-By default, all Sales Users can access the POS Profiles created in ERPNext. However, if you want only certain Users to access certain POS Profiles, you can add them to the table. Once even one User is set in the POS Profile, other Users cannot use this POS Profile for retail transactions.
-
-**Setting POS Profile as default**: On ticking the Default checkbox in the table, the current POS Profile becomes the default POS Profile for that User. So, the next time the User logs into the system, the POS Profile will be set by default.
+**การตั้งค่าโปรไฟล์ POS เป็นค่าเริ่มต้น**: เมื่อทำเครื่องหมายที่กล่องกาเครื่องหมายเริ่มต้นในตาราง โปรไฟล์ POS ปัจจุบันจะกลายเป็นโปรไฟล์ POS เริ่มต้นสำหรับผู้ใช้รายนั้น ดังนั้น ในครั้งต่อไปที่ผู้ใช้เข้าสู่ระบบ โปรไฟล์ POS จะถูกตั้งค่าตามค่าเริ่มต้น
 
 ![POS User](/docs/assets/img/pos-setting/pos-profile-default.png)
 
-> Note: If you specify a particular User, the POS setting will be
-applied only to that User. If the User option is left blank, the setting will
-be set for all users. To understand how POS works, visit the [Point of Sale](/docs/user/manual/en/accounts/point-of-sales) page.
+> หมายเหตุ: หากคุณระบุผู้ใช้รายใดรายหนึ่ง การตั้งค่า POS จะถูกนำไปใช้กับผู้ใช้รายนั้นเท่านั้น หากปล่อยตัวเลือกผู้ใช้ว่างไว้ การตั้งค่านี้จะถูกตั้งค่าสำหรับผู้ใช้ทั้งหมด เพื่อทำความเข้าใจว่า POS ทำงานอย่างไร ให้ไปที่หน้า [ระบบขายหน้าร้าน](/docs/user/manual/th/accounts/point-of-sales)
 
 
-### 2.2 Setting Item Group and Customer Group
-On setting an Item Group/Customer Group in a POS Profile, the group will be automatically selected when making transactions with the POS Profile.
+### 2.2 การตั้งค่ากลุ่มสินค้าและกลุ่มลูกค้า
+ในการตั้งค่ากลุ่มสินค้า/กลุ่มลูกค้าในโปรไฟล์ POS กลุ่มจะถูกเลือกโดยอัตโนมัติเมื่อทำธุรกรรมกับโปรไฟล์ POS
 
 <img class="screenshot" alt="POS Setting" src="{{docs_base_url}}/assets/img/pos-setting/item_customer_group.png">
 
-### 2.3 Print Settings
+### 2.3 การตั้งค่าการพิมพ์
 
 ![POS Print](/docs/assets/img/pos-setting/pos-profile-print.png)
 
-#### Print Format for Online
-You can set a Print Format which will decide what the layout of the printed document will look like. To know more, visit the [Print Format](/docs/user/manual/en/setting-up/print/print-format) page.
+#### รูปแบบการพิมพ์สำหรับออนไลน์
+คุณสามารถตั้งค่ารูปแบบการพิมพ์ซึ่งจะกำหนดว่าเค้าโครงของเอกสารที่พิมพ์ออกมาจะเป็นอย่างไร หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [รูปแบบการพิมพ์](/docs/user/manual/th/setting-up/print/print-format)
 
-#### Letterhead
-You can print your POS Sales Invoice on your Company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+#### หัวจดหมาย
+คุณสามารถพิมพ์ใบกำกับสินค้า POS ของคุณบนหัวจดหมายของบริษัทของคุณ ทราบข้อมูลเพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/letter-head).
 
+#### พิมพ์หัวเรื่อง
+ส่วนหัวของใบแจ้งหนี้การขาย POS ยังสามารถเปลี่ยนแปลงได้เมื่อพิมพ์เอกสาร ตัวอย่างเช่น ส่วนหัวอาจเป็น 'ใบแจ้งหนี้' หรือ 'การเรียกเก็บเงิน' คุณสามารถทำได้โดยการเลือก**การพิมพ์หัวเรื่อง** ในการสร้างหัวพิมพ์ใหม่ ให้ไปที่: หน้าหลัก > การตั้งค่า > การพิมพ์ > พิมพ์หัวเรื่อง ทราบข้อมูลเพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/print-headings).
 
-#### Print Headings
-POS Sales Invoice headings can also be changed when printing the document. For example, the heading can be 'Invoice', or 'Bill'. You can do this by selecting a **Print Heading**. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### ข้อกำหนดและเงื่อนไข
+อาจมีข้อกำหนดและเงื่อนไขบางประการสำหรับสินค้าที่คุณกำลังขาย ซึ่งสามารถใช้ได้ที่นี่ หากต้องการทราบข้อมูลเกี่ยวกับการเพิ่มข้อตกลงและเงื่อนไข อ่าน [ที่นี่](/docs/user/manual/th/setting-up/print/terms-and-conditions) เพื่อทราบข้อมูลเพิ่มเติม
 
-#### Terms and Conditions
-There may be certain terms and conditions on the Item you're selling, these can be applied here. To know about adding Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions).
+### 2.4 การตั้งค่า POS ออฟไลน์
+ERPNext เป็นเครื่องมือออนไลน์ที่ทำงานโดยใช้อินเทอร์เน็ต อย่างไรก็ตาม คุณสามารถใช้คุณลักษณะ POS ใน ERPNext แบบออฟไลน์ได้ ในการดำเนินการดังกล่าว ก่อนอื่นให้เปิดใช้งาน 'ใช้ POS ในโหมดออฟไลน์' ในการตั้งค่า POS
 
-### 2.4 Offline POS settings
-ERPNext is an online tool that runs using the internet. However, you can use the POS feature in ERPNext offline. To do so, first enable 'Use POS in Offline Mode' in POS Settings.
+เมื่อออนไลน์ หน้าต่าง POS จะแสดง 'ออนไลน์' มิฉะนั้น ระบบ POS จะถูกใช้งานแบบออฟไลน์
 
-When online, the POS window will show 'Online', otherwise, the POS system is being used offline.
+จากนั้นสามารถกำหนดค่าต่อไปนี้ในโปรไฟล์ POS:
 
-Then the following can be configured in the POS Profile:
-
-* [Territory](/docs/user/manual/en/selling/territory)
-* [Print Format](/docs/user/manual/en/setting-up/print/print-format)
-* [Customer Group](/docs/user/manual/en/CRM/customer-group)
+* [พื้นที่](/docs/user/manual/th/selling/territory)
+* [รูปแบบการพิมพ์](/docs/user/manual/th/setting-up/print/print-format)
+* [กลุ่มลูกค้า](/docs/user/manual/th/CRM/customer-group)
 
 ![POS Offline](/docs/assets/img/pos-setting/pos-profile-offline.png)
 
-### 2.5 Accounting
+### 2.5 การบัญชี
 
-* **Price List**: A [Price List](/docs/user/manual/en/stock/price-lists) stores the [Item Prices](/docs/user/manual/en/stock/item-price). Setting a Price List here will fetch the Item Prices for the current POS Profile from that Price List.
-* **Currency**: By default, this will be set according to the Company's default currency. However, you can change it. In case you change the currency, remember to change the accounts too.
-* **Taxes and Charges**: Selecting a [Sales Taxes and Charges Template](/docs/user/manual/en/selling/sales-taxes-and-charges-template) or [Purchase Taxes and Charges Template](/docs/user/manual/en/buying/purchase-taxes-and-charges-template) here will automatically apply the taxes and charges to the POS transaction.
-* **Apply Discount On**: Here you can set whether the discount is to be applied on the Grand Total (pre tax amount) or the Net Total (post tax amount).
-* **Tax Category**: On selecting a [Tax Category](/docs/user/manual/en/accounts/tax-category) here, the Tax Rules associated with the Tax Category will be applied to each transaction performed from this POS Profile.
+* **รายการราคา**: [รายการราา](/docs/user/manual/th/stock/price-lists) เป็นที่เก็บ [ราคาสินค้า](/docs/user/manual/th/stock/item-price) การตั้งค่ารายการราคาที่นี่จะดึงราคาสินค้าสำหรับโปรไฟล์ POS ปัจจุบันจากรายการราคานั้น
+* **สกุลเงิน** : โดยค่าเริ่มต้น ค่านี้จะถูกตั้งค่าตามสกุลเงินเริ่มต้นของบริษัท อย่างไรก็ตาม คุณสามารถเปลี่ยนได้ ในกรณีที่คุณเปลี่ยนสกุลเงิน อย่าลืมเปลี่ยนบัญชีด้วย
+* **ภาษีและค่าธรรมเนียม**: การเลือกเทมเพลตภาษีขายและค่าธรรมเนียม [เทมเพลตภาษีขายและค่าธรรมเนียม](/docs/user/manual/th/selling/sales-taxes-and-charges-template) หรือ [เทมเพลตภาษีและค่าธรรมเนียมการซื้อ](/docs/user/manual/th/buying/purchase-taxes-and-charges-template) จะใช้ภาษีและค่าธรรมเนียมกับธุรกรรม POS โดยอัตโนมัติ
+* **การใช้ส่วนลด**: ที่นี่คุณสามารถกำหนดได้ว่าจะใช้ส่วนลดกับยอดรวม (จำนวนก่อนหักภาษี) หรือยอดรวมสุทธิ (จำนวนหลังหักภาษี) หรือไม่
+* **หมวดหมู่ภาษี**: ในการเลือก [ประเภทภาษี](/docs/user/manual/th/accounts/tax-category) ที่นี่ กฎภาษีที่เกี่ยวข้องกับประเภทภาษีจะถูกนำไปใช้กับแต่ละธุรกรรมที่ดำเนินการจากโปรไฟล์ POS นี้
 
-The following accounts can be set so that the general ledger is updated accordingly:
+บัญชีต่อไปนี้สามารถตั้งค่าเพื่อให้บัญชีแยกประเภททั่วไปได้รับการปรับปรุงตามนั้น:
 
-* Account for Change Amount
-* Write Off Account
-* Write Off Cost Center
-* Income Account
-* Expense Account
+* บัญชีสำหรับการเปลี่ยนแปลงจำนวนเงิน
+* ตัดบัญชี
+* ศูนย์ต้นทุนตัดจำหน่าย
+* บัญชีรายได้
+* บัญชีค่าใช้จ่าย
 
-### 2.5 Accounting Dimensions
-Accounting Dimensions lets you tag transactions based on a specific Territory, Branch, Customer, etc. This helps in viewing accounting statements separately based on the criteria selected. To know more, visit the [Accounting Dimensions](/docs/user/manual/en/accounts/accounting-dimensions) page.
+### 2.5 ลำดับขั้นข้อมูลบัญชี
+ลำดับขั้นข้อมูลบัญชีช่วยให้คุณแท็กธุรกรรมตามเขตแดน สาขา ลูกค้า ฯลฯ ซึ่งช่วยในการดูใบแจ้งยอดทางบัญชีแยกกันตามเกณฑ์ที่เลือก หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่ [ลำดับขั้นข้อมูลบัญชี](/docs/user/manual/th/accounts/accounting-dimensions)
 
-> Note: Cost Center is treated as a dimension by default.
+> หมายเหตุ: ศูนย์ต้นทุนจะถือเป็นลำดับขั้นเริ่มต้น
 
-## 3. Related Topics
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
-1. [Point Of Sales](/docs/user/manual/en/accounts/point-of-sales)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)
+1. [ระบบการขายหน้าร้าน](/docs/user/manual/th/accounts/point-of-sales)

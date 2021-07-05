@@ -1,73 +1,73 @@
 <!-- add-breadcrumbs -->
-# Subscription
+# สมัครสมาชิก
 
-If you offer a service that requires renewal in a certain time period or you pay some monthly expenses like rent (yearly, monthly, quarterly, etc.), you can use the Subscription feature in ERPNext to track them. The Subscription master captures all the details required for the auto-creation of Sales or Purchase Invoices.
+หากคุณให้บริการที่ต้องต่ออายุในช่วงเวลาหนึ่งหรือคุณจ่ายค่าใช้จ่ายรายเดือน เช่น ค่าเช่า (รายปี รายเดือน รายไตรมาส ฯลฯ) คุณสามารถใช้คุณสมบัติการสมัครรับข้อมูลใน ERPNext เพื่อติดตามได้ ต้นแบบการสมัครรับข้อมูลจะรวบรวมรายละเอียดทั้งหมดที่จำเป็นสำหรับการสร้างใบแจ้งหนี้การขายหรือการซื้อโดยอัตโนมัติ
 
-Let's consider a use-case of ERPNext subscription itself. Our hosting plans are available on a yearly basis. Each Customer's account has a subscription expiry date, after which customers must renew their subscription with us.
+ลองพิจารณากรณีการใช้งานของการสมัครสมาชิก ERPNext เอง แผนการโฮสต์ของเรามีให้บริการทุกปี บัญชีของลูกค้าแต่ละรายมีวันหมดอายุของการสมัคร หลังจากนั้นลูกค้าจะต้องต่ออายุการสมัครกับเรา
 
-To manage the client's subscription expiry and auto-generation of Sales Invoice for the renewal, we use the Subscription feature.
+ในการจัดการการหมดอายุของการสมัครของลูกค้าและการสร้างใบกำกับการขายอัตโนมัติสำหรับการต่ออายุ เราใช้คุณลักษณะการสมัครสมาชิก
 
-To access the Subscription list, go to:
-> Home > Accounting > Subscription Management > Subscription
+ในการเข้าถึงรายการสมัครสมาชิก ไปที่:
+> หน้าแรก > การบัญชี > การจัดการการสมัครสมาชิก > การสมัครสมาชิก
 
-## 1. Prerequisites
-Before creating and using a Subscription, it is advisable to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้งานการสมัครสมาชิก ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-1. [Subscription Plan](/docs/user/manual/en/accounts/subscription-plan)
+1. [แผนการสมัครสมาชิก](/docs/user/manual/th/accounts/subscription-plan)
 
-## 2. How to set a Subscription
-1. Go to the Subscription list and click on New.
-1. Select Party Type as 'Customer' or 'Supplier' and select the party.
-1. Set the Start Date from when the subscription will be active.
-1. Optionally you can also enter the subscription end date if you know it before hand.
-1. Days Until Due is the number of days within which Customer has to pay a generated Sales Invoice.
-1. Select the [Subscription Plans](/docs/user/manual/en/accounts/subscription-plan).
-1. Save.
+## 2. วิธีตั้งค่าการสมัครสมาชิก
+1. ไปที่รายการสมัครสมาชิกและคลิกที่ใหม่
+1. เลือกประเภทผู้ที่เกี่ยวข้องเป็น 'ลูกค้า' หรือ 'ซัพพลายเออร์' และเลือกผู้ที่เกี่ยวข้อง
+1. กำหนดวันที่เริ่มต้นจากเวลาที่การสมัครใช้งานจะเปิดใช้งาน
+1. คุณยังสามารถป้อนวันที่สิ้นสุดการสมัครรับข้อมูลได้หากคุณทราบล่วงหน้า
+1. วันจนกว่าจะครบกำหนดคือจำนวนวันที่ลูกค้าต้องชำระใบกำกับสินค้าที่สร้างขึ้น
+1. เลือก [แผนการสมัครสมาชิก](/docs/user/manual/th/accounts/subscription-plan).
+1. บันทึก
  ![Subscription](/docs/assets/img/accounts/subscription.png)
 
-Based on the subscription start and end date, actual dates for invoices will be calculated.
+ตามวันที่เริ่มต้นและสิ้นสุดของการสมัครรับข้อมูล วันที่ตามจริงสำหรับใบแจ้งหนี้จะถูกคำนวณ
 
-## 3. Features
-### 3.1 Trial Period
-If you're offering a trial period for the subscription, a Trial Period Start Date and a Trial Period End Date can be set. Invoices will not be generated during the trial period and the Subscription status will show 'Trialling'.
+## 3. คุณสมบัติ
+### 3.1 ระยะเวลาทดลอง
+หากคุณกำลังเสนอช่วงทดลองใช้งานสำหรับการสมัครรับข้อมูล คุณสามารถกำหนดวันที่เริ่มต้นของช่วงทดลองใช้งานและวันที่สิ้นสุดช่วงทดลองใช้งานได้ ระบบจะไม่สร้างใบแจ้งหนี้ระหว่างช่วงทดลองใช้งาน และสถานะการสมัครจะแสดงเป็น "กำลังทดลองใช้"
 ![Subscription Trial](/docs/assets/img/accounts/subscription-trial.png)
 
-### 3.2 Cancel Auto Renewal
-On enabling the 'Cancel At End Of Period' the Subscription will be canceled at the end of its period. For example, if it is a yearly subscription, the system will stop generating invoices after one year of subscription.
+### 3.2 ยกเลิกการต่ออายุอัตโนมัติ
+เมื่อเปิดใช้งาน 'ยกเลิกเมื่อสิ้นสุดระยะเวลา' การสมัครจะถูกยกเลิกเมื่อสิ้นสุดระยะเวลา ตัวอย่างเช่น หากเป็นการสมัครสมาชิกรายปี ระบบจะหยุดสร้างใบแจ้งหนี้หลังจากสมัครสมาชิกหนึ่งปี
 
-### 3.3 Taxes
-You can apply Taxes to a Subscription by using a Sales Taxes and Charges Template. Visit the [Sales Taxes and Charges Template](/docs/user/manual/en/selling/sales-taxes-and-charges-template) page to know more.
+### 3.3 ภาษี
+คุณสามารถใช้ภาษีกับการสมัครสมาชิกได้โดยใช้เทมเพลตภาษีขายและค่าธรรมเนียม อ่าน [เทมเพลตภาษีขายและค่าธรรมเนียม](/docs/user/manual/th/selling/sales-taxes-and-charges-template) เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.4 Applying discounts
-You can apply additional discounts on the Subscription based on Grand Total (pre tax) or Net Total (post tax). A discount percentage can also be set. For example, a discount of 2% on 12,000 would be 240 in discount.
+### 3.4 การใช้ส่วนลด
+คุณสามารถใช้ส่วนลดเพิ่มเติมในการสมัครสมาชิกตามยอดรวม (ก่อนหักภาษี) หรือยอดรวมสุทธิ (หลังหักภาษี) สามารถกำหนดเปอร์เซ็นต์ส่วนลดได้ ตัวอย่างเช่น ส่วนลด 2% จาก 12,000 จะเป็นส่วนลด 240
  ![Subscription Discount](/docs/assets/img/accounts/subscription-discount.png)
-Visit the [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) page for more details.
+อ่าน [การใช้ส่วนลด](/docs/user/manual/th/selling/articles/applying-discount) เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.5 Automatically create invoices
-Based on the [Subscription Plans](/docs/user/manual/en/accounts/subscription-plan) interval, invoices will be created automatically. The 'Generate Invoice At Beginning Of Period' needs to be enabled if you want to generate invoices as soon as the subscription is active. If "Generate New Invoices Past Due Date" is enabled then new invoices will keep on generating even though current invoice is unpaid or past due date. If "Generate Invoice Early" is enabled, an invoice will be generated before the end of the period by the number of days entered in "Generate Invoice Days Early."
+### 3.5 สร้างใบแจ้งหนี้โดยอัตโนมัติ
+ตามช่วงเวลาของ [แผนการสมัครสมาชิก](/docs/user/manual/th/accounts/subscription-plan) ใบแจ้งหนี้จะถูกสร้างขึ้นโดยอัตโนมัติ ต้องเปิดใช้งาน 'สร้างใบแจ้งหนี้เมื่อเริ่มต้นรอบระยะเวลา' หากคุณต้องการสร้างใบแจ้งหนี้ทันทีที่การสมัครใช้งานเปิดใช้งาน หากเปิดใช้งาน "สร้างใบแจ้งหนี้ใหม่เลยวันที่ครบกำหนด" ใบแจ้งหนี้ใหม่จะสร้างต่อไปแม้ว่าใบแจ้งหนี้ปัจจุบันจะยังไม่ได้ชำระเงินหรือเลยวันที่ครบกำหนด หากเปิดใช้งาน "สร้างใบแจ้งหนี้ก่อนกำหนด" ใบแจ้งหนี้จะถูกสร้างขึ้นก่อนสิ้นสุดรอบระยะเวลาตามจำนวนวันที่ป้อนใน "สร้างวันใบแจ้งหนี้ก่อนกำหนด"
  ![Subscription Invoices](/docs/assets/img/accounts/subscription-invoices.png)
 
-### 3.6 Follow Calendar Months
-If 'Follow Calendar Months' is enabled then proper calendar months will be followed even if the Subscription Start Date is in the middle of the month. For Eg: Suppose billing interval is 'Month' and billing interval count is 3 in subscription plan and Subscription Start Date is '15-04-2020' then if 'Follow Calendar Months' is checked then first invoice will be generated for '15-04-2020' to '30-06-2020' rather than '15-04-2020' to '14-07-2020'
+### 3.6 ติดตามเดือนปฏิทิน
+หากเปิดใช้งาน 'ติดตามเดือนในปฏิทิน' ระบบจะติดตามเดือนตามปฏิทินที่ถูกต้อง แม้ว่าวันที่เริ่มต้นการสมัครจะเป็นช่วงกลางเดือนก็ตาม ตัวอย่างเช่น: สมมติว่าช่วงการเรียกเก็บเงินคือ 'เดือน' และรอบการเรียกเก็บเงินเป็น 3 ในแผนการสมัครสมาชิกและวันที่เริ่มต้นการสมัครคือ '15-04-2020' ถ้าเลือก 'ติดตามเดือนตามปฏิทิน' ใบแจ้งหนี้แรกจะถูกสร้างขึ้นสำหรับ '15- 04-2020' ถึง '30-06-2020' แทนที่จะเป็น '15-04-2020' ถึง '14-07-2020'
 
-### 3.8 Canceling a Subscription
-If the Customer decides to cancel a Subscription, it can be canceled in the system using the **Cancel Subscription**. The system will stop generating invoices when a Subscription is canceled.
+### 3.8 การยกเลิกการสมัครสมาชิก
+ถ้าลูกค้าตัดสินใจที่จะยกเลิกการเป็นสมาชิกก็สามารถยกเลิกได้ในระบบโดยใช้การยกเลิกการสมัครสมาชิก ระบบจะหยุดสร้างใบแจ้งหนี้เมื่อมีการยกเลิกการสมัครสมาชิก
  ![Subscription Cancel](/docs/assets/img/accounts/subscription-cancel.png)
 
-### 3.9 Updating a Subscription
-Clicking on the **Fetch Subscription Updates** button will update the Subscription with the latest generated invoices.
+### 3.9 การอัปเดตการสมัครสมาชิก
+การคลิกที่ปุ่ม **ดึงข้อมูลการอัปเดตการสมัคร** จะอัปเดตการสมัครรับข้อมูลด้วยใบแจ้งหนี้ที่สร้างขึ้นล่าสุด
 
-## 4. Difference Between Subscription and Auto-Repeat
+## 4. ความแตกต่างระหว่างการสมัครสมาชิกและการทำซ้ำอัตโนมัติ
 
-| Auto Repeat | Subscription |
+| เล่นซ้ำอัตโนมัติ | สมัครสมาชิก |
 |---------------|---------------|
-| Is applicable on transactions | Is applicable on Items |
-| Multiple transactions like Sales Order, Purchase Order, Invoices, Journal Entry, etc. are auto created | Only Sales Invoices and Purchase  Invoices are auto-created |
-| Has only a few controls | Has many control options to define trials, billing due date, and creating Subscription Plans |
+| ใช้ได้กับการทำธุรกรรม | ใช้ได้กับรายการ |
+| ธุรกรรมหลายรายการ เช่น ใบสั่งขาย ใบสั่งซื้อ ใบกำกับสินค้า รายการบันทึกรายการ ฯลฯ ถูกสร้างขึ้นโดยอัตโนมัติ | เฉพาะใบแจ้งหนี้การขายและใบแจ้งหนี้การซื้อเท่านั้นที่สร้างขึ้นโดยอัตโนมัติ |
+| มีตัวควบคุมเพียงไม่กี่ตัว | มีตัวเลือกการควบคุมมากมายในการกำหนดการทดลองใช้ วันที่ครบกำหนดการเรียกเก็บเงิน และการสร้างแผนการสมัครสมาชิก |
 
-### 5. Related Topics
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
-1. [Item](/docs/user/manual/en/stock/item)
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Subscription Plan](/docs/user/manual/en/accounts/subscription-plan)
+### 5. หัวข้อที่เกี่ยวข้อง
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบแจ้งหนี้การซื้ิอ](/docs/user/manual/th/accounts/purchase-invoice)
+1. [สินค้า](/docs/user/manual/th/stock/item)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [แผนการสมัครสมาชิก](/docs/user/manual/th/accounts/subscription-plan)

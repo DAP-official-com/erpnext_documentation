@@ -1,59 +1,59 @@
 <!-- add-breadcrumbs -->
-# Item Price
+#ราคาสินค้า
 
-**Item Price is the record in which you can log the selling and buying rate of an item.**
+**ราคาสินค้าคือบันทึกที่คุณสามารถบันทึกอัตราการขายและการซื้อของสินค้าได้**
 
-## 1. How to create Item Price
-1. There are two ways to reach a new Item Price form:
+## 1. วิธีสร้างราคาสินค้า
+1. มีสองวิธีในการเข้าถึงแบบฟอร์มราคาสินค้าใหม่:
 
-    **Selling/Buying/Stock > Items and Pricing > Item Price > New**.
+    **ขาย/ซื้อ สินค้า > รายการและราคา > ราคาสินค้า > ใหม่**
 
-    Or
+    หรือ
 
-    **Stock > Item > Click on "+" next to Item Price**.
-1. Select the Item. The name, UoM and description will be fetched.
-1. Select the Price List whether Selling/Buying price or any other price list you may have created.
-1. Enter the actual rate in the Rate field.
-1. Save.
+    **สต็อก > สินค้า > คลิก "+" ข้างราคาสินค้า**
+1. เลือกรายการ ชื่อ UoM และคำอธิบายจะถูกดึงออกมา
+1. เลือกรายการราคา ไม่ว่าจะเป็นราคาขาย/ซื้อ หรือรายการราคาอื่นๆ ที่คุณอาจสร้างขึ้น
+1. ป้อนอัตราจริงในช่องอัตรา
+1. บันทึก
     <img class="screenshot" alt="Item Price list" src="{{docs_base_url}}/assets/img/stock/item-price-1.png">
 
 
-### 1.1 Selecting the Price List
+### 1.1 การเลือกรายการราคา
 
-You can create multiple Price Lists for one Item in ERPNext to track Selling and Buying Price of an Item separately. Also if the Item's selling prices change based on Territory or due to other criteria, you can create multiple Selling Price Lists for it.
+คุณสามารถสร้างรายการราคาหลายรายการสำหรับหนึ่งรายการใน ERPNext เพื่อติดตามราคาขายและซื้อของรายการหนึ่งๆ แยกกัน นอกจากนี้ หากราคาขายของรายการเปลี่ยนแปลงตามอาณาเขตหรือเนื่องจากเกณฑ์อื่นๆ คุณสามารถสร้างรายการราคาขายได้หลายรายการ
 
-On selection of Price List, its currency and applicability whether for selling/buying or both will be fetched as well. To have Item Price fetching in the sales or purchase transaction, you should have 'Price List' selected in the transaction under Currency and Price List.
+ในการเลือกรายการราคา สกุลเงินและการบังคับใช้ไม่ว่าจะเพื่อขาย/ซื้อหรือทั้งสองอย่างก็จะถูกดึงออกมาเช่นกัน หากต้องการดึงราคาสินค้าในธุรกรรมการขายหรือการซื้อ คุณควรเลือก 'รายการราคา' ในรายการภายใต้สกุลเงินและรายการราคา
 
-To check all Item Prices together, go to:
+หากต้องการตรวจสอบราคาสินค้าทั้งหมดพร้อมกัน ให้ไปที่:
 
-**Stock > Stock Reports > Item Price Stock**
+**สต็อก > รายงานสินค้าคงคลัง > ราคาสินค้าในสต็อค**
 
-Visit the [Price Lists](/docs/user/manual/en/stock/price-lists) page to know more.
+ไปที่หน้า [รายการราคา](/docs/user/manual/th/stock/price-lists) เพื่อทราบข้อมูลเพิ่มเติม
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Packing Unit
-This is the quantity that must be bought or sold per unit of measure. For example, if Packing Unit is two, and UOM is one, two items in quantity will be transacted. The default is 0, you can use non-integer UoM like 1.5Kg Oats for 1 Packing Unit. If you leave it as 0, it'll not affect any transaction.
+### 2.1 หน่วยบรรจุ
+เป็นปริมาณที่ต้องซื้อหรือขายต่อหน่วยวัด ตัวอย่างเช่น ถ้า Packing Unit เป็นสองหน่วย และ UOM เป็นหนึ่ง รายการในปริมาณสองรายการจะได้รับการทำธุรกรรม ค่าเริ่มต้นคือ 0 คุณสามารถใช้ UoM ที่ไม่ใช่จำนวนเต็ม เช่น 1.5Kg Oats สำหรับ 1 Packing Unit หากคุณปล่อยไว้เป็น 0 จะไม่มีผลกับธุรกรรมใดๆ
 
-### 2.2 Minimum quantity
-This is the minimum quantity of items to be transacted for this price to be applicable and updated in the Item Price list.
+### 2.2 ปริมาณขั้นต่ำ
+นี่คือปริมาณขั้นต่ำของรายการที่จะทำธุรกรรมสำหรับราคานี้เพื่อใช้และปรับปรุงในรายการราคาสินค้า
 
-### 2.3 Applying Price List to a specific Customer/Supplier
-If you select a Selling Price list, a customer field will appear where you can assign this Item Price to a specific customer. Likewise, if you select a Buying Price List, a Supplier field will appear where you can select a specific Supplier
+### 2.3 การใช้รายการราคากับลูกค้า/ซัพพลายเออร์ที่เฉพาะเจาะจง
+หากคุณเลือกรายการราคาขาย ฟิลด์ลูกค้าจะปรากฏขึ้นซึ่งคุณสามารถกำหนดราคาสินค้านี้ให้กับลูกค้าเฉพาะได้ ในทำนองเดียวกัน หากคุณเลือกรายการราคาซื้อ ช่องซัพพลายเออร์จะปรากฏขึ้นซึ่งคุณสามารถเลือกซัพพลายเออร์ที่ต้องการได้
 
-### 2.4 Applying Price List to a specific Batch
-You can also link a specific batch to an Item Price and on the selection of that batch in the transaction, the item price for that specific batch will be applied.
+### 2.4 การใช้รายการราคากับแบทช์เฉพาะ
+คุณยังสามารถเชื่อมโยงชุดงานเฉพาะกับราคาสินค้า และในการเลือกชุดงานนั้นในธุรกรรม ราคาสินค้าสำหรับชุดงานเฉพาะนั้นจะถูกนำไปใช้
 
-### 2.5 Validity
-There are two fields here—'Valid From' and 'Valid Upto'. Valid from is set to the date you created the Item Price, you can also set the Valid Upto date on which the Item Price will expire.
+### 2.5 ความถูกต้อง
+มีสองฟิลด์ที่นี่—'Valid From' และ 'Valid Upto' ใช้ได้ตั้งแต่ ตั้งเป็นวันที่คุณสร้างราคาสินค้า คุณยังสามารถตั้งค่าวันที่ใช้ได้ไม่เกินที่ราคาสินค้าจะหมดอายุ
 
-### 2.6 Lead Time in days
-The approximate number of days it takes the product to reach the warehouse. You can set different Item Prices based on how much time the same product will reach you from different vendors.
+### 2.6 ระยะเวลาดำเนินการเป็นวัน
+จำนวนวันโดยประมาณที่สินค้าจะไปถึงคลังสินค้า คุณสามารถกำหนดราคาสินค้าที่แตกต่างกันโดยขึ้นอยู่กับเวลาที่สินค้าเดียวกันจะไปถึงคุณจากผู้ขายที่แตกต่างกัน
 
-### 2.7 Note
-You can add any note about the Item Price in this field.
+### 2.7 หมายเหตุ
+คุณสามารถเพิ่มหมายเหตุใดๆ เกี่ยวกับราคาสินค้าในช่องนี้ได้
 
-## 3. Video
+## 3. วีดีโอ
 
 <div>
     <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
@@ -63,6 +63,6 @@ You can add any note about the Item Price in this field.
     </div>
 </div>
 
-### 4. Related Topics
-1. [Item](/docs/user/manual/en/stock/item)
-1. [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [สินค้า](/docs/user/manual/th/stock/item)
+1. [การใช้ส่วนลด](/docs/user/manual/th/selling/articles/applying-discount)

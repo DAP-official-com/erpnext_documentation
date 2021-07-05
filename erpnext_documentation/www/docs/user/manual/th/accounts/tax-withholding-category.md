@@ -1,89 +1,90 @@
 <!-- add-breadcrumbs -->
-# Tax Withholding Category
+# ประเภทภาษีหัก ณ ที่จ่าย
 
-**Tax Withholding Category is Tax Deducted at Source.**
+**ภาษีประเภทนี้จะถูกหักจากภาษี ณ ที่จ่าย**
 
-According to this, a person responsible for making payments is required to deduct tax at source at prescribed rates. Instead of receiving tax on your income from you at a later date, the govt wants the payers to deduct tax beforehand and deposit it with the government.
+บุคคลที่รับผิดชอบในการชำระเงินจะต้องหักภาษี ณ ที่จ่ายตามอัตราที่กำหนด แทนที่จะได้รับภาษีจากรายได้ของคุณในภายหลัง รัฐบาลต้องการให้ผู้จ่ายเงินหักภาษีล่วงหน้าและฝากไว้กับรัฐบาล
 
-To access the Tax Withholding Category list, go to:
-> Home > Accounting > Taxes > Tax Withholding Category
+หากต้องการเข้าถึงรายการประเภทภาษีหัก ณ ที่จ่าย ไปที่:
+> หน้าแรก > การบัญชี > ภาษี > ประเภทภาษีหัก ณ ที่จ่าย
 
-## 1. Prerequisites
-Before creating and using a Tax Withholding Category, it is advised to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ประเภทภาษีหัก ณ ที่จ่าย ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Customer](/docs/user/manual/en/CRM/customer)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
 
-## 2. How to create a Tax Withholding Category
-In ERPNext, Tax Withholding Categories for most cases are available by default, however, you can create more if needed.
+## 2. วิธีสร้างประเภทภาษีหัก ณ ที่จ่าย
 
-1. Go to the Tax Withholding Category list and click on New.
-1. Enter a unique name, eg: Section 194C Individual.
-1. Enter a Category Name (Dividends, Professional Fees, etc,.).
-1. Enter a Tax Withholding Rate against a [Fiscal Year](/docs/user/manual/en/accounts/fiscal-year).
-1. You can set the threshold for a single invoice or sum of all invoices.
-1. Select an account against your Company to which tax will be credited.
-1. Add more companies and accounts as needed.
-1. Save.
+ใน ERPNext ประเภทภาษีหัก ณ ที่จ่ายสำหรับกรณีส่วนใหญ่จะพร้อมใช้งานตามค่าเริ่มต้น อย่างไรก็ตาม คุณสามารถสร้างเพิ่มเติมได้หากต้องการ
+
+1. ไปที่รายการประเภทภาษีหัก ณ ที่จ่าย และคลิกที่ใหม่
+1. ป้อนชื่อที่ไม่ซ้ำกัน เช่น มาตรา 194C บุคคล
+1. ป้อนชื่อหมวดหมู่ (เงินปันผล ค่าธรรมเนียมวิชาชีพ ฯลฯ)
+1. ป้อนอัตราภาษีหัก ณ ที่จ่ายและ [ปีงบประมาณ](/docs/user/manual/th/accounts/fiscal-year).
+1. คุณสามารถกำหนดเกณฑ์สำหรับใบแจ้งหนี้ใบเดียวหรือผลรวมของใบแจ้งหนี้ทั้งหมดได้
+1. เลือกบัญชีกับบริษัทของคุณที่จะให้เครดิตภาษี
+1. เพิ่มบริษัทและบัญชีตามต้องการ
+1. บันทึก
 
  ![Tax withholding Category](/docs/assets/img/accounts/tax-withholding-category.png)
 
-Under accounting details, the TDS account is added for each Company in the system.
+ภายใต้รายละเอียดบัญชี บัญชี TDS จะเพิ่มสำหรับแต่ละบริษัทในระบบ
 
-### 2.1 Assigning Tax Withholding to Supplier
+### 2.1 การกำหนดภาษีหัก ณ ที่จ่ายให้กับซัพพลายเออร์
 
-After saving, it can be assigned to a Supplier:
+หลังจากบันทึกแล้ว สามารถมอบหมายให้ซัพพลายเออร์ได้:
 <img class="screenshot" alt="Tax Withholding Category" src="{{docs_base_url}}/assets/img/accounts/tax-withholding-category-1.png">
 
-### 2.2 How does the threshold work?
-Consider a Supplier on whom a Tax Withholding Category is applied.
+### 2.2 เกณฑ์ทำงานอย่างไร
+พิจารณาซัพพลายเออร์ที่ใช้ประเภทหักภาษี ณ ที่จ่าย
 
-For example, let's say a rate of 5% will be applicable on invoice where Single threshold is 20,000 and the Cumulative threshold is 30,000. If an invoice is created with a grand total of 20,000 then the single threshold will be triggered and a 5% tax would be charged.
+ตัวอย่างเช่น สมมติว่าอัตรา 5% จะใช้ได้กับใบแจ้งหนี้โดยที่เกณฑ์เดียวคือ 20,000 และเกณฑ์สะสมคือ 30,000 หากใบแจ้งหนี้ถูกสร้างขึ้นด้วยยอดรวมทั้งหมด 20,000 เกณฑ์เดียวจะถูกเรียกใช้และจะมีการเรียกเก็บภาษี 5%
 
-But if the invoice amount totaled up to be 15,000 then no tax will be charged as it didn't cross the threshold. If again another invoice is created against the same supplier with a total of 15,000 then although it didn't cross the Single threshold, charges will be deducted since the sum of the last invoice and this invoice adds up to be 30,000 which is equal to the specified Cumulative threshold.
+แต่ถ้าจำนวนเงินในใบแจ้งหนี้รวมกันเป็น 15,000 จะไม่มีการเรียกเก็บภาษีเนื่องจากไม่ผ่านเกณฑ์ หากมีการสร้างใบแจ้งหนี้อื่นกับซัพพลายเออร์รายเดียวกันอีกครั้งซึ่งมียอดรวม 15,000 แม้ว่าจะไม่ได้ผ่านเกณฑ์เดียวก็ตาม ค่าใช้จ่ายจะถูกหักเนื่องจากผลรวมของใบแจ้งหนี้ล่าสุดและใบแจ้งหนี้นี้เพิ่มขึ้นเป็น 30,000 ซึ่งเท่ากับ เกณฑ์สะสมที่ระบุ
 
-## 3. Using Tax Withholding
-### 3.1 Use in Purchase Invoice
-In the following example, we have selected 'TDS - 194C - Individual' which has a single threshold of 30,000, cumulative threshold of 1,00,000 and rate of 1%.
+## 3. การใช้การหักภาษี ณ ที่จ่าย
+### 3.1 ใช้ในใบสั่งซื้อ
+ในตัวอย่างต่อไปนี้ เราได้เลือก 'TDS - 194C - บุคคล' ซึ่งมีเกณฑ์เดียว 30,000 เกณฑ์สะสม 100,000 และอัตรา 1%
 
-1. If the **Supplier** has the tax withholding field set, then upon selecting that Supplier, a checkbox will become visible in the Purchase Invoice to select whether to apply tax or not.
+1. หาก **ซัพพลายเออร์** ตั้งค่าฟิลด์หักภาษี ณ ที่จ่าย เมื่อเลือกซัพพลายเออร์นั้น กล่องกาเครื่องหมายจะปรากฏในใบกำกับสินค้าเพื่อเลือกว่าจะใช้ภาษีหรือไม่
 
  <img class="screenshot" alt="Tax Withholding Category" src="{{docs_base_url}}/assets/img/accounts/tax-withholding-category-2.png">
 
-1. Let's create an invoice for 90,000. Saving the invoice automatically calculates tax and appends it in the taxes table.
+1. สร้างใบแจ้งหนี้ 90,000 ซึ่งการบันทึกใบกำกับสินค้าจะคำนวณภาษีโดยอัตโนมัติและผนวกเข้ากับตารางภาษี
 
  <img class="screenshot" alt="Tax Withholding Category" src="{{docs_base_url}}/assets/img/accounts/tax-withholding-category-6.png">
 
-1. To see the effect of Cumulative threshold, let's create an invoice with of amount 20,000 and submit it. 
+1. หากต้องการดูผลของเกณฑ์สะสม ให้สร้างใบแจ้งหนี้ที่มีจำนวนเงิน 10,000 และส่ง
 
  <img class="screenshot" alt="Tax Withholding Category" src="{{docs_base_url}}/assets/img/accounts/tax-withholding-category-8.png">
 
- Although the invoice amount didn't cross the Single threshold (30,000), we see that tax has been charged. This is because the previous and the current invoice adds up to be 1,10,000 which exceeds the Cumulative threshold. Hence, tax based on the rate provided in the **Tax Withholding Category** is applied accordingly.
+ แม้ว่าจำนวนเงินในใบแจ้งหนี้จะไม่ผ่านเกณฑ์เดียว (30,000) แต่เราพบว่ามีการเรียกเก็บภาษีแล้ว นี่เป็นเพราะใบแจ้งหนี้ก่อนหน้าและปัจจุบันรวมกันเป็น 110,000 ซึ่งเกินเกณฑ์สะสม ดังนั้น ภาษีตามอัตราที่ระบุในหมวดภาษีหัก ณ ที่จ่ายจะถูกใช้ตามนั้น
 
-> Note: On submitting the invoice, three GL Entries are created:
+> หมายเหตุ: ในการส่งใบแจ้งหนี้ จะมีการสร้างรายการ GL สามรายการ:
 
->1. First for debit from the expense head
->1. Second for credit in Creditors account
->1. Third for credit in the account selected in Tax Withholding Category.
+>1. อันดับแรก: สำหรับการหักจากหัวหน้าค่าใช้จ่าย
+>1. อันดับสอง: สำหรับเครดิตในบัญชีเจ้าหนี้
+>1. อันดับสาม: สำหรับเครดิตในบัญชีที่เลือกในหมวดภาษีหัก ณ ที่จ่าย
 
-### 3.2 Setting up TCS - Section 20C(1H) for eligible customers
-In the following example, we have create a Tax Withholding Category for [TCS - Section 20C(1H)](https://taxguru.in/income-tax/faqs-tcs-sales-goods-section-206c1h.html) and set it up against an eligble customer. 
+### 3.2 การตั้งค่า TCS - ส่วน 20C (1H) สำหรับลูกค้าที่มีสิทธิ์
+ในตัวอย่างต่อไปนี้ เราได้สร้างหมวดหมู่ภาษีหัก ณ ที่จ่ายสำหรับ [TCS - Section 20C(1H)](https://taxguru.in/income-tax/faqs-tcs-sales-goods-section-206c1h.html) และเรากำหนดเกณฑ์สะสมเป็น 50 Lakhs ตามโครงการ
 
-1. We will first create a Tax Withholding Category named **TCS - Section 20C(1H)** and we set cumulative threshold to 50 Lakhs as per the scheme.
+1. ก่อนอื่นเราจะสร้างหมวดหมู่ภาษีหัก ณ ที่จ่ายชื่อTCS - มาตรา 20C (1H)และเรากำหนดเกณฑ์สะสมเป็น 50 Lakhs ตามโครงการ
 
  <img class="screenshot" alt="Tax Withholding Category" src="{{docs_base_url}}/assets/img/accounts/tax-withholding-category-for-tcs.png">
 
-1. If a **Customer** is expected to crosses the sales threshold of 50 Lakh in current Fiscal Year, then we can set the Tax Withholding Category of the customer to TCS - Section 20C(1H) for automatically calculation TCS on sale of goods against the customer's invoices.
+1. หากคาดว่า **ลูกค้า** จะผ่านเกณฑ์การขาย 50 แสนในปีงบประมาณปัจจุบัน เราสามารถตั้งค่าประเภทภาษีหัก ณ ที่จ่ายของลูกค้าเป็น TCS - มาตรา 20C (1H) สำหรับการคำนวณ TCS ในการขายสินค้าโดยอัตโนมัติกับใบแจ้งหนี้ของลูกค้า
 
  <img class="screenshot" alt="Tax Withholding Category" src="{{docs_base_url}}/assets/img/accounts/tcs-eligible-customer.png">
 
-1. Let's create an invoice for 50 Lakhs against the eligible customer. Saving the invoice automatically calculates tax and appends it in the taxes table.
+1. สร้างใบแจ้งหนี้ 50 แสนกับลูกค้าที่มีสิทธิ์กันเถอะ การบันทึกใบกำกับสินค้าจะคำนวณภาษีโดยอัตโนมัติและผนวกเข้ากับตารางภาษี
 
  <img class="screenshot" alt="Tax Withholding Category" src="{{docs_base_url}}/assets/img/accounts/tcs-invoice.png">
 
- Since the invoice cross the Cumulative threshold (50 Lakhs), we see that tax has been charged. Hence, tax based on the rate provided in the **Tax Withholding Category** is applied accordingly. Note that, as per the scheme, the TCS is calculated on the amount exceeding the threshold i.e 0.075 % of 10 Lakhs.
+ เนื่องจากใบแจ้งหนี้เกินเกณฑ์สะสม (50 Lakhs) เราจึงเห็นว่ามีการเรียกเก็บภาษีแล้ว ดังนั้น ภาษีตามอัตราที่ระบุใน **ประเภทภาษีหัก ณ ที่จ่าย** จะถูกใช้ตามนั้น โปรดทราบว่าตามโครงการ TCS คำนวณจากจำนวนเงินที่เกินเกณฑ์เช่น 0.075 % ของ 10 Lakhs
 
-### 4. Related Topics
-1. [Tax Rule](/docs/user/manual/en/accounts/tax-rule)
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Customer](/docs/user/manual/en/CRM/customer)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [กฎภาษี](/docs/user/manual/th/accounts/tax-rule)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)

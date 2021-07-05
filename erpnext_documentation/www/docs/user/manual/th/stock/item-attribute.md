@@ -1,34 +1,34 @@
 <!-- add-breadcrumbs -->
-# Item Attribute
+# คุณลักษณะสินค้า
 
-**Item Attributes are characteristics given to Item Variants based on which Item Variants are created.**
+**คุณลักษณะสินค้าเป็นคุณลักษณะที่มอบให้กับไอเท็มแบบต่างๆ ตามการสร้างไอเท็มแบบต่างๆ**
 
-Item Attributes can be color, size, length, etc. Multiple attributes like multiple colors can be defined.
+คุณลักษณะสินค้าอาจเป็นสี ขนาด ความยาว ฯลฯ สามารถกำหนดคุณลักษณะหลายรายการได้ เช่น หลายสี
 
 <img class="screenshot" alt="Attribute Master" src="{{docs_base_url}}/assets/img/stock/item-attribute.png">
 
-To access the Item Attribute list, go to:
+ในการเข้าถึงรายการคุณลักษณะสินค้า ไปที่:
 
-> Home > Stock > Settings > Item Attribute
+> หน้าหลัก > สต็อก > การตั้งค่า > คุณลักษณะสินค้า
 
-## 1. How to create an Item Attribute
-1. Go to the Item Attribute list, click on New.
-1. Enter a name for the Attribute.
-1. Enter the attribute values in the table.
-1. Save.
+## 1. วิธีสร้างคุณลักษณะสินค้า
+1. ไปที่รายการคุณลักษณะสินค้า คลิกใหม่
+1. ป้อนชื่อคุณลักษณะสินค้า
+1. ป้อนค่คุณลักษณะสินค้าในตาราง
+1. บันทึก
 
-The attribute values can be numeric or non-numeric.
+ค่าคุณลักษณะอาจเป็นตัวเลขหรือไม่ใช่ตัวเลขก็ได้
 
-### 1.1 Non Numeric Attributes
+### 1.1 คุณสมบัติที่ไม่ใช่ตัวเลข
 
-For Non Numeric Attributes, specify attributes values along with its abbreviation in the Attribute Values table.
+สำหรับคุณลักษณะสินค้าที่ไม่ใช่ตัวเลข ให้ระบุค่าคุณลักษณะสินค้าพร้อมกับตัวย่อในตารางค่าคุณลักษณะ
 
 <img class="screenshot" alt="Attribute Master" src="{{docs_base_url}}/assets/img/stock/item-attribute-non-numeric.png">
 
-### 1.2 Numeric Attributes
-If your attribute is Numeric, select Numeric Values. Specify the Range and the Increment Value. In the following example the pipe length is of range 0.25 to 3.0 and the range is 0.25 so the variants will be 0.25, 0.5, 0.75...3.0.
+### 1.2 คุณสมบัติที่เป็นตัวเลข
+หากคุณสมบัติของคุณเป็นตัวเลข ให้เลือกค่าตัวเลข ระบุช่วงและค่าที่เพิ่มขึ้น ในตัวอย่างต่อไปนี้ ความยาวของท่อคือช่วง 0.25 ถึง 3.0 และช่วงคือ 0.25 ดังนั้นตัวแปรจะเป็น 0.25, 0.5, 0.75...3.0
 
 <img class="screenshot" alt="Attribute Master" src="{{docs_base_url}}/assets/img/stock/item-attribute-numeric.png">
 
-#### 2. Related Topics
-1. [Item Variants](/docs/user/manual/en/stock/item-variants)
+#### 2. หัวข้อที่เกี่ยวข้อง
+1. [รายการสินค้า](/docs/user/manual/th/stock/item-variants)

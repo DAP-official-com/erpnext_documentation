@@ -1,105 +1,105 @@
 <!-- add-breadcrumbs -->
-# Material Request
+# คำขอวัสดุ
 
-**A Material Request is a simple document identifying a requirement of a set of Items (products or services) for a particular reason.**
+**คำขอวัสดุเป็นเอกสารง่ายๆ ที่ระบุข้อกำหนดของชุดรายการ (ผลิตภัณฑ์หรือบริการ) ด้วยเหตุผลเฉพาะ**
 
-A Material Request can have the following purposes:
+คำขอวัสดุสามารถมีจุดประสงค์ดังต่อไปนี้:
 
-* **Purchase**: If the material being requested is to be purchased.
-* **Material Transfer**: If the material being requested is to be shifted from one Warehouse to another.
-* **Material Issue**: If the material being requested is to be Issued for some purpose like manufacturing.
-* **Manufacture:** If the material being requested is to be produced.
-* **Customer Provided**: If the material being requested is to be provided by Customer. To know more about this, visit the [Customer Provided Item](/docs/user/manual/en/manufacturing/articles/customer-provided-items) page.
+* **การซื้อ**: หากต้องการซื้อวัสดุที่ต้องการ
+* **การขนย้ายวัสดุ**: หากวัสดุที่ต้องการย้ายจากคลังสินค้าหนึ่งไปยังอีกโกดังหนึ่ง
+* **การดำเนินการด้านวัสดุ**: หากวัสดุที่ร้องขอจะต้องออกเพื่อวัตถุประสงค์บางอย่างเช่นการผลิต
+* **การผลิต:** กรณีที่ต้องการผลิตวัสดุ
+* **ลูกค้าจัดเตรียม**: หากวัสดุที่ร้องขอเป็นการจัดหาโดยลูกค้า หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [Customer Provided Item](/docs/user/manual/th/manufacturing/articles/customer-provided-items)
 
 <img class="screenshot" alt="Material Request" src="{{docs_base_url}}/assets/img/buying/material-request-flowchart.png">
 
-To access the Material Request list, go to:
-> Home > Stock > Stock Transactions > Material Request
+หากต้องการเข้าถึงรายการคำขอวัสดุ ไปที่:
+> หน้าหลัก > สต๊อก > ธุรกรรมสต๊อก > คำขอวัสดุ
 
-## 1. How to create a Material Request
-1. Go to the Material Request list, click on New.
-1. Enter the required by date.
-1. Select from one of the purposes as listed above.
-1. You can fetch Items from a BOM, Sales Order, or Product Bundle.
+## 1. วิธีสร้างคำขอวัสดุ
+1. ไปที่รายการคำขอวัสดุ คลิกใหม่
+1. ระบุวันที่ต้องการ
+1. เลือกจากหนึ่งในวัตถุประสงค์ที่ระบุไว้ข้างต้น
+1. คุณสามารถดึงรายการจาก BOM ใบสั่งขาย หรือชุดผลิตภัณฑ์
   ![MR fetch from](/docs/assets/img/stock/mr-fetch-from.png)
-1. Select the Item and set the quantity.
-1. Select the Warehouse for which Items are required.
-1. You can change the Required By date for individual Items in this table.
-1. Save and Submit.
+1. เลือกรายการและกำหนดปริมาณ
+1. เลือกคลังสินค้าที่ต้องการรายการ
+1. คุณสามารถเปลี่ยนวันที่ที่ต้องการสำหรับแต่ละรายการในตารางนี้ได้
+1. บันทึกและส่ง
 
-### 1.1 Alternate ways of creating a Material Request
-A Material Request can be generated automatically:
+### 1.1 วิธีอื่นในการสร้างคำขอวัสดุ
+สามารถสร้างคำขอวัสดุได้โดยอัตโนมัติ:
 
-* From a [Sales Order](/docs/user/manual/en/selling/sales-order).
-* When the Projected Quantity of an Item in Stores (Warehouses) reaches a particular level.
-* From your a [Production Plan](/docs/user/manual/en/manufacturing/production-plan) to plan your manufacturing activities.
+* จาก [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order)
+* เมื่อจำนวนสินค้าในร้านค้า (คลังสินค้า) ที่คาดการณ์ไว้ถึงระดับที่กำหนด
+* จาก [แผนการผลิต](/docs/user/manual/th/manufacturing/production-plan) เพื่อวางแผนกิจกรรมการผลิตของคุณ
 
-If your Items are inventory items, you must also mention the Warehouse where you expect these Items to be delivered. This helps to keep track of the [Projected Quantity](/docs/user/manual/en/stock/projected-quantity) for this Item.
+หากรายการของคุณเป็นรายการสินค้าคงคลัง คุณต้องระบุคลังสินค้าที่คุณคาดว่าสินค้าเหล่านี้จะถูกจัดส่งด้วย ซึ่งจะช่วยในการติดตาม [Projected Quantity](/docs/user/manual/th/stock/projected-quantity) สำหรับรายการนี้
 
-> Info: Material Request is not mandatory. It is ideal if you have centralized
-buying so that you can collect this information from various departments.
+> ข้อมูล: ไม่จำเป็นต้องขอวัสดุ เหมาะอย่างยิ่งถ้าคุณมีการรวมศูนย์
+ที่ซื้อเพื่อเก็บข้อมูลนี้จากหน่วยงานต่างๆ
 
-### 1.2 Statuses
+### 1.2 สถานะ
 
-These are the statuses a Material Request can be in:
+นี่คือสถานะที่คำขอวัสดุสามารถอยู่ใน:
 
-* **Draft**: A draft is saved but yet to be submitted to the system.
-* **Submitted**: Document is submitted to the system.
-* **Stopped**: If no more materials are needed the Material Request can be stopped.
-* **Canceled**: The materials are not needed at all and the request is canceled.
-* **Pending**: The Purchase/Manufacture is pending to complete the Material Request.
-* **Partially Ordered**: Purchase Orders for some Items from the Material Request are made and some are pending.
-* **Ordered**: All Items in the Material Request are ordered via Purchase Orders.
-* **Issued**: The materials are issued using a Material Issue Stock Entry.
-* **Transferred**: The required materials are transferred from one Warehouse to another using a Stock Entry.
-* **Received**: The materials were ordered and have been received at your Warehouse using a Purchase Receipt.
+* **ฉบับร่าง**: บันทึกแบบร่างแล้วแต่ยังไม่ได้ส่งไปยังระบบ
+* **ส่งแล้ว**: เอกสารถูกส่งไปยังระบบ
+* **หยุดแล้ว**: หากไม่ต้องการวัสดุเพิ่มเติม สามารถหยุดคำขอวัสดุได้
+* **ยกเลิก**: ไม่จำเป็นต้องใช้วัสดุใดๆ และคำขอจะถูกยกเลิก
+* **รอดำเนินการ**: การซื้อ/การผลิตอยู่ระหว่างดำเนินการตามคำขอวัสดุ
+* **สั่งแล้วบางส่วน**: มีการสั่งซื้อบางรายการจากคำขอวัสดุและบางรายการกำลังรอดำเนินการ
+* **สั่งแล้ว**: รายการทั้งหมดในคำขอวัสดุได้รับการสั่งซื้อผ่านใบสั่งซื้อ
+* **ออกแล้ว**: วัสดุออกโดยใช้รายการสต็อคที่ออกวัสดุ
+* **โอนแล้ว**: วัสดุที่จำเป็นจะถูกโอนจากคลังสินค้าหนึ่งไปยังอีกโกดังหนึ่งโดยใช้รายการสต็อค
+* **ได้รับแล้ว**: มีการสั่งซื้อวัสดุและได้รับที่คลังสินค้าของคุณโดยใช้ใบเสร็จการซื้อ
 
-## 2. Features
-### 2.1 Items table
-* **Barcode**: You can track Items using [barcodes](/docs/user/manual/en/stock/articles/track-items-using-barcode).
+## 2. คุณสมบัติ
+### ตาราง 2.1 รายการ
+* **บาร์โค้ด**: คุณสามารถติดตามรายการโดยใช้ [บาร์โค้ด](/docs/user/manual/th/stock/articles/track-items-using-barcode)
 
-* The Item Code, name, description, Image, and Manufacturer will be fetched from the Item master.
+* รหัสสินค้า ชื่อ คำอธิบาย รูปภาพ และผู้ผลิต จะถูกดึงมาจากต้นแบบรายการ
 
-* **Scan Barcode**: You can add Items in the Items table by scanning their barcodes if you have a barcode scanner. Read documentation for [tracking items using barcode](/docs/user/manual/en/stock/articles/track-items-using-barcode) to know more.
+* **สแกนบาร์โค้ด**: คุณสามารถเพิ่มรายการในตารางรายการโดยการสแกนบาร์โค้ดหากคุณมีเครื่องสแกนบาร์โค้ด อ่านเอกสารประกอบสำหรับ [การติดตามรายการโดยใช้บาร์โค้ด](/docs/user/manual/th/stock/articles/track-items-using-barcode) เพื่อทราบข้อมูลเพิ่มเติม
 
-* The UoM, Conversion Factor, and Amount will be fetched. You change the Warehouse for which the material is being requested.
+* ระบบจะดึงข้อมูล UoM ปัจจัยการแปลง และจำนวนเงิน คุณเปลี่ยนคลังสินค้าที่มีการร้องขอวัสดุ
 
-* Accounting details like Expense Account and Accounting Dimensions can be set for the Items.
+* สามารถกำหนดรายละเอียดทางบัญชีเช่นบัญชีค่าใช้จ่ายและมิติทางบัญชีสำหรับรายการได้
 
-* Page Break will create a page break just before this item when printing.
+* ตัวแบ่งหน้าจะสร้างตัวแบ่งหน้าก่อนรายการนี้เมื่อพิมพ์
 
-### 2.2 Setting Warehouses
-* **Set Warehouse**: Optionally, you can set the Warehouse where the requested Items will arrive. This will be fetched into the 'For Warehouse' fields in the Item table rows.
+### 2.2 การตั้งคลังสินค้า
+* **ตั้งคลังสินค้า**: คุณสามารถกำหนดคลังสินค้าที่จะส่งไอเท็มที่ร้องขอได้ สิ่งนี้จะถูกดึงเข้าไปในฟิลด์ 'สำหรับคลังสินค้า' ในแถวตารางสินค้า
 
-### 2.3 More Information
-In the 'Requested For' field, you can set a Reference from where Material Request was generated.
+### 2.3 ข้อมูลเพิ่มเติม
+ในฟิลด์ 'ขอ' คุณสามารถตั้งค่าการอ้างอิงจากตำแหน่งที่สร้างคำขอวัสดุ
 
-### 2.4 Printing Details
-#### Letterhead
-You can print your Material Request on your company's letterhead. 
-Read [Letter head documentation](/docs/user/manual/en/setting-up/print/letter-head) to learn more.
+### 2.4 รายละเอียดการพิมพ์
+#### หัวจดหมาย
+คุณสามารถพิมพ์คำขอวัสดุของคุณบนหัวจดหมายของบริษัทของคุณ
+อ่าน [เอกสารประกอบหัวจดหมาย](/docs/user/manual/th/setting-up/print/letter-head) เพื่อเรียนรู้เพิ่มเติม
 
-#### Print Headings
-Purchase Receipt headings can also be changed when printing the document. You can do this by selecting a **Print Heading**. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### พิมพ์หัวเรื่อง
+ส่วนหัวของใบเสร็จการซื้อสามารถเปลี่ยนแปลงได้เมื่อพิมพ์เอกสาร คุณสามารถทำได้โดยเลือก **หัวเรื่องการพิมพ์** ในการสร้างหัวพิมพ์ใหม่ ให้ไปที่: หน้าแรก > การตั้งค่า > การพิมพ์ > หัวเรื่องพิมพ์ เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/print-headings)
 
-### 2.5 Terms and Conditions
-In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+### 2.5 ข้อกำหนดและเงื่อนไข
+ในธุรกรรมการขาย/การซื้อ อาจมีข้อกำหนดและเงื่อนไขบางประการซึ่งขึ้นอยู่กับที่ซัพพลายเออร์จัดหาสินค้าหรือบริการให้กับลูกค้า คุณสามารถใช้ข้อกำหนดและเงื่อนไขกับธุรกรรมกับธุรกรรมได้ และข้อกำหนดเหล่านี้จะปรากฏขึ้นเมื่อพิมพ์เอกสาร หากต้องการทราบเกี่ยวกับข้อกำหนดและเงื่อนไข [คลิกที่นี่](/docs/user/manual/th/setting-up/print/terms-and-conditions)
 
-### 2.6 After Submitting
-You can create the following documents:
+### 2.6 หลังจากส่ง
+คุณสามารถสร้างเอกสารต่อไปนี้:
 
-* [Request For Quotation](/docs/user/manual/en/buying/request-for-quotation)
-* [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-* [Supplier Quotation](/docs/user/manual/en/buying/supplier-quotation)
+* [ขอใบเสนอราคา](/docs/user/manual/th/buying/request-for-quotation)
+* [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)
+* [Supplier Quotation](/docs/user/manual/th/buying/supplier-quotation)
 
 <img class="screenshot" alt="Material Request" src="{{docs_base_url}}/assets/img/stock/material-request.png">
 
 
-### 2.7 Automatically generate Material Requests
+### 2.7 สร้างคำขอวัสดุโดยอัตโนมัติ
 
-Material Requests can be generated automatically by enabling the setting in [Stock Settings](/docs/user/manual/en/stock/stock-settings#9-automatic-material-request) and setting the level in the [Item form](/docs/user/manual/en/stock/item#34-automatic-reordering). When the stock level dips below a certain quantity, setting a reorder will automatically create material requests for the Item.
+คำขอวัสดุสามารถสร้างได้โดยอัตโนมัติโดยเปิดใช้งานการตั้งค่าใน [การตั้งค่าสต็อก](/docs/user/manual/th/stock/stock-settings#9-automatic-material-request) และตั้งค่าระดับใน [แบบฟอร์มไอเท็ม]( /docs/user/manual/th/stock/item#34-automatic-reordering) เมื่อระดับสต็อกลดลงต่ำกว่าปริมาณที่กำหนด การตั้งค่าการสั่งซื้อใหม่จะสร้างคำขอวัสดุสำหรับสินค้าโดยอัตโนมัติ
 
-## 3. Video
+## 3. วีดีโอ
 <div>
   <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/55Gk2j7Q8Zw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
@@ -107,10 +107,10 @@ Material Requests can be generated automatically by enabling the setting in [Sto
   </div>
 </div>
 
-### 4. Related Topics
-1. [Item](/docs/user/manual/en/stock/item)
-1. [Auto Creation Of Material Request](/docs/user/manual/en/stock/articles/auto-creation-of-material-request)
-1. [Pick List](/docs/user/manual/en/stock/pick-list#23-create-pick-list-from-material-request)
-1. [Request For Quotation](/docs/user/manual/en/buying/request-for-quotation)
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-1. [Supplier Quotation](/docs/user/manual/en/buying/supplier-quotation)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [รายการ](/docs/user/manual/th/stock/item)
+1. [การสร้างคำขอวัสดุอัตโนมัติ](/docs/user/manual/th/stock/articles/auto-creation-of-material-request)
+1. [Pick List](/docs/user/manual/th/stock/pick-list#23-create-pick-list-from-material-request)
+1. [ขอใบเสนอราคา](/docs/user/manual/th/buying/request-for-quotation)
+1. [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)
+1. [Supplier Quotation](/docs/user/manual/th/buying/supplier-quotation)

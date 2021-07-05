@@ -1,33 +1,33 @@
 <!-- add-breadcrumbs -->
-# Payment Reconciliation
+# การกระทบยอดการชำระเงิน
 
-**Payment Reconciliation is used to link payments with invoices.**
+**การกระทบยอดการชำระเงินใช้เพื่อเชื่อมโยงการชำระเงินกับใบแจ้งหนี้**
 
-In complex scenarios, especially in the capital goods industry, sometimes there is no direct link between payments and invoices. You send invoices to your Customers and your Customer sends you block payments or payments based on some schedule that is not linked to your invoices.
+ในสถานการณ์ต่างๆ โดยเฉพาะอย่างยิ่งในอุตสาหกรรมสินค้าทุน บางครั้งไม่มีการเชื่อมโยงโดยตรงระหว่างการชำระเงินและใบแจ้งหนี้ คุณส่งใบแจ้งหนี้ให้กับลูกค้าของคุณและลูกค้าของคุณส่งการบล็อกการชำระเงินหรือการชำระเงินตามกำหนดการบางอย่างที่ไม่ได้เชื่อมโยงกับใบแจ้งหนี้ของคุณ
 
-In such cases, you can match Payments with Invoices using Payment Reconciliation.
+ในกรณีดังกล่าว คุณสามารถจับคู่การชำระเงินกับใบแจ้งหนี้โดยใช้การกระทบยอดการชำระเงิน
 
-To access Payment Reconciliation, go to:
-> Home > Accounting > Banking and Payments > Match Payments with Invoices
+ในการเข้าถึงการกระทบยอดการชำระเงิน ไปที่:
+> หน้าหลัก > การบัญชี > การธนาคารและการชำระเงิน > จับคู่การชำระเงินกับใบแจ้งหนี้
 
-## 1. How to Match Payments with Invoices
-1. Go to Payment Reconciliation.
-1. Select a Company.
-1. Select a Party Type and select the Party. The Receivable/Payable account will be selected automatically.
-1. Select the Bank/Cash account against which the payments need to be reconciled.
-1. If you want to filter the records, select a date range for the invoices.
-1. Click on the **Get Unreconciled Entries** button.
-1. This will fetch all un-linked Payment Entry and Sales Invoices from that Customer in a table.
-1. Delete any unwanted entries.
-1. Select the Invoice Number.
-1. Amount is the amount paid by the party, Allocated Amount is the amount you want to allocate for the reconciliation.
-1. Click on **Reconcile**. You will see a message saying 'Successfully Reconciled'.
+## 1. วิธีจับคู่การชำระเงินกับใบแจ้งหนี้
+1. ไปที่การกระทบยอดการชำระเงิน
+1. เลือกบริษัท
+1. เลือกประเภทผู้ที่เกี่ยวข้องและเลือกผู้ที่เกี่ยวข้อง บัญชีลูกหนี้/เจ้าหนี้จะถูกเลือกโดยอัตโนมัติ
+1. เลือกบัญชีธนาคาร/เงินสดที่ต้องการกระทบยอดการชำระเงิน
+1. หากคุณต้องการ กรอง เรกคอร์ด เลือกช่วงวันที่สำหรับใบแจ้งหนี้
+1. คลิกที่ปุ่ม **รับรายการที่ไม่กระทบยอด**
+1. การดำเนินการนี้จะดึงรายการการชำระเงินและใบแจ้งหนี้การขายที่ไม่ได้เชื่อมโยงทั้งหมดจากลูกค้ารายนั้นในตาราง
+1. ลบรายการที่ไม่ต้องการ
+1. เลือกหมายเลขใบแจ้งหนี้
+1. จำนวนเงินคือจำนวนเงินที่จ่ายโดยฝ่าย จำนวนเงินที่จัดสรรคือจำนวนเงินที่คุณต้องการจัดสรรสำหรับการกระทบยอด
+1. คลิกที่ **กระทบยอด** คุณจะเห็นข้อความว่า 'กระทบยอดสำเร็จ'
 
-You will get a message that says 'Amount allocated successfully'
+คุณจะได้รับข้อความว่า 'จำนวนเงินที่จัดสรรสำเร็จ'
 
 <img class="screenshot" alt="Payment Reconciliation" src="{{docs_base_url}}/assets/img/accounts/payment-reconcile-tool.png">
 
-### 2. Related Topics
-1. [Payment Request](/docs/user/manual/en/accounts/payment-request)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+### 2. หัวข้อที่เกี่ยวข้อง
+1. [คำขอชำระเงิน](/docs/user/manual/th/accounts/payment-request)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)

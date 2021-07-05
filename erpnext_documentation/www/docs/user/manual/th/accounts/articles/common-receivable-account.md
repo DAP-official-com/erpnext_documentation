@@ -1,16 +1,16 @@
 <!-- add-breadcrumbs -->
-# Common Receivable Account
+# บัญชีลูกหนี้สามัญ
 
-As per the party model, a common receivable account called **Debtor** is auto-created. This is a default Receivable Account for all the Customers.
+ตามรูปแบบปาร์ตี้ บัญชีลูกหนี้ทั่วไปที่เรียกว่า **ลูกหนี้** ถูกสร้างขึ้นโดยอัตโนมัติ นี่คือบัญชีลูกหนี้เริ่มต้นสำหรับลูกค้าทั้งหมด
 
 <img alt="Role Desk Permission" class="screenshot" src="{{docs_base_url}}/assets/img/articles/common-receivable.png">
 
-If needed, you can also create a new receivable account and update in the Customer master.
+หากจำเป็น คุณยังสามารถสร้างบัญชีลูกหนี้ใหม่และอัปเดตในข้อมูลหลักของลูกค้า
 
-**Question:** Should I create separate Receivable Account Account for each Customer?
+**คำถาม:** ฉันควรสร้างบัญชีลูกหนี้แยกสำหรับลูกค้าแต่ละรายหรือไม่
 
-**Answer:** You can, but it's not a recommended approach. If you want to create separate Receivable Account for each Customer for tracking receivable, then it not needed. You still view Account Receivable & General Ledger report for each Customer.
+**คำตอบ:** คุณทำได้ แต่ไม่ใช่แนวทางที่แนะนำ หากคุณต้องการสร้างบัญชีลูกหนี้แยกต่างหากสำหรับลูกค้าแต่ละรายเพื่อติดตามลูกหนี้ ก็ไม่จำเป็น คุณยังคงดูรายงานบัญชีลูกหนี้และบัญชีแยกประเภททั่วไปสำหรับลูกค้าแต่ละราย
 
-Just like Debtors, for tracking payables, default account called Creditors is created under Account Payables.
+เช่นเดียวกับลูกหนี้ สำหรับการติดตามเจ้าหนี้ บัญชีเริ่มต้นที่เรียกว่าเจ้าหนี้จะถูกสร้างขึ้นภายใต้บัญชีเจ้าหนี้
 
 {next}

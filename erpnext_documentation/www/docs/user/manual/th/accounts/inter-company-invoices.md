@@ -1,58 +1,58 @@
 <!-- add-breadcrumbs -->
 
-# Inter Company Invoices
+# ใบแจ้งหนี้ระหว่างบริษัท
 
-**An Inter Company Journal Invoice is done between organizations that belong to the same group.**
+**ใบแจ้งหนี้ระหว่างบริษัทดำเนินการระหว่างองค์กรที่อยู่ในกลุ่มเดียวกัน**
 
-Along with creating Purchase Invoices or Sales Invoices for a single company, you can create inter-linked invoices for multiple companies.
+นอกเหนือจากการสร้างใบแจ้งหนี้การซื้อหรือใบแจ้งหนี้การขายสำหรับบริษัทเดียว คุณสามารถสร้างใบแจ้งหนี้ที่เชื่อมโยงระหว่างกันสำหรับบริษัทต่างๆ ได้
 
-For example, you can create a Purchase Invoice for a company say 'Company ABC', and create a Sales Invoice against this Purchase Invoice for another company say 'Company XYZ' and link them together.
+ตัวอย่างเช่น คุณสามารถสร้างใบกำกับสินค้าสำหรับบริษัทที่พูดว่า 'บริษัท ABC' และสร้างใบกำกับสินค้าขายเทียบกับใบกำกับสินค้านี้สำหรับบริษัทอื่นโดยพูดว่า 'บริษัท XYZ' และเชื่อมโยงเข้าด้วยกัน
 
-## 1. How to create Inter Company Invoices
+## 1. วิธีสร้างใบแจ้งหนี้ระหว่างบริษัท
 
-### 1.1 Setting up
-1. Go to: **Accounts > Masters > Customer**.
-1. Select the Customer who you would want to choose for the inter-linked invoice.
-1. Enable the checkbox, **Is Internal Customer** shown as follows:
+### 1.1 การตั้งค่า
+1. ไปที่: **บัญชี > บัญชีหลัก > ลูกค้า**.
+1. เลือกลูกค้าที่คุณต้องการเลือกสำหรับใบแจ้งหนี้ที่เชื่อมโยงถึงกัน
+1. เปิดใช้งานช่องทำเครื่องหมาย **เป็นบริษัทภายใน** Customerแสดงดังนี้:
 
  <img class="screenshot" alt="Internal Customer" src="{{docs_base_url}}/assets/img/accounts/make-internal-customer.png">
 
-1. Add the company which the Customer represents in the **Represents Company** field. This the company for which the Sales Invoice will be created.
-1. In the **Allowed To Transact With** table, add the company against which you will be creating a Purchase Invoice. 
-1. Now, when you create a Purchase Invoice against company A (customer is from company B, the seller is company A), it'll be linked to the Sales Invoice for company A created using this Internal Customer from company B.
-1. Now, you need to follow a similar procedure for setting up a Supplier for inter-linked invoices.
-1. Go to: **Accounts > Masters > *Select the Supplier***
-1. Tick on Is Internal Supplier.
-1. In the **Represents Company** field, add the company which you added in the table **Allowed To Transact With** for the Customer.
-1. In the table **Allowed To Transact With** for the Supplier, add the company which the Customer represents. This is the company against which you are going to make an inter-linked Purchase Invoice.
-1. Here is a screenshot of the Supplier company to avoid any confusion:
+1. เพิ่ม บริษัท ที่ลูกค้าหมายในหมายถึงฟิลด์ บริษัท นี่คือบริษัทที่จะสร้างใบแจ้งหนี้การขาย
+1. ในตารางให้กด **อนุญาตให้ทำธุรกรรมกับ** ให้เพิ่มบริษัทที่คุณจะใช้สร้างใบแจ้งหนี้การขาย
+1. เมื่อคุณสร้างใบกำกับสินค้ากับบริษัท A (ลูกค้ามาจากบริษัท B ผู้ขายคือบริษัท A) จะเชื่อมโยงกับใบกำกับสินค้าสำหรับบริษัท A ที่สร้างขึ้นโดยใช้ลูกค้าภายในรายนี้จากบริษัท B
+1. คุณต้องทำตามขั้นตอนที่คล้ายกันในการตั้งค่าซัพพลายเออร์สำหรับใบแจ้งหนี้ที่เชื่อมโยงกัน
+1. ไปที่: **บัญชี > บัญชีหลัก > เลือกซัพพลายเออร์**
+1. เลือกที่ **ซัพพลายเออร์ภายใน**
+1. ในฟิลด์ **ตัวแทนบริษัท** ให้เพิ่มบริษัทที่คุณเพิ่มในตาราง **อนุญาตให้ทำธุรกรรม** กับลูกค้า
+1. ในตาราง **อนุญาตให้ทำธุรกรรม** กับซัพพลายเออร์ ให้เพิ่มบริษัทที่ลูกค้าเป็นตัวแทน นี่คือบริษัทที่คุณจะทำใบกำกับสินค้าที่เชื่อมโยงระหว่างกัน
+1. ดูภาพหน้าจอของบริษัทซัพพลายเออร์เพื่อข้อมูลเพิ่มเติม:
 
  <img class="screenshot" alt="Internal Supplier" src="{{docs_base_url}}/assets/img/accounts/make-internal-supplier.png">
 
-### 1.2 Creating the Invoice
-1. Now, create a new [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice), fill up the fields.
-1. Remember to select the Customer who is an internal customer and company from which he's buying.
-1. Save and Submit the Invoice.
+### 1.2 การสร้างใบแจ้งหนี้การขาย
+1. สร้าง [ใบแจ้งหนี้การ](/docs/user/manual/th/accounts/sales-invoice)ใหม่ แล้วกรอกข้อมูลในฟิลด์
+1. เลือกลูกค้าที่เป็นลูกค้าภายในและบริษัทที่เขาซื้อ
+1. บันทึกและส่งใบแจ้งหนี้
 
  <img class="screenshot" alt="Inter company invoice" src="{{docs_base_url}}/assets/img/accounts/make-inter-company-invoice.png">
 
-1. Before you make an *Inter Company Invoice* you need to do the following:
- 1. The selling and buying price between the companies should be in sync.
- 1. Go to **Stock > Price List**, create a new Price List for inter company transactions.
- 1. Tick both Selling and Buying in this new Price List.
- 1. Go to **Buying > Supplier > *internal supplier***, in the currency and price list section, set the price list to the new one just created.
- 1. Do the same for the internal customer, i.e., set the price list to the new one.
- 1. Now, you can make an inter company Purchase or Sales Invoice.
-1. Under the **Make** button dropdown, you will find a link **Inter Company Invoice**, on clicking the link, you will be routed to a new Purchase Invoice form page.
-1. Here, the supplier and company will be auto-fetched depending on the company you selected in the Sales Invoice.
-> ***Remember**: There can only be a single Internal Supplier or Customer per company.*
-1. Submit the invoice, done! Now, both the invoices are inter-linked. *Also, on canceling any of the invoices, the link will break as well.*
+1. ก่อนที่คุณจะสร้าง **ใบแจ้งหนี้ระหว่างบริษัท** คุณต้องดำเนินการดังต่อไปนี้:
+ 1. ราคาขายและซื้อระหว่างบริษัทควรจะตรงกัน
+ 1. ไปที่ **คลังสินค้า > รายการราคา** สร้างรายการราคาใหม่สำหรับธุรกรรมระหว่างบริษัท
+ 1. เลือกทั้งการขายและการซื้อในรายการราคาใหม่
+ 1. ไปที่ **การซื้อ > ซัพพลายเออร์ > ซัพพลายเออร์ภายใน** ส่วนรายการสกุลเงินและราคา ให้ตั้งค่ารายการราคาเป็นรายการใหม่ที่เพิ่งสร้างขึ้น
+ 1. ทำเช่นเดียวกันสำหรับลูกค้าภายใน กล่าวคือ ตั้งค่ารายการราคาเป็นราคาใหม่
+ 1. คุณสามารถทำใบสั่งซื้อหรือใบกำกับการขายระหว่างบริษัทได้
+1. ภายใต้เมนูดรอปดาวน์ของปุ่ม **สร้าง** คุณจะพบลิงก์ **ใบแจ้งหนี้ระหว่างบริษัทภายใน** เมื่อคลิกลิงก์ คุณจะเข้าสู่หน้าแบบฟอร์มใบสั่งซื้อใหม่
+1. ซัพพลายเออร์และบริษัทจะถูกดึงข้อมูลอัตโนมัติโดยขึ้นอยู่กับบริษัทที่คุณเลือกในใบแจ้งหนี้การขาย
+> ***ข้อควรจำ**: สามารถมีซัพพลายเออร์ภายในหรือลูกค้าได้เพียงรายเดียวต่อบริษัท*
+1. หลังจากส่งใบแจ้งหนี้เสร็จแล้ว ใบแจ้งหนี้ทั้งสองมีการเชื่อมโยงกัน นอกจากนี้ ในการยกเลิกใบแจ้งหนี้ใดๆ ลิงก์ก็จะขาดเช่นกัน
 
-> Note: An Inter Company invoice will only affect the accounting ledger and not the stock ledger. This is because the companies belong to the same group of companies.
+> หมายเหตุ: ใบกำกับสินค้าระหว่างบริษัทจะมีผลกับบัญชีแยกประเภทเท่านั้น ไม่ใช่กับบัญชีแยกประเภทหุ้น เนื่องจากบริษัทอยู่ในกลุ่มบริษัทเดียวกัน
 
-You can follow the same process to create a Purchase Invoice and then an inter-linked Sales Invoice from the submitted Purchase Invoice.
+คุณสามารถทำตามขั้นตอนเดียวกันเพื่อสร้างใบสั่งซื้อ จากนั้นจึงสร้างใบกำกับสินค้าที่เชื่อมโยงระหว่างกันจากใบกำกับสินค้าที่ส่งมา
 
-### 2. Related Topics
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
-1. [Inter Company Journal Entry](/docs/user/manual/en/accounts/inter-company-journal-entry)
+### 2. หัวข้อที่เกี่ยวข้อง
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)
+1. [รายการบันทึกระหว่างบริษัท](/docs/user/manual/th/accounts/inter-company-journal-entry)

@@ -1,64 +1,64 @@
 <!-- add-breadcrumbs -->
-# Inter Company Journal Entry
+# รายการบันทึกประจำวันระหว่างบริษัทภายใน
 
-**An Inter Company Journal Entry is done between organizations that belong to the same group.**
+**รายการบันทึกประจำวันระหว่างบริษัทภายในจะทำระหว่างองค์กรที่อยู่ในกลุ่มเดียวกัน**
 
-You can create Inter Company Journal Entry if you are making transactions with multiple Companies.
-You can select the Accounts which you wish to use in the Inter Company transactions. A possible use case would be a company buying goods on behalf of another company.
+คุณสามารถสร้างรายการบันทึกระหว่างบริษัทได้ หากคุณทำธุรกรรมกับหลายบริษัท คุณสามารถเลือกบัญชีที่คุณต้องการใช้ในการทำธุรกรรมระหว่างบริษัท กรณีการใช้งานที่เป็นไปได้คือบริษัทที่ซื้อสินค้าในนามของบริษัทอื่น
 
-Before creating an Inter Company Journal Entry, you need to set up your Chart of accounts.
+ก่อนสร้างรายการบันทึกระหว่างบริษัท คุณต้องตั้งค่าผังบัญชีเสียก่อน
 
-1. Go to: **Accounts > Company and Accounts > Chart Of Accounts**.
-1. Select the Account which you would like to set as an Internal Account for the transaction, and check the 'Inter Company Account' checkbox. This account can now be used for Inter Company Journal Entry transactions. It is recommended to create a new account for inter company transactions.
+1. ไปที่: **บัญชี > บริษัทและบัญชี > ผังบัญชี**
+1. เลือกบัญชีที่คุณต้องการตั้งเป็นบัญชีภายในสำหรับการทำธุรกรรม และทำเครื่องหมายที่ช่อง 'บัญชีระหว่างบริษัท' บัญชีนี้สามารถใช้สำหรับธุรกรรมรายการบันทึกบัญชีระหว่างบริษัทได้แล้ว ขอแนะนำให้สร้างบัญชีใหม่สำหรับการทำธุรกรรมระหว่างบริษัท
     <img class="screenshot" alt="Internal Account" src="{{docs_base_url}}/assets/img/accounts/internal-account.png">
 You need to do the same for all the Companies' Accounts which you want to use for Inter Company Journal Entry transactions.
 
-In case of parent-child companies, when an account is created in the parent company, it gets added in the child company. This works only if you've selected the option to create Chart of Accounts for child Company based on the parent Company.
+คุณต้องทำเช่นเดียวกันกับบัญชีของบริษัททั้งหมดที่คุณต้องการใช้สำหรับธุรกรรมรายการบันทึกระหว่างบริษัท
 
-Inter company Journal Entries are created using the Journal Entry form in ERPNext. To access the Journal Entry list, go to:
+ในกรณีของบริษัทแม่-ลูก เมื่อมีการสร้างบัญชีในบริษัทแม่ บัญชีนั้นจะถูกเพิ่มในบริษัทลูก วิธีนี้ใช้ได้เฉพาะเมื่อคุณเลือกตัวเลือกในการสร้างผังบัญชีสำหรับบริษัทย่อยตามบริษัทแม่
 
-> Home > Accounting > Company and Accounts > Journal Entry
+รายการบันทึกประจำวันระหว่างบริษัทถูกสร้างขึ้นโดยใช้แบบฟอร์มรายการบันทึกประจำวันใน ERPNext หากต้องการเข้าถึงรายการบันทึก ให้ไปที่:
 
-## 1. Prerequisites
-Before creating an Inter Company Journal Entry, you need the following:
+> หน้าหลัก > การบัญชี > บริษัทและบัญชี > รายการบันทึกประจำวัน
 
-* At least two [Companies](/docs/user/manual/en/setting-up/company-setup)
-* Setting inter company accounts in [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts)
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างรายการบันทึกระหว่างบริษัท คุณต้องมีสิ่งต่อไปนี้:
 
-## 2. How to create an Inter Company Journal Entry
-1. Go to the Journal Entry list, and click on New.
-1. Select Entry Type as 'Inter Company Journal Entry'.
-1. Set the Company that is buying Items on behalf of another company.
-1. Add rows for the individual accounting entries. Only inter company accounts can be fetched here.
-1. In each row, you must specify:
-  * The Internal account that will be affected. 
-  * The amount to Debit or Credit.
-  * The Cost Center (If it is an Income or Expense).
-1. On submitting the Journal Entry, you will find a button on the top right corner, **Make Inter Company Journal Entry**.
+* มีอย่างน้อยสอง [บริษัท](/docs/user/manual/th/setting-up/company-setup)
+* การตั้งค่าบัญชีระหว่างบริษัทใน [ผังบัญชี](/docs/user/manual/th/accounts/chart-of-accounts)
+
+## 2. วิธีสร้างรายการบันทึกระหว่างบริษัท
+1. ไปที่รายการบันแล้วคลิกใหม่
+1. เลือกประเภทรายการเป็น 'รายการบันทึกประจำวันระหว่างบริษัท'
+1. ตั้งบริษัทที่ซื้อสินค้าในนามของบริษัทอื่น
+1. เพิ่มแถวสำหรับรายการบัญชีแต่ละรายการ สามารถดึงข้อมูลบัญชีระหว่างบริษัทได้ที่นี่เท่านั้น
+1. ในแต่ละแถว คุณต้องระบุ:
+  * บัญชีภายในที่จะได้รับผลกระทบ
+  * จำนวนเงินที่จะเดบิตหรือเครดิต
+  * ศูนย์ต้นทุน (หากเป็นรายรับหรือรายจ่าย)
+1. ในการส่งรายการบันทึกประจำวัน คุณจะพบปุ่มที่มุมขวาด้านบนที่ **ทำให้เป็นรายการระหว่างบริษัท**.
 
    <img class="screenshot" alt="Submitted Inter Company Journal Entry" src="{{docs_base_url}}/assets/img/accounts/inter-company-jv-submit.png">
 
-1. Click on the button. Now, you will be asked to select the Company against which you wish to create the linked Journal Entry.
+1. คลิกที่ปุ่ม ตอนนี้ คุณจะถูกขอให้เลือกบริษัทที่คุณต้องการสร้างรายการบันทึกประจำวันที่เชื่อมโยง
 
     <img class="screenshot" alt="Select Company" src="{{docs_base_url}}/assets/img/accounts/select-company-jv.png">
 
-1. On selecting the Company, you will be routed to another Journal Entry where the relevant fields will be mapped, i.e. Company, Voucher Type, Inter Company Journal Entry Reference etc. 
+1. ในการเลือกบริษัท คุณจะถูกส่งไปยังรายการบันทึกประจำวันอื่นซึ่งจะมีการแมปฟิลด์ที่เกี่ยวข้อง เช่น บริษัท ประเภทบัตรกำนัล การอ้างอิงรายการบันทึกประจำวันระหว่างบริษัท เป็นต้น
 
     <img class="screenshot" alt="Linked Journal Entry" src="{{docs_base_url}}/assets/img/accounts/linked-jv.png">
 
-1. Select the Internal accounts for the second Company in the table.
-1. Submit the Journal Entry.
-1. Make sure the total Debit and Credit Amounts are same as the previously created Journal Entry's total Credit and Debit Amounts respectively but the debits and credits will be opposite.
+1. เลือกบัญชีภายในสำหรับบริษัทที่สองในตาราง
+1. ส่งรายการบันทึกประจำวัน
+1. ตรวจสอบให้แน่ใจว่ายอดรวมเดบิตและเครดิตนั้นเหมือนกับจำนวนเครดิตและเดบิตทั้งหมดของรายการบันทึกที่สร้างไว้ก่อนหน้านี้ตามลำดับ แต่เดบิตและเครดิตจะตรงกันข้าม
 
-**Note:** The accounts in second Journal Entry should be the opposite of what you did in the first Journal Entry.
-For example, Company A is buying something from Company B. This is how the payment cycle between the two companies will look like using Inter Company Journal Entry.
+**หมายเหตุ** : บัญชีในรายการบันทึกประจำวันที่สองควรตรงกันข้ามกับสิ่งที่คุณทำในรายการบันทึกรายการแรก ตัวอย่างเช่น บริษัท A กำลังซื้อบางอย่างจากบริษัท B นี่คือลักษณะที่วงจรการชำระเงินระหว่างทั้งสองบริษัทจะมีลักษณะเหมือนกับการใช้รายการบันทึกประจำวันระหว่างบริษัท
 
-1. Debit Bank Account by 500 and credit Debtors account of Company B by 500.
-1. Now, in the Inter Company Journal Entry, debit Creditors account of Company A by 500 and credit Bank Account by 500. 
-1. You also need to select the parties for Creditors and Debtors account before proceeding with the Journal Entry.
+1. เดบิตบัญชีธนาคาร 500 และบัญชีลูกหนี้เครดิตของบริษัท B 500
+1. ในรายการบันทึกประจำวันระหว่างบริษัท บัญชีเดบิตเจ้าหนี้ของบริษัท A จำนวน 500 และบัญชีธนาคารเครดิต 500
+1. คุณต้องเลือกฝ่ายสำหรับบัญชีเจ้าหนี้และลูกหนี้ก่อนดำเนินการรายการบันทึกประจำวัน
 
-You can also find the reference link at the bottom, which will be added in both the linked Journal Entries and will be removed if any of the Journal Entries are cancelled.
+คุณยังสามารถค้นหาลิงค์อ้างอิงที่ด้านล่าง ซึ่งจะถูกเพิ่มเข้าไปทั้งในรายการบันทึกประจำวันที่เชื่อมโยง และจะถูกลบออกหากมีการยกเลิกรายการบันทึกประจำวัน
 
-### 3. Related Topics
-1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
-1. [Inter Company Invoices](/docs/user/manual/en/accounts/inter-company-invoices)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [รายการบันทึกประจำวัน](/docs/user/manual/th/accounts/journal-entry)
+1. [ใบแจ้งหนี้ระหว่างบริษัท](/docs/user/manual/th/accounts/inter-company-invoices)

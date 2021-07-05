@@ -1,107 +1,107 @@
 <!-- add-breadcrumbs -->
 
-# Process Statement Of Accounts
+# ใบแจ้งยอดบัญชี
 
 > Introduced in Version 13
 
-**Process Statement Of Accounts is a tool which helps you send Statement Of Accounts (General Ledger Report) and Ageing (Accounts Receivable Summary) Report as a PDF to your customers in bulk via email either manually or automated periodically.**
+**ใบแจ้งยอดบัญชีเป็นเครื่องมือที่ช่วยให้คุณส่งใบแจ้งยอดบัญชี (รายงานบัญชีแยกประเภททั่วไป) และรายงานอายุ (สรุปบัญชีลูกหนี้) เป็น PDF ให้กับลูกค้าของคุณเป็นกลุ่มผ่านทางอีเมลด้วยตนเองหรือโดยอัตโนมัติเป็นระยะ**
 
-This feature is useful when you want to send email updates to customers periodically about their transactions (like Sales Invoices). In the PDF attachment sent via emails sent to the customers, for each customer, there will be details like invoice posting date, Sales Invoice number, debit and credit details, etc relevant to their account.
+คุณลักษณะนี้มีประโยชน์เมื่อคุณต้องการส่งการอัปเดตทางอีเมลถึงลูกค้าเป็นระยะเกี่ยวกับธุรกรรมของพวกเขา (เช่น ใบกำกับสินค้า) ในไฟล์แนบ PDF ที่ส่งทางอีเมลที่ส่งถึงลูกค้า สำหรับลูกค้าแต่ละราย จะมีรายละเอียด เช่น วันที่โพสต์ใบแจ้งหนี้ หมายเลขใบกำกับสินค้า รายละเอียดเดบิตและเครดิต ฯลฯ ที่เกี่ยวข้องกับบัญชีของพวกเขา
 
-The purpose of this feature is remind multiple customers that they have pending unpaid invoices.
+จุดประสงค์ของคุณสมบัตินี้คือเตือนลูกค้าหลายรายว่าพวกเขามีใบแจ้งหนี้ที่ค้างชำระอยู่
 
 <br>
-To access *Process Statement Of Accounts* list you can either search in the navbar or go to:
+ในการเข้าถึง *ใบแจ้งยอดบัญชี* คุณสามารถค้นหาในแถบนำทางหรือไปที่:
 
-> Home > Accounting > Tools > Process Statement Of Accounts
+> หน้าหลัก > การบัญชี > เครื่องมือ > ใบแจ้งยอดบัญชี
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-1. The tool uses the email IDs of customers to send them the reports. On not finding the below email entries in the Customer contacts the tool won't allow you to select the respective Customer, so please ensure the following details are filled in the Customer documents.
+1. เครื่องมือนี้ใช้รหัสอีเมลของลูกค้าเพื่อส่งรายงาน เมื่อไม่พบรายการอีเมลด้านล่างในการติดต่อของลูกค้า เครื่องมือจะไม่อนุญาตให้คุณเลือกลูกค้าที่เกี่ยวข้อง ดังนั้นโปรดตรวจสอบให้แน่ใจว่าได้กรอกรายละเอียดต่อไปนี้ในเอกสารของลูกค้า
 
-    - Billing Email of Customer: This is mandatory and can be set within the [Customer Contact](/docs/user/manual/en/CRM/contact#1-how-to-create-a-contact) with "Is Billing Contact" option checked.
-    - Primary Email of Customer: This is not mandatory, unless you select the "Send To Primary Contact" in the form.
+    - อีเมลเรียกเก็บเงินของลูกค้า: นี่เป็นข้อบังคับและสามารถตั้งค่าได้ภายใน [ข้อมูลติดต่อลูกค้า](/docs/user/manual/th/CRM/contact#1-how-to-create-a-contact) โดยเลือกตัวเลือก "เป็นผู้ติดต่อสำหรับการเรียกเก็บเงิน"
+    - อีเมลหลักของลูกค้า: ไม่จำเป็น เว้นแต่คุณจะเลือก "ส่งไปยังผู้ติดต่อหลัก" ในแบบฟอร์ม
 
-2. Email Account setup with outgoing enabled. Learn more about this [here](/docs/user/manual/en/setting-up/email/email-account).
+2. การตั้งค่าบัญชีอีเมลโดยเปิดใช้งานขาออก อ่าน [ที่นี่](/docs/user/manual/th/setting-up/email/email-account) เพื่อทราบข้อมูลเพิ่มเติม
 
 
-## 2. How to create a Process Statement Account entry
+## 2. วิธีสร้างรายการบัญชีใบแจ้งยอด
 
-1. Go to the "Process Statement Of Account" list view by searching in the navbar and click on "New".
+1. ไปที่มุมมองรายการ "ใบแจ้งยอดบัญชี" โดยค้นหาในแถบนำทางแล้วคลิก "ใหม่"
 
-2. Enter a name for the entry, for future reference.
+2. ป้อนชื่อสำหรับรายการเพื่อใช้อ้างอิงในอนาคต
 
-3. Set the General Ledger filters for the statements which will be sent to the customers.
+3. ตั้งค่าตัวกรองบัญชีแยกประเภททั่วไปสำหรับใบแจ้งยอดซึ่งจะถูกส่งไปยังลูกค้า
     
-    - "From Date" and "To Date" filters will be hidden and auto-filled dynamically when "Enable Auto Email" option is selected.
-    - "Project" and "Cost Center" are [Table MultiSelect](/docs/user/manual/en/customize-erpnext/articles/table-multiselect-field) fields. Meaning you can select multiple Projects and Cost Centers in the General Ledger filters.
+    - ตัวกรอง "จากวันที่" และ "ถึงวันที่" จะถูกซ่อนและป้อนอัตโนมัติแบบไดนามิกเมื่อเลือกตัวเลือก "เปิดใช้งานอีเมลอัตโนมัติ"
+    - "โครงการ" และ "ศูนย์ต้นทุน" คือฟิลด์ [Table MultiSelect](/docs/user/manual/th/customize-erpnext/articles/table-multiselect-field) หมายความว่าคุณสามารถเลือกหลายโครงการและศูนย์ต้นทุนในตัวกรองบัญชีแยกประเภททั่วไป
 
     <img class="screenshot" src="{{docs_base_url}}/assets/img/accounts/psoa-name_and_filters.png">
     
-4. In the "Customers" section, you have an option to select customers in the child table and fetch their primary and billing emails. 
+4. ในส่วน "ลูกค้า" คุณมีตัวเลือกในการเลือกลูกค้าในตารางย่อยและดึงอีเมลหลักและอีเมลเรียกเก็บเงิน
 
-    - The "Select Customer By" field lets you select customers in bulk, by grouping them based on "Customer Group", "Territory", "Sales Partner", and "Sales Person" by entering the selection and clicking on "Fetch Customers". 
-    - In tree doctypes like "Territory", "Sales Person", and "Customer Group" on selecting group values, the customers having the child values of these fields will also be fetched. So when you select "India" as territory in the form, all customers with "Territory" values under India in the Territory tree will get selected.
-    - The "Send To Primary Contact" option will send the Statement Of Account to the primary contact email IDs of the customers too apart from the billing email.
+    - ฟิลด์ "เลือกลูกค้าโดย" ให้คุณเลือกลูกค้าเป็นกลุ่ม โดยจัดกลุ่มตาม "กลุ่มลูกค้า" "พื้นที่" "พันธมิตรการขาย" และ "พนักงานขาย" โดยการป้อนการเลือกและคลิกที่ "ดึงลูกค้า"
+    - ในเอกสาร doctypes แบบโครงสร้างต้นไม้ เช่น "อาณาเขต" "พนักงานขาย" และ "กลุ่มลูกค้า" ในการเลือกค่าของกลุ่ม ลูกค้าที่มีค่ารองของฟิลด์เหล่านี้จะถูกดึงข้อมูลด้วย ดังนั้น เมื่อคุณเลือก "อินเดีย" เป็นอาณาเขตในแบบฟอร์ม ลูกค้าทั้งหมดที่มีค่า "เขตแดน" ภายใต้อินเดียในแผนผังเขตแดนจะถูกเลือก
+    - ตัวเลือก "ส่งไปยังผู้ติดต่อหลัก" จะส่งใบแจ้งยอดบัญชีไปยังรหัสอีเมลผู้ติดต่อหลักของลูกค้า นอกเหนือจากอีเมลเรียกเก็บเงิน
 
     <img class="screenshot" src="{{docs_base_url}}/assets/img/accounts/psoa-customers.png"><br>
 
-5. In "Print Preferences" section you can select 2 things:
+5. ในส่วน "การตั้งค่าการพิมพ์" คุณสามารถเลือกได้ 2 ตัวเลือก:
 
-    - Print orientation of the PDF file, either "Landscape" or "Portrait".
-    - Whether you want to see the ageing report (Accounts Receivable Summary report), which shows the ageing amount for 30/60/90/120 days for vouchers (like Sales Invoice), based on either "Due Date" or "Posting Date".
+    - การวางแนวการพิมพ์ของไฟล์ PDF ไม่ว่าจะเป็น "แนวนอน" หรือ "แนวตั้ง"
+    - คุณต้องการดูรายงานอายุ (รายงานสรุปบัญชีลูกหนี้) ซึ่งแสดงจำนวนวันที่หมดอายุสำหรับ 30/60/90/120 วันสำหรับบัตรกำนัล (เช่น ใบกำกับสินค้า) โดยยึดตาม "วันที่ครบกำหนด" หรือ "วันที่ผ่านรายการ"
 
     <img class="screenshot" src="{{docs_base_url}}/assets/img/accounts/psoa-print.png">
 
-6. The "Email Settings" section lets you configure how you want the emails to be sent. There are two subsections in this:
+6. "การตั้งค่าอีเมล" ให้คุณกำหนดค่าว่าต้องการให้ส่งอีเมลอย่างไร มีสองส่วนย่อยในนี้:
 
     <img class="screenshot" src="{{docs_base_url}}/assets/img/accounts/psoa-auto-email.png">
     
-    - On selecting "Enable Auto Email" you will see the options to send automated periodic reports to the customers in the entry.
-    - You can select the "Frequency" at which the emails will be sent after the "Start Date" to the customers. The available options are weekly, monthly, and quarterly.
-    - You can also select the "Filter Duration" in months. For example, if you set "Filter Duration" as '3', you'll get the reports for the last three months counting from the current date. Here, current date refers to the date on which the emails are sent.
-    - These mails are not sent right away, but at midnight as a background process.
-    - After this you can select the "Subject", "CC To", and "Body" fields of the email. If you don't set values to this field, default values will be set like shown below.
+    - ในการเลือก "เปิดใช้งานอีเมลอัตโนมัติ" คุณจะเห็นตัวเลือกในการส่งรายงานอัตโนมัติเป็นระยะไปยังลูกค้าในรายการ
+    - คุณสามารถเลือก "ความถี่" ที่จะส่งอีเมลหลังจาก "วันที่เริ่มต้น" ให้กับลูกค้า ตัวเลือกที่ใช้ได้คือรายสัปดาห์ รายเดือน และรายไตรมาส
+    - คุณยังสามารถเลือก "ระยะเวลาการกรอง" เป็นเดือน ตัวอย่างเช่น หากคุณตั้งค่า "ระยะเวลาตัวกรอง" เป็น '3' คุณจะได้รับรายงานสำหรับสามเดือนที่ผ่านมานับจากวันที่ปัจจุบัน ในที่นี้ วันที่ปัจจุบันหมายถึงวันที่ส่งอีเมล
+    - อีเมลเหล่านี้จะไม่ถูกส่งในทันทีแต่เป็นกระบวนการในเบื้องหลังในเวลาเที่ยงคืน
+    - หลังจากนี้ คุณสามารถเลือกช่อง "หัวเรื่อง" "สำเนาถึง" และ "เนื้อหา" ของอีเมลได้ หากคุณไม่ได้ตั้งค่าให้กับฟิลด์นี้ ค่าเริ่มต้นจะถูกตั้งค่าตามที่แสดงด้านล่าง
     
     <img class="screenshot" src="{{docs_base_url}}/assets/img/accounts/psoa-email-default-content.png">
 
-7. Review your settings and click on "Save".
+7. ตรวจสอบการตั้งค่าของคุณและคลิกที่ "บันทึก"
 
-Now, wait for the emails to get sent if you've enabled "Enable Auto Email" or click on Send Emails to send them immediately.
+รอให้อีเมลถูกส่งหากคุณเปิดใช้งาน "เปิดใช้งานอีเมลอัตโนมัติ" หรือคลิกที่ส่งอีเมลเพื่อส่งทันที
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Download consolidated PDF of all customers
+### 3.1 ดาวน์โหลด PDF รวมของลูกค้าทั้งหมด
 
-On creating an entry, there is a button seen at the top called "Download" which lets you see the consolidated report PDF of all customers. You can use this for reviewing.
+ในการสร้างรายการ จะมีปุ่มที่ด้านบนเรียกว่า "ดาวน์โหลด" ซึ่งช่วยให้คุณเห็นรายงานแบบรวม PDF ของลูกค้าทั้งหมด คุณสามารถใช้ข้อมูลนี้เพื่อตรวจสอบได้
 
-### 3.2 Send emails manually
+### 3.2 ส่งอีเมลด้วยตนเอง
 
-On creating an entry, there is a button seen at the top called "Send Emails" which lets you trigger email sending manually to the customers. The emails are queued via a background job, which you can track in the "Email Queue" doctype with the DocType and Document references. You can do this even if "Enable Auto Email" is on.
+ในการสร้างรายการ จะมีปุ่มที่ด้านบนเรียกว่า "ส่งอีเมล" ซึ่งช่วยให้คุณทริกเกอร์การส่งอีเมลด้วยตนเองไปยังลูกค้าได้ อีเมลจะถูกจัดคิวผ่านงานพื้นหลัง ซึ่งคุณสามารถติดตามได้ในประเภทเอกสาร "คิวอีเมล" ด้วยการอ้างอิงประเภทเอกสารและเอกสาร คุณสามารถทำเช่นนี้ได้แม้ว่าจะเปิด "เปิดใช้งานอีเมลอัตโนมัติ" อยู่
 
 <img class="screenshot" src="{{docs_base_url}}/assets/img/accounts/psoa-buttons.png">
 
-### 3.3 Using dynamic values in the Email Subject and Body
+### 3.3 การใช้ค่าไดนามิกในหัวข้อและเนื้อหาอีเมล
 
-You can use Jinja tags to enter dynamic values from:
+คุณสามารถใช้แท็ก Jinja เพื่อป้อนค่าไดนามิกจาก:
 
-- The customer to which the email will be sent to under the "customer" object 
-- Any field in the selected Process Statement Of Account document under the "doc" object
-- Any method in [`frappe.utils`](https://github.com/frappe/frappe/blob/develop/frappe/utils/__init__.py) under the "frappe" object
+- ลูกค้าที่จะส่งอีเมลถึงภายใต้วัตถุ "ลูกค้า"
+- ฟิลด์ใดก็ได้ในเอกสาร ใบแจ้งยอดบัญชี ที่เลือกภายใต้ออบเจกต์ "doc"
+- วิธีการจาก [`frappe.utils`](https://github.com/frappe/frappe/blob/develop/frappe/utils/__init__.py) ภายใต้วัตถุ "frappe"
 
-They can be used as shown below:
+สามารถใช้งานได้ตามที่แสดงด้านล่าง:
 
 <img class="screenshot" src="{{docs_base_url}}/assets/img/accounts/psoa-template.png">
 
-Resulting Email:
+อีเมล:
 
 <img class="screenshot" src="{{docs_base_url}}/assets/img/accounts/psoa-email.png">
 
-Report PDF:
+PDF:
 
 <img class="screenshot" src="{{docs_base_url}}/assets/img/accounts/psoa-report.png">
 
-## 4. Related Topics
-1. [Setting up an Email Account](/docs/user/manual/en/setting-up/email/email-account)
-1. [Creating Customer Contact](/docs/user/manual/en/CRM/contact#1-how-to-create-a-contact)
-1. [Contact](/docs/user/manual/en/CRM/contact)
+## 4. หัวข้อที่เกี่ยวข้อง
+1. [การตั้งค่าบัญชีอีเมล](/docs/user/manual/th/setting-up/email/email-account)
+1. [การสร้างการติดต่อกับลูกค้า](/docs/user/manual/th/CRM/contact#1-how-to-create-a-contact)
+1. [รายชื่อ](/docs/user/manual/th/CRM/contact)

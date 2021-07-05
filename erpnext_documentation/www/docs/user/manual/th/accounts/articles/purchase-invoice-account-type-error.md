@@ -1,12 +1,12 @@
 <!-- add-breadcrumbs -->
-# Purchase Invoice - Account Type Error
+# ใบแจ้งหนี้การซื้อ - ประเภทบัญชีผิดพลาด
 
-**Question:** On saving the Purchase Invoice, I am getting a validation message that Credit To Account must be a Balance Sheet account.
+**คำถาม:** ในการบันทึกใบกำกับสินค้า ฉันได้รับข้อความยืนยันว่าเครดิตในบัญชีจะต้องเป็นบัญชีงบดุล
 
 <img alt="Role Desk Permission" class="screenshot" src="{{docs_base_url}}/assets/img/articles/purchase-invoice-account-type.png">
 
-**Answer: **On submission of a Purchase Invoice, payable is updated towards the Supplier. As per the accounting standards, Payable Account is aligned under Current Liability (credit side of Balance Sheet).
+**คำตอบ: **เมื่อส่งใบกำกับสินค้า รายการชำระเงินจะได้รับการอัปเดตไปยังซัพพลายเออร์ ตามมาตรฐานการบัญชี บัญชีเจ้าหนี้อยู่ภายใต้ความรับผิดในปัจจุบัน (ด้านเครดิตของงบดุล)
 
-The error message indicates that Account selected in the Credit To field doesn't belong to the Liability Group. Please ensure that Payable Account selected in the Purchase Invoice is located under Liability group.
+ข้อความแสดงข้อผิดพลาดระบุว่าบัญชีที่เลือกในฟิลด์เครดิตไปที่ไม่ได้อยู่ในกลุ่มความรับผิด โปรดตรวจสอบให้แน่ใจว่าบัญชีเจ้าหนี้ที่เลือกไว้ในใบกำกับสินค้านั้นอยู่ภายใต้กลุ่มความรับผิดชอบ
 
 {next}

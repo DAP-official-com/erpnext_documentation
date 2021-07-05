@@ -4,7 +4,7 @@
 
 ใน ERPNext การดำเนินการทางบัญชีประกอบด้วย 3 ธุรกรรมหลัก:
 
- * **ใบกำกับสินค้า :** การเรียกเก็บเงินที่คุณเรียกเก็บให้กับลูกค้าของคุณสำหรับผลิตภัณฑ์หรือบริการที่คุณให้
+* **ใบกำกับสินค้า :** การเรียกเก็บเงินที่คุณเรียกเก็บให้กับลูกค้าของคุณสำหรับผลิตภัณฑ์หรือบริการที่คุณให้
 * **ใบกำกับสินค้า :** ตั๋วเงินที่ซัพพลายเออร์ของคุณมอบให้คุณสำหรับผลิตภัณฑ์หรือบริการของพวกเขา
 * **รายการบันทึก :** สำหรับรายการบัญชี เช่น การชำระเงิน เครดิต และประเภทอื่นๆ
 
@@ -43,7 +43,7 @@
 
 ### 1.3 การเรียกเก็บเงิน
 1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
-1. [ใบกำกับสินค้า](/docs/user/manual/th/accounts/purchase-invoice)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)
 1. [ใบแจ้งหนี้ระหว่างบริษัท](/docs/user/manual/th/accounts/inter-company-invoices)
 1. [เครดิตโน๊ต](/docs/user/manual/th/accounts/credit-note)
 1. [เดบิทโน๊ต](/docs/user/manual/th/accounts/debit-note)
@@ -115,41 +115,41 @@
 1. [รายการชำระเงินจำนวนมาก](/docs/user/manual/th/accounts/articles/bulk-payment-entry)
 1. [ปุ่มรายการอื่นๆ](/docs/user/manual/th/accounts/articles/difference-entry-button)
 
-### 2.2 Account Operations
-1. [Changing Parent Account](/docs/user/manual/th/accounts/articles/changing-parent-account)
-1. [Withdrawing Salary From Owners Equity Account](/docs/user/manual/th/accounts/articles/withdrawing-salary-from-owners-equity-account)
-1. [Common Receivable Account](/docs/user/manual/th/accounts/articles/common-receivable-account)
-1. [Freeze Account](/docs/user/manual/th/accounts/articles/freeze-account)
-1. [Round Off Account Validation](/docs/user/manual/th/accounts/articles/round-off-account-validation)
+### 2.2 การดำเนินการบัญชี
+1. [การเปลี่ยนบัญชีหลัก](/docs/user/manual/th/accounts/articles/changing-parent-account)
+1. [ถอนเงินเดือนจากบัญชีส่วนของเจ้าของ](/docs/user/manual/th/accounts/articles/withdrawing-salary-from-owners-equity-account)
+1. [บัญชีลูกหนี้](/docs/user/manual/th/accounts/articles/common-receivable-account)
+1. [ระงับบัญชี](/docs/user/manual/th/accounts/articles/freeze-account)
+1. [ปัดเศษการตรวจสอบบัญชี](/docs/user/manual/th/accounts/articles/round-off-account-validation)
 
-### 2.3 Advanced
-1. [What Is The Differences Of Total And Valuation In Tax And Charges](/docs/user/manual/th/accounts/articles/what-is-the-differences-of-total-and-valuation-in-tax-and-charges)
-1. [Types In Tax Template](/docs/user/manual/th/accounts/articles/types-in-tax-template)
-1. [Manage Foreign Exchange Difference](/docs/user/manual/th/accounts/articles/manage-foreign-exchange-difference)
-1. [How To Freeze Accounting Ledger](/docs/user/manual/th/accounts/articles/how-to-freeze-accounting-ledger)
-1. [Managing Transactions In Multiple Currency](/docs/user/manual/th/accounts/articles/managing-transactions-in-multiple-currency)
-1. [Recurring Orders And Invoices](/docs/user/manual/th/accounts/articles/recurring-orders-and-invoices)
+### 2.3 ขั้นสูง
+1. [ความแตกต่างของยอดรวมและมูลค่าภาษีและค่าธรรมเนียม](/docs/user/manual/th/accounts/articles/what-is-the-differences-of-total-and-valuation-in-tax-and-charges)
+1. [ประเภทในเทมเพลตภาษี](/docs/user/manual/th/accounts/articles/types-in-tax-template)
+1. [จัดการส่วนต่างของอัตราแลกเปลี่ยน](/docs/user/manual/th/accounts/articles/manage-foreign-exchange-difference)
+1. [ระงับการบันทึกประจำวัน](/docs/user/manual/th/accounts/articles/how-to-freeze-accounting-ledger)
+1. [การจัดการธุรกรรทหบายสกุลเงิน](/docs/user/manual/th/accounts/articles/managing-transactions-in-multiple-currency)
+1. [คำสั่งซื้อและใบแจ้งหนี้ที่เกิดซ้ำ](/docs/user/manual/th/accounts/articles/recurring-orders-and-invoices)
 
-### 2.4 Other
-1. [Tracking Project Profitability Using Cost Center](/docs/user/manual/th/accounts/articles/tracking-project-profitability-using-cost-center)
-1. [Update Stock Option In Sales Invoice](/docs/user/manual/th/accounts/articles/update-stock-option-in-sales-invoice)
-1. [Exchange Rate Field Frozen](/docs/user/manual/th/accounts/articles/exchange-rate-field-frozen)
-1. [Fiscal Year Creation](/docs/user/manual/th/accounts/articles/fiscal-year-creation)
-1. [How To Customize Cash Flow Report](/docs/user/manual/th/accounts/articles/how-to-customise-cash-flow-report)
-1. [How To Manage Subscriptions With ERPNext](/docs/user/manual/th/accounts/articles/how-to-manage-subscriptions-with-erpnext)
-1. [Immutable Ledger In ERPNext](/docs/user/manual/th/accounts/articles/immutable-ledger-in-erpnext)
+### 2.4 อื่นๆ
+1. [คิดตามกำไรของโปรเจคผ่านศูนย์ต้นทุน](/docs/user/manual/th/accounts/articles/tracking-project-profitability-using-cost-center)
+1. [อัปเดตสินค้าในใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/articles/update-stock-option-in-sales-invoice)
+1. [การระงับอัตราแลกเปลี่ยน](/docs/user/manual/th/accounts/articles/exchange-rate-field-frozen)
+1. [การสร้างปีงบประมาณ](/docs/user/manual/th/accounts/articles/fiscal-year-creation)
+1. [วิธีปรับแต่งรายงานกระแสเงินสด](/docs/user/manual/th/accounts/articles/how-to-customise-cash-flow-report)
+1. [วิธีการจัดการการสมัครสมาชิก](/docs/user/manual/th/accounts/articles/how-to-manage-subscriptions-with-erpnext)
+1. [การบัทึกรายการแบบสอบย้อนกลับได้ (Immutable Ledger)](/docs/user/manual/th/accounts/articles/immutable-ledger-in-erpnext)
 
-### 2.5 Reports and Errors
-1. [Purchase Invoice Account Type Error](/docs/user/manual/th/accounts/articles/purchase-invoice-account-type-error)
-1. [Fiscal Year Error](/docs/user/manual/th/accounts/articles/fiscal-year-error)
+### 2.5 รายงานและข้อผิดพลาด 
+1. [ปัญหาเมื่อไม่สามารถสร้างใบกำกับซื้อเนื่องจากเลือกบัญชีผิดประเภท](/docs/user/manual/th/accounts/articles/purchase-invoice-account-type-error)
+1. [ปัฐหาการบันทึกปีงบประมาณ](/docs/user/manual/th/accounts/articles/fiscal-year-error)
 
-### 2.6 Stock and Accounting Integration
-1. [Warehouse and Accounting Ledger Link](/docs/user/manual/th/accounts/articles/warehouse-ledger-link)
+### 2.6 การรวมสต็อกและการบัญชี
+1. [การรวมคลังและการบัญชี](/docs/user/manual/th/accounts/articles/warehouse-ledger-link)
 
-## 3. Videos
-1. [Chart of Accounts](/docs/user/videos/learn/chart-of-accounts.html)
-1. [Opening Account Balances](/docs/user/videos/learn/opening-account-balances.html)
-1. [Taxes](/docs/user/videos/learn/taxes.html)
-1. [Advance Payments](/docs/user/videos/learn/advance-payments.html)
-1. [Budgeting](/docs/user/videos/learn/budgeting.html)
-1. [Subscription Management](/docs/user/videos/learn/subscription.html)
+## 3. วิดีโอ
+1. [ผังบัญชี](/docs/user/videos/learn/chart-of-accounts.html)
+1. [เปิดยอดคงเหลือในบัญชี](/docs/user/videos/learn/opening-account-balances.html)
+1. [ภาษี](/docs/user/videos/learn/taxes.html)
+1. [การชำระเงินล่วงหน้า](/docs/user/videos/learn/advance-payments.html)
+1. [การจัดทำงบประมาณ](/docs/user/videos/learn/budgeting.html)
+1. [การจัดการการสมัครสมาชิก](/docs/user/videos/learn/subscription.html)

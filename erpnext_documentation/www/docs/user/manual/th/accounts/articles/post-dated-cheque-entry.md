@@ -1,35 +1,35 @@
 <!-- add-breadcrumbs -->
-#Post Dated Cheque Entry
+#ลงวันที่ รายการเช็ค
 
-Post Dated Cheque is a cheque dated on future date. Party generally give post dated cheque, as advance payment. This cheque would be cleared only when cheque date arrives.
+ลงวันที่รายการเช็ค คือเช็คที่ลงวันที่ในอนาคต ฝ่ายโดยทั่วไปให้เช็คลงวันที่เป็นเงินล่วงหน้า เช็คนี้จะถูกล้างเมื่อถึงวันเช็คเท่านั้น
 
-In ERPNext, create Payment Entry for post dated cheque.
+ใน ERPNext ให้สร้างรายการชำระเงินสำหรับเช็คลงวันที่
 
-####New Payment Entry
+####รายการชำระเงินใหม่
 
-To open new journal voucher go to 
+ในการเปิด journal voucher ให้ไปที่
 
-`Explore > Accounting > Payment Entry > New`
+`สำรวจ (Explore) > บัญชี > รายการชำระเงิน > ใหม่`
 
-#### Set Posting Date
+#### ตั้งวันที่ลงรายการ
 
-Assuming your Cheque Date is 31st December, 2016 (or any future date). As a result, this posting in your bank ledger will appear on Posting Date updated.
+สมมติว่าวันที่เช็คของคุณคือ 31 ธันวาคม 2559 (หรือวันที่ในอนาคต) ด้วยเหตุนี้ การลงรายการบัญชีในบัญชีแยกประเภทธนาคารของคุณจะปรากฏในวันที่โพสต์ที่อัปเดต
 
 <img alt="JE Posting Date" class="screenshot" src="{{docs_base_url}}/assets/img/articles/post-dated-1.png">
 
-Note: Payment Entry Reference Date should equal to or less than Posting Date.
+หมายเหตุ: วันที่อ้างอิงรายการชำระเงินควรเท่ากับหรือน้อยกว่าวันที่ลงรายการบัญชี
 
-####Step 3: Save and Submit
+####Step 3: บันทึกและส่ง
 
-After entering required details, Save and Submit the Payment Entry.
+หลังจากป้อนรายละเอียดที่จำเป็นแล้ว ให้บันทึกและส่งรายการชำระเงิน
 
-####Adjusting Post Dated  Cheque Entry
+####การปรับรายการวันที่ลงวันที่รายการเช็ค
 
-You can adjust Post Dated Payment Entry against an invoice via [Payment Reconciliation Tool](/docs/user/manual/en/accounts/payment-reconciliation).
+คุณสามารถปรับการโพสต์รายการชำระเงินลงวันกับใบแจ้งหนี้ผ่าน [การกระทบยอดการชำระเงิน](/docs/user/manual/th/accounts/payment-reconciliation).
 
-When cheque is cleared, i.e. on actual date on the cheque, you can update its Clearance Date via [Bank Reconciliation Tool](/docs/user/manual/en/accounts/bank-reconciliation).
+เมื่อเช็คถูกหักล้าง เช่น ณ วันที่จริงในเช็ค คุณสามารถอัพเดทวันที่เคลียร์เช็คได้ทาง [การกระทบยอดธนาคาร](/docs/user/manual/th/accounts/bank-reconciliation).
 
-In the Chart of Accounts, you might find value of this Payment Entry already reflecting against bank Account. You should check **Bank Reconciliation Statement**, a report in the account module to know difference of bank balance as per system, and actual balance in the bank's statement.
+ในผังบัญชี คุณอาจพบว่าค่าของรายการชำระเงินนี้สะท้อนกับบัญชีธนาคารอยู่แล้ว คุณควรตรวจสอบ **ใบแจ้งยอดการกระทบยอดธนาคาร** รายงานในโมดูลบัญชีเพื่อทราบความแตกต่างของยอดคงเหลือในธนาคารตามระบบ และยอดคงเหลือตามจริงในใบแจ้งยอดธนาคาร
 <!-- markdown -->
 
 {next}

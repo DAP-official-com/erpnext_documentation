@@ -1,36 +1,36 @@
 <!-- add-breadcrumbs -->
-#Purchase Tax or Charges Categories
+#หมวดหมู่ภาษีซื้อหรือค่าบริการ
 
-Consider Tax or Charge field in Purchase Taxes and Charges master has three values.
+พิจารณาฟิลด์ภาษีหรือค่าธรรมเนียมในภาษีซื้อและค่าธรรมเนียมหลักมีสามค่า
 
-- Total
-- Valuation
-- Total and Valuation
+- ยอดรวม
+- การประเมินค่า
+- ยอดรวมและการประเมินมูลค่า
 
 <img alt="Purchase Tax and Charges Categories" class="screenshot" src="{{docs_base_url}}/assets/img/articles/purchase-other-charges-1.png">
 
-Let's consider an example to understand an effect of each charge type. We purchase ten units of item, at the rate of 800. total purchase amount is 800. Purchased item has 4% VAT applied on it, and INR 100 was incurred in transportation.
+ลองพิจารณาตัวอย่างเพื่อทำความเข้าใจผลกระทบของการชาร์จแต่ละประเภท เราซื้อสินค้าสิบหน่วยในอัตรา 800 ยอดซื้อทั้งหมดคือ 800 รายการซื้อมีการคิดภาษีมูลค่าเพิ่ม 4% และมีค่าขนส่ง 100 รูปีอินเดีย
 
-####Total:
+#### ยอดรวม:
 
-Tax or Charge categorized as **Total** will be included in the total of purchase transactions. But it will not have impact on the valuation of item purchased.
+ภาษีหรือค่าธรรมเนียมที่จัดประเภทเป็น **ยอดรวม** จะรวมอยู่ในยอดรวมของธุรกรรมการซื้อ แต่จะไม่มีผลกระทบต่อการประเมินมูลค่าของสินค้าที่ซื้อ
 
-If VAT 4% is applied on item, it will amount to INR 32 (at item's based rate is 800). Since VAT is the consumption tax, its should be added value of Purchase Order/Invoice, since it will be included in payable towards supplier. But its should not be added to the value of Purchased item.
+หากมีการใช้ภาษีมูลค่าเพิ่ม 4% กับสินค้า จะมีมูลค่า 32 รูปีอินเดีย (ตามอัตราของสินค้าคือ 800) เนื่องจากภาษีมูลค่าเพิ่มเป็นภาษีการบริโภค จึงควรเป็นมูลค่าเพิ่มของใบสั่งซื้อ/ใบกำกับสินค้า เนื่องจากจะรวมอยู่ในรายการที่ต้องชำระให้กับซัพพลายเออร์ แต่ไม่ควรเพิ่มมูลค่าของสินค้าที่ซื้อ
 
-When Purchase Invoice is submitted, general ledger posting will be done for tax/charge categorized as Total.
+เมื่อส่งใบกำกับสินค้าแล้ว จะมีการลงรายการบัญชีแยกประเภททั่วไปสำหรับภาษี/ค่าธรรมเนียมที่จัดประเภทเป็นยอดรวม
 
-####Valuation:
+#### การประเมินค่า:
 
-Tax or charge categorized as **Valuation** will be added in the value of purchased item, but not in the total of that purchase transaction.
+ภาษีหรือค่าธรรมเนียมที่จัดประเภทเป็น **มูลค่า** จะถูกบวกในมูลค่าของสินค้าที่ซื้อ แต่ไม่รวมอยู่ในยอดรวมของธุรกรรมการซื้อนั้น
 
-Transportation charge of INR 100 should be categorized as valuation. With this, the value of purchased item will be increased from 800 to 900. Also, this charge will be not be added to the total of purchase transaction, because it your expense, and should not be reflected to the supplier.
+ค่าขนส่ง 100 รูปีอินเดียควรจัดอยู่ในประเภทการประเมินมูลค่า ด้วยวิธีนี้ มูลค่าของสินค้าที่ซื้อจะเพิ่มขึ้นจาก 800 เป็น 900 นอกจากนี้ ค่าธรรมเนียมนี้จะไม่ถูกรวมเข้ากับยอดรวมของธุรกรรมการซื้อ เนื่องจากเป็นค่าใช้จ่ายของคุณ และไม่ควรสะท้อนไปยังซัพพลายเออร์
 
-Check [here](/docs/user/manual/en/stock/perpetual-inventory) to learn general posting done for expense categorized as Valuation.
+อ่าน [ที่นี่](/docs/user/manual/th/stock/perpetual-inventory) เพื่อเรียนรู้รายการทั่วไปสำหรับค่าใช้จ่ายที่จัดประเภทเป็นการประเมินมูลค่า
 
-####Total and Valuation:
+#### ยอดรวมและการประเมินมูลค่า:
 
-Tax or Charge categorized as for **Total and Valuation** will be added in the valuation of item, as well as in the totals of purchase transactions.
+ภาษีหรือค่าธรรมเนียมที่จัดประเภทเป็น **ยอดรวมและการประเมินมูลค่า** จะถูกเพิ่มในการประเมินมูลค่าของสินค้า เช่นเดียวกับยอดรวมของธุรกรรมการซื้อ
 
-Let's assume that transportion is arranged by our supplier, but we need to pay transportation charges to them. In that case, for transportation charges, category selected should be Total and Valuation. With this, INR 100 transportation charge will be added to the actual purchase amount 800. Also, INR 100 will reflect in the total, as it will be payable for us towards supplier.
+สมมติว่าซัพพลายเออร์เป็นผู้จัดเตรียมการขนส่ง แต่เราต้องจ่ายค่าบริการขนส่งให้กับพวกเขา ในกรณีนั้น สำหรับค่าขนส่ง หมวดหมู่ที่เลือกควรเป็น ยอดรวม และ การประเมินมูลค่า ด้วยเหตุนี้ ค่าขนส่ง INR 100 จะถูกบวกเข้ากับยอดการซื้อจริง 800 นอกจากนี้ INR 100 จะสะท้อนให้เห็นในยอดรวม เนื่องจากจะต้องชำระให้กับซัพพลายเออร์
 
 {next}

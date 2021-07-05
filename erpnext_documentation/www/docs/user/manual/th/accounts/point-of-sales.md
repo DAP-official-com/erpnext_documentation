@@ -1,144 +1,140 @@
 <!-- add-breadcrumbs -->
-# Point of Sale
+# ระบบการขายหน้าร้าน (Point of Sale (POS))
 
-**A Point of Sale refers to the time and place where a retail transaction takes place.**
+**การขายหน้าร้านหมายถึงเวลาและสถานที่ที่มีการทำธุรกรรมการขายปลีก**
 
-For retail operations, the delivery of goods, accrual of sale and payment all happens in one event, that is usually called the 'Point of Sale' (POS).
+สำหรับการขายปลีก การส่งมอบสินค้า ยอดขาย และการชำระเงินจะเกิดขึ้นในเหตุการณ์เดียว ซึ่งมักเรียกว่า 'จุดขาย' (POS)
 
-In ERPNext Sales Invoices can be generated from the POS. There are two steps to set up POS:
+ใน ERPNext สามารถสร้างใบแจ้งหนี้การขายจาก POS มีสองขั้นตอนในการตั้งค่า POS:
 
-To access POS, go to:
-> Home > Retail > Retail Operations > POS
+ในการเข้าถึง POS ไปที่:
 
-## 1. Prerequisites
-Before creating and using Point of Sale, it is advisable to create the following first:
+> หน้าหลัก > การขายปลีก > การดำเนินการขายปลีก > POS
 
-1. [POS Profile](/docs/user/manual/en/accounts/pos-profile)
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ระบบขายหน้าร้าน ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-## 2. How to create a POS Invoice
+1. [โปรไฟล์ POS](/docs/user/manual/th/accounts/pos-profile)
+
+## 2. วิธีสร้างใบแจ้งหนี้บน POS
 Once you set up a POS profile, you can start billing on POS.
 
-1. Go to POS and select a Customer.
-1. Add Items from the list displayed on the right by clicking on them.
-1. Ensure that the Item has a Selling Price set in the Item Price list.
-1. Edit the quantities as needed.
-1. In order to edit Rate and Discount, you need to enable them in the POS Profile.
-1. A default Warehouse needs to be set to complete the transaction. If Warehouse is set in both Item and POS profile, the one in POS Profile will be given preference.
-1. Do note that you need to have Items in your Warehouse before you can sell. If Items are not available, a red dot will be shown next to the Item when selected.
+1. ไปที่ POS แล้วเลือกลูกค้า
+1. เพิ่มสินค้าจากรายการที่แสดงทางด้านขวาโดยคลิกที่รายการเหล่านั้น
+1. ตรวจสอบให้แน่ใจว่าสินค้ามีราคาขายที่กำหนดไว้ในรายการราคาสินค้า
+1. แก้ไขปริมาณตามต้องการ
+1. ในการแก้ไขอัตราและส่วนลด คุณต้องเปิดใช้งานในโปรไฟล์ POS
+1. ต้องตั้งค่าคลังสินค้าเริ่มต้นเพื่อทำธุรกรรมให้เสร็จสมบูรณ์ หากมีการตั้งค่าคลังสินค้าทั้งในโปรไฟล์รายการและ POS หนึ่งรายการในโปรไฟล์ POS 
+1. จะได้รับการกำหนดค่าตามความชอบ
+1. โปรดทราบว่าคุณต้องมีสินค้าในโกดังของคุณก่อนจึงจะสามารถขายได้ หากไม่มีรายการ จุดสีแดงจะแสดงถัดจากรายการเมื่อเลือก
   ![POS Screen](/docs/assets/img/accounts/pos-screen.png)
-1. When all Items are added, click on Pay. You'll be asked to submit the Sales Invoice.
-1. Select the payment mode, Submit
-1. You can then print the POS invoice.
+1. เมื่อเพิ่มรายการทั้งหมดแล้ว ให้คลิกที่ ชำระเงิน คุณจะถูกขอให้ส่งใบกำกับการขาย
+1. เลือกโหมดการชำระเงิน ส่ง
+1. จากนั้นคุณสามารถพิมพ์ใบแจ้งหนี้ POS ได้
   ![POS Cycle](/docs/assets/img/accounts/pos-cycle.gif)
   
-After the Sales Invoice is submitted, you can either print or email it directly to the customer.
+หลังจากส่งใบแจ้งหนี้การขายแล้ว คุณสามารถพิมพ์หรือส่งอีเมลถึงลูกค้าโดยตรง
 
+### 2.2 การเพิ่มสินค้า
+ที่เคาน์เตอร์เรียกเก็บเงิน ผู้ค้าปลีกต้องเลือกรายการที่ลูกค้าซื้อ ในอินเทอร์เฟซ POS คุณสามารถเลือกสินค้าได้สองวิธี หนึ่งคือการคลิกที่ภาพรายการและอื่น ๆ ผ่านบาร์โค้ด / หมายเลขซีเรียล
 
-### 2.2 Adding an Item
-At the billing counter, the retailer needs to select Items which the Customer buys. In the POS interface you can select an Item by two methods. One, is by clicking on the Item image and the other, is through the Barcode / Serial No.
+* **เลือกสินค้า** : หากต้องการเลือกสินค้า ให้คลิกที่ภาพสินค้า และเพิ่มลงในตะกร้าสินค้า รถเข็นเป็นพื้นที่ที่เตรียมลูกค้าสำหรับการชำระเงินโดยอนุญาตให้แก้ไขข้อมูลสินค้า ปรับภาษี และเพิ่มส่วนลด
 
-* **Select Item**: To select a product click on the Item image and add it into the cart. A cart is an area that prepares a customer for checkout by allowing to edit product information, adjust taxes and add discounts.
-
-* **Barcode / Serial No**: A Barcode / Serial No is an optical machine-readable representation of data relating to the object to which it is attached. Enter Barcode / Serial No in the box as shown in the image below and pause for a second, the item will be automatically added to the cart.
+* **บาร์โค้ด / หมายเลขซีเรียล** : บาร์โค้ด / หมายเลขซีเรียลคือการแสดงข้อมูลที่เกี่ยวข้องกับวัตถุที่เชื่อมต่อด้วยเครื่องออปติคัล ป้อน Barcode / Serial No ลงในช่องดังภาพด้านล่างและหยุดชั่วครู่หนึ่งรายการจะถูกเพิ่มลงในรถเข็นโดยอัตโนมัติ
 
 <img class="screenshot" alt="POS Item" src="{{docs_base_url}}/assets/img/accounts/pos-item.png">
 
-> Tip: To change the quantity of an Item, enter your desired quantity in the
-quantity box. These are mostly used if the same Item is purchased in bulk.
+> เคล็ดลับ: หากต้องการเปลี่ยนปริมาณของสินค้า ให้ป้อนปริมาณที่คุณต้องการในกล่องปริมาณ ส่วนใหญ่จะใช้ในกรณีที่ซื้อสินค้าเดียวกันเป็นจำนวนมาก
 
-If your product list is very long use the Search field, type the product name
-in Search box.
+หากรายการผลิตภัณฑ์ของคุณยาวมาก ให้ใช้ช่องค้นหา ให้พิมพ์ชื่อผลิตภัณฑ์ในกล่องค้นหา
 
-### 2.3  Removing an Item from the Cart
-1. Select row in the cart and click on Delete button in the numeric keypad
+### 2.3  การนำสินค้าออกจากรถเข็น
+1. เลือกแถวในรถเข็นและคลิกที่ปุ่ม 'ลบ' ในแป้นตัวเลข
 
     <img class="screenshot" alt="POS Item" src="{{docs_base_url}}/assets/img/accounts/pos_deleted_item.gif">
 
 
-2. Set Qty as zero to remove Item from the POS invoice. There are two ways to remove an Item.
-  * If Item's Qty is 1, click on a minus sign to make it zero.
-  * Manually enter 0 (zero) quantity.
+2. ตั้งค่าจำนวนเป็นศูนย์เพื่อลบสินค้าออกจากใบแจ้งหนี้ POS มีสองวิธีในการลบรายการ
+  * หากจำนวนรายการเป็น 1 ให้คลิกที่เครื่องหมายลบเพื่อทำให้เป็นศูนย์
+  * ป้อนปริมาณ 0 (ศูนย์) ด้วยตนเอง
 
+### 2.4 เปลี่ยนจำนวนเงิน
 
-### 2.4 Change Amount
-
-POS calculates the extra amount paid by the customer, which user can return from the cash account. User has to set the account for the change amount on the POS profile.
+POS คำนวณจำนวนเงินพิเศษที่ลูกค้าชำระ ซึ่งผู้ใช้สามารถคืนจากบัญชีเงินสดได้ ผู้ใช้ต้องตั้งค่าบัญชีสำหรับจำนวนเงินที่เปลี่ยนแปลงในโปรไฟล์ POS
 
 <img class="screenshot" alt="POS Payment" src="{{docs_base_url}}/assets/img/accounts/change-amount.png">
 
-### 2.5 Write off Amount
-If you are writing off certain amount. For example when you receive extra cash as a result of not having exact denomination of change, check on ‘Write off Outstanding Amount’ and set the Account.
+### 2.5 การตัดยอด
+หากคุณกำลังตัดเงินจำนวนหนึ่ง ตัวอย่างเช่น เมื่อคุณได้รับเงินสดพิเศษเนื่องจากไม่มีการเปลี่ยนแปลงที่แน่นอน ให้ทำเครื่องหมายที่ 'ตัดยอดค้างชำระ' และตั้งค่าบัญชี
 
-Outstanding amount can be write off from the POS, user has to enter the amount under Write Off field on the payment screen.
+ยอดเงินคงค้างสามารถตัดออกจาก POS ได้ ผู้ใช้ต้องป้อนจำนวนเงินใต้ฟิลด์ตัดยอดบนหน้าจอการชำระเงิน
 
-For example, here bill amount is 2,310, but the Customer paid 2,300, then the amount written off will be 10.
+ตัวอย่างเช่น จำนวนเงินที่เรียกเก็บเงินคือ 2,310 แต่ลูกค้าชำระเงิน 2,300 จำนวนเงินที่หักออกจะเป็น 10
 <img class="screenshot" alt="POS Payment" src="{{docs_base_url}}/assets/img/accounts/write-off.png">
 
-System books the Write Off amount into the General Ledger account which has selected on the POS Profile.
+ระบบจองยอดตัดจ่ายในบัญชีแยกประเภททั่วไปซึ่งได้เลือกไว้ในโปรไฟล์ POS
 
-### 2.6 Change POS profile
+### 2.6 เปลี่ยนโปรไฟล์ POS
 
-Change the POS Profile via:
-> Menu > Change POS Profile
+เปลี่ยนโปรไฟล์ POS ผ่านทาง:
+> เมนู > เปลี่ยนโปรไฟล์ POS
 
-Select the Company and then choose the POS Profile from the list. You can also set the newly selected POS profile as the default for the Company.
+เลือกบริษัท จากนั้นเลือกโปรไฟล์ POS จากรายการ คุณยังสามารถตั้งค่าโปรไฟล์ POS ที่เลือกใหม่เป็นค่าเริ่มต้นสำหรับบริษัทได้
 
 <img class="screenshot" alt="Change POS Profile" src="{{docs_base_url}}/assets/img/accounts/Change-POS-Profile.png">
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Adding a new Customer
-In POS, user can select the existing Customer during making an order or create a new customer. This feature works in the offline mode also. User can also add the customer details like contact number, address details, etc on the form. The Customer which has been created from the POS will be synced when the internet connection is active.
+### 3.1 การเพิ่มลูกค้าใหม่
+ในระบบ POS ผู้ใช้สามารถเลือกลูกค้าที่มีอยู่ระหว่างการสั่งซื้อหรือสร้างลูกค้าใหม่ คุณลักษณะนี้ทำงานในโหมดออฟไลน์ด้วย ผู้ใช้ยังสามารถเพิ่มรายละเอียดลูกค้าเช่นหมายเลขติดต่อ รายละเอียดที่อยู่ ฯลฯ ในแบบฟอร์ม ลูกค้าที่สร้างจาก POS จะถูกซิงค์เมื่อมีการเชื่อมต่ออินเทอร์
 
 <img class="screenshot" alt="POS Customer" src="{{docs_base_url}}/assets/img/accounts/pos-customer.gif">
 
-### 3.2 Offline POS
+### 3.2 ออฟไลน์ POS
 
-In ERPNext, you can create POS Invoices, even when not connected to the internet. POS Invoices created in the offline mode will be saved locally in the browser (cached). If internet connection is lost which creating POS Invoice, you will still be able can proceed forward. Once internet connection is available again, offline invoices will be synced, and pushed onto your ERPNext account.
+ใน ERPNext คุณสามารถสร้างใบแจ้งหนี้ POS ได้ แม้ว่าจะไม่ได้เชื่อมต่อกับอินเทอร์เน็ตก็ตาม ใบแจ้งหนี้ POS ที่สร้างในโหมดออฟไลน์จะถูกบันทึกไว้ในเบราว์เซอร์ (แคช) หากการเชื่อมต่ออินเทอร์เน็ตขาดหายไปซึ่งสร้างใบกำกับสินค้า POS คุณจะยังสามารถดำเนินการต่อได้ เมื่อเชื่อมต่ออินเทอร์เน็ตได้อีกครั้ง ใบแจ้งหนี้ออฟไลน์จะซิงค์และส่งไปยังบัญชี ERPNext ของคุณ
 
-To learn more on how POS Invoices can be created when offline, [check here.](https://frappe.io/blog/blog/erpnext-features/offline-pos-in-erpnext-7)
-
-### 3.3 Offline Records
-All the records from the POS stores into the browser's and syncs submitted records after every minute of the interval if system is connected to internet. User can view the offline records by clicking on Menu > View Offline Records.
+หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับวิธีการสร้างใบแจ้งหนี้ POS เมื่อออฟไลน์ อ่าน[ที่นี่](https://frappe.io/blog/blog/erpnext-features/offline-pos-in-erpnext-7)เพื่อทราบข้อมูลเพิ่มเติม
+### 3.3 รายการออฟไลน์
+รายการทั้งหมดจาก POS เก็บไว้ในเบราว์เซอร์และซิงค์บันทึกที่ส่งหลังจากทุกนาทีของช่วงเวลา ถ้าระบบเชื่อมต่อกับอินเทอร์เน็ต ผู้ใช้สามารถดูบันทึกออฟไลน์ได้โดยคลิกที่เมนู > ดูรายการออฟไลน์
 
 <img class="screenshot" alt="POS Payment" src="{{docs_base_url}}/assets/img/accounts/offline-records.png">
 
-### 3.4 Accounting entries (GL Entry) for a Point of Sale:
+### 3.4 รายการบัญชีแยกประเภท (รายการ GL) สำหรับการขายหน้าร้าน:
 
-Debits:
+เดบิต:
 
-  * Customer (grand total)
-  * Bank/Cash (payment)
+  * ลูกค้า (ยอดรวม)
+  * ธนาคาร/เงินสด (ชำระ)
 
-Credits:
+เครดิต:
 
-  * Income (net total, minus taxes for each Item)
-  * Taxes (liabilities to be paid to the government)
-  * Customer (payment)
-  * Write Off (optional)
-  * Account for Change Amount (optional)
+  * รายได้ (ยอดสุทธิ หักภาษีแต่ละรายการ)
+  * ภาษี (หนี้สินที่จะต้องจ่ายให้กับรัฐบาล)
+  * ลูกค้า (ชำระเงิน)
+  * ตัดจำหน่าย (ไม่บังคับ)
+  * บัญชีสำหรับจำนวนเงินที่เปลี่ยนแปลง (ไม่บังคับ)
 
-To see entries after submitting the [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice), click on **View Ledger**.
+หากต้องการดูรายการหลังจากส่ง [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice) คลิกที่ **บัญชีแยกประเภท**
 
-### 3.5 Email
+### 3.5 อีเมล
 
-Users can send email from the POS, after submitting an order, user has to click on Menu > Email:
+ผู้ใช้สามารถส่งอีเมลจาก POS หลังจากส่งคำสั่งซื้อแล้ว ผู้ใช้ต้องคลิกที่เมนู > อีเมล:
 <img class="screenshot" alt="POS Payment" src="{{docs_base_url}}/assets/img/accounts/pos-email.png">
-After sync of a POS order, email is sent to the Customer with the print of the bill in the attachment.
+หลังจากซิงค์ข้อมูล POS แล้ว อีเมลจะถูกส่งไปยังลูกค้าพร้อมพิมพ์ใบเรียกเก็บเงินในเอกสารแนบ
 
-### 3.6 POS Closing Voucher
+### 3.6 บัตรกำนัลปิด POS
 
-At the end of the day, the cashier can close his/her PoS by creating a POS Closing Voucher.
-Click on the Menu and select 'Close the POS'. Select the period, your POS Profile and your user to retrieve all sales registered.
+ในตอนท้ายของวัน แคชเชียร์สามารถปิด PoS ของตนได้โดยการสร้าง POS Closing Voucher คลิกที่เมนูและเลือก 'ปิด POS' เลือกช่วงเวลา โปรไฟล์ POS และผู้ใช้ของคุณเพื่อดึงข้อมูลการขายทั้งหมดที่ลงทะเบียน
 
-For closing shift wise or cashier wise, use the [POS Cashier Closing](/docs/user/manual/en/accounts/pos-cashier-closing).
+สำหรับการปิดกะหรือแคชเชียร์ใช้ [ปิด POS แคชเชียร์](/docs/user/manual/th/accounts/pos-cashier-closing).
 
 <img class="screenshot" alt="POS Payment" src="{{docs_base_url}}/assets/img/accounts/pos-closing-voucher.png">
 
-Enter the collected amount for each mode of payment. If you notice any difference between the system amount and the actual physical cash collected, create a Difference Posting.
+ป้อนจำนวนเงินที่เรียกเก็บสำหรับแต่ละโหมดการชำระเงิน หากคุณสังเกตเห็นความแตกต่างระหว่างจำนวนเงินของระบบและเงินสดจริงที่รวบรวมได้ ให้สร้างการผ่านรายการส่วนต่าง
 
-### 4. Related Topics
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
-1. [Payment Request](/docs/user/manual/en/accounts/payment-request)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)
+1. [รายการชำระเงิน](/docs/user/manual/th/accounts/payment-entry)
+1. [คำขอชำระเงิน](/docs/user/manual/th/accounts/payment-request)

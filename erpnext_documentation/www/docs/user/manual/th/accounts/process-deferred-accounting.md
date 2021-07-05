@@ -1,42 +1,42 @@
-# Process Deferred Accounting
+# กระบวนการบัญชีรอตัดบัญชี
 
-**Process Deferred Accounting is a log which is created on every processing of deferred revenue or expense.**
+**กระบวนการบัญชีรอตัดบัญชีเป็นบันทึกที่สร้างขึ้นในรายได้หรือค่าใช้จ่ายรอตัดบัญชีทุกครั้ง**
 
-Process Deferred Accounting records are automatically created on booking Deferred Revenue or Expense. It is done via a background job but the user can also create a record for manual Deferred Revenue or Expense booking.
+กระบวนการการบัญชีรอตัดบัญชีจะถูกสร้างขึ้นโดยอัตโนมัติในการจองรายรับหรือค่าใช้จ่ายรอตัดบัญชี ทำได้ผ่านงานพื้นหลัง แต่ผู้ใช้ยังสามารถสร้างเรกคอร์ดสำหรับการจองรายรับหรือรายจ่ายที่รอตัดบัญชีด้วยตนเอง
 
-To access the Process Deferred Accounting list, go to:
-> Home > Accounting > General Ledger > Process Deferred Accounting
+ในการเข้าถึงรายการกระบวนการบัญชีรอตัดบัญชี ไปที่:
+> หน้าแรก > การบัญชี > บัญชีแยกประเภททั่วไป > บัญชีรอตัดบัญชี
 
-## 1. Prerequisites
-Before creating and using a Process Deferred Accounting, it is advised to create and understand the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้กระบวนการบัญชีรอตัดบัญชี ขอแนะนำให้สร้างและทำความเข้าใจสิ่งต่อไปนี้ก่อน:
 
-* [Deferred Revenue](/docs/user/manual/en/accounts/deferred-revenue)
-* [Deferred Income](/docs/user/manual/en/accounts/deferred-expense)
+* [รายได้รอตัดบัญชี](/docs/user/manual/th/accounts/deferred-revenue)
+* [รายจ่ายรอตัดบัญชี](/docs/user/manual/th/accounts/deferred-expense)
 
 
-## 2. How to create a Process Deferred Accounting
-1. Go to Process Deferred Accounting list, click on New.
-1. Enter the Company.
-1. Select the type of deferred accounting process. Select 'Income' for booking deferred revenue or select 'Expense' for booking deferred expense
-1. Expand the posting date.
-1. Enter service Start Date and End Date.
-1. Save and Submit.
+## 2. วิธีการสร้างกระบวนการบัญชีรอตัดบัญชี
+1. ไปที่ กระบวนการบัญชีรอตัดบัญชี คลิกที่ ใหม่
+1. เข้าบริษัท
+1. เลือกประเภทของกระบวนการทางบัญชีรอการตัดบัญชี เลือก 'รายได้' สำหรับการจองรายได้รอการตัดบัญชี หรือเลือก 'ค่าใช้จ่าย' สำหรับการจองค่าใช้จ่ายรอตัดบัญชี
+1. ขยายวันที่โพสต์
+1. ป้อนวันที่เริ่มต้นและวันที่สิ้นสุดของบริการ
+1. บันทึกและส่ง
 
 <img class="screenshot" alt="Process Deferred Revenue" src="{{docs_base_url}}/assets/img/accounts/process-deferred-accounting.png">
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 On Submitting
+### 3.1 ในการส่ง
 
-On submitting a Process Deferred Accounting document, GL Entries for deferred revenue or expense booking will be created for all the invoices falling between the service Start Date and End Date.
+ในการส่งเอกสารกระบวนการบัญชีรอการตัดบัญชี รายการ GL สำหรับรายรับหรือค่าใช้จ่ายที่รอการตัดบัญชีจะถูกสร้างขึ้นสำหรับใบแจ้งหนี้ทั้งหมดที่อยู่ระหว่างวันที่เริ่มต้นและวันที่สิ้นสุดของบริการ
 
-Enter the account if Deferred Revenue or Expense has to be booked only for specific deferred income or expense account
+เข้าบัญชีหากต้องการบันทึกรายรับหรือรายจ่ายรอตัดบัญชีเฉพาะบัญชีรายรับหรือรายจ่ายที่เฉพาะเจาะจง
 
-### 3.2 Enabling automatic deferred accounting
+### 3.2 การเปิดใช้งานการบัญชีรอตัดบัญชีอัตโนมัติ
 
-To enable automatic deferred accounting, enable the 'Automatically Process Deferred Account Entry' checkbox by navigating to Accounts Settings.
+หากต้องการเปิดใช้งานบัญชีรอตัดบัญชีอัตโนมัติ ให้เปิดใช้งานช่องกาเครื่องหมาย 'ประมวลผลรายการบัญชีรอตัดบัญชีโดยอัตโนมัติ' โดยไปที่การตั้งค่าบัญชี
 
-To access Accounts Settings go to:
-> Home > Accounting > Accounting Masters > Accounts Settings
+ในการเข้าถึงการตั้งค่าบัญชีไปที่:
+> หน้าแรก > การบัญชี > ผู้เชี่ยวชาญการบัญชี > การตั้งค่าบัญชี
 
 <img class="screenshot" alt="Process Deferred Revenue" src="{{docs_base_url}}/assets/img/accounts/process-deferred-accounting-settings.png">

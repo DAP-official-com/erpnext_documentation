@@ -1,265 +1,267 @@
 <!-- add-breadcrumbs -->
-# Payment Entry
+# รายการชำระเงิน
 
-**A Payment Entry is a record indicating that payment has been made for an invoice.**
+**รายการการชำระเงินคือบันทึกที่ระบุว่าได้ชำระเงินสำหรับใบแจ้งหนี้แล้ว**
 
-Payment Entry can be made against the following transactions.
+รายการชำระเงินสามารถทำได้กับธุรกรรมต่อไปนี้
 
-* Sales Invoice
-* Purchase Invoice
-* Sales Order (Advance Payment)
-* Purchase Order (Advance Payment)
-* Expense Claim
-* Internal Transfer
+* ใบแจ้งหนี้การขาย
+* ใบกำกับสินค้า
+* คำสั่งขาย (ชำระเงินล่วงหน้า)
+* ใบสั่งซื้อ (ชำระเงินล่วงหน้า)
+* ค่าใช้จ่ายในการเรียกร้อง
+* โอนภายใน
 
-In ERPNext, there are two options through which User can capture the payment:
+ใน ERPNext มีสองตัวเลือกที่ผู้ใช้สามารถบันทึกการชำระเงินได้:
 
-* Payment Entry (Default)
-* Journal Entry
+* รายการชำระเงิน (ค่าเริ่มต้น)
+* รายการบันทึก
 
-Here are diagrams to understand the flow:
+สามารถดูรูปด้านล่างเพิ่มเติมเพื่อให้เข้าใจการทำงานมากขึ้น
 
-In Sales:
+การขาย:
 ![Payment Sales]({{docs_base_url}}/assets/img/accounts/pe-sales.png)
 
-In Purchase:
+การซื้อ:
 ![Payment Purchase]({{docs_base_url}}/assets/img/accounts/pe-purchase.png)
 
 
-To access the Payment Entry list, go to:
-> Home > Accounting > Accounts Receivable/Payable > Payment Entry
+ในการเข้าถึงรายการการชำระเงิน ไปที่:
+> หน้าหลัก > การบัญชี > บัญชีลูกหนี้/เจ้าหนี้ > รายการชำระเงิน
 
-## 1. Prerequisites
-A Payment Entry can also be created directly then linked to an order/invoice later. Before creating and using Payment Entry, it is advised to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+สามารถสร้างรายการชำระเงินได้โดยตรงแล้วเชื่อมโยงกับคำสั่งซื้อ/ใบแจ้งหนี้ในภายหลัง ก่อนสร้างและใช้รายการการชำระเงิน ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Bank Account](/docs/user/manual/en/accounts/bank-account)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+1. [บัญชีธนาคาร](/docs/user/manual/th/accounts/bank-account)
 
-If you're following the Sales/Purchase Cycle, you'd need the following:
+หากคุณกำลังติดตามวงจรการขาย/การซื้อ คุณจะต้องมีสิ่งต่อไปนี้:
 
-1. [Sales Order](/docs/user/manual/en/selling/sales-order) (Advance Payment)
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order) (Advance Payment)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+1. [คำสั่งขาย](/docs/user/manual/th/selling/sales-order) (ชำระเงินล่วงหน้า)
+1. [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order) (ชำระเงินล่วงหน้า)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบกำกับสินค้า](/docs/user/manual/th/accounts/purchase-invoice)
 
 
-Set up:
+ตั้งค่า:
 
-1. [Chart Of Accounts](/docs/user/manual/en/accounts/chart-of-accounts)
-1. [Company](/docs/user/manual/en/setting-up/company-setup) (for default accounts)
+1. [ผังบัญชี](/docs/user/manual/th/accounts/chart-of-accounts)
+1. [บริษัท](/docs/user/manual/th/setting-up/company-setup) (for default accounts)
 
-## 2. How to create a Payment Entry
-On submitting a document against which Payment Entry can be made, you will find the Payment option under the **Create** button.
+## 2. วิธีสร้างรายการชำระเงิน
+ในการส่งเอกสารที่สามารถทำรายการชำระเงินได้ คุณจะพบตัวเลือกการชำระเงินภายใต้ปุ่ม**สร้าง**
 
 ![Payment Entry from SO]({{docs_base_url}}/assets/img/accounts/payment-entry-so.png)
 
-1. Change the posting date.
-1. The Payment Type will be set based on the transaction you're coming from. The types are 'Receive', 'Pay', and 'Internal Transfer'.
-1. The Party Type, Party, Party Name will be fetched automatically.
-1. The Account Paid To and Account Paid From will be fetched as set in the [Company form](/docs/user/manual/en/setting-up/company-setup).
-1. The Amount Paid will be fetched from the Invoice.
-1. Save and Submit.
+1. เปลี่ยนวันที่โพสต์
+1. ประเภทการชำระเงินจะถูกตั้งค่าตามธุรกรรมที่คุณมาจาก ประเภทคือ 'รับ' 'จ่าย' และ 'โอนภายใน'
+1. ประเภทปาร์ตี้, ปาร์ตี้, ชื่อปาร์ตี้จะถูกดึงโดยอัตโนมัติ
+1. บัญชีที่จ่ายให้และบัญชีจ่ายจากจะดึงมาเป็นชุดในรูปแบบ[ฟอร์มบริษัท](/docs/user/manual/th/setting-up/company-setup).
+1. จำนวนเงินที่ชำระจะถูกดึงมาจากใบแจ้งหนี้
+1. บันทึกและส่ง
  ![Payment Entry from SO]({{docs_base_url}}/assets/img/accounts/payment-entry-so.gif)
 
-### 2.1 Creating a Payment Manually
-A Payment Entry created manually will have no order/invoice linked to it. Payments made this will be recorded in the Customer's/Supplier's account and can be reconciled later using the [Payment Reconciliation Tool](/docs/user/manual/en/accounts/payment-reconciliation).
+### 2.1 การสร้างการชำระเงินด้วยตนเอง
+รายการการชำระเงินที่สร้างขึ้นด้วยตนเองจะไม่มีใบสั่งซื้อ/ใบแจ้งหนี้เชื่อมโยงอยู่ การชำระเงินนี้จะถูกบันทึกไว้ในบัญชีของลูกค้า / ผู้จัดจำหน่ายและสามารถคืนดีต่อมาโดยใช้ [การกระทบยอดการชำระเงิน](/docs/user/manual/th/accounts/payment-reconciliation).
 
-1. Go to the Payment Entry list and click on New.
-1. Select the Party Type and the respective Customer/Supplier.
-1. Select the Bank Account/Cash Account Paid To and Paid From. Enter the Cheque Number and date if bank transfer.
-1. Enter the Amount Paid.
-1. Save and Submit.
+1. ไปที่รายการการชำระเงินแล้วคลิกใหม่
+1. เลือกประเภทปาร์ตี้และลูกค้า/ซัพพลายเออร์ที่เกี่ยวข้อง
+1. เลือกบัญชีธนาคาร/บัญชีเงินสดที่ชำระและชำระจาก ป้อนหมายเลขเช็คและวันที่หากโอนเงินผ่านธนาคาร
+1. ใส่จำนวนเงินที่ชำระ
+1. บันทึกและส่ง
 
+## 3. คุณสมบัติ
 
-## 3. Features
+### 3.1 การตั้งค่ารูปแบบการชำระเงิน
 
-### 3.1 Setting Mode of Payment
+**รูปแบบการชำระเงิน**: การป้อนข้อมูลนี้จะช่วยจำแนกรายการการชำระเงินตามโหมดการชำระเงินที่ใช้ วิธีการชำระเงินสามารถเป็นธนาคาร เงินสด โอนเงินผ่านธนาคาร ฯลฯ
 
-**Mode of Payment**: Entering this helps classify Payment Entries based on the payment mode used. Modes of Payment can be Bank, Cash, Wire Transfer, etc.
+> **หมายเหตุ**: ใน[รูปแบบการชำระเงิน](/docs/user/manual/th/accounts/mode-of-payment)หลัก สามารถตั้งค่าบัญชีเริ่มต้นได้ บัญชีการชำระเงินเริ่มต้นนี้จะถูกดึงเข้าสู่รายการการชำระเงิน
 
-> **Tip**: In the [Mode of Payment](/docs/user/manual/en/accounts/mode-of-payment) master, default Account can be set. This default payment Account will be fetched into Payment Entries.
-
-### 3.2 Payment From/To
+### 3.2 ชำระเงินจาก/ไปยัง
 
 ![Payment Party]({{docs_base_url}}/assets/img/accounts/payment-party.png)
 
-* **Party Type**: Whether Customer, Supplier, Employee, Shareholder, Student, or NGO Member.
-* **Party**: The specific party for which the Payment Entry is made.
-* **Party Name**: The name of the party, this is fetched automatically.
-* **Company Bank Account**: Your Company's [Bank Account](/docs/user/manual/en/accounts/bank-account).
-* **Party Bank Account**: The Party's [Bank Account](/docs/user/manual/en/accounts/bank-account).
-* **Contact**: If the Party is an organization, a Contact person can be stored here.
+* **ประเภทของผู้เกี่ยวข้อง**: ลูกค้า ซัพพลายเออร์ พนักงาน ผู้ถือหุ้น นักเรียน หรือสมาชิก NGO
+* **ผู้เกี่ยวข้อง** : ฝ่ายใดฝ่ายหนึ่งที่ทำรายการชำระเงิน
+* **ชื่อผู้เกี่ยวข้อง** : ชื่อของปาร์ตี้ จะถูกดึงโดยอัตโนมัติ
+* **บัญชีธนาคารของบริษัท**: [บัญชีธนาคาร](/docs/user/manual/th/accounts/bank-account)ของบริษัทคุณ
+* **บัญชีธนาคารของผู้เกี่ยวข้อง**: [บัญชีธนาคาร](/docs/user/manual/th/accounts/bank-account) ของผู้เกี่ยวข้อง
+* **ผู้ติดต่อ** : หากผู้ที่เกี่ยวข้องเป็นองค์กร ผู้ติดต่อสามารถเก็บไว้ที่นี่
 
-### 3.3 Accounts
+
+### 3.3 บัญชี
 
 ![Payment Accounts]({{docs_base_url}}/assets/img/accounts/payment-accounts.png)
 
-* **Party Balance**: The overall amount receivable or payable from Customer or Supplier from Invoices set in the current Payment Entry. Paid amounts will be positive and if advance payments are made, they will be negative.
-* **Account Paid From**: The [Account](/docs/user/manual/en/accounts/chart-of-accounts) from which the amount will be deducted when Payment is submitted.
-* **Account Paid To**: The [CoA account](/docs/user/manual/en/accounts/chart-of-accounts) from which the amount will be added when Payment Entry is submitted.
+* **ยอดคงเหลือของผู้เกี่ยวข้อง**:  จำนวนเงินโดยรวมที่รับหรือชำระจากลูกค้าหรือซัพพลายเออร์จากใบแจ้งหนี้ที่กำหนดในรายการการชำระเงินปัจจุบัน จำนวนเงินที่ชำระแล้วจะเป็นค่าบวก และหากมีการชำระเงินล่วงหน้า จำนวนเงินดังกล่าวจะเป็นค่าลบ
+* **บัญชีที่ชำระจาก**: [บัญชี](/docs/user/manual/th/accounts/chart-of-accounts) ที่จะหักจำนวนเงินเมื่อส่งการชำระเงิน
+* **บัญชีที่ชำระปยัง**: [ผังบัญชี](/docs/user/manual/th/accounts/chart-of-accounts) ที่จะเพิ่มจำนวนเงินเมื่อส่งรายการชำระเงิน
 
-* **Account Currency**: The Currencies of these accounts will be fetched as set in the [Account](/docs/user/manual/en/accounts/chart-of-accounts) and cannot be edited here. To know about more about transactions in multiple currencies, [visit this page](/docs/user/manual/en/accounts/articles/managing-transactions-in-multiple-currency).
-* **Account Balance**: The total amount balance from all the invoices of the selected accounts.
+* **สกุลเงินของบัญชี**: สกุลเงินของบัญชีเหล่านี้จะถูกดึงมาตามที่ตั้งค่าไว้ใน [บัญชี](/docs/user/manual/th/accounts/chart-of-accounts) และไม่สามารถแก้ไขได้ที่นี่ หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับธุรกรรมในหลายสกุลเงินโปรด [ไปที่หน้านี้](/docs/user/manual/th/accounts/articles/managing-transactions-in-multiple-currency).
+* **ยอดคงเหลือในบัญชี**: ยอดเงินคงเหลือจากใบแจ้งหนี้ทั้งหมดของบัญชีที่เลือก
 
-**Paid Amount**: The **total amount** paid for the current Payment Entry is shown in this field.
+**จำนวนเงินที่ชำระ**: **จำนวนเงินทั้งหมด** ที่ชำระสำหรับรายการชำระเงินปัจจุบันจะแสดงในช่องนี้
 
-> **Note**: When making Payment Entries, the default bank account will be fetched in the following order if set:
+> **หมายเหตุ**: เมื่อทำรายการชำระเงิน บัญชีธนาคารเริ่มต้นจะถูกดึงมาตามลำดับต่อไปนี้หากตั้งค่าไว้:
 
-> * Company form
-> * Mode of Payment default account
-> * Customer/Supplier default bank account
-> * Select manually in Payment Entry
+> * แบบฟอร์มบริษัท
+> * วิธีการชำระเงินของบัญชีเริ่มต้น
+> * บัญชีธนาคารเริ่มต้นของลูกค้า/ซัพพลายเออร์
+> * เลือกรายการชำระเงินด้วยตนเอง
 
-### 3.4 Reference
 
-#### Fetching outstanding Invoices
+### 3.4 ข้อมูลอ้างอิง
 
-This can be used to make payments to multiple Sales Invoices using one Payment Entry. When creating a new Payment Entry, on clicking the **Get Outstanding Invoice** button all the outstanding Invoices and open Orders will be fetched for the party. You need to enter the 'Paid Amount' to see this button. From here a date range and invoices to be fetched can be selected.
+#### เรียกใบแจ้งหนี้ค้างชำระ
+
+สามารถใช้ชำระเงินให้กับใบแจ้งหนี้การขายหลายรายการโดยใช้รายการชำระเงินรายการเดียว เมื่อมีการสร้างการชำระเงินใหม่ เคลิกที่ได้รับใบแจ้งหนี้ค้างชำระที่ปุ่มทุกใบแจ้งหนี้ที่ค้างชำระและคำสั่งซื้อที่จะเปิดความจริงสำหรับผู้ที่เกี่ยวข้อง คุณต้องป้อน 'จำนวนเงินที่ชำระ' เพื่อดูปุ่มนี้ คุณสามารถเลือกช่วงวันที่และใบแจ้งหนี้ที่ต้องการได้จากที่นี่
 
 ![Outstanding Invoice]({{docs_base_url}}/assets/img/accounts/outstanding-pe.png)
 
-If the Party has not made full payment, enter the amount paid in the 'Allocated' field.
+หากคู่สัญญาไม่ได้ชำระเงินเต็มจำนวน ให้ป้อนจำนวนเงินที่ชำระในช่อง 'จัดสรรแล้ว'
 
-If creating Payment Entry for a Customer, the Payment Amount will be allocated against a Sales Invoice. On the same lines, when creating Payment Entry for a Supplier, Payment Amount will be allocated against a Purchase Invoice.
+หากสร้างรายการชำระเงินสำหรับลูกค้า จำนวนเงินที่ชำระจะถูกปันส่วนกับใบกำกับสินค้า ในบรรทัดเดียวกัน เมื่อสร้างรายการชำระเงินสำหรับผู้จัดหา จำนวนเงินที่ชำระจะถูกปันส่วนกับใบกำกับสินค้า
 
-#### Payment References table
+#### ตารางอ้างอิงการชำระเงิน
 
-* **Type**: Whether the payment is being made against a Sales Order, Sales Invoice, or a Journal Entry.
-* **Name**: The particular transaction ID is fetched/selected here.
-* **Total Amount**: The total amount of one Invoice/Journal Entry in the row.
-* **Outstanding**: The amount to receive/to pay for this invoice.
-* **Allocated**: If the Paid Amount is less than the invoice amount only the paid amount will be allocated to the invoice(s) fetched in the Payment Entry. The payment may be made in parts, for example, if there are three invoices of amounts 20, 20, 20, the Paid Amount is 60 then this Paid Amount will be distributed equally. [Payment Terms](/docs/user/manual/en/accounts/payment-terms) may also be involved.
+* **ประเภท**: ชำระเงินตามใบสั่งขาย ใบกำกับสินค้า หรือรายการบันทึกประจำวัน
+* **ชื่อ** : หมายเลขธุรกรรมเฉพาะจะถูกดึง/เลือกที่นี่
+* **จำนวนเงินทั้งหมด** : จำนวนเงินรวมของหนึ่ง ใบแจ้งหนี้/รายการบันทึก
+* **ค้างชำระ** : จำนวนเงินที่จะได้รับ/จ่ายสำหรับใบแจ้งหนี้นี้
+* **จัดสรรแล้ว** : หากจำนวนเงินที่ชำระแล้วน้อยกว่าจำนวนเงินในใบแจ้งหนี้ เฉพาะจำนวนเงินที่ชำระแล้วจะถูกปันส่วนไปยังใบแจ้งหนี้ที่ดึงมาในรายการการชำระเงิน การชำระเงินอาจทำเป็นส่วนๆ เช่น หากมีใบแจ้งหนี้จำนวน 20, 20, 20 ใบ จำนวน 3 ใบ จำนวนเงินที่ชำระแล้วคือ 60 จำนวนเงินที่ชำระนี้จะถูกกระจายอย่างเท่าเทียมกันและ [เงื่อนไขการชำระเงิน](/docs/user/manual/th/accounts/payment-terms)อาจเกี่ยวข้องด้วย
 
  ![Outstanding Invoice]({{docs_base_url}}/assets/img/accounts/outstanding-pe.png)
 
-#### What is Unallocated Amount?
-When a Payment Entry is made in ERPNext and the Paid Amount is more than the total invoice amount, it is stored in the Customer's/Supplier's account. This amount is hence currently 'Unallocated'. Unallocated amount can be used against future invoices.
+#### จำนวนเงินที่ไม่ได้จัดสรรคืออะไร?
+เมื่อทำรายการชำระเงินใน ERPNext และจำนวนเงินที่ชำระมากกว่าจำนวนเงินในใบแจ้งหนี้ทั้งหมด รายการนั้นจะถูกเก็บไว้ในบัญชีของลูกค้า/ซัพพลายเออร์ เงินจำนวนนี้จึงเป็น 'ไม่ได้จัดสรร' ในขณะนี้ จำนวนเงินที่ไม่ได้ปันส่วนสามารถใช้กับใบแจ้งหนี้ในอนาคตได้
 
-For example, you create a Sales Invoice totaling 1,000 and the Customer paid 1,500. When another invoice is created for this Customer in the future for 1,000 again, the previously paid 500 can be used.
+ตัวอย่างเช่น คุณสร้างใบแจ้งหนี้การขายรวม 1,000 และลูกค้าชำระเงิน 1,500 เมื่อมีการสร้างใบแจ้งหนี้อื่นสำหรับลูกค้ารายนี้ในอนาคตเป็นจำนวนเงิน 1,000 อีกครั้ง สามารถใช้ 500 ที่ชำระก่อนหน้านี้ได้
 
-### 3.5 Deductions or Loss
+### 3.5 การหักหรือขาดทุน
 
-When a Payment Entry is created against an invoice, there could be some difference in the actual Paid Amount and the invoice outstanding amount. This difference could be due to rounding errors or changes in the currency exchange rate. You can set an Account here where this difference amount will be booked.
+เมื่อมีการสร้างรายการการชำระเงินกับใบแจ้งหนี้ อาจมีความแตกต่างบางประการในจำนวนเงินที่ชำระจริงและจำนวนเงินคงค้างในใบแจ้งหนี้ ความแตกต่างนี้อาจเกิดจากข้อผิดพลาดในการปัดเศษหรือการเปลี่ยนแปลงของอัตราแลกเปลี่ยนเงินตรา คุณสามารถตั้งค่าบัญชีได้ที่นี่ซึ่งจะมีการจองจำนวนส่วนต่างนี้
 
 ![Outstanding Invoice]({{docs_base_url}}/assets/img/accounts/pe-get-outstanding.gif)
 
-The loss/deductions can be written off:
+การหักหรือขาดทุนตัดจำหน่าย
 ![Payment Deductions]({{docs_base_url}}/assets/img/accounts/payment-deductions.png)
 
-Let's see an example here where the paid amount is 25 but the allocated amount is 30 since 30 is the amount to be collected as per the invoice. The 'Difference Amount' will be 5 in this case. This difference amount can occur due to discounts or Currency Exchange. The Difference Amount needs to be 0 in order to submit the Payment Entry. This can be adjusted using the **Make Difference Entry** button. The amount will be adjusted in the Write Off account.
+ขาดทุน/หักลดหย่อนได้ โดยที่จำนวนเงินที่ชำระแล้วคือ 25 แต่จำนวนเงินที่จัดสรรคือ 30 เนื่องจาก 30 เป็นจำนวนเงินที่จะเรียกเก็บตามใบแจ้งหนี้ ในกรณีนี้ 'จำนวนส่วนต่าง' จะเท่ากับ 5 จำนวนเงินส่วนต่างนี้สามารถเกิดขึ้นได้เนื่องจากส่วนลดหรือการแลกเปลี่ยนสกุลเงิน จำนวนส่วนต่างต้องเป็น 0 เพื่อส่งรายการชำระเงิน นี้สามารถปรับเปลี่ยนได้โดยใช้ปุ่ม *สร้างรายการอื่น** จำนวนเงินจะถูกปรับในบัญชีตัดจำหน่าย
 
 <img class="screenshot" alt="Making Payment" src="{{docs_base_url}}/assets/img/accounts/payment-entry-5.gif">
 
-### 3.6 Write Off
+### 3.6 ตัดจำหน่าย
 
-Write off happens when the paid amount is less than the allocated amount. I.e. the remaining amount is considered as lost in miscellaneous charges or that amount isn't going to be paid. This is considered as loss.
+การตัดจำหน่ายเกิดขึ้นเมื่อจำนวนเงินที่ชำระน้อยกว่าจำนวนเงินที่จัดสรร กล่าวคือจำนวนเงินที่เหลือจะถือว่าสูญหายในค่าใช้จ่ายเบ็ดเตล็ดหรือจำนวนเงินนั้นจะไม่ได้รับการชำระ ซึ่งถือเป็นการสูญเสีย
 
 ![Payment Write Off]({{docs_base_url}}/assets/img/accounts/payment-write-off-1.png)
 
-In this table, the deductions or loss from payments can be adjusted as explained in the example in the previous section.
+การหักหรือขาดทุนจากการชำระเงินสามารถปรับเปลี่ยนได้ตามที่อธิบายไว้ในตัวอย่างในส่วนก่อนหน้า
 
 ![Payment Write Off]({{docs_base_url}}/assets/img/accounts/payment-write-off.png)
 
-### 3.5 After Submitting
-Save and Submit Payment Entry. On submission, outstanding will be updated in the Invoices.
+### 3.5 หลังจากส่งแล้ว
+บันทึกและส่งรายการการชำระเงิน เมื่อส่ง ยอดคงค้างจะได้รับการอัปเดตในใบแจ้งหนี้
 
 <img class="screenshot" alt="Making Payment" src="{{docs_base_url}}/assets/img/accounts/payment-entry-8.png">
 
-If payment entry was created against Sales Order or Purchase Order, the field 'Advance Paid' will be updated in them. When creating Invoice against those transactions, Payment Entry will be auto-updated in that Invoice so that you can allocate invoice amount against advance payment entry.
+หากมีการสร้างรายการชำระเงินกับใบสั่งขายหรือใบสั่งซื้อ ฟิลด์ 'ชำระเงินล่วงหน้า' จะได้รับการอัปเดต เมื่อสร้างใบแจ้งหนี้กับธุรกรรมเหล่านั้น รายการชำระเงินจะได้รับการอัปเดตอัตโนมัติในใบแจ้งหนี้นั้น เพื่อให้คุณสามารถจัดสรรจำนวนเงินในใบแจ้งหนี้กับรายการชำระเงินล่วงหน้าได้
 
-For incoming payment, the accounts posting will be done as follows.
+สำหรับการชำระเงินขาเข้า การผ่านรายการบัญชีจะทำดังนี้
 
- * Debit: Bank or Cash Account
- * Credit: Customer (Debtor)
+ * เดบิต: บัญชีธนาคารหรือบัญชีเงินสด
+ * เครดิต: ลูกค้า (ลูกหนี้)
 
-For outgoing payment:
+สำหรับการชำระเงินขาออก:
 
- * Debit: Supplier (Creditor)
- * Credit: Bank or Cash Account
+ * เดบิต: ซัพพลายเออร์ (เจ้าหนี้)
+ * เครดิต: บัญชีธนาคารหรือบัญชีเงินสด
 
-## 4. Other cases
+## 4. กรณีอื่นๆ
 
-### 4.1 Multi Currency Payment Entry
+### 4.1 รายการชำระเงินหลายสกุลเงิน
 
-If you want to maintain a receivable/payable account in foreign currency, then create accounts with foreign currency (different from Company currency) and link it in the party account. For example:
+หากคุณต้องการรักษาบัญชีลูกหนี้/เจ้าหนี้ในสกุลเงินต่างประเทศ ให้สร้างบัญชีที่มีสกุลเงินต่างประเทศ (ต่างจากสกุลเงินของบริษัท) และเชื่อมโยงในบัญชีปาร์ตี้ ตัวอย่างเช่น:
 
 ![Foreign Account in Customer]({{docs_base_url}}/assets/img/accounts/cust-foreign-acc.png)
 
-ERPNext allows you maintain accounts and invoicing in [multiple currency](/docs/user/manual/en/accounts/multi-currency-accounting). If an invoice is made in the party currency, Currency Exchange Rate between the Company's base currency and party currency is also entered in the invoice.
+ERPNext ช่วยให้คุณรักษาบัญชีและใบแจ้งหนี้ใน [หลายสกุลเงิน](/docs/user/manual/th/accounts/multi-currency-accounting) หากทำใบแจ้งหนี้ในสกุลเงินของฝ่าย อัตราแลกเปลี่ยนสกุลเงินระหว่างสกุลเงินหลักของบริษัทและสกุลเงินของฝ่ายนั้นจะถูกป้อนในใบแจ้งหนี้ด้วย
 
-> Note: A separate Debtor/Creditor account needs to be created and selected in the Sales Invoice/Order for currency exchange to work correctly. For example, if the Customer is from the US, create a receivable account called 'Debtors US'.
+> หมายเหตุ: ต้องสร้างและเลือกบัญชีลูกหนี้/เจ้าหนี้แยกต่างหากในใบกำกับสินค้า/ใบสั่งสำหรับการแลกเปลี่ยนสกุลเงินเพื่อให้ทำงานได้อย่างถูกต้อง ตัวอย่างเช่น หากลูกค้ามาจากสหรัฐอเมริกา ให้สร้างบัญชีลูกหนี้ชื่อ 'Debtors US'
 
-When creating Payment Entry against that invoice, the current exchange rate will be fetched, but you can set the Currency Exchange Rate at the time of payment to match your records.
+เมื่อสร้างรายการชำระเงินกับใบแจ้งหนี้นั้น อัตราแลกเปลี่ยนปัจจุบันจะถูกดึงมา แต่คุณสามารถตั้งค่าอัตราแลกเปลี่ยนสกุลเงินในขณะที่ชำระเงินเพื่อให้ตรงกับบันทึกของคุณ
 
-Click on the **Set Exchange Gain/Loss** button to automatically add a row to write off the difference amount.
+คลิกที่ปุ่ม **ตั้งอัตราแลกเปลี่ยน กำไร ขาดทุน** เพื่อเพิ่มแถวโดยอัตโนมัติเพื่อตัดจำนวนเงินส่วนต่าง                                                                                                       
 
 <img class="screenshot" alt="Making Payment" src="{{docs_base_url}}/assets/img/accounts/payment-entry-6.png">
 
-Since Currency Exchange Rate fluctuates all the time, it can lead to a difference in the payment amount against invoice total. This difference amount can be booked in the Currency Exchange Gain/Loss Amount.
+เนื่องจากอัตราแลกเปลี่ยนเงินตราผันผวนตลอดเวลา จึงอาจนำไปสู่ความแตกต่างในจำนวนเงินที่ชำระกับยอดรวมในใบแจ้งหนี้ จำนวนส่วนต่างนี้สามารถจองได้ในจำนวนกำไร/ขาดทุนจากการแลกเปลี่ยนสกุลเงิน
 
 <img class="screenshot" alt="Making Payment" src="{{docs_base_url}}/assets/img/accounts/payment-entry-7.png">
 
-Payments can also be made independent of invoices by creating a new Payment Entry.
+การชำระเงินสามารถทำได้โดยไม่ขึ้นอยู่กับใบแจ้งหนี้โดยการสร้างรายการการชำระเงินใหม่
 
-To know more about managing transactions in multiple currencies [visit this page](/docs/user/manual/en/accounts/articles/managing-transactions-in-multiple-currency).
+หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับการจัดการธุรกรรมในหลายสกุลเงิน สามารถ[อ่านได้ที่นี่](/docs/user/manual/th/accounts/articles/managing-transactions-in-multiple-currency).
 
-### 4.2 Internal Transfer
+### 4.2 การโอนภายใน
 
-Internal Transfer is used in cases where the money is transferred between the same Company's accounts. For example, if a customer from the US using PayPal, transferring money from PayPal to a bank account can be considered as Internal Transfer.
+การโอนภายในจะใช้ในกรณีที่มีการโอนเงินระหว่างบัญชีของบริษัทเดียวกัน ตัวอย่างเช่น หากลูกค้าจากสหรัฐอเมริกาที่ใช้ PayPal การโอนเงินจาก PayPal ไปยังบัญชีธนาคารถือเป็นการโอนภายใน
 
-Following internal transfers can be managed from the Payment Entry.
+สามารถจัดการการโอนเงินภายในต่อไปนี้จากรายการการชำระเงิน.
 
-1. Bank - Cash
-4. Bank - Bank
-3. Cash - Cash
-2. Cash - Bank
+1. ธนาคาร - เงินสด
+4. ธนาคาร - ธนาคาร
+3. เงินสด - เงินสด
+2. เงินสด - ธนาคาร
 
 <img class="screenshot" alt="Making Payment" src="{{docs_base_url}}/assets/img/accounts/payment-entry-9.png">
 
-### 4.3 Managing Different Payment Scenarios
+### 4.3 การจัดการสถานการณ์การชำระเงินที่แตกต่างกัน
 
-For an unpaid invoice, outstanding amount = grand total. When creating Payment Entries, the value in the outstanding amount will reduce.
+สำหรับใบแจ้งหนี้ที่ยังไม่ได้ชำระ ยอดค้างชำระ = ยอดทั้งหมด เมื่อสร้างรายการชำระเงิน มูลค่าในยอดค้างชำระจะลดลง
 
-In most cases, apart from retail sales, billing and payments are separate activities. There are several combinations in which these payments are done. These cases apply to both Sales and Purchases.
+ในกรณีส่วนใหญ่ นอกเหนือจากการขายปลีก การเรียกเก็บเงินและการชำระเงินเป็นกิจกรรมที่แยกจากกัน 
 
- * They can be upfront (100% in advance).
- * Post shipment. Either on delivery or within a few days of delivery.
- * Part in advance and part on or post delivery.
- * Payments can be made together for a bunch of invoices.
- * Advances can be given together for a bunch of invoices (and can be split across invoices).
+กรณีเหล่านี้ใช้กับทั้งการขายและการซื้อ
 
-ERPNext allows you to manage all these scenarios. All accounting entries (GL Entry) can be made against a Sales Invoice, Purchase Invoice or Payment Entry of advance payment (in special cases, an invoice can be made via a Sales Invoice too).
+* พวกเขาสามารถล่วงหน้าได้ (ล่วงหน้า 100%)
+* โพสส่งของ. ไม่ว่าจะในการจัดส่งหรือภายในไม่กี่วันของการจัดส่ง
+* ส่วนหนึ่งล่วงหน้าและส่วนหนึ่งในหรือหลังการส่งมอบ
+* สามารถชำระเงินรวมกันเป็นพวงของใบแจ้งหนี้ได้
+* สามารถให้เงินทดรองรวมกันเป็นพวงของใบแจ้งหนี้ (และสามารถแยกออกเป็นใบแจ้งหนี้ได้)
 
-The total outstanding amount against an invoice is the sum of all the accounting entries that are made “against” (or are linked to) that invoice. This way you can combine or split payments in Payment Entry to manage the
-scenarios.
+ERPNext ช่วยให้คุณจัดการสถานการณ์เหล่านี้ทั้งหมดได้ รายการบัญชีทั้งหมด (รายการ GL) สามารถทำกับใบกำกับสินค้า ใบกำกับสินค้า ใบสั่งซื้อ หรือรายการชำระเงินของการชำระเงินล่วงหน้าได้ (ในกรณีพิเศษ ใบกำกับสินค้าสามารถทำผ่านใบกำกับสินค้าได้เช่นกัน)
 
-### 4.4 Difference between Payment Entry and Journal Entry
+ยอดค้างชำระทั้งหมดเทียบกับใบแจ้งหนี้คือผลรวมของรายการทางบัญชีทั้งหมดที่ทำขึ้น "เทียบกับ" (หรือเชื่อมโยงกับ) ใบแจ้งหนี้นั้น วิธีนี้ทำให้คุณสามารถรวมหรือแยกการชำระเงินในรายการการชำระเงินเพื่อจัดการสถานการณ์ต่างๆ ได้
 
-1. Using Journal Entry requires an understanding of which Account will get Debited or Credited. In the Payment Entry, it is managed in the backend, hence simpler for the User.
-1. Payment Entry is more efficient in managing payments in foreign currencies.
-1. Cheques can be printed from Payment Entries using the Cheque Print Format.
-1. Journal Entry can still be used for:
- - Updating opening balance in Accounts.
- - Fixed Asset Depreciation entry.
- - For adjusting Credit Note against Sales Invoice and Debit Note against Purchase Invoice, in case there is no payment happening at all.
+### 4.4 ความแตกต่างระหว่างรายการชำระเงินและรายการบันทึกประจำวัน
 
-### 4.5 Payments Using Journal Entry
+1. การใช้ Journal Entry จำเป็นต้องมีความเข้าใจว่าบัญชีใดจะได้รับการเดบิตหรือเครดิต ในรายการการชำระเงิน จะมีการจัดการในแบ็กเอนด์ ดังนั้นผู้ใช้จึงง่ายกว่า
+1. รายการชำระเงินมีประสิทธิภาพมากขึ้นในการจัดการการชำระเงินในสกุลเงินต่างประเทศ
+1. สามารถพิมพ์เช็คจากรายการการชำระเงินโดยใช้รูปแบบการพิมพ์เช็ค
+1. รายการบันทึกประจำวันยังสามารถใช้สำหรับ:
+    * กำลังอัปเดตยอดดุลเปิดในบัญชี
+    * รายการค่าเสื่อมราคาสินทรัพย์ถาวร
+    * สำหรับการปรับใบลดหนี้กับใบกำกับสินค้าและใบลดหนี้กับใบลดหนี้การซื้อ ในกรณีที่ไม่มีการชำระเงินเกิดขึ้นเลย
 
-To make payment using Journal Entry follow these steps:
+### 4.5 การชำระเงินโดยใช้รายการบันทึกประจำวัน
 
-1. Activate Payment via Journal Entry. Go to **Accounting > Accounting Masters > Accounts Settings**, check the box 'Make Payment via Journal Entry'.
+ในการชำระเงินโดยใช้รายการบันทึกประจำวัน ให้ทำตามขั้นตอนเหล่านี้:
 
-2. Make the payment. On submitting a document against which Journal Entry can be made, you will find the Payment under the **Create** button.
+1. เปิดใช้งานการชำระเงินผ่านรายการบันทึกประจำวัน ไปที่ บัญชี > บัญชีหลัก > ตั้งค่าบัญชี แล้วให้เลือก 'ชำระเงินผ่านรายการบันทึกประจำวัน'
 
- <img class="screenshot" alt="Making Payment" src="{{docs_base_url}}/assets/img/accounts/payment-entry-1.png">
+2. ในการส่งเอกสารที่สามารถทำรายการบันทึกประจำวันได้ คุณจะพบการชำระเงินภายใต้ปุ่ม **สร้าง**
 
-3. Journal Entry. Save and submit the journal entry to record the payment against the invoice
+<img class="screenshot" alt="Making Payment" src="{{docs_base_url}}/assets/img/accounts/payment-entry-1.png">
+
+3. บันทึกและส่งรายการบันทึกประจำวันเพื่อบันทึกการชำระเงินกับใบแจ้งหนี้
  <img class="screenshot" alt="Making Payment" src="{{docs_base_url}}/assets/img/accounts/journal-entry.png">
 
 
-## 5. Related Topics
-1. [Payment Request](/docs/user/manual/en/accounts/payment-request)
-1. [Payment Terms](/docs/user/manual/en/accounts/payment-terms)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+## 5. หัวข้อที่เกี่ยวข้อง
+1. [คำขอชำระเงิน](/docs/user/manual/th/accounts/payment-request)
+1. [เงื่อนไขการชำระเงิน](/docs/user/manual/th/accounts/payment-terms)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบกำกับสินค้า](/docs/user/manual/th/accounts/purchase-invoice)

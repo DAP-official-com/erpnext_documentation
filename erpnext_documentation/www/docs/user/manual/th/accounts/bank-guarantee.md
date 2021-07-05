@@ -1,37 +1,37 @@
 <!-- add-breadcrumbs -->
-# Bank Guarantee
+# หนังสือค้ำประกันโดยธนาคาร
 
-**A Bank Guarantee is a guarantee from a lending institution such as a bank ensuring the liabilities of a debtor will be met.**
+**หนังสือค้ำประกันจากธนาคารคือการค้ำประกันจากสถาบันสินเชื่อ เช่น ธนาคารที่รับประกันหนี้สินของลูกหนี้**
 
-In other words, if the debtor fails to settle a debt, the bank covers it. A Bank Guarantee enables the customer, or debtor, to acquire goods, buy equipment or draw down loans, and thereby expand business activity.
+กล่าวอีกนัยหนึ่งหากลูกหนี้ไม่ชำระหนี้ธนาคารจะรับผิดชอบ หนังสือค้ำประกันของธนาคารช่วยให้ลูกค้าหรือลูกหนี้สามารถซื้อสินค้า ซื้ออุปกรณ์ หรือเบิกเงินกู้ได้ และด้วยเหตุนี้จึงขยายกิจกรรมทางธุรกิจ
 
-A client may ask you to provide a Bank Guarantee from a third party such as a Bank. This guarantee is for a specified amount, which is usually a percentage of the total value of the contract. The Bank Guarantee is valid for a specified duration after which it expires.
+ลูกค้าอาจขอให้คุณมอบหนังสือค้ำประกันจากบุคคลที่สาม เช่น ธนาคาร การค้ำประกันนี้เป็นจำนวนเงินที่กำหนด ซึ่งมักจะเป็นเปอร์เซ็นต์ของมูลค่ารวมของสัญญา หนังสือค้ำประกันของธนาคารจะมีอายุตามระยะเวลาที่กำหนดหลังจากนั้นจะหมดอายุ
 
-In a transaction between a large organization and a small organization, the larger organization (Supplier) is at risk of not receiving the money owed for providing Items/Services so it will receive a Bank Guarantee from the smaller organization (Customer). A Bank Guarantee ensures that the larger organization gets money in case the smaller organization is not able to deliver.
+ในการทำธุรกรรมระหว่างองค์กรขนาดใหญ่และองค์กรขนาดเล็ก องค์กรขนาดใหญ่ (ซัพพลายเออร์) มีความเสี่ยงที่จะไม่ได้รับเงินที่ค้างชำระจากการจัดหารายการ/บริการ จึงจะได้รับ หนังสือค้ำประกันโดยธนาคาร จากองค์กรขนาดเล็ก (ลูกค้า) การรับประกันจากธนาคารทำให้มั่นใจได้ว่าองค์กรขนาดใหญ่จะได้รับเงินในกรณีที่องค์กรขนาดเล็กไม่สามารถส่งมอบได้
 
-To access the Bank Guarantee list, go to:
-> Home > Accounting > Banking and Payments > Bank Guarantee
+หากต้องการเข้าถึงรายการ ค้ำประกันธนาคาร ให้ไปที่:
+> หน้าแรก > การบัญชี > การธนาคารและการชำระเงิน > ค้ำประกัน
 
-## 1. How to create a Bank Guarantee
-1. Go to the Bank Guarantee list and click on New.
-1. Select the type whether you're Receiving a Bank Guarantee from a Customer or Providing it to a Supplier.
-1. Set the Start Date and under 'Validity in Days' enter the number of days the guarantee is valid for.
-1. Select the Sales Order or Purchase Order depending on step 2.
-1. The Customer/Supplier and the Amount will be fetched automatically.
-1. Select a Bank and the Bank Account.
-1. Enter a Bank Guarantee number and name of the beneficiary.
-1. Save and Submit.
+## 1. วิธีสร้างหนังสือค้ำประกัน
+1. ไปที่รายการ หนังสือค้ำประกัน และคลิก ใหม่
+1. เลือกประเภทว่าคุณจะได้รับหนังสือค้ำประกันจากลูกค้าหรือมอบให้กับซัพพลายเออร์
+1. กำหนดวันที่เริ่มต้นและภายใต้ 'ความถูกต้องในวัน' ให้ป้อนจำนวนวันที่การรับประกันมีผลใช้ได้
+1. เลือกใบสั่งขายหรือใบสั่งซื้อขึ้นอยู่กับขั้นตอนที่ 2
+1. ลูกค้า/ซัพพลายเออร์และจำนวนเงินจะถูกดึงโดยอัตโนมัติ
+1. เลือกธนาคารและบัญชีธนาคาร
+1. ป้อนหมายเลขค้ำประกันของธนาคารและชื่อผู้รับผลประโยชน์
+1. บันทึกและส่ง
  <img class="screenshot" alt="Bank Guarantee" src="{{docs_base_url}}/assets/img/accounts/bank-guarantee.png">
 
-This document allows you to track Bank Guarantees given to Suppliers and received from Customers. You can set Email Alerts as the Bank Guarantee expiry date approaches to remind yourself to get the Bank Guarantee back from your client. 
+เอกสารนี้ช่วยให้คุณติดตามการค้ำประกันของธนาคารที่มอบให้กับซัพพลายเออร์และรับจากลูกค้า คุณสามารถตั้งค่า อีเมลแจ้งเตือน เมื่อใกล้ถึงวันหมดอายุของ หนังสือค้ำประกันโดยธนาคาร เพื่อเตือนตัวเองให้ขอ หนังสือค้ำประกันโดยธนาคาร จากลูกค้าของคุณ
 
-### 1.1 Additional Options when creating a Bank Guarantee
+### 1.1 ตัวเลือกเพิ่มเติมเมื่อสร้างหนังสือค้ำประกัน
 
-* **Margin Money**: This is some percentage of money paid to the Bank to proceed with the Bank Guarantee.
-* **Charges Incurred**: Handling charges charged by the Bank.
-* **Fixed Deposit Number**: In case the providing party has any Fixed Deposits, they can use them for proceeding with the Bank Guarantee.
+* **Margin Money** : นี่คือเปอร์เซ็นต์ของเงินที่จ่ายให้กับธนาคารเพื่อดำเนินการตามหนังสือค้ำประกันของธนาคาร
+* **ค่าใช้จ่ายที่เกิดขึ้น** : ค่าธรรมเนียมการจัดการที่เรียกเก็บโดยธนาคาร
+* **เลขที่เงินฝากประจำ** : ในกรณีที่ฝ่ายที่ให้บริการมีเงินฝากประจำ สามารถใช้เพื่อดำเนินการกับหนังสือค้ำประกันของธนาคารได้
 
-### 2. Related Topics
-1. [Chart Of Accounts](/docs/user/manual/en/accounts/chart-of-accounts)
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
+### 2. หัวข้อที่เกี่ยวข้อง
+1. [ผังบัญชี](/docs/user/manual/th/accounts/chart-of-accounts)
+1. [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order)
+1. [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)

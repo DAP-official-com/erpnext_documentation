@@ -1,33 +1,33 @@
 <!-- add-breadcrumbs -->
-# Opening Stock
+#เปิดสต๊อก
 
-**Opening Stock is the amount and value of materials that a company has available for sale or use at the beginning of an accounting period.**
+**สต็อคเปิดคือจำนวนและมูลค่าของวัสดุที่บริษัทมีเพื่อขายหรือใช้เมื่อต้นรอบระยะเวลาบัญชี**
 
-The closing Stock of the previous accounting period becomes the opening Stock of the current accounting period.
+สต็อคปิดของรอบระยะเวลาบัญชีก่อนหน้าจะกลายเป็นสต็อคเปิดของรอบระยะเวลาบัญชีปัจจุบัน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-* Create [Warehouses](/docs/user/manual/en/stock/warehouse).
-* Link Warehouse to appropriate accounting ledgers.
+* สร้าง [คลังสินค้า](/docs/user/manual/th/stock/warehouse)
+* เชื่อมโยงคลังสินค้ากับบัญชีแยกประเภทที่เหมาะสม
 
-## 2. Opening Stock for Non-serialized Items
+## 2. การเปิดสต็อคสำหรับรายการที่ไม่ต่อเนื่อง
 
-To post opening stock visit the [Stock Reconciliation](/docs/user/manual/en/stock/stock-reconciliation) page.
+หากต้องการโพสต์การเปิดสต็อก โปรดไปที่หน้า [การกระทบยอดสต็อก](/docs/user/manual/th/stock/stock-reconciliation)
 
 
-## 3. Opening Stock for Serialized and Batched Items
+## 3. การเปิดสต็อคสำหรับรายการที่เรียงลำดับและต่อเนื่องกัน
 
-Create the [Batch](/docs/user/manual/en/stock/batch) and [Serial No](/docs/user/manual/en/stock/serial-no) records beforehand. To post opening stock for serialized and batched items:
+สร้างระเบียน [Batch](/docs/user/manual/th/stock/batch) และ [Serial No](/docs/user/manual/th/stock/serial-no) ไว้ล่วงหน้า ในการโพสต์สต็อคเปิดสำหรับรายการต่อเนื่องและแบบแบทช์:
 
-1. Go to **Stock > Stock Transactions > Stock Entry > New**.
-1. Select 'Material Receipt' in 'Stock Entry Type'.
-1. Select the Warehouse in 'Default Target Warehouse'.
-1. In Items table select Item Code, Qty and Basic rate.
-1. For batched items select Batch No.
-1. For serialized items select Serial No.
-1. Save and Submit.
+1. ไปที่ **สต็อค > ธุรกรรมสต็อค > รายการสต็อค > ใหม่**
+1. เลือก 'Material Receipt' ใน 'Stock Entry Type'
+1. เลือกคลังสินค้าใน 'คลังเป้าหมายเริ่มต้น'
+1. ในตารางรายการ เลือกรหัสรายการ จำนวน และอัตราพื้นฐาน
+1. สำหรับรายการแบทช์ ให้เลือก Batch No.
+1. สำหรับรายการซีเรียลไลซ์ ให้เลือก Serial No.
+1. บันทึกและส่ง
 
-## 4. Video
+## 4. วีดีโอ
 <div>
     <div class="embed-container">
         <iframe src="https://www.youtube.com/embed/nlHX0ZZ84Lw?end=120" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
@@ -35,7 +35,7 @@ Create the [Batch](/docs/user/manual/en/stock/batch) and [Serial No](/docs/user/
     </div>
 </div>
 
-### 5. Related Topics
-1. [Accounting Of Inventory Stock](/docs/user/manual/en/stock/accounting-of-inventory-stock)
-1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
-1. [Stock Reconciliation](/docs/user/manual/en/stock/stock-reconciliation)
+### 5. หัวข้อที่เกี่ยวข้อง
+1. [การบัญชีสินค้าคงคลัง](/docs/user/manual/th/stock/accounting-of-inventory-stock)
+1. [รายการสต็อค](/docs/user/manual/th/stock/stock-entry)
+1. [การกระทบยอดสต็อก](/docs/user/manual/th/stock/stock-reconciliation)

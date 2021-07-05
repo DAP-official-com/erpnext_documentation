@@ -1,106 +1,105 @@
 <!-- add-breadcrumbs -->
-# Accounting Reports
+# รายงานการบัญชี
 
-Some of the major accounting reports are:
+รายงานการบัญชีที่สำคัญบางส่วน ได้แก่ :
 
-## 1. Company and Accounts
-### General Ledger
-Go to: **Accounts > Company and Accounts > General Ledger**.
+## 1. บริษัทและบัญชี
+### บัญชีแยกประเภททั่วไป
+ไปที่: **บัญชี > บริษัทและบัญชี > บัญชีแยกประเภททั่วไป**
 
-The General Ledger is a detailed report for all transactions posted to each account and for every transaction there is a Credit and Debit account so it lists them all up.
+บัญชีแยกประเภททั่วไปคือรายงานโดยละเอียดสำหรับธุรกรรมทั้งหมดที่ผ่านรายการไปยังแต่ละบัญชี และสำหรับทุกธุรกรรมจะมีบัญชีเครดิตและเดบิต ดังนั้น จึงแสดงรายการทั้งหมด
 
-The report is based on the table GL Entry and can be filtered by many pre-defined filters like Account, Cost Centers, Party, Project and Period etc. This helps you to get a full update for all entries posted in a period against any account. The result can be grouped by Account, Voucher/Transaction and Party with opening and closing balances for each group. In case of multi-currency accounting, there is also an option to check the amounts in any other currency than company's base currency.
+รายงานนี้อ้างอิงจากตารางรายการ GL และสามารถกรองได้ด้วยตัวกรองที่กำหนดไว้ล่วงหน้ามากมาย เช่น บัญชี ศูนย์ต้นทุน ปาร์ตี้ โครงการและช่วงเวลา ฯลฯ ซึ่งจะช่วยให้คุณได้รับการอัปเดตเต็มรูปแบบสำหรับรายการทั้งหมดที่โพสต์ในช่วงเวลาหนึ่งเทียบกับบัญชีใดๆ . ผลลัพธ์สามารถจัดกลุ่มตามบัญชี บัตรกำนัล/ธุรกรรม และฝ่ายที่มียอดคงเหลือเปิดและปิดสำหรับแต่ละกลุ่ม ในกรณีของการบัญชีแบบหลายสกุลเงิน ยังมีตัวเลือกในการตรวจสอบจำนวนเงินในสกุลเงินอื่นนอกเหนือจากสกุลเงินหลักของบริษัท
 
 <img alt="General Ledger" class="screenshot"
     src="{{docs_base_url}}/assets/img/accounts/reports/general-ledger.png">
 
-## 2. Accounting Statements
-### 2.1 Accounts Receivable and Accounts Payable (AR / AP)
-Go to: **Accounts > Accounting Statements > Accounts Receivable**.
+## 2. ใบแจ้งยอดบัญชี
+### 2.1 บัญชีลูกหนี้และเจ้าหนี้การค้า (AR / AP)
+ ไปที่: **บัญชี> งบบัญชี > บัญชีลูกหนี้**.
 
-These reports help you to track the outstanding amount of Customers and Suppliers. It also provides ageing analysis i.e. a break-up of outstanding amount based on the period for which the amount is outstanding.
+รายงานเหล่านี้ช่วยให้คุณติดตามยอดค้างชำระของลูกค้าและซัพพลายเออร์ นอกจากนี้ยังมีการวิเคราะห์อายุ เช่น การแตกยอดค้างชำระตามช่วงเวลาที่ยอดเงินคงค้างอยู่
 
 <img alt="Accounts Receivable" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/accounts-receivable.png">
 
-#### 2.1.1 Accounts Receivables based on Payment terms
-You can also see Accounts Receivables based on [Payment Terms](/docs/user/manual/en/accounts/payment-terms).
+#### 2.1.1 ลูกหนี้ตามเงื่อนไขการชำระเงิน
+นอกจากนี้คุณยังสามารถดูบัญชีลูกหนี้ขึ้นอยู่กับ [เงื่อนไขการชำระเงิน](/docs/user/manual/th/accounts/payment-terms).
 
-Accounts Receivable report based on payment terms can be seen by clicking the checkbox 'Based On Payment Terms' as shown in the following screenshot.
+สามารถดูรายงานบัญชีลูกหนี้ตามเงื่อนไขการชำระเงินได้โดยคลิกที่ช่องทำเครื่องหมาย 'ตามเงื่อนไขการชำระเงิน' ดังที่แสดงในภาพหน้าจอต่อไปนี้
 
 <img alt="Accounts Receivable" class="screenshot"
     src="{{docs_base_url}}/assets/img/accounts/reports/accounts-receivable-1.png">
 
-Outstanding amount against each payment term can be seen. **Invoiced Amount** shows each payment term amount and **Paid Amount** shows paid amount against each payment term. Payment against each term is allocated in FIFO order.
+สามารถดูยอดค้างชำระในแต่ละเงื่อนไขการชำระเงินได้ **จำนวนเงินที่ออกใบแจ้งหนี้** จะแสดงจำนวนเงินตามเงื่อนไขการชำระเงินแต่ละงวด และ **จำนวนเงินที่ชำระแล้ว**จะแสดงจำนวนเงินที่ชำระกับเงื่อนไขการชำระเงินแต่ละงวด การชำระเงินในแต่ละเทอมจะได้รับการจัดสรรในคำสั่ง FIFO
 
 <img alt="Accounts Receivable" class="screenshot"
     src="{{docs_base_url}}/assets/img/accounts/reports/accounts-receivable-2.png">
 
-### 2.2 Trial Balance
-Go to: **Accounts > Accounting Statements > Trial Balance**.
+### 2.2 งบทดลอง
+ไปที่: **บัญชี > งบบัญชี > งบทดลอง**.
 
-A Trial Balance is an accounting report which lists account balances for all your Accounts
-(“Ledger” and “Group”) for any given reporting period. A company prepares a trial balance periodically, usually at the end of every reporting period. The general purpose of producing a trial balance is to ensure the entries in a company's bookkeeping system are mathematically correct. The totals of Debit and Credit columns must be same for any given period, to ensure the entries are correct. In ERPNext, the report shows following columns:
+งบทดลองคือรายงานทางบัญชีที่แสดงยอดคงเหลือในบัญชีสำหรับบัญชีทั้งหมดของคุณ ("บัญชีแยกประเภท" และ "กลุ่ม") สำหรับรอบระยะเวลาการรายงานที่กำหนด บริษัทจัดเตรียมงบทดลองเป็นระยะๆ โดยปกติแล้วจะสิ้นสุดทุกรอบระยะเวลาการรายงาน วัตถุประสงค์ทั่วไปในการผลิตงบทดลองคือเพื่อให้แน่ใจว่ารายการในระบบการทำบัญชีของบริษัทถูกต้องทางคณิตศาสตร์ ยอดรวมของคอลัมน์เดบิตและเครดิตจะต้องเท่ากันในช่วงเวลาที่กำหนด เพื่อให้แน่ใจว่ารายการถูกต้อง ใน ERPNext รายงานจะแสดงคอลัมน์ต่อไปนี้:
 
-  * Opening (Dr): Opening debit balance as on From Date
-  * Opening (Cr): Opening credit balance as on From Date
-  * Debit: Total Debited amount against the account between the selected period
-  * Credit: Total Credited amount against the account between the selected period
-  * Closing (Dr): Closing debit balance as on To Date
-  * Closing (Cr): Closing credit balance as on To Date
+  * การเปิด (Dr): ยอดเดบิตเปิด ณ วันที่เริ่มต้น
+  * การเปิด (Cr): ยอดเครดิตคงเหลือ ณ วันที่เริ่มต้น
+  * เดบิต: ยอดรวมเดบิตกับบัญชีระหว่างช่วงเวลาที่เลือก
+  * เครดิต: ยอดรวมเครดิตกับบัญชีระหว่างช่วงเวลาที่เลือก
+  * ปิด (Dr): ปิดยอดเดบิต ณ วันที่
+  * ปิด (Cr): ปิดยอดเครดิต ณ วันที่
 
-There are some other options as well to include or exclude Period Closing Entries, show / hide accounts with zero balance and to show unclosed previous fiscal year's P&L (Income & Expenses) balances. All the figures in the report are shown in company's base currency.
+มีตัวเลือกอื่น ๆ เช่นกันที่จะรวมหรือไม่รวมรายการการปิดรอบระยะเวลา แสดง / ซ่อนบัญชีที่มียอดดุลเป็นศูนย์ และเพื่อแสดงงบกำไรขาดทุน (รายได้ & ค่าใช้จ่าย) ของปีบัญชีที่ยังไม่ได้ปิด ตัวเลขทั้งหมดในรายงานจะแสดงเป็นสกุลเงินหลักของบริษัท
 
 <img alt="Trial Balance" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/trial-balance.png">
 
-### 2.3 Balance Sheet
-Go to: **Accounts > Accounting Statements > Balance Sheet**.
+### 2.3 งบดุล
+ไปที่: **บัญชี > งบบัญชี > งบดุล**.
 
-A Balance Sheet is the financial statement of a company which states assets, liabilities and equity at a particular point in time.
+งบดุลเป็นงบการเงินของบริษัทที่ระบุสินทรัพย์ หนี้สิน และส่วนของผู้ถือหุ้น ณ จุดใดเวลาหนึ่ง
 
-The Balance Sheet in ERPNext gives you more flexibility to analyse your financial position. You can run the report across multiple year to compare values. You can check values for a specific Finance Book or Cost Center. You can also choose any other currency to display the balances.
+งบดุลใน ERPNext ช่วยให้คุณมีความยืดหยุ่นมากขึ้นในการวิเคราะห์สถานะทางการเงินของคุณ คุณสามารถเรียกใช้รายงานข้ามปีเพื่อเปรียบเทียบค่าต่างๆ คุณสามารถตรวจสอบค่าสำหรับสมุดการเงินหรือศูนย์ต้นทุนเฉพาะได้ คุณสามารถเลือกสกุลเงินอื่นเพื่อแสดงยอดคงเหลือได้
 
 <img alt="Balance Sheet" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/balance-sheet.png">
 
-### 2.4 Cash Flow Statement
-Go to: **Accounts > Accounting Statements > Cash Flow**.
+### 2.4 งบกระแสเงินสด
+ไปที่: **บัญชี > งบบัญชี > กระแสเงินสด**.
 
-A Cash Flow is a financial statement which shows the incoming and outgoing of cash or cash-equivalents for a company. It is used to analyse the liquidity position of the company.
+กระแสเงินสดคืองบการเงินที่แสดงเงินสดเข้าและออกของเงินสดหรือรายการเทียบเท่าเงินสดสำหรับบริษัท ใช้ในการวิเคราะห์ฐานะสภาพคล่องของบริษัท
 
 <img alt="Cash Flow Statement" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/cash-flow.png">
 
-### 2.5 Profit and Loss Statement
-Go to: **Accounts > Accounting Statements > Profit and Loss Statement**.
+### 2.5 งบกำไรขาดทุน
+ไปที่: **บัญชี > งบบัญชี > งบกำไรขาดทุน**.
 
-A Profit and Loss Statement is a financial statement which summarizes all the revenues and expenses in a given period. The report is also known as P&L Statement.
+งบกำไรขาดทุนเป็นงบการเงินที่สรุปรายได้และค่าใช้จ่ายทั้งหมดในช่วงเวลาที่กำหนด รายงานนี้เรียกอีกอย่างว่างบกำไรขาดทุน
 
-In ERPNext, you can run the report across multiple year / period to compare the values. You can also check values for a specific Finance Book, Project or Cost Center. You can also choose any other currency to display the balances. If you are running the report to see quarterly / monthly balances, you can choose whether you want to show accumulated balances or only for each period.
+ใน ERPNext คุณสามารถเรียกใช้รายงานข้ามปี/รอบระยะเวลาหลายปีเพื่อเปรียบเทียบค่าได้ คุณยังสามารถตรวจสอบค่าสำหรับสมุดการเงิน โครงการ หรือศูนย์ต้นทุนเฉพาะได้อีกด้วย คุณสามารถเลือกสกุลเงินอื่นเพื่อแสดงยอดคงเหลือได้ หากคุณกำลังเรียกใช้รายงานเพื่อดูยอดดุลรายไตรมาส/รายเดือน คุณสามารถเลือกได้ว่าต้องการแสดงยอดสะสมหรือเฉพาะในแต่ละช่วงเวลา
 
 <img alt="Profit and Loss Statement" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/profit-and-loss.png">
 
-### 2.6 Consolidated Financial Statements
-Go to: **Accounts > Accounting Statements > Consolidated Financial Statement**.
+### 2.6 งบการเงินรวม
+ไปที่: **บัญชี > งบบัญชี > งบการเงินรวม**.
 
-The report shows a consolidated view of Balance Sheet, Profit and Loss Statement and Cash Flow for a group company, by merging financial statements of all the subsidary companies. It shows balances for all individual company and as well as accumulated balances for a group company.
+รายงานแสดงมุมมองแบบรวมของงบดุล งบกำไรขาดทุน และกระแสเงินสดสำหรับกลุ่มบริษัท โดยการรวมงบการเงินของบริษัทย่อยทั้งหมด แสดงยอดคงเหลือสำหรับบริษัทแต่ละแห่งและรวมถึงยอดดุลสะสมสำหรับกลุ่มบริษัท
 
 <img alt="Consolidated Financial Statement" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/consolidated-financial-statement.png">
 
-## 3. Taxes
-### 3.1 Sales and Purchase Register
-Go to: **Accounts > Taxes > Sales Register *or* Purchase Register**.
+## 3. ภาษี
+### 3.1 ทะเบียนการขายและการซื้อ
+ไปที่: **บัญชี > ภาษี > ทะเบียนขาย *หรือ* ทะเบียนซื้อ**.
 
-The Sales and Purchase Register report shows all the Sales and Purchase transactions for a given period with invoiced amount and tax details. In this report, each taxes has a separate column, so you can easily get total taxes collected / paid for a period for each individual tax type, which helps to pay the taxes to government.
+รายงานการลงทะเบียนการขายและการซื้อจะแสดงธุรกรรมการขายและการซื้อทั้งหมดในช่วงเวลาที่กำหนดพร้อมจำนวนเงินที่ออกใบแจ้งหนี้และรายละเอียดภาษี ในรายงานนี้ ภาษีแต่ละรายการมีคอลัมน์แยกกัน คุณจึงสามารถรับภาษีทั้งหมดที่รวบรวม/ชำระในช่วงเวลาหนึ่งสำหรับภาษีแต่ละประเภทได้อย่างง่ายดาย ซึ่งช่วยในการจ่ายภาษีให้กับรัฐบาล
 
 <img alt="Sales Register" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/sales-register.png">
 
-## 4. Budget and Cost Center
-### 4.1 Budget Variance
-Go to: **Accounts > Budget and Cost Center > Budget Variance Report**.
+## 4. งบประมาณและศูนย์ต้นทุน
+### 4.1 ผลต่างงบประมาณ
+ไปที่: **บัญชี > งบประมาณและศูนย์ต้นทุน > รายงานผลต่างงบประมาณ**.
 
-In ERPNext, you can assign expense budget for an expense account against any specific cost center. This report gives a comparison between budgeted and actual expenses and the variance (the difference between the two) in monthly / quarterly / yearly view.
+ใน ERPNext คุณสามารถกำหนดงบประมาณค่าใช้จ่ายสำหรับบัญชีค่าใช้จ่ายกับศูนย์ต้นทุนเฉพาะใดๆ รายงานนี้ให้การเปรียบเทียบระหว่างค่าใช้จ่ายตามงบประมาณและตามจริง กับความแปรปรวน (ความแตกต่างระหว่างทั้งสอง) ในมุมมองรายเดือน / รายไตรมาส / รายปี
 
 <img alt="Budget Variance" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/budget-variance.png">
 
-## 5. Tax reports for India
+<!--## 5. Tax reports for India
 ### 5.1 GSTR-1 (India)
 Go to: **Accounts > Goods and Services Tax (GST India) > GSTR-1**.
 
@@ -113,40 +112,41 @@ Go to: **Accounts > Goods and Services Tax (GST India) > GSTR-2**.
 
 The GSTR-2 report helps Indian users to file monthly return of inward supplies. The report gives the details of all inward supplies of goods or services received during a month, in Govt specified format.
 
-<img alt="GSTR-2" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/gstr-2.png">
+<img alt="GSTR-2" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/gstr-2.png">-->
 
-## 6. Analytics
-### 6.1 Item wise Sales and Purchase Register
-Go to: **Accounts > Analytics > Item-wise Sales Register *or* Item-wise Purchase Register**.
+## 6. การวิเคราะห์
+### 6.1 รายการขายและลงทะเบียนซื้อ
+ไปที่ **บัญชี > การวิเคราะห์ > Item-wise Sales Register *or* Item-wise Purchase Register**.
 
-The Item Wise Sales and Purchase Register report shows all the Sales and Purchase transactions for a given period with item rate, quantity, amount and tax details. In this report, taxes has a separate column, so you can easily get individual taxes for each individual item. From this report you can have a look of which items are sold or purchase most.
+รายงาน Item Wise Sales and Purchase Register แสดงธุรกรรมการขายและการซื้อทั้งหมดในช่วงเวลาที่กำหนดพร้อมรายละเอียดอัตราสินค้า ปริมาณ จำนวนเงิน และภาษี ในรายงานนี้ ภาษีมีคอลัมน์แยกต่างหาก คุณจึงสามารถรับภาษีแต่ละรายการสำหรับแต่ละรายการได้อย่างง่ายดาย จากรายงานนี้ คุณสามารถดูว่าสินค้าใดขายหรือซื้อได้มากที่สุด
 
 <img alt="Item Wise Sales Register" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/item-wise-sales-report.png">
 
-More detailed analysis can also be done by using the 'Group By' filter which gives sales data for a specific Customer, Supplier, Territory, etc. You can find out which Item is more popular in which region or which Customer is buying which Item more.
+การวิเคราะห์รายละเอียดเพิ่มเติมสามารถทำได้โดยใช้ตัวกรอง 'จัดกลุ่มตาม' ซึ่งให้ข้อมูลการขายสำหรับลูกค้าเฉพาะ ซัพพลายเออร์ เขตแดน ฯลฯ คุณสามารถค้นหาว่ารายการใดเป็นที่นิยมมากกว่าในภูมิภาคใดหรือลูกค้ารายใดกำลังซื้อสินค้าใดมากกว่า .
 
 <img alt="Group By Sales Register" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/group-by-sales-register.png">
 
-### 6.2 Sales or Purchase Invoice Trends
-Go to: **Accounts > Analytics > Sales Invoice Trends *or* Purchase Invoice Trends**.
+### 6.2 แนวโน้มใบแจ้งหนี้การขายหรือการซื้อ
+ไปที่: **บัญชี > การวิเคราะห์ > แนวโน้มใบแจ้งหนี้การขาย *หรือ* แนวโน้มใบแจ้งหนี้การซื้อ**.
 
-Another very useful report is invoice trends, From this report you can easily get the trending items on monthly, quaterly, half yearly or yearly basis. You will get the idea of sales and purchase both in quantity and amount.
+รายงานที่มีประโยชน์อีกอย่างหนึ่งคือ แนวโน้มใบแจ้งหนี้ จากรายงานนี้ คุณสามารถรับรายการที่มีแนวโน้มเป็นรายเดือน รายไตรมาส รายครึ่งปี หรือรายปีได้อย่างง่ายดาย คุณจะได้แนวคิดการขายและการซื้อทั้งในด้านปริมาณและปริมาณ
 
 <img alt="Sales Invoice Trends" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/sales-invoice-trends.png">
 
-## 7. To Bill
-- **Ordered Items To Be Billed:** The report shows the items which has been ordered by customers, against which Sales
-Invoice has not been created / partially been created.
-- **Delivered Items To Be Billed:** The items which has been delivered to the customers, but Sales Invoice has not been created / partially been created.
-- **Purchase Order Items To Be Billed:** The report shows the items which has been ordered from the suppliers, but Purchase Invoice has not been created / partially been created.
-- **Received Items To Be Billed:** The items which has been received from the suppliers, but Purchase Invoice has not been created / partially been created.
+## 7. บิล
+- **รายการสั่งซื้อที่จะเรียกเก็บเงิน** : รายงานแสดงรายการที่ลูกค้าสั่งซื้อซึ่งยังไม่ได้สร้างใบแจ้งหนี้การขาย / มีการสร้างบางส่วน
+- **รายการที่จัดส่งแล้วที่ต้องเรียกเก็บเงิน** : รายการที่จัดส่งให้กับลูกค้าแล้ว แต่ยังไม่ได้สร้างใบแจ้งหนี้การขาย / สร้างบางส่วน
+- **รายการสั่งซื้อที่ต้องเรียกเก็บเงิน** : รายงานแสดงรายการที่สั่งซื้อจากซัพพลายเออร์ แต่ยังไม่ได้สร้างใบกำกับสินค้า / สร้างบางส่วน
+- **รายการที่ได้รับที่จะเรียกเก็บเงิน** : รายการที่ได้รับจากซัพพลายเออร์แต่ยังไม่ได้สร้างใบกำกับสินค้า / สร้างบางส่วน
 
-## 8. Other Reports
-### 8.1 Party Wise Trial Balance
-Go to: **Accounts > Other Reports > Trial Balance for Party**.
-Usually you might need to see the trial balance for your customesrs and suppliers. You can easily get for all of your customers or suppliers and also for individual.
+
+## 8. รายงานอื่นๆ
+### 8.1 งบทดลองสำหรับผู้ที่เกี่ยวข้อง
+ไปที่: **บัญชี > รายงานอื่นๆ > งบทดลองสำหรับผู้ที่เกี่ยวข้อง**
+
+โดยปกติ คุณอาจต้องดูยอดทดลองสำหรับลูกค้าและซัพพลายเออร์ของคุณ คุณสามารถรับลูกค้าหรือซัพพลายเออร์ทั้งหมดของคุณและสำหรับบุคคลได้
 
 <img alt="Sales Invoice Trends" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/reports/party-wise-trail-balance.png">
 
-### 8.2 Customer Credit Balance
-The report shows the credit limit, outstanding and credit balance for each customer.
+### 8.2 ยอดเครดิตของลูกค้า
+รายงานแสดงวงเงินสินเชื่อ ยอดคงค้าง และยอดดุลเครดิตสำหรับลูกค้าแต่ละราย

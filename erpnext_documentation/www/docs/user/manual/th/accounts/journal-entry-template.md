@@ -1,32 +1,32 @@
 <!-- add-breadcrumbs -->
-# Journal Entry Template
+# เทมเพลตรายการบันทึก
 
-**A Journal Entry Template lets you set and select a predetermined list of accounts and options while making a Journal Entry.**
+**เทมเพลตรายการบันทึกประจำวันช่วยให้คุณตั้งค่าและเลือกรายการบัญชีและตัวเลือกที่กำหนดไว้ล่วงหน้าในขณะที่สร้างรายการบันทึกประจำวัน**
 
-To access the Journal Entry Template, go to:
+ในการเข้าถึงเทมเพลตรายการบันทึกประจำวัน ไปที่:
 
-> Home > Accounting > General Ledger > Journal Entry Template
+> หน้าหลัก > การบัญชี > บัญชีแยกประเภททั่วไป > เทมเพลตรายการสมุดรายวัน
 
-## 1. How to Create and use a Journal Entry Template:
+## 1. วิธีสร้างและใช้เทมเพลตรายการบันทึกประจำวัน:
 
 <img class="screenshot" alt="Journal Entry Template" src="{{docs_base_url}}/assets/img/accounts/journal-entry-template-1.png">
 
-  1. Go to the Journal Entry Template List and click on New.
-  2. Add the following details:
-      * **Template Title**: This will be used to select the template from Journal Entry.
-      * **Company**: By default the company defined in Global Defaults is selected. You can select any another company too.
-      * **Entry Type**: You can select from the [entry types available in Journal Entry](/docs/user/manual/en/accounts/journal-entry#3-journal-entry-types) here. Default value is [Journal Entry](/docs/user/manual/en/accounts/journal-entry#31-journal-entry).
-        * There are 3 special 'Entry Types' in this:
-          * [Opening Entry](/docs/user/manual/en/accounts/journal-entry#311-opening-entry): This will get all the accounts and load them into the "Accounting Entries" table. To learn more visit [Opening Balance](/docs/user/manual/en/accounts/opening-balance) page.
-          * [Bank Entry](/docs/user/manual/en/accounts/journal-entry#33-bank-entry): This will get and load the default Bank Account if set.
-          * [Cash Entry](/docs/user/manual/en/accounts/journal-entry#34-cash-entry): This will get and load the default Cash Account if set.
-      * **Is Opening**: This will be autoset to 'Yes' if 'Opening Entry' is selected as Entry Type.
-      * **Series**: You can select from a list of naming series available to Journal Entry.
-      * **Accounting Entries**: Here you can select a list of accounts to add to the entry.
-  3. Save and go to [Journal Entry](/docs/user/manual/en/accounts/journal-entry#1-how-to-create-a-journal-entry) and click on new.
-  4. In the 'From Template' field when you select the template, it will load the accounts and other options set in it. Please note it will clear the Accounting Entries table first, but you can add more accounts to the table apart from those fetched from the template.
+  1. ไปที่รายการเทมเพลตรายการบันทึกประจำวันแล้วคลิกใหม่
+  2. เพิ่มรายละเอียดต่อไปนี้:
+      * **ชื่อเทมเพลท**: ใช้สำหรับเลือกเทมเพลทจากรายการบันทึก
+      * **บริษัท**: โดยค่าเริ่มต้น บริษัทที่กำหนดไว้ในค่าเริ่มต้นทั้งหมดจะถูกเลือก คุณสามารถเลือกบริษัทอื่นได้เช่นกัน
+      * **ประเภทรายการ**: คุณสามารถเลือกจาก [ประเภทรายการที่มีอยู่ในรายการบันทึก](/docs/user/manual/th/accounts/journal-entry#3-journal-entry-types)  โดยค่าเริ่มต้นจะเป็น [รายการบันทึก](/docs/user/manual/th/accounts/journal-entry#31-journal-entry).
+        * มี 'ประเภทรายการ' พิเศษ 3 รายการในนี้:
+          * [รายการบันทึกที่เปิดอยู่](/docs/user/manual/th/accounts/journal-entry#311-opening-entry): นี่จะเป็นการรับบัญชีทั้งหมดและโหลดลงในตาราง "รายการบัญชี" หากต้องการเรียนรู้เพิ่มเติม โปรดไปที่หน้า [รายการเปิดยอดคงเหลือ](/docs/user/manual/th/accounts/opening-balance) page.
+          * [รายการธนาคาร](/docs/user/manual/th/accounts/journal-entry#33-bank-entry): จะได้รับและโหลดบัญชีธนาคารเริ่มต้นหากมีการตั้งค่า
+          * [รายการเงินสด](/docs/user/manual/th/accounts/journal-entry#34-cash-entry): จะได้รับและโหลดบัญชีเงินสดเริ่มต้นหากมีการตั้งค่าไว้
+      * **รายการที่เปิดอยู่**: จะถูกตั้งค่าอัตโนมัติเป็น 'ใช่' หากเลือก 'การเปิดรายการ' เป็นประเภทรายการบันทึก
+      * **เป้นกลุ่ม**: คุณสามารถเลือกจากรายการชื่อชุดที่มีให้สำหรับรายการบันทึก
+      * **รายการบัญชี**: คุณสามารถเลือกรายการบัญชีที่จะเพิ่มในรายการ
+  3. บันทึกและไปที่ [รายการบันทึกประจำวัน](/docs/user/manual/th/accounts/journal-entry#1-how-to-create-a-journal-entry) แล้วคลิกใหม่
+  4. ในช่อง 'จากเทมเพลต' เมื่อคุณเลือกเทมเพลต ระบบจะโหลดบัญชีและตัวเลือกอื่น ๆ ที่ตั้งค่าไว้ โปรดทราบว่าจะล้างตารางรายการบัญชีก่อน แต่คุณสามารถเพิ่มบัญชีเพิ่มเติมลงในตารางนอกเหนือจากที่ดึงมาจากเทมเพลต
 
 <img class="screenshot" alt="Journal Entry Template" src="{{docs_base_url}}/assets/img/accounts/journal-entry-template-2.gif">
 
-## 3. Related Topics
-  1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
+## 3. หัวข้อที่เกี่ยวข้อง
+  1. [รายการบันทึกประจำวัน](/docs/user/manual/th/accounts/journal-entry)
