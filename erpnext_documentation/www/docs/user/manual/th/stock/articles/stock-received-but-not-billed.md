@@ -1,10 +1,10 @@
 <!-- add-breadcrumbs -->
-# Purpose of Stock Received but not Billed
+# วัตถุประสงค์ของสต็อคที่ได้รับแต่ไม่ถูกเรียกเก็บเงิน
 
-When purchased items are received, an accounts posting is done based on the value of the purchased items in the Stock-in-hand / fixed-assets account. When you sell and deliver those items, an expense (cost-of-goods-sold) is booked, equal to the buying cost of the items.
+เมื่อได้รับสินค้าที่ซื้อ การผ่านรายการบัญชีจะทำตามมูลค่าของสินค้าที่ซื้อในบัญชีสต็อกในมือ / สินทรัพย์ถาวร เมื่อคุณขายและส่งมอบสินค้าเหล่านั้น ค่าใช้จ่าย (ต้นทุนสินค้า-ขาย) จะถูกจองเท่ากับต้นทุนการซื้อของสินค้า
 
-As stock balance increases through Purchase Receipt, Warehouse account is debited and an adjustment account called **Stock Received But Not Billed** account is credited. At the same time, the negative expense is booked in account head having category as "Valuation" or "Total and Valuation" in taxes and charges table for the amount added for valuation purpose, to avoid double expense booking.
+เมื่อยอดคงเหลือของสต็อคเพิ่มขึ้นผ่านใบเสร็จรับเงิน บัญชีโกดังจะถูกหักและบัญชีการปรับปรุงที่เรียกว่าบัญชี **สต็อกที่ได้รับแต่ไม่ถูกเรียกเก็บเงิน** จะได้รับเครดิต ในเวลาเดียวกัน ค่าใช้จ่ายติดลบจะถูกจองในส่วนหัวของบัญชีที่มีประเภทเป็น "การประเมินค่า" หรือ "ยอดรวมและการประเมินมูลค่า" ในตารางภาษีและค่าธรรมเนียมสำหรับจำนวนเงินที่เพิ่มเพื่อวัตถุประสงค์ในการประเมินค่า เพื่อหลีกเลี่ยงการจองค่าใช้จ่ายซ้ำซ้อน
 
-On receiving Bill from the supplier, you will make Purchase Invoice against a Purchase Receipt. Here **Stock Received But Not Billed** account is debited, hence nullifies the balance in the Stock Received but not Billed Account.
+เมื่อได้รับบิลจากซัพพลายเออร์ คุณจะต้องทำใบกำกับสินค้ากับใบเสร็จการซื้อ ที่นี่ **สต็อกที่ได้รับแต่ไม่ถูกเรียกเก็บเงิน** บัญชีจะถูกหัก ดังนั้นจึงทำให้ยอดคงเหลือในสต็อกที่ได้รับแต่ไม่ถูกเรียกเก็บเงิน
 
-The balance in the Stock Received but not Billed account indicates the value of items for which Purchase Receipt has been made, but billing is pending.
+ยอดเงินคงเหลือในบัญชีที่ได้รับสินค้าแต่ไม่เรียกเก็บเงินจะระบุมูลค่าของรายการที่มีการรับใบสั่งซื้อ แต่การเรียกเก็บเงินอยู่ระหว่างรอดำเนินการ

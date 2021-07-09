@@ -1,40 +1,40 @@
 <!-- add-breadcrumbs -->
-# Sales Person
+#พนักงานขาย
 
-**Sales Person is a person who sells your products/services.**
+**พนักงานขายคือบุคคลที่ขายสินค้า/บริการของคุณ**
 
-Sales Persons are created in hierarchical manner in ERPNext. You can create sales persons and add other sales persons under the main sales persons.
+พนักงานขายถูกสร้างขึ้นในลักษณะลำดับชั้นใน ERPNext คุณสามารถสร้างพนักงานขายและเพิ่มพนักงานขายอื่น ๆ ภายใต้พนักงานขายหลัก
 
-To access the Sales Person list, go to:
-> Home > Selling > Sales > Sales Person
+ในการเข้าถึงรายชื่อพนักงานขาย ไปที่:
+> หน้าหลัก > การขาย > ฝ่ายขาย > พนักงานขาย
 
-It can also be accessed from:
-Home > CRM > Settings > Sales Person 
+นอกจากนี้ยังสามารถเข้าถึงได้จาก:
+หน้าแรก > CRM > การตั้งค่า > พนักงานขาย
 
-## 1. How to Create a Sales Person
-1. Go to the Sales Person list and clic on New.
-2. Enter the Sales Person Name.
-3. Select the Employee for the Sales Person.
-4. Tick 'Group Node' checkbox, if you would like to add more Sales Person under this Sales Person.
-5. Click on 'Create New'.
+## 1. วิธีสร้างพนักงานขาย
+1. ไปที่รายชื่อพนักงานขายและคลิกที่ใหม่
+2. ป้อนชื่อพนักงานขาย
+3. เลือกพนักงานสำหรับพนักงานขาย
+4. ทำเครื่องหมายที่ช่อง 'โหนดกลุ่ม' หากคุณต้องการเพิ่มพนักงานขายภายใต้พนักงานขายนี้
+5. คลิกที่ 'สร้างใหม่'
 
 <img class="screenshot" alt="Sales Person Tree" src="{{docs_base_url}}/assets/img/crm/sales-person-tree.gif">
 
-## 2. Features
-### 2.1 Sales Person in Transactions
+## 2. คุณสมบัติ
+### 2.1 พนักงานขายในการทำธุรกรรม
 
-You can use Sales Person sales transactions like Sales Order, Delivery Note and Sales Invoice.
-Read [Sales Persons in Sales Transactions](/docs/user/manual/en/selling/articles/sales-persons-in-the-sales-transactions) for more details.
+คุณสามารถใช้ธุรกรรมการขายของพนักงานขาย เช่น ใบสั่งขาย ใบส่งสินค้า และใบกำกับสินค้า
+อ่าน [พนักงานขายในธุรกรรมการขาย](/docs/user/manual/th/selling/articles/sales-persons-in-the-sales-transactions) สำหรับรายละเอียดเพิ่มเติม
 
-### 2.2 Assign Sales Targets to Sales Person
+### 2.2 กำหนดเป้าหมายการขายให้กับพนักงานขาย
 
-You can assign sales target for sales person and track the progress. Read [Sales Person Target Allocation](/docs/user/manual/en/selling/sales-person-target-allocation) for more details.
+คุณสามารถกำหนดเป้าหมายการขายให้กับพนักงานขายและติดตามความคืบหน้าได้ อ่าน [กำหนดเป้าหมายการขายให้กับพนักงานขาย](/docs/user/manual/th/selling/sales-person-target-allocation) สำหรับรายละเอียดเพิ่มเติม
 
-### 3. Related Topics
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Sales Person Target Allocation](/docs/user/manual/en/selling/sales-person-target-allocation)
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Sales Cycle](/docs/user/videos/learn/sales-cycle.html)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [คำสั่งขาย](/docs/user/manual/th/selling/sales-order)
+1. [กำหนดเป้าหมายการขายให้กับพนักงานขาย](/docs/user/manual/th/selling/sales-person-target-allocation)
+1. [ใบส่งของ](/docs/user/manual/th/stock/delivery-note)
+1. [ใบกำกับการขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [วงจรการขาย](/docs/user/videos/learn/sales-cycle.html)
 
 {next}

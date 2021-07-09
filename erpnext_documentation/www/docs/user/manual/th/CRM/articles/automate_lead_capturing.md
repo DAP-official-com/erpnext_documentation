@@ -1,21 +1,20 @@
 <!-- add-breadcrumbs -->
-# Automate Lead Creation
-Leads come from many different sources. It is important that all leads are recorded, assigned to sales executives and followed up.
+# สร้างลูกค้าเป้าหมายโดยอัตโนมัติ
+ลูกค้าเป้าหมายมาจากแหล่งต่างๆ เป็นสิ่งสำคัญที่ลูกค้าเป้าหมายทั้งหมดจะถูกบันทึก มอบหมายให้ผู้บริหารฝ่ายขาย และติดตามผล
 
-## 1. Create Leads From Emails
+## 1. สร้างลูกค้าเป้าหมายจากอีเมล
 
-You may have an email address like 'sales@yourcompany.com' which is probably displayed on your website. People may send emails asking information about your products and services. You can enable [Email Account](/docs/user/manual/en/setting-up/email/email-account)  to pull these emails and create a lead for each email.
+คุณอาจมีที่อยู่อีเมลเช่น 'sales@yourcompany.com' ซึ่งอาจแสดงบนเว็บไซต์ของคุณ ผู้คนอาจส่งอีเมลเพื่อสอบถามข้อมูลเกี่ยวกับผลิตภัณฑ์และบริการของคุณ คุณสามารถเปิดใช้งาน [บัญชีอีเมล](/docs/user/manual/th/setting-up/email/email-account) เพื่อดึงอีเมลเหล่านี้และสร้างโอกาสในการขายสำหรับอีเมลแต่ละฉบับ
 
-## 2. Create Leads From Webforms
+## 2. สร้างโอกาสในการขายจากเว็บฟอร์ม
 
-You can also map the Lead form to a [Web Form](/docs/user/manual/en/website/web-form) and publish it on your website. When visitors of your website fill the form, it will be automatically added as a Lead.
+คุณยังสามารถจับคู่แบบฟอร์มโอกาสในการขายกับ [แบบฟอร์มบนเว็บ](/docs/user/manual/th/website/web-form) และเผยแพร่บนเว็บไซต์ของคุณ เมื่อผู้เยี่ยมชมเว็บไซต์ของคุณกรอกแบบฟอร์ม แบบฟอร์มนั้นจะถูกเพิ่มเป็นลูกค้าเป้าหมายโดยอัตโนมัติ
 
-## 3. Create Leads From Incomplete Orders in E-Commerce Module
+## 3. สร้างโอกาสในการขายจากคำสั่งซื้อที่ไม่สมบูรณ์ในโมดูลอีคอมเมิร์ซ
 
-You can publish an e-commerce website and allow users to place an order for your products. If a user selects items but doesn't complete the process you can pursue that user as a lead.
+คุณสามารถเผยแพร่เว็บไซต์อีคอมเมิร์ซและอนุญาตให้ผู้ใช้สั่งซื้อผลิตภัณฑ์ของคุณได้ หากผู้ใช้เลือกรายการแต่ไม่ดำเนินการให้เสร็จสิ้น คุณสามารถติดตามผู้ใช้รายนั้นเป็นลูกค้าเป้าหมายได้
 
-## 4. Create Leads By Importing Spreadsheet
+## 4. สร้างโอกาสในการขายโดยการนำเข้าสเปรดชีต
 
-If you have a spreadsheet with details of the leads, you can use the [Data Import](/docs/user/manual/en/setting-up/data/data-import) feature to import the leads.
-
+หากคุณมีสเปรดชีตที่มีรายละเอียดของลลูกค้าเป้าหมาย คุณสามารถใช้คุณลักษณะ [การนำเข้าข้อมูล](/docs/user/manual/th/setting-up/data/data-import) เพื่อนำเข้าลูกค้าเป้าหมาย
 {next}

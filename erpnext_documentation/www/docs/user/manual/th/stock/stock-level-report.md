@@ -1,25 +1,25 @@
 <!-- add-breadcrumbs -->
-#Stock Level Report
+#รายงานระดับสต็อค
 
-Stock Level report list stock item's quantity available in a particular warehouse.
+รายงานระดับสินค้าคงคลัง แสดงรายการปริมาณสินค้าคงคลังที่มีอยู่ในคลังสินค้าเฉพาะ
 
-There are multiple reports available you can check for item's stock level.
+มีรายงานหลายฉบับที่คุณสามารถตรวจสอบระดับสต็อกของสินค้าได้
 
-####Stock Projected Quantity Report
+####รายงานจำนวนสต็อคที่คาดการณ์
 
-You can access this report from `Stock > Main Report > Stock Projected Quantity`
+คุณสามารถเข้าถึงรายงานนี้ได้จาก `สต็อค > รายงานหลัก > จำนวนสินค้าที่คาดการณ์ไว้`
 
-This report list item wise - warehouse wise stock level of an item considering all the stock transactions. With Actual Quantity of an item, it also provide other details like:
+รายงานนี้แสดงรายการสินค้าที่ชาญฉลาด - ระดับคลังสินค้าที่ชาญฉลาดของสินค้าโดยพิจารณาจากธุรกรรมสต็อคทั้งหมด ด้วยจำนวนจริงของสินค้า มันยังมีรายละเอียดอื่นๆ เช่น:
 
-1. Actual Qty: Quantity available in the warehouse.
-2. Planned Qty: Quantity, for which, Work Order has been raised, but is pending to be manufactured.
-3. Requested Qty: Quantity requested for purchase, but not ordered.
-4. Ordered Qty: Quantity ordered for purchase, but not received.
-5. Reserved Qty: Quantity ordered for sale, but not delivered.
-6. Project Qty: Project Quantity is calculated as
+1. จำนวนจริง: ปริมาณที่มีอยู่ในคลังสินค้า
+2. จำนวนที่วางแผนไว้: ปริมาณ ซึ่งได้มีการเพิ่มใบสั่งงานแล้ว แต่อยู่ระหว่างรอการผลิต
+3. จำนวนที่ร้องขอ: จำนวนที่ขอซื้อ แต่ไม่ได้สั่งซื้อ
+4. จำนวนที่สั่งซื้อ: จำนวนที่สั่งซื้อ แต่ไม่ได้รับ
+5. จำนวนที่จองไว้: จำนวนที่สั่งซื้อเพื่อขายแต่ไม่ได้จัดส่ง
+6. จำนวนโครงการ: ปริมาณโครงการคำนวณเป็น
 
 <div class="well">Projected Qty = Actual Qty + Planned Qty + Requested Qty + Ordered Qty - Reserved Qty</div>
 
-The projected inventory is used by the planning system to monitor the reorder point and to determine the reorder quantity. The projected Quantity is used by the planning engine to monitor the safety stock levels. These levels are maintained to serve unexpected demands.
+ระบบการวางแผนใช้สินค้าคงคลังที่คาดการณ์ไว้เพื่อตรวจสอบจุดสั่งซื้อใหม่และกำหนดปริมาณการสั่งซื้อใหม่ เครื่องมือวางแผนใช้ปริมาณที่คาดการณ์ไว้เพื่อตรวจสอบระดับสต็อคความปลอดภัย ระดับเหล่านี้ได้รับการดูแลเพื่อตอบสนองความต้องการที่ไม่คาดคิด
 
-Having a tight control of the projected inventory is crucial to determine shortages and to calculate the right order quantity.
+การควบคุมสินค้าคงคลังที่คาดการณ์ไว้อย่างเข้มงวดเป็นสิ่งสำคัญในการพิจารณาปัญหาการขาดแคลนและการคำนวณปริมาณการสั่งซื้อที่เหมาะสม

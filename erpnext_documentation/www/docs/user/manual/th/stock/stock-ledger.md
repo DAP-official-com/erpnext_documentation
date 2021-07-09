@@ -1,38 +1,38 @@
 <!-- add-breadcrumbs -->
 
-# Stock Ledger Report
+# รายงานสต็อคแยกประเภท
 
-**A Stock Ledger Report is a detailed record that keeps track of stock movements for a company.**
+**รายงานสต็อคแยกประเภทเป็นบันทึกรายละเอียดที่ติดตามการเคลื่อนไหวของสต็อคของบริษัท**
 
-Inward or outward transactions related to Manufacturing, Purchasing, Selling, and Stock Transfers are recorded in the Stock Ledger which then is reflected in the Stock Ledger Report.
+ธุรกรรมขาเข้าหรือขาออกที่เกี่ยวข้องกับการผลิต การจัดซื้อ การขาย และการโอนสต็อคจะถูกบันทึกไว้ในบัญชีแยกประเภทสต็อก ซึ่งจะสะท้อนให้เห็นในรายงานบัญชีแยกประเภท
 
-It reflects the quantity and value of stock **issued, received, or transferred** along with the stock item and its warehouse details.
+ซึ่งสะท้อนถึงปริมาณและมูลค่าของสต็อค **ที่ออก รับ หรือโอน** พร้อมกับสินค้าในสต็อคและรายละเอียดของคลังสินค้า
 
-It can be referred when the **Perpetual Inventory** system is enabled, as this report reflects the history of all your stock transactions. It presents a more granular view of the stock transactions.
+สามารถอ้างอิงได้เมื่อเปิดใช้งานระบบ **สินค้าคงคลังถาวร** เนื่องจากรายงานนี้สะท้อนถึงประวัติการทำธุรกรรมสต็อคทั้งหมดของคุณ นำเสนอมุมมองที่ละเอียดยิ่งขึ้นของการทำธุรกรรมสต็อค
 
-## Stock Ledger Report Attributes
+## คุณสมบัติรายงานบัญชีแยกประเภท
 
-* **Incoming Rate**: It reflects the actual value of the stock at which it was brought under your inventory.
-It reflects the same value as entered in the *Rate* field of the document.
+* **อัตราขาเข้า**: สะท้อนถึงมูลค่าที่แท้จริงของสต็อคที่ถูกนำเข้ามาภายใต้สินค้าคงคลังของคุณ
+ซึ่งสะท้อนถึงค่าเดียวกับที่ป้อนในช่อง *อัตรา* ของเอกสาร
 
-* **Balance Value**: It represents the total value of the remainder stock in the inventory. It is the product of Valuation Rate and Balance Quantity of a stock item.
+* **มูลค่ายอดคงเหลือ**: แสดงถึงมูลค่ารวมของสต็อคที่เหลือในสินค้าคงคลัง เป็นผลิตภัณฑ์ของอัตราการประเมินมูลค่าและปริมาณยอดคงเหลือของสินค้าในสต็อค
 
-* **Valuation Rate**: It is calculated based upon the valuation method selected.
+* **อัตรามูลค่า**: คำนวณตามวิธีการประเมินมูลค่าที่เลือก
 
-Here is how Stock Ledger Report represents a **Stock Entry** of type *Material Receipt*.
+นี่คือวิธีที่รายงานบัญชีแยกประเภทแสดง **รายการสต็อค** ประเภท *ใบเสร็จรับเงินวัสดุ*
 
 ![Stock Ledger Report](/docs/assets/img/stock/stock-ledger.png)
 
-It reflects an item **Chair** of quantity *1000 units* with Incoming Rate (Basic Rate) as *Rs.3000* received in warehouse *Stores - L* along with calculating Valuation Rate and Balance Value.
+ซึ่งสะท้อนถึงรายการ **เก้าอี้** ของปริมาณ *1000 หน่วย* โดยมีอัตราขาเข้า (อัตราพื้นฐาน) เป็น *3,000 รูปี* ที่ได้รับในคลังสินค้า *ร้านค้า - L* พร้อมกับการคำนวณอัตราการประเมินมูลค่าและมูลค่ายอดคงเหลือ
 
-You can click on **Voucher #** to open the document this transaction was created from.
+คุณสามารถคลิกที่ **บัตรกำนัล #** เพื่อเปิดเอกสารที่ธุรกรรมนี้สร้างขึ้น
 
-Stock Ledgers are generated from the following transactions:
+บัญชีแยกประเภทสินค้าถูกสร้างขึ้นจากธุรกรรมต่อไปนี้:
 
--   Sales Invoice, Purchase Invoice (with *Update Stock* checked)
--   Delivery Note
--   Purchase Receipt
--   Stock Entry
--   Stock Reconciliation
+- ใบกำกับสินค้า, ใบสั่งซื้อ (โดยเลือก *อัพเดทสต็อค*)
+-   บันทึกการส่งมอบ
+- ใบเสร็จการซื้อ
+- รายการสต็อค
+- การกระทบยอดสต็อก
 
-You can add fields from the previously mentioned Document Types by clicking on Menu > Add Column.
+คุณสามารถเพิ่มฟิลด์จากประเภทเอกสารที่กล่าวถึงก่อนหน้านี้ได้โดยคลิกที่เมนู > เพิ่มคอลัมน์

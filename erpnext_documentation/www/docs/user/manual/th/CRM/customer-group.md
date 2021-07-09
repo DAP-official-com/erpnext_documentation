@@ -1,43 +1,41 @@
 <!-- add-breadcrumbs -->
-# Customer Group
+#กลุ่มลูกค้า
 
-**Customer Group is an aggregation of customers that are similar in some way.**
+**กลุ่มลูกค้าคือกลุ่มลูกค้าที่มีความคล้ายคลึงกันในทางใดทางหนึ่ง**
 
-Customer groups allow you to organize your customers. Typically Customers are grouped by market segment based on the domain in which a business operates. Customer Groups are created in hierarchical manner in ERPNext. You can create a main customer group and add sub customer groups under it.
+กลุ่มลูกค้าช่วยให้คุณสามารถจัดระเบียบลูกค้าของคุณ โดยทั่วไป ลูกค้าจะถูกจัดกลุ่มตามส่วนตลาดตามโดเมนที่ธุรกิจดำเนินการอยู่ กลุ่มลูกค้าถูกสร้างขึ้นตามลำดับชั้นใน ERPNext คุณสามารถสร้างกลุ่มลูกค้าหลักและเพิ่มกลุ่มลูกค้าย่อยได้
 
-You can define a price a list which will be automatically applied to all customers belonging to that group. You can also get trend analysis for each group. Individual, Commercial and Government customer groups are created by default. You can add your own customer groups based on your requirement like retail, wholesale etc.
+คุณสามารถกำหนดราคาในรายการที่จะนำไปใช้กับลูกค้าทั้งหมดที่อยู่ในกลุ่มนั้นโดยอัตโนมัติ คุณยังสามารถรับการวิเคราะห์แนวโน้มสำหรับแต่ละกลุ่ม กลุ่มลูกค้ารายบุคคล เชิงพาณิชย์ และภาครัฐ ถูกสร้างขึ้นโดยค่าเริ่มต้น คุณสามารถเพิ่มกลุ่มลูกค้าของคุณเองได้ตามความต้องการ เช่น ขายปลีก ขายส่ง ฯลฯ
 
-### 1. How to Create a Customer Group
-1. Go to **CRM > Settings > Customer Group**.
-1. Click on a parent customer group like 'All Customer Groups'.
-1. Click on 'Add Child'.
-2. Enter 'Customer Group Name'.
-3. Tick 'Group Node' if you would like to add sub customer groups under this.
-4. Click on 'Create New'.
+### 1. วิธีสร้างกลุ่มลูกค้า
+1. ไปที่ **CRM > การตั้งค่า > กลุ่มลูกค้า**
+1. คลิกที่กลุ่มลูกค้าหลักเช่น 'กลุ่มลูกค้าทั้งหมด'
+1. คลิกที่ 'เพิ่มลูก'
+2. ป้อน 'ชื่อกลุ่มลูกค้า'
+3. เลือก 'โหนดกลุ่ม' หากคุณต้องการเพิ่มกลุ่มลูกค้าย่อยภายใต้สิ่งนี้
+4. คลิกที่ 'สร้างใหม่'
 
 <img class="screenshot" alt="Customer Group Tree" src="{{docs_base_url}}/assets/img/crm/customer-group-tree.png">
 
-> Tip: If you think all this is too much effort, you can leave it at “Default
-Customer Group”. But all this effort, will pay off when you start getting
-reports. An example of a sample report is given below:
+> เคล็ดลับ: หากคุณคิดว่าทั้งหมดนี้เป็นความพยายามมากเกินไป คุณสามารถทิ้งไว้ที่ “กลุ่มลูกค้าเริ่มต้น”. แต่ความพยายามทั้งหมดนี้จะได้ผลเมื่อคุณเริ่มได้รับรายงาน ตัวอย่างรายงานตัวอย่างได้รับด้านล่าง:
 
 <img class="screenshot" alt="Customer Group report" src="{{docs_base_url}}/assets/img/crm/sales-analytics-customer.gif">
 
-### 2. Features
+### 2. คุณสมบัติ
 
-#### 2.1 Assign Credit Limit, Default Price List, and Default Payment Terms Template
+#### 2.1 กำหนดวงเงินสินเชื่อ รายการราคาเริ่มต้น และเทมเพลตเงื่อนไขการชำระเงินเริ่มต้น
 
-You can assign the credit limit, [Price List](/docs/user/manual/en/stock/price-lists), and [Payment Terms](/docs/user/manual/en/accounts/payment-terms) and they will be automatically applied when a customer belonging to the customer group is selected in sales transactions like [Sales Order](/docs/user/manual/en/selling/sales-order) and [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice).
+คุณสามารถกำหนดวงเงิน [รายการราคา](/docs/user/manual/th/stock/price-lists) และ [เงื่อนไขการชำระเงิน](/docs/user/manual/th/accounts/payment-terms) และ พวกเขาจะถูกนำไปใช้โดยอัตโนมัติเมื่อลูกค้าที่อยู่ในกลุ่มลูกค้าถูกเลือกในธุรกรรมการขายเช่น [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order) และ [Sales Invoice](/docs/user/ manual/th/accounts/sales-invoice).
 
-#### 2.2 Default Receivable Account
+#### 2.2 บัญชีลูกหนี้ผิดนัด
 
-You need not create a separate accounting ledger for each customer in ERPNext. Read [Common Receivable Account](/docs/user/manual/en/accounts/articles/common-receivable-account) for more details.
+คุณไม่จำเป็นต้องสร้างบัญชีแยกประเภทสำหรับลูกค้าแต่ละรายใน ERPNext อ่าน [บัญชีลูกหนี้ทั่วไป](/docs/user/manual/th/accounts/articles/common-receivable-account) สำหรับรายละเอียดเพิ่มเติม
 
-If you need a separate receivable account for a customer, you can add the same in 'Default Receivable Account' section.
+หากคุณต้องการบัญชีลูกหนี้แยกต่างหากสำหรับลูกค้า คุณสามารถเพิ่มบัญชีนี้ได้ในส่วน 'บัญชีลูกหนี้เริ่มต้น'
 
-#### 3. Related Topics
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Price List](/docs/user/manual/en/stock/price-lists)
-1. [Payment Terms](/docs/user/manual/en/accounts/payment-terms)
+#### 3. หัวข้อที่เกี่ยวข้อง
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [รายการราคา](/docs/user/manual/th/stock/price-lists)
+1. [เงื่อนไขการชำระเงิน](/docs/user/manual/th/accounts/payment-terms)
 
 {next}

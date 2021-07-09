@@ -1,18 +1,18 @@
 <!-- add-breadcrumbs -->
-#Maintain Stock field Frozen in the Item master
+#รักษาสต็อกช่องที่ถูกระงับ ใน รายการสินค้าหลัก
 
-In the item master, you might witness values in the following fields to be frozen.
+ในหลักรายการ คุณอาจเห็นค่าในฟิลด์ต่อไปนี้ที่จะถูกระงับ
 
-1. Maintain Stock
-1. Has Batch No.
-1. Has Serial No.
+1. รักษาสต็อก
+1. มีเลขที่แบทช์
+1. มี หมายเลขซีเรียล
 
 <img alt="Item Field Frozen" class="screenshot" src="{{docs_base_url}}/assets/img/articles/maintain-stock-1.png">
 
-For an item, once stock ledger entry is created, values in these fields will be frozen. This is to prevent user from changing the value which can lead to mis-match of actual stock, and stock level in the system of an item.
+สำหรับสินค้า เมื่อมีการสร้างรายการบัญชีแยกประเภท ค่าในฟิลด์เหล่านี้จะถูกระงับ เพื่อป้องกันผู้ใช้จากการเปลี่ยนแปลงค่าที่อาจนำไปสู่การไม่ตรงกันของสต็อกจริงและระดับสต็อกในระบบของรายการ
 
-For the serialized item, since its stock level is calculated based on the count of available Serial Nos., setting Item as non-serialized mid-way will break the sync, and item's stock level shown in the report will not be accurate, hence Has Serial No. field is frozen.
+สำหรับสินค้าที่จัดลำดับ เนื่องจากระดับสต็อกของสินค้าจะคำนวณตามจำนวน หมายเลขซีเรียล ที่มีอยู่ การตั้งค่าสินค้าเป็นแบบไม่ซีเรียลไลซ์ระหว่างทางจะทำให้การซิงค์หยุดชะงัก และระดับสต็อกของสินค้าที่แสดงในรายงานจะไม่ถูกต้อง ดังนั้นจึงมี ฟิลด์หมายเลขซีเรียลถูกระงับ
 
-To make these fields editable once again, you should delete all the stock transactions made for this item. For the Serialized and Batch Item, you should also delete Serial No. and Batch No. record for this item.
+เพื่อให้ฟิลด์เหล่านี้สามารถแก้ไขได้อีกครั้ง คุณควรลบธุรกรรมสต็อคทั้งหมดที่ทำขึ้นสำหรับรายการนี้ สำหรับ Serialized และ Batch Item คุณควรลบบันทึก หมายเลขซีเรียล และ หมายเลขแบทช์ สำหรับรายการนี้ด้วย
 
 <!-- markdown -->

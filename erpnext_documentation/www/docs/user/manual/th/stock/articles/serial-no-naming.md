@@ -1,33 +1,33 @@
 <!-- add-breadcrumbs -->
-#Serial No. Naming
+#การตั้งชื่อหมายเลขซีเรียล
 
-Serial Nos. is unique value assigned on each unit of an item. Serial no. helps in tracking item's warranty and expiry details. Generally high value items like machines, computers, costly equipments are serialized.
+หมายเลขซีเรียลคือค่าที่ไม่ซ้ำกันซึ่งกำหนดให้กับแต่ละหน่วยของรายการ หมายเลขซีเรียล ช่วยในการติดตามรายละเอียดการรับประกันและวันหมดอายุของสินค้า สิ่งของที่มีมูลค่าสูงโดยทั่วไป เช่น เครื่องจักร คอมพิวเตอร์ อุปกรณ์ราคาแพงจะถูกจัดลำดับ
 
-To make item Serialized, in the Item master, check **Has Serial No**.
+ในการทำให้รายการเป็นแบบอนุกรม ใน รายการสินค้าหลัก ให้เลือก **มีหมายเลขซีเรียล**
 
-There are two ways Serial no. can be generated in ERPNext.
+มีสองวิธีหมายเลขซีเรียล สามารถสร้างได้ใน ERPNext
 
-###1. Serializing Purchase Items
+##1. การจัดลำดับรายการซื้อ
 
-If purchased items are received with Serial Nos. applied by OEM (original equipment manufacturer), you can follow same Serial No in ERPNext as well. While creating Purchase Receipt, you shall scan or manually enter Serial nos. for an item. On submitting Purchase Receipt, Serial Nos. will be created in the backend as per Serial Nos. provided for an item. If using OEM' Serial No., then in the Item master, Prefix should not be mentioned for serializalization. As per this scenaio, Prefix field should be left blank.
+หากได้รับสินค้าที่ซื้อพร้อม Serial Nos ที่ใช้โดย OEM (ผู้ผลิตอุปกรณ์ดั้งเดิม) คุณสามารถปฏิบัติตาม Serial Nos เดียวกันใน ERPNext ได้เช่นกัน ขณะสร้างใบเสร็จรับเงิน คุณจะต้องสแกนหรือป้อนหมายเลขซีเรียลด้วยตนเอง สำหรับรายการ เมื่อส่งใบเสร็จรับเงินการซื้อ หมายเลขซีเรียลจะถูกสร้างขึ้นในแบ็กเอนด์ตามหมายเลขซีเรียลที่ให้ไว้สำหรับรายการ หากใช้หมายเลขซีเรียลของ OEM ดังนั้นในหลักรายการ ไม่ควรกล่าวถึงคำนำหน้าสำหรับการทำให้เป็นอนุกรม ตามสถานการณ์นี้ ช่องคำนำหน้าควรเว้นว่างไว้
 
-If received items already has its Serial No. barcoded, you can simply scan that barcode for entering Serial No. in the Purchase Receipt. Click [here](https://frappe.io/blog/management/using-barcodes-to-ease-data-entry) to learn more about it.
+หากสินค้าที่ได้รับมีบาร์โค้ดหมายเลขซีเรียลอยู่แล้ว คุณสามารถสแกนบาร์โค้ดนั้นเพื่อป้อนหมายเลขซีเรียลในใบเสร็จรับเงินได้ คลิก [ที่นี่](https://frappe.io/blog/management/using-barcodes-to-ease-data-entry) เพื่อเรียนรู้เพิ่มเติม
 
-On submission of Purchase Receipt or Stock entry for the serialized item, Serial Nos. will be auto-generated.
+ในการส่งใบเสร็จรับเงินหรือรายการสต็อคสำหรับสินค้าต่อเนื่อง หมายเลขซีเรียลจะถูกสร้างขึ้นโดยอัตโนมัติ
 
 <img alt="Serial Nos Entry" class="screenshot" src="{{docs_base_url}}/assets/img/articles/serial-naming-1.png">
 
-Generated Serial numbers will be updated for each item.
+หมายเลขซีเรียลที่สร้างจะได้รับการอัปเดตสำหรับแต่ละรายการ
 
 <img alt="Serial Nos Created" class="screenshot" src="{{docs_base_url}}/assets/img/articles/serial-naming-2.png">
 
-###2. Serializing Manufacturing Item
+###2. การจัดลำดับรายการการผลิต
 
-To Serialize Manufacturing Item, you can define Series for Serial No. Generation in the Item master itself. Following that series, system will create Serial Nos. for Item when its Production entry is made.
+หากต้องการจัดลำดับรายการการผลิต คุณสามารถกำหนดซีรี่ส์สำหรับการสร้างหมายเลขซีเรียลในตัวหลักของรายการได้ ตามซีรีส์นั้น ระบบจะสร้างหมายเลขซีเรียลสำหรับรายการเมื่อมีการสร้างรายการการผลิต
 
-####2.1 Serial No. Series
+####2.1 หมายเลขซีเรียลเป็นกลุ่ม
 
-When Item is set as serialized, it will allow you to mentioned Series for it.
+เมื่อรายการถูกตั้งค่าเป็นอนุกรม จะอนุญาตให้คุณกล่าวถึงซีรีส์สำหรับรายการนั้น
 
 <img alt="Serial Nos Created" class="screenshot" src="{{docs_base_url}}/assets/img/articles/serial-naming-3.png">
 

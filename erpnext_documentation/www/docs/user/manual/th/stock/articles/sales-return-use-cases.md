@@ -1,33 +1,33 @@
-# Sales Return Management
+# การจัดการสินค้ารับคืน
 
-In an event of Sales Return, the following adjustment pertaining to stock and accounting can be handled in multiple ways. Let's check what stock and accounts posting would be posted based on the Sales Return adjustment.
+ในกรณีของ สินค้ารับคืน การปรับปรุงต่อไปนี้ที่เกี่ยวข้องกับสต็อกและการบัญชีสามารถจัดการได้หลายวิธี มาดูกันว่าจะมีการลงรายการบัญชีสต็อกและบัญชีใดบ้างตามการปรับปรุงสินค้ารับคืนจากการขาย
 
-### Return Without Payment
+### คืนสินค้าโดยไม่ต้องชำระเงิน
 
-If a customer request for the returns even before processing a payment, then you can simply:
+หากลูกค้าร้องขอการคืนสินค้าก่อนดำเนินการชำระเงิน คุณสามารถ:
 
-1. Cancel the Sales Invoice.
-2. Create a Sales Return against a Delivery Note
+1. ยกเลิกใบกำกับการขาย
+2. สร้างยอดขายเทียบกับใบส่งสินค้า
 
-If your statutory laws don't allow you to cancel the Sales Invoice, you can create a Credit Note against a Sales Invoice as well.
+หากกฎหมายตามกฎหมายของคุณไม่อนุญาตให้คุณยกเลิกใบกำกับสินค้า คุณสามารถสร้างเครดิตโน๊ตกับใบกำกับสินค้าได้เช่นกัน
 
-### Paid Sales Invoice - Adjustment via Credit Note
+### ใบกำกับสินค้าที่ชำระแล้ว - การปรับปรุงผ่านเครดิตโน๊ต
 
-This is a scenario where the customer purchased an item from you for which Sales Invoice as submitted, and also paid.
+นี่เป็นสถานการณ์สมมติที่ลูกค้าซื้อสินค้าจากคุณซึ่งส่งใบแจ้งหนี้การขายและชำระเงินด้วย
 
-1. Create a Credit Note against a Sales Invoice.
-2. In the Sales Invoice, check field "Is Paid". Ensure that Payment Account / Mode of Payment is selected in the relevant table.
-3. If you wish to also return items via Sales Invoice itself, check field "Update Stock".
-4. Save and Submit Credit Note.
+1. สร้างเครดิตโน๊ตกับใบกำกับสินค้า
+2. ในใบกำกับสินค้า ให้เลือกช่อง "ชำระเงินแล้ว" ตรวจสอบให้แน่ใจว่าได้เลือกบัญชีการชำระเงิน / โหมดการชำระเงินในตารางที่เกี่ยวข้อง
+3. หากคุณต้องการคืนสินค้าผ่าน ใบแจ้งหนี้การขาย เองด้วย ให้เลือกช่อง "อัพเดทสต็อค"
+4. บันทึกและส่งเครดิตโน๊ต
 
 <img class="screenshot" alt="Create Shareholder" src="/docs/assets/img/stock/sales-return-against-payment.png">
 
-As per this entry, the sold items will be accepted back in your Warehouse. Also, the payment received from the Customer will be reversed.
+ตามรายการนี้ รายการขายจะถูกรับคืนในโกดังของคุณ นอกจากนี้ การชำระเงินที่ได้รับจากลูกค้าจะถูกกลับรายการ
 
-After the Credit Note creation, the Outstanding Balance of Sales Invoice will turn negative. This will give you scope to adjust this Sales Invoice (with a negative balance) to adjust against the future outstanding Sales Invoice.
+หลังจากสร้างใบลดหนี้ ยอดคงค้างของใบกำกับสินค้าจะเปลี่ยนเป็นค่าลบ สิ่งนี้จะทำให้คุณมีขอบเขตในการปรับใบแจ้งหนี้การขายนี้ (ที่มียอดติดลบ) เพื่อปรับให้เข้ากับใบกำกับสินค้าคงค้างในอนาคต
 
-### Unpaid Sales Invoice - Credit Note
+### ใบแจ้งหนี้การขายที่ค้างชำระ - เครดิตโน๊ต
 
-In the case of Sales Return where the customer didn't process any payment, you can simply create a Credit Note. On creation of Credit Note, Outstanding of the Sales Invoice will become negative.
+ในกรณีของ สินค้ารับคืน ที่ลูกค้าไม่ได้ประมวลผลการชำระเงินใดๆ คุณสามารถสร้างใบลดหนี้ได้ ในการสร้างใบลดหนี้ ยอดคงค้างของใบกำกับสินค้าจะกลายเป็นค่าลบ
 
-For the Adjustment of stock, you can create a Sales Return against Delivery Note or in the Credit Note itself, check field "Update Stock".
+สำหรับการปรับสต็อก คุณสามารถสร้าง สินค้ารับคืนพร้อมกับใบส่งของ หรือในเครดิตโน๊ต ให้เลือกช่อง "อัพเดทสต็อค"

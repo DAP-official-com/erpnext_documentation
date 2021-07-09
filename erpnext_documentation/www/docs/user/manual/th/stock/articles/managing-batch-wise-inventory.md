@@ -1,37 +1,39 @@
 <!-- add-breadcrumbs -->
-#Managing Batch wise Inventory
+#การจัดการสินค้าคงคลัง
 
-Set of items which has same properties and attributes can be group in a single Batch. For example, pharmaceuticals  items are batch, so that it's manufacturing and expiry date can be tracked together. 
+ชุดของรายการที่มีคุณสมบัติเดียวกันสามารถจัดกลุ่มในชุดเดียวได้ ตัวอย่างเช่น รายการยาเป็นชุด เพื่อให้สามารถติดตามการผลิตและวันหมดอายุร่วมกันได้
 
-To maintain batches against an Item you need to mention 'Has Batch No' as yes in the Item Master. 
+เพื่อรักษาแบทช์เทียบกับไอเท็ม คุณต้องระบุว่า 'มีหมายเลขแบทช์' ใน รายการสินค้าหลัก
 
 <img alt="Batch Item" class="screenshot" src="{{docs_base_url}}/assets/img/articles/batchwise-stock-1.png">
 
-You can create a new Batch from:
+คุณสามารถสร้างแบทช์ใหม่ได้จาก:
 
-`Stock > Documents > Batch > New`
+`สต็อค > เอกสาร > แบทช์ > ใหม่`
 
-Read [Stock batch](/docs/user/manual/en/stock/batch.html) to learn more.
+อ่าน [แบทช์](/docs/user/manual/th/stock/batch.html) เพื่อเรียนรู้เพิ่มเติม
 
-For the Batch item, updating Batch No. in the stock transactions (Purchase Receipt & Delivery Note) is mandatory.
+สำหรับรายการแบทช์ การอัปเดตหมายเลขแบทช์ในธุรกรรมสต็อค (ใบเสร็จการซื้อและใบส่งสินค้า) เป็นสิ่งที่จำเป็น
 
-#### Purchase Receipt
+#### ใบเสร็จการซื้อ
 
-When creating Purchase Receipt, you should create new Batch, or select one of the existing Batch master. One Batch can be associated with one Batch Item.
+เมื่อสร้างใบเสร็จรับเงิน คุณควรสร้างแบทช์ใหม่ หรือเลือกหนึ่งในมาสเตอร์แบทช์ที่มีอยู่ หนึ่งชุดสามารถเชื่อมโยงกับหนึ่งชุดรายการ
 
 <img alt="Batch in Purchase Receipt" class="screenshot" src="{{docs_base_url}}/assets/img/articles/batchwise-stock-2.png">
 
-#### Delivery Note
+#### บันทึกการส่งมอบ
 
-Define Batch in Delivery Note Item table. If Batch item is added under Product Bundle, you can update it's Batch No. in the Packing List table as well.
+กำหนดแบทช์ในตารางรายการบันทึกการจัดส่ง หากมีการเพิ่มรายการแบทช์ภายใต้ ชุดผลิตภัณฑ์ (Product Bundle)
+คุณสามารถอัปเดตหมายเลขแบทช์ในตารางรายการบรรจุภัณฑ์ได้เช่นกัน
 
 <img alt="Batch in Delivery Note" class="screenshot" src="{{docs_base_url}}/assets/img/articles/batchwise-stock-3.png">
 
-#### Batch-wise Stock Balance Report
 
-To check batch-wise stock balance report, go to:
+#### รายงานยอดคงเหลือในสต็อคตามแบทช์
 
-Stock > Standard Reports > Batch-wise Balance History
+หากต้องการตรวจสอบรายงานยอดคงเหลือตามแบทช์ ให้ไปที่:
+
+สต็อค > รายงานมาตรฐาน > ประวัติยอดดุลตามแบทช์
 
 <img alt="Batchwise Stock Balance" class="screenshot" src="{{docs_base_url}}/assets/img/articles/batchwise-stock-4.png">
 

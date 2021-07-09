@@ -1,14 +1,14 @@
 <!-- add-breadcrumbs -->
-# Return Rejected Items
+# ส่งคืนสินค้าที่ถูกปฏิเสธ
 
-In the Purchase Receipt, you can receive the Items in the Accepted or the Rejected Warehouse.
+ในใบเสร็จการซื้อ คุณสามารถรับสินค้าในคลังสินค้าที่รับหรือปฏิเสธ
 
-If you are creating Purchase Return for the items received in the Rejected Warehouse, then create return entry following these steps.
+หากคุณกำลังสร้างรายการส่งคืนสำหรับสินค้าที่ได้รับในคลังสินค้าที่ถูกปฏิเสธ ให้สร้างรายการส่งคืนโดยทำตามขั้นตอนเหล่านี้
 
-1.  In the Purchase Receipt Item table, for the item to be returned, in the Received Qty field, enter return entry in negative.
-2.  In the Accepted Warehouse field, set value as zero.
-3.  In the Rejected Warehouse field, set the quantity to be returned in negative.
+1. ในตารางรายการรับซื้อ สำหรับสินค้าที่จะส่งคืน ในฟิลด์ จำนวนที่ได้รับ ให้ป้อนรายการส่งคืนเป็นค่าลบ
+2. ในฟิลด์ คลังสินค้า Accepted ตั้งค่าเป็นศูนย์
+3. ในฟิลด์ คลังสินค้า Rejected กำหนดปริมาณที่จะส่งคืนเป็นค่าลบ
 
-For detailed steps on how to create Purchase Return Entry for the Rejected Item, refer to the below example.
+สำหรับขั้นตอนโดยละเอียดเกี่ยวกับวิธีสร้างรายการส่งคืนสินค้าสำหรับสินค้าที่ถูกปฏิเสธ โปรดดูตัวอย่างด้านล่าง
 
 <img class="screenshot" alt="Returning Rejected Items" src="{{docs_base_url}}/assets/img/articles/purchase-return.gif">

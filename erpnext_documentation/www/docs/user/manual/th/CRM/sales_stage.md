@@ -1,19 +1,19 @@
 <!-- add-breadcrumbs -->
-# Sales Stage
+#ขั้นตอนการขาย
 
-**A Sales Stage indicates the level at which an opportunity is in the sales cycle.**
+**ระยะการขายระบุระดับที่โอกาสนั้นอยู่ในวงจรการขาย**
 
-Generally high values deals go through a number of stages before the sale is concluded. You will have to nurture high value opportunities over a period of time before you can successfully close a sale.
+ข้อตกลงที่มีมูลค่าสูงโดยทั่วไปต้องผ่านหลายขั้นตอนก่อนที่จะสรุปการขาย คุณจะต้องรักษาโอกาสที่มีมูลค่าสูงไว้ในช่วงระยะเวลาหนึ่งก่อนจึงจะสามารถปิดการขายได้สำเร็จ
 
-You can create the sales stages and in each opportunity you can select the stage it is in and update it as you nurture the opportunity. This helps you getting an overview of how many opportunities you have in each stage.
+คุณสามารถสร้างขั้นตอนการขาย และในแต่ละโอกาส คุณสามารถเลือกขั้นตอนที่อยู่ในนั้นและอัปเดตเมื่อคุณรักษาโอกาสทางการขาย ซึ่งจะช่วยให้คุณได้รับภาพรวมของจำนวนโอกาสที่คุณมีในแต่ละขั้นตอน
 
-To access Sales Stage, go to:
-> Home > CRM > Settings > Sales Stage
+ในการเข้าถึง Sales Stage ไปที่:
+> หน้าแรก > CRM > การตั้งค่า > ขั้นตอนการขาย
 
-## 1. How to Create a Sales Stage
+## 1. วิธีสร้างขั้นตอนการขาย
 
-1. Go to the Sales Stage and click on New.
-1. Enter the Stage Name.
+1. ไปที่ Sales Stage และคลิกที่ New
+1. ป้อนชื่อสเตจ
 
 <img class="screenshot" alt="Sales Stage" src="{{docs_base_url}}/assets/img/crm/sales_stage.png">
 

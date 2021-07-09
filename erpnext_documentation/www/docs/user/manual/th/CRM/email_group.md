@@ -1,40 +1,40 @@
 <!-- add-breadcrumbs -->
 
-# Email Group
+# กลุ่มอีเมล
 
-**An Email Group is a list of subscriber email IDs to which you send newsletters.**
+**กลุ่มอีเมลคือรายการ ID อีเมลของสมาชิกที่คุณส่งจดหมายข่าวไป**
 
-You can manage subscribers by grouping them into different groups.
+คุณสามารถจัดการสมาชิกโดยจัดกลุ่มพวกเขาออกเป็นกลุ่มต่างๆ
 
-You can group existing and potential customers into different groups based on their territory or products they are interested in. You can group the email ID of all employees so that you can share information with them.
+คุณสามารถจัดกลุ่มลูกค้าปัจจุบันและผู้มีโอกาสเป็นลูกค้าออกเป็นกลุ่มต่างๆ ตามพื้นที่หรือผลิตภัณฑ์ที่พวกเขาสนใจ คุณสามารถจัดกลุ่ม ID อีเมลของพนักงานทั้งหมดเพื่อให้คุณสามารถแบ่งปันข้อมูลกับพวกเขาได้
 
-To access the Email Group list, go to:
-> Home > Settings > Email > Email Group
+หากต้องการเข้าถึงรายชื่อกลุ่มอีเมล ให้ไปที่:
+> หน้าแรก > การตั้งค่า > อีเมล > Email Group
 
-## 1. How to Create an Email Group
+## 1. วิธีสร้างกลุ่มอีเมล
 
-1. Go to the Email Group list and click on New.
-1. Enter 'Title'.
-1. Click on 'Save'
-1. Click on Action > Add Subscribers.
-1. Enter Email Addresses.
-1. Click on 'Add'
+1. ไปที่รายชื่อกลุ่มอีเมลและคลิกที่ใหม่
+1. ป้อน 'ชื่อ'
+1. คลิกที่ 'บันทึก'
+1. คลิกที่ การดำเนินการ > เพิ่มสมาชิก
+1. ป้อนที่อยู่อีเมล
+1. คลิกที่ 'เพิ่ม'
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Import Email IDs from Transactions
+### 2.1 นำเข้ารหัสอีเมลจากธุรกรรม
 
-You can import email IDs from existing transactions.
+คุณสามารถนำเข้ารหัสอีเมลจากธุรกรรมที่มีอยู่
 
-Click on Action > Import Subscribers and select a transaction like Lead. Click on Import and all the email IDs mentioned in the email IDs will be imported.
+คลิกที่ Action > Import Subscribers และเลือกธุรกรรมเช่น Lead คลิกที่นำเข้าและรหัสอีเมลทั้งหมดที่กล่าวถึงในรหัสอีเมลจะถูกนำเข้า
 
-### 2.2 Email Templates
+### 2.2 เทมเพลตอีเมล
 
-You can specify the confirmation email and welcome email template for the email group. A confirmation email will be sent to confirm a person's subscription to your newsletter. The welcome email is sent when the person confirms their subscription to your email newsletter.
+คุณสามารถระบุอีเมลยืนยันและเทมเพลตอีเมลต้อนรับสำหรับกลุ่มอีเมลได้ อีเมลยืนยันจะถูกส่งไปเพื่อยืนยันการสมัครรับจดหมายข่าวของคุณ อีเมลต้อนรับจะถูกส่งเมื่อบุคคลนั้นยืนยันการสมัครรับจดหมายข่าวทางอีเมลของคุณ
 
-**Confirmation Email Template:** This email template is used to replace the default template sent for newsletter subscription. The confirmation email generated via this template is sent when someone subscribes to the Email Group Website.
-**Welcome Email Template:** Whenever a subscriber is added to an email group after confirmation, the email template set here will be sent to them.
+**เทมเพลตอีเมลยืนยัน:** เทมเพลตอีเมลนี้ใช้เพื่อแทนที่เทมเพลตเริ่มต้นที่ส่งสำหรับการสมัครรับจดหมายข่าว อีเมลยืนยันที่สร้างผ่านเทมเพลตนี้จะถูกส่งไปเมื่อมีผู้สมัครสมาชิกเว็บไซต์กลุ่มอีเมล
+**เทมเพลตอีเมลต้อนรับ:** เมื่อใดก็ตามที่มีการเพิ่มสมาชิกในกลุ่มอีเมลหลังจากการยืนยัน เทมเพลตอีเมลที่ตั้งค่าไว้ที่นี่จะถูกส่งไปยังพวกเขา
 
 <img class="screenshot" alt="Email Group Templates" src="{{docs_base_url}}/assets/img/crm/email-group.png">
 
-Next: [Automate Lead Capturing](/docs/user/manual/en/CRM/articles/automate_lead_capturing)
+Next: [Automate Lead Capturing](/docs/user/manual/th/CRM/articles/automate_lead_capturing)

@@ -1,35 +1,35 @@
 <!-- add-breadcrumbs -->
-#Repack Entry
+#รายการแพ็คใหม่
 
-Repack Entry is created for item bought in bulk, which is being packed into smaller packages. For example, item bought in tons can be repacked into Kgs. 
+รายการแพ็คใหม่ถูกสร้างขึ้นสำหรับสินค้าที่ซื้อจำนวนมาก ซึ่งจะถูกบรรจุลงในหีบห่อที่เล็กกว่า ตัวอย่างเช่น สินค้าที่ซื้อเป็นตันสามารถบรรจุใหม่เป็นกิโลกรัมได้
 
-Notes:
-1. Purchase Item and repack will be have different Item Codes.
-2. Repack entry can be made with or without BOM (Bill of Material).
+หมายเหตุ:
+1. ซื้อไอเทมและแพ็คใหม่จะมีรหัสไอเทมต่างกัน
+2. รายการบรรจุหีบห่อสามารถทำได้โดยมีหรือไม่มี BOM (รายการวัสดุ)
 
-In a Repack Entry, there can be one or more than one repack items. Let's check below scenario to understand this better.
+ในรายการบรรจุหีบห่อ อาจมีรายการบรรจุหีบห่อหนึ่งรายการหรือมากกว่าหนึ่งรายการ มาตรวจสอบสถานการณ์ด้านล่างเพื่อทำความเข้าใจเรื่องนี้กันดีกว่า
 
-Assume we are buying boxes of spray paint of specific colour (Green, Blue etc). And later re-bundling to create packs having multiple colours of spray paint (Blue-Green, Green-Yellow etc.) in them.
+สมมติว่าเรากำลังซื้อกล่องสีสเปรย์ที่มีสีเฉพาะ (เขียว น้ำเงิน ฯลฯ) และภายหลังการรวมกลุ่มใหม่เพื่อสร้างชุดที่มีสีสเปรย์หลายสี (น้ำเงิน-เขียว, เขียว-เหลือง ฯลฯ) อยู่ในนั้น
 
-#### 1. New Stock Entry
+#### 1. รายการสินค้าใหม่
 
-`Stock > Documents > Stock Entry > New Stock Entry`
+`สต็อก > เอกสาร > รายการสต็อค > รายการสต็อคใหม่`
 
-#### 2. Enter Items
+#### 2. ใส่รายการ
 
-Select Purpose as 'Repack Entry'.
+เลือกวัตถุประสงค์ เป็น 'รายการแพ็คใหม่'
 
-For raw-material/input item, only Source Warehouse will be provided.
+สำหรับรายการวัตถุดิบ/อินพุต จะให้เฉพาะ คลังสินค้าต้นทาง เท่านั้น
 
-For repacked/output items, only Target Warehouse will be provided. You will have to provide valuation for the repack items.
+สำหรับสินค้าที่บรรจุใหม่/ส่งออก จะมีเฉพาะ คลังสินค้าปลายทาง เท่านั้น คุณจะต้องระบุการประเมินค่าสำหรับรายการแพ็คใหม่
 
 <img alt="Repack Entry" class="screenshot" src="{{docs_base_url}}/assets/img/articles/repack-1.png">
 
-Update Qty for all the items selected.
+อัปเดตจำนวนสำหรับรายการทั้งหมดที่เลือก
 
-#### 3. Submit Stock Entry
+#### 3. ส่งรายการสต็อค
 
-On submitting Stock Entry, stock of input item will be reduced from Source Warehouse, and stock of repack/output item will be added in the Target Warehouse.
+ในการส่งรายการสต็อค สต็อคของรายการอินพุตจะลดลงจาก คลังสินค้าต้นทาง และสต็อคของรายการบรรจุใหม่/เอาท์พุตจะถูกเพิ่มใน คลังสินค้าปลายทาง
 
 <img alt="Repack Stock Entry" class="screenshot" src="{{docs_base_url}}/assets/img/articles/repack-2.png">
 

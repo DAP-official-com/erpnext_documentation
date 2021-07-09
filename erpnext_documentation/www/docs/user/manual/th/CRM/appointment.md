@@ -8,51 +8,51 @@ metatags:
  keywords: Appointment Scheduling , CRM, frappe, erpnext new features, erp, open source erp, free erp, security
 ---
 
-# Appointment
+#การนัดหมาย
 
-**An appointment is a prearranged meeting between a Lead and an Employee of your Company.**
+**การนัดหมายคือการประชุมที่เตรียมไว้ล่วงหน้าระหว่างผู้นำและพนักงานของบริษัทคุณ**
 
-Appointment document type can be used to schedule and manage interaction with a [Lead](/docs/user/manual/en/CRM/lead) or an [Opportunity](/docs/user/manual/en/CRM/opportunity). 
+ประเภทเอกสารนัดหมายสามารถใช้เพื่อกำหนดเวลาและจัดการการโต้ตอบกับ [ลูกค้าเป้าหมาย](/docs/user/manual/th/CRM/lead) หรือ [โอกาส](/docs/user/manual/th/CRM/opportunity)
 
-To access Appointment list, go to:
-> Home > CRM > Sales Pipeline > Appointment 
+ในการเข้าถึงรายการนัดหมาย ไปที่:
+> หน้าแรก > CRM > ไปป์ไลน์การขาย > การนัดหมาย
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-1. [Appointment Booking Settings](/docs/user/manual/en/CRM/appointment-booking-settings)
-2. [Holiday List](/docs/user/manual/en/human-resources/holiday-list)
-3. [Employee](/docs/user/manual/en/human-resources/employee)
-4. [Lead](/docs/user/manual/en/CRM/lead)
-5. [Email](/docs/user/manual/en/setting-up/email/email-account)
+1. [การตั้งค่าการจองนัดหมาย](/docs/user/manual/th/CRM/appointment-booking-settings)
+2. [รายการวันหยุด](/docs/user/manual/th/human-resources/holiday-list)
+3. [พนักงาน](/docs/user/manual/th/human-resources/employee)
+4. [ลูกค้าเป้าหมาย](/docs/user/manual/th/CRM/lead)
+5. [อีเมล](/docs/user/manual/th/setting-up/email/email-account)
 
-## 2. How to create an Appointment
+## 2. วิธีสร้างการนัดหมาย
 
-1. Go to Appointment list, click on New
-2. Select scheduled time of the appointment
-3. Enter customer details
-4. In linked documents, if you have already created a Lead for the Customer you can set it here. Otherwise the system will automatically create a new lead with the customer details from previous step.
-1. Save.
+1. ไปที่รายการนัดหมาย คลิกที่ ใหม่
+2. เลือกเวลาที่กำหนดของการนัดหมาย
+3. กรอกรายละเอียดลูกค้า
+4. ในเอกสารที่เชื่อมโยง หากคุณได้สร้างลูกค้าเป้าหมายสำหรับลูกค้าแล้ว คุณสามารถตั้งค่าได้ที่นี่ มิฉะนั้น ระบบจะสร้างลูกค้าเป้าหมายใหม่โดยอัตโนมัติพร้อมรายละเอียดลูกค้าจากขั้นตอนก่อนหน้า
+1. บันทึก
  ![New Appointment](/docs/assets/img/crm/new-appointment.png)
 
-### 2.1 Creating appointments via website
+### 2.1 การสร้างการนัดหมายผ่านเว็บไซต์
 
-Your Customers/Leads can create appointment using the webpage `yoursitename.com/book_appointment`. 
+ลูกค้า/โอกาสในการขายของคุณสามารถสร้างการนัดหมายโดยใช้หน้าเว็บ `yoursitename.com/book_appointment'
 
-First they need to set a date, time.
+ก่อนอื่นต้องตั้งวันที่ เวลา
 ![Appointment Webform](/docs/assets/img/crm/appointment-webform.png)
 
-Then, add more details:
+จากนั้นเพิ่มรายละเอียดเพิ่มเติม:
 ![Appointment Details](/docs/assets/img/crm/appointment-details.png)
 
-It'll match the customer email with leads in the system and if one is found, it is linked with the document.
-If no lead is found, the appointment is marked as "Unverified" and an email is sent to the customer to confirm their email
+ระบบจะจับคู่อีเมลลูกค้ากับลูกค้าเป้าหมายในระบบ และหากพบ แสดงว่าเชื่อมโยงกับเอกสาร
+หากไม่พบลูกค้าเป้าหมาย การนัดหมายจะถูกทำเครื่องหมายเป็น "ไม่ได้รับการยืนยัน" และอีเมลจะถูกส่งไปยังลูกค้าเพื่อยืนยันอีเมล
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Autoassign
+### 3.1 กำหนดอัตโนมัติ
 
-Appointments are automatically assigned to employees as per the `Agents` list in [Appointment Booking Settings](/docs/user/manual/en/CRM/appointment-booking-settings). The agent with the least number of assignments for the day of the appointment and who is free in the scheduled time is assigned to the appointment.
+การนัดหมายจะถูกกำหนดให้กับพนักงานโดยอัตโนมัติตามรายการ "ตัวแทน" ใน [การตั้งค่าการจองการนัดหมาย](/docs/user/manual/th/CRM/appointment-booking-settings) ตัวแทนที่มีจำนวนการมอบหมายน้อยที่สุดสำหรับวันที่นัดหมายและผู้ที่ว่างตามเวลาที่กำหนดจะได้รับมอบหมายให้ทำการนัดหมาย
 
-### 3.2 Email confirmation
+### 3.2 อีเมลยืนยัน
 
-If there is no matching lead in your system, an email will be sent to the email address in the appointment to confirm if the email address is valid. Upon confirmation, a new Lead will also be created in the system along with the Appointment.
+หากไม่มีลูกค้าเป้าหมายที่ตรงกันในระบบของคุณ อีเมลจะถูกส่งไปยังที่อยู่อีเมลในการนัดหมายเพื่อยืนยันว่าที่อยู่อีเมลนั้นถูกต้องหรือไม่ เมื่อได้รับการยืนยันแล้ว ระบบจะสร้างลูกค้าเป้าหมายใหม่ในระบบพร้อมกับการนัดหมาย

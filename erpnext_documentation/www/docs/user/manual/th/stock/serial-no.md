@@ -1,82 +1,82 @@
 <!-- add-breadcrumbs -->
-# Serial Number
+# หมายเลขซีเรียล (Serial Number)
 
-As discussed in the [Item](/docs/user/manual/en/stock/item) page, if an **Item** is _serialized_, a
-**Serial Number** (Serial No) record is maintained for each quantity of that
-**Item**. This information helps track the location of the Serial
-No, its warranty and end-of-life (expiry) information.
+ตามที่กล่าวไว้ในหน้า [รายการ](/docs/user/manual/th/stock/item) หาก **รายการ** เป็น _serialized_ a
+**หมายเลขซีเรียล** (หมายเลขซีเรียล) บันทึกจะถูกเก็บไว้สำหรับแต่ละปริมาณนั้น each
+**สิ่งของ**. ข้อมูลนี้ช่วยติดตามตำแหน่งของ Serial
+ไม่ การรับประกันและข้อมูลการสิ้นสุดอายุการใช้งาน (หมดอายุ)
 
-**Serial Nos** are also useful to maintain fixed assets. [Maintenance Schedules](/docs/user/manual/en/support/maintenance-schedule) can also be created against Serial Numbers for planning and scheduling maintenance activity for these assets (if they require maintenance).
+**หมายเลขซีเรียล** ยังมีประโยชน์ในการรักษาสินทรัพย์ถาวรอีกด้วย [ตารางการซ่อมบำรุง](/docs/user/manual/th/support/maintenance-schedule) สามารถสร้างโดยใช้ Serial Numbers สำหรับการวางแผนและจัดกำหนดการกิจกรรมการบำรุงรักษาสำหรับสินทรัพย์เหล่านี้ (หากต้องการการบำรุงรักษา)
 
-You can also track from which **Supplier** you purchased the **Serial No** and
-to which **Customer** you have sold it. The **Serial No** status will tell you
-its current inventory status.
+คุณยังสามารถติดตามได้จาก **ซัพพลายเออร์** ที่คุณซื้อ **หมายเลขซีเรียล** และ
+ซึ่ง **ลูกค้า** ท่านขายไปแล้ว สถานะ **หมายเลขซีเรียล** จะบอกคุณ
+สถานะสินค้าคงคลังปัจจุบัน
 
-If your Item is _serialized_ you will have to enter the Serial Nos in the
-related column with each Serial No in a new line.
-You can maintain single units of serialized items using Serial Number.
+หากรายการของคุณเป็น _serialized_ คุณจะต้องป้อนหมายเลขซีเรียลใน
+คอลัมน์ที่เกี่ยวข้องกับ Serial No แต่ละรายการในบรรทัดใหม่
+คุณสามารถรักษารายการต่อเนื่องได้ทีละหน่วยโดยใช้หมายเลขซีเรียล
 
-To access the Serial Number list, go to:
-> Home > Stock > Serial No and Batch > Serial No
+หากต้องการเข้าถึงรายการหมายเลขซีเรียล ให้ไปที่:
+> หน้าหลัก > สต็อก > หมายเลขซีเรียล และ แบชท์ > หมายเลขซีเรียล
 
-## 1. Prerequisites
-Before creating and using a Serial Number, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้หมายเลขซีเรียล ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Item](/docs/user/manual/en/stock/item)
-* Enable 'Has Serial No' in the Item master
+* [รายการ](/docs/user/manual/th/stock/item)
+* เปิดใช้งาน 'มี หมายเลขซีเรียล' ใน สินค้าหลัก
     ![Serial No Enabled](/docs/assets/img/stock/serial-no-enabled.png)
 
 
-## 2. How to create a Serial Number
-Usually, Serial Numbers are auto-created when transactions are made against a serialized Item. This works only when 'Has Serial No' is enabled and a series is set in the Item master.
+## 2. วิธีสร้างหมายเลขซีเรียล
+โดยปกติ หมายเลขซีเรียลจะถูกสร้างขึ้นโดยอัตโนมัติเมื่อมีการทำธุรกรรมกับรายการที่มีลำดับขั้น ใช้งานได้เฉพาะเมื่อเปิดใช้งาน 'มีหมายเลขซีเรียล' และมีการตั้งค่าซีรีส์ในต้นแบบรายการ
 
-For example, a series was set for the following Item as 'PB2L.#####'. Then a Stock Entry was submitted to receive the Item. The Serial Numbers were created accordingly.
+ตัวอย่างเช่น ซีรีส์ถูกตั้งค่าสำหรับรายการต่อไปนี้เป็น 'PB2L.#####' จากนั้นมีการส่งรายการสต็อคเพื่อรับสินค้า หมายเลขซีเรียลถูกสร้างขึ้นตามลำดับ
 
 ![Serial No Created](/docs/assets/img/stock/serial-no-created.png)
 
-However, if you want to create a Serial No _manually_ follow these steps:
+อย่างไรก็ตาม หากคุณต้องการสร้าง หมายเลขซีเรียล _manually_ ให้ทำตามขั้นตอนเหล่านี้:
 
-1. Go to the Serial Number list, click on New.
-1. Enter a Serial Number.
-1. Enter the Item Code and details will be fetched.
-1. If any transaction is done with an item, Serial No cannot be set or unset.
-1. Save.
+1. ไปที่รายการ Serial Number คลิกที่ New
+1. ป้อนหมายเลขซีเรียล
+1. ป้อนรหัสรายการและรายละเอียดจะถูกดึงออกมา
+1. หากมีการทำรายการใดๆ กับรายการ หมายเลขซีเรียลจะไม่สามารถตั้งค่าหรือยกเลิกการตั้งค่าได้
+1. บันทึก
 
-Inventory of an Item can only be affected if the Serial No is transacted via a
-Stock transaction (Stock Entry, Purchase Receipt, Delivery Note, Sales
-Invoice). When a new Serial No is created directly, its Warehouse cannot be
-set.
+สินค้าคงคลังของไอเท็มจะได้รับผลกระทบก็ต่อเมื่อ หมายเลขซีเรียล ทำธุรกรรมผ่าน a
+ธุรกรรมสต็อค (รายการสต็อค, ใบเสร็จรับเงิน, ใบส่งของ, ฝ่ายขาย
+ใบแจ้งหนี้). เมื่อมีการสร้าง หมายเลขซีเรียล ใหม่โดยตรง คลังสินค้าจะไม่สามารถ
+ชุด
 
 <img class="screenshot" alt="Serial Number" src="{{docs_base_url}}/assets/img/stock/serial-no.png">
 
-### 2.1 Notes about Serial Number
+### 2.1 หมายเหตุเกี่ยวกับหมายเลขซีเรียล
 
-* The Status is set based on Stock Entry.
-* Only Serial Numbers with status 'Available' can be delivered.
-* Serial Nos can automatically be created from a Stock Entry or Purchase Receipt. If you mention Serial No in the Serial Nos column, it will automatically create those serial Nos.
-* If in the Item Master, the Serial No Series is mentioned, you can leave the Serial No column blank in a Stock Entry / Purchase Receipt. Serial Nos will automatically be set from that series.
+* สถานะถูกตั้งค่าตามรายการสต็อค
+* สามารถส่งได้เฉพาะหมายเลขซีเรียลที่มีสถานะ 'ว่าง' เท่านั้น
+* สามารถสร้างหมายเลขซีเรียลได้โดยอัตโนมัติจากรายการสต็อคหรือใบเสร็จการซื้อ หากคุณระบุ Serial Nos ในคอลัมน์ Serial Nos ระบบจะสร้าง Serial Nos เหล่านั้นโดยอัตโนมัติ
+* หากระบุ หมายเลขซีเรียลจำนวนมาก ใน สินค้าหลัก คุณสามารถปล่อยให้คอลัมน์ หมายเลขซีเรียล ว่างใน รายการสต็อก / ใบเสร็จการขาย หมายเลขซีเรียลจะถูกตั้งค่าโดยอัตโนมัติจากซีรีส์นั้น
 
-## 3. Features
-### 3.1 Purchase/Manufacture details
-The document from which the Serial No was created will be shown. If you purchased it from a Supplier, it'll be linked here.
+## 3. คุณสมบัติ
+### 3.1 รายละเอียดการซื้อ/การผลิต
+เอกสารที่ใช้สร้าง หมายเลขซีเรียล จะปรากฏขึ้น หากคุณซื้อจากซัพพลายเออร์ จะมีการเชื่อมโยงที่นี่
 
-### 3.2 Delivery Details
-If the Serial No was generated from a Sales Order, the Customer will be linked here.
+### 3.2 รายละเอียดการจัดส่ง
+หากมีการสร้าง หมายเลขซีเรียล จากใบสั่งขาย ลูกค้าจะถูกเชื่อมโยงที่นี่
 
-### 3.3 Warranty/AMC Details
-If the Item is under warranty or AMC (Annual Maintenance Contract), the expiry dates for these can be set.
+### 3.3 การรับประกัน/รายละเอียด AMC
+หากสินค้าอยู่ภายใต้การรับประกันหรือ AMC (สัญญาบำรุงรักษารายปี) สามารถกำหนดวันหมดอายุของรายการเหล่านี้ได้
 
-### 3.4 More Information
-Any additional information about this specific Item unit can be set under 'Serial No Details'.
+### 3.4 ข้อมูลเพิ่มเติม
+ข้อมูลเพิ่มเติมเกี่ยวกับหน่วยรายการเฉพาะนี้สามารถตั้งค่าได้ภายใต้ 'รายละเอียดหมายเลขซีเรียล'
 
-## 4. Video
+## 4. วีดีโอ
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/Q4tYKYTbVek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-### 5. Related Topics
-1. [Item Codification](/docs/user/manual/en/stock/articles/item-codification)
-1. [Item Variants](/docs/user/manual/en/stock/item-variants)
-1. [Serial Number Naming](/docs/user/manual/en/stock/articles/serial-no-naming)
+### 5. หัวข้อที่เกี่ยวข้อง
+1. [Item Codification](/docs/user/manual/th/stock/articles/item-codification)
+1. [รายการสินค้า](/docs/user/manual/th/stock/item-variants)
+1. [การตั้งชื่อหมายเลขซีเรียล](/docs/user/manual/th/stock/articles/serial-no-naming)
 

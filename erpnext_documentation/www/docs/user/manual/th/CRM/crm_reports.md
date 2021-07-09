@@ -1,50 +1,50 @@
 <!-- add-breadcrumbs -->
 <!-- title: CRM Reports -->
-# CRM Reports
+# รายงาน CRM
 
-CRM module's reports feature helps users get the information about the prospects. Using the following reports, an ERPNext user can analyze the data about a prospect's history with a company and will help users build strong relationships with the prospects. These are a collection of reports under **CRM > Reports**.
+คุณลักษณะรายงานของโมดูล CRM ช่วยให้ผู้ใช้ได้รับข้อมูลเกี่ยวกับผู้มีแนวโน้มจะเป็นลูกค้า การใช้รายงานต่อไปนี้ ผู้ใช้ ERPNext สามารถวิเคราะห์ข้อมูลเกี่ยวกับประวัติของผู้มีแนวโน้มจะเป็นลูกค้ากับบริษัท และจะช่วยให้ผู้ใช้สร้างความสัมพันธ์ที่แน่นแฟ้นกับผู้มีแนวโน้มจะเป็นลูกค้า นี่คือชุดรายงานภายใต้ **CRM > รายงาน**
 
-### 1. Lead Details
+### 1. รายละเอียดลูกค้าเป้าหมาย
 
-This report provides lead name, address, contact details, lead source, territory, and other details.
+รายงานนี้ระบุชื่อลูกค้าเป้าหมาย ที่อยู่ รายละเอียดการติดต่อ แหล่งที่มาของโอกาสในการขาย พื้นที่ และรายละเอียดอื่นๆ
 
 <img alt="Lead Details" class="screenshot" src="{{docs_base_url}}/assets/img/crm/report/lead.png">
 
-###2. Sales Funnel
+###2. ช่องทางการขาย
 
-By using the sales funnel report, and by quantifying the number of prospects at each stage of the process, you can get an idea of your potential customers.
+ด้วยการใช้รายงานกระบวนการขาย และการหาจำนวนผู้มีโอกาสเป็นลูกค้าในแต่ละขั้นตอนของกระบวนการ คุณจะได้รับแนวคิดเกี่ยวกับผู้มีโอกาสเป็นลูกค้าของคุณ
 
-For more details check [Sales Funnel](/docs/user/manual/en/CRM/articles/sales_funnel).
+สำหรับรายละเอียดเพิ่มเติม โปรดดูที่ [ช่องทางการขาย](/docs/user/manual/th/CRM/articles/sales_funnel)
 
-###3. Prospects Engaged But Not Converted
-Using this report, user gets the information about the leads who have shown interest in the business with you but due to some reason they were not converted into the customers.
+###3. ผู้มุ่งหวังมีส่วนร่วมแต่ไม่กลับใจใหม่
+เมื่อใช้รายงานนี้ ผู้ใช้จะได้รับข้อมูลเกี่ยวกับลูกค้าเป้าหมายที่แสดงความสนใจในธุรกิจกับคุณ แต่เนื่องจากเหตุผลบางประการที่พวกเขาไม่ได้เปลี่ยนเป็นลูกค้า
 
 <img alt="Lead Details" class="screenshot"
     src="{{docs_base_url}}/assets/img/crm/report/prospects_engaged_but_not_converted.png">
 
-###4. Minutes to First Response for Opportunity
-In this internet era, we all expect a quicker response time to any of our queries. This report gives you the details about time taken by sales executives for response to an opportunity. Lesser the average time for first response the better.
+###4. การตอบสนองสำหรับโอกาส
+ในยุคอินเทอร์เน็ตนี้ เราทุกคนต่างคาดหวังให้เวลาในการตอบคำถามของเราเร็วขึ้น รายงานนี้ให้รายละเอียดเกี่ยวกับเวลาที่ผู้บริหารฝ่ายขายใช้ในการตอบสนองต่อโอกาสทางการขาย น้อยกว่าเวลาเฉลี่ยสำหรับการตอบสนองครั้งแรกที่ดีกว่า
 
-You can input the date range for which you would like to analyse the minutes to first response. The line graph is shown on the top and date wise details at the bottom.
+คุณสามารถป้อนช่วงวันที่ที่คุณต้องการวิเคราะห์นาทีที่ตอบกลับครั้งแรก กราฟเส้นจะแสดงที่ด้านบนและรายละเอียดวันที่ที่ด้านล่าง
 
 <img alt="Lead Details" class="screenshot" src="{{docs_base_url}}/assets/img/crm/report/minutes_to_first_response.png">
 
-###5. Inactive Customers
-This report shows the list of customers who have not purchased since specific number of days. You can mention the number of days in 'Days Since Last Order' filter. Also you can mention if Sales Order or Sales Invoice is to be considered in DocType filter.
+###5. ลูกค้าที่ไม่ได้ใช้งาน
+รายงานนี้แสดงรายการลูกค้าที่ไม่ได้ซื้อตั้งแต่จำนวนวันที่กำหนด คุณสามารถระบุจำนวนวันในตัวกรอง 'วันตั้งแต่คำสั่งซื้อล่าสุด' นอกจากนี้ คุณสามารถพูดถึงว่าต้องพิจารณาใบสั่งขายหรือใบกำกับสินค้าในตัวกรอง DocType หรือไม่
 
 <img alt="Lead Details" class="screenshot" src="{{docs_base_url}}/assets/img/crm/report/inactive_customers.png">
 
 
-###6. Address And Contacts
-Select Customer in 'Party Type', the report will show address and contact details of all customers.
+###6. ที่อยู่และการติดต่อ
+เลือกลูกค้าใน 'ประเภทผู้ที่เกี่ยวข้อง' รายงานจะแสดงที่อยู่และรายละเอียดการติดต่อของลูกค้าทั้งหมด
 
-You can also select specific customer in 'Party Name' and report will show address and contact detail of that specific customer.
+คุณยังสามารถเลือกลูกค้าเฉพาะใน 'ชื่อคู่สัญญา' และรายงานจะแสดงที่อยู่และรายละเอียดการติดต่อของลูกค้ารายนั้น
 
 <img alt="Lead Details" class="screenshot" src="{{docs_base_url}}/assets/img/crm/report/address_and_contacts.png">
 
-### 7. Lost Opportunity
+### 7. เสียโอกาส
 
-This report provides Lost Opportunity details like opportunity from, party, customer name, lost reasons, sales stage, territory, and other details.
+รายงานนี้ให้รายละเอียดโอกาสที่สูญหาย เช่น โอกาสทางการขายจาก ฝ่าย ชื่อลูกค้า เหตุผลที่สูญหาย ขั้นตอนการขาย อาณาเขต และรายละเอียดอื่นๆ
 
 <img alt="Lead Details" class="screenshot" src="{{docs_base_url}}/assets/img/crm/report/lost_opportunity.png">
 

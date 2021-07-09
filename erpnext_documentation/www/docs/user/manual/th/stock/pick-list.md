@@ -8,109 +8,109 @@ metatags:
  keywords: Pick List, Picking Slip, frappe, Pick Ticket, erpnext new features, erp, open source erp, free erp, stock
 ---
 
-# Pick List
+# รายการเบิกสินค้า
 
-**A Pick List is a document that indicates which items should be taken from your inventory to fulfill orders.**
+**รายการเบิกสินค้าคือเอกสารที่ระบุว่ารายการใดที่ควรนำออกจากสินค้าคงคลังของคุณเพื่อดำเนินการตามคำสั่งซื้อ**
 
-This is particularly useful for shippers with a large amount of inventory, volume of orders, or customers ordering many Stock Keeping Unit(SKU).
-Pick list selects Warehouse where an Item is available on FIFO (First-In-First-Out) basis.
-Selection of Warehouse for a batched item is different. In case of batched items, Warehouse where the batch is nearer to its expiry will be selected.
+สิ่งนี้มีประโยชน์อย่างยิ่งสำหรับผู้ส่งสินค้าที่มีสินค้าคงคลังจำนวนมาก ปริมาณการสั่งซื้อ หรือลูกค้าที่สั่งซื้อหน่วยเก็บสต็อค (SKU) จำนวนมาก
+รายการเบิกสินค้าจะเลือกคลังสินค้าที่มีรายการสินค้าแบบ FIFO (เข้าก่อน-ออกก่อน)
+การเลือกคลังสินค้าสำหรับสินค้าเป็นชุดจะแตกต่างกัน ในกรณีของสินค้าเป็นชุด คลังสินค้าที่ชุดสินค้าใกล้จะหมดอายุจะถูกเลือก
 
-To access Pick List, go to:
+หากต้องการเข้าถึง รายการเบิกสินค้า ให้ไปที่:
 
-> Home > Stock > Stock Transactions > Pick List
+> หน้าหลัก > หุ้น > ธุรกรรมหุ้น > รายการเบิกสินค้า
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating and using a Pick List, it is advised that you create the following first:
+ก่อนสร้างและใช้ Pick List ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-- [Stock Item](/docs/user/manual/en/stock/item)
-- [Warehouse](/docs/user/manual/en/stock/warehouse)
+- [สินค้าคงคลัง](/docs/user/manual/th/stock/item)
+- [คลังสินค้า](/docs/user/manual/th/stock/warehouse)
 
-## 2. How to create Pick List
+## 2. วิธีสร้างรายการเบิกสินค้า
 
-1. Go to the Pick List list, click on New.
+1. ไปที่ รายการเบิกสินค้า แล้วคลิก ใหม่
  <img class='screenshot' alt='Unsaved Pick List' src='{{docs_base_url}}/assets/img/stock/pick-list-unsaved-doc.png'>
 
-1. Set the Company.
-1. Select the Purpose of Pick List. These are the options under Purpose:
+1. ตั้งบริษัท
+1. เลือกวัตถุประสงค์ของรายการเลือก นี่คือตัวเลือกภายใต้วัตถุประสงค์:
 
-   - **Delivery:** This option will let you add Items from a Sales Order, to deliver. After submitting Pick List a new Delivery Note can be created based on the Warehouse from which items were picked.
+   - **การส่งมอบ:** ตัวเลือกนี้จะช่วยให้คุณเพิ่มรายการจากใบสั่งขายเพื่อส่งมอบได้ หลังจากส่งรายการเบิกสินค้าแล้ว คุณสามารถสร้างบันทึกการจัดส่งใหม่โดยอิงตามคลังสินค้าที่รายการถูกหยิบขึ้นมา
 
-   - **Material Transfer for Manufacture:** This will let you select a Work Order from which raw materials will be pulled for picking. You will be presented with an option to select the number of finished goods for which you want to pick raw materials. After picking the stock you can create Stock Entry for the picked items i.e., raw materials.
+   - **การขนย้ายวัสดุสำหรับการผลิต:** สิ่งนี้จะให้คุณเลือกสั่งงานซึ่งวัตถุดิบจะถูกดึงมาเพื่อหยิบ คุณจะเห็นตัวเลือกให้เลือกจำนวนสินค้าสำเร็จรูปที่คุณต้องการเลือกวัตถุดิบ หลังจากเลือกสต็อคแล้ว คุณสามารถสร้างรายการสต็อคสำหรับสินค้าที่เลือกได้ เช่น วัตถุดิบ
 
-   - **Material Transfer:** This will let you select a Material Request for which you want to pick items. After picking the stock you can create a Stock Entry for the picked items.
+   - **การโอนย้ายวัตถุ:** สิ่งนี้จะช่วยให้คุณเลือกคำขอวัสดุที่คุณต้องการเลือกรายการ หลังจากเลือกสต็อคแล้ว คุณสามารถสร้างรายการสต็อคสำหรับรายการที่เลือกได้
 
-1. Add Item and the quantity you want to pick in the Item Locations table. Click on **Get Item Locations** to get the Warehouse and other details for each Item.
+1. เพิ่มรายการและจำนวนที่คุณต้องการเลือกในตารางตำแหน่งรายการ คลิกที่ **รับตำแหน่งสินค้า** เพื่อรับคลังสินค้าและรายละเอียดอื่น ๆ สำหรับแต่ละรายการ
 
-1. **Parent Warehouse:** If a parent Warehouse is selected, Warehouses only under that parent Warehouse will be suggested.
+1. **Parent Warehouse:** หากเลือก parent Warehouse ไว้ ระบบจะแนะนำ Warehouses ที่อยู่ภายใต้ Warehouse หลักนั้นเท่านั้น
 
-1. **Get Item Locations:** Once items to be picked is finalized you can click on the **Get Item Locations** button to get Warehouse selection for each item. Since Warehouse will be automatically fetched if you get an Item from any reference document, this button can be useful to manually add additional Items or change the quantity of existing Items in the Item Locations table.
+1. **รับตำแหน่งรายการ:** เมื่อเลือกรายการเรียบร้อยแล้ว คุณสามารถคลิกที่ปุ่ม **รับตำแหน่งรายการ** เพื่อรับการเลือกคลังสินค้าสำหรับแต่ละรายการ เนื่องจากคลังสินค้าจะถูกดึงข้อมูลโดยอัตโนมัติหากคุณได้รับสินค้าจากเอกสารอ้างอิง ปุ่มนี้จึงมีประโยชน์ในการเพิ่มสินค้าด้วยตนเองหรือเปลี่ยนปริมาณของสินค้าที่มีอยู่ในตารางตำแหน่งสินค้า
 
-1. **Item Locations:** This will have the information of the item location (Warehouse), Serial Number for serialized items and batch no for batched items.
+1. **ตำแหน่งสินค้า:** ซึ่งจะมีข้อมูลตำแหน่งของสินค้า (คลังสินค้า) หมายเลขซีเรียลสำหรับรายการต่อเนื่อง และหมายเลขชุดสำหรับรายการเป็นชุด
  <img class='screenshot' alt='Item Locations' src='{{docs_base_url}}/assets/img/stock/pick-list-item-locations.png'>
 
- If Serial Numbers are involved, the Item row will look like this:
+ หากเกี่ยวข้องกับ Serial Numbers แถว Item จะมีลักษณะดังนี้:
  <img class='screenshot' alt='Item Location Detail' src='{{docs_base_url}}/assets/img/stock/pick-list-item-location-detail.png'>
 
-1. Save and Submit.
+1. บันทึกและส่ง
  <img class='screenshot' alt='Submitted Pick List' src='{{docs_base_url}}/assets/img/stock/pick-list-submitted-doc.png'>
 
-### 2.1 Create Pick List from a Sales Order
+### 2.1 สร้างรายการการเบิกสินค้าจากใบสั่งขาย
 
-1. Go to a [Sales Order](/docs/user/manual/en/selling/sales-order).
-1. Click on the **Create** button on the top right of the form and then click the **Pick List** option.
-1. Once you click Pick List, all the data required for Pick List will be fetched from the Sales Order.
-1. You should be able to see the Item Locations Table with the Warehouse selected for each item.
-1. Save this document and it can be used for stock picking by the person performing this activity.
-1. Submit the document once the stock picking is done and picked item quantities are updated in the document.
+1. ไปที่ [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order)
+1. คลิกที่ปุ่ม **สร้าง** ที่ด้านบนขวาของแบบฟอร์ม จากนั้นคลิกตัวเลือก **เลือกรายการ**
+1. เมื่อคุณคลิก รายการเบิกสินค้า ข้อมูลทั้งหมดที่จำเป็นสำหรับ รายการเบิกสินค้า จะถูกดึงมาจากใบสั่งขาย
+1. คุณควรจะเห็นตารางตำแหน่งสินค้าโดยเลือกคลังสินค้าสำหรับแต่ละรายการ
+1. บันทึกเอกสารนี้และสามารถใช้สำหรับการเลือกสต็อกโดยบุคคลที่ทำกิจกรรมนี้
+1. ส่งเอกสารเมื่อการเบิกสินค้าเสร็จสิ้นและปริมาณสินค้าที่เบิกได้รับการปรับปรุงในเอกสาร
 
-**Tip:** You can create a Pick List for multiple Sales Order from the same Customer. Click on Get Items and select the Sales Orders.
+**เคล็ดลับ:** คุณสามารถสร้าง รายการเบิกสินค้า สำหรับใบสั่งขายหลายรายการจากลูกค้ารายเดียวกัน คลิกรับรายการและเลือกใบสั่งขาย
 
-> **Note:**
+> **หมายเหตุ:**
 >
-> - Pick list can only be created for Sales Orders which has pending Items to be delivered.
-> - A **Delivery Note** can be created only if the Pick List is submitted.
+> - รายการเบิกสินค้าสามารถสร้างได้เฉพาะสำหรับใบสั่งขายที่มีรายการที่รอดำเนินการที่จะจัดส่ง
+> - สามารถสร้าง **หมายเหตุการจัดส่ง** ได้ก็ต่อเมื่อส่งรายการเลือกแล้วเท่านั้น
 
-### 2.2 Create Pick List from a Work Order
+### 2.2 สร้างรายการเบิกจากใบสั่งงาน
 
-1. Go to a [Work Order](/docs/user/manual/en/manufacturing/work-order).
-1. Click **Create Pick List** button.
-1. You'll see the dialog box asking for the quantity of Finished Goods Item. This is required to calculate the number of raw material items required to manufacture the entered quantity of Finished Goods Item.
+1. ไปที่ [ใบสั่งงาน](/docs/user/manual/th/manufacturing/work-order)
+1. คลิกปุ่ม **สร้างรายการเลือก**
+1. คุณจะเห็นกล่องโต้ตอบถามถึงปริมาณของสินค้าสำเร็จรูป นี่เป็นสิ่งจำเป็นในการคำนวณจำนวนรายการวัตถุดิบที่จำเป็นในการผลิตปริมาณที่ป้อนของรายการสินค้าสำเร็จรูป
 <img class='screenshot' alt='Dialog For qty' src='{{docs_base_url}}/assets/img/stock/pick-list-dialog-for-qty.png'>
 
-1. You should be able to see the Item locations table with the Warehouse selected for each raw material item.
-1. Save this document and then this document can be forwarded to the person who is picking the stock.
-1. Submit the document once the stock picking is done and the picked item is updated in the document accordingly.
+1. คุณควรจะสามารถดูตารางตำแหน่งสินค้าโดยเลือกคลังสินค้าสำหรับแต่ละรายการวัตถุดิบ
+1. บันทึกเอกสารนี้แล้วสามารถส่งต่อเอกสารนี้ไปยังบุคคลที่กำลังเบิกสินค้าได้
+1. ส่งเอกสารเมื่อการเบิกสินค้าเสร็จสิ้นและรายการเบิกสินค้าได้รับการปรับปรุงในเอกสารตามลำดับ
 
-> **Note:**
+> **หมายเหตุ:**
 >
-> - Pick list can only be created for Work Orders that are still in the state of 'Not Started' or 'In Progress'.
-> - A **Stock Entry** can be created only after the Pick List is submitted.
+> - รายการเลือกสามารถสร้างได้เฉพาะสำหรับใบสั่งงานที่ยังอยู่ในสถานะ 'ยังไม่เริ่ม' หรือ 'กำลังดำเนินการ'
+> - **รายการสินค้า** สามารถสร้างได้หลังจากส่งรายการเลือกแล้วเท่านั้น
 
-### 2.3 Create Pick List from Material Request
+### 2.3 สร้างรายการเบิกสินค้าจากคำขอวัสดุ
 
-1. Go to a [Material Request](/docs/user/manual/en/stock/material-request).
-1. Click on **Create** button and then click **Pick List** option.
-1. You should be able to see the Item Locations table with the Warehouse selected for each item in Material Request.
-1. Save this document and then this document can be forwarded to the person picking the stock.
-1. Submit the document once the stock picking is done and the picked item is updated in the document accordingly.
+1. ไปที่ [คำขอวัสดุ](/docs/user/manual/th/stock/material-request)
+1. คลิกที่ปุ่ม **สร้าง** แล้วคลิกตัวเลือก **เลือกรายการ**
+1. คุณควรจะสามารถเห็นตารางตำแหน่งสินค้าโดยเลือกคลังสินค้าสำหรับแต่ละรายการในคำขอวัสดุ
+1. บันทึกเอกสารนี้แล้วสามารถส่งต่อเอกสารนี้ไปยังผู้ที่เบิกสินค้าได้
+1. ส่งเอกสารเมื่อการเบิกสินค้าเสร็จสิ้นและรายการเบิกสินค้าได้รับการปรับปรุงในเอกสารตามลำดับ
 
-> **Note:**
+> **หมายเหตุ:**
 >
-> - Only Material Requests with type 'Material Transfer' can be used for Pick List creation.
-> - A **Stock Entry** of type 'Material Transfer' can be created after the Pick List is submitted.
+> - เฉพาะคำขอวัสดุที่มีประเภท 'การโอนย้ายวัตถุ' เท่านั้นที่สามารถใช้ได้สำหรับการสร้างรายการเลือก
+> - สามารถสร้าง **รายการสินค้า** ประเภท 'การโอนวัสดุ' ได้หลังจากส่งรายการเลือกแล้ว
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1. Update Current Stock
+### 3.1. อัพเดทสต๊อกปัจจุบัน
 
-If a Pick List is outdated, there could be a shift in stock availability by the time a Delivery Note or Stock Entry is created against it. Clicking **Update Current Stock** will update the quantities and warehouses in the Item Locations table.
+หากรายการเบิกสินค้าล้าสมัย อาจมีการเปลี่ยนแปลงความพร้อมในสต็อกเมื่อถึงเวลาสร้างใบส่งสินค้าหรือรายการสต็อค การคลิก **อัปเดตสต็อคปัจจุบัน** จะอัปเดตปริมาณและคลังสินค้าในตารางตำแหน่งรายการ
 
-> **Note:** This button is visible as long as there are no Delivery Notes or Stock Entries against the Pick List.
+> **หมายเหตุ:** ปุ่มนี้จะมองเห็นได้ตราบใดที่ไม่มีบันทึกการจัดส่งหรือรายการสต็อคเทียบกับรายการเบิกสินค้า
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Work Order](/docs/user/manual/en/manufacturing/work-order)
-1. [Material Request](/docs/user/manual/en/stock/material-request)
+1. [คำสั่งขาย](/docs/user/manual/th/selling/sales-order)
+1. [สั่งงาน](/docs/user/manual/th/manufacturing/work-order)
+1. [คำขอวัสดุ](/docs/user/manual/th/stock/material-request)

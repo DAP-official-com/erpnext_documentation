@@ -1,32 +1,32 @@
 <!-- add-breadcrumbs -->
-#Managing Rejected Finished Goods Items
+# การจัดการรายการสินค้าสำเร็จรูปที่ถูกปฏิเสธ
 
-There could be manufactured Items which would not pass quality test, hence rejected.
+อาจมีสินค้าที่ผลิตขึ้นซึ่งไม่ผ่านการทดสอบคุณภาพจึงถูกปฏิเสธ
 
-Standard manufacturing process in ERPNext doesn't cover managing rejected items. Hence you should create finished goods entry for both accepted as well as rejected items. With this, you will have rejected items also received in the finished goods warehouse.
+กระบวนการผลิตมาตรฐานใน ERPNext ไม่ครอบคลุมถึงการจัดการสินค้าที่ถูกปฏิเสธ ดังนั้นคุณควรสร้างรายการสินค้าสำเร็จรูปสำหรับทั้งสินค้าที่ยอมรับและปฏิเสธ ด้วยวิธีนี้ คุณจะได้รับการปฏิเสธสินค้าที่ได้รับในคลังสินค้าสำเร็จรูปด้วย
 
-To move rejected items from the finished goods warehouse, you should create Material Transfer entry. Steps below to create Material Transfer entry.
+หากต้องการย้ายสินค้าที่ถูกปฏิเสธออกจากคลังสินค้าสินค้าสำเร็จรูป คุณควรสร้างรายการการโอนย้ายวัสดุ ขั้นตอนด้านล่างเพื่อสร้างรายการโอนย้ายวัสดุ
 
-####Step 1: New Stock Entry
+#### ขั้นตอนที่ 1: รายการสต็อคใหม่
 
-`Stock > Documents > Stock Entry > New`
+`สต็อค > เอกสาร > รายการสต็อค > ใหม่`
 
-####Step 2: Purpose
+#### ขั้นตอนที่ 2: วัตถุประสงค์
 
-Purpose = Material Transfer
+วัตถุประสงค์ = การถ่ายโอนวัสดุ
 
-####Step 3: Warehouse
+#### ขั้นตอนที่ 3: โกดัง
 
-Source Warehouse = Finished Goods warehouse
-Target Warehouse = Rejected items warehouse
+คลังสินค้าต้นทาง = คลังสินค้าสำเร็จรูป
+คลังสินค้าเป้าหมาย = คลังสินค้าที่ถูกปฏิเสธ
 
-####Step 4: Items
+#### ขั้นตอนที่ 4: รายการ
 
-Select item which failed quality test, and enter total rejected items as Qty.
+เลือกรายการที่ล้มเหลวในการทดสอบคุณภาพ และป้อนรายการที่ถูกปฏิเสธทั้งหมดเป็น จำนวน
 
-####Step 5: Submit Stock Entry
+#### ขั้นตอนที่ 5: ส่งรายการสต็อค
 
-On Saving and Submitting Stock Entry, stock of rejected items will be moved from Finished Goods Warehouse to Rejected Warehouse.
+ในการบันทึกและการส่งรายการสต็อค สต็อคของสินค้าที่ถูกปฏิเสธจะถูกย้ายจากคลังสินค้าสำเร็จรูปไปยังคลังสินค้าที่ถูกปฏิเสธ
 
 
 <!-- markdown -->

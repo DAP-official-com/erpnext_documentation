@@ -1,18 +1,18 @@
 <!-- add-breadcrumbs -->
-# Item Valuation Methods and Transactions
+# วิธีการประเมินมูลค่าสินค้าและธุรกรรม
 
-In ERPNext, Item's stock valuation is updated on the creation of one of the following transaction.
+ใน ERPNext การประเมินมูลค่าหุ้นของสินค้าจะได้รับการอัปเดตโดยสร้างรายการใดรายการหนึ่งต่อไปนี้
 
-1.  Purchase Receipt
-2.  Stock Entry of type Material Receipt
-3.  Stock Reconciliation made for updating stock opening balance
+1. ใบเสร็จการซื้อ
+2. รายการสต็อคของประเภท ใบเสร็จวัสดุ
+3. การกระทบยอดสต็อกสำหรับอัปเดตยอดเปิดสต็อค
 
-You can select valuation method based on which item's value will be calculated. Valuation Method can be set globally for all the items from the Stock Settings.
+คุณสามารถเลือกวิธีการประเมินมูลค่าตามมูลค่าของรายการที่จะคำนวณได้ วิธีการประเมินมูลค่าสามารถตั้งค่าได้ทั่วโลกสำหรับสินค้าทั้งหมดจากการตั้งค่าสต็อก
 
 <img class="screenshot" alt="Download Backup" src="{{docs_base_url}}/assets/img/articles/item-valuation-1.png">
 
-You can also set Valuation Method in the item master, especially when a valuation method for an item is different from the default Method.
+คุณยังสามารถตั้งค่าวิธีการประเมินมูลค่าในข้อมูลหลักรายการ โดยเฉพาะอย่างยิ่งเมื่อวิธีการประเมินมูลค่าสำหรับสินค้าแตกต่างจากวิธีการเริ่มต้น
 
 <img class="screenshot" alt="Download Backup" src="{{docs_base_url}}/assets/img/articles/item-valuation-2.png">
 
-[Click here to learn about the valuation methods available in the ERPNext, and how it works.](https://frappe.io/blog/erpnext-features/inventory-valuation-method-fifo-vs-moving-average)
+[คลิกที่นี่เพื่อเรียนรู้เกี่ยวกับวิธีการประเมินที่มีอยู่ใน ERPNext และวิธีการทำงาน](https://frappe.io/blog/erpnext-features/inventory-valuation-method-fifo-vs-moving-average)

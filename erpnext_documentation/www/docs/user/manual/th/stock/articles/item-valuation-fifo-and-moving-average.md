@@ -1,29 +1,29 @@
 <!-- add-breadcrumbs -->
-# Item Valuation Fifo And Moving Average
+# การประเมินมูลค่ารายการ Fifo และค่าเฉลี่ย
 
-### How are Items Valued?
+### ไอเทมมีมูลค่าอย่างไร?
 
-One of the major features of any inventory system is that you can find out the
-value of any item based on its historic or average price. You can also find
-the value of all your items for your balance sheet.
+หนึ่งในคุณสมบัติที่สำคัญของระบบสินค้าคงคลังคือคุณสามารถค้นหา
+มูลค่าของรายการใด ๆ ตามราคาย้อนหลังหรือราคาเฉลี่ย นอกจากนี้คุณยังสามารถหา
+มูลค่าของรายการทั้งหมดของคุณสำหรับงบดุลของคุณ
 
-Valuation is important because:
+การประเมินมูลค่ามีความสำคัญเนื่องจาก:
 
-  * The buying price may fluctuate.
-  * The value may change because of some process (value add).
-  * The value may change because of decay, loss etc.
+  * ราคาซื้ออาจผันผวน
+  * ค่าอาจเปลี่ยนแปลงเนื่องจากกระบวนการบางอย่าง (มูลค่าเพิ่ม)
+  * ค่าอาจเปลี่ยนแปลงได้เนื่องจากการผุกร่อน การสูญเสีย ฯลฯ
 
-You may encounter these terms, so lets clarify:
+คุณอาจพบข้อกำหนดเหล่านี้ ดังนั้นขอให้ชี้แจง:
 
-  * Rate: Rate at which the transaction takes place.
-  * Valuation Rate: Rate at which the items value is set for your valuation.
+  * อัตรา: อัตราที่ทำธุรกรรม
+  * อัตราการประเมิน: อัตราที่มูลค่ารายการถูกกำหนดสำหรับการประเมินมูลค่าของคุณ
 
-There are two major ways in which ERPNext values your items.
+มีสองวิธีหลักที่ ERPNext ให้คุณค่ากับสินค้าของคุณ
 
-  * **FIFO (First In First Out):** In this system, ERPNext assumes that you will consume / sell those Items first which you bought first. For example, if you buy an Item at price X and then after a few days at price Y, whenever you sell your Item, ERPNext will reduce the quantity of the Item priced at X first and then Y.
+  * **FIFO (เข้าก่อนออกก่อน):** ในระบบนี้ ERPNext ถือว่าคุณจะบริโภค / ขายไอเทมเหล่านั้นก่อนที่คุณซื้อก่อน ตัวอย่างเช่น หากคุณซื้อสินค้าที่ราคา X และหลังจากนั้นสองสามวันที่ราคา Y เมื่อใดก็ตามที่คุณขายสินค้าของคุณ ERPNext จะลดปริมาณของสินค้าที่ราคา X ก่อนแล้วจึงค่อย Y
 
 <img alt="FIFO" class="screenshot" src="{{docs_base_url}}/assets/img/stock/fifo.png">
 
-  * **Moving Average:** In this method, ERPNext assumes that the value of the item at any point is the average price of the units of that Item in stock. For example, if the value of an Item is X in a Warehouse with quantity Y and another quantity Y1 is added to the Warehouse at cost X1, the new value X2 would be:
+* **ค่าเฉลี่ย:** ในวิธีนี้ ERPNext จะถือว่ามูลค่าของสินค้า ณ จุดใดก็ตามคือราคาเฉลี่ยของหน่วยของสินค้านั้นในสต็อก ตัวอย่างเช่น หากมูลค่าของสินค้าคือ X ในคลังสินค้าที่มีปริมาณ Y และปริมาณอื่น Y1 ถูกเพิ่มไปยังคลังสินค้าที่ราคา X1 ค่าใหม่ X2 จะเป็น:
 
 > New Value X2 = (X * Y + X1 * Y1) / (Y + Y1)

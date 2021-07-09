@@ -8,44 +8,44 @@ metatags:
  keywords: Social Media Post Scheduling, CRM, frappe, erpnext new features, erp, open source erp, free erp, security
 ---
 
-# Twitter Settings
+# การตั้งค่า Twitter
 
-Twitter related settings like OAuth can be configured here. ERPNext needs access to the API through which the post is shared and achieved using OAuth 2.0 Authentication Protocol.
+คุณสามารถกำหนดค่าการตั้งค่าที่เกี่ยวข้องกับ Twitter เช่น OAuth ได้ที่นี่ ERPNext ต้องการสิทธิ์เข้าถึง API ซึ่งโพสต์นั้นถูกแชร์และบรรลุโดยใช้ OAuth 2.0 Authentication Protocol
 
-## 1. How to set up Twitter App
+## 1. วิธีตั้งค่า Twitter App
 
-You must have Twitter App for your company. ERPNext interacts with this App for sharing Tweet. 
+คุณต้องมีแอพ Twitter สำหรับบริษัทของคุณ ERPNext โต้ตอบกับแอพนี้เพื่อแชร์ทวีต
 
-### 1.1 Create Twitter Developer App
+### 1.1 สร้างแอพ Twitter Developer
 
-Create App by link `https://developer.twitter.com/` and check that the App has **Read and write** Access permission.
+สร้างแอปโดยลิงก์ `https://developer.twitter.com/' และตรวจสอบว่าแอปนั้นมีสิทธิ์การเข้าถึง **อ่านและเขียน**
 ![Twitter App Permission](/docs/assets/img/crm/twitter-app-permission.png)
 
-### 1.2. Configure Callback URL
-1. Select your App and go to **App Details**.
-2. Then go to **Edit** and click **Edit Details**.
-3. Add your website URL in **Callback URLs** like:
-`https://{yoursite}/api/method/erpnext.crm.doctype.twitter_settings.twitter_settings.callback`
-4. Click **Save** to make changes. 
+### 1.2. กำหนดค่า Callback URL
+1. เลือกแอพของคุณและไปที่ **รายละเอียดแอพ**
+2. จากนั้นไปที่ **แก้ไข** และคลิก **แก้ไขรายละเอียด**
+3. เพิ่ม URL เว็บไซต์ของคุณใน **URL โทรกลับ** เช่น:
+`https://{ไซต์ของคุณ}/api/method/erpnext.crm.doctype.twitter_settings.twitter_settings.callback`
+4. คลิก **บันทึก** เพื่อทำการเปลี่ยนแปลง
 
 ![Twitter App Callback URL](/docs/assets/img/crm/twitter-callback-url.png)
 
 
-## 2. How to set up Twitter Settings
+## 2. วิธีการตั้งค่า Twitter 
 
-To access Twitter Settings, go to:
-> Home > CRM > Settings > Twitter Settings
+ในการเข้าถึงการตั้งค่า Twitter ไปที่:
+> หน้าแรก > CRM > การตั้งค่า > การตั้งค่า Twitter
 
 ![Twitter Settings](/docs/assets/img/crm/twitter-settings.png)
 
-### 2.1 API Key and API Key Secret
+### 2.1 คีย์ API และรหัสลับของ API
 
-You get **API Key** and **API Key Secret** from your Twitter Developer account go to:
+คุณได้รับ **API Key** และ **API Key Secret** จากบัญชีนักพัฒนา Twitter ของคุณ ไปที่:
 > `https://developer.twitter.com/` > My Apps > `{Your App}` > Keys and tokens
 
 ![Twitter Keys Tokens](/docs/assets/img/crm/twitter-key-token.png)
 
-Once you save the doc by filling **API Key** and **API Key Secret** it will redirect to Twitter's sign-in page by providing valid Twitter credentials and clicking **Authorize app**, the member approves your application's request to access their member data and interact with Twitter.
+เมื่อคุณบันทึกเอกสารโดยกรอก **รหัส API** และ **รหัสลับของ API** เอกสารจะเปลี่ยนเส้นทางไปยังหน้าลงชื่อเข้าใช้ของ Twitter โดยระบุข้อมูลประจำตัว Twitter ที่ถูกต้องและคลิก **อนุญาตแอป** สมาชิกจะอนุมัติคำขอแอปพลิเคชันของคุณ เพื่อเข้าถึงข้อมูลสมาชิกและโต้ตอบกับ Twitter
 ![Twitter Authorize App](/docs/assets/img/crm/twitter-authorize-app.png)
 
 {next}

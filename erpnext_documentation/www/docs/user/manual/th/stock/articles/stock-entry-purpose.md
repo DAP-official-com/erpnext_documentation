@@ -1,49 +1,49 @@
 <!-- add-breadcrumbs -->
-#Stock Entry Purpose
+#วัตถุประสงค์ของรายการสต็อค
 
-Stock Entry is a stock transaction, which can be used for multiple purposes. Let's learn about each Stock Entry Purpose below.
+รายการสต็อคเป็นธุรกรรมเกี่ยวกับสต็อคซึ่งสามารถนำมาใช้เพื่อวัตถุประสงค์ได้หลายอย่าง มาเรียนรู้เกี่ยวกับวัตถุประสงค์ในการเข้าสต็อกแต่ละรายการด้านล่าง
 
-#### 1.Purpose: Material Issue
+#### 1.วัตถุประสงค์: ด้านวัสดุ
 
-Material Issue entry create to issue item(s) from a warehouse. On submission of Material Issue, stock of item is deducted from the Source Warehouse.
+รายการการออกวัสดุสร้างเพื่อออกรายการจากคลังสินค้า ในการยื่นเรื่อง Material Issue สต็อคของสินค้าจะถูกหักออกจาก Source Warehouse
 
-Material Issue is generally made for the low value consumable items like office stationary, product consumables etc. Also you can create Material Issue to reconcile serialized and batched item's stock.
+โดยทั่วไป การตัดสินค้าจากคลังวัสดุจะทำขึ้นสำหรับสินค้าอุปโภคบริโภคที่มีมูลค่าต่ำ เช่น เครื่องเขียนในสำนักงาน วัสดุสิ้นเปลืองของผลิตภัณฑ์ ฯลฯ นอกจากนี้ คุณยังสามารถสร้าง Material Issue เพื่อกระทบยอดสินค้าคงคลังของสินค้าต่อเนื่องและต่อเนื่อง
 
 <img alt="Material Issue" class="screenshot" src="{{docs_base_url}}/assets/img/articles/stock-entry-issue.png">
 
-#### 2.Purpose: Material Receipt
+#### 2.วัตถุประสงค์: ใบเสร็จรับเงินวัสดุ
 
-Material Receipt entry is created to inward stock of item(s) in a warehouse. This type of stock entry can be created for updating opening balance of serialized and batched item. Also items purchased without Purchase Order can be inwarded from Material Receipt entry.
+รายการการรับวัสดุถูกสร้างขึ้นเพื่อเข้าสต็อคสินค้าในคลังสินค้า รายการสต็อคประเภทนี้สามารถสร้างขึ้นเพื่ออัปเดตยอดดุลต้นงวดของรายการต่อเนื่องและแบบแบทช์ นอกจากนี้ รายการที่ซื้อโดยไม่มีใบสั่งซื้อสามารถเข้าได้จากรายการรับวัสดุ
 
-For the stock valuation purpose, provided Item Valuation becomes a mandatory field in the Material Receipt entry.
+สำหรับวัตถุประสงค์ในการประเมินมูลค่าหุ้น โดยที่การประเมินมูลค่าสินค้าจะกลายเป็นฟิลด์บังคับในรายการการรับวัสดุ
 
 <img alt="Material Receipt" class="screenshot" src="{{docs_base_url}}/assets/img/articles/stock-entry-receipt.png">
 
-#### 3.Purpose: Material Transfer
+#### 3.วัตถุประสงค์: การถ่ายโอนวัสดุ
 
-Material Transfer entry is created for the inter-warehouse Material Transfer.
+รายการโอนวัสดุถูกสร้างขึ้นสำหรับการถ่ายโอนวัสดุระหว่างคลังสินค้า
 
 <img alt="Material Transfer" class="screenshot" src="{{docs_base_url}}/assets/img/articles/stock-entry-transfer.png">
 
-#### 4.Purpose: Material Transfer for Manufacture
+#### 4.วัตถุประสงค์: การถ่ายโอนวัสดุเพื่อการผลิต
 
-In the manufacturing process, raw-materials are issued from the stores to the production department (generally WIP warehouse). This Material Transfer entry is created from Work Order. Items in this entry are fetched from the BOM of production Item, as selected in Work Order.
+ในกระบวนการผลิต วัตถุดิบจะออกจากร้านค้าไปยังแผนกผลิต (โดยทั่วไปคือคลังสินค้า WIP) รายการโอนวัสดุนี้สร้างขึ้นจากใบสั่งงาน รายการในรายการนี้ถูกดึงมาจาก BOM ของรายการการผลิต ตามที่เลือกไว้ในใบสั่งงาน
 
 <img alt="Transfer for Manufacture" class="screenshot" src="{{docs_base_url}}/assets/img/articles/stock-entry-manufacture-transfer.gif">
 
-#### 4.Purpose: Manufacture
+#### 4.วัตถุประสงค์: การผลิต
 
-Manufacture is created from Work Order. In this entry, both raw-material item as well as production item are fetched from the BOM, selected in the Work Order. For the raw-material items, only Source Warehouse (generally WIP warehouse) is mentioned. For the production item, only target warehouse as mentioned in the Work Order is updated. On submission, stock of raw-material items are deducted from Source Warehouse, which indicates that raw-material items were consumed in the manufacturing process. Production Item is added to the Target Warehouse marking the completion of production cycle.
+การผลิตถูกสร้างขึ้นจากคำสั่งงาน ในรายการนี้ ทั้งรายการวัตถุดิบและรายการการผลิตจะถูกดึงมาจาก BOM ซึ่งเลือกไว้ในใบสั่งงาน สำหรับรายการวัตถุดิบ จะกล่าวถึงเฉพาะ Source Warehouse (โดยทั่วไปคือ คลังสินค้า WIP) สำหรับสินค้าการผลิต จะมีการปรับปรุงเฉพาะคลังสินค้าเป้าหมายตามที่กล่าวไว้ในใบสั่งงาน ในการส่ง สต็อคของรายการวัตถุดิบจะถูกหักจาก Source Warehouse ซึ่งบ่งชี้ว่ามีการใช้รายการวัตถุดิบในกระบวนการผลิต เพิ่มรายการการผลิตลงในคลังสินค้าเป้าหมายซึ่งทำเครื่องหมายว่ารอบการผลิตเสร็จสมบูรณ์
 
 <img alt="Manufacture" class="screenshot" src="{{docs_base_url}}/assets/img/articles/stock-entry-manufacture.gif">
 
-#### 5.Purpose: Repack
+#### 5.วัตถุประสงค์: แพ็คใหม่
 
-Repack Entry is created when items purchases in bulk is repacked under smaller packs. [Check this page to know more about Repack entry.](/docs/user/manual/en/stock/articles/repack-entry.html)
+รายการที่แพ็คใหม่ถูกสร้างขึ้นเมื่อมีการบรรจุรายการที่ซื้อจำนวนมากในแพ็คที่มีขนาดเล็กลง [ตรวจสอบหน้านี้เพื่อทราบข้อมูลเพิ่มเติมเกี่ยวกับรายการ Repack](/docs/user/manual/th/stock/articles/repack-entry.html)
 
-#### 6.Purpose: Subcontract
+#### 6.วัตถุประสงค์: ผู้รับเหมาช่วง
 
-Subcontracting transaction involves company transfer raw-material items to the sub-contractors warehouse. This requires adding a warehouse for the sub-contractor as well. Sub-contract entry transfers stock from the companies warehouse to the sub-contractors warehouse. [Check this page to know more about Subcontracting](/docs/user/manual/en/manufacturing/subcontracting.html).
+ธุรกรรมการรับเหมาช่วงเกี่ยวข้องกับการโอนวัตถุดิบของบริษัทไปยังคลังสินค้าของผู้รับเหมาช่วง ซึ่งต้องมีการเพิ่มคลังสินค้าสำหรับผู้รับเหมาช่วงด้วย รายการทำสัญญาช่วงโอนสต็อกจากคลังสินค้าของบริษัทไปยังคลังสินค้าของผู้รับเหมาช่วง [ตรวจสอบหน้านี้เพื่อทราบข้อมูลเพิ่มเติมเกี่ยวกับการรับเหมาช่วง](/docs/user/manual/th/manufacturing/subcontracting.html)
 
 <img alt="Subcontract" class="screenshot" src="{{docs_base_url}}/assets/img/articles/stock-entry-subcontract.gif">
 

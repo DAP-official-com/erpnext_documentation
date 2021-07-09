@@ -1,25 +1,25 @@
 <!-- add-breadcrumbs -->
-# Installation Note
+# หมายเหตุการติดตั้ง
 
-**An Installation Note can be created when a product/item is being installed or set up at the Customer's place.**
+**หมายเหตุการติดตั้งสามารถสร้างขึ้นได้เมื่อมีการติดตั้งหรือติดตั้งผลิตภัณฑ์/รายการ ณ สถานที่ของลูกค้า**
 
-For example, if you sell an Air Conditioner, a service person generally accompanies the delivery to install the Air Conditioner at the Customer’s place. The service person can create an “Installation Note”, to track the date and details of the installation.
+ตัวอย่างเช่น หากคุณขายเครื่องปรับอากาศ ผู้ให้บริการมักจะมาพร้อมกับการจัดส่งเพื่อติดตั้งเครื่องปรับอากาศที่สถานที่ของลูกค้า ผู้ให้บริการสามารถสร้าง “หมายเหตุการติดตั้ง” เพื่อติดตามวันที่และรายละเอียดของการติดตั้ง
 
-To access the Installation Note list, go to:
-> Home > Stock > Serial No and Batch > Installation Note
+ในการเข้าถึงรายการบันทึกการติดตั้ง ไปที่:
+> หน้าหลัก > สต็อก > หมายเลขซีเรียลและแบทช์ > หมายเหตุการติดตั้ง
 
-## 1. How to create an Installation Note
-An Installation Note is usually created from a Delivery Note. You can also create it manually and click on the 'From Delivery Note' button to fetch details from a selected Delivery Note.
+## 1. วิธีสร้างบันทึกการติดตั้ง
+โดยปกติบันทึกการติดตั้งจะถูกสร้างขึ้นจากบันทึกการจัดส่ง คุณยังสามารถสร้างด้วยตนเองและคลิกที่ปุ่ม 'จากใบนำส่ง' เพื่อดึงรายละเอียดจากใบนำส่งที่เลือก
 
-1. Go to the Installation Note list, click on New.
-1. The Customer, Item, and quantity will be fetched from the Delivery Note.
-1. The date and time are set to when the note is created.
-1. Save and submit.
+1. ไปที่รายการบันทึกการติดตั้ง คลิกที่ ใหม่
+1. ลูกค้า รายการ และปริมาณจะถูกเรียกจากใบส่งมอบ
+1. วันที่และเวลาถูกตั้งค่าเป็นเมื่อสร้างบันทึกย่อ
+1. บันทึกและส่ง
 
     <img class="screenshot" alt="Installation Note" src="{{docs_base_url}}/assets/img/stock/installation-note.png">
 
-Any additional remarks about the installation can be added. If the Item is serialized, the serial numbers can be added in Items table.
+สามารถเพิ่มข้อสังเกตเพิ่มเติมเกี่ยวกับการติดตั้งได้ หากรายการเป็นแบบอนุกรม คุณสามารถเพิ่มหมายเลขประจำเครื่องในตารางรายการได้
 
-### 2. Related Topics
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
-1. [Delivery Trip](/docs/user/manual/en/stock/delivery-trip)
+### 2. หัวข้อที่เกี่ยวข้อง
+1. [หมายเหตุการส่งของ](/docs/user/manual/th/stock/delivery-note)
+1. [ทริปส่งของ](/docs/user/manual/th/stock/delivery-trip)

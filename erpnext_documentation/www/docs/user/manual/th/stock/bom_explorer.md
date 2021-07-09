@@ -1,10 +1,10 @@
 <!-- add-breadcrumbs -->
 #BOM Explorer
 
-BOM Explorer Report shows a complete hierarchy of the Bill of Materials (BOM) with its raw materials in the form of the tree view.
+รายงาน BOM Explorer แสดงลำดับชั้นที่สมบูรณ์ของ Bill of Materials (BOM) ด้วยวัตถุดิบในรูปแบบของมุมมองแบบต้นไม้
 
-You need to select the BOM in the filter then the report will show the quantity of required raw materials and scraps for manufacturing the item. It is the complete tree view of assemblies, sub-assemblies i.e. all exploded items.
+คุณต้องเลือก BOM ในตัวกรอง จากนั้นรายงานจะแสดงปริมาณของวัตถุดิบและเศษวัสดุที่จำเป็นสำหรับการผลิตสินค้า เป็นมุมมองแบบต้นไม้ที่สมบูรณ์ของแอสเซมบลี แอสเซมบลีย่อย เช่น รายการที่ระเบิดทั้งหมด
 
-Using the BOM Explorer, user can view the quantity of raw materials and scraps from all exploded items and print it.
+เมื่อใช้ BOM Explorer ผู้ใช้สามารถดูปริมาณวัตถุดิบและเศษวัสดุจากรายการที่ระเบิดทั้งหมดและพิมพ์ได้
 
 <img alt="reorder level" class="screenshot" src="{{docs_base_url}}/assets/img/articles/bom_explorer.png">

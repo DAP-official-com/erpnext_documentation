@@ -8,78 +8,79 @@ metatags:
 ---
 
 <!-- add-breadcrumbs -->
-# Shipment
+#จัดส่ง
 
-**A Shipment is a document that keeps track of real-world Shipments created against a Delivery Note or independently.**
+**การจัดส่งเป็นเอกสารที่ติดตามการจัดส่งในโลกแห่งความเป็นจริงที่สร้างขึ้นโดยเทียบกับใบส่งสินค้าหรือแยกจากกัน**
 
-> Introduced in version 13
+> เปิดตัวในเวอร์ชั่น 13
 
-Shipments are particularly useful for shippers who want to track all their Shipment information such as AWB Number, Shipment Status, Carrier, etc. within ERPNext.
+การจัดส่งมีประโยชน์อย่างยิ่งสำหรับผู้จัดส่งที่ต้องการติดตามข้อมูลการจัดส่งทั้งหมด เช่น หมายเลข AWB สถานะการจัดส่ง ผู้ขนส่ง ฯลฯ ภายใน ERPNext
 
-To access the Shipment list, go to:
-> Home > Stock > Stock Transactions > Shipment
+ในการเข้าถึงรายการจัดส่ง ไปที่:
+> หน้าหลัก > หุ้น > ธุรกรรมหุ้น > การจัดส่ง
 
-## 1. Prerequisites
-Before creating and using a Shipment, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้งาน Shipment ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* Company and Customer [Address](/docs/user/manual/en/CRM/address) with Postal Code, Email Address and Phone Number set.
-* Customer [Contact](/docs/user/manual/en/CRM/contact).
+* บริษัทและลูกค้า พร้อมตั้ง [ที่อยู่](/docs/user/manual/th/CRM/address) รหัสไปรษณีย์ ที่อยู่อีเมล และหมายเลขโทรศัพท์
+* ลูกค้า [ติดต่อ](/docs/user/manual/th/CRM/contact).
 
-## 2. How to create a Shipment
-A Shipment can be created manually or from a Delivery Note:
+## 2. วิธีสร้างการจัดส่ง
+สามารถสร้างการจัดส่งด้วยตนเองหรือจากใบส่งสินค้า:
 
-### 2.1. Manual Shipment
-To create a Shipment manually, follow these steps:
+### 2.1. การจัดส่งด้วยตนเอง
+ในการสร้างการจัดส่งด้วยตนเอง ให้ทำตามขั้นตอนเหล่านี้:
 
-1. Go to the Shipment list, click on New.
+1. ไปที่รายการจัดส่ง คลิกที่ ใหม่
 
  <img class="screenshot" alt="Unsaved Shipment" src="{{docs_base_url}}/assets/img/stock/unsaved-shipment.png">
-1. Select an option in the **Pickup from** field. On selecting one of the three options, you will be prompted to select a Company/Supplier/Customer based on your selection.
-1. If you select 'Company' in the **Pickup from** field, along with the Address you must also select a **Pickup Contact Person** who will be a user from your organization, in ERPNext. Make sure the Last Name, Email Address and Phone Number are set for this user.
-1. You can similarly fill the **Delivery To** section.
-1. Add Shipment Parcel Information in the **Shipment Parcel** table.
-1. Fill in the Value of Goods.
-1. Select a Pickup Date.
-1. Add a Description of Contents in this Shipment.
-1. You can optionally fill the Shipment Information section if you are tracking Shipments manually.
-1. Save and Submit.
+
+1. เลือกตัวเลือกในช่อง **รับจาก** ในการเลือกหนึ่งในสามตัวเลือก คุณจะได้รับแจ้งให้เลือกบริษัท/ซัพพลายเออร์/ลูกค้าตามการเลือกของคุณ
+1. หากคุณเลือก 'บริษัท' ในช่อง **รับสินค้าจาก** พร้อมกับที่อยู่ คุณจะต้องเลือก **บุคคลที่ติดต่อในการรับสินค้า** ซึ่งจะเป็นผู้ใช้จากองค์กรของคุณใน ERPNext ตรวจสอบให้แน่ใจว่าได้ตั้งค่านามสกุล ที่อยู่อีเมล และหมายเลขโทรศัพท์สำหรับผู้ใช้รายนี้
+1. คุณสามารถกรอกส่วน **การจัดส่งไปยัง** ในทำนองเดียวกัน
+1. เพิ่มข้อมูลพัสดุจัดส่งในตาราง **พัสดุจัดส่ง**
+1. กรอกมูลค่าสินค้า
+1. เลือกวันรับของ
+1. เพิ่มคำอธิบายของเนื้อหาในการจัดส่งนี้
+1. คุณสามารถเลือกที่จะกรอกข้อมูลในส่วนข้อมูลการจัดส่งหากคุณกำลังติดตามการจัดส่งด้วยตนเอง
+1. บันทึกและส่ง
 
  <img class="screenshot" alt="Submitted Shipment" src="{{docs_base_url}}/assets/img/stock/shipment-submitted.png">
 
-### 2.1. Shipment from Delivery Note
-To create a Shipment from a Delivery Note:
+### 2.1. การจัดส่งจากใบส่งของ
+ในการสร้างการจัดส่งจากใบส่งสินค้า:
 
-1. Click on **Create** > **Shipment** in the Delivery Note.
+1. คลิก **สร้าง** > **การจัดส่ง** ในใบส่งสินค้า
 
  <img class="screenshot" alt="Submitted Shipment" src="{{docs_base_url}}/assets/img/stock/shipment-from-delivery-note.png">
 
-1. Fill the form as mentioned in the previous section.
+1. กรอกแบบฟอร์มตามที่กล่าวไว้ในส่วนก่อนหน้า
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1. Shipment Parcel
+### 3.1. พัสดุจัดส่ง
 
-You can specify the length, width, height and, weight of a parcel in the Shipment. If there are multiple parcels with identical dimensions, the **count** field can be set accordingly.
+คุณสามารถระบุความยาว ความกว้าง ความสูง และน้ำหนักของพัสดุในการจัดส่งได้ หากมีพัสดุหลายชิ้นที่มีขนาดเท่ากัน สามารถตั้งค่าช่อง **จำนวน** ให้สอดคล้องกันได้
 
-To automatically fetch frequently used parcel dimensions, a Parcel Template can be created and set in the **Parcel Template** field. After adding the template, click on the **Add template** button.
+ในการดึงข้อมูลขนาดพัสดุที่ใช้บ่อยโดยอัตโนมัติ คุณสามารถสร้างและตั้งค่าแม่แบบพัสดุในฟิลด์ **แม่แบบพัสดุภัณฑ์** หลังจากเพิ่มเทมเพลตแล้ว ให้คลิกปุ่ม **เพิ่มเทมเพลต**
 
  <img class="screenshot" alt="Submitted Shipment" src="{{docs_base_url}}/assets/img/stock/shipment-parcel.png">
 
-### 3.2. Shipment Information / Details
-The Shipment Information section is an **optional** section where a user can manually track Shipment information. Here are some of the fields:
+### 3.2. ข้อมูลการจัดส่ง / รายละเอียด
+ส่วนข้อมูลการจัดส่งเป็นส่วน **ทางเลือก** ซึ่งผู้ใช้สามารถติดตามข้อมูลการจัดส่งได้ด้วยตนเอง นี่คือบางส่วนของฟิลด์:
 
-1. **Service Provider** (optional): A Service Provider can be a third-party service that provides shipping services from various carriers.
-1. **Shipment ID**: The unique Shipment ID on your Shipping platform.
-1. **Shipment Amount**: Total cost incurred on Shipment
-1. **Carrier**: The Carrier that handles your Shipment and delivers it.
-1. **Carrier Service** (optional): The type/category of service provided by the carrier. E.g. some carriers have categories such as Economy, Express, etc.
-1. **AWB Number**: An air waybill (AWB) accompanies **international** air cargo. It usually has a unique **AWB Number**, that makes it easy to identify and track an air courier.
-1. **Incoterm**: They are a set of internationally recognized rules which define the responsibilities of sellers and buyers. [Know more about it here.](https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/)
+1. **ผู้ให้บริการ** (ไม่บังคับ): ผู้ให้บริการสามารถเป็นบริการบุคคลที่สามที่ให้บริการจัดส่งสินค้าจากผู้ให้บริการขนส่งต่างๆ
+1. **รหัสการจัดส่ง**: รหัสการจัดส่งที่ไม่ซ้ำกันบนแพลตฟอร์มการจัดส่งของคุณ
+1. **จำนวนการจัดส่ง**: ต้นทุนทั้งหมดที่เกิดขึ้นกับการจัดส่ง Ship
+1. **ผู้ให้บริการ**: ผู้ขนส่งที่จัดการการจัดส่งของคุณและส่งมอบ
+1. **บริการขนส่ง** (ตัวเลือก): ประเภท/ประเภทของบริการที่ผู้ให้บริการจัดหาให้ เช่น. ผู้ให้บริการบางรายมีหมวดหมู่เช่น Economy, Express เป็นต้น
+1. **หมายเลข AWB**: ใบตราส่งสินค้าทางอากาศ (AWB) มาพร้อมกับสินค้าทางอากาศ **ระหว่างประเทศ** โดยปกติแล้วจะมี **หมายเลข AWB** ที่ไม่ซ้ำกัน ซึ่งทำให้ง่ายต่อการระบุและติดตามผู้จัดส่งทางอากาศ
+1. **Incoterm**: เป็นชุดของกฎเกณฑ์ที่เป็นที่ยอมรับในระดับสากลซึ่งกำหนดความรับผิดชอบของผู้ขายและผู้ซื้อ [เรียนรู้เพิ่มเติมได้ที่นี่](https://iccwbo.org/resources-for-business/incoterms-rules/incoterms-2020/)
 
-### 3.3 Automation
+### 3.3 ระบบอัตโนมัติ
 
-You can also automate rate comparison, label generation, tracking, etc. using our [Shipping Integration](/docs/user/manual/en/erpnext_integration/erpnext_shipping).
+คุณยังสามารถทำการเปรียบเทียบอัตรา การสร้างฉลาก การติดตาม ฯลฯ โดยอัตโนมัติโดยใช้[การผสานรวมการจัดส่ง](/docs/user/manual/th/erpnext_integration/erpnext_shipping) ของเรา
 
-### 4. Related Topics
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
-1. [Packing Slip](/docs/user/manual/en/stock/packing-slip)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [ใบส่งของ](/docs/user/manual/th/stock/delivery-note)
+1. [สลิปบรรจุสินค้า](/docs/user/manual/th/stock/packing-slip)

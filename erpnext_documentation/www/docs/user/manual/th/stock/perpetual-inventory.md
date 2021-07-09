@@ -1,86 +1,85 @@
 <!-- add-breadcrumbs -->
-# Perpetual Inventory
+# สินค้าคงคลังถาวร
 
-As per the perpetual inventory system, accounting entry is done for every stock transaction. Otherwise, it's done in larger intervals for example monthly or quarterly. Each warehouse is linked with a corresponding account head.
+ตามระบบสินค้าคงคลังแบบถาวร การลงบัญชีจะทำสำหรับธุรกรรมสต็อคทุกครั้ง มิฉะนั้นจะทำในช่วงเวลาที่มากขึ้นเช่นรายเดือนหรือรายไตรมาส คลังสินค้าแต่ละแห่งเชื่อมโยงกับหัวหน้าบัญชีที่เกี่ยวข้อง
 
-On receipt of items in a particular warehouse, the balance in the Warehouse Account will increase. Similarly, when items are delivered from the Warehouse, an expense will be booked, and the balance in the Warehouse Account will reduce.
+เมื่อได้รับสินค้าในคลังสินค้าแห่งใดแห่งหนึ่ง ยอดคงเหลือในบัญชีคลังสินค้าจะเพิ่มขึ้น ในทำนองเดียวกัน เมื่อสินค้าถูกจัดส่งจากคลังสินค้า ค่าใช้จ่ายจะถูกจอง และยอดคงเหลือในบัญชีคลังสินค้าจะลดลง
 
-### 1. How to activate perpetual inventory
+### 1. วิธีเปิดใช้งานสินค้าคงคลังถาวร
 
-1. Activate Perpetual Inventory:
+1. เปิดใช้งานสินค้าคงคลังถาวร:
 
-    **Home > Accounting > Company > Enable Perpetual Inventory**
-
+    **หน้าแรก > การบัญชี > บริษัท > เปิดใช้งานสินค้าคงคลังถาวร**
     <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-1.png">
-    Note that if you disable perpetual inventory, users will have to manage the account entries manually.
-1. Set up the following default accounts for each Company if not set. These accounts are created automatically in the new ERPNext accounts.
+    หากคุณปิดใช้งานสินค้าคงคลังถาวร ผู้ใช้จะต้องจัดการรายการบัญชีด้วยตนเอง
+1. ตั้งค่าบัญชีเริ่มต้นต่อไปนี้สำหรับแต่ละบริษัทหากไม่ได้ตั้งค่าไว้ บัญชีเหล่านี้ถูกสร้างขึ้นโดยอัตโนมัติในบัญชี ERPNext ใหม่
 
-    * Default Inventory Account (Asset)
-    * Stock Received But Not Billed (Liability)
-    * Stock Adjustment Account (Expense)
-    * Expenses Included In Valuation (Expense)
-    * Cost Center
+    * บัญชีสินค้าคงคลังเริ่มต้น (สินทรัพย์)
+    * สต็อกที่ได้รับแต่ไม่เรียกเก็บเงิน (หนี้สิน)
+    * บัญชีปรับสต็อก (ค่าใช้จ่าย)
+    * ค่าใช้จ่ายรวมอยู่ในการประเมินมูลค่า (ค่าใช้จ่าย)
+    * ศูนย์ต้นทุน
 
-1. If the user wants to set an individual account for each warehouse, create account head for each account. Go to:
+1. หากผู้ใช้ต้องการตั้งค่าบัญชีส่วนบุคคลสำหรับแต่ละคลังสินค้า ให้สร้างส่วนหัวของบัญชีสำหรับแต่ละบัญชี ไปที่:
 
-    **Accounts > Chart of Accounts > Company > Application of Funds (Assets) > Current Asset > Stock Assets > *Create a new account with same name as Warehouse***
+    **บัญชี > ผังบัญชี > บริษัท > การสมัครกองทุน (สินทรัพย์) > สินทรัพย์หมุนเวียน > สินทรัพย์ในสต็อก > *สร้างบัญชีใหม่โดยใช้ชื่อเดียวกับคลังสินค้า***
 
-    Now, go to a warehouse and link this account to the warehouse. This helps in filtering and viewing statements warehouse-wise.
+    ไปที่คลังสินค้าและเชื่อมโยงบัญชีนี้กับคลังสินค้า ซึ่งช่วยในการกรองและดูงบคลังสินค้า
 
-1. For stock transactions, general ledger entries made against the Account Head set on the warehouse, if the user had not set the account for the warehouse then the system gets the account head from the parent warehouse. If Account was not set for parent warehouse then the system gets the account(Default Inventory Account) from the company master.
+1. สำหรับธุรกรรมสต็อค รายการบัญชีแยกประเภททั่วไปที่ทำกับชุดส่วนหัวบัญชีในคลังสินค้า หากผู้ใช้ไม่ได้ตั้งค่าบัญชีสำหรับคลังสินค้า ระบบจะรับส่วนหัวบัญชีจากคลังสินค้าหลัก หากไม่ได้ตั้งค่าบัญชีสำหรับคลังสินค้าหลัก ระบบจะรับบัญชี (บัญชีสินค้าคงคลังเริ่มต้น) จากข้อมูลหลักของบริษัท
 
 * * *
 
-### 2. Example
+### 2. ตัวอย่าง
 
-Consider the following Chart of Accounts and Warehouse setup for your company:
+พิจารณาผังบัญชีและการตั้งค่าคลังสินค้าต่อไปนี้สำหรับบริษัทของคุณ:
 
-Chart of Accounts:
+ผังบัญชี:
 
-* Assets (Dr)
-    * Current Assets
-        * Accounts Receivable
-            * Debtors
-        * Stock Assets
-            * Stores
-            * Finished Goods
-            * Work In Progress
-        * Tax Assets
-            * VAT
-* Liabilities (Cr)
-    * Current Liabilities
-        * Accounts Payable
-            * Creditors
-        * Stock Liabilities
-            * Stock Received But Not Billed
-        * Tax Liabilities
-            * Service Tax
-* Income (Cr)
-    * Direct Income
-        * Sales Account
-* Expenses (Dr)
-    * Direct Expenses
-        * Stock Expenses
-            * Cost of Goods Sold
-            * Expenses Included In Valuation
-            * Stock Adjustment
-    * Indirect Expenses
-        * Shipping Charges
-        * Customs Duty
+* สินทรัพย์ (Dr)
+    * สินทรัพย์หมุนเวียน
+        * บัญชีลูกหนี้
+            * ลูกหนี้
+        * สินทรัพย์หุ้น
+            * ร้านค้า
+            * สินค้าสำเร็จรูป
+            * อยู่ระหว่างดำเนินการ
+        * สินทรัพย์ภาษี
+            *ภาษีมูลค่าเพิ่ม
+* หนี้สิน (Cr)
+    * หนี้สินหมุนเวียน
+        * บัญชีที่สามารถจ่ายได้
+            * เจ้าหนี้
+        * หนี้สินหุ้น
+            * รับสินค้าแล้วแต่ไม่เรียกเก็บเงิน
+        * ภาระภาษี
+            * ภาษีบริการ
+* รายได้ (Cr)
+    * รายได้โดยตรง
+        * บัญชีขาย
+* ค่าใช้จ่าย (ดร.)
+    * ค่าใช้จ่ายโดยตรง
+        * ค่าใช้จ่ายหุ้น
+            * ต้นทุนขาย
+            * ค่าใช้จ่ายรวมอยู่ในการประเมินมูลค่า
+            * การปรับสต็อก
+    * ค่าใช้จ่ายทางอ้อม
+        * ค่าจัดส่ง
+        * ภาษีศุลกากร
 
-#### 2.1 Warehouse - Account Configuration
+#### 2.1 คลังสินค้า - การกำหนดค่าบัญชี
 
-  * Stores
-  * Work In Progress
-  * Finished Goods
+  * ร้านค้า
+  * อยู่ระหว่างดำเนินการ
+  * สินค้าสำเร็จรูป
 
-#### 2.2 Purchase Receipt
+#### 2.2 ใบเสร็จการซื้อ
 
-Suppose you have purchased _10 nos_ of item "RM0001" at _$200_ and _5 nos_ of item "Base Plate" at **$100** from supplier "Arcu Vel Quam Fabricators". Following are the details of Purchase Receipt:
+สมมติว่าคุณซื้อ _10 nos_ ของรายการ "RM0001" ที่ _$200_ และ _5 nos_ ของรายการ "Base Plate" ที่ **$100** จากซัพพลายเออร์ "Arcu Vel Quam Fabricators" ต่อไปนี้เป็นรายละเอียดของใบเสร็จรับเงินการซื้อ:
 
-**Supplier:** Arcu Vel Quam Fabricators
+**ซัพพลายเออร์:** Arcu Vel Quam Fabricators
 
-**Items:**
+**รายการ:**
 
 <table class="table table-bordered">
     <thead>
@@ -133,35 +132,35 @@ Suppose you have purchased _10 nos_ of item "RM0001" at _$200_ and _5 nos_ of it
     </tbody>
 </table>
 
-**Stock Ledger**
+**สต็อกแยกประเภท**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-receipt-sl-1.png">
 
-**General Ledger**
+**บัญชีแยกประเภท**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-receipt-gl-2.png">
 
-As stock balance increases through Purchase Receipt, "Store" accounts are debited and a temporary account "Stock Receipt But Not Billed" account is credited, to maintain double-entry accounting system. At the same time, the negative expense is booked in account head having category as "Valuation" or "Total and Valuation" in taxes and charges table for the amount added for valuation purpose, to avoid double expense booking.
+เมื่อยอดสต็อกเพิ่มขึ้นผ่านใบเสร็จรับเงิน บัญชี "ร้านค้า" จะถูกหักและบัญชีชั่วคราว "ใบเสร็จรับเงินแต่ไม่เรียกเก็บเงิน" จะถูกเครดิต เพื่อรักษาระบบบัญชีสองรายการ ในเวลาเดียวกัน ค่าใช้จ่ายติดลบจะถูกจองในส่วนหัวของบัญชีที่มีประเภทเป็น "การประเมินค่า" หรือ "ยอดรวมและการประเมินมูลค่า" ในตารางภาษีและค่าธรรมเนียมสำหรับจำนวนเงินที่เพิ่มเพื่อวัตถุประสงค์ในการประเมินค่า เพื่อหลีกเลี่ยงการจองค่าใช้จ่ายซ้ำซ้อน
 
-#### 2.3 Purchase Invoice
+#### 2.3 ใบแจ้งหนี้การซื้อ
 
-On receiving Bill from supplier, for the above Purchase Receipt, you will make Purchase Invoice for the same. The general ledger entries are as follows:
+ในการรับบิลจากซัพพลายเออร์ สำหรับใบเสร็จการซื้อข้างต้น คุณจะต้องทำใบกำกับสินค้าสำหรับสิ่งเดียวกัน รายการบัญชีแยกประเภททั่วไปมีดังนี้:
 
-**General Ledger**
+**บัญชีแยกประเภททั่วไป**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-pinv-gl-3.png">
 
-Here "Stock Received But Not Billed" account is debited and nullified the
-effect of Purchase Receipt.
+บัญชี "ได้รับสินค้าแต่ไม่ถูกเรียกเก็บเงิน" จะถูกหักและทำให้เป็นโมฆะ
+ของใบเสร็จการซื้อ
 
-#### 2.4 Delivery Note
+#### 2.4 ใบส่งของ
 
-Let's say, you have an order from "Utah Automation Services" to deliver 5 nos of item "RM0001"
-at $300. Following are the details of Delivery Note:
+สมมติว่า คุณมีคำสั่งซื้อจาก "Utah Automation Services" ให้ส่งสินค้าจำนวน 5 รายการ "RM0001"
+ที่ 300 ดอลลาร์ ต่อไปนี้เป็นรายละเอียดของใบส่งสินค้า:
 
-**Customer:** Utah Automation Services
+**ลูกค้า:** Utah Automation Services
 
-**Items:**
+**รายการ:**
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -203,19 +202,19 @@ at $300. Following are the details of Delivery Note:
     </tbody>
 </table>
 
-**Stock Ledger**
+**สต็อกแยกประเภท**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-dn-sl-4.png">
 
-**General Ledger**
+**บัญชีแยกประเภท**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-dn-gl-5.png">
 
-As an item is delivered from "Stores" warehouse, "Stores" account is credited and
-an equal amount is debited to the expense account "Cost of Goods Sold". The
-debit/credit amount is equal to the total valuation amount (buying cost) of
-the selling items. And the valuation amount is calculated based on your preferred
-valuation method (FIFO / Moving Average) or actual cost of serialized items.
+เนื่องจากสินค้าถูกส่งจากคลังสินค้า "ร้านค้า" บัญชี "ร้านค้า" จะได้รับเครดิตและ
+จำนวนเงินที่เท่ากันจะถูกหักเข้าบัญชีค่าใช้จ่าย "ต้นทุนขาย"
+จำนวนเดบิต/เครดิต เท่ากับมูลค่าการประเมินทั้งหมด (ต้นทุนการซื้อ) ของ
+รายการขาย และมูลค่าการประเมินจะคำนวณจากความต้องการของคุณ
+วิธีการประเมินมูลค่า (FIFO / Moving Average) หรือต้นทุนตามจริงของรายการต่อเนื่อง
 
 
 
@@ -230,26 +229,26 @@ valuation method (FIFO / Moving Average) or actual cost of serialized items.
 
 * * *
 
-### 2.5 Sales Invoice with Update Stock
+### 2.5 ใบแจ้งหนี้การขายพร้อมอัพเดทสต็อค
 
-Let's say, you did not make Delivery Note against the above order and instead,
-you have made Sales Invoice directly, with "Update Stock" options. The details
-of the Sales Invoice are same as the above Delivery Note.
+สมมติว่าคุณไม่ได้ทำ ใบจัดส่งสินค้า ขัดกับคำสั่งด้านบน แต่
+คุณได้จัดทำใบกำกับสินค้าโดยตรงด้วยตัวเลือก "อัพเดทสต็อค" รายละเอียด
+ของใบกำกับสินค้าจะเหมือนกับใบส่งสินค้าข้างต้น
 
-**Stock Ledger**
+**สต็อกแยกประเภท**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-inv-sl-6.png">
 
-**General Ledger**
+**บัญชีแยกประเภท**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-inv-gl-7.png">
 
-Here, apart from normal account entries for an invoice, "Stores" and "Cost of
-Goods Sold" accounts are also affected based on the valuation amount.
+นอกเหนือจากรายการบัญชีปกติสำหรับใบแจ้งหนี้ "ร้านค้า" และ "ต้นทุนของ
+บัญชีสินค้าที่ขาย" จะได้รับผลกระทบตามมูลค่าการประเมินด้วยเช่นกัน
 
-#### 2.6 Stock Entry (Material Receipt)
+#### 2.6 รายการสต็อค (ใบเสร็จรับเงินวัสดุ)
 
-**Items:**
+**รายการ:**
 
 <table class="table table-bordered">
     <thead>
@@ -272,17 +271,17 @@ Goods Sold" accounts are also affected based on the valuation amount.
     </tbody>
 </table>
 
-**Stock Ledger**
+**สต็อกแยกประเภท**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-receipt-sl.png">
 
-**General Ledger**
+**บัญชีแยกประเภท**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-receipt-gl.png">
 
-#### 2.7 Stock Entry (Material Issue)
+#### 2.7 รายการสต็อค (Material Issue)
 
-**Items:**
+**รายการ:**
 
 <table class="table table-bordered">
     <thead>
@@ -305,17 +304,17 @@ Goods Sold" accounts are also affected based on the valuation amount.
     </tbody>
 </table>
 
-**Stock Ledger**
+**สต็อคแยกประเภท**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-issue-sl.png">
 
-**General Ledger**
+**บัญชีแยกประเภท**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-issue-gl.png">
 
-#### 2.8 Stock Entry (Material Transfer)
+#### 2.8 รายการสต็อค (การโอนวัสดุ)
 
-**Items:**
+**รายการ:**
 
 <table class="table table-bordered">
     <thead>
@@ -340,14 +339,14 @@ Goods Sold" accounts are also affected based on the valuation amount.
     </tbody>
 </table>
 
-**Stock Ledger**
+**สต็อคแยกประเภท**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-transfer-sl.png">
 
-**General Ledger**
+**บัญชีแยกประเภท**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-transfer-gl.png">
 
-#### 3. Related Topics
-1. [Accounting Of Inventory Stock](/docs/user/manual/en/stock/accounting-of-inventory-stock)
-1. [Migrate to Perpetual Inventory](/docs/user/manual/en/stock/articles/migrate-to-perpetual-inventory)
+#### 3. หัวข้อที่เกี่ยวข้อง
+1. [การบัญชีสินค้าคงคลัง](/docs/user/manual/th/stock/accounting-of-inventory-stock)
+1. [ย้ายไปยังคลังสินค้าถาวร](/docs/user/manual/th/stock/articles/migrate-to-perpetual-inventory)

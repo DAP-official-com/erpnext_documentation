@@ -1,84 +1,84 @@
 <!-- add-breadcrumbs -->
-# Contract
+#สัญญา
 
-**A contract is a legally binding agreement between a Supplier and a Customer over the sale or products or services.**
+**สัญญาเป็นข้อตกลงที่มีผลผูกพันทางกฎหมายระหว่างซัพพลายเออร์และลูกค้าเกี่ยวกับการขายหรือผลิตภัณฑ์หรือบริการ**
 
-A contract is legally enforceable because it meets the requirements and approval of the law. An agreement typically involves the exchange of goods, services, money, or promises of any of those. 
+สัญญามีผลบังคับตามกฎหมายเนื่องจากเป็นไปตามข้อกำหนดและการอนุมัติของกฎหมาย ข้อตกลงมักจะเกี่ยวข้องกับการแลกเปลี่ยนสินค้า บริการ เงิน หรือคำสัญญาใดๆ
 
-To access the Contract list, go to:
-> Home > Sales Pipeline > Contract
+ในการเข้าถึงรายการสัญญา ไปที่:
+> หน้าแรก > ไปป์ไลน์การขาย > สัญญา
 
 
-## 1. How to Create a Contract
-1. Go to the Contract list and click on New.
-1. Choose the Customer.
-1. Enter the Contract Terms. A template can also be created for easily fetching the terms.
-1. Save.
+## 1. วิธีสร้างสัญญา
+1. ไปที่รายการสัญญาและคลิกที่ใหม่
+1. เลือกลูกค้า
+1. ป้อนข้อกำหนดของสัญญา สามารถสร้างเทมเพลตเพื่อให้ดึงเงื่อนไขได้อย่างง่ายดาย
+1. บันทึก
     ![Contract](/docs/assets/img/crm/contract.png)
 
-**Party User**: The employee from your Company who is in contact with the Customer.
+**ผู้ใช้ของผู้ที่เกี่ยวข้อง**: พนักงานจากบริษัทของคุณที่ติดต่อกับลูกค้า
 
-### 1.1 Statuses
+### 1.1 สถานะ
 
-* **Unsigned**: The Contract has not yet been signed by the Customer.
-* **Active**: The Contract has been signed and is active under the Contract Period.
-* **Inactive**: The Contract is out of the Contract Period and not valid anymore.
+* **ยังไม่ได้ลงนาม**: ลูกค้ายังไม่ได้ลงนามในสัญญา
+* **ใช้งานอยู่**: สัญญาได้รับการลงนามและใช้งานได้ภายใต้ระยะเวลาของสัญญา
+* **ไม่ใช้งาน**: สัญญาอยู่นอกระยะเวลาสัญญาและไม่สามารถใช้งานได้อีกต่อไป
 
-## 2. Features
-### 2.1 Contract Period
-The Start and End date within which the Contract is valid.
+## 2. คุณสมบัติ
+### 2.1 ระยะเวลาสัญญา
+วันที่เริ่มต้นและสิ้นสุดภายในสัญญามีผลใช้บังคับ
 
-### 2.2 Signee Details
-This section will appear when the 'Signed' checkbox is ticked to indicate that the Customer has signed and accepted the Contract. 
+### 2.2 รายละเอียดผู้ลงนาม
+ส่วนนี้จะปรากฏขึ้นเมื่อมีการทำเครื่องหมายที่ช่อง 'ลงนามแล้ว' เพื่อระบุว่าลูกค้าได้ลงนามและยอมรับสัญญาแล้ว 
 
 ![Contract Signee](/docs/assets/img/crm/contract-signee.png)
 
-* **Signee**: Enter the name of the person that has signed the Contract.
-* **Signed On**: The date on which the Contract was signed.
+* **ผู้ลงนาม**: ป้อนชื่อบุคคลที่ลงนามในสัญญา
+* **วันที่**: วันที่ลงนามในสัญญา
 
-### 2.3 Contract Details
-Enter the terms of the Contract in the Contract Terms field. You can create a Contract Template and the template can be selected to fetch the Contract Terms. 
+### 2.3 รายละเอียดสัญญา
+ป้อนเงื่อนไขของสัญญาในช่องเงื่อนไขสัญญา คุณสามารถสร้างเทมเพลตสัญญาและสามารถเลือกเทมเพลตเพื่อดึงข้อมูลข้อกำหนดของสัญญาได้
 
-### 2.4 Fulfilment Details
-If the Contract requires some fulfilment from the Supplier's (your) end, their details can be recorded in the Fulfilment Terms table.
+### 2.4 รายละเอียดการปฏิบัติตาม
+หากสัญญากำหนดให้ต้องดำเนินการตามข้อตกลงจากซัพพลายเออร์ (ของคุณ) ก็สามารถบันทึกรายละเอียดได้ในตารางเงื่อนไขการปฏิบัติตามข้อกำหนด
 
 ![Contract Fulfilment](/docs/assets/img/crm/contract-fulfilment.png)
 
-* **Requirement**: Enter a requirement that needs to be fulfiled. For example, 'installation'.
-* **Notes**: Any notes about the requirement can be entered here.
+* **ข้อกำหนด**: ป้อนข้อกำหนดที่ต้องปฏิบัติตาม ตัวอย่างเช่น 'การติดตั้ง'
+* **หมายเหตุ**: สามารถป้อนหมายเหตุเกี่ยวกับข้อกำหนดได้ที่นี่
 
-### 2.5 Contract Template
-A contract template is a standardized outline of a contract without the specifics involved. You can create a new template by going to:
+### 2.5 เทมเพลตสัญญา
+เทมเพลตสัญญาเป็นโครงร่างมาตรฐานของสัญญาที่ไม่มีรายละเอียดเฉพาะที่เกี่ยวข้อง คุณสามารถสร้างเทมเพลตใหม่ได้โดยไปที่:
 
-> Home > CRM > Contract Template
+> หน้าแรก > CRM > เทมเพลตสัญญา
 
-You can create templates by using Jinja. Eg:
+คุณสามารถสร้างเทมเพลตโดยใช้ Jinja เช่น:
 
 ```
 The parties enter into this contract on {{ start_date }}.
 ```
 
-When you create a new contract using this template, the `{{ start_date }}` is replaced by the date entered into the field of the same name. 
+เมื่อคุณสร้างสัญญาใหม่โดยใช้เทมเพลตนี้ `{{ start_date }}` จะถูกแทนที่ด้วยวันที่ที่ป้อนลงในฟิลด์ที่มีชื่อเดียวกัน 
 
 ![Contract Template](/docs/assets/img/crm/contract-template-jinja.gif)
 
-### 2.6 References
-If the Contract can be linked to a transaction in ERPNext. Select the transaction type and the specific transaction. The documents that can be linked are:
+### 2.6 ข้อมูลอ้างอิง
+หากสัญญาสามารถเชื่อมโยงกับธุรกรรมใน ERPNext เลือกประเภทธุรกรรมและธุรกรรมเฉพาะ เอกสารที่เชื่อมโยงได้คือ
 
-* Quotation
-* Project
-* Sales Order
-* Purchase Order
-* Sales Invoice
-* Purchase Invoice
+* คำอ้างอิง
+* โครงการ
+* ใบสั่งขาย
+* ใบสั่งซื้อ
+* ใบแจ้งหนี้การขาย
+* ใบสั่งซื้อ
 
 ![Contract References](/docs/assets/img/crm/contract-reference.png)
 
-### 3. Related Topics
-1. [Quotation](/docs/user/manual/en/selling/quotation)
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [ใบเสนอราคา](/docs/user/manual/th/selling/quotation)
+1. [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)
+1. [คำสั่งขาย](/docs/user/manual/th/selling/sales-order)
+1. [ใบเสร็จการซื้อ](/docs/user/manual/th/stock/purchase-receipt)
+1. [ใบส่งของ](/docs/user/manual/th/stock/delivery-note)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)

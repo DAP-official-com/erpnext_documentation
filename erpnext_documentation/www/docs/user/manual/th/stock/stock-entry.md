@@ -1,129 +1,129 @@
 <!-- add-breadcrumbs -->
-# Stock Entry
+# รายการสต็อค
 
-**A Stock Entry lets you record Item movement between Warehouses.**
+**รายการสต็อคช่วยให้คุณบันทึกการเคลื่อนไหวของสินค้าระหว่างคลังสินค้าได้**
 
-To access the Stock Entry list, go to:
-> Home > Stock > Stock Transactions > Stock Entry
+หากต้องการเข้าถึงรายการสินค้าเข้าสต็อก ไปที่:
+> หน้าหลัก > สต็อค > ธุรกรรมสต็อค > รายการสต็อค
 
-Stock Entries can be made for the following purposes:
+รายการสต็อกสามารถทำได้เพื่อวัตถุประสงค์ดังต่อไปนี้:
 
-* **Material Issue**: If the material is being issued to someone in or outside the company (Outgoing Material). The Items will be deducted from the Warehouse set under Source Warehouse.
-* **Material Receipt**: If the material is being received (Incoming Material). The Items will be added to the Warehouse set under Target Warehouse.
-* **Material Transfer**: If the material is being moved from one internal Warehouse to another.
-* **Material Transfer for Manufacturing**: If raw materials are being transferred for manufacturing. The transfer can happen against a [Work Order](/docs/user/manual/en/manufacturing/work-order) or a [Job Card](/docs/user/manual/en/manufacturing/job-card). To know more, visit the [Bill Of Materials](/docs/user/manual/en/manufacturing/bill-of-materials) page.
-* **Material Consumption for Manufacture**: There can be multiple consumption stock entries against a manufacturing Work Order. [Refer this link for more details](/docs/user/manual/en/manufacturing/articles/material_consumption)
-* **Manufacture**: If the Material is being received from a Manufacturing/Production Operation.
-* **Repack**: If the Original item/items are being repacked into new item/items.
-* **Subcontract**: If the Material is being issued for a sub-contract activity. This entry is made from a Purchase Order. To know more, visit the [subcontracting](/docs/user/manual/en/manufacturing/subcontracting) page.
-* **Send to Warehouse**: If the Material is being sent at a Warehouse and needs confirmation at the receiving end, this document will be selected in the Stock Entry with type 'Receive to Warehouse' to confirm how many items were received. The status will be 'Goods In Transit' until all goods are received, after which the status will change to 'Goods Transferred'.
-* **Receive to Warehouse**: If the Material is being received at a Warehouse the Stock Entry with type 'Send to Warehouse' will be selected here and the number of goods received will be updated.
+* **Material Issue**: หากมีการออกเอกสารให้กับบุคคลในหรือภายนอกบริษัท (วัสดุส่งออก) รายการจะถูกหักออกจากชุดคลังสินค้าภายใต้ คลังสินค้าต้นทาง
+* **การรับวัสดุ**: หากได้รับวัสดุ (วัสดุขาเข้า) ไอเทมจะถูกเพิ่มเข้าไปในชุดโกดังภายใต้ Target Warehouse
+* **การถ่ายโอนวัสดุ**: หากวัสดุถูกย้ายจากคลังสินค้าภายในหนึ่งไปยังอีกที่หนึ่ง
+* **การถ่ายเทวัตถุดิบเพื่อการผลิต**: หากมีการขนย้ายวัตถุดิบเพื่อการผลิต การโอนอาจเกิดขึ้นกับ [Work Order](/docs/user/manual/th/manufacturing/work-order) หรือ [Job Card](/docs/user/manual/th/manufacturing/job-card) หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [Bill Of Materials](/docs/user/manual/th/manufacturing/bill-of-materials)
+* **การใช้วัสดุสำหรับการผลิต**: สามารถมีรายการสต็อคเพื่อการบริโภคได้หลายรายการเทียบกับใบสั่งงานการผลิต [ดูรายละเอียดเพิ่มเติมที่ลิงค์นี้](/docs/user/manual/th/manufacturing/articles/material_consumption)
+* **การผลิต**: หากได้รับวัสดุจากการผลิต/การดำเนินการผลิต
+* **แพ็คใหม่**: หากรายการ/รายการต้นฉบับกำลังถูกบรรจุใหม่เป็นรายการ/รายการใหม่
+* **สัญญาช่วง**: หากมีการออกเอกสารสำหรับกิจกรรมการทำสัญญาช่วง รายการนี้ทำมาจากใบสั่งซื้อ หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [การรับเหมาช่วง](/docs/user/manual/th/manufacturing/subcontracting)
+* **ส่งไปที่คลังสินค้า**: หากวัสดุถูกส่งไปที่โกดังสินค้าและต้องการการยืนยันเมื่อสิ้นสุดการรับ เอกสารนี้จะถูกเลือกในรายการสต็อคด้วยประเภท 'รับไปยังโกดัง' เพื่อยืนยันจำนวนสินค้าที่ได้รับ สถานะจะเป็น 'สินค้าระหว่างทาง' จนกว่าจะได้รับสินค้าทั้งหมด จากนั้นสถานะจะเปลี่ยนเป็น 'สินค้าที่โอนแล้ว'
+* **รับไปยังคลังสินค้า**: หากได้รับวัสดุที่คลังสินค้า รายการสต็อคที่มีประเภท 'ส่งไปยังคลังสินค้า' จะถูกเลือกที่นี่ และจำนวนสินค้าที่ได้รับจะได้รับการอัปเดต
 
-To know more in detail about the stock entry types, [visit this page](/docs/user/manual/en/stock/articles/stock-entry-purpose).
-
-
-## 1. Prerequisites
-Before creating and using a Stock Entry, it is advised that you create the following first:
-
-* [Warehouse](/docs/user/manual/en/stock/warehouse)
-* [Item](/docs/user/manual/en/stock/item)
+หากต้องการทราบรายละเอียดเพิ่มเติมเกี่ยวกับประเภทรายการหุ้น [ไปที่หน้านี้](/docs/user/manual/th/stock/articles/stock-entry-purpose)
 
 
-## 2. How to create a Stock Entry
-Stock Entries for Manufacturing purposes are usually created from a [Work Order](/docs/user/manual/en/manufacturing/work-order). To create a Stock Entry manually for other purposes, follow these steps:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้รายการสต็อค ขอแนะนำให้คุณสร้างสิ่งต่อไปนี้ก่อน:
 
-1. Go to the Stock Entry list, click on New.
-1. Select the Stock Entry Purpose from the ones listed above.
-1. If you set the Default Source or Target Warehouses, they'll be automatically filled for the rows in the Items table.
-1. Source/Target Warehouses will be available as per the Stock Entry Purpose you selected.
-1. Select Items and enter a quantity.
-1. The basic rate will be fetched and the amount will be calculated automatically.
-1. Save and Submit.
+* [คลังสินค้า](/docs/user/manual/th/stock/warehouse)
+* [รายการ](/docs/user/manual/th/stock/item)
+
+
+## 2. วิธีสร้างรายการสต็อค
+รายการสต็อคเพื่อการผลิตมักจะสร้างจาก [ใบสั่งงาน](/docs/user/manual/th/manufacturing/work-order) ในการสร้างรายการสต็อคด้วยตนเองเพื่อวัตถุประสงค์อื่น ให้ทำตามขั้นตอนเหล่านี้:
+
+1. ไปที่รายการ รายการสต็อค คลิก ใหม่
+1. เลือกวัตถุประสงค์ในการเข้าสต็อกสินค้าจากรายการด้านบน
+1. หากคุณตั้งค่าเริ่มต้นของคลังสินค้า ตั้งต้นหรือปลายทาง จะถูกเติมโดยอัตโนมัติสำหรับแถวในตารางรายการ
+1. คลังสินค้าต้นทาง/เป้าหมายจะพร้อมใช้งานตามวัตถุประสงค์ในการเข้าสต็อคที่คุณเลือก
+1. เลือกรายการและป้อนจำนวน
+1. อัตราพื้นฐานจะถูกดึงออกมาและจำนวนเงินจะถูกคำนวณโดยอัตโนมัติ
+1. บันทึกและส่ง
 
     <img class="screenshot" alt="Stock Entry" src="{{docs_base_url}}/assets/img/stock/stock-entry.png">
 
-Usually, "Source Warehouse" and "Target Warehouse" both are set for recording a movement.
+โดยปกติ "คลังสินค้าเริ่มต้น" และ "คลังสินค้าปลายทาง" ทั้งคู่จะถูกตั้งค่าสำหรับการบันทึกการเคลื่อนไหว
 
-### 2.1 Additional options when creating a Stock Entry
+### 2.1 ตัวเลือกเพิ่มเติมเมื่อสร้างรายการสต็อค
 
-* **Work Order**: If this is a Manufacturing entry, the Work Order will be shown in this field.
-* **Edit Posting Date and Time**: Will allow you to edit the Stock Entry's date and time.
-* **Inspection Required**: If a [Quality Inspection](/docs/user/manual/en/stock/quality-inspection) needs to be performed on the Items before submitting the Stock Entry.
-* **From BOM**: If this is a Manufacturing entry, the associated BOM for the Item being manufactured will be shown.
+* **สั่งงาน**: หากเป็นรายการการผลิต ใบสั่งงานจะแสดงในช่องนี้
+* **แก้ไขวันที่และเวลาที่โพสต์**: จะอนุญาตให้คุณแก้ไขวันที่และเวลาของรายการสต็อคได้
+* **ต้องมีการตรวจสอบ**: หากจำเป็นต้องดำเนินการ [Quality Inspection](/docs/user/manual/th/stock/quality-inspection) กับสินค้าก่อนส่งรายการสต็อค
+* **จาก BOM**: หากเป็นรายการการผลิต ระบบจะแสดง BOM ที่เกี่ยวข้องสำหรับสินค้าที่กำลังผลิต
 
-### 2.2 Stock Entry Type
-You can also create a Stock Entry Type where only the name will be different, for example 'Scrap Entry'. The purpose will be Material Transfer but the name will be different. This is useful if you want certain Users to have access only to specific actions related to stock.
+### 2.2 ประเภทรายการสต็อค
+คุณยังสามารถสร้างประเภทรายการสต็อคโดยที่ชื่อจะแตกต่างกันเท่านั้น เช่น 'Scrap Entry' วัตถุประสงค์คือการโอนวัสดุ แต่ชื่อจะแตกต่างกัน สิ่งนี้มีประโยชน์หากคุณต้องการให้ผู้ใช้บางรายเข้าถึงการดำเนินการเฉพาะที่เกี่ยวข้องกับสต็อกเท่านั้น
 
-![Stock Entry Type](/docs/assets/img/stock/stock-entry-type.png)
+![ประเภทรายการสต็อค](/docs/assets/img/stock/stock-entry-type.png)
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 The Items table
-Details about the Item, Rate, Quantity, etc. will be shown here.
+### 3.1 ตารางรายการ
+รายละเอียดเกี่ยวกับสินค้า อัตรา จำนวน ฯลฯ จะแสดงที่นี่
 
-Ticking on 'Allow Zero Valuation Rate' will allow submitting the Purchase Receipt even if the Valuation Rate of the Item is 0. This can be a sample item or due to a mutual understanding with your Supplier.
+การทำเครื่องหมายที่ 'อนุญาตอัตราการประเมินมูลค่าเป็นศูนย์' จะอนุญาตให้ส่งใบเสร็จรับเงินการซื้อแม้ว่าอัตราการประเมินมูลค่าของสินค้าจะเป็น 0 ซึ่งอาจเป็นรายการตัวอย่างหรือเนื่องมาจากความเข้าใจร่วมกันกับซัพพลายเออร์ของคุณ
 
-Different Source and Target Warehouses can be set for different Items.
+สามารถตั้งค่าคลังต้นทางและเป้าหมายที่แตกต่างกันสำหรับรายการต่างๆ ได้
 
-### 3.2 Additional Costs
+### 3.2 ค่าใช้จ่ายเพิ่มเติม
 
-If the stock entry is an incoming entry i.e any item is receiving at a target warehouse, you can add related additional costs (like Shipping Charges, Customs Duty, Operating Costs, etc) associated with the process. The additional costs will be considered to calculate the Valuation Rate of the items.
+หากรายการสต็อคเป็นรายการขาเข้า เช่น รายการใด ๆ กำลังรับที่คลังสินค้าเป้าหมาย คุณสามารถเพิ่มค่าใช้จ่ายเพิ่มเติมที่เกี่ยวข้อง (เช่น ค่าขนส่ง ภาษีศุลกากร ค่าใช้จ่ายในการดำเนินงาน ฯลฯ) ที่เกี่ยวข้องกับกระบวนการ ค่าใช้จ่ายเพิ่มเติมจะได้รับการพิจารณาเพื่อคำนวณอัตราการประเมินมูลค่าของสินค้า
 
-To add additional costs:
+หากต้องการเพิ่มค่าใช้จ่ายเพิ่มเติม:
 
-1. Select the Expense Account to which the expense from this Stock Entry will be recorded.
-1. Enter the description and amount of the cost in the Additional Costs table.
+1. เลือกบัญชีค่าใช้จ่ายที่จะบันทึกค่าใช้จ่ายจากรายการสต็อกนี้
+1. ป้อนคำอธิบายและจำนวนต้นทุนในตารางต้นทุนเพิ่มเติม
 
 <img class="screenshot" alt="Stock Entry Additional Costs" src="{{docs_base_url}}/assets/img/stock/additional-costs-table.png">
 
-The added Additional Costs will be distributed among the receiving items (where the Target Warehouse mentioned) proportionately based on the Basic Amount of the items. And the distributed additional cost will be added to the basic rate of the item, to calculate Valuation Rate.
+ค่าใช้จ่ายเพิ่มเติมที่เพิ่มเข้ามาจะถูกกระจายไปยังรายการที่ได้รับ (โดยที่ คลังสินค้าปลายทาง) ตามสัดส่วนตามจำนวนพื้นฐานของสินค้า และค่าใช้จ่ายเพิ่มเติมแบบกระจายจะถูกเพิ่มไปยังอัตราพื้นฐานของรายการเพื่อคำนวณอัตราการประเมินมูลค่า
 
-Quantity and Rate is shown as follows when you expand the Items table.
+ปริมาณและอัตราจะแสดงดังต่อไปนี้เมื่อคุณขยายตารางรายการ
 <img class="screenshot" alt="Stock Entry Item Valuation Rate" src="{{docs_base_url}}/assets/img/stock/stock-entry-item-valuation-rate.png">
 
-### 3.3 Accounting Dimensions
-You can tag different transactions based on different dimensions. By default, [Projects](/docs/user/manual/en/projects/project) can be considered as a dimension as it is a common practice to track costs of different projects. To know more about Accounting Dimensions, [visit this page](/docs/user/manual/en/accounts/accounting-dimensions).
+### 3.3 มิติทางบัญชี
+คุณสามารถแท็กธุรกรรมต่างๆ ตามมิติข้อมูลที่แตกต่างกันได้ โดยค่าเริ่มต้น [โครงการ](/docs/user/manual/th/projects/project) ถือเป็นมิติข้อมูล เนื่องจากเป็นแนวทางปฏิบัติทั่วไปในการติดตามต้นทุนของโครงการต่างๆ หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับมิติทางบัญชี [ไปที่หน้านี้](/docs/user/manual/th/accounts/accounting-dimensions)
 
-### 3.4 Printing Settings
+### 3.4 การตั้งค่าการพิมพ์
 
-#### Letterhead
-You can print your Purchase Receipt on your company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+#### หัวจดหมาย
+คุณสามารถพิมพ์ใบเสร็จการซื้อของคุณบนหัวจดหมายของบริษัทของคุณ เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/letter-head)
 
-#### Print Headings
-Purchase Receipt headings can also be changed when printing the document. You can do this by selecting a **Print Heading**. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### พิมพ์หัวเรื่อง
+ส่วนหัวของใบเสร็จการซื้อสามารถเปลี่ยนแปลงได้เมื่อพิมพ์เอกสาร คุณสามารถทำได้โดยเลือก **หัวเรื่องการพิมพ์** ในการสร้างหัวพิมพ์ใหม่ ให้ไปที่: หน้าแรก > การตั้งค่า > การพิมพ์ > หัวเรื่องพิมพ์ เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/print-headings)
 
-### 3.5 More Information
+### 3.5 ข้อมูลเพิ่มเติม
 
-* **Is Opening**: If this entry is the opening stock entry for the Items.
-* **Remarks**: Any additional remarks about the Item.
-* **Percentage Transferred**: The percentage of Items transferred depending on Stock Entry purpose.
-* **Total Amount**: The total amount of Items transferred.
+* **เปิด**: หากรายการนี้เป็นรายการสินค้าเปิดสำหรับรายการ
+* **หมายเหตุ**: หมายเหตุเพิ่มเติมเกี่ยวกับรายการ
+* **เปอร์เซ็นต์ที่โอน**: เปอร์เซ็นต์ของรายการที่โอนขึ้นอยู่กับวัตถุประสงค์ในการเข้าสต็อก
+* **ยอดรวม**: จำนวนรวมของรายการที่โอน
 
-### 3.6 Perpetual Inventory
+### 3.6 สินค้าคงคลังถาวร
 
-If the perpetual inventory system is enabled, additional costs will be booked in Expense Account mentioned in the Additional Costs table .
+หากเปิดใช้งานระบบสินค้าคงคลังแบบต่อเนื่อง ค่าใช้จ่ายเพิ่มเติมจะถูกจองในบัญชีค่าใช้จ่ายที่กล่าวถึงในตารางต้นทุนเพิ่มเติม
 
 <img class="screenshot" alt="Additional Costs General Ledger" src="{{docs_base_url}}/assets/img/stock/stock-entry-additional-cost.png">
 
 <img class="screenshot" alt="Additional Costs General Ledger" src="{{docs_base_url}}/assets/img/stock/additional-costs-general-ledger.png">
 
-### 3.7 After Submitting
-After submitting a Stock Entry, you can go to the stock ledger or the accounting ledger from the dashboard.
+### 3.7 หลังจากส่ง
+หลังจากส่งรายการสต็อคแล้ว คุณสามารถไปที่บัญชีแยกประเภทสต็อกหรือบัญชีแยกประเภทจากแดชบอร์ด
 
 <img class="screenshot" alt="Additional Costs General Ledger" src="{{docs_base_url}}/assets/img/stock/stock-entry-submit.png">
 
-## 4. Video
+## 4. วีดีโอ
 
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/Njt107hlY3I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-### 5. Related Topics
-1. [Stock Entry Purpose](/docs/user/manual/en/stock/articles/stock-entry-purpose)
-1. [Stock Reconciliation](/docs/user/manual/en/stock/stock-reconciliation)
-1. [Opening Stock Balance Entry For Serialized And Batch Item](/docs/user/manual/en/stock/articles/opening-stock-balance-entry-for-serialized-and-batch-item)
-1. [Stock Reconciliation](/docs/user/manual/en/stock/stock-reconciliation)
-1. [Work Order](/docs/user/manual/en/manufacturing/work-order)
-1. [Production Plan](/docs/user/manual/en/manufacturing/production-plan)
-1. [Job Card](/docs/user/manual/en/manufacturing/job-card)
+### 5. หัวข้อที่เกี่ยวข้อง
+1. [วัตถุประสงค์ในรายการสต็อค](/docs/user/manual/th/stock/articles/stock-entry-purpose)
+1. [การกระทบยอดสต็อก](/docs/user/manual/th/stock/stock-reconciliation)
+1. [การเปิดรายการยอดคงเหลือสำหรับรายการต่อเนื่องและรายการแบทช์](/docs/user/manual/th/stock/articles/opening-stock-balance-entry-for-serialized-and-batch-item)
+1. [การกระทบยอดสต็อก](/docs/user/manual/th/stock/stock-reconciliation)
+1. [สั่งงาน](/docs/user/manual/th/manufacturing/work-order)
+1. [แผนการผลิต](/docs/user/manual/th/manufacturing/production-plan)
+1. [บัตรงาน](/docs/user/manual/th/manufacturing/job-card)

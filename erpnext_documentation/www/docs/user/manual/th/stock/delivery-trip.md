@@ -1,32 +1,32 @@
 <!-- add-breadcrumbs -->
-# Delivery Trip
+ทริปจัดส่ง
 
-**A Delivery Trip records Customer Deliveries in one vehicle.**
+**ทริปจัดส่ง บันทึกการส่งมอบของลูกค้าในรถเดียว**
 
-Multiple stops can also be added and Submitted Delivery Note can be tagged per Customer.
+นอกจากนี้ยังสามารถเพิ่มจุดแวะพักหลายจุดและบันทึกการจัดส่งที่ส่งแล้วสามารถติดแท็กต่อลูกค้าหนึ่งราย
 
-## 1. How to create a Delivery Trip
-A Delivery Trip can be created from a [Delivery Note](/docs/user/manual/en/stock/delivery-note) by clicking on 'Create > Delivery Trip'.
+## 1. วิธีสร้างทริปส่งของ
+สามารถสร้าง ทริปจัดส่ง ได้จาก [หมายเหตุการส่งของ](/docs/user/manual/th/stock/delivery-note) โดยคลิกที่ 'สร้าง > ทริปจัดส่ง'
 
-1. Go to: **Stock > Stock Transactions > Delivery Trip > New**
-1. Select the Driver and Vehicle, create both if not present.
-1. Set the date, departure date and time.
-1. Add customers for delivery stops, the address will be fetched if already set. Customers can also be fetched by clicking on 'Get customers from > Delivery Note'. Additional Delivery Stops can be added by clicking on the Add Row button before submitting:
+1. ไปที่: **สต็อก > ธุรกรรมสต็อก > ทริปจัดส่ง > ใหม่**
+1. เลือกผู้ขับขี่และยานพาหนะ สร้างทั้งคู่หากไม่มี
+1. กำหนดวัน วันที่ออกเดินทาง และเวลา
+1. เพิ่มลูกค้าสำหรับการหยุดจัดส่ง ที่อยู่จะถูกเรียกหากตั้งค่าไว้แล้ว ลูกค้าสามารถดึงข้อมูลได้โดยคลิกที่ 'รับลูกค้าจาก > บันทึกการจัดส่ง' คุณสามารถเพิ่มจุดหยุดจัดส่งเพิ่มเติมได้โดยคลิกที่ปุ่มเพิ่มแถวก่อนส่ง:
 
     <img class="screenshot" alt="Delivery" src="{{docs_base_url}}/assets/img/stock/delivery_stops.png">
 
-1. Save and submit.
+1. บันทึกและส่ง
 
     <img class="screenshot" alt="Delivery" src="{{docs_base_url}}/assets/img/stock/delivery_trip.png">
 
-## 2. Features
-### 2.1 Calculate Estimated Arrival Times
-If the Customer address and the Driver address are set, you can calculate the estimated arrival time for the deliveries. This data is fetched from Google Maps.
+## 2. คุณสมบัติ
+### 2.1 คำนวณเวลามาถึงโดยประมาณ
+หากมีการตั้งค่าที่อยู่ลูกค้าและที่อยู่ของคนขับรถ คุณสามารถคำนวณเวลามาถึงโดยประมาณสำหรับการส่งมอบได้ ข้อมูลนี้ดึงมาจาก Google Maps
 
-### 2.2 Optimize Route
-Using Google Maps, the best route for the deliveries will be calculated.
+### 2.2 เพิ่มประสิทธิภาพเส้นทาง
+การใช้ Google Maps จะคำนวณเส้นทางที่ดีที่สุดสำหรับการจัดส่ง
 
 
-### Related Topics
-1. [Packing Slip](/docs/user/manual/en/stock/packing-slip)
-1. [Shipping Rule](/docs/user/manual/en/selling/shipping-rule)
+### หัวข้อที่เกี่ยวข้อง
+1. [สลิปการบรรจุสินค้า](/docs/user/manual/th/stock/packing-slip)
+1. [กฎการจัดส่ง](/docs/user/manual/th/selling/shipping-rule)

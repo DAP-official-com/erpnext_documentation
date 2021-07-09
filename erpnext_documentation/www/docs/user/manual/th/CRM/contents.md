@@ -1,51 +1,50 @@
 <!-- add-breadcrumbs -->
 <!-- title: CRM -->
-# CRM
+#การ​บริหารจัดการความสัมพันธ์ระหว่างบริษัทกับลูกค้า (CRM)
+ERPNext ช่วยให้คุณติดตามธุรกิจ **โอกาส** จาก **ลูกค้าเป้าหมาย** และ
+**ลูกค้า** ส่ง **ใบเสนอราคา** และจอง **ใบสั่งขาย**
 
-ERPNext helps you track business **Opportunities** from **Leads** and
-**Customers**, send them **Quotations**, and book **Sales Orders**.
+## 1. หัวข้อ
+โมดูล CRM มีคุณสมบัติดังต่อไปนี้:
 
-## 1. Topics
-The CRM module has the following features:
+### 1.1 ยอดขาย
+1. [ลูกค้าเป้าหมาย](/docs/user/manual/th/CRM/lead)
+1. [โอกาส](/docs/user/manual/th/CRM/opportunity)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ติดต่อ](/docs/user/manual/th/CRM/contact)
+1. [ที่อยู่](/docs/user/manual/th/CRM/address)
+1. [นัดหมาย](/docs/user/manual/th/CRM/appointment)
 
-### 1.1 Sales
-1. [Lead](/docs/user/manual/en/CRM/lead)
-1. [Opportunity](/docs/user/manual/en/CRM/opportunity)
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Contact](/docs/user/manual/en/CRM/contact)
-1. [Address](/docs/user/manual/en/CRM/address)
-1. [Appointment](/docs/user/manual/en/CRM/appointment)
+### 1.2 รายงาน
+1. [รายงาน CRM](/docs/user/manual/th/CRM/crm_reports)
 
-### 1.2 Reports
-1. [CRM Reports](/docs/user/manual/en/CRM/crm_reports)
+### 1.3 ตั้งค่า
+1. [แหล่งที่มาของลีด](/docs/user/manual/th/CRM/lead_source)
+1. [ประเภทโอกาส](/docs/user/manual/th/CRM/opportunity_type)
+1. [ขั้นตอนการขาย](/docs/user/manual/th/CRM/sales_stage)
+1. [พนักงานขาย](/docs/user/manual/th/CRM/sales-person)
+1. [กลุ่มลูกค้า](/docs/user/manual/th/CRM/customer-group)
+1. [กลุ่มอีเมล](/docs/user/manual/th/CRM/email_group)
+1. [สัญญา](/docs/user/manual/th/CRM/contract)
+1. [การตั้งค่าการจองนัดหมาย](/docs/user/manual/th/CRM/appointment-booking-settings)
 
-### 1.3 Setup
-1. [Lead Source](/docs/user/manual/en/CRM/lead_source)
-1. [Opportunity Type](/docs/user/manual/en/CRM/opportunity_type)
-1. [Sales Stage](/docs/user/manual/en/CRM/sales_stage)
-1. [Sales Person](/docs/user/manual/en/CRM/sales-person)
-1. [Customer Group](/docs/user/manual/en/CRM/customer-group)
-1. [Email Group](/docs/user/manual/en/CRM/email_group)
-1. [Contract](/docs/user/manual/en/CRM/contract)
-1. [Appointment Booking Settings](/docs/user/manual/en/CRM/appointment-booking-settings)
+### 1.4 การตลาด
 
-### 1.4 Marketing
+1. [แคมเปญ](/docs/user/manual/th/CRM/campaign)
+1. [แคมเปญอีเมล](/docs/user/manual/th/CRM/email-campaign)
+1. [จดหมายข่าว](/docs/user/manual/th/CRM/newsletter)
+1. [การตั้งค่า LinkedIn](/docs/user/manual/th/CRM/linkedin-settings)
+1. [การตั้งค่าทวิตเตอร์](/docs/user/manual/th/CRM/twitter-settings)
+1. [โพสต์โซเชียลมีเดีย](/docs/user/manual/th/CRM/social-media-post)
 
-1. [Campaign](/docs/user/manual/en/CRM/campaign)
-1. [Email Campaign](/docs/user/manual/en/CRM/email-campaign)
-1. [Newsletter](/docs/user/manual/en/CRM/newsletter)
-1. [LinkedIn Settings](/docs/user/manual/en/CRM/linkedin-settings)
-1. [Twitter Settings](/docs/user/manual/en/CRM/twitter-settings)
-1. [Social Media Post](/docs/user/manual/en/CRM/social-media-post)
+## 2. บทความ
+1. [จับลูกค้าเป้าหมายอัตโนมัติ](/docs/user/manual/th/CRM/articles/automate_lead_capturing)
+1. [การวิเคราะห์โดย CRM](/docs/user/manual/th/CRM/articles/sales_funnel)
+1. [ความแตกต่างระหว่างลูกค้าเป้าหมาย ผู้ติดต่อ และลูกค้า](/docs/user/manual/th/CRM/articles/difference_between_lead_contact_and_customer)
+1. [วงเงินสินเชื่อลูกค้า](/docs/user/manual/th/accounts/credit-limit)
 
-## 2. Articles
-1. [Automate Lead Capturing](/docs/user/manual/en/CRM/articles/automate_lead_capturing)
-1. [CRM Analytics](/docs/user/manual/en/CRM/articles/sales_funnel)
-1. [Difference Between Lead, Contact, and Customer](/docs/user/manual/en/CRM/articles/difference_between_lead_contact_and_customer)
-1. [Customer Credit Limit](/docs/user/manual/en/accounts/credit-limit)
+## 3. วิดีโอสอน
+1. [โอกาสในการขาย โอกาส และใบเสนอราคา](/docs/user/videos/learn/lead-to-quotation)
+1. [จดหมายข่าว](/docs/user/videos/learn/newsletter)
 
-## 3. Video Tutorials
-1. [Lead, Opportunity and Quotation](/docs/user/videos/learn/lead-to-quotation)
-1. [Newsletter](/docs/user/videos/learn/newsletter)
-
-Next: [Selling Module](/docs/user/manual/en/selling)
+Next: [Selling Module](/docs/user/manual/th/selling)

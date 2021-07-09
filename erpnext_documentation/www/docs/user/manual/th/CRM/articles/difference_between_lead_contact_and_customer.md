@@ -1,16 +1,14 @@
 <!-- add-breadcrumbs -->
-# Difference between Lead, Contact, and Customer
+# ความแตกต่างระหว่างลูกค้าเป้าหมาย ผู้ติดต่อ และลูกค้า
 
-* **Lead**: is a potential Customer, someone who can give you business.
+* **ลูกค้าเป้าหมาย**: เป็นลูกค้าที่มีศักยภาพ ผู้ที่สามารถให้ธุรกิจแก่คุณได้
 
-* **Customer**: is an individual or organization who has given you business.
+* **ลูกค้า**: เป็นบุคคลหรือองค์กรที่ให้ธุรกิจแก่คุณ
 
-* **Contact**: is a person who belongs to the Customer. This is applicable in business-to-business scenario, where you may contact multiple individuals belonging to the same customer.
+* **ผู้ติดต่อ**: คือบุคคลที่เป็นของลูกค้า สิ่งนี้ใช้ได้ในสถานการณ์สมมติธุรกิจกับธุรกิจ ซึ่งคุณสามารถติดต่อบุคคลหลายคนที่เป็นของลูกค้ารายเดียวกันได้
 
-A Lead can be converted to a Customer by selecting “Customer” from the **Make**
-dropdown. Once the Customer is created, the Lead becomes “Converted” and any
-further Opportunities from the same source can be created against this
-Customer.
+ลูกค้าเป้าหมายสามารถเปลี่ยนเป็นลูกค้าได้โดยเลือก "ลูกค้า" จาก ตัวเลือก **สร้าง**
+เมื่อสร้างลูกค้าแล้ว ลูกค้าเป้าหมายจะกลายเป็น "แปลง" โอกาสเพิ่มเติมจากแหล่งเดียวกันสามารถสร้างขึ้นเมื่อเทียบสิ่งนี้ได้ลูกค้า.
 
 <img class="screenshot" alt="Create Customer" src="{{docs_base_url}}/assets/img/crm/lead-to-customer.gif">
 

@@ -1,33 +1,34 @@
 <!-- add-breadcrumbs -->
-# Projected Quantity
+# ปริมาณที่คาดการณ์
 
-**Projected Quantity is the level of stock that is predicted for a particular Item based on the current stock levels and other requirements.**
+**จำนวนที่คาดการณ์คือระดับของสต็อกที่คาดการณ์สำหรับสินค้าบางรายการตามระดับสต็อกปัจจุบันและข้อกำหนดอื่นๆ**
 
-It is the quantity of gross inventory that includes supply and demand in the past which
-is done as part of the planning process.
+คือปริมาณสินค้าคงคลังรวมที่มีอุปสงค์และอุปทานในอดีตซึ่ง
+เป็นส่วนหนึ่งของกระบวนการวางแผน
 
-The projected inventory is used by the planning system to monitor the reorder
-point and to determine the reorder quantity. The projected Quantity is used by
-the planning engine to monitor the safety stock levels. These levels are
-maintained to serve unexpected demands.
+ระบบการวางแผนใช้สินค้าคงคลังที่คาดการณ์ไว้เพื่อตรวจสอบการสั่งซื้อใหม่
+ชี้และกำหนดปริมาณการสั่งซื้อใหม่ ปริมาณที่คาดการณ์ถูกใช้โดย
+เครื่องมือวางแผนเพื่อติดตามระดับสต็อคความปลอดภัย ระดับเหล่านี้คือ
+รักษาไว้เพื่อรองรับความต้องการที่ไม่คาดคิด
 
-Having tight control of the projected inventory is crucial to determine
-shortages and to calculate the right order quantity.
+การควบคุมสินค้าคงคลังที่คาดการณ์ไว้เป็นสิ่งสำคัญในการพิจารณา
+การขาดแคลนและคำนวณปริมาณการสั่งซื้อที่เหมาะสม
 
 <img class="screenshot" alt="Projected Quantity" src="{{docs_base_url}}/assets/img/stock/projected_quantity.png">
 
-The formula to calculate projected quantity is as follows:
+สูตรคำนวณปริมาณที่คาดการณ์ไว้มีดังนี้
 
-*Projected Qty = Actual Qty + Planned Qty + Requested Qty + Ordered Qty - Reserved Qty - Reserved Qty for Production - Reserved Qty for Subcontracting*
+*จำนวนที่คาดการณ์ = จำนวนจริง + จำนวนที่วางแผนไว้ + จำนวนที่ร้องขอ + จำนวนที่สั่งซื้อ - จำนวนที่สงวนไว้ - จำนวนที่สงวนไว้สำหรับการผลิต - จำนวนที่สงวนไว้สำหรับการรับเหมาช่วง*
 
-* **Actual Qty**: Quantity available in the Warehouse. This is the actual physical stock you have.
-* **Planned Qty**: Quantity, for which, Work Order has been raised, but is pending to be manufactured.
-* **Requested Qty**: Quantity requested via a [Material Request](/docs/user/manual/en/stock/material-request). It is added on submission of Material Request and subtracted when Purchase Order/Work Order/Stock Entry is created against it based on the Material Request type.
-* **Ordered Qty**: Quantity ordered for purchase ([Purchase Order](/docs/user/manual/en/buying/purchase-order)), but not received (via a [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt) or a [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice). 
-* **Reserved Qty**: Quantity ordered for sale by your Customer ([Sales Order](/docs/user/manual/en/selling/sales-order)), but not delivered (via a [Delivery Note](/docs/user/manual/en/stock/delivery-note)). This quantity increases when a Sales Order is submitted and decreases when a Delivery Note or Sales Invoice is created against that Sales Order is submitted.
-* **Reserved Qty for Production**: Raw materials are reserved on submission of [Work Order](/docs/user/manual/en/manufacturing/work-order) and is reduced when raw materials are transfered to Work in Progress warehouse via a Stock Entry.
-* **Reserved Qty for Subcontracting**: Raw materials reserved when a subcontracting Purchase Order is submitted. When raw materials are transfered to Supplier Warehouse via a Stock Entry, this quantity reduces. To know more about subcontracting [click here](/docs/user/manual/en/manufacturing/subcontracting).
+* **จำนวนจริง**: จำนวนที่มีอยู่ในคลังสินค้า นี่คือสต็อกที่มีอยู่จริงที่คุณมี
+* **จำนวนที่วางแผนไว้**: จำนวน ซึ่งได้มีการเพิ่มใบสั่งงานแล้ว แต่อยู่ระหว่างรอการผลิต
+* **จำนวนที่ขอ**: จำนวนที่ร้องขอผ่าน [คำขอวัสดุ](/docs/user/manual/th/stock/material-request) เพิ่มเมื่อส่งคำขอวัสดุและลบออกเมื่อมีการสร้างใบสั่งซื้อ/ใบสั่งงาน/รายการสต็อคโดยพิจารณาจากประเภทคำขอวัสดุ
+* **จำนวนที่สั่งซื้อ**: จำนวนที่สั่งซื้อ ([ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)) แต่ไม่ได้รับ 
+(ผ่าน [ใบเสร็จรับเงิน](/docs/user/manual/th/stock/purchase-receipt) หรือ [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)
+* **จำนวนที่จอง**: จำนวนที่ลูกค้าสั่งซื้อเพื่อขาย ([ใบสั่งขาย](/docs/user/manual/th/selling/sales-order)) แต่ไม่ได้จัดส่ง (ผ่าน [หมายเหตุการส่งสินค้า](/docs/user/manual/th/stock/delivery-note)). ปริมาณนี้เพิ่มขึ้นเมื่อมีการส่งใบสั่งขายและลดลงเมื่อมีการสร้างใบส่งมอบหรือใบกำกับสินค้าเทียบกับใบสั่งขายนั้น
+* **ปริมาณที่สงวนไว้สำหรับการผลิต**: วัตถุดิบจะถูกสงวนไว้ในการส่ง [ใบสั่งงาน](/docs/user/manual/th/manufacturing/work-order) และจะลดลงเมื่อวัตถุดิบถูกโอนไปยังคลังสินค้า Work in Progress ผ่านรายการสต็อค
+* **จำนวนที่สงวนไว้สำหรับการรับเหมาช่วง**: วัตถุดิบที่สงวนไว้เมื่อมีการส่งใบสั่งซื้อสำหรับการรับเหมาช่วง เมื่อวัตถุดิบถูกโอนไปยังคลังสินค้าของซัพพลายเออร์ผ่านรายการสต็อค ปริมาณนี้จะลดลง หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับการรับเหมาช่วง [คลิกที่นี่](/docs/user/manual/th/manufacturing/subcontracting)
 
-#### Related Topics
-1. [Warehouse](/docs/user/manual/en/stock/warehouse)
-1. [Material Request](/docs/user/manual/en/stock/material-request)
+#### หัวข้อที่เกี่ยวข้อง
+1. [คลังสินค้า](/docs/user/manual/th/stock/warehouse)
+1. [คำขอวัสดุ](/docs/user/manual/th/stock/material-request)
