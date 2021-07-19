@@ -1,42 +1,41 @@
 <!-- add-breadcrumbs -->
-# Appraisal
+#ประเมินผล
 
-**A performance appraisal is a method by which the job performance of an employee is documented and evaluated.**
+**การประเมินประสิทธิภาพคือวิธีการบันทึกและประเมินผลการปฏิบัติงานของพนักงาน**
 
-In ERPNext, you can manage Employee Appraisals by creating an Appraisal
-Template for each role with the parameters that define the performance by
-giving appropriate weightage to each parameter.
+ใน ERPNext คุณสามารถจัดการการประเมินพนักงานโดยสร้างการประเมิน
+เทมเพลตสำหรับแต่ละบทบาทพร้อมพารามิเตอร์ที่กำหนดประสิทธิภาพโดย
+ให้น้ำหนักที่เหมาะสมกับแต่ละพารามิเตอร์
 
 
-To access Appraisal, go to:
+ในการเข้าถึงการประเมิน ไปที่:
 
-> Human Resources > Performance > Appraisal 
+> ทรัพยากรบุคคล > ประสิทธิภาพ > การประเมิน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Appraisal, make sure you have the following created:
+ก่อนสร้างการประเมิน ตรวจสอบให้แน่ใจว่าคุณได้สร้างสิ่งต่อไปนี้:
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+## 2. วิธีสร้างการประเมิน
 
-## 2. How to create an Appraisal
-
-1. Got to: Appraisal > New.
-1. Select the Appraisal Template. If not created, create an Appraisal Template. Enter the Appraisal Template Name and the Key Result Areas (KRAs) along with the weightage of the same.
+1. ไปที่: การประเมิน > ใหม่
+1. เลือกเทมเพลตการประเมิน หากไม่ได้สร้าง ให้สร้างเทมเพลตการประเมิน ป้อนชื่อเทมเพลตการประเมินและพื้นที่ผลลัพธ์หลัก (KRA) พร้อมกับน้ำหนักของรายการเดียวกัน
 
     <img class="screenshot" alt="Appraisal" src="{{docs_base_url}}/assets/img/human-resources/appraisal-template.png">
 
  
-1. After selecting the Appraisal Template, select the Employee, Start Date and End Date.
-1. Based on the template selected, the KRAs will be fetched in the Goals section. Enter the score (0-5)for each KRA. Based on the weightage mentioned, the Score Earned will be calculated for each KRA.
-1. Save and Submit.
+1. หลังจากเลือกเทมเพลตการประเมินแล้ว ให้เลือกพนักงาน วันที่เริ่มต้น และวันที่สิ้นสุด
+1. ตามเทมเพลตที่เลือก KRA จะถูกดึงมาในส่วนเป้าหมาย ป้อนคะแนน (0-5) สำหรับแต่ละ KRA ตามน้ำหนักที่กล่าวถึง คะแนนที่ได้รับจะถูกคำนวณสำหรับ KRA แต่ละรายการ
+1. บันทึกและส่ง
 
     <img class="screenshot" alt="Appraisal" src="{{docs_base_url}}/assets/img/human-resources/appraisal.png">
 
 
 
-Based on the scores entered for each KRA, the system will calculate the Total Score (out of 5) for the Employee.
+ตามคะแนนที่ป้อนสำหรับแต่ละ KRA ระบบจะคำนวณคะแนนรวม (จาก 5) สำหรับพนักงาน
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Energy Point](/docs/user/manual/en/setting-up/energy-point-system)
+1. [ค่าพลังงาน](/docs/user/manual/th/setting-up/energy-point-system)
 

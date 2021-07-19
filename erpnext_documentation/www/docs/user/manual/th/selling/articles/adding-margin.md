@@ -1,38 +1,38 @@
 <!-- add-breadcrumbs -->
-#Adding Margin
+#เพิ่มมาร์จิ้น
 
-User Can apply the margin on Quotation Item and Sales Order Item using following two options.
-1)Price Rule: With the help of this method user can apply the margin on Quotation and Sales Order based on condition. You can find the section margin on pricing rule where a user has to select the type of margin whether it is Percentage or Amount and Rate or Amount. The system will apply the margin on quotation item and sales order item if pricing rule is enabled.
+ผู้ใช้สามารถใช้มาร์จิ้นกับรายการใบเสนอราคาและรายการสั่งซื้อขายโดยใช้สองตัวเลือกต่อไปนี้
+1) กฎราคา: ด้วยความช่วยเหลือของวิธีนี้ ผู้ใช้สามารถใช้มาร์จิ้นกับใบเสนอราคาและใบสั่งขายตามเงื่อนไข คุณสามารถค้นหาส่วนต่างของกฎการกำหนดราคาที่ผู้ใช้ต้องเลือกประเภทของหลักประกัน ไม่ว่าจะเป็นเปอร์เซ็นต์หรือจำนวนเงินและอัตราหรือจำนวนเงิน ระบบจะใช้มาร์จิ้นกับสินค้าในใบเสนอราคาและสินค้าในใบสั่งขาย หากเปิดใช้งานกฎการกำหนดราคา
 
-To setup Pricing Rule, go to:
+ในการตั้งค่ากฎการกำหนดราคา ไปที่:
 
-`Selling > Setup > Pricing Rule` or `Accounts > Setup > Pricing Rule`
+`การขาย > การตั้งค่า > กฎการกำหนดราคา' หรือ `บัญชี > การตั้งค่า > กฎการกำหนดราคา`
 
-####Adding Margin in Pricing Rule
+####การเพิ่มมาร์จิ้นในกฎการกำหนดราคา
 
 <img alt="Adding Margin in Pricing Rule" class="screenshot"  src="{{docs_base_url}}/assets/img/selling/margin-pricing-rule.png">
 
-Total Margin is calculated as follows:
-`Rate = Price List Rate + Margin Rate`
+มาร์จิ้นรวมคำนวณดังนี้:
+`อัตรา = อัตราราคาตลาด + อัตรามาร์จิ้น`
 
-So, In order to apply the Margin you need to add the Price List for the Item
+ดังนั้น เพื่อที่จะใช้มาร์จิ้น คุณต้องเพิ่มรายการราคาสำหรับรายการ
 
-To add Price List, go to:
+หากต้องการเพิ่มรายการราคา ไปที่:
 
-`Selling > Setup > Item Price` or `Stock > Setup > Item Price`
+`การขาย > ตั้งค่า > ราคาสินค้า' หรือ 'สต็อก > การตั้งค่า > ราคาสินค้า'
 
-####Adding Item Price
+####เพิ่มราคาสินค้า
 
 <img alt="Adding Margin in Pricing Rule" class="screenshot"  src="{{docs_base_url}}/assets/img/selling/margin-item-price-list.png">
 
-2) Apply margin direct on Item: If user wants to apply the margin without pricing rule, they can use this option. In Quotation Item and Sales Order Item, user can select the margin type and rate or amount. The system will calculate the margin and apply it on price list rate to calculate the rate of the product.
+2) ใช้มาร์จิ้นโดยตรงกับรายการ: หากผู้ใช้ต้องการใช้มาร์จิ้นโดยไม่มีกฎการกำหนดราคา พวกเขาสามารถใช้ตัวเลือกนี้ได้ ในรายการใบเสนอราคาและรายการสั่งซื้อขาย ผู้ใช้สามารถเลือกประเภทมาร์จิ้นและอัตราหรือจำนวนเงินได้ ระบบจะคำนวณมาร์จิ้นและนำไปใช้กับอัตราราคาตลาดเพื่อคำนวณอัตราของผลิตภัณฑ์
 
-To add margin directly on Quotation or Sales Order, go to:
+หากต้องการเพิ่มมาร์จิ้นโดยตรงในใบเสนอราคาหรือใบสั่งขาย ให้ไปที่:
 
-`Selling > Document > Quotation`
+`การขาย > เอกสาร > ใบเสนอราคา`
 
-add item and scroll down to section where you can find the Margin Type
+เพิ่มรายการและเลื่อนลงไปที่ส่วนซึ่งคุณจะพบ ประเภทมาร์จิ้น
 
-####Adding Margin in Quotation
+####การเพิ่มมาร์จิ้นในใบเสนอราคา
 
 <img alt="Adding Margin in Quotation" class="screenshot"  src="{{docs_base_url}}/assets/img/selling/margin-quotation-item.png">

@@ -1,69 +1,69 @@
 <!-- add-breadcrumbs -->
-# Salary Component
+# องค์ประกอบเงินเดือน
 
-**Salaries are paid by organizations to their employees in exchange for the services rendered by them. The different components that make up the Salary Structure are called as Salary Components.** 
+**เงินเดือนจะจ่ายโดยองค์กรให้กับพนักงานเพื่อแลกกับบริการที่มอบให้ องค์ประกอบต่างๆ ที่ประกอบเป็นโครงสร้างเงินเดือนเรียกว่า องค์ประกอบเงินเดือน**
 
-Salary paid to the employees comprises of several different components, such as basic salary, allowances, arrears, etc. ERPNext allows you to define these Salary Components and also specify its various attributes.
+เงินเดือนที่จ่ายให้กับพนักงานประกอบด้วยองค์ประกอบที่แตกต่างกันหลายอย่าง เช่น เงินเดือนพื้นฐาน เบี้ยเลี้ยง เงินค้างชำระ ฯลฯ ERPNext ช่วยให้คุณกำหนดองค์ประกอบเงินเดือนเหล่านี้และระบุคุณลักษณะต่างๆ ด้วย
 
-To access Salary Component, go to:
-> Home > Human Resources > Payroll > Salary Component
+ในการเข้าถึงองค์ประกอบเงินเดือนไปที่:
+> หน้าหลัก > ทรัพยากรบุคคล > เงินเดือน > องค์ประกอบเงินเดือน
 
-## 1. How to create a Salary Component
+## 1. วิธีสร้างองค์ประกอบเงินเดือน
 
-To create a new Salary Component:
+ในการสร้างองค์ประกอบเงินเดือนใหม่:
 
-1. Go to Salary Component list, click on New.
-2. Enter its Name and Abbreviation.
-3. Enter Description of the Salary Component (optional).
-1. Enter the Company name and the Default Account of the Salary Component in the Accounts table.
-3. Save.
+1. ไปที่รายการส่วนประกอบเงินเดือน คลิกที่ ใหม่
+2. ป้อนชื่อและตัวย่อ
+3. ป้อนรายละเอียดขององค์ประกอบเงินเดือน (ไม่บังคับ)
+1. ป้อนชื่อบริษัทและบัญชีเริ่มต้นขององค์ประกอบเงินเดือนในตารางบัญชี
+3. บันทึก
 
  <img class="screenshot" alt="Salary Component" src="{{docs_base_url}}/assets/img/human-resources/salary-component1.png">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-Apart from the above mentioned mandatory fields, some of the additional features of the Salary Component are given below:
+นอกเหนือจากฟิลด์บังคับที่กล่าวถึงข้างต้น คุณสมบัติเพิ่มเติมบางอย่างขององค์ประกอบเงินเดือนได้รับด้านล่าง:
 
-### 2.1 Condition and Formula
+### 2.1 เงื่อนไขและสูตร
 
-In this section, the Condition and Formula required for the calculation of the Salary Component can be specified. To specify the formula, enable the 'Amount based on formula' checkbox. 
+ในส่วนนี้ สามารถระบุเงื่อนไขและสูตรที่จำเป็นสำหรับการคำนวณส่วนประกอบเงินเดือนได้ หากต้องการระบุสูตร ให้เปิดใช้งานช่องกาเครื่องหมาย 'จำนวนเงินตามสูตร' 
 
 <img class="screenshot" alt="Salary Component" src="{{docs_base_url}}/assets/img/human-resources/salary-component2.png">
 
-In case the Salary Component is based on a pre-defined amount, ERPNext allows you to directly enter the amount in the Amount field (disable the 'Amount based on formula' checkbox).
+ในกรณีที่องค์ประกอบเงินเดือนขึ้นอยู่กับจำนวนเงินที่กำหนดไว้ล่วงหน้า ERPNext ช่วยให้คุณสามารถป้อนจำนวนเงินในช่องจำนวนเงินได้โดยตรง (ปิดใช้งานช่องทำเครื่องหมาย 'จำนวนเงินตามสูตร')
 
-> **Note:** This above setup is optional. You can define Amount and Formula/Condition for a Salary Component directly in the Salary Structure also. If they are specified in the Salary Component document itself, the information will be directly fetched in the Salary Structure when the Component is selected.
+> **หมายเหตุ:** การตั้งค่าด้านบนนี้เป็นทางเลือก คุณสามารถกำหนดจำนวนเงินและสูตร/เงื่อนไขสำหรับองค์ประกอบเงินเดือนได้โดยตรงในโครงสร้างเงินเดือนด้วย หากระบุไว้ในเอกสารส่วนประกอบเงินเดือน ข้อมูลจะถูกดึงโดยตรงในโครงสร้างเงินเดือนเมื่อเลือกส่วนประกอบ
 
-### 2.2 Additional Properties
+### 2.2 คุณสมบัติเพิ่มเติม
 
-Some of the additional attributes of the Salary Component that can be enabled using checkboxes are as follows:
+คุณลักษณะเพิ่มเติมบางอย่างขององค์ประกอบเงินเดือนที่สามารถเปิดใช้งานได้โดยใช้ช่องทำเครื่องหมายมีดังนี้:
 
-* **Is Payable:** Select this if the Salary Component is payable.
-* **Depends on Payment Days:** If this checkbox is enabled then the Salary Component will be calculated based on the number of working days.
-* **Is Tax Applicable:** This checkbox is applicable for Earning Components. Selecting this checkbox allows tax to be applied on this Salary Component.
-* **Deduct Full Tax on Selected Payroll Date:** If checked and the component is used in Additional Salary, the tax amount applicable on the additional amount will be deducted on the specific payroll month. If not checked, the tax will be distributed over the remaining months of the payroll period. For example, if a bonus is given in a particular month using Additional Salary, then you can deduct full tax amount in the same month only.
-* **Round to the Nearest Integer:** Selecting this checkbox allows you to round the amount of this Salary Component to the nearest integer.
-* **Statistical Component:** If selected, the value specified or calculated in this component will not contribute to the earnings or deductions. However, it's value can be referenced by other components that can be added or deducted. If you set a Salary Component as a Statistical component, then you do not have to set the Default Account for the same. Also, you would not be able to set this component as a Flexible Benefit.
-* **Do Not Include in Total:** Selecting this checkbox ensures that the Salary Component is not included in the Total Salary. It is used to define the component which is part of the CTC but not payable (e.g. Usage of Company Cars).
-* **Variable Based On Taxable Salary:** The component is calculated automatically on taxable income based on applicable Income Tax Slab (e.g. TDS or Income Tax).
-* **Exempted from Income Tax:** If checked, the full amount will be deducted from taxable income before calculating income tax without any [declaration](/docs/user/manual/en/human-resources/employee-tax-exemption-declaration) or [proof submission](/docs/user/manual/en/human-resources/employee-tax-exemption-proof-submission). For example, Professional Tax in India is deducted from taxable income before calculating income tax. 
-* **Disabled:** This checkbox can be selected to disable this Salary Component. A disabled Salary Component cannot be used in the Salary Structure.
+* **จ่ายได้:** เลือกตัวเลือกนี้หากมีการจ่ายส่วนประกอบเงินเดือน
+* **ขึ้นอยู่กับวันที่ชำระเงิน:** หากเปิดใช้งานช่องทำเครื่องหมายนี้ องค์ประกอบเงินเดือนจะถูกคำนวณตามจำนวนวันทำการ
+* **มีการเสียภาษี:** ทำเครื่องหมายนี้ใช้ได้กับส่วนประกอบในการรับรายได้ การเลือกช่องทำเครื่องหมายนี้จะทำให้สามารถใช้ภาษีกับองค์ประกอบเงินเดือนนี้ได้
+* **หักภาษีเต็มจำนวนในวันที่เลือกเงินเดือน:** หากตรวจสอบและใช้ส่วนประกอบในเงินเดือนเพิ่มเติม จำนวนภาษีที่ใช้กับจำนวนเงินเพิ่มเติมจะถูกหักในเดือนเงินเดือนที่ระบุ หากไม่ตรวจสอบ ภาษีจะถูกกระจายไปยังเดือนที่เหลือของรอบระยะเวลาบัญชีเงินเดือน ตัวอย่างเช่น หากให้โบนัสในเดือนใดเดือนหนึ่งโดยใช้เงินเดือนเพิ่มเติม คุณสามารถหักภาษีเต็มจำนวนในเดือนเดียวกันเท่านั้น
+* **ปัดเศษเป็นจำนวนเต็มที่ใกล้ที่สุด:** การเลือกช่องทำเครื่องหมายนี้จะทำให้คุณสามารถปัดเศษของส่วนประกอบเงินเดือนนี้เป็นจำนวนเต็มที่ใกล้เคียงที่สุด
+* **องค์ประกอบทางสถิติ:** หากเลือก ค่าที่ระบุหรือคำนวณในส่วนนี้จะไม่ส่งผลต่อรายได้หรือการหักเงิน อย่างไรก็ตาม ค่านี้สามารถอ้างอิงได้จากส่วนประกอบอื่นๆ ที่สามารถเพิ่มหรือหักออกได้ หากคุณตั้งค่าองค์ประกอบเงินเดือนเป็นองค์ประกอบทางสถิติ คุณไม่จำเป็นต้องตั้งค่าบัญชีเริ่มต้นสำหรับองค์ประกอบเดียวกัน นอกจากนี้ คุณจะไม่สามารถตั้งค่าองค์ประกอบนี้เป็นสวัสดิการที่ยืดหยุ่นได้
+* **ไม่รวมในยอดรวม:** การเลือกช่องทำเครื่องหมายนี้ช่วยให้แน่ใจว่าส่วนประกอบเงินเดือนไม่รวมอยู่ในเงินเดือนทั้งหมด ใช้เพื่อกำหนดองค์ประกอบที่เป็นส่วนหนึ่งของ CTC แต่ไม่สามารถชำระได้ (เช่น การใช้รถยนต์ของบริษัท)
+* **แปรผันตามเงินเดือนที่ต้องเสียภาษี:** องค์ประกอบจะคำนวณโดยอัตโนมัติจากรายได้ที่ต้องเสียภาษีตามแผ่นภาษีเงินได้ที่เกี่ยวข้อง (เช่น TDS หรือภาษีเงินได้)
+* **ยกเว้นภาษีเงินได้:** หากตรวจสอบแล้ว จำนวนเงินทั้งหมดจะถูกหักออกจากรายได้ที่ต้องเสียภาษีก่อนคำนวณภาษีเงินได้โดยไม่มี [การสำแดง](/docs/user/manual/th/human-resources/employee-tax-exemption-declaration) หรือ [การส่งหลักฐาน](/docs/user/manual/th/human-resources/employee-tax-exemption-proof-submission) ตัวอย่างเช่น ภาษีวิชาชีพในอินเดียจะถูกหักออกจากรายได้ที่ต้องเสียภาษีก่อนคำนวณภาษีเงินได้
+* **ปิดการใช้งาน:** สามารถเลือกช่องทำเครื่องหมายนี้เพื่อปิดใช้งานองค์ประกอบเงินเดือนนี้ ไม่สามารถใช้องค์ประกอบเงินเดือนที่ปิดใช้งานในโครงสร้างเงินเดือน
 
-### 2.3 Flexible Benefits
+### 2.3 สวัสดิการที่ยืดหยุ่น
 
-This section is shown if the Salary Component is an Earning Component. Flexible Benefit plans allow employees to avail the benefits they want or need from a package of programs offered by an employer. They may include health insurance, pension plans, telephone expenses, etc. To set a Salary Component as a Flexible Benefit, check the 'Is Flexible Benefit' checkbox.
+ส่วนนี้จะแสดงว่าองค์ประกอบเงินเดือนเป็นองค์ประกอบรายได้หรือไม่ แผนสวัสดิการที่ยืดหยุ่นช่วยให้พนักงานได้รับประโยชน์ที่ต้องการหรือต้องการจากแพ็คเกจโปรแกรมที่นายจ้างเสนอให้ ซึ่งอาจรวมถึงการประกันสุขภาพ แผนบำเหน็จบำนาญ ค่าโทรศัพท์ ฯลฯ หากต้องการกำหนดองค์ประกอบเงินเดือนเป็นสวัสดิการที่ยืดหยุ่น ให้เลือกช่องทำเครื่องหมาย 'สวัสดิการที่ยืดหยุ่น'
 
 <img class="screenshot" alt="Flexible Benefit" src="{{docs_base_url}}/assets/img/human-resources/flexible-ben.png">
 
-Enter the maximum yearly amount for this flexible benefit in the 'Max Benefit Amount (Yearly)' field. Some of the additional attributes of the Flexible Benefits that can be enabled using checkboxes are as follows:   
+ป้อนจำนวนเงินสูงสุดรายปีสำหรับสวัสดิการที่ยืดหยุ่นนี้ในฟิลด์ 'จำนวนเงินผลประโยชน์สูงสุด (รายปี)' คุณลักษณะเพิ่มเติมบางอย่างของสวัสดิการยืดหยุ่นที่สามารถเปิดใช้งานได้โดยใช้ช่องทำเครื่องหมายมีดังนี้:
 
-* **Pay Against Benefit Claim:** Enable this checkbox if you want to pay this benefit via the [Employee Benefit Claim](/docs/user/manual/en/human-resources/employee-benefit-claim).
-* **Only Tax Impact (Cannot Claim But Part of Taxable Income):** If set, the flexible benefit will be part of taxable income.
-* **Create Separate Payment Entry Against Benefit Claim:** If this checkbox is checked, it will let you create a separate payment entry against the Benefit Claim.
+* **ชดเชยการเรียกร้องผลประโยชน์:** เปิดใช้งานช่องทำเครื่องหมายนี้หากคุณต้องการจ่ายผลประโยชน์นี้ผ่านทาง [ผลประโยชน์พนักงาน](/docs/user/manual/th/human-resources/employee-benefit-claim)
+* **ผลกระทบทางภาษีเท่านั้น (ไม่สามารถอ้างสิทธิ์ได้ แต่เป็นส่วนหนึ่งของรายได้ที่ต้องเสียภาษี):** หากกำหนดไว้ ผลประโยชน์ที่ยืดหยุ่นจะเป็นส่วนหนึ่งของรายได้ที่ต้องเสียภาษี
+* **สร้างรายการชำระเงินแยกต่างหากสำหรับการเรียกร้องผลประโยชน์:** หากเลือกช่องทำเครื่องหมายนี้ จะช่วยให้คุณสร้างรายการชำระเงินแยกต่างหากสำหรับการเรียกร้องผลประโยชน์
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
-1. [Salary Structure Assignment](/docs/user/manual/en/human-resources/salary-structure-assignment)
-1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
-1. [Payroll Period](/docs/user/manual/en/human-resources/payroll-period)
+1. [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
+1. [การกำหนดโครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure-assignment)
+1. [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)
+1. [ระยะเวลาการจ่ายเงินเดือน](/docs/user/manual/th/human-resources/payroll-period)

@@ -1,15 +1,15 @@
 <!-- add-breadcrumbs -->
-#Amending Purchase Order after Submit
-Rate and Qty in Purchase Order can now be amended after Submit using the `Update Items` button.
+#แก้ไขใบสั่งซื้อหลังส่ง
+อัตราและจำนวนในใบสั่งซื้อสามารถแก้ไขได้หลังจากส่งโดยใช้ปุ่ม 'อัปเดตรายการ'
 
 <img alt="Update Items" class="screenshot" src="{{docs_base_url}}/assets/img/articles/po-update-items.png">
 
-To Update Rate and Qty in a Submitted Purchase Order, click on the `Update Items` button. A dialog will pop up to let you make the change.
+หากต้องการอัปเดตอัตราและจำนวนในใบสั่งซื้อที่ส่ง ให้คลิกที่ปุ่ม 'อัปเดตรายการ' กล่องโต้ตอบจะปรากฏขึ้นเพื่อให้คุณทำการเปลี่ยนแปลงได้
 
 <img alt="Update Items" class="screenshot" src="{{docs_base_url}}/assets/img/articles/po-update-items-rate-and-qty.gif">
 
-Please Note the following validations and usecases:
+โปรดทราบการตรวจสอบและกรณีการใช้งานต่อไปนี้:
 
-- Update Features checks if Purchase Order has Purchase Receipt and Purchase Invoice.
-- Qty can be updated for un-received and for partially-received Purchase Order. For Purchase Order with completed Purchase Receipt, it cannot be updated.
-- Rate can be updated for un-invoiced and partially-invoiced Purchase Order. For Purchase Order with submitted Purchase Invoice, it cannot be updated.
+- อัปเดตคุณสมบัติตรวจสอบว่าใบสั่งซื้อมีใบเสร็จรับเงินและใบสั่งซื้อหรือไม่
+- จำนวนที่สามารถอัปเดตได้สำหรับการสั่งซื้อที่ไม่ได้รับและสำหรับการสั่งซื้อที่ได้รับบางส่วน สำหรับใบสั่งซื้อที่มีใบเสร็จการสั่งซื้อครบถ้วนแล้ว จะไม่สามารถอัปเดตได้
+- สามารถอัปเดตอัตราสำหรับใบสั่งซื้อที่ยังไม่ได้ออกใบแจ้งหนี้และออกใบแจ้งหนี้บางส่วน สำหรับใบสั่งซื้อที่มีใบกำกับสินค้าที่ส่งมา จะไม่สามารถอัปเดตได้

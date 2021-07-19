@@ -1,20 +1,20 @@
 <!-- add-breadcrumbs -->
-# Leaves
+# ระบบการลา
 
-This section will help you understand how ERPNext enables you to efficiently manage the leave schedule of your organization. It also explains how employees can apply for leaves.
+ส่วนนี้จะช่วยให้คุณเข้าใจว่า ERPNext ช่วยให้คุณจัดการกำหนดการลาขององค์กรของคุณได้อย่างมีประสิทธิภาพได้อย่างไร นอกจากนี้ยังอธิบายวิธีที่พนักงานสามารถยื่นขอลาได้
 
-The number and type of leaves an Employee can apply is controlled by Leave Allocation. You can create Leave Allocation for a Leave Period based on the Company's Leave Policy. You can also allocate Additional Leaves to your employees and generate reports to track leaves taken by Employees.
+จำนวนและประเภทของการลาที่พนักงานสามารถใช้ได้จะถูกควบคุมโดย Leave Allocation คุณสามารถสร้างการจัดสรรการลาสำหรับระยะเวลาการลาได้ตามนโยบายการลางานของบริษัท คุณยังสามารถจัดสรรการลาเพิ่มเติมให้กับพนักงานของคุณ และสร้างรายงานเพื่อติดตามการลาหยุดที่พนักงานใช้
 
-Employees can also create leave requests, which their respective managers (leave approvers) can approve or reject. An Employee can select leaves from a number of leave types such as Sick Leave, Casual Leave, Privilege Leave and so on. 
+พนักงานสามารถสร้างคำขอลาได้ ซึ่งผู้จัดการที่เกี่ยวข้อง (ผู้อนุมัติการลาออก) สามารถอนุมัติหรือปฏิเสธได้ พนักงานสามารถเลือกการลาจากหลายประเภท เช่น การลาป่วย การลางาน การลาเพื่อสิทธิพิเศษ เป็นต้น
 
-## Related Topics 
+## หัวข้อที่เกี่ยวข้อง
 
-1. [Holiday List](/docs/user/manual/en/human-resources/holiday-list)
-1. [Leave Type](/docs/user/manual/en/human-resources/leave-type)
-1. [Leave Period](/docs/user/manual/en/human-resources/leave-period)
-1. [Leave Policy](/docs/user/manual/en/human-resources/leave-policy)
-1. [Leave Allocation](/docs/user/manual/en/human-resources/leave-allocation)
-1. [Leave Application](/docs/user/manual/en/human-resources/leave-application)
-1. [Compensatory Leave Request](/docs/user/manual/en/human-resources/compensatory-leave-request)
-1. [Leave Encashment](/docs/user/manual/en/human-resources/leave-encashment)
-1. [Leave Block List](/docs/user/manual/en/human-resources/leave-block-list)
+1. [รายการวันหยุด](/docs/user/manual/th/human-resources/holiday-list)
+1. [ประเภทการลา](/docs/user/manual/th/human-resources/leave-type)
+1. [ระยะเวลาการลา](/docs/user/manual/th/human-resources/leave-period)
+1. [นโยบายการลา](/docs/user/manual/th/human-resources/leave-policy)
+1. [การจัดสรรการลา](/docs/user/manual/th/human-resources/leave-allocation)
+1. [ใบแจ้งการลา](/docs/user/manual/th/human-resources/leave-application)
+1. [คำขอลางานชดเชย](/docs/user/manual/th/human-resources/compensatory-leave-request)
+1. [Leave Encashment](/docs/user/manual/th/human-resources/leave-encashment)
+1. [Leave Block List](/docs/user/manual/th/human-resources/leave-block-list)

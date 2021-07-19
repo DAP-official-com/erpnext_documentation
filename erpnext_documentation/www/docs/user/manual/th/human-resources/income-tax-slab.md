@@ -1,33 +1,33 @@
 <!-- add-breadcrumbs -->
-# Income Tax Slab
+# ใบกำกับภาษีเงินได้
 
-**Income Tax Slab is a document to define income tax rates based on different taxable income slab.** 
+**ใบกำกับภาษีเงินได้เป็นเอกสารที่ใช้กำหนดอัตราภาษีเงินได้โดยพิจารณาจากแผ่นรายได้ที่ต้องเสียภาษีที่แตกต่างกัน**
 
-In many countries, income tax is levied on individual taxpayers based on a slab system where different tax rates have been prescribed for different slabs and such tax rates keep increasing with an increase in the income slab. In ERPNext, you can define multiple Income Tax Slabs and link them to individual employee's salary structure via Salary Structure Assignment.
+ในหลายประเทศ ภาษีเงินได้จะถูกเรียกเก็บจากผู้เสียภาษีแต่ละรายโดยอิงตามระบบภาษีซึ่งมีการกำหนดอัตราภาษีที่แตกต่างกันสำหรับรายได้ต่างๆ และอัตราภาษีดังกล่าวยังคงเพิ่มขึ้นตามการเพิ่มขึ้นของเงินได้ ใน ERPNext คุณสามารถกำหนดใบกำกับภาษีเงินได้หลายแผ่น และเชื่อมโยงไปยังโครงสร้างเงินเดือนของพนักงานแต่ละคนผ่านการกำหนดโครงสร้างเงินเดือน
 
-To access Income Tax Slab, go to:
-> Home > Human Resources > Payroll > Income Tax Slab
+ในการเข้าถึง Income Tax Slab ไปที่:
+> หน้าหลัก > ทรัพยากรบุคคล > เงินเดือน > ใบกำกับภาษีเงิน
 
-## 1. How to create an Income Tax Slab
+## 1. วิธีสร้างใบกำกับภาษีเงินได้
 
-To create a new Income Tax Slab:
+เพื่อสร้างใบกำกับภาษีเงินได้ใหม่:
 
-1. Enter a Name for the IT Slab, Company and the date from which it will be Effective From.
-1. Enable the checkbox 'Allow Tax Exemption' if applicable.
-1. Save and Submit.
+1. ป้อนชื่อสำหรับใบกำกับภาษีเงินได้ บริษัท และวันที่ที่จะมีผลใช้บังคับ
+1. เปิดใช้งานช่องทำเครื่องหมาย 'อนุญาตการยกเว้นภาษี' หากมี
+1. บันทึกและส่ง
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Tax Slabs
+### 2.1 ภาษีเงินได้
 
-In the Tax Slab table, you can define the rate for different income slabs. To define slab, From Amount and To Amount should be entered. For the first slab, From Amount is optional and for the last slab, To Amount is optional. Both the amount is inclusive while evaluating tax based on taxable income.
+ในตาราง ภาษีเงินได้ คุณสามารถกำหนดอัตราสำหรับ ภาษีรายได้ต่างๆ ในการกำหนดภาษี ควรป้อน ยอดเงิน สำหรับแผ่นงานแรก From Amount เป็นทางเลือก และสำหรับแผ่นสุดท้าย To Amount เป็นทางเลือก ทั้งสองจำนวนเงินรวมอยู่ในขณะที่ประเมินภาษีตามรายได้ที่ต้องเสียภาษี
 
 
 <img class="screenshot" alt="Income Tax Slab" src="/docs/assets/img/human-resources/income-tax-slab.png">
 
-The tax slab can be applicable based on specific conditions. Conditions can be written using all field names of Employee, Salary Structure, Salary Structure Assignment, and Salary Slip documents.
+ใบกำกับภาษีเงินได้สามารถใช้ได้ตามเงื่อนไขเฉพาะ สามารถเขียนเงื่อนไขได้โดยใช้ชื่อเขตข้อมูลทั้งหมดของพนักงาน โครงสร้างเงินเดือน การกำหนดโครงสร้างเงินเดือน และเอกสารสลิปเงินเดือน
 
-Examples:
+ตัวอย่าง:
 
 ```
 // Apply tax if employee born between 31-12-1937 and 01-01-1958 (Employees aged 60 to 80)
@@ -43,24 +43,24 @@ base > 10000
 annual_taxable_earning > 500000
 ```
 
-### 2.2 Other Taxes and Charges on Income Tax
+### 2.2 ภาษีและค่าธรรมเนียมอื่นๆ เกี่ยวกับภาษีเงินได้
 
-If other taxes are applicable on calculated income tax, you can enter those using this table. You can also define the min and max taxable amount for which this tax will be applicable.
-For example, Health and Education Cess is applied additionally on income tax to everyone in India.
+หากภาษีอื่นๆ ใช้กับภาษีเงินได้ที่คำนวณได้ คุณสามารถป้อนภาษีโดยใช้ตารางนี้ คุณยังสามารถกำหนดจำนวนเงินที่ต้องเสียภาษีขั้นต่ำและสูงสุดที่จะใช้กับภาษีนี้ได้
+ตัวอย่างเช่น สุขภาะและการศึกษา ถูกนำไปใช้กับภาษีเงินได้สำหรับทุกคนในอินเดีย
 
 <img class="screenshot" alt="Other Charged on Income Tax" src="/docs/assets/img/human-resources/other-taxes-on-income-tax.png">
 
 
-### 2.3 Other Properties
+### 2.3 คุณสมบัติอื่นๆ
 
-- **Allow Tax Exemptions:** Tax exemptions can be allowed for a specific Income Tax Slab. If enabled, while calculating taxes based on this tax slab, Employee Tax Exemption Declaration and Proof Submission are considered for calculating taxable income.
-- **Standard Tax Exemption Amount:** If exemption is allowed, the Standard Tax Exemption Amount defined by the government can be added here. This exemption generally does not need any kind of document proof and applicable to all employees linked to this income tax slab.
+- **อนุญาตการยกเว้นภาษี:** สามารถยกเว้นภาษีได้สำหรับ ภาษีเงินได้เฉพาะ หากเปิดใช้งาน ในขณะที่คำนวณภาษีตามตารางภาษีนี้ การประกาศการยกเว้นภาษีของพนักงานและการส่งหลักฐานจะถูกพิจารณาสำหรับการคำนวณรายได้ที่ต้องเสียภาษี
+- **จำนวนเงินยกเว้นภาษีมาตรฐาน:** หากอนุญาตให้ยกเว้น คุณสามารถเพิ่มจำนวนการยกเว้นภาษีมาตรฐานที่กำหนดโดยรัฐบาลได้ที่นี่ โดยทั่วไป การยกเว้นนี้ไม่ต้องการหลักฐานเอกสารใดๆ และใช้ได้กับพนักงานทุกคนที่เชื่อมโยงกับแผ่นภาษีเงินได้นี้
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Salary Component](/docs/user/manual/en/human-resources/salary-component)
-1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
-1. [Salary Structure Assignment](/docs/user/manual/en/human-resources/salary-structure-assignment)
-1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
-1. [Employee Tax Exemption Declaration](/docs/user/manual/en/human-resources/employee-tax-exemption-declaration) 
-1. [Employee Tax Exemption Proof Submission](/docs/user/manual/en/human-resources/employee-tax-exemption-proof-submission)
+1. [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
+1. [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
+1. [การกำหนดโครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure-assignment)
+1. [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)
+1. [การประกาศยกเว้นภาษีพนักงาน](/docs/user/manual/th/human-resources/employee-tax-exemption-declaration)
+1. [การยื่นหลักฐานการยกเว้นภาษีของพนักงาน](/docs/user/manual/th/human-resources/employee-tax-exemption-proof-submission)

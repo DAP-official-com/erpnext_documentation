@@ -1,34 +1,34 @@
 <!-- add-breadcrumbs -->
-# Setting Up Income Tax Deduction
-Calculating Tax deductions for employees every month is a time-consuming activity for most businesses, especially for large enterprises. If set up properly, ERPNext simplifies most of the tax-related calculations by automatically calculating tax deductions while generating Salary Slips. Here's how you can configure ERPNext to ease your payroll processing -
+# การตั้งค่าการหักภาษีเงินได้
+การคำนวณการหักภาษีสำหรับพนักงานทุกเดือนเป็นกิจกรรมที่ต้องใช้เวลามากสำหรับธุรกิจส่วนใหญ่ โดยเฉพาะอย่างยิ่งสำหรับองค์กรขนาดใหญ่ หากตั้งค่าอย่างถูกต้อง ERPNext จะช่วยลดความซับซ้อนในการคำนวณที่เกี่ยวข้องกับภาษีโดยการคำนวณการหักภาษีโดยอัตโนมัติในขณะที่สร้างสลิปเงินเดือน นี่คือวิธีที่คุณสามารถกำหนดค่า ERPNext เพื่อให้การประมวลผลบัญชีเงินเดือนของคุณง่ายขึ้น
 
-# Income Tax Exemption
-In many countries, especially in India, regulations allow exempting a part (or all) of some type of spendings by individuals from being added to their annual taxable income. Examples of such spendings could be contributions to charitable institutions, the amount spent on the education of children, specific investments, etc. To
-avail the exemption from their taxable income, individuals are required to submit proof of such spendings.
+# ยกเว้นภาษีเงินได้
+ในหลายประเทศ โดยเฉพาะอย่างยิ่งในอินเดีย กฎระเบียบอนุญาตให้ยกเว้นการใช้จ่ายบางส่วน (หรือทั้งหมด) โดยบุคคลจากการถูกเพิ่มในรายได้ที่ต้องเสียภาษีประจำปีของตน ตัวอย่างของการใช้จ่ายดังกล่าวอาจเป็นการบริจาคให้กับสถาบันการกุศล จำนวนเงินที่ใช้จ่ายในการศึกษาของเด็ก การลงทุนเฉพาะ ฯลฯ เพื่อ
+ประโยชน์ที่ได้รับยกเว้นจากรายได้ที่ต้องเสียภาษี บุคคลต้องส่งหลักฐานการใช้จ่ายดังกล่าว
 
-ERPNext allows you to configure Income Tax Slabs and the tax is calculated based on the projected annual earnings of the employee. For this, employees are required to declare the exemption amount they plan to claim at the start of the financial year so that the payroll deductions for tax will be calculated based on the projected annual earnings minus the exemption. Employees can declare this through [Employee Tax Exemption Declaration](/docs/user/manual/en/human-resources/employee-tax-exemption-declaration).
+ERPNext ช่วยให้คุณสามารถกำหนดค่า Slabs ภาษีเงินได้ และภาษีจะคำนวณตามรายได้ประจำปีที่คาดการณ์ไว้ของพนักงาน สำหรับสิ่งนี้ พนักงานจะต้องประกาศจำนวนเงินยกเว้นที่พวกเขาวางแผนที่จะเรียกร้องเมื่อเริ่มต้นปีการเงิน เพื่อที่การหักเงินเดือนสำหรับภาษีจะถูกคำนวณตามรายได้ประจำปีที่คาดการณ์ไว้ลบด้วยข้อยกเว้น พนักงานสามารถประกาศสิ่งนี้ผ่าน [แจ้งยกเว้นภาษีพนักงาน](/docs/user/manual/th/human-resources/employee-tax-exemption-declaration)
 
-If no declaration is submitted by the employee, the monthly deductions will be calculated without any exemption from the employee's annual earnings. However, if the employee submits a declaration in between the payroll period, the tax exemption will be applied from the next payroll onwards. Any additional tax collected in earlier payrolls will be adjusted in the last payroll or when using _Deduct Tax For Unsubmitted Tax Exemption Proof_ in Payroll Entry or Salary Slip.
+หากไม่มีการประกาศโดยพนักงาน การหักเงินรายเดือนจะถูกคำนวณโดยไม่มีการยกเว้นจากรายได้ประจำปีของพนักงาน อย่างไรก็ตาม หากพนักงานยื่นใบประกาศในระหว่างรอบระยะเวลาเงินเดือน จะได้รับการยกเว้นภาษีตั้งแต่งวดถัดไปเป็นต้นไป ภาษีเพิ่มเติมใดๆ ที่รวบรวมในบัญชีเงินเดือนก่อนหน้าจะถูกปรับในบัญชีเงินเดือนล่าสุด หรือเมื่อใช้ _Deduct Tax For Unsubmitted Tax Exemption Proof_ ในรายการเงินเดือนหรือสลิปเงินเดือน
 
-Also, at the end of the year employees submit the actual proof of the spendings for filing via [Employee Tax Exemption Proof Submission](/docs/user/manual/en/human-resources/employee-tax-exemption-proof-submission). In the last payroll of the Payroll Period, ERPNext checks for proof submissions of employees, and if not found, tax for the exempted income will be added to the standard deduction component.
+นอกจากนี้ เมื่อสิ้นปีพนักงานส่งหลักฐานการใช้จ่ายตามจริงในการยื่นเรื่องผ่าน [การส่งหลักฐานการยกเว้นภาษีพนักงาน](/docs/user/manual/th/human-resources/employee-tax-exemption-proof-submission) . ในการจ่ายเงินเดือนสุดท้ายของรอบระยะเวลาการจ่ายเงินเดือน ERPNext จะตรวจสอบการส่งหลักฐานของพนักงาน และหากไม่พบ ภาษีสำหรับรายได้ที่ได้รับการยกเว้นจะถูกรวมเข้ากับองค์ประกอบการหักลดมาตรฐาน
 
-### Employee Tax Exemption Category
-Exemptions from taxable salary are usually restricted to spendings on particular categories decided by government or regulatory agencies. ERPNext allows you to configure various categories which are allowed to be exempted. Examples of this could be, for India, 80G, 80C, B0CC, etc.
+### หมวดหมู่การยกเว้นภาษีพนักงาน
+การยกเว้นจากเงินเดือนที่ต้องเสียภาษีมักจะจำกัดเฉพาะการใช้จ่ายในหมวดหมู่เฉพาะที่ตัดสินใจโดยรัฐบาลหรือหน่วยงานกำกับดูแล ERPNext ให้คุณกำหนดค่าหมวดหมู่ต่างๆ ที่อนุญาตให้ยกเว้นได้ ตัวอย่างนี้อาจเป็นสำหรับอินเดีย 80G, 80C, B0CC เป็นต้น
 
-You can configure Employee Tax Exemption Category by going to,
-> Human resources > Payroll Setup > Employee Tax Exemption Category > New Employee Tax Exemption Category
+คุณสามารถกำหนดค่าประเภทการยกเว้นภาษีของพนักงานได้โดยไปที่
+> ทรัพยากรบุคคล > การตั้งค่าเงินเดือน > ประเภทการยกเว้นภาษีพนักงาน > ประเภทการยกเว้นภาษีพนักงานใหม่
 
 <img class="screenshot" alt="Employee Tax Exemption Category" src="/docs/assets/img/human-resources/employee-tax-exemption-category.png">
 
-### Employee Tax Exemption Sub Category
-Under each category, there could be many heads for which the exemptions are allowed. For example, in India, subcategories under 80C could be Life Insurance Premium
+### หมวดหมู่ย่อยยกเว้นภาษีพนักงาน
+ภายใต้แต่ละประเภท อาจมีหลายหัวที่อนุญาตให้ยกเว้นได้ ตัวอย่างเช่น ในอินเดีย หมวดหมู่ย่อยภายใต้ 80C อาจเป็นประกันชีวิตแบบพรีเมียม
 
-You can configure Employee Tax Exemption Sub Category by going to,
-> Human resources > Payroll Setup > Employee Tax Exemption Sub Category > New Employee Tax Sub Exemption Category
+คุณสามารถกำหนดค่าหมวดย่อยการยกเว้นภาษีของพนักงานได้โดยไปที่
+> ทรัพยากรบุคคล > การตั้งค่าเงินเดือน > หมวดหมู่ย่อยการยกเว้นภาษีพนักงาน > หมวดหมู่ย่อยการยกเว้นภาษีพนักงานใหม่
 
 <img class="screenshot" alt="Employee Tax Exemption Sub Category" src="/docs/assets/img/human-resources/employee-tax-exemption-subcategory.png">
 
-### HRA Exemption - Regional, India
+<!--### HRA Exemption - Regional, India
 For the fiscal year 2018-19, in India, House Rent Allowance (HRA) exemption from taxable earnings is the minimum of:
  * The actual amount allotted by the employer as the HRA.
  * Actual rent paid less 10% of the basic salary.
@@ -36,26 +36,25 @@ For the fiscal year 2018-19, in India, House Rent Allowance (HRA) exemption from
 
  As part of the Employee Tax Exemption Declaration, employees shall also fill out the HRA Exemption. ERPNext will calculate the exemption eligible for HRA and exempt it while calculating the taxable earnings.
 
- > Note: Basic and HRA salary component shall be configured in Company for HRA exemption to work
+ > Note: Basic and HRA salary component shall be configured in Company for HRA exemption to work-->
 
-### Options in Payroll Entry and Salary Slip
-ERPNext simplifies payroll processing by automatically processing payroll in bulk via [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry).
+### ตัวเลือกในรายการเงินเดือนและสลิปเงินเดือน
+ERPNext ช่วยลดความยุ่งยากในการประมวลผลบัญชีเงินเดือนโดยประมวลผลการจ่ายเงินจำนวนมากโดยอัตโนมัติผ่าน [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)
 
-* Deduct Tax For Unclaimed Employee Benefits: Flexible benefits (Salary Components which are _Is Flexible Benefit_) are not included in the taxable income of the employee. However, the amount received for these components will be included in the taxable earnings of the employee if she fails to submit [Employee Benefit Claim](/docs/user/manual/en/human-resources/employee-benefit-claim) while calculating tax in the last payroll of the Payroll Period.
+* หักภาษีสำหรับผลประโยชน์ของพนักงานที่ไม่ได้รับการอ้างสิทธิ์: ผลประโยชน์ที่ยืดหยุ่นได้ (องค์ประกอบเงินเดือนซึ่งเป็น _flexible benifits_) จะไม่รวมอยู่ในรายได้ที่ต้องเสียภาษีของพนักงาน อย่างไรก็ตาม จำนวนเงินที่ได้รับสำหรับส่วนประกอบเหล่านี้จะรวมอยู่ในรายได้ที่ต้องเสียภาษีของพนักงาน หากเธอไม่ส่ง [สวัสดิการพนักงาน](/docs/user/manual/th/human-resources/employee-benefit-claim) ขณะคำนวณ ภาษีในบัญชีเงินเดือนสุดท้ายของรอบระยะเวลาเงินเดือน
 
-If you wish to collect tax for benefits before the last payroll, check this option and ERPNext will recalculate the tax and add the tax for all untaxed benefits while generating the Salary Slip.
+หากคุณต้องการเก็บภาษีเพื่อผลประโยชน์ก่อนการจ่ายเงินเดือนครั้งสุดท้าย ให้เลือกตัวเลือกนี้และ ERPNext จะคำนวณภาษีใหม่และเพิ่มภาษีสำหรับผลประโยชน์ที่ไม่ต้องเสียภาษีทั้งหมดในขณะที่สร้างสลิปเงินเดือน
 
-* Deduct Tax For Unsubmitted Tax Exemption Proof: This option allows you to deduct taxes for the earnings which were exempted in previous payrolls as declared in [Employee Tax Exemption Declaration](/docs/user/manual/en/human-resources/employee-tax-exemption-declaration) but the Employee has not submitted sufficient proof via  [Employee Tax Exemption Proof Submission](/docs/user/manual/en/human-resources/employee-tax-exemption-proof-submission). It is to be noted that if this option is checked ERPNext does not consider the Employee Tax Exemption Declaration by employees and will only take into account _Employee Tax Exemption Proof Submission_ instead while calculating exemption from employees' annual earnings.
+* หักภาษีสำหรับหลักฐานการยกเว้นภาษีที่ยังไม่ได้ส่ง: ตัวเลือกนี้ช่วยให้คุณสามารถหักภาษีสำหรับรายได้ที่ได้รับการยกเว้นในการจ่ายเงินเดือนก่อนหน้าตามที่ประกาศใน [Employee Tax Exemption Declaration](/docs/user/manual/th/human-resources/employee-Tax-exemption-declaration) แต่พนักงานไม่ได้ส่งหลักฐานเพียงพอผ่าน [ยื่นหลักฐานการยกเว้นภาษีพนักงาน](/docs/user/manual/th/human-resources/employee-tax-exemption-proof-submission) โปรดทราบว่าหากเลือกตัวเลือกนี้ ERPNext จะไม่พิจารณาประกาศการยกเว้นภาษีของพนักงานโดยพนักงาน และจะพิจารณาเฉพาะ _Employee Tax Exemption Proof Submission_ แทนในขณะที่คำนวณการยกเว้นจากรายได้ประจำปีของพนักงาน
 
-> Note: If required, you can still process payroll for employees individually, by manually creating a new Salary Slip and both these options are made available in the Salary Slip
+> หมายเหตุ: หากจำเป็น คุณยังคงสามารถดำเนินการจ่ายเงินเดือนสำหรับพนักงานเป็นรายบุคคลได้โดยการสร้างสลิปเงินเดือนใหม่ด้วยตนเอง และตัวเลือกทั้งสองนี้จะพร้อมใช้งานในสลิปเงินเดือน
 
-# Income Tax Slab
-[Income Tax Slab](/docs/user/manual/en/human-resources/income-tax-slab) helps you define Tax slabs applicable for the period, making it easier to manage changing laws. You can add multiple tax slabs for the payroll period depending on the tax regulations. Note that you can use fields in Employee document in the _Condition_ field to apply tax slabs based on attributes of employees.
+#รายการภาษีเงินได้
+[รายการภาษีเงินได้](/docs/user/manual/th/human-resources/income-tax-slab) ช่วยให้คุณกำหนด ภาษีเงินได้ ที่ใช้ได้ในช่วงเวลานั้น ทำให้การจัดการกฎหมายที่เปลี่ยนแปลงง่ายขึ้น คุณสามารถเพิ่มแผ่นภาษีได้หลายแผ่นสำหรับรอบระยะเวลาบัญชีเงินเดือน ขึ้นอยู่กับระเบียบข้อบังคับด้านภาษี โปรดทราบว่าคุณสามารถใช้ฟิลด์ในเอกสารพนักงานในฟิลด์ _Condition_ เพื่อใช้แผ่นภาษีตามแอตทริบิวต์ของพนักงาน
 
-# Salary Component
-To enable automatic tax deduction based on Tax slabs configured in Income Tax Slab, you have to configure a Salary Component of type _Deduction_ with _Variable Based On Taxable Salary_ option enabled. This checkbox enables auto calculation of Income Tax considering the tax slabs and declaration submitted by an employee. The tax will be calculated annually on the remaining taxable salary and equally divide it in 12 months.
+# องค์ประกอบเงินเดือน
+ในการเปิดใช้งานการหักภาษีโดยอัตโนมัติตามแผ่นพื้นภาษีที่กำหนดค่าไว้ในแผ่นภาษีเงินได้ คุณต้องกำหนดค่าส่วนประกอบเงินเดือนประเภท _Deduction_ โดยเปิดใช้งานตัวเลือก _Variable Based On Taxable Salary_ ช่องทำเครื่องหมายนี้ช่วยให้สามารถคำนวณภาษีเงินได้โดยอัตโนมัติโดยพิจารณาจากแผ่นป้ายภาษีและใบประกาศที่ส่งโดยพนักงาน ภาษีจะคำนวณทุกปีจากเงินเดือนที่ต้องเสียภาษีที่เหลืออยู่ และแบ่งเท่าๆ กันใน 12 เดือน
 
->**Important Note:** If you configure condition and formula for this Deduction component, the condition and formula will be considered for calculating the Salary Component and the Tax Slabs configured in Income Tax Slab will be ignored. However, you can still use _Deduct Tax For Unsubmitted Tax Exemption Proof_ option in Payroll Entry / Salary Slip to deduct taxes based on the Tax Slabs configured in Income Tax Slab, exempting [Employee Tax Exemption Proof Submission](/docs/user/manual/en/human-resources/employee-tax-exemption-proof-submission) which will give precedence to the Tax Slab based tax deduction.
-This is particularly helpful if you need to deduct a fixed amount as a deduction in each payroll rather than ERPNext automatically calculating the deductions based on the projected annual salary of the employee after exemption as declared by the employee via [Employee Tax Exemption Declaration](/docs/user/manual/en/human-resources/employee-tax-exemption-declaration). At the end of the fiscal year, you can still use _Deduct Tax For Unsubmitted Tax Exemption Proof_ to deduct the remaining tax liability of the employee for the whole period.
+>**หมายเหตุสำคัญ:** หากคุณกำหนดเงื่อนไขและสูตรสำหรับองค์ประกอบการหักเงินนี้ เงื่อนไขและสูตรจะถูกพิจารณาสำหรับการคำนวณองค์ประกอบเงินเดือน และใบภาษีที่กำหนดค่าไว้ในแผ่นภาษีเงินได้จะถูกละเว้น อย่างไรก็ตาม คุณยังสามารถใช้ตัวเลือก _Deduct Tax For Unsubmitted Tax Exemption Proof_ ในรายการ เงินเดือน / สลิปเงินเดือน เพื่อหักภาษีตาม ภาษีเงินได้ ที่กำหนดค่าไว้ใน ภาษีเงินได้ โดยยกเว้น [การส่งหลักฐานการยกเว้นภาษีพนักงาน](/docs/user/manual/th/human-resources/employee-tax-exemption-proof-submission) ซึ่งจะให้ความสำคัญกับ Tax Slab ตามการลดหย่อนภาษี สิ่งนี้มีประโยชน์อย่างยิ่งหากคุณต้องการหักจำนวนเงินคงที่เป็นการหักในแต่ละบัญชีเงินเดือน แทนที่จะใช้ ERPNext จะคำนวณการหักเงินโดยอัตโนมัติตามเงินเดือนประจำปีที่คาดการณ์ไว้ของพนักงานหลังจากการยกเว้นตามที่พนักงานประกาศผ่าน [Employee Tax Declaration](/ docs/user/manual/th/human-resources/employee-tax-exemption-declaration) เมื่อสิ้นสุดปีบัญชี คุณยังสามารถใช้ _Deduct Tax For Unsubmitted Tax Exemption Proof_ เพื่อหักภาระภาษีที่เหลืออยู่ของพนักงานตลอดระยะเวลา
 
 {next}

@@ -1,55 +1,55 @@
 <!-- add-breadcrumbs -->
-# Salary Structure Assignment
+# การกำหนดโครงสร้างเงินเดือน
 
-**Salary Structure Assignment form allows you to assign a particular Salary Structure to the employee.**
+**แบบฟอร์มกำหนดโครงสร้างเงินเดือนช่วยให้คุณสามารถกำหนดโครงสร้างเงินเดือนเฉพาะให้กับพนักงานได้**
 
 
-In ERPNext, you can create multiple Salary Structure Assignments for the same Employee for different periods. 
+ใน ERPNext คุณสามารถสร้างการกำหนดโครงสร้างเงินเดือนหลายรายการสำหรับพนักงานคนเดียวกันในช่วงเวลาต่างๆ
 
-To access Salary Structure Assignment, go to:
-> Home > Human Resources > Payroll > Salary Structure Assignment
+ในการเข้าถึงการกำหนดโครงสร้างเงินเดือน ไปที่:
+> หน้าหลัก > ทรัพยากรบุคคล > เงินเดือน > การกำหนดโครงสร้างเงินเดือน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before you create a Salary Structure Assignment, it is advisable you have the following documents:
+ก่อนที่คุณจะสร้างการกำหนดโครงสร้างเงินเดือน ขอแนะนำให้คุณมีเอกสารดังต่อไปนี้:
 
-1. [Employee](/docs/user/manual/en/human-resources/employee)
-1. [Salary Component](/docs/user/manual/en/human-resources/salary-component)
-1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
+1. [พนักงาน](/docs/user/manual/th/human-resources/employee)
+1. [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
+1. [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
 
-## 2. How to create a Salary Structure Assignment:
+## 2. วิธีสร้างการกำหนดโครงสร้างเงินเดือน:
 
-1. Go to Salary Structure Assignment list and click on New.
-1. Select the Employee and Salary Structure.
-1. Select the From Date from which this particular Salary Structure will be applicable.
-1. Select preferred Income Tax Slab for the employee.
-1. Enter Base and Variable amount as per requirement. Base amount refers to the Base Salary of the Employee, which is fixed and paid out, regardless of employees meeting their goals. Variable pay, on the other hand, is the portion of sales compensation determined by employee performance. When employees hit their goals (aka quota), variable pay is provided as a type of bonus, incentive pay, or commission. 
+1. ไปที่รายการกำหนดโครงสร้างเงินเดือนแล้วคลิกใหม่
+1. เลือกโครงสร้างพนักงานและเงินเดือน
+1. เลือกวันที่เริ่มต้นซึ่งโครงสร้างเงินเดือนนี้จะมีผลบังคับใช้
+1. เลือก Slab ภาษีเงินได้ที่ต้องการสำหรับพนักงาน
+1. ระบุจำนวนฐานและตัวแปรตามต้องการ จำนวนเงินพื้นฐานหมายถึงฐานเงินเดือนของพนักงาน ซึ่งคงที่และจ่ายออก โดยไม่คำนึงว่าพนักงานจะบรรลุเป้าหมายของพวกเขา ในทางกลับกัน การจ่ายแบบผันแปรคือส่วนของค่าตอบแทนการขายที่กำหนดโดยผลการปฏิบัติงานของพนักงาน เมื่อพนักงานบรรลุเป้าหมาย (หรือที่เรียกกันว่าโควต้า) การจ่ายแบบผันแปรจะถูกจัดให้เป็นโบนัส ค่าตอบแทนจูงใจ หรือคอมมิชชัน 
 
  <img class="screenshot" alt="Salary Structure Assignment" src="{{docs_base_url}}/assets/img/human-resources/salary-structure-assignment.png">
 
-### 2.1 Alternate ways to create Salary Structure Assignment
+### 2.1 วิธีอื่นในการสร้างการกำหนดโครงสร้างเงินเดือน
 
-You can also assign a Salary Structure to Employee(s) directly through the Salary Structure document. To assign the Salary Structure to a single employee, click on the 'Assign Salary Structure' button in the Salary Structure document.
+คุณยังสามารถกำหนดโครงสร้างเงินเดือนให้กับพนักงานได้โดยตรงผ่านเอกสารโครงสร้างเงินเดือน ในการกำหนดโครงสร้างเงินเดือนให้กับพนักงานคนเดียว ให้คลิกที่ปุ่ม 'กำหนดโครงสร้างเงินเดือน' ในเอกสารโครงสร้างเงินเดือน
 
 <img class="screenshot" alt="Salary Structure Assignment" src="{{docs_base_url}}/assets/img/human-resources/assign-sal1.png">
 
-If you want to bulk assign the Salary Structure to multiple employees, you can do so via the 'Assign to Employees' button.
+หากคุณต้องการกำหนดโครงสร้างเงินเดือนให้กับพนักงานหลายคน คุณสามารถทำได้โดยใช้ปุ่ม 'มอบหมายให้พนักงาน'
 
 <img class="screenshot" alt="Salary Structure Assignment" src="{{docs_base_url}}/assets/img/human-resources/assign-sal2.png">
 
-You can optionally filter out employees based on Employee Grade, Department, Designation, and Employee itself.
+คุณสามารถเลือกกรองพนักงานตามระดับพนักงาน แผนก การแต่งตั้ง และพนักงานเองได้
 
 <img class="screenshot" alt="Salary Structure Assignment" src="{{docs_base_url}}/assets/img/human-resources/assign-sal3.png">
 
-Once this is done, click on the 'Assign' button to assign the Salary Structure accordingly.
+เมื่อเสร็จแล้วให้คลิกที่ปุ่ม 'กำหนด' เพื่อกำหนดโครงสร้างเงินเดือนตามนั้น
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Salary Component](/docs/user/manual/en/human-resources/salary-component)
-1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
-1. [Employee Grade](/docs/user/manual/en/human-resources/employee-grade)
-1. [Department](/docs/user/manual/en/human-resources/department)
-1. [Designation](/docs/user/manual/en/human-resources/designation)
-1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
+1. [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
+1. [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
+1. [ระดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade)
+1. [แผนก](/docs/user/manual/th/human-resources/department)
+1. [การกำหนด](/docs/user/manual/th/human-resources/designation)
+1. [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)
 
 

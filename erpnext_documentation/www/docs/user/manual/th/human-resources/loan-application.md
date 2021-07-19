@@ -1,56 +1,56 @@
-# Loan Application
+# ใบสมัครสินเชื่อ
 
-**Loan Application is a document which contains the information regarding the Loan Applicant, Loan Type, Repayment Method, Loan Amount and Rate of Interest.**
+**การขอสินเชื่อเป็นเอกสารที่มีข้อมูลเกี่ยวกับผู้ขอสินเชื่อ ประเภทเงินกู้ วิธีการชำระคืน จำนวนเงินกู้ และอัตราดอกเบี้ย**
 
-Employee can apply for loan by going to:
+พนักงานสามารถสมัครสินเชื่อได้โดยไปที่:
 
-> Human Resources > Loan > Loan Application
+> ทรัพยากรบุคคล > สินเชื่อ > ใบสมัครสินเชื่อ
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating a Loan Application, it is advisable to create the following documents:
+ก่อนสร้างใบสมัครขอสินเชื่อ ขอแนะนำให้สร้างเอกสารดังต่อไปนี้:
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Loan Type](/docs/user/manual/en/human-resources/loan-type)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [ประเภทสินเชื่อ](/docs/user/manual/th/human-resources/loan-type)
 
   
 
-## 2. How to create a Loan Application
+## 2. วิธีสร้างใบสมัครสินเชื่อ
 
-1. Go to: Loan Application > New.
-1. Enter the Applicant name.
-1. Enter loan information such as a Loan Type, Loan Amount and Required by Date.
-1. Select the [Repayment Method](#31-repayment-method) and based on loan information, information such as Total Payable Amount and Interest will be calculated.
-1. Save and Submit.
+1. ไปที่: การขอสินเชื่อ > ใหม่
+1. ป้อนชื่อผู้สมัคร
+1. ป้อนข้อมูลสินเชื่อ เช่น ประเภทเงินกู้ จำนวนเงินกู้ และที่ต้องการตามวันที่
+1. เลือก [วิธีการชำระคืน](#31-repayment-method) และตามข้อมูลเงินกู้ ข้อมูลเช่น จำนวนเจ้าหนี้ทั้งหมดและดอกเบี้ยจะถูกคำนวณ
+1. บันทึกและส่ง
    
   <img class="screenshot" alt="Loan Application" src="{{docs_base_url}}/assets/img/human-resources/loan-application.png">
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Repayment Method
+### 3.1 วิธีการชำระคืน
 
-There are two types of Repayment Methods in Loan Application:
+วิธีการชำระคืนในการสมัครสินเชื่อมีสองประเภท:
 
-#### 1. Repay Fixed Amount Per Period
+#### 1. ชำระคืนจำนวนคงที่ต่องวด
 
-* Enter the Monthly Payment Amount.
-* Save.
-* Once saved, based on the Rate of Interest, the Total Payable Interest and Total Payable Amount will be calculated along with Period in Months.
-* Submit.
+* ป้อนจำนวนเงินที่ชำระรายเดือน
+* บันทึก
+* เมื่อบันทึกแล้ว ตามอัตราดอกเบี้ย ดอกเบี้ยทั้งหมดที่ต้องชำระและจำนวนเงินที่ต้องชำระทั้งหมดจะถูกคำนวณพร้อมกับระยะเวลาในเดือน
+* ส่ง
 
   <img class="screenshot" alt="Repayment Fixed Amount Per Period" src="{{docs_base_url}}/assets/img/human-resources/repayment1.png">
 
-#### 2. Repay Over Number Of Periods
+#### 2. ชำระคืนตามจำนวนงวด
 
-* Enter the Repayment Period in Months.
-* Save.
-* Once saved, based on the Rate of Interest, the Total Payable Interest and Total Payable Amount will be calculated along with Monthly Repayment Amount.
-* Submit.
+* ป้อนระยะเวลาการชำระคืนในเดือน
+* บันทึก
+* เมื่อบันทึกแล้วตามอัตราดอกเบี้ย ดอกเบี้ยทั้งหมดที่ต้องชำระและจำนวนเงินที่ต้องชำระทั้งหมดจะถูกคำนวณพร้อมกับจำนวนเงินที่ชำระคืนรายเดือน
+* ส่ง
 
   <img class="screenshot" alt="Repayment Fixed Amount Per Period" src="{{docs_base_url}}/assets/img/human-resources/repayment2.png">
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Loan Type](/docs/user/manual/en/human-resources/loan-type)
-1. [Loan](/docs/user/manual/en/human-resources/loan)
+1. [ประเภทสินเชื่อ](/docs/user/manual/th/human-resources/loan-type)
+1. [เงินกู้](/docs/user/manual/th/human-resources/loan)
 

@@ -1,91 +1,91 @@
-# Employee Onboarding 
+#การเตรียมความพร้อมพนักงาน
 
-**In the process of hiring an Employee, there are set of standard activities which need to be executed. This feature helps you to maintain the masters of these activities, and create a set of tasks at the time of each Employee hiring.**
+**การเตรียมความพร้อมพนักงาน มีชุดกิจกรรมมาตรฐานที่ต้องดำเนินการ ฟีเจอร์นี้ช่วยให้คุณรักษาผู้เชี่ยวชาญของกิจกรรมเหล่านี้ และสร้างชุดงานในเวลาที่พนักงานแต่ละคนจ้างงาน**
 
-Employee Onboarding is created for a Job Application, who is approved for the hiring.
+การเตรียมความพร้อมของพนักงานถูกสร้างขึ้นสำหรับการสมัครงาน ซึ่งได้รับการอนุมัติสำหรับการว่าจ้าง
 
-**Use Case:** Let's assume that following are the activities which need to be performed as soon as a job applicant is approved to be hired.
+**กรณีการใช้งาน:** สมมติว่าต่อไปนี้เป็นกิจกรรมที่ต้องทำทันทีที่ผู้สมัครงานได้รับการอนุมัติให้ได้รับการว่าจ้าง
 
-- Perform a legal and professional background check
-- Create an Employee master
-- Create an Email Account
-- Create an identity card
-- Allocate leaves
+- ดำเนินการตรวจสอบประวัติทางกฎหมายและเป็นมืออาชีพ
+- สร้างต้นแบบพนักงาน
+- สร้างบัญชีอีเมล
+- สร้างบัตรประจำตัวประชาชน
+- จัดสรรการลางาน
 
 
-In ERPNext, these standard activities can be tracked in the Employee Onboarding Template. To access Employee Onboarding, go to: 
+ใน ERPNext กิจกรรมมาตรฐานเหล่านี้สามารถติดตามได้ในเทมเพลตการเตรียมความพร้อมของพนักงาน ในการเข้าถึงการเตรียมความพร้อมของพนักงาน ให้ไปที่:
 
-> Human Resources > Employee Lifecycle > Employee Onboarding
+> ทรัพยากรบุคคล > วงจรชีวิตพนักงาน > การเตรียมความพร้อมของพนักงาน
 
-## 1.  Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Employee Onboarding, it is advisable that you create the following documents:
+ก่อนที่จะสร้างการเตรียมความพร้อมให้กับพนักงาน ขอแนะนำให้คุณสร้างเอกสารต่อไปนี้:
 
-* [Job Applicant](/docs/user/manual/en/human-resources/job-applicant)
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Department](/docs/user/manual/en/human-resources/department)
-* [Designation](/docs/user/manual/en/human-resources/designation)
-* [Employee Grade](/docs/user/manual/en/human-resources/employee-grade)
+* [ผู้สมัครงาน](/docs/user/manual/th/human-resources/job-applicant)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [แผนก](/docs/user/manual/th/human-resources/department)
+* [การกำหนด](/docs/user/manual/th/human-resources/designation)
+* [ระดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade)
 
-## 2. How to create an Employee Onboarding
+## 2. วิธีสร้างการปฐมนิเทศพนักงาน
 
-1. Go to: Employee Onboarding > New.
-1. Select the Job Applicant. once the Job Applicant is selected, the corresponding Employee will automatically get fetched.
-1. Select the [Employee Onboarding Template](#31-employee-onboarding-template). Based on the template selected, information such as Department, Designation and Employee grade will be automatically fetched (if already mentioned in the Onboarding Template).
-1. Enter Date of Joining.
-1. Save and Submit.
+1. ไปที่: การเตรียมความพร้อมของพนักงาน > ใหม่
+1. เลือกผู้สมัครงาน เมื่อเลือกผู้สมัครงานแล้ว พนักงานที่เกี่ยวข้องจะถูกดึงออกมาโดยอัตโนมัติ
+1. เลือก [เทมเพลตการเตรียมความพร้อมของพนักงาน](#31-employee-onboarding-template) ตามเทมเพลตที่เลือก ข้อมูล เช่น แผนก การแต่งตั้ง และเกรดพนักงาน จะถูกดึงข้อมูลโดยอัตโนมัติ (หากระบุไว้แล้วในเทมเพลตการเตรียมความพร้อม)
+1. ป้อนวันที่เข้าร่วม
+1. บันทึกและส่ง
 
 
   <img class="screenshot" alt="Onboarding Template" src="{{docs_base_url}}/assets/img/human-resources/employee-onboarding1.png">
 
 
 
-> Note 1: If an Employee Onboarding Template isn't created, you can directly fill the onboarding information in the Employee Onboarding doctype itself.
+> หมายเหตุ 1: หากไม่มีการสร้างเทมเพลตการเตรียมความพร้อมของพนักงาน คุณสามารถกรอกข้อมูลการปฐมนิเทศได้โดยตรงในประเภทเอกสารการเตรียมความพร้อมของพนักงาน
 
-> Note 2: The 'Status' of the Employee Onboarding will change to Completed once all the associated Activities are complete.
+> หมายเหตุ 2: 'สถานะ' ของการเตรียมความพร้อมของพนักงานจะเปลี่ยนเป็นเสร็จสิ้นเมื่อกิจกรรมที่เกี่ยวข้องทั้งหมดเสร็จสมบูรณ์
 
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Employee Onboarding Template
+### 3.1 เทมเพลตการเตรียมความพร้อมของพนักงาน
 
-The Employee Onboarding Template is a blueprint which contains a predefined list of Activities for Employee Onboarding. An Employee Onboarding Template can be created for a particular Department, Designation and Employee Grade. 
+เทมเพลต การเตรียมความพร้อมพนักงาน เป็นพิมพ์เขียวที่มีรายการกิจกรรมสำหรับการเตรียมความพร้อมของพนักงานที่กำหนดไว้ล่วงหน้า สามารถสร้างเทมเพลตการเตรียมความพร้อมของพนักงานสำหรับแผนก การแต่งตั้ง และเกรดพนักงาน
 
-To create a new Employee Onboarding Template:
+ในการสร้างเทมเพลตการเตรียมความพร้อมของพนักงานใหม่:
 
-1. Go to: Human Resources > Employee Lifecycle > Employee Onboarding Template > New.
-1. Enter the Department, Designation and Employee Grade (optional).
-1. Mention the Activities for onboarding. For each Activity, you can also mention the User or Role, or one of it, to whom this Activity will be assigned.
+1. ไปที่: ทรัพยากรบุคคล > วงจรชีวิตของพนักงาน > เทมเพลตการเตรียมความพร้อมของพนักงาน > ใหม่
+1. เข้าแผนก ตำแหน่ง และ เกรดพนักงาน (ถ้ามี)
+1. กล่าวถึงกิจกรรมสำหรับการปฐมนิเทศ สำหรับแต่ละกิจกรรม คุณยังสามารถพูดถึงผู้ใช้หรือบทบาท หรือคนใดคนหนึ่งที่จะมอบหมายกิจกรรมนี้ให้
   
   <img class="screenshot" alt="Onboarding Template" src="{{docs_base_url}}/assets/img/human-resources/onboarding-template.png">
 
 
-### 3.2 Tasks and Assignments
+### 3.2 งานและการมอบหมาย
 
-On submission of the Employee Onboarding, a [Project](/docs/user/manual/en/projects/project) will be created. Within the Project, [Tasks](/docs/user/manual/en/projects/tasks) will also be created for each Activity. 
+เมื่อส่งการปฐมนิเทศพนักงาน จะมีการสร้าง [โครงการ](/docs/user/manual/th/projects/project) ภายในโครงการ [งาน](/docs/user/manual/th/projects/tasks) จะถูกสร้างขึ้นสำหรับแต่ละกิจกรรม
 
-You can view the created Projects and Tasks as shown below:
+คุณสามารถดูโครงการและงานที่สร้างขึ้นดังแสดงด้านล่าง:
 
 <img class="screenshot" alt="Onboarding Template" src="{{docs_base_url}}/assets/img/human-resources/project-task.png">
 
-Additionally, each Activity can be assigned weights based on its importance.
+นอกจากนี้ แต่ละกิจกรรมสามารถกำหนดน้ำหนักตามความสำคัญได้
 
 <img class="screenshot" alt="Tasks and Assignments" src="{{docs_base_url}}/assets/img/human-resources/employee-onboarding3.png">
 
-Based on the progress on the Tasks, progress can be updated in the Employee Onboarding process.
+ตามความคืบหน้าของงาน ความคืบหน้าสามารถปรับปรุงได้ในกระบวนการเตรียมความพร้อมของพนักงาน
 
 
-### 3.3 Employee Creation
+### 3.3 การสร้างพนักงาน
 
-You can directly create an Employee through the Employee Onboarding doctype (if not already created) once all the mandatory onboarding tasks are complete.
+คุณสามารถสร้างพนักงานได้โดยตรงผ่านประเภทเอกสารการเตรียมความพร้อมของพนักงาน (หากยังไม่ได้สร้าง) เมื่องานการเตรียมความพร้อมที่จำเป็นทั้งหมดเสร็จสมบูรณ์
 
 <img class="screenshot" alt="Onboarding Template" src="{{docs_base_url}}/assets/img/human-resources/onboarding-employee.png">
 
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Employee Promotion](/docs/user/manual/en/human-resources/employee_promotion)
-1. [Employee Separation](/docs/user/manual/en/human-resources/employee-separation)
-1. [Employee Transfer](/docs/user/manual/en/human-resources/employee_transfer)
+1. [เลื่อนตำแหน่งพนักงาน](/docs/user/manual/th/human-resources/employee_promotion)
+1. [แยกพนักงาน](/docs/user/manual/th/human-resources/employee-separation)
+1. [การย้ายพนักงาน](/docs/user/manual/th/human-resources/employee_transfer)
 
 

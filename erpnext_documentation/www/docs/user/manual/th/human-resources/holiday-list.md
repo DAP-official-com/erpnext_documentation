@@ -1,21 +1,21 @@
 <!-- add-breadcrumbs -->
-#Holiday List
+#รายการวันหยุด
 
-**Holiday List is a list which contains the dates of holidays.**
+**รายการวันหยุดเป็นรายการที่มีวันที่ของวันหยุด**
 
-Most organizations have a standard Holiday List for their employees. However, some of them may have different holiday lists based on different Locations or Departments. In ERPNext, you can configure multiple Holiday Lists and assign them to your employees based on your requirements.
+องค์กรส่วนใหญ่มี Holiday List มาตรฐานสำหรับพนักงานของตน อย่างไรก็ตาม บางแห่งอาจมีรายการวันหยุดที่แตกต่างกันตามสถานที่หรือแผนกต่างๆ ใน ERPNext คุณสามารถกำหนดค่ารายการวันหยุดหลายรายการและกำหนดให้กับพนักงานของคุณตามความต้องการของคุณ
 
-To access Holiday List, go to:
+หากต้องการเข้าถึงรายการวันหยุด ให้ไปที่:
 
-> Home > Human Resources > Leaves > Holiday List
+> หน้าหลัก > ทรัพยากรบุคคล > ระบบการลา > รายการวันหยุด
 
 
 
-## 1. How to create a Holiday List
+## 1. วิธีสร้างรายการวันหยุด
 
-1. Go to Holiday List, click on New.
-2. Enter Holiday List Name. It can be based on the Fiscal Year or Location or Department as per the requirement. 
-3. Select From Date and To Date for the Holiday List.
+1. ไปที่รายการวันหยุด คลิกที่ใหม่
+2. ป้อนชื่อรายการวันหยุด โดยสามารถอ้างอิงตามปีงบประมาณหรือสถานที่ตั้งหรือแผนกได้ตามต้องการ
+3. เลือกจากวันที่และวันที่สำหรับรายการวันหยุด
 
 
     <img class="screenshot" alt="Holiday List" src="{{docs_base_url}}/assets/img/human-resources/holiday-list-1.png">
@@ -68,14 +68,14 @@ You can also set a Holiday List at workstation-level as shown in the screenshot 
 
 <img class="screenshot" alt="Holiday List" src="{{docs_base_url}}/assets/img/human-resources/holiday-list-workstation.png">
 
-The dates in the Holiday List tagged in the [Workstation](/docs/user/manual/en/manufacturing/workstation) master will be considered as the days the Workstation will remain closed.
+The dates in the Holiday List tagged in the [Workstation](/docs/user/manual/th/manufacturing/workstation) master will be considered as the days the Workstation will remain closed.
 
 
 ## 3. Related Topics
 
-1. [Leave Allocation](/docs/user/manual/en/human-resources/leave-allocation)
-1. [Leave Period](/docs/user/manual/en/human-resources/leave-period)
-1. [Leave Policy](/docs/user/manual/en/human-resources/leave-policy)
-1. [HR Settings](/docs/user/manual/en/human-resources/hr-settings)
+1. [Leave Allocation](/docs/user/manual/th/human-resources/leave-allocation)
+1. [Leave Period](/docs/user/manual/th/human-resources/leave-period)
+1. [Leave Policy](/docs/user/manual/th/human-resources/leave-policy)
+1. [HR Settings](/docs/user/manual/th/human-resources/hr-settings)
 
 

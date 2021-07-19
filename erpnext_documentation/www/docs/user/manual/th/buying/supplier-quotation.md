@@ -1,81 +1,81 @@
 <!-- add-breadcrumbs -->
-# Supplier Quotation
+# ใบเสนอราคาซัพพลายเออร์
 
-**A Supplier Quotation is document by a potential supplier specifying the cost of goods or services they'll provide within a specified period.**
+**ใบเสนอราคาซัพพลายเออร์เป็นเอกสารโดยซัพพลายเออร์ที่มีความเป็นไปได้ซึ่งระบุต้นทุนของสินค้าหรือบริการที่พวกเขาจะจัดหาให้ภายในระยะเวลาที่กำหนด**
 
-A Supplier Quotation may also contain terms of sale, terms of payment, and warranties. Acceptance of quotation by the buyer can be considered as an agreement binding on both parties.
+ใบเสนอราคาซัพพลายเออร์อาจมีเงื่อนไขการขาย เงื่อนไขการชำระเงิน และการรับประกัน การยอมรับใบเสนอราคาโดยผู้ซื้อถือได้ว่าเป็นข้อตกลงที่มีผลผูกพันทั้งสองฝ่าย
 
 ![Buying Flow](/docs/assets/img/buying/buying_flow_sq.png)
 
-To access Supplier Quotation, go to:
-> Home > Buying > Purchasing > Supplier Quotation
+ในการเข้าถึงใบเสนอราคาซัพพลายเออร์ ไปที่:
+> หน้าหลัก > การซื้อ > การจัดซื้อ > ใบเสนอราคาซัพพลายเออร์
 
-## 1. Prerequisites
-Before creating and using a Supplier Quotation, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ใบเสนอราคาซัพพลายเออร์ ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Supplier](/docs/user/manual/en/buying/supplier)
-* [Item](/docs/user/manual/en/stock/item)
+* [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+* [รายการ](/docs/user/manual/th/stock/item)
 
-## 2. How to create a Supplier Quotation
+## 2. วิธีสร้างใบเสนอราคาซัพพลายเออร์
 
-### 2.1 Supplier Quotation from Material Request
+### 2.1 ใบเสนอราคาซัพพลายเออร์จากคำขอวัสดุ
 
-You can make a supplier quotation from a Material Request:
+คุณสามารถทำใบเสนอราคาซัพพลายเออร์ได้จากคำขอวัสดุ:
 ![Supplier Quotation from Material Receipt]({{docs_base_url}}/assets/img/buying/supplier-quotation-from-mr.png)
 
-Or:
+หรือ:
 
-A Supplier Quotation can be created from a [Supplier master](/docs/user/manual/en/buying/supplier).
+ใบเสนอราคาซัพพลายเออร์สามารถสร้างได้จาก [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
 
-Or:
+หรือ:
 
-The supplier can submit you a quotation himself via ERPNext. To know more about this, see section visit the [Request for Quotation page](/docs/user/manual/en/buying/request-for-quotation#4-creating-a-supplier-quotation-after-rfq).
+ซัพพลายเออร์สามารถส่งใบเสนอราคาให้คุณได้ด้วยตนเองผ่าน ERPNext หากต้องการทราบข้อมูลเพิ่มเติม โปรดดูหัวข้อที่ [หน้าคำขอใบเสนอราคา](/docs/user/manual/th/buying/request-for-quotation#4-creating-a-supplier-quotation-after-rfq)
 
-### 2.2 Creating a Supplier Quotation manually
-1. You can also make a Supplier Quotation directly from:
+### 2.2 การสร้างใบเสนอราคาซัพพลายเออร์ด้วยตนเอง
+1. คุณยังสามารถทำใบเสนอราคาซัพพลายเออร์ได้โดยตรงจาก:
 
-    **Buying > Purchasing > Supplier Quotation > New**.
-1. Select the Supplier who sent you the quotation.
-1. The Address and Contact will be fetched if you've saved it in the supplier master.
-1. Enter the Item code, select the quantity. Rate will be fetched if you've set the Standard Buying rate for the item in [Item Price](/docs/user/manual/en/stock/item-price).
+    **การซื้อ > การจัดซื้อ > ใบเสนอราคาซัพพลายเออร์ > ใหม่**
+1. เลือกซัพพลายเออร์ที่ส่งใบเสนอราคาให้คุณ
+1. ที่อยู่และที่อยู่ติดต่อจะถูกดึงออกมาหากคุณบันทึกไว้ในข้อมูลหลักของซัพพลายเออร์
+1. ใส่รหัสสินค้า เลือกจำนวน อัตราจะถูกดึงมาหากคุณตั้งค่าอัตราการซื้อมาตรฐานสำหรับสินค้าใน [ราคาสินค้า](/docs/user/manual/th/stock/item-price)
     <img class="screenshot" alt="Supplier Quotation" src="{{docs_base_url}}/assets/img/buying/supplier-quotation.png">
 
-If you have multiple Suppliers who supply you with the same Item, you
-usually send out a [Request for Quotation](/docs/user/manual/en/buying/request-for-quotation) to various Suppliers. In
-many cases, especially if you have centralized buying, you may want to record all the quotes so that:
+หากคุณมีซัพพลายเออร์หลายรายที่จัดหารายการเดียวกันให้คุณ you
+มักจะส่ง [คำขอใบเสนอราคา](/docs/user/manual/th/buying/request-for-quotation) ไปยังซัพพลายเออร์ต่างๆ ใน
+หลายกรณี โดยเฉพาะอย่างยิ่งถ้าคุณมีการซื้อจากส่วนกลาง คุณอาจต้องการบันทึกราคาทั้งหมดเพื่อ:
 
-  * You can easily compare prices in the future
-  * Audit whether all Suppliers were given the opportunity to quote.
+  * คุณสามารถเปรียบเทียบราคาได้อย่างง่ายดายในอนาคต
+  * ตรวจสอบว่าซัพพลายเออร์ทั้งหมดได้รับโอกาสในการเสนอราคาหรือไม่
 
-Supplier Quotations are not necessary for most small businesses. Always
-evaluate the cost of collecting information to the value it really provides!
-As a recommendation, you can do this only for high value items.
+ใบเสนอราคาซัพพลายเออร์ไม่จำเป็นสำหรับธุรกิจขนาดเล็กส่วนใหญ่ เสมอ
+ประเมินค่าใช้จ่ายในการรวบรวมข้อมูลให้คุ้มค่าจริง ๆ !
+ตามคำแนะนำ คุณสามารถทำเช่นนี้ได้เฉพาะกับสินค้าที่มีมูลค่าสูงเท่านั้น
 
-## 3. Features
-### 3.1 Taxes and Charges
-If your Supplier is going to charge you additional taxes or charge like a shipping or insurance charge, you can add it here. This will help you accurately track your costs. Also, if some of these charges add to the value of the product you will have to mention them in the Taxes table. You can also use templates for your taxes. For more information on setting up your taxes see the [Purchase Taxes and Charges Template](/docs/user/manual/en/buying/purchase-taxes-and-charges-template).
+## 3. คุณสมบัติ
+### 3.1 ภาษีและค่าธรรมเนียม
+หากซัพพลายเออร์ของคุณจะเรียกเก็บภาษีเพิ่มเติมจากคุณหรือเรียกเก็บ เช่น ค่าขนส่งหรือค่าประกัน คุณสามารถเพิ่มได้ที่นี่ ซึ่งจะช่วยให้คุณติดตามค่าใช้จ่ายของคุณได้อย่างแม่นยำ นอกจากนี้ หากค่าใช้จ่ายบางส่วนเหล่านี้เพิ่มมูลค่าของผลิตภัณฑ์ คุณจะต้องระบุในตารางภาษี คุณยังสามารถใช้เทมเพลตสำหรับภาษีของคุณได้ สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการตั้งค่าภาษีของคุณ โปรดดูที่ [เทมเพลตภาษีและค่าธรรมเนียมการซื้อ](/docs/user/manual/th/buying/purchase-taxes-and-charges-template)
 
-### 3.2 More
-There are fields for Tax Category, Shipping Rule, Purchase Taxes and Charges Template, Discount, Terms and Conditions, Printing Settings. You can fill these fields for your record. Visit the [Quotation](/docs/user/manual/en/selling/quotation) page to know more about these sections. Note that the details you fill here like Shipping Rule, taxes, Discount, Terms and Conditions etc., are from your supplier and can be recorded for accurate tracking.
+### 3.2 เพิ่มเติม
+มีฟิลด์สำหรับประเภทภาษี กฎการจัดส่ง เทมเพลตภาษีการซื้อและค่าธรรมเนียม ส่วนลด ข้อกำหนดและเงื่อนไข การตั้งค่าการพิมพ์ คุณสามารถกรอกข้อมูลในฟิลด์เหล่านี้เพื่อบันทึกของคุณ ไปที่หน้า [ใบเสนอราคา](/docs/user/manual/th/selling/quotation) เพื่อทราบข้อมูลเพิ่มเติมเกี่ยวกับส่วนเหล่านี้ โปรดทราบว่ารายละเอียดที่คุณกรอกที่นี่ เช่น กฎการจัดส่ง ภาษี ส่วนลด ข้อกำหนดและเงื่อนไข ฯลฯ มาจากซัพพลายเออร์ของคุณและสามารถบันทึกเพื่อการติดตามที่ถูกต้อง
 
-Note:
+บันทึก:
 
-- Tax Category will be fetched from supplier master if set
-- Print settings is for making changes to the supplier quotation print
-- The Terms and Conditions here are your supplier's
-- The supplier quotation can be linked to material requests using the 'Link to material requests' button
+- หมวดหมู่ภาษีจะถูกดึงมาจากซัพพลายเออร์หลักหากตั้งค่า
+- การตั้งค่าการพิมพ์ใช้สำหรับการเปลี่ยนแปลงการพิมพ์ใบเสนอราคาของซัพพลายเออร์
+- ข้อกำหนดและเงื่อนไขที่นี่คือซัพพลายเออร์ของคุณ
+- ใบเสนอราคาของซัพพลายเออร์สามารถเชื่อมโยงกับคำขอวัสดุโดยใช้ปุ่ม 'ลิงก์ไปยังคำขอวัสดุ'
 
-### 3.3 After Submitting
-The following items can be created after submitting a Supplier Quotation:
+### 3.3 หลังจากส่ง
+สามารถสร้างรายการต่อไปนี้ได้หลังจากส่งใบเสนอราคาซัพพลายเออร์:
 
-* Purchase Order - A Purchase Order if you agree with the supplier's quotation.
-* Quotation - A quotation to your customer.
-* Auto Repeat - Auto Repeat the supplier quotation at specified intervals.
+* ใบสั่งซื้อ - ใบสั่งซื้อหากคุณเห็นด้วยกับใบเสนอราคาของซัพพลายเออร์
+* Quotation - ใบเสนอราคาให้กับลูกค้าของคุณ
+* ทำซ้ำอัตโนมัติ - ทำซ้ำใบเสนอราคาซัพพลายเออร์อัตโนมัติในช่วงเวลาที่กำหนด
 
-### 4. Related Topics
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Supplier Group](/docs/user/manual/en/buying/supplier-group)
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-1. [Request for Quotation](/docs/user/manual/en/buying/request-for-quotation)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+1. [กลุ่มซัพพลายเออร์](/docs/user/manual/th/buying/supplier-group)
+1. [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)
+1. [ขอใบเสนอราคา](/docs/user/manual/th/buying/request-for-quotation)
 
 {next}

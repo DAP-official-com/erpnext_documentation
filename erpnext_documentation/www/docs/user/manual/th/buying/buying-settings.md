@@ -1,64 +1,64 @@
 <!-- add-breadcrumbs -->
-# Buying Settings
+# การตั้งค่าการซื้อ
 
-Buying Settings is where you can define properties which will be applied in the Buying module's transactions.
-You can find Buying Settings at:
-> Home > Buying > Settings > Buying Settings
+การตั้งค่าการซื้อเป็นที่ที่คุณสามารถกำหนดคุณสมบัติที่จะนำไปใช้ในธุรกรรมของโมดูลการซื้อ
+คุณสามารถค้นหาการตั้งค่าการซื้อได้ที่:
+> หน้าแรก > การซื้อ > การตั้งค่า > การตั้งค่าการซื้อ
 
 ![Buying Settings]({{docs_base_url}}/assets/img/buying/buying-settings.png)
 
-Let us look at the various options that can be configured:
+ให้เราดูตัวเลือกต่างๆ ที่สามารถกำหนดค่าได้:
 
-## 1. Supplier
-### 1.1 Supplier Naming By
+## 1. ผู้ผลิต
+### 1.1 การตั้งชื่อซัพพลายเออร์โดย
 
-When a Supplier is saved, system generates a unique identity or name for that Supplier which can be used to refer the Supplier in various Buying transactions.
+เมื่อซัพพลายเออร์ได้รับการบันทึก ระบบจะสร้างเอกลักษณ์หรือชื่อเฉพาะสำหรับผู้จัดหารายนั้น ซึ่งสามารถใช้เพื่ออ้างอิงซัพพลายเออร์ในธุรกรรมการซื้อต่างๆ
 
-If not configured otherwise, ERPNext uses the Supplier's Name as the unique name. If you want to identify Suppliers using names like SUPP-00001, SUPP-00002, or such other patterned series, select the value of Supplier Naming By as "Naming Series".
+หากไม่ได้กำหนดค่าเป็นอย่างอื่น ERPNext จะใช้ชื่อซัพพลายเออร์เป็นชื่อเฉพาะ หากคุณต้องการระบุซัพพลายเออร์โดยใช้ชื่อ เช่น SUPP-00001, SUPP-00002 หรือชุดที่มีลวดลายอื่นๆ ให้เลือกค่าของ Supplier Naming By เป็น "ชุดการตั้งชื่อ"
 
-You can define or select the Naming Series pattern from: **Settings > Data > Naming Series**
+คุณสามารถกำหนดหรือเลือกรูปแบบ การตั้งชื่อเป็นชุด จาก: **การตั้งค่า > ข้อมูล > การตั้งชื่อเป็นชุด**
 
-Read [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series) to know more about defining a Naming Series.
+อ่าน [การตั้งชื่อเป็นชุด](/docs/user/manual/th/setting-up/settings/naming-series) เพื่อทราบข้อมูลเพิ่มเติมเกี่ยวกับการกำหนดชุดการตั้งชื่อ
 
-### 1.2 Default Supplier Group
+### 1.2 กลุ่มซัพพลายเออร์เริ่มต้น
 
-Configure what should be the default value of Supplier Group when creating a new Supplier. For example, if most of your suppliers supply you hardware, you can set the default as 'Hardware'.
+กำหนดค่าสิ่งที่ควรเป็นค่าเริ่มต้นของกลุ่มซัพพลายเออร์เมื่อสร้างซัพพลายเออร์ใหม่ ตัวอย่างเช่น หากซัพพลายเออร์ส่วนใหญ่ของคุณจัดหาฮาร์ดแวร์ให้คุณ คุณสามารถตั้งค่าเริ่มต้นเป็น 'ฮาร์ดแวร์'
 
-## 2. Purchasing
-### 2.1 Default Buying Price List
+## 2. การจัดซื้อ
+### 2.1 รายการราคาซื้อเริ่มต้น
 
-Configure what should be the default Price List when creating a new Buying transaction, the default is set as 'Standard Buying'. Item prices will be fetched from this Price List. You can modify the 'Price List' by using the arrow at the right-end of the field to change the currency and country.
+กำหนดค่ารายการราคาเริ่มต้นที่ควรเป็นเมื่อสร้างธุรกรรมการซื้อใหม่ ค่าเริ่มต้นจะถูกตั้งค่าเป็น 'การซื้อมาตรฐาน' ราคาสินค้าจะถูกดึงมาจากรายการราคานี้ คุณสามารถแก้ไข 'รายการราคา' ได้โดยใช้ลูกศรที่ด้านขวาสุดของฟิลด์เพื่อเปลี่ยนสกุลเงินและประเทศ
 
-### 2.2 Purchase Order Required
+### 2.2 ต้องมีใบสั่งซื้อ
 
-If this option is configured "Yes", ERPNext will prevent you from creating a Purchase Invoice or a Purchase Receipt directly without creating a Purchase Order first. If retail transactions are involved where the order happens offline, then Purchase Orders can be skipped. If you're accepting sample Items, you can directly create a Purchase Receipt to receive the Items to your Warehouse.
+หากตัวเลือกนี้ได้รับการกำหนดค่าเป็น "ใช่" ERPNext จะป้องกันไม่ให้คุณสร้างใบกำกับสินค้าหรือใบเสร็จรับเงินโดยตรงโดยไม่ต้องสร้างใบสั่งซื้อก่อน หากธุรกรรมการขายปลีกเกี่ยวข้องกับการสั่งซื้อแบบออฟไลน์ สามารถข้ามใบสั่งซื้อได้ หากคุณยอมรับสินค้าตัวอย่าง คุณสามารถสร้างใบเสร็จการซื้อได้โดยตรงเพื่อรับสินค้าไปยังคลังสินค้าของคุณ
 
-This configuration can be overridden for a particular supplier by enabling the "Allow Purchase Invoice Creation Without Purchase Order" checkbox in supplier master
+การกำหนดค่านี้สามารถแทนที่ได้สำหรับซัพพลายเออร์รายใดรายหนึ่งโดยเปิดใช้งานช่องกาเครื่องหมาย "อนุญาตให้สร้างใบกำกับสินค้าโดยไม่มีใบสั่งซื้อ" ในข้อมูลหลักของซัพพลายเออร์
 
 <img alt="Purchase Order Required" class="screenshot" src="{{docs_base_url}}/assets/img/buying/po-required.png">
 
-### 2.3 Purchase Receipt Required
+### 2.3 ต้องมีใบเสร็จการซื้อ
 
-If this option is configured "Yes", ERPNext will prevent you from creating a Purchase Invoice without creating a Purchase Receipt first. In case the Item being transacted is a service, it'll not require a receipt, you can directly create an Invoice.
+หากตัวเลือกนี้ได้รับการกำหนดค่าเป็น "ใช่" ERPNext จะป้องกันไม่ให้คุณสร้างใบกำกับสินค้าโดยไม่ต้องสร้างใบเสร็จการซื้อก่อน ในกรณีที่รายการที่ทำธุรกรรมเป็นบริการ ไม่จำเป็นต้องมีใบเสร็จ คุณสามารถสร้างใบแจ้งหนี้ได้โดยตรง
 
-This configuration can be overridden for a particular supplier by enabling the "Allow Purchase Invoice Creation Without Purchase Receipt" checkbox in the supplier master
+การกำหนดค่านี้สามารถแทนที่ได้สำหรับซัพพลายเออร์รายใดรายหนึ่งโดยเปิดใช้งานช่องกาเครื่องหมาย "อนุญาตให้สร้างใบกำกับสินค้าโดยไม่ต้องรับซื้อ" ในข้อมูลหลักซัพพลายเออร์
 
 <img alt="Purchase Receipt Required" class="screenshot" src="{{docs_base_url}}/assets/img/buying/pr-required.png">
 
-### 2.4 Maintain Same Rate Throughout Purchase Cycle
+### 2.4 รักษาอัตราเดิมตลอดรอบการซื้อ
 
-If this is enabled, ERPNext will validate whether an Item's price is changing in a Purchase Invoice or Purchase Receipt created from a Purchase Order, i.e. it will help you maintain the same rate throughout the purchase cycle.
+หากเปิดใช้งาน ERPNext จะตรวจสอบว่าราคาของสินค้ามีการเปลี่ยนแปลงในใบกำกับสินค้าหรือใบเสร็จการซื้อที่สร้างจากใบสั่งซื้อหรือไม่ กล่าวคือ จะช่วยให้คุณรักษาอัตราเดิมไว้ตลอดวงจรการซื้อ
 
-You can configure the action that system should take if the same rate is not maintained in the "Action If Same Rate is Not Maintained" field:
+คุณสามารถกำหนดค่าการดำเนินการที่ระบบควรทำได้หากไม่มีการรักษาอัตราเดียวกันในช่อง "การดำเนินการหากไม่ได้รักษาอัตราเดียวกัน":
 
-- **Stop**: ERPNext will stop you from changing the price by throwing a validation error.
-- **Warn**: The system will let you save the transaction but warn you with a message if the rate is changed.
+- **หยุด**: ERPNext จะหยุดคุณไม่ให้เปลี่ยนราคาโดยแสดงข้อผิดพลาดในการตรวจสอบความถูกต้อง
+- **คำเตือน**: ระบบจะให้คุณบันทึกธุรกรรม แต่เตือนคุณด้วยข้อความหากอัตรามีการเปลี่ยนแปลง
 
-## 3. Allow Item to be added multiple times in a transaction
+## 3. อนุญาตให้เพิ่มรายการได้หลายครั้งในการทำธุรกรรม
 
-When this checkbox is unchecked, an item cannot be added multiple times in the same Purchase Order. However, you can still explicitly change the quantity. This is a validation checkbox for preventing accidental purchase of the same item. This can be checked for specific use cases where there are multiple sources for the same material, for example in manufacturing.
+เมื่อยกเลิกการเลือกช่องทำเครื่องหมายนี้ จะไม่สามารถเพิ่มสินค้าได้หลายครั้งในใบสั่งซื้อเดียวกัน อย่างไรก็ตาม คุณยังสามารถเปลี่ยนแปลงปริมาณได้อย่างชัดเจน นี่คือช่องทำเครื่องหมายสำหรับตรวจสอบความถูกต้องเพื่อป้องกันการซื้อรายการเดียวกันโดยไม่ได้ตั้งใจ สามารถตรวจสอบกรณีการใช้งานเฉพาะที่มีแหล่งที่มาหลายแหล่งสำหรับวัสดุเดียวกัน เช่น ในการผลิต
 
-### 4. Related Topics
-1. [Supplier Group](/docs/user/manual/en/buying/supplier-group)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [กลุ่มซัพพลายเออร์](/docs/user/manual/th/buying/supplier-group)
 
 {next}

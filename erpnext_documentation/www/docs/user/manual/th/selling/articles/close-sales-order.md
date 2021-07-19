@@ -1,20 +1,20 @@
 <!-- add-breadcrumbs -->
-#Close Sales Order
+#ปิดการขาย
 
-In the submitted Sales Orders, you will find **Stop** option. Stopping Sales Order will restrict user from creating Delivery Note and Sales Invoice against it.
+ในใบสั่งขายที่ส่งมา คุณจะพบตัวเลือก **หยุด** การหยุดใบสั่งขายจะจำกัดผู้ใช้จากการสร้างใบส่งสินค้าและใบกำกับสินค้า
 
 <img alt="Close SO" class="screenshot"  src="{{docs_base_url}}/assets/img/articles/close-1.png">
 
-####Scenario
+####สถานการณ์
 
-An order is received for ten Wind Turbines. Sales Order is also created for ten units. Due to scarcity of stock, only seven units are delivered to the customer. Pending three units are to be delivered soon. Customer informs that they don't need to deliver pending item, as they have purchased it from other vendor.
+ได้รับคำสั่งสำหรับกังหันลมสิบตัว ใบสั่งขายถูกสร้างขึ้นสำหรับสิบหน่วย เนื่องจากสินค้ามีไม่เพียงพอ จึงส่งถึงมือลูกค้าเพียง 7 ยูนิตเท่านั้น ที่รอดำเนินการสามหน่วยจะถูกจัดส่งในเร็วๆ นี้ ลูกค้าแจ้งว่าไม่ต้องส่งสินค้าที่รอดำเนินการ เนื่องจากพวกเขาซื้อมาจากผู้ขายรายอื่น
 
-In this case, create Delivery Note and Sales Invoice will be created only for the seven units. And the Sales Order should be set as stopped.
+ในกรณีนี้ ให้สร้าง หมายเหตุการจัดส่งสินค้า และ ใบแจ้งหนี้การขาย จะถูกสร้างขึ้นสำหรับเจ็ดหน่วยเท่านั้น และควรตั้งใบสั่งขายเป็นหยุด
 
 <img alt="Closed SO" class="screenshot"  src="{{docs_base_url}}/assets/img/articles/close-2.png">
 
-Once Sales Order is set as stopped, you will not have pending quantities (three in this case) reflecting in Pending to Deliver and Pending to Invoice reports. To make further transactions against Stopped Sales Order, you should first Unstop it.
+เมื่อใบสั่งขายถูกกำหนดเป็นหยุดแล้ว คุณจะไม่มีปริมาณที่รอดำเนินการ (สามในกรณีนี้) ที่สะท้อนอยู่ในรายงานรอดำเนินการเพื่อจัดส่งและรอดำเนินการไปยังรายงานใบแจ้งหนี้ หากต้องการทำธุรกรรมเพิ่มเติมกับคำสั่งหยุดการขาย คุณควรเลิกหยุดก่อน
 
-You will find same funtionality in the Purchase Order as well.
+คุณจะพบฟังก์ชั่นเดียวกันในใบสั่งซื้อเช่นกัน
 
 <!-- markdown -->

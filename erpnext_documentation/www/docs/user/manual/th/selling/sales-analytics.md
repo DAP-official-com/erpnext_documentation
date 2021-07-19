@@ -1,73 +1,73 @@
 <!-- add-breadcrumbs -->
-# Sales Reports
+# รายงานการขาย
 
-You can view your company's sales performance, analyze sales data in different views to see the sales performance.
-With filters, you can dynamically change what is displayed. 
-There are three window areas that make up the Sales Analytics Report-The Filter Toolbar Window, the Graph Window and the Data Window shown as follows:
+คุณสามารถดูประสิทธิภาพการขายของบริษัท วิเคราะห์ข้อมูลการขายในมุมมองต่างๆ เพื่อดูประสิทธิภาพการขาย
+ด้วยตัวกรอง คุณสามารถเปลี่ยนสิ่งที่แสดงแบบไดนามิกได้
+มีสามส่วนหน้าต่างที่ประกอบขึ้นเป็นรายงานการวิเคราะห์การขาย-หน้าต่างแถบเครื่องมือตัวกรอง หน้าต่างกราฟ และหน้าต่างข้อมูลที่แสดงดังนี้:
 
-These analytics can be found under:
-> Home > Selling > Key Reports
+การวิเคราะห์เหล่านี้สามารถพบได้ภายใต้:
+> หน้าแรก > การขาย > รายงานสำคัญ
 
-## 1. Sales Analytics Report
-Go to **Selling > Analytics > Sales Analytics**. The Sales Analytics report looks like this:
+## 1. รายงานการวิเคราะห์การขาย
+ไปที่ **การขาย > การวิเคราะห์ > การวิเคราะห์การขาย** รายงานการวิเคราะห์การขาย มีลักษณะดังนี้:
 
   <img class="screenshot" alt="Sales Analytics Sections" src="/docs/assets/img/selling/sales-analytics-sections.png">
 
-The toolbar provides filters to select what data is to be used. Using the dropdown selections, the data displayed can be refined. As the selections are made, data is reflected in the data window as well as the graph window.
+แถบเครื่องมือมีตัวกรองเพื่อเลือกข้อมูลที่จะใช้ ข้อมูลที่แสดงสามารถปรับปรุงได้โดยใช้การเลือกดรอปดาวน์ เมื่อทำการเลือก ข้อมูลจะปรากฏในหน้าต่างข้อมูลและหน้ากราฟ
 
   <img class="screenshot" alt="Sales Analytics Filters" src="/docs/assets/img/selling/sales-analytics-filters.png">
 
-Within the data window, selections can be made to expand or compress the data to be analyzed. At the left-hand side highlighted in blue are selection boxes. Each box can be selected or unselected. There is no restriction for data comparison, so a higher level can be compared to a lower level. 
+ภายในหน้าต่างข้อมูล สามารถเลือกขยายหรือบีบอัดข้อมูลที่จะวิเคราะห์ได้ ที่ด้านซ้ายมือที่ไฮไลต์ด้วยสีน้ำเงินคือกล่องตัวเลือก แต่ละช่องสามารถเลือกหรือยกเลิกการเลือกได้ ไม่มีข้อจำกัดสำหรับการเปรียบเทียบข้อมูล จึงสามารถเปรียบเทียบระดับที่สูงกว่ากับระดับที่ต่ำกว่าได้
 
-In the following screenshot, the data column to the right highlighted in orange contains selection boxes with + and minus selections. Selecting a + will expand the data and selecting a – will compress the data. As this is performed, the Graph Window is dynamically altered allowing rapid data analysis.
+ในภาพหน้าจอต่อไปนี้ คอลัมน์ข้อมูลทางด้านขวาที่ไฮไลต์ด้วยสีส้มประกอบด้วยกล่องตัวเลือกที่มีเครื่องหมาย + และลบ การเลือก + จะขยายข้อมูล และเลือก – จะบีบอัดข้อมูล เมื่อดำเนินการนี้ หน้าต่างกราฟจะมีการเปลี่ยนแปลงแบบไดนามิก ทำให้สามารถวิเคราะห์ข้อมูลได้อย่างรวดเร็ว
 
    <img class="screenshot" alt="Sales Analytics Result" src="/docs/assets/img/selling/sales-analytics-result.png">
 
-Using the 'Set Chart' button, you can set values for the X and Y fields, use different type of charts and select a color.
+การใช้ปุ่ม 'ตั้งค่าแผนภูมิ' คุณสามารถตั้งค่าสำหรับฟิลด์ X และ Y ใช้แผนภูมิประเภทต่างๆ และเลือกสีได้
 
-## 2. Sales Funnel Report
-Go to **Selling > Analytics**. The report "Sales Funnel" provides a sales generation analysis. It displays the progression of stages in the sales process.  There are four stages leading up to a Sales Order: Active Leads, Opportunities, Quotations and Converted (has become a Customer).
+## 2. รายงานช่องทางการขาย
+ไปที่ **การขาย > การวิเคราะห์** รายงาน "ช่องทางการขาย" แสดงการวิเคราะห์การสร้างยอดขาย จะแสดงความคืบหน้าของขั้นตอนในกระบวนการขาย มีสี่ขั้นตอนที่นำไปสู่ใบสั่งขาย: ลูกค้าเป้าหมายที่ใช้งานอยู่, โอกาส, ใบเสนอราคา และการแปลง (ได้กลายเป็นลูกค้าแล้ว)
 
-- Active Leads shows the number of all your **Leads**, including all the other stages.
-- Opportunities shows the number of Leads for which an **Opportunity** was created.
-- Quotation shows the number of leads for which a **Quotation** was submitted.
-- Converted shows the number of leads for which a **Quotation** and **Sales Order** was submitted.
+- ลูกค้าเป้าหมายที่ใช้งานอยู่จะแสดงจำนวน **ลูกค้าเป้าหมาย** ทั้งหมดของคุณ รวมถึงขั้นตอนอื่นๆ ทั้งหมด
+- โอกาสแสดงจำนวนลูกค้าเป้าหมายที่สร้าง **โอกาส** ขึ้น
+- ใบเสนอราคาแสดงจำนวนลูกค้าเป้าหมายที่ส่ง **ใบเสนอราคา**
+- แปลงแล้ว แสดงจำนวนลูกค้าเป้าหมายที่ส่ง **ใบเสนอราคา** และ **ใบสั่งขาย**
 
-The earlier stages usually include the later stages. However, if an earlier stage was skipped, you might see counterintuitive results like two **Quotations** resulting from one **Opportunity** (because it is not mandatory to create an **Opportunity** first).
+ขั้นตอนก่อนหน้านี้มักจะรวมถึงระยะหลัง อย่างไรก็ตาม หากข้ามขั้นตอนก่อนหน้านี้ คุณอาจเห็นผลลัพธ์ที่ขัดกับสัญชาตญาณ เช่น **ใบเสนอราคา** สองรายการที่เกิดจาก **โอกาส** หนึ่งรายการ (เนื่องจากไม่จำเป็นต้องสร้าง **โอกาส** ก่อน)
 
 <img alt="Sales Funnel" class="screenshot" src="/docs/assets/img/crm/sales_funnel.png">
 
-Once a date range has been selected, the graph is updated, the graph reflects the changes and the associated labels.
+เมื่อเลือกช่วงวันที่แล้ว กราฟจะได้รับการอัปเดต กราฟจะแสดงการเปลี่ยนแปลงและป้ายกำกับที่เกี่ยวข้อง
 
-## 3. Customer Acquisition and Loyalty Report
-Go to **Selling > Analytics**.
-To understand revenue, it's often helpful to look at the data from a new customer and existing customers standpoint. This report helps visualize customer loyalty.  There are two windows within this report: The Filter Window and the Data Window.
+## 3. รายงานการได้มาซึ่งลูกค้าและความภักดี
+ไปที่ **การขาย > การวิเคราะห์**
+เพื่อให้เข้าใจรายได้ การดูข้อมูลจากลูกค้าใหม่และจุดยืนของลูกค้าที่มีอยู่มักจะเป็นประโยชน์ รายงานนี้ช่วยให้เห็นภาพความภักดีของลูกค้า มีสองหน้าต่างในรายงานนี้: หน้าต่างตัวกรองและหน้าต่างข้อมูล
 
 <img class="screenshot" alt="WIP report" src="/docs/assets/img/selling/acquisition-and-loyalty-1.png">
 
-Accessing the Filter Window, the company and date ranges can be applied. Data is updated in the Data Window as changes are applied.
+การเข้าถึงหน้าต่างตัวกรอง สามารถใช้บริษัทและช่วงวันที่ได้ ข้อมูลจะได้รับการอัปเดตในหน้าต่างข้อมูลเมื่อมีการเปลี่ยนแปลง
 
-Within the Data Window, columns of information are accessible.
+ภายในหน้าต่างข้อมูล สามารถเข้าถึงคอลัมน์ข้อมูลได้
 
-* **Moving columns**: The columns can be moved, re-arranged by clicking on the column headings and dragging them. 
-* **Sorting**: To sort the data in columns, click on the right-hand side of a column heading and you'll see options to sort as ascending, descending, reset sorting, or remove a column.
-* **Filtering**: The text boxes below the column headings work as instant filters. Enter a number there and all matching records will be shown.
+* **การย้ายคอลัมน์**: สามารถย้ายคอลัมน์ จัดเรียงใหม่ได้โดยคลิกที่ส่วนหัวของคอลัมน์แล้วลาก
+* **การจัดเรียง**: ในการจัดเรียงข้อมูลในคอลัมน์ ให้คลิกที่ด้านขวาของส่วนหัวของคอลัมน์ แล้วคุณจะเห็นตัวเลือกในการจัดเรียงจากน้อยไปมาก จากมากไปน้อย รีเซ็ตการจัดเรียง หรือลบคอลัมน์
+* **การกรอง**: กล่องข้อความด้านล่างส่วนหัวของคอลัมน์ทำงานเป็นตัวกรองทันที ป้อนตัวเลขที่นั่นและบันทึกที่ตรงกันทั้งหมดจะปรากฏขึ้น
 
-The following example demonstrates data that has been sorted in ascending order by total (orange) and has been filtered for the year 2018 (blue).
+ตัวอย่างต่อไปนี้แสดงข้อมูลที่จัดเรียงจากน้อยไปหามากตามผลรวม (สีส้ม) และได้รับการกรองสำหรับปี 2018 (สีน้ำเงิน)
 
 <img class="screenshot" alt="WIP report" src="/docs/assets/img/selling/acquisition-and-loyalty-2.png">
 
-Under Key Reports there are reports for Inactive Customers, Ordered Items To Be Delivered, Sales Person-wise Transaction Summary, Item-wise Sales History, Quotation Trends, Sales Order Trends in the Selling module.
+ภายใต้รายงานหลัก จะมีรายงานสำหรับลูกค้าที่ไม่ได้ใช้งาน รายการสั่งซื้อที่จะส่งมอบ สรุปธุรกรรมที่คำนึงถึงพนักงานขาย ประวัติการขายตามรายการ แนวโน้มใบเสนอราคา แนวโน้มคำสั่งซื้อขายในโมดูลการขาย
 
-In the Other Reports section there are reports for the following:
+ในส่วนรายงานอื่นๆ จะมีรายงานดังต่อไปนี้:
 
-* Lead Details
-* Customer Addresses And Contacts
-* BOM Search
-* Available Stock for Packing Items
-* Pending SO Items For Purchase Request
-* Customer Credit Balance
-* Customers Without Any Sales Transactions
-* Sales Partners Commission
+* รายละเอียดลูกค้าเป้าหมาย
+* ที่อยู่ลูกค้าและผู้ติดต่อ
+* ค้นหาโดย BOM
+* สต็อกที่มีจำหน่ายสำหรับรายการบรรจุภัณฑ์
+* รายการ SO ที่รอดำเนินการสำหรับคำขอซื้อ
+* ยอดเครดิตของลูกค้า
+* ลูกค้าที่ไม่มีธุรกรรมการขายใด ๆ
+* คอมมิชชั่นพันธมิตรการขาย
 
 {next}

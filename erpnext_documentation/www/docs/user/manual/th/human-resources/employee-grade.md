@@ -1,43 +1,43 @@
 <!-- add-breadcrumbs -->
 
-#Employee Grade
+#ระดับพนักงาน
 
-**An Employee Grade is a grouping of the employees with similar positions or values in order to assign compensation rates and salary structures.**
+** Employee Grade เป็นกลุ่มของพนักงานที่มีตำแหน่งหรือค่าใกล้เคียงกัน เพื่อกำหนดอัตราค่าตอบแทนและโครงสร้างเงินเดือน**
 
 
-ERPNext allows you to configure Employee Grades, helping you to easily categorize employees based on seniority or any other criteria. 
+ERPNext ช่วยให้คุณกำหนดค่าระดับพนักงาน ช่วยให้คุณจัดหมวดหมู่พนักงานตามระดับอาวุโสหรือเกณฑ์อื่น ๆ ได้อย่างง่ายดาย
 
-Employee Grade also helps you fetch Employee records in bulk based on their grades while processing payroll, allocating leaves, etc.
+ระดับพนักงานยังช่วยให้คุณดึงบันทึกของพนักงานเป็นกลุ่มโดยพิจารณาจากเกรดขณะประมวลผลเงินเดือน จัดสรรใบลา ฯลฯ
 
-To access Employee Grade, go to:
+ในการเข้าถึงระดับพนักงาน ไปที่:
 
-> Home > Human Resources > Employee > Employee Grade
+> หน้าหลัก > ทรัพยากรบุคคล > พนักงาน > ระดับพนักงาน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Employee Grade, it is advisable you create the following documents:
+ก่อนสร้างระดับพนักงาน ขอแนะนำให้คุณสร้างเอกสารต่อไปนี้:
 
-* [Leave Policy](/docs/user/manual/en/human-resources/leave-policy)
-* [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
+* [ออกจากนโยบาย](/docs/user/manual/th/human-resources/leave-policy)
+* [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
 
-## 2. How to create an Employee Grade
+## 2. วิธีสร้างระดับพนักงาน
 
-1. Go to Employee Grade list, click on New.
-2. Enter the Name of the Employee Grade.
-3. Enter the Default [Leave Policy](/docs/user/manual/en/human-resources/leave-policy) and Default [Salary Structure](/docs/user/manual/en/human-resources/salary-structure) for that Grade.
-3. Save.
+1. ไปที่รายการระดับพนักงาน คลิกที่ใหม่
+2. ใส่ชื่อชั้นพนักงาน
+3. ป้อนค่าเริ่มต้น [ออกจากนโยบาย](/docs/user/manual/th/human-resources/leave-policy) และค่าเริ่มต้น [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure ) สำหรับเกรดนั้น
+3. บันทึก
 
     <img class="screenshot" alt="Employee Grade" src="{{docs_base_url}}/assets/img/human-resources/employee-grade.png">
 
-Shown below are the different Employee Grades created.
+ด้านล่างนี้คือระดับพนักงานต่างๆ ที่สร้างขึ้น
 
 <img class="screenshot" alt="New Employee Grade" src="{{docs_base_url}}/assets/img/human-resources/employee-grade1.png">
 
-You also can access [Employee](/docs/user/manual/en/human-resources/employee), [Leave Period](/docs/user/manual/en/human-resources/leave-type), [Employee Onboarding Template](/docs/user/manual/en//human-resources/employee-onboarding) and [Employee Separation Template](/docs/user/manual/en//human-resources/employee-separation).
+คุณยังสามารถเข้าถึง [พนักงาน](/docs/user/manual/th/human-resources/employee), [ระยเวลาการลา](/docs/user/manual/th/human-resources/leave-type), [เทมเพลตการเตรียมความพร้อมของพนักงาน](/docs/user/manual/th//human-resources/employee-onboarding) และ [เทมเพลตการแยกพนักงาน](/docs/user/manual/th//human-resources/employee-separation)
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Leave Type](/docs/user/manual/en/human-resources/leave-type)
+1. [ประเภทการลา](/docs/user/manual/th/human-resources/leave-type)
 
 
 

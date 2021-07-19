@@ -1,66 +1,66 @@
 <!-- add-breadcrumbs -->
-# Auto Attendance
+# การตวรจสอบผู้มาทำงานอัตโนมัติ
 
-> Introduced in Version 12
+> เปิดตัวในเวอร์ชัน 12
 
-Auto attendance marks the attendance for the Employees assigned to a shift based on records in the 'Employee Checkin' Document and the [Auto Attendance Settings](/docs/user/manual/en/human-resources/shift-management#25-auto-attendance-settings) of that shift.
+การมาทำงานอัตโนมัติเป็นการทำเครื่องหมายการเข้างานสำหรับพนักงานที่ได้รับมอบหมายให้เป็นกะตามบันทึกในเอกสาร 'การเช็คอินพนักงาน' และ [การตั้งค่าการมาทำงานอัตโนมัติ](/docs/user/manual/th/human-resources/shift-management#25-auto-attendance-settings) ของกะนั้น
 
-Auto Attendance for every 'Shift Type' record is attempted to be marked every hour. You can also trigger the auto attendance manually for a single shift type by pressing the 'Mark Auto Attendance' button in the Shift Type document. 
+การมาทำงานอัตโนมัติสำหรับระเบียน 'ประเภทของการทำงานเป็นกะ' ทุกรายการจะพยายามทำเครื่องหมายทุกชั่วโมง คุณยังสามารถทริกเกอร์การมาทำงานอัตโนมัติด้วยตนเองสำหรับประเภทกะเดียวได้ โดยกดปุ่ม 'ทำเครื่องหมายการมาทำงานอัตโนมัติ' ในเอกสารประเภทกะ
 
-> Note: [Shift Type](/docs/user/manual/en/human-resources/shift-management#shift-type) needs to be set up and assigned to Employees before creating 'Employee Checkin' records. Attendance will be marked by Auto Attendance only for check-in records that are created after setting up and assigning an Employee to their shift type.
+> หมายเหตุ: ต้องตั้งค่าและกำหนด [ประเภทของการทำงานเป็นกะ](/docs/user/manual/th/human-resources/shift-management#shift-type) ให้กับพนักงานก่อนที่จะสร้างเรกคอร์ด 'การเช็คอินพนักงาน' การมาทำงานจะถูกทำเครื่องหมายโดยการมาทำงานอัตโนมัติสำหรับเรกคอร์ดการเช็คอินที่สร้างขึ้นหลังจากตั้งค่าและกำหนดพนักงานให้กับประเภทกะของพวกเขาเท่านั้น
 
-## Steps to Setup Auto Attendance
-You can set up Auto Attendance by following the steps mentioned below:
+## ขั้นตอนในการตั้งค่าการมาทำงานอัตโนมัติ
+คุณสามารถตั้งค่าการมาทำงานอัตโนมัติโดยทำตามขั้นตอนที่กล่าวถึงด้านล่าง:
 
-1. [Define Shift Type with Auto Attendance Enabled](#1-define-shift-type-with-auto-attendance-enabled)
-1. [Assign these shifts to Employees](#2-assign-these-shifts-to-employees)
-1. [Setup Attendance Device ID field in Employee](#3-setup-attendance-device-id-field-in-employee)
+1. [กำหนดประเภทการเปลี่ยนโดยเปิดใช้งานการมาทำงานอัตโนมัติ](#1-define-shift-type-with-auto-attendance-enabled)
+1. [มอบหมายกะเหล่านี้ให้กับพนักงาน](#2-assign-these-shifts-to-employees)
+1. [ตั้งค่าฟิลด์ ID อุปกรณ์เข้าร่วมในพนักงาน](#3-setup-attendance-device-id-field-in-employee)
 
-### 1. Define Shift Type with Auto Attendance Enabled
-To be able to mark attendance from a list of Check-in/Check-out logs, you need to set up shifts that have the "Enable Auto Attendance" field enabled. Once you enable this option, you will be able to see an "Auto Attendance Settings" section. Please fill this section as per your requirements for that shift.
+### 1. กำหนดการทำงานประเภทกะโดยเปิดใช้งานการมาทำงานอัตโนมัติ
+เพื่อให้สามารถทำเครื่องหมายการมาทำงานจากรายการบันทึกการเช็คอิน/เช็คเอาท์ คุณต้องตั้งค่ากะที่เปิดใช้งานฟิลด์ "เปิดใช้งานการมาทำงานอัตโนมัติ" เมื่อคุณเปิดใช้งานตัวเลือกนี้ คุณจะเห็นส่วน "การตั้งค่าการมาทำงานอัตโนมัติ" กรุณากรอกส่วนนี้ตามความต้องการของคุณสำหรับกะนั้น
 
-Please refer to the following link to know more about each field in the Auto Attendance settings section: [Auto Attendance Settings](/docs/user/manual/en/human-resources/shift-management#25-auto-attendance-settings)
+โปรดดูลิงก์ต่อไปนี้เพื่อทราบข้อมูลเพิ่มเติมเกี่ยวกับแต่ละฟิลด์ในส่วนการตั้งค่าการมาทำงานอัตโนมัติ: [การตั้งค่าการมาทำงานอัตโนมัติ](/docs/user/manual/th/human-resources/shift-management#25-auto-attendance-settings)
 
-### 2. Assign these shifts to Employees
-Once you have set up a shift, you will have to assign this to the employees. 
+### 2. มอบหมายกะเหล่านี้ให้กับพนักงาน
+เมื่อคุณตั้งค่ากะแล้ว คุณจะต้องมอบหมายสิ่งนี้ให้กับพนักงาน
 
-You can assign this to an employee by either of the two methods:
+คุณสามารถมอบหมายสิ่งนี้ให้กับพนักงานได้โดยใช้วิธีใดวิธีหนึ่งจากสองวิธี:
 
-1. Using the Shift Assignment
+1. การใช้การมอบหมายกะ
 
-    You can use the [Shift Assignment](/docs/user/manual/en/human-resources/shift-management#shift-assignment) to assign shifts to employees on a date to date basis.
+    คุณสามารถใช้ [การมอบหมายกะ](/docs/user/manual/th/human-resources/shift-management#shift-assignment) เพื่อกำหนดกะให้กับพนักงานตามวันที่จนถึงปัจจุบัน
 
-1. Using the Default Shift field in the employee
+1. การใช้ฟิลด์ ค่าเริ่มต้นของการทำงานเป็นกะ ของพนักงาน
 
-    Sometimes you would want to assign a shift for an employee for all the days.
+    บางครั้งคุณอาจต้องการมอบหมายกะสำหรับพนักงานตลอดทั้งวัน
 
-    You can do this by setting the following field in the Employee: `Employee > ATTENDANCE AND LEAVE DETAILS > Default Shift`
+    คุณสามารถทำได้โดยการตั้งค่าฟิลด์ต่อไปนี้ในพนักงาน: `พนักงาน > การเข้างานและออกจากรายละเอียด > กะเริ่มต้น'
 
-> Note: Setting Shift Assignment takes precedence over the default shift. i.e. When the default shift is set, that shift is taken as the employee shift for all days without a Shift Assignment.
+> หมายเหตุ: การมอบหมายกะการตั้งค่ามีความสำคัญเหนือกว่ากะเริ่มต้น เช่น เมื่อมีการตั้งค่ากะเริ่มต้น กะนั้นจะถือเป็นกะของพนักงานตลอดทั้งวันโดยไม่มีการมอบหมายกะ
 
 
-### 3. Setup Attendance Device ID field in Employee
-Biometric systems usually have their own IDs for employees. But, the Employee Checkin in ERPNext needs to be mapped to an employee.
+### 3. ตั้งค่าฟิลด์ ID อุปกรณ์เข้าร่วมประชุมใน Employee
+ระบบไบโอเมตริกซ์มักมีรหัสประจำตัวสำหรับพนักงาน แต่การเช็คอินพนักงานใน ERPNext จำเป็นต้องจับคู่กับพนักงาน
 
-To map the employee to their IDs in the Biometric system you need to set the following field with the appropriate value: `Employee > ATTENDANCE AND LEAVE DETAILS > Attendance Device ID (Biometric/RF tag ID)`
+ในการจับคู่พนักงานกับ ID ของพวกเขาในระบบไบโอเมตริกซ์ คุณต้องตั้งค่าฟิลด์ต่อไปนี้ด้วยค่าที่เหมาะสม: `พนักงาน > การเข้างานและออกจากรายละเอียด > รหัสอุปกรณ์การเข้างาน (ID แท็กไบโอเมตริกซ์/RF)`
 
-Once you are done with the above steps you can now import the Employee Checkin and start generating attendance automatically.
+เมื่อคุณทำตามขั้นตอนข้างต้นเสร็จแล้ว คุณสามารถนำเข้าการเช็คอินพนักงาน และเริ่มสร้างการมาทำงานโดยอัตโนมัติ
 
-Please refer to this article to know more about importing Employee Checkin from an external system: [Integrating ERPNext With Biometric Attendance Devices](/docs/user/manual/en/setting-up/articles/integrating-erpnext-with-biometric-attendance-devices)
+โปรดอ่านบทความนี้เพื่อทราบข้อมูลเพิ่มเติมเกี่ยวกับการนำเข้าการเช็คอินของพนักงานจากระบบภายนอก: [การผสานรวม ERPNext ด้วยอุปกรณ์ Biometric Attendance](/docs/user/manual/th/setting-up/articles/integrating-erpnext-with-biometric-attendance-devices)
 
-## Following are some frequently asked questions regarding Auto Attendance.
+## ต่อไปนี้เป็นคำถามที่พบบ่อยเกี่ยวกับการมาทำงานอัตโนมัติ
 
-### How does Auto Attendance determine shift for an Employee?
-Shift of an Employee on a particular date is determined by the following steps:
+### การมาทำงานประชุมอัตโนมัติกำหนดกะสำหรับพนักงานอย่างไร
+การเปลี่ยนแปลงของพนักงานในวันใดวันหนึ่งถูกกำหนดโดยขั้นตอนต่อไปนี้:
 
-- Shift assigned to an Employee on the given date in the 'Shift Assignment' document.
-- If the above is not found, the shift is picked up from the 'Default Shift' field of the 'Employee' document.
-- Finally, if a shift is not found in 'Employee' document also, then it is assumed that the Employee does not belong to any shift on the given date and no attendance is attempted to be marked by the Auto Attendance.
+- กะการทำงาน ที่มอบหมายให้กับพนักงานในวันที่กำหนดในเอกสาร 'กะการทำงาน ที่มอบหมาย'
+- หากไม่พบข้างต้น กะจะถูกหยิบขึ้นมาจากฟิลด์ 'กะเริ่มต้น' ของเอกสาร 'พนักงาน'
+- สุดท้าย หากไม่พบกะในเอกสาร 'พนักงาน' ด้วย จะถือว่าพนักงานไม่ได้อยู่ในกะใด ๆ ในวันที่กำหนด และไม่มีการพยายามทำเครื่องหมายการมาทำงานอัตโนมัติ
 
-### How does Auto Attendance determine Holiday List for an Employee?
-Holiday List of an Employee is determined by the following steps:
+### การมาทำงานอัตโนมัติกำหนดรายการวันหยุดสำหรับพนักงานอย่างไร
+รายชื่อวันหยุดของพนักงานถูกกำหนดโดยขั้นตอนต่อไปนี้:
 
-- If the Employee's determined 'Shift Type' has a holiday list, then this is taken.
-- Otherwise, the holiday list is taken from either the 'Holiday List' field in the Employee Document or from 'Default Holiday List' field of the Company Document, in that order.
+- หาก 'ประเภทของกะการทำงาน' ที่พนักงานกำหนดมีรายการวันหยุด ให้ดำเนินการนี้
+- มิฉะนั้น รายการวันหยุดจะนำมาจากฟิลด์ 'รายการวันหยุด' ในเอกสารพนักงาน หรือจากฟิลด์ 'รายการวันหยุดเริ่มต้น' ของเอกสารบริษัท ตามลำดับ
 
-Note: The Holiday List is important to be determined correctly by the Auto Attendance to not mark Absents for Employees on holidays.
+หมายเหตุ: รายการวันหยุดเป็นสิ่งสำคัญที่จะต้องกำหนดอย่างถูกต้องโดย Auto Attendance เพื่อไม่ให้ทำเครื่องหมายว่าไม่มีพนักงานในวันหยุด

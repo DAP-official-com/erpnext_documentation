@@ -1,39 +1,38 @@
 <!-- add-breadcrumbs -->
-# Employee Incentive
+#สิ่งจูงใจพนักงาน
 
-**Employee Incentives are a way of compensating and motivating employee performance apart from the usual salary.**
+**สิ่งจูงใจพนักงานเป็นวิธีชดเชยและจูงใจให้พนักงานทำงานนอกเหนือจากเงินเดือนปกติ**
 
-When an organization wants to encourage productivity among its employees, one of the options available is rewarding the Employee with an incentive. ERPNext allows you to create Employee Incentives as and when required for a particular payroll entry.
+เมื่อองค์กรต้องการส่งเสริมผลิตภาพในหมู่พนักงาน หนึ่งในตัวเลือกที่มีอยู่คือการให้รางวัลกับพนักงานด้วยสิ่งจูงใจ ERPNext ช่วยให้คุณสร้างสิ่งจูงใจพนักงานเมื่อจำเป็นสำหรับรายการบัญชีเงินเดือนเฉพาะ
 
 
-To access Employee Incentive, go to:
-> Home > Human Resources > Payroll > Employee Incentive
+ในการเข้าถึงสิ่งจูงใจพนักงาน ไปที่:
+> หน้าหลัก > ทรัพยากรบุคคล > เงินเดือน > สิ่งจูงใจพนักงาน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Employee Incentive, it is advisable to create the following:
+ก่อนสร้างสิ่งจูงใจพนักงาน ขอแนะนำให้สร้างสิ่งต่อไปนี้:
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Salary Component](/docs/user/manual/en/human-resources/salary-component)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
 
-## 1. How to create an Employee Incentive
+## 1. วิธีสร้างสิ่งจูงใจพนักงาน
 
-1. Go to Employee Incentive list, click on New.
-1. Select the Employee.
-1. Enter the Incentive Amount.
-1. Select the Payroll Date.
-1. Select the [Salary Component](/docs/user/manual/en/human-resources/salary-component) under which you want to give the incentive.
-1. Save and Submit.
-1. On submit, the 'Additional Salary' document of the specified 'Salary Component' is created. This will be fetched while running the Payroll Entry.
+1. ไปที่รายการสิ่งจูงใจพนักงาน คลิกที่ใหม่
+1. เลือกพนักงาน
+1. ป้อนจำนวนเงินจูงใจ
+1. เลือกวันที่จ่ายเงินเดือน
+1. เลือก [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component) ที่คุณต้องการสร้างแรงจูงใจ
+1. บันทึกและส่ง
+1. เมื่อส่งเอกสาร 'เงินเดือนเพิ่มเติม' ของ 'ส่วนประกอบเงินเดือน' ที่ระบุจะถูกสร้างขึ้น สิ่งนี้จะถูกดึงออกมาในขณะที่รันรายการบัญชีเงินเดือน
 
  <img class="screenshot" alt="Employee Incentive" src="/docs/assets/img/human-resources/employee-incentive.png">
 
-## 2. Related Topics
+## 2. หัวข้อที่เกี่ยวข้อง
 
-1. [Retention Bonus](/docs/user/manual/en/human-resources/retention-bonus)
-1. [Additional Salary](/docs/user/manual/en/human-resources/additional-salary)
-1. [Salary Component](/docs/user/manual/en/human-resources/salary-component)
-1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
-1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
-
+1. [โบนัส](/docs/user/manual/th/human-resources/retention-bonus)
+1. [เงินเดือนเพิ่มเติม](/docs/user/manual/th/human-resources/additional-salary)
+1. [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
+1. [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
+1. [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)
 {next}

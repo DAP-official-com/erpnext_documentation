@@ -1,57 +1,57 @@
 <!-- add-breadcrumbs -->
-# Department
+# แผนก
 
-**A Department is a specialized functional area or a division within an organization.**
+**แผนกเป็นหน่วยงานเฉพาะทางหรือหน่วยงานภายในองค์กร**
 
-You can configure the Departments in your organization, set Leave Block List, and also Leave and Expense Approvers for the same.
+คุณสามารถตั้งค่าคอนฟิกแผนกในองค์กรของคุณ ตั้งค่า Leave Block List และ Leave and Expense Approvers ได้เช่นเดียวกัน
 
-To access Department, go to:
+ในการเข้าถึงแผนกไปที่:
 
-> Home > Human Resources > Employee > Department
+> หน้าหลัก > ทรัพยากรบุคคล > พนักงาน > แผนก
 
-Department is a tree-structured master, which means you can create parent departments and sub-departments as shown below:
+แผนกเป็นต้นแบบที่มีโครงสร้างแบบต้นไม้ ซึ่งหมายความว่าคุณสามารถสร้างแผนกหลักและแผนกย่อยได้ดังที่แสดงด้านล่าง:
 
 <img class="screenshot" alt="Department Tree" src="{{docs_base_url}}/assets/img/human-resources/department-tree.png">
 
-> **Note:** The 'Is Group' checkbox needs to be checked if the Department is a parent department.
+> **หมายเหตุ:** ต้องทำเครื่องหมายที่ช่อง 'เป็นกลุ่ม' หากแผนกเป็นแผนกหลัก
 
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating a Department, it is advisable you create the following documents:
+ก่อนสร้างแผนก ขอแนะนำให้คุณสร้างเอกสารต่อไปนี้:
 
-* [Company](/docs/user/manual/en/setting-up/company-setup)
-* [Leave Block List](/docs/user/manual/en/human-resources/leave-block-list)
+* [บริษัท](/docs/user/manual/th/setting-up/company-setup)
+* [Leave Block List](/docs/user/manual/th/human-resources/leave-block-list)
 
-## 2. How to create a Department
+## 2. วิธีสร้างแผนก
 
-1. Go to the Department list, click on New.
-1. Enter Department name.
-1. Select Company name.
-1. Select Leave Block List (optional) applicable for this department.
-1. Save.
+1. ไปที่รายการแผนก คลิกที่ ใหม่
+1. ป้อนชื่อแผนก
+1. เลือกชื่อบริษัท
+1. เลือก Leave Block List (ตัวเลือก) ที่ใช้ได้กับแผนกนี้
+1. บันทึก
 
     <img class="screenshot" alt="Department" src="{{docs_base_url}}/assets/img/human-resources/department.png">
 
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Leave and Expense Approvers
+### 3.1 ผู้อนุมัติการลาและค่าใช้จ่าย
 
-You can set Leave and Expense Approvers for a particular Department in the 'Leave Approver' and 'Expense Approver' table respectively.
+คุณสามารถตั้งค่าผู้อนุมัติการลาและค่าใช้จ่ายสำหรับแผนกใดแผนกหนึ่งได้ในตาราง 'ผู้อนุมัติการลาออก' และ 'ผู้อนุมัติค่าใช้จ่าย' ตามลำดับ
 
 <img class="screenshot" alt="Leave and Expense Approver" src="{{docs_base_url}}/assets/img/human-resources/leave-and-expense.png">
 
 
-> **Note:** Multiple Leave and Expense Approvers can be set for a particular Department. However, the first  Approver in the list will be set as the default Approver.
+> **หมายเหตุ:** สามารถตั้งค่าการอนุมัติการลาและค่าใช้จ่ายหลายรายการสำหรับแผนกใดแผนกหนึ่งได้ อย่างไรก็ตาม ผู้อนุมัติรายแรกในรายการจะถูกตั้งค่าเป็นผู้อนุมัติเริ่มต้น
 
 
 
 
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Employment Type](/docs/user/manual/en/human-resources/employment-type)
-1. [Employee Grade](/docs/user/manual/en/human-resources/employee-grade)
-1. [Employee Branch](/docs/user/manual/en/human-resources/branch)
-1. [Employee Designation](/docs/user/manual/en/human-resources/designation)
+1. [ประเภทการจ้างงาน](/docs/user/manual/th/human-resources/employment-type)
+1. [ระดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade)
+1. [สาขาพนักงาน](/docs/user/manual/th/human-resources/branch)
+1. [การกำหนดพนักงาน](/docs/user/manual/th/human-resources/designation)

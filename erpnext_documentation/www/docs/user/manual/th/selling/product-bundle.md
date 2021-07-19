@@ -1,62 +1,61 @@
 <!-- add-breadcrumbs -->
-#Product Bundle
+#ชุดสินค้า (Produc Bundle)
 
-**A Product Bundle is a master where you can list existing items which are bundled together and sold as a set (or bundle).** 
+**ชุดสินค้าเป็นหลักที่คุณสามารถแสดงรายการที่มีอยู่ซึ่งถูกรวมเข้าด้วยกันและขายเป็นชุด (หรือชุด)**
 
-For instance, when you sell a smartphone, you need to ensure that the charger, cable, and sim ejector pin are delivered with it and stock levels of these items get affected. 
-To address this scenario, you can create a Product Bundle for the main item, i.e. smartphone. Then list deliverable items i.e. smartphone + charger + cable + sim ejector pin as so-called "Child Items".
+ตัวอย่างเช่น เมื่อคุณขายสมาร์ทโฟน คุณต้องตรวจสอบให้แน่ใจว่าได้จัดส่งที่ชาร์จ สายเคเบิล และหมุดถอดซิมและระดับสต็อกของสินค้าเหล่านี้จะได้รับผลกระทบ
+เพื่อแก้ไขสถานการณ์นี้ คุณสามารถสร้าง ชุดสินค้า สำหรับรายการหลัก เช่น สมาร์ทโฟน จากนั้นให้แสดงรายการสิ่งของที่จะส่งมอบ เช่น สมาร์ทโฟน + ที่ชาร์จ + สายเคเบิล + หมุดถอดซิมเรียกว่า "Child Item"
 
-A Product Bundle can be seen as a "Bill-of-Materials" on the Sales side. 
+กลุ่มสินค้าสามารถเห็นได้ว่าเป็น "รายการวัสดุ" ในด้านการขาย
 
-Following are the steps to set up a Product Bundle and using it in sales transactions.
+ต่อไปนี้เป็นขั้นตอนในการตั้งค่าชุดสินค้าและใช้ในธุรกรรมการขาย
 
-To access product bundle, go to:
-> Home > Selling > Items and Pricing > Product Bundle
+ในการเข้าถึงชุดสินค้า ไปที่:
+> หน้าหลัก > การขาย > รายการและราคา > ชุดสินค้า
 
-## 1. Prerequisites
-Before creating and using a Product Bundle, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ ชุดสินค้า ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Item](/docs/user/manual/en/stock/item)
+* [รายการ](/docs/user/manual/th/stock/item)
 
-## 2. How to create a Product Bundle
-1. Go to the Product Bundle list, click on New.
-2. Select Parent Item, create one if not already created. Make sure Maintain Stock in unchecked when creating a Parent Item. eg: Dinner Set.
-1. Enter a price for the parent item, this will be fetched when making a transaction.
-1. You can enter a description for internal use.
-3. Enter the products to be bundled in the Items table and enter their quantities.
-4. Save.
+## 2. วิธีสร้างชุดสินค้า
+1. ไปที่รายการ ชุดสินค้า คลิก ใหม่
+2. เลือกรายการหลัก สร้างรายการหากยังไม่ได้สร้าง ตรวจสอบให้แน่ใจว่าไม่ได้เลือกคงสต็อกไว้เมื่อสร้างรายการหลัก เช่น ชุดอาหารค่ำ.
+1. ป้อนราคาสำหรับรายการหลัก ซึ่งจะถูกดึงมาเมื่อทำธุรกรรม
+1. คุณสามารถป้อนคำอธิบายสำหรับการใช้งานภายใน
+3. ป้อนสินค้าที่จะรวมกลุ่มในตารางรายการและป้อนปริมาณของสินค้า
+4. บันทึก
 <img class="screenshot" alt="Product Bundle" src="{{docs_base_url}}/assets/img/selling/product-bundle.png">
 
-### 2.1 Selecting Parent Item
+### 2.1 การเลือกรายการหลัก
 
-In Product Bundle master, there are two sections. The "Parent Item" and a List of items to be shipped (Child Items).
+ใน Product Bundle master มีสองส่วน "รายการหลัก" และรายการสินค้าที่จะจัดส่ง (รายการย่อย)
 
-The "Parent Item" should be seen more like a vessel or virtual item and not a physical product.
-The "Parent Item" must be a <b>non-stock item</b>. To create a <b>non-stock item</b> you have to unmark "Maintain Stock" in the Item Form.
-This is a non-stock item because there is no stock maintained for it but only for the "Child Items". 
-If you want to maintain stock for the Parent Item, then you must create a regular Bill of Material (BOM) 
-and package them using Stock Entry Transactions.
+"รายการหลัก" ควรมีลักษณะเหมือนเรือหรือสิ่งของเสมือนและไม่ใช่ผลิตภัณฑ์ที่จับต้องได้
+"รายการหลัก" ต้องเป็น <b>รายการที่ไม่มีในสต็อก</b> ในการสร้าง <b>รายการที่ไม่มีสต็อก</b> คุณต้องยกเลิกการทำเครื่องหมาย "รักษาสต็อก" ในแบบฟอร์มรายการ
+สินค้านี้เป็นสินค้าที่ไม่มีสต็อกเนื่องจากไม่มีสต็อกไว้สำหรับสินค้านี้ แต่สำหรับ "สินค้าสำหรับเด็ก" เท่านั้น
+หากคุณต้องการรักษาสต็อกสำหรับรายการหลัก คุณต้องสร้างรายการวัสดุ (BOM) ปกติ
+และจัดแพคเกจโดยใช้ธุรกรรมรายการสต็อค
 
-### 2.2 Selecting Child Items
+### 2.2 การเลือกรายการย่อย
 
-In the Items table, you will list all the child items for which we maintain stock and is delivered to customer.
-Remember: The "Parent Item" is just virtual, so your main product (a smartphone in our example here) also has to be listed on the List of Child (or Package) Items.
+ในตารางรายการ คุณจะแสดงรายการรายการย่อยทั้งหมดที่เรารักษาสต็อกและจัดส่งให้กับลูกค้า
+ข้อควรจำ: "รายการผู้ปกครอง" เป็นเพียงเสมือนจริง ดังนั้นผลิตภัณฑ์หลักของคุณ (สมาร์ทโฟนในตัวอย่างของเราที่นี่) จะต้องอยู่ในรายการรายการย่อย (หรือแพ็คเกจ) ด้วย
 
-## 3. Features
-### 3.1 Product Bundle in the Sales Transactions
+## 3. คุณสมบัติ
+### 3.1 ชุดสินค้าในธุรกรรมการขาย
 
-When making Sales transactions (Sales Invoice, Sales Order, Delivery Note) the Parent Item will be selected in the main item table.
+เมื่อทำธุรกรรมการขาย (ใบแจ้งหนี้การขาย ใบสั่งขาย บันทึกการจัดส่ง) รายการหลักจะถูกเลือกในตารางรายการหลัก
 
 <img class="screenshot" alt="Product Bundle" src="{{docs_base_url}}/assets/img/selling/product-bundle.gif">
 
-On selection of a Parent Item in the main item table, its child items will be fetched in Packing List table of the transaction. If child item is the serialized item, you will be able to specify its Serial No. 
-in packing List table itself. On submission of the transaction, the system will reduce the stock level of child items from warehouse specified in Packing List table.
+ในการเลือกรายการหลักในตารางรายการหลัก รายการย่อยจะถูกดึงมาในตารางรายการบรรจุภัณฑ์ของธุรกรรม หากรายการย่อยเป็นรายการต่อเนื่อง คุณจะสามารถระบุหมายเลขซีเรียลได้
+ในตารางรายการบรรจุเอง ในการส่งรายการ ระบบจะลดระดับสต็อคสินค้าย่อยจากคลังสินค้าที่ระบุในตารางรายการบรรจุภัณฑ์
 
 <div class="well"><b>Use Product Bundle to Manage Offers/Schemes:</b>
 <br>
-This was discovered when a customer dealing into nutrition products asked for a feature to manage offers like "Buy One Get One Free". To manage the same, he created a non-stock item which was used as Parent Item. In description of item, he entered offer details with the item's image displaying the offer. The sellable product was selected in Package Item where qty was two. Hence every time they sold one qty of Parent item under this offer, the system deducted two quantities of product from Warehouse.</div>
+สิ่งนี้ถูกค้นพบเมื่อลูกค้าที่เกี่ยวข้องกับผลิตภัณฑ์โภชนาการขอคุณสมบัติในการจัดการข้อเสนอ เช่น "ซื้อหนึ่งแถมหนึ่ง" เพื่อจัดการสิ่งเดียวกัน เขาได้สร้างรายการที่ไม่มีสต็อกซึ่งใช้เป็นรายการหลัก ในคำอธิบายของรายการ เขาป้อนรายละเอียดข้อเสนอพร้อมรูปภาพของรายการที่แสดงข้อเสนอ ผลิตภัณฑ์ที่ขายได้ถูกเลือกในรายการแพ็คเกจโดยที่จำนวนเป็นสอง ดังนั้นทุกครั้งที่พวกเขาขายสินค้าหลักจำนวนหนึ่งรายการภายใต้ข้อเสนอนี้ ระบบจะหักผลิตภัณฑ์สองจำนวนจากคลังสินค้า</div>
 
-### 4. Related Topics
-1. [Item](/docs/user/manual/en/stock/item)
-
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [รายการ](/docs/user/manual/th/stock/item)
 {next}

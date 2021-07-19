@@ -1,25 +1,25 @@
-# Loan Type
+#ประเภทสินเชื่อ/เงินกู้
 
-**Loans can be categorized into different types based on their specific characteristics.**
+**สินเชื่อสามารถแบ่งได้เป็นประเภทต่างๆ ตามลักษณะเฉพาะ**
 
-In ERPNext, you can define different Loan Types, their Rate of Interest and other related information in the Loan Type doctype.
+ใน ERPNext คุณสามารถกำหนดประเภทสินเชื่อที่แตกต่างกัน อัตราดอกเบี้ย และข้อมูลที่เกี่ยวข้องอื่นๆ ได้ในประเภทเอกสารประเภทสินเชื่อ
 
-To access Loan Type go to:
+ในการเข้าถึงประเภทสินเชื่อไปที่:
 
-> Human Resources > Loans > Loan Type 
+> ทรัพยากรบุคคล > สินเชื่อ > ประเภทสินเชื่อ
 
-## 1. How to create a Loan Type
+## 1. วิธีสร้างประเภทสินเชื่อ
 
-1. Go to: Loan Type.
-1. Enter the Loan Name.
-1. Enter the Rate of Interest (%) Yearly.
-1. Optionally, you can also enter the Maximum Loan Amount and Description of the Loan Type.
-1. Save.
+1. ไปที่: ประเภทสินเชื่อ
+1. ป้อนชื่อเงินกู้
+1. ป้อนอัตราดอกเบี้ย (%) รายปี
+1. คุณยังสามารถป้อนจำนวนเงินกู้สูงสุดและคำอธิบายประเภทเงินกู้ได้
+1. บันทึก
 
     <img class="screenshot" alt="Loan Type" src="{{docs_base_url}}/assets/img/human-resources/loan-type.png">
 
-## 2. Related Topics
+## 2. หัวข้อที่เกี่ยวข้อง
 
-1. [Loan Application](/docs/user/manual/en/human-resources/loan-application)
-1. [Loan](/docs/user/manual/en/human-resources/loan)
+1. [การสมัครสินเชื่อ](/docs/user/manual/th/human-resources/loan-application)
+1. [เงินกู้](/docs/user/manual/th/human-resources/loan)
 

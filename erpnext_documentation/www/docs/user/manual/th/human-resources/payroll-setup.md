@@ -1,77 +1,77 @@
 <!-- add-breadcrumbs -->
-# Payroll Setup
+# การตั้งค่าเงินเดือน
 
-Salary is a fixed amount of money or compensation paid to an employee by an employer in return for the work performed.
+เงินเดือนคือจำนวนเงินที่แน่นอนหรือค่าตอบแทนที่นายจ้างจ่ายให้กับลูกจ้างเป็นการตอบแทนสำหรับงานที่ทำ
 
-Payroll is the administration of financial records of employees' salaries, wages, bonuses, net pay, and deductions.
+เงินเดือนคือการบริหารบันทึกทางการเงินของเงินเดือน ค่าจ้าง โบนัส ค่าจ้างสุทธิ และการหักเงินของพนักงาน
 
-To process Payroll in ERPNext,
+ในการประมวลผลบัญชีเงินเดือนใน ERPNext
 
-1. Define [Payroll Period](/docs/user/manual/en/human-resources/payroll-period.html) (optional)
-1. Define [Income Tax Slab](/docs/user/manual/en/human-resources/income-tax-slab.html) (optional)
-2. Create Salary Structure with Salary Components (Earnings and Deductions)
-3. Assign Salary Structures to each Employee via Salary Structure Assignment
-4. Generate Salary Slips via [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry.html).
-5. Book the Salary in your Accounts.
+1. กำหนด [ระยะเวลาการจ่ายเงินเดือน](/docs/user/manual/th/human-resources/payroll-period.html) (ตัวเลือก)
+1. กำหนด [รายการภาษีเงินได้](/docs/user/manual/th/human-resources/income-tax-slab.html) (ไม่บังคับ)
+2. สร้างโครงสร้างเงินเดือนด้วยองค์ประกอบเงินเดือน (รายได้และการหักเงิน)
+3. กำหนดโครงสร้างเงินเดือนให้กับพนักงานแต่ละคนผ่านการมอบหมายโครงสร้างเงินเดือน
+4. สร้างสลิปเงินเดือนผ่าน [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry.html)
+5. จองเงินเดือนในบัญชีของคุณ
 
-## Payroll Period
-[Payroll Period](/docs/user/manual/en/human-resources/payroll-period.html), in ERPNext, is a period for which Employees get paid for their occupation with the Company. Payroll period helps you define Tax slabs applicable for the period, making it easier to manage changing laws.
+## ระยะเวลาเงินเดือน
+[ระยะเวลาการจ่ายเงินเดือน](/docs/user/manual/th/human-resources/payroll-period.html) ใน ERPNext คือช่วงเวลาที่พนักงานได้รับเงินสำหรับอาชีพของตนกับบริษัท ระยะเวลาการจ่ายเงินเดือนช่วยให้คุณกำหนดตารางภาษีที่ใช้ได้ในช่วงเวลานั้น ทำให้ง่ายต่อการจัดการกฎหมายที่เปลี่ยนแปลงไป
 
-> Note: Configuring Payroll Period is optional if you do not intend to use Flexible Benefits or Tax Slabs
+> หมายเหตุ: การกำหนดค่ารอบระยะเวลาบัญชีเงินเดือนเป็นทางเลือก หากคุณไม่ต้องการใช้สิทธิประโยชน์ที่ยืดหยุ่นหรือใบกำกับภาษี
 
-## Salary Component
-This document allows you to define each Earning and Deduction component which can be used to create a Salary Structure and subsequently create Salary Slip or Additional Salary. You can also configure the type, condition and formula as well as other settings which are discussed below. You should be able to enable various combinations of the following options to configure each component as it fits your Company / Regional policies.
+## องค์ประกอบเงินเดือน
+เอกสารนี้ให้คุณกำหนดองค์ประกอบรายได้และการหักเงินแต่ละรายการ ซึ่งสามารถใช้เพื่อสร้างโครงสร้างเงินเดือน และสร้างสลิปเงินเดือนหรือเงินเดือนเพิ่มเติมในภายหลัง คุณยังสามารถกำหนดค่าประเภท เงื่อนไข และสูตร ตลอดจนการตั้งค่าอื่นๆ ซึ่งจะกล่าวถึงด้านล่าง คุณควรจะสามารถเปิดใช้งานตัวเลือกต่างๆ ต่อไปนี้เพื่อกำหนดค่าแต่ละองค์ประกอบตามนโยบายของบริษัท/ภูมิภาคของคุณ
 
-* Depends on Leave Without Pay: Leave Without Pay (LWP) happens when an Employee runs out of allocated leaves
-or takes a leave without an approval (via Leave Application). If enabled, ERPNext will automatically deduct the
-pay in proportion of LWP days divided by the total working days for the month (based on the Holiday List).
+* ขึ้นอยู่กับการลาโดยไม่จ่าย: การลางานโดยไม่จ่าย (LWP) เกิดขึ้นเมื่อพนักงานหมดใบที่จัดสรร
+หรือลางานโดยไม่ได้รับอนุมัติ (ผ่าน เอกสารการขอลางาน) หากเปิดใช้งาน ERPNext จะหัก .โดยอัตโนมัติ
+จ่ายตามสัดส่วนของวัน LWP หารด้วยจำนวนวันทำงานทั้งหมดของเดือนนั้น (ตามรายการวันหยุด)
 
-	> Note: If you don’t want ERPNext to manage LWP, don’t turn on this flag in any of the Salary Components
+	> หมายเหตุ: ถ้าคุณไม่ต้องการให้ ERPNext จัดการ LWP อย่าเปิดการตั้งค่าสถานะนี้ในส่วนประกอบเงินเดือนใดๆ
 
-* Do not include in total: If this option is enabled, the component wont be added to the total of the Earnings or Deductions of the Salary Slip
+* ไม่รวมทั้งหมด: หากเปิดใช้งานตัวเลือกนี้ ส่วนประกอบจะไม่ถูกเพิ่มเข้ากับยอดรวมของรายได้หรือการหักของสลิปเงินเดือน
 
-#### Earning
+#### รายได้
 
 <img class="screenshot" alt="Salary Component Earnings"
 	src="{{docs_base_url}}/assets/img/human-resources/salary-component.png">
 
-* Is Additional Component: This option specify that the component can only be paid as Additional Salary. Examples of this component could be Performance Bonus or pay received for on-site deputation etc. Such components are not considered to be part of normal Salary Structure. Instead, Additional Salary with these components can be submitted as required which will be added to the Salary Slip automatically.
+* เป็นส่วนประกอบเพิ่มเติม: ตัวเลือกนี้ระบุว่าส่วนประกอบสามารถจ่ายเป็นเงินเดือนเพิ่มเติมเท่านั้น ตัวอย่างขององค์ประกอบนี้อาจเป็นโบนัสตามผลงานหรือการจ่ายเงินที่ได้รับสำหรับการเป็นตัวแทนในสถานที่ ฯลฯ ส่วนประกอบดังกล่าวไม่ถือว่าเป็นส่วนหนึ่งของโครงสร้างเงินเดือนปกติ แต่สามารถส่งเงินเดือนเพิ่มเติมพร้อมส่วนประกอบเหล่านี้ได้ตามต้องการ ซึ่งจะเพิ่มในสลิปเงินเดือนโดยอัตโนมัติ
 
-* Is Tax Applicable: If a component needs to be considered for Tax calculations specified as per the Payroll Period you may want to enable this option. It would be required that you have a Payroll Period and Income Tax Slab configured with valid Tax Slabs for payroll processing.
+* เป็นภาษีที่ใช้บังคับ: หากส่วนประกอบจำเป็นต้องได้รับการพิจารณาสำหรับการคำนวณภาษีที่ระบุตามระยะเวลาการจ่ายเงินเดือน คุณอาจต้องการเปิดใช้งานตัวเลือกนี้ คุณจะต้องมีรอบระยะเวลาบัญชีเงินเดือนและ Slab ภาษีเงินได้ที่กำหนดค่าด้วยแผ่นภาษีที่ถูกต้องสำหรับการประมวลผลบัญชีเงินเดือน
 
-* Is Payable: Such components can be booked against separate payable accounts and the Accounts shall be configured in the Accounts table
+* เป็นเจ้าหนี้: องค์ประกอบดังกล่าวสามารถจองกับบัญชีเจ้าหนี้แยกต่างหากและบัญชีจะได้รับการกำหนดค่าในตารางบัญชี
 
-* Flexible Benefits: Flexible Benefits are earning components which Employees can choose to receive on a pro-rata basis or annually when they claim for. These are mostly tax exempted, unless the Employee fail to file the claim with adequate bills / documents. If turned on, you can specify the maximum benefit allowed for an employee in a year. Employees can create [Employee Benefit Application](/docs/user/manual/en/human-resources/employee-benefit-application) with the ones they opt for.
+* ผลประโยชน์ที่ยืดหยุ่น: ผลประโยชน์ที่ยืดหยุ่นคือรายได้ส่วนประกอบที่พนักงานสามารถเลือกรับตามสัดส่วนหรือรายปีเมื่อพวกเขาเรียกร้อง ส่วนใหญ่ได้รับการยกเว้นภาษี เว้นแต่พนักงานจะไม่ยื่นคำร้องพร้อมบิล/เอกสารเพียงพอ หากเปิดใช้งาน คุณสามารถระบุผลประโยชน์สูงสุดที่อนุญาตสำหรับพนักงานในหนึ่งปีได้ พนักงานสามารถสร้าง [สวัสดิการพนักงาน](/docs/user/manual/th/human-resources/employee-benefit-application) กับสิ่งที่พวกเขาเลือกใช้
 
-	>Note: Employee Benefit Application will only allow Employees to only choose from the flexible components which are present in the Salary Structure assigned to the Employee
+>หมายเหตุ: ใบสมัครสวัสดิการพนักงานจะอนุญาตให้พนักงานเลือกเฉพาะส่วนประกอบที่ยืดหยุ่นซึ่งมีอยู่ในโครงสร้างเงินเดือนที่กำหนดให้กับพนักงานเท่านั้น
 
-	- Pay Against Benefit Claim: Employees can opt to receive flexible benefits annually via Employee Benefit Claim or along with their salary every month. If you enable this, the amount allocated for the component will be paid as the Employee submits an [Employee Benefit Claim](/docs/user/manual/en/human-resources/employee-benefit-claim.html). Else the amount will be dispersed as part of the Employee's salary on a pro-rata basis.
+- Pay Against Benefit Claim: พนักงานสามารถเลือกรับสวัสดิการที่ยืดหยุ่นได้ทุกปีผ่านการเคลมสวัสดิการพนักงานหรือพร้อมกับเงินเดือนทุกเดือน หากคุณเปิดใช้งานสิ่งนี้ จำนวนเงินที่จัดสรรสำหรับส่วนประกอบจะถูกจ่ายเมื่อพนักงานส่ง [Employee Benefit Claim](/docs/user/manual/th/human-resources/employee-benefit-claim.html) มิฉะนั้นจำนวนเงินจะกระจายเป็นส่วนหนึ่งของเงินเดือนของพนักงานตามสัดส่วน
 
- - Only Tax Impact (Cannot Claim But Part of Taxable Income): Such components are those which the company has already paid to the Employee in cash or by some other means, for example a car purchased for the Employee's use. The Employee cannot claim but is liable to pay tax. The amount allocated for this component will be considered while calculating the taxable income of the Employee.
+ - ผลกระทบทางภาษีเท่านั้น (ไม่สามารถเรียกร้องได้ แต่เป็นส่วนหนึ่งของรายได้ที่ต้องเสียภาษี): ส่วนประกอบดังกล่าวเป็นสิ่งที่บริษัทได้จ่ายให้กับพนักงานเป็นเงินสดหรือโดยวิธีอื่น เช่น รถยนต์ที่ซื้อเพื่อการใช้งานของพนักงาน ลูกจ้างไม่สามารถเรียกร้องได้ แต่ต้องเสียภาษี จำนวนเงินที่จัดสรรสำหรับองค์ประกอบนี้จะถูกพิจารณาในขณะที่คำนวณรายได้ที่ต้องเสียภาษีของพนักงาน
 
- - Create Separate Payment Entry Against Benefit Claim: Some of the flexible benefits may be legally required to be paid via separate vouchers. If you enable this, while posting the bank entry the amount paid for such components will be posted as a separate entry for each Employee.
+ - สร้างรายการชำระเงินแยกต่างหากสำหรับการเรียกร้องผลประโยชน์: ผลประโยชน์ที่ยืดหยุ่นบางอย่างอาจต้องจ่ายตามกฎหมายผ่านบัตรกำนัลแยกต่างหาก หากคุณเปิดใช้งานสิ่งนี้ ในขณะที่โพสต์รายการธนาคาร จำนวนเงินที่ชำระสำหรับส่วนประกอบดังกล่าวจะถูกโพสต์เป็นรายการแยกต่างหากสำหรับพนักงานแต่ละคน
 
 	<img class="screenshot" alt="Flexible Salary Component"
 	src="{{docs_base_url}}/assets/img/human-resources/salary-component-1.png">
 
-	> Note: Normal Tax calculation does not include Flexible Benefits as in most cases these are exempted from Tax. To tax these components anytime before that last payroll, use "Deduct Tax For Unclaimed Employee Benefits" in Payroll Entry / Salary Slip while processing the Salary.
+	> หมายเหตุ: การคำนวณภาษีปกติจะไม่รวมสวัสดิการ เนื่องจากในกรณีส่วนใหญ่จะได้รับการยกเว้นภาษี หากต้องการเก็บภาษีส่วนประกอบเหล่านี้ทุกเมื่อก่อนการจ่ายเงินเดือนครั้งสุดท้าย ให้ใช้ "หักภาษีสำหรับผลประโยชน์ของพนักงานที่ไม่ได้รับการอ้างสิทธิ์" ในรายการเงินเดือน / สลิปเงินเดือนขณะประมวลผลเงินเดือน
 
 #### Deduction
 
 <img class="screenshot" alt="Salary Component Deduction"
 	src="{{docs_base_url}}/assets/img/human-resources/salary-component-2.png">
 
-* Variable Based On Taxable Salary: If you enable this, the component will be considered as the standard Tax deduction component. Tax will be calculated based on the Income Tax Slab linked to the employee.
+* ตัวแปรตามเงินเดือนที่ต้องเสียภาษี: หากคุณเปิดใช้งานสิ่งนี้ ส่วนประกอบจะถือเป็นองค์ประกอบการหักภาษีมาตรฐาน ภาษีจะถูกคำนวณตามแผ่นภาษีเงินได้ที่เชื่อมโยงกับพนักงาน
 
-## Salary Structure
+## โครงสร้างเงินเดือน
 
-Salary Structure represents how Salaries are structured and calculated based on Earnings and Deductions. Salary structures are used to help organizations:
+โครงสร้างเงินเดือนแสดงวิธีจัดโครงสร้างเงินเดือนและคำนวณตามรายได้และการหักเงิน โครงสร้างเงินเดือนใช้เพื่อช่วยองค์กร:
 
-1. Maintain pay levels that are competitive with the external labor market,
-2. Maintain internal pay relationships among jobs,
-3. Recognize and reward differences in the level of responsibility, skill, and performance, and manage pay expenditures.
+1. รักษาระดับค่าจ้างที่สามารถแข่งขันกับตลาดแรงงานภายนอกได้
+2. รักษาความสัมพันธ์ค่าจ้างภายในระหว่างงาน
+3. รับรู้และให้รางวัลความแตกต่างในระดับความรับผิดชอบ ทักษะ และประสิทธิภาพ และจัดการรายจ่าย
 
-Usual components of a salary structure (in India) include:
+<!--Usual components of a salary structure (in India) include:
 
 * Basic Salary: It is the taxable base income and generally not more than 40% of CTC.
 
@@ -89,138 +89,138 @@ Usual components of a salary structure (in India) include:
 
 * Bonus: Taxable part of the CTC, usually a once a year lump sum amount, given to the employee based on the individual’s as well as the organizational performance for the year.
 
-* Employee Stock Options: ESOPS are Free/discounted shares given by the company to the employees. This is done to primarily increase employee retention.
+* Employee Stock Options: ESOPS are Free/discounted shares given by the company to the employees. This is done to primarily increase employee retention.-->
 
 <img class="screenshot" alt="Submitted Salary Structure" src="{{docs_base_url}}/assets/img/human-resources/salary-structure.png">
 A submitted Salary Structure
 
-### Creating a New Salary Structure
-To create a new Salary Structure go to:
+### การสร้างโครงสร้างเงินเดือนใหม่
+เพื่อสร้างโครงสร้างเงินเดือนใหม่ไปที่:
 
-> Human Resources > Payroll Setup > Salary Structure > New Salary Structure
+> ทรัพยากรบุคคล > การตั้งค่าเงินเดือน > โครงสร้างเงินเดือน > โครงสร้างเงินเดือนใหม่
 
-In the new Salary Structure,
+ในโครงสร้างเงินเดือนใหม่
 
-1. Name the salary Structure and set the company, letterhead for Salary Slip printing and frequency of payroll etc.
-2. Set the starting date from which this is valid (Note: There can only be one Salary Structure that can be “Active” for an Employee during any period).
-3. Configure Leave Encashment Amount per Day which will be the amount payable to Employees on Leave Encashment requests.
-4. Max Benefits amount is the maximum amount eligible as Flexible Components to employees.
+1. ตั้งชื่อโครงสร้างเงินเดือนและตั้งบริษัท หัวจดหมายสำหรับพิมพ์สลิปเงินเดือน และความถี่ในการจ่ายเงิน ฯลฯ
+2. กำหนดวันที่เริ่มต้นซึ่งสิ่งนี้ถูกต้อง (หมายเหตุ: โครงสร้างเงินเดือนสามารถมีได้เพียงโครงสร้างเดียวที่สามารถ "ใช้งานอยู่" สำหรับพนักงานในช่วงเวลาใดก็ได้)
+3. กำหนดค่าจำนวนเงินที่ฝากไว้ต่อวันซึ่งจะเป็นจำนวนเงินที่จ่ายให้กับพนักงานตามคำขอขอ Encashment
+4. จำนวนเงินผลประโยชน์สูงสุดคือจำนวนเงินสูงสุดที่มีสิทธิ์เป็นส่วนประกอบที่ยืดหยุ่นสำหรับพนักงาน
 
-#### Salary Slip Based on Timesheet
+#### สลิปเงินเดือนตามตารางเวลางาน
 
-Salary Slip based on Timesheet is applicable if you have timesheet based payroll system
+สลิปเงินเดือนตามตารางเวลางานสามารถใช้ได้หากคุณมีระบบการจ่ายเงินตามไทม์ชีท
 
-1. Check "Salary Slip Based on Timesheet"
-2. Select the salary component and enter Hour Rate (Note: This salary component gets added to earnings in Salary Slip)
+1. ตรวจสอบ "สลิปเงินเดือนตามตารางเวลางาน"
+2. เลือกองค์ประกอบเงินเดือนและป้อนอัตราชั่วโมง (หมายเหตุ: องค์ประกอบเงินเดือนนี้จะเพิ่มไปยังรายได้ในสลิปเงินเดือน)
 
 <img class="screenshot" alt="Salary Slip based on Timesheet" src="{{docs_base_url}}/assets/img/human-resources/salary-timesheet.png">
 
-#### Earnings and Deductions in Salary Structure
+#### รายได้และการหักในโครงสร้างเงินเดือน
 
-In the “Earnings” and “Deductions” tables, you can select the earnings and deductions components The condition and formula configured in Salary Component will be copied by default, but you may change this if required. You may also want to select the Base component in the Earnings table. Note that the amount eligible for each employee should be configured in Salary Structure Assignment.
+ในตาราง "รายได้" และ "การหักเงิน" คุณสามารถเลือกส่วนประกอบรายได้และการหักเงินได้ เงื่อนไขและสูตรที่กำหนดค่าไว้ในองค์ประกอบเงินเดือนจะถูกคัดลอกโดยค่าเริ่มต้น แต่คุณสามารถเปลี่ยนได้หากจำเป็น คุณอาจต้องการเลือกส่วนประกอบพื้นฐานในตารางรายได้ โปรดทราบว่าควรกำหนดค่าจำนวนเงินที่มีสิทธิ์สำหรับพนักงานแต่ละคนในการกำหนดโครงสร้างเงินเดือน
 
-If the condition and formula for any of the earnings or deductions are not configured in Salary Component, you can calculate the values of Salary Components based on,
+หากเงื่อนไขและสูตรสำหรับรายได้หรือการหักเงินใด ๆ ไม่ได้รับการกำหนดค่าในองค์ประกอบเงินเดือน คุณสามารถคำนวณค่าขององค์ประกอบเงินเดือนตาม
 
-#### Condition and Formula
+#### เงื่อนไขและสูตรการคำนวณ
 
 <img class="screenshot" alt="Condition and Formula" src="{{docs_base_url}}/assets/img/human-resources/condition-formula.png">
 
-#### Condition and Amount
+#### เงื่อนไขและยอดเงิน
 
 <img class="screenshot" alt="Condition and Amount" src="{{docs_base_url}}/assets/img/human-resources/condition-amount.png">
 
 
-In conditions and formulas,
+ในเงื่อนไขและสูตร
 
-  * Use field "base" for using base salary of the Employee
-  * Use Salary Component abbreviations. For example: BS for Basic Salary
-  * Use field name for employee details. For example: Employment Type for employment_type
+  * ใช้ช่อง "ฐาน" สำหรับใช้ฐานเงินเดือนของพนักงาน
+  * ใช้ตัวย่อส่วนประกอบเงินเดือน ตัวอย่างเช่น: BS สำหรับเงินเดือนพื้นฐาน
+  * ใช้ชื่อฟิลด์สำหรับรายละเอียดพนักงาน ตัวอย่างเช่น: ประเภทการจ้างงานสำหรับการจ้างงาน_type
 
-#### Account Details
+#### รายละเอียดบัญชี
 
 <img class="screenshot" alt="Salary Structure Account" src="{{docs_base_url}}/assets/img/human-resources/salary-structure-account.png">  
 
-  * Select Mode of Payment and Payment Account for the Salary Slips which will be generated using this Salary Structure
+  * เลือกโหมดการชำระเงินและบัญชีการชำระเงินสำหรับสลิปเงินเดือนซึ่งจะสร้างขึ้นโดยใช้โครงสร้างเงินเดือนนี้
 
-Finally, *Save* the Salary Structure.
+สุดท้าย *บันทึก* โครงสร้างเงินเดือน
 
-### Leave Without Pay (LWP)
+### ลางานโดยไม่รับค่าจ้าง (LWP)
 
-Leave Without Pay (LWP) happens when an Employee runs out of allocated leaves or takes a leave without an approval (via Leave Application). If you want ERPNext to automatically deduct salary in case of LWP, then you must check on
-the “Apply LWP” column in the Earning Type and Deduction Type masters. The amount of pay cut is the proportion of LWP days divided by the total working days for the month (based on the Holiday List).
+ลางานโดยไม่รับค่าจ้าง (LWP) เกิดขึ้นเมื่อพนักงานหมดการลาที่จัดสรรไว้หรือลางานโดยไม่ได้รับการอนุมัติ (ผ่านแอปพลิเคชันการลางาน) หากคุณต้องการให้ ERPNext หักเงินเดือนโดยอัตโนมัติในกรณีของ LWP คุณต้องตรวจสอบ
+คอลัมน์ “ใช้ LWP” ในประเภทรายได้และประเภทการหักเงินหลัก จำนวนเงินที่ลดค่าจ้างคือสัดส่วนของวัน LWP หารด้วยจำนวนวันทำงานทั้งหมดของเดือนนั้น (ตามรายการวันหยุด)
 
-If you don’t want ERPNext to manage LWP, leave the LWP unchecked in all of the Earning Types and Deduction Types.
+หากคุณไม่ต้องการให้ ERPNext จัดการ LWP ไม่ต้องเลือก LWP ในประเภทรายได้และประเภทการหักเงินทั้งหมด
 
-## Salary Structure Assignment
+## การกำหนดโครงสร้างเงินเดือน
 
-Salary Structure Assignment allows you to assign salary structure and specify the base pay eligible for each employee. It is important that you set the base salary for each assignment as this will be the base salary used for calculations as per the Salary Structure.
+การกำหนดโครงสร้างเงินเดือนช่วยให้คุณสามารถกำหนดโครงสร้างเงินเดือนและระบุค่าจ้างพื้นฐานที่มีสิทธิ์สำหรับพนักงานแต่ละคน สิ่งสำคัญคือคุณต้องกำหนดฐานเงินเดือนสำหรับงานแต่ละงาน เนื่องจากจะเป็นฐานเงินเดือนที่ใช้สำหรับการคำนวณตามโครงสร้างเงินเดือน
 
-To create a new Salary Structure Assignment go to:
+ในการสร้างการกำหนดโครงสร้างเงินเดือนใหม่ให้ไปที่:
 
-> Human Resources > Payroll > Salary Structure Assignment > New Salary Structure Assignment
+> ทรัพยากรบุคคล > เงินเดือน > การกำหนดโครงสร้างเงินเดือน > การกำหนดโครงสร้างเงินเดือนใหม่
 
 <img class="screenshot" alt="Salary Structure Assignment" src="{{docs_base_url}}/assets/img/human-resources/salary-structure-assignment.png">  
 
 * * *
 
-#Processing Payroll
-You can either bulk process payroll for Employees under a department, branch or designation or process payroll individually by creating Salary Slips for each employee.
+#การประมวลผลเงินเดือน
+คุณสามารถดำเนินการจ่ายเงินเดือนจำนวนมากสำหรับพนักงานภายใต้แผนก สาขา หรือการกำหนด หรือดำเนินการจ่ายเงินเป็นรายบุคคลโดยการสร้างสลิปเงินเดือนสำหรับพนักงานแต่ละคน
 
-## Payroll Processing Using Payroll Entry
-You can also create salary slip for multiple employees using Payroll Entry:
+## การประมวลผลเงินเดือนโดยใช้รายการบัญชีเงินเดือน
+คุณยังสามารถสร้างสลิปเงินเดือนสำหรับพนักงานหลายคนโดยใช้รายการบัญชีเงินเดือน:
 
-> Human Resources > Payroll > Payroll Entry > New Payroll Entry
+> ทรัพยากรบุคคล > บัญชีเงินเดือน > รายการเงินเดือน > รายการเงินเดือนใหม่
 
-#### Payroll Entry
+#### รายการเงินเดือน
 
 <img class="screenshot" alt="Payroll Entry" src="{{docs_base_url}}/assets/img/human-resources/payroll-entry.png">
 
-In Payroll Entry,
+ในรายการเงินเดือน
 
-1. Select the Company for which you want to create the Salary Slips. You can also select the other fields like Branch, Department, Designation or Project to be more specific.
-2. Check _Salary Slip based on Timesheet_ if you want to process timesheet based Salary Slips.
-3. Select the Posting Date and the frequency of payroll which you want to create the Salary Slips.
-4. Click on "Get Employee Details" to get a list of Employees for which the Salary Slips will be created based on the selected criteria.
-5. Enter the Start and End dates for the payroll period.
-6. You can check _Deduct Tax For Unclaimed Employee Benefits_ if you want to deduct taxes for all benefits (Salary Components which are _Is Flexible Benefit_) paid to employees till the current payroll
-7. Similarly, _Deduct Tax For Unsubmitted Tax Exemption Proof_ allows you to deduct taxes for the earnings which were exempted in the previous payrolls as declared in [Employee Tax Exemption Declaration](/docs/user/manual/en/human-resources/employee-tax-exemption-declaration) but the Employee has not submitted sufficient proof [Employee Tax Exemption Proof Submission](/docs/user/manual/en/human-resources/employee-tax-exemption-proof-submission)
-8. Select the Cost Center and Payment Account.
-9. Save the form and Submit it to create Salary Slip records for each active Employee for the time period selected. If the Salary Slips are already created, the system will not create any more Salary Slips. You can also just save the form as Draft and create the Salary Slips later.
+1. เลือกบริษัทที่คุณต้องการสร้างสลิปเงินเดือน คุณยังสามารถเลือกสาขาอื่นๆ เช่น สาขา แผนก ตำแหน่ง หรือโครงการ ให้เจาะจงมากขึ้น
+2. ตรวจสอบ _Salary Slip based on Timesheet_ หากคุณต้องการประมวลผลสลิปเงินเดือนตามใบบันทึกเวลา
+3. เลือกวันที่ลงรายการบัญชีและความถี่ของการจ่ายเงินเดือนที่คุณต้องการสร้างสลิปเงินเดือน
+4. คลิกที่ "รับรายละเอียดพนักงาน" เพื่อรับรายชื่อพนักงานที่จะสร้างสลิปเงินเดือนตามเกณฑ์ที่เลือก
+5. ป้อนวันที่เริ่มต้นและสิ้นสุดสำหรับรอบระยะเวลาการจ่ายเงินเดือน
+6. คุณสามารถตรวจสอบ _Deduct Tax For Unclaimed Employee Benefits_ หากคุณต้องการหักภาษีสำหรับผลประโยชน์ทั้งหมด (ส่วนประกอบเงินเดือน _Is Flexible Benefit_) ที่จ่ายให้กับพนักงานจนถึงเงินเดือนปัจจุบัน
+7. ในทำนองเดียวกัน _Deduct Tax For Unsubmitted Tax Exemption Proof_ อนุญาตให้คุณหักภาษีสำหรับรายได้ที่ได้รับการยกเว้นในการจ่ายเงินเดือนก่อนหน้าตามที่ประกาศไว้ใน [แจ้งยกเว้นภาษีพนักงาน](/docs/user/manual/th/human-resources/employee-tax-exemption-declaration) แต่พนักงานไม่ได้ส่งหลักฐานเพียงพอ [การส่งหลักฐานการยกเว้นภาษีพนักงาน](/docs/user/manual/th/human-resources/employee-tax-exemption-proof-submission)
+8. เลือกศูนย์ต้นทุนและบัญชีการชำระเงิน
+9. บันทึกแบบฟอร์มและส่งเพื่อสร้างเรกคอร์ดสลิปเงินเดือนสำหรับพนักงานที่ใช้งานอยู่แต่ละคนสำหรับช่วงเวลาที่เลือก หากสร้างสลิปเงินเดือนแล้ว ระบบจะไม่สร้างสลิปเงินเดือนอีก คุณยังสามารถบันทึกแบบฟอร์มเป็นแบบร่างและสร้างสลิปเงินเดือนได้ในภายหลัง
 
 <img class="screenshot" alt="Submitted Payroll Entry" src="/docs/assets/img/human-resources/created-payroll.png">
 
-Once all Salary Slips are created, you can use _View Salary Slips_ to verify if they are created correctly or edit it if you want to deduct Leave Without Pay (LWP).
+เมื่อสร้างสลิปเงินเดือนทั้งหมดแล้ว คุณสามารถใช้ _View Salary Slips_ เพื่อตรวจสอบว่าสร้างอย่างถูกต้องหรือแก้ไขหากคุณต้องการหักการลางานแบบไม่รับเงินเดือน (LWP)
 
-After checking, you can "Submit" them all together by clicking on "Submit Salary Slip".
+หลังจากตรวจสอบแล้ว คุณสามารถ "ส่ง" พร้อมกันทั้งหมดได้โดยคลิกที่ "ส่งสลิปเงินเดือน"
 
->Note: Submitting Salary Slips will also book the default Payroll Payable account to record the accrual of salary.
+>หมายเหตุ: การส่งสลิปเงินเดือนจะจองบัญชี เจ้าหนี้เงินเดือน เริ่มต้นเพื่อบันทึกยอดคงค้างของเงินเดือน
 
-#### Booking Salaries in Accounts
+#### เงินเดือนการจองในบัญชี
 
-The final step is to book the Salaries in your Accounts.
+ขั้นตอนสุดท้ายคือการจองเงินเดือนในบัญชีของคุณ
 
-Salaries in businesses are usually dealt with extreme privacy. In most cases, the companies issues a single payment to the bank combining all salaries and the bank distributes the salaries to each employee’s salary account. This way there is only one payment entry in the company’s books of accounts and anyone with access to the company’s accounts will not have access to the individual salaries.
+เงินเดือนในธุรกิจมักจะได้รับการจัดการกับความเป็นส่วนตัวที่รุนแรง ในกรณีส่วนใหญ่ บริษัทจะออกการชำระเงินครั้งเดียวให้กับธนาคารที่รวมเงินเดือนทั้งหมด และธนาคารจะแจกจ่ายเงินเดือนไปยังบัญชีเงินเดือนของพนักงานแต่ละคน วิธีนี้มีรายการชำระเงินเพียงรายการเดียวในสมุดบัญชีของบริษัท และใครก็ตามที่เข้าถึงบัญชีของบริษัทจะไม่สามารถเข้าถึงเงินเดือนส่วนบุคคลได้
 
-The salary payment entry is a Journal Entry that debits the total of the earning type salary component and credits the total of deduction type salary component of all Employees to the default account set at Salary Component level for each component.
+รายการจ่ายเงินเดือนเป็นรายการบันทึกประจำวันที่หักยอดรวมขององค์ประกอบเงินเดือนประเภทรายได้ และให้เครดิตผลรวมขององค์ประกอบเงินเดือนประเภทการหักเงินของพนักงานทั้งหมดไปยังบัญชีเริ่มต้นที่ตั้งไว้ที่ระดับองค์ประกอบเงินเดือนสำหรับแต่ละองค์ประกอบ
 
-To generate your salary payment voucher from Payroll Entry, click on -
-> Make > Bank Entry
+เพื่อสร้างบัตรกำนัลการจ่ายเงินเดือนของคุณจากรายการบัญชีเงินเดือน ให้คลิกที่ -
+> สร้าง > รายการธนาคาร
 
 <img class="screenshot" alt="Payroll Make Entry" src="/docs/assets/img/human-resources/payroll-make-bank-entry.png">
 
-Payroll Entry will route you to Journal Entry with relevant filters to view the draft Journal Vouchers created. You shall set reference number and date for the transactions and Submit the Journal Entries.
+รายการบัญชีเงินเดือนจะนำคุณไปยังรายการบันทึกประจำวันพร้อมตัวกรองที่เกี่ยวข้องเพื่อดูร่างใบสำคัญรายการบันทึกประจำวันที่สร้างขึ้น คุณต้องกำหนดหมายเลขอ้างอิงและวันที่สำหรับการทำธุรกรรมและส่งรายการบันทึกประจำวัน
 
->Note: For Salary Components which are Flexible Benefits and has _Create Separate Payment Entry Against Benefit Claim_ checked, ERPNext will book separate draft Journal Entries.
+>หมายเหตุ: สำหรับองค์ประกอบเงินเดือนซึ่งเป็นสวัสดิการที่ยืดหยุ่นและได้เลือก _Create Separate Payment Entry Against Benefit Claim_ ERPNext จะจองรายการบันทึกประจำวันฉบับร่างแยกต่างหาก
 
 <img class="screenshot" alt="Payroll Entry" src="/docs/assets/img/human-resources/payroll-journal-entry.png">
 
-## Creating Salary Slips Manually
+## การสร้างสลิปเงินเดือนด้วยตนเอง
 
-Once the Salary Structure is created and assigned to employees via Salary Structure Assignment, you can make a Salary Slip individually. Go to:
+เมื่อสร้างและกำหนดโครงสร้างเงินเดือนให้กับพนักงานผ่านการกำหนดโครงสร้างเงินเดือนแล้ว คุณสามารถสร้างสลิปเงินเดือนเป็นรายบุคคลได้ ไปที่:
 
-> Human Resources > Payroll > Salary Slip > New Salary Slip
+> ทรัพยากรบุคคล > เงินเดือน > สลิปเงินเดือน > สลิปเงินเดือนใหม่
 
-#### Salary Slip
+#### สลิปเงินเดือน
 
 <img class="screenshot" alt="Salary Slip" src="{{docs_base_url}}/assets/img/human-resources/salary-slip.png">
 

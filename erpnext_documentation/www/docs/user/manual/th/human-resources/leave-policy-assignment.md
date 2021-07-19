@@ -1,73 +1,73 @@
-# Leave Policy Assignment
+# กำหนดนโยบายการลา
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-Leave Policy Assignment in ERPNext is used to assign leaves to employees based on created policies. To access Leave policy assignment, go to:
+Leave Policy Assignment ใน ERPNext ใช้เพื่อมอบหมายการลางานให้กับพนักงานตามนโยบายที่สร้างขึ้น ในการเข้าถึงการกำหนดนโยบายการลา ให้ไปที่:
 
-> Home > Human Resources > Leaves > Leave Policy Assignment
+> หน้าหลัก > ทรัพยากรบุคคล > การลา > กำหนดนโยบายการลา
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating a Leave Policy Assignment, it is advisable to create the following:
+ก่อนสร้างการมอบหมายนโยบายการลาออก ขอแนะนำให้สร้างสิ่งต่อไปนี้:
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Leave Policy](/docs/user/manual/en/human-resources/leave-policy)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [ออกจากนโยบาย](/docs/user/manual/th/human-resources/leave-policy)
 
-## 2. How to create a Leave Policy Assignment
+## 2. วิธีสร้างการกำหนดนโยบายการลาออก
 
-1. Go to Leave Policy Assignment, click on New.
-1. Select Employee and Leave Policy.
-1. Select Assignment based on the following as needed:
-    * If "Assignment based on" is set to Leave Period, you need to select the applicable Leave Period. The Effective From and Effective To dates will be set automatically based on the Leave Period selected.
-    * If "Assignment based on" is set to Joining Date, the Effective From date will be set to the employee's Date of Joining.
-    * If "Assignment based on" is left blank, then you will have to set the Effective From and Effective To date manually.
-1. Save and Submit.
+1. ไปที่ กำหนดนโยบายการลา คลิก New
+1. เลือกนโยบายลูกจ้างและลาออก
+1. เลือก การกำหนด ตามสิ่งต่อไปนี้ตามต้องการ:
+    * หากตั้งค่า "การมอบหมายตาม" เป็น ระยะเวลาการลา คุณต้องเลือกระยะเวลาการลาที่เกี่ยวข้อง วันที่มีผลตั้งแต่และวันที่มีผลจนถึงจะถูกตั้งค่าโดยอัตโนมัติตามระยะเวลาการลาที่เลือก
+    * หากตั้งค่า "การมอบหมายตาม" เป็นวันที่เข้าร่วม วันที่เริ่มมีผลจะถูกตั้งเป็นวันที่เข้าร่วมของพนักงาน
+    * หากปล่อยว่าง "การมอบหมายตาม" คุณจะต้องตั้งค่าวันที่มีผลจากและมีผลใช้ถึงด้วยตนเอง
+1. บันทึกและส่ง
 
 <img class="screenshot" alt="Leave Policy Assignment"
 	src="{{docs_base_url}}/assets/img/human-resources/leave-policy-assignment.png">
 
-## 3. Granting Leaves
+## 3. อนุญาตให้ลา
 
-Once the information is saved, the Leave Policy Assignment will also be used as a tool to help you grant leaves to employees. The **Grant Leave** button will appear at the right top corner.
+เมื่อบันทึกข้อมูลแล้ว การกำหนดนโยบายการลาออกก็จะถูกใช้เป็นเครื่องมือเพื่อช่วยให้คุณอนุญาตให้พนักงานลางานได้ ปุ่ม **ให้สิทธิ์** จะปรากฏที่มุมบนขวา
 
 
 <img class="screenshot" alt="Grant Leaves"
 	src="{{docs_base_url}}/assets/img/human-resources/leave-policy-assignment-grant-leave.png">
 
-On clicking the "Grant Leave" button, Leave Allocation will be automatically created based on the [Leave Policy](/docs/user/manual/en/human-resources/leave-policy) as shown below.
+เมื่อคลิกปุ่ม "ให้อนุญาต" การจัดสรรการลาจะถูกสร้างขึ้นโดยอัตโนมัติตาม [นโยบายการลาออก](/docs/user/manual/th/human-resources/leave-policy) ดังที่แสดงด้านล่าง
 
 <img class="screenshot" alt="Leave Allocations"
 	src="{{docs_base_url}}/assets/img/human-resources/granted-leaves.png">
 
->**Note:** The Grant Leave button will appear only if there are no leaves granted or there is no allocation against a current Leave Policy Assignment.
+>**หมายเหตุ:** ปุ่มให้สิทธิ์จะปรากฏขึ้นก็ต่อเมื่อไม่มีการให้สิทธิ์หรือไม่มีการจัดสรรให้กับการกำหนดนโยบายการลาออกในปัจจุบัน
 
-## 4. Automatically Allocate Leaves Based On Leave Policy
+## 4. จัดสรรการลาโดยอัตโนมัติตามนโยบายการลา
 
-To enable automatic allocation of leaves based on the Leave Policy Assignment, enable [Automatic Allocate Leaves Based On Leave Policy ](/docs/user/manual/en/human-resources/hr-settings#37-automatic-allocate-leaves-based-on-leave-policy) checkbox in HR Settings. The scheduler then runs a background job and checks the Effective From date in the Leave Policy Assignment to create leave allocations automatically.
+หากต้องการเปิดใช้งานการจัดสรรใบโดยอัตโนมัติตามการกำหนดนโยบายการลา ให้เปิดใช้งาน [จัดสรรการลาโดยอัตโนมัติตามนโยบายการลา](/docs/user/manual/th/human-resources/hr-settings#37-automatic-allocate-leaves-based-on-leave-policy) ในการตั้งค่า HR จากนั้นตัวจัดกำหนดการจะรันงานพื้นหลังและตรวจสอบวันที่มีผลตั้งแต่ในการกำหนดนโยบายการลาออกเพื่อสร้างการจัดสรรการลาโดยอัตโนมัติ
 
->**Note:** Leaves will be automatically granted only if, there are no leaves granted against that Leave Policy Assignment till Effective From date.
+>**หมายเหตุ:** การลาจะได้รับโดยอัตโนมัติก็ต่อเมื่อไม่มีการให้สิทธิ์การลาหยุดในการกำหนดนโยบายการลานั้นจนถึงวันที่มีผลตั้งแต่
 
-## 5. Features
-### 5.1 Bulk Leave Policy Assignment
+## 5. คุณสมบัติ
+### 5.1 การกำหนดนโยบายการลาออกเป็นกลุ่ม
 
-ERPNext also allows creating multiple Leave Policy Assignment for multiple employees.
+ERPNext ยังอนุญาตให้สร้างการมอบหมายนโยบายการลาหลายรายการสำหรับพนักงานหลายคน
 
-1. Go to Leave Policy Assignment list, click on Bulk Leave Policy Assignment.
-1. Dialog Will appear, Select Employee. You can filter Employee based on Company and Department or You can also use standard filters by clicking Add Filters.
-1. Select Leave Policy and Effective From and Effective To dates.
-1. Click on Assign.
+1. ไปที่ Leave Policy Assignment list คลิกที่ Bulk Leave Policy Assignment
+1. กล่องโต้ตอบจะปรากฏขึ้น เลือกพนักงาน คุณสามารถกรองพนักงานตามบริษัทและแผนกหรือคุณสามารถใช้ตัวกรองมาตรฐานได้โดยคลิกเพิ่มตัวกรอง
+1. เลือกนโยบายการลาออกและมีผลบังคับใช้ตั้งแต่และมีผลจนถึงวันที่
+1. คลิกที่มอบหมาย
 
 <img class="screenshot" alt="Bulk Leave Policy Assignment" src="{{docs_base_url}}/assets/img/human-resources/bulk-leave-policy-assignment.png">
 	src="{{docs_base_url}}/assets/img/human-resources/bulk-leave-policy-assignment.png">
 
-### 5.2 Granting leaves to multiple employees
+### 5.2 ให้การลางานแก่พนักงานหลายคน
 
-Leaves can be granted based on multiple Leave Policy Assignments to multiple employees.
+สามารถอนุมัติการลางานตามการกำหนดนโยบายการลาหลายรายการให้กับพนักงานหลายคน
 
-1. Go to Leave Policy Assignment list, click on Grant Leaves.
-1. A dialog will be shown. Select the Leave Policy Assignments. You can filter the assignments based on Company and Employee or you can also use standard filters by clicking on the Add Filters button.
-1. Select the Leave Policy Assignments.
-1. Click on Grant Leaves.
+1. ไปที่ Leave Policy Assignment list คลิกที่ อนุญาตให้ลา
+1. กล่องโต้ตอบจะปรากฏขึ้น เลือกการมอบหมายนโยบายการลาออก คุณสามารถกรองงานที่มอบหมายตามบริษัทและพนักงานหรือคุณสามารถใช้ตัวกรองมาตรฐานได้โดยคลิกที่ปุ่มเพิ่มตัวกรอง
+1. เลือกการมอบหมายนโยบายการลาออก
+1. คลิกที่ อนุญาตให้ลา
 
 <img class="screenshot" alt="Leave Allocations"
 	src="{{docs_base_url}}/assets/img/human-resources/granting-leave-to-multiple-employee.png">

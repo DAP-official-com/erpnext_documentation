@@ -1,31 +1,31 @@
 <!-- add-breadcrumbs -->
-# Shipping Rule
+#กฎการจัดส่งสินค้า
 
-**Using Shipping Rule you can define the cost for delivering the product to the customer the supplier.**
+**การใช้กฎการจัดส่ง คุณสามารถกำหนดต้นทุนสำหรับการส่งมอบผลิตภัณฑ์ให้กับลูกค้าผู้จัดหา**
 
-You can define different shipping rules or a fixed shipping amount for the same item across different territories.
+คุณสามารถกำหนดกฎการจัดส่งที่แตกต่างกันหรือจำนวนการจัดส่งคงที่สำหรับสินค้าเดียวกันในพื้นที่ต่างๆ
 
-To access Shipping Rule, go to:
-> Home > Selling > Items and Pricing > Shipping Rule
+ในการเข้าถึงกฎการจัดส่ง ไปที่:
+> หน้าหลัก > การขาย > รายการและราคา > กฎการจัดส่ง
 
-## 1. How to create a Shipping Rule
-1. Go to the Shipping Rule list, click on New.
-2. Enter the Shipping Rule label, for example 'Priority Shipping' or 'Next Day Shipping'.
-3. Proceed with accounting details like Shipping Account, Cost Center to which amount will be charged, and Shipping Amount.
-4. Under Calculate Based On, you can also change the calculation on which the Shipping Rule will be applied like net total quantity or net total weight, by default it is "Fixed".
-5. Save.
+## 1. วิธีสร้างกฎการจัดส่ง
+1. ไปที่รายการกฎการจัดส่ง คลิกที่ ใหม่
+2. ป้อนป้ายกำกับกฎการจัดส่ง เช่น 'การจัดส่งแบบสำคัญ' หรือ 'การจัดส่งในวันถัดไป'
+3. ดำเนินการกับรายละเอียดทางบัญชี เช่น บัญชีการจัดส่งสินค้า ศูนย์ต้นทุนที่จะเรียกเก็บเงิน และจำนวนเงินที่จัดส่ง
+4. ภายใต้ Calculate Based On คุณยังสามารถเปลี่ยนการคำนวณที่กฎการจัดส่งจะถูกนำมาใช้ เช่น ปริมาณรวมสุทธิหรือน้ำหนักรวมสุทธิ โดยค่าเริ่มต้นจะเป็น "คงที่"
+5. บันทึก
 
     <img class="screenshot" alt="Shipping Rule" src="{{docs_base_url}}/assets/img/selling/shipping-rule.png">
 
-## 2. Features
-### 2.1 Shipping Rule Conditions
-On selecting Net Total or Net Weight, a table will appear where you can set the from and to values for the amount or weight. Enter the Shipping Amount to be calculated for the entered range. Add more conditions as necessary. You can select only one of the three calculation methods in one Shipping Rule. 
+## 2. คุณสมบัติ
+### 2.1 เงื่อนไขกฎการจัดส่ง
+ในการเลือก Net Total หรือ Net Weight ตารางจะปรากฏขึ้นซึ่งคุณสามารถตั้งค่าจากและไปยังค่าสำหรับจำนวนหรือน้ำหนักได้ ป้อนจำนวนการจัดส่งที่จะคำนวณสำหรับช่วงที่ป้อน เพิ่มเงื่อนไขเพิ่มเติมตามความจำเป็น คุณสามารถเลือกวิธีการคำนวณได้เพียงวิธีใดวิธีหนึ่งจากสามวิธีในกฎการจัดส่งเดียว
 
-### 2.2 Restrict to Countries
-You can restrict the Shipping Rule to certain countries, add the countries in the table. By default, the Shipping Rule will be applicable globally.
+### 2.2 จำกัดเฉพาะประเทศ
+คุณสามารถจำกัดกฎการจัดส่งสำหรับบางประเทศ เพิ่มประเทศในตาราง โดยค่าเริ่มต้น กฎการจัดส่งจะมีผลบังคับใช้ทั่วโลก
 
-### 3. Related Topics
-1. [Drop Shipping](/docs/user/manual/en/selling/articles/drop-shipping)
-1. [Customer](/docs/user/manual/en/CRM/customer)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [Drop Shipping](/docs/user/manual/th/selling/articles/drop-shipping)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
 
 {next}

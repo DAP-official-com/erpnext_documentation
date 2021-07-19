@@ -1,46 +1,46 @@
 <!-- add-breadcrumbs -->
 
-# Appointment Letter
-> Introduced in Version 13
+# จดหมายนัด
+> เปิดตัวในเวอร์ชัน 13
 
-**The letter written by the employer requesting the selected candidates to join in a specific position.**
+**จดหมายที่นายจ้างเขียนขึ้นขอให้ผู้สมัครที่ได้รับเลือกเข้าร่วมในตำแหน่งเฉพาะ**
 
 
-In ERPNext you can create an Appointment Letter that you can give to candidates. To access Appointment Letter, go to:
+ใน ERPNext คุณสามารถสร้างจดหมายนัดหมายที่คุณสามารถมอบให้กับผู้สมัครได้ ในการเข้าถึงจดหมายนัดหมาย ไปที่:
 
-> Home > Human Resource > Recruitment > Appointment Letter
+> หน้าหลัก > ทรัพยากรบุคคล > การรับสมัคร > หนังสือนัดหมาย
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Appointment Letter, it is advisable to create the following:
+ก่อนสร้างหนังสือนัดหมาย ขอแนะนำให้สร้างสิ่งต่อไปนี้:
 
-* [Job Applicant](/docs/user/manual/en/human-resources/job-applicant)
+* [ผู้สมัครงาน](/docs/user/manual/th/human-resources/job-applicant)
 
-## 2. How to Create an Appointment Letter
-1. Go to an Appointment Letter list, click on New.
-1. Select the Job Applicant and Appointment Date.
-1. You can manually fill Introduction, Terms and, Closing Statement or select an Appointment Letter Template to autofill the content. You can create new Appointment Letter Templates to select them easily.
-1. Click on Save.
-1. After saving, go to the Print View to view and save the PDF of the Appointment letter.
+## 2. วิธีสร้างหนังสือนัดหมาย
+1. ไปที่รายการหนังสือนัดหมาย คลิกที่ ใหม่
+1. เลือกผู้สมัครงานและวันที่ได้รับการแต่งตั้ง
+1. คุณสามารถกรอกคำนำ ข้อตกลง และคำชี้แจงการปิดบัญชี หรือเลือกเทมเพลตจดหมายนัดหมายเพื่อกรอกเนื้อหาโดยอัตโนมัติ คุณสามารถสร้างเทมเพลตจดหมายนัดหมายใหม่เพื่อเลือกได้อย่างง่ายดาย
+1. คลิกที่บันทึก
+1. หลังจากบันทึกแล้ว ไปที่ Print View เพื่อดูและบันทึก PDF ของจดหมายนัดหมาย
 
     <img class="screenshot" alt="Appointment Letter" src="{{docs_base_url}}/assets/img/human-resources/appointment-letter.png">
 
-> **Note:** Appointment Letter can be made only against a [Job Applicant](/docs/user/manual/en/human-resources/job-applicant)
+> **หมายเหตุ:** จดหมายนัดหมายสามารถทำได้เฉพาะกับ [Job Applicant](/docs/user/manual/th/human-resources/job-applicant)
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Appointment Letter Template
+### 3.1 เทมเพลตจดหมายนัดหมาย
 
 
-1. Go to Appointment Letter Template list, click to New.
-1. Fill Introduction, Terms and, Closing Statement.
-1. Click on Save.
+1. ไปที่รายการเทมเพลตจดหมายนัดหมาย คลิกที่ใหม่
+1. กรอกคำนำ ข้อตกลง และคำชี้แจงการปิดบัญชี
+1. คลิกที่บันทึก
 
     <img class="screenshot" alt="Appointment Letter" src="{{docs_base_url}}/assets/img/human-resources/appointment-letter-template.png">
 
-> **Note** On selecting Appointment Letter Template in Appointment Letter, it autofills the content.
+> **หมายเหตุ** ในการเลือกเทมเพลตจดหมายนัดหมายในจดหมายนัดหมาย ระบบจะป้อนเนื้อหาโดยอัตโนมัติ
 
-### 3.2 Print Format
-You can create new or use existing standard print formats.
+### 3.2 รูปแบบการพิมพ์
+คุณสามารถสร้างใหม่หรือใช้รูปแบบการพิมพ์มาตรฐานที่มีอยู่
 
 ![Appointment Letter](/docs/assets/img/human-resources/standard-appointment-letter.png)

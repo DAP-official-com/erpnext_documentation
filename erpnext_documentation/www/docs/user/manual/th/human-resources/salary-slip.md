@@ -1,54 +1,53 @@
 <!-- add-breadcrumbs -->
-# Salary Slip
+# สลิปเงินเดือน
 
-**A salary slip is a document issued to an employee. It contains a detailed description of the employee’s salary components and amounts.**
+**สลิปเงินเดือนเป็นเอกสารที่ออกให้กับพนักงาน โดยมีคำอธิบายโดยละเอียดเกี่ยวกับองค์ประกอบเงินเดือนและจำนวนเงินของพนักงาน**
 
-To access Salary Slip, go to:
-> Home > Human Resources > Payroll > Salary Slip
+ในการเข้าถึงสลิปเงินเดือนไปที่:
+> หน้าหลัก > ทรัพยากรบุคคล > เงินเดือน > สลิปเงินเดือน
 
-## 1. Prerequisites
-Before creating Salary Slip, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างสลิปเงินเดือน ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
-* [Salary Structure Assignment](/docs/user/manual/en/human-resources/salary-structure-assignment)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
+* [กำหนดโครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure-assignment)
 
-## 2. How to create a Salary Slip
+## 2. วิธีสร้างสลิปเงินเดือน
 
+1. ไปที่สลิปเงินเดือน คลิกที่ใหม่
+1. เลือกพนักงาน ในการเลือกพนักงาน รายละเอียดทั้งหมดของพนักงานจะถูกดึงมาจากโครงสร้างเงินเดือนที่มอบหมายให้กับพนักงานคนนั้น ซึ่งรวมถึงรายละเอียดต่างๆ เช่น ความถี่ในการจ่ายเงิน รายได้ การหักเงิน ฯลฯ
+1. เลือกวันที่เริ่มต้นและวันที่สิ้นสุด
+1. บันทึก
 
-1. Go to Salary Slip, Click on New.
-1. Select Employee. On selecting Employee all details of the Employee will be fetched from Salary Structure which is assigned to that Employee. This includes details such as Payroll Frequency, Earnings, Deductions, etc.
-1. Select Start Date and End Date.
-1. Save.
+## 3. คุณสมบัติ
 
-## 3. Feature
+### 3.1. สลิปเงินเดือนตามการเข้างาน/ลาออก
 
-### 3.1. Salary Slip based on Attendance/Leave
+ผู้ใช้ HR สามารถสร้างสลิปเงินเดือนตามการเข้างานหรือลางาน
+วันทำงานจะคำนวณจากการลา/การเข้างาน ขึ้นอยู่กับสาขา **คำนวณวันทำงานของเงินเดือนตาม** ใน [การตั้งค่าทรัพยากรบุคคล](/docs/user/manual/th/human-resources/hr-settings) หากเงินเดือนขึ้นอยู่กับการเข้าร่วมงาน **การลาโดยไม่จ่ายค่าจ้าง** จะถือว่าขาดงาน และ **ครึ่งวัน** จะถือว่าขาดงานครึ่งวัน
 
-HR users can create Salary Slip based on Attendance or leave.
-The Working days will calculated on basis of leave/Attendance, depending on the field **Calculate Payroll Working Days Based On** in [HR Settings](/docs/user/manual/en/human-resources/hr-settings). If Payroll is based on Attendance then, the **Leave without pay** will be considered as absent and **half-day** will be considered as half-day absent.
+### 3.2. สลิปเงินเดือนตามตารางเวลา
 
-### 3.2. Salary Slip based on Timesheet
+สำหรับการสร้างสลิปเงินเดือนตามไทม์ชีท คุณต้องสร้างโครงสร้างเงินเดือนสำหรับไทม์ชีท
 
-For creating Salary Slip based on timesheet you need to create Salary Structure for Timesheets.
-
-ERPNext also provides an option to create Salary slip based on working hours based on [Timesheet](/docs/user/manual/en/projects/timesheets).
-You can create Salary Slip after submitting the Timesheet by clicking directly on **Create Salary Slip** button on the top right.
+ERPNext ยังให้ตัวเลือกในการสร้างสลิปเงินเดือนตามเวลาทำงานตาม [ตารางเวลา](/docs/user/manual/th/projects/timesheets)
+คุณสามารถสร้างสลิปเงินเดือนได้หลังจากส่งใบบันทึกเวลาโดยคลิกที่ปุ่ม **สร้างสลิปเงินเดือน** ที่มุมขวาบนโดยตรง
 
 <img class="screenshot" alt="Create Salary Slip based on Timesheets" src="{{docs_base_url}}/assets/img/human-resources/create-salary-slip-based-on-timesheets.png">
 
-The Payment Amount is calculated based on Hour Rate defined in Salary Structure and is reflected in the Earnings table.
+จำนวนเงินที่ชำระจะคำนวณตามอัตราชั่วโมงที่กำหนดไว้ในโครงสร้างเงินเดือนและแสดงในตารางรายได้
 
-### 3.3 Year to Date and Month to Date
+### 3.3 ปีถึงวันที่และเดือนจนถึงปัจจุบัน
 
-For every salary slip, 'Year to Date' and 'Month to Date' are computed.
+สำหรับสลิปเงินเดือนทุกรายการ 'Year to Date' และ 'Month to Date' จะถูกคำนวณ
 
 <img class="screenshot" alt="Year to Date and Month to Date" src="{{docs_base_url}}/assets/img/human-resources/ytd-and-mtd.png">
 
-- **Year to Date**: Total salary booked for that particular employee from the beginning of the year (payroll period or fiscal year) up to the current salary slip's end date.
-- **Month to Date**: Total salary booked for a particular employee from the beginning of the month (for which the payroll entry is created) up to the current salary slip's end date.
+- **ปีจนถึงปัจจุบัน**: เงินเดือนทั้งหมดที่จองไว้สำหรับพนักงานคนนั้นตั้งแต่ต้นปี (รอบระยะเวลาเงินเดือนหรือปีบัญชี) จนถึงวันที่สิ้นสุดของสลิปเงินเดือนปัจจุบัน
+- **เดือนถึงปัจจุบัน**: เงินเดือนทั้งหมดที่จองไว้สำหรับพนักงานคนหนึ่งตั้งแต่ต้นเดือน (ซึ่งสร้างรายการบัญชีเงินเดือน) จนถึงวันที่สิ้นสุดของสลิปเงินเดือนปัจจุบัน
 
-Year to Date is also computed for every component in the earnings and deduction tables. The "Salary Slip with Year to Date" print format is available with Year to Date and Month to Date computations.
+ปีจนถึงปัจจุบันยังคำนวณสำหรับทุกองค์ประกอบในตารางรายได้และการหักเงิน รูปแบบการพิมพ์ "สลิปเงินเดือนพร้อมปีจนถึงปัจจุบัน" สามารถใช้ได้กับการคำนวณแบบปีถึงวันที่และเดือนจนถึงปัจจุบัน
 
 <img class="screenshot" alt="Year to Date for Salary Slip Components" src="{{docs_base_url}}/assets/img/human-resources/ytd-component.png">
 

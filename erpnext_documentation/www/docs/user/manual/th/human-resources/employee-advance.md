@@ -1,88 +1,87 @@
 <!-- add-breadcrumbs -->
-# Employee Advance
+#จ่ายเงินพนักงานล่วงหน้า
 
-**Sometimes employees go outside for company's work and company pays some amount for their expenses in advance. This is when the employee can create an Employee Advance form where details such as the Purpose of Expense and Expense Amount can be recorded.**
+**บางครั้งพนักงานออกไปทำงานบริษัทและบริษัทจ่ายค่าใช้จ่ายล่วงหน้าบางส่วน นี่คือเวลาที่พนักงานสามารถสร้างแบบฟอร์มการเบิกจ่ายล่วงหน้าของพนักงาน โดยสามารถบันทึกรายละเอียดต่างๆ เช่น วัตถุประสงค์ของค่าใช้จ่ายและจำนวนเงินค่าใช้จ่ายได้**
 
-Once the Employee Advance is created by the Employee, the Expense Approver can submit the advance record after verification. After Employee Advance gets submitted, the accountant releases the payment and makes the Payment Entry.
+เมื่อพนักงานสร้างการเบิกจ่ายล่วงหน้าของพนักงานแล้ว ผู้อนุมัติค่าใช้จ่ายสามารถส่งบันทึกการเบิกล่วงหน้าหลังการตรวจสอบได้ หลังจากส่งเงินล่วงหน้าพนักงานแล้ว นักบัญชีจะจ่ายเงินและทำรายการชำระเงิน
 
-To access Employee Advance, go to:
+หากต้องการเข้าถึงการเลื่อนตำแหน่งพนักงาน ให้ไปที่:
 
-> Human Resources > Expense Claims > Employee Advance 
+> ทรัพยากรบุคคล > การเรียกร้องค่าใช้จ่าย > เงินทดรองพนักงาน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-1. [Employee](/docs/user/manual/en/human-resources/employee)
-1. [Department](/docs/user/manual/en/human-resources/department)
-1. [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts)
+1. [พนักงาน](/docs/user/manual/th/human-resources/employee)
+1. [แผนก](/docs/user/manual/th/human-resources/department)
+1. [ผังบัญชี](/docs/user/manual/th/accounts/chart-of-accounts)
 
-## 2. How to create an Employee Advance
-1. Go to: Employee Advance > New.
-1. Select Employee to whom you need to give the advance.
-1. Enter the Purpose and Advance Amount.
-1. Select the Advance Account and Mode of Payment.
-1. Save.
+## 2. วิธีสร้างเงินล่วงหน้าสำหรับพนักงาน
+1. ไปที่: เลื่อนตำแหน่งพนักงาน > ใหม่
+1. เลือกพนักงานที่คุณต้องการให้เงินล่วงหน้า
+1. ป้อนวัตถุประสงค์และจำนวนเงินล่วงหน้า
+1. เลือกบัญชีล่วงหน้าและรูปแบบการชำระเงิน
+1. บันทึก
 
     <img class="screenshot" alt="Expense Claim" src="{{docs_base_url}}/assets/img/human-resources/employee-advance.png">
 
 > Note: The Employee can only Save the Employee Advance but cannot Submit it. It can be only submitted by the Expense Approver.
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Employee Advance Submission
+### 3.1 การส่งพนักงานล่วงหน้า
 
-Employee Advance record can be created by any Employee but they cannot submit the record.
+พนักงานคนใดก็ได้สามารถสร้างเรคคอร์ดล่วงหน้าของพนักงานได้ แต่ไม่สามารถส่งเรกคอร์ดได้
 
-After saving Employee Advance, Employee should [Assign document to Approver](/docs/user/manual/en/using-erpnext/assignment). On assignment, approving user will also receive email notification. To automate email notification, you can also setup [Email Alert](/docs/user/manual/en/setting-up/notifications.html).
+หลังจากบันทึกการเบิกจ่ายล่วงหน้าของพนักงานแล้ว พนักงานควร [มอบหมายเอกสารให้กับผู้อนุมัติ](/docs/user/manual/th/using-erpnext/assignment) ในการมอบหมาย ผู้ใช้ที่อนุมัติจะได้รับการแจ้งเตือนทางอีเมลด้วย ในการทำให้การแจ้งเตือนทางอีเมลเป็นแบบอัตโนมัติ คุณยังสามารถตั้งค่า [อีเมลแจ้งเตือน](/docs/user/manual/th/setting-up/notifications.html)
 
-After verification, the Expense Approver can Submit (Accept) the Employee Advance form or Reject the request.
+หลังจากการตรวจสอบแล้ว ผู้อนุมัติค่าใช้จ่ายสามารถยื่น (ยอมรับ) แบบฟอร์มการเลื่อนตำแหน่งพนักงานหรือปฏิเสธคำขอได้
 
-### 3.2 Make Payment Entry
+### 3.2 ชำระเงินรายการ
 
-##### Employee Advance via Payment Entry
-After submission of Employee Advance record, accounts user will be able to create a [Payment Entry](/docs/user/manual/en/accounts/payment-entry) using the 'Create' button.
+####### พนักงานล่วงหน้าผ่านรายการชำระเงิน
+หลังจากส่งบันทึกการเลื่อนขั้นพนักงานแล้ว ผู้ใช้บัญชีจะสามารถสร้าง [Payment Entry](/docs/user/manual/th/accounts/payment-entry) ได้โดยใช้ปุ่ม 'สร้าง'
 
-The Payment Entry will look like following:
+รายการชำระเงินจะมีลักษณะดังนี้:
 
 <img class="screenshot" alt="Employee Advance Payment via Payment Entry" src="{{docs_base_url}}/assets/img/human-resources/employee-advance-payment-entry.png">
 
-#### Employee Advance Payment via Journal Entry
-Alternatively, a [Journal Entry](/docs/user/manual/en/accounts/journal-entry) can also be created against the Employee Advance.
+#### การชำระเงินล่วงหน้าของพนักงานผ่านรายการบันทึกประจำวัน
+อีกทางหนึ่ง สามารถสร้าง [รายการบันทึกประจำวัน](/docs/user/manual/th/accounts/journal-entry) กับการจ่ายเงินให้พนักงานล่วงหน้าได้
 
 
 <img class="screenshot" alt="Employee Advance Payment via Journal Entry" src="{{docs_base_url}}/assets/img/human-resources/employee-advance-journal-entry1.png">
 
-> Note: Make sure the Party Type is selected as Employee and the Reference Type is selected as Employee 
-Advance.
+> หมายเหตุ: ตรวจสอบให้แน่ใจว่าได้เลือกประเภทผู้ที่เกี่ยวข้องเป็นพนักงานและเลือกประเภทอ้างอิงการจ่ายเงินให้พนักงานล่วงหน้า
 
 <img class="screenshot" alt="Employee Advance Payment via Journal Entry" src="{{docs_base_url}}/assets/img/human-resources/employee-advance-journal-entry2.png">
 
-#### Employee Advance is Paid
-On submission of the Payment Entry/Journal Entry, the paid amount and status will be updated in Employee Advance record.
+#### จ่ายล่วงหน้าพนักงานแล้ว
+ในการส่งรายการชำระเงิน/รายการบันทึกประจำวัน จำนวนเงินและสถานะที่ชำระจะได้รับการอัปเดตในบันทึกการเลื่อนตำแหน่งพนักงาน
 
-### 3.3 Adjust Advances on Expense Claim
+### 3.3 ปรับล่วงหน้าในการเบิกค่าใช้จ่าย
 
-Later when the employee claims the expense, an advance record can be fetched in the [Expense Claim](/docs/user/manual/en/human-resources/expense-claim) and linked to the claim record.
-
-
-### 3.4 Return Amount
-When advance is paid to an Employee, there are three situations:
-
-* The amount may be unused
-* All of it may be used
-* Some part may be used
+ภายหลังเมื่อพนักงานเบิกค่าใช้จ่าย สามารถดึงบันทึกล่วงหน้าได้ใน [เบิกค่าใช้จ่าย](/docs/user/manual/th/human-resources/expense-claim) และเชื่อมโยงกับบันทึกการเบิก
 
 
-Create the Employee Advance, create a payment entry to indicate that the amount is paid. 
+### 3.4 จำนวนคืน Return
+เมื่อจ่ายล่วงหน้าให้กับพนักงาน มีสามสถานการณ์:
 
-* If amount is unused, click on the **Return** button to return the paid Advance amount
+* จำนวนเงินอาจไม่ได้ใช้
+* ใช้ได้ทั้งหมด
+* บางส่วนอาจใช้
+
+
+สร้างการเบิกเงินล่วงหน้าของพนักงาน สร้างรายการชำระเงินเพื่อระบุว่าจำนวนเงินที่ชำระแล้ว
+
+* หากไม่ได้ใช้จำนวนเงิน ให้คลิกที่ปุ่ม **ส่งคืน** เพื่อคืนจำนวนเงินที่ชำระล่วงหน้าไปแล้ว
     ![Return Button](/docs/assets/img/human-resources/advance-return-button.png)
-* If all of the advance is used, it will reflect in the Claimed Amount field
-* If only some amount is claimed and rest is returned, the returned amount will be shown in the 'Returned Amount' field.
+* หากใช้การเบิกล่วงหน้าทั้งหมดจะมีผลในช่องจำนวนเงินที่อ้างสิทธิ์
+* หากอ้างสิทธิ์เพียงบางส่วนและคืนส่วนที่เหลือ จำนวนเงินที่คืนจะแสดงในช่อง 'จำนวนเงินที่ส่งคืน'
     ![Return advance Amount](/docs/assets/img/human-resources/advance-returned-amount.png)
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Expense Claim](/docs/user/manual/en/human-resources/expense-claim)
+1. [เบิกค่าใช้จ่าย](/docs/user/manual/th/human-resources/expense-claim)
 
 
 

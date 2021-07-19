@@ -1,72 +1,72 @@
 <!-- add-breadcrumbs -->
-# Sales Partner
+#พันธมิตรการขาย
 
-**Sales Partners are people or companies that assist you in getting business.**
+**พันธมิตรการขายคือบุคคลหรือบริษัทที่ช่วยเหลือคุณในการทำธุรกิจ**
 
-Sales Partners can be represented by different names in ERPNext. You can call them Channel Partner, Distributor, Dealer, Agent, Retailer, Implementation Partner, Reseller, etc.
+พันธมิตรการขายสามารถแสดงด้วยชื่อต่างๆ ใน ​​ERPNext คุณสามารถเรียกพวกเขาว่า Channel Partner, จัดจำหน่าย, ตัวแทนจำหน่าย, ตัวแทน, ผู้ค้าปลีก, Implementation Partner, Reseller เป็นต้น
 
-For each Sales Partner, you can define a commission rate. When a Sales Partner is selected in transactions, their commission is calculated over Net Total of Sales Order/Invoice or Delivery Note.
+สำหรับพาร์ทเนอร์การขายแต่ละราย คุณสามารถกำหนดอัตราค่าคอมมิชชันได้ เมื่อเลือกคู่ค้าในการทำธุรกรรม ค่าคอมมิชชั่นจะคำนวณจากยอดรวมสุทธิของใบสั่งขาย/ใบแจ้งหนี้หรือใบส่งมอบ
 
-To access Sales Partner, go to:
-> Home > Selling > Sales Partner
+ในการเข้าถึงพันธมิตรการขาย ไปที่:
+> หน้าแรก > การขาย > พันธมิตรการขาย
 
-## 1. How to Create a Sales Partner
-1. Go to the Sales Partner list, click on New.
-2. Enter the Sales Partner name and the Commission Rate.
-3. You can also select the type of Sales Partner you're creating to identify if they're a Reseller or Retailer, and so on.
-4. Save.
+## 1. วิธีสร้างพันธมิตรการขาย
+1. ไปที่รายชื่อพันธมิตรการขาย คลิกที่ ใหม่
+2. ป้อนชื่อพาร์ทเนอร์การขายและอัตราค่าคอมมิชชัน
+3. คุณยังสามารถเลือกประเภทของพันธมิตรการขายที่คุณกำลังสร้างเพื่อระบุว่าพวกเขาเป็นผู้ค้าปลีกหรือผู้ค้าปลีก เป็นต้น
+4. บันทึก
 
 <img class="screenshot" alt="Sales Partner" src="{{docs_base_url}}/assets/img/selling/sales-partner.png">
 
-## 2. Features
-### 2.1 Address and Contact
-You can add and track a Sales Partner's Addresses and Contact details. These can be added in the Address & Contacts section in a Sales Partner:
+## 2. คุณสมบัติ
+### 2.1 ที่อยู่และการติดต่อ
+คุณสามารถเพิ่มและติดตามที่อยู่ของพันธมิตรการขายและรายละเอียดการติดต่อ สามารถเพิ่มได้ในส่วนที่อยู่และผู้ติดต่อในพันธมิตรการขาย:
 
 <img class="screenshot" alt="Sales Partner Address" src="{{docs_base_url}}/assets/img/selling/sales-partner-address.png">
 
-### 2.2 Sales Partner Target
-You can allocate a Sales Partner for each Item Group, based on Qty and Amount. You can allocate targets Territory- or Month-wise, to know more see *Related Topics*.
+### 2.2 เป้าหมายพันธมิตรการขาย
+คุณสามารถจัดสรรพันธมิตรการขายสำหรับสินค้าแต่ละกลุ่มตามจำนวนและจำนวน คุณสามารถจัดสรรเป้าหมายตามอาณาเขตหรือรายเดือน หากต้องการทราบข้อมูลเพิ่มเติม โปรดดูที่ *หัวข้อที่เกี่ยวข้อง*
 <img class="screenshot" alt="Sales Partner Target" src="{{docs_base_url}}/assets/img/selling/sales-partner-target.png">
 
-### 2.3 Including Sales Partners in Your Website
-To include the name of your Partner on your website, tick the "Show in Website" checkbox. When you click on "Show in Website", you will see a field where you can attach the logo of your partner's company and enter a brief introduction of the partner, and optionally add a description for internal purposes/references.
+### 2.3 เพิ่มพันธมิตรการขายในเว็บไซต์ของคุณ
+หากต้องการใส่ชื่อพาร์ทเนอร์ในเว็บไซต์ ให้เลือกช่องทำเครื่องหมาย "แสดงในเว็บไซต์" เมื่อคุณคลิกที่ "แสดงในเว็บไซต์" คุณจะเห็นช่องที่คุณสามารถแนบโลโก้ของบริษัทคู่ค้าของคุณและป้อนการแนะนำสั้นๆ ของพันธมิตร และเพิ่มคำอธิบายสำหรับวัตถุประสงค์/ข้อมูลอ้างอิงภายใน
 <img class="screenshot" alt="Sales Partner" src="{{docs_base_url}}/assets/img/selling/sales-partner-website.png">
 
-To see the listing of partners, go to:
+หากต้องการดูรายชื่อพันธมิตร ไปที่:
 
 https://yourCompanyName.erpnext.com/partners
 
 <img class="screenshot" alt="Sales Partner" src="{{docs_base_url}}/assets/img/crm/sales-partner-listing.png">
 
-### 2.4 Track Sales via Sales Partner
+### 2.4 ติดตามการขายผ่านพันธมิตรการขาย
 
-Sales Partner can actively generates leads for your company products/ services. To track the performance of each sales partner use Referral Code and their URL as below
+พันธมิตรการขายสามารถสร้างโอกาสในการขายสำหรับผลิตภัณฑ์/บริการของบริษัทของคุณได้ ในการติดตามประสิทธิภาพของพันธมิตรการขายแต่ละราย ให้ใช้รหัสอ้างอิงและ URL ของพวกเขาดังต่อไปนี้
 
-URL as shown below should be sent to the sales partner to use in their website/campaign.
+ควรส่ง URL ที่แสดงด้านล่างไปยังพันธมิตรการขายเพื่อใช้ในเว็บไซต์/แคมเปญของตน
 
-e.g. A URL having "sp" as parameter like this http://xyz.erpnext.com?sp=speed will capture the Sales Partner Information in the Sales Order generated via Shopping Cart.
+เช่น. URL ที่มี "sp" เป็นพารามิเตอร์เช่นนี้ http://xyz.erpnext.com?sp=speed จะบันทึกข้อมูลพันธมิตรการขายในใบสั่งขายที่สร้างผ่านตะกร้าสินค้า
 
 <img class="screenshot" alt="Sales Partner Referral Code" src="{{docs_base_url}}/assets/img/selling/sales-partner-refrral-code.png">
 
-## 3. Sales Partner Reports
-### 3.1 Sales Partner Commission Summary
+## 3. รายงานพันธมิตรการขาย
+### 3.1 สรุปค่าคอมมิชชั่นสำหรับพาร์ทเนอร์การขาย
 
-To get Sales Order wise Sales Partner commission data.
+เพื่อรับข้อมูลค่าคอมมิชชั่นพันธมิตรการขาย
 
 <img class="screenshot" alt="Sales Partner Target" src="{{docs_base_url}}/assets/img/selling/sales-partner-commission.png">
 
-### 3.2 Sales Partner Transaction Summary
-To get Sales Order item-wise Sales Partner commission data.
+### 3.2 สรุปธุรกรรมพันธมิตรการขาย
+เพื่อรับข้อมูลค่าคอมมิชชั่นของพันธมิตรการขายตามรายการในใบสั่งขาย
 
 <img class="screenshot" alt="Sales Partner Target" src="{{docs_base_url}}/assets/img/selling/sales-partner-commission-item.png">
 
-### 3.3 Sales Partner Target Variance based on Item Group
-This report will provide you variance between target and actual performance of the Sales Partner based on the Sales Order / Sales Invoice / Delivery Note data. User can view this report period wise like Monthly, Quarterly, Half-Yearly, or Yearly.
+### 3.3 เป้าหมายของพันธมิตรการขายตามกลุ่มสินค้า
+รายงานนี้จะให้ข้อมูลความแตกต่างระหว่างเป้าหมายและประสิทธิภาพที่แท้จริงของพันธมิตรการขายโดยพิจารณาจากข้อมูลใบสั่งขาย / ใบแจ้งหนี้การขาย / บันทึกการจัดส่ง ผู้ใช้สามารถดูรอบระยะเวลารายงานนี้ได้อย่างชาญฉลาด เช่น รายเดือน รายไตรมาส รายครึ่งปี หรือรายปี
 
 <img class="screenshot" alt="Sales Partner Target" src="{{docs_base_url}}/assets/img/selling/sales-partner-target-variance.png">
 
-## Related Topics
-1. [Sales Person Target Allocation](/docs/user/manual/en/selling/sales-person-target-allocation)
-2. [How to record Commission to Sales Partner in ERPNext?](https://support.erpnext.com/kb/selling/how-to-give-commission-to-sales-partner)
+## หัวข้อที่เกี่ยวข้อง
+1. [การจัดสรรเป้าหมายพนักงานขาย](/docs/user/manual/th/selling/sales-person-target-allocation)
+2. [จะบันทึกค่าคอมมิชชันให้พาร์ทเนอร์การขายใน ERPNext ได้อย่างไร](https://support.erpnext.com/kb/selling/how-to-give-commission-to-sales-partner)
 
 {next}

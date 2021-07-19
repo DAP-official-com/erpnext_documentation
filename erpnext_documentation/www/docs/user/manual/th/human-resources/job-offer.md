@@ -1,49 +1,49 @@
 <!-- add-breadcrumbs -->
 
-# Job Offer
+# เสนองาน
 
-**Job Offer is given to selected candidates after interview and selection which states the offered salary package, designation, grade, department, number of days entitled for leave among other information.**
-
-
-In ERPNext you can make a record of the Job Offers that you can give to candidates. To access Job Offer, go to:
-
-> Home > Human Resource > Recruitment > Job Offer
-
-## 1. Prerequisites
-
-Before creating a Job Offer, it is advisable to create the following:
-
-* [Staffing Plan](/docs/user/manual/en/human-resources/staffing-plan)
-* [Job Applicant](/docs/user/manual/en/human-resources/job-applicant)
-* [Job Opening](/docs/user/manual/en/human-resources/job-opening)
+**ข้อเสนองานจะมอบให้กับผู้สมัครที่ได้รับการคัดเลือกหลังการสัมภาษณ์และการคัดเลือก ซึ่งระบุแพ็คเกจเงินเดือน ตำแหน่ง เกรด แผนก จำนวนวันที่มีสิทธิ์ลาและข้อมูลอื่นๆ**
 
 
-## 2. How to Create a Job Offer
+ใน ERPNext คุณสามารถบันทึกข้อเสนองานที่คุณสามารถมอบให้กับผู้สมัครได้ ในการเข้าถึงข้อเสนองาน ไปที่:
 
-1. Go to Job Offer list, click on New.
-1. Select the Job Applicant, Offer Date and Designation.
-1. Set the Status of the Job Offer (Awaiting Response, Accepted, Rejected). 
-1. Save and Submit.
+> หน้าหลัก > ทรัพยากรบุคคล > การจ้างงาน > ข้อเสนองาน
+
+## 1. ข้อกำหนดเบื้องต้น
+
+ก่อนสร้างข้อเสนองาน ขอแนะนำให้สร้างสิ่งต่อไปนี้:
+
+* [แผนการจัดบุคลากร](/docs/user/manual/th/human-resources/staffing-plan)
+* [ผู้สมัครงาน](/docs/user/manual/th/human-resources/job-applicant)
+* [ตำแหน่งงานว่าง](/docs/user/manual/th/human-resources/job-opening)
+
+
+## 2. วิธีสร้างข้อเสนองาน
+
+1. ไปที่รายการข้อเสนองาน คลิกที่ใหม่
+1. เลือกผู้สมัครงาน วันที่เสนอซื้อ และการกำหนด
+1. ตั้งค่าสถานะของข้อเสนองาน (รอการตอบกลับ ยอมรับ ปฏิเสธ)
+1. บันทึกและส่ง
 
 
     <img class="screenshot" alt="Job Offer" src="{{docs_base_url}}/assets/img/human-resources/job-offer.png">
 
-> **Note:** A Job Offer can be made only against a [Job Applicant](/docs/user/manual/en/human-resources/job-applicant)
+> **หมายเหตุ:** สามารถเสนองานได้เฉพาะกับ [ผู้สมัครงาน](/docs/user/manual/th/human-resources/job-applicant)
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Job Offer Terms
+### 3.1 เงื่อนไขการเสนองาน
 
-In this section, you can enter the Job Offer Term such as job description, notice period, incentives, leaves per year, etc. and specify its Value/ Description.
+ในส่วนนี้ คุณสามารถป้อนเงื่อนไขการเสนองาน เช่น รายละเอียดงาน ระยะเวลาการแจ้งให้ทราบ สิ่งจูงใจ การลางานต่อปี ฯลฯ และระบุมูลค่า/คำอธิบาย
 
-### 3.2 Select Terms and Conditions
+### 3.2 เลือกข้อกำหนดและเงื่อนไข
 
-All the Terms and Conditions related to the Job Offer can be specified in this section. To do this, create a new Terms and Conditions template and link it to the Job Offer. 
+สามารถระบุข้อกำหนดและเงื่อนไขทั้งหมดที่เกี่ยวข้องกับข้อเสนองานได้ในส่วนนี้ ในการดำเนินการนี้ ให้สร้างเทมเพลตข้อกำหนดในการให้บริการใหม่และเชื่อมโยงกับข้อเสนองาน
 
 
-### 3.3 Printing Details
+### 3.3 รายละเอียดการพิมพ์
 
-You can create a pre-designed print format to print you Job Offer. To do so, select the Letter Head and Print Heading in the Printing Details section.
+คุณสามารถสร้างรูปแบบการพิมพ์ที่ออกแบบไว้ล่วงหน้าเพื่อพิมพ์ข้อเสนองานของคุณ โดยเลือกหัวจดหมายและหัวเรื่องการพิมพ์ในส่วนรายละเอียดการพิมพ์
 
 <img class="screenshot" alt="Job Offer" src="{{docs_base_url}}/assets/img/human-resources/job-offer-print.png">
 

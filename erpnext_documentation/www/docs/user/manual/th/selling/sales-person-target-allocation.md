@@ -1,89 +1,89 @@
 <!-- add-breadcrumbs -->
-# Sales Person Target Allocation
+# การจัดสรรเป้าหมายพนักงานขาย
 
-**It is the assignment of Sales Persons to an item or a territory.**
+**เป็นการมอบหมายพนักงานขายให้กับสินค้าหรือเขตการขาย**
 
-Along with the management of Sales Persons, ERPNext also allows you to assign target Sales Persons based on Item Group and Territory. Based on target allocated and actual sales booked by Sales Person, you will get the Target Variance Report for the Sales Person.
+นอกจากการจัดการพนักงานขายแล้ว ERPNext ยังช่วยให้คุณกำหนดพนักงานขายเป้าหมายตามกลุ่มรายการและเขตการขายได้อีกด้วย ตามเป้าหมายที่จัดสรรและยอดขายจริงที่จองโดยพนักงานขาย คุณจะได้รับรายงานผลต่างเป้าหมายสำหรับพนักงานขาย
 
-##1. Sales Person - Item Groupwise Target Allocation
+##1. พนักงานขาย - รายการ การจัดสรรเป้าหมายแบบกลุ่ม
 
-###1.1 Open Sales Person's Master
+###1.1 ต้นแบบของพนักงานขายแบบเปิด
 
-To allocate target, you need to open specific Sales Person master.
+ในการจัดสรรเป้าหมาย คุณต้องเปิดต้นแบบพนักงานขายเฉพาะ
 
-**Selling > Sales Partners and Territory > Sales Person > Edit**
+**การขาย > คู่ค้าและเขตการขาย > พนักงานขาย > แก้ไข**
 
-###1.2 Allocate Item Groupwise Target
+###1.2 จัดสรรรายการตามกลุ่มเป้าหมาย
 
-In the Sales Person master, you will find table a called Sales Person Target.
+ในต้นแบบพนักงานขาย คุณจะพบตารางที่เรียกว่า เป้าของพนักงานขาย
 
 <img class="screenshot" alt="Sales person target" src="{{docs_base_url}}/assets/img/selling/sales-person-target-item-group.png">
 
-In this table, you should select Item Group, Fiscal Year, Target Qty, Target Amount, and Target Distribution. 
+ในตารางนี้ คุณควรเลือก กลุ่มรายการ, ปีงบประมาณ, ปริมาณเป้าหมาย, ยอดเป้าหมาย และ การกระจายเป้าหมาย
 
-You can give target in amount or quantity, or both. Item Group can also be left blank. In this case, the system will calculate target based on All Item Groups.
+คุณสามารถกำหนดเป้าหมายเป็นจำนวนหรือปริมาณ หรือทั้งสองอย่าง กลุ่มรายการสามารถเว้นว่างไว้ได้ ในกรณีนี้ ระบบจะคำนวณเป้าหมายตามกลุ่มรายการทั้งหมด
 
-**Target Distribution**
+**การกระจายเป้าหมาย**
 
-You can spread the target across months. For this create a new monthly distribution, you can see the option when you click on the Target Distribution field in the Targets table. For example, a target of selling 1,000 units for first quarter of the Fiscal Year 2019-2020 as shown in the preceding screenshot.
+คุณสามารถกระจายเป้าหมายเป็นเดือนๆ สำหรับสิ่งนี้ ให้สร้างการกระจายรายเดือนใหม่ คุณจะเห็นตัวเลือกเมื่อคุณคลิกที่ฟิลด์ การกระจายเป้าหมาย ในตาราง Targets ตัวอย่างเช่น เป้าหมายการขาย 1,000 หน่วยสำหรับไตรมาสแรกของปีงบประมาณ 2562-2563 ดังแสดงในภาพหน้าจอก่อนหน้า
 
 <img class="screenshot" alt="Target Distribution" src="{{docs_base_url}}/assets/img/selling/sales-person-target-distribution.png">
 
-###1.3 Report - Sales Person Target Variance Item Groupwise
+###1.3 รายงาน - พนักงานขาย เป้าหมาย รายการผลต่างแบบกลุ่ม
 
-To check this report, go to:
+หากต้องการตรวจสอบรายงานนี้ ไปที่:
 
-**Selling > Other Reports > Sales Person Target Variance Item Group-wise**
+**การขาย > รายงานอื่นๆ > พนักงานขาย เป้าหมายส่วนต่างสินค้าตามกลุ่ม**
 
-This report will provide you variance between target and actual performance of Sales Person. This report is based on Sales Order report.
+รายงานนี้จะให้ข้อมูลความแตกต่างระหว่างเป้าหมายและประสิทธิภาพที่แท้จริงของพนักงานขาย รายงานนี้อิงตามรายงานใบสั่งขาย
 
-Here, as per the report, allocated target to Sales Person was roughly 83 in quantity for a month, but he has achieved a target of 80 when the report is being viewed, hence the variance report is shown accordingly.
+ในที่นี้ ตามรายงาน เป้าหมายที่จัดสรรให้กับพนักงานขายมีปริมาณประมาณ 83 ต่อเดือน แต่เขาบรรลุเป้าหมาย 80 เมื่อมีการดูรายงาน ดังนั้น รายงานผลต่างจึงแสดงตามนั้น
 
 <img class="screenshot" alt="Target Item Group" src="{{docs_base_url}}/assets/img/selling/sales-person-item-group-report.png">
 
-**Note:** For the report to reflect correct details, you need to link a Sales Person to a Sales Order, it's present in the Sales Team section of Sales Order. The Sales Order has also has to be in the submitted stage.
+**หมายเหตุ:** เพื่อให้รายงานแสดงรายละเอียดที่ถูกต้อง คุณต้องเชื่อมโยงพนักงานขายกับใบสั่งขาย ซึ่งอยู่ในส่วนทีมขายของคำสั่งขาย ใบสั่งขายจะต้องอยู่ในขั้นตอนที่ส่งด้วย
 
 ---
 
-##2. Sales Person - Territorywise Target Allocation
+##2. พนักงานขาย - การจัดสรรเป้าหมายตามพื้นที่การขาย
 
-For allocating Territory-wise targets to Sales Person, select the specific Sales Person in the Territory master. This Sales Person is entered just for the reference. Sales Person details are not updated in the variance report of Territorywise Target Allocation.
+สำหรับการจัดสรรเป้าหมายตามอาณาเขตให้กับพนักงานขาย ให้เลือกพนักงานขายที่เจาะจงในหลักอาณาเขต พนักงานขายนี้ถูกป้อนเพื่อการอ้างอิงเท่านั้น รายละเอียดพนักงานขายไม่ได้รับการอัพเดตในรายงานผลต่างของ การกระจายเป้าหมายตามเขตการขาย
 
-###2.1 Go to Territory master
+###2.1 ไปที่เขตการขายหลัก
 
-**Selling > Settings > Territory > (Edit specific Territory)**
+**การขาย > การตั้งค่า > เขตการขาย > (แก้ไขเขตที่ระบุ)**
 
-In the selected Territory, you will find a field to select Territory Manager. This field is linked to "Sales Person" master.
+ในเขตที่เลือก คุณจะพบฟิลด์ให้เลือก การจัดการเขตการขาย ฟิลด์นี้เชื่อมโยงกับต้นแบบ "พนักงานขาย"
 
 <img class="screenshot" alt="Sales Person Territory Manager" src="{{docs_base_url}}/assets/img/selling/sales-person-territory-manager.png">
 
-###2.2 Allocating Target
+###2.2 การจัดสรรเป้าหมาย
 
-Target Allocation in the Territory master is similar to Sales Person master. You can follow the same steps given in section _1.2 Allocate Item Groupwise Target_ to specify target in the Territory master also.
+การจัดสรรเป้าหมายในต้นแบบเขตการขายจะคล้ายกับพนักงานขายหลัก คุณสามารถทำตามขั้นตอนเดียวกันกับที่ระบุในส่วน _1.2 จัดสรรรายการตามกลุ่มเป้าหมายสินค้า_ เพื่อระบุเป้าหมายในต้นแบบเขตการขายด้วย
 
-###2.3 Report - Territory Target Variance Item Groupwise
+###2.3 รายงาน - รายการผลต่างเป้าหมายอาณาเขตแบบกลุ่ม
 
-This report will provide you variance between target and actual performance of Sales in particular territory. This report is based on Sales Order report. Though Sales Person is defined in the Territory master, its details are not pulled in the report.
+รายงานนี้จะให้ข้อมูลความแตกต่างระหว่างเป้าหมายและประสิทธิภาพจริงของการขายในพื้นที่เฉพาะ รายงานนี้อิงตามรายงานใบสั่งขาย แม้ว่าพนักงานขายจะถูกกำหนดในหลักอาณาเขต แต่รายละเอียดจะไม่ถูกดึงในรายงาน
 
-**Note** that the Territory of the Customer/Customers must be set accordingly for this report to work. For example, in the following screenshot, the target was approx eight units and five was achieved, hence the variance is three.
+**หมายเหตุ** ว่าต้องกำหนดอาณาเขตของลูกค้า/ลูกค้าให้สอดคล้องกันเพื่อให้รายงานนี้ทำงานได้ ตัวอย่างเช่น ในภาพหน้าจอต่อไปนี้ เป้าหมายมีประมาณแปดหน่วยและทำได้ห้าหน่วย ดังนั้นความแปรปรวนจึงเป็นสาม
 
 <img class="screenshot" alt="Sales Person Territory Report" src="{{docs_base_url}}/assets/img/selling/sales-person-territory-report.png">
 
 ---
 
-##3. Target Distribution
+##3. การกระจายเป้าหมาย
 
-To create a new Monthly Distribution, go to:
-**Accounting > Monthly Distribution**
+หากต้องการสร้างการแจกจ่ายรายเดือนใหม่ ให้ไปที่:
+**การบัญชี > การจัดจำหน่ายรายเดือน**
 
-Target Distribution document allows you to divide allocated targets across multiple months. If your products and services are seasonal, you can distribute the sales target accordingly. For example, if you are into umbrella business, then target allocated in the monsoon season will be higher than in other months.
+เอกสารการกระจายเป้าหมายช่วยให้คุณแบ่งเป้าหมายที่จัดสรรไว้เป็นเวลาหลายเดือน หากผลิตภัณฑ์และบริการของคุณเป็นไปตามฤดูกาล คุณสามารถกระจายเป้าหมายการขายได้ตามนั้น ตัวอย่างเช่น หากคุณเข้าสู่ธุรกิจการขายร่ม เป้าหมายที่จัดสรรในฤดูมรสุม (ฤดูฝน) จะสูงกว่าในเดือนอื่นๆ
 
 <img class="screenshot" alt="Target Distribution" src="{{docs_base_url}}/assets/img/selling/target-distribution.png">
 
-You can link Monthly Distribution while allocating targets in Sales Person and in Territory master.
+คุณสามารถเชื่อมโยงการแจกจ่ายรายเดือนในขณะที่จัดสรรเป้าหมายในพนักงานขายและในเขตการขายหลัก
 
-### 4. Related Topics
-1. [Sales Persons in the Sales Transactions](/docs/user/manual/en/selling/articles/sales-persons-in-the-sales-transactions)
-1. [Using Sales Person in transactions](/docs/user/manual/en/selling/articles/sales-persons-in-the-sales-transactions)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [พนักงานขายในธุรกรรมการขาย](/docs/user/manual/th/selling/articles/sales-persons-in-the-sales-transactions)
+1. [การใช้พนักงานขายในการทำธุรกรรม](/docs/user/manual/th/selling/articles/sales-persons-in-the-sales-transactions)
 
 {next}

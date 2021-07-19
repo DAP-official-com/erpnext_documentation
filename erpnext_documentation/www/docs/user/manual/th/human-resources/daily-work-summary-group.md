@@ -1,37 +1,37 @@
 <!-- add-breadcrumbs -->
-#Daily Work Summary Group
+#สรุปงานประจำวัน
 
-**In order to facilitate daily reporting of employees, you can configure ERPNext to request employees to send their work summaries through email. Daily Work Summary is an automated way of getting the daily work reporting of employees in an organization.**
+**เพื่อความสะดวกในการรายงานประจำวันของพนักงาน คุณสามารถกำหนดค่า ERPNext เพื่อขอให้พนักงานส่งสรุปงานทางอีเมล สรุปงานรายวันเป็นวิธีอัตโนมัติในการรับรายงานงานประจำวันของพนักงานในองค์กร**
 
-To configure a new Daily Work Summary Group, go to:
+ในการกำหนดค่ากลุ่มงานรายวันใหม่ ไปที่:
 
-> Human Resources > Settings > Daily Work Summary Group
+> ทรัพยากรบุคคล > การตั้งค่า > สรุปงานประจำวัน
 
-You can set multiple groups with different set of 'Users' from your user list with different 'Send Emails At' time and with separate 'Holiday List' for each. 
+คุณสามารถตั้งค่าหลายกลุ่มด้วยชุด 'ผู้ใช้' ที่แตกต่างกันจากรายชื่อผู้ใช้ของคุณด้วย 'ส่งอีเมล ณ เวลา' ที่แตกต่างกัน และด้วย 'รายการวันหยุด' แยกกันสำหรับแต่ละกลุ่ม
 
-You can also choose to customize the 'Message' you send to users.
+คุณยังสามารถเลือกปรับแต่ง 'ข้อความ' ที่คุณส่งถึงผู้ใช้ได้
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
     
-Before creating a Daily Work Summary Group, it is necessary you create the following:
+ก่อนสร้างสรุปงานรายวัน คุณจำเป็นต้องสร้างสิ่งต่อไปนี้:
 
-* [Email Account](/docs/user/manual/en/setting-up/email/email-account)
+* [บัญชีอีเมล](/docs/user/manual/th/setting-up/email/email-account)
 
-## 2. How to create a Daily Work Summary Group
+## 2. วิธีสร้างสรุปงานประจำวัน
 
-1. Go to: Daily Work Summary Group > New.
-1. Enter the name of the Daily Work Summary Group.
-1. Enter the User's names in the 'Users' table.
-1. Set the 'Send Emails At' time. This is the time the Daily Work Summary email will be sent.
-1. Select Holiday List (optional). On these days, the Daily Work Summary email won't be sent.
-1. In the Reminder section, enter the mail Subject and type in the Message.
-1. Save. 
+1. ไปที่: สรุปงานประจำวัน > ใหม่
+1. ใส่ชื่อสรุปงานประจำวัน
+1. ป้อนชื่อผู้ใช้ในตาราง 'ผู้ใช้'
+1. ตั้งค่าเวลา 'ส่งอีเมล ณ' นี่คือเวลาที่อีเมลสรุปงานประจำวันจะถูกส่งไป
+1. เลือกรายการวันหยุด (ไม่บังคับ) ในวันนี้ ระบบจะไม่ส่งอีเมลสรุปงานรายวัน
+1. ในส่วนการเตือนความจำ ให้ป้อนหัวเรื่องอีเมลและพิมพ์ข้อความ
+1. บันทึก
 
->**Note:**
+>**หมายเหตุ:**
 
->1. If no Holiday List is selected, then the email will be sent every day.
->2. Name of the "Daily Work Summary Group" will be sent as the title for daily summary email.
->3. Mail will not be sent to the users of a disabled Daily Work Summary Group.
+>1. หากไม่มีการเลือกรายการวันหยุด อีเมลจะถูกส่งทุกวัน
+>2. ชื่อของ "กลุ่มสรุปงานรายวัน" จะถูกส่งเป็นชื่อเรื่องสำหรับอีเมลสรุปรายวัน
+>3. จดหมายจะไม่ถูกส่งไปยังผู้ใช้ของกลุ่มสรุปงานประจำวันที่ปิดใช้งาน
 
 
 <img class="screenshot" alt="Daily Work Summary Group" src="{{docs_base_url}}/assets/img/human-resources/daily-work-summary-group.png">

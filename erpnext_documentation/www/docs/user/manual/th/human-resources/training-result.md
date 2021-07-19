@@ -1,37 +1,37 @@
-# Training Result
+#ผลการฝึก
 
-**After completion of the training event, employee-wise training results can be stored based on the evaluation done by the trainer.**
+**หลังจากเสร็จสิ้นกิจกรรมการฝึกอบรม สามารถจัดเก็บผลการฝึกอบรมที่ชาญฉลาดของพนักงานตามการประเมินที่ทำโดยผู้ฝึกสอน**
 
-ERPNext allows you to create training results and share it with the employees with the Training Result doctype.
+ERPNext ช่วยให้คุณสร้างผลการฝึกอบรมและแบ่งปันกับพนักงานด้วยประเภทเอกสารผลการฝึกอบรม
 
-To access Training Result, go to:
+หากต้องการเข้าถึงผลการฝึกอบรม ให้ไปที่:
 
-> Home > Human Resources > Training > Training Result
-
-
-## 1. Prerequisites
-
-Before creating a Training Result, it is advisable you create the following documents:
-
-* [Training Program](/docs/user/manual/en/human-resources/training-program)
-* [Training Event](/docs/user/manual/en/human-resources/training-event)
-* [Employee](/docs/user/manual/en/human-resources/employee)
+> หน้าหลัก > ทรัพยากรบุคคล > การฝึกอบรม > ผลการฝึกอบรม
 
 
-## 2. How to create a Training Result
+## 1. ข้อกำหนดเบื้องต้น
 
-1. Go to the Training Result list, click on New.
-1. Select Training Event.
-1. Enter the Hours, Grade and Comments against the Employee Name.
-1. Save and Submit
+ก่อนสร้างผลการฝึกอบรม ขอแนะนำให้คุณสร้างเอกสารต่อไปนี้:
+
+* [โปรแกรมการฝึกอบรม](/docs/user/manual/th/human-resources/training-program)
+* [Training Event](/docs/user/manual/th/human-resources/training-event)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+
+
+## 2. วิธีสร้างผลการฝึก
+
+1. ไปที่รายการผลการฝึกอบรม คลิกที่ ใหม่
+1. เลือกกิจกรรมการฝึกอบรม
+1. ป้อนชั่วโมง เกรด และความคิดเห็นต่อชื่อพนักงาน
+1. บันทึกและส่ง
 
     <img class="screenshot" alt="Employee" src="{{docs_base_url}}/assets/img/human-resources/training-result.png">
 
-When the Training Result is submitted, all the employees will receive an email notifying them that they must share their feedback via [Training Feedback](/docs/user/manual/en/human-resources/training-feedback). This is also managed via an Email Alert, so you can customize this alert too.
+มื่อส่งผลการฝึกอบรม พนักงานทุกคนจะได้รับอีเมลแจ้งว่าพวกเขาต้องแชร์ความคิดเห็นผ่าน [ข้อเสนอแนะการฝึกอบรม](/docs/user/manual/th/human-resources/training-feedback) นอกจากนี้ยังได้รับการจัดการผ่าน Email Alert ดังนั้นคุณสามารถปรับแต่งการแจ้งเตือนนี้ได้เช่นกัน
 
 
-> **Note:** You can also access Training Result directly from the Training Event dashboard. 
+> **หมายเหตุ:** คุณยังสามารถเข้าถึงผลการฝึกอบรมได้โดยตรงจากแดชบอร์ดกิจกรรมการฝึกอบรม
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Training Feedback](/docs/user/manual/en/human-resources/training-feedback)
+1. [ข้อเสนอแนะการฝึกอบรม](/docs/user/manual/th/human-resources/training-feedback)

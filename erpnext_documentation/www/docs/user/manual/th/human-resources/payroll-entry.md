@@ -1,80 +1,80 @@
 <!-- add-breadcrumbs -->
-# Payroll Entry
+# รายการเงินเดือน
 
-**Payroll is the sum total of all compensation a business must pay to its employees for a set period of time or on a given date.**
+**เงินเดือนคือผลรวมของค่าตอบแทนทั้งหมดที่ธุรกิจต้องจ่ายให้กับพนักงานตามระยะเวลาที่กำหนดหรือในวันที่กำหนด**
 
-In ERPNext, Payroll Entry enables bulk processing of payroll for employees. In other words, processing salary slips of all employees in one go. The bulk processing can be Company-wide or based on these categories: Branch, Department, or Designation. 
+ใน ERPNext รายการบัญชีเงินเดือนช่วยให้สามารถประมวลผลบัญชีเงินเดือนจำนวนมากสำหรับพนักงานได้ กล่าวคือ การประมวลผลสลิปเงินเดือนของพนักงานทั้งหมดในคราวเดียว การประมวลผลจำนวนมากสามารถเป็นได้ทั้งบริษัทหรือตามหมวดหมู่เหล่านี้: สาขา แผนก หรือการกำหนด
 
-To access Payroll Entry, go to:
+ในการเข้าถึงรายการบัญชีเงินเดือน ไปที่:
 
-> Home > Human Resources > Payroll > Payroll Entry 
-
-
-
-## 1. How to create a Payroll Entry
+> หน้าหลัก > ทรัพยากรบุคคล > เงินเดือน > รายการเงินเดือน
 
 
-1. Go to to Payroll Entry list, click on New.
-1. Select the Payroll Frequency.
-1. Select Branch, Designation and Department to filter out employees (optional).
-1. Select Project (optional) if you want to run the payroll against a project.
-1. Select 'Validate Attendance' and 'Salary Slip Based on Timesheet' checkboxes in case you want to deduct the salary based on attendance and if you want to also consider the timesheets of the employees respectively.
-1. Select the Payment Account to make the Bank Entry.
-1. Save. 
+
+## 1. วิธีสร้างรายการบัญชีเงินเดือน
 
 
-Once the information is saved, click on the **Get Employees** button to get a list of Employees for which the Salary Slips will be created based on the selected criteria.
+1. ไปที่รายการ รายการเงินเดือน คลิก ใหม่
+1. เลือกความถี่ในการจ่ายเงินเดือน
+1. เลือกสาขา ตำแหน่ง และแผนก เพื่อกรองพนักงานออก (ไม่บังคับ)
+1. เลือก โครงการ (ทางเลือก) หากคุณต้องการเรียกใช้บัญชีเงินเดือนกับโครงการ
+1. เลือกกล่องกาเครื่องหมาย 'ตรวจสอบการเข้างาน' และ 'สลิปเงินเดือนตาม Timesheet' ในกรณีที่คุณต้องการหักเงินเดือนตามการเข้างาน และหากคุณต้องการพิจารณาใบบันทึกเวลาของพนักงานตามลำดับ
+1. เลือกบัญชีชำระเงินเพื่อทำรายการธนาคาร
+1. บันทึก
 
-Once the list of Employees is fetched, click on the **Create Salary Slips** button to generate Salary Slips.
+
+เมื่อบันทึกข้อมูลแล้ว ให้คลิกที่ปุ่ม **รับพนักงาน** เพื่อรับรายชื่อพนักงานที่จะสร้างสลิปเงินเดือนตามเกณฑ์ที่เลือก
+
+เมื่อดึงรายชื่อพนักงานแล้ว ให้คลิกที่ปุ่ม **สร้างสลิปเงินเดือน** เพื่อสร้างสลิปเงินเดือน
 
 <img class="screenshot" alt="Payroll Entry" src="/docs/assets/img/human-resources/payroll-entry-get-employees.png">
 
-> **Note:** If the Salary Slips are already created, the system will not create any more Salary Slips. You can also just save the form as Draft and create the Salary Slips later.
+> **หมายเหตุ:** หากสร้างสลิปเงินเดือนแล้ว ระบบจะไม่สร้างสลิปเงินเดือนอีก คุณยังสามารถบันทึกแบบฟอร์มเป็นแบบร่างและสร้างสลิปเงินเดือนได้ในภายหลัง
 
 
-## 2. Features 
+## 2. คุณสมบัติ
 
-### 2.1 Salary Accrual 
+### 2.1 เงินเดือนคงค้าง
 
-After verifying the Salary Slips, you can Submit them all together by clicking on the **Submit Salary Slip** button.
+หลังจากตรวจสอบสลิปเงินเดือนแล้ว คุณสามารถส่งทั้งหมดพร้อมกันได้โดยคลิกที่ปุ่ม **ส่งสลิปเงินเดือน**
 
 <img class="screenshot" alt="Payroll Entry" src="/docs/assets/img/human-resources/payroll-entry.png">
 
-This will also book the default Payroll Payable account against respective Expense Heads (as configured in Salary Components) to record the accrual of salary to employees.
+นอกจากนี้ยังจะจองบัญชี Payroll Payable เริ่มต้นกับ Expense Heads ที่เกี่ยวข้อง (ตามที่กำหนดค่าไว้ในส่วนประกอบเงินเดือน) เพื่อบันทึกการรับเงินเดือนให้กับพนักงาน
 
-**Cost Center:**
-You can select Cost Center in the Payroll Entry against which the expenses will be posted.
+**ศูนย์ต้นทุน:**
+คุณสามารถเลือกศูนย์ต้นทุนในรายการบัญชีเงินเดือนที่จะผ่านรายการค่าใช้จ่าย
 
-If you want to book expenses against multiple cost centers based on Employee/Department, you can do so by setting Payroll Cost Center in Employee/Department master. Cost Center assigned in Employee/Department master will get priority over the selected Cost Center in Payroll Entry.
+ถ้าคุณต้องการจองค่าใช้จ่ายกับศูนย์ต้นทุนหลายแห่งโดยยึดตามพนักงาน/แผนก คุณสามารถทำได้โดยการตั้งค่า Payroll Cost Center ในหลักพนักงาน/แผนก ศูนย์ต้นทุนที่กำหนดในหลักพนักงาน/แผนกจะได้รับลำดับความสำคัญเหนือศูนย์ต้นทุนที่เลือกในรายการบัญชีเงินเดือน
 
 <img class="screenshot" alt="Payroll Entry" src="/docs/assets/img/human-resources/payroll-make-accrual-entry.png">
 
-> **Note:** Submitting Salary Slips one by one manually will not create the Journal Entry to record salary accrual.
+> **หมายเหตุ:** การส่งสลิปเงินเดือนด้วยตนเองจะไม่สร้างรายการบันทึกประจำวันเพื่อบันทึกเงินเดือนคงค้าง
 
-### 2.2 Salary Payment
+### 2.2 การจ่ายเงินเดือน
 
-The final step is to book the Salary Payment.
+ขั้นตอนสุดท้ายคือการจองการจ่ายเงินเดือน
 
-Salaries in businesses are usually dealt with extreme privacy. In most cases, companies issue a single payment to the bank combining all salaries and the bank distributes the salaries to each employee’s salary account. 
+เงินเดือนในธุรกิจมักจะได้รับการจัดการกับความเป็นส่วนตัวที่รุนแรง ในกรณีส่วนใหญ่ บริษัทจะออกการชำระเงินครั้งเดียวให้กับธนาคารโดยรวมเงินเดือนทั้งหมดเข้าด้วยกัน และธนาคารจะแจกจ่ายเงินเดือนไปยังบัญชีเงินเดือนของพนักงานแต่ละคน
 
-This way there is only one payment entry in the company’s books of accounts and anyone with access to the company’s accounts will not have access to the individual salaries.
+วิธีนี้มีรายการชำระเงินเพียงรายการเดียวในสมุดบัญชีของบริษัท และใครก็ตามที่เข้าถึงบัญชีของบริษัทจะไม่สามารถเข้าถึงเงินเดือนส่วนบุคคลได้
 
-The salary payment entry is a Journal Entry that debits the total of the Earnings type salary component and credits the total of Deductions type salary component of all Employees to the default account set at Salary Component level for each component.
+รายการจ่ายเงินเดือนเป็นรายการบันทึกประจำวันที่หักยอดรวมขององค์ประกอบเงินเดือนประเภทรายได้และให้เครดิตผลรวมขององค์ประกอบเงินเดือนประเภทการหักเงินของพนักงานทั้งหมดไปยังบัญชีเริ่มต้นที่ตั้งไว้ที่ระดับองค์ประกอบเงินเดือนสำหรับแต่ละองค์ประกอบ
 
-To generate your salary payment voucher from Payroll Entry, click on the **Make Bank Entry** button.
+หากต้องการสร้างบัตรกำนัลการจ่ายเงินเดือนจากรายการบัญชีเงินเดือน ให้คลิกที่ปุ่ม **สร้างรายการธนาคาร**
 
-Payroll Entry will route you to Journal Entry with relevant filters to view the draft Journal Vouchers created. You will have to set the reference number and date for the transactions and Submit the Journal Entry.
+รายการบัญชีเงินเดือนจะนำคุณไปยังรายการบันทึกประจำวันพร้อมตัวกรองที่เกี่ยวข้องเพื่อดูร่างใบสำคัญรายการบันทึกประจำวันที่สร้างขึ้น คุณจะต้องกำหนดหมายเลขอ้างอิงและวันที่สำหรับการทำธุรกรรมและส่งรายการบันทึกประจำวัน
 
 <img class="screenshot" alt="Payroll Entry" src="/docs/assets/img/human-resources/payroll-make-bank-entry.png">
 
-> **Note:** For Salary Components which are Flexible Benefits and has _Create Separate Payment Entry Against Benefit Claim_ checked, ERPNext will book separate draft Journal Entries.
+> **หมายเหตุ:** สำหรับองค์ประกอบเงินเดือนซึ่งเป็นสวัสดิการที่ยืดหยุ่นและได้เลือก _สร้างรายการชำระเงินแยกต่างหากจากการเรียกร้องผลประโยชน์_ (_Create Separate Payment Entry Against Benefit Claim_ ) ERPNext จะจองรายการบันทึกประจำวันฉบับร่างแยกต่างหาก
 
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Salary Component](/docs/user/manual/en/human-resources/salary-component)
-1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
-1. [Payroll Period](/docs/user/manual/en/human-resources/payroll-period)
-1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
+1. [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
+1. [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
+1. [ระยะเวลาการจ่ายเงินเดือน](/docs/user/manual/th/human-resources/payroll-period)
+1. [รายการบันทึกประจำวัน](/docs/user/manual/th/accounts/journal-entry)
 
 {next}

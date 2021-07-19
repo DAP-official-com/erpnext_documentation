@@ -1,59 +1,59 @@
-# Vehicle Log
+# บันทึกยานพาหนะ
 
-**Vehicle Log is used to enter Odometer readings, Fuel Expenses and Service Expense details.**
+**บันทึกยานพาหนะใช้เพื่ออ่านค่ามาตรระยะทาง ค่าน้ำมัน และรายละเอียดค่าบริการ**
 
-To access Vehicle Log, go to:
+ในการเข้าถึงบันทึกยานพาหนะ ไปที่:
 
-> Human Resources > Fleet Management > Vehicle Log
-
-
-## 1. Prerequisites
-
-Before creating a Vehicle Log, it is necessary that you create the following documents:
-
-* [Vehicle](/docs/user/manual/en/human-resources/vehicle)
+> ทรัพยากรบุคคล > การจัดการยานพาหนะ > บันทึกยานพาหนะ
 
 
-## 2. How to create a Vehicle Log
+## 1. ข้อกำหนดเบื้องต้น
 
-1. Go to Vehicle Log list, click on New.
-1. Select License Plate and Employee.
-1. Enter Odometer Reading information such as Date and Odometer (reading).
-1. Enter Refueling Details [optional] such as Fuel Qty, Fuel Price, Supplier and Invoice Ref.
+ก่อนสร้างบันทึกยานพาหนะ คุณจำเป็นต้องสร้างเอกสารต่อไปนี้:
+
+* [ยานพาหนะ](/docs/user/manual/th/human-resources/vehicle)
+
+
+## 2. วิธีสร้างบันทึกยานพาหนะ
+
+1. ไปที่รายการบันทึกยานพาหนะ คลิกที่ ใหม่
+1. เลือกป้ายทะเบียนและพนักงาน
+1. ป้อนข้อมูลการอ่านมาตรวัดระยะทาง เช่น วันที่และมาตรวัดระยะทาง (การอ่าน)
+1. ป้อนรายละเอียดการเติมน้ำมัน [ไม่บังคับ] เช่น ปริมาณน้ำมัน ราคาน้ำมัน ผู้จัดหา และเลขอ้างอิงใบกำกับสินค้า
 
     <img class="screenshot" alt="Vehicle Log" src="{{docs_base_url}}/assets/img/human-resources/vehicle-log1.png">
 
 
-1. Additionally, Vehicle Service Details can also be added as shown (optional).
+1. นอกจากนี้ยังเพิ่มรายละเอียดบริการรถได้ตามที่แสดง (ตัวเลือก)
 
     <img class="screenshot" alt="Vehicle Log" src="{{docs_base_url}}/assets/img/human-resources/vehicle-log2.png">
 
-1. Save. Once the information is saved, the Model and Make values will be automatically fetched.
+1. บันทึก เมื่อบันทึกข้อมูลแล้ว ค่า Model และ ข้อมูลจะถูกดึงออกมาโดยอัตโนมัติ
 
 
 	
 
-## 3. Features
+## 3. คุณสมบัติ
 
-Fleet Management in ERPNext allows you to automatically create an [Expense Claim](/docs/user/manual/en/human-resources/expense-claim) against your Vehicle Expenses.
+การจัดการการขนส่ง ใน ERPNext ช่วยให้คุณสร้าง [เรียกร้องค่าใช้จ่าย](/docs/user/manual/th/human-resources/expense-claim) โดยอัตโนมัติกับค่าใช้จ่ายยานพาหนะของคุณ
 
-### 3.1 Make Expense Claim against Vehicle Expenses
+### 3.1 เรียกร้องค่าใช้จ่ายจากค่าใช้จ่ายยานพาหนะ against
 
-Click on Make Expense Claim button. This button appears only in case of Submitted Vehicle Logs.
+คลิกที่ปุ่มทำรายการเรียกร้องค่าใช้จ่าย ปุ่มนี้จะปรากฏเฉพาะในกรณีที่บันทึกยานพาหนะที่ส่ง
 
 <img class="screenshot" alt="Expense Claim Button" src="{{docs_base_url}}/assets/img/human-resources/vehicle-log-expense-claim-button.png">
 
-When you click on 'Make Expense Claim',
+เมื่อคุณคลิกที่ 'เรียกร้องค่าใช้จ่าย'
 
-  1. The Date, Employee, Expense total are fetched over to the created Expense Claim.
-  2. The sum of Fuel Expenses and Service Expenses is calculated and fetched over to Expense Claim Amount.
-  3. Employee can submit the Expense Claim for further processing.
+  1. วันที่ พนักงาน ค่าใช้จ่ายทั้งหมดจะถูกดึงไปยังการเรียกร้องค่าใช้จ่ายที่สร้างขึ้น
+  2. ผลรวมของค่าเชื้อเพลิงและค่าบริการจะคำนวณและดึงไปยังยอดเรียกร้องค่าใช้จ่าย
+  3. พนักงานสามารถส่งการเรียกร้องค่าใช้จ่ายเพื่อดำเนินการต่อไปได้
 
 	<img class="screenshot" alt="Vehicle Log" src="{{docs_base_url}}/assets/img/human-resources/vehicle-log-expense-claim.png">
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Expense Claim](/docs/user/manual/en/human-resources/expense-claim)
+1. [เรียกร้องค่าใช้จ่าย](/docs/user/manual/th/human-resources/expense-claim)
 
 
 

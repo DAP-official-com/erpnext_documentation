@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-#Employee Benefit Application
+#ใบสมัครสวัสดิการพนักงาน
 
-Employees are entitled to flexible benefits which they can either receive pro-rata (as part of their Salary) or as a lump-sum amount when they claim the benefit. In order to choose from various flexible benefits which an Employee shall receive on a pro-rata basis, the employee should create a new Employee Benefit Application.
+พนักงานมีสิทธิได้รับผลประโยชน์ที่ยืดหยุ่น ซึ่งพวกเขาสามารถได้รับตามสัดส่วน (เป็นส่วนหนึ่งของเงินเดือนของพวกเขา) หรือเป็นเงินก้อนเมื่อเรียกร้องผลประโยชน์ เพื่อเลือกผลประโยชน์ที่ยืดหยุ่นต่างๆ ที่พนักงานจะได้รับตามสัดส่วน พนักงานควรสร้างใบสมัครสวัสดิการพนักงานใหม่
 
-To create a new Employee Benefit Application,
+ในการสร้างใบสมัครสวัสดิการพนักงานใหม่
 
-> Human Resources > Payroll > Employee Benefit Application > New Employee Benefit Application
+> ทรัพยากรบุคคล > เงินเดือน > ใบสมัครสวัสดิการพนักงาน > ใบสมัครสวัสดิการพนักงานใหม่
 
 <img class="screenshot" alt="Employee Benefit Application" src="{{docs_base_url}}/assets/img/human-resources/employee-benefit-application.png">
 
-Here, Employee can view the Max Benefits as per the Salary Structure Assignment and then chose from the Earning Components which are part of the employee's assigned Salary Structure. They can also enter the amount which they wish to receive as part of their Salary Slip.
+พนักงานสามารถดูผลประโยชน์สูงสุดตามการกำหนดโครงสร้างเงินเดือน แล้วเลือกจากส่วนประกอบรายได้ซึ่งเป็นส่วนหนึ่งของโครงสร้างเงินเดือนที่ได้รับมอบหมายจากพนักงาน พวกเขายังสามารถป้อนจำนวนเงินที่ต้องการรับเป็นส่วนหนึ่งของสลิปเงินเดือน
 
-It is based on the Employee Benefit Application that the Max Benefit Amount will be distributed among the flexible earning components while generating the Salary Slip. If an Employee fails to submit the Employee Benefit Application before processing the payroll, the Max Benefit Amount eligible to the employee will be distributed proportionately to each of the flexible component present in the Employee's salary structure.
+ขึ้นอยู่กับแอปพลิเคชันสวัสดิการพนักงานที่จำนวนเงินผลประโยชน์สูงสุดจะถูกแจกจ่ายให้กับองค์ประกอบรายได้ที่ยืดหยุ่นในขณะที่สร้างสลิปเงินเดือน หากพนักงานไม่ส่งใบสมัครสวัสดิการพนักงานก่อนที่จะดำเนินการจ่ายเงินเดือน จำนวนเงินผลประโยชน์สูงสุดที่มีสิทธิ์ให้กับพนักงานจะถูกแจกจ่ายตามสัดส่วนตามองค์ประกอบที่ยืดหยุ่นแต่ละรายการที่มีอยู่ในโครงสร้างเงินเดือนของพนักงาน
 
-> Note: Employees can only submit one Employee Benefit Application for a Payroll Period.
+> หมายเหตุ: พนักงานสามารถส่งใบสมัครสวัสดิการพนักงานได้เพียงหนึ่งรายการสำหรับรอบระยะเวลาเงินเดือน
 
-Employee Benefit Application should cover the full amount which the employee has to receive as per the Max Benefit amount on a pro-rata basis. However, if the Salary Structure of the employee consists of Salary Components which are to be paid on Employee Benefit Claim (Salary Component with _Pay Against Benefit Claim_), they are allowed to submit Employee Benefit Application excluding the amount allocated for such components.
+ใบสมัครสวัสดิการพนักงานควรครอบคลุมจำนวนเงินทั้งหมดที่พนักงานต้องได้รับตามจำนวนเงินผลประโยชน์สูงสุดตามสัดส่วน อย่างไรก็ตาม หากโครงสร้างเงินเดือนของพนักงานประกอบด้วยองค์ประกอบเงินเดือนที่ต้องจ่ายสำหรับการเรียกร้องผลประโยชน์พนักงาน (ส่วนประกอบเงินเดือนที่มี _Pay Against Benefit Claim_) พวกเขาได้รับอนุญาตให้ส่งใบสมัครสวัสดิการพนักงาน ยกเว้นจำนวนเงินที่จัดสรรสำหรับส่วนประกอบดังกล่าว
 
-Also, note that those components which are to be received based on Employee Benefit Claims can also be part of the application, but will only be disbursed lump-sum, as part of their salary when the Employee submits a claim for it.
+นอกจากนี้ โปรดทราบว่าองค์ประกอบเหล่านั้นที่จะได้รับจากการเรียกร้องผลประโยชน์พนักงานสามารถเป็นส่วนหนึ่งของใบสมัครได้ แต่จะจ่ายเป็นเงินก้อนเท่านั้น โดยเป็นส่วนหนึ่งของเงินเดือนเมื่อพนักงานยื่นคำร้อง
 
-> Note: Normal Tax calculation does not include Flexible Benefits as in most cases these are exempted from Tax. To tax these components anytime before the last payroll, use _Deduct Tax For Unclaimed Employee Benefits_ in Payroll Entry / Salary Slip while processing the Salary.
+> หมายเหตุ: การคำนวณภาษีปกติจะไม่รวมสิทธิประโยชน์ที่ยืดหยุ่น เนื่องจากในกรณีส่วนใหญ่จะได้รับการยกเว้นภาษี หากต้องการเก็บภาษีส่วนประกอบเหล่านี้ก่อนการจ่ายเงินเดือนครั้งสุดท้าย ให้ใช้ _Deduct Tax For Unclaimed Employee Benefits_ ใน Payroll Entry / Salary Slip ขณะประมวลผลเงินเดือน
 
 {next}

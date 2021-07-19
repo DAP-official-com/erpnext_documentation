@@ -1,107 +1,109 @@
 <!-- add-breadcrumbs -->
-# Supplier
+# ซัพพลายเออร์
 
-**Suppliers are companies or individuals who provide you with products or services.**
+**ซัพพลายเออร์คือบริษัทหรือบุคคลที่จัดหาผลิตภัณฑ์หรือบริการให้กับคุณ**
 
-To access the Supplier list, go to:
-> Home > Buying > Supplier > Supplier
+ในการเข้าถึงรายชื่อซัพพลายเออร์ ไปที่:
+> หน้าหลัก > การซื้อ > ซัพพลายเออร์ > ซัพพลายเออร์
 
-## 1. How to create a Supplier
-1. Go to the Supplier list and click on New.
-2. Enter a name for the supplier.
-4. Select the supplier group whether Pharmaceutical, Hardware etc.
-5. Save.
+## 1. วิธีสร้างซัพพลายเออร์
+1. ไปที่รายชื่อซัพพลายเออร์และคลิกที่ใหม่
+2. ป้อนชื่อซัพพลายเออร์
+4. เลือกกลุ่มซัพพลายเออร์ ไม่ว่าจะเป็น ยา ฮาร์ดแวร์ ฯลฯ
+5. บันทึก
     <img class="screenshot" alt="Supplier Master" src="{{docs_base_url}}/assets/img/buying/supplier-master.png">
 
-The options to Warn RFQs, POs, Prevent RFQs, POs will be available once you create a [Supplier Scorecard](/docs/user/manual/en/buying/supplier-scorecard) and transactions are made.
+ตัวเลือกในการเตือน RFQ, PO, ป้องกัน RFQ, PO จะพร้อมใช้งานเมื่อคุณสร้าง [Supplier Scorecard](/docs/user/manual/th/buying/supplier-scorecard) และทำธุรกรรม
 
-## 2. Features
+## 2. คุณสมบัติ
 
-Fields in future transactions will be auto-populated if the 'Default' fields like Default Bank Account, Default Payment Terms Template etc., are set in Supplier.
+ฟิลด์ในธุรกรรมในอนาคตจะถูกเติมโดยอัตโนมัติหากมีการตั้งค่าฟิลด์ 'ค่าเริ่มต้น' เช่น บัญชีธนาคารเริ่มต้น เทมเพลตเงื่อนไขการชำระเงินเริ่มต้น ฯลฯ ในซัพพลายเออร์
 
-### 2.1 Tax details
+### 2.1 รายละเอียดภาษี
 
-* **Country**: If the supplier is from another country, you can change it here.
-* **Tax ID**: Tax identification number of the supplier.
-* **Tax Category**: This is linked to [Tax Rule](/docs/user/manual/en/accounts/tax-rule). If a Tax Category is set here, when you select this supplier, the respective Purchase Tax and Charges template will be applied. This template is linked to the Tax Rule and the Tax Rule is linked with a Tax Category. Tax Category can be used to group suppliers to whom same tax will be applied. For example: Government, commercial, etc,.
-* **Print Language**: The language in which the document will be printed.
-* **Tax Withholding Category**: For India, TDS category for the Supplier. On setting a category here, it will be fetched into the [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice). For more information, visit the [Tax Withholding Category](/docs/user/manual/en/accounts/tax-withholding-category) page.
-* **Disabled**: Disables the Supplier and they won't be shown in the Supplier List.
-* **Is Transporter**: If the supplier is selling your transport services, tick this box. 'GST Transporter ID' field will be visible if this field is ticked.
-* **Internal Supplier**: If the supplier is from a sister or parent/child company, tick this field and select the company which they represent.
+* **ประเทศ**: หากซัพพลายเออร์มาจากประเทศอื่น คุณสามารถเปลี่ยนได้ที่นี่
+* **หมายเลขประจำตัวผู้เสียภาษี**: หมายเลขประจำตัวผู้เสียภาษีของซัพพลายเออร์
+* **หมวดหมู่ภาษี**: สิ่งนี้เชื่อมโยงกับ [กฎภาษี](/docs/user/manual/th/accounts/tax-rule) หากมีการตั้งค่าประเภทภาษีไว้ที่นี่ เมื่อคุณเลือกซัพพลายเออร์นี้ เทมเพลตภาษีการซื้อและค่าธรรมเนียมที่เกี่ยวข้องจะถูกนำมาใช้ เทมเพลตนี้เชื่อมโยงกับกฎภาษีและกฎภาษีเชื่อมโยงกับประเภทภาษี หมวดหมู่ภาษีสามารถใช้เพื่อจัดกลุ่มซัพพลายเออร์ที่จะใช้ภาษีเดียวกันได้ ตัวอย่างเช่น: รัฐบาล การค้า ฯลฯ.
+* **พิมพ์ภาษา**: ภาษาที่จะพิมพ์เอกสาร
+* **หมวดหมู่ภาษีหัก ณ ที่จ่าย**: สำหรับอินเดีย หมวดหมู่ TDS สำหรับซัพพลายเออร์ ในการตั้งค่าหมวดหมู่ที่นี่ หมวดหมู่นั้นจะถูกดึงเข้าสู่ [Purchase Invoice](/docs/user/manual/th/accounts/purchase-invoice) สำหรับข้อมูลเพิ่มเติม โปรดไปที่หน้า [Tax Withholding Category](/docs/user/manual/th/accounts/tax-withholding-category)
+* **ปิดการใช้งาน**: ปิดการใช้งานซัพพลายเออร์และจะไม่ปรากฏในรายชื่อซัพพลายเออร์
+* **เป็นผู้ขนส่ง**: หากซัพพลายเออร์ขายบริการขนส่งของคุณ ให้ทำเครื่องหมายในช่องนี้ ช่อง 'GST Transporter ID' จะมองเห็นได้หากช่องนี้ถูกทำเครื่องหมาย
+* **ผู้จัดหาภายใน**: หากซัพพลายเออร์มาจากบริษัทในเครือหรือบริษัทแม่/ลูก ให้ทำเครื่องหมายในช่องนี้และเลือกบริษัทที่พวกเขาเป็นตัวแทน
 
-For India:
+<!--For India:
 * **GST Category**: Select a GST Category of the supplier.
-* **PAN**: For India, PAN (Permanent Account Number) card details of the Supplier.
+* **PAN**: For India, PAN (Permanent Account Number) card details of the Supplier.-->
 
-### 2.2 Allow creation of Purchase Invoice without Purchase Order and Purchase Receipt
+### 2.2 อนุญาตให้สร้างใบสั่งซื้อโดยไม่ต้องมีใบสั่งซื้อและใบสั่งซื้อ
 
-If the "Purchase Order Required" or "Purchase Receipt Required" option is configured as "Yes" in [Buying Settings](/docs/user/manual/en/buying/buying-settings), it can be overridden for a particular supplier by enabling the "Allow Purchase Invoice Creation Without Purchase Order" or "Allow Purchase Invoice Creation Without Purchase Receipt" in the Supplier Master.
+หากตัวเลือก "ต้องสั่งซื้อ" หรือ "ต้องมีใบเสร็จการซื้อ" ถูกกำหนดค่าเป็น "ใช่" ใน [การตั้งค่าการซื้อ](/docs/user/manual/th/buying/buying-settings) สามารถแทนที่ได้สำหรับซัพพลายเออร์รายใดรายหนึ่ง โดยการเปิดใช้งาน "อนุญาตการสร้างใบกำกับสินค้าโดยไม่ต้องสั่งซื้อ" หรือ "อนุญาตการสร้างใบกำกับสินค้าโดยไม่ต้องรับซื้อ" ในหลักซัพพลายเออร์หลัก
 
 <img class="screenshot" alt="Supplier Master" src="{{docs_base_url}}/assets/img/buying/supplier-po-pr-required.png">
 
-### 2.3 Currency and Price List
-**Billing Currency**: Your supplier's currency can be different from your company currency. If you choose USD for a supplier, then the currency will be filled as USD and the exchange rate shown for future purchase transactions.
+### 2.3 รายการสกุลเงินและราคา
+**สกุลเงินสำหรับการเรียกเก็บเงิน**: สกุลเงินของซัพพลายเออร์อาจแตกต่างจากสกุลเงินของบริษัท หากคุณเลือก USD สำหรับซัพพลายเออร์ สกุลเงินจะถูกเติมเป็น USD และอัตราแลกเปลี่ยนที่แสดงสำหรับธุรกรรมการซื้อในอนาคต
 
 ![Supplier Currency](/docs/assets/img/buying/supplier-currency.gif)
 
-Each Supplier can have a default **Price List** so that every time you buy a new item from this supplier for different prices, the price list associated with the supplier would be updated as well. Under the price list comes item price, you can see the prices in Buying > Items and Pricing > Item Price.
+ซัพพลายเออร์แต่ละรายสามารถมี **รายการราคา** เริ่มต้นได้ ดังนั้นทุกครั้งที่คุณซื้อสินค้าใหม่จากซัพพลายเออร์รายนี้ด้วยราคาที่ต่างกัน รายการราคาที่เกี่ยวข้องกับซัพพลายเออร์จะได้รับการอัปเดตด้วยเช่นกัน ภายใต้รายการราคาเป็นราคาสินค้า คุณสามารถดูราคาในการซื้อ > รายการและราคา > ราคาสินค้า
 
-If you select this particular supplier, then the associated Price List will be fetched in Purchase transactions.
+หากคุณเลือกซัพพลายเออร์รายนี้ รายการราคาที่เกี่ยวข้องจะถูกดึงมาในธุรกรรมการซื้อ
 
-### 2.4 Credit Limit
+### 2.4 วงเงินสินเชื่อ
 
-* **Default Payment Terms Template**: If a Payment Terms template is set here, it'll be automatically selected for future purchase transactions.
-* **Block Supplier**: You can block invoices, payments or both from a supplier till specific date. Choose 'Hold Type', if you do not select a hold type, ERPNext will set it to "All". When a supplier is blocked, their status will be shown as 'On Hold'.
+* **เทมเพลตเงื่อนไขการชำระเงินเริ่มต้น**: หากมีการตั้งค่าเทมเพลตเงื่อนไขการชำระเงินที่นี่ ระบบจะเลือกเทมเพลตนั้นโดยอัตโนมัติสำหรับธุรกรรมการซื้อในอนาคต
+* **บล็อกซัพพลายเออร์**: คุณสามารถบล็อกใบแจ้งหนี้ การชำระเงิน หรือทั้งสองอย่างจากซัพพลายเออร์ได้จนถึงวันที่ระบุ เลือก 'Hold Type' หากคุณไม่ได้เลือกประเภท Hold ERPNext จะตั้งค่าเป็น "All" เมื่อซัพพลายเออร์ถูกบล็อก สถานะของพวกเขาจะแสดงเป็น 'ถูกระงับ'
 
-    The hold types are as follows:
-    - Invoices: ERPNext will not allow Purchase Invoices or Purchase Orders to be created for the supplier
-    - Payments: ERPNext will not allow Payment Entries to be created for the Supplier
-    - All: ERPNext will apply both hold types above
+    ประเภทการถือครองมีดังนี้:
+    - ใบแจ้งหนี้: ERPNext จะไม่อนุญาตให้สร้างใบสั่งซื้อหรือใบสั่งซื้อสำหรับซัพพลายเออร์
+    - การชำระเงิน: ERPNext จะไม่อนุญาตให้สร้างรายการชำระเงินสำหรับซัพพลายเออร์
+    - ทั้งหมด: ERPNext จะใช้การระงับทั้งสองประเภทด้านบน
 
-    If you do not set a release date, ERPNext will hold the Supplier **indefinitely**.
+    หากคุณไม่กำหนดวันวางจำหน่าย ERPNext จะระงับซัพพลายเออร์ **อย่างไม่มีกำหนด**
 
-### 2.5 Default Payable Accounts
-Add the default account from which invoices against this supplier will be paid. Add additional rows for more companies, you can select only one account per company.
+### 2.5 บัญชีเจ้าหนี้เริ่มต้น
+เพิ่มบัญชีเริ่มต้นที่จะชำระใบแจ้งหนี้กับซัพพลายเออร์รายนี้ เพิ่มแถวเพิ่มเติมสำหรับบริษัทอื่นๆ คุณสามารถเลือกได้เพียงบัญชีเดียวต่อบริษัท
 
-You can **integrate** a supplier with an account. For all Suppliers, "Creditor" account is set as the default payable Account. When Purchase Invoice is created, payable towards the supplier is booked against "Creditors" account.
+คุณสามารถ **รวม** ซัพพลายเออร์กับบัญชีได้ สำหรับซัพพลายเออร์ทั้งหมด บัญชี "เจ้าหนี้" จะถูกตั้งค่าเป็นบัญชีเจ้าหนี้เริ่มต้น เมื่อมีการสร้างใบกำกับสินค้า การชำระเงินให้กับซัพพลายเออร์จะถูกจองกับบัญชี "เจ้าหนี้"
 
-If you want to customize payable account for the Supplier, you should first add a payable Account in the Chart of Account, and then select that Payable Account in the Supplier master.
+หากคุณต้องการปรับแต่งบัญชีเจ้าหนี้สำหรับผู้จัดหา ก่อนอื่นคุณควรเพิ่มบัญชีเจ้าหนี้ในผังบัญชี แล้วเลือกบัญชีเจ้าหนี้นั้นในหลักซัพพลายเออร์
 
 <img class="screenshot" alt="Supplier Master" src="{{docs_base_url}}/assets/img/buying/supplier-payable-account.png">
 
-If you don't want to customize payable account, and proceed with default payable account "Creditor", then do not update any value in the Default Supplier Account's table.
+หากคุณไม่ต้องการปรับแต่งบัญชีเจ้าหนี้ และดำเนินการกับบัญชีเจ้าหนี้เริ่มต้น "เจ้าหนี้" **ห้าม**อัปเดตค่าใด ๆ ในตารางบัญชีซัพพลายเออร์เริ่มต้น
 
-> Tip: Default Payable Account is set in the Company master. If you want to set another account as Account as default for payable instead of Creditors Account, go to Company master, and set that account as "Default Payable Account".
+> เคล็ดลับ: บัญชีเจ้าหนี้เริ่มต้นถูกตั้งค่าไว้ในข้อมูลหลักของบริษัท หากคุณต้องการตั้งค่าบัญชีอื่นเป็นบัญชีเป็นค่าเริ่มต้นสำหรับเจ้าหนี้แทนบัญชีเจ้าหนี้ ให้ไปที่หลักของบริษัท และตั้งค่าบัญชีนั้นเป็น "บัญชีเจ้าหนี้เริ่มต้น"
 
-Depending on your [plan](https://erpnext.com/pricing), you can add multiple companies in your ERPNext instance. One Supplier can be used across multiple companies. In this case, you should define Company-wise Payable Account for the Supplier in the "Default Payable Accounts" table, i.e, add multiple rows.
+ขึ้นอยู่กับ [แผน](https://erpnext.com/pricing) คุณสามารถเพิ่มบริษัทหลายแห่งในอินสแตนซ์ ERPNext ของคุณได้ ซัพพลายเออร์รายเดียวสามารถใช้ได้ในหลายบริษัท ในกรณีนี้ คุณควรกำหนดบัญชีเจ้าหนี้ของบริษัทสำหรับผู้จัดหาในตาราง "บัญชีเจ้าหนี้เริ่มต้น" กล่าวคือ เพิ่มหลายแถว
 
-### 2.6 More Information
-You can add the supplier's website and any additional details about your supplier in this section. If you freeze a supplier with the 'Is Frozen' option, accounting entries for the supplier will be frozen. In this case the only user whose entries will surpass the 'freeze' is the role assigned in 'Role Allowed to Set Frozen Accounts & Edit Frozen Entries' in Accounting > Settings > Accounts Settings. This is useful when the supplier's name or bank details are being amended.
+### 2.6 ข้อมูลเพิ่มเติม
+คุณสามารถเพิ่มเว็บไซต์ของซัพพลายเออร์และรายละเอียดเพิ่มเติมเกี่ยวกับซัพพลายเออร์ของคุณได้ในส่วนนี้ หากคุณระงับซัพพลายเออร์ด้วยตัวเลือก 'ถูกระงับ' รายการบัญชีสำหรับซัพพลายเออร์จะถูกระงับ ในกรณีนี้ ผู้ใช้เพียงรายเดียวที่มีรายการจะเกิน 'หยุด' คือบทบาทที่ได้รับมอบหมายใน 'บทบาทที่อนุญาตให้ตั้งค่าบัญชีที่ถูกระงับและแก้ไขรายการที่ถูกระงับ' ในการบัญชี > การตั้งค่า > การตั้งค่าบัญชี สิ่งนี้มีประโยชน์เมื่อมีการแก้ไขชื่อซัพพลายเออร์หรือรายละเอียดธนาคาร
 
-### 2.7 Address and Contacts
-Contacts and Addresses in ERPNext are stored separately so that you can create multiple Contacts and Addresses for one Supplier. Once Supplier is saved, you will find the option to create Contact and Address for that Supplier.
+### 2.7 ที่อยู่และการติดต่อ
+ผู้ติดต่อและที่อยู่ใน ERPNext จะถูกจัดเก็บแยกกัน เพื่อให้คุณสามารถสร้างผู้ติดต่อและที่อยู่หลายรายการสำหรับซัพพลายเออร์รายเดียว เมื่อบันทึกซัพพลายเออร์แล้ว คุณจะพบตัวเลือกในการสร้างผู้ติดต่อและที่อยู่สำหรับซัพพลายเออร์รายนั้น
 
 <img class="screenshot" alt="Supplier Master" src="{{docs_base_url}}/assets/img/buying/supplier-new-address-contact.png">
 
 > Tip: When you select a Supplier in any transaction, Contact for which "Is Primary" field id checked, it will auto-fetch with the Supplier details.
 
-### 2.8 After saving
-Once all the necessary details are filled, save the document. On saving, options to create the following will be seen in the Dashboard:
+> เคล็ดลับ: เมื่อคุณเลือกซัพพลายเออร์ในธุรกรรมใดๆ ผู้ติดต่อที่มีการตรวจสอบ ID ฟิลด์ "เป็นหลัก" จะถูกดึงข้อมูลโดยอัตโนมัติพร้อมรายละเอียดซัพพลายเออร์
 
-* **Request for Quotation**: An RFQ against this supplier.
-* **Supplier Quotation**: Any quotations that the supplier has sent you and you have submitted into the system.
-* **Purchase Order**: Purchase Orders you've made against this supplier.
-* **Purchase Receipt**: Purchase receipts given by this supplier that you've saved in the system.
-* **Purchase Invoice**: Purchase Invoices you've made against this supplier.
-* **Payment Entry**: Payment Entries for the Purchase Invoices against this supplier.
-* **Pricing Rule**: Any Pricing Rules linked with this supplier. See section _2.2 Currency and Price List_ to know how it works.
+### 2.8 หลังจากบันทึกแล้ว
+เมื่อกรอกรายละเอียดที่จำเป็นทั้งหมดแล้ว ให้บันทึกเอกสาร เมื่อบันทึก ตัวเลือกในการสร้างสิ่งต่อไปนี้จะปรากฏในแดชบอร์ด:
+
+* **คำขอใบเสนอราคา**: RFQ กับซัพพลายเออร์รายนี้
+* **ใบเสนอราคาซัพพลายเออร์**: ใบเสนอราคาใดๆ ที่ซัพพลายเออร์ส่งถึงคุณและคุณได้ส่งเข้าสู่ระบบ
+* **ใบสั่งซื้อ**: ใบสั่งซื้อที่คุณทำกับซัพพลายเออร์รายนี้
+* **ใบเสร็จการซื้อ**: ใบเสร็จการซื้อที่ได้รับจากซัพพลายเออร์รายนี้ที่คุณบันทึกไว้ในระบบ
+* **ใบกำกับสินค้า**: ใบสั่งซื้อที่คุณได้ทำไว้กับซัพพลายเออร์รายนี้
+* **รายการชำระเงิน**: รายการชำระเงินสำหรับใบแจ้งหนี้การซื้อกับซัพพลายเออร์รายนี้
+* **กฎการกำหนดราคา**: กฎการกำหนดราคาใดๆ ที่เชื่อมโยงกับซัพพลายเออร์รายนี้ ดูหัวข้อ _2.2 Currency and Price List_ เพื่อทราบวิธีการทำงาน
 
 ![Supplier Save](/docs/assets/img/buying/supplier-save.png)
 
-By clicking on the View button, you can view the Accounting Ledger or Accounts Payable directly for this supplier.
+โดยการคลิกที่ปุ่มดู คุณสามารถดูบัญชีแยกประเภทบัญชีหรือบัญชีเจ้าหนี้ได้โดยตรงสำหรับซัพพลายเออร์รายนี้
 
-There's a button to 'Send GST Update Reminder' to the supplier. You need to have a default [email account](/docs/user/manual/en/setting-up/email/email-account) setup first.
+มีปุ่ม "ส่งการแจ้งเตือนการอัปเดต GST" ไปยังซัพพลายเออร์ คุณต้องมีการตั้งค่าเริ่มต้น [บัญชีอีเมล](/docs/user/manual/th/setting-up/email/email-account) ก่อน
 
 ## 3. Video
 <div>
@@ -111,8 +113,8 @@ There's a button to 'Send GST Update Reminder' to the supplier. You need to have
     </div>
 </div>
 
-### 4. Related Topics
-1. [Supplier Quotation](/docs/user/manual/en/buying/supplier-quotation)
-1. [Supplier Scorecard](/docs/user/manual/en/buying/supplier-scorecard)
-1. [Maintaining Supplier's Item Code In the Item Master](/docs/user/manual/en/buying/articles/maintaining-suppliers-part-no-in-item)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [ใบเสนอราคาซัพพลายเออร์](/docs/user/manual/th/buying/supplier-quotation)
+1. [Supplier Scorecard](/docs/user/manual/th/buying/supplier-scorecard)
+1. [การรักษารหัสสินค้าของซัพพลายเออร์ในหลักรายการ](/docs/user/manual/th/buying/articles/maintaining-suppliers-part-no-in-item)
 {next}

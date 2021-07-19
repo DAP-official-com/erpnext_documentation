@@ -1,40 +1,40 @@
 <!-- add-breadcrumbs -->
 
-# Employee Group
+#กลุ่มพนักงาน
 
-**Employee Group is grouping of Employees based on some attributes such as Designation, Grade, Branch, etc.**
+**กลุ่มพนักงานคือการจัดกลุ่มพนักงานตามคุณลักษณะบางอย่าง เช่น การแต่งตั้ง เกรด สาขา ฯลฯ**
 
-To access Employee Group, go to:
+ในการเข้าถึงกลุ่มพนักงาน ไปที่:
 
-> Home > Human Resources > Employee > Employee Group
+> หน้าหลัก > ทรัพยากรบุคคล > พนักงาน > กลุ่มพนักงาน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Employee Group, it is advisable you create the following documents:
+ก่อนสร้างกลุ่มพนักงาน ขอแนะนำให้คุณสร้างเอกสารต่อไปนี้:
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
+* [พนักงาน](/docs/user/manual/th/human-resources/employee)
 
 
-## 2. How to create an Employee Group
+## 2. วิธีสร้างกลุ่มพนักงาน
 
-1. Go to Employee Group list, click on New.
-1. Enter the Name.
-1. Select and add Employee ID to the group. The Employee Name will get automatically fetched.
-1. Save.
+1. ไปที่รายชื่อกลุ่มพนักงาน คลิกที่ ใหม่
+1. ป้อนชื่อ
+1. เลือกและเพิ่มรหัสพนักงานในกลุ่ม ชื่อพนักงานจะถูกดึงโดยอัตโนมัติ
+1. บันทึก
 
     <img class="screenshot" alt="Employee Group" src="{{docs_base_url}}/assets/img/human-resources/employee-group.png">
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Service Level Agreement
+### 3.1 ข้อตกลงระดับการให้บริการ
 
-An Employee Group can be added to the [Service Level Agreement](/docs/user/manual/en/support/service-level-agreement) doctype, where the Service Level can be specified for a particular Employee Group.
+คุณสามารถเพิ่มกลุ่มพนักงานลงในประเภทเอกสาร [ข้อตกลงระดับการให้บริการ](/docs/user/manual/th/support/service-level-agreement) ซึ่งสามารถระบุระดับบริการสำหรับกลุ่มพนักงานเฉพาะได้
 
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Employment Type](/docs/user/manual/en/human-resources/employment-type)
-1. [Branch](/docs/user/manual/en/human-resources/branch)
-1. [Department](/docs/user/manual/en/human-resources/department)
-1. [Designation](/docs/user/manual/en/human-resources/designation)
-1. [Employee Grade](/docs/user/manual/en/human-resources/employee-grade)
+1. [ประเภทการจ้างงาน](/docs/user/manual/th/human-resources/employment-type)
+1. [สาขา](/docs/user/manual/th/human-resources/branch)
+1. [แผนก](/docs/user/manual/th/human-resources/department)
+1. [การกำหนด](/docs/user/manual/th/human-resources/designation)
+1. [ระดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade)

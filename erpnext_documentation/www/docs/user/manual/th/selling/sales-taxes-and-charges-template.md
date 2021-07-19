@@ -1,57 +1,57 @@
 <!-- add-breadcrumbs -->
-# Sales Taxes and Charges Template
+# เทมเพลตภาษีขายและค่าธรรมเนียม
 
-**Sales Taxes and Charges may be applied to any item you sell.**
+**ภาษีขายและค่าบริการอาจถูกนำไปใช้กับสินค้าใดๆ ที่คุณขาย**
 
-The templates created from this form can be used in Sales Orders and Sales Invoices.
+เทมเพลตที่สร้างจากแบบฟอร์มนี้สามารถใช้ในใบสั่งขายและใบกำกับสินค้าได้
 
-For Tax Accounts that you want to use in the tax templates, you must set the Account Type field as 'Tax' for that particular account. The way ERPNext sets up taxes is via templates. Other types of charges that
-may apply to your invoices (like shipping, insurance etc.) can also be configured as taxes.
+สำหรับบัญชีภาษีที่คุณต้องการใช้ในเทมเพลตภาษี คุณต้องตั้งค่าฟิลด์ประเภทบัญชีเป็น 'ภาษี' สำหรับบัญชีนั้น ๆ วิธีที่ ERPNext ตั้งค่าภาษีคือการใช้เทมเพลต ค่าใช้จ่ายประเภทอื่นๆ ที่
+อาจนำไปใช้กับใบแจ้งหนี้ของคุณ (เช่น การจัดส่ง การประกันภัย ฯลฯ) นอกจากนี้ยังสามารถกำหนดค่าเป็นภาษีได้อีกด้วย
 
-To know about setting up taxes visit [this page](/docs/user/manual/en/setting-up/setting-up-taxes).
+หากต้องการทราบเกี่ยวกับการตั้งภาษี โปรดไปที่ [หน้านี้](/docs/user/manual/th/setting-up/setting-up-taxes)
 
-To access Sales Taxes and Charges Template, go to:
-> Home > Selling > Settings > Sales Taxes and Charges Template
+ในการเข้าถึงเทมเพลตภาษีขายและค่าธรรมเนียม ไปที่:
+> หน้าแรก > การขาย > การตั้งค่า > เทมเพลตภาษีการขายและค่าธรรมเนียม
 
-To know about setting up taxes visit [this page](/docs/user/manual/en/setting-up/setting-up-taxes)
+หากต้องการทราบเกี่ยวกับการตั้งภาษี โปรดไปที่ [หน้านี้](/docs/user/manual/th/setting-up/setting-up-taxes)
 
-## 1. How to add Sales Taxes/Charges via a template
-Before creating a new template, note that templates are already created for many of the commonly used taxes.
+## 1. วิธีเพิ่มภาษีขาย/ค่าธรรมเนียมผ่านเทมเพลต
+ก่อนสร้างเทมเพลตใหม่ โปรดทราบว่ามีการสร้างเทมเพลตสำหรับภาษีที่ใช้กันทั่วไปจำนวนมากแล้ว
 
-1. Go to the Sales Taxes and Charges Template list, click on New.
-2. Enter a title name for the Tax.
-3. Under type, set on what the tax will be calculated and the tax rate. There are five options under type for which tax will be calculated.
-  1. Actual: You can directly enter the amount for the expense.
-  1. On Net Total: On the net total of all the items.
-  1. On Previous Row Amount: This is for compounding the charges. For example, cess charges over the amount to which tax was already applied in the previous row.
-  1. On Previous Row Total: Same as above but applied on the total bill and not just the amount of an item.
-  1. On Item Quantity: Tax will be calculated as Tax Rate * Item Quantity. For example, if Tax Rate is 2% and number of Items is 1, then Tax Rate will be 4, if number of Items are 5, Tax Rate will be 10, and so on.
-4. Select an account head which has pre set tax rates or create your own.
-1. Selecting default will apply this template by default for new Sales transactions.
-5. Save.
+1. ไปที่รายการเทมเพลตภาษีขายและค่าธรรมเนียม คลิกที่ใหม่
+2. ป้อนชื่อสำหรับภาษี
+3. ภายใต้ประเภท กำหนดสิ่งที่จะคำนวณภาษีและอัตราภาษี มีห้าตัวเลือกภายใต้ประเภทที่จะคำนวณภาษี
+  1. ยอดจริง: คุณสามารถป้อนจำนวนเงินสำหรับค่าใช้จ่ายได้โดยตรง
+  1. ยอดสุดท้าย: ยอดรวมสุทธิของรายการทั้งหมด
+  1. ในจำนวนแถวก่อนหน้า: นี่คือการทบต้นประจุ ตัวอย่างเช่น ภาษีจะเรียกเก็บจากจำนวนเงินที่มีการใช้ภาษีอยู่แล้วในแถวก่อนหน้า
+  1. ในยอดจำนวนรวมของแถวก่อนหน้า: เช่นเดียวกับด้านบน แต่ใช้กับยอดรวมและไม่ใช่เฉพาะจำนวนรายการ
+  1. จำนวนสินค้า: ภาษีจะถูกคำนวณเป็นอัตราภาษี * จำนวนสินค้า. ตัวอย่างเช่น หากอัตราภาษี 2% และจำนวนสินค้าคือ 1 อัตราภาษีจะเป็น 4 หากจำนวนสินค้าเป็น 5 อัตราภาษีจะเป็น 10 เป็นต้น
+4. เลือกหัวหน้าบัญชีที่มีอัตราภาษีกำหนดไว้ล่วงหน้าหรือสร้างขึ้นเอง
+1. การเลือกค่าเริ่มต้นจะใช้เทมเพลตนี้โดยค่าเริ่มต้นสำหรับธุรกรรมการขายใหม่
+5. บันทึก
   ![Sales taxes](/docs/assets/img/selling/sales-taxes.png)
 
-**Is Inter State**: For India. On selection of a customer in Sales Invoice or Delivery Note, if the GST codes of place of supply and customer shipping address don't match, the template with 'Is Inter State' ticked will be set as the taxes template. If the place of supply and shipping address are the same, the default taxes template will be applied. This also applies to Purchase Invoice, on selection of Supplier, the templates are set depending on the addresses. For example, IGST.
+<!-- **Is Inter State**: For India. On selection of a customer in Sales Invoice or Delivery Note, if the GST codes of place of supply and customer shipping address don't match, the template with 'Is Inter State' ticked will be set as the taxes template. If the place of supply and shipping address are the same, the default taxes template will be applied. This also applies to Purchase Invoice, on selection of Supplier, the templates are set depending on the addresses. For example, IGST.-->
 
-## 2. Features
-### 2.1 Sales Taxes and Charges table
+## 2. คุณสมบัติ
+### 2.1 ตารางภาษีขายและค่าบริการ
 
-* **Consider Tax or Charge for**: Total - for the total of all items. Valuation - for each item. Valuation and total - apply tax/charge to both. [Check out this article](/docs/user/manual/en/accounts/articles/what-is-the-differences-of-total-and-valuation-in-tax-and-charges) to know the difference.
+* **พิจารณาภาษีหรือค่าธรรมเนียม**: รวม - รวมเป็นรายการทั้งหมด การประเมินราคา - สำหรับแต่ละรายการ การประเมินมูลค่าและยอดรวม - คิดภาษี/ค่าธรรมเนียมทั้งสองอย่าง [ดูบทความนี้](/docs/user/manual/th/accounts/articles/what-is-the-differences-of-total-and-valuation-in-tax-and-charges) เพื่อทราบความแตกต่าง
 
-* **Reference Row #**: If tax is based on "Previous Row Total" you can select the row number which will be taken as a base for this calculation (default is the previous row).
+* **บรรทัดอ้างอิง #**: หากภาษีขึ้นอยู่กับ "ในจำนวนแถวก่อนหน้า" คุณสามารถเลือกหมายเลขแถวที่จะใช้เป็นฐานสำหรับการคำนวณนี้ (ค่าเริ่มต้นคือแถวก่อนหน้า)
     ![Sales taxes table](/docs/assets/img/selling/sales-taxes-table.png)
 
-* **Is this Tax included in Basic Rate?**: If checked, the tax amount will be considered as already included in the Print Rate / Print Amount in the Item table of a transaction. This is useful when you want to give tax inclusive price to your customers. To account for tax inclusive rates, the system calculates the Net Amount by deducting the amount of tax to be applied then calculates the tax on it.
-* **Account Head:** The Account ledger under which this tax will be booked. If you select VAT or any other preset heads, the rate will be automatically filled.
-* **Cost Center:** If the tax/charge is an income (like shipping) or expense it needs to be booked against a Cost Center.
-* **Description:** Description of the tax (that will be printed in invoices/quotes).
-* **Rate:** The Tax rate, eg: 14 = 14% tax.
-* **Amount:** The Tax amount to be applied, eg: 100.00 = ₹100 tax.
+* **ภาษีนี้รวมอยู่ในอัตราพื้นฐานหรือไม่**: หากเลือก จำนวนเงินภาษีจะถือว่ารวมอยู่ในอัตราพิมพ์ / จำนวนการพิมพ์แล้วในตารางรายการของธุรกรรม สิ่งนี้มีประโยชน์เมื่อคุณต้องการให้ราคารวมภาษีแก่ลูกค้าของคุณ ในการคิดอัตรารวมภาษี ระบบจะคำนวณจำนวนเงินสุทธิโดยหักจำนวนภาษีที่จะใช้แล้วคำนวณภาษี
+* **หัวบัญชี:** บัญชีแยกประเภทสำหรับภาษีนี้จะถูกจอง หากคุณเลือกภาษีมูลค่าเพิ่มหรือค่าที่ตั้งไว้ล่วงหน้าอื่น ๆ อัตราจะถูกกรอกโดยอัตโนมัติ
+* **ศูนย์ต้นทุน:** หากภาษี/ค่าบริการเป็นรายได้ (เช่น ค่าขนส่ง) หรือค่าใช้จ่าย จะต้องจองกับศูนย์ต้นทุน
+* **คำอธิบาย:** คำอธิบายภาษี (ที่จะพิมพ์ในใบแจ้งหนี้/ใบเสนอราคา)
+* **อัตรา:** อัตราภาษี เช่น 14 = ภาษี 14%
+* **จำนวนเงิน:** จำนวนภาษีที่จะใช้ เช่น 100.00 = ₹100 ภาษี
 
-The tax rates you define in the template be the standard tax rate for all Items. If there are Items that are supposed have different rates, you can override the standard tax rate by setting an Item Tax Template to the Item or Item Group.
+อัตราภาษีที่คุณกำหนดในเทมเพลตจะเป็นอัตราภาษีมาตรฐานสำหรับสินค้าทั้งหมด หากมีรายการที่ควรจะมีอัตราที่แตกต่างกัน คุณสามารถแทนที่อัตราภาษีมาตรฐานได้โดยการตั้งค่าเทมเพลตภาษีสินค้าเป็นรายการหรือกลุ่มรายการ
 
-### 3. Related Topics
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Selling Settings](/docs/user/manual/en/selling/selling-settings)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [คำสั่งขาย](/docs/user/manual/th/selling/sales-order)
+1. [การตั้งค่าการขาย](/docs/user/manual/th/selling/selling-settings)
 
 {next}

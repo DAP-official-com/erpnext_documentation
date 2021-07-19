@@ -1,55 +1,55 @@
 <!-- add-breadcrumbs -->
-# Blanket Order
+# การออกใบสั่งซื้อล่วงหน้าในปริมาณมาก (Blanket Order)
 
-**A Blanket Order is an order from a customer to supply materials for specific items over a period of time at pre-negotiated rates.**
+**ใบสั่งซื้อแบบครอบคลุมเป็นคำสั่งจากลูกค้าในการจัดหาวัสดุสำหรับสินค้าเฉพาะในช่วงระยะเวลาหนึ่งในอัตราที่ต่อรองไว้ล่วงหน้า**
 
-From a blanket order, sales orders can be generated as per the delivery schedule provided by the customer. Blanket orders help customers avoid storing materials in huge quantities while allowing them to take advantage of fixed rates by committing volumes within a specific time period.
+จากใบสั่งแบบครอบคลุม สามารถสร้างใบสั่งขายตามกำหนดการส่งมอบที่ลูกค้าให้ไว้ คำสั่งซื้อแบบครอบคลุมช่วยให้ลูกค้าหลีกเลี่ยงการจัดเก็บวัสดุในปริมาณมาก ในขณะเดียวกันก็ช่วยให้ลูกค้าใช้ประโยชน์จากอัตราคงที่โดยกำหนดปริมาณภายในระยะเวลาที่กำหนด
 
-To access Blanket Order, go to:
-> Home > Selling > Sales > Blanket Order
+ในการเข้าถึงใบสั่งซื้อแบบครอบคลุม ไปที่:
+> หน้าหลัก > การขาย > ขาย > Blanket Order
 
-## 1. Prerequisites
-Before creating and using a Blanket Order, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้คำสั่งแบบครอบคลุม ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Customer](/docs/user/manual/en/CRM/customer) or [Supplier](/docs/user/manual/en/buying/supplier)
-* [Item](/docs/user/manual/en/stock/item)
+* [ลูกค้า](/docs/user/manual/th/CRM/customer) หรือ [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+* [รายการ](/docs/user/manual/th/stock/item)
 
-## 2. How to Create a Blanket Order for Sales and Purchase
+## 2. วิธีสร้างคำสั่งซื้อแบบครอบคลุมสำหรับการขายและการซื้อ
 
-1. Go to the Blanket Order list, click on New.
-1. Select Selling/Purchasing in Order Type.
-1. Select Customer/Supplier.
-1. Specify the validity period of the order by selecting From Date and To Date.
-1. Enter Item Code, Quantity and Rate in the Item table. You can also mention the Terms and Conditions for each item.
-1. Submit.
+1. ไปที่รายการคำสั่งซื้อแบบครอบคลุม คลิกที่ ใหม่
+1. เลือกการขาย/การจัดซื้อในประเภทคำสั่งซื้อ
+1. เลือกลูกค้า/ซัพพลายเออร์
+1. ระบุระยะเวลาที่ใช้ได้ของคำสั่งซื้อโดยเลือก จากวันที่ (From date) และ ไปถึงวันที่ (To date)
+1. ป้อนรหัสสินค้า ปริมาณ และอัตราในตารางรายการ คุณยังสามารถระบุข้อกำหนดและเงื่อนไขสำหรับแต่ละรายการได้
+1. ส่ง
 
 <img class="screenshot" alt="Blanket Order Selling" src="{{docs_base_url}}/assets/img/selling/blanket-order-selling.gif">
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Create Sales Orders
+### 3.1 สร้างใบสั่งขาย
 
-The 'Ordered Quantity' field will be updated once a Sales Order is placed. Once a Blanket Order is submitted, you can create new Sales Orders by clicking on **Sales Order** under the **Create** button.
+ฟิลด์ 'ปริมาณที่สั่งซื้อ' จะได้รับการอัปเดตเมื่อมีการวางใบสั่งขาย เมื่อส่งคำสั่งซื้อแบบครอบคลุมแล้ว คุณสามารถสร้างใบสั่งขายใหม่ได้โดยคลิกที่ **ใบสั่งขาย** ใต้ปุ่ม **สร้าง**
 
-### 3.2 Create Purchase Orders
+### 3.2 สร้างใบสั่งซื้อ
 
-The 'Ordered Quantity' field will be updated once a Purchase Order is placed. Once a Blanket Order is submitted, you can create new Purchase Orders by clicking on **Purchase Order** under the **Create** button.
+ฟิลด์ 'ปริมาณที่สั่งซื้อ' จะได้รับการอัปเดตเมื่อมีการสั่งซื้อ เมื่อส่งคำสั่งซื้อแบบครอบคลุมแล้ว คุณสามารถสร้างใบสั่งซื้อใหม่ได้โดยคลิกที่ **ใบสั่งซื้อ** ใต้ปุ่ม **สร้าง**
 
-### 3.3. Create Quotations
+### 3.3. สร้างใบเสนอราคา
 
-Once a Blanket Order is submitted, you can create new Quotations by clicking on **Quotation** under the **Create** button.
+เมื่อส่งคำสั่งซื้อแบบครอบคลุมแล้ว คุณสามารถสร้างใบเสนอราคาใหม่ได้โดยคลิกที่ **ใบเสนอราคา** ใต้ปุ่ม **สร้าง**
 
-### 3.4. Dashboard
+### 3.4. แดชบอร์ด
 
-You can view Purchase Orders, Sales Orders and Quotations against this Blanket Order through the Dashboard.
+คุณสามารถดูใบสั่งซื้อ ใบสั่งขาย และใบเสนอราคาเทียบกับใบสั่งซื้อแบบครอบคลุมนี้ได้ผ่านแดชบอร์ด
 
 <img class="screenshot" alt="Blanket Order Dashboard" src="{{docs_base_url}}/assets/img/selling/blanket_order_dashboard.png">
 
-**Note-** Multiple Sales Orders, Purchase Orders, and Quotations can be created against one Blanket Order.
+**หมายเหตุ:** สามารถสร้างใบสั่งขาย ใบสั่งซื้อ และใบเสนอราคาได้หลายรายการต่อหนึ่งคำสั่งซื้อแบบครอบคลุม
 
 
-### 4. Related Topics
-* [Sales Order](/docs/user/manual/en/selling/sales-order)
-* [Purchase Order](/docs/user/manual/en/buying/purchase-order)
+### 4. หัวข้อที่เกี่ยวข้อง
+* [คำสั่งขาย](/docs/user/manual/th/selling/sales-order)
+* [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)
 
 {next}

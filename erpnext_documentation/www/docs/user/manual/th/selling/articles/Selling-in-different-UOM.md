@@ -1,30 +1,28 @@
 <!-- add-breadcrumbs -->
-#Selling in Different Unit (UoM)
+#ขายแยกหน่วย (UoM)
  
-A sell price unit of measure (UOM) is the UOM with which you price items. You can have multiple sell price UOMs for any inventory item.  However, when Customer places, UoM for an item could change. 
+หน่วยวัดราคาขาย (UOM) คือ UOM ที่คุณใช้ตั้งราคาสินค้า คุณสามารถมี UOM ราคาขายได้หลายรายการสำหรับรายการสินค้าคงคลังใดๆ อย่างไรก็ตาม เมื่อลูกค้าวาง UoM สำหรับสินค้าสามารถเปลี่ยนแปลงได้
  
-For example an Item Pen is stocked in Nos, but sold in Box. Hence we will make Sales Order for Pen in Box.
+ตัวอย่างเช่น ปากกา มีจำหน่ายในหน่วยเป็น Nos แต่ขายในกล่อง ดังนั้นเราจะทำการสั่งขายปากกาในกล่อง
  
-###Step 1: In the Item master, under Unit of Measure section, you can list all the possible UoM of an item, with its UoM Conversion Factor. Update UoM Conversion Factors
-In one Box, if you get 10 Nos. of Pen, UoM Conversion Factor would be 10.
+###ขั้นตอนที่ 1: ในหลักรายการ ในส่วนหน่วยวัด คุณสามารถแสดงรายการ UoM ที่เป็นไปได้ทั้งหมดของรายการด้วยปัจจัยการแปลง UoM อัปเดตปัจจัยการแปลง UoM
+ในหนึ่งกล่อง ถ้าคุณได้ปากกา 10 ด้าม ปัจจัยการแปลง UoM จะเท่ากับ 10
 
 <img class="screenshot" alt="Item Unit of Measure" src="{{docs_base_url}}/assets/img/selling/Item-UOM.png">
 
 
-###Setp 2: In the Sale Order, you will find two UoM fields
+###Setp 2: ในใบสั่งขาย คุณจะพบช่อง UoM สองช่อง
 
 -UoM
 -Stock UoM
 
-In both the fields, default UoM of an item will be fetched by default. You should edit UoM field, and select Sale UoM (Box in this case).  Updating Sales UoM is mainly for the reference of the Customer. In the print format, you will see item quantity in the Sales UoM.
+ในทั้งสองฟิลด์ UoM เริ่มต้นของรายการจะถูกดึงข้อมูลตามค่าเริ่มต้น คุณควรแก้ไขฟิลด์ UoM และเลือก Sale UoM (กล่องในกรณีนี้) การอัปเดต Sales UoM มีไว้เพื่อการอ้างอิงของลูกค้าเป็นหลัก ในรูปแบบการพิมพ์ คุณจะเห็นปริมาณสินค้าใน Sales UoM
 
 <img class="screenshot" alt="Sale order Unit of Measure" src="{{docs_base_url}}/assets/img/selling/Sale-Order-UOM.png">
  
-Based on the Qty and Conversion Factor, qty will be calculated in the Stock UoM of an item. If you sell just one Box, then Qty as per stock UoM will be set as 10.
+ตามจำนวนและปัจจัยการแปลง จำนวนจะถูกคำนวณใน UoM ของสต็อคของรายการ หากคุณขายเพียงกล่องเดียว จำนวนต่อหุ้น UoM จะถูกกำหนดเป็น 10
  
+###การลงรายการสต๊อคในบัญชีแยกประเภท
  
-###Stock Ledger Posting
- 
-Irrespective of the Sales UoM selected in the Sale Order, stock ledger posting will be done in the Default UoM of an item. Hence you should ensure that conversion factor is entered correctly while selling item in different UoM.
-
+โดยไม่คำนึงถึง Sales UoM ที่เลือกในใบสั่งขาย การผ่านรายการบัญชีแยกประเภทจะทำใน UoM เริ่มต้นของสินค้า ดังนั้นคุณควรตรวจสอบให้แน่ใจว่าได้ป้อนปัจจัยการแปลงอย่างถูกต้องในขณะที่ขายสินค้าใน UoM ที่แตกต่างกัน
 <img class="screenshot" alt="Stock report in UOM" src="{{docs_base_url}}/assets/img/selling/stock ledger for as STOCK-UOM.png">

@@ -1,19 +1,19 @@
 <!-- add-breadcrumbs -->
-# Fleet Management
+#การจัดการขนส่ง
 
-Fleet Management section of Human Resources helps your Organization manage their fleet of vehicles and track their expenses.
+ส่วนการจัดการกลุ่มยานพาหนะของทรัพยากรบุคคลช่วยให้องค์กรของคุณจัดการยานพาหนะและติดตามค่าใช้จ่ายได้
 
-To use Fleet Management in ERPNext, you can do the following:
+ในการใช้การจัดการขนส่งใน ERPNext คุณสามารถทำสิ่งต่อไปนี้:
 
-  1. Set Up a Vehicle.
-  2. Enter Vehicle Logs regularly.
-  3. Make Expense Claims for Vehicle Expenses.
-  4. View Reports for Vehicle Expenses.
+  1. ตั้งค่ายานพาหนะ
+  2. เข้าสู่บันทึกยานพาหนะเป็นประจำ
+  3. เรียกร้องค่าใช้จ่ายสำหรับค่าใช้จ่ายยานพาหนะ
+  4. ดูรายงานค่าใช้จ่ายยานพาหนะ
 
 
-## Related Topics
+## หัวข้อที่เกี่ยวข้อง
 
-1. [Vehicle](/docs/user/manual/en/human-resources/vehicle)
-1. [Vehicle Log](/docs/user/manual/en/human-resources/vehicle-log)
+1. [ยานพาหนะ](/docs/user/manual/th/human-resources/vehicle)
+1. [บันทึกยานพาหนะ](/docs/user/manual/th/human-resources/vehicle-log)
 
 

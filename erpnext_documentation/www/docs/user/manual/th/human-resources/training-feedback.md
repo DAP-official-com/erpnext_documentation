@@ -1,32 +1,32 @@
-# Training Feedback
+#ผลตอบรับการอบรม
 
-**Once the Training is complete, employees can share their feedback via Training Feedback.**
+**เมื่อการฝึกอบรมเสร็จสิ้น พนักงานสามารถแชร์ความคิดเห็นผ่าน ผลตอบรับการอบรม**
 
-To access Training Feedback, go to:
-> Human Resources > Training > Training Feedback
-
-
-## 1. Prerequisites
-
-Before creating a Training Event, it is advisable you create the following documents:
-
-* [Training Program](/docs/user/manual/en/human-resources/training-program)
-* [Training Event](/docs/user/manual/en/human-resources/training-event)
-* [Employee](/docs/user/manual/en/human-resources/employee)
+ในการเข้าถึงผลตอบรับการฝึกอบรม ไปที่:
+> ทรัพยากรบุคคล > การฝึกอบรม > ผลตอบรับการฝึกอบรม
 
 
-## 2. How to create a Training Feedback
+## 1. ข้อกำหนดเบื้องต้น
 
-1. Go to the Training Feedback list, click on New.
-1. Select the Employee.
-1. Select the Training Event. Based on that, the corresponding Event Name, Course and Trainer Name will get fetched.
-1. Enter the feedback in the Feedback box.
-1. Save and Submit.
+ก่อนสร้างกิจกรรมการฝึกอบรม ขอแนะนำให้คุณสร้างเอกสารต่อไปนี้:
+
+* [โปรแกรมการฝึกอบรม](/docs/user/manual/th/human-resources/training-program)
+* [กิจกรรมการฝึกอบรม](/docs/user/manual/th/human-resources/training-event)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+
+
+## 2. วิธีสร้างคำติชมการฝึกอบรม
+
+1. ไปที่รายการผลตอบรับการฝึกอบรม คลิกใหม่
+1. เลือกพนักงาน
+1. เลือกกิจกรรมการฝึกอบรม ตามนั้น ชื่อกิจกรรม หลักสูตร และชื่อผู้ฝึกสอนที่เกี่ยวข้องจะถูกดึงออกมา
+1. ป้อนคำติชมในกล่องคำติชม
+1. บันทึกและส่ง
 
     <img class="screenshot" alt="Employee" src="{{docs_base_url}}/assets/img/human-resources/training-feedback.png">
 
-> Note: You can also access Training Feedback directly through the Training Event dashboard. 
+> หมายเหตุ: คุณยังสามารถเข้าถึงคำติชมการฝึกอบรมได้โดยตรงผ่านแดชบอร์ดกิจกรรมการฝึกอบรม
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Training Result](/docs/user/manual/en/human-resources/training-result)
+1. [ผลการฝึกอบรม](/docs/user/manual/th/human-resources/training-result)

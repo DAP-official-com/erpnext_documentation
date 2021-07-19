@@ -1,41 +1,41 @@
 <!-- add-breadcrumbs -->
-# Employee Transfer
+# การย้ายพนักงาน
 
-**Employee Transfer is a form of internal mobility, in which the Employee is shifted from one job to another usually at a different location, department, or unit.**
+**การโอนย้ายพนักงานเป็นรูปแบบหนึ่งของการเคลื่อนไหวภายใน ซึ่งพนักงานจะถูกย้ายจากงานหนึ่งไปอีกงานหนึ่งโดยปกติจะอยู่ที่สถานที่ แผนก หรือหน่วยอื่น**
 
-In ERPNext, you can record Employee transfers to different Company or Department by using the Employee Transfer document.
+ใน ERPNext คุณสามารถบันทึกการโอนพนักงานไปยังบริษัทหรือแผนกอื่นได้โดยใช้เอกสารการโอนพนักงาน
 
-To access Employee Transfer go to:
+ในการเข้าถึงการโอนพนักงานไปที่:
 
-> Human Resource > Employee Lifecycle > Employee Transfer
+> ทรัพยากรบุคคล > วงจรชีวิตพนักงาน > การย้ายพนักงาน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Department](/docs/user/manual/en/human-resources/department)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [แผนก](/docs/user/manual/th/human-resources/department)
 
 
-## 2. How to create a Employee Transfer
+## 2. วิธีสร้างการโอนย้ายพนักงาน
 
-1. Select the Employee.
-1. Select the Transfer Date.
-1. Select the New Company in case the Employee is transferred to a different company (optional). 
-1. In the Employee Transfer Details table, select the Property and set the Current and New value.
-1. Additionally, 'Create New Employee' checkbox can be checked to create a new Employee ID for the transferred Employee.
+1. เลือกพนักงาน
+1. เลือกวันโอน
+1. เลือกบริษัทใหม่ ในกรณีที่พนักงานถูกย้ายไปยังบริษัทอื่น (ไม่บังคับ)
+1. ในตารางรายละเอียดการโอนพนักงาน เลือกคุณสมบัติ และตั้งค่าปัจจุบันและใหม่
+1. นอกจากนี้ คุณสามารถเลือกช่องทำเครื่องหมาย 'สร้างพนักงานใหม่' เพื่อสร้างรหัสพนักงานใหม่สำหรับพนักงานที่โอนย้าย
 
-> Note: If Create New Employee ID is checked, a new Employee will be created with property changes in Transfer Details table and old Employee will be marked as relieved. Leave allocations for the new Employee has to be manually created from Leave Period.
+> หมายเหตุ: หากเลือก สร้าง ID พนักงานใหม่ ใหม่พนักงานใหม่จะถูกสร้างขึ้นพร้อมกับการเปลี่ยนแปลงคุณสมบัติในตารางรายละเอียดการโอนและพนักงานเก่าจะถูกทำเครื่องหมายว่าโล่งใจ การจัดสรรการลางานสำหรับพนักงานใหม่จะต้องสร้างขึ้นด้วยตนเองจากรอบระยะเวลาลางาน
 
 <img class="screenshot" alt="Employee Transfer" src="{{docs_base_url}}/assets/img/human-resources/employee-transfer.png">
 
 
 
-> Note: Transfer document can be submitted on or after Transfer Date. Once submitted all the changes added to Transfer Details table will applied to Employee.
+> หมายเหตุ: สามารถส่งเอกสารการโอนได้ในหรือหลังวันที่โอน เมื่อส่งการเปลี่ยนแปลงทั้งหมดที่เพิ่มลงในตารางรายละเอียดการโอนจะถูกนำไปใช้กับพนักงาน
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Employee Onboarding](/docs/user/manual/en/human-resources/employee-onboarding)
-1. [Employee Separation](/docs/user/manual/en/human-resources/employee-separation)
-1. [Employee Promotion](/docs/user/manual/en/human-resources/employee_transfer)
+1. [Employee Onboarding](/docs/user/manual/th/human-resources/employee-onboarding)
+1. [แยกพนักงาน](/docs/user/manual/th/human-resources/employee-separation)
+1. [เลื่อนตำแหน่งพนักงาน](/docs/user/manual/th/human-resources/employee_transfer)
 
 
 

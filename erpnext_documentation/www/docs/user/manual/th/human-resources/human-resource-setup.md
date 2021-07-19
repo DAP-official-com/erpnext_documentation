@@ -1,42 +1,42 @@
 <!-- add-breadcrumbs -->
-# Human Resource Setup
+# การตั้งค่าทรัพยากรมนุษย์
 
-The HR module has a setup process where you create the masters for all the major activities.
+โมดูล HR มีขั้นตอนการตั้งค่าที่คุณสร้างต้นแบบสำหรับกิจกรรมหลักทั้งหมด
 
-### Organization Setup
+### การตั้งค่าองค์กร
 
-To setup your Employee master you must first create:
+ในการตั้งค่าหลักพนักงานของคุณ คุณต้องสร้างก่อน:
 
-* Employment Type (like Permanent, Temp, Contractor, Intern etc).
-* Branch (if there are multiple offices).
-* Department (if any, like Accounting, Sales etc).
-* Designation (CEO, Sales Manager etc).
-* Grade (A, B, C etc, usually based on seniority).
+* ประเภทการจ้างงาน (เช่น ถาวร, ชั่วคราว, ผู้รับเหมา, ฝึกงาน ฯลฯ )
+* สาขา (ถ้ามีหลายสาขา)
+* ฝ่าย (ถ้ามี เช่น ฝ่ายบัญชี ฝ่ายขาย ฯลฯ)
+* การแต่งตั้ง (CEO, ผู้จัดการฝ่ายขาย ฯลฯ )
+* เกรด (A, B, C ฯลฯ มักขึ้นอยู่กับรุ่นพี่)
 
-Check [Setup](/docs/user/manual/en/setting-up) for more details on each of masters, global _HR Settings_ and other configurations.
+ตรวจสอบ [การตั้งค่า](/docs/user/manual/th/setting-up) สำหรับรายละเอียดเพิ่มเติมเกี่ยวกับต้นแบบแต่ละรายการ การตั้งค่า _HR ส่วนกลาง_ และการกำหนดค่าอื่นๆ
 
-### Leave Setup
+### ออกจากการตั้งค่า
 
-To setup Leaves, create:
+ในการตั้งค่าการลา ให้สร้าง:
 
-* Leave Type (like Sick Leave, Travel Leave etc)
-* Holiday List (list of annual holidays for the year - these days will not be considered in Leave Applications)
-* Leave Policy to effectively track and manage Employee leaves across the company
+* ประเภทการลา (เช่น ลาป่วย ลาท่องเที่ยว ฯลฯ)
+* รายการวันหยุด (รายชื่อวันหยุดประจำปีสำหรับปี - วันนี้จะไม่ได้รับการพิจารณาในใบสมัครลา)
+* Leave Policy เพื่อติดตามและจัดการการลางานของพนักงานทั่วทั้งบริษัทอย่างมีประสิทธิภาพ
 
-You can read [Leaves](/docs/user/manual/en/human-resources/leave-management-intro/) for a detailed description about how you can configure and manage Leaves.
+คุณสามารถอ่าน [การลางาน](/docs/user/manual/th/human-resources/leave-management-intro/) เพื่อดูคำอธิบายโดยละเอียดเกี่ยวกับวิธีการกำหนดค่าและจัดการการลางาน
 
-### Payroll (Salary) Setup
+### การตั้งค่าเงินเดือน
 
-In ERPNext, salaries have two types of components, earnings (basic salary, expenses paid by the company, like telephone bill, travel allowance etc) and deductions (amounts deducted for taxes, social security etc). You can create and assign salary structures to employees and ERPNext simplifies most of the payroll processing for you.
+ใน ERPNext เงินเดือนมีองค์ประกอบสองประเภท ได้แก่ รายได้ (เงินเดือนพื้นฐาน ค่าใช้จ่ายที่บริษัทจ่าย เช่น ค่าโทรศัพท์ ค่าเดินทาง ฯลฯ) และการหักเงิน (จำนวนเงินที่หักสำหรับภาษี ประกันสังคม ฯลฯ) คุณสามารถสร้างและกำหนดโครงสร้างเงินเดือนให้กับพนักงานได้ และ ERPNext ช่วยลดความยุ่งยากในการประมวลผลเงินเดือนส่วนใหญ่ให้กับคุณ
 
-Read more about setting up your payroll and how ERPNext simplifies payroll processing in [Salary and Payroll](/docs/user/manual/en/human-resources/payroll-intro).
+อ่านเพิ่มเติมเกี่ยวกับการตั้งค่าบัญชีเงินเดือนของคุณและวิธีที่ ERPNext ช่วยลดความยุ่งยากในการประมวลผลเงินเดือนใน [เงินเดือน](/docs/user/manual/th/human-resources/payroll-intro)
 
-If you intend to configure ERPNext to calculate Income Tax deductions automatically based on multiple Salary Slabs, [Setting Up Income Tax Deduction](/docs/user/manual/en/human-resources/setting-up-tax) will help you understand how you can set this up properly.
+หากคุณตั้งใจที่จะกำหนดค่า ERPNext เพื่อคำนวณการหักภาษีเงินได้โดยอัตโนมัติตามแผ่นเงินเดือนหลายแผ่น [การตั้งค่าการลดหย่อนภาษีเงินได้](/docs/user/manual/th/human-resources/setting-up-tax) จะช่วยให้คุณเข้าใจว่า คุณสามารถตั้งค่านี้ได้อย่างถูกต้อง
 
-### Recruitment
+### การรับสมัคร
 
-It is important for enterprises to plan their manpower recruitment for future periods. ERPNext allows you to define recruitment plans at group company level. Subsidiary companies can create and publish job openings based on the group company plans, making it easy to manage your hiring process. To understand how you can set this up, check [Staffing Plan](/docs/user/manual/en/human-resources/staffing-plan)
+เป็นสิ่งสำคัญสำหรับองค์กรในการวางแผนการจัดหากำลังคนสำหรับช่วงเวลาในอนาคต ERPNext ช่วยให้คุณกำหนดแผนการสรรหาที่ระดับกลุ่มบริษัทได้ บริษัทในเครือสามารถสร้างและเผยแพร่ตำแหน่งงานว่างตามแผนของกลุ่มบริษัท ทำให้ง่ายต่อการจัดการกระบวนการจ้างงานของคุณ เพื่อให้เข้าใจว่าคุณสามารถตั้งค่านี้ได้อย่างไร ให้ตรวจสอบ [แผนพนักงาน](/docs/user/manual/th/human-resources/staffing-plan)
 
-If you have an active Staffing Plan, every time you create a new _Job Opening_ ERPNext will validate the open positions and current employment count with the Staffing Plan.
+หากคุณมีแผนการจัดหาพนักงานที่ใช้งานอยู่ ทุกครั้งที่คุณสร้าง _Job Opening_ ERP ใหม่ ถัดไปจะตรวจสอบความถูกต้องของตำแหน่งงานที่เปิดอยู่และจำนวนการจ้างงานปัจจุบันด้วยแผนการจัดหาพนักงาน
 
 {next}

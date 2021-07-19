@@ -1,54 +1,54 @@
 <!-- add-breadcrumbs -->
-# Brand
+#แบรนด์
 
-**A Brand identifies items with a specific name.**
+**แบรนด์ระบุสินค้าด้วยชื่อเฉพาะ**
 
-Usually, a Brand is the manufacturer or packer of a specific product. For example, Apple is a brand that manufactures laptops. A Brand is not necessarily the [Manufacturer](/docs/user/manual/en/stock/manufacturer) of an Item, it's only the name under which a product is sold. For example, if you manufacture plastic cups, you may license it to a big brand so that they sell it under their Brand.
+โดยปกติ แบรนด์คือผู้ผลิตหรือผู้บรรจุหีบห่อของผลิตภัณฑ์เฉพาะ ตัวอย่างเช่น Apple เป็นแบรนด์ที่ผลิตแล็ปท็อป แบรนด์ไม่จำเป็นต้องเป็น [Manufacturer](/docs/user/manual/th/stock/manufacturer) ของสินค้า แต่เป็นเพียงชื่อที่ใช้ในการขายสินค้าเท่านั้น ตัวอย่างเช่น หากคุณผลิตถ้วยพลาสติก คุณอาจอนุญาตให้ใช้แบรนด์ใหญ่เพื่อขายภายใต้แบรนด์ของตน
 
-In ERPNext, Brands can be assigned to Items for identifying and assigning certain defaults.
+ใน ERPNext แบรนด์สามารถกำหนดให้กับรายการเพื่อระบุและกำหนดค่าเริ่มต้นบางอย่างได้
 
-To access the Brand list, go to:
+ในการเข้าถึงรายการแบรนด์ ไปที่:
 
-> Home > Selling > Sales > Brand
+> หน้าหลัก > ขาย > ขาย > แบรนด์
 
-## 1. How to Create a Brand
-1. Go to the Brand list and click on New.
-1. Enter a Brand name and enter a description if needed.
-1. Save.
+## 1. วิธีสร้างแบรนด์
+1. ไปที่รายการแบรนด์และคลิกใหม่
+1. ป้อนชื่อแบรนด์และป้อนคำอธิบายหากจำเป็น
+1. บันทึก
 
     ![Brand](/docs/assets/img/selling/brand.png)
 
-Now this Brand can be associated with different Items.
+แบรนด์นี้สามารถเชื่อมโยงกับไอเท็มต่างๆ
 
 ![Brand in Item](/docs/assets/img/selling/brand-in-item.png)
 
-## 2. Features
-### 2.1 Setting defaults for Items of this Brand
+## 2. คุณสมบัติ
+### 2.1 การตั้งค่าเริ่มต้นสำหรับสินค้าของแบรนด์นี้
 
 ![Brand Defaults](/docs/assets/img/selling/brand-defaults.png)
 
-The following defaults can be set for a Brand. On assigning this brand to an Item, the set defaults will be fetched when performing Sales/Purchase transactions with Item of this Brand.
+ค่าเริ่มต้นต่อไปนี้สามารถตั้งค่าสำหรับแบรนด์ได้ ในการกำหนดแบรนด์นี้ให้กับสินค้า ค่าเริ่มต้นที่ตั้งไว้จะถูกดึงมาเมื่อทำธุรกรรมการขาย/ซื้อกับสินค้าของแบรนด์นี้
 
-* **Default Warehouse**: The Warehouse from which the Item will be sourced/stored depending on the transaction.
-* **Default Price List**: The Price List set here will be fetched in Purchase/Sales transactions.
+* **คลังสินค้าเริ่มต้น**: โกดังที่จะเป็นแหล่ง/จัดเก็บรายการโดยขึ้นอยู่กับธุรกรรม
+* **รายการราคาเริ่มต้น**: รายการราคาที่ตั้งไว้ที่นี่จะถูกดึงมาในธุรกรรมการซื้อ/ขาย
 
-#### Purchase Defaults
-When performing Purchase transactions like Purchase Order, Purchase Receipt, or Purchase Invoice, the defaults set here will be fetched on selecting Item of this Brand.
+#### ค่าเริ่มต้นการซื้อ
+เมื่อทำธุรกรรมการซื้อ เช่น ใบสั่งซื้อ ใบเสร็จการซื้อ หรือใบกำกับสินค้า ค่าเริ่มต้นที่ตั้งไว้ที่นี่จะถูกดึงมาจากการเลือกรายการของแบรนด์นี้
 
-* Default Buying Cost Center
-* Default Supplier
-* Default Expense Account
+* ศูนย์ต้นทุนของการซื้อเริ่มต้น
+* ผู้จัดจำหน่ายเริ่มต้น
+* บัญชีค่าใช้จ่ายเริ่มต้น
 
-#### Sales Defaults
-When performing Sales transactions like Sales Order, Delivery Note, or Sales Invoice, the defaults set here will be fetched on selecting Item of this Brand.
+#### ค่าเริ่มต้นการขาย
+เมื่อทำธุรกรรมการขาย เช่น ใบสั่งขาย บันทึกการจัดส่ง หรือใบกำกับสินค้า ค่าเริ่มต้นที่ตั้งไว้ที่นี่จะถูกดึงมาในการเลือกรายการของแบรนด์นี้
 
-* Default Selling Cost Center
-* Default Income Account
+* ศูนย์ต้นทุนขายเริ่มต้น
+* บัญชีรายได้เริ่มต้น
 
-## 3. Related Topics
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)
+1. [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order)
+1. [ใบเสร็จการซื้อ](/docs/user/manual/th/stock/purchase-receipt)
+1. [หมายเหตุการจัดส่งสินค้า](/docs/user/manual/th/stock/delivery-note)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)

@@ -1,55 +1,54 @@
 <!-- add-breadcrumbs -->
-# Job Applicant
+#ผู้สมัครงาน
 
-**A Job Applicant is a person who applies for a job in your Company against a particular Job Opening.** 
+**ผู้สมัครงานคือบุคคลที่สมัครงานในตำแหน่งงานว่างของบริษัทคุณ**
 
-In ERPNext, you can maintain a list of people who have applied against a particular [Job Opening](/docs/user/manual/en/human-resources/job-opening).
+ใน ERPNext คุณสามารถรักษารายชื่อผู้ที่สมัครเใน [ตำแหน่งงานว่าง](/docs/user/manual/th/human-resources/job-opening) ได้
 
-To create a Job Applicant, go to:
+ในการสร้างผู้สมัครงาน ไปที่:
 
-> Home > Human Resource > Recruitment > Job Applicant 
+> หน้าหลัก > ทรัพยากรบุคคล > การจัดหางาน > ผู้สมัครงาน
 
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating a Job Applicant, it is advisable you create the following:
+ก่อนสร้างผู้สมัครงาน ขอแนะนำให้คุณสร้างสิ่งต่อไปนี้:
 
-* [Staffing Plan](/docs/user/manual/en/human-resources/staffing-plan)
-* [Department](/docs/user/manual/en/human-resources/department)
-* [Job Opening](/docs/user/manual/en/human-resources/job-opening)
+* [แผนการจัดบุคลากร](/docs/user/manual/th/human-resources/staffing-plan)
+* [แผนก](/docs/user/manual/th/human-resources/department)
+* [ตำแหน่งงานว่าง](/docs/user/manual/th/human-resources/job-opening)
 
-## 2. How to Create a Job Applicant
+## 2. วิธีสร้างผู้สมัครงาน
 
-1. Go to Job Applicant list, click on New.
-1. Enter Applicant Name and Email Address.
-1. Select Job Opening.
-1. Select Source (Campaign, Employee Referral, Walk In, Website Listing).
+1. ไปที่รายการผู้สมัครงาน คลิกที่ ใหม่
+1. ป้อนชื่อผู้สมัครและที่อยู่อีเมล
+1. เลือก ตำแหน่งงานว่าง
+1. เลือกแหล่งที่มา (แคมเปญ, การแนะนำพนักงาน, Walk In, รายชื่อเว็บไซต์)
 
-> **Note:** If you select the Source as Employee Referral, you will have to select the Employee name in the Source Name Field.
+> **หมายเหตุ:** หากคุณเลือกแหล่งที่มาเป็นการอ้างอิงพนักงาน คุณจะต้องเลือกชื่อพนักงานในช่องชื่อแหล่งที่มา
 
 <img class="screenshot" alt="Job Applicant" src="{{docs_base_url}}/assets/img/human-resources/job-applicant.png">
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Linking with an Email Account
+### 3.1 การเชื่อมโยงกับบัญชีอีเมล
 
-You can link Job Application with an Email account.
-Suppose you link Job Application with an email job@example.com, the 
-system will create a New Job Applicant against each email received on the mailbox.
+คุณสามารถเชื่อมโยงการสมัครงานกับบัญชีอีเมล
+สมมติว่าคุณเชื่อมโยงการสมัครงานกับอีเมล job@example.com ระบบจะสร้างผู้สมัครงานใหม่ให้กับแต่ละอีเมลที่ได้รับในกล่องจดหมาย
 
-* To link Email Account with Job Applicant, go to:
+* หากต้องการเชื่อมโยงบัญชีอีเมลกับผู้สมัครงาน ไปที่:
 
-> Settings > Email Account > New Email Account
+> การตั้งค่า > บัญชีอีเมล > บัญชีอีเมลใหม่
 
-* Enter the Email Address and the password, and select 'Enable Incoming'
+* ป้อนที่อยู่อีเมลและรหัสผ่าน และเลือก 'เปิดใช้งานขาเข้า'
 
-* In 'Append To' select 'Job Applicant'
+* ใน 'เพิ่มไปยัง' เลือก 'ผู้สมัครงาน'
 
 <img class="screenshot" alt="Email Account" src="{{docs_base_url}}/assets/img/human-resources/email-account.png">
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Job Offer](/docs/user/manual/en/human-resources/job-offer)
-1. [Employee](/docs/user/manual/en/human-resources/employee)
+1. [ข้อเสนองาน](/docs/user/manual/th/human-resources/job-offer)
+1. [พนักงาน](/docs/user/manual/th/human-resources/employee)
 
 {next}
