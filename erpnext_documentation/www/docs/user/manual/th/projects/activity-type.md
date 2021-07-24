@@ -1,30 +1,30 @@
 <!-- add-breadcrumbs -->
-# Activity Type
+# ประเภทกิจกรรม
 
-**Activity Type is a list of different types of activities against which a Timesheet can be made.**
+**ประเภทกิจกรรมคือรายการกิจกรรมประเภทต่างๆ ที่สามารถสร้างไทม์ชีทได้**
 
 <img class="screenshot" alt="Activity Type" src="{{docs_base_url}}/assets/img/project/projects-activity-type.png">
 
-To access Activity Type, go to,
+ในการเข้าถึงประเภทกิจกรรม ไปที่
 
-> Home > Projects > Time Tracking > Activity Type
+> หน้าแรก > โครงการ > ติดตามเวลา > ประเภทกิจกรรม
 
-## 1. How to create Activity Type
+## 1. วิธีสร้างประเภทกิจกรรม
 
-  1. Go to the Activity Type List and click on New.
-  2. Add the subject of the Activity Type.
-  3. Save.
+  1. ไปที่รายการประเภทกิจกรรมแล้วคลิกใหม่
+  2. เพิ่มหัวเรื่องของประเภทกิจกรรม
+  3. บันทึก
 
-Additionally, you can also add the Default Costing Rate and Default Billing Rate for each Activity.
+นอกจากนี้ คุณยังสามารถเพิ่มอัตราต้นทุนเริ่มต้นและอัตราการเรียกเก็บเงินเริ่มต้นสำหรับแต่ละกิจกรรมได้อีกด้วย
 
-Further, The Default Costing Rate and the Default Billing Rate for Individual Employees can also be configured. This can also be configured using [Activity Cost](/docs/user/manual/en/projects/activity-cost).
+นอกจากนี้ยังสามารถกำหนดค่าอัตราการคิดต้นทุนเริ่มต้นและอัตราการเรียกเก็บเงินเริ่มต้นสำหรับพนักงานแต่ละคนได้ นอกจากนี้ยังสามารถกำหนดค่าได้โดยใช้ [ต้นทุนกิจกรรม](/docs/user/manual/th/projects/activity-cost)
 
-By default, the following Activity Types are created in ERPNext.
+ตามค่าเริ่มต้น ประเภทกิจกรรมต่อไปนี้จะถูกสร้างขึ้นใน ERPNext
 
-* Planning
-* Research
-* Proposal Writing
-* Execution
-* Communication
+* การวางแผน
+* การวิจัย
+* การเขียนข้อเสนอ
+* การดำเนินการ
+* การสื่อสาร
 
 {next}

@@ -1,27 +1,27 @@
 <!-- add-breadcrumbs -->
-# Non Conformance
+# ที่ไม่สอดคล้อง
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-*A Non Conformance is a observation that can be filed be filed by any person in the organization to note non compliance to a specific procedure*
+*การไม่ปฏิบัติตามข้อกำหนดคือการสังเกตที่บุคคลในองค์กรสามารถยื่นเพื่อแจ้งการไม่ปฏิบัติตามขั้นตอนเฉพาะได้*
 
-Once Quality Procedures are defined, the goal of a quality focussed organization is to ensure that they hare followed. This ensures consistent quality and parameters as per the customer's expectation. If these procedures are not followed, an observation is recorded via a *Non Conformance* or called NC in quality systems.
+เมื่อกำหนดขั้นตอนคุณภาพแล้ว เป้าหมายขององค์กรที่เน้นคุณภาพคือเพื่อให้แน่ใจว่าพวกเขาปฏิบัติตาม สิ่งนี้ทำให้มั่นใจได้ถึงคุณภาพและพารามิเตอร์ที่สอดคล้องกันตามความคาดหวังของลูกค้า หากไม่ปฏิบัติตามขั้นตอนเหล่านี้ การสังเกตจะถูกบันทึกผ่าน *ไม่สอดคล้อง* หรือเรียกว่า NC ในระบบคุณภาพ
 
-In ERPNext, you can create a Non Conformance by selecting the Quality Procedure against which it was observed, maintain its status and record corrective and preventive actions
+ใน ERPNext คุณสามารถสร้างความไม่สอดคล้องได้โดยเลือกขั้นตอนคุณภาพที่สังเกต รักษาสถานะและบันทึกการดำเนินการแก้ไขและป้องกัน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-1. [Quality Procedure](/docs/user/manual/en/quality-management/quality_procedure)
+1. [ขั้นตอนคุณภาพ](/docs/user/manual/th/quality-management/quality_procedure)
 
-## 2. How to Create a Non Conformance
+## 2. วิธีสร้างความไม่สอดคล้อง
 
-1. Go to Quality > Non Conformance or find the Quality Procedure and click on + from the dashboard.
-1. Record your observations
-1. Record corrective / preventive actions if any
-1. Update status
+1. ไปที่ คุณภาพ > ไม่เป็นไปตามข้อกำหนด หรือค้นหาขั้นตอนคุณภาพ แล้วคลิก + จากแดชบอร์ด
+1. บันทึกข้อสังเกตของคุณ
+1. บันทึกการดำเนินการแก้ไข/ป้องกัน หากมี
+1. อัพเดทสถานะ
 
 ![Non Conformance](/docs/assets/img/quality-management/non-conformance.png)
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Quality Procedure](/docs/user/manual/en/quality-management/quality_procedure)
+1. [ขั้นตอนคุณภาพ](/docs/user/manual/th/quality-management/quality_procedure)

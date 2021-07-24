@@ -1,46 +1,46 @@
 <!-- add-breadcrumbs -->
-# Quality Action
+# การดำเนินการที่มีคุณภาพ
 
-> Introduced in Version 12
+> เปิดตัวในเวอร์ชัน 12
 
-**A Quality Action is taken on a Quality Review to correct unsatisfactory results or prevent them from happening.**
+**การดำเนินการด้านคุณภาพจะดำเนินการในการตรวจสอบคุณภาพเพื่อแก้ไขผลลัพธ์ที่ไม่น่าพอใจหรือป้องกันไม่ให้เกิดขึ้น**
 
-Quality Action is a standard feature to allow implementation of corrective and preventive actions. This will meet compliance with industry regulations including GMP, ISO 9001 and 14001, TSCA, REACH, etc.
+การดำเนินการด้านคุณภาพเป็นคุณลักษณะมาตรฐานที่อนุญาตให้ดำเนินการแก้ไขและป้องกันได้ ซึ่งจะเป็นไปตามข้อกำหนดของอุตสาหกรรม รวมถึง GMP, ISO 9001 และ 14001, TSCA, REACH เป็นต้น
 
-Quality Action workflows provide a controlled environment and reduce the risk of repeat issues by ensuring that defined solutions and processes are met.
+เวิร์กโฟลว์การดำเนินการด้านคุณภาพให้สภาพแวดล้อมที่มีการควบคุมและลดความเสี่ยงของปัญหาที่เกิดซ้ำโดยทำให้แน่ใจว่าโซลูชันและกระบวนการที่กำหนดไว้ตรงตามที่กำหนด
 
-Quality Actions can be initialized for a Quality Goal or for a Customer Feedback which may not meet the expected quality standards. Depending on that a Corrective or Preventive Action can be started.
+การดำเนินการด้านคุณภาพสามารถเริ่มต้นได้สำหรับเป้าหมายคุณภาพหรือสำหรับคำติชมของลูกค้าซึ่งอาจไม่เป็นไปตามมาตรฐานคุณภาพที่คาดหวัง ขึ้นอยู่กับว่าสามารถเริ่มดำเนินการแก้ไขหรือป้องกันได้
 
-To access Quality Action, go to:
-> Home > Quality > Review and Action > Quality Action
+ในการเข้าถึงการดำเนินการด้านคุณภาพ ไปที่:
+> หน้าแรก > คุณภาพ > ทบทวนและดำเนินการ > การดำเนินการด้านคุณภาพ
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating and using a Quality Action it is advised to create the following first:
-* [Quality Review](/docs/user/manual/en/quality-management/quality_review)
+ก่อนสร้างและใช้การดำเนินการด้านคุณภาพ ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
+* [การตรวจสอบคุณภาพ](/docs/user/manual/th/quality-management/quality_review)
 
-    Or
+    หรือ
 
-* [Quality Feedback](/docs/user/manual/en/quality-management/quality_feedback)
+* [คำติชมด้านคุณภาพ](/docs/user/manual/th/quality-management/quality_feedback)
 
-## 2. How to create a Quality Action
+## 2. วิธีสร้างการดำเนินการที่มีคุณภาพ
 
-1. Go to the Quality Action list, click on New.
-1. Select whether it's a Corrective or Preventive action. This indicates whether the action is being scheduled for Corrective or for Preventive Purpose.
-1. Select the Document Type whether a Quality Review or a Quality Feedback.
-1. Select the actual Quality Review or Feedback under Document Name.
-1. Enter a Resolution proposed for the problem in the Resolution field.
-1. Save.
+1. ไปที่รายการ Quality Action คลิก New
+1. เลือกว่าจะเป็นการดำเนินการแก้ไขหรือป้องกัน สิ่งนี้บ่งชี้ว่าการดำเนินการถูกกำหนดไว้สำหรับการแก้ไขหรือเพื่อวัตถุประสงค์ในการป้องกัน
+1. เลือกประเภทเอกสาร ไม่ว่าจะเป็นการตรวจทานคุณภาพหรือคำติชมคุณภาพ
+1. เลือกการตรวจสอบคุณภาพจริงหรือผลตอบรับภายใต้ชื่อเอกสาร
+1. ป้อนวิธีแก้ไขที่เสนอสำหรับปัญหาในช่องวิธีแก้ไข
+1. บันทึก
 
-The Status field indicates whether the Quality Action is Open and ongoing or Closed.
+ฟิลด์สถานะระบุว่าการดำเนินการด้านคุณภาพเป็นเปิดและดำเนินการอยู่หรือปิด
 
 <img class="screenshot" alt="Quality management" src="{{docs_base_url}}/assets/img/quality-management/action.gif">
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-* [Quality Goal](/docs/user/manual/en/quality-management/quality_goal)
-* [Quality Review](/docs/user/manual/en/quality-management/quality_review)
-* [Quality Procedure](/docs/user/manual/en/quality-management/quality_procedure)
+* [เป้าหมายคุณภาพ](/docs/user/manual/th/quality-management/quality_goal)
+* [การตรวจสอบคุณภาพ](/docs/user/manual/th/quality-management/quality_review)
+* [ขั้นตอนคุณภาพ](/docs/user/manual/th/quality-management/quality_procedure)
 
 
 {next}

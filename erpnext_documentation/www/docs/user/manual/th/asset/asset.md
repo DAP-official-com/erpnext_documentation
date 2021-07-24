@@ -1,122 +1,122 @@
 <!-- add-breadcrumbs -->
-# Assets
+#ทรัพย์สิน
 
-**An Asset is any valuable Item owned by a Company.**
+**สินทรัพย์คือสิ่งของมีค่าใดๆ ที่บริษัทเป็นเจ้าของ**
 
-Examples of Assets include furniture, computers, mobile phones, printers, cars, etc. Assets may be leased to be used by the employees of a Company.
+ตัวอย่างของทรัพย์สิน ได้แก่ เฟอร์นิเจอร์ คอมพิวเตอร์ โทรศัพท์มือถือ เครื่องพิมพ์ รถยนต์ ฯลฯ ทรัพย์สินอาจให้เช่าเพื่อให้พนักงานของบริษัทใช้
 
-In ERPNext, the Asset record is the heart of fixed asset management. All the transactions related to an Asset like purchasing, sales, depreciation, scrapping, movement, or maintenance will be managed against the Asset record.
+ใน ERPNext บันทึกสินทรัพย์เป็นหัวใจของการจัดการสินทรัพย์ถาวร ธุรกรรมทั้งหมดที่เกี่ยวข้องกับสินทรัพย์ เช่น การซื้อ การขาย การคิดค่าเสื่อมราคา การตัดทิ้ง การเคลื่อนไหว หรือการบำรุงรักษา จะได้รับการจัดการกับบันทึกสินทรัพย์
 
-To access the Asset list, go to:
-> Home > Assets > Assets > Asset
+ในการเข้าถึงรายการสินทรัพย์ ไปที่:
+> หน้าหลัก > สินทรัพย์ > สินทรัพย์ > สินทรัพย์
 
-## 1. Prerequisites
-Before creating and using Asset, it is advised to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้งานสินทรัพย์ ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Item](/docs/user/manual/en/stock/item) with 'Is fixed Asset' enabled
-* [Asset Category](/docs/user/manual/en/asset/asset-category)
+* [รายการ](/docs/user/manual/th/stock/item) โดยเปิดใช้ 'เป็นสินทรัพย์ถาวร'
+* [ประเภทสินทรัพย์](/docs/user/manual/th/asset/asset-category)
 
-## 2. Types of Assets
-Before creating an Asset, the types of Assets in ERPNext need to be understood.
+## 2. ประเภทของทรัพย์สิน
+ก่อนสร้างสินทรัพย์ จำเป็นต้องเข้าใจประเภทของสินทรัพย์ใน ERPNext
 
-There are two use cases for creating an asset record. The asset can be an existing asset which has been bought earlier and it might have already been depreciated partially. Or the asset is a newly purchased item.
+มีสองกรณีการใช้งานสำหรับการสร้างเรกคอร์ดสินทรัพย์ สินทรัพย์อาจเป็นสินทรัพย์ที่มีอยู่ซึ่งซื้อก่อนหน้านี้และอาจมีการคิดค่าเสื่อมราคาแล้วบางส่วน หรือทรัพย์สินเป็นสินค้าที่ซื้อใหม่
 
-### 2.1 Existing Asset
-For an existing asset, you can create the asset record directly checking "Is Existing Asset" field. In this case, you also need to enter already booked depreciation amount and number of booked depreciation. And based on the input, the system will create a schedule for remaining depreciation.
+### 2.1 สินทรัพย์ที่มีอยู่
+สำหรับสินทรัพย์ที่มีอยู่ คุณสามารถสร้างเรกคอร์ดสินทรัพย์ได้โดยตรงโดยตรวจสอบฟิลด์ "เป็นสินทรัพย์ที่มีอยู่" ในกรณีนี้ คุณต้องป้อนค่าเสื่อมราคาที่จองแล้วและจำนวนค่าเสื่อมราคาที่จองไว้ด้วย และจากข้อมูลที่ป้อนเข้ามา ระบบจะสร้างกำหนดการสำหรับค่าเสื่อมราคาที่เหลืออยู่
 
 <img class="screenshot" alt="Existing Asset" src="{{docs_base_url}}/assets/img/asset/existing-asset.png">
 
-### 2.2 New Asset
+### 2.2 สินทรัพย์ใหม่
 
-For new assets, you cannot create the asset record directly from the Asset form. You need to create a Purchase Receipt/Invoice for it.
+สำหรับสินทรัพย์ใหม่ คุณไม่สามารถสร้างเรกคอร์ดสินทรัพย์ได้โดยตรงจากแบบฟอร์มสินทรัพย์ คุณต้องสร้างใบเสร็จรับเงิน/ใบกำกับสินค้าสำหรับมัน
 
-When you're buying new assets, an asset ID is created when you make a Purchase Receipt. On submitting the Purchase Receipt for an Asset, you'll see a message like 'Asset AST00003 created'. This will happen only if you've ticked the 'Is Fixed Asset' checkbox when creating the Item.
+เมื่อคุณซื้อสินทรัพย์ใหม่ รหัสสินทรัพย์จะถูกสร้างขึ้นเมื่อคุณสร้างใบเสร็จการซื้อ ในการส่งใบเสร็จรับเงินสำหรับสินทรัพย์ คุณจะเห็นข้อความเช่น 'สร้างสินทรัพย์ AST00003 แล้ว' สิ่งนี้จะเกิดขึ้นก็ต่อเมื่อคุณทำเครื่องหมายที่ช่อง 'เป็นสินทรัพย์ถาวร' เมื่อสร้างรายการ
 
-When you're buying new assets, assets can be created automatically when you make a Purchase Receipt, if you have 'Auto Create Assets on Purchase' ticked in the Item master of the Asset. On submitting the Purchase Receipt for an Asset, you'll see a message like '5 Assets created for Office Phone'. If you don't want to auto create assets, after Purchase Receipt submission you will have to manually create assets and link the Purchase Receipt to the Asset.
+เมื่อคุณซื้อสินทรัพย์ใหม่ สินทรัพย์จะถูกสร้างขึ้นโดยอัตโนมัติเมื่อคุณสร้างใบเสร็จการซื้อ หากคุณมี 'สร้างสินทรัพย์อัตโนมัติเมื่อซื้อ' ถูกทำเครื่องหมายในหลักรายการของสินทรัพย์ ในการส่งใบเสร็จรับเงินการซื้อสินทรัพย์ คุณจะเห็นข้อความเช่น '5 สินทรัพย์ที่สร้างขึ้นสำหรับโทรศัพท์สำนักงาน' หากคุณไม่ต้องการสร้างสินทรัพย์โดยอัตโนมัติ หลังจากส่งใบเสร็จการซื้อ คุณจะต้องสร้างสินทรัพย์ด้วยตนเองและเชื่อมโยงใบเสร็จการซื้อกับสินทรัพย์
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset.png">
 
-After submitting a Purchase Receipt/Invoice for such an Item, in case of asset auto creation, a number of Asset records will be created in the Draft stage. You can then go to these Assets and submit them.
+หลังจากส่งใบเสร็จรับเงิน/ใบกำกับสินค้าสำหรับรายการดังกล่าวแล้ว ในกรณีที่มีการสร้างสินทรัพย์โดยอัตโนมัติ จะมีการสร้างเรคคอร์ดของสินทรัพย์จำนวนหนึ่งในขั้นตอนแบบร่าง จากนั้นคุณสามารถไปที่เนื้อหาเหล่านี้และส่งได้
 
-To know more, visit the [Purchasing an Asset](/docs/user/manual/en/asset/purchasing-an-asset) page.
+หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [การซื้อสินทรัพยฺ์](/docs/user/manual/th/asset/purchasing-an-asset)
 
-## 3. How to manually create an Asset
+## 3. วิธีสร้างสินทรัพย์ด้วยตนเอง
 
-Before you can create an Asset, you need to create an Item with 'Is Fixed Asset' checkbox ticked and create a Purchase Receipt/Invoice against that Item. Note that you will have to create a number of Assets based on the quantity specified in the Purchase Document.
+ก่อนที่คุณจะสามารถสร้างสินทรัพย์ คุณต้องสร้างรายการโดยทำเครื่องหมายที่ช่อง 'เป็นสินทรัพย์ถาวร' และสร้างใบเสร็จรับเงิน/ใบกำกับสินค้าสำหรับรายการนั้น โปรดทราบว่าคุณจะต้องสร้างสินทรัพย์จำนวนหนึ่งตามปริมาณที่ระบุในเอกสารการจัดซื้อ
 
-An Asset Category needs to be assigned to that Item. Now the Asset can be created.
+ต้องกำหนดประเภทสินทรัพย์ให้กับรายการนั้น ตอนนี้สามารถสร้างเนื้อหาได้แล้ว
 
-1. Go to the Assets list, click on New.
-1. Enter a name for the asset.
-1. Select the Item Code, the Item Name and Asset Category will be fetched automatically.
-1. Select who is the Asset Owner, i.e. Company, Supplier, or Customer.
-1. Select the Company/Supplier/Customer.
-1. Select the Purchase Receipt/Invoice. Purchase Date and Gross Purchase Amount will be fetched automatically.
-1. Select a Location. Eg: Mumbai Office. This will be fetched automatically if specified in Purchase Receipt items table
-1. Enter an Available for use Date to set the date from which the Asset is available for use. The depreciation amount for the first period will be calculated from this date.
-1. Tick the 'Is Existing Asset' checkbox if you're recording an existing Asset.
-1. Save and Submit. 
+1. ไปที่รายการทรัพย์สิน คลิกที่ใหม่
+1. ป้อนชื่อสินทรัพย์
+1. เลือก Item Code ชื่อ Item Name และ Asset Category จะถูกดึงออกมาโดยอัตโนมัติ
+1. เลือกว่าใครเป็นเจ้าของทรัพย์สิน เช่น บริษัท ผู้จัดหาหรือลูกค้า
+1. เลือกบริษัท/ซัพพลายเออร์/ลูกค้า
+1. เลือกใบเสร็จรับเงิน/ใบกำกับสินค้า วันที่ซื้อและยอดซื้อรวมจะถูกเรียกโดยอัตโนมัติ
+1. เลือกสถานที่ เช่น สำนักงานมุมไบ. สิ่งนี้จะถูกดึงโดยอัตโนมัติหากระบุไว้ในตารางรายการใบเสร็จรับเงิน items
+1. ป้อนวันที่พร้อมใช้งานเพื่อกำหนดวันที่ที่สินทรัพย์พร้อมใช้งาน ค่าเสื่อมราคาสำหรับงวดแรกจะคำนวณจากวันที่นี้
+1. ทำเครื่องหมายที่ช่อง 'เป็นสินทรัพย์ที่มีอยู่' หากคุณกำลังบันทึกเนื้อหาที่มีอยู่
+1. บันทึกและส่ง
 
-### 3.1 Additional options when creating an Asset
+### 3.1 ตัวเลือกเพิ่มเติมเมื่อสร้างเนื้อหา
 
-1. **Item Code**: An Item for the Asset must be a non-stock item, with "Is Asset" field checked.
+1. **รหัสสินค้า**: รายการสำหรับสินทรัพย์ต้องเป็นสินค้าที่ไม่มีในสต็อก โดยทำเครื่องหมายในช่อง "เป็นสินทรัพย์"
     <img class="screenshot" alt="Asset Item" src="{{docs_base_url}}/assets/img/asset/asset-item.png">
-1. **Custodian**: The employee you're giving/assigning the asset to.
-1. **Department**: The department of the Custodian.
-1. **Is Existing Asset**: Check if you already own the asset, not purchased recently. The asset could also have been carried forward from the previous Fiscal Year. The existing assets which are partially/fully depreciated can also be created/maintained for future reference.
-1. **Opening Accumulated Depreciation**: The accumulated depreciation amount which has already been booked for an existing asset.
-1. **Number of Depreciations Booked**: Enter the number of already booked depreciations for an existing asset.
-1. **Current Value (After Depreciation)**: In case you are creating a record of an existing asset which has already been partially/fully depreciated, mention the current value of the asset. In case of a new asset, mention the purchase amount or leave it blank.
-1. **Next Depreciation Date**: Mention the next depreciation date, even if it is the first one. If the asset is an existing one and depreciation has already been completed, leave it blank.
-1. **Calculate Depreciation**: Enable this checkbox to calculate depreciation of Assets.
-1. **Allow Monthly Depreciation**: Enable this checkbox to distribute depreciation amount of an asset into 12 months of the year. Depreciation entries will be made every month on the date provided as Depreciation Start Date. For example, if Available for Use date is 22nd Nov 2019 and depreciation Start Date is 31st March 2020, first depreciation will be done on 30th Nov 2019 second on 31st Dec 2019 and so on. Amount will be distributed based on days left until next depreciation. 
+1. **ผู้ดูแล**: พนักงานที่คุณให้/มอบหมายทรัพย์สินให้
+1. **ฝ่าย** : ฝ่ายผู้ดูแล
+1. **เป็นสินทรัพย์ที่มีอยู่**: ตรวจสอบว่าคุณเป็นเจ้าของสินทรัพย์แล้ว ไม่ได้ซื้อเมื่อเร็วๆ นี้ สินทรัพย์สามารถยกยอดจากปีบัญชีก่อนหน้าได้เช่นกัน สินทรัพย์ที่มีอยู่ซึ่งคิดค่าเสื่อมราคาบางส่วน/ทั้งหมดสามารถสร้าง/บำรุงรักษาเพื่อใช้อ้างอิงในอนาคตได้เช่นกัน
+1. **ค่าเสื่อมราคาเปิดสะสม**: ค่าเสื่อมราคาสะสมที่จองไว้สำหรับสินทรัพย์ที่มีอยู่แล้ว
+1. **จำนวนค่าเสื่อมราคาที่จอง**: ป้อนจำนวนค่าเสื่อมราคาที่จองแล้วสำหรับสินทรัพย์ที่มีอยู่
+1. **มูลค่าปัจจุบัน (หลังหักค่าเสื่อมราคา)**: ในกรณีที่คุณกำลังสร้างบันทึกของสินทรัพย์ที่มีอยู่ซึ่งได้รับการคิดค่าเสื่อมราคาบางส่วน/ทั้งหมดแล้ว ให้ระบุมูลค่าปัจจุบันของสินทรัพย์ ในกรณีของสินทรัพย์ใหม่ ให้ระบุจำนวนเงินที่ซื้อหรือเว้นว่างไว้
+1. **วันที่คิดค่าเสื่อมราคาถัดไป**: ระบุวันที่คิดค่าเสื่อมราคาถัดไป แม้ว่าจะเป็นครั้งแรกก็ตาม หากสินทรัพย์เป็นสินทรัพย์ที่มีอยู่และค่าเสื่อมราคาเสร็จสมบูรณ์แล้ว ให้เว้นว่างไว้
+1. **คำนวณค่าเสื่อมราคา**: เปิดใช้งานช่องทำเครื่องหมายนี้เพื่อคำนวณค่าเสื่อมราคาของสินทรัพย์
+1. **อนุญาตการคิดค่าเสื่อมราคารายเดือน**: เปิดใช้งานช่องทำเครื่องหมายนี้เพื่อกระจายจำนวนค่าเสื่อมราคาของสินทรัพย์เป็น 12 เดือนของปี รายการค่าเสื่อมราคาจะทำทุกเดือนในวันที่ระบุเป็นวันที่เริ่มต้นค่าเสื่อมราคา ตัวอย่างเช่น หากวันที่พร้อมใช้งานคือ 22 พฤศจิกายน 2019 และวันที่เริ่มต้นค่าเสื่อมราคาคือ 31 มีนาคม 2020 การคิดค่าเสื่อมราคาครั้งแรกจะสิ้นสุดในวันที่ 30 พฤศจิกายน 2019 วินาทีในวันที่ 31 ธันวาคม 2019 เป็นต้น จำนวนเงินจะกระจายตามจำนวนวันที่เหลือจนกว่าจะมีการคิดค่าเสื่อมราคาครั้งถัดไป
 
-## 4. Features
+## 4. คุณสมบัติ
 
-### 4.1 Depreciation
+### 4.1 ค่าเสื่อมราคา
 
-* **Frequency of Depreciation (Months)**: The number of months between depreciations.
-* **Total Number of Depreciations**: The total number of depreciations during the useful life of the Asset. In case of existing assets which are partially depreciated, mention the number of pending depreciations. For example, if you set frequency as 12 months and no. of depreciations as 3, 1 depreciation will be booked every 12 months for 3 years.
-* **Depreciation Method**: There are two options, Straight Line and Double Declining Balance.
-    - **Straight Line**: This method spreads the cost of the fixed asset evenly over its useful life.
-    - **Double Declining Method**: An accelerated method of depreciation, it results in higher depreciation expense in the earlier years of ownership.
-    - **Written Down Value**: In this method, the depreciation percentage is fixed but it is applied on the current value of the asset which we get after each depreciation.
-    To know about Asset Depreciation in detail, [visit this page](/docs/user/manual/en/asset/asset-depreciation).
-* **Depreciation Start Date**: The date from which booking of depreciation will be started.
-* **Expected Value After Useful Life**: Useful Life is the time period over in which the company expects that the asset will be productive. After that period, either the asset is scrapped or sold. In case it is sold, mention the estimated value here. This value is also known as Salvage Value, Scrap Value, or Residual Value.
-* **Rate of Depreciation**: This will be calculated based on the amount entered in expected value after useful life.
+* **ความถี่ของค่าเสื่อมราคา (เดือน)**: จำนวนเดือนระหว่างค่าเสื่อมราคา
+* **จำนวนค่าเสื่อมราคารวม**: จำนวนค่าเสื่อมราคาทั้งหมดตลอดอายุการให้ประโยชน์ของสินทรัพย์ ในกรณีของสินทรัพย์ที่มีอยู่ซึ่งคิดค่าเสื่อมราคาบางส่วน ให้ระบุจำนวนค่าเสื่อมราคาที่รอดำเนินการ ตัวอย่างเช่น หากคุณตั้งความถี่เป็น 12 เดือนและไม่ใช่ ของค่าเสื่อมราคาเป็น 3 ค่าเสื่อมราคา 1 รายการจะถูกจองทุก 12 เดือนเป็นเวลา 3 ปี
+* **วิธีการคิดค่าเสื่อมราคา**: มีสองตัวเลือกคือ เส้นตรง และ ยอดคงเหลือลดลงสองเท่า
+    - **เส้นตรง**: วิธีนี้จะกระจายต้นทุนของสินทรัพย์ถาวรอย่างเท่าเทียมกันตลอดอายุการใช้งาน
+    - **วิธี ลดลงสองเท่า**: วิธีการคิดค่าเสื่อมราคาแบบเร่งรัด ส่งผลให้ค่าเสื่อมราคาสูงขึ้นในปีก่อนหน้าของการเป็นเจ้าของ
+    - **เขียนลงมูลค่า**: ในวิธีนี้ เปอร์เซ็นต์ค่าเสื่อมราคาจะคงที่ แต่จะใช้กับมูลค่าปัจจุบันของสินทรัพย์ที่เราได้รับหลังจากการคิดค่าเสื่อมราคาในแต่ละครั้ง
+    หากต้องการทราบรายละเอียดเกี่ยวกับค่าเสื่อมราคาสินทรัพย์ [ไปที่หน้านี้](/docs/user/manual/th/asset/asset-depreciation)
+* **วันที่เริ่มต้นการคิดค่าเสื่อมราคา**: วันที่จะเริ่มการจองค่าเสื่อมราคา
+* **มูลค่าที่คาดหวังหลังอายุการใช้งาน**: Useful Life คือช่วงเวลาที่บริษัทคาดหวังว่าสินทรัพย์จะมีประสิทธิผล หลังจากช่วงเวลานั้น สินทรัพย์จะถูกทิ้งหรือขาย ในกรณีที่ขาย ให้ระบุมูลค่าโดยประมาณที่นี่ ค่านี้เรียกอีกอย่างว่ามูลค่าซาก มูลค่าเศษซาก หรือมูลค่าคงเหลือ
+* **อัตราค่าเสื่อมราคา**: จะคำนวณตามจำนวนเงินที่ป้อนในมูลค่าที่คาดไว้หลังอายุการใช้งาน
 
 
-### 4.2 Depreciation Schedule
+### 4.2 ตารางค่าเสื่อมราคา
 
-On booking depreciations against this Asset, the Depreciation Schedule section will be visible.
-This table has columns for Finance Book, Schedule Date, Depreciation Amount, Amount Deprecated, and Journal Entry.
+ในการจองค่าเสื่อมราคากับสินทรัพย์นี้ ส่วนกำหนดการคิดค่าเสื่อมราคาจะปรากฏให้เห็น
+ตารางนี้มีคอลัมน์สำหรับสมุดการเงิน วันที่จัดกำหนดการ จำนวนเงินค่าเสื่อมราคา จำนวนเงินที่เลิกใช้ และรายการบันทึกประจำวัน
 
 ![Depreciation Schedule](/docs/assets/img/asset/asset-depreciation.png)
 
-### 4.3 Insurance Details
-If Insurance has been taken for the Asset you're recording, you can store the following Insurance details:
+### 4.3 รายละเอียดประกันภัย
+หากมีการใช้ประกันภัยสำหรับสินทรัพย์ที่คุณกำลังบันทึก คุณสามารถจัดเก็บรายละเอียดการประกันภัยต่อไปนี้:
 
-* Policy number
-* Insurer
-* Insured value
-* Insurance Start Date
-* Insurance End Date
-* Comprehensive Insurance
+* หมายเลขกรมธรรม์
+* ผู้ประกันตน
+* มูลค่าเอาประกันภัย
+* วันที่เริ่มประกันภัย
+* วันที่สิ้นสุดการประกันภัย
+* ประกันภัยแบบครบวงจร
 
-### 4.4 Accounting Entries
-On submission of an asset, "Capital Work in Progress" account will be credited and the asset account related to the asset will be debited. Submission is only possible after entering "Available-to-use Date". If "Available-to-use Date" is a future date, then accounting entry will be booked automatically on that date via the scheduler.
+### 4.4 รายการบัญชี
+ในการส่งสินทรัพย์ บัญชี "กำลังดำเนินการทุน" จะได้รับเครดิตและบัญชีสินทรัพย์ที่เกี่ยวข้องกับสินทรัพย์นั้นจะถูกหัก สามารถส่งได้หลังจากป้อน "วันที่พร้อมใช้งาน" เท่านั้น หาก "วันที่พร้อมใช้งาน" เป็นวันที่ในอนาคต รายการทางบัญชีจะถูกจองโดยอัตโนมัติในวันที่นั้นผ่านตัวจัดกำหนดการ
 
-### 4.5 Maintenance
-Ticking on Maintenance Required allows recording Asset Maintenance entries for this Asset. To know more, visit the [Asset Maintenance](/docs/user/manual/en/asset/asset-maintenance) page.
+### 4.5 การบำรุงรักษา
+การทำเครื่องหมายที่ต้องมีการบำรุงรักษาช่วยให้สามารถบันทึกรายการบำรุงรักษาสินทรัพย์สำหรับสินทรัพย์นี้ หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [การบำรุงรักษาทรัพย์สิน](/docs/user/manual/th/asset/asset-maintenance)
 
-### 4.6 After Submitting
-Once you create an Asset, you'll see options to transfer, scrap, or sell the asset. From the Make button, you can adjust its value and make a depreciation entry.
+### 4.6 หลังจากส่ง
+เมื่อคุณสร้างสินทรัพย์ คุณจะเห็นตัวเลือกในการโอน ยกเลิก หรือขายสินทรัพย์ จากปุ่มสร้าง คุณสามารถปรับค่าและทำรายการค่าเสื่อมราคาได้
 
 ![Asset Submit](/docs/assets/img/asset/asset-submit.png)
 
-### 5. Related Topics
-1. [Asset Maintenance](/docs/user/manual/en/asset/asset-maintenance)
-1. [Asset Movement](/docs/user/manual/en/asset/asset-movement)
-1. [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+### 5. หัวข้อที่เกี่ยวข้อง
+1. [การบํารุงรักษาสินทรัพย์](/docs/user/manual/th/asset/asset-maintenance)
+1. [การเคลื่อนย้ายสินทรัพย์](/docs/user/manual/th/asset/asset-movement)
+1. [ใบเสร็จการซื้อ](/docs/user/manual/th/stock/purchase-receipt)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)

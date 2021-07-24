@@ -1,31 +1,31 @@
 <!-- add-breadcrumbs -->
-# Asset Repair
+#ซ่อมแซมทรัพย์สิน
 
-**Asset Repair refers to any activity carried to repair a broken Asset to restore full functionality.**
+**การซ่อมแซมสินทรัพย์หมายถึงกิจกรรมใดๆ ที่ดำเนินการเพื่อซ่อมแซมสินทรัพย์ที่เสียหายเพื่อให้กลับมาใช้งานได้อย่างเต็มรูปแบบ**
 
-You can also maintain the records of Repair/Failures of Assets which are not listed in Asset Maintenance.
+คุณยังสามารถรักษาบันทึกการซ่อมแซม/ความล้มเหลวของสินทรัพย์ซึ่งไม่ได้ระบุไว้ในการบำรุงรักษาสินทรัพย์
 
-To access the Asset Repair list, go to:
-> Home > Asset > Maintenance > Asset Repair
+ในการเข้าถึงรายการการซ่อมแซมสินทรัพย์ ไปที่:
+> หน้าหลัก > ทรัพย์สิน > การบำรุงรักษา > การซ่อมแซมทรัพย์สิน
 
-## 1. Prerequisites
-Before creating and using Asset Repair, it is advised to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ Asset Repair ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Asset](/docs/user/manual/en/asset/asset)
+* [สินทรัพย์](/docs/user/manual/th/asset/asset)
 
-## 2. How to create an Asset Repair
+## 2. วิธีสร้างการซ่อมแซมสินทรัพย์
 
-1. Go to the Asset Repair list, click on New.
-1. Select the Asset.
-1. Select the Failure Date.
-1. Enter an Error Description describing the problem.
-1. You can also assign it to someone for them to take further actions.
-1. Add actions performed if repaired, enter the Repair Cost.
-1. Change the Repair Status from 'Pending', 'Completed', or 'Canceled'.
-1. Save and Submit.
+1. ไปที่รายการซ่อมแซมสินทรัพย์ คลิกที่ใหม่
+1. เลือกสินทรัพย์
+1. เลือกวันที่ล้มเหลว
+1. ป้อนคำอธิบายข้อผิดพลาดที่อธิบายปัญหา
+1. คุณสามารถมอบหมายให้ผู้อื่นดำเนินการต่อไปได้
+1. เพิ่มการดำเนินการที่ดำเนินการหากได้รับการซ่อมแซม ป้อนค่าซ่อมแซม
+1. เปลี่ยนสถานะการซ่อมแซมจาก 'รอดำเนินการ', 'เสร็จสิ้น' หรือ 'ยกเลิก'
+1. บันทึกและส่ง
 
     <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset_repair.png">
 
-## 3. Related Topics
-1. [Asset Maintenance](/docs/user/manual/en/asset/asset-maintenance)
-1. [Asset Value Adjustment](/docs/user/manual/en/asset/asset-value-adjustment)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [การบํารุงรักษาสินทรัพย์](/docs/user/manual/th/asset/asset-maintenance)
+1. [การปรับมูลค่าสินทรัพย์](/docs/user/manual/th/asset/asset-value-adjustment)

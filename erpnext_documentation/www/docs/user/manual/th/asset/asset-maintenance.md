@@ -1,60 +1,60 @@
 <!-- add-breadcrumbs -->
-# Asset Maintenance
+# การบำรุงรักษาทรัพย์สิน
 
-**Asset Maintenance refers to any activity done on Assets to maintain their performance or condition.**
+**การบำรุงรักษาสินทรัพย์หมายถึงกิจกรรมใดๆ ที่ทำกับสินทรัพย์เพื่อรักษาประสิทธิภาพหรือสภาพของสินทรัพย์**
 
-ERPNext provides features to track the details of individual maintenance/calibration tasks for an asset by date, the person responsible for the maintenance, and future maintenance due date.
+ERPNext มีคุณสมบัติในการติดตามรายละเอียดของงานบำรุงรักษา/สอบเทียบแต่ละรายการสำหรับสินทรัพย์ตามวันที่ บุคคลที่รับผิดชอบในการบำรุงรักษา และวันที่ครบกำหนดการบำรุงรักษาในอนาคต
 
-To perform Asset Maintenance in ERPNext:
+ในการดำเนินการบำรุงรักษาสินทรัพย์ใน ERPNext:
 
-1. Enable 'Maintenance Required' from the Asset master.
-2. Create an Asset Maintenance Team.
-3. Create the Asset Maintenance.
-4. An Asset Maintenance Log is created.
-5. Create Asset Repair Log.
+1. เปิดใช้งาน 'ต้องบำรุงรักษา' จากเนื้อหาหลัก
+2. สร้างทีมบำรุงรักษาสินทรัพย์
+3. สร้างการบำรุงรักษาสินทรัพย์
+4. มีการสร้างบันทึกการบำรุงรักษาสินทรัพย์
+5. สร้างบันทึกการซ่อมแซมสินทรัพย์
 
-To access the Asset Maintenance list, go to:
-> Home > Asset > Maintenance > Asset Maintenance
+ในการเข้าถึงรายการการบำรุงรักษาสินทรัพย์ ไปที่:
+> หน้าหลัก > สินทรัพย์ > การบำรุงรักษา > การบำรุงรักษาทรัพย์สิน
 
-## 1. Prerequisites
-Before creating and using Asset Maintenance, it is advised to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้งาน Asset Maintenance ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
 
-1. [Asset](/docs/user/manual/en/asset/asset)
-1. Go to an Asset master and check the 'Maintenance Required' checkbox in Asset to enable Asset Maintenance.
+1. [สินทรัพย์](/docs/user/manual/th/asset/asset)
+1. ไปที่เนื้อหาหลักและเลือกช่องกาเครื่องหมาย 'ต้องบำรุงรักษา' ในสินทรัพย์เพื่อเปิดใช้งานการบำรุงรักษาสินทรัพย์
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/maintenance_required.png">
-1. [Asset Maintenance Team](/docs/user/manual/en/asset/asset-maintenance-team)
+1. [ทีมดูแลทรัพย์สิน](/docs/user/manual/th/asset/asset-maintenance-team)
 
-## 2. How to create Asset Maintenance
-For each asset, create an Asset Maintenance record listing all the associated maintenance tasks, maintenance type (Preventive Maintenance or Calibration), periodicity, assign to and start and end date of maintenance. Based on start date and periodicity the next due date is auto-calculated and a ToDo is created for the Assignee.
+## 2. วิธีสร้างการบำรุงรักษาทรัพย์สิน
+สำหรับสินทรัพย์แต่ละรายการ ให้สร้างเรกคอร์ดการบำรุงรักษาสินทรัพย์ซึ่งแสดงรายการงานบำรุงรักษาที่เกี่ยวข้องทั้งหมด ประเภทการบำรุงรักษา (การบำรุงรักษาเชิงป้องกันหรือการสอบเทียบ) ระยะเวลา การกำหนดและวันที่เริ่มต้นและสิ้นสุดของการบำรุงรักษา ตามวันที่เริ่มต้นและรอบระยะเวลา วันที่ครบกำหนดถัดไปจะได้รับการคำนวณโดยอัตโนมัติ และสร้างสิ่งที่ต้องทำสำหรับผู้ได้รับมอบหมาย
 
-1. Go to the Asset Maintenance list, click on New.
-1. Select the Asset.
-1. Select the Asset Maintenance Team.
-1. Add Maintenance Tasks in the table.
-  1. Set the Maintenance Status whether 'Planned', 'Overdue', or 'Canceled'.
-  1. Select a periodicity for which the task needs to be carried out. The next due date will be calculated.
-1. Save.
-1. After saving, you can assign the task to a user.
+1. ไปที่รายการการบำรุงรักษาสินทรัพย์ คลิกที่ใหม่
+1. เลือกสินทรัพย์
+1. เลือกทีมบำรุงรักษาทรัพย์สิน
+1. เพิ่มงานบำรุงรักษาในตาราง
+  1. ตั้งค่าสถานะการบำรุงรักษาว่า 'วางแผน', 'เกินกำหนด' หรือ 'ยกเลิก'
+  1. เลือกช่วงเวลาที่ต้องการดำเนินการ วันครบกำหนดถัดไปจะถูกคำนวณ
+1. บันทึก
+1. หลังจากบันทึก คุณสามารถมอบหมายงานให้กับผู้ใช้ได้
   <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset_maintenance.png">
 
-If the Item is serialized, the Serial Number can be entered.
+หากรายการเป็นแบบต่อกัน สามารถป้อนหมายเลขซีเรียลได้
 
-## 3. Features
-### 3.1 Maintenance Tasks
+## 3. คุณสมบัติ
+### 3.1 งานบำรุงรักษา
 
-* **Maintenance Type**: Whether this is a 'Preventive' maintenance activity or 'Calibration' to restore accurate functioning.
-* **Start and End Date**: Set the start date and end date when the maintenance is supposed to begin and end.
-* **Last Completion Date**: If the maintenance was not carried out on or before the scheduled date, the actual date of maintenance can be recorded here.
+* **ประเภทการบำรุงรักษา**: ไม่ว่าจะเป็นกิจกรรมการบำรุงรักษา 'เชิงป้องกัน' หรือ 'การปรับเทียบ' เพื่อคืนค่าการทำงานที่แม่นยำ
+* **วันที่เริ่มต้นและสิ้นสุด**: กำหนดวันที่เริ่มต้นและวันที่สิ้นสุดเมื่อการบำรุงรักษาควรจะเริ่มต้นและสิ้นสุด
+* **วันที่เสร็จสิ้นล่าสุด**: หากการบำรุงรักษาไม่ดำเนินการในหรือก่อนวันที่กำหนด สามารถบันทึกวันที่ของการบำรุงรักษาจริงได้ที่นี่
 
-### 3.2 Asset Maintenance in ToDo
+### 3.2 การบำรุงรักษาสินทรัพย์ในสิ่งที่ต้องทำ
 
-On assigning the maintenance to a user, it will appear in the User's ToDo list.
+ในการกำหนดการบำรุงรักษาให้กับผู้ใช้ จะปรากฏในรายการสิ่งที่ต้องทำของผู้ใช้
 
 ![Asset Maintenance](/docs/assets/img/asset/asset-maintenance-todo.png)
 
 
-## 4. Related Topics
-1. [Asset Value Adjustment](/docs/user/manual/en/asset/asset-value-adjustment)
-1. [Asset Depreciation](/docs/user/manual/en/asset/asset-depreciation)
-1. [Scrapping an Asset](/docs/user/manual/en/asset/scrapping-an-asset)
+## 4. หัวข้อที่เกี่ยวข้อง
+1. [การปรับมูลค่าสินทรัพย์](/docs/user/manual/th/asset/asset-value-adjustment)
+1. [ค่าเสื่อมราคาสินทรัพย์](/docs/user/manual/th/asset/asset-depreciation)
+1. [ขูดสินทรัพย์](/docs/user/manual/th/asset/scrapping-an-asset)

@@ -1,13 +1,13 @@
 <!-- add-breadcrumbs -->
-# Asset Location
+# ที่ตั้งทรัพย์สิน
 
-**Asset Location shows where an Asset is located.**
+**ตำแหน่งสินทรัพย์แสดงตำแหน่งของสินทรัพย์**
 
-The assets that your organization owns can be located at various facilities like administrative offices, manufacturing plants, warehouses, etc. In ERPNext you can create a 'Location' for each of your facilities and track the assets which are present in these locations.
+สินทรัพย์ที่องค์กรของคุณเป็นเจ้าของสามารถตั้งอยู่ในสถานที่ต่างๆ เช่น สำนักงานธุรการ โรงงานผลิต คลังสินค้า ฯลฯ ใน ERPNext คุณสามารถสร้าง 'ตำแหน่ง' สำหรับสถานที่แต่ละแห่งของคุณและติดตามทรัพย์สินที่มีอยู่ในสถานที่เหล่านี้
 
-You can also add Latitude and Longitude of the location. When an asset is moved from one location to another, you need to create an Asset Movement record.
+คุณยังสามารถเพิ่มละติจูดและลองจิจูดของตำแหน่งได้ เมื่อสินทรัพย์ถูกย้ายจากที่หนึ่งไปยังอีกที่หนึ่ง คุณต้องสร้างเรกคอร์ดการเคลื่อนย้ายสินทรัพย์
 
-Map of the location is also shown:
+แผนที่ของที่ตั้งยังแสดง:
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset_location.png">
 

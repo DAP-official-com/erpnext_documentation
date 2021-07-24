@@ -1,17 +1,17 @@
 <!-- add breadcrumbs -->
-# Selling an Asset
+# ขายสินทรัพย์
 
-To sell an asset, open the asset record and clicking on the **Sell Asset** button. This will take you to a [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice). In the Sales Invoice, enter details like Customer and Payment Due Date.
+ในการขายสินทรัพย์ ให้เปิดบันทึกสินทรัพย์และคลิกที่ปุ่ม **ขายสินทรัพย์** สิ่งนี้จะนำคุณไปยัง [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice) ในใบกำกับสินค้า ให้ป้อนรายละเอียด เช่น ลูกค้าและวันครบกำหนดชำระเงิน
 
-On submission of the Sales Invoice, following accounting entries will take place:
+ในการส่งใบกำกับสินค้า รายการบัญชีต่อไปนี้จะเกิดขึ้น:
 
-- "Receivable Account" (Debtors) will be debited by the sales amount.
-- "Fixed Asset Account" will be credited by the purchase amount of asset.
-- "Accumulated Depreciation Account" will be debited by the total depreciated amount till now.
-- "Gain/Loss Account on Asset Disposal" will be credited/debited based on gain/loss amount. The Gain/Loss account can be set in Company record.
+- "บัญชีลูกหนี้" (ลูกหนี้) จะถูกหักตามยอดขาย
+- "บัญชีสินทรัพย์ถาวร" จะได้รับเครดิตตามจำนวนการซื้อสินทรัพย์
+- "บัญชีค่าเสื่อมราคาสะสม" จะถูกหักด้วยจำนวนเงินที่คิดค่าเสื่อมราคาทั้งหมดจนถึงปัจจุบัน
+- "บัญชีกำไร/ขาดทุนจากการขายสินทรัพย์" จะได้รับเครดิต/เดบิตตามจำนวนกำไร/ขาดทุน บัญชีกำไร/ขาดทุนสามารถตั้งค่าได้ในบันทึกของบริษัท
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset-sales.png">
 
-### Related Topics
-1. [Asset Value Adjustment](/docs/user/manual/en/asset/asset-value-adjustment)
-1. [Purchasing an Asset](/docs/user/manual/en/asset/purchasing-an-asset) 
+### หัวข้อที่เกี่ยวข้อง
+1. [การปรับมูลค่าสินทรัพย์](/docs/user/manual/th/asset/asset-value-adjustment)
+1. [การจัดซื้อสินทรัพย์](/docs/user/manual/th/asset/purchasing-an-asset)

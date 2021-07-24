@@ -1,89 +1,88 @@
 <!-- add-breadcrumbs -->
-# Warranty Claim
+# การรับประกัน
 
-**A Warranty Claim is when a Customer claims free repairs within the Warranty Period of the item/service you're providing.**
+**การเคลมการรับประกันคือเมื่อลูกค้าเรียกร้องการซ่อมฟรีภายในระยะเวลาการรับประกันของสินค้า/บริการที่คุณนำเสนอ**
 
-If you are selling Items under warranty or if you have sold and extended service contract like the Annual Maintenance Contract (AMC), your Customer may contact you about an issue or a break-down of the product and provide you the Serial No of this Item.
+หากคุณกำลังขายสินค้าภายใต้การรับประกัน หรือหากคุณได้ขายและขยายสัญญาบริการ เช่น สัญญาการบำรุงรักษาประจำปี (AMC) ลูกค้าของคุณอาจติดต่อคุณเกี่ยวกับปัญหาหรือการแตกผลิตภัณฑ์และแจ้งหมายเลขซีเรียลของรายการนี้ให้คุณ .
 
-To access the Warranty Claim list, go to:
+หากต้องการเข้าถึงรายการเคลมการรับประกัน ให้ไปที่:
 
-> Home > Support > Warranty > Warranty Claim
+> หน้าหลัก > การสนับสนุน > การรับประกัน > การเคลมการรับประกัน
 
-## 1. Prerequisites
-Before creating and using Warranty Claim, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้การอ้างสิทธิ์การรับประกัน ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Customer](/docs/user/manual/en/CRM/customer)
-* [Serial Number](/docs/user/manual/en/stock/serial-no)
-* [Item](/docs/user/manual/en/stock/item)
+* [ลูกค้า](/docs/user/manual/th/CRM/customer)
+* [หมายเลขซีเรียล](/docs/user/manual/th/stock/serial-no)
+* [รายการ](/docs/user/manual/th/stock/item)
 
-## 2. How to Create Warranty Claim
+## 2. วิธีสร้างการเคลมการรับประกัน
 
-1. Go to the Warranty Claim list, click on New.
-1. Select a Customer. 
-1. Select the Serial Number of the Item on which Warranty Claim is to be recorded. The system will then automatically fetch the Serial No’s details and indicate whether this is under warranty or AMC.
-1. Enter a description of the Issue. User can upload and image and create a table.
-1. Save.
+1. ไปที่รายการเคลมการรับประกัน คลิกที่ ใหม่
+1. เลือกลูกค้า
+1. เลือกหมายเลขซีเรียลของรายการที่จะบันทึกการเรียกร้องการรับประกัน จากนั้นระบบจะดึงรายละเอียดของ Serial No โดยอัตโนมัติและระบุว่าอยู่ภายใต้การรับประกันหรือ AMC
+1. ป้อนคำอธิบายของปัญหา ผู้ใช้สามารถอัปโหลดและสร้างภาพและสร้างตาราง
+1. บันทึก
     ![Warranty Claim]({{docs_base_url}}/assets/img/support/warranty-claim.png)
 
-### 2.1 Additional Options when Creating a Warranty Claim
+### 2.1 ตัวเลือกเพิ่มเติมเมื่อสร้างการเรียกร้องการรับประกัน
 
-* **Status**: While creating a Warranty Claim, the status will be set as "Open". User can change the status to:
-    * Work In Progress: Fix/repairs are being done on the Item.
-    * Closed: The repairs have been done and the Warranty Claim is now closed.
-    * Cancelled: The Warranty Claim was invalid and the claim was closed.
-* **Issue Date**: While creating the Warranty Claim, the current date will be captured. This field is editable.
+* **สถานะ**: ขณะสร้างการอ้างสิทธิ์การรับประกัน สถานะจะถูกตั้งค่าเป็น "เปิด" ผู้ใช้สามารถเปลี่ยนสถานะเป็น:
+    * งานระหว่างทำ: กำลังแก้ไข/ซ่อมแซมรายการ
+    * ปิด: การซ่อมแซมเสร็จสิ้นแล้ว และการเรียกร้องการรับประกันได้ปิดลงแล้ว
+    * ยกเลิก: การเรียกร้องการรับประกันไม่ถูกต้องและการอ้างสิทธิ์ถูกปิด
+* **วันที่ออก**: ขณะสร้างการเรียกร้องการรับประกัน วันที่ปัจจุบันจะถูกบันทึก ฟิลด์นี้สามารถแก้ไขได้
 
 
-## 3 Features
+## 3 คุณสมบัติ
 
-### 3.1 Item and Warranty Details:
+### 3.1 รายการและรายละเอียดการรับประกัน:
 
-Once a Serial Number is selected, the following details about the Item will be fetched:
+เมื่อเลือกหมายเลขซีเรียลแล้ว ระบบจะดึงรายละเอียดต่อไปนี้เกี่ยวกับรายการ:
 
-* Item Code
-* Item Name
-* Item Description
+* รหัสสินค้า
+* ชื่อรายการ
+* รายละเอียดสินค้า
 
-The details about Warranty/AMC will be fetched according to the Serial Number.
+รายละเอียดเกี่ยวกับการรับประกัน/AMC จะถูกดึงมาตามหมายเลขซีเรียล
 
-* **Warranty / AMC Status:** The possible options are "Under Warranty", "Out of Warranty", "Under AMC", or "Out of AMC". The status can be changed to Out of Warranty/AMC if the Item has been tampered with or Warranty is void depending on your terms of service.
-* Warranty Expiry Date
-* AMC Expiry date
+* **การรับประกัน / สถานะ AMC:** ตัวเลือกที่เป็นไปได้คือ "อยู่ภายใต้การรับประกัน", "อยู่นอกการรับประกัน", "อยู่ภายใต้ AMC" หรือ "อยู่นอก AMC" สถานะสามารถเปลี่ยนเป็น Out of Warranty/AMC หากสินค้าถูกดัดแปลงหรือการรับประกันเป็นโมฆะขึ้นอยู่กับข้อกำหนดในการให้บริการของคุณ
+* วันหมดอายุการรับประกัน
+* วันหมดอายุ บบส.
 
     ![Warranty Serial](/docs/assets/img/support/warranty-serial.png)
 
-### 3.2 Resolution
-* **Resolution Date:** When the warranty or AMC is Closed, current date and time will be fetched in resolution Date field automatically. This field is also editable.
-* **Resolved By:** Set the Email ID of the User who has resolved the Warranty Claim. The email ID is linked with [User](/docs/user/manual/en/setting-up/users-and-permissions/adding-users) created in the system.
-* **Resolved Details:** This is a text field. User can enter details about the Warranty or AMC claim. A User can also upload the image, enter or create a table.
+### 3.2 ความละเอียด
+* **วันที่แก้ไข:** เมื่อการรับประกันหรือ AMC ปิดลง วันที่และเวลาปัจจุบันจะถูกดึงข้อมูลในช่องวันที่แก้ไขโดยอัตโนมัติ ฟิลด์นี้ยังสามารถแก้ไขได้
+* **แก้ไขโดย:** ตั้งค่า ID อีเมลของผู้ใช้ที่แก้ไขการเรียกร้องการรับประกัน ID อีเมลเชื่อมโยงกับ [ผู้ใช้](/docs/user/manual/th/setting-up/users-and-permissions/adding-users) ที่สร้างขึ้นในระบบ
+* **รายละเอียดที่แก้ไขแล้ว:** นี่คือช่องข้อความ ผู้ใช้สามารถป้อนรายละเอียดเกี่ยวกับการรับประกันหรือการเรียกร้องของ AMC ผู้ใช้ยังสามารถอัปโหลดภาพ ป้อนหรือสร้างตารางได้
 
     ![Warranty Resolution](/docs/assets/img/support/warranty-resolution.png)
 
-### 3.3 Customer Details
+### 3.3 รายละเอียดลูกค้า
 
-The following details of the [Customer](/docs/user/manual/en/CRM/customer) will be fetched:
+รายละเอียดต่อไปนี้ของ [ลูกค้า](/docs/user/manual/th/CRM/customer) จะถูกดึงข้อมูล:
 
-* Customer Name
-* Contact Person
-* Territory
-* Customer Group
-* Customer Addresss
+* ชื่อลูกค้า
+* ผู้ติดต่อ
+* อาณาเขต
+* กลุ่มลูกค้า
+* ที่อยู่ลูกค้า
 
-**Service Address:** User can enter the Service Address if it is different from Customer Address.
+**ที่อยู่บริการ:** ผู้ใช้สามารถป้อนที่อยู่สำหรับรับบริการได้หากไม่ใช่ที่อยู่ของลูกค้า
 
 ![Warranty Customer](/docs/assets/img/support/warranty-customer.png)
 
-### 3.4 More Information
+### 3.4 ข้อมูลเพิ่มเติม
 
-* **Company:** The Warranty or AMC is created from the company will be selected automatically.
-* **Raised By:** User can enter the Name of the person who has raised the Warranty or AMC in case the Customer is an organization.
-* **From Company:** User can enter the name of the company from which the warranty or AMC has been created.
+* **บริษัท:** การรับประกันหรือ AMC ถูกสร้างขึ้นจากบริษัทจะถูกเลือกโดยอัตโนมัติ
+* **ยกโดย:** ผู้ใช้สามารถป้อนชื่อบุคคลที่ยกการรับประกันหรือ AMC ในกรณีที่ลูกค้าเป็นองค์กร
+* **จากบริษัท:** ผู้ใช้สามารถป้อนชื่อบริษัทที่สร้างการรับประกันหรือ AMC ได้
 
-If a Customer visit is required to address the issue, you can create a new
-Maintenance Visit record from this.
+หากต้องมีการเยี่ยมชมของลูกค้าเพื่อแก้ไขปัญหา คุณสามารถสร้างใหม่
+บันทึกการเยี่ยมชมการบำรุงรักษาจากนี้
 
-## 4. Related Topics
-1. [Issue](/docs/user/manual/en/support/issue)
-1. [Maintenance Visit](/docs/user/manual/en/support/maintenance-visit)
-
+## 4. หัวข้อที่เกี่ยวข้อง
+1. [ปัญหา](/docs/user/manual/th/support/issue)
+1. [Maintenance Visit](/docs/user/manual/th/support/maintenance-visit)
 {next}

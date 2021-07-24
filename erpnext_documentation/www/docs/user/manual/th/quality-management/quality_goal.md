@@ -1,41 +1,41 @@
 <!-- add-breadcrumbs -->
-# Quality Goal
+#เป้าหมายคุณภาพ
 
-> Introduced in Version 12
+> เปิดตัวในเวอร์ชัน 12
 
-It is a collection of individual metrics that helps to define your quality goals. It is a basic quality management process to establish a set of quality objectives.
+เป็นชุดของเมตริกแต่ละรายการที่ช่วยกำหนดเป้าหมายคุณภาพของคุณ เป็นกระบวนการจัดการคุณภาพขั้นพื้นฐานเพื่อสร้างชุดของวัตถุประสงค์ด้านคุณภาพ
 
-You can create a Quality Goal for your business having multiple Quality Objectives. Different Quality Objectives for a Goal can have definite numeric target or target measured in terms of completion status(yes or no). It is monitored based on Frequency which is set for that Goal.
+คุณสามารถสร้างเป้าหมายคุณภาพสำหรับธุรกิจของคุณโดยมีวัตถุประสงค์ด้านคุณภาพหลายข้อ วัตถุประสงค์ด้านคุณภาพที่แตกต่างกันสำหรับเป้าหมายสามารถมีเป้าหมายที่เป็นตัวเลขหรือเป้าหมายที่วัดได้ในแง่ของสถานะความสำเร็จ (ใช่หรือไม่ใช่) มีการตรวจสอบตามความถี่ที่ตั้งไว้สำหรับเป้าหมายนั้น
 
-If you set the frequency, a [Quality Review](/docs/user/manual/en/quality-management/quality_review) document will be created automatically periodically where you can maintain the actual performance measures.
+หากคุณตั้งค่าความถี่ เอกสาร [การตรวจสอบคุณภาพ](/docs/user/manual/th/quality-management/quality_review) จะถูกสร้างขึ้นโดยอัตโนมัติเป็นระยะ ซึ่งคุณสามารถรักษาการวัดประสิทธิภาพตามจริงได้
 
-To access the Quality Goal list, go to:
+หากต้องการเข้าถึงรายการเป้าหมายคุณภาพ ไปที่:
 
-> Home > Quality > Quality Goal
+> หน้าแรก > คุณภาพ > เป้าหมายคุณภาพ
 
-## 1. How to Create a Quality Goal
+## 1. วิธีสร้างเป้าหมายคุณภาพ
 
-1. Go to the Quality Goal list, click on New.
-1. Enter a name for the goal.
-1. Select a [Quality Procedure](/docs/user/manual/en/quality-management/quality_procedure) to be followed to achieve the Goal.
-1. Created By is the Person responsible for the creation of the Goal.
-1. Enter a Monitoring Frequency from 'Daily', 'Weekly', 'Monthly', or 'Quarterly'. Select 'None' if no monitoring is needed.
-In the Objectives table, enter:
-    1. The Objectives which consist the various Objectives that need to be completed to meet the a Quality Goal.
-    1. The Target which consists of the numeric target value of an Objective that is to be met.
-    1. The Unit of Measurement to measure the Target. Eg: Leads, Hours, etc.
+1. ไปที่รายการเป้าหมายคุณภาพ คลิกใหม่
+1. ป้อนชื่อเป้าหมาย
+1. เลือก [ขั้นตอนคุณภาพ](/docs/user/manual/th/quality-management/quality_procedure) ที่จะปฏิบัติตามเพื่อให้บรรลุเป้าหมาย
+1. สร้างโดยคือบุคคลที่รับผิดชอบในการสร้างเป้าหมาย
+1. ป้อนความถี่ในการตรวจสอบจาก "รายวัน" "รายสัปดาห์" "รายเดือน" หรือ "รายไตรมาส" เลือก 'ไม่มี' หากไม่ต้องการการตรวจสอบ
+ในตารางวัตถุประสงค์ ให้ป้อน:
+    1. วัตถุประสงค์ซึ่งประกอบด้วยวัตถุประสงค์ต่างๆ ที่ต้องทำให้สำเร็จเพื่อให้บรรลุเป้าหมายด้านคุณภาพ
+    1. เป้าหมาย ซึ่งประกอบด้วยค่าเป้าหมายที่เป็นตัวเลขของวัตถุประสงค์ที่จะบรรลุ
+    1. หน่วยวัดเพื่อวัดเป้าหมาย เช่น ลูกค้าเป้าหมาย ชั่วโมง ฯลฯ
     ![Quality Goal](/docs/assets/img/quality-management/quality-goal.png)
-1. Save.
+1. บันทึก
 
-The Revision field shows The number of times the document was saved.
+ช่องการแก้ไขจะแสดงจำนวนครั้งที่บันทึกเอกสาร
 
-Creating a Quality Goal:
+การสร้างเป้าหมายคุณภาพ:
 
 <img class="screenshot" alt="Quality management" src="{{docs_base_url}}/assets/img/quality-management/creating-quality-goal.gif">
 
-## 2. Related Topics
+## 2. หัวข้อที่เกี่ยวข้อง
 
-1. [Quality Procedure](/docs/user/manual/en/quality-management/quality_procedure)
-1. [Quality Review](/docs/user/manual/en/quality-management/quality_review)
+1. [ขั้นตอนคุณภาพ](/docs/user/manual/th/quality-management/quality_procedure)
+1. [การตรวจสอบคุณภาพ](/docs/user/manual/th/quality-management/quality_review)
 
 {next}

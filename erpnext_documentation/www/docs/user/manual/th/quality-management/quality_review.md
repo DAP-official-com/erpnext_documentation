@@ -1,48 +1,48 @@
 <!-- add-breadcrumbs -->
-# Quality Review
+#รีวิวคุณภาพ
 
-> Introduced in Version 12
+> เปิดตัวในเวอร์ชัน 12
 
-**A Quality Review is a record of the performance against Quality Goal at regular intervals.**
+**การตรวจสอบคุณภาพคือบันทึกประสิทธิภาพเทียบกับเป้าหมายคุณภาพเป็นระยะๆ**
 
-A Quality Review is an inspection with a specific structure, defined roles, and procedure designed to ensure a product's completeness and adherence to quality standards. The Quality Review is used to check if all Objectives of a Quality Goal have been achieved.
+การตรวจสอบคุณภาพคือการตรวจสอบที่มีโครงสร้างเฉพาะ บทบาทที่กำหนดไว้ และขั้นตอนที่ออกแบบมาเพื่อให้แน่ใจว่าผลิตภัณฑ์มีความครบถ้วนสมบูรณ์และเป็นไปตามมาตรฐานคุณภาพ การตรวจสอบคุณภาพใช้เพื่อตรวจสอบว่าบรรลุวัตถุประสงค์ทั้งหมดของเป้าหมายคุณภาพหรือไม่
 
-To access the Quality Review list, go to:
-> Home > Quality > Review and Action > Quality Review
+หากต้องการเข้าถึงรายการตรวจสอบคุณภาพ ให้ไปที่:
+> หน้าแรก > คุณภาพ > ทบทวนและดำเนินการ > ทบทวนคุณภาพ
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating and using a Quality Review it is advised to create the following first:
+ก่อนสร้างและใช้การตรวจสอบคุณภาพ ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Quality Goal](/docs/user/manual/en/quality-management/quality_goal)
+* [เป้าหมายคุณภาพ](/docs/user/manual/th/quality-management/quality_goal)
 
-## 2. How to Create a Quality Review
+## 2. วิธีสร้างรีวิวคุณภาพ
 
-1. Go to the Quality Review list, click on New.
-1. Select a Quality Goal which is to be Reviewed.
-1. In the Review section of the Reviews table, leave a review about a Quality Objective.
-1. Save.
+1. ไปที่รายการตรวจสอบคุณภาพ คลิกที่ใหม่
+1. เลือกเป้าหมายคุณภาพที่จะตรวจทาน
+1. ในส่วนการตรวจทานของตารางบทวิจารณ์ ให้เขียนรีวิวเกี่ยวกับวัตถุประสงค์ด้านคุณภาพ
+1. บันทึก
 
     <img class="screenshot" alt="Quality management" src="{{docs_base_url}}/assets/img/quality-management/new-quality-review.gif">
 
-> Note: If the Quality Procedure is linked to the Quality Goal, the Quality Procedure will be fetched in the Quality Review.
+> หมายเหตุ: หากขั้นตอนคุณภาพเชื่อมโยงกับเป้าหมายคุณภาพ ขั้นตอนคุณภาพจะถูกดึงมาในการตรวจสอบคุณภาพ
 
-You can also add some notes in the 'Additional Information' section.
+คุณยังสามารถเพิ่มหมายเหตุในส่วน 'ข้อมูลเพิ่มเติม'
 
-## 3. Features
+## 3. คุณสมบัติ
 
-#### Periodic Auto Creation
+#### การสร้างอัตโนมัติเป็นระยะ
 
-if you have set the frequency of review in your [Quality Goal](docs/user/manual/en/quality-management/quality_goal), then the Quality Review will automatically be created and its status will be set to "Open". The quality manager can then check open reviews and complete the inspection.
+หากคุณได้กำหนดความถี่ในการตรวจสอบใน [เป้าหมายคุณภาพ](docs/user/manual/th/quality-management/quality_goal) การตรวจทานคุณภาพจะถูกสร้างขึ้นโดยอัตโนมัติและสถานะจะถูกตั้งเป็น "เปิด" ผู้จัดการคุณภาพจะสามารถตรวจสอบบทวิจารณ์ที่เปิดอยู่และทำการตรวจสอบให้เสร็จสิ้นได้
 
-## 4. Next Steps
+## 4. ขั้นตอนต่อไป
 
-After you have completed a Quality Review, you can create a [Quality Action](/docs/user/manual/en/quality-management/quality_action) against it if you want to record any corrective or preventive actions
+หลังจากที่คุณเสร็จสิ้นการตรวจสอบคุณภาพแล้ว คุณสามารถสร้าง [การดำเนินการคุณภาพ](/docs/user/manual/th/quality-management/quality_action) กับมันได้ หากคุณต้องการบันทึกการดำเนินการแก้ไขหรือป้องกัน
 
-## 5. Related Topics
+## 5. หัวข้อที่เกี่ยวข้อง
 
-* [Quality Procedure](/docs/user/manual/en/quality-management/quality_procedure)
-* [Quality Goal](/docs/user/manual/en/quality-management/quality_goal)
-* [Quality Action](/docs/user/manual/en/quality-management/quality_action)
+* [ขั้นตอนคุณภาพ](/docs/user/manual/th/quality-management/quality_procedure)
+* [เป้าหมายคุณภาพ](/docs/user/manual/th/quality-management/quality_goal)
+* [การดำเนินการด้านคุณภาพ](/docs/user/manual/th/quality-management/quality_action)
 
 {next}

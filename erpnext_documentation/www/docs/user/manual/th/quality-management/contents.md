@@ -1,30 +1,30 @@
 <!-- add breadcrumbs -->
-# Quality Management System
+#ระบบการจัดการคุณภาพ
 
-> Introduced in Version 12
+> เปิดตัวในเวอร์ชัน 12
 
- Quality management is the act of overseeing all activities and tasks needed to maintain a desired level of excellence in tasks. ERPNext Quality module helps you manage your quality goals, process, reviews, non conformances, actions and meetings. It is designed to help you manage a full blown "Quality Management System". Here is an overview of what is included in the quality module
+ การจัดการคุณภาพคือการดูแลกิจกรรมและงานทั้งหมดที่จำเป็นเพื่อรักษาระดับความเป็นเลิศในงานที่ต้องการ โมดูลคุณภาพ ERPNext ช่วยให้คุณจัดการเป้าหมายด้านคุณภาพ กระบวนการ การทบทวน การไม่ปฏิบัติตาม การดำเนินการ และการประชุม ได้รับการออกแบบมาเพื่อช่วยคุณจัดการ "ระบบการจัดการคุณภาพ" ที่สมบูรณ์ นี่คือภาพรวมของสิ่งที่รวมอยู่ในโมดูลคุณภาพ
 
- For more details go through the following topics
+ ดูรายละเอียดในหัวข้อต่อไปนี้
 
-## Topics
+## หัวข้อ
 
-### 1. Goals and Procedure
+### 1. เป้าหมายและขั้นตอน
 
-1. [Quality Goal](/docs/user/manual/en/quality-management/quality_goal)
-1. [Quality Procedure](/docs/user/manual/en/quality-management/quality_procedure)
+1. [เป้าหมายคุณภาพ](/docs/user/manual/th/quality-management/quality_goal)
+1. [ขั้นตอนคุณภาพ](/docs/user/manual/th/quality-management/quality_procedure)
 
-### 2. Review and Action
+### 2. ทบทวนและดำเนินการ
 
-1. [Quality Review](/docs/user/manual/en/quality-management/quality_review)
-1. [Quality Action](/docs/user/manual/en/quality-management/quality_action)
-1. [Non Conformance](/docs/user/manual/en/quality-management/non-conformance)
+1. [การตรวจสอบคุณภาพ](/docs/user/manual/th/quality-management/quality_review)
+1. [การดำเนินการด้านคุณภาพ](/docs/user/manual/th/quality-management/quality_action)
+1. [ไม่เป็นไปตามข้อกำหนด](/docs/user/manual/th/quality-management/non-conformance)
 
-### 3. Meeting
+### 3. การประชุม
 
-1. [Quality Meeting](/docs/user/manual/en/quality-management/quality_meeting)
+1. [การประชุมคุณภาพ](/docs/user/manual/th/quality-management/quality_meeting)
 
-### 4. Feedback
+### 4. คำติชม
 
-1. [Quality Feedback Template](/docs/user/manual/en/quality-management/quality-feedback-template)
-1. [Quality Feedback](/docs/user/manual/en/quality-management/quality_feedback)
+1. [เทมเพลตคำติชมคุณภาพ](/docs/user/manual/th/quality-management/quality-feedback-template)
+1. [คำติชมด้านคุณภาพ](/docs/user/manual/th/quality-management/quality_feedback)

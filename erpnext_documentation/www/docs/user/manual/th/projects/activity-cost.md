@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-# Activity Cost
+# ค่ากิจกรรม
 
-**Activity Cost records the per-hour billing rate and costing rate of an Employee against a particular Activity Type.**
+**ต้นทุนกิจกรรมจะบันทึกอัตราการเรียกเก็บเงินต่อชั่วโมงและอัตราต้นทุนของพนักงานเทียบกับประเภทกิจกรรมเฉพาะ**
 
-The system pulls this rate while making Timesheets. It is used to determine the [Project Cost](/docs/user/manual/en/projects/project-costing).
+ระบบจะดึงอัตรานี้ขณะสร้างไทม์ชีท ใช้เพื่อกำหนด [ต้นทุนโครงการ](/docs/user/manual/th/projects/project-costing)
 
 <img class="screenshot" alt="Activity Cost" src="{{docs_base_url}}/assets/img/project/projects-activity-cost.png">
 
-To access Activity Cost, go to,
+ในการเข้าถึงต้นทุนกิจกรรม ไปที่
 
-> Home > Projects > Time Tracking > Activity Cost
+> หน้าแรก > โครงการ > การติดตามเวลา > ต้นทุนกิจกรรม
 
-## 1. How to create Activity Cost
+## 1. วิธีสร้างต้นทุนกิจกรรม
 
-  1. Go to the Activity Cost list and click on New.
-  2. Add the name of the Employee for whom you are configuring the Activity Cost.
-  3. Add the Costing Rate and the Billing Rate for the Employee.
-  3. Save.
+  1. ไปที่รายการต้นทุนกิจกรรม แล้วคลิกใหม่
+  2. เพิ่มชื่อของพนักงานที่คุณกำลังกำหนดค่าต้นทุนกิจกรรม
+  3. เพิ่มอัตราการคิดต้นทุนและอัตราการเรียกเก็บเงินสำหรับพนักงาน
+  3. บันทึก
 
-Alternatively, an Activity Cost can also be created via the [Activity List](/docs/user/manual/en/projects/activity-type).
+อีกทางหนึ่ง ค่ากิจกรรมสามารถสร้างได้ผ่านทาง [รายการกิจกรรม](/docs/user/manual/th/projects/activity-type)
 
 <img class="screenshot" alt="Activity Cost" src="{{docs_base_url}}/assets/img/project/projects-activity-cost-activity-type.png">
 

@@ -1,13 +1,13 @@
 <!-- add-breadcrumbs -->
-# Project and Managing Expenses
+# โครงการและการจัดการค่าใช้จ่าย
 
-Employees working on a Project incur various expenses, sometimes from their pockets and then can claim such expenses using [Expense Claim](/docs/user/manual/en/human-resources/expense-claim).
+พนักงานที่ทำงานในโครงการมีค่าใช้จ่ายต่างๆ ในบางครั้งอาจมาจากเงินในกระเป๋า และจากนั้นสามารถเรียกร้องค่าใช้จ่ายดังกล่าวได้โดยใช้ [เคลมค่าใช้จ่าย](/docs/user/manual/th/human-resources/expense-claim)
 
-While filling up the claim, they can specify the Project for which they have made the expense.
+ขณะกรอกคำร้อง พวกเขาสามารถระบุโครงการที่พวกเขาทำค่าใช้จ่ายได้
 
 <img class="screenshot" alt="Project - Link Expense Claim" src="{{docs_base_url}}/assets/img/project/projects-expense-claim.png">
 
-Based on the Expense Claims made for a particular project, total Expense Claim Amount is updated in the Project master, under project costing section.
+ตามการเบิกค่าใช้จ่ายที่ทำขึ้นสำหรับโครงการหนึ่งๆ จำนวนเงินเรียกร้องค่าใช้จ่ายทั้งหมดจะได้รับการอัปเดตในต้นแบบโครงการ ภายใต้ส่วนการคิดต้นทุนโครงการ
 
 <img class="screenshot" alt="Project - Total Expense Claim" src="{{docs_base_url}}/assets/img/project/projects-expense-claim-in-project.png">
 

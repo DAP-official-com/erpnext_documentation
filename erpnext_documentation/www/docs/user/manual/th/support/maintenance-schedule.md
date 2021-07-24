@@ -1,43 +1,43 @@
 <!-- add-breadcrumbs -->
-# Maintenance Schedule
+# ตารางการซ่อมบำรุง
 
-**The Maintenance Schedule shows all upcoming Maintenance Visits.**
+**ตารางการซ่อมบำรุงจะแสดงการเข้าซ่อมบำรุงที่กำลังจะมีขึ้นทั้งหมด**
 
-All machines require regular maintenance, especially those that contain a lot
-of moving parts, so if you are in the business of maintaining those or have
-some of them in your own premises, this is a useful tool to plan a calendar of
-activities for its maintenance.
+เครื่องทั้งหมดต้องการการบำรุงรักษาอย่างสม่ำเสมอ โดยเฉพาะเครื่องที่มีจำนวนมาก
+ของชิ้นส่วนที่เคลื่อนไหว ดังนั้นหากคุณอยู่ในธุรกิจบำรุงรักษาชิ้นส่วนเหล่านั้นหรือมี
+บางส่วนอยู่ในสถานที่ของคุณเอง นี่เป็นเครื่องมือที่มีประโยชน์ในการวางแผนปฏิทินของ
+กิจกรรมเพื่อการบำรุงรักษา
 
-To create a new Maintenance Schedule go to:
+ในการสร้างกำหนดการบำรุงรักษาใหม่ ไปที่:
 
-> Home > Support > Maintenance > Maintenance Schedule
+> หน้าหลัก > การสนับสนุน > การซ่อมบำรุง > ตารางการซ่อมบำรุง
 
-A Maintenance Schedule is usually created from a Sales Order of type 'Maintenance'.
+กำหนดการบำรุงรักษามักจะสร้างจากใบสั่งขายประเภท 'การบำรุงรักษา'
 ![SO Maintenance Schedule](/docs/assets/img/support/so-maintenance-schedule.png)
 
-## 1. Prerequisites
-* [Customer](/docs/user/manual/en/CRM/customer)
-* [Item](/docs/user/manual/en/stock/item)
+## 1. ข้อกำหนดเบื้องต้น
+* [ลูกค้า](/docs/user/manual/th/CRM/customer)
+* [รายการ](/docs/user/manual/th/stock/item)
 
-## 2. How to Create a Maintenance Schedule
-1. Go to the Maintenance Schedule, click on New.
-1. Select the Customer and the Items for which maintenance needs to be done.
-1. Set the start and end dates.
-1. Select a Periodicity to set how frequently the visits will happen. The options are "Weekly", "Monthly", "Quarterly", "Half Yearly", "Yearly" and "Random". Maintenance Schedule will get generated based on selected Periodicity. Selecting Random will generate random dates
-1. The Number of Visits will be set as per the Periodicity selected. Eg: If you selected Weekly and set the whole month between the start and dates, 4 visits are ideal.
-1. Select the Sales Person performing the visits.
-1. Save.
-1. After saving, click on the **Generate Schedule** button to generate a Maintenance Schedule.
-1. Submit.
+## 2. วิธีสร้างตารางการบำรุงรักษา
+1. ไปที่ ตารางการบำรุงรักษา คลิกที่ ใหม่
+1. เลือกลูกค้าและรายการที่ต้องการการบำรุงรักษา
+1. ตั้งวันที่เริ่มต้นและสิ้นสุด
+1. เลือกช่วงเวลาเพื่อกำหนดความถี่ในการเข้าชม ตัวเลือกคือ "รายสัปดาห์" "รายเดือน" "รายไตรมาส" "ครึ่งปี" "รายปี" และ "สุ่ม" ตารางการบำรุงรักษาจะถูกสร้างขึ้นตามระยะเวลาที่เลือก การเลือกสุ่มจะสร้างวันที่สุ่ม
+1. จำนวนการเข้าชมจะถูกกำหนดตามระยะเวลาที่เลือก เช่น หากคุณเลือกรายสัปดาห์และตั้งค่าทั้งเดือนระหว่างวันที่เริ่มต้นและวันที่ การเข้าชม 4 ครั้งจะเหมาะสมที่สุด
+1. เลือกพนักงานขายที่ทำการเยี่ยมชม
+1. บันทึก
+1. หลังจากบันทึกแล้ว ให้คลิกที่ปุ่ม **สร้างกำหนดการ** เพื่อสร้างกำหนดการบำรุงรักษา
+1. ส่ง
 
     <img class="screenshot" alt="Maintenance Schedule" src="{{docs_base_url}}/assets/img/support/maintenance-schedule-1.png">
 
-The **Generate Schedule** button will generate a separate row for each maintenance activity. Each Item in a Maintenance Schedule is allocated to a Sales Person. 
+ปุ่ม **สร้างกำหนดการ** จะสร้างแถวแยกสำหรับกิจกรรมการบำรุงรักษาแต่ละรายการ แต่ละรายการในตารางการบำรุงรักษาจะถูกจัดสรรให้กับพนักงานขาย
 
-When the document is Submitted Calendar events are created for the Sales Person User for each maintenance.
+เมื่อเอกสารถูกส่งแล้ว ปฏิทินจะถูกสร้างขึ้นสำหรับผู้ใช้พนักงานขายสำหรับการบำรุงรักษาแต่ละครั้ง
 
-## 3. Related Topics
-1. [Serial Number](/docs/user/manual/en/stock/serial-no)
-1. [Warranty Claim](/docs/user/manual/en/support/warranty-claim)
-1. [Maintenance Visit](/docs/user/manual/en/support/maintenance-visit)
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [หมายเลขซีเรียล](/docs/user/manual/th/stock/serial-no)
+1. [การเคลมการรับประกัน](/docs/user/manual/th/support/warranty-claim)
+1. [Maintenance Visit](/docs/user/manual/th/support/maintenance-visit)
+1. [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order)

@@ -1,36 +1,36 @@
 <!-- add breadcrumbs -->
-# Asset Movement
+# การเคลื่อนย้ายสินทรัพย์
 
-**Asset Movement refers to moving an Asset from one Location to another.**
+**การเคลื่อนย้ายสินทรัพย์ หมายถึง การย้ายทรัพย์สินจากที่หนึ่งไปอีกที่หนึ่ง**
 
-In ERPNext, you can track the location of an asset or to whom it is issued. For tracking, you need to create an Asset Movement transaction, whenever the asset is moved from one location to another. You can also keep a track of issuance of an asset to any employee.
+ใน ERPNext คุณสามารถติดตามตำแหน่งของสินทรัพย์หรือผู้ที่ออกให้ สำหรับการติดตาม คุณต้องสร้างธุรกรรมการเคลื่อนย้ายสินทรัพย์ เมื่อใดก็ตามที่สินทรัพย์ถูกย้ายจากที่หนึ่งไปยังอีกที่หนึ่ง คุณยังสามารถติดตามการออกสินทรัพย์ให้กับพนักงานคนใดก็ได้
 
-To access the Asset Movement list, go to:
-> Home > Asset > Assets > Asset Movement
+หากต้องการเข้าถึงรายการเคลื่อนย้ายสินทรัพย์ ไปที่:
+> หน้าหลัก > สินทรัพย์ > สินทรัพย์ > การเคลื่อนย้ายสินทรัพย์
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset-movement.png">
 
-## 1. Prerequisites
-Before creating and using Asset Movement, it is advised to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้การเคลื่อนย้ายสินทรัพย์ แนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Asset](/docs/user/manual/en/asset/asset)
-* [Asset Location](/docs/user/manual/en/asset/asset-location)
+* [สินทรัพย์](/docs/user/manual/th/asset/asset)
+* [ตำแหน่งสินทรัพย์](/docs/user/manual/th/asset/asset-location)
 
 
-## 2. How to create an Asset Movement
-1. Go to the Asset Movement list, click on New.
-1. Select the Purpose from 'Issue', 'Receipt', or 'Transfer'. Mandatory fields will be changed based on purpose.
-1. Select a date.
-1. Select Assets you want to move. Currenct Location / Custodian will be automatically fetched.
-1. Select Reference Document Type (Optional).
-1. Select Reference Document Name (Optional).
-1. Save.
-1. Submit.
+## 2. วิธีสร้างการเคลื่อนไหวของสินทรัพย์
+1. ไปที่รายการการเคลื่อนย้ายสินทรัพย์ คลิกที่ ใหม่
+1. เลือกวัตถุประสงค์จาก 'ออก', 'ใบเสร็จรับเงิน' หรือ 'โอน' ฟิลด์บังคับจะมีการเปลี่ยนแปลงตามวัตถุประสงค์
+1. เลือกวันที่
+1. เลือกสินทรัพย์ที่คุณต้องการย้าย ตำแหน่งปัจจุบัน / ผู้รับฝากทรัพย์สินจะถูกดึงข้อมูลโดยอัตโนมัติ
+1. เลือกประเภทเอกสารอ้างอิง (ไม่บังคับ)
+1. เลือกชื่อเอกสารอ้างอิง (ไม่บังคับ)
+1. บันทึก
+1. ส่ง
 
-To make an Asset Movement of a number of assets, it is advised to go to Asset List, select assets to be moved and click on **Make Asset Movement** from Actions menu on the top left. 
+ในการเคลื่อนย้ายสินทรัพย์ของสินทรัพย์จำนวนหนึ่ง ขอแนะนำให้ไปที่รายการสินทรัพย์ เลือกสินทรัพย์ที่จะย้าย และคลิก **สร้างการเคลื่อนไหวของสินทรัพย์** จากเมนูการดำเนินการที่ด้านบนซ้าย
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset-movement-using-button.png">
 
-There is also a **Transfer Asset** button on the top right of the Asset form to initiate Asset Movement. It auto fills available fields from Asset Form.
+นอกจากนี้ยังมีปุ่ม **โอนสินทรัพย์** ที่ด้านบนขวาของแบบฟอร์มสินทรัพย์เพื่อเริ่มการเคลื่อนย้ายสินทรัพย์ เติมช่องที่มีอยู่โดยอัตโนมัติจากแบบฟอร์มสินทรัพย์
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset-movement-using-transfer-asset-button.png">

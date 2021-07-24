@@ -1,18 +1,18 @@
 <!-- add-breadcrumbs -->
-# Quality Feedback Template
+# เทมเพลตคำติชมคุณภาพ
 
-For creating the Quality Feedback first you must decide the parameters by creating the Quality Feedback Template. The templates generally contain the name the template, scope and the different parameters to be entered. The different parameters can be decided on the basis of different occasions and survey.
+ในการสร้างคำติชมคุณภาพก่อนอื่น คุณต้องตัดสินใจเกี่ยวกับพารามิเตอร์โดยการสร้างเทมเพลตคำติชมคุณภาพ โดยทั่วไปเทมเพลตจะมีชื่อเทมเพลต ขอบเขต และพารามิเตอร์ต่างๆ ที่จะป้อน พารามิเตอร์ที่แตกต่างกันสามารถตัดสินใจได้ตามโอกาสและการสำรวจที่แตกต่างกัน
 
-To access the Quality Feedback Template, go to:
-> Home > Quality > Quality Feedback Template
+ในการเข้าถึงเทมเพลตคำติชมคุณภาพ ไปที่:
+> หน้าแรก > คุณภาพ > เทมเพลตคำติชมคุณภาพ
 
-## 1. How to create a Quality Feedback Template
-1. Go to the Quality Feedback Template list, click on New.
-1. Enter a name for the template.
-1. In the Parameters table, list down the various processes/parameters on which you want the user to rate and give the feedback.
-1. Save.
+## 1. วิธีสร้างเทมเพลตคำติชมคุณภาพ
+1. ไปที่รายการเทมเพลตคำติชมคุณภาพ คลิกที่ใหม่
+1. ป้อนชื่อเทมเพลต
+1. ในตาราง Parameters แสดงรายการกระบวนการ/พารามิเตอร์ต่างๆ ที่คุณต้องการให้ผู้ใช้ให้คะแนนและให้ข้อเสนอแนะ
+1. บันทึก
 
     <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/template.gif">
 
-## 2. Related Topics
-* [Quality Feedback](/docs/user/manual/en/quality-management/quality_feedback)
+## 2. หัวข้อที่เกี่ยวข้อง
+* [คำติชมคุณภาพ](/docs/user/manual/th/quality-management/quality_feedback)

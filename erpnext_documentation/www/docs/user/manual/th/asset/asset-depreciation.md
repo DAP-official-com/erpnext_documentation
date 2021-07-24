@@ -1,19 +1,19 @@
 <!-- add breadcrumbs -->
-# Asset Depreciation
+# ค่าเสื่อมราคาสินทรัพย์
 
-The system automatically creates a schedule for depreciation based on depreciation method and other related inputs like 'Available to Use Date' in the Asset record. It is also possible to create multiple depreciation schedules for different Finance Books. You need to tick the 'Calculate Depreciation' checkbox while creating an asset for calculating its depreciation and adding entries to the depreciation table in the Asset record.
+ระบบจะสร้างกำหนดการสำหรับการคิดค่าเสื่อมราคาโดยอัตโนมัติตามวิธีการคิดค่าเสื่อมราคาและอินพุตที่เกี่ยวข้องอื่นๆ เช่น 'วันที่พร้อมใช้งาน' ในบันทึกสินทรัพย์ นอกจากนี้ยังสามารถสร้างกำหนดการคิดค่าเสื่อมราคาหลายรายการสำหรับหนังสือการเงินต่างๆ คุณต้องทำเครื่องหมายที่ช่อง 'คำนวณค่าเสื่อมราคา' ในขณะที่สร้างสินทรัพย์สำหรับคำนวณค่าเสื่อมราคาและเพิ่มรายการลงในตารางค่าเสื่อมราคาในบันทึกสินทรัพย์
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/depreciation-schedule.png">
 
-Types of depreciations in ERPNext:
+ประเภทของค่าเสื่อมราคาใน ERPNext:
 
-* **Straight line**: The depreciation is calculate in a straight line and is _distributed evenly_ over the selected frequency in months. For example, current asset value is 1000, post depreciation value is 500 after 5 years, straight line would set 100 as depreciated amount for each year. This method is useful when there is no particular pattern to how the depreciation takes place over a period of time.
+* **แบบตรง**: ค่าเสื่อมราคาคำนวณเป็นเส้นตรงและ _กระจายเท่าๆ กัน_ เหนือความถี่ที่เลือกในเดือน ตัวอย่างเช่น มูลค่าสินทรัพย์ปัจจุบันคือ 1,000 ค่าหลังการคิดค่าเสื่อมราคาคือ 500 หลังจาก 5 ปี เส้นตรงจะตั้งค่า 100 เป็นจำนวนเงินที่คิดค่าเสื่อมราคาในแต่ละปี วิธีนี้มีประโยชน์เมื่อไม่มีรูปแบบเฉพาะสำหรับวิธีการคิดค่าเสื่อมราคาในช่วงระยะเวลาหนึ่ง
 
-* **Double Declining Balance**: This is also known as 200% declining balance. In this method, 20% is depreciated from the existing value each time. For example, if asset is worth 1000, it'll be worth 800 in the next period, then 20% of 800 would be 160 so now the asset is worth 640, and so on till the end value is reached. If you start at the middle of the year, 10% depreciation will be calculated. This method is useful when the asset depreciates fast in the beginning and slows down later.
+* **ยอดลดลงสองเท่า**: เรียกอีกอย่างว่ายอดลดลง 200% ในวิธีนี้ 20% จะถูกคิดค่าเสื่อมราคาจากมูลค่าที่มีอยู่ทุกครั้ง ตัวอย่างเช่น หากสินทรัพย์มีมูลค่า 1,000 จะมีมูลค่า 800 ในช่วงเวลาถัดไป จากนั้น 20% ของ 800 จะเป็น 160 ดังนั้นตอนนี้สินทรัพย์จะมีมูลค่า 640 และต่อไปเรื่อยๆ จนกว่าจะถึงมูลค่าสุดท้าย หากคุณเริ่มกลางปี ​​ค่าเสื่อมราคา 10% จะถูกคำนวณ วิธีนี้มีประโยชน์เมื่อสินทรัพย์เสื่อมราคาอย่างรวดเร็วในตอนแรกและช้าลงในภายหลัง
 
-* **Written Down Value**: A fixed depreciation percentage is set and the asset value depreciates by that percentage over lifespan of the asset. This fixed percentage is always calculated on the current existing value of the asset. For example if the value is 1000 and 'Written Down Value' is 10% over 5 years, 10% will be depreciated every year to get the expected value of 600 at the end of life. Useful for vehicles where the depreciation is higher in later years.
+* **เขียนลงมูลค่า**: เปอร์เซ็นต์ค่าเสื่อมราคาคงที่ถูกกำหนดและมูลค่าสินทรัพย์คิดค่าเสื่อมราคาตามเปอร์เซ็นต์นั้นตลอดอายุของสินทรัพย์ เปอร์เซ็นต์คงที่นี้คำนวณจากมูลค่าปัจจุบันของสินทรัพย์เสมอ ตัวอย่างเช่น หากค่าคือ 1,000 และ 'มูลค่าที่เขียนลง' คือ 10% ในระยะเวลา 5 ปี 10% จะถูกคิดค่าเสื่อมราคาทุกปีเพื่อให้ได้มูลค่าที่คาดหวัง 600 เมื่อสิ้นสุดอายุ มีประโยชน์สำหรับรถยนต์ที่ค่าเสื่อมราคาสูงขึ้นในปีต่อๆ มา
 
-    | Current Value | Depreciation | Booked Value |
+    | มูลค่าปัจจุบัน | ค่าเสื่อมราคา | มูลค่าจอง |
     | -------------- | ----------- | ------------ |
     | 1000 | 100 | 900 |
     | 900 | 90 | 810 |
@@ -23,34 +23,34 @@ Types of depreciations in ERPNext:
     | 600 | 50 | 550 |
 
 
-* **Manual**: In this method, you can define the Schedule Date and Depreciation Amount for each period. 
+* **กำหนดเอง**: ในวิธีนี้ คุณสามารถกำหนดวันที่ตามกำหนดการและจำนวนเงินค่าเสื่อมราคาสำหรับแต่ละงวดได้
 
-## 1. Scheduled depreciation
-On the scheduled date, system creates a depreciation entry by creating a Journal Entry and the same Journal Entry is shown in the depreciation table for reference. Next Depreciation Date and Current Value are also updated on submission of depreciation entry.
+## 1. ค่าเสื่อมราคาตามกำหนดการ
+ในวันที่กำหนด ระบบจะสร้างรายการค่าเสื่อมราคาโดยการสร้างรายการบันทึกประจำวัน และรายการบันทึกประจำวันเดียวกันจะแสดงในตารางค่าเสื่อมราคาเพื่อใช้อ้างอิง วันที่คิดค่าเสื่อมราคาถัดไปและมูลค่าปัจจุบันจะได้รับการอัปเดตเมื่อส่งรายการค่าเสื่อมราคา
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/depreciation-entry.png">
 
-## 2. Accounting entries on depreciation
-In the depreciation entry:
+## 2. รายการบัญชีเกี่ยวกับค่าเสื่อมราคา
+ในรายการค่าเสื่อมราคา:
 
-- "Accumulated Depreciation Account" is credited and
-- "Depreciation Expense Account" is debited.
+- "บัญชีค่าเสื่อมราคาสะสม" ได้รับเครดิตและ
+- "บัญชีค่าเสื่อมราคา" ถูกเดบิต
 
-The related accounts can be set in the Asset Category or Company.
+บัญชีที่เกี่ยวข้องสามารถตั้งค่าได้ในประเภทสินทรัพย์หรือบริษัท
 
-## 3. Automatic depreciation entries
-You can enable booking of depreciation entry automatically from [Accounts Settings](/docs/user/manual/en/accounts/accounts-settings). This will create depreciation entry automatically on scheduled date via scheduler. Otherwise, you have to create Journal Entry manually by clicking "Make > Depreciation Entry" in corresponding Depreciation Schedule row.
+## 3. รายการค่าเสื่อมราคาอัตโนมัติ
+คุณสามารถเปิดใช้งานการจองรายการค่าเสื่อมราคาโดยอัตโนมัติจาก [การตั้งค่าบัญชี](/docs/user/manual/th/accounts/accounts-settings) สิ่งนี้จะสร้างรายการค่าเสื่อมราคาโดยอัตโนมัติในวันที่กำหนดผ่านตัวจัดกำหนดการ มิฉะนั้น คุณต้องสร้างรายการบันทึกประจำวันด้วยตนเองโดยคลิก "สร้าง > รายการค่าเสื่อมราคา" ในแถวกำหนดการคิดค่าเสื่อมราคาที่เกี่ยวข้อง
 
-The system will automatically set the Fiscal Year end date as the next depreciation date and calculate the depreciation amount *pro rata temporis* based on the Available-for-use Date (IFRS16).
+ระบบจะตั้งค่าวันที่สิ้นสุดปีบัญชีเป็นวันที่คิดค่าเสื่อมราคาถัดไปโดยอัตโนมัติ และคำนวณยอดค่าเสื่อมราคา *ตามอัตราส่วนชั่วคราว* ตามวันที่พร้อมใช้งาน (IFRS16)
 
 <img class="screenshot" alt="Asset" src="/docs/assets/img/asset/asset_prorated_depreciation.png">
 
-## 4. An example
-For better understanding, net value of the asset on different depreciation dates are shown in a line graph.
+## 4. ตัวอย่าง
+เพื่อความเข้าใจที่ดีขึ้น มูลค่าสุทธิของสินทรัพย์ในวันที่คิดค่าเสื่อมราคาต่างๆ จะแสดงในกราฟเส้นตรง
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset-graph.png">
 
-### 5. Related Topics
-1. [Asset Maintenance](/docs/user/manual/en/asset/asset-maintenance)
-1. [Asset Value Adjustment](/docs/user/manual/en/asset/asset-value-adjustment)
-1. [Scrapping an Asset](/docs/user/manual/en/asset/scrapping-an-asset)
+### 5. หัวข้อที่เกี่ยวข้อง
+1. [การบํารุงรักษาสินทรัพย์](/docs/user/manual/th/asset/asset-maintenance)
+1. [การปรับมูลค่าสินทรัพย์](/docs/user/manual/th/asset/asset-value-adjustment)
+1. [สินทรัพย์](/docs/user/manual/th/asset/scrapping-an-asset)

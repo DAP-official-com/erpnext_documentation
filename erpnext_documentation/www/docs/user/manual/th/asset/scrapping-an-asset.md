@@ -1,21 +1,21 @@
 <!-- add breadcrumbs -->
-# Scrapping an Asset
+# ตัดจำหน่ายสินทรัพย์ถาวรให้เป็นของเสีย
 
-**When an asset is no longer usable, it is scrapped.**
+**เมื่อสินทรัพย์ไม่สามารถใช้งานได้อีกต่อไป สินทรัพย์นั้นจะถูกทิ้ง**
 
-You can scrap an asset anytime using the "Scrap Asset" button in the Asset record. You will be asked for confirmation, click on Yes and the asset will be scrapped. 
+คุณสามารถทำให้เสียสินทรัพย์ได้ตลอดเวลาโดยใช้ปุ่ม "เศษสินทรัพย์" ในบันทึกสินทรัพย์ คุณจะถูกขอให้ยืนยัน คลิก ใช่ และสินทรัพย์จะถูกทิ้ง
 
 ![Asset Scrapped](/docs/assets/img/asset/asset-scrapped.png)
 
-The "Gain/Loss Account on Asset Disposal" account mentioned in the Company is debited by the Current Value (After Depreciation) of the asset. 
+บัญชี "กำไร/ขาดทุนจากการขายสินทรัพย์" ที่กล่าวถึงในบริษัทจะถูกหักด้วยมูลค่าปัจจุบัน (หลังค่าเสื่อมราคา) ของสินทรัพย์
 
-A Journal Entry will be created if you scrap an asset:
+รายการบันทึกประจำวันจะถูกสร้างขึ้นหากคุณทิ้งสินทรัพย์:
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/scrap-journal-entry.png">
 
-After scrapping, you can also restore the asset using "Restore Asset" button from the asset master.
+หลังจากทิ้ง คุณยังสามารถกู้คืนสินทรัพย์ได้โดยใช้ปุ่ม "กู้คืนสินทรัพย์" จากข้อมูลหลักสินทรัพย์
 
-#### Related Topics
-1. [Asset Maintenance](/docs/user/manual/en/asset/asset-maintenance)
-1. [Asset Value Adjustment](/docs/user/manual/en/asset/asset-value-adjustment)
-1. [Asset Depreciation](/docs/user/manual/en/asset/asset-depreciation)
+#### หัวข้อที่เกี่ยวข้อง
+1. [การบํารุงรักษาสินทรัพย์](/docs/user/manual/th/asset/asset-maintenance)
+1. [การปรับมูลค่าสินทรัพย์](/docs/user/manual/th/asset/asset-value-adjustment)
+1. [ค่าเสื่อมราคาสินทรัพย์](/docs/user/manual/th/asset/asset-depreciation)

@@ -1,45 +1,45 @@
  <!-- add-breadcrumbs -->
-# Asset Category
+# หมวดทรัพย์สิน
 
-**An Asset Category classifies different assets of a Company.**
+**ประเภทสินทรัพย์แบ่งประเภทสินทรัพย์ต่างๆ ของบริษัท**
 
-The first step towards asset management is creating an Asset Category based on the type of assets. For example, all your desktops and laptops can be part of an Asset Category named "Electronic Equipments".
+ขั้นตอนแรกสู่การจัดการสินทรัพย์คือการสร้างหมวดหมู่สินทรัพย์ตามประเภทของสินทรัพย์ ตัวอย่างเช่น เดสก์ท็อปและแล็ปท็อปทั้งหมดสามารถเป็นส่วนหนึ่งของหมวดหมู่สินทรัพย์ที่ชื่อว่า "อุปกรณ์อิเล็กทรอนิกส์"
 
-In Asset Category, you can set default a depreciation method, periodicity and depreciation related accounts, which will apply to all the assets under the category.
+ในประเภทสินทรัพย์ คุณสามารถตั้งค่าเริ่มต้นของวิธีการคิดค่าเสื่อมราคา บัญชีที่เกี่ยวข้องกับรอบระยะเวลาและค่าเสื่อมราคา ซึ่งจะนำไปใช้กับสินทรัพย์ทั้งหมดภายใต้หมวดหมู่นั้น
 
-> **Note:** You can also set default depreciation-related Accounts and Cost Centers in Company master.
+> **หมายเหตุ:** คุณยังสามารถตั้งค่าเริ่มต้นที่เกี่ยวข้องกับบัญชีและศูนย์ต้นทุนในข้อมูลหลักของบริษัท
 
-To access the Asset Category list, go to:
-> Home > Asset > Assets > Asset Category
+ในการเข้าถึงรายการประเภทสินทรัพย์ ไปที่:
+> หน้าหลัก > สินทรัพย์ > สินทรัพย์ > หมวดหมู่สินทรัพย์ Asset
 
-## 1. How to create an Asset Category
-1. Enter a name for the Asset Category.
-1. Check 'Enable Capital Work in Progress Accounting' if you want to maintain records of assets under a temporary balance sheet account instead of the corresponding asset account. To know more, [visit this page](/docs/user/manual/en/asset/purchasing-an-asset).
-1. Save.
+## 1. วิธีสร้างหมวดหมู่สินทรัพย์
+1. ป้อนชื่อสำหรับประเภทสินทรัพย์
+1. ตรวจสอบ 'เปิดใช้งานเงินทุนระหว่างดำเนินการบัญชี' หากคุณต้องการรักษาบันทึกของสินทรัพย์ภายใต้บัญชีงบดุลชั่วคราวแทนบัญชีสินทรัพย์ที่เกี่ยวข้อง หากต้องการทราบข้อมูลเพิ่มเติม [ไปที่หน้านี้](/docs/user/manual/th/asset/purchasing-an-asset)
+1. บันทึก
 
     ![Asset Category](/docs/assets/img/asset/asset-category.png)
 
-### 1.1 Additional options when creating an Asset Category
-1. **Enable Capital Work in Progress Accounting**: On enabling this, accounting entry for assets under this category which are not in use are posted in the Capital Work in Progress accounts. This happens when you own the Asset but it isn't being used yet, i.e. 'Available for Use Date' is set at a later date. If you use all your assets immediately, disable this feature. On disabling this, CWIP accounting will be skipped.
+### 1.1 ตัวเลือกเพิ่มเติมเมื่อสร้างประเภทสินทรัพย์
+1. **เปิดใช้งาน Capital Work in Progress Accounting**: ในการเปิดใช้งานนี้ รายการบัญชีสำหรับสินทรัพย์ภายใต้หมวดหมู่นี้ที่ไม่ได้ใช้งานจะถูกโพสต์ในบัญชี Capital Work in Progress สิ่งนี้จะเกิดขึ้นเมื่อคุณเป็นเจ้าของสินทรัพย์แต่ยังไม่ได้ใช้งาน นั่นคือ 'วันที่พร้อมใช้งาน' จะถูกตั้งค่าในภายหลัง หากคุณใช้เนื้อหาทั้งหมดของคุณทันที ให้ปิดใช้งานคุณลักษณะนี้ ในการปิดใช้งาน บัญชี CWIP จะถูกข้ามไป
 
-## 2. Features
-### 2.1 Finance Book details
-You can link a Finance Book if you report depreciation in different ways. You can enter the following fields:
+## 2. คุณสมบัติ
+### 2.1 รายละเอียดหนังสือการเงิน
+คุณสามารถเชื่อมโยงบัญชีการเงินได้หากคุณรายงานค่าเสื่อมราคาด้วยวิธีต่างๆ คุณสามารถป้อนฟิลด์ต่อไปนี้:
 
-* **Depreciation Method**: Choose a depreciated method on which you'll record the depreciation of assets in this category. To know more, [visit this page](/docs/user/manual/en/asset/asset-depreciation).
-* **Frequency of Depreciation (Months)**: The number of months within which the depreciation will be booked. The asset may be scrapped after this period.
-* **Total Number of Depreciations**: The number of deprecations to be booked in the selected time frame.
-* **Rate of Depreciation**: The rate of deprecation applied over the selected period. This will be calculated based on the Depreciation Method selected.
+* **วิธีการคิดค่าเสื่อมราคา**: เลือกวิธีการคิดค่าเสื่อมราคาที่คุณจะบันทึกค่าเสื่อมราคาของสินทรัพย์ในหมวดหมู่นี้ หากต้องการทราบข้อมูลเพิ่มเติม [ไปที่หน้านี้](/docs/user/manual/th/asset/asset-depreciation)
+* **ความถี่ของค่าเสื่อมราคา (เดือน)**: จำนวนเดือนที่จะจองค่าเสื่อมราคา สินทรัพย์อาจถูกทิ้งหลังจากช่วงเวลานี้
+* **จำนวนค่าเสื่อมราคาทั้งหมด**: จำนวนค่าเสื่อมราคาที่จะจองในกรอบเวลาที่เลือก
+* **อัตราค่าเสื่อมราคา**: อัตราค่าเสื่อมราคาที่ใช้ในช่วงเวลาที่เลือก ซึ่งจะคำนวณตามวิธีการคิดค่าเสื่อมราคาที่เลือก
 
-### 2.2 Accounting Details
+### 2.2 รายละเอียดการบัญชี
 
-The following account details can be set to record asset values in the ledger: 
+รายละเอียดบัญชีต่อไปนี้สามารถตั้งค่าให้บันทึกมูลค่าสินทรัพย์ในบัญชีแยกประเภท:
 
-* Company
-* Fixed Asset Account
-* Accumulated Depreciation Account
-* Depreciation Expense Account
-* Capital Work In Progress Account
+* บริษัท
+* บัญชีสินทรัพย์ถาวร
+* บัญชีค่าเสื่อมราคาสะสม
+* บัญชีค่าเสื่อมราคา
+* บัญชีอยู่ระหว่างดำเนินการทุน
 
-## 3. Related Topics
-1. [Asset](/docs/user/manual/en/asset/asset)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [สินทรัพย์](/docs/user/manual/th/asset/asset)

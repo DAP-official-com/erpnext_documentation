@@ -1,94 +1,94 @@
 <!-- add-breadcrumbs -->
-# Timesheet
+#ตารางเวลางาน
 
-**A Timesheet is the record of the number of hours spent by an employee on completion of each task.**
+**ไทม์ชีทคือบันทึกจำนวนชั่วโมงที่พนักงานใช้เมื่อแต่ละงานเสร็จสิ้น**
 
-The Timesheet can also be used to calculate the billable towards an employee, to calculate their salaries, or to track an employee's contribution towards a Project or a Task. 
+แผ่นเวลายังสามารถใช้ในการคำนวณรายการที่เรียกเก็บเงินได้ต่อพนักงาน เพื่อคำนวณเงินเดือนของพวกเขา หรือเพื่อติดตามผลงานของพนักงานที่มีต่อโครงการหรืองาน
 
-In ERPNext, a Timesheet can have an account of a particular employee working on multiple Tasks or Projects in a tabular format.
+ใน ERPNext ตารางเวลางาน สามารถมีบัญชีของพนักงานคนหนึ่งที่ทำงานหลายงานหรือโครงการในรูปแบบตาราง
 
 <img class="screenshot" alt="Timesheet" src="{{docs_base_url}}/assets/img/project/projects-timesheet.png">
 
-To access Timesheet, go to,
+ในการเข้าถึง ตารางเวลางาน ให้ไปที่
 
-> Home > Projects > Time Tracking > Timesheet
+> หน้าหลัก > โครงการ > การติดตามเวลา > ตารางเวลางาน
 
-## 1. How to create a Timesheet
+## 1. วิธีสร้าง ตารางเวลางาน
 
-  1. Go to Timesheet list and Click on New.
-  2. Enter the Company name and the Employee Code.
-  3. Add the following details to the field 'Time Sheets'.
-      * **Activity Type**: Add the type of activity for which the Time Sheet has been created.
-      * **From Time**: Enter the date and time at which the work was started.
-      * **Hrs**: Enter the number of hours for which this Time Sheet has been created. One Timesheet can be used to track the work hours on multiple days as well.
-      * **Project**: If this Time Sheet needs to be tagged to a particular Project, you can add the name of the Project here.
-      * **Bill**: This box needs to be checked if this particular Time Sheet is a billable.
-  4. Click on 'Add Row' to add more such Time Sheets.
-  5. Save.
-  6. After saving the Timesheet, according to the details entered in the different Time Sheets, the Start Date, End Date and the Total Working Hours will get updated automatically. Click Submit.
+  1. ไปที่รายการ ตารางเวลางาน และคลิกที่ ใหม่
+  2. ใส่ชื่อบริษัทและรหัสพนักงาน
+  3. เพิ่มรายละเอียดต่อไปนี้ลงในฟิลด์ 'ไทม์ชีท'
+      * **ประเภทกิจกรรม**: เพิ่มประเภทของกิจกรรมที่สร้างใบบันทึกเวลา
+      * **จากเวลา**: ป้อนวันที่และเวลาที่เริ่มทำงาน
+      * **ชม.**: ป้อนจำนวนชั่วโมงที่สร้างใบบันทึกเวลานี้ สามารถใช้ Timesheet เดียวเพื่อติดตามชั่วโมงทำงานในหลายวันได้เช่นกัน
+      * **โครงการ**: หากจำเป็นต้องติดแท็กใบบันทึกเวลานี้ให้กับโครงการใดโครงการหนึ่ง คุณสามารถเพิ่มชื่อโครงการได้ที่นี่
+      * **บิล**: ต้องทำเครื่องหมายที่ช่องนี้หากใบบันทึกเวลานี้เป็นแบบเรียกเก็บเงินได้
+  4. คลิกที่ 'เพิ่มแถว' เพื่อเพิ่มไทม์ชีทดังกล่าวเพิ่มเติม
+  5. บันทึก
+  6. หลังจากบันทึก ตารางเวลางาน ตามรายละเอียดที่ป้อนใน วันที่เริ่มต้น วันที่สิ้นสุด และชั่วโมงการทำงานทั้งหมดจะได้รับการอัปเดตโดยอัตโนมัติ คลิกส่ง
 
-### 1.1. Alternatively, a Timesheet can also be created from a Task in the following way:
+### 1.1. อีกทางหนึ่ง คุณสามารถสร้างตารางงานจากงานด้วยวิธีต่อไปนี้:
 
-  1. Go to the Task for which you want to create a new Timesheet.
-  2. Go to 'Timesheet' under the Activity section on the Dashboard. The plus icon '+' here would re-direct you to the Timesheet creation page.
-  3. Follow the steps to create a Time Sheet.
+  1. ไปที่งานที่คุณต้องการสร้างตารางงานใหม่
+  2. ไปที่ 'ตารางงาน' ใต้ส่วนกิจกรรมบนแดชบอร์ด ไอคอนเครื่องหมายบวก '+' ที่นี่จะนำคุณไปยังหน้าการสร้างไทม์ชีทอีกครั้ง
+  3. ทำตามขั้นตอนเพื่อสร้างใบบันทึกเวลา
 
   <img class="screenshot" alt="Timesheet" src="{{docs_base_url}}/assets/img/project/projects-timesheet-from-task.gif">
 
-### 1.2. Timer in Timesheet
+### 1.2. ตัวจับเวลาในตารางงาน
 
-**A Timer can be used to record the actual time taken by an employee to finish a particular activity in a Timesheet.**
+**ตัวจับเวลาสามารถใช้เพื่อบันทึกเวลาจริงที่พนักงานใช้เพื่อทำกิจกรรมบางอย่างในตารางงาน**
 
-#### 1.2.1. Steps to start a Timer:
+#### 1.2.1. ขั้นตอนในการเริ่มจับเวลา:
 
-- In a Timesheet On clicking **Start Timer** a dialog box pops up and you are required to enter the following details:
-    * **Activity Type**: The Activity for which you are recording the Time.
-    * **Project**: The Project for which you are creating the Timesheet.
-    * **Task**: The Task for which you are recording the time in the Timesheet.
-    * **Expected Hrs**: Enter the number of hours that you expect the Task to finish in.
+- ใน ตารางงาน เมื่อคลิก **Start Timer** กล่องโต้ตอบจะปรากฏขึ้นและคุณจะต้องป้อนรายละเอียดต่อไปนี้:
+    * **ประเภทกิจกรรม**: กิจกรรมที่คุณกำลังบันทึกเวลา
+    * **โครงการ**: โครงการที่คุณกำลังสร้างแผ่นเวลา
+    * **งาน**: งานที่คุณกำลังบันทึกเวลาในแผ่นเวลา
+    * **ชั่วโมงที่คาดไว้**: ป้อนจำนวนชั่วโมงที่คุณคาดว่างานจะเสร็จสิ้น
 
 <img class="screenshot" alt="Timer in Progress" src="{{docs_base_url}}/assets/img/project/projects-timer-in-timesheet.gif">
 
-- Once you have completed the Task, click on Complete. A new entry will be created in the Timesheet, and the time will get recorded as a Time Sheet in the Time Sheets Table in the Timesheet.
+- เมื่อคุณทำภารกิจเสร็จสิ้นแล้ว ให้คลิกที่ เสร็จสิ้น รายการใหม่จะถูกสร้างขึ้นใน ตารางงาน และเวลาจะถูกบันทึกเป็น ตารางงาน ใน Time Sheets Table ใน ตารางงาน
 
-- If the time exceeds the 'Expected Hrs', an alert box appears.
+- หากเวลาเกิน 'ชั่วโมงที่คาดไว้' กล่องแจ้งเตือนจะปรากฏขึ้น
 
 <img class="screenshot" alt="Timer Exceeded" src="{{docs_base_url}}/assets/img/project/projects-timer-time-exceed.png">
 
 
-### 1.3. Additional Options while creating the Timesheet
+### 1.3. ตัวเลือกเพิ่มเติมขณะสร้างตารางเวลางาน
 
-The Time Sheet when expanded, allows you to enter the following details to it:
+ใบบันทึกเวลาเมื่อขยาย ช่วยให้คุณสามารถป้อนรายละเอียดต่อไปนี้ได้:
 
-   * **Expected Hours**: Enter the tentative time required to complete the Tasks on the Time Sheets.
-   * **To Time**: Enter the date and time at which the work was completed.
-   * **Completed**: This box needs to be checked if the Task has been completed while submitting the Timesheet.
-   * **Task**: If this Time Sheet needs to be tagged to a particular Task, you can do it here.
-   * **Billing Hours**: This number of hours for which the customer needs to be billed for this Timesheet.  
-   * **Billing Rate**: The rate at which the customer needs to be billed for this work. 
-   * **Costing Rate**: This is the actual cost of work done. It is fetched from the activity cost (per employee) or from activity type and can be edited.
-   * **Billing Amount**: The billing amount gets auto-calculated based on the billable number of hours and the billing Rate.
-   * **Costing Amount**: The costing amount gets auto-calculated based on the number of hours and the costing rate.
+   * **ชั่วโมงที่คาดหวัง**: ป้อนเวลาเบื้องต้นที่จำเป็นเพื่อทำงานให้เสร็จในใบบันทึกเวลา
+   * **To Time**: ป้อนวันที่และเวลาที่งานเสร็จสมบูรณ์
+   * **เสร็จสมบูรณ์**: ต้องทำเครื่องหมายในช่องนี้หากงานเสร็จสมบูรณ์ขณะส่งใบบันทึกเวลา
+   * **งาน**: หากจำเป็นต้องติดแท็กใบบันทึกเวลานี้กับงานใดงานหนึ่ง คุณสามารถทำได้ที่นี่
+   * **ชั่วโมงการเรียกเก็บเงิน**: จำนวนชั่วโมงนี้ที่ลูกค้าต้องถูกเรียกเก็บเงินสำหรับ ตารางเวลางาน นี้
+   * **อัตราการเรียกเก็บเงิน**: อัตราที่ลูกค้าต้องถูกเรียกเก็บเงินสำหรับงานนี้
+   * **อัตราต้นทุน**: นี่คือต้นทุนจริงของงานที่ทำ มันถูกดึงมาจากต้นทุนกิจกรรม (ต่อพนักงาน) หรือจากประเภทกิจกรรมและสามารถแก้ไขได้
+   * **จำนวนเงินที่เรียกเก็บเงิน**: จำนวนเงินที่เรียกเก็บเงินจะได้รับการคำนวณอัตโนมัติตามจำนวนชั่วโมงที่เรียกเก็บเงินได้และอัตราการเรียกเก็บเงิน
+   * **จำนวนต้นทุน**: จำนวนต้นทุนจะคำนวณโดยอัตโนมัติตามจำนวนชั่วโมงและอัตราการคิดต้นทุน
    
    <img class="screenshot" alt="Timesheet" src="{{docs_base_url}}/assets/img/project/projects-time-sheet-expansion.png">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Billing Details
+### 2.1 รายละเอียดการเรียกเก็บเงิน
 
-* **Total Billable Hours**: Based on the Timesheet, the Total Billable Hours will be auto-fetched here.
-* **Total Billable Amount**: Based on the Timesheet, the Total Billable Amount will be auto-fetched here.
-* **Total Billed Hours**: Once the Timesheet has been submitted, you will get an option to create a Sales Invoice from the Timesheet. The number of hours for which the Customer shall be billed will be fetched over here, and once the Sales Invoice is submitted, the Total Billed Hours will be fetched.
-* **Total Billed Amount**: In a similar fashion as how the Total Billed Hours are fetched, the Total Billed Amount will also be fetched.
-* **Total Costing Amount**: Based on the Timesheet, the Total Costing Amount, as specified by the Employee gets tagged here.
-* **% Amount Billed**: Once the Timesheet is submitted, and a [Sales Invoice](/docs/user/manual/en/projects/sales-invoice-from-timesheet) is created from the Timesheet, the percentage of the Amount out of the Total Billable Amount which has been amounted for the Total Billed Amount gets calculated and is reflected here.
+* **จำนวนชั่วโมงที่เรียกเก็บเงินได้ทั้งหมด**: ตามตารางเวลางาน ชั่วโมงที่เรียกเก็บเงินได้ทั้งหมดจะถูกดึงอัตโนมัติที่นี่
+* **จำนวนเงินที่เรียกเก็บเงินได้ทั้งหมด**: ตามตารางเวลางาน จำนวนเงินที่เรียกเก็บเงินได้ทั้งหมดจะถูกดึงอัตโนมัติที่นี่
+* **ชั่วโมงที่เรียกเก็บเงินทั้งหมด**: เมื่อส่งใบบันทึกเวลาแล้ว คุณจะได้รับตัวเลือกในการสร้างใบกำกับสินค้าจากใบบันทึกเวลา จำนวนชั่วโมงที่ลูกค้าจะถูกเรียกเก็บเงินจะถูกดึงมาที่นี่ และเมื่อส่งใบกำกับสินค้าแล้ว จำนวนชั่วโมงที่เรียกเก็บเงินทั้งหมดจะถูกดึงออกมา
+* **จำนวนเงินที่เรียกเก็บเงินทั้งหมด**: ในลักษณะเดียวกันกับวิธีการดึงข้อมูลชั่วโมงที่เรียกเก็บเงินทั้งหมด จำนวนเงินที่เรียกเก็บเงินทั้งหมดจะถูกดึงออกมาด้วย
+* **ยอดรวมต้นทุน**: ตามตารางเวลางาน จำนวนเงินต้นทุนรวม ตามที่พนักงานระบุจะถูกแท็กที่นี่
+* **% จำนวนเงินที่เรียกเก็บเงิน**: เมื่อส่งตารางเวลางานและสร้าง [ใบแจ้งหนี้การขาย](/docs/user/manual/th/projects/sales-invoice-from-timesheet) จากตารางเวลางาน เปอร์เซ็นต์ของ จำนวนเงินจากจำนวนเงินที่เรียกเก็บเงินได้ทั้งหมดซึ่งเป็นจำนวนเงินสำหรับจำนวนเงินที่เรียกเก็บเงินทั้งหมดจะได้รับการคำนวณและจะแสดงที่นี่
 
 <img class="screenshot" alt="Timesheet" src="{{docs_base_url}}/assets/img/project/projects-timesheet-billing-details.png">
 
-## 3. After Saving the Time Sheet
+## 3. หลังจากบันทึกใบบันทึกเวลา
  
-Once a Timesheet is saved and submitted, the details like Billing Rate and Costing rate get locked, and cannot be changed. The following DocTypes can be created after submitting a Timesheet.
+เมื่อบันทึกและส่งไทม์ชีทแล้ว รายละเอียดเช่น อัตราการเรียกเก็บเงิน และ อัตราการคิดต้นทุน จะถูกล็อค และไม่สามารถเปลี่ยนแปลงได้ DocTypes ต่อไปนี้สามารถสร้างได้หลังจากส่งตารางเวลางาน
 
- * [Sales Invoice](/docs/user/manual/en/projects/sales-invoice-from-timesheet) 
- * [Salary Slip](/docs/user/manual/en/projects/salary-slip-from-timesheet)
+ * [ใบกำกับการขาย](/docs/user/manual/th/projects/sales-invoice-from-timesheet)
+ * [สลิปเงินเดือน](/docs/user/manual/th/projects/salary-slip-from-timesheet)
 

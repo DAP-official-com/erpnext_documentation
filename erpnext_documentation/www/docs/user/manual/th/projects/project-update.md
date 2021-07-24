@@ -1,31 +1,31 @@
 <!-- add-breadcrumbs -->
-# Project Update
+#อัพเดทโครงการ
 
-**A Project Update is the status of the Project which can be sent to all the stakeholders of the Project.**
+**การอัปเดตโครงการคือสถานะของโครงการที่สามารถส่งไปยังผู้มีส่วนได้ส่วนเสียทั้งหมดของโครงการ**
 
-Each time you want to update the stakeholders about the project, you can send a Project Update to them.
+แต่ละครั้งที่คุณต้องการอัปเดตผู้มีส่วนได้ส่วนเสียเกี่ยวกับโครงการ คุณสามารถส่งการอัปเดตโครงการให้พวกเขาได้
 
 <img class="screenshot" alt="Project Template" src="{{docs_base_url}}/assets/img/project/projects-project-update.png">
 
-To access Project Update, go to:
+ในการเข้าถึง Project Update ไปที่:
 
-> Home > Projects > Projects > Project Update
+> หน้าแรก > โครงการ > โครงการ > การอัพเดทโครงการ
 
-## 1. How to Create a Project Update
+## 1. วิธีสร้างการอัปเดตโครงการ
 
-  1. Go to the Project Update List and click on New.
-  2. Add the name of the Project for which you want to send an update.
-  3. Add the name of the Users to whom you want to send the Project Update in the Child Table. These Users could be your Customers or any other Internal or External Stake Holders.
-  4. Save and Submit.
+  1. ไปที่รายการอัปเดตโครงการแล้วคลิกใหม่
+  2. เพิ่มชื่อโครงการที่คุณต้องการส่งการอัปเดต
+  3. เพิ่มชื่อของผู้ใช้ที่คุณต้องการส่งการอัปเดตโครงการในตารางย่อย ผู้ใช้เหล่านี้อาจเป็นลูกค้าของคุณหรือผู้มีส่วนได้เสียภายในหรือภายนอกอื่นๆ
+  4. บันทึกและส่ง
 
-Once you have submitted the Project Update, an email is sent to the selected stakeholders with project updates.
+เมื่อคุณส่งการอัปเดตโครงการแล้ว อีเมลจะถูกส่งไปยังผู้มีส่วนได้ส่วนเสียที่เลือกพร้อมการอัปเดตโครงการ
 
-### 1.1. Additional Details
+### 1.1. รายละเอียดเพิ่มเติม
 
-When you expand the table which has the names of the Users, you will be able to add the following details:
+เมื่อคุณขยายตารางที่มีชื่อของผู้ใช้ คุณจะสามารถเพิ่มรายละเอียดต่อไปนี้:
 
-  1. You can select whether you want  to send a Welcome Email to any particular User while sending them the Project Update.
-  2. You can select whether you want any particular User to view Attachments in the Project Update.
-  3. You can add the description of the Current Stage of the Project in the 'Project Status' field.
+  1. คุณสามารถเลือกได้ว่าต้องการส่งอีเมลต้อนรับไปยังผู้ใช้รายใดรายหนึ่งในขณะที่ส่งการอัปเดตโครงการให้พวกเขา
+  2. คุณสามารถเลือกได้ว่าต้องการให้ผู้ใช้คนใดคนหนึ่งดูสิ่งที่แนบมาในการอัปเดตโครงการหรือไม่
+  3. คุณสามารถเพิ่มคำอธิบายของขั้นตอนปัจจุบันของโครงการในฟิลด์ 'สถานะโครงการ'
 
 {next}

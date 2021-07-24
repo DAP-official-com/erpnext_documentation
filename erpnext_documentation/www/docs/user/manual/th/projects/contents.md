@@ -1,39 +1,39 @@
 <!-- add-breadcrumbs -->
-# Projects
+#โครงการ
 
-There are a lot of businesses where the deliverables are not tangible. Think of consulting companies. To showcase their value, such businesses need to track and update each of their processes to stay afloat and grow in the industry. The Project module helps an organization to keep track of such deliverables and ensure their timely completion.
+มีธุรกิจมากมายที่ไม่สามารถจับต้องได้ คิดถึงบริษัทที่ปรึกษา เพื่อแสดงคุณค่า ธุรกิจดังกล่าวจำเป็นต้องติดตามและอัปเดตแต่ละกระบวนการเพื่อให้อยู่รอดและเติบโตในอุตสาหกรรม โมดูลโครงการช่วยให้องค์กรติดตามผลงานดังกล่าวและให้แน่ใจว่าจะเสร็จสิ้นในเวลาที่เหมาะสม
 
-ERPNext helps any company effectively manage business aspects like project management, customer support, sales, and purchase management to list a few. You can look at the following topics after going through this [introduction](/docs/user/manual/en/projects/introduction).
+ERPNext ช่วยให้บริษัทต่างๆ จัดการด้านธุรกิจได้อย่างมีประสิทธิภาพ เช่น การจัดการโครงการ การสนับสนุนลูกค้า การขาย และการจัดการการซื้อ คุณสามารถดูหัวข้อต่อไปนี้หลังจากอ่าน [คำแนะนำ](/docs/user/manual/th/projects/introduction)
 
 
-## 1. Topics
-### 1.1. Project Management
-1. [Project](/docs/user/manual/en/projects/project)
-1. [Tasks](/docs/user/manual/en/projects/tasks)
-1. [Project Template](/docs/user/manual/en/projects/project-template)
-1. [Project Type](/docs/user/manual/en/projects/project-type)
-1. [Project Update](/docs/user/manual/en/projects/project-update)
-1. [Project Views](/docs/user/manual/en/projects/project-views)
+## 1. หัวข้อ
+### 1.1. การบริหารโครงการ
+1. [โครงการ](/docs/user/manual/th/projects/project)
+1. [งาน](/docs/user/manual/th/projects/tasks)
+1. [แม่แบบโครงการ](/docs/user/manual/th/projects/project-template)
+1. [ประเภทโครงการ](/docs/user/manual/th/projects/project-type)
+1. [อัพเดทโครงการ](/docs/user/manual/th/projects/project-update)
+1. [มุมมองโครงการ](/docs/user/manual/th/projects/project-views)
 
-### 1.2. Time Tracking
-1. [Timesheet](/docs/user/manual/en/projects/timesheets/)
-1. [Sales Invoice From Timesheet](/docs/user/manual/en/projects/sales-invoice-from-timesheet)
-1. [Salary Slip From Timesheet](/docs/user/manual/en/projects/salary-slip-from-timesheet)
-<!-- 1. [Timesheet Against Work Order](/docs/user/manual/en/projects/timesheet-against-work-order) -->
-<!-- 1. [Timer In Timesheet](/docs/user/manual/en/projects/timer-in-timesheet) -->
-<!-- 1. [Timesheet Against Project](/docs/user/manual/en/projects/timesheet-against-project) -->
-1. [Activity Type](/docs/user/manual/en/projects/activity-type)
-1. [Activity Cost](/docs/user/manual/en/projects/activity-cost)
+### 1.2. การติดตามเวลา
+1. [ตารางเวลา่](/docs/user/manual/th/projects/timesheets/)
+1. [ใบแจ้งหนี้การขายจากตารางเวลา่](/docs/user/manual/th/projects/sales-invoice-from-timesheet)
+1. [สลิปเงินเดือนจากไทม์ชีท](/docs/user/manual/th/projects/salary-slip-from-timesheet)
+<!-- 1. [Timesheet Against Work Order](/docs/user/manual/th/projects/timesheet-against-work-order) -->
+<!-- 1. [Timer In Timesheet](/docs/user/manual/th/projects/timer-in-timesheet) -->
+<!-- 1. [Timesheet Against Project](/docs/user/manual/th/projects/timesheet-against-project) -->
+1. [ประเภทกิจกรรม](/docs/user/manual/th/projects/activity-type)
+1. [ค่ากิจกรรม](/docs/user/manual/th/projects/activity-cost)
 
-### 1.3. Reports
-1. [Project Reports](/docs/user/manual/en/projects/project-reports)
+### 1.3. รายงาน
+1. [รายงานโครงการ](/docs/user/manual/th/projects/project-reports)
 
-## 2. Articles
-1. [Project Costing](/docs/user/manual/en/projects/project-costing)
-1. [Project Profitability](/docs/user/manual/en/projects/project-profitability)
-1. [Project Expense Claims](/docs/user/manual/en/projects/project-expense-claims)
-1. [Project Customer Portal](/docs/user/manual/en/projects/project-customer-portal)
-1. [Make a Colorful Gantt Chart](/docs/user/manual/en/projects/articles/make-a-colorful-gantt-chart)
+## 2. บทความ
+1. [การคิดต้นทุนโครงการ](/docs/user/manual/th/projects/project-costing)
+1. [ความสามารถในการทำกำไรของโครงการ](/docs/user/manual/th/projects/project-profitability)
+1. [การเคลมค่าใช้จ่ายโครงการ](/docs/user/manual/th/projects/project-expense-claims)
+1. [พอร์ทัลลูกค้าโครงการ](/docs/user/manual/th/projects/project-customer-portal)
+1. [Gantt Chart](/docs/user/manual/th/projects/articles/make-a-colorful-gantt-chart)
 
-## 3. Videos
-1. [Project Management](/docs/user/videos/learn/project-and-task.html)
+## 3. วิดีโอ
+1. [การจัดการโครงการ](/docs/user/videos/learn/project-and-task.html)

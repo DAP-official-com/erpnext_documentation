@@ -1,30 +1,30 @@
-# Purchasing an Asset
+# การซื้อสินทรัพย์
 
-For purchasing a new asset:
+สำหรับการซื้อสินทรัพย์ใหม่:
 
-1. Create an Asset Category
-1. Create a related Item with 'Is Fixed Asset' enabled for creating the asset.
-1. You may also enable 'Auto Create Assets on Purchase' for creating assets automatically. (Optional)
+1. สร้างหมวดหมู่สินทรัพย์
+1. สร้างรายการที่เกี่ยวข้องโดยเปิดใช้งาน 'เป็นสินทรัพย์ถาวร' สำหรับการสร้างสินทรัพย์
+1. คุณยังสามารถเปิดใช้งาน 'สร้างสินทรัพย์อัตโนมัติเมื่อซื้อ' เพื่อสร้างสินทรัพย์โดยอัตโนมัติ (ไม่จำเป็น)
 
   <img class="screenshot" alt="Purchasing Asset" src="{{docs_base_url}}/assets/img/asset/asset-auto-create-on-purchase.png">
 
-1. Then, the [purchase cycle](/docs/user/manual/en/buying/purchase-order) should be followed for purchasing an asset.
-1. Enter the Asset Location in the Items table of the [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt) or [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice) through which you are receiving the item.
-1. On submission of a Purchase Receipt, based on auto creation checkbox, Asset records will be created automatically. You can then enter other details of the Asset manually from the Asset form.
+1. จากนั้นจึงควรปฏิบัติตาม [วงจรการซื้อ](/docs/user/manual/th/buying/purchase-order) สำหรับการซื้อสินทรัพย์
+1. ป้อนตำแหน่งทรัพย์สินในตารางรายการของ [ใบเสร็จรับเงิน](/docs/user/manual/th/stock/purchase-receipt) หรือ [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice) ที่คุณได้รับสินค้า
+1. ในการส่งใบเสร็จรับเงินตามช่องทำเครื่องหมายการสร้างอัตโนมัติ บันทึกสินทรัพย์จะถูกสร้างขึ้นโดยอัตโนมัติ จากนั้นคุณสามารถป้อนรายละเอียดอื่นๆ ของสินทรัพย์ได้ด้วยตนเองจากแบบฟอร์มสินทรัพย์
 
 <img class="screenshot" alt="Purchasing Asset" src="{{docs_base_url}}/assets/img/asset/asset-purchase-receipt.png">
 
-Following accounting entries will be posted on submission of the Receipt entry if Capital Work In Progress Accounting is enabled in the Asset Category of the purchased asset.
+รายการบัญชีต่อไปนี้จะถูกโพสต์เมื่อส่งรายการใบเสร็จรับเงิน หากการบัญชีอยู่ระหว่างดำเนินการของเงินทุนเปิดใช้งานในประเภทสินทรัพย์ของสินทรัพย์ที่ซื้อ
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset-purchase-receipt-gl-entries.png">
 
-It is noticeable here that, instead of corresponding asset account, Capital Work in Progress (CWIP) has been debited. This is because the asset has only been purchased and it is still not available for use. Until the asset is available for use, the asset value is maintained against this account. On the day when it is available for use, the CWIP account gets credited and corresponding asset account gets debited.
+จะเห็นได้ว่าแทนที่จะหักบัญชีสินทรัพย์ที่เกี่ยวข้อง Capital Work in Progress (CWIP) ถูกหักไปแล้ว เนื่องจากทรัพย์สินดังกล่าวเพิ่งซื้อมาและยังไม่พร้อมใช้งาน จนกว่าสินทรัพย์จะพร้อมใช้งาน มูลค่าสินทรัพย์จะยังคงอยู่กับบัญชีนี้ ในวันที่สามารถใช้งานได้ บัญชี CWIP จะได้รับเครดิตและบัญชีสินทรัพย์ที่เกี่ยวข้องจะถูกหัก
 
-In case of disabled 'Capital Work In Progress Accounting' in the Asset Category, the receipt entry will be made against corresponding asset accounts set in the Asset Category.
+ในกรณีที่ปิดใช้งาน 'การบัญชีเงินทุนที่กำลังดำเนินการ' ในหมวดสินทรัพย์ รายการรับจะทำกับบัญชีสินทรัพย์ที่เกี่ยวข้องซึ่งตั้งค่าไว้ในประเภทสินทรัพย์
 
-ERPNext also uses a temporary account "Asset Received But Not Billed" (a liability account) which gets credited on submission of Purchase Receipt entry. Later, on submission of Purchase Invoice, this account gets debited/reversed.
+ERPNext ยังใช้บัญชีชั่วคราว "สินทรัพย์ที่ได้รับแต่ไม่ถูกเรียกเก็บเงิน" (บัญชีความรับผิด) ซึ่งได้รับเครดิตเมื่อส่งรายการใบเสร็จรับเงิน ต่อมาในการยื่นใบกำกับสินค้า บัญชีนี้จะถูกหัก/ย้อนกลับ
 
-#### Related Topics
-1. [Asset](/docs/user/manual/en/asset/asset)
-1. [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+#### หัวข้อที่เกี่ยวข้อง
+1. [สินทรัพย์](/docs/user/manual/th/asset/asset)
+1. [ใบเสร็จการซื้อ](/docs/user/manual/th/stock/purchase-receipt)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)

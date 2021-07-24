@@ -1,26 +1,26 @@
 <!-- add-breadcrumbs -->
-# Salary Slip from Timesheet
+#สลิปเงินเดือนจากตารางงาน
 
-**The salary of an employee can be calculated based on the number of hours that he has worked for on a particular project.** 
+**เงินเดือนของพนักงานสามารถคำนวณได้ตามจำนวนชั่วโมงที่เขาทำงานในโครงการนั้นๆ**
 
-To enable the same, you may choose to create the Employee's Salary Slip directly from a Timesheet.
+ในการเปิดใช้งาน คุณสามารถเลือกที่จะสร้างสลิปเงินเดือนของพนักงานได้โดยตรงจากตารางงาน
 
 <img class="screenshot" alt="Salary Slip" src="{{docs_base_url}}/assets/img/project/projects-salary-slip-from-timesheet.png">
 
-## 1. How to Create A Salary Slip from A Timesheet
+## 1. วิธีสร้างสลิปเงินเดือนจากตารางงาน
 
-  1. Once the Timesheet is submitted, and an invoice has been generated, go to the Timesheet and click on 'Create Salary Slip'.
-  2. All the details, like the Employee, Employee Name, Posting Date, Company Name, Letter Head, etc. will get captured from the Timesheet.
-  3. **Dates**: Since this Salary Slip is getting generated out of a Timesheet, it will auto-fetch the Start Date and End Date from the Timesheet. However, the same can be changed.
-  4. **Salary Slip Timesheet**: The details of the Timesheet from which the Salary Slip was created will be captured. You can also more Timesheets here to create a single Salary Slip against multiple Timesheets.
-  5. Save and Submit.
+  1. เมื่อส่ง ตารางงาน และสร้างใบแจ้งหนี้แล้ว ไปที่ ตารางงาน และคลิกที่ 'สร้างสลิปเงินเดือน'
+  2. รายละเอียดทั้งหมด เช่น พนักงาน ชื่อพนักงาน วันที่โพสต์ ชื่อบริษัท หัวจดหมาย ฯลฯ จะถูกบันทึกจากตารางงาน
+  3. **วันที่**: เนื่องจากสลิปเงินเดือนนี้ถูกสร้างขึ้นจาก ตารางงาน มันจะดึงวันที่เริ่มต้นและวันที่สิ้นสุดจาก ตารางงาน โดยอัตโนมัติ อย่างไรก็ตามสามารถเปลี่ยนแปลงได้เช่นเดียวกัน
+  4. **ตารางงานสลิปเงินเดือน**: รายละเอียดของตารางงานที่สร้างสลิปเงินเดือนจะถูกบันทึกไว้ คุณยังสามารถเพิ่ม ตารางงาน ได้ที่นี่ เพื่อสร้างสลิปเงินเดือนเดี่ยวกับ ตารางงาน หลายแผ่น
+  5. บันทึกและส่ง
   
   <img class="screenshot" alt="Salary Slip" src="{{docs_base_url}}/assets/img/project/timesheet/timesheet-salary-slip-4.gif">
 
-### 1.1. Additional Details while Creating a Salary Slip form a Time Sheet:
+### 1.1. รายละเอียดเพิ่มเติมในขณะที่สร้างสลิปเงินเดือนจากตารางงาน:
 
-  1. **Earnings and Deduction**: Any Earnings like HRA, Incentives etc. or Deductions like Income Tax, Provident Fund etc. in the Salary generated from the Timesheet can be mentioned here.
-  2. **Other Information**: According to the Salary Structure of the Employee, the Gross payment information, the Loan Repayment Information, and the Net Pay information will get auto-captured.
-  3. For a detailed guide on setting up overtime via timesheets, <a href="https://frappe.io/kb/hr/create-payroll-entry-with-timesheets" target="_blank">click here</a>.
+  1. **รายได้และการหักเงิน**: รายได้ใดๆ เช่น HRA สิ่งจูงใจ (incentive) ฯลฯ หรือการหักเงิน เช่น ภาษีเงินได้ กองทุนสำรองเลี้ยงชีพ ฯลฯ ในเงินเดือนที่สร้างจาก ตารางงาน สามารถกล่าวถึงได้ที่นี่
+  2. **ข้อมูลอื่นๆ**: ตามโครงสร้างเงินเดือนของพนักงาน ข้อมูลการชำระเงินรวม ข้อมูลการชำระคืนเงินกู้ และข้อมูล Net Pay จะถูกบันทึกโดยอัตโนมัติ
+  3. สำหรับคำแนะนำโดยละเอียดเกี่ยวกับการตั้งค่าการทำงานล่วงเวลาผ่านไทม์ชีท <a href="https://frappe.io/kb/hr/create-payroll-entry-with-timesheets" target="_blank">click here</a>.
 
 {next}

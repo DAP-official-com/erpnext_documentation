@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-# Project from Customer Portal
+# โครงการจากพอร์ทัลลูกค้า
 
-If you are working on a Project for a Customer, then they need to be updated on its progress from time-to-time. You can achieve this in ERPNext via the Customer Portal.
+หากคุณกำลังทำงานในโครงการสำหรับลูกค้า พวกเขาจำเป็นต้องได้รับการอัปเดตความคืบหน้าเป็นระยะ คุณสามารถทำได้ใน ERPNext ผ่านพอร์ทัลลูกค้า
 
-### Add User as a Website User
+### เพิ่มผู้ใช้เป็นผู้ใช้เว็บไซต์
 
-To access a project from the portal, a customer must be added as a [Website User](/docs/user/manual/en/setting-up/articles/difference-between-system-user-and-website-user). A Customer can also sign up from the Login Page of your ERPNext account, using the same Email ID as mentioned in the Contact. You can also send an invite to the contact using the **Invite User** button in Contact.
+ในการเข้าถึงโครงการจากพอร์ทัล ลูกค้าจะต้องเพิ่มเป็น [ผู้ใช้เว็บไซต์](/docs/user/manual/th/setting-up/articles/difference-between-system-user-and-website-user) ลูกค้ายังสามารถลงทะเบียนจากหน้าเข้าสู่ระบบของบัญชี ERPNext ของคุณ โดยใช้ ID อีเมลเดียวกันกับที่ระบุไว้ในผู้ติดต่อ คุณยังสามารถส่งคำเชิญไปยังผู้ติดต่อโดยใช้ปุ่ม **เชิญผู้ใช้** ในผู้ติดต่อ
 
 <img class="screenshot" alt="Customer in Project" src="{{docs_base_url}}/assets/img/project/project-portal-2.png">
 
-### Add Customer and User in Project
+### เพิ่มลูกค้าและผู้ใช้ในโครงการ
 
-In the Project, check Customer Details section. Select a Customer and Sales Order associated with this Project.
+ในโครงการ ตรวจสอบส่วนรายละเอียดลูกค้า เลือกลูกค้าและใบสั่งขายที่เกี่ยวข้องกับโครงการนี้
 
 <img class="screenshot" alt="Customer in Project" src="{{docs_base_url}}/assets/img/project/project-portal-user.png">
 
-Under the User table, select the contacts who can access this project.
+ใต้ตารางผู้ใช้ เลือกผู้ติดต่อที่สามารถเข้าถึงโครงการนี้
 
-### Portal View of Project
+### มุมมองพอร์ทัลของโครงการ
 
-When a Customer logins from the Portal, they will be able to view all the tasks for that project along with the associated timesheets. Also, the customer will be able to update the status of the tasks or comment when needed.
+เมื่อลูกค้าเข้าสู่ระบบจากพอร์ทัล พวกเขาจะสามารถดูงานทั้งหมดสำหรับโครงการนั้นพร้อมกับไทม์ชีทที่เกี่ยวข้อง นอกจากนี้ ลูกค้ายังสามารถอัปเดตสถานะของงานหรือแสดงความคิดเห็นเมื่อจำเป็น
 
 <img class="screenshot" alt="Customer in Project" src="{{docs_base_url}}/assets/img/project/projects-customer-portal.gif">

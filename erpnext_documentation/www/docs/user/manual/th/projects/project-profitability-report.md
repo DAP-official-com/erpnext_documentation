@@ -1,44 +1,44 @@
 <!-- add-breadcrumbs -->
 
-# Project Profitability Report
+# รายงานการทำกำไรของโครงการ
 
-The Project Profitability Report shows the Profitability and Utilization of each employee based on the Timesheets generated.
+รายงานความสามารถในการทำกำไรของโครงการจะแสดงความสามารถในการทำกำไรและการใช้งานของพนักงานแต่ละคนตามไทม์ชีทที่สร้างขึ้น
 
-To view this report, you can go to:
+หากต้องการดูรายงานนี้ คุณสามารถไปที่:
 
-> Home > Projects > Reports > Project Profitability
+> หน้าแรก > โครงการ > รายงาน > ความสามารถในการทำกำไรของโครงการ
 
-This report shows the Project Profitability with the following data:
+รายงานนี้แสดงการทำกำไรของโครงการด้วยข้อมูลต่อไปนี้:
 
-- Timesheet
-- Salary Slip generated using the Timesheet
-- Sales Invoice generated using the Timesheet
+- ตารางเวลา
+- สลิปเงินเดือนที่สร้างขึ้นโดยใช้ตารางเวลา
+- ใบแจ้งหนี้การขายที่สร้างโดยใช้ตารางเวลา
 
 <img class="screenshot" src="/docs/assets/img/project/profitability-report.gif">
 
-### Calculation of Utilization
+### การคำนวณการใช้ประโยชน์
 
-The Utilization of the Employee is calculated using the Total Billed Hours from the Timesheet, Working Days from the Salary Slip, and the Standard Working Hours from HR Settings.
+การใช้งานของพนักงานคำนวณโดยใช้จำนวนชั่วโมงที่เรียกเก็บเงินทั้งหมดจาก ตารางเวลา วันทำงานจากสลิปเงินเดือน และชั่วโมงการทำงานมาตรฐานจากการตั้งค่า HR
 
-The formula for Utilization is as follows,
+สูตรการใช้ประโยชน์มีดังนี้
 ```
-Utilization = Total Billed Hours / (Working Days * Standard Working Hours)
-```
-
-### Calculation of Profit
-The Profit is calculated using the Gross Pay from the Salary Slip, Grand Total from the Sales Invoice, and Utilization.
-
-The formula for Profit is as follows,
-```
-Profit = Grand Total - Gross Pay * Utilization
+การใช้ประโยชน์ = ชั่วโมงที่เรียกเก็บเงินทั้งหมด / (วันทำงาน * ชั่วโมงการทำงานมาตรฐาน)
 ```
 
-### Calculation of Fractional Cost
-The Fractional Cost is calculated using Gross Pay from Salary Slip and Utilization.
+### การคำนวณกำไร
+กำไรคำนวณโดยใช้รายได้รวมจากสลิปเงินเดือน ยอดรวมจากใบกำกับสินค้า และการใช้งาน
 
-The formula for Fractional Cost is as follows,
+สูตรกำไรมีดังนี้
 ```
-Fractional Cost = Gross Pay * Utilization
+กำไร = ยอดรวมทั้งหมด - การจ่ายรวม * การใช้ประโยชน์
+```
+
+### การคำนวณต้นทุนเศษส่วน
+ต้นทุนเศษส่วนคำนวณโดยใช้รายได้รวมจากสลิปเงินเดือนและการใช้งาน
+
+สูตรสำหรับต้นทุนเศษส่วนมีดังนี้
+```
+ต้นทุนเศษส่วน = การจ่ายขั้นต้น * การใช้ประโยชน์
 ```
 
 {next}

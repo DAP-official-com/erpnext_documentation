@@ -1,44 +1,44 @@
 <!-- add-breadcrumbs -->
-# Project
+#โครงการ
 
-**A Project is a planned piece of work that is designed to find information about something, to produce something new, or to improve something.**
+**โครงการคือชิ้นงานที่วางแผนไว้ซึ่งออกแบบมาเพื่อค้นหาข้อมูลเกี่ยวกับบางสิ่งบางอย่าง เพื่อสร้างสิ่งใหม่ หรือเพื่อปรับปรุงบางสิ่งบางอย่าง**
 
-In ERPNext, project management is task-driven. You can create a Project and divide it into multiple Tasks.
+ใน ERPNext การจัดการโครงการเป็นแบบขับเคลื่อนด้วยงาน คุณสามารถสร้างโครงการและแบ่งออกเป็นหลายงาน
 
-A Project has a broad scope and hence can be divided into tasks. Think of coming up with a new smartphone for the next year as a Project. Then things like designing, prototyping, testing, delivery, etc. become tasks under the project.
+โครงการมีขอบเขตกว้างและสามารถแบ่งออกเป็นงานได้ คิดว่าจะมีสมาร์ทโฟนเครื่องใหม่ในปีหน้าเป็นโครงการ จากนั้นสิ่งต่างๆ เช่น การออกแบบ การสร้างต้นแบบ การทดสอบ การส่งมอบ ฯลฯ จะกลายเป็นงานภายใต้โครงการ
 
-Whilst each task within a Project can be assigned to an individual or a group of individuals, the assignment can also be done at the project level.
+แม้ว่างานแต่ละงานภายในโครงการสามารถมอบหมายให้กับบุคคลหรือกลุ่มบุคคล การมอบหมายสามารถทำได้ในระดับโครงการ
 
-These Tasks can be created from a Project itself or a [Task](/docs/user/manual/en/projects/tasks.html) can be created separately as well.
+งานเหล่านี้สามารถสร้างได้จากตัวโครงการเอง หรือ [งาน](/docs/user/manual/th/projects/tasks.html) สามารถสร้างแยกต่างหากได้เช่นกัน
 
-To access Projects, go to:
+ในการเข้าถึงโครงการ ไปที่:
 
-> Home > Projects > Projects > Project 
+> หน้าแรก > โครงการ > โครงการ > โครงการ
 
 <img class="screenshot" alt="Project" src="{{docs_base_url}}//assets/img/project/projects-project-intro.png">
 
-## 1. How to Create a Project
+## 1. วิธีสร้างโครงการ
 
-  1. Go to the Project list and click on New.
-  2. Add the following details:
-      * **Project Name**: Title of the Project.
-      * **Status**: The default status of a Project is going to be 'Open' which can later be changed to 'Completed' or 'Cancelled'.
-      * **Expected End Date**: Enter the date on which you aim to finish the project.
-  3. Save.
+  1. ไปที่รายการโครงการและคลิกที่ใหม่
+  2. เพิ่มรายละเอียดต่อไปนี้:
+      * **ชื่อโครงการ**: ชื่อโครงการ.
+      * **สถานะ**: สถานะเริ่มต้นของโครงการจะเป็น 'เปิด' ซึ่งสามารถเปลี่ยนเป็น 'เสร็จสิ้น' หรือ 'ยกเลิก' ได้ในภายหลัง
+      * **วันที่สิ้นสุดที่คาดไว้**: ป้อนวันที่ที่คุณต้องการจะเสร็จสิ้นโครงการ
+  3. บันทึก
 
-### 1.1 Additional Options while creating a Project
+### 1.1 ตัวเลือกเพิ่มเติมขณะสร้างโครงการ
 
-  1. **From Template**: If you have an existing [Project Template](/docs/user/manual/en/projects/project-template), you can choose to create your project using this template.
-  2. **Expected Start Date**: If you have a time-line fixed for the project, you can define both expected Start Date and Expected End Date in the form.
-  3. **Project Type**: You can classify your projects into different [types](/docs/user/manual/en/projects/project-type), e.g., Internal or External. 
-  4. **Priority**: You can select the priority level of the Project based on how crucial it is. You can also add more priority levels.
-  5. **Department**: If the project belongs to, or is owned by a [Department](/docs/user/manual/en/human-resources/department) in the organization, you can add that here.
-  6. **Is Active**: A Yes/No tab, which lets you change the active status of the project at any later stage.
-  7. **Completion Method**: You can track the % completion of your project based on one of the three methods, viz. **Manual, Task Completion, Task Progress and Task Weight**. 
+  1. **จากเทมเพลต**: หากคุณมี [เทมเพลตโครงการ](/docs/user/manual/th/projects/project-template) อยู่แล้ว คุณสามารถเลือกสร้างโครงการโดยใช้เทมเพลตนี้ได้
+  2. **วันที่เริ่มต้นที่คาดไว้**: หากคุณมีเส้นเวลาที่กำหนดไว้สำหรับโครงการ คุณสามารถกำหนดทั้งวันที่เริ่มต้นที่คาดไว้และวันที่สิ้นสุดที่คาดไว้ได้ในแบบฟอร์ม
+  3. **ประเภทโครงการ**: คุณสามารถจำแนกโครงการของคุณออกเป็น [ประเภทโครงการ](/docs/user/manual/th/projects/project-type) ที่แตกต่างกันได้ เช่น Internal หรือ External
+  4. **ลำดับความสำคัญ**: คุณสามารถเลือกระดับความสำคัญของโครงการโดยพิจารณาจากความสำคัญ คุณยังสามารถเพิ่มระดับความสำคัญอื่นๆ ได้อีกด้วย
+  5. **แผนก**: หากโครงการเป็นของหรือเป็นของ [แผนก](/docs/user/manual/th/human-resources/department) ในองค์กร คุณสามารถเพิ่มได้ที่นี่
+  6. **ใช้งานอยู่**: แท็บใช่/ไม่ใช่ ซึ่งช่วยให้คุณสามารถเปลี่ยนสถานะใช้งานของโปรเจ็กต์ได้ในภายหลัง
+  7. **วิธีการทำให้เสร็จ**: คุณสามารถติดตาม % ความสำเร็จของโครงการของคุณตามหนึ่งในสามวิธี ได้แก่ **คู่มือ เสร็จสิ้นงาน ความคืบหน้าของงาน และน้ำหนักงาน**
   
   <img class="screenshot" alt="Project 2" src="{{docs_base_url}}/assets/img/project/project-proj.png">
 
-  Some examples of how the Percentage Completion is calculated based on Tasks:
+  ตัวอย่างบางส่วนของวิธีคำนวณเปอร์เซ็นต์ที่เสร็จสมบูรณ์ตามงาน:
 
   | Project     | Activity     | % Progress     | Weight     | Status     |
   |:-----------:|:------------:|:--------------:|:----------:|:----------:|
@@ -54,69 +54,69 @@ To access Projects, go to:
   | **Task Weight**     | Sum of (Task weight * % Progress)                   | (0.4 * 100 + 0.2 * 100 + 0.2 * 50)| 70                   |
 
 
-**Note:** If the total weight of the Tasks is not 1, then the calculated result will be divided by the total weight.
-For example, if the total of task weights is 70, then percentage completed = (70/0.8)% = 87.5%.
+**หมายเหตุ:** หากน้ำหนักรวมของภารกิจไม่ใช่ 1 ผลลัพธ์ที่คำนวณจะถูกหารด้วยน้ำหนักรวม
+ตัวอย่างเช่น หากน้ำหนักงานทั้งหมดเท่ากับ 70 เปอร์เซ็นต์ที่ทำสำเร็จ = (70/0.8)% = 87.5%
 
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1. Customer Details, Users and Notes
+### 2.1. รายละเอียดลูกค้า ผู้ใช้ และหมายเหตุ
 
-* **Customer**: If a Project is being carried out for a particular Customer, the details can be fed in here.
-* **Sales Order**: If a Project is based on a [Sales Order](/docs/user/manual/en/selling/sales-order) from a Customer, you can fetch the details here. This would enable you to update the Customer on the Progress on the project as per the Sales Order issued.
-* **Users**: You can add any [website user](/docs/user/manual/en/setting-up/users-and-permissions/adding-users) to give them access to this Project. E.g., you can add your customer as a Website User, to enable them to have access to your project to monitor progress and/or give any inputs/remarks. Similarly, a Supplier or a Contractual Employee/Freelancer who is involved in the Project can be added as a User.
+* **ลูกค้า**: หากมีการดำเนินโครงการสำหรับลูกค้ารายใดรายหนึ่ง คุณสามารถป้อนรายละเอียดได้ที่นี่
+* **ใบสั่งขาย**: หากโครงการอิงตาม [คำสั่งขาย](/docs/user/manual/th/selling/sales-order) จากลูกค้า คุณสามารถดึงรายละเอียดได้ที่นี่ สิ่งนี้จะช่วยให้คุณสามารถอัปเดตลูกค้าเกี่ยวกับความคืบหน้าของโครงการตามคำสั่งขายที่ออก
+* **ผู้ใช้**: คุณสามารถเพิ่ม [ผู้ใช้เว็บไซต์](/docs/user/manual/th/setting-up/users-and-permissions/adding-users) เพื่อให้พวกเขาเข้าถึงโครงการนี้ได้ เช่น คุณสามารถเพิ่มลูกค้าของคุณเป็นผู้ใช้เว็บไซต์ เพื่อให้พวกเขาสามารถเข้าถึงโครงการของคุณเพื่อติดตามความคืบหน้าและ/หรือให้ข้อมูล/ข้อสังเกตใดๆ ในทำนองเดียวกัน คุณสามารถเพิ่มซัพพลายเออร์หรือพนักงานตามสัญญา/ฟรีแลนซ์ที่เกี่ยวข้องกับโครงการเป็นผู้ใช้ได้
 
-  Further, you can also expand the window and select if you want to send a Welcome Email to any particular user or give them Attachment Viewing rights.
+  นอกจากนี้ คุณยังสามารถขยายหน้าต่างและเลือกว่าคุณต้องการส่งอีเมลต้อนรับไปยังผู้ใช้รายใดรายหนึ่งหรือให้สิทธิ์ในการดูไฟล์แนบ
 
-  You can learn more about allowing users to view projects [here](/docs/user/manual/en/projects/project-customer-portal).
+  คุณสามารถเรียนรู้เพิ่มเติมเกี่ยวกับการอนุญาตให้ผู้ใช้ดูโครงการได้ [ที่นี่](/docs/user/manual/th/projects/project-customer-portal)
 
-* **Notes**: You can add any additional notes to the project.
+* **หมายเหตุ**: คุณสามารถเพิ่มบันทึกเพิ่มเติมในโครงการ
 
   <img class="screenshot" alt="Project - Costing" src="{{docs_base_url}}/assets/img/project/projects-customer-users-notes.png">
 
-### 2.2. Start and End Dates
+### 2.2. วันที่เริ่มต้นและสิ้นสุด
 
-* **Actual Start Date**: Basis the Actual Start of the project, tracked via Timesheets, the Actual Start Date and Time of the Project will get recorded automatically. 
-* **Actual End Date**: Basis the Actual End of the project, tracked via the last update of the Timesheet, the Actual End Date and Time of the Project will get recorded automatically. To know more about Timesheets, [click here](/docs/user/manual/en/projects/timesheets/).
+* **วันที่เริ่มต้นจริง**: พื้นฐานการเริ่มต้นจริงของโครงการ ติดตามผ่าน Timesheets วันที่และเวลาเริ่มต้นจริงของโครงการจะได้รับการบันทึกโดยอัตโนมัติ
+* **วันที่สิ้นสุดจริง**: พื้นฐานการสิ้นสุดจริงของโครงการ ติดตามผ่านการอัปเดตล่าสุดของ Timesheet วันที่และเวลาสิ้นสุดจริงของโครงการจะได้รับการบันทึกโดยอัตโนมัติ หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับไทม์ชีท [คลิกที่นี่](/docs/user/manual/th/projects/timesheets/)
 
   <img class="screenshot" alt="Project - Costing" src="{{docs_base_url}}/assets/img/project/projects-start-time-end-time.png">
 
-### 2.3. Costing and Billing
+### 2.3. การคิดต้นทุนและการเรียกเก็บเงิน
 
-* **Estimated Cost**: Enter the Estimated Cost of the Project.
-* **Total Sales Amount**: If you have already linked the Project with a Sales Order, the Total Sales Order Amount will be auto-populated here.
-* **Total Costing Amount**: The system will automatically fetch the Total Costing Amount from all the Timesheets linked to this project.
-* **Total Billable Amount**: The system will automatically fetch the Total Billable Amount from all the Timesheets linked to this project.
-* **Total Expense Claim**: Based on the expenses claimed by an [Employee](/docs/user/manual/en/human-resources/employee) for the completion of the Project, the Total Expense Claim will be auto-calculated.
-* **Total Billed Amount**: The Total Billed Amount gets auto-populated in the system using the Sales Invoice created against the Sales Order.
-* **Total Purchase Cost**: The Total Purchase Cost of a Project is the cost fetched from the Purchase Invoices that get created against a Purchase Order issued for supply of Materials required for a Project.
-* **Total Consumed Material Cost**: Using the Stock Entry made as per the requirement of Materials in the Project, the Total Consumed Material Cost gets captured.
+* **ค่าใช้จ่ายโดยประมาณ**: ป้อนต้นทุนโดยประมาณของโครงการ
+* **ยอดรวมของการขาย**: หากคุณได้เชื่อมโยงโครงการกับใบสั่งขายแล้ว จำนวนรวมของใบสั่งขายจะถูกเติมโดยอัตโนมัติที่นี่
+* **ยอดรวมต้นทุน**: ระบบจะดึงยอดรวมต้นทุนจากไทม์ชีททั้งหมดที่เชื่อมโยงกับโครงการนี้โดยอัตโนมัติ
+* **จำนวนเงินที่เรียกเก็บเงินได้ทั้งหมด**: ระบบจะดึงจำนวนเงินที่เรียกเก็บเงินได้ทั้งหมดจาก Timesheets ทั้งหมดที่เชื่อมโยงกับโครงการนี้โดยอัตโนมัติ
+* **การเรียกร้องค่าใช้จ่ายทั้งหมด**: ตามค่าใช้จ่ายที่อ้างสิทธิ์โดย [พนักงาน](/docs/user/manual/th/human-resources/employee) ที่อ้างสิทธิ์สำหรับโครงการให้เสร็จสิ้น การเรียกร้องค่าใช้จ่ายทั้งหมดจะเป็นไปโดยอัตโนมัติ คำนวณแล้ว
+* **จำนวนเงินที่เรียกเก็บเงินทั้งหมด**: จำนวนเงินที่เรียกเก็บเงินทั้งหมดจะได้รับการเติมอัตโนมัติในระบบโดยใช้ใบกำกับสินค้าที่สร้างขึ้นโดยเทียบกับใบสั่งขาย
+* **ต้นทุนซื้อรวม**: ต้นทุนซื้อทั้งหมดของโครงการคือต้นทุนที่ดึงมาจากใบกำกับสินค้าที่สร้างขึ้นโดยเทียบกับใบสั่งซื้อที่ออกให้สำหรับการจัดหาวัสดุที่จำเป็นสำหรับโครงการ
+* **ต้นทุนวัสดุสิ้นเปลืองทั้งหมด**: การใช้รายการสต็อคที่ทำขึ้นตามข้อกำหนดของวัสดุในโครงการ ต้นทุนวัสดุสิ้นเปลืองทั้งหมดจะถูกบันทึก
 
 
-### 2.4. Margin
+### 2.4. มาร์จิ้น
 
-* **Gross Margin**: Gross Margin would give you the margin you have between your Total Costing Amount and the Total Billed Amount.
+* **อัตรากำไรขั้นต้น**: อัตรากำไรขั้นต้นจะให้ส่วนต่างที่คุณมีระหว่างจำนวนเงินต้นทุนรวมและจำนวนเงินที่เรียกเก็บทั้งหมด
 
-  **Gross Margin = (Total Sales Amount + Total Billable Amount) - Total Costing Amount + Total Billable Amount + Total Expense Claim + Total Purchase Cost + Total Consumed Material Cost)**
+  **อัตรากำไรขั้นต้น = (ยอดขายรวม + จำนวนเงินที่เรียกเก็บเงินได้ทั้งหมด) - จำนวนเงินต้นทุนรวม + จำนวนเงินที่เรียกเก็บเงินได้ทั้งหมด + การเรียกร้องค่าใช้จ่ายทั้งหมด + ต้นทุนการซื้อทั้งหมด + ต้นทุนวัสดุสิ้นเปลืองทั้งหมด)**
 
-* **Gross %**: The percentage of the Total Billed Amount spent in the Total Costing Amount makes for the Gross %.
+* **% ขั้นต้น**: เปอร์เซ็นต์ของยอดรวมที่เรียกเก็บเงินที่ใช้ไปในยอดรวมต้นทุนที่ทำขึ้นสำหรับ % ขั้นต้น
 
-  **((Total Sales Amount + Total Billable Amount) - Total Costing Amount + Total Billable Amount + Total Expense Claim + Total Purchase Cost + Total Consumed Material Cost) / Total Sales Amount)* 100**
+  **((ยอดขายรวม + จำนวนเงินที่เรียกเก็บเงินได้ทั้งหมด) - จำนวนเงินรวม + จำนวนเงินที่เรียกเก็บเงินได้ + การเรียกร้องค่าใช้จ่ายทั้งหมด + ต้นทุนการซื้อทั้งหมด + ต้นทุนวัสดุสิ้นเปลืองทั้งหมด) / ยอดขายรวม)* 100**
 
   <img class="screenshot" alt="Project - Costing" src="{{docs_base_url}}/assets/img/project/projects-costing-and-billing.png">
 
-### 2.5. Monitor progress
+### 2.5. ติดตามความคืบหน้า
 
-When you enable the 'Collect Progress' option by checking the box, it will enable you to add monitoring details to the project. A report on the progress of the project shall be sent to all stakeholders of the project.
+เมื่อคุณเปิดใช้งานตัวเลือก 'รวบรวมความคืบหน้า' โดยทำเครื่องหมายที่ช่อง จะทำให้คุณสามารถเพิ่มรายละเอียดการตรวจสอบในโครงการ รายงานความคืบหน้าของโครงการจะถูกส่งไปยังผู้มีส่วนได้ส่วนเสียทั้งหมดของโครงการ
 
-* **Holiday List**: You can select the [Holiday List](/docs/user/manual/en/human-resources/holiday-list) for your company. This will allow you to collect the Progress Reports only on the Working Days.
-* **Frequency**: You can set the frequency at which you wish to get the reports. It can be set to an hourly, twice daily, daily or on a weekly frequency.
+* **รายการวันหยุด**: คุณสามารถเลือก [รายการวันหยุด](/docs/user/manual/th/human-resources/holiday-list) สำหรับบริษัทของคุณ ซึ่งจะทำให้คุณสามารถรวบรวมรายงานความคืบหน้าเฉพาะในวันทำงานเท่านั้น
+* **ความถี่**: คุณสามารถกำหนดความถี่ที่คุณต้องการรับรายงาน สามารถตั้งค่าเป็นรายชั่วโมง วันละสองครั้ง รายวันหรือรายสัปดาห์ได้
 
   <img class="screenshot" alt="Project - Costing" src="{{docs_base_url}}/assets/img/project/projects-monitor-progress.png">
 
-## 3. Related Topics
-  1. [Task](/docs/user/manual/en/projects/tasks)
-  2. [Project Type](/docs/user/manual/en/projects/project-type)
-  3. [Project Template](/docs/user/manual/en/projects/project-template)
+## 3. หัวข้อที่เกี่ยวข้อง
+  1. [านย่อย](/docs/user/manual/th/projects/tasks)
+  2. [ประเภทโครงการ](/docs/user/manual/th/projects/project-type)
+  3. [เทมเพลตโครงการ](/docs/user/manual/th/projects/project-template)
 
 {next}

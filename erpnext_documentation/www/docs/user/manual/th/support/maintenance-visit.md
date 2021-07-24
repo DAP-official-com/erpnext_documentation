@@ -1,42 +1,42 @@
 <!-- add-breadcrumbs -->
-# Maintenance Visit
+# เยี่ยมชมการบำรุงรักษา
 
-**A Maintenance Visit is a visit made by an engineer to a Customer’s premise for maintenance work of an Item.**
+**การเยี่ยมชมการบำรุงรักษาคือการเยี่ยมชมโดยวิศวกรไปยังสถานที่ตั้งของลูกค้าเพื่อดำเนินการบำรุงรักษารายการ**
 
-To access the Maintenance Visit list, go to:
-> Home > Support > Maintenance > Maintenance Visit
+หากต้องการเข้าถึงรายการเยี่ยมชมการบำรุงรักษา ให้ไปที่:
+> หน้าหลัก > การสนับสนุน > การบำรุงรักษา > เยี่ยมชมการบำรุงรักษา
 
-A Maintenance Visit is usually created from a Sales Order of type 'Maintenance'.
+การเยี่ยมชมการบำรุงรักษามักจะสร้างจากใบสั่งขายประเภท 'การบำรุงรักษา'
 ![SO Maintenance Visit](/docs/assets/img/support/so-maintenance-visit.png)
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-* [Customer](docs/user/manual/en/CRM/customer) 
-* [Item](/docs/user/manual/en/stock/item)
+* [ลูกค้า](docs/user/manual/th/CRM/customer)
+* [รายการ](/docs/user/manual/th/stock/item)
 
-## 2. How to create a Maintenance Visit
-1. Go to the Maintenance Visit list, click on New.
-1. The current date and time will be recorded, this can be edited.                s
-1. Select the Customer. 
-1. Select the Maintenance Type whether Scheduled, Unscheduled, or Breakdown.
-1. Set the completion status whether 'Partially Completed' or 'Fully Completed'.
-1. Select the Item Code and Serial Number.
-1. Enter a Description of the maintenance, select the Sales Person performing the maintenance, and enter the work done.
-1. Save. 
+## 2. วิธีสร้างการเยี่ยมชมการบำรุงรักษา
+1. ไปที่รายการเยี่ยมชมการบำรุงรักษา คลิกที่ใหม่
+1. วันที่และเวลาปัจจุบันจะถูกบันทึกซึ่งสามารถแก้ไขได้
+1. เลือกลูกค้า
+1. เลือกประเภทการบำรุงรักษาไม่ว่าจะตามกำหนดการ ไม่ได้กำหนดไว้ หรือรายละเอียด
+1. ตั้งค่าสถานะเสร็จสมบูรณ์ว่า 'เสร็จสมบูรณ์บางส่วน' หรือ 'เสร็จสมบูรณ์แล้ว'
+1. เลือกรหัสรายการและหมายเลขซีเรียล
+1. ป้อนคำอธิบายของการบำรุงรักษา เลือกพนักงานขายที่ดำเนินการบำรุงรักษา และป้อนงานที่ทำเสร็จแล้ว
+1. บันทึก
 
     <img class="screenshot" alt="Maintenance Visit" src="{{docs_base_url}}/assets/img/support/maintenance-visit.png">
 
-### 2.1 Additional Options when Creating Maintenance Visit
+### 2.1 ตัวเลือกเพิ่มเติมเมื่อสร้างการเยี่ยมชมการบำรุงรักษา
 
-* **Customer Feedback**: You can record any feedback given by the Customer regarding this Maintenance Visit.
-* The following fields will be fetched from the [Customer](/docs/user/manual/en/CRM/customer) form:
-  * Customer Address
-  * Contact Person
-  * Territory
-  * Customer Group
+* **คำติชมของลูกค้า**: คุณสามารถบันทึกข้อเสนอแนะใดๆ ที่ลูกค้าให้เกี่ยวกับการเยี่ยมชมการบำรุงรักษาครั้งนี้
+* ฟิลด์ต่อไปนี้จะถูกดึงมาจากแบบฟอร์ม [ลูกค้า](/docs/user/manual/th/CRM/customer):
+  * ที่อยู่ลูกค้า
+  * ผู้ติดต่อ
+  * อาณาเขต
+  * กลุ่มลูกค้า
 
-## 3. Related Topics
-1. [Warranty Claim](/docs/user/manual/en/support/warranty-claim)
-1. [Maintenance Schedule](/docs/user/manual/en/support/maintenance-schedule)
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [การเคลมการรับประกัน](/docs/user/manual/th/support/warranty-claim)
+1. [กำหนดการบำรุงรักษา](/docs/user/manual/th/support/maintenance-schedule)
+1. [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order)
 

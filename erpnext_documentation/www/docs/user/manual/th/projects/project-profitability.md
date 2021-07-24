@@ -1,38 +1,38 @@
 <!-- add-breadcrumbs -->
-# Project Profitability
+# ความสามารถในการทำกำไรของโครงการ
 
-Project and related activities are generally active for longer periods. While developments keep happening on the Project, various transactions are done against each project. While new developments keep happening on a project, it may lead to more investment in terms of time, money, and material. Hence, it becomes important to track the Profitability of a Project to ensure that you don't overspend.
+โดยทั่วไปโครงการและกิจกรรมที่เกี่ยวข้องจะมีการใช้งานเป็นระยะเวลานานขึ้น ในขณะที่การพัฒนายังคงเกิดขึ้นในโครงการ การทำธุรกรรมต่างๆ จะทำกับแต่ละโครงการ ในขณะที่การพัฒนาใหม่ๆ เกิดขึ้นอย่างต่อเนื่องในโครงการ อาจทำให้มีการลงทุนมากขึ้นในแง่ของเวลา เงิน และวัสดุ ดังนั้นการติดตามผลกำไรของโครงการจึงเป็นสิ่งสำคัญเพื่อให้แน่ใจว่าคุณจะไม่ใช้จ่ายเกิน
 
-In simple terms, Project Profitability is the difference between the revenue generated from a project versus the costs associated with it.
+ในแง่ง่ายๆ ความสามารถในการทำกำไรของโครงการคือความแตกต่างระหว่างรายได้ที่เกิดจากโครงการกับต้นทุนที่เกี่ยวข้อง
 
-### Project in Sales Transactions
+### โครงการในธุรกรรมการขาย
 
-You can link a Project in all sales transactions like Sales Order, Delivery Note, Sales Invoice, and Payment. Linking your project with the sales transactions will help you track the income received against that Project.
+คุณสามารถเชื่อมโยงโครงการในธุรกรรมการขายทั้งหมด เช่น ใบสั่งขาย บันทึกการส่งมอบ ใบกำกับสินค้า และการชำระเงิน การเชื่อมโยงโครงการของคุณกับธุรกรรมการขายจะช่วยให้คุณติดตามรายได้ที่ได้รับจากโครงการนั้น
 
-In sales transactions, Project field is generally available in the More Information section.
+ในธุรกรรมการขาย โดยทั่วไปฟิลด์โครงการจะพร้อมใช้งานในส่วนข้อมูลเพิ่มเติม
 
 <img class="screenshot" alt="Project in Sales" src="{{docs_base_url}}/assets/img/project/projects-sales-order.png">
 
-#### Project in Purchase Transactions
+#### โครงการในธุรกรรมการซื้อ
 
-You can also link your project to the purchase transactions like Purchase Order, Purchase Receipt, and Purchase Invoice.
+คุณยังสามารถเชื่อมโยงโครงการของคุณกับธุรกรรมการซื้อ เช่น ใบสั่งซื้อ ใบเสร็จการซื้อ และใบกำกับสินค้า
 
-In the purchase transactions, the option to link a project is available in the Item table. This is because you could be procuring material for multiple projects from the same purchase entry.
+ในธุรกรรมการซื้อ ตัวเลือกในการเชื่อมโยงโครงการมีอยู่ในตารางรายการ เนื่องจากคุณสามารถจัดหาวัสดุสำหรับหลายโครงการจากรายการซื้อเดียวกัน
 
 <img class="screenshot" alt="Project in Purchases" src="{{docs_base_url}}/assets/img/project/projects-purchase-order.png">
 
-### Budgeting against Project
+### งบประมาณเทียบกับโครงการ
 
-You can create a [Budget](/docs/user/manual/en/accounts/budgeting) for a project as well. The expense limit defined in the Budget will be validated in the expense transactions.
+คุณสามารถสร้าง [งบประมาณ](/docs/user/manual/th/accounts/budgeting) สำหรับโครงการได้เช่นกัน วงเงินค่าใช้จ่ายที่กำหนดไว้ในงบประมาณจะถูกตรวจสอบความถูกต้องในธุรกรรมค่าใช้จ่าย
 
 <img class="screenshot" alt="Project Budgeting" src="{{docs_base_url}}/assets/img/project/project-budgeting.png">
 
-### Project Profitability
+### ผลกำไรของโครงการ
 
-Based on all the income and expense entries created for the Project, you can get its profitability.
+ตามรายการรายได้และค่าใช้จ่ายทั้งหมดที่สร้างขึ้นสำหรับโครงการ คุณสามารถทำกำไรได้
 
-> Accounting > Profitability Analysis
+> การบัญชี > การวิเคราะห์การทำกำไร
 
-You can filter the report by Project to check Project-wise Profitability.
+คุณสามารถกรองรายงานตามโครงการเพื่อตรวจสอบความสามารถในการทำกำไรของโครงการ
 
 <img class="screenshot" alt="Project Profitability" src="{{docs_base_url}}/assets/img/project/projects-profitability.png">

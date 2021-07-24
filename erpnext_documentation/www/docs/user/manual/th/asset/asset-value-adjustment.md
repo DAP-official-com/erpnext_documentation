@@ -1,34 +1,34 @@
 <!-- add breadcrumbs -->
-# Asset Value Adjustment
+# การปรับมูลค่าทรัพย์สิน
 
-**If the value of an Asset changed suddenly due to any damages, it can be recorded using Asset Value Adjustment.**
+**หากมูลค่าของสินทรัพย์เปลี่ยนแปลงกะทันหันเนื่องจากความเสียหายใดๆ สามารถบันทึกได้โดยใช้การปรับมูลค่าสินทรัพย์**
 
-In case of fixed asset management, sometimes the value of an asset needs some adjustment. For example, if a laptop gets damaged for some reason, and its value will be dropped instantly. And in that case, we have to readjust the value of the asset.
+ในกรณีของการจัดการสินทรัพย์ถาวร บางครั้งมูลค่าของสินทรัพย์จำเป็นต้องมีการปรับปรุง ตัวอย่างเช่น หากแล็ปท็อปเสียหายด้วยเหตุผลบางประการ และมูลค่าของแล็ปท็อปจะลดลงทันที และในกรณีนั้น เราต้องปรับมูลค่าของสินทรัพย์ใหม่
 
-To access the Asset Value Adjustment, go to:
-> Home > Assets > Maintenance > Asset Value Adjustment
+ในการเข้าถึงการปรับมูลค่าสินทรัพย์ ไปที่:
+> หน้าหลัก > สินทรัพย์ > การบำรุงรักษา > การปรับมูลค่าสินทรัพย์
 
-## 1. Prerequisites
-Before creating and using Asset Value Adjustment, it is advised to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้การปรับมูลค่าสินทรัพย์ ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-1. [Asset](/docs/user/manual/en/asset/asset)
-1. Enable 'Calculate Depreciation' in the Asset form
+1. [สินทรัพย์](/docs/user/manual/th/asset/asset)
+1. เปิดใช้งาน 'คำนวณค่าเสื่อมราคา' ในรูปแบบสินทรัพย์
 
-## 2. How to create an Asset Value Adjustment
+## 2. วิธีสร้างการปรับมูลค่าสินทรัพย์
 
-1. Go to the Asset Value Adjustment list, click on New.
-1. Select an Asset whose value is to be adjusted.
-1. Select a date.
-1. Enter the current and new value of the asset.
-1. Save and Submit.
+1. ไปที่รายการ การปรับมูลค่าสินทรัพย์ คลิกที่ ใหม่
+1. เลือกสินทรัพย์ที่จะปรับมูลค่า
+1. เลือกวันที่
+1. ป้อนมูลค่าปัจจุบันและมูลค่าใหม่ของสินทรัพย์
+1. บันทึกและส่ง
     <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset-value-adjustment.png">
 
 
-On saving the system will book a "Gain/Loss on asset revaluation" and adjust the valuation of the asset.
-You can change the cost center and add a finance book.
+ในการบันทึก ระบบจะจอง "กำไร/ขาดทุนจากการประเมินมูลค่าสินทรัพย์ใหม่" และปรับการประเมินมูลค่าของสินทรัพย์
+คุณสามารถเปลี่ยนศูนย์ต้นทุนและเพิ่มสมุดการเงินได้
 
-On submitting, a Journal Entry is created under the 'Accumulated Depreciations' account.
+ในการส่ง รายการบันทึกประจำวันจะถูกสร้างขึ้นภายใต้บัญชี 'ค่าเสื่อมราคาสะสม'
 
-### 3. Related Topics
-1. [Asset Depreciation](/docs/user/manual/en/asset/asset-depreciation)
-1. [Scrapping an Asset](/docs/user/manual/en/asset/scrapping-an-asset)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [ค่าเสื่อมราคาสินทรัพย์](/docs/user/manual/th/asset/asset-depreciation)
+1. [ขูดสินทรัพย์](/docs/user/manual/th/asset/scrapping-an-asset)

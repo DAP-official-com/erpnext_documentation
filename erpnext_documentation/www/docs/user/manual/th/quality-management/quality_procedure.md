@@ -1,52 +1,52 @@
 <!-- add-breadcrumbs -->
-# Quality Procedure (Standard Operating Procedure)
+# ขั้นตอนคุณภาพ (ขั้นตอนการปฏิบัติงานมาตรฐาน)
 
-> Introduced in Version 12
+> เปิดตัวในเวอร์ชัน 12
 
-**A Quality Procedure is a Standard Operating Procedure (SOP) used as a reference to carry out routine actions**
+**ขั้นตอนคุณภาพคือขั้นตอนการปฏิบัติงานมาตรฐาน (SOP) ที่ใช้อ้างอิงในการดำเนินการตามปกติ**
 
-A standard operating procedure (SOP) is a set of step-by-step instructions compiled by an organization to help the employees execute routine operations. SOPs aim to achieve efficiency, quality output and uniformity of performance while reducing miscommunication and failure to comply with industry regulations.
+ขั้นตอนการปฏิบัติงานมาตรฐาน (SOP) คือชุดคำสั่งทีละขั้นตอนที่รวบรวมโดยองค์กรเพื่อช่วยให้พนักงานดำเนินการตามกิจวัตร SOPs มุ่งหวังที่จะบรรลุประสิทธิภาพ ผลลัพธ์ที่มีคุณภาพ และความสม่ำเสมอของประสิทธิภาพ พร้อมลดการสื่อสารที่ผิดพลาดและความล้มเหลวในการปฏิบัติตามกฎระเบียบของอุตสาหกรรม
 
-A Quality Procedure can be of two types:
-  1. A Procedure consisting of simple steps that you must follow to achieve the Goal
-  1. A procedure having sub-Procedures which may also have its own steps
+ขั้นตอนคุณภาพสามารถเป็นได้สองประเภท:
+  1. ขั้นตอนประกอบด้วยขั้นตอนง่าย ๆ ที่คุณต้องปฏิบัติตามเพื่อให้บรรลุเป้าหมาย
+  1. ขั้นตอนที่มีขั้นตอนย่อยซึ่งอาจมีขั้นตอนของตัวเองด้วย
 
-To access the Quality Procedure list, go to:
-> Home > Quality > Goal and Procedure > Quality Procedure
+ในการเข้าถึงรายการขั้นตอนคุณภาพ ไปที่:
+> หน้าแรก > คุณภาพ > เป้าหมายและขั้นตอน > ขั้นตอนคุณภาพ
 
-## 1. How to create a Quality Procedure
+## 1. วิธีสร้างขั้นตอนคุณภาพ
 
-1. Go to the Quality Procedure list, click on New.
-1. Enter a name for the Quality Procedure.
-1. In the Processes table, enter Process Descriptions.
-1. **Child Procedure**: If the Quality Procedure being created a is a parent procedure that contains sub-procedures, link the sub-procedure here. On doing this, the current procedure becomes a parent and the 'Is Group' checkbox is enabled.
-1. Save.
-  A Quality Procedure can also be saved without entering the Process descriptions if the title is self explanatory.
+1. ไปที่รายการขั้นตอนคุณภาพ คลิกที่ใหม่
+1. ป้อนชื่อสำหรับขั้นตอนคุณภาพ
+1. ในตารางกระบวนการ ให้ป้อน คำอธิบายกระบวนการ
+1. **ขั้นตอนย่อย**: หากขั้นตอนคุณภาพที่สร้าง a เป็นขั้นตอนหลักที่มีขั้นตอนย่อย ให้ลิงก์ขั้นตอนย่อยที่นี่ ในการทำเช่นนี้ ขั้นตอนปัจจุบันจะกลายเป็นพาเรนต์ และเปิดใช้งานช่องกาเครื่องหมาย 'เป็นกลุ่ม'
+1. บันทึก
+  นอกจากนี้ยังสามารถบันทึกขั้นตอนคุณภาพโดยไม่ต้องป้อนคำอธิบายกระบวนการหากชื่อสามารถอธิบายได้ด้วยตนเอง
 
-The 'Parent Procedure' is linked to the child procedure. For example 'Demo preparation' needs to be done before a demo and hence 'Product Demo' is the parent here:
+'ขั้นตอนสำหรับผู้ปกครอง' เชื่อมโยงกับขั้นตอนย่อย ตัวอย่างเช่น จำเป็นต้องทำ 'การเตรียมการสาธิต' ก่อนการสาธิต และด้วยเหตุนี้ 'การสาธิตผลิตภัณฑ์' จึงเป็นรายการหลักที่นี่:
 
 ![Parent Procedure](/docs/assets/img/quality-management/procedure-parent.png)
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Using Quality Procedure in Quality Goal
-Once a Quality Procedure is created, it can be used in a [Quality Goal](/docs/user/manual/en/quality-management/quality_goal):
+### 2.1 การใช้ขั้นตอนคุณภาพในเป้าหมายคุณภาพ
+เมื่อสร้างขั้นตอนคุณภาพแล้ว สามารถใช้ใน [เป้าหมายคุณภาพ](/docs/user/manual/th/quality-management/quality_goal):
 
 <img class="screenshot" alt="Quality management" src="{{docs_base_url}}/assets/img/quality-management/procedure.gif">
 
-### 2.2 Sub Procedures
+### 2.2 ขั้นตอนย่อย
 
-Process can either be just a instruction or a different Quality Procedure. You can link a Quality Procedure as a sub-procedure to another one:
+กระบวนการอาจเป็นเพียงคำสั่งหรือขั้นตอนคุณภาพอื่นก็ได้ คุณสามารถเชื่อมโยงขั้นตอนคุณภาพเป็นขั้นตอนย่อยกับขั้นตอนอื่นได้:
 <img class="screenshot" alt="Quality management" src="{{docs_base_url}}/assets/img/quality-management/procedure-1.gif">
 
-### 2.3 Hierarchical View
+### 2.3 มุมมองแบบลำดับชั้น
 
-You can you also view Quality Procedures in a tree view for easy organization and navigation
+คุณยังสามารถดูขั้นตอนคุณภาพในมุมมองแบบต้นไม้เพื่อการจัดระเบียบและการนำทางที่ง่ายดาย
 
 <img class="screenshot" alt="Quality Procedure Tree" src="{{docs_base_url}}/assets/img/quality-management/Quality-Tree.gif">
 
-## 2. Related Topics
-1. [Quality Goal](/docs/user/manual/en/quality-management/quality_goal)
-1. [Tree Of Procedure](/docs/user/manual/en/quality-management/tree_of_procedure)
+## 2. หัวข้อที่เกี่ยวข้อง
+1. [เป้าหมายคุณภาพ](/docs/user/manual/th/quality-management/quality_goal)
+1. [แผนผังขั้นตอน](/docs/user/manual/th/quality-management/tree_of_procedure)
 
 {next}
