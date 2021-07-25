@@ -1,22 +1,22 @@
 <!-- add-breadcrumbs -->
 
-# Web Page Builder
+# ตัวสร้างหน้าเว็บ
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-**Page Builder lets you quickly create web pages from pre-configured web templates.**
+**ตัวสร้างหน้าช่วยให้คุณสร้างหน้าเว็บได้อย่างรวดเร็วจากเทมเพลตเว็บที่กำหนดค่าไว้ล่วงหน้า**
 
-## 1. How to create a page using Page Builder
+## 1. วิธีสร้างเพจโดยใช้ Page Builder
 
-1. Follow the steps to [create a Web Page](/docs/user/manual/en/website/web-page).
-1. Enable full width by ticking the "Full Width" checkbox.
-1. Select Content Type as **Page Builder**.
-1. Click on Add Row in the Page Building Blocks Table.
-1. Select a Web Template.
-1. Click on the **Edit Values** button.
-1. Enter values in the dialog and click on Submit.
-1. Click on Save.
-1. The web page will be published only when **Published** is ticked.
+1. ทำตามขั้นตอนเพื่อ [สร้างหน้าเว็บ](/docs/user/manual/th/website/web-page)
+1. เปิดใช้งานความกว้างเต็มโดยทำเครื่องหมายที่ช่อง "เต็มความกว้าง"
+1. เลือกประเภทเนื้อหาเป็น **ตัวสร้างหน้า**
+1. คลิกที่ Add Row ใน Page Building Blocks Table
+1. เลือกเทมเพลตเว็บ
+1. คลิกที่ปุ่ม **แก้ไขค่า**
+1. ป้อนค่าในช่องโต้ตอบและคลิกส่ง
+1. คลิกที่บันทึก
+1. หน้าเว็บจะเผยแพร่ต่อเมื่อทำเครื่องหมายที่ **เผยแพร่แล้ว**
 
 ![New Web Page with Page Builder](/docs/assets/img/website/new-web-page-with-page-builder.png)
 _New Web Page with Page Builder_
@@ -24,16 +24,16 @@ _New Web Page with Page Builder_
 ![Page Builder Edit Values Dialog](/docs/assets/img/website/page-builder-edit-values-dialog.png)
 _Page Builder Edit Values Dialog_
 
-View your Web Page by clicking on **See on Website** in the sidebar.
+ดูหน้าเว็บของคุณโดยคลิกที่ **ดูบนเว็บไซต์** ในแถบด้านข้าง
 
 ![Web Page](/docs/assets/img/website/web-page-with-page-builder-preview.png)
 _Web Page with Page Builder_
 
-### 1.1 Add Sections
+### 1.1 เพิ่มส่วนอื่นๆ
 
-You can add more sections to your page by adding more rows in the Page Building Blocks
-table. The framework comes with a great set of Web Templates for you to create
-all sorts of pages.
+คุณสามารถเพิ่มส่วนต่างๆ ในหน้าของคุณได้โดยการเพิ่มแถวใน Page Building Blocks
+โต๊ะ. กรอบงานมาพร้อมกับชุดเทมเพลตเว็บที่ยอดเยี่ยมสำหรับคุณในการสร้าง
+ทุกประเภทของหน้า
 
 ![More Sections](/docs/assets/img/website/web-page-with-more-sections.png)
 _Web Page with another section_
@@ -41,17 +41,17 @@ _Web Page with another section_
 ![More Sections - Preview](/docs/assets/img/website/web-page-with-more-sections-preview.png)
 _Web Page with another section - Preview_
 
-### 1.2 Section Options
+### 1.2 ตัวเลือกในส่วน
 
-If you click to expand a row in the Page Building Blocks table, you have the
-following additional options:
+หากคุณคลิกเพื่อขยายแถวในตาราง Page Building Blocks คุณจะมี
+ต่อไปนี้ตัวเลือกเพิ่มเติม:
 
-- **Add Container**: If checked, the web template will be rendered in a centered constrained box.
-- **Add Space on Top**: If checked, it will add a decent amount of space above the section.
-- **Add Space on Bottom**: If checked, it will add a decent amount of space below the section.
-- **Add Gray Background**: If checked, it will add a gray background to the section.
-- **Hide Block**: If checked, it will hide the section block.
-- **CSS Class**: Add any CSS class and style it in the CSS field in the Style section.
+- **เพิ่มคอนเทนเนอร์**: หากเลือก เทมเพลตเว็บจะแสดงในช่องจำกัดที่อยู่ตรงกลาง
+- **เพิ่มพื้นที่ด้านบน**: หากเลือก ระบบจะเพิ่มพื้นที่ว่างด้านบนส่วนที่เหมาะสม
+- **เพิ่มช่องว่างด้านล่าง**: หากเลือก ระบบจะเพิ่มพื้นที่ว่างใต้ส่วนที่เหมาะสม
+- **เพิ่มพื้นหลังสีเทา**: หากเลือก ระบบจะเพิ่มพื้นหลังสีเทาในส่วน
+- **ซ่อนบล็อก**: หากเลือก ระบบจะซ่อนบล็อกส่วน
+- **คลาส CSS**: เพิ่มคลาส CSS และจัดรูปแบบในฟิลด์ CSS ในส่วนสไตล์
 
 ![Section Options](/docs/assets/img/website/page-builder-section-options.png)
 _Section Options_

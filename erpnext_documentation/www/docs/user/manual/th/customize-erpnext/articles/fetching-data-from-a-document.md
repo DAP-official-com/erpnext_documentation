@@ -1,21 +1,21 @@
 <!-- add-breadcrumbs -->
-# Fetching Data from a Document
+#ดึงข้อมูลจากเอกสาร
 
-**Question:** We track Customer's PO Number and PO Date field in the Sales Order. To have these values fetched into Sales Invoice as well, we have inserted Custom Field in the Sales Invoice. However, when we create Sales Invoice from the Sales Order, Customer's PO details are not being fetched.
+**คำถาม:** เราติดตามช่องหมายเลขใบสั่งซื้อและวันที่สั่งซื้อของลูกค้าในใบสั่งขาย เพื่อให้ค่าเหล่านี้ถูกดึงเข้าสู่ Sales Invoice ด้วย เราได้แทรก Custom Field ใน Sales Invoice อย่างไรก็ตาม เมื่อเราสร้างใบกำกับสินค้าจากใบสั่งขาย รายละเอียดใบสั่งซื้อของลูกค้าจะไม่ถูกดึงข้อมูล
 
-**Answer:** When data is fetched from one transaction to the another, then mapping of the data is done based on the field names. If two transactions have fields with the exact same name, then it's values are mapped.
+**คำตอบ:** เมื่อดึงข้อมูลจากธุรกรรมหนึ่งไปยังอีกธุรกรรมหนึ่ง การแมปข้อมูลจะเสร็จสิ้นตามชื่อฟิลด์ หากธุรกรรมสองรายการมีช่องที่มีชื่อเหมือนกันทุกประการ ค่าของธุรกรรมนั้นจะถูกจับคู่
 
-For example, if you want Customer's PO No. and PO Date to be fetched from Sales Order to Sales Invoice, then you should ensure that Custom Fields added in the Sales Invoice has an exact same field name as in the Sales Order.
+ตัวอย่างเช่น ถ้าคุณต้องการให้ดึง PO No. และวันที่ PO ของลูกค้าจากใบสั่งขายไปยัง Sales Invoice คุณควรตรวจสอบให้แน่ใจว่าฟิลด์ที่กำหนดเองที่เพิ่มในใบแจ้งหนี้การขายมีชื่อฟิลด์เดียวกันกับในใบสั่งขาย
 
-Sales Order (standard fields)
+ใบสั่งขาย (ฟิลด์มาตรฐาน)
 
 <img class="screenshot" alt="Standard fields in Sales Order" src="{{docs_base_url}}/assets/img/customize/customize-fetch-data-1.png">
 
-Sales Invoice (custom fields)
+ใบแจ้งหนี้การขาย (ฟิลด์กำหนดเอง)
 
 <img class="screenshot" alt="Custom Field in Sales Invoice" src="{{docs_base_url}}/assets/img/customize/customize-fetch-data-2.png">
 
-Since names for the Customer's PO related fields are same in the Sales Order and Sales Invoice, when creating Sales Invoice from the Sales Order, values in these fields are auto-fetched.
+เนื่องจากชื่อสำหรับฟิลด์ที่เกี่ยวข้องกับ PO ของลูกค้าจะเหมือนกันในใบสั่งขายและใบแจ้งหนี้การขาย เมื่อสร้างใบแจ้งหนี้การขายจากใบสั่งขาย ค่าในฟิลด์เหล่านี้จะถูกดึงข้อมูลโดยอัตโนมัติ
 
 <img class="screenshot" alt="Values fetching from Sales Order to Sales Invoice" src="{{docs_base_url}}/assets/img/customize/customize-fetch-data-3.png">
 

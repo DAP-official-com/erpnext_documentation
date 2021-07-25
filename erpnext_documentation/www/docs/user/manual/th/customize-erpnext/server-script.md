@@ -1,62 +1,62 @@
 <!-- add-breadcrumbs -->
-# Server Script
+# สคริปต์เซิร์ฟเวอร์
 
-**A Server Script lets you dynamically define a Python Script that is executed on the server on a document event or API**
+**สคริปต์เซิร์ฟเวอร์ช่วยให้คุณกำหนดสคริปต์ Python แบบไดนามิกที่ดำเนินการบนเซิร์ฟเวอร์ในเหตุการณ์ของเอกสารหรือ API**
 
-> Introduced in Version 12
+> เปิดตัวในเวอร์ชัน 12
 
-## 1. How to create a Server Script
+## 1. วิธีสร้างสคริปต์เซิร์ฟเวอร์
 
-To create a Server Script
+เพื่อสร้าง Server Script
 
-1. If your site is being hosted on [erpnext.com](https://erpnext.com/), contact support to activate Server Script.
-	In case of self-hosted accounts, set `server_script_enabled` as true in site_config.json of your site.
-2. To add/edit Server Script, ensure your role is System Manager.
-3. Create a new server script via "New Server Script" in the toolbar.
-4. Select the type of server script: Document Event, API, Permission Query.
-5. Set the document type and event name, or method name, script and save.
+1. หากไซต์ของคุณถูกโฮสต์บน [erpnext.com](https://erpnext.com/) ให้ติดต่อฝ่ายสนับสนุนเพื่อเปิดใช้งานเซิร์ฟเวอร์สคริปต์
+ในกรณีของบัญชีที่โฮสต์เอง ให้ตั้งค่า `server_script_enabled` เป็นจริงใน site_config.json ของไซต์ของคุณ
+2. ในการเพิ่ม/แก้ไข Server Script ให้ตรวจสอบว่าบทบาทของคุณคือ System Manager
+3. สร้างสคริปต์เซิร์ฟเวอร์ใหม่ผ่าน "สคริปต์เซิร์ฟเวอร์ใหม่" ในแถบเครื่องมือ
+4. เลือกประเภทของสคริปต์เซิร์ฟเวอร์: Document Event, API, Permission Query
+5. ตั้งค่าประเภทเอกสารและชื่อเหตุการณ์ หรือชื่อเมธอด สคริปต์ และบันทึก
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Enabling Server Script
+### 2.1 การเปิดใช้งานสคริปต์เซิร์ฟเวอร์
 
-Server script must be enabled via site_config.json
+ต้องเปิดใช้งานสคริปต์เซิร์ฟเวอร์ผ่าน site_config.json
 
 ```
 bench --site site1.local set-config server_script_enabled true
 ```
 
-### 2.2 Document Events
+### 2.2 กิจกรรมเอกสาร
 
-For scripts that are to be called via document events, you must set the Reference Document Type and Event Name to define the trigger
+สำหรับสคริปต์ที่จะเรียกผ่านเหตุการณ์เอกสาร คุณต้องตั้งค่าประเภทเอกสารอ้างอิงและชื่อเหตุการณ์เพื่อกำหนดทริกเกอร์
 
-- Before Insert
-- Before Save
-- After Save
-- Before Submit
-- After Submit
-- Before Cancel
-- After Cancel
-- Before Delete
-- After Delete
-- Before Save (Submitted Document)
-- After Save (Submitted Document)
+- ก่อนแทรก
+- ก่อนบันทึก
+- หลังจากบันทึก
+- ก่อนส่ง
+- หลังจากส่ง
+- ก่อนยกเลิก
+- หลังจากยกเลิก
+- ก่อนลบ
+- หลังจากลบ
+- ก่อนบันทึก (ส่งเอกสาร)
+- หลังจากบันทึก (ส่งเอกสาร)
 
-### 2.3 API Scripts
+### 2.3 สคริปต์ API
 
-You can create a new API that can be accessed via `api/method/[methodname]` by the script type "API"
+คุณสามารถสร้าง API ใหม่ที่สามารถเข้าถึงได้ผ่าน `api/method/[methodname]` ตามประเภทสคริปต์ "API"
 
-If you want the guest user to access the API, you must check on "Allow Guest"
+หากคุณต้องการให้ผู้ใช้ทั่วไปเข้าถึง API คุณต้องทำเครื่องหมายที่ "อนุญาตผู้เยี่ยมชม"
 
-The response can be set via `frappe.response["message"]` object
+การตอบสนองสามารถตั้งค่าได้ผ่าน `frappe.response["message"]` object
 
-### 2.4 Permission Query
+### 2.4 แบบสอบถามการอนุญาต
 
-This type of script allows you to add custom conditions in where clause for a DocType list query.
+สคริปต์ประเภทนี้ช่วยให้คุณเพิ่มเงื่อนไขที่กำหนดเองในส่วนคำสั่งย่อยสำหรับการค้นหารายการ DocType
 
-For example, let's say you want to show the list of ToDo records to a user only
-if they assigned the record or it was assigned to them. This can implemented by
-the following script:
+ตัวอย่างเช่น สมมติว่าคุณต้องการแสดงรายการของระเบียน ToDo ให้กับผู้ใช้เท่านั้น
+ถ้าพวกเขากำหนดเรกคอร์ดหรือถูกกำหนดให้กับพวกเขา สามารถดำเนินการได้โดย
+สคริปต์ต่อไปนี้:
 
 ```py
 conditions = 'owner = {user} or assigned_by = {user}'.format(user=frappe.db.escape(user))
@@ -67,12 +67,12 @@ The resulting `select` query will look something like this:
 select * from `tabToDo` where owner = 'faris@erpnext.com' or assigned_by = 'faris@erpnext.com'
 ```
 
-Now, the list view of ToDo will show restricted records. This will also restrict
-the results shown in Link fields.
+ตอนนี้ มุมมองรายการของ ToDo จะแสดงระเบียนที่จำกัด สิ่งนี้จะ จำกัด also
+ผลลัพธ์ที่แสดงในช่องลิงก์
 
-### 2.5 Security
+### 2.5 ความปลอดภัย
 
-Frappe Framework uses the RestrictedPython library to restrict access to methods available for server scripts. Only the safe methods, listed below are available in server scripts
+Frappe Framework ใช้ไลบรารี RestrictedPython เพื่อจำกัดการเข้าถึงวิธีการที่พร้อมใช้งานสำหรับสคริปต์เซิร์ฟเวอร์ เฉพาะวิธีการที่ปลอดภัยตามรายการด้านล่างเท่านั้นที่มีให้ในสคริปต์เซิร์ฟเวอร์
 
 ```py
 json # json module
@@ -130,29 +130,29 @@ html2text = html2text,
 dev_server # True if in developer mode
 ```
 
-## 3. Examples
+## 3. ตัวอย่าง
 
-### 3.1 Change the value of a property before change
+### 3.1 เปลี่ยนค่าของคุณสมบัติก่อนการเปลี่ยนแปลง
 
-Script Type: Before Save
+ประเภทสคริปต์: ก่อนบันทึก
 
 ```py
 if "test" in doc.description:
 	doc.status = 'Closed'
 ```
 
-### 3.2 Custom validation
+### 3.2 การตรวจสอบแบบกำหนดเอง
 
-Script Type: "Before Save"
+ประเภทสคริปต์: "ก่อนบันทึก"
 
 ```py
 if "validate" in doc.description:
 	raise frappe.ValidationError
 ```
 
-### 3.3. Auto Create To Do
+### 3.3. สร้างสิ่งที่ต้องทำโดยอัตโนมัติ
 
-Script Type: "After Save"
+ประเภทสคริปต์: "หลังจากบันทึก"
 
 ```py
 if doc.allocated_to:
@@ -165,11 +165,11 @@ if doc.allocated_to:
 
 ### 3.4 API
 
-- Script Type: API
-- Method Name: `test_method`
+- ประเภทสคริปต์: API
+- ชื่อวิธีการ: `test_method`
 
 ```py
 frappe.response['message'] = "hello"
 ```
 
-Request: `/api/method/test_method`
+เรียก: `/api/method/test_method`

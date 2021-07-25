@@ -1,30 +1,30 @@
 <!-- add-breadcrumbs -->
-# Making Custom Reports
+# การสร้างรายงานที่กำหนดเอง
 
-There are three kind of reports in ERPNext.
+มีรายงานสามประเภทใน ERPNext
 
-### 1. Report Builder
+### 1. ตัวสร้างรายงาน
 
-Report Builder is an in-built report customization tool in ERPNext. This allows you to define specific fields of the form which shall be added in the report. Also you can set required filters, sorting and give preferred name to report. 
+ตัวสร้างรายงานเป็นเครื่องมือปรับแต่งรายงานที่สร้างขึ้นใน ERPNext สิ่งนี้ทำให้คุณสามารถกำหนดฟิลด์เฉพาะของแบบฟอร์มที่จะเพิ่มในรายงาน นอกจากนี้ คุณยังสามารถตั้งค่าตัวกรองที่จำเป็น การเรียงลำดับ และระบุชื่อที่ต้องการในการรายงาน
 
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/TxJGUNarcQs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-### 2. Query Report
+### 2. รายงานแบบสอบถาม (Query)
 
-Query Report is written in SQL which pulls values from account's database and displays the same in the report. Though SQL queries can be written from front end, like HTML, it has been restricted for ERPNext cloud users. This is because it allows users with no access to specific report to fetch data directly from the database.
+รายงานแบบสอบถามเขียนด้วย SQL ซึ่งดึงค่าจากฐานข้อมูลของบัญชีและแสดงค่าเดียวกันในรายงาน แม้ว่าแบบสอบถาม SQL สามารถเขียนได้จากส่วนหน้า เช่น HTML แต่ถูกจำกัดสำหรับผู้ใช้ระบบคลาวด์ ERPNext เนื่องจากจะอนุญาตให้ผู้ใช้ที่ไม่มีสิทธิ์เข้าถึงรายงานเฉพาะเพื่อดึงข้อมูลจากฐานข้อมูลได้โดยตรง
 
-Check Purchase Order Item to be Received report in Stock module for example of a Query report. [Click here](https://frappe.io/docs/user/en/guides/reports-and-printing/how-to-make-query-report.html) to learn how to create Query Report.
+ตรวจสอบรายการใบสั่งซื้อที่จะได้รับรายงานในโมดูลสต็อคตัวอย่างเช่นรายงานแบบสอบถาม [คลิกที่นี่](https://frappe.io/docs/user/th/guides/reports-and-printing/how-to-make-query-report.html) เพื่อเรียนรู้วิธีสร้างรายงานการค้นหา
 
-### 3. Script Report
+### 3. รายงานสคริปต์
 
-Script Reports are written in Python and stored on server side. These are complex reports which involves logic and calculation. Since these reports are written on server side, customizing it from hosted account is not possible.
+รายงานสคริปต์เขียนด้วยภาษา Python และจัดเก็บไว้ที่ฝั่งเซิร์ฟเวอร์ รายงานเหล่านี้เป็นรายงานที่ซับซ้อนซึ่งเกี่ยวข้องกับตรรกะและการคำนวณ เนื่องจากรายงานเหล่านี้เขียนขึ้นที่ฝั่งเซิร์ฟเวอร์ การปรับแต่งจากบัญชีที่โฮสต์จึงไม่สามารถทำได้
 
-Check Financial Analytics report in Accounts module for an example of Script Report. [Click here](https://frappe.io/docs/user/en/guides/reports-and-printing/how-to-make-script-reports.html) to learn how to create Script Report.
+ตรวจสอบรายงานการวิเคราะห์ทางการเงินในโมดูลบัญชีสำหรับตัวอย่างรายงานสคริปต์ [คลิกที่นี่](https://frappe.io/docs/user/th/guides/reports-and-printing/how-to-make-script-reports.html) เพื่อเรียนรู้วิธีสร้างรายงานสคริปต์
 
-> Note: **Dynamic Filter** is available in Script Reports and Query Reports; however, not in the Report Builder.
+> หมายเหตุ: **ตัวกรองไดนามิก** มีอยู่ในรายงานสคริปต์และรายงานการสืบค้น อย่างไรก็ตาม ไม่ใช่ในตัวสร้างรายงาน
 
 {next}
 

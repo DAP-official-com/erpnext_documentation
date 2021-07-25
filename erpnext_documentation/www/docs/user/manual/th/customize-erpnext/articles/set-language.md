@@ -1,43 +1,43 @@
 <!-- add-breadcrumbs -->
-# Set Language
+# ตั้งค่าภาษา
 
-**ERPNext is an multi-lingual application. It allows each user to select preferred language.** 
+**ERPNext เป็นแอปพลิเคชั่นหลายภาษา ให้ผู้ใช้แต่ละคนเลือกภาษาที่ต้องการได้**
 
-Following the below steps to know a User can customize the language in their account.
+ทำตามขั้นตอนด้านล่างเพื่อให้ทราบว่าผู้ใช้สามารถปรับแต่งภาษาในบัญชีของตนได้
 
-## 1. Setting Language in User's Account
+## 1. การตั้งค่าภาษาในบัญชีผู้ใช้
 
-Following are the steps to change language in your ERPNext account.
+ต่อไปนี้เป็นขั้นตอนในการเปลี่ยนภาษาในบัญชี ERPNext ของคุณ
 
-### 1.1 Go to My Setting
+### 1.1 ไปที่การตั้งค่าของฉัน
 
 <img alt="My Setting" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-set-language-4.png">
 
-### 1.2 Select Language
+### 1.2 เลือกภาษา
 
 <img alt="Select Language" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-set-language-3.png">
 
-### 1.3 Save User
+### 1.3 บันทึกผู้ใช้
 
-On saving User after selecting the language, your ERPNext account will refresh automatically and will be translated to your preferred language.
+ในการบันทึกผู้ใช้หลังจากเลือกภาษาแล้ว บัญชี ERPNext ของคุณจะรีเฟรชโดยอัตโนมัติและจะถูกแปลเป็นภาษาที่คุณต้องการ
 
-If you are a System Manager, you will be able to change the language for other users as well.
+หากคุณเป็นผู้จัดการระบบ คุณจะสามารถเปลี่ยนภาษาสำหรับผู้ใช้รายอื่นได้เช่นกัน
 
-## 2. Set Language Globally for an Account
+## 2. ตั้งค่าภาษาทั่วโลกสำหรับบัญชี
 
-#### 2.1 Go to Setup
+#### 2.1 ไปที่การตั้งค่า
 
-> Home > Settings > System Settings
+> หน้าแรก > ตั้งค่า > ตั้งค่าระบบ
 
-#### Set Language
+#### ตั้งค่าภาษา
 
 <img alt="Select Language" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-set-language-1.gif">
 
-#### Save
+#### บันทึก
 
-Save System Settings, and refresh your ERPNext account. On refreshing, the language would be updated to your preferred language.
+บันทึกการตั้งค่าระบบ และรีเฟรชบัญชี ERPNext ของคุณ เมื่อรีเฟรช ภาษาจะได้รับการอัปเดตเป็นภาษาที่คุณต้องการ
 
-> Note: For now, we have translation available only for few languages. You can contribute to make translation better, and add new languages from [here](https://translate.erpnext.com).
+> หมายเหตุ: สำหรับตอนนี้ เรามีการแปลสำหรับบางภาษาเท่านั้น คุณมีส่วนทำให้การแปลดีขึ้นและเพิ่มภาษาใหม่ได้จาก [ที่นี่](https://translate.erpnext.com)
 
 {next}
 <!-- markdown -->

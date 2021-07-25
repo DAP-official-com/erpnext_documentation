@@ -1,80 +1,81 @@
 <!-- add-breadcrumbs -->
-# DocType
+# DocType (เอกสาร)
 
-**A DocType is the core building block of any application based on the Frappe Framework.** 
+**DocType เป็นส่วนประกอบหลักของแอปพลิเคชันใดๆ ที่ใช้ Frappe Framework**
 
-It describes the Model and the View of your data. It contains what fields are stored for your data, and how they behave with each other. It contains information about how your data is named. The forms like Sales Order, Sales Invoices, Work Order are added as DocTypes in the backend.
+อธิบายรูปแบบและมุมมองของข้อมูลของคุณ ประกอบด้วยเขตข้อมูลใดบ้างที่จัดเก็บไว้สำหรับข้อมูลของคุณ และมีลักษณะการทำงานระหว่างกันอย่างไร ประกอบด้วยข้อมูลเกี่ยวกับวิธีการตั้งชื่อข้อมูลของคุณ แบบฟอร์มต่างๆ เช่น ใบสั่งขาย ใบแจ้งหนี้การขาย ใบสั่งงาน จะถูกเพิ่มเป็น DocTypes ในแบ็กเอนด์
 
-DocType allows you to insert custom forms in ERPNext as per your requirement. 
+DocType ช่วยให้คุณสามารถแทรกแบบฟอร์มที่กำหนดเองใน ERPNext ได้ตามความต้องการของคุณ
 
-Read [DocType documentation](https://frappe.io/docs/user/en/understanding-doctypes) for more understanding.
+อ่าน [เอกสาร DocType](https://frappe.io/docs/user/th/understanding-doctypes) เพื่อความเข้าใจที่มากขึ้น
 
-To create a new DocType, go to:
+ในการสร้าง DocType ใหม่ ไปที่:
 
-> Setup > Customize > Doctype > New
+> ตั้งค่า > ปรับแต่ง > Doctype > ใหม่
 
-## 1. How to create a New DocType:
+## 1. วิธีสร้าง DocType ใหม่:
 
-1. **Name**: Enter the name of the new DocType.
-1. **Module**: Enter which module would you like the new DocType to be added to.
-1. Save.
+1. **ชื่อ**: ป้อนชื่อของ DocType ใหม่
+1. **โมดูล**: ป้อนโมดูลที่คุณต้องการเพิ่ม DocType ใหม่เข้าไป
+1. บันทึก
 
 <img alt="DocType" class="screenshot" src="{{docs_base_url}}/assets/img/customize/doctype-student-transfer.png">
 
-### 1.1. Additional Details 
+### 1.1. รายละเอียดเพิ่มเติม
 
-1. **Fields** 
+1. **ฟิลด์**
 
- You can choose to add as many fields as you want. The Label, Field Type, Mandatory Fields and other associated Options can also be added here. Learn more about field types [here](/docs/user/manual/en/customize-erpnext/articles/field-types.html). 
+ คุณสามารถเลือกเพิ่มฟิลด์ได้มากเท่าที่คุณต้องการ นอกจากนี้ยังสามารถเพิ่มป้ายกำกับ ประเภทฟิลด์ ฟิลด์บังคับ และตัวเลือกอื่นๆ ที่เกี่ยวข้องได้ที่นี่ เรียนรู้เพิ่มเติมเกี่ยวกับประเภทฟิลด์ [ที่นี่](/docs/user/manual/th/customize-erpnext/articles/field-types.html)
 
  <img alt="DocType" class="screenshot" src="{{docs_base_url}}/assets/img/customize/doctype-student-transfer-certificate.png">
 
-1. **Naming**
 
- Here you can choose if you would want each of your forms within this DocType to be named automatically. As given in the description, you can select the pattern for naming of the forms. The same can be a Field within the DocType, Naming Series, Prompt, A defined Naming Series, or a Format based Name. For Naming, you can also add a Description and the Name Case (as a Title Case or UPPER CASE)for your convenience.
+1. **การตั้งชื่อ**
+
+ ที่นี่คุณสามารถเลือกได้ว่าต้องการตั้งชื่อแบบฟอร์มแต่ละแบบฟอร์มภายใน DocType นี้โดยอัตโนมัติหรือไม่ ตามที่ระบุในคำอธิบาย คุณสามารถเลือกรูปแบบการตั้งชื่อแบบฟอร์มได้ ฟิลด์เดียวกันสามารถเป็นฟิลด์ภายใน DocType, Naming Series, Prompt, A Defined Naming Series หรือชื่อตามรูปแบบ สำหรับการตั้งชื่อ คุณสามารถเพิ่มคำอธิบายและตัวพิมพ์ชื่อ (เป็นตัวพิมพ์ชื่อเรื่องหรือตัวพิมพ์ใหญ่) เพื่อความสะดวกของคุณ
 
  <img alt="DocType" class="screenshot" src="{{docs_base_url}}/assets/img/customize/doctype-student-transfer-certificate-1.png">
 
-1. **Form Settings**
+1. **การตั้งค่าแบบฟอร์ม**
 
- Additional Settings for the Form, Image Fields, Attachments, Timeline etc. can be configured here. To know more about Form, visit [Customize Form](/docs/user/manual/en/customize-erpnext/customize-form).
+ การตั้งค่าเพิ่มเติมสำหรับแบบฟอร์ม ฟิลด์รูปภาพ สิ่งที่แนบมา ไทม์ไลน์ ฯลฯ สามารถกำหนดค่าได้ที่นี่ หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับแบบฟอร์ม โปรดไปที่ [กำหนดแบบฟอร์ม](/docs/user/manual/th/customize-erpnext/customize-form)
 
  <img alt="DocType" class="screenshot" src="{{docs_base_url}}/assets/img/customize/doctype-student-transfer-certificate-2.png">
 
-1. **View Settings**
+1. **การตั้งค่ามุมมอง**
 
- Here, you can define the View settings for the DocType, like, Search Fields, Default Sort Field, Default Sort Order etc.
+ ที่นี่ คุณสามารถกำหนดการตั้งค่ามุมมองสำหรับ DocType เช่น ช่องค้นหา ช่องจัดเรียงเริ่มต้น ลำดับการจัดเรียงเริ่มต้น เป็นต้น
 
-1. **Permission Rules**
+1. **กฎการอนุญาต**
 
- You can define the Permission Rules for the DocType here, and configure which users would be able to use or make changes to this DocType. Learn more about [Users and Permissions](/docs/user/manual/en/setting-up/users-and-permissions) here.
+ คุณสามารถกำหนดกฎการอนุญาตสำหรับ DocType ได้ที่นี่ และกำหนดค่าว่าผู้ใช้รายใดจะสามารถใช้หรือเปลี่ยนแปลง DocType นี้ได้ เรียนรู้เพิ่มเติมเกี่ยวกับ [ผู้ใช้และการอนุญาต](/docs/user/manual/th/setting-up/users-and-permissions) ที่นี่
 
  <img alt="DocType" class="screenshot" src="{{docs_base_url}}/assets/img/customize/doctype-student-transfer-certifictae-3.png">
 
-1. **Web View**
+1. **มุมมองเว็บ**
 
- You can select whether you would want a Web View of this DocType or no. Having a Web View for a DocType will allow your website users to have access to the Forms. Feel free to learn more about [Website Users](/docs/user/manual/en/setting-up/articles/difference-between-system-user-and-website-user).
+ คุณสามารถเลือกได้ว่าต้องการมุมมองเว็บของ DocType นี้หรือไม่ การมีมุมมองเว็บสำหรับ DocType จะทำให้ผู้ใช้เว็บไซต์ของคุณสามารถเข้าถึงแบบฟอร์มได้ โปรดอย่าลังเลที่จะเรียนรู้เพิ่มเติมเกี่ยวกับ [ผู้ใช้เว็บไซต์](/docs/user/manual/th/setting-up/articles/difference-between-system-user-and-website-user)
 
-### 1.2. More Properties
+### 1.2. คุณสมบัติเพิ่มเติม
 
-1. **Is Submittable**: You can select if you want this DocType to only be 'Saved' or to also be 'Submitted' by checking and un-checking this box.
-1. **Is Child Table**: You can define if you want the New DocType to be a Child Table within another DocType. Checkout [Child Table](/docs/user/manual/en/customize-erpnext/articles/customizing-data-visibility-in-child-table) for more information.
-1. **Is Single**: If checked, this Doctype will become a single form, like Sales Order, which user will
-not be able to re-produce. For e.g., Selling Settings in Sales Module is a Single DocType.
-1. **Is Tree**: A few DocTypes in ERPNext are structured as Trees, wherein there are some Parent DocTypes and some Children DocTypes. E.g., Doctype Company is structured as Tree, there are Parent Companies as well as Child Companies, which we call subsidiaries. If you want your DocTypes to be structured similarly, you can enable this option.
+1. **สามารถส่งได้**: คุณสามารถเลือกได้ว่าต้องการให้ DocType นี้ 'บันทึก' เท่านั้น หรือ 'ส่ง' ด้วย โดยการทำเครื่องหมายและยกเลิกการทำเครื่องหมายที่ช่องนี้
+1. **เป็นตารางย่อย**: คุณสามารถกำหนดได้ว่าต้องการให้ DocType ใหม่เป็นตารางย่อยภายใน DocType อื่นหรือไม่ ชำระเงิน [Child Table](/docs/user/manual/th/customize-erpnext/articles/customizing-data-visibility-in-child-table) สำหรับข้อมูลเพิ่มเติม
+1. **โสด**: หากเลือก Doctype นี้จะกลายเป็นรูปแบบเดียว เช่น Sales Order ซึ่งผู้ใช้จะ
+ไม่สามารถผลิตซ้ำได้ เช่น การตั้งค่าการขายในโมดูลการขายเป็นประเภทเอกสารเดียว
+1. **เป็นต้นไม้**: DocTypes สองสามรายการใน ERPNext มีโครงสร้างเป็น Tree ซึ่งมี DocType หลักและ DocType ย่อยบางส่วน เช่น Doctype Company มีโครงสร้างเป็น Tree มีบริษัทแม่และบริษัทลูก ซึ่งเราเรียกว่าบริษัทในเครือ หากคุณต้องการให้ DocTypes ของคุณมีโครงสร้างที่คล้ายคลึงกัน คุณสามารถเปิดใช้งานตัวเลือกนี้ได้
 
     <img alt="DocType" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-is tree.png">
 
-1. **Quick Entry**: You can select if you want a Quick Entry to be made for this DocType. This will allow you to enter only a few mandatory details and save the DocType, so that a Quick Entry is made. For example, check Quick Entry in [Journal Entry](/docs/user/manual/en/accounts/journal-entry#11-quick-entry).
-1. **Track Changes**: You can select this option if you want to maintain a log of the changes made to each Form. Check Out [Document Versioning](/docs/user/manual/en/using-erpnext/document-versioning) for more understanding on this.
-1. **Track Seen**: You can select this option if you want to maintain a log of all the Users who have seen this Form.
-1. **Track Views**: You can select this option if you want to maintain a log of all the times each User has Viewed this Form.
+1. **รายการด่วน**: คุณสามารถเลือกได้ว่าต้องการสร้างรายการด่วนสำหรับ DocType นี้หรือไม่ ซึ่งจะช่วยให้คุณสามารถป้อนรายละเอียดที่จำเป็นเพียงไม่กี่รายการและบันทึก DocType เพื่อให้มีการป้อนข้อมูลอย่างรวดเร็ว ตัวอย่างเช่น ตรวจสอบรายการด่วนใน [รายการบันทึก](/docs/user/manual/th/accounts/journal-entry#11-quick-entry)
+1. **ติดตามการเปลี่ยนแปลง**: คุณสามารถเลือกตัวเลือกนี้หากคุณต้องการเก็บบันทึกการเปลี่ยนแปลงที่ทำกับแต่ละแบบฟอร์ม ลองดู [Document Versioning](/docs/user/manual/th/using-erpnext/document-versioning) เพื่อความเข้าใจในเรื่องนี้มากขึ้น
+1. **ติดตามแล้ว**: คุณสามารถเลือกตัวเลือกนี้หากคุณต้องการเก็บบันทึกของผู้ใช้ทั้งหมดที่ได้เห็นแบบฟอร์มนี้
+1. **ติดตามการดู**: คุณสามารถเลือกตัวเลือกนี้หากคุณต้องการเก็บบันทึกทุกครั้งที่ผู้ใช้แต่ละคนดูแบบฟอร์มนี้
 
   <img alt="Customize Form" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-track-views.png">
 
-1. **Custom?**: This field will be checked by default when adding Custom Doctype. Similarly, if you are customizing a DocType which already exists in the system, this field by default would be unchecked.
+1. **กำหนดเอง?**: ฟิลด์นี้จะถูกตรวจสอบโดยค่าเริ่มต้นเมื่อเพิ่ม Doctype แบบกำหนดเอง ในทำนองเดียวกัน หากคุณกำลังปรับแต่ง DocType ที่มีอยู่แล้วในระบบ ฟิลด์นี้ตามค่าเริ่มต้นจะไม่ถูกเลือก
 
-## 2. Videos
+## 2. วิดีโอ
 
 <div class="embed-container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/WSzkpPm3iIU?start=585" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

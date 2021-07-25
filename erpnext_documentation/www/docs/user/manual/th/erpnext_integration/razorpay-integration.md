@@ -1,32 +1,32 @@
 <!-- add-breadcrumbs -->
-#RazorPay Integration
+#การใช้ RazorPay
 
-A payment gateway is an e-commerce application service provider service that authorises credit card payments for e-businesses, online retailers, bricks and clicks, or traditional brick and mortar.
+เกตเวย์การชำระเงินเป็นบริการของผู้ให้บริการแอปพลิเคชันอีคอมเมิร์ซที่อนุญาตการชำระเงินด้วยบัตรเครดิตสำหรับธุรกิจอิเล็กทรอนิกส์ ผู้ค้าปลีกออนไลน์ อิฐและคลิก หรืออิฐและปูนแบบดั้งเดิม
 
-A payment gateway facilitates the transfer of information between a payment portal (such as a website, mobile phone or interactive voice response service) and the Front End Processor or acquiring bank.
+เกตเวย์การชำระเงินอำนวยความสะดวกในการถ่ายโอนข้อมูลระหว่างพอร์ทัลการชำระเงิน (เช่น เว็บไซต์ โทรศัพท์มือถือหรือบริการตอบกลับด้วยเสียงแบบโต้ตอบ) และ Front End Processor หรือธนาคารที่ซื้อ
 
-To setup RazorPay,
+ในการตั้งค่า RazorPay
 
-`Explore > Integrations > RazorPay Settings`
+`สำรวจ> บูรณาการ> การตั้งค่า RazorPay`
 
 <img class="screenshot" alt="Razorpay Settings" src="{{docs_base_url}}/assets/img/setup/integrations/razorpay-api.gif">
 
-#### Setup  RazorPay 
+#### ตั้งค่า RazorPay
 
-To enable RazorPay payment service, you need to configure parameters like API Key, API Secret
+ในการเปิดใช้งานบริการชำระเงิน RazorPay คุณต้องกำหนดค่าพารามิเตอร์ เช่น คีย์ API, API Secret
 
 <img class="screenshot" alt="Razorpay Settings" src="{{docs_base_url}}/assets/img/setup/integrations/razorpay_settings.png">
 
-On enabling service, the system will create Payment Gateway record and Account head in the Chart of Account with account type as Bank.
+ในการเปิดใช้งานบริการ ระบบจะสร้างบันทึก ช่องทางการชำระเงิน และส่วนหัวของบัญชีในผังบัญชีที่มีประเภทบัญชีเป็นธนาคาร
 
 <img class="screenshot" alt="Razorpay COA" src="{{docs_base_url}}/assets/img/setup/integrations/razorpay_coa.png">
 
-Also, it will create Payment Gateway Account entry. Payment Gateway Account is configuration hub from this you can set account head from existing COA, default Payment Request email body template.
+นอกจากนี้ยังจะสร้างรายการบัญชี ช่องทางการชำระเงิน บัญชีเกตเวย์การชำระเงินเป็นฮับการกำหนดค่าจากสิ่งนี้ คุณสามารถตั้งค่าส่วนหัวของบัญชีจาก COA ที่มีอยู่ เทมเพลตเนื้อหาอีเมลคำขอชำระเงินเริ่มต้น
 
 <img class="screenshot" alt="Payment Gateway Account" src="{{docs_base_url}}/assets/img/setup/integrations/payment_gateway_account_razorpay.png">
 
-After enabling service and configuring Payment Gateway Account your system is able to accept online payments.
+หลังจากเปิดใช้บริการและกำหนดค่าบัญชี ช่องทางการชำระเงิน แล้ว ระบบของคุณจะสามารถรับการชำระเงินออนไลน์ได้
 
-####Supporting transaction currencies
+####สกุลเงินที่รองรับการทำธุรกรรม
 
-RazorPay will only work for the company having `INR (Indian Rupee)` as a Currency.
+RazorPay จะใช้ได้กับบริษัทที่มี `INR (รูปีอินเดีย)` เป็นสกุลเงินเท่านั้น

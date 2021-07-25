@@ -1,43 +1,44 @@
 <!-- add-breadcrumbs -->
 # Website Route Meta
 
-**Arbitrary meta tags can be added in your web pages using Website Route Meta.**
+**สามารถเพิ่มเมตาแท็กในหน้าเว็บของคุณโดยใช้ Meta ของเส้นทางเว็บไซต์**
 
-Meta Tags are invisible tags that provide data about your page to search engines
-and website visitors. When used correctly, these tags may help boost your SEO
-and rankings on popular search engines. These tags will be placed in the
-`<head>` section of your page. ERPNext allows you add arbitrary meta tags in
-your web pages to improve the SEO of your pages.
+Meta Tags เป็นแท็กที่มองไม่เห็นซึ่งให้ข้อมูลเกี่ยวกับหน้าเว็บของคุณแก่เครื่องมือค้นหา
+และผู้เข้าชมเว็บไซต์ เมื่อใช้อย่างถูกต้อง แท็กเหล่านี้อาจช่วยเพิ่ม SEO ของคุณ
+และการจัดอันดับในเครื่องมือค้นหายอดนิยม แท็กเหล่านี้จะถูกวางไว้ใน
+`<head>` ของหน้าของคุณ ERPNext ให้คุณเพิ่มเมตาแท็กโดยพลการใน
+หน้าเว็บของคุณเพื่อปรับปรุง SEO ของหน้าเว็บของคุณ
 
-To access Website Route Meta go to:
+ในการเข้าถึงเว็บไซต์เส้นทาง Meta ไปที่:
 
-> Home > Website > Web Site > Website Route Meta
+> หน้าแรก > เว็บไซต์ > เว็บไซต์ > เส้นทางเว็บไซต์ Meta
 
-## 1. How to add meta tags to a web page
+## 1. วิธีเพิ่มเมตาแท็กในหน้าเว็บ
 
-1. Go to the Website Route Meta list and click on New.
-1. Enter the route. Make sure the route doesn't start with a slash (`/`). A Web
-   Page for this route should exist.
-1. Add key value pairs for each meta tag. For e.g., to add keywords to your web
-   page, enter "keywords" as the Key and add comma separated keywords in the
-   Value column.
-1. Click on Save.
+1. ไปที่รายการ Meta Route ของเว็บไซต์แล้วคลิกใหม่
+1. ป้อนเส้นทาง ตรวจสอบให้แน่ใจว่าเส้นทางไม่ได้เริ่มต้นด้วยเครื่องหมายทับ (`/`) เว็บ
+   หน้าสำหรับเส้นทางนี้ควรมีอยู่
+1. เพิ่มคู่ค่าคีย์สำหรับแต่ละเมตาแท็ก เช่น การเพิ่มคำสำคัญลงในเว็บของคุณ
+   ป้อน "คีย์เวิร์ด" เป็นคีย์และเพิ่มคีย์เวิร์ดที่คั่นด้วยเครื่องหมายจุลภาคใน
+   คอลัมน์ค่า
+1. คลิกที่บันทึก
 
 ![New Website Route Meta](/docs/assets/img/website/new-website-route-meta.png)
 *New Website Route Meta*
 
-Now if you check the page source of your web page, the meta tags will look
-something like this:
+ตอนนี้ ถ้าคุณตรวจสอบที่มาของหน้าเว็บของหน้าเว็บของคุณ เมตาแท็กจะมีลักษณะดังนี้
+บางอย่างเช่นนี้:
 
 ```html
 <meta name="description" content="Now with an 8-core processor, the 15-inch MacBook Pro is the fastest Mac notebook ever.">
 <meta name="keywords" content="apple, macbook, macbook pro, intel, 8 core, fastest">
 ```
 
-> **Note:** Meta Tags are not only limited to Web Page, but they can be added to
-> any route that has a website page in ERPNext.
+> **หมายเหตุ:** Meta Tags ไม่ได้จำกัดอยู่แค่หน้าเว็บเท่านั้น แต่สามารถเพิ่มลงใน
+> เส้นทางใดก็ได้ที่มีหน้าเว็บไซต์ใน ERPNext
 >
-> For e.g., You can add meta tags to your blog posts if you know the route which
-> you can get from the Blog Post form.
+> เช่น คุณสามารถเพิ่มเมตาแท็กในโพสต์บล็อกของคุณหากคุณทราบเส้นทางซึ่ง
+> คุณสามารถรับได้จากแบบฟอร์มโพสต์บล็อก
+
 
 {next}

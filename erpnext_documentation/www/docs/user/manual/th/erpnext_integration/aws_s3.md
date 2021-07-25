@@ -1,40 +1,40 @@
 <!-- add-breadcrumbs -->
 
-# Upload Backups to Amazon S3
+# อัปโหลดข้อมูลสำรองไปยัง Amazon S3
 
-## Prerequisites
+## ข้อกำหนดเบื้องต้น
 
-- [Email Account](/docs/user/manual/en/setting-up/email/email-account)
+- [บัญชีอีเมล](/docs/user/manual/th/setting-up/email/email-account)
 
-    To receive emails for failed and successful backups, please create an **Email Account** first.
+    หากต้องการรับอีเมลสำหรับการสำรองข้อมูลที่ล้มเหลวและสำเร็จ โปรดสร้าง **บัญชีอีเมล** ก่อน
 
-## Create S3 bucket and set up access
+## สร้างถัง S3 และตั้งค่าการเข้าถึง
 
-1. Create a new s3 bucket.
+1. สร้างบัคเก็ต s3 ใหม่
 
-    In the bucket settings, enable "Block all public access" to keep your data private. Feel free to enable encryption, versioning or object lock as per your requirements (please refer to [Amazon's documentation](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html)).
+    ในการตั้งค่าที่เก็บข้อมูล ให้เปิดใช้งาน "บล็อกการเข้าถึงสาธารณะทั้งหมด" เพื่อให้ข้อมูลของคุณเป็นส่วนตัว เปิดใช้งานการเข้ารหัส การกำหนดเวอร์ชัน หรือล็อกอ็อบเจ็กต์ได้ตามต้องการ (โปรดดู [เอกสารประกอบของ Amazon](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html)) .
 
-2. Open Identity and Access Management (IAM).
+2. เปิดการจัดการข้อมูลประจำตัวและการเข้าถึง (IAM)
 
-    1. Create a new policy for the Service "S3", allowing the Actions "ListBucket" and "PutObject".
+    1. สร้างนโยบายใหม่สำหรับบริการ "S3" อนุญาตให้ดำเนินการ "ListBucket" และ "PutObject"
 
-    2. Create a new user for programmatic access.
+    2. สร้างผู้ใช้ใหม่สำหรับการเข้าถึงแบบเป็นโปรแกรม
 
-        ![Screenshot of "Add User" in AWS](/docs/assets/img/erpnext_integrations/s3_backup_add_user.png)
+        ![สกรีนช็อตของ "เพิ่มผู้ใช้" ใน AWS](/docs/assets/img/erpnext_integrations/s3_backup_add_user.png)
 
-    3. Attach the policy you created to the new user.
+    3. แนบนโยบายที่คุณสร้างกับผู้ใช้ใหม่
 
-    4. Copy the user's access key and secret.
+    4. คัดลอกรหัสการเข้าถึงและข้อมูลลับของผู้ใช้
 
-To automatically delete old backups or move them to a cheaper storage class, have a look at [lifecycle management](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html).
+หากต้องการลบข้อมูลสำรองเก่าโดยอัตโนมัติหรือย้ายไปยังคลาสพื้นที่จัดเก็บที่ถูกกว่า โปรดดู[การจัดการวงจรชีวิต](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html)
 
-## Set up ERPNext
+## ตั้งค่า ERPNext
 
-- Open **S3 Backup Settings**.
-- Check "Enable Automatic Backup".
-- Paste the access key and secret from AWS.
-- Set an email address to receive a notification when a backup fails. If you would like an email for successful backups as well, enable "Send Email for Successful Backup".
-- Specify the name of the bucket that you created in step 1.
-- Choose how often you want to take and upload backups. This can range from monthly to daily. If you only want to take manual backups, set the frequency to "None".
+- เปิด **การตั้งค่าการสำรองข้อมูล S3**
+- ทำเครื่องหมายที่ "เปิดใช้งานการสำรองข้อมูลอัตโนมัติ"
+- วางรหัสการเข้าถึงและข้อมูลลับจาก AWS
+- ตั้งค่าที่อยู่อีเมลเพื่อรับการแจ้งเตือนเมื่อการสำรองข้อมูลล้มเหลว หากคุณต้องการอีเมลสำหรับการสำรองข้อมูลที่สำเร็จด้วย ให้เปิดใช้งาน "ส่งอีเมลสำหรับการสำรองข้อมูลที่สำเร็จ"
+- ระบุชื่อที่ฝากข้อมูลที่คุณสร้างในขั้นตอนที่ 1
+- เลือกความถี่ที่คุณต้องการใช้และอัปโหลดข้อมูลสำรอง ซึ่งอาจอยู่ในช่วงตั้งแต่รายเดือนไปจนถึงรายวัน หากคุณต้องการสำรองข้อมูลด้วยตนเองเท่านั้น ให้ตั้งค่าความถี่เป็น "ไม่มี"
 
 ![S3 Backup Settings in ERPNext](/docs/assets/img/erpnext_integrations/s3_backup_settings.png)

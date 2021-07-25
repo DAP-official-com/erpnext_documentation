@@ -1,68 +1,62 @@
 <!-- add-breadcrumbs -->
-# Store Landing Page
+# หน้า Landing Page ของร้านค้า
 
-After enabling Shopping Cart for your app you can create a custom landing page for your
-store using the [Web Page Builder](/docs/user/manual/en/website/web-page-builder).
+หลังจากเปิดใช้รถเข็นสำหรับแอปของคุณแล้ว คุณสามารถสร้างหน้า Landing Page ที่กำหนดเองสำหรับ
+จัดเก็บโดยใช้ [ตัวสร้างหน้าเว็บ](/docs/user/manual/th/website/web-page-builder)
 
 ![Store Landing Page](/docs/assets/img/website/store-landing-page.png)
-*Custom Store Landing Page*
+*หน้า Landing Page ของร้านค้าที่กำหนดเอง*
 
-## 1. How to create a Custom Store Landing Page
+## 1. วิธีสร้างหน้า Landing Page แบบกำหนดเอง Store
 
-1. Follow the steps mentioned here to [create a Web Page](/docs/user/manual/en/website/web-page).
-1. Set a Route for your page (eg. */store*).
-1. Select Content Type as **Page Builder**.
-1. Click on Add Row in the Page Building Blocks Table.
-1. Select a Web Template.
+1. ทำตามขั้นตอนที่กล่าวถึงที่นี่เพื่อ [สร้างหน้าเว็บ](/docs/user/manual/th/website/web-page)
+1. กำหนดเส้นทางสำหรับเพจของคุณ (เช่น */store*)
+1. เลือกประเภทเนื้อหาเป็น **ตัวสร้างหน้า**
+1. คลิกที่ Add Row ใน Page Building Blocks Table
+1. เลือกเทมเพลตเว็บ
 
-	ERPNext comes with a great set of standard web templates that can be used to create your Web Page.
+ERPNext มาพร้อมกับชุดเทมเพลตเว็บมาตรฐานที่ยอดเยี่ยมที่สามารถใช้สร้างหน้าเว็บของคุณได้
 
-	The configuration for the page in the screenshot above looks like this:
+การกำหนดค่าสำหรับหน้าในภาพหน้าจอด้านบนมีลักษณะดังนี้:
 
 	![Store Web Templates](/docs/assets/img/website/store-web-templates.png)
-	*Store Page Building Blocks*
+	* บล็อกการสร้างหน้าร้านค้า *
 
-1. Add Values.
+1. เพิ่มมูลค่า
 
-	Click on the Edit Values button on the right of each block, and enter the values in the dialog to
-	set the content for each section.
+	คลิกที่ปุ่มแก้ไขค่าที่ด้านขวาของแต่ละบล็อกและป้อนค่าในกล่องโต้ตอบเพื่อ
+	กำหนดเนื้อหาสำหรับแต่ละส่วน
 
-	The Web Templates that will be useful for building your store landing page are:
+	เทมเพลตเว็บที่จะเป็นประโยชน์สำหรับการสร้างหน้า Landing Page ของร้านค้าของคุณคือ:
 
 	- **Hero Slider:**
-		Up to 5 slides can be created. The image, title, primary action, alignment, theme for each slide
-		is configurable.
+		สามารถสร้างสไลด์ได้สูงสุด 5 สไลด์ รูปภาพ ชื่อเรื่อง การกระทำหลัก การจัดตำแหน่ง ธีมสำหรับแต่ละสไลด์
+		สามารถกำหนดค่าได้
 		![Store Hero Slider](/docs/assets/img/website/store-hero-slider.png)
-		*Hero Slider Configuration*
+		*การกำหนดค่า Hero Slider*
 
-	- **Product Category Cards:**
-		Up to 8 product category cards can be configured. Each product categories will link to an
-		[Item Group](/docs/user/manual/en/stock/item-group).
-		Ensure that the **Show in Website** option is ticked in the Item Group form so that the
-		route for the product category is generated.
+	- **การ์ดหมวดหมู่สินค้า:**
+		สามารถกำหนดค่าการ์ดหมวดหมู่ผลิตภัณฑ์ได้สูงสุด 8 รายการ แต่ละหมวดหมู่ผลิตภัณฑ์จะเชื่อมโยงไปยัง [กลุ่มรายการ](/docs/user/manual/th/stock/item-group) ตรวจสอบให้แน่ใจว่าตัวเลือก **แสดงในเว็บไซต์** ถูกทำเครื่องหมายในแบบฟอร์มกลุ่มรายการเพื่อให้
+		มีการสร้างเส้นทางสำหรับหมวดหมู่ผลิตภัณฑ์
 
 		![Store Product Category Cards](/docs/assets/img/website/store-product-category.png)
-		*Product Categories Configuration*
+		*หมวดหมู่สินค้า การกำหนดค่า*
 
-	- **Item Card Group:**
-		This section can be used to showcase your featured items. Up to 12 cards can be configured.
-		Each card will link to an [Item](/docs/user/manual/en/stock/item). If **featured** is checked,
-		the item will take up 2 columns of space.
+	- **กลุ่มบัตรรายการ:**
+		ส่วนนี้ใช้เพื่อแสดงรายการเด่นของคุณ สามารถกำหนดค่าการ์ดได้สูงสุด 12 ใบ การ์ดแต่ละใบจะเชื่อมโยงกับ [Item](/docs/user/manual/th/stock/item) หากเลือก **คุณสมบัติ** รายการจะใช้พื้นที่ 2 คอลัมน์
 
 		![Store Item Card Group](/docs/assets/img/website/store-item-card-group.png)
-		*Item Cards Configuration*
+		*การกำหนดค่าการ์ดรายการ*
 
 
-1. Publish your Web Page.
+1. เผยแพร่หน้าเว็บของคุณ
 
-	The web page will be published only when the Published option is checked.
-	Once the page is published, click on **See on Website** on the sidebar or visit the configured route
-	and check out the page!
+	หน้าเว็บจะเผยแพร่ก็ต่อเมื่อมีการเลือกตัวเลือกเผยแพร่เท่านั้น เมื่อเผยแพร่หน้าเว็บแล้ว ให้คลิก **ดูบนเว็บไซต์** บนแถบด้านข้างหรือไปที่เส้นทางที่กำหนด configured และตรวจสอบหน้าเพจนั้น
 
 	![Store Page Published](/docs/assets/img/website/store-page-published.png)
-	*Publish your Web Page*
+	*เผยแพร่หน้าเว็บของคุณ*
 
-1. Set as your Home Page.
+1. ตั้งเป็นโฮมเพจของคุณ
 
-	Follow the steps [here](/docs/user/manual/en/website/articles/website-home-page) to set
-	this page as your Website home page.
+	ทำตามขั้นตอน [ที่นี่](/docs/user/manual/th/website/articles/website-home-page) เพื่อตั้งค่า
+	หน้านี้เป็นหน้าแรกของเว็บไซต์ของคุณ

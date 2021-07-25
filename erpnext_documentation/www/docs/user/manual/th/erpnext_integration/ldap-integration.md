@@ -1,108 +1,108 @@
 
 <!-- add-breadcrumbs -->
-# Setting up LDAP
+# การตั้งค่า LDAP
 
-Lightweight Directory Access Protocol (LDAP) is a centralized access control system used by many small and medium-scale organizations.
+Lightweight Directory Access Protocol (LDAP) คือระบบควบคุมการเข้าออกแบบรวมศูนย์ที่ใช้โดยองค์กรขนาดเล็กและขนาดกลางจำนวนมาก
 
-By settings up LDAP service, you able to login to ERPNext account by using LDAP credentials.
+ด้วยการตั้งค่าบริการ LDAP คุณสามารถเข้าสู่ระบบบัญชี ERPNext โดยใช้ข้อมูลประจำตัว LDAP
 
-## 1. Prerequisites
-To use LDAP, you will first need to install the `ldap3` Python module.  To do this, open a terminal session on your server that hosts the ERPNext instance. Go to the `frappe-bench` directory.
-run the command: `./env/pip install ldap3`
+## 1. ข้อกำหนดเบื้องต้น
+ในการใช้ LDAP คุณจะต้องติดตั้งโมดูล Python `ldap3' ก่อน ในการดำเนินการนี้ ให้เปิดเซสชันเทอร์มินัลบนเซิร์ฟเวอร์ของคุณที่โฮสต์อินสแตนซ์ ERPNext ไปที่ไดเร็กทอรี `frappe-bench`
+รันคำสั่ง: `./env/pip install ldap3`
 
-You are now ready to enable the LDAP service in ERPNext.
+ตอนนี้คุณพร้อมที่จะเปิดใช้งานบริการ LDAP ใน ERPNext แล้ว
 
-## 2. Setting up LDAP
-To setup LDAP, go to
-> Home > Integrations > LDAP Settings
+## 2. การตั้งค่า LDAP
+ในการตั้งค่า LDAP ให้ไปที่
+> หน้าแรก > การรวมระบบ > การตั้งค่า LDAP
 
-Many parameters are mandatory to allow ERPNext to connect to LDAP. They are:
+จำเป็นต้องมีพารามิเตอร์จำนวนมากเพื่อให้ ERPNext สามารถเชื่อมต่อกับ LDAP ได้ พวกเขาเป็น:
 
-  * LDAP Server URL: This is the URL to your LDAP server. Must be in the form of `ldap://yourserver:port` or `ldaps://yourserver:port`
+  * URL เซิร์ฟเวอร์ LDAP: นี่คือ URL ไปยังเซิร์ฟเวอร์ LDAP ของคุณ ต้องอยู่ในรูปแบบ `ldap://yourserver:port' หรือ `ldaps://yourserver:port'
 
-  * Base Distinguished Name (DN): This is the distinguished name of the user that has permissions to look up user details on your LDAP server.  This should be a user that only has read-only permissions on your LDAP Server.
+  * Base Distinguished Name (DN): นี่คือชื่อเฉพาะของผู้ใช้ที่มีสิทธิ์ค้นหารายละเอียดผู้ใช้บนเซิร์ฟเวอร์ LDAP ของคุณ นี่ควรเป็นผู้ใช้ที่มีสิทธิ์อ่านอย่างเดียวบนเซิร์ฟเวอร์ LDAP ของคุณเท่านั้น
 
-  * Password for Base DN: This is the password for the user above, that is used to look up user details on your LDAP server.
+  * รหัสผ่านสำหรับ Base DN: นี่คือรหัสผ่านสำหรับผู้ใช้ด้านบน ซึ่งใช้ในการค้นหารายละเอียดผู้ใช้บนเซิร์ฟเวอร์ LDAP ของคุณ
 
-  * Organization Unit of Users: This is the DN of the Organizational Unit that all users in your LDAP server must be part of to be able to log into ERPNext.
+  * หน่วยองค์กรของผู้ใช้: นี่คือ DN ของหน่วยองค์กรที่ผู้ใช้ทั้งหมดในเซิร์ฟเวอร์ LDAP ของคุณต้องเป็นส่วนหนึ่งจึงจะสามารถเข้าสู่ระบบ ERPNext ได้
 
-  * Default Role on Creation: When the user is created in ERPNext, they will be assigned with this default role, the first time they log in.
+  * บทบาทเริ่มต้นในการสร้าง: เมื่อผู้ใช้ถูกสร้างขึ้นใน ERPNext พวกเขาจะได้รับมอบหมายด้วยบทบาทเริ่มต้นนี้ในครั้งแรกที่พวกเขาเข้าสู่ระบบ
 
-  * LDAP Search String: This field allows ERPNext to match the user/email entered in the ERPNext login screen, with the LDAP Server.  For example, you could use email address, or username depending on your preference.
+  * สตริงการค้นหา LDAP: ช่องนี้อนุญาตให้ ERPNext จับคู่ผู้ใช้/อีเมลที่ป้อนในหน้าจอการเข้าสู่ระบบ ERPNext กับเซิร์ฟเวอร์ LDAP ตัวอย่างเช่น คุณสามารถใช้ที่อยู่อีเมลหรือชื่อผู้ใช้ขึ้นอยู่กับความต้องการของคุณ
 
-    It must be entered in the format: `LDAPFIELD={0}`
+    ต้องป้อนในรูปแบบ: `LDAPFIELD={0}`
 
-    Active Directory username example: `sAMAccountName={0}`
+    ตัวอย่างชื่อผู้ใช้ Active Directory: `sAMAccountName={0}`
 
-    Open LDAP username example: `uid={0}`
+    เปิดตัวอย่างชื่อผู้ใช้ LDAP: `uid={0}`
 
-  * LDAP Email Field: Specifies the LDAP field that contains the email address of the user.
+  * ฟิลด์อีเมล LDAP: ระบุฟิลด์ LDAP ที่มีที่อยู่อีเมลของผู้ใช้
 
-    Active Directory and Open LDAP example: `mail`
+    ตัวอย่าง Active Directory และ Open LDAP: `mail`
 
-  * LDAP Username Field: Specifies the LDAP field that contains the username of the user.
+  * ฟิลด์ชื่อผู้ใช้ LDAP: ระบุฟิลด์ LDAP ที่มีชื่อผู้ใช้ของผู้ใช้
 
-    Active Directory example : `sAMAccountName`
+    ตัวอย่าง Active Directory : `sAMAccountName`
 
-    Open LDAP example: `uid`
+    เปิดตัวอย่าง LDAP: `uid`
 
-  * LDAP First Name Field: Specifies the LDAP field that contains the first name of the user.
+  * LDAP First Name Field: ระบุฟิลด์ LDAP ที่มีชื่อผู้ใช้
 
-    Active Directory example: `givenName`
+    ตัวอย่าง Active Directory: `givenName`
 
-    Open LDAP example: `sn`
+    เปิดตัวอย่าง LDAP: `sn`
 
-There are many other non-mandatory fields that you can use to map your LDAP user fields to the ERPNext user fields.  They are:
+มีฟิลด์ที่ไม่บังคับอื่นๆ มากมายที่คุณสามารถใช้เพื่อแมปฟิลด์ผู้ใช้ LDAP ของคุณกับฟิลด์ผู้ใช้ ERPNext พวกเขาเป็น:
 
-  * Middle Name
-  * Phone
-  * Mobile
+  * ชื่อกลาง
+  * โทรศัพท์
+  * มือถือ
 
 <img class="screenshot" alt="LDAP Settings" src="{{docs_base_url}}/assets/img/setup/integrations/ldap_settings.png">
 
-Once your settings are correct, you can click the `Enabled` checkbox at the top. When attempting to enable LDAP, ERPNext will try and connect to the LDAP server to ensure the settings are correct.  If it fails, you will not be able to enable LDAP and will receive an error message.
+เมื่อการตั้งค่าของคุณถูกต้องแล้ว คุณสามารถคลิกช่องทำเครื่องหมาย "เปิดใช้งาน" ที่ด้านบนได้ เมื่อพยายามเปิดใช้งาน LDAP ERPNext จะพยายามเชื่อมต่อกับเซิร์ฟเวอร์ LDAP เพื่อให้แน่ใจว่าการตั้งค่าถูกต้อง หากล้มเหลว คุณจะไม่สามารถเปิดใช้งาน LDAP และจะได้รับข้อความแสดงข้อผิดพลาด
 
-The error message will indicate the issue that needs to be resolved to continue.
+ข้อความแสดงข้อผิดพลาดจะระบุถึงปัญหาที่ต้องแก้ไขเพื่อดำเนินการต่อ
 
-After setting enabling LDAP, on the login screen, the system enables **Login Via LDAP** option.
+หลังจากตั้งค่าเปิดใช้งาน LDAP บนหน้าจอเข้าสู่ระบบ ระบบจะเปิดใช้งานตัวเลือก **เข้าสู่ระบบผ่าน LDAP**
 
 <img class="screenshot" alt="LOGIN via LDAP" src="{{docs_base_url}}/assets/img/setup/integrations/login_via_ldap.png">
 
-### 2.1 LDAP Security
+### 2.1 ความปลอดภัย LDAP
 
-In the LDAP Security section, You have many options to connect securely to your LDAP server.
+ในส่วนความปลอดภัย LDAP คุณมีตัวเลือกมากมายในการเชื่อมต่ออย่างปลอดภัยกับเซิร์ฟเวอร์ LDAP ของคุณ
 
-  * ##### SSL/TLS Mode
-    Specifies whether you want to start a TLS session on initial connection to the LDAP server.
+  * ####### โหมด SSL/TLS
+    ระบุว่าคุณต้องการเริ่มเซสชัน TLS ในการเชื่อมต่อเริ่มต้นกับเซิร์ฟเวอร์ LDAP หรือไม่
 
-  * ##### Require Trusted Certificate
-    Specifies if you require a trusted certificate to connect to the LDAP server
-
-
-  If you are specifying a trusted certificate, you will need to specify the paths to your certificate files. These files are to be placed on your ERPNext server, and the following fields should be an absolute path to the files on your server.
-    The certificate fields are:
-
-  * Path to private Key File
-
-  * Path to Server Certificate
-
-  * Path to CA Certs File
+  * ####### ต้องการใบรับรองที่เชื่อถือได้
+    ระบุว่าคุณต้องการใบรับรองที่เชื่อถือได้เพื่อเชื่อมต่อกับเซิร์ฟเวอร์ LDAP
 
 
-### 2.2 LDAP Group Mappings
-ERPNext also allows you to automatically map multiple LDAP groups to the appropriate ERPNext roles.
-For example, you may want all of your Accounting employees, to automatically have the Accounts User Role.
+  หากคุณกำลังระบุใบรับรองที่เชื่อถือได้ คุณจะต้องระบุเส้นทางไปยังไฟล์ใบรับรองของคุณ ไฟล์เหล่านี้จะต้องวางบนเซิร์ฟเวอร์ ERPNext ของคุณ และฟิลด์ต่อไปนี้ควรเป็นพาธสัมบูรณ์ไปยังไฟล์บนเซิร์ฟเวอร์ของคุณ
+    ฟิลด์ใบรับรองคือ:
 
-Ensure that you fill out the LDAP Group Field to allow this. This is the LDAP field that is found on a user object in LDAP, that has all of the groups the user is a member of.
+  * เส้นทางไปยังไฟล์คีย์ส่วนตัว
 
-For Active Directory and Open LDAP, this field should be set to `memberOf`.
+  * เส้นทางสู่ใบรับรองเซิร์ฟเวอร์
 
-Open LDAP may need this field to be enabled on your LDAP server. Please see examples on the internet for more details.
+  * เส้นทางไปยังไฟล์ใบรับรอง CA
 
-> Note that all ERPNext roles will be checked each time a user logs on and will be removed or added to the user's permissions.
+
+### 2.2 การแมปกลุ่ม LDAP
+ERPNext ยังอนุญาตให้คุณแมปกลุ่ม LDAP หลายกลุ่มกับบทบาท ERPNext ที่เหมาะสมโดยอัตโนมัติ
+ตัวอย่างเช่น คุณอาจต้องการให้พนักงานบัญชีทั้งหมดของคุณมีบทบาทผู้ใช้บัญชีโดยอัตโนมัติ
+
+ตรวจสอบให้แน่ใจว่าคุณกรอกฟิลด์กลุ่ม LDAP เพื่ออนุญาต นี่คือฟิลด์ LDAP ที่พบในอ็อบเจ็กต์ผู้ใช้ใน LDAP ซึ่งมีกลุ่มทั้งหมดที่ผู้ใช้เป็นสมาชิกอยู่
+
+สำหรับ Active Directory และ Open LDAP ควรตั้งค่าช่องนี้เป็น "memberOf"
+
+การเปิด LDAP อาจจำเป็นต้องเปิดใช้ช่องนี้บนเซิร์ฟเวอร์ LDAP ของคุณ โปรดดูตัวอย่างบนอินเทอร์เน็ตสำหรับรายละเอียดเพิ่มเติม
+
+> โปรดทราบว่าบทบาท ERPNext ทั้งหมดจะถูกตรวจสอบทุกครั้งที่ผู้ใช้เข้าสู่ระบบ และจะถูกลบออกหรือเพิ่มในการอนุญาตของผู้ใช้
 
 <img class="screenshot" alt="LDAP Group Mappings" src="{{docs_base_url}}/assets/img/setup/integrations/ldap_group_mappings.png">
 
-In the LDAP Settings area, there are two dropdowns.
-1. SSL/TLS Mode - set this to **StartTLS** to connect to your LDAP server using StartTLS. If your LDAP server does not support StartTLS, setting this to StartTLS will result in an error `StartTLS is not supported`. Check the configuration on your LDAP server if you receive this error.
-2. Require Trusted Certificate - if you change this to **Yes** then the certificate provided by the LDAP server must be trusted by the Frappe/ERPNext server. If you would rather use StartTLS with a self-signed (untrusted) certificate, set this to **No**. If you do not use StartTLS, this setting is ignored.
+ในพื้นที่การตั้งค่า LDAP มีสองดรอปดาวน์
+1. โหมด SSL/TLS - ตั้งค่านี้เป็น **StartTLS** เพื่อเชื่อมต่อกับเซิร์ฟเวอร์ LDAP ของคุณโดยใช้ StartTLS หากเซิร์ฟเวอร์ LDAP ของคุณไม่รองรับ StartTLS การตั้งค่านี้เป็น StartTLS จะทำให้เกิดข้อผิดพลาด `ไม่รองรับ StartTLS' ตรวจสอบการกำหนดค่าบนเซิร์ฟเวอร์ LDAP หากคุณได้รับข้อผิดพลาดนี้
+2. ต้องการใบรับรองที่เชื่อถือได้ - หากคุณเปลี่ยนเป็น **ใช่** ใบรับรองที่เซิร์ฟเวอร์ LDAP ให้มาจะต้องได้รับความเชื่อถือจากเซิร์ฟเวอร์ Frappe/ERPNext หากคุณต้องการใช้ StartTLS กับใบรับรองที่ลงนามเอง (ไม่น่าเชื่อถือ) ให้ตั้งค่าเป็น **ไม่** หากคุณไม่ได้ใช้ StartTLS การตั้งค่านี้จะถูกละเว้น

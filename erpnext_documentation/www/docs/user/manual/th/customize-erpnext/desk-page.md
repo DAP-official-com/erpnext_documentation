@@ -1,51 +1,51 @@
 <!-- add-breadcrumbs -->
-# Desk Page
+#หน้าหลัก
 
-When you log in, you're presented with the Desk. It features a persistent sidebar sorted into categories. Each sidebar item links to a page called Desk Page.
+เมื่อคุณเข้าสู่ระบบ คุณจะได้พบกับหน้าหลัก มันมีแถบด้านข้างแบบถาวรที่จัดเรียงเป็นหมวดหมู่ แต่ละรายการในแถบด้านข้างจะลิงก์ไปยังหน้าที่เรียกว่าหน้าหลัก
 
-A Desk Page represents a module (for example CRM in ERPNext). A Desk Page includes the following:
+หน้าหลักแสดงถึงโมดูล (เช่น CRM ใน ERPNext) หน้าหลักจะประกอบด้วยสิ่งต่อไปนี้:
 
-- A dashboard section for that particular module.
-- A shortcut section for frequently used masters, transactions or pages.
-- A masters section where all the reports and masters are grouped and listed.
+- ส่วนแดชบอร์ดสำหรับโมดูลนั้น ๆ
+- ส่วนทางลัดสำหรับมาสเตอร์ ธุรกรรม หรือเพจที่ใช้บ่อย
+- ส่วนต้นแบบที่มีการจัดกลุ่มและแสดงรายการรายงานและต้นแบบทั้งหมด
 
 <img alt="Standard Desk Page" class="screenshot" src="{{docs_base_url}}/assets/img/customize/standard-desk-page.png">
 
-## Standard Desk Page
+## หน้าหลักมาตรฐาน
 
-Every module in ERPNext has its own Standard Desk Page which is generated with appropriate shortcuts and links.
+ทุกโมดูลใน ERPNext มีหน้าโต๊ะทำงานมาตรฐานซึ่งสร้างขึ้นด้วยทางลัดและลิงก์ที่เหมาะสม
 
 <img alt="Desk Page List" class="screenshot" src="{{docs_base_url}}/assets/img/customize/desk-page-list.png">
 
-Any customization to be made to the Standard Desk Page can be done with Customize Desk Page option in the top right corner of the Desk Page.
+การปรับแต่งใด ๆ ที่จะทำกับหน้าหลักมาตรฐานสามารถทำได้ด้วยตัวเลือกปรับแต่งหน้าหลักที่ใช้ทำงานที่มุมบนขวาของหน้าหลัก
 
-> Note: These customizations will be user-specific and will only be visible to that user.
+> หมายเหตุ: การปรับแต่งเหล่านี้จะเป็นแบบเฉพาะผู้ใช้และจะมองเห็นได้เฉพาะผู้ใช้รายนั้นเท่านั้น
 
 <img alt="Customize Desk Page" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-desk-page.png">
 
-## Custom Desk Page
+## หน้าหลักแบบกำหนดเอง
 
-You can also create your own Desk Pages by simply creating a new Desk Page document.
+คุณยังสามารถสร้างหน้าเดสก์ท็อปของคุณเองได้โดยการสร้างเอกสารหน้าหลักใหม่
 
 <img alt="New Desk Page" class="screenshot" src="{{docs_base_url}}/assets/img/customize/new-desk-page.png">
 
-1. Go to the Desk Page list and click on New.
+1. ไปที่รายการหน้าหลักแล้วคลิกใหม่
 
-1. **Name**: The text you enter here will be shown in the sidebar.
+1. **ชื่อ**: ข้อความที่คุณป้อนที่นี่จะแสดงในแถบด้านข้าง
 
-1. **Module**: Select the module which the Desk Page will represent.
+1. **โมดูล**: เลือกโมดูลที่หน้าโต๊ะทำงานจะแสดง
 
-1. ***Is Standard***: If checked, this Desk Page will be shown in the sidebar. Otherwise it will be treated as a customized version of a Standard Desk Page.
+1. ***เป็นมาตรฐาน***: หากเลือก หน้าโต๊ะทำงานนี้จะแสดงในแถบด้านข้าง มิฉะนั้น จะถือว่าเป็นเวอร์ชันที่กำหนดเองของหน้าหลักมาตรฐาน
 
-1. ***Extends Another Page***: If checked, this Desk Page will be treated as a customized version of another Desk Page.
+1. ***ขยายหน้าอื่น***: หากเลือก หน้าโต๊ะทำงานนี้จะถือเป็นเวอร์ชันที่กำหนดเองของหน้าเดสก์ท็อปอื่น
 
-1. ***Is Default***: If checked, this Desk Page will be the default Desk Page displayed to all users for a particular module.
+1. ***เป็นค่าเริ่มต้น***: หากเลือก หน้าโต๊ะทำงานนี้จะเป็นหน้าเดสก์ท็อปเริ่มต้นที่แสดงต่อผู้ใช้ทั้งหมดสำหรับโมดูลเฉพาะ
 
-1. ***Dashboard***: Add a Dashboard to display it on the top of the Desk Page.
+1. ***แดชบอร์ด***: เพิ่มแดชบอร์ดเพื่อแสดงที่ด้านบนของหน้าโต๊ะ
 
-1. ***Shortcuts***: Add Shortcuts to a specific page, reports or list which will be displayed below the dashboard.
+1. ***ทางลัด***: เพิ่มทางลัดไปยังหน้า รายงาน หรือรายการที่ต้องการ ซึ่งจะแสดงด้านล่างแดชบอร์ด
 
-1. ***Link Cards***: You can add cards that will display a list that links to a specific page, report, or list. You must add these in a specific JSON format as displayed in the image below.
+1. ***การ์ดเชื่อมโยง***: คุณสามารถเพิ่มการ์ดที่จะแสดงรายการที่เชื่อมโยงไปยังหน้า รายงาน หรือรายการเฉพาะ คุณต้องเพิ่มสิ่งเหล่านี้ในรูปแบบ JSON เฉพาะตามที่แสดงในภาพด้านล่าง
 
 <img alt="Desk Page Card" class="screenshot" src="{{docs_base_url}}/assets/img/customize/desk-page-card.png">
 

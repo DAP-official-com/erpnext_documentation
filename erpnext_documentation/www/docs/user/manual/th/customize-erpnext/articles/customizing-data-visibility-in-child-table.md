@@ -1,33 +1,33 @@
 <!-- add-breadcrumbs -->
-# Customizing Data Visibility in Child Tables
+# การปรับแต่งการเปิดเผยข้อมูลในตารางย่อย
 
-In ERPNext, there is a feature called the editable grid. This allows the user to add values in the child table without opening a dialog box/form for each row.
+ใน ERPNext มีคุณลักษณะที่เรียกว่ากริดที่แก้ไขได้ ซึ่งช่วยให้ผู้ใช้สามารถเพิ่มค่าในตารางย่อยโดยไม่ต้องเปิดกล่องโต้ตอบ/แบบฟอร์มสำหรับแต่ละแถว
 
-This is how the Quotation Item table renders value when the Editable Grid is enabled. It will have a maximum of four columns in the table.
+นี่คือวิธีที่ตารางรายการใบเสนอราคาแสดงค่าเมื่อเปิดใช้งานกริดที่แก้ไขได้ มันจะมีสูงสุดสี่คอลัมน์ในตาราง
 
 <img alt="Child Table" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-child-table-5.png">
 
-As per the default setting, only four columns are listed in the child table. Following is how you can add more columns in the Editable Grid itself.
+ตามการตั้งค่าเริ่มต้น มีเพียงสี่คอลัมน์ที่แสดงในตารางย่อย ต่อไปนี้เป็นวิธีที่คุณสามารถเพิ่มคอลัมน์ใน Editable Grid ได้
 
-For the field to be added as a column in the table, enter a value in the Column field. Also, ensure that the "Is List View" property is checked for that field.
+สำหรับฟิลด์ที่จะเพิ่มเป็นคอลัมน์ในตาราง ให้ป้อนค่าในช่องคอลัมน์ นอกจากนี้ ตรวจสอบให้แน่ใจว่าได้ตรวจสอบคุณสมบัติ "เป็นมุมมองรายการ" สำหรับฟิลด์นั้น
 
 <img alt="Child Table" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-child-table-2.png">
 
-Based on the value in the Column field, columns will be added to the child table. Ensure that the total value added in the Column field doesn't exceed 10. Based on the Column value, the width for that column will be set.
+ตามค่าในฟิลด์คอลัมน์ คอลัมน์จะถูกเพิ่มลงในตารางย่อย ตรวจสอบให้แน่ใจว่ามูลค่ารวมที่เพิ่มในช่องคอลัมน์ไม่เกิน 10 ตามค่าคอลัมน์ ความกว้างของคอลัมน์นั้นจะถูกตั้งค่า
 
 <img alt="Child Table" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-child-table-3.png">
 
-**Switch to Un-editable Grid**
+**เปลี่ยนเป็นกริดที่ไม่สามารถแก้ไขได้**
 
-To have more values shown in the preview of the Quotation Item table, you can disable Editable Grid for the Quotation Item DocType. Steps below.
+หากต้องการให้แสดงค่าเพิ่มเติมในการแสดงตัวอย่างตารางรายการใบเสนอราคา คุณสามารถปิดใช้งานตารางที่แก้ไขได้สำหรับประเภทรายการใบเสนอราคา ขั้นตอนด้านล่าง
 
 <img alt="Child Table" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-child-table.gif">
 
-Once Editable Grid is disabled for the Quotation Item, the values will be rendered in a preview of the Quotation Item table in the following way:
+เมื่อปิดการใช้งานกริดที่แก้ไขได้สำหรับรายการใบเสนอราคา ค่าจะแสดงในตัวอย่างตารางรายการใบเสนอราคาด้วยวิธีต่อไปนี้:
 
 <img alt="Child Table" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-child-table-4.png">
 
-To have a specific field's value shown in the preview, ensure that for that field, in the Customize Form tool, "In List View" property is checked.
+หากต้องการให้ค่าของฟิลด์เฉพาะแสดงในการแสดงตัวอย่าง ตรวจสอบให้แน่ใจว่าสำหรับฟิลด์นั้น ในเครื่องมือกำหนดแบบฟอร์มเอง จะมีการเลือกคุณสมบัติ "ในมุมมองรายการ"
 
 <img alt="Child Table" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-child-table-1.png">
 

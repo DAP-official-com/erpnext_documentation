@@ -1,27 +1,27 @@
 <!-- add-breadcrumbs -->
-# Maximum Number of Fields in a Form
+# จำนวนฟิลด์สูงสุดในแบบฟอร์ม
 
-Sometimes while creating custom fields, you might have faced an error message that looks like this:
+บางครั้งในขณะที่สร้างฟิลด์ที่กำหนดเอง คุณอาจพบข้อความแสดงข้อผิดพลาดที่มีลักษณะดังนี้:
 
-> Row size too large. The maximum row size for the used table type, not counting BLOBs, is 65535. This includes storage overhead, check the manual. You have to change some columns to TEXT or BLOBs.
+> ขนาดแถวใหญ่เกินไป ขนาดแถวสูงสุดสำหรับประเภทตารางที่ใช้ โดยไม่นับ BLOB คือ 65535 ซึ่งรวมถึงโอเวอร์เฮดในการจัดเก็บ โปรดตรวจสอบคู่มือ คุณต้องเปลี่ยนบางคอลัมน์เป็น TEXT หรือ BLOB
 
-### What does it mean?
+### หมายความว่าอย่างไร?
 
-In simple terms, it means that you have reached the limit of the maximum number of fields for the specific form/doctype. So, what is the maximum limit of fields?
+พูดง่ายๆ ก็คือ หมายความว่าคุณถึงขีดจำกัดจำนวนฟิลด์สูงสุดสำหรับแบบฟอร์ม/ประเภทเอกสารเฉพาะแล้ว ดังนั้นขีด จำกัด สูงสุดของฟิลด์คืออะไร?
 
-In MySQL, there is a hard limit of 4096 columns per table, but the effective maximum may be less for a given table. The exact limit depends on several interacting factors.
+ใน MySQL มีขีดจำกัด 4096 คอลัมน์ต่อตาราง แต่ค่าสูงสุดที่มีประสิทธิภาพอาจน้อยกว่าสำหรับตารางที่กำหนด ขีดจำกัดที่แน่นอนขึ้นอยู่กับปัจจัยการโต้ตอบหลายประการ
 
-Every table (regardless of storage engine) has a maximum row size of 65,535 bytes. Storage engines may place additional constraints on this limit, reducing the effective maximum row size.
+ทุกตาราง (โดยไม่คำนึงถึงเครื่องมือจัดเก็บข้อมูล) มีขนาดแถวสูงสุด 65,535 ไบต์ เอ็นจิ้นการจัดเก็บอาจวางข้อจำกัดเพิ่มเติมในขีดจำกัดนี้ ซึ่งจะช่วยลดขนาดแถวสูงสุดที่มีผล
 
-The maximum row size constrains the number (and possibly size) of columns because the total length of all columns cannot exceed this size (65,535 bytes). For example, `utf8mb3` characters require up to 3 bytes per character, so for a `VARCHAR(140)` column, the server must allocate `140 × 3 = 420` bytes per value. Consequently, a table cannot contain more than `65,535 / 420 = 156` such columns.
+ขนาดแถวสูงสุดจำกัดจำนวนคอลัมน์ (และอาจเป็นขนาด) เนื่องจากความยาวรวมของคอลัมน์ทั้งหมดต้องไม่เกินขนาดนี้ (65,535 ไบต์) ตัวอย่างเช่น อักขระ "utf8mb3" ต้องการอักขระสูงสุด 3 ไบต์ต่ออักขระ ดังนั้นสำหรับคอลัมน์ "VARCHAR(140)" เซิร์ฟเวอร์ต้องจัดสรรไบต์ "140 × 3 = 420" ต่อค่า ดังนั้น ตารางไม่สามารถมีคอลัมน์ดังกล่าวได้มากกว่า `65,535 / 420 = 156`
 
-In Frappe framework, `VARCHAR(140)` type columns are created based on "Data", "Link", "Select", "Dynamic Link", "Password" and "Read Only" field types. Hence, you can create approximately 156 such columns in the system.
+ในเฟรมเวิร์ก Frappe คอลัมน์ประเภท `VARCHAR(140)` จะถูกสร้างขึ้นตามประเภทฟิลด์ "ข้อมูล" "ลิงก์" "เลือก" "ลิงก์แบบไดนามิก" "รหัสผ่าน" และ "อ่านอย่างเดียว" ดังนั้น คุณสามารถสร้างคอลัมน์ดังกล่าวได้ประมาณ 156 คอลัมน์ในระบบ
 
-### Solution:
+### วิธีการแก้:
 
-To add more fields to the system, you can do some changes.
+หากต้องการเพิ่มฟิลด์ในระบบ คุณสามารถทำการเปลี่ยนแปลงบางอย่างได้
 
-1. Convert some of the fields to "Text", "Small Text", "Text Editor" or "Code" type field. In MySQL, BLOB and TEXT columns count from one to four plus eight bytes each toward the row-size limit because their contents are stored separately from the rest of the row. So, converting to those field types will free up some spaces and will allow addition of some more fields.
-2. Set smaller value in the "Length" property while creating fields, the default value is 140. The System sets the length of `VARCHAR` based on this property and allocates size for those columns. Hence, smaller Length leads to add more fields.
+1. แปลงฟิลด์บางฟิลด์เป็นฟิลด์ประเภท "Text", "Small Text", "Text Editor" หรือ "Code" ใน MySQL คอลัมน์ BLOB และ TEXT นับหนึ่งถึงสี่บวกแปดไบต์ต่อขนาดแถวที่จำกัด เนื่องจากเนื้อหาจะถูกจัดเก็บแยกจากส่วนที่เหลือของแถว ดังนั้น การแปลงเป็นประเภทฟิลด์เหล่านั้นจะเพิ่มพื้นที่ว่างบางส่วนและจะอนุญาตให้เพิ่มฟิลด์เพิ่มเติมได้
+2. ตั้งค่าให้น้อยลงในคุณสมบัติ "ความยาว" ขณะสร้างฟิลด์ ค่าเริ่มต้นคือ 140 ระบบจะตั้งค่าความยาวของ "VARCHAR" ตามคุณสมบัตินี้และจัดสรรขนาดสำหรับคอลัมน์เหล่านั้น ดังนั้นความยาวที่น้อยกว่าจะนำไปสู่การเพิ่มฟิลด์เพิ่มเติม
 
 {next}

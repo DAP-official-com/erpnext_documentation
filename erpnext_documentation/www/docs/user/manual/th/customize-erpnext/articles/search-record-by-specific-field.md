@@ -1,27 +1,27 @@
 <!-- add-breadcrumbs -->
-# Search Record by Specific Field
+# ค้นหาบันทึกตามเขตข้อมูลเฉพาะ
 
-While creating any DocType, you may want to link a particular field to another DocType. For ease in selection, you can also ensure that you are able to see the value of another field of the latter DocType in the search result. 
+ขณะสร้าง DocType คุณอาจต้องการเชื่อมโยงฟิลด์ใดฟิลด์หนึ่งกับ DocType อื่น เพื่อความสะดวกในการเลือก คุณยังสามารถตรวจสอบได้ว่าคุณสามารถเห็นค่าของฟิลด์อื่นของ DocType หลังในผลการค้นหา
 
-Let's assume that you want to see that Item in a Sales Order along with its Item Group. The steps to do this are given below:
+สมมติว่าคุณต้องการดูรายการนั้นในใบสั่งขายพร้อมกับกลุ่มรายการ ขั้นตอนในการทำเช่นนี้มีดังนี้:
 
-#### Step 1: Go to Customize Form
+#### ขั้นตอนที่ 1: ไปที่ปรับแต่งแบบฟอร์ม
 
-> Home > Customization > Form Customization > Customize Form
+> หน้าแรก > การปรับแต่ง > การปรับแต่งแบบฟอร์ม > ปรับแต่งแบบฟอร์ม
 
-#### Step 2: Select the Document for which you want multiple fields to be visible in the Search Field
+#### ขั้นตอนที่ 2: เลือกเอกสารที่คุณต้องการให้หลายฟิลด์ปรากฏในช่องค้นหา
 
-Here, we will select the Document Item.
+ที่นี่เราจะเลือกรายการเอกสาร
 
-#### Step 3:  Search Field
+#### ขั้นตอนที่ 3: ช่องค้นหา
 
-Update Warehouse field name in the Search By field.
+อัพเดตชื่อคลังสินค้าในฟิลด์ ค้นหาโดยฟิลด์
 
 <img alt="Search By in Customize Form" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-search-record-1.png">
 
 <img alt="Search By in Customize Form" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-search-record-2.png">
 
-Once these settings have been updated, while creating a Sales Order, when you select the Item, you will also be able to the warehouse there.
+เมื่อการตั้งค่าเหล่านี้ได้รับการอัปเดตแล้ว ในขณะที่สร้างใบสั่งขาย เมื่อคุณเลือกรายการ คุณจะสามารถไปยังคลังสินค้าที่นั่นได้เช่นกัน
 
 <img alt="Search By in Customize Form" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-search-record-3.png">
 

@@ -1,13 +1,13 @@
 <!-- add-breadcrumbs -->
-# Customizing Module Visibility
+# การปรับแต่งการมองเห็นโมดูล
 
-**ERPNext as a system can be used by multiple businesses at every scale, Manufacturing, Education, Retail being some of the businesses benefitted the most from the usability of the system.**
+**ERPNext เป็นระบบสามารถใช้ได้กับหลายธุรกิจในทุกขนาด การผลิต การศึกษา การค้าปลีก เป็นธุรกิจบางส่วนที่ได้รับประโยชน์สูงสุดจากความสามารถในการใช้งานของระบบ**
 
-Keeping in mind, the interests of all kinds of business owners, the usability of the system for different business has been mapped into different 'Modules' represented as 'Cards' in the system. Similarly the core modules in the system, such as Human Resource, Accounting, CRM etc. are also represented by different cards on the dashboard.
+โปรดทราบว่า ความสนใจของเจ้าของธุรกิจทุกประเภท ความสามารถในการใช้งานระบบสำหรับธุรกิจต่างๆ ได้รับการแมปเป็น 'โมดูล' ต่างๆ ซึ่งแสดงเป็น 'การ์ด' ในระบบ ในทำนองเดียวกัน โมดูลหลักในระบบ เช่น ทรัพยากรบุคคล การบัญชี CRM เป็นต้น จะแสดงด้วยการ์ดต่างๆ บนแดชบอร์ด
 
-Every ERPNext account holder has the option of customizing the visibility of the different modules based on their business case.
+เจ้าของบัญชี ERPNext ทุกคนมีตัวเลือกในการปรับแต่งการมองเห็นโมดูลต่างๆ ตามกรณีธุรกิจของตน
 
-*In Version 12, you can go to Show / Hide Modules on the top right corner of the home screen for checking visibility of modules.**
+*ในเวอร์ชัน 12 คุณสามารถไปที่ แสดง / ซ่อน โมดูล ที่มุมบนขวาของหน้าจอหลักเพื่อตรวจสอบการมองเห็นของโมดูล**
 
 <img alt="Module Visibility" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-module-visibility-2.png">
 
@@ -15,18 +15,18 @@ Every ERPNext account holder has the option of customizing the visibility of the
 
 > Note: Modules are automatically hidden for users that have no permissions on the documents within that module. For example, if a User has no permissions on Purchase Order, Purchase Request, Supplier, the “Buying” module will automatically hidden for that User.
 
-If you have permissions to a specific module, but it is still not visible, the following could be the possible reasons for it. 
+หากคุณมีสิทธิ์ในโมดูลใดโมดูลหนึ่ง แต่ยังมองไม่เห็น สาเหตุต่อไปนี้อาจเป็นสาเหตุที่เป็นไปได้
 
-Let's consider a scenario that a user has the permission for the Website module, but is not able to access it.
+ลองพิจารณาสถานการณ์สมมติที่ผู้ใช้มีสิทธิ์สำหรับโมดูลเว็บไซต์ แต่ไม่สามารถเข้าถึงได้
 
-As a basic requirement, ensure that the "Website Manager" role is assigned to that user. It is a standard Role that grants permission on the Website module. If permissions have been customized in your account, check Role Permission Manager to know which Role has permission on Website, and then check if the same Role is assigned to the User.
+ตามข้อกำหนดพื้นฐาน ตรวจสอบให้แน่ใจว่าบทบาท "ผู้จัดการเว็บไซต์" ถูกกำหนดให้กับผู้ใช้นั้น เป็นบทบาทมาตรฐานที่อนุญาตบนโมดูลเว็บไซต์ หากมีการกำหนดสิทธิ์ในบัญชีของคุณ ให้ตรวจสอบ บทบาทผู้จัดการการอนุญาต เพื่อทราบว่า หน้าที่ ใดที่มีสิทธิ์บนเว็บไซต์ จากนั้นตรวจสอบว่า หน้าที่ เดียวกันถูกกำหนดให้กับผู้ใช้หรือไม่
 
 <img alt="Module Visibility" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-module-visibility-4.png">
 
-Further, you should also check if the under the settings, 'Allow Modules', the required module has been enabled for the user
+นอกจากนี้ คุณควรตรวจสอบด้วยว่าภายใต้การตั้งค่า 'อนุญาตโมดูล' มีการเปิดใช้งานโมดูลที่จำเป็นสำหรับผู้ใช้หรือไม่
 
 <img alt="Module Visibility" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-module-visibility-1.png">
 
-Reload tab of your ERPNext account and the changes made will be applied and will be visible in the system.
+โหลดซ้ำอีกครั้งใน ERPNext ของคุณและการเปลี่ยนแปลงที่ทำขึ้นจะถูกนำไปใช้และจะมองเห็นได้ในระบบ
 
 {next}

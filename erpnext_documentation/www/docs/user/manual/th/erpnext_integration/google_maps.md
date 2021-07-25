@@ -1,17 +1,15 @@
 <!-- add-breadcrumbs -->
-# Google Maps Integration
+# การใช้ Google Maps
+ERPNext ให้การผสานรวมกับ Google Maps เพื่อคำนวณและปรับเวลาให้เหมาะสมสำหรับ ทริปส่งของ
 
-ERPNext provides an integration with Google Maps to calculate and optimize time for Delivery Trips.
+## วิธีตั้งค่า Google Maps
 
+ในการตั้งค่า Google Maps เพื่อให้ ERPNext คำนวณและเพิ่มประสิทธิภาพเวลาสำหรับ ทริปส่งของ ให้ทำตามขั้นตอน:
 
-## How to set up Google Maps Integration
+- เปิดใช้งานการเข้าถึง API [การตั้งค่า Google](/docs/user/manual/th/erpnext_integration/google_settings#for-google-maps)
 
-To setup Google Maps in order to allow a ERPNext to calculate and optimize time for Delivery Trip, follow the steps:
+## วิธีใช้งาน Google Maps
 
-- Enable API access [Google Settings](/docs/user/manual/en/erpnext_integration/google_settings#for-google-maps).
-
-## How to use Google Maps Integration
-
-### Calculating and optimizing Delivery Trips
-- Once Google Maps Integration is succesful, you can calculate ETA for a delivery stop or optimize delivery stops
+### กำลังคำนวณและเพิ่มประสิทธิภาพการเดินทางจัดส่ง
+- เมื่อการรวม Google Maps สำเร็จ คุณสามารถคำนวณ ETA สำหรับการหยุดส่งหรือเพิ่มประสิทธิภาพจุดส่งของ
   <img class="screenshot" src="/docs/assets/img/erpnext_integrations/google_maps.gif">

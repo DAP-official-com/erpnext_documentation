@@ -1,15 +1,15 @@
 <!-- add-breadcrumbs -->
-# User Restriction
+# ข้อจำกัดของผู้ใช้
 
-Following are the steps to restrict User to a document based on Owner/creator.
+ต่อไปนี้เป็นขั้นตอนในการจำกัดผู้ใช้ให้อยู่ในเอกสารตามเจ้าของ/ผู้สร้าง
 
-#### Step 1: Role Permission Manager
+#### ขั้นตอนที่ 1: ตัวจัดการการอนุญาตบทบาท
 
-> Home > Users and Permissions > Permissions > Role Permissions Manager
+> หน้าแรก > ผู้ใช้และการอนุญาต > สิทธิ์ > ตัวจัดการการอนุญาตบทบาท
 
-#### Step 2: Select Document Type
+#### ขั้นตอนที่ 2: เลือกประเภทเอกสาร
 
-Select Document Type for which you want to set user permission. After permissions are loaded for selected document, scroll to role for which you want to set restriction.
+เลือกประเภทเอกสารที่คุณต้องการตั้งค่าการอนุญาตของผู้ใช้ หลังจากโหลดสิทธิ์สำหรับเอกสารที่เลือกแล้ว ให้เลื่อนไปที่บทบาทที่คุณต้องการตั้งค่าการจำกัด
 
 <img alt="Sales Order" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-user-permissions-2.png">
 

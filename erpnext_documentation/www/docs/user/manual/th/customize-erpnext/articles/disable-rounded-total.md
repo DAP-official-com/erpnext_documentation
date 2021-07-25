@@ -1,27 +1,27 @@
 <!-- add-breadcrumbs -->
-#Disable Rounded Total
+#ปิดการปัดเศษยอดทั้งหมด
 
-All the sales transactions like Sales Order, Sales Invoice have Rounded Total in it. It is calculated based on the value of Grand Total. Moreover, Rounded Total is also visible in the Standard Print Formats.
+ธุรกรรมการขายทั้งหมด เช่น ใบสั่งขาย ใบแจ้งหนี้การขาย มีการปัดเศษยอดรวมในนั้น คำนวณจากมูลค่ารวมทั้งหมด นอกจากนี้ Rounded Total ยังสามารถมองเห็นได้ในรูปแบบการพิมพ์มาตรฐาน
 
-> Note: The Rounded Total is a feature present in **Sales** transactions.
+> หมายเหตุ: ผลรวมที่ปัดเศษเป็นคุณลักษณะที่มีอยู่ในธุรกรรม **การขาย**
 
 <img alt="Print Preview" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-disable-rounded-total-2.png">
 
-However, if you wish to disable the same, you may follow the steps given below to hide the rounded total from Standard Print Formats, for all the sales transactions.
+อย่างไรก็ตาม หากคุณต้องการปิดการใช้งานแบบเดียวกัน คุณสามารถทำตามขั้นตอนด้านล่างเพื่อซ่อนยอดรวมที่ปัดเศษจากรูปแบบการพิมพ์มาตรฐานสำหรับธุรกรรมการขายทั้งหมด
 
-#### Step 1: Go to Global Defaults
+#### ขั้นตอนที่ 1: ไปที่ Global Defaults
 
-From the Awesome Bar search for Global Defaults
+จาก Awesome Bar ค้นหา Global Defaults
 
-#### Step 2: Disable Rounded Total
+#### ขั้นตอนที่ 2: ปิดใช้งานยอดรวมที่ปัดเศษ
 
-Check Disable Rounded Total, and click on save.
+ทำเครื่องหมายที่ ปิดการใช้งาน ปัดเศษยอดทั้งหมด และคลิกที่บันทึก
 
 <img alt="Print Preview" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-disable-rounded-total.png">
 
-To verify the changes, you should clear the cache and/or refresh your ERPNext account. Then your print formats shall not render value for the Rounded Total.
+ในการตรวจสอบการเปลี่ยนแปลง คุณควรล้างแคชและ/หรือรีเฟรชบัญชี ERPNext ของคุณ จากนั้นรูปแบบการพิมพ์ของคุณจะไม่แสดงค่าสำหรับยอดรวมที่ปัดเศษ
 
-> Note: This setting will only affect Standard print formats.
+> หมายเหตุ: การตั้งค่านี้จะมีผลกับรูปแบบการพิมพ์มาตรฐานเท่านั้น
 
 {next}
 

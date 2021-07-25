@@ -1,39 +1,39 @@
 <!-- add-breadcrumbs -->
-# Google Settings
+# การตั้งค่า Google
 
-To enable Google Integrations, ERPNext needs access to the API through which the data will be synced which is achieved using OAuth 2.0 Authentication Protocol.
+ในการเปิดใช้งาน Google Integrations ERPNext จำเป็นต้องเข้าถึง API ซึ่งข้อมูลจะถูกซิงค์ซึ่งทำได้โดยใช้ OAuth 2.0 Authentication Protocol
 
-## How to set up Google Settings
+## วิธีตั้งค่า Google Settings
 
-### For Google Calendar, Google Contacts, Google Drive
+### สำหรับ Google ปฏิทิน, Google Contacts, Google Drive
 
-In order to allow a synchronization with Google Calendar, Google Contacts or Google Drive you need to authorize ERPNext to get data from Google. Following is an example for setting up Google Contacts Integration
+เพื่อให้สามารถซิงโครไนซ์กับ Google ปฏิทิน, Google Contacts หรือ Google Drive คุณต้องอนุญาต ERPNext เพื่อรับข้อมูลจาก Google ต่อไปนี้เป็นตัวอย่างการตั้งค่า Google Contacts Integration
 
-1. Create a new project on Google Cloud Platform and generate new OAuth 2.0 credentials.
+1. สร้างโครงการใหม่บน Google Cloud Platform และสร้างข้อมูลรับรอง OAuth 2.0 ใหม่
 <img class="screenshot" src="/docs/assets/img/erpnext_integrations/google_contacts_project_creation.gif">
-- Enable API Access in API Library for the Integration you wish to integrate.
-  - Google Calendar: **Calendar API**
-  - Google Contacts: **People API**
-  - Google Drive: **Drive API**
+- เปิดใช้งานการเข้าถึง API ในไลบรารี API สำหรับการรวมที่คุณต้องการรวมเข้าด้วยกัน
+  - Google ปฏิทิน: **API ของปฏิทิน**
+  - Google Contacts: ** People API **
+  - Google ไดรฟ์: ** API ของไดรฟ์**
 
  <img class="screenshot" src="/docs/assets/img/erpnext_integrations/api.gif">
-- In **API & Services > Credentials** create a new Credential and select **Create OAuth client ID**
-- Select Application Type **Web Application**
-- Add `https://{yoursite}` to Authorized JavaScript origins.
-- Add `https://{yoursite}?cmd=frappe.integrations.doctype.{integration_name}.{integration_name}.google_callback` as an authorized redirect URI.
-  - You need to replace `integration_name` with one of the following:
-     - Google Calendar: **google\_calendar**
+- ใน **API & Services > Credentials** ให้สร้าง Credential ใหม่และเลือก **Create OAuth client ID**
+- เลือกประเภทแอปพลิเคชัน **เว็บแอปพลิเคชัน**
+- เพิ่ม `https://{yoursite}` ไปยังต้นทาง JavaScript ที่ได้รับอนุญาต
+- เพิ่ม `https://{yoursite}?cmd=frappe.integrations.doctype.{integration_name}{integration_name}.google_callback` เป็น URI การเปลี่ยนเส้นทางที่ได้รับอนุญาต
+  - คุณต้องแทนที่ "integration_name" ด้วยหนึ่งในรายการต่อไปนี้:
+     - Google ปฏิทิน: **google\_calendar**
      - Google Contacts: **google\_contacts**
-     - Google Drive: **google\_drive**
-  - eg: for Google Contacts URL will be `https://{yoursite}?cmd=frappe.integrations.doctype.google_contacts.google_contacts.google_callback`
+     - Google ไดรฟ์: **google\_drive**
+  - เช่น: สำหรับ Google Contacts URL จะเป็น `https://{yoursite}?cmd=frappe.integrations.doctype.google_contacts.google_contacts.google_callback`
 
  <img class="screenshot" src="/docs/assets/img/erpnext_integrations/google_contacts_oauth.gif">
-- Add your Client ID and Client Secret in the Google Settings in **Home > Integrations > Google Services > Google Settings**
+- เพิ่ม Client ID และ Client Secret ในการตั้งค่า Google ใน **หน้าแรก > การรวมระบบ > บริการของ Google > การตั้งค่า Google**
 
-### For Google Maps
+### สำหรับ Google Maps
 
-In order to allow a synchronization with Google Maps you need to generate an API key as Google Maps doesn't need access to data from Google.
+เพื่อให้สามารถซิงโครไนซ์กับ Google Maps ได้ คุณต้องสร้างคีย์ API เนื่องจาก Google Maps ไม่จำเป็นต้องเข้าถึงข้อมูลจาก Google
 
-1. Create a new project on Google Cloud Platform and generate new API Key.
-- Enable API Access in API Library for the Directions API and then add the API Key in the Google Settings in **Home > Integrations > Google Services > Google Settings**.
+1. สร้างโครงการใหม่บน Google Cloud Platform และสร้างคีย์ API ใหม่
+- เปิดใช้งานการเข้าถึง API ในไลบรารี API สำหรับเส้นทาง API จากนั้นเพิ่มคีย์ API ในการตั้งค่า Google ใน **หน้าแรก > การรวมระบบ > บริการของ Google > การตั้งค่า Google**
 <img class="screenshot" src="/docs/assets/img/erpnext_integrations/api_key.gif">

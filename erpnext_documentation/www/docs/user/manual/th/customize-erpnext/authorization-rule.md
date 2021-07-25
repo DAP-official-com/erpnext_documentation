@@ -1,60 +1,60 @@
 <!-- add-breadcrumbs -->
-# Authorization Rule
+# กฎการอนุญาต
 
-**Authorization Rule allows configuring a custom authorization / approval on a documents, based on conditions defined.**
+**กฎการให้สิทธิ์อนุญาตให้กำหนดค่าการอนุญาต/การอนุมัติที่กำหนดเองในเอกสาร ตามเงื่อนไขที่กำหนดไว้**
 
-Example: If a Sales Order's Grand Total exceeds $1,000, then it should be verified/submitted by the Sales Manager only, even if the Sales User has "Submit" permission.
+ตัวอย่าง: หากยอดรวมของใบสั่งขายเกิน 1,000 ดอลลาร์ ผู้จัดการฝ่ายขายควรตรวจสอบยืนยัน/ส่งคำสั่งซื้อนั้นเท่านั้น แม้ว่าผู้ใช้ฝ่ายขายจะมีสิทธิ์ "ส่ง" ก็ตาม
 
-On the same lines, you can define Authorization Rule based on the fields like Net Total, Grand Total, Discount % and specify who would be the document approver if the authorization condition is matched.
+ในบรรทัดเดียวกัน คุณสามารถกำหนดกฎการอนุญาตตามฟิลด์ เช่น ผลรวมสุทธิ ยอดรวมทั้งหมด % ส่วนลด และระบุว่าใครจะเป็นผู้อนุมัติเอกสารหากเงื่อนไขการอนุญาตตรงกัน
 
 <img class="screenshot" alt="Authorization Rule" src="{{docs_base_url}}/assets/img/customize/customize-authorization-rule-1.png">
 
 
-To access Authorization Rule, go to:
+ในการเข้าถึงกฎการให้สิทธิ์ ไปที่:
 
-> Home > Settings > Customize > Authorization Rule
+> หน้าแรก > การตั้งค่า > ปรับแต่ง > กฎการให้สิทธิ์
 
-Let's consider a detailed example of an Authorization Rule to learn better.
+มาลองพิจารณาตัวอย่างโดยละเอียดของกฎการให้สิทธิ์เพื่อเรียนรู้กันดีกว่า
 
-Assume that the Sales Manager needs to authorize Sales Orders, only if it's Grand Total value exceeds 10,000. If the Sales Order value is less than 10,000, then even the Sales User will be able to submit it. This means that the Submit permission of Sales User will be restricted only up to Sales Order of Grand Total less than 10,000.
+สมมติว่า ู้จัดการฝ่ายขาย ต้องอนุญาตใบสั่งขาย เฉพาะในกรณีที่มูลค่ารวมทั้งหมดเกิน 10,000 หากมูลค่าใบสั่งขายน้อยกว่า 10,000 แม้แต่ผู้ใช้ฝ่ายขายก็ยังสามารถส่งได้ ซึ่งหมายความว่าการอนุญาตส่งของผู้ใช้ขายจะถูกจำกัดจนถึงคำสั่งขายของยอดรวมที่น้อยกว่า 10,000 เท่านั้น
 
-## 1. How to create an Authorization Rule
+## 1. วิธีสร้างกฎการให้สิทธิ์
 
-1. Go to the Authorization Rule list, click on New.
-1. Select the transaction on which Authorization Rule will be applicable. This functionality is available for limited transactions only.
-1. Enter the Authorized Value, etc. This depends on the field you selected in Based On.
-1. Select Based On. Authorization Rule will be applied based on the value selected in this field.
-1. Select Applicable Role. This is the role on which this Authorization Rule will be applicable. As per the example, it'll be Sales User.
-1. To be more specific, you can also select Applicable To User if you wish to apply the rule to a specific Sales User, and not to all Sales Users. 
-1. Select Approving Role. This is the role that can approve forms over the Authorized value. As per our example, it is the Sales Manager.
-1. You can also select a specific Sales Manager.
-1. Save.
+1. ไปที่รายการ กฎการอนุญาต คลิก ใหม่
+1. เลือกธุรกรรมที่จะบังคับใช้กฎการอนุญาต ฟังก์ชันนี้มีให้สำหรับธุรกรรมที่จำกัดเท่านั้น
+1. ป้อน มูลค่าที่ได้รับอนุญาต ฯลฯ ขึ้นอยู่กับฟิลด์ที่คุณเลือกใน "ขึ้นอยู่กับ"
+1. เลือกตาม กฎการให้สิทธิ์จะใช้ตามค่าที่เลือกในช่องนี้
+1. เลือกบทบาทที่เกี่ยวข้อง นี่คือบทบาทที่จะบังคับใช้กฎการอนุญาตนี้ ตามตัวอย่างจะเป็น พนักงานขาย
+1. เพื่อให้มีความเฉพาะเจาะจงมากขึ้น คุณสามารถเลือกใช้ได้กับผู้ใช้ หากคุณต้องการใช้กฎกับผู้ใช้ขายรายใดรายหนึ่ง ไม่ใช่กับผู้ใช้การขายทั้งหมด
+1. เลือกการอนุมัติบทบาท นี่คือบทบาทที่สามารถอนุมัติแบบฟอร์มเหนือค่าที่ได้รับอนุญาต ตามตัวอย่างของเรา มันคือผู้จัดการฝ่ายขาย
+1. คุณยังสามารถเลือกผู้จัดการฝ่ายขายที่ต้องการได้
+1. บันทึก
 
 <img class="screenshot" alt="Authorization Rule" src="{{docs_base_url}}/assets/img/customize/auth-rule.png">
 
-If the Sales User tries submitting the Sales Order of value higher than 10,000, then he will get an error message.
+หากผู้ใช้ขายพยายามส่งใบสั่งขายที่มีมูลค่ามากกว่า 10,000 จะมีข้อความแสดงข้อผิดพลาด
 
 <img class="screenshot" alt="Authorization Rule" src="{{docs_base_url}}/assets/img/customize/customize-authorization-rule-2.png">
 
-> If you wish to restrict Sales User from submitting Sales Orders, then instead of creating Authorization Rule, you should remove submit privilege for Sales User from [Role Permission Manager](/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions).
+> หากคุณต้องการจำกัดไม่ให้ผู้ใช้ขายส่งใบสั่งขาย แทนที่จะสร้างกฎการอนุญาต คุณควรลบสิทธิ์ในการส่งสำหรับผู้ใช้ฝ่ายขายออกจาก [Role Permission Manager](/docs/user/manual/th/setting-up/users-and-permissions/role-based-permissions)
 
-### Documents on which Authorization Rule can be applied
+### เอกสารที่สามารถใช้กฎการอนุญาตได้
 
-1. Sales Order
-1. Purchase Order
-1. Quotation
-1. Delivery Note
-1. Sales Invoice
-1. Purchase Invoice
-1. Purchase Receipt
-1. Appraisal
+1. คำสั่งขาย
+1. ใบสั่งซื้อ
+1. ใบเสนอราคา
+1. ใบส่งของ
+1. ใบแจ้งหนี้การขาย
+1. ใบกำกับสินค้า
+1. ใบเสร็จการซื้อ
+1. การประเมินค่า
 
-### Fields on which Authorization Condition can be based on
+### ฟิลด์ที่เงื่อนไขการอนุญาตสามารถอ้างอิงได้
 
-1. Grand Total
-1. Average Discount
-1. Customer-wise Discount
-1. Item-wise Discount
+1. ยอดรวม
+1. ส่วนลดเฉลี่ย
+1. ส่วนลดสำหรับลูกค้า
+1. ส่วนลดตามรายการ
 
 
 

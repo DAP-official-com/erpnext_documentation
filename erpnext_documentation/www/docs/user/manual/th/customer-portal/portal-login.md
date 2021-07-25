@@ -1,8 +1,8 @@
 <!-- add-breadcrumbs -->
-# Portal Login
+# เข้าสู่ระบบพอร์ทัล
 
-To login into the customer account, the customer has to use his Email Address and
-the password sent by ERPNext; generated through the sign-up process.
+ในการเข้าสู่ระบบบัญชีลูกค้า ลูกค้าต้องใช้ Email Address และ
+รหัสผ่านที่ส่งโดย ERPNext; สร้างขึ้นผ่านขั้นตอนการลงทะเบียน
 
 <img class="screenshot" alt="Website User Signup" src="{{docs_base_url}}/assets/img/website/website-login.png">
 

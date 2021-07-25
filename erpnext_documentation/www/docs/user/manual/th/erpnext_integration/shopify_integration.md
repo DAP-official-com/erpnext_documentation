@@ -1,75 +1,75 @@
 <!-- add-breadcrumbs -->
-# Shopify Integration
+# การใช้ Shopify
 
-The Shopify Connector pulls the orders from Shopify and creates Sales Order against them in ERPNext.
+Shopify Connector ดึงคำสั่งซื้อจาก Shopify และสร้างใบสั่งขายเทียบกับคำสั่งซื้อเหล่านั้นใน ERPNext
 
-While creating the sales order if Customer or Item is missing in ERPNext the system will create new Customer/Item by pulling respective details from Shopify.
+ขณะสร้างใบสั่งขายหากลูกค้าหรือสินค้าหายไปใน ERPNext ระบบจะสร้างลูกค้า/สินค้าใหม่โดยดึงรายละเอียดที่เกี่ยวข้องจาก Shopify
 
-### How to Setup Connector?
+### วิธีการตั้งค่าตัวเชื่อมต่อ
 
-#### Create A  Private App in Shopify
+#### สร้างแอปส่วนตัวใน Shopify
 
-1. Click on Apps in menu bar
+1. คลิกที่แอพในแถบเมนู
 <img class="screenshot" alt="Menu Section" src="{{docs_base_url}}/assets/img/erpnext_integrations/app_menu.png">
 
-2. Click on **Manage private apps** to create private app
+2. คลิก **จัดการแอปส่วนตัว** เพื่อสร้างแอปส่วนตัว
 <img class="screenshot" alt="Manage Private Apps" src="{{docs_base_url}}/assets/img/erpnext_integrations/manage_private_apps.png">
 
-3. Fill up the details and create app. The each app has its own API key, Password and Shared secret
+3. กรอกรายละเอียดและสร้างแอพ แต่ละแอพมีคีย์ API รหัสผ่านและความลับที่ใช้ร่วมกัน
 <img class="screenshot" alt="App Details" src="{{docs_base_url}}/assets/img/erpnext_integrations/app_details.png">
 
 
-#### Setting Up Shopify  on ERPNext:-
-Once you have created a Private App on Shopify, setup App Credentials and other details in Shopify Settings in ERPNext.
+#### การตั้งค่า Shopify บน ERPNext:-
+เมื่อคุณสร้างแอปส่วนตัวบน Shopify แล้ว ให้ตั้งค่าข้อมูลรับรองแอปและรายละเอียดอื่นๆ ในการตั้งค่า Shopify ใน ERPNext
 
-> To access Shopify Settings, go to:
-Integrations > Shopify Settings
+> หากต้องการเข้าถึงการตั้งค่า Shopify ให้ไปที่:
+การผสานการทำงาน > การตั้งค่า Shopify
 
-Note: Shopify does not support unsecure HTTP connection. Your ERPNext site must be able to accept HTTPS requests. Access your ERPNext site using `https://` url before proceeding.
+หมายเหตุ: Shopify ไม่รองรับการเชื่อมต่อ HTTP ที่ไม่ปลอดภัย ไซต์ ERPNext ของคุณต้องสามารถยอมรับคำขอ HTTPS ได้ เข้าถึงไซต์ ERPNext ของคุณโดยใช้ `https://` url ก่อนดำเนินการต่อ
 
-1. Select App Type as Private and Fill-up API key, Password and Shared Secret from Shopify's Private App.
+1. เลือกประเภทแอปเป็นคีย์ API แบบส่วนตัวและกรอก รหัสผ่าน และข้อมูลลับที่แชร์จากแอปส่วนตัวของ Shopify
 <img class="screenshot" alt="Setup Private App Credentials" src="{{docs_base_url}}/assets/img/erpnext_integrations/app_details.png">
 
-2. Setup Customer, Company and Inventory configurations
+2. ตั้งค่าลูกค้า บริษัท และการกำหนดค่าสินค้าคงคลัง
 <img class="screenshot" alt="ERP Configurations" src="{{docs_base_url}}/assets/img/erpnext_integrations/erp_configurations.png">
 
-3. Setup Sync Configurations.
-    The system pulls Orders from Shopify and creates Sales Order in ERPNext. You can configure ERPNext system to capture payment and fulfilments against orders.
+3. ตั้งค่าการกำหนดค่าการซิงค์
+    ระบบจะดึงคำสั่งซื้อจาก Shopify และสร้างใบสั่งขายใน ERPNext คุณสามารถกำหนดค่าระบบ ERPNext เพื่อบันทึกการชำระเงินและการปฏิบัติตามคำสั่งซื้อ
 <img class="screenshot" alt="Sync Configure" src="{{docs_base_url}}/assets/img/erpnext_integrations/sync_config.png">
 
-4. Setup Tax Mapper.
-    Prepare tax and shipping charges mapper for each tax and shipping charge you apply in Shopify
+4. ตั้งค่า Tax Mapper
+    เตรียมภาษีและค่าจัดส่งสำหรับภาษีและค่าจัดส่งแต่ละรายการที่คุณสมัครใน Shopify
 <img class="screenshot" alt="Taxes and Shipping Charges" src="{{docs_base_url}}/assets/img/erpnext_integrations/tax_config.png">
 
 
-After setting up all the configurations, enable the Shopify sync and save the settings. This will register the API's to Shopify and the system will start Order sync between Shopify and ERPNext.
+หลังจากตั้งค่าการกำหนดค่าทั้งหมดแล้ว ให้เปิดใช้งานการซิงค์ Shopify และบันทึกการตั้งค่า การดำเนินการนี้จะลงทะเบียน API กับ Shopify และระบบจะเริ่มการซิงค์คำสั่งซื้อระหว่าง Shopify และ ERPNext
 
 
-### Syncing Old Orders From Shopify
+### กำลังซิงค์คำสั่งซื้อเก่าจาก Shopify
 
-Once you are done with the Shopify configuration and have enabled Shopify Syncing, you also get a provision to sync your old orders from Shopify into ERPNext. A maximum of 250 orders will be synced every hour via a background job until all the orders within the mentioned range are synced.
+เมื่อคุณกำหนดค่า Shopify เสร็จแล้วและเปิดใช้งาน การซิงค์ Shopify คุณจะได้รับข้อกำหนดในการซิงค์คำสั่งซื้อเก่าของคุณจาก Shopify ไปยัง ERPNext คำสั่งซื้อสูงสุด 250 รายการจะถูกซิงค์ทุกชั่วโมงผ่านงานพื้นหลัง จนกว่าคำสั่งซื้อทั้งหมดภายในช่วงดังกล่าวจะได้รับการซิงค์
 
-Invoices can be synced based on the following two criteria
+สามารถซิงค์ใบแจ้งหนี้ตามเกณฑ์สองข้อต่อไปนี้
 
-#### 1. Sync old orders based on date
+#### 1. ซิงค์คำสั่งซื้อเก่าตามวันที่
 
-1. Enable "Sync Missing Old Shopify Orders"
-1. Select "Date" in the "Sync Based On" field and enter the From and To dates between which the orders need to be synced
+1. เปิดใช้งาน "ซิงค์คำสั่งซื้อ Shopify เก่าที่หายไป"
+1. เลือก "วันที่" ในช่อง "ซิงค์ตาม" และป้อนวันที่จากและถึงวันที่ซึ่งต้องซิงค์คำสั่งซื้อ
 
 <img class="screenshot" alt="Sync Order By Date" src="{{docs_base_url}}/assets/img/erpnext_integrations/shopify-order-sync-date.png">
 
 
-#### 2. Sync old orders based on Shopify Order ID
+#### 2. ซิงค์คำสั่งซื้อเก่าตาม Shopify Order ID
 
-1. Enable "Sync Missing Old Shopify Orders"
-1. Select "Shopify Order ID" in the "Sync Based On" field and enter the From and To order IDs between which the orders need to be synced. The easiest way to get a Shopify order ID is from the URL of the order as shown in the image below
+1. เปิดใช้งาน "ซิงค์คำสั่งซื้อ Shopify เก่าที่หายไป"
+1. เลือก "Shopify Order ID" ในช่อง "Sync Based On" และป้อนรหัสจากและไปยังคำสั่งซื้อระหว่างนั้นต้องซิงค์คำสั่งซื้อ วิธีที่ง่ายที่สุดในการรับรหัสคำสั่งซื้อของ Shopify มาจาก URL ของคำสั่งซื้อดังที่แสดงในภาพด้านล่าง
 
 <img class="screenshot" alt="Shopify Order ID" src="{{docs_base_url}}/assets/img/erpnext_integrations/shopify-order-id.png">
 
 <img class="screenshot" alt="Sync Order ID" src="{{docs_base_url}}/assets/img/erpnext_integrations/shopify-order-sync-id.png">
 
-### Note:
-The connector won't handle Order cancellation. If you cancel any order in Shopify, then you will have to cancel the respective Sales Order and other documents in ERPNext manually.
+### หมายเหตุ:
+ตัวเชื่อมต่อจะไม่จัดการการยกเลิกคำสั่งซื้อ หากคุณยกเลิกคำสั่งซื้อใดๆ ใน Shopify คุณจะต้องยกเลิกคำสั่งซื้อที่เกี่ยวข้องและเอกสารอื่นๆ ใน ERPNext ด้วยตนเอง
 
-#### Version 11:
-We have enhanced the Shopify Integration to make it unidirectional - The Shopify Connector will pull the orders from Shopify and creates Sales Order against them in ERPNext, not the other way round.
+#### เวอร์ชัน 11:
+เราได้ปรับปรุงการผสานรวมของ Shopify เพื่อให้เป็นไปในทิศทางเดียว - ตัวเชื่อมต่อ Shopify จะดึงคำสั่งซื้อจาก Shopify และสร้างใบสั่งขายเทียบกับพวกเขาใน ERPNext ไม่ใช่ในทางกลับกัน

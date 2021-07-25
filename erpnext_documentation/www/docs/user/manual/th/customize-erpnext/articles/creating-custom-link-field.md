@@ -1,28 +1,28 @@
 <!-- add-breadcrumbs -->
-# Creating Custom Link Field
+# การสร้างฟิลด์ลิงก์ที่กำหนดเอง
 
-Link fields are the ones linked to another document type. For example, Customer field is a Link Field in Sales Order. This field is linked to the Customer master.
+ช่องลิงก์คือช่องที่ลิงก์กับเอกสารประเภทอื่น ตัวอย่างเช่น ฟิลด์ลูกค้าคือฟิลด์ลิงก์ในใบสั่งขาย ฟิลด์นี้เชื่อมโยงกับข้อมูลหลักของลูกค้า
 
-You can insert Custom Link Field by following the steps below.
+คุณสามารถแทรกฟิลด์ลิงก์ที่กำหนดเองได้โดยทำตามขั้นตอนด้านล่าง
 
-#### Step 1: Go to Customize Form
+#### ขั้นตอนที่ 1: ไปที่ปรับแต่งแบบฟอร์ม
 
-> Home > Customization > Form Customize > Customize Form
+> หน้าแรก > การปรับแต่ง > ปรับแต่งแบบฟอร์ม > ปรับแต่งแบบฟอร์ม
 
-#### Step 2: Select Form
+#### ขั้นตอนที่ 2: เลือกแบบฟอร์ม
 
-In Customize Form, select Document Type (Quotation, Sales Order, Purchase Invoice Item etc.). Once fields are updated in the accompanying table below, open a field above the one you wish to insert your Custom Field. Then click on "Insert Above" to insert the new Custom Field.
+ในแบบฟอร์มปรับแต่ง ให้เลือกประเภทเอกสาร (ใบเสนอราคา ใบสั่งขาย รายการใบกำกับสินค้า ฯลฯ) เมื่อฟิลด์ได้รับการอัปเดตในตารางที่แนบมาด้านล่างแล้ว ให้เปิดฟิลด์ที่อยู่เหนือฟิลด์ที่คุณต้องการแทรกฟิลด์ที่กำหนดเองของคุณ จากนั้นคลิกที่ "แทรกด้านบน" เพื่อแทรกฟิลด์ที่กำหนดเองใหม่
 
 <img alt="Select Docytpe" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-custom-link-field.gif">
 
-#### Step 4: Custom Field Values
+#### ขั้นตอนที่ 4: ค่าฟิลด์ที่กำหนดเอง
 
-To set field as Link, enter values as below.
+การตั้งค่าฟิลด์เป็นลิงค์ ให้ป้อนค่าดังต่อไปนี้
 
-1. Label: Desired label that user wishes to display in the form.
-1. Type: Set as 'Link'
-1. Name: Desired name for the field
-1. Options: Enter the name of the DocType to which the field is linked
+1. ป้ายกำกับ: ป้ายที่ต้องการที่ผู้ใช้ต้องการแสดงในแบบฟอร์ม
+1. ประเภท: ตั้งเป็น 'ลิงค์'
+1. ชื่อ: ชื่อที่ต้องการสำหรับฟิลด์
+1. ตัวเลือก: ป้อนชื่อของ DocType ที่ฟิลด์เชื่อมโยงอยู่
 
 <img alt="Enter Values" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-creating-custom-link-fields.png">
 

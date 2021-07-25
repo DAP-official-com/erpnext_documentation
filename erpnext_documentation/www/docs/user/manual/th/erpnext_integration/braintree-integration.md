@@ -1,31 +1,32 @@
 <!-- add-breadcrumbs -->
-# Setting up Braintree
+# การตั้งค่า Braintree
 
-To setup Braintree, go to `Explore > Integrations > Braintree Settings`
+ในการตั้งค่า Braintree ให้ไปที่ `สำรวจ > บูรณาการ > การตั้งค่า Braintree`
 
-## Setup Braintree
+## ตั้งค่า Braintree
 
-To enable Braintree in your ERPNext account, you need to configure the following parameters:
+ในการเปิดใช้งาน Braintree ในบัญชี ERPNext ของคุณ คุณต้องกำหนดค่าพารามิเตอร์ต่อไปนี้:
 
-- Merchant ID
-- Public Key
-- Private Key
+- ID ผู้ค้า
+- กุญแจสาธารณะ
+- กุญแจส่วนตัว
 
-You can setup several Braintree payment gateways if needed. The choice of payment gateway account will determine which braintree account is used for the payment.
+คุณสามารถตั้งค่าเกตเวย์การชำระเงินของ Braintree ได้หลายช่องทางหากต้องการ ทางเลือกของบัญชีเกตเวย์การชำระเงินจะเป็นตัวกำหนดว่าบัญชี Braintree ใดที่ใช้สำหรับการชำระเงิน
 
 ![Braintree Settings](/docs/assets/img/setup/integrations/braintree_account.png)
 
-On enabling service, the system will create Payment Gateway record and an Account head in chart of account with account type as Bank.
+ในการเปิดใช้งานบริการ ระบบจะสร้างบันทึก ช่องทางการชำระเงิน และส่วนหัวของบัญชีในผังบัญชีที่มีประเภทบัญชีเป็นธนาคาร
 
 ![Braintree COA](/docs/assets/img/setup/integrations/braintree_coa.png)
 
-It will also create a payment gateway account. You can change the default bank account if needed and create a template for the payment request.
+
+นอกจากนี้ยังจะสร้างบัญชีช่องทางการชำระเงิน คุณสามารถเปลี่ยนบัญชีธนาคารเริ่มต้นได้หากต้องการ และสร้างเทมเพลตสำหรับคำขอชำระเงิน
 
 ![Payment Gateway Account](/docs/assets/img/setup/integrations/payment_gateway_account_braintree.png)
 
-After configuring the Payment Gateway Account, your system is able to accept online payments through Braintree.
+หลังจากกำหนดค่าบัญชีช่องทางการชำระเงิน แล้ว ระบบของคุณสามารถยอมรับการชำระเงินออนไลน์ผ่าน Braintree ได้
 
-## Supporting transaction currencies
+## รองรับสกุลเงินการทำธุรกรรม
 
 ```
 "AED","AMD","AOA","ARS","AUD","AWG","AZN","BAM","BBD","BDT","BGN","BIF","BMD","BND","BOB",

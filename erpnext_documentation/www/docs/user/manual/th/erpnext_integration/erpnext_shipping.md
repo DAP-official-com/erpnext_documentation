@@ -1,96 +1,96 @@
 <!-- add-breadcrumbs -->
 # ERPNext Shipping
 
-**The ERPNext Shipping app helps you compare shipping rates being offered by multiple service providers, generate labels, and track your shipments' status.**
+**แอป ERPNext Shipping ช่วยให้คุณเปรียบเทียบอัตราค่าจัดส่งที่นำเสนอโดยผู้ให้บริการหลายราย สร้างป้ายกำกับ และติดตามสถานะการจัดส่งของคุณ**
 
-Integration with the following service providers is available:
+สามารถทำงานร่วมกับผู้ให้บริการดังต่อไปนี้:
 
 1. [Packlink](https://www.packlink.com/en-GB/)
-1. [LetMeShip](https://www.letmeship.com/en/)
+1. [LetMeShip](https://www.letmeship.com/th/)
 1. [SendCloud](https://www.sendcloud.com/home-new/)
 
-## 1. Setting Up
+## 1. การตั้งค่า
 
-For the app to work smoothly, you will have to generate an API key from **at least one** of the platforms listed above. Here is a guide to set them up:
+เพื่อให้แอปทำงานได้อย่างราบรื่น คุณจะต้องสร้างคีย์ API จาก **อย่างน้อยหนึ่ง** ของแพลตฟอร์มที่ระบุไว้ข้างต้น นี่คือคำแนะนำในการตั้งค่า:
 
 ### 1.1 Packlink API
 
-1. Register on [Packlink PRO](https://auth.packlink.com/en-GB/pro/register?platform=PRO&platform_country=UN).
-1. Follow [these steps](https://support-pro.packlink.com/hc/en-gb/articles/213431749-How-to-generate-an-API-key-on-PRO) to generate an **API Key**.
-1. Search for **Packlink** in the awesomebar.
-1. Add the **API Key** to the Packlink DocType, check the 'Enabled' field.
-1. Save.
+1. ลงทะเบียนบน [Packlink PRO](https://auth.packlink.com/en-GB/pro/register?platform=PRO&platform_country=UN)
+1. ปฏิบัติตาม [ขั้นตอนเหล่านี้](https://support-pro.packlink.com/hc/en-gb/articles/213431749-How-to-generate-an-API-key-on-PRO) เพื่อสร้าง * *คีย์ API**
+1. ค้นหา **Packlink** ใน Awesome bar
+1. เพิ่ม **คีย์ API** ไปยัง Packlink DocType ทำเครื่องหมายในช่อง "เปิดใช้งาน"
+1. บันทึก
 
 <img class="screenshot" alt="Packlink API" src="{{docs_base_url}}/assets/img/erpnext_integrations/packlink_api.png">
 
 ### 1.1 Sendcloud API
 
-1. Register on [Sendcloud](https://panel.sendcloud.sc/accounts/signup/).
-1. Follow [these steps](https://support.sendcloud.com/hc/en-us/articles/360024967612-Service-points-for-API-Integrations#step-1-) to generate a **Public Key** and a **Secret Key**.
-1. Search for **SendCloud** in the awesomebar.
-1. Add the **Public Key** in the 'API Key' field and the **Secret Key** in the 'API Secret' field of the SendCloud DocType.
-1. Check the **Enabled** field.
-1. Save.
+1. ลงทะเบียนบน [Sendcloud](https://panel.sendcloud.sc/accounts/signup/)
+1. ปฏิบัติตาม [ขั้นตอนเหล่านี้](https://support.sendcloud.com/hc/en-us/articles/360024967612-Service-points-for-API-Integrations#step-1-) เพื่อสร้าง **คีย์สาธารณะ ** และ **รหัสลับ**
+1. ค้นหา **SendCloud** ใน Awesome bar
+1. เพิ่ม **กุญแจสาธารณะ** ในฟิลด์ 'รหัส API' และ **รหัสลับ** ในฟิลด์ 'รหัสลับ API' ของ SendCloud DocType
+1. ตรวจสอบช่อง **เปิดใช้งาน**
+1. บันทึก
 
 <img class="screenshot" alt="Sendcloud API" src="{{docs_base_url}}/assets/img/erpnext_integrations/sendcloud_api.png">
 
 ### 1.1 LetMeShip API
 
-1. Register on [LetMeShip](https://www.letmeship.com/en/).
-1. Follow [these steps](https://www.letmeship.com/en/connect-the-shipping-interface/) to generate an **API ID** and **API Password**.
-1. Search for **LetMeShip** in the awesomebar.
-1. Add the **API ID** and **API Password** to the LetMeShip DocType. Check the **Enabled** field.
-1. Save.
+1. ลงทะเบียนบน [LetMeShip](https://www.letmeship.com/th/)
+1. ปฏิบัติตาม [ขั้นตอนเหล่านี้](https://www.letmeship.com/th/connect-the-shipping-interface/) เพื่อสร้าง **API ID** และ **รหัสผ่าน API**
+1. ค้นหา **LetMeShip** ใน Awesome bar
+1. เพิ่ม **API ID** และ **รหัสผ่าน API** ใน LetMeShip DocType ทำเครื่องหมายในช่อง **เปิดใช้งาน**
+1. บันทึก
 
 <img class="screenshot" alt="LetMeShip API" src="{{docs_base_url}}/assets/img/erpnext_integrations/letmeship_api.png">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Comparison of Shipping Rates
+### 2.1 การเปรียบเทียบอัตราค่าจัดส่ง
 
-Once a [Shipment](/docs/user/manual/en/stock/shipment) is submitted, if the app is installed, the button **Fetch Shipping Rates** will appear. On clicking, you will get a list of services along with their service providers and rates.
+เมื่อ [ส่งสินค้า](/docs/user/manual/th/stock/shipment) แล้ว หากติดตั้งแอปแล้ว ปุ่ม **ดึงข้อมูลอัตราค่าจัดส่ง** จะปรากฏขึ้น เมื่อคลิก คุณจะได้รับรายการบริการพร้อมกับผู้ให้บริการและอัตราค่าบริการ
 
 <img class="screenshot" alt="Fetch Rates" src="{{docs_base_url}}/assets/img/erpnext_integrations/fetch_rates.png">
 
-You can also add frequently used services to your **Preferred Services** using **Parcel Service Type**:
+คุณยังสามารถเพิ่มบริการที่ใช้บ่อยใน **บริการที่ต้องการ** โดยใช้ **ประเภทบริการพัสดุ**:
 
-1. Assuming the highlighted service is our frequently used service, let us add it to our **Preferred Services**
+1. สมมติว่าบริการเด่นเป็นบริการที่เราใช้งานบ่อย ให้เราเพิ่มลงใน **บริการที่ต้องการ**
 
  <img class="screenshot" alt="Highlight Service" src="{{docs_base_url}}/assets/img/erpnext_integrations/service_highlight.png">
 
-1. Go to **Parcel Service Type** > **New**. Create a new **Parcel Service**. In our case, it is 'TNT'.
-1. Add a **Parcel Service Type**. In our case, it will be 'Economy'.
-1. Add 'Economy' to the **Parcel Service Type Alias** table as well.
-1. Add a description (optional).
-1. Enable the **Show in Preferred Services List** field. Save.
+1. ไปที่ **ประเภทบริการพัสดุ** > **ใหม่** สร้าง **บริการพัสดุภัณฑ์** ใหม่ ในกรณีของเราคือ 'ทีเอ็นที'
+1. เพิ่ม **ประเภทบริการพัสดุ** ในกรณีของเรา มันจะเป็น 'เศรษฐกิจ'
+1. เพิ่ม 'Economy' ลงในตาราง **Parcel Service Type Alias** ด้วย
+1. เพิ่มคำอธิบาย (ไม่บังคับ)
+1. เปิดใช้งานช่อง **แสดงในรายการบริการที่ต้องการ** บันทึก.
 
-Now when you click on the **Fetch Shipping Rates** button, you will always see the previously highlighted service under **Preferred Services**.
+ตอนนี้เมื่อคุณคลิกที่ปุ่ม **ดึงข้อมูลอัตราค่าจัดส่ง** คุณจะเห็นบริการที่ไฮไลต์ไว้ก่อนหน้านี้เสมอภายใต้ **บริการที่ต้องการ**
 
 <img class="screenshot" alt="Preferred Service" src="{{docs_base_url}}/assets/img/erpnext_integrations/preferred_service.png">
 
-### 2.2 Creation of Shipment
+### 2.2 การสร้างการจัดส่ง
 
-After comparing rates, you can proceed with any one of the services by clicking **Select** against the appropriate service row. On clicking, a Shipment is automatically created on your service provider's platform.
+หลังจากเปรียบเทียบราคาแล้ว คุณสามารถดำเนินการกับบริการใดก็ได้โดยคลิก **เลือก** กับแถวบริการที่เหมาะสม เมื่อคลิก การจัดส่งจะถูกสร้างขึ้นโดยอัตโนมัติบนแพลตฟอร์มของผู้ให้บริการของคุณ
 
-You will notice that the **Shipment Information** section is updated automatically, based on the Shipment created.
+คุณจะสังเกตเห็นว่าส่วน **ข้อมูลการจัดส่ง** ได้รับการอัปเดตโดยอัตโนมัติตามการจัดส่งที่สร้างขึ้น
 
 <img class="screenshot" alt="Shipment Creation" src="{{docs_base_url}}/assets/img/erpnext_integrations/create_shipment.gif">
 
-You can also search for your transaction on your service provider's platform using the **Shipment ID** field.
+คุณยังสามารถค้นหาธุรกรรมของคุณบนแพลตฟอร์มของผู้ให้บริการโดยใช้ช่อง **รหัสการจัดส่ง**
 
 <img class="screenshot" alt="Packlink Shipment" src="{{docs_base_url}}/assets/img/erpnext_integrations/packlink_shipment.png">
 
-### 2.3 Printing Labels
+### 2.3 การพิมพ์ฉลาก
 
-To avail the **Print Shipping Label** button, the **Shipment ID** must be generated in the current record.
+หากต้องการใช้ปุ่ม **พิมพ์ฉลากการจัดส่ง** จะต้องสร้าง **รหัสการจัดส่ง** ในบันทึกปัจจุบัน
 
 <img class="screenshot" alt="Print Label Button" src="{{docs_base_url}}/assets/img/erpnext_integrations/print_label_button.png">
 
-You can then click on it and generate your shipping label.
+จากนั้นคุณสามารถคลิกและสร้างป้ายกำกับการจัดส่งได้
 
 <img class="screenshot" alt="Dummy Shipping Label" src="{{docs_base_url}}/assets/img/erpnext_integrations/dummy_shipping_label.png">
 
 
-You can also track your shipment's status by clicking on **View** > **Track Status**.
+คุณยังสามารถติดตามสถานะการจัดส่งของคุณได้โดยคลิกที่ **ดู** > **ติดตามสถานะ**
 
-> **Note** : The currently integrated platforms may not serve your region. Please visit the links attached against them to know more.
+> **หมายเหตุ** : แพลตฟอร์มที่ผสานรวมในปัจจุบันอาจไม่ให้บริการในภูมิภาคของคุณ โปรดไปที่ลิงก์ที่แนบมากับพวกเขาเพื่อทราบข้อมูลเพิ่มเติม

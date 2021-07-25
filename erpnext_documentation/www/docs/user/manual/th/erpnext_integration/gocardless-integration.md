@@ -1,48 +1,48 @@
 <!-- add-breadcrumbs -->
-# Setting up GoCardless
+# การตั้งค่า GoCardless
 
-To setup GoCardless, go to `Explore > Integrations > GoCardless Settings`
+ในการตั้งค่า GoCardless ให้ไปที่ `สำรวจ > บูรณาการ > การตั้งค่า GoCardless`
 
-## Setup GoCardless
+## ตั้งค่า GoCardless
 
-To enable GoCardless in your ERPNext account, you need to configure the following parameters and Access Token and optionally (but highly recommended), a Webhooks Secret key.
+ในการเปิดใช้งาน GoCardless ในบัญชี ERPNext ของคุณ คุณต้องกำหนดค่าพารามิเตอร์ต่อไปนี้และ Access Token และตัวเลือก (แต่แนะนำเป็นอย่างยิ่ง) คีย์ Webhooks Secret
 
 
-You can setup several GoCardless payment gateways if needed. The choice of payment gateway account will determine which GoCardless account is used for the payment.
+คุณสามารถตั้งค่าเกตเวย์การชำระเงิน GoCardless ได้หลายช่องทาง หากจำเป็น ทางเลือกของบัญชีเกตเวย์การชำระเงินจะเป็นตัวกำหนดว่าบัญชี GoCardless ใดที่ใช้สำหรับการชำระเงิน
 
 ![GoCardless Settings](/docs/assets/img/setup/integrations/gocardless_account.png)
 
-On enabling service, the system will create a Payment Gateway record and an Account head in chart of account with account type as Bank.
+ในการเปิดใช้งานบริการ ระบบจะสร้างบันทึก ช่องทางการชำระเงิน และส่วนหัวของบัญชีในผังบัญชีที่มีประเภทบัญชีเป็นธนาคาร
 
 ![GoCardless COA](/docs/assets/img/setup/integrations/gocardless_coa.png)
 
-It will also create a payment gateway account. You can change the default bank account if needed and create a template for the payment request.
+นอกจากนี้ยังจะสร้างบัญชีช่องทางการชำระเงิน คุณสามารถเปลี่ยนบัญชีธนาคารเริ่มต้นได้หากต้องการ และสร้างเทมเพลตสำหรับคำขอชำระเงิน
 
 ![Payment Gateway Account](/docs/assets/img/setup/integrations/payment_gateway_account_gocardless.png)
 
-After configuring the Payment Gateway Account, your system is able to accept online payments through GoCardless.
+หลังจากกำหนดค่าบัญชี Payment Gateway แล้ว ระบบของคุณสามารถยอมรับการชำระเงินออนไลน์ผ่าน GoCardless ได้
 
-## SEPA Payments Flow
+## ขั้นตอนการชำระเงิน SEPA
 
-When a new payment SEPA payment in initiated, the customer is asked to enter his IBAN (or local account number) and to validate a SEPA mandate.
+เมื่อมีการเริ่มต้นการชำระเงิน SEPA ใหม่ ลูกค้าจะถูกขอให้ป้อน IBAN (หรือหมายเลขบัญชีท้องถิ่น) และตรวจสอบความถูกต้องของคำสั่ง SEPA
 
-Upon validation of the mandate, a payment request is sent to GoCardless and processed.
+เมื่อตรวจสอบความถูกต้องของคำสั่งแล้ว คำขอชำระเงินจะถูกส่งไปยัง GoCardless และดำเนินการ
 
-If the customer has already a valid SEPA mandate, when instead of sending a payment request to the customer, the payment request is directly sent to GoCardless without the need for the customer to validate it.
-The customer will only receive a confirmation email from GoCardless informing him that a payment has been processed.
+หากลูกค้าได้รับคำสั่ง SEPA ที่ถูกต้องแล้ว แทนที่จะส่งคำขอชำระเงินให้กับลูกค้า คำขอชำระเงินจะถูกส่งไปยัง GoCardless โดยตรงโดยไม่จำเป็นต้องให้ลูกค้าตรวจสอบความถูกต้อง
+ลูกค้าจะได้รับอีเมลยืนยันจาก GoCardless เพื่อแจ้งว่าการชำระเงินได้รับการประมวลผลแล้วเท่านั้น
 
 
-## Mandate cancellation
+## การยกเลิกอาณัติ
 
-You can setup a Webhook in GoCardless to automatically disabled cancelled or expired mandates in ERPNext.
+คุณสามารถตั้งค่า Webhook ใน GoCardless เพื่อปิดใช้งานคำสั่งที่ยกเลิกหรือหมดอายุโดยอัตโนมัติใน ERPNext
 
-The Endpoint URL of your webhook should be: 
+URL ปลายทางของเว็บฮุคของคุณควรเป็น:
 
 `https://yoursite.com/api/method/erpnext.erpnext_integrations.doctype.gocardless_settings.webhooks`
 
 
-In this case do not forget to configure your Webhooks Secret Key in your GoCardless account settings in ERPNext.
+ในกรณีนี้ อย่าลืมกำหนดค่า Webhooks Secret Key ในการตั้งค่าบัญชี GoCardless ใน ERPNext
 
 
-## Supported transaction currencies
+## สกุลเงินการทำธุรกรรมที่รองรับ
 	"EUR", "DKK", "GBP", "SEK"

@@ -1,54 +1,54 @@
 <!-- add-breadcrumbs -->
-# Web Page
+# หน้าเว็บ
 
-**Static Content like your Home Page, About Us, Contact Us, Terms pages can be
-created using the Web Page.**
+**เนื้อหาคงที่เช่นหน้าแรกของคุณ, เกี่ยวกับเรา, ติดต่อเรา, หน้าเงื่อนไขสามารถ
+สร้างขึ้นโดยใช้หน้าเว็บ**
 
-To access Web Page go to:
+ในการเข้าถึงหน้าเว็บไปที่:
 
-> Home > Website > Web Site > Web Page
+> หน้าแรก > เว็บไซต์ > เว็บไซต์ > เว็บเพจ
 
-## 1. How to create a Web Page
+## 1. วิธีสร้างเว็บเพจ
 
-1. Go to the Web Page list and click on New.
-1. Enter a Title and add content in Main Section. The route will auto generated
-   but you can change it.
-1. Click on Save.
-1. The web page will be published only when **Published** is ticked.
+1. ไปที่รายการหน้าเว็บแล้วคลิกใหม่
+1. ป้อนชื่อและเพิ่มเนื้อหาในส่วนหลัก เส้นทางจะถูกสร้างขึ้นโดยอัตโนมัติ
+   แต่คุณสามารถเปลี่ยนได้
+1. คลิกที่บันทึก
+1. หน้าเว็บจะเผยแพร่ต่อเมื่อทำเครื่องหมายที่ **เผยแพร่แล้ว**
 
 ![New Web Page](/docs/assets/img/website/new-web-page.png)
-*New Web Page*
+*หน้าเว็บใหม่*
 
 View your Web Page by clicking on **See on Website** in the side bar.
 
 ![Web Page](/docs/assets/img/website/web-page.png)
-*Web Page*
+*หน้าเว็บ*
 
-### 1.1 Tips on making a good Web Page
+### 1.1 เคล็ดลับในการสร้างเว็บเพจที่ดี
 
-####  Title
+####  ชื่อ
 
-The first thing to set is the title of your page. The title has the maximum
-weight for search engines so choose a title that reflects the keywords that you
-are targeting for your audience. The route (URL) will be auto-generated from the
-title but you can change it.
+สิ่งแรกที่ต้องตั้งค่าคือชื่อหน้าของคุณ ชื่อมีสูงสุด
+น้ำหนักสำหรับเครื่องมือค้นหา ดังนั้นให้เลือกชื่อที่สะท้อนถึงคำหลักที่คุณ
+กำลังกำหนดเป้าหมายสำหรับผู้ชมของคุณ เส้นทาง (URL) จะถูกสร้างขึ้นโดยอัตโนมัติจาก
+ชื่อ แต่คุณสามารถเปลี่ยนได้
 
-#### Content
+#### เนื้อหา
 
-You can write your content in Rich Text, Markdown or HTML. If you want to make
-simple content pages, Rich Text and Markdown are great options.
+คุณสามารถเขียนเนื้อหาของคุณใน Rich Text, Markdown หรือ HTML ถ้าอยากทำ to
+หน้าเนื้อหาอย่างง่าย Rich Text และ Markdown เป็นตัวเลือกที่ยอดเยี่ยม
 
-> Learn markdown in a few minutes at [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+> เรียนรู้ markdown ในไม่กี่นาทีที่ [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 
-#### Images
+#### รูปภาพ
 
-For Rich Text Content, you can directly embed images using the editor. For
-Markdown and HTML, you must attach the images to the document first. Now get the
-URL of your image by right-clicking on your attachment and copying the address.
+สำหรับเนื้อหา Rich Text คุณสามารถฝังรูปภาพได้โดยตรงโดยใช้ตัวแก้ไข สำหรับ
+Markdown และ HTML คุณต้องแนบรูปภาพกับเอกสารก่อน ตอนนี้รับ
+URL ของรูปภาพของคุณโดยคลิกขวาที่ไฟล์แนบและคัดลอกที่อยู่
 
 ![Image Link](/docs/assets/img/website/get-image-link.png)
 
-Now, add them to your Markdown or HTML using the appropriate syntax.
+ตอนนี้ เพิ่มลงใน Markdown หรือ HTML ของคุณโดยใช้ไวยากรณ์ที่เหมาะสม
 
 ```md
 <!-- markdown -->
@@ -58,25 +58,25 @@ Now, add them to your Markdown or HTML using the appropriate syntax.
 <img src="/path/to/image-url.png" alt="Alt Text">
 ```
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Slideshow
+### 2.1 สไลด์โชว์
 
-You can also add a Slideshow to your Web Page. Refer how to create a Slideshow
-at [Homepage Slideshow](/docs/user/manual/en/website/homepage#22-homepage-slideshow)
+คุณยังสามารถเพิ่มสไลด์โชว์ลงในหน้าเว็บของคุณได้อีกด้วย ดูวิธีการสร้างสไลด์โชว์
+ที่ [โฮมเพจสไลด์โชว์](/docs/user/manual/th/website/homepage#22-homepage-slideshow)
 
-### 2.2 Scheduled Publishing
+### 2.2 การเผยแพร่ตามกำหนดการ
 
-You can schedule your Web Pages for publishing if you set Start Date and End
-Date for your Web Page. They will be set as published within the date ranges and
-will be unpublished outside the range automatically.
+คุณสามารถกำหนดเวลาเผยแพร่หน้าเว็บของคุณได้หากคุณตั้งค่าวันที่เริ่มต้นและสิ้นสุด
+วันที่สำหรับหน้าเว็บของคุณ พวกเขาจะถูกตั้งค่าตามที่เผยแพร่ภายในช่วงวันที่และ
+จะไม่ถูกเผยแพร่นอกช่วงโดยอัตโนมัติ
 
-Unpublished pages will throw an `Error 404` when they are visited.
+หน้าที่ไม่ได้เผยแพร่จะแสดง "ข้อผิดพลาด 404" เมื่อมีการเข้าชม
 
-### 2.3 Javascript and CSS
+### 2.3 Javascript และ CSS
 
-You can add a JS script to your Web Page in the **Script** section. Make sure to
-write your script inside the `frappe.ready` callback.
+คุณสามารถเพิ่มสคริปต์ JS ไปยังหน้าเว็บของคุณได้ในส่วน **สคริปต์** ให้แน่ใจว่าได้
+เขียนสคริปต์ของคุณในการเรียกกลับ `frappe.ready`
 
 ```js
 frappe.ready(() => {
@@ -84,63 +84,63 @@ frappe.ready(() => {
 });
 ```
 
-You can add CSS styling to your Web Page in the **Style** section. Inspect the
-elements to see what classes are available for styling. If you are using HTML
-Content, you can use your own classes and style them here.
+คุณสามารถเพิ่มสไตล์ CSS ให้กับหน้าเว็บของคุณได้ในส่วน **สไตล์** ตรวจสอบ
+องค์ประกอบเพื่อดูว่ามีคลาสใดบ้างสำหรับการจัดแต่งทรงผม หากคุณกำลังใช้ HTML
+เนื้อหา คุณสามารถใช้ชั้นเรียนของคุณเองและจัดรูปแบบได้ที่นี่
 
-### 2.4 Sidebar
+### 2.4 แถบด้านข้าง
 
-You can add a Website Sidebar with custom links on your Web Page. In the
-**Sidebar and Comments** section enable **Show Sidebar**. Select an existing
-Website Sidebar or create a new one.
+คุณสามารถเพิ่มแถบด้านข้างของเว็บไซต์ด้วยลิงก์ที่กำหนดเองบนหน้าเว็บของคุณได้ ใน
+**แถบด้านข้างและความคิดเห็น** เปิดใช้งาน **แสดงแถบด้านข้าง** เลือกที่มีอยู่
+แถบด้านข้างเว็บไซต์หรือสร้างใหม่
 
 ![Web Page Sidebar](/docs/assets/img/website/web-page-sidebar.png)
-*Web Page Sidebar*
+*แถบด้านข้างของหน้าเว็บ*
 
 Add links and their route in the Sidebar Items table.
 ![Website Sidebar](/docs/assets/img/website/new-website-sidebar.png)
-*Website Sidebar*
+*แถบด้านข้างของเว็บไซต์*
 
 ![Web Page with Sidebar](/docs/assets/img/website/web-page-with-sidebar.png)
-*Web Page with Sidebar*
+*หน้าเว็บที่มีแถบด้านข้าง*
 
-### 2.5 Comments
+### 2.5 ความคิดเห็น
 
-You can enable comments on your Web Page where people can leave a comment with
-their Name and Email. Enable comments from the **Sidebar and Comments** section.
+คุณสามารถเปิดใช้งานความคิดเห็นบนหน้าเว็บของคุณซึ่งผู้คนสามารถแสดงความคิดเห็นด้วย
+ชื่อและอีเมลของพวกเขา เปิดใช้งานความคิดเห็นจากส่วน **แถบด้านข้างและความคิดเห็น**
 
 ![Web Page Comments](/docs/assets/img/website/web-page-comments.gif)
-*Web Page Comments*
+*ความคิดเห็นของหน้าเว็บ*
 
-### 2.6 Header
+### 2.6 ส่วนหัว
 
-You can add a custom HTML for the header section of the page. This will override
-the title of the Web Page.
+คุณสามารถเพิ่ม HTML ที่กำหนดเองสำหรับส่วนหัวของหน้า สิ่งนี้จะแทนที่
+ชื่อของเว็บเพจ
 
 ![Web Page Header](/docs/assets/img/website/web-page-header.png)
-*Web Page Header*
+*ส่วนหัวของหน้าเว็บ*
 
 ![Web Page with Custom Header](/docs/assets/img/website/web-page-with-custom-header.png)
-*Web Page with Custom Header*
+*Wหน้าเว็บที่มีส่วนหัวที่กำหนดเอง*
 
-### 2.7 Breadcrumbs
+### 2.7 เบรดครัมบ์
 
-You can add a list of breadcrumbs on your Web Page. These will be shown on top
-before the header.
+คุณสามารถเพิ่มรายการเบรดครัมบ์บนหน้าเว็บของคุณได้ สิ่งเหล่านี้จะแสดงอยู่ด้านบน
+ก่อนส่วนหัว
 
 ![Web Page Breadcrumbs](/docs/assets/img/website/web-page-breadcrumbs.png)
-*Web Page Breadcrumbs*
+*Breadcrumbs หน้าเว็บ*
 
 ![Web Page with Breadcrumbs](/docs/assets/img/website/web-page-with-breadcrumbs.png)
-*Web Page with Breadcrumbs*
+*หน้าเว็บที่มี Breadcrumbs*
 
-### 2.8 Meta Tags
+### 2.8 เมตาแท็ก
 
-You can also add Meta Tags to your Web Page. You must add the property key and
-its value in the Meta Tag Table and it will auto-generate HTML `meta` tags on
-your Web Page.
+คุณยังสามารถเพิ่ม Meta Tags ลงในหน้าเว็บของคุณได้ คุณต้องเพิ่มรหัสคุณสมบัติและ
+ค่าของมันในตาราง Meta Tag และจะสร้างแท็ก HTML `meta` โดยอัตโนมัติบน
+หน้าเว็บของคุณ
 
 ![Web Page Meta Tags](/docs/assets/img/website/web-page-meta-tags.gif)
-*Web Page Meta Tags*
+*Meta Tags ของหน้าเว็บ*
 
 {next}

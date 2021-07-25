@@ -1,58 +1,57 @@
 <!-- add-breadcrumbs -->
-# Product Listing
+# รายการสินค้า
 
-ERPNext provides a product listing page where your customers can discover your
-products. It is enabled by default if you have published Items on your website.
+ERPNext มีหน้ารายการสินค้าที่ลูกค้าของคุณสามารถค้นพบ
+สินค้า. จะเปิดใช้งานโดยค่าเริ่มต้นหากคุณได้เผยแพร่รายการบนเว็บไซต์ของคุณ
 
-You can go to the product listing by clicking on the **Explore** button on your
-homepage or visiting the **/all-products** route. For example,
+คุณสามารถไปที่รายการสินค้าโดยคลิกที่ปุ่ม **สำรวจ** บนของคุณ
+หน้าแรกหรือเยี่ยมชมเส้นทาง **/all-products** ตัวอย่างเช่น,
 `https://apple.erpnext.com/all-products`
 
 ![Product Listing](/docs/assets/img/website/product-listing.png)
-*Product Listing*
+*รายการสินค้า*
 
-## 1. Products Settings
+## 1. การตั้งค่าสินค้า
 
-The Product Listing can be configured from Products Settings. Go to  **Website > Portal > Products Settings**.
+รายการสินค้าสามารถกำหนดค่าได้จากการตั้งค่าสินค้า ไปที่ **เว็บไซต์ > พอร์ทัล > การตั้งค่าสินค้า**
 
 ![Products Settings](/docs/assets/img/website/products-settings.png)
-*Products Settings*
+*การตั้งค่าสินค้า*
 
-Here are some of the configuration options:
+นี่คือตัวเลือกการกำหนดค่าบางส่วน:
 
-1. **Home Page is Products**: If checked, the default home page will be set to
-   Product Listing.
-1. **Products Per Page**: Define how many products to show per page on the
-   Product Listing.
-1. **Hide Variants**: Only show Item Templates on the Product Listing. You can
-   hide variants only when Attribute Filters are disabled.
+1. **โฮมเพจคือสินค้า**: หากเลือก โฮมเพจเริ่มต้นจะถูกตั้งค่าเป็น
+   รายการสินค้า.
+1. **สินค้าต่อหน้า**: กำหนดจำนวนสินค้าที่จะแสดงต่อหน้าบน
+   รายการสินค้า.
+1. **ซ่อนตัวเลือกสินค้า**: แสดงเฉพาะเทมเพลตรายการในรายการสินค้า คุณสามารถ
+   ซ่อนตัวแปรเฉพาะเมื่อปิดใช้งานคุณลักษณะตัวกรอง
 
-### 1.1 Filters
+### 1.1 ตัวกรอง
 
-You can also add filters to your listing. There are two types of filters:
+คุณยังสามารถเพิ่มตัวกรองในรายชื่อของคุณได้ ตัวกรองมีสองประเภท:
 
-- Field Filters
-- Attribute Filters
+- ตัวกรองภาคสนาม
+- ตัวกรองคุณสมบัติ
 
-#### Field Filters
+#### ตัวกรองฟิลด์
 
-Enable the Field Filters checkbox in Products Settings and add the fields based
-on which you want to have the filters.
+เปิดใช้งานช่องทำเครื่องหมายตัวกรองฟิลด์ในการตั้งค่าสินค้าและเพิ่มฟิลด์ตาม
+ที่คุณต้องการมีตัวกรอง
 
 ![Field Filters](/docs/assets/img/website/field-filters.png)
 *Field Filters*
 
-#### Attribute Filters
+#### คุณลักษณะตัวกรอง
 
-Enable the Attribute Filters checkbox in Products Settings and add the
-attributes based on which you want to have the filters.
+เปิดใช้งานช่องทำเครื่องหมายคุณลักษณะตัวกรองในการตั้งค่าสินค้าและเพิ่มคุณลักษณะตามที่คุณต้องการให้มีตัวกรอง
 
 ![Attribute Filters](/docs/assets/img/website/attribute-filters.png)
-*Attribute Filters*
+*คุณลักษณะตัวกรอง*
 
-Go to your Product Listing, it should show filters on the sidebar.
+ไปที่รายการสินค้าของคุณ ซึ่งจะแสดงตัวกรองบนแถบด้านข้าง
 
 ![Product Listing with Filters](/docs/assets/img/website/product-listing-with-filters.png)
-*Product Listing with Filters*
+*รายการสินค้าพร้อมฟิลเตอร์*
 
 {next}
