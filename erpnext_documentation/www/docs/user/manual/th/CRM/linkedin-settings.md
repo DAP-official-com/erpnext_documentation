@@ -8,49 +8,49 @@ metatags:
  keywords: Social Media Post Scheduling, CRM, frappe, erpnext new features, erp, open source erp, free erp, security
 ---
 
-# LinkedIn Settings
+# การตั้งค่า LinkedIn
 
-LinkedIn related settings like OAuth can be configured here. ERPNext needs access to the API through which the post is shared and achieved using OAuth 2.0 Authentication Protocol.
+การตั้งค่าที่เกี่ยวข้องกับ LinkedIn เช่น OAuth สามารถกำหนดค่าได้ที่นี่ ERPNext ต้องการสิทธิ์เข้าถึง API ซึ่งโพสต์นั้นถูกแชร์และบรรลุโดยใช้ OAuth 2.0 Authentication Protocol
 
-## 1. How to set up LinkedIn Developer App
+## 1. วิธีตั้งค่าแอพ LinkedIn Developer
 
-You must have LinkedIn Developer App for your company. ERPNext interacts with this App for sharing the post.
+คุณต้องมีแอพ LinkedIn Developer สำหรับบริษัทของคุณ ERPNext โต้ตอบกับแอพนี้เพื่อแชร์โพสต์
 
-### 1.1 Create LinkedIn Developer App
+### 1.1 สร้างแอปนักพัฒนา LinkedIn
 
-Create App by link `https://www.linkedin.com/developers` fill all the details and verify it. And that App has the following products.
+สร้างแอพตามลิงค์ `https://www.linkedin.com/developers` กรอกรายละเอียดทั้งหมดและตรวจสอบ และแอพนั้นมีผลิตภัณฑ์ดังต่อไปนี้
 
-1. Share on LinkedIn
-2. Sign In with LinkedIn
-3. Marketing Developer Platform
+1. แบ่งปันบน LinkedIn
+2. ลงชื่อเข้าใช้ด้วย LinkedIn
+3. แพลตฟอร์มนักพัฒนาการตลาด
 ![LinkedIn Developer App Product](/docs/assets/img/crm/linkedin-dev-products.png)
 
-### 1.2 Configure Redirect URLs:
+### 1.2 กำหนดค่า URL เปลี่ยนเส้นทาง:
 
-1. Goto your LinkedIn Developers App then **Auth** tab.
-2. In **OAuth 2.0 settings** section add **Redirect URLs**:
-`https://{yoursite}/api/method/erpnext.crm.doctype.linkedin_settings.linkedin_settings.callback`
-3. Click **Update** to make changes. 
+1. ไปที่แอพ LinkedIn Developers จากนั้นไปที่แท็บ **รับรองความถูกต้อง**
+2. ในส่วน **การตั้งค่า OAuth 2.0** เพิ่ม **URL เปลี่ยนเส้นทาง**:
+`https://{ไซต์ของคุณ}/api/method/erpnext.crm.doctype.linkedin_settings.linkedin_settings.callback`
+3. คลิก **อัปเดต** เพื่อทำการเปลี่ยนแปลง 
 ![LinkedIn Redirect URL](/docs/assets/img/crm/linkedin-redirect-urls.png)
 
-## 2. How to set up LinkedIn Settings
+## 2 วิธีการตั้งค่า LinkedIn
 
-To access LinkedIn Settings, go to:
-> Home > CRM > Settings > LinkedIn Settings
+ในการเข้าถึงการตั้งค่า LinkedIn ไปที่:
+> หน้าแรก > CRM > การตั้งค่า > การตั้งค่า LinkedIn
 
 ![LinkedIn Settings](/docs/assets/img/crm/linkedin-settings.png)
 
-### Company ID
-You get the Company ID from your LinkedIn Company URL.
+### รหัสบริษัท
+คุณได้รับรหัสบริษัทจาก URL บริษัท LinkedIn ของคุณ
 ![LinkedIn Company ID](/docs/assets/img/crm/linkedin-company-id.png)
 
-### Consumer Key and Consumer Secret
-You get **Consumer Key** and **Consumer Secret** from your LinkedIn Developer account go to:
-> `https://www.linkedin.com/developers/` > My Apps > `{Your App}` > Auth
+### รหัสผู้บริโภคและความลับของผู้บริโภค
+คุณได้รับ **รหัสผู้บริโภค** และ **ความลับผู้บริโภค** จากบัญชีนักพัฒนา LinkedIn ของคุณ ไปที่:
+> `https://www.linkedin.com/developers/` > แอปของฉัน > `{แอปของคุณ}` > การตรวจสอบสิทธิ์
 
 ![LinkedIn Client](/docs/assets/img/crm/linkedin-client.png)
 
-Once you save the doc by filling **Company ID**, **Consumer Key**, and **Consumer Secret** it will redirect to LinkedIn's sign-in page by providing valid LinkedIn credentials and clicking Allow, the member approves your application's request to access their member data and interact with LinkedIn on their behalf. 
+เมื่อคุณบันทึกเอกสารโดยกรอก **รหัสบริษัท**, **รหัสผู้บริโภค** และ **ความลับของผู้บริโภค** เอกสารนั้นจะเปลี่ยนเส้นทางไปยังหน้าลงชื่อเข้าใช้ของ LinkedIn โดยให้ข้อมูลประจำตัว LinkedIn ที่ถูกต้องและคลิกอนุญาต สมาชิกจะอนุมัติ คำขอของแอปพลิเคชันในการเข้าถึงข้อมูลสมาชิกและโต้ตอบกับ LinkedIn ในนามของพวกเขา
 ![Authorize LinkedIn](/docs/assets/img/crm/authorize-linkedin.jpg)
 
 {next}

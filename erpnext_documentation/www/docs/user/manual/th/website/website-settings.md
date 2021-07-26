@@ -1,165 +1,163 @@
 <!-- add-breadcrumbs -->
-# Website Settings
+# การตั้งค่าเว็บไซต์
 
-Website related settings like landing page and website wide theme can be
-configured here.
+การตั้งค่าที่เกี่ยวข้องกับเว็บไซต์ เช่น หน้า Landing Page และธีมทั่วทั้งเว็บไซต์ สามารถทำได้
+กำหนดค่าที่นี่
 
-To access Website Settings, go to:
-> Home > Website > Setup > Website Settings
+ในการเข้าถึงการตั้งค่าเว็บไซต์ ไปที่:
+> หน้าแรก > เว็บไซต์ > ตั้งค่า > การตั้งค่าเว็บไซต์
 
-## 1. Landing Page
+## 1. หน้า Landing Page
 
-Configure the default landing page of your website by setting the **Home Page**
-field to the route of that page. You can put any route here including standard
-routes like `home`, `about`, `contact`, `login`, `all-products`, and `blog`.
+กำหนดค่าหน้า Landing Page เริ่มต้นของเว็บไซต์ของคุณโดยการตั้งค่า **หน้าแรก**
+ฟิลด์ไปยังเส้นทางของหน้านั้น คุณสามารถใส่เส้นทางใดก็ได้ที่นี่รวมทั้งมาตรฐาน
+เส้นทางเช่น "หน้าหลัก", "เกี่ยวกับ", "ติดต่อ", "เข้าสู่ระบบ", "ผลิตภัณฑ์ทั้งหมด" และ "บล็อก"
 
-You can also set a [Web Page](/docs/user/manual/en/website/web-page) as the
-landing page.
+คุณยังสามารถตั้งค่า [เว็บเพจ](/docs/user/manual/th/website/web-page) เป็น
+หน้า Landing Page
 
-If you want to use the ERPNext [Homepage](/docs/user/manual/en/website/homepage),
-you must set it as `home`.
+หากคุณต้องการใช้ ERPNext [โฮมเพจ](/docs/user/manual/th/website/homepage)
+คุณต้องตั้งเป็น "หน้าหลัก"
 
 ![Website Settings - Landing Page](/docs/assets/img/website/website-settings-landing-page.png)
-*Website Settings - Landing Page*
+*การตั้งค่าเว็บไซต์ - หน้า Landing Page*
 
-You can also set the **Title Prefix** here. It will be appended to the browser title
-on every page. You can put your company name here.
+คุณยังสามารถตั้งค่า **คำนำหน้าชื่อเรื่อง** ได้ที่นี่ มันจะถูกผนวกเข้ากับชื่อเบราว์เซอร์
+ในทุกหน้า คุณสามารถใส่ชื่อบริษัทของคุณที่นี่
 
-## 2. Website Theme
+## 2. ธีมเว็บไซต์
 
-Create a personalized theme for your Website and set it here. Learn more about
-configuring Website Theme [here](/docs/user/manual/en/website/website-theme).
+สร้างธีมส่วนบุคคลสำหรับเว็บไซต์ของคุณและตั้งค่าที่นี่ ดูข้อมูลเพิ่มเติมเกี่ยวกับ
+การกำหนดค่าธีมเว็บไซต์ [ที่นี่](/docs/user/manual/th/website/website-theme)
 
-## 3. Brand
+## 3. แบรนด์
 
-### 3.1 Brand Logo
+### 3.1 โลโก้แบรนด์
 
-You can set the brand logo for your website in this section. Upload the Brand
-Image first and then click on "Set Banner from Image" button. It will generate a
-Banner HTML with your uploaded logo.
+คุณสามารถกำหนดโลโก้แบรนด์สำหรับเว็บไซต์ของคุณได้ในส่วนนี้ อัพโหลดแบรนด์
+รูปภาพก่อนจากนั้นคลิกที่ปุ่ม "ตั้งค่าแบนเนอร์จากรูปภาพ" มันจะสร้าง
+แบนเนอร์ HTML พร้อมโลโก้ที่คุณอัปโหลด
 
 ![Website Settings - Banner Image](/docs/assets/img/website/website-settings-banner-image.png)
-*Website Settings - Banner Image*
+*การตั้งค่าเว็บไซต์ - ภาพแบนเนอร์*
 
 ### 3.2 Favicon
 
-You can also set the favicon of your website in this section. It appears on the
-left side of the browser tab.
+คุณยังสามารถตั้งค่า favicon ของเว็บไซต์ของคุณได้ในส่วนนี้ ปรากฏบน
+ด้านซ้ายของแท็บเบราว์เซอร์
 
 ![Website Settings - Favicon](/docs/assets/img/website/website-settings-favicon.png)
-*Website Settings - Favicon*
+*การตั้งค่าเว็บไซต์  - Favicon*
 
-View your website by clicking on **View Website** in the action bar on top right.
+ดูเว็บไซต์ของคุณโดยคลิกที่ **ดูเว็บไซต์** ในแถบการทำงานด้านบนขวา
 
 ![Website with Brand and Favicon](/docs/assets/img/website/website-brand-and-favicon.png)
-*Website with Brand and Favicon*
+*เว็บไซต์ที่มีแบรนด์และ Favicon*
 
-## 4. Top Bar
+## 4. Top Bar (แถบด้านบน)
 
-You can customize the menu items in the navbar of your website from the **Top Bar**
-section.
+คุณสามารถปรับแต่งรายการเมนูในแถบนำทางของเว็บไซต์ของคุณได้จาก **แถบด้านบน**
 
 ![Website Setting - Top Bar](/docs/assets/img/website/website-settings-top-bar.png)
-*Website Setting - Top Bar*
+*การตั้งค่าเว็บไซต์ - แถบด้านบน*
 
 ![Website Navbar Items](/docs/assets/img/website/website-navbar-items.png)
-*Website Navbar Items*
+*รายการแถบนำทางของเว็บไซต์ (Nav Bar)*
 
-## 5. Banner
 
-You can add a persistent banner to your website which will be shown above the
-navbar on all web pages. You can write any valid Bootstrap 4 markup here.
+## 5. Banner (แบนเนอร์)
+
+คุณสามารถเพิ่มแบนเนอร์ถาวรในเว็บไซต์ของคุณซึ่งจะแสดงอยู่เหนือ
+แถบนำทางบนหน้าเว็บทั้งหมด คุณสามารถเขียนมาร์กอัป Bootstrap 4 ที่ถูกต้องได้ที่นี่
 
 ![Website Settings - Banner](/docs/assets/img/website/website-settings-banner.png)
-*Website Settings - Banner*
+*การตั้งค่าเว็บไซต์ - แบนเนอร์*
 
 ![Website Banner](/docs/assets/img/website/website-banner.png)
-*Website Banner*
+*แบนเนอร์เว็บไซต์*
 
-## 6. Footer
+## 6. ส่วนท้าย
 
-You can add address information and categorized links to your footer in the
-**Footer** section.
+คุณสามารถเพิ่มข้อมูลที่อยู่และจัดหมวดหมู่ลิงก์ไปยังส่วนท้ายของคุณได้ใน
+**ส่วนท้าย**
 
 ![Website Settings - Footer Address](/docs/assets/img/website/website-settings-footer-address.png)
-*Website Settings - Footer Address*
+*การตั้งค่าเว็บไซต์ - ที่อยู่ส่วนท้าย*
 
 ![Website Settings - Footer Links](/docs/assets/img/website/website-settings-footer-links.png)
-*Website Settings - Footer Links*
+*การตั้งค่าเว็บไซต์ - ลิงก์ส่วนท้าย*
 
 ![Website Footer](/docs/assets/img/website/website-footer.png)
-*Website Footer*
+*ส่วนท้ายของเว็บไซต์*
 
-## 7. Google Integrations
+## 7. การใช้ Google
 
-### 7.1 Google Indexing
+### 7.1 การจัดทำดัชนีของ Google (Google Indexing)
 
-#### How to set up automated Google Indexing
+#### วิธีตั้งค่าการจัดทำดัชนีอัตโนมัติของ Google
 
-In order to allow ERPNext to request Google crawlers to index a web page, you need to authorize ERPNext to send a request whenever the user requests the data. Google Drive Integration is set up with the following steps:
+ในการอนุญาตให้ ERPNext ขอโปรแกรมรวบรวมข้อมูลของ Google จัดทำดัชนีหน้าเว็บ คุณต้องให้สิทธิ์ ERPNext เพื่อส่งคำขอทุกครั้งที่ผู้ใช้ร้องขอข้อมูล การรวม Google Drive ถูกตั้งค่าด้วยขั้นตอนต่อไปนี้:
 
-- Create OAuth 2.0 Credentials via [Google Settings](/docs/user/manual/en/erpnext_integration/google_settings)
+- สร้างข้อมูลรับรอง OAuth 2.0 ผ่าน [การตั้งค่า Google](/docs/user/manual/th/erpnext_integration/google_settings)
 
-- Enable indexing in the Website Settings
+- เปิดใช้งานการจัดทำดัชนีในการตั้งค่าเว็บไซต์
 
-- Now click on **Authorize API Indexing Access** to authorize ERPNext to send a publish request.
+- ตอนนี้คลิกที่ **อนุญาตการเข้าถึงการจัดทำดัชนี API** เพื่ออนุญาต ERPNext เพื่อส่งคำขอเผยแพร่
 
-- Once Authorized, an indexing request is automatically sent on creation/update/trash of any new blog post or web pages created via the user.
+- เมื่อได้รับอนุญาตแล้ว คำขอสร้างดัชนีจะถูกส่งโดยอัตโนมัติในการสร้าง/อัปเดต/ถังขยะของโพสต์บล็อกใหม่หรือหน้าเว็บที่สร้างผ่านผู้ใช้
 
 ![Google Integrations](/docs/assets/img/website/website-settings-integrations.png)
-*Google Integrations*
+*การใช้ Google*
 
 ### 7.2 Google Analytics
 
-You can enable Google Analytics on your website. Just get your [Google Analytics
-ID](https://support.google.com/analytics/answer/1008080?hl=en) from your Google
-Console and set it here.
+คุณสามารถเปิดใช้งาน Google Analytics บนเว็บไซต์ของคุณได้ เพียงรับ [Google Analytics ของคุณ ID](https://support.google.com/analytics/answer/1008080?hl=th) จาก Google ของคุณและตั้งค่าที่นี่
 
-By default, Google Analytics will collect the full IP address of your website visitors.
-By checking "Google Analytics Anonymize IP", ERPNext will instruct Google Analytics to
-anonymize the IP address before it is sent to Google servers. You can find out more about
-the effect of this setting in [Google's documentation](https://support.google.com/analytics/answer/2763052).
+โดยค่าเริ่มต้น Google Analytics จะรวบรวมที่อยู่ IP แบบเต็มของผู้เยี่ยมชมเว็บไซต์ของคุณ
+โดยการตรวจสอบ "Google Analytics Anonymize IP" ERPNext จะสั่งให้ Google Analytics ดำเนินการ
+ปิดบังที่อยู่ IP ก่อนที่จะถูกส่งไปยังเซิร์ฟเวอร์ของ Google คุณสามารถหาข้อมูลเพิ่มเติมเกี่ยวกับ
+ผลกระทบของการตั้งค่านี้ใน [เอกสารของ Google](https://support.google.com/analytics/answer/2763052)
 
-## 8. HTML Header
+## 8. HTML ส่วนหัว
 
-You can use this section to set meta tags across all of your web pages. A common
-use case is to add Google site verification tags.
+คุณสามารถใช้ส่วนนี้เพื่อตั้งค่าเมตาแท็กในหน้าเว็บทั้งหมดของคุณ สามัญ
+กรณีใช้งานคือการเพิ่มแท็กการยืนยันไซต์ของ Google
 
 ![Website Settings - Header](/docs/assets/img/website/website-settings-header.png)
-*Website Settings - Header*
+*การตั้งค่าเว็บไซต์ - ส่วนหัว*
 
-## 9. Robots
+## 9. หุ่นยนต์
 
-You can define `robots.txt` rules in this section. This information is used by
-web crawlers to decide which pages to index and which to skip.
+คุณสามารถกำหนดกฎ `robots.txt` ได้ในส่วนนี้ ข้อมูลนี้ถูกใช้โดย
+โปรแกรมรวบรวมข้อมูลเว็บเพื่อตัดสินใจว่าจะจัดทำดัชนีหน้าใดและจะข้ามหน้าใด
 
 ![Website Settings - Robots](/docs/assets/img/website/website-settings-robots-txt.png)
-*Website Settings - Robots*
+*การตั้งค่าเว็บไซต์ - หุ่นยนต์*
 
-> Learn more about `robots.txt` at [Moz - Robots.txt](https://moz.com/learn/seo/robotstxt)
+> เรียนรู้เพิ่มเติมเกี่ยวกับ `robots.txt` ที่ [Moz - Robots.txt](https://moz.com/learn/seo/robotstxt)
 
-## 10. Redirects
+## 10. (Redirects) เปลี่ยนเส้นทาง
 
-You can define a mapping of route redirects here. The mappings in the following
-screenshot makes sure that if a user visits `https://apple.erpnext.com/iphone`,
-they will be redirected to `https://apple.erpnext.com/products/iphone`.
+คุณสามารถกำหนดแผนที่ของการเปลี่ยนเส้นทางเส้นทางได้ที่นี่ การแมปต่อไปนี้
+สกรีนช็อตทำให้แน่ใจว่าหากผู้ใช้เยี่ยมชม `https://apple.erpnext.com/iphone`
+พวกเขาจะถูกเปลี่ยนเส้นทางไปที่ `https://apple.erpnext.com/products/iphone`
 
-ERPNext will raise a `301 Permanent Redirect` response for these routes.
+ERPNext จะเพิ่มการตอบสนอง "301 Permanent Redirect" สำหรับเส้นทางเหล่านี้
 
 ![Website Settings - Routes Redirects](/docs/assets/img/website/website-settings-route-redirects.png)
-*Website Settings - Routes Redirects*
+*การตั้งค่าเว็บไซต์ - การเปลี่ยนเส้นทาง*
 
-> If you are migrating your existing website to ERPNext based website,
-> you can map your old routes to new ones here and these redirects will be
-> picked up by Google and will help you maintain your SEO rankings.
+> หากคุณกำลังย้ายเว็บไซต์ที่มีอยู่ของคุณไปยังเว็บไซต์ที่ใช้ ERPNext
+> คุณสามารถจับคู่เส้นทางเก่าของคุณกับเส้นทางใหม่ได้ที่นี่ และการเปลี่ยนเส้นทางเหล่านี้จะเป็น
+> เลือกโดย Google และจะช่วยคุณรักษาอันดับ SEO ของคุณ
 
-## 11. Chat
+## 11. แชท
 
-You can enable website visitor chat on your website in the Chat section. The
-chat widget will be shown between **From** time and **To** time. You can also
-set **Chat Operators** (Users) who will get notified when a visitor sends a
-message.
+คุณสามารถเปิดใช้งานการแชทของผู้เยี่ยมชมเว็บไซต์บนเว็บไซต์ของคุณได้ในส่วนการแชท NS
+วิดเจ็ตแชทจะแสดงระหว่างเวลา **จาก** และ **ถึง** นอกจากนี้คุณยังสามารถ
+ตั้งค่า **Chat Operators** (ผู้ใช้) ที่จะได้รับการแจ้งเตือนเมื่อมีผู้เยี่ยมชมส่ง
+ข้อความ.
 
-> Chat is an experimental feature.
+> แชทเป็นคุณลักษณะทดลอง
 
 {next}

@@ -1,12 +1,12 @@
 <!-- add-breadcrumbs -->
-#Procurement Tracker Report
+#รายงานตัวติดตามการจัดซื้อ
 
-This report lists all the transactions related to goods that are currently in the process of procurement.
+รายงานนี้แสดงรายการธุรกรรมทั้งหมดที่เกี่ยวข้องกับสินค้าที่อยู่ในขั้นตอนการจัดซื้อ
 
-To access this report, go to:
+ในการเข้าถึงรายงานนี้ ไปที่:
 
-> Home > Buying > Procurement Tracker
+> หน้าแรก > การซื้อ > ติดตามการจัดซื้อ
 
-The procurement tracker allows a user to monitor the process of obtaining goods. It provides information about the user requesting the purchase, the warehouse it was requested from, along with the quantity of the requested item. It also provides a comparison between the estimated cost of the goods at the time of requisition versus actual cost of obtaining them along with the date at which the goods where obtained. This ensures reviewing, ordering, delivery, and billing management for goods involved in the procurement process.
+ตัวติดตามการจัดซื้อช่วยให้ผู้ใช้สามารถตรวจสอบกระบวนการรับสินค้าได้ ให้ข้อมูลเกี่ยวกับผู้ใช้ที่ขอซื้อ คลังสินค้าที่ร้องขอ พร้อมกับปริมาณของรายการที่ร้องขอ นอกจากนี้ยังให้การเปรียบเทียบระหว่างต้นทุนโดยประมาณของสินค้า ณ เวลาของใบขอเสนอซื้อกับต้นทุนจริงในการได้รับพร้อมกับวันที่ที่สินค้าได้รับ สิ่งนี้ทำให้มั่นใจได้ถึงการตรวจสอบ การสั่งซื้อ การส่งมอบ และการจัดการการเรียกเก็บเงินสำหรับสินค้าที่เกี่ยวข้องกับกระบวนการจัดซื้อจัดจ้าง
 
 <img class="screenshot" alt="Procurement Tracker" src="{{docs_base_url}}/assets/img/buying/procurement_tracker.png">

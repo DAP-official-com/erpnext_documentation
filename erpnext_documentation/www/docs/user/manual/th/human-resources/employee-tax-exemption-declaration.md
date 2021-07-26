@@ -1,61 +1,61 @@
 <!-- add-breadcrumbs -->
-# Employee Tax Exemption Declaration
+# ใบแจ้งการยกเว้นภาษีพนักงาน
 
-**Tax exemption is the monetary exemption of income, property or transactions from taxes that would otherwise be levied on an Employee.**
+**การยกเว้นภาษีคือการยกเว้นรายได้ ทรัพย์สิน หรือธุรกรรมจากภาษีที่อาจเรียกเก็บจากพนักงาน**
 
-At the beginning of a Payroll Period, employees can declare the amount of exemption they will be claiming from their taxable salary. ERPNext allows you to specify tax exemption category/sub-category, tax exemption amount and other related information in the Employee Tax Exemption Declaration form.
+ในช่วงเริ่มต้นของรอบระยะเวลาบัญชีเงินเดือน พนักงานสามารถแจ้งจำนวนการยกเว้นที่พวกเขาจะได้รับจากเงินเดือนที่ต้องเสียภาษี ERPNext อนุญาตให้คุณระบุประเภทการยกเว้นภาษี/ประเภทย่อย จำนวนการยกเว้นภาษี และข้อมูลที่เกี่ยวข้องอื่นๆ ในแบบฟอร์มใบแจ้งการยกเว้นภาษีพนักงาน
  
 
-To access Employee Tax Exemption Declaration, go to:
+ในการเข้าถึงใบแจ้งการยกเว้นภาษีพนักงาน ไปที่:
 
-> Home > Human resources > Employee Tax and Benefits > Employee Tax Exemption Declaration 
-
-
-## 1. Prerequisites
-
-Before creating an Employee Tax Exemption Declaration, it is advisable you create the following:
-
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Employee Tax Exemption Category](#31-employee-tax-exemption-category)
-* [Employee Tax Exemption Sub Category](#32-employee-tax-exemption-category)
+> หน้าแรก > ทรัพยากรบุคคล > ภาษีและสวัสดิการพนักงาน > แจ้งยกเว้นภาษีพนักงาน
 
 
-## 2. How to create Employee Tax Exemption Declaration
+## 1. ข้อกำหนดเบื้องต้น
 
-To create a new Employee Tax Exemption Declaration:
+ก่อนสร้างใบแจ้งการยกเว้นภาษีพนักงาน ขอแนะนำให้คุณสร้างสิ่งต่อไปนี้:
 
-1. Go to: Employee Tax Exemption Declaration > New.
-1. Select the Exemption Sub Category and Exemption Category.
-1. Enter the Maximum Exemption Amount and Declared Amount.
-1. Save and Submit.
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [หมวดหมู่การยกเว้นภาษีพนักงาน](#31-employee-tax-exemption-category)
+* [หมวดย่อยการยกเว้นภาษีของพนักงาน](#32-employee-tax-exemption-category)
+
+
+## 2. วิธีสร้างใบแจ้งการยกเว้นภาษีพนักงาน
+
+ในการสร้างใบแจ้งการยกเว้นภาษีพนักงานใหม่:
+
+1. ไปที่: การยกเว้นภาษีพนักงาน > ใหม่
+1. เลือกหมวดย่อยการยกเว้นและหมวดการยกเว้น
+1. ป้อนจำนวนเงินยกเว้นสูงสุดและจำนวนเงินที่แจ้ง
+1. บันทึกและส่ง
 
     <img class="screenshot" alt="Employee Tax Exemption Declaration" src="{{docs_base_url}}/assets/img/human-resources/employee-tax-exemption-declaration.png">
 
-The Total Exemption Amount will be exempted from annual taxable earnings of the employee while calculating the tax deductions in Payroll.
+จำนวนเงินที่ได้รับยกเว้นทั้งหมดจะได้รับการยกเว้นจากรายได้ที่ต้องเสียภาษีประจำปีของพนักงานในขณะที่คำนวณการหักภาษีในบัญชีเงินเดือน
 
-> **Note:** Employees can only submit one Employee Tax Exemption Declaration for a Payroll Period.
+> **หมายเหตุ:** พนักงานสามารถส่งใบแจ้งการยกเว้นภาษีของพนักงานได้เพียงฉบับเดียวเท่านั้นสำหรับระยะเวลาการจ่ายเงินเดือน
 
-## 3. Features
+## 3. คุณสมบัติ
 
-###3.1 Employee Tax Exemption Category
+###3.1 ประเภทการยกเว้นภาษีพนักงาน
 
-Exemptions from taxable salary are usually restricted to spendings on particular categories decided by the Government or regulatory agencies. ERPNext allows you to configure various categories which are allowed to be exempted. Examples of these (for India) could be, 80G, 80C, B0CC etc.
+การยกเว้นจากเงินเดือนที่ต้องเสียภาษีมักจะจำกัดเฉพาะการใช้จ่ายในหมวดหมู่เฉพาะที่ตัดสินใจโดยรัฐบาลหรือหน่วยงานกำกับดูแล ERPNext ช่วยให้คุณกำหนดค่าหมวดหมู่ต่างๆ ที่อนุญาตให้ยกเว้นได้ ตัวอย่างเหล่านี้ (สำหรับอินเดีย) อาจเป็น 80G, 80C, B0CC เป็นต้น
 
-You can configure Employee Tax Exemption Category by going to, **Employee Tax and Benefits > Employee Tax Exemption Category**
+คุณสามารถกำหนดค่าประเภทการยกเว้นภาษีของพนักงานได้โดยไปที่ **ภาษีและสวัสดิการของพนักงาน > หมวดหมู่การยกเว้นภาษีพนักงาน**
 
  <img class="screenshot" alt="Employee Tax Exemption Category" src="{{docs_base_url}}/assets/img/human-resources/employee-tax-exemption-sub-category1.png">
 
 
-### 3.2 Employee Tax Exemption Sub-Category
+### 3.2 หมวดหมู่ย่อยยกเว้นภาษีพนักงาน
 
-Under each category, there could be many heads for which the exemptions are allowed. For example, in India, sub categories under 80C could be Life Insurance Premium
+ภายใต้แต่ละประเภท อาจมีหลายหัวที่อนุญาตให้ยกเว้นได้ ตัวอย่างเช่น ในอินเดีย หมวดหมู่ย่อยภายใต้ 80C อาจเป็นประกันชีวิตแบบพรีเมียม
 
-You can configure Employee Tax Exemption Category by going to, **Employee Tax and Benefits > Employee Tax Exemption Sub-Category**
+คุณสามารถกำหนดค่าประเภทการยกเว้นภาษีพนักงานได้โดยไปที่ **ภาษีและสวัสดิการของพนักงาน > หมวดหมู่ย่อยยกเว้นภาษีพนักงาน**
 
  <img class="screenshot" alt="Employee Tax Exemption Category" src="{{docs_base_url}}/assets/img/human-resources/employee-tax-exemption-category1.png">
 
 
-### 3.3 HRA Exemption (Regional - India)
+<!--### 3.3 HRA Exemption (Regional - India)
 
 For the current fiscal year, in India, House Rent Allowance (HRA) exemption from taxable earnings is the minimum of:
 
@@ -72,13 +72,13 @@ Once the declaration is submitted, you can submit the proof of your tax exemptio
 
 <img class="screenshot" alt="Employee Tax Exemption Declaration" src="{{docs_base_url}}/assets/img/human-resources/hra-exemption.png">
 
-> Note: HRA component needs to be configured in Company master under HRA Settings sections for the HRA exemption to work.
+> Note: HRA component needs to be configured in Company master under HRA Settings sections for the HRA exemption to work-->
 
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Employee Tax Exemption Proof Submission](/docs/user/manual/en/human-resources/employee-tax-exemption-proof-submission)
-1. [Employee Benefit Application](/docs/user/manual/en/human-resources/employee-benefit-application)
-1. [Employee Benefit Claim](/docs/user/manual/en/human-resources/employee-benefit-claim)
+1. [การยื่นหลักฐานการยกเว้นภาษีของพนักงาน](/docs/user/manual/th/human-resources/employee-tax-exemption-proof-submission)
+1. [ใบสมัครสวัสดิการพนักงาน](/docs/user/manual/th/human-resources/employee-benefit-application)
+1. [ผลประโยชน์พนักงาน](/docs/user/manual/th/human-resources/employee-benefit-claim)
 
 {next}

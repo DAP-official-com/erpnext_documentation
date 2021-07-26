@@ -1,58 +1,57 @@
 <!-- add-breadcrumbs -->
-# Opening Balance in Accounts
+# เปิดยอดคงเหลือในบัญชี
 
-**The opening balance is the balance that is brought forward at the beginning of an accounting period from the end of a previous accounting period or when starting out.**
+**ยอดยกมาคือยอดดุลที่ยกมาเมื่อเริ่มต้นรอบระยะเวลาบัญชีจากสิ้นรอบระยะเวลาบัญชีก่อนหน้าหรือเมื่อเริ่มต้น**
 
-This also applies when starting a new Company and would like your offline balances to be updated in ERPNext.
+สิ่งนี้ยังมีผลบังคับใช้เมื่อเริ่มต้นบริษัทใหม่และต้องการให้ยอดคงเหลือออฟไลน์ของคุณได้รับการอัปเดตใน ERPNext
 
-## 1. Introduction
+## 1. บทนำ
 
-If you are a new company, you will have minimal opening balances to be imported. However, if you are migrating from a legacy accounting system like Tally or a Fox Pro based software you will have considerable data to be imported as opening balance.
+หากคุณเป็นบริษัทใหม่ คุณจะมียอดดุลยกมาขั้นต่ำที่จะนำเข้า อย่างไรก็ตาม หากคุณกำลังย้ายจากระบบบัญชีแบบเดิม เช่น Tally หรือซอฟต์แวร์ที่ใช้ Fox Pro คุณจะต้องนำเข้าข้อมูลจำนวนมากเป็นยอดดุลยกมา
 
-We recommend that you start using ERPNext for accounting from a new financial year, but you could start midway too. To set up your accounts, you will need the following for the “day” you start using accounting in ERPNext:
+เราขอแนะนำให้คุณเริ่มใช้ ERPNext สำหรับการบัญชีจากปีการเงินใหม่ แต่คุณสามารถเริ่มกลางคันได้เช่นกัน ในการตั้งค่าบัญชีของคุณ คุณจะต้องมีสิ่งต่อไปนี้สำหรับ "วัน" ที่คุณเริ่มใช้บัญชีใน ERPNext:
 
-### Assets
-1. Stock assets (stock in hand).
-1. Fixed assets like furnitures, computers, etc.
-1. Accounts Receivables (AR) i.e. unpaid invoices which you have sent to your Customers.
-1. Current assets like bank balances, cash in hand, deposits, etc.
+### ทรัพย์สิน
+1. สินทรัพย์หุ้น (หุ้นในมือ)
+1. สินทรัพย์ถาวร เช่น เฟอร์นิเจอร์ คอมพิวเตอร์ ฯลฯ
+1. บัญชีลูกหนี้ (AR) คือใบแจ้งหนี้ที่ยังไม่ได้ชำระซึ่งคุณได้ส่งให้กับลูกค้าของคุณ
+1. สินทรัพย์หมุนเวียน เช่น ยอดคงเหลือในธนาคาร เงินสดในมือ เงินฝาก ฯลฯ
 
-### Liabilities
+### หนี้สิน
 
-1. Capital accounts like your shareholder’s (or owner’s) capital
-1. Current liabilities like loans, salary payables etc
-1. Accounts Payables(AP) i.e. unpaid invoices which your suppliers have sent you
+1. บัญชีทุนเช่นทุนของผู้ถือหุ้น (หรือเจ้าของ) ของคุณ
+1. หนี้สินหมุนเวียน เช่น เงินกู้ เงินเดือนเจ้าหนี้ ฯลฯ
+1. บัญชีเจ้าหนี้ (AP) ได้แก่ ใบแจ้งหนี้ที่ค้างชำระซึ่งซัพพลายเออร์ของคุณส่งให้คุณ
 
+หากคุณเคยใช้ซอฟต์แวร์บัญชีอื่นมาก่อน คุณควร **ปิด** งบการเงินในซอฟต์แวร์นั้นก่อน ยอดคงเหลือปิดบัญชีควรได้รับการอัปเดตเป็นยอดดุลยกมาใน ERPNext ก่อนเริ่มอัปเดตยอดเปิด ตรวจสอบให้แน่ใจว่า [ผังบัญชี](/docs/user/manual/en/accounts/chart-of-accounts) ของคุณมีบัญชีที่จำเป็นทั้งหมด
 
-If you were using another accounting software before, you should **close** financial statements in that software first. The closing balance of the accounts should be updated as an opening balance in the ERPNext. Before starting to update opening balance, ensure that your [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts) has all the Accounts required.
+สามารถสร้างรายการเปิดได้โดยใช้เครื่องมือสร้างใบแจ้งหนี้การเปิดใน ERPNext
 
-Opening entries can be created using the Opening Invoice Creation Tool in ERPNext.
+> รายการเปิดสำหรับบัญชีงบดุลเท่านั้นไม่ใช่สำหรับบัญชีกำไรขาดทุน
 
-> Opening entry is only for Balance Sheet accounts and not for Profit and Loss Accounts.
+## 2. ยอดยกมาของสินทรัพย์
 
-## 2. Opening Balance of Assets
+2.1 [สินทรัพย์ถาวร](/docs/user/manual/en/accounts/opening-balance/fixed_assets)
 
-2.1 [Fixed Assets](/docs/user/manual/en/accounts/opening-balance/fixed_assets)
+2.2 [ทรัพย์สินสินค้า](/docs/user/manual/en/stock/opening-stock)
 
-2.2 [Stock Assets](/docs/user/manual/en/stock/opening-stock)
+2.3 [ลูกหนี้การค้า](/docs/user/manual/en/accounts/opening-balance/accounts_receivable)
 
-2.3 [Accounts Receivable](/docs/user/manual/en/accounts/opening-balance/accounts_receivable)
+2.4 [สินทรัพย์หมุนเวียน](/docs/user/manual/en/accounts/opening-balance/current_assets)
 
-2.4 [Current Assets](/docs/user/manual/en/accounts/opening-balance/current_assets)
+## 3. ยอดหนี้คงค้าง
 
-## 3. Opening Balance of Liabilities
+3.1 [บัญชีทุน](/docs/user/manual/en/accounts/opening-balance/capital_accounts)
 
-3.1 [Capital Accounts](/docs/user/manual/en/accounts/opening-balance/capital_accounts)
+3.2 [หนี้สินหมุนเวียน](/docs/user/manual/en/accounts/opening-balance/current_liabilities)
 
-3.2 [Current Liabilities](/docs/user/manual/en/accounts/opening-balance/current_liabilities)
+3.3 [เจ้าหนี้การค้า](/docs/user/manual/en/accounts/opening-balance/accounts_payable)
 
-3.3 [Accounts Payable](/docs/user/manual/en/accounts/opening-balance/accounts_payable)
+## 4. ตรวจสอบยอดเงินคงเหลือ
 
-## 4. Verify the Opening Balance
+เมื่อนำเข้าสินทรัพย์และหนี้สินทั้งหมดแล้ว ยอดดุลของบัญชีแยกประเภท **เปิดชั่วคราว** ควรเป็นศูนย์
 
-Once all assets and liabilities have been imported, the balance of **Temporary Opening** ledger should be zero.
-
-## 5. Video
+## 5. วิดีโอ
 <div>
   <div class='embed-container'>
     <iframe src='https://www.youtube.com/embed//U5wPIvEn-0c' frameborder='0' allowfullscreen>
@@ -60,10 +59,10 @@ Once all assets and liabilities have been imported, the balance of **Temporary O
   </div>
 </div>
 
-### 6. Related Topics
-1. [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts)
-1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
-1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
-1. [Payment Reconciliation](/docs/user/manual/en/accounts/payment-reconciliation)
+### 6. หัวข้อที่เกี่ยวข้อง
+1. [ผังบัญชี](/docs/user/manual/en/accounts/chart-of-accounts)
+1. [รายการบันทึก](/docs/user/manual/en/accounts/journal-entry)
+1. [รายการชำระเงิน](/docs/user/manual/en/accounts/payment-entry)
+1. [การกระทบยอดการชำระเงิน](/docs/user/manual/en/accounts/payment-reconciliation)
 
 {next}

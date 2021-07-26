@@ -1,25 +1,25 @@
 <!-- add-breadcrumbs -->
-# Manage Foreign Exchange Difference
+# จัดการส่วนต่างของอัตราแลกเปลี่ยน
 
-In ERPNext, you can create transactions in the foriegn currency as well. When creating transaction in the foreign currency, system updates current exchanage rate with respect to customer/supplier's currency and base currency on your Company. Since Exchange Rate is always flucuating, on might receive payment from the client on exchange rate different from one mentioned in the Sales/Purchase Invoice. Following is the intruction on how to manage different amount avail in payment entry due to exchange rate change.
+ใน ERPNext คุณสามารถสร้างธุรกรรมในสกุลเงินต่างประเทศได้เช่นกัน เมื่อสร้างธุรกรรมในสกุลเงินต่างประเทศ ระบบจะอัปเดตอัตราแลกเปลี่ยนปัจจุบันตามสกุลเงินของลูกค้า/ซัพพลายเออร์และสกุลเงินหลักในบริษัทของคุณ เนื่องจากอัตราแลกเปลี่ยนมีความผันผวนอยู่เสมอ ขึ้นอยู่กับสกุลเงิยของบริษัท อาจได้รับการชำระเงินจากลูกค้าในอัตราแลกเปลี่ยนที่แตกต่างจากที่ระบุไว้ในใบแจ้งหนี้การขาย/การซื้อ ต่อไปนี้เป็นคำแนะนำเกี่ยวกับวิธีการจัดการจำนวนเงินที่แตกต่างกันในรายการการชำระเงินเนื่องจากการเปลี่ยนแปลงของอัตราแลกเปลี่ยน
 
-#### Add Expense Account
+#### เพิ่มบัญชีค่าใช้จ่าย
 
-To mange currency difference, create Account **Foreign Exchange Gain/Loss**. This account is generally created on the Expense side of P&L statement. However, you can place it under another group as per your accounting requirement.
+หากต้องการจัดการส่วนต่างของสกุลเงิน ให้สร้างบัญชี **กำไร/ขาดทุนจากอัตราแลกเปลี่ยน** โดยทั่วไปบัญชีนี้จะถูกสร้างขึ้นที่ด้านค่าใช้จ่ายของใบแจ้งยอดกำไรขาดทุน อย่างไรก็ตาม คุณสามารถวางไว้ในกลุ่มอื่นได้ตามความต้องการทางบัญชีของคุณ
 
 <img alt="Accounts Frozen Date" class="screenshot" src="{{docs_base_url}}/assets/img/articles/exchange-rate-difference-1.png">
 
-#### Book Payment Entry
+#### หนังสือรายการชำระเงิน
 
-In the payment voucher, update invoice amount against Customer or Supplier account, then update actual payment amount against Bank/Cash account. Add new row and select Foreign Exchange Gain/Loss to update currency difference amount.
+ในใบสำคัญการชำระเงิน อัปเดตจำนวนเงินในใบแจ้งหนี้กับบัญชีลูกค้าหรือซัพพลายเออร์ จากนั้นอัปเดตจำนวนเงินที่ชำระจริงกับบัญชีธนาคาร/บัญชีเงินสด เพิ่มแถวใหม่และเลือกกำไร/ขาดทุนจากอัตราแลกเปลี่ยนเพื่ออัปเดตจำนวนส่วนต่างของสกุลเงิน
 
-In the below scenario, Sales Invoice was made EUR, at the exchange rate of 1.090. As per this rate, Sales Invoice amount in USD (base currency) was $1000.
+ในสถานการณ์ด้านล่าง ใบกำกับสินค้าทำเป็น EUR ที่อัตราแลกเปลี่ยน 1.090 ตามอัตรานี้ จำนวนเงินในใบแจ้งหนี้การขายเป็น USD (สกุลเงินหลัก) คือ $1000
 
-One receipt of payment, exchange rate changed. As per the new exchange rate, payment received in the base currency was $1080. This means gain of $80 due to change in exchange rate. Following is how Foreign Exchange Gain will be booked in this scenerio.
+ใบเสร็จการชำระเงินหนึ่ง อัตราแลกเปลี่ยนมีการเปลี่ยนแปลง ตามอัตราแลกเปลี่ยนใหม่ การชำระเงินที่ได้รับในสกุลเงินหลักคือ 1080 ดอลลาร์ ซึ่งหมายความว่าจะได้รับ $80 เนื่องจากการเปลี่ยนแปลงของอัตราแลกเปลี่ยน ต่อไปนี้เป็นวิธีการจองกำไรจากอัตราแลกเปลี่ยนในสถานการณ์นี้
 
 <img alt="Accounts Frozen Date" class="screenshot" src="{{docs_base_url}}/assets/img/articles/exchange-rate-difference-2.gif">
 
-In case you incur loss due to change foriegn exchnage rate, then different amount about be updated in the debit of Foreign Exchange Gain/Loss account. Also you can add another row to update another expenses like bank charges, remittance charges etc.
+ในกรณีที่คุณประสบความสูญเสียเนื่องจากอัตราแลกเปลี่ยนอัตราแลกเปลี่ยนเงินตราต่างประเทศ จำนวนเงินที่แตกต่างกันจะได้รับการอัปเดตในการเดบิตของบัญชีกำไร/ขาดทุนจากอัตราแลกเปลี่ยน นอกจากนี้ คุณสามารถเพิ่มแถวอื่นเพื่ออัปเดตค่าใช้จ่ายอื่นๆ เช่น ค่าธรรมเนียมธนาคาร ค่าธรรมเนียมการโอนเงิน เป็นต้น
 
 <!-- markdown -->
 

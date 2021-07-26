@@ -1,81 +1,79 @@
 <!-- add-breadcrumbs -->
-# Quality Inspection
+# การตรวจสอบคุณภาพ
 
-In ERPNext, you can mark your incoming or outgoing products for Quality
-Inspection.
+ใน ERPNext คุณสามารถทำเครื่องหมายผลิตภัณฑ์ขาเข้าหรือขาออกสำหรับการตรวจสอบคุณภาพ
 
-To access this feature go to:
-> Home > Stock > Tools > Quality Inspection
+หากต้องการเข้าถึงคุณลักษณะนี้ให้ไปที่:
+> หน้าหลัก > สต็อก > เครื่องมือ > การตรวจสอบคุณภาพ
 
-## 1. Prerequisites
-Before creating and using a Quality Inspection, it is advised that you do the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้การตรวจสอบคุณภาพ ขอแนะนำให้ทำสิ่งต่อไปนี้ก่อน:
 
-* **Create an [Item](/docs/user/manual/en/stock/item)**.
-* **Enable Quality Inspection Criteria in the Item master**. On enabling either checkboxes, **submission** of a stock delivery/receipt document will be allowed only after a Quality Inspection is done against it:
+* **สร้าง [รายการ](/docs/user/manual/th/stock/item)**
+* **เปิดใช้งานเกณฑ์การตรวจสอบคุณภาพในหลักรายการ** ในการเปิดใช้งานช่องทำเครื่องหมายอย่างใดอย่างหนึ่ง **การส่ง** ของเอกสารการจัดส่ง/ใบเสร็จรับเงินจะได้รับอนุญาตหลังจากทำการตรวจสอบคุณภาพแล้วเท่านั้น:
     ![Enable Quality Inspection](/docs/assets/img/stock/quality-inspection-pre-requisite.png)
-* (Optional) **Create a Quality Inspection Template**. You can add inspection parameters and acceptance criteria in the template, which can be easily fetched into any Quality Inspection. After saving the template, you can set this template in the Item Master (as shown above).
+* (ไม่บังคับ) **สร้างเทมเพลตการตรวจสอบคุณภาพ** คุณสามารถเพิ่มพารามิเตอร์การตรวจสอบและเกณฑ์การยอมรับในเทมเพลต ซึ่งสามารถดึงเข้าสู่การตรวจสอบคุณภาพได้อย่างง่ายดาย หลังจากบันทึกเทมเพลตแล้ว คุณสามารถตั้งค่าเทมเพลตนี้ใน สินค้าหลัก(ดังที่แสดงด้านบน).
     ![Quality Inspection Template](/docs/assets/img/stock/quality-inspection-template.png)
 
-## 2. How to create a new Quality Inspection
+## 2. วิธีสร้างการตรวจสอบคุณภาพใหม่
 
-1. From a **Draft** Purchase Receipt/Delivery Note, go to the Item table's Quality Inspection field and click on Create a New Quality Inspection. You can also create a Quality Inspection for Job Card in order to monitor the quality of in-process items. In this case, you can create a Quality Inspection for the Production Item in Job Card.
-1. Select the inspection type whether Incoming (Purchase), Outgoing (Sales), or In Process (Manufacturing).
-1. Select the Reference Document Type whether Purchase Receipt, Purchase Invoice, Delivery Note, Sales Invoice, Stock Entry, or Job Card.
-1. Select the Item and set the sample size which will be inspected. Note that only Items having Inspection Criteria enabled in the Item master, will be fetched.
-1. The Quality Inspection Template set in the Item master will be fetched.
-1. You can change who it's inspected by and also add who it's verified by.
-1. Any additional Remarks about the Inspection can be added.
-1. Save. Set the Status. Submit.
-
+1. จากใบเสร็จการซื้อ/ใบส่งของ **ฉบับร่าง** ให้ไปที่ช่องการตรวจสอบคุณภาพของตารางรายการและคลิกสร้างการตรวจสอบคุณภาพใหม่ คุณยังสามารถสร้างการตรวจสอบคุณภาพสำหรับบัตรงานเพื่อตรวจสอบคุณภาพของรายการระหว่างทำ ในกรณีนี้ คุณสามารถสร้างการตรวจสอบคุณภาพสำหรับรายการการผลิตในบัตรงาน
+1. เลือกประเภทการตรวจสอบ ไม่ว่าจะเป็น ขาเข้า (ซื้อ) ขาออก (การขาย) หรือ อยู่ระหว่างดำเนินการ (การผลิต)
+1. เลือกประเภทเอกสารอ้างอิง ไม่ว่าจะเป็น ใบเสร็จการจัดซื้อ ใบกำกับสินค้า ใบส่งสินค้า ใบกำกับสินค้า ใบกำกับสินค้า รายการสินค้า หรือบัตรงาน
+1. เลือกรายการและกำหนดขนาดตัวอย่างที่จะตรวจสอบ โปรดทราบว่าจะมีการดึงข้อมูลเฉพาะรายการที่เปิดใช้งานเกณฑ์การตรวจสอบในหลักรายการ
+1. เทมเพลตการตรวจสอบคุณภาพที่ตั้งค่าไว้ในหลักรายการจะถูกดึงมา
+1. คุณสามารถเปลี่ยนผู้ถูกตรวจสอบและเพิ่มว่าใครเป็นผู้ตรวจสอบได้
+1. ข้อสังเกตเพิ่มเติมเกี่ยวกับการตรวจสอบสามารถเพิ่มเติมได้
+1. บันทึก ตั้งค่าสถานะ แล้วส่ง
 <img class="screenshot" alt="Quality Inspection" src="{{docs_base_url}}/assets/img/stock/quality-inspection.png">
 
-## 3. Features
+## 3. คุณสมบัติ
 
-A single Quality Inspection consists of many Quality Checks (Parameters) within it. Each of these checks could be [Numeric](#31-numeric-quality-checks), [Non-numeric](#32-non-numeric-value-based-quality-checks) or [Formula Based](#33-formula-based-quality-checks).
+การตรวจสอบคุณภาพครั้งเดียวประกอบด้วยการตรวจสอบคุณภาพ (พารามิเตอร์) จำนวนมากอยู่ภายใน การตรวจสอบแต่ละรายการอาจเป็น [ตัวเลข](#31-numeric-quality-checks), [ไม่ใช่ตัวเลข](#32-non-numeric-value-based-quality-checks) หรือ [ตามสูตร](#33- การตรวจสอบคุณภาพตามสูตร)
 
-### 3.1 Numeric Quality Checks
-Numeric Quality Checks include all checks that require number-based readings and acceptance criteria.
+### 3.1 การตรวจสอบคุณภาพด้วยตัวเลข
+การตรวจสอบคุณภาพที่เป็นตัวเลขรวมถึงการตรวจสอบทั้งหมดที่ต้องใช้การอ่านตามตัวเลขและเกณฑ์การยอมรับ
 
-E.g. checking if a reading is in a certain range.
+เช่น. ตรวจสอบว่าการอ่านอยู่ในช่วงที่กำหนดหรือไม่
 
-By default the checks are numeric. There are two fields: **Minimum Value** and **Maximum Value**, to define a range that **each** reading must be in. These fields can be set in the Quality Inspection Template once and be simply fetched into the Quality Inspection.
+โดยค่าเริ่มต้น เช็คจะเป็นตัวเลข มีสองฟิลด์: **ค่าต่ำสุด** และ **ค่าสูงสุด** เพื่อกำหนดช่วงที่ต้องอ่าน **แต่ละ** ค่า ฟิลด์เหล่านี้สามารถตั้งค่าในเทมเพลตการตรวจสอบคุณภาพเพียงครั้งเดียวและดึงข้อมูลได้ง่ายๆ การตรวจสอบคุณภาพ
 
 <img class="screenshot" alt="Numeric Quality Check" src="{{docs_base_url}}/assets/img/stock/quality-inspection-numeric-reading.png">
 
-If any of the readings entered are not within this range, the status on the row will be set to 'Rejected' automatically on Save.
+หากการอ่านใดๆ ที่ป้อนไม่อยู่ในช่วงนี้ สถานะในแถวจะถูกตั้งค่าเป็น 'ปฏิเสธ' โดยอัตโนมัติในการบันทึก
 
-### 3.2 Non-numeric (Value-Based) Quality Checks
-Non-numeric Quality Checks include checks that require alphabetical values or those that do not require any mathematical calculations.
+### 3.2 การตรวจสอบคุณภาพที่ไม่ใช่ตัวเลข (ตามมูลค่า)
+การตรวจสอบคุณภาพที่ไม่ใช่ตัวเลขรวมถึงการตรวจสอบที่ต้องใช้ค่าตามตัวอักษรหรือการตรวจสอบที่ไม่ต้องการการคำนวณทางคณิตศาสตร์ใดๆ
 
-E.g. checking if the color is white in a color quality check, Yes/No values for certain parameters, etc.
+เช่น. ตรวจสอบว่าสีเป็นสีขาวในการตรวจสอบคุณภาพสีหรือไม่ ค่าใช่/ไม่ใช่สำหรับพารามิเตอร์บางตัว ฯลฯ
 
-For Non-numeric checks, enable the 'Non-numeric' checkbox. You will notice the field **Acceptance Criteria Value** and the section **Value-Based Inspection** are visible.
+สำหรับการตรวจสอบที่ไม่ใช่ตัวเลข ให้เปิดใช้งานช่องกาเครื่องหมาย 'ไม่ใช่ตัวเลข' คุณจะสังเกตเห็นช่อง **ค่าเกณฑ์การยอมรับ** และส่วน **การตรวจสอบตามมูลค่า** จะปรากฏให้เห็น
 
-Enter the field Reading Value. The Acceptance Criteria Value can be set in the Quality Inspection Template once and then be fetched into the Quality Inspection.
+ป้อนฟิลด์ค่าการอ่าน ค่าเกณฑ์การยอมรับสามารถตั้งค่าได้ในเทมเพลตการตรวจสอบคุณภาพหนึ่งครั้ง จากนั้นจึงดึงข้อมูลเข้าสู่การตรวจสอบคุณภาพ
 
 <img class="screenshot" alt="Non-numeric Quality Check" src="{{docs_base_url}}/assets/img/stock/quality-inspection-non-numeric-reading.png">
 
-If the Reading Value does not match the Acceptance Criteria Value, the status on the row will be set to 'Rejected' automatically on Save.
+หากค่าการอ่านไม่ตรงกับค่าเกณฑ์การยอมรับ สถานะในแถวจะถูกตั้งค่าเป็น 'ปฏิเสธ' โดยอัตโนมัติในการบันทึก
 
-### 3.3 Formula-Based Quality Checks
-Formula-Based Quality Checks are useful for more complex scenarios where just specifying a range or an acceptance value is not enough.
+### 3.3 การตรวจสอบคุณภาพตามสูตร
+การตรวจสอบคุณภาพตามสูตรมีประโยชน์สำหรับสถานการณ์ที่ซับซ้อนมากขึ้น ซึ่งการระบุช่วงหรือค่าการยอมรับไม่เพียงพอ
 
-E.g. checking if the grade of a material is A/B/C, checking if the mean of some readings is within a certain range, etc.
+เช่น. ตรวจสอบว่าเกรดของวัสดุเป็น A/B/C หรือไม่ ตรวจสอบว่าค่าเฉลี่ยของค่าที่อ่านได้อยู่ในช่วงที่กำหนดหรือไม่ เป็นต้น
 
-Formula-Based Quality Checks are applicable to Numeric and Non-numeric Quality Checks.
+การตรวจสอบคุณภาพตามสูตรใช้ได้กับการตรวจสอบคุณภาพที่เป็นตัวเลขและไม่ใช่ตัวเลข
 
-Enable the 'Formula Based Criteria' checkbox to perform a Formula-Based Quality Check. You will then notice a field called **Acceptance Criteria Formula** where you can specify a formula that determines whether a certain check is Accepted or Rejected.
-This formula can be set in the Quality Inspection Template once and then be fetched into the Quality Inspection.
+เปิดใช้งานช่องกาเครื่องหมาย 'เกณฑ์ตามสูตร' เพื่อทำการตรวจสอบคุณภาพตามสูตร จากนั้น คุณจะสังเกตเห็นฟิลด์ที่เรียกว่า **สูตรเกณฑ์การยอมรับ** ซึ่งคุณสามารถระบุสูตรที่กำหนดว่าจะยอมรับหรือปฏิเสธการตรวจสอบบางรายการ
+สูตรนี้สามารถตั้งค่าได้ในเทมเพลตการตรวจสอบคุณภาพ 1 ครั้ง จากนั้นจึงนำเข้าสู่การตรวจสอบคุณภาพ
 
 <img class="screenshot" alt="Acceptance Criteria Formula" src="{{docs_base_url}}/assets/img/stock/acceptance-criteria-formula.png">
 
-This formula depends on the many Reading fields in the Readings table.
+สูตรนี้ขึ้นอยู่กับฟิลด์การอ่านจำนวนมากในตารางการอ่าน
 
-For Numeric readings, `reading_1`, `reading_2` and so on are accepted in the formula.
+สำหรับการอ่านตัวเลข `reading_1`, `reading_2` และอื่นๆ จะได้รับการยอมรับในสูตร
 
-For Non-numeric readings, only `reading_value` is accepted in the formula.
+สำหรับการอ่านที่ไม่ใช่ตัวเลข จะยอมรับเฉพาะ "ค่าการอ่าน" ในสูตร
 
-Here are some examples of formulas:
+นี่คือตัวอย่างบางส่วนของสูตร:
 ```py
 # Numeric
 (reading_1 + reading_2) < 10 # sum of both readings is less than 10
@@ -88,31 +86,31 @@ mean < 15  # mean of non empty numeric readings is less than 15
 reading_value in ("A", "B", "C") # Reading Value is either A / B / C
 reading_value != "Red" # Reading Value is not equal to Red
 ```
-Update the readings and Save. The Status field in the Readings table rows is set automatically based on the formula for acceptance.
+อัปเดตการอ่านและบันทึก ฟิลด์สถานะในแถวของตารางการอ่านจะถูกตั้งค่าโดยอัตโนมัติตามสูตรสำหรับการยอมรับ
 
-### 3.3 Manual Inspection
+### 3.3 การตรวจสอบด้วยตนเอง
 
-So far, all the Quality Checks have automatic acceptance/rejection on Save. In the real world, there could be cases where a check is rejected but yet will be accepted because there is some tolerance.
+จนถึงตอนนี้ การตรวจสอบคุณภาพทั้งหมดมีการยอมรับ/ปฏิเสธโดยอัตโนมัติในการบันทึก ในโลกแห่งความเป็นจริง อาจมีกรณีที่เช็คถูกปฏิเสธแต่ยังจะได้รับการยอมรับเพราะมีความอดทนอยู่บ้าง
 
-Such cases will require the user to determine the row-level status. To avoid any system interference in such checks, enable the 'Manual Inspection' checkbox. You can now set the status manually and it will be untouched on Save.
+กรณีดังกล่าวจะกำหนดให้ผู้ใช้กำหนดสถานะระดับแถว เพื่อหลีกเลี่ยงการแทรกแซงของระบบในการตรวจสอบดังกล่าว ให้เปิดใช้งานช่องกาเครื่องหมาย 'การตรวจสอบด้วยตนเอง' ขณะนี้คุณสามารถตั้งค่าสถานะได้ด้วยตนเองและจะไม่มีการแตะต้องในบันทึก
 
 <img class="screenshot" alt="Manual Inspection" src="{{docs_base_url}}/assets/img/stock/quality-inspection-manual-reading.png">
 
-Here Reading 1 is outside the defined range, this check would be rejected. But, since it is not very far from 0.153 we accept it manually.
+ที่นี่ การอ่าน 1 อยู่นอกช่วงที่กำหนด การตรวจสอบนี้จะถูกปฏิเสธ แต่เนื่องจากอยู่ไม่ไกลจาก 0.153 เราจึงยอมรับด้วยตนเอง
 
 
-The status for the entire Quality Inspection can then be decided by the user.
+ผู้ใช้สามารถตัดสินใจสถานะของการตรวจสอบคุณภาพทั้งหมดได้
 
-## 4. Video
+## 4. วีดีโอ
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/WmtcF3Y40Fs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-### 4. Related Topics
-1. [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
-1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
-1. [Job Card](/docs/user/manual/en/accounts/job-card)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [ใบเสร็จการซื้อ](/docs/user/manual/th/stock/purchase-receipt)
+1. [ใบส่งของ](/docs/user/manual/th/stock/delivery-note)
+1. [รายการสต็อค](/docs/user/manual/th/stock/stock-entry)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)
+1. [บัตรงาน](/docs/user/manual/th/accounts/job-card)

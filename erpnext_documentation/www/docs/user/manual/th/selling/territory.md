@@ -1,40 +1,40 @@
 <!-- add-breadcrumbs -->
-# Territory
+#เขตการขาย
 
-**A Territory is a geographical region you do business in.**
+**เขตการขายคือพื้นที่ทางภูมิศาสตร์ที่คุณทำธุรกิจอยู่**
 
-In ERPNext, a Territory is used to classify Customers, Addresses, in accounting report, and to allocated sales targets.
+ใน ERPNext เขตการขายใช้เพื่อจัดประเภทลูกค้า ที่อยู่ ในรายงานการบัญชี และเพื่อจัดสรรเป้าหมายการขาย
 
-To access the Territory list, go to:
-> Home > Selling > Settings > Territory
+ในการเข้าถึงรายการเขตการขาย ไปที่:
+> หน้าแรก > การขาย > การตั้งค่า > เขตการขาย
 
-## 1. How to create a Territory
-1. Go to the Territory list, click on New.
-1. Tick 'Group Node' if there'll be sub-territories under this Territory. For example, France is a group Territory and Paris is a sub-territory.
-1. Save.
+## 1. วิธีสร้างเขตการขาย
+1. ไปที่รายการเขตการขาย คลิกที่ ใหม่
+1. เลือก 'โหนดกลุ่ม' หากจะมีพื้นที่ย่อยภายใต้เขตการขายนี้ ตัวอย่างเช่น ฝรั่งเศสเป็นกลุ่มเขตการขาย และปารีสเป็นเขตย่อย
+1. บันทึก
 
     ![Territory List](/docs/assets/img/selling/territory-list.png)
 
-You can add multiple sub-territories under a parent territory. On saving, a territory can be selected in transactions and reports.
+คุณสามารถเพิ่มเขตการขายย่อยได้หลายรายการภายใต้เขตการขายหลัก ในการบันทึก คุณสามารถเลือกเขตการขายในธุรกรรมและรายงานได้
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Assigning a Territory manager
-You can assign a Territory Manager who looks after the Sales of of this region. This isa
+### 2.1 การมอบหมายผู้จัดการเขตการขาย
+คุณสามารถกำหนด ตัวจัดการเขตการขาย ซึ่งจะดูแลการขายของภูมิภาคนี้ มันคือ
 
-### 2.2 Setting Sales Targets
-Here you can set specific sales targets based on the following fields:
+### 2.2 การกำหนดเป้าหมายการขาย
+ที่นี่ คุณสามารถกำหนดเป้าหมายการขายเฉพาะตามฟิลด์ต่อไปนี้:
 
-* Item Group
-* Fiscal Year
-* Target Qty
-* Target Amount
-* Target Distribution
+* กลุ่มรายการ
+* ปีงบประมาณ
+* จำนวนเป้าหมาย
+* จำนวนเป้าหมาย
+* การกระจายเป้าหมาย
 
 ![Territory Target](/docs/assets/img/selling/territory-target.png)
 
-To know more about setting sales targets, visit the [Sales Person Target Allocation](/docs/user/manual/en/selling/sales-person-target-allocation) page
+หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับการกำหนดเป้าหมายการขาย โปรดไปที่หน้า [การจัดสรรเป้าหมายพนักงานขาย](/docs/user/manual/th/selling/sales-person-target-allocation)
 
-## 3. Related Topics
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Address](/docs/user/manual/en/CRM/address)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ที่อยู่](/docs/user/manual/th/CRM/address)

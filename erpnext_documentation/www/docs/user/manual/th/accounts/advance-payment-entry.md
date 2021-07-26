@@ -1,47 +1,44 @@
 <!-- add-breadcrumbs -->
-# Advance Payment Entry
+# รายการชำระเงินล่วงหน้า
 
-**Payment done by the Customer/Supplier before the invoice is sent is an Advance Payment.**
+**การชำระเงินโดยลูกค้า/ซัพพลายเออร์ก่อนส่งใบแจ้งหนี้เป็นการชำระเงินล่วงหน้า**
 
-Generally, advance payment is done in the case of high value deals. Consider a Customer- Jane D'souza placing an order for a luxury furniture item costing ₹24,000 She is asked to give some advance before the furniture house begins work on her order. She gives them ₹10,000 in cash.
+โดยทั่วไปแล้ว การชำระเงินล่วงหน้าจะทำได้ในกรณีของดีลที่มีมูลค่าสูง พิจารณาลูกค้า - Jane D'souza ที่สั่งซื้อเฟอร์นิเจอร์หรูหราราคา ₹24,000 เธอถูกขอให้ชำระเงินล่วงหน้าก่อนที่บ้านเฟอร์นิเจอร์จะเริ่มดำเนินการตามคำสั่งซื้อของเธอ เธอให้เงินสด 10,000 เยนแก่พวกเขา
 
-In ERPNext, advance payment entry is created using Payment Entry. If there exist a Sales Order, you can directly create a Payment Entry for the advance amount. Or else, you can also create a standalone Payment Entry for the Customer. Same way, you can also create advance Payment Entry for Supplier, via Purchase Order.
+ใน ERPNext รายการการชำระเงินล่วงหน้าจะถูกสร้างขึ้นโดยใช้รายการชำระเงิน หากมีใบสั่งขาย คุณสามารถสร้างรายการชำระเงินสำหรับจำนวนเงินล่วงหน้าได้โดยตรง หรือมิฉะนั้น คุณสามารถสร้างรายการการชำระเงินแบบสแตนด์อโลนสำหรับลูกค้าได้ ในทำนองเดียวกัน คุณยังสามารถสร้างรายการชำระเงินล่วงหน้าสำหรับผู้จัดหา ผ่านใบสั่งซื้อ
 
 ![PE from SO](/docs/assets/img/accounts/advance-payment-1.png)
 
-> Note: If payment is not linked to an invoice, it is considered as an advance payment. The advance payments are reflected in the Accounts Receivable and Payable reports.
+> หมายเหตุ: หากการชำระเงินไม่เชื่อมโยงกับใบแจ้งหนี้ จะถือเป็นการชำระเงินล่วงหน้า การชำระเงินล่วงหน้าจะแสดงในรายงานบัญชีลูกหนี้และเจ้าหนี้
 
-## 1. Prerequisites
-To create an advance payment entry, these need to be created first:
+## 1. ข้อกำหนดเบื้องต้น
+ในการสร้างรายการชำระเงินล่วงหน้า จะต้องสร้างสิ่งเหล่านี้ก่อน:
 
-* Party (Customer/ Supplier)
-* Payment Account (Bank or Cash account)
+* ผู้ที่เกี่ยวข้อง (ลูกค้า / ซัพพลายเออร์)
+* บัญชีชำระเงิน (บัญชีธนาคารหรือบัญชีเงินสด)
 
-## 2. How to create Advance Payment Entry
-Once a Sales Order or Purchase Order is submitted, you will find an option to create a Payment against it. You can also create new Payment Entry and manually select values (like Party and payment account). Here are the steps to create Advance Payment against Sales Order.
+## 2. วิธีสร้างรายการชำระเงินล่วงหน้า
+เมื่อส่งคำสั่งขายหรือใบสั่งซื้อแล้ว คุณจะพบตัวเลือกในการสร้างการชำระเงินจากคำสั่งซื้อนั้น คุณยังสามารถสร้างรายการชำระเงินใหม่และเลือกค่าด้วยตนเอง (เช่น ผู้ที่เกี่ยวข้องและบัญชีการชำระเงิน) นี่คือขั้นตอนในการสร้างการชำระเงินล่วงหน้ากับใบสั่งขาย
 
-1. Go to Sales Order and click on **Make > Payment Entry**.
-1. Set/check the accounts.
-1. Save and Submit.
+1. ไปสั่งซื้อการขายและคลิกที่ **สร้าง > รายการชำระเงิน**
+1. ตั้งค่า/ตรวจสอบบัญชี
+1. บันทึกและส่ง
 
+รายการชำระเงินใดๆ ที่ไม่ได้เชื่อมโยงกับใบแจ้งหนี้จะถือเป็นการชำระเงินล่วงหน้าโดยระบบ ERPNext
 
-Any Payment Entry that is not linked to an invoice is considered as advance payment by the ERPNext system.
+หากลูกค้าให้เงินล่วงหน้า $5,000 เป็นรายการเครดิตกับบัญชีลูกหนี้ของลูกค้า เพื่อให้สมดุล [ตามระบบบัญชีคู่] จะมีการหัก $5,000 จากบัญชีเงินสดของบริษัท
 
-If the Customer has given $5,000 as cash advance, it will be recorded as a
-credit entry against the Customer's Receivable account. To balance it [as per the Double
-accounting system], $5000 is debited against the Company's cash account.
+### 2.2 การจัดสรรเงินล่วงหน้าในใบแจ้งหนี้
 
-### 2.2 Allocating Advance Payment in Invoice
-
-When creating an invoice, you can check if there is an Advance Payment against that Party.
+เมื่อสร้างใบแจ้งหนี้ คุณสามารถตรวจสอบว่ามีการชำระเงินล่วงหน้ากับฝ่ายนั้นหรือไม่
 
 <img class="screenshot" alt="Advace Payment" src="{{docs_base_url}}/assets/img/accounts/advance-payment-3.png">
 
-On clicking **Get Advance Received** button, it will fetch the Advance Payment Entries found for that party. Once Advance Payment Entries are fetched, you can allocate the Amount of advance against this invoice. The allocation will reduce the Outstanding Amount for that invoice right-away.
+เมื่อคลิก **รับเงินล่วงหน้า** ระบบจะดึงรายการการชำระเงินล่วงหน้าที่พบสำหรับฝ่ายนั้น เมื่อเรียกรายการการชำระเงินล่วงหน้าแล้ว คุณสามารถจัดสรรจำนวนเงินล่วงหน้ากับใบแจ้งหนี้นี้ได้ การจัดสรรจะลดยอดค้างชำระสำหรับใบแจ้งหนี้นั้นทันที
 
-Save and submit the Sales Invoice.
+บันทึกและส่งใบแจ้งหนี้การขาย
 
-### 3. Related Topics
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
-1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/en/accounts/sales-invoice)
+1. [รายการบันทึก](/docs/user/manual/en/accounts/journal-entry)
+1. [รายการชำระเงิน](/docs/user/manual/en/accounts/payment-entry)

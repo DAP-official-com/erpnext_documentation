@@ -1,26 +1,26 @@
 <!-- add-breadcrumbs -->
-# Project Template
+# เทมเพลตโครงการ
 
-**A Project Template is a predefined sequence of tasks arranged in stipulated schedule.** 
+**เทมเพลตโครงการคือลำดับงานที่กำหนดไว้ล่วงหน้าซึ่งจัดเรียงตามกำหนดการ**
 
-These templates can be pulled for similar kind of Projects and the tasks therein get auto-populated at the time of creation of each new project.
+เทมเพลตเหล่านี้สามารถดึงออกมาได้สำหรับโปรเจ็กต์ประเภทเดียวกัน และงานในนั้นจะได้รับการเติมโดยอัตโนมัติในขณะที่สร้างโปรเจ็กต์ใหม่แต่ละโปรเจ็กต์
 
-To access Project Template, go to:
+ในการเข้าถึงเทมเพลตโครงการ ไปที่:
 
-> Home > Projects > Projects > Project Template
+> หน้าหลัก > โครงการ > โครงการ > เทมเพลตโครงการ
 
 <img class="screenshot" alt="Project Template" src="{{docs_base_url}}/assets/img/project/projects-project-template.png">
 
-## 1. How to Create A New Project Template:
+## 1. วิธีสร้างเทมเพลตโครงการใหม่:
 
-  1. Go to the Project Template List and click on New.
-  2. Add the following details: 
-      * **Project Template Name**: Title of the Project Template
-      * **Project Type**: Project Templates, just like projects can be classified into different project types, e.g., Internal or External. 
-      * **Tasks**: Each Project Template will have a set of a predefined sequence of tasks. In this table, you can select the tasks you want for this template.
+  1. ไปที่รายการเทมเพลตโครงการแล้วคลิกใหม่
+  2. เพิ่มรายละเอียดต่อไปนี้:
+      * **ชื่อเทมเพลตโครงการ**: ชื่อเทมเพลตโครงการ
+      * **ประเภทโครงการ**: เทมเพลตโครงการ เช่นเดียวกับโครงการที่สามารถจำแนกออกเป็นโครงการประเภทต่างๆ เช่น ภายในหรือภายนอก
+      * **งาน**: เทมเพลตโครงการแต่ละแบบจะมีชุดของลำดับงานที่กำหนดไว้ล่วงหน้า ในตารางนี้ คุณสามารถเลือกงานที่คุณต้องการสำหรับเทมเพลตนี้ได้
 
-## 2. Related Topics
-  1. [Project](/docs/user/manual/en/projects/project)
-  2. [Task](/docs/user/manual/en/projects/tasks)
+## 2. หัวข้อที่เกี่ยวข้อง
+  1. [โครงการ](/docs/user/manual/th/projects/project)
+  2. [งาน](/docs/user/manual/th/projects/tasks)
 
 {next}

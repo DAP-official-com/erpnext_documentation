@@ -1,26 +1,26 @@
 <!-- add-breadcrumbs -->
-# Employee Health Insurance
+#ประกันสุขภาพพนักงาน
 
-**Employee Health Insurance is a benefit extended by the company to their employees. When a company provides health insurance assistance, they pay full or part premiums for the health insurance policy.**
+**การประกันสุขภาพพนักงานเป็นผลประโยชน์ที่บริษัทมอบให้กับพนักงานของตน เมื่อบริษัทให้ความช่วยเหลือด้านการประกันสุขภาพ บริษัทจะจ่ายเบี้ยประกันเต็มจำนวนหรือบางส่วนสำหรับกรมธรรม์ประกันสุขภาพ**
 
-ERPNext allows you to save the Employee Health Insurance detail and link it to that particular Employee's master. 
+ERPNext ช่วยให้คุณบันทึกรายละเอียดการประกันสุขภาพของพนักงานและเชื่อมโยงกับข้อมูลหลักของพนักงานคนนั้น
 
-To access Health Insurance Provider document, go to:
+ในการเข้าถึงเอกสารของผู้ให้บริการประกันสุขภาพ ไปที่:
 
-> Home > Human Resources > Employee > Employee Health Insurance
+> หน้าหลัก > ทรัพยากรบุคคล > พนักงาน > ประกันสุขภาพพนักงาน
 
-## 1. How to create an Employee Health Insurance
+## 1. วิธีสร้างประกันสุขภาพพนักงาน
 
-1. Go to Employee Health Insurance list, click on New.
-1. Enter the Health Insurance Name.
-1. Save.
+1. ไปที่รายการประกันสุขภาพพนักงาน คลิกที่ใหม่
+1. ป้อนชื่อประกันสุขภาพ
+1. บันทึก
 
     <img class="screenshot" alt="Employee" src="{{docs_base_url}}/assets/img/human-resources/health-insurance.png">
 
-Additionally, in the Employee master, you can attach the Health Insurance Provider Name and fill in the Health Insurance No.
+นอกจากนี้ ในข้อมูลหลักพนักงาน คุณสามารถแนบชื่อผู้ให้บริการประกันสุขภาพและกรอกหมายเลขประกันสุขภาพ
 
 <img class="screenshot" alt="Employee" src="{{docs_base_url}}/assets/img/human-resources/employee-health-insurance.png">
 
-## 2. Related Topics
+## 2. หัวข้อที่เกี่ยวข้อง
 
-1. [Employee](/docs/user/manual/en/human-resources/employee)
+1. [พนักงาน](/docs/user/manual/th/human-resources/employee)

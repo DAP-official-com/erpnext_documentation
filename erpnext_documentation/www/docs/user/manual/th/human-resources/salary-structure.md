@@ -1,87 +1,87 @@
 <!-- add-breadcrumbs -->
-# Salary Structure
+# โครงสร้างเงินเดือน
 
-**Salary Structure is the details of the salary being offered to an Employee, in terms of the breakup of the different components constituting the compensation.**
+**โครงสร้างเงินเดือนคือรายละเอียดของเงินเดือนที่เสนอให้กับพนักงานในแง่ของการแบ่งองค์ประกอบต่างๆ อันประกอบเป็นค่าตอบแทน**
 
-Any changes to the Salary Structure i.e. among the components can have a major impact on what the Employee does, such as the kind of tax exemptions claimed.
+การเปลี่ยนแปลงโครงสร้างเงินเดือน เช่น ส่วนประกอบต่างๆ อาจส่งผลกระทบอย่างใหญ่หลวงต่อสิ่งที่พนักงานทำ เช่น ประเภทของการยกเว้นภาษีที่เรียกร้อง
 
-ERPNext allows you to define the Earnings and Deductions of a Salary Structure, Payroll frequency, and Payment Mode among other features.
+ERPNext ให้คุณกำหนดรายได้และการหักของโครงสร้างเงินเดือน ความถี่ในการจ่ายเงินเดือน และโหมดการชำระเงิน รวมถึงคุณสมบัติอื่นๆ
 
-To access Salary Structure, go to:
-> Home > Human Resources > Payroll > Salary Structure
-
-
-## 1. Prerequisites
-
-Before you create a Salary Structure, it is advisable you have the following:
-
-* [Salary Component](/docs/user/manual/en/human-resources/salary-component)
+ในการเข้าถึงโครงสร้างเงินเดือนไปที่:
+> หน้าหลัก > ทรัพยากรบุคคล > เงินเดือน > โครงสร้างเงินเดือน
 
 
-## 2. How to create a Salary Structure
+## 1. ข้อกำหนดเบื้องต้น
 
-1. Go to the Salary Structure list, click on New.
-2. Enter the Salary Structure Name.
-3. Select the Company Name and Payroll Frequency.
-3. Save and Submit.
+ก่อนที่คุณจะสร้างโครงสร้างเงินเดือน ขอแนะนำให้คุณมีสิ่งต่อไปนี้:
 
-
-## 2. Features
-
-### 2.1 Earnings and Deductions
-
-Earnings specify the Salary Components that are earned by an Employee. These components typically include basic, allowances, bonuses, and incentives that are added to the employee's Total Salary. On the other hand, Deductions specify the Salary Components that are deducted from the employee's Total Salary. These typically include the taxes.
-
->**Note:** Only Salary Components set as 'Earnings' will be shown in the Earnings table and components set as 'Deductions' will be shown in the Deductions table.
+* [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
 
 
-To create Earnings and Deductions, select the Salary Component in the Component column. Enter the Formula/Condition if not previously specified while creating the [Salary Component](/docs/user/manual/en/human-resources/salary-component). Additionally, you can also enter a pre-defined amount in the Amount column.
+## 2. วิธีสร้างโครงสร้างเงินเดือน
+
+1. ไปที่รายการ โครงสร้างเงินเดือน คลิกที่ ใหม่
+2. ป้อนชื่อโครงสร้างเงินเดือน
+3. เลือกชื่อบริษัทและความถี่ในการจ่ายเงินเดือน
+3. บันทึกและส่ง
+
+
+## 2. คุณสมบัติ
+
+### 2.1 รายได้และการหักเงิน
+
+รายได้ระบุองค์ประกอบเงินเดือนที่พนักงานได้รับ โดยทั่วไปองค์ประกอบเหล่านี้ประกอบด้วยพื้นฐาน เบี้ยเลี้ยง โบนัส และสิ่งจูงใจที่เพิ่มเข้าไปในเงินเดือนรวมของพนักงาน ในทางกลับกัน การหักเงินจะระบุองค์ประกอบเงินเดือนที่หักออกจากเงินเดือนรวมของพนักงาน เหล่านี้มักจะรวมถึงภาษี
+
+>**หมายเหตุ:** เฉพาะส่วนประกอบเงินเดือนที่กำหนดเป็น 'รายได้' เท่านั้นที่จะแสดงในตารางรายได้และส่วนประกอบที่กำหนดเป็น 'การหักเงิน' จะแสดงในตารางการหักเงิน
+
+
+ในการสร้างรายได้และการหักเงิน ให้เลือกส่วนประกอบเงินเดือนในคอลัมน์ส่วนประกอบ ป้อนสูตร/เงื่อนไขหากไม่ได้ระบุไว้ก่อนหน้านี้ขณะสร้าง [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component) นอกจากนี้ คุณยังสามารถป้อนจำนวนเงินที่กำหนดไว้ล่วงหน้าในคอลัมน์จำนวนเงินได้อีกด้วย
 
 
 
 <img class="screenshot" alt="Salary Structure" src="{{docs_base_url}}/assets/img/human-resources/salary-structure.png">
 
 
-> **Note:** Make sure to click on the downward arrow and enable the 'Amount based on formula' checkbox in case the Salary Component is calculated using a formula.
+> **หมายเหตุ:** อย่าลืมคลิกที่ลูกศรชี้ลงและเปิดใช้งานช่องกาเครื่องหมาย 'จำนวนเงินตามสูตร' ในกรณีที่ส่วนประกอบเงินเดือนคำนวณโดยใช้สูตร
 
 
-### 2.2 Account
+### 2.2 บัญชี
 
-In this section, the [Mode of Payment](/docs/user/manual/en/accounts/mode-of-payment) and the [Payment Account](/docs/user/manual/en/accounts/chart-of-accounts) that is used to pay the salary can be specified.
+ในส่วนนี้ [วิธีการชำระเงิน](/docs/user/manual/th/accounts/mode-of-payment) และ [Payment Account](/docs/user/manual/th/accounts/chart-of- บัญชี) ที่ใช้จ่ายเงินเดือนสามารถระบุได้
 
-### 2.3 Salary Structure for Salary based on Timesheets
+### 2.3 โครงสร้างเงินเดือนสำหรับเงินเดือนตามตารางเวลา
 
-In ERPNext you can also define the Salary Structure for Salary Slip based on Timesheet, which allows the Company to pay there Employee as per working hours.
+ใน ERPNext คุณยังสามารถกำหนดโครงสร้างเงินเดือนสำหรับสลิปเงินเดือนตามตารางเวลาซึ่งช่วยให้บริษัทสามารถจ่ายเงินให้กับพนักงานที่นั่นตามเวลาทำงาน
 
-Steps for creating Salary Structure based on Timesheets:
+ขั้นตอนในการสร้างโครงสร้างเงินเดือนตามตารางเวลา:
 
-1. Go to Salary Structure List, click on New.
-1. Select checkbox **Salary Slip Based on Timesheet**.
-1. Select the Salary Component. 
-1. Enter the Hour Rate. Based on the Rate entered, the amount for Working hours for the selected Salary Component will be calculated accordingly.
-1. Save and Submit.
+1. ไปที่รายการโครงสร้างเงินเดือน คลิกที่ ใหม่
+1. เลือกช่องทำเครื่องหมาย **สลิปเงินเดือนตามตารางเวลา**
+1. เลือกองค์ประกอบเงินเดือน
+1. ป้อนอัตราชั่วโมง ตามอัตราที่ป้อน จำนวนเงินสำหรับชั่วโมงทำงานสำหรับองค์ประกอบเงินเดือนที่เลือกจะถูกคำนวณตามนั้น
+1. บันทึกและส่ง
 
  <img class="screenshot" alt="Create Salary Slip based on Timesheets" src="{{docs_base_url}}/assets/img/human-resources/salary-structure-for-salary-based-on-timesheets.png">
 
 
-### 2.4 Leave Encashment Amount Per Day 
+### 2.4 จำนวนเงินที่ฝากไว้ต่อวัน
 
-In case there are encashable leaves for an Employee, you can define the leave encashment amount per day in this field for this particular Salary Structure. Based on the 'Earning Component' set in the encashed [Leave Type](/docs/user/manual/en/human-resources/leave-type) and the amount per day, the value for the Salary component will be calculated accordingly in the Salary Slip.
-
-
-### 2.5 Max Benefits (Amount)
-
-In this field, the Max Benefits Amount for the Salary Structure can be specified. If this field is filled, make sure the Salary Structure has a [Salary Component](/docs/user/manual/en/human-resources/salary-component) with the "Is Flexible Benefits" checked, against which this amount will be paid.
+ในกรณีที่มีพนักงานที่สามารถขอเพิ่มเงินได้ คุณสามารถกำหนดจำนวนเงินที่เพิ่มสำหรับการลางานต่อวันในฟิลด์นี้สำหรับโครงสร้างเงินเดือนเฉพาะนี้ได้ ตาม 'Earning Component' ที่ตั้งค่าไว้ใน [ประเภทของการลางาน](/docs/user/manual/th/human-resources/leave-type) และจำนวนเงินต่อวัน ค่าสำหรับองค์ประกอบเงินเดือนจะถูกคำนวณตามลำดับใน สลิปเงินเดือน.
 
 
+### 2.5 สวัสดิการสูงสุด (จำนวนเงิน)
 
-Once all the information is saved and submitted, you can assign the Salary Structure to an Employee either through the **Assign Salary Structure** button or by creating a new [Salary Structure Assignment](/docs/user/manual/en/human-resources/salary-structure-assignment) through the dashboard.
+ในฟิลด์นี้ สามารถระบุจำนวนผลประโยชน์สูงสุดสำหรับโครงสร้างเงินเดือนได้ หากกรอกข้อมูลในช่องนี้ ตรวจสอบให้แน่ใจว่าโครงสร้างเงินเดือนมี [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component) โดยเลือก "เป็นสวัสดิการที่ยืดหยุ่น" ซึ่งจำนวนนี้จะเท่ากับ จ่ายแล้ว
 
-You can also assign the created Salary Structure to several employees based on the [Employee Grade](/docs/user/manual/en/human-resources/employee-grade), [Department](/docs/user/manual/en/human-resources/department), [Designation](/docs/user/manual/en/human-resources/designation), etc. through the 'Assign to Employees' button.
-Additionally, Salary Slip can also be directly created through the dashboard.
 
-## 3. Related Topics
 
-1. [Salary Component](/docs/user/manual/en/human-resources/salary-component)
-1. [Salary Structure Assignment](/docs/user/manual/en/human-resources/salary-structure-assignment)
-1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
+เมื่อบันทึกข้อมูลและส่งข้อมูลทั้งหมดแล้ว คุณสามารถกำหนดโครงสร้างเงินเดือนให้กับพนักงานผ่านทางปุ่ม **กำหนดโครงสร้างเงินเดือน** หรือโดยการสร้าง [การกำหนดโครงสร้างเงินเดือน](/docs/user/manual/th/human -resources/salary-structure-assignment) ผ่านแดชบอร์ด
+
+คุณยังสามารถกำหนดโครงสร้างเงินเดือนที่สร้างขึ้นให้กับพนักงานหลายคนตาม [ระดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade), [แผนก](/docs/user/manual/th/human-resources/department), [การกำหนด](/docs/user/manual/th/human-resources/designation) ฯลฯ ผ่านปุ่ม 'มอบหมายให้พนักงาน'
+นอกจากนี้ยังสามารถสร้างสลิปเงินเดือนได้โดยตรงผ่านแดชบอร์ด
+
+## 3. หัวข้อที่เกี่ยวข้อง
+
+1. [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
+1. [การกำหนดโครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure-assignment)
+1. [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)

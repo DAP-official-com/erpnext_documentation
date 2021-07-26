@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-# Asset Maintenance Log
+# บันทึกการบำรุงรักษาสินทรัพย์
 
-**Asset Maintenance Log logs the tasks carried out in an Asset Maintenance.**
+**บันทึกการบำรุงรักษาสินทรัพย์จะบันทึกงานที่ดำเนินการในการบำรุงรักษาสินทรัพย์**
 
-For each task in Asset Maintenance, Asset Maintenance Log is **auto created** to keep track of the upcoming maintenances. It will have a status, completion date and actions performed. Based on completion date here, next due date is calculated automatically and new Asset Maintenance Log is created. 
+สำหรับแต่ละงานในการบำรุงรักษาสินทรัพย์ บันทึกการบำรุงรักษาสินทรัพย์ **สร้างขึ้นโดยอัตโนมัติ** เพื่อติดตามการบำรุงรักษาที่จะเกิดขึ้น จะมีสถานะ วันที่เสร็จสมบูรณ์ และการดำเนินการที่ดำเนินการ ตามวันที่เสร็จสมบูรณ์ที่นี่ วันที่ครบกำหนดถัดไปจะถูกคำนวณโดยอัตโนมัติ และสร้างบันทึกการบำรุงรักษาสินทรัพย์ใหม่
 
-To access the Asset Maintenance Log, go to:
-> Home > Asset > Maintenance > Asset Maintenance Log
+ในการเข้าถึงบันทึกการบำรุงรักษาสินทรัพย์ ไปที่:
+> หน้าหลัก > สินทรัพย์ > การบำรุงรักษา > บันทึกการบำรุงรักษาสินทรัพย์
 
-## 1. Prerequisites
-Before creating and using Asset Maintenance Log, it is advised to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้บันทึกการบำรุงรักษาสินทรัพย์ ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Asset Maintenance](/docs/user/manual/en/asset/asset-maintenance)
+* [ดูแลทรัพย์สิน](/docs/user/manual/th/asset/asset-maintenance)
 
 
-## 2. Options in Asset Maintenance Log
-A Draft of the Asset Maintenance Log is created as scheduled in the Asset Maintenance form.
-In order to submit an Asset Maintenance Log, the Asset Maintenance status has to either 'Completed' or 'Canceled'.
+## 2. ตัวเลือกในบันทึกการบำรุงรักษาสินทรัพย์
+ร่างบันทึกการบำรุงรักษาสินทรัพย์จะถูกสร้างขึ้นตามกำหนดเวลาในแบบฟอร์มการบำรุงรักษาสินทรัพย์
+ในการส่งบันทึกการบำรุงรักษาสินทรัพย์ สถานะการบำรุงรักษาสินทรัพย์ต้อง 'เสร็จสิ้น' หรือ 'ยกเลิก'
 
-* The status of the Asset Maintenance Log can be 'Planned', 'Completed', 'Canceled', or 'Overdue'.
-* Additional notes can be added in the Actions performed section to describe the activity in detail.
+* สถานะของบันทึกการบำรุงรักษาสินทรัพย์สามารถ 'วางแผน', 'เสร็จสิ้น', 'ยกเลิก' หรือ 'เกินกำหนด'
+* สามารถเพิ่มหมายเหตุเพิ่มเติมได้ในส่วนการดำเนินการที่ดำเนินการเพื่ออธิบายรายละเอียดกิจกรรม
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset_maintenance_log.png">

@@ -1,12 +1,12 @@
 <!-- add-breadcrumbs -->
-# Working Days Calculation in the Salary Slip
+#คำนวณวันทำงานในสลิปเงินเดือน
 
-Working Days are shown in the In the Salary Slip. Based on your preference, it may include holidays of the month or it may not. You can define your preference for the Working Days calculation in HR Settings.
+วันทำงานแสดงอยู่ในสลิปเงินเดือน ขึ้นอยู่กับความชอบของคุณ อาจรวมถึงวันหยุดของเดือนหรือไม่ก็ได้ คุณสามารถกำหนดความต้องการของคุณสำหรับการคำนวณวันทำการในการตั้งค่าทรัพยากรบุคคล
 
-`HR > Setup > HR Settings`
+`ทรัพยากรบุคคล > ตั้งค่า > ตั้งค่า ทรัพยากรบุคคล`
 
-If you want to include holidays in the count of Total Working days, then ensure that in the HR Settings, field **Include holidays in Total no. of Working Days** is checked and vice versa.
+หากคุณต้องการรวมวันหยุดในการนับจำนวนวันทำงานทั้งหมด ให้ตรวจสอบให้แน่ใจว่าในการตั้งค่าทรัพยากรบุคคล ฟิลด์ **รวมวันหยุดในจำนวนทั้งหมด ของวันทำการ** จะถูกตรวจสอบและในทางกลับกัน
 
 <img alt="Role Desk Permission" class="screenshot" src="{{docs_base_url}}/assets/img/articles/hr-working-days.png">
 
-To learn how to define holidays for your company, check [Holiday List](/docs/user/manual/en/human-resources/holiday-list) feature in the HR module.
+หากต้องการเรียนรู้วิธีกำหนดวันหยุดสำหรับบริษัทของคุณ ให้ตรวจสอบคุณสมบัติ [รายการวันหยุด](/docs/user/manual/th/human-resources/holiday-list) ในโมดูล ทรัพยากรบุคคล

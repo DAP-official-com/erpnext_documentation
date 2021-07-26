@@ -1,26 +1,26 @@
 <!-- add-breadcrumbs -->
-# Quality Meeting
+#การประชุมคุณภาพ
 
-> Introduced in Version 12
+> เปิดตัวในเวอร์ชัน 12
 
-It is an assembly of people for a particular purpose or agenda, especially for formal discussion about Quality aspects.
+เป็นการรวมตัวของบุคคลเพื่อวัตถุประสงค์หรือวาระโดยเฉพาะ โดยเฉพาะอย่างยิ่งสำหรับการอภิปรายอย่างเป็นทางการเกี่ยวกับประเด็นด้านคุณภาพ
 
-Quality Meetings are conducted to review the Quality Reviews that have been generated. The minutes (summary) of these meetings would include the discussion on the various Quality Reviews.
+มีการจัดการประชุมคุณภาพเพื่อทบทวนการทบทวนคุณภาพที่สร้างขึ้น รายงานการประชุม (สรุป) ของการประชุมเหล่านี้จะรวมถึงการอภิปรายเกี่ยวกับการตรวจสอบคุณภาพต่างๆ
 
-To access Quality Meeting, go to:
-> Home > Quality > Meeting > Quality Meeting
+ในการเข้าถึงการประชุมคุณภาพ ไปที่:
+> หน้าแรก > คุณภาพ > การประชุม > การประชุมคุณภาพ
 
-## 1. How to Create a Quality Meeting
+## 1. วิธีสร้างการประชุมที่มีคุณภาพ
 
-1. Go to the Quality Meeting list, click on New.
-1. Enter an Agenda. It is a list of meeting activities in the order in which they are to be taken up.
-1. In the Minutes table enter:
-    - Document Type: Select from Quality Review, Quality Action, or Quality Feedback.
-    - Review: Select the Quality Review, Action, Feedback to be discussed.
-    - Minute: Written or recorded documentation that is associated with the Review.
+1. ไปที่รายการ การประชุมคุณภาพ คลิก ใหม่
+1. ป้อนวาระการประชุม เป็นรายการกิจกรรมการประชุมตามลำดับที่จะดำเนินการ
+1. ในตารางรายงานการประชุม ให้ป้อน:
+    - ประเภทเอกสาร: เลือกจากการตรวจสอบคุณภาพ การดำเนินการด้านคุณภาพ หรือผลตอบรับด้านคุณภาพ
+    - ตรวจทาน: เลือกการตรวจสอบคุณภาพ การดำเนินการ คำติชมที่จะกล่าวถึง
+    - บันทึกการประชุม: เอกสารที่เป็นลายลักษณ์อักษรหรือบันทึกไว้ซึ่งเกี่ยวข้องกับการตรวจสอบ
     <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/creating-quality-goal.gif">
-1. Save.
+1. บันทึก
 
-The Status of the Meeting can be set to Closed once the agenda is done.
+สามารถกำหนดสถานะของการประชุมเป็น ปิด เมื่อเสร็จสิ้นวาระการประชุม
 
 {next}

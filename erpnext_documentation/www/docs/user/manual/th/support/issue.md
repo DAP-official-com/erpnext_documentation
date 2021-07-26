@@ -1,133 +1,131 @@
 <!-- add-breadcrumbs -->
-# Issue
+# ปัญหา
 
-**An Issue is an incoming query from a Customer, usually via email or from the *Contact* section of your website.**
+**ปัญหาคือคำถามที่เข้ามาจากลูกค้า ซึ่งมักจะผ่านทางอีเมลหรือจากส่วน *ติดต่อ* ของเว็บไซต์ของคุณ**
 
-> Tip: A dedicated support Email Address is a good way to keep track of incoming
-queries. For example, you can send support queries to ERPNext at
-support@erpnext.com and it will automatically create an Issue in our system.
+> เคล็ดลับ: ที่อยู่อีเมลสำหรับการสนับสนุนโดยเฉพาะเป็นวิธีที่ดีในการติดตามคำถามขาเข้า ตัวอย่างเช่น คุณสามารถส่งคำถามเกี่ยวกับการสนับสนุนไปยัง ERPNext ได้ที่support@erpnext.com และจะสร้างปัญหาในระบบของเราโดยอัตโนมัติ
 
-To access the Issue list, go to:
-> Home > Support > Issues > Issue
+ในการเข้าถึงรายการปัญหา ไปที่:
+> หน้าหลัก > การสนับสนุน > ปัญหา > ปัญหา
 
 <img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/issue.png">
 
-## 1. Prerequisites
-Before creating and using Issues, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้งานปัญหา ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Customer](/docs/user/manual/en/CRM/customer)
-* [Email Account](/docs/user/manual/en/setting-up/email/email-account)
+* [ลูกค้า](/docs/user/manual/th/CRM/customer)
+* [บัญชีอีเมล](/docs/user/manual/th/setting-up/email/email-account)
 
-## 2. How to Create Issue
-Issues are automatically created if you use the **append to feature** in [Email Account](/docs/user/manual/en/setting-up/email/email-account#32-incoming-email-accounts).
+## 2. วิธีสร้างปัญหา
+ปัญหาจะถูกสร้างขึ้นโดยอัตโนมัติหากคุณใช้ **ผนวกกับคุณลักษณะ** ใน [บัญชีอีเมล](/docs/user/manual/th/setting-up/email/email-account#32-incoming-email-accounts)
 
-You can also create an Issue manually, to do that:
+คุณยังสามารถสร้างปัญหาด้วยตนเอง โดยทำดังนี้
 
-1. Go to the Issue list, click on New.
-1. Enter the Subject, Raised By, and a description of the Issue.
+1. ไปที่รายการปัญหา คลิกที่ ใหม่
+1. ป้อนหัวเรื่อง ยกโดย และคำอธิบายของปัญหา
 
-### 2.1 Additional Options when Creating an Issue
-* **Status**: When a new Issue is created, its status will be "Open", when it is
-replied, its status becomes "Replied".
-    * Open: The Issue has been created and yet to be replied to.
-    * Replied: A reply has been sent to the Issue.
-    * Hold: The Issue is on Hold due to some reason.
-    * Resolved: When the users are reasonably sure that they have provided the customer with a solution to their problem but have not received an acknowledgment about the resolution from the customer.
-    * Closed: The Customer got a satisfactory resolution that he has indicated with an acknowledgment and the Issue was closed.
+### 2.1 ตัวเลือกเพิ่มเติมเมื่อสร้างปัญหา
+* **สถานะ**: เมื่อมีการสร้างฉบับใหม่ สถานะของปัญหาจะเป็น "เปิด" เมื่อเป็น
+ตอบกลับ สถานะกลายเป็น "ตอบกลับ"
+    * เปิด: ปัญหาถูกสร้างขึ้นและยังไม่ได้ตอบกลับ
+    * ตอบกลับ: ได้ส่งการตอบกลับไปยังปัญหาแล้ว
+    * ระงับ: ปัญหาถูกระงับเนื่องจากเหตุผลบางประการ
+    * แก้ไขแล้ว: เมื่อผู้ใช้มั่นใจอย่างสมเหตุสมผลว่าพวกเขาได้ให้แนวทางแก้ไขปัญหาแก่ลูกค้า แต่ยังไม่ได้รับการตอบรับเกี่ยวกับวิธีแก้ปัญหาจากลูกค้า
+    * ปิด: ลูกค้าได้รับการลงมติที่น่าพอใจซึ่งเขาได้ระบุพร้อมรับทราบและปัญหาถูกปิด
 
-    If the sender replies to the thread, the status becomes "Open" again. User can "Close" the Issue manually by clicking on the **Close** button on the top right.
+    หากผู้ส่งตอบกลับชุดข้อความ สถานะจะกลายเป็น "เปิด" อีกครั้ง ผู้ใช้สามารถ "ปิด" ปัญหาด้วยตนเองโดยคลิกที่ปุ่ม **ปิด** ที่ด้านบนขวา
 
-> Note: If SLA has been set up, then the fulfillment status of the SLA will be updated on both, the **Closed** as well as the **Resolved** status.
+> หมายเหตุ: หากมีการตั้งค่า SLA แล้ว สถานะการปฏิบัติตามข้อกำหนดของ SLA จะได้รับการอัปเดตทั้งสถานะ **ปิด** และ **แก้ไขแล้ว**
 
-* **Customer**: If the email was sent from a [Customer](/docs/user/manual/en/CRM/customer) stored in your ERPNext account, then a Customer link will appear in this field.
-* **Priority**: Priority can be set as per the requirements. By default, there are three priorities--Low, Medium, and High. You can delete these or add more as needed.
-* **Issue Type**: An Issue can be classified using Issue Type. Examples of Issue Types can be: 'Functional', 'Technical', 'Hardware', etc.
-* **Raised By (Email)**: The email ID from which the Issue was sent will be shown here.
+* **ลูกค้า**: หากอีเมลถูกส่งจาก [ลูกค้า](/docs/user/manual/th/CRM/customer) ที่จัดเก็บไว้ในบัญชี ERPNext ของคุณ ลิงก์ลูกค้าจะปรากฏในช่องนี้
+* **ลำดับความสำคัญ**: สามารถกำหนดลำดับความสำคัญได้ตามความต้องการ ตามค่าเริ่มต้น มีสามลำดับความสำคัญ ได้แก่ ต่ำ ปานกลาง และสูง คุณสามารถลบสิ่งเหล่านี้หรือเพิ่มเติมได้ตามต้องการ
+* **ประเภทปัญหา**: สามารถจำแนกปัญหาได้โดยใช้ประเภทปัญหา ตัวอย่างของประเภทปัญหา ได้แก่ 'การทำงาน', 'เทคนิค', 'ฮาร์ดแวร์' เป็นต้น
+* **ยกโดย (อีเมล)**: ID อีเมลที่ใช้ส่งปัญหาจะแสดงที่นี่
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Details
-* **Description**: This is a text field in which details about the Issue can be seen. This can also contain an image or a table.
+### 3.1 รายละเอียด
+* **คำอธิบาย**: นี่คือช่องข้อความที่สามารถดูรายละเอียดเกี่ยวกับปัญหาได้ นอกจากนี้ยังสามารถมีรูปภาพหรือตาราง
 
-### 3.2 Service Level Agreement
-It is a contract between a service provider and the end user that defines the level of service expected from the service provider.
+### 3.2 ข้อตกลงระดับการให้บริการ
+เป็นสัญญาระหว่างผู้ให้บริการและผู้ใช้ปลายทางที่กำหนดระดับการบริการที่คาดหวังจากผู้ให้บริการ
 
-User can select the [Service Level Agreement](/docs/user/manual/en/support/service-level-agreement) (SLA) from the list.
+ผู้ใช้สามารถเลือก [ข้อตกลงระดับการให้บริการ](/docs/user/manual/th/support/service-level-agreement) (SLA) จากรายการ
 
-* Every Issue will have a Time to Response and Time to Resolve within which the Support team has to Respond and Resolve the Issue.
-* The Priority can be changed to escalate the Issue. The priorities need to be specified in the Service Level Agreement.
-* If needed, the Service Level Agreement can be reset by clicking on the **Reset Service Level Agreement** button in Issues shown as follows:
+* ทุกฉบับจะมีเวลาตอบกลับและเวลาในการแก้ไขซึ่งทีมสนับสนุนจะต้องตอบกลับและแก้ไขปัญหา
+* ลำดับความสำคัญสามารถเปลี่ยนแปลงได้เพื่อส่งต่อปัญหา ต้องระบุลำดับความสำคัญในข้อตกลงระดับการให้บริการ
+* หากจำเป็น สามารถรีเซ็ตข้อตกลงระดับบริการได้โดยคลิกที่ปุ่ม **รีเซ็ตข้อตกลงระดับบริการ** ในปัญหาที่แสดงดังนี้:
 
 <img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/iss.gif">
 
-### 3.3 Response
-* **Mins to First Response**: Time in minutes from when the Issue was created to when the first reply was sent.
+### 3.3 การตอบกลับ
+* **การตอบกลับครั้งแรก**: เวลาเป็นนาทีตั้งแต่สร้างปัญหาจนถึงเวลาที่ส่งการตอบกลับครั้งแรก
 
-* **First Responded on**: When a Support team member first replies to the issue, first response date and time will be updated.
+* **ตอบกลับครั้งแรกเมื่อ**: เมื่อสมาชิกทีมสนับสนุนตอบกลับปัญหาเป็นครั้งแรก วันที่และเวลาตอบกลับครั้งแรกจะได้รับการอัปเดต
 
-* **Average Response Time**: The average time taken to respond to the Customer. This is calculated by taking the average of all time spans between Received and Sent Communications. This field will be updated on every reply sent to the customer.
+* **เวลาตอบกลับโดยเฉลี่ย**: เวลาเฉลี่ยที่ใช้ในการตอบกลับลูกค้า ซึ่งคำนวณโดยใช้ค่าเฉลี่ยของช่วงเวลาทั้งหมดระหว่างการสื่อสารที่ได้รับและการสื่อสารที่ส่งแล้ว ฟิลด์นี้จะได้รับการอัปเดตทุกครั้งที่ตอบกลับที่ส่งถึงลูกค้า
 
 <img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/response.png">
 
-### 3.4 Reference
-User can filter the issues based on these fields linked to the Issue:
+### 3.4 ข้อมูลอ้างอิง
+ผู้ใช้สามารถกรองปัญหาตามฟิลด์เหล่านี้ที่เชื่อมโยงกับปัญหา:
 
-* Lead
-* Contact
-* Email Account
-* Project
-* Company
+* ผู้ที่สนใจในสินค้าของบริการ
+* ติดต่อ
+* บัญชีอีเมล์
+* โครงการ
+* บริษัท
 
-### 3.5 Resolution
-* **Opening Date**: When the issue is created or logged the date be posted.
-* **Opening Time**: When the issue is created or logged the exact time will automatically be posted.
-* **Resolution Date**: When the user resolved the issue, Date and Time will get updated in this field.
-* **Resolution Details**: User can enter the details of the issue, once it is resolved. This is a text field. Also, user can upload the image, enter or create a table.
-* **Resolution Time**: Total time taken to close the ticket (from Issue creation to closing).
-* **User Resolution Time**: Many times a user has to wait for a customer's reply in order to solve some Issue. While measuring User's productivity this wait time shouldn't be taken into consideration. Hence, user resolution time is the total time taken by a user to close the ticket and can be calculated as:
+### 3.5 ความละเอียด
+* **วันที่เปิด**: เมื่อมีการสร้างหรือบันทึกปัญหา วันที่จะถูกโพสต์
+* **เวลาเปิด**: เมื่อมีการสร้างหรือบันทึกปัญหา เวลาที่แน่นอนจะถูกโพสต์โดยอัตโนมัติ
+* **วันที่แก้ไข**: เมื่อผู้ใช้แก้ไขปัญหา วันที่และเวลาจะได้รับการอัปเดตในช่องนี้
+* **รายละเอียดการแก้ปัญหา**: ผู้ใช้สามารถป้อนรายละเอียดของปัญหาเมื่อได้รับการแก้ไขแล้ว นี่คือช่องข้อความ นอกจากนี้ ผู้ใช้สามารถอัปโหลดรูปภาพ ป้อนหรือสร้างตารางได้
+* **เวลาในการแก้ไข**: เวลาทั้งหมดที่ใช้ในการปิดตั๋ว (ตั้งแต่การสร้างปัญหาจนถึงการปิด)
+* **เวลาในการแก้ไขของผู้ใช้**: หลายครั้งที่ผู้ใช้ต้องรอการตอบกลับของลูกค้าเพื่อแก้ปัญหาบางอย่าง ขณะวัดประสิทธิภาพการทำงานของผู้ใช้ ไม่ควรคำนึงถึงเวลารอนี้ด้วย ดังนั้น เวลาในการแก้ไขของผู้ใช้คือเวลาทั้งหมดที่ผู้ใช้ใช้ในการปิดตั๋วและสามารถคำนวณได้ดังนี้:
 
     _Resolution time - Total Time for which the user had to wait for a customer's reply_
 
-The Resolution Time and User Resolution Time metrics are set on "Close". These metrics reset automatically when the Issue reopens or splits.
+เวลาในการแก้ไขปัญหาและเวลาในการแก้ไขของผู้ใช้ถูกตั้งค่าเป็น "ปิด" เมตริกเหล่านี้จะรีเซ็ตโดยอัตโนมัติเมื่อปัญหาเปิดขึ้นใหม่หรือแยกออก
 
 <img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/resolution.png">
 
-#### Via Customer Portal
-If the Customer raising the Issue is a Website User (no access to modules), this checkbox will be ticked to indicate that.
+#### ผ่านพอร์ทัลลูกค้า
+หากลูกค้าที่แจ้งปัญหาเป็นผู้ใช้เว็บไซต์ (ไม่มีสิทธิ์เข้าถึงโมดูล) ช่องทำเครื่องหมายนี้จะถูกทำเครื่องหมายเพื่อระบุว่า
 
-## 4. After Saving
+## 4. หลังจากบันทึกแล้ว
 
-### 4.1 Add Comments
-Once the Issue is registered, support team Users can add comments for the issue. This field is editable. Comments in Issues are for internal discussions and will not be visible to the Customers.
+### 4.1 เพิ่มความคิดเห็น
+เมื่อลงทะเบียนปัญหาแล้ว ทีมสนับสนุน ผู้ใช้สามารถเพิ่มความคิดเห็นสำหรับปัญหาได้ ฟิลด์นี้สามารถแก้ไขได้ ความคิดเห็นในประเด็นมีไว้สำหรับการอภิปรายภายในและลูกค้าจะไม่สามารถมองเห็นได้
 
-### 4.2 New Email
-Users can compose an email to the person that has raised the Issue. All the mails (received as well as sent) can be seen in a thread in the Issue.
+### 4.2 อีเมลใหม่
+ผู้ใช้สามารถเขียนอีเมลถึงบุคคลที่แจ้งปัญหา อีเมลทั้งหมด (ที่ได้รับและที่ส่ง) สามารถดูในชุดข้อความในฉบับได้
 
-### 4.3 Discussion Thread
+### 4.3 หัวข้อสนทนา
 
-The email discussion thread in an Issue maintains all the emails which are sent back and forth against this Issue in the system so that you can track what transpired between the sender and the person responding.
+เธรดการสนทนาทางอีเมลในฉบับจะรักษาอีเมลทั้งหมดที่ส่งกลับไปกลับมาเพื่อต่อต้านปัญหานี้ในระบบ เพื่อให้คุณสามารถติดตามสิ่งที่เกิดขึ้นระหว่างผู้ส่งและบุคคลที่ตอบกลับ
 
-* When a New Email is sent from your mailbox, an automatic reply is sent to the sender with your message and the Support Ticket Number.
-* The sender can send additional information to this email.
-* All subsequent emails containing this Issue number in the subject will be added to this Issue thread.
-* The sender can also add attachments to the email.
+* เมื่อมีการส่งอีเมลใหม่จากกล่องจดหมายของคุณ การตอบกลับอัตโนมัติจะถูกส่งไปยังผู้ส่งพร้อมข้อความของคุณและหมายเลขตั๋วสนับสนุน
+* ผู้ส่งสามารถส่งข้อมูลเพิ่มเติมไปที่อีเมลนี้
+* อีเมลที่ตามมาทั้งหมดที่มีหมายเลขปัญหานี้ในหัวเรื่องจะถูกเพิ่มในชุดข้อความของฉบับนี้
+* ผู้ส่งยังสามารถแนบไฟล์แนบไปกับอีเมลได้
 
-### 4.4 Assigning Issues to Users
+### 4.4 การกำหนดปัญหาให้กับผู้ใช้
 
-> Issues can be assigned automatically among Users using [Assignment Rule](/docs/user/manual/en/automation/assignment-rule).
+> สามารถกำหนดปัญหาให้กับผู้ใช้ได้โดยอัตโนมัติโดยใช้ [Assignment Rule](/docs/user/manual/th/automation/assign-rule)
 
-You can assign an Issue to a specific User by clicking on "Assign" feature in the left sidebar. This will add a new To Do to the user and also send a message indicating that this Issue is allocated.
+คุณสามารถมอบหมายปัญหาให้กับผู้ใช้รายใดรายหนึ่งโดยคลิกที่คุณสมบัติ "มอบหมาย" ในแถบด้านข้างทางซ้าย การดำเนินการนี้จะเพิ่มสิ่งที่ต้องทำใหม่ให้กับผู้ใช้และส่งข้อความระบุว่ามีการจัดสรรปัญหานี้แล้ว
 
 ![Assign Issue](/docs/assets/img/support/issue-assign.png)
 
 
-### 4.5 Closing
+### 4.5 ปิดปัญหา
 
-* You can close the Issue manually by clicking on 'Close' in the toolbar.
-* If the sender does not reply in 7 days, then the Issue gets closed automatically.
+* คุณสามารถปิดปัญหาได้ด้วยตนเองโดยคลิกที่ 'ปิด' ในแถบเครื่องมือ
+* หากผู้ส่งไม่ตอบกลับใน 7 วัน ปัญหาจะถูกปิดโดยอัตโนมัติ
 
-### 5. Related Topics
-1. [Issue Type and Priority](/docs/user/manual/en/support/issue-type-and-priority)
+### 5. หัวข้อที่เกี่ยวข้อง
+1. [ประเภทปัญหาและลำดับความสำคัญ](/docs/user/manual/th/support/issue-type-and-priority)
 
 
 {next}

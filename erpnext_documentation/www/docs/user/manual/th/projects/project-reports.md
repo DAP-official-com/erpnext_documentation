@@ -1,51 +1,51 @@
 <!-- add-breadcrumbs -->
 
-# Project Reports
+#รายงานโครงการ
 
-## 1. Project Billing Summary
+## 1. สรุปการเรียกเก็บเงินโครงการ
 
-**This report helps you analyze the billing per Project and Employee between a specific period.**
+**รายงานนี้ช่วยคุณวิเคราะห์การเรียกเก็บเงินต่อโครงการและพนักงานระหว่างช่วงเวลาที่กำหนด**
 
-Note that details form only those Timesheets which have been specified as billable by ticking the 'Bill' checkbox will be reflected here.
+รายละเอียดจาก ตารางเวลา ที่ได้รับการระบุว่าสามารถเรียกเก็บเงินได้โดยการทำเครื่องหมายที่ช่อง 'Bill' เท่านั้นที่จะแสดงที่นี่
 
 <img class="screenshot" alt="Billable Time Sheets" src="{{docs_base_url}}/assets/img/project/projects-project-billing-summary.png">
 
-## 2. Daily Timesheet Summary
+## 2. สรุปตารางเวลาประจำวัน
 
-**This report gives you the details of all the Timesheets submitted by the Users.** 
+**รายงานนี้ให้รายละเอียดของ ตารางเวลา ทั้งหมดที่ส่งโดยผู้ใช้**
 
-You can select a specific project and date range in the filters. Details of the Timesheets logged by any Employee for the selected Project between the range specified will be shown.
+คุณสามารถเลือกโครงการและช่วงวันที่ที่ต้องการได้ในตัวกรอง รายละเอียดของ ตารางเวลา ที่บันทึกโดยพนักงานสำหรับโครงการที่เลือกระหว่างช่วงที่ระบุจะแสดงขึ้น
 
 <img class="screenshot" alt="Project Billing Summary" src="{{docs_base_url}}/assets/img/project/projects-daily-timesheet-summary.png">
 
-## 3. Employee Hours Utilization Based on Timesheets
+## 3. การใช้เวลาทำงานของพนักงานตาม ตารางเวลา
 
-**This report gives you an overview of the utilization of employee working hours based on Timesheets submitted.**
+**รายงานนี้ให้ภาพรวมของการใช้เวลาทำงานของพนักงานตาม ตารางเวลา ที่ส่งมา**
 
-The Employee Working hours are divided into 3 categories:
+ชั่วโมงการทำงานของพนักงานแบ่งออกเป็น 3 ประเภท ได้แก่
     
-1. Billed Hours
-2. Non-Billed Hours
-3. Un-tracked Hours (Total - Billed - Non-Billed)
+1. ชั่วโมงที่เรียกเก็บเงิน
+2. ชั่วโมงที่ไม่เรียกเก็บเงิน
+3. ชั่วโมงที่ไม่ได้ติดตาม (รวม - เรียกเก็บเงิน - ไม่เรียกเก็บเงิน)
 
-Two types of percentage utilizations are calculated for each employee:
+มีการคำนวณเปอร์เซ็นต์การใช้งานสองประเภทสำหรับพนักงานแต่ละคน:
 
 ```
-% Utilization (Billed + Non-Billed) = [(Billed Hours + Non-Billed Hours) / (Total Hours)] * 100
+% การใช้ประโยชน์ (เรียกเก็บเงิน + ไม่เรียกเก็บเงิน) = [(ชั่วโมงที่เรียกเก็บเงิน + ชั่วโมงที่ไม่เรียกเก็บเงิน) / (ชั่วโมงทั้งหมด)] * 100
 
-% Utilization (Billed Only) = (Billed Hours / Total Hours) * 100
+% การใช้งาน (เรียกเก็บเงินเท่านั้น) = (ชั่วโมงที่เรียกเก็บเงิน / ชั่วโมงทั้งหมด) * 100
 ```
 
-where **Total Hours** is the number of working hours in the selected *date range*.
+โดยที่ **ชั่วโมงรวม** คือจำนวนชั่วโมงทำงานใน *ช่วงวันที่* ที่เลือก
 
-The report can also be filtered for a particular Employee, Department and/or Project.
+นอกจากนี้ยังสามารถกรองรายงานสำหรับพนักงาน แผนก และ/หรือโครงการเฉพาะ
 
 <img class="screenshot" alt="Project Billing Summary" src="{{docs_base_url}}/assets/img/project/projects-employee-util-report.png">
 
-## 4. Project Wise Stock Tracking
+## 4. การติดตามสต็อคสินค้า
 
-**This report gives you the analysis of all the Stock Movements carried out for all the different Projects.**
+**รายงานนี้ให้การวิเคราะห์การเคลื่อนไหวของสต็อคทั้งหมดที่ดำเนินการสำหรับโครงการต่างๆ ทั้งหมด**
 
-The Report will also contain the costing details of these stock movements. You can filter the details by Project Name, Customer, Project Start Date or End Date.
+รายงานจะประกอบด้วยรายละเอียดการคิดต้นทุนของการเคลื่อนไหวของสต็อคเหล่านี้ คุณสามารถกรองรายละเอียดตามชื่อโครงการ ลูกค้า วันที่เริ่มต้นโครงการ หรือวันที่สิ้นสุด
 
 <img class="screenshot" alt="Employee Billing Summary" src="{{docs_base_url}}/assets/img/project/projects-project-wise-stock-tracking.png">

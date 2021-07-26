@@ -1,26 +1,26 @@
 <!-- add-breadcrumbs -->
-# Asset Reports
+# รายงานสินทรัพย์
 
-## Asset Depreciation Ledger
+## บัญชีแยกประเภทค่าเสื่อมราคาสินทรัพย์
 
-This report shows the Purchase Amount, Depreciated Amount and accumulated total depreciation for all the assets under the selected date range. It also shows the current value and current depreciation status of the Asset.
+รายงานนี้แสดงยอดซื้อ จำนวนเงินที่คิดค่าเสื่อมราคา และค่าเสื่อมราคารวมสะสมสำหรับสินทรัพย์ทั้งหมดภายใต้ช่วงวันที่ที่เลือก นอกจากนี้ยังแสดงมูลค่าปัจจุบันและสถานะค่าเสื่อมราคาปัจจุบันของสินทรัพย์
 
-![Asset Depreciation Ledger](/docs/assets/img/asset/asset-dep-ledger.png)
+![บัญชีแยกประเภทค่าเสื่อมราคาสินทรัพย์](/docs/assets/img/asset/asset-dep-ledger.png)
 
 
-## Asset Depreciations and Balances
-This report shows the cost of purchase, selling, and scrapping all assets based on [Asset Category](/docs/user/manual/en/asset/asset-category). The report also shows the depreciation details based on the selected period and the net value of the asset category.
+## ค่าเสื่อมราคาสินทรัพย์และยอดคงเหลือ
+รายงานนี้แสดงต้นทุนการซื้อ ขาย และการตัดสินทรัพย์ทั้งหมดตาม [หมวดหมู่สินทรัพย์](/docs/user/manual/th/asset/asset-category) รายงานยังแสดงรายละเอียดค่าเสื่อมราคาตามช่วงเวลาที่เลือกและมูลค่าสุทธิของประเภทสินทรัพย์
 
-![Asset Depreciations and Balances](/docs/assets/img/asset/asset-dep-balance.png)
+![ค่าเสื่อมราคาสินทรัพย์และยอดคงเหลือ](/docs/assets/img/asset/asset-dep-balance.png)
 
-## Fixed Asset Register
+## ทะเบียนสินทรัพย์ถาวร
 
-Fixed asset register provides a unified view of all the details regarding current status of an asset. A Fixed asset register tracks all the fixed assets that the you have created. This not only includes assets that are currently in your possession, but also tracks those assets that are disposed.
+ทะเบียนสินทรัพย์ถาวรให้มุมมองแบบครบวงจรของรายละเอียดทั้งหมดเกี่ยวกับสถานะปัจจุบันของสินทรัพย์ ทะเบียนสินทรัพย์ถาวรติดตามสินทรัพย์ถาวรทั้งหมดที่คุณสร้างขึ้น ซึ่งไม่เพียงแต่รวมถึงทรัพย์สินที่อยู่ในความครอบครองของคุณในปัจจุบัน แต่ยังติดตามทรัพย์สินเหล่านั้นที่จำหน่าย
 
-Types of records based on depreciation:
+ประเภทของเรกคอร์ดตามค่าเสื่อมราคา:
 
-* ** In Location: All the assets that are currently in your possession are under this category.
+* ** ที่ตั้ง: ทรัพย์สินทั้งหมดที่อยู่ในความครอบครองของคุณอยู่ภายใต้หมวดหมู่นี้
 
-* ** Disposed: All the assets that are currently sold or scrapped come under this category.
+* ** จำหน่าย: ทรัพย์สินทั้งหมดที่มีการขายหรือทิ้งอยู่ในหมวดนี้
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/fixed-asset-register.png">

@@ -1,179 +1,180 @@
 <!-- add-breadcrumbs -->
-# Pricing Rule
+# กฎการกำหนดราคา
 
-**A Pricing Rule defines the discount/pricing rules that apply based on set conditions.**
+**กฎการกำหนดราคากำหนดกฎส่วนลด/การกำหนดราคาที่ใช้ตามเงื่อนไขที่ตั้งไว้**
 
-A Pricing Rule has many options using which you can control the pricing of an Item. Filters like quantity, date, groups, and other conditions can be set.
+กฎการกำหนดราคามีตัวเลือกมากมายซึ่งคุณสามารถควบคุมราคาของสินค้าได้ สามารถตั้งค่าตัวกรอง เช่น ปริมาณ วันที่ กลุ่ม และเงื่อนไขอื่นๆ ได้
 
-A Pricing Rule is somewhat similar to a [Tax Rule](/docs/user/manual/en/accounts/tax-rule).
+กฎการกำหนดราคาจะค่อนข้างคล้ายกับ [กฎภาษี](/docs/user/manual/th/accounts/tax-rule).
 
-Following are the few cases which can be addressed using Pricing Rule:
+ต่อไปนี้คือบางกรณีที่สามารถแก้ไขได้โดยใช้กฎการกำหนดราคา:
 
-- As per a promotional sale policy, if the Customer purchases more than 10 units of an item, he enjoys 20% discount.
-- For Customer "XYZ", the selling price for the specific Item should be updated as ###.
-- Items categorized under specific Item Group have same selling or buying price.
-- Customers belonging to specific Customer Group should get ### selling price, or % of Discount on Items.
-- Supplier categorized under specific Supplier Group should have ### buying rate applied.
+- ตามนโยบายการขายส่งเสริมการขาย หากลูกค้าซื้อสินค้ามากกว่า 10 หน่วย เขาจะได้รับส่วนลด 20%
+- สำหรับลูกค้า "XYZ" ราคาขายสำหรับสินค้าเฉพาะควรอัปเดตเป็น ###
+- รายการที่จัดอยู่ในกลุ่มสินค้าเฉพาะจะมีราคาขายหรือซื้อเท่ากัน
+- ลูกค้าที่อยู่ในกลุ่มลูกค้าเฉพาะควรได้รับราคาขาย ### หรือ% ของส่วนลดสินค้า
+- ซัพพลายเออร์ที่จัดประเภทภายใต้กลุ่มซัพพลายเออร์เฉพาะควรมีอัตราการซื้อ ###
+- หากต้องการใช้ส่วนลดและรายการราคาสำหรับสินค้าโดยอัตโนมัติ ให้สร้างกฎการกำหนดราคาสำหรับรายการนั้น
 
-To have Discount and Price List Rate for an Item auto-applied, create Pricing Rules for it.
+ในการเข้าถึงรายการกฎการกำหนดราคา ไปที่:
 
-To access the Pricing Rule list, go to:
-> Home > Accounting > Pricing Rule
+>หน้าหลัก > การบัญชี > กฎการกำหนดราคา
 
-## 1. Prerequisites
-Before creating and using a Pricing Rule, it is advisable to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้กฎการกำหนดราคา ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-1. [Item](/docs/user/manual/en/stock/item)
-1. [Item Group](/docs/user/manual/en/stock/item-group)
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Supplier](/docs/user/manual/en/buying/supplier)
+1. [สินค้า](/docs/user/manual/th/stock/item)
+1. [กลุ่มสินค้า](/docs/user/manual/th/stock/item-group)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
 
-## 2. How to create a Pricing Rule
-1. Go to the Pricing Rule list and click on New.
-1. Set a title for the rule.
-1. Select what to Apply On from Item Code, Item Group, Brand, or Transaction.
-1. Select whether you want to apply Price discount or Product discount. If you want to give free products then select the product discount.
+## 2. Hวิธีสร้างกฎการกำหนดราคา
+1. ไปที่รายการกฎการกำหนดราคาและคลิกที่ใหม่
+1. ตั้งชื่อสำหรับกฎ
+1. เลือกสิ่งที่จะนำไปใช้จากรหัสสินค้า กลุ่มสินค้า แบรนด์ หรือธุรกรรม
+1. เลือกว่าคุณต้องการใช้ส่วนลดราคาหรือส่วนลดสินค้า หากคุณต้องการให้สินค้าฟรี ให้เลือกส่วนลดสินค้า
  <img alt="Applicable On" class="screenshot" src="{{docs_base_url}}/assets/img/articles/pricing-rule-on.png">
-1. For a single item, select Item Code and select the items.
-1. If you want Pricing Rule to be applied on all the items, select 'Item Group' and select **All Item Group** (parent Item Group).
-1. Set the discount/price to be applied. To know more, [go to this section](/docs/user/manual/en/accounts/pricing-rule#35-price-discount-scheme).
-1. Save.
 
-### 2.1 Additional options when creating a Pricing Rule
+1. สำหรับรายการเดียว ให้เลือก รหัสรายการ แล้วเลือกรายการ
+1. หากคุณต้องการใช้กฎการกำหนดราคากับรายการทั้งหมด ให้เลือก 'กลุ่มรายการ' และเลือกกลุ่มรายการทั้งหมด (กลุ่มรายการหลัก)
+1. กำหนดส่วนลด/ราคาที่จะใช้ อ่าน [ที่นี่](/docs/user/manual/th/accounts/pricing-rule#35-price-discount-scheme)เพื่อทราบข้อมูลเพิ่มเติม
+1. บันทึก
 
-#### Warehouse
-Setting a Warehouse here will cause the Pricing Rule to be applied only if the Item is selected from the Warehouse specified here.
+### 2.1 ตัวเลือกเพิ่มเติมเมื่อสร้างกฎการกำหนดราคา 
 
-#### Apply Rule On
-Based on the attribute selected in the 'Apply On' field, you can set the Pricing Rule based on one of these:
+#### คลังสินค้า 
+การตั้งค่าคลังสินค้าที่นี่จะทำให้ใช้กฎการกำหนดราคาก็ต่อเมื่อสินค้าถูกเลือกจากคลังสินค้าที่ระบุไว้ที่นี่
 
-* [Item](/docs/user/manual/en/stock/item)
-* [Item Group](/docs/user/manual/en/stock/item-group)
-* Brand
-* Transaction (on the total amount of the transaction)
+#### การใช้กฎ
+ตามแอตทริบิวต์ที่เลือกในฟิลด์ 'นำไปใช้กับ' คุณสามารถตั้งค่ากฎการกำหนดราคาโดยพิจารณาจากสิ่งใดสิ่งหนึ่งต่อไปนี้:
 
-In this table, you can select the specific Item/Item Group/Brand. For example, if you select Apply On 'Item Group' and select 'Raw Materials' in the table, this Pricing Rule will be applied only on Items that belong to the Group 'Raw Materials'.
+* [สินค้า](/docs/user/manual/th/stock/item)
+* [กลุ่มสินค้า](/docs/user/manual/th/stock/item-group)
+* ยี่ห้อ
+* ธุรกรรม (ตามยอดรวมของรายการ)
 
-**UoM**: The Pricing Rule will apply only if the UoM set here matches with the transaction.
+ในตารางนี้ คุณสามารถเลือกรายการ/กลุ่มสินค้า/แบรนด์เฉพาะได้ ตัวอย่างเช่น หากคุณเลือกใช้กับ 'กลุ่มสินค้า' และเลือก 'วัตถุดิบ' ในตาราง กฎการกำหนดราคานี้จะใช้กับสินค้าที่อยู่ในกลุ่ม 'วัตถุดิบ' เท่านั้น
 
-#### Condition
+**UoM** : กฎการกำหนดราคาจะใช้ได้ก็ต่อเมื่อ UoM ที่ตั้งไว้ที่นี่ตรงกับธุรกรรม
 
-In this field you can add a condition in python to check against field values in the transaction doctype, like shown below for Sales Invoice:
+#### เงื่อนไข 
+
+ในฟิลด์นี้ คุณสามารถเพิ่มเงื่อนไขใน python เพื่อตรวจสอบกับค่าของฟิลด์ในประเภทเอกสารธุรกรรม ดังที่แสดงด้านล่างสำหรับใบแจ้งหนี้การซื้อ
 ```
 customer=='Customer Name' and status!='Overdue'
 ```
 
-Please note that only single line python conditions will work, using fieldnames of the target doctype.
+> โปรดทราบว่าเงื่อนไขใน python จะต้องเป็นบรรทัดเดียวเท่านั้นที่จะใช้งานได้ โดยใช้ชื่อฟิลด์ของประเภทเอกสารเป้าหมาย
 
-#### Mixed Conditions
-If you select two or more Items and set the Min and Max Quantity. The Pricing Rule will be applied only if the total sum of Items matches the set quantities. For example, you create a Pricing Rule on Item 1 and Item 2 and set the Min and Max Quantity as 30, the Pricing Rule will apply only if the total quantity is 30.
+#### เงื่อนไขผสม 
+หากคุณเลือกรายการตั้งแต่สองรายการขึ้นไปและตั้งค่าจำนวนต่ำสุดและสูงสุด กฎการกำหนดราคาจะใช้เฉพาะเมื่อผลรวมของรายการตรงกับปริมาณที่กำหนด ตัวอย่างเช่น คุณสร้างกฎการกำหนดราคาสำหรับรายการที่ 1 และรายการที่ 2 และตั้งค่าจำนวนต่ำสุดและสูงสุดเป็น 30 กฎการกำหนดราคาจะใช้ได้เฉพาะเมื่อปริมาณทั้งหมดคือ 30
 
-#### Is Cumulative
-Enabling this options allows the Pricing Rule to be applied cumulatively. You need to set the 'Min Amt' and 'Max Amt' for this.
+#### เป็นค่าสะสม 
+การเปิดใช้งานตัวเลือกนี้ทำให้สามารถใช้กฎการกำหนดราคาแบบสะสมได้ คุณต้องตั้งค่า 'Min Amt' และ 'Max Amt' สำหรับสิ่งนี้
 
-Consider a scenario where the Min Amt is 1,500 and Max Amt is 2,000. Now, if one transaction is created for 1,400 then Pricing Rule will not be applied. However, on creating a second invoice of amount 600, Pricing Rule will be applied. This happened since the total (cumulative) amount of the invoices added up to 2,000. Note that the discount will be applied only to the latest transaction that crosses the cumulative limit.
+พิจารณาสถานการณ์ที่ Min Amt คือ 1,500 และ Max Amt คือ 2,000 ตอนนี้ หากมีการสร้างธุรกรรมหนึ่งรายการสำหรับ 1,400 กฎการกำหนดราคาจะไม่ถูกนำไปใช้ อย่างไรก็ตาม ในการสร้างใบแจ้งหนี้ใบที่สองจำนวน 600 กฎการกำหนดราคาจะถูกนำมาใช้ สิ่งนี้เกิดขึ้นเนื่องจากยอดรวม (สะสม) ของใบแจ้งหนี้รวมกันเป็น 2,000 โปรดทราบว่าส่วนลดจะใช้กับธุรกรรมล่าสุดที่เกินขีดจำกัดสะสมเท่านั้น
 
-This can be useful to give discounts if a Customer buys an Item multiple times and you want to reward him with discounts/special prices.
+สิ่งนี้มีประโยชน์ในการให้ส่วนลดหากลูกค้าซื้อสินค้าหลายครั้งและคุณต้องการให้รางวัลเขาด้วยส่วนลด/ราคาพิเศษ
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Apply Rule On Other
-This feature checks condition on first Item but applies rule on another Item.
+### 3.1 ใช้กฎกับผู้อื่น 
+คุณลักษณะนี้จะตรวจสอบเงื่อนไขในรายการแรกแต่ใช้กฎกับรายการอื่น
 
 ![Apply rule on other](/docs/assets/img/articles/pricing-rule-other.png)
 
-For example, set Item1 and Item2 in the 'Apply Rule On' table and set 'Apply Rule On Other' on Item3. Now, if the transaction has Item1, Item2, and Item3, the Pricing Rule will apply on Item3 since the first two Items were present in the transaction.
+ตัวอย่างเช่น ตั้งค่า สินค้า1 และ สินค้า2 ในตาราง 'ใช้กฎกับ' และตั้งค่า 'ใช้กฎกับผู้อื่น' บน สินค้า3 ตอนนี้ หากธุรกรรมมีรายการที่ 1 รายการที่ 2 และรายการที่ 3 กฎการกำหนดราคาจะมีผลกับรายการที่ 3 เนื่องจากรายการสองรายการแรกมีอยู่ในธุรกรรม
 
-### 3.2 Party Information
+### 3.2 ข้อมูลของผู้ที่เกี่ยวข้อง
 
-Set whether the Pricing Rule is for Selling of Buying the Item.
+กำหนดว่ากฎการกำหนดราคามีไว้สำหรับการขายการซื้อสินค้าหรือไม่
 
-Based on your selection you can set applicability to one of the following masters.
+จากการเลือกของคุณ คุณสามารถตั้งค่าการบังคับใช้กับหนึ่งในต้นแบบต่อไปนี้
 
-* [Customer](/docs/user/manual/en/CRM/customer)
-* [Customer Group](/docs/user/manual/en/CRM/customer-group)
-* [Territory](/docs/user/manual/en/selling/territory)
-* [Sales Partner](/docs/user/manual/en/selling/sales-partner)
-* [Campaign](/docs/user/manual/en/CRM/campaign)
-* [Supplier](/docs/user/manual/en/buying/supplier)
-* Supplier Group
+* [ลูกค้า](/docs/user/manual/th/CRM/customer)
+* [กลุ่มลูกค้า](/docs/user/manual/th/CRM/customer-group)
+* [พื้นที่](/docs/user/manual/th/selling/territory)
+* [พันธมิตรการขาย](/docs/user/manual/th/selling/sales-partner)
+* [แคมเปญ](/docs/user/manual/th/CRM/campaign)
+* [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+* กลุ่่มซัพพลายเออร์ 
 
-### 3.3 Quantity and Amount
-Specify minimum qty, maximum qty, minimum amount, or maximum amount of an Item when this Pricing Rule should be applied.
+### 3.3 จำนวนและยอดเงิน
+ระบุจำนวนขั้นต่ำ จำนวนสูงสุด จำนวนขั้นต่ำ หรือจำนวนสูงสุดของรายการเมื่อควรใช้กฎการกำหนดราคานี้
 
-Note that if the quantity or amount falls short or exceeds the limits set here, the Pricing Rule will not be applied at all. However, it will be applied if you have enabled the options Mixed Conditions or Cumulative.
+โปรดทราบว่าหากปริมาณหรือจำนวนเงินขาดหายไปหรือเกินขีดจำกัดที่กำหนดไว้ที่นี่ กฎการกำหนดราคาจะไม่ถูกนำไปใช้เลย อย่างไรก็ตาม จะมีผลหากคุณเปิดใช้งานตัวเลือก เงื่อนไขแบบผสม หรือ แบบสะสม
 
 <img alt="Applicable Qty" class="screenshot" src="{{docs_base_url}}/assets/img/articles/pricing-rule-qty-amt.png">
 
-### 3.4 Validity
-You can also set a date interval for when the Pricing Rule will be valid. This is useful for a sales promotion. On leaving the dates blank the Pricing Rule will not have any time frame limit.
+### 3.4 ตรวจสอบข้อมูล
+คุณยังสามารถกำหนดช่วงวันที่ว่ากฎการกำหนดราคาจะมีผลเมื่อใด สิ่งนี้มีประโยชน์สำหรับการส่งเสริมการขาย เมื่อเว้นวันที่ว่างไว้ กฎการกำหนดราคาจะไม่มีการจำกัดกรอบเวลา
 
 <img alt="Period" class="screenshot" src="{{docs_base_url}}/assets/img/articles/pricing-rule-period.png">
 
-### 3.5 Margin
+### 3.5 มาร์จิ้น
 
 ![Pricing Rule Margin](/docs/assets/img/articles/pricing-rule-margin1.png)
 
-* **Margin Type**: When selling an Item, you may sell it for a certain margin. If you don't want to add selling prices to Items every time and would like to automatically set a margin, it can be done with this feature.
+* **ประเภทมาร์จิ้น**: เมื่อขายสินค้า คุณอาจขายมันด้วยมาร์จิ้นที่แน่นอน หากคุณไม่ต้องการเพิ่มราคาขายให้กับรายการทุกครั้งและต้องการตั้งค่ามาร์จิ้นโดยอัตโนมัติ ก็สามารถทำได้ด้วยคุณสมบัตินี้re.
 
-* **Margin Rate or Amount**: The margin set can be based on Percentage or Amount, eg: 5% margin or $50 fixed margin.
+* **อัตราหรือจำนวนเงินมาร์จิ้น**: มาร์จิ้นสามารถขึ้นอยู่กับเปอร์เซ็นต์หรือจำนวนเงิน เช่น มาร์จิ้น 5% หรือมาร์จิ้นคงที่ $50
 
-Read [adding margin](/docs/user/manual/en/selling/articles/adding-margin) for more details.
+อ่าน [การเพิ่มมาร์จิ้น](/docs/user/manual/th/selling/articles/adding-margin) เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.6 Price Discount Scheme
-The actual rule to be applied is set in this section.
+### 3.6 การลดราคา
+กฎจริงที่จะนำไปใช้มีการตั้งค่าไว้ในส่วนนี้
 
 ![Pricing Rule](/docs/assets/img/articles/pricing-rule-rule.png)
 
-* **Rate**: This will be the new rate for an Item. For example, if you sell an Item for 100 and want to sell it for 112 for a specific party, then select Rate and set the Rate as 112.
-* **Discount Percentage**: A specific discount percentage can be set. The discount percentage can be set to a specific [Price List](/docs/user/manual/en/stock/price-lists). Leaving the 'For Price List' blank will apply the Pricing Rule to all Price Lists.
-* **Discount Amount**: A fixed discount amount will be applied. For example if you sell an Item for 100 and want to sell it with a discount of 7, then this condition can be set using the Discount Amount option.
+* **เรท**: เป็นอัตราใหม่สำหรับไอเท็ม ตัวอย่างเช่น หากคุณขายสินค้าในราคา 100 และต้องการขายในราคา 112 สำหรับบุคคลใดฝ่ายหนึ่ง ให้เลือกอัตราและกำหนดอัตราเป็น 112
+* **เปอร์เซ็นต์ส่วนลด** : สามารถกำหนดเปอร์เซ็นต์ส่วนลดเฉพาะได้ เปอร์เซ็นต์ส่วนลดสามารถกำหนดเป็น [รายการราคา](/docs/user/manual/th/stock/price-lists)เฉพาะได้ การเว้น 'สำหรับรายการราคา' ว่างไว้จะเป็นการนำกฎการกำหนดราคาไปใช้กับรายการราคาทั้งหมด
+* **จำนวนส่วนลด** : จำนวนส่วนลดคงที่จะถูกนำไปใช้ ตัวอย่างเช่น หากคุณขายสินค้าในราคา 100 และต้องการขายโดยมีส่วนลด 7 เงื่อนไขนี้สามารถตั้งค่าได้โดยใช้ตัวเลือกจำนวนส่วนลด
 
-### 3.7 Advanced Settings
+### 3.7 การตั้งค่าขั้นสูง
 
 ![Pricing Rule Advance](/docs/assets/img/articles/pricing-rule-adv.png)
 
-* **Threshold for Suggestion**: This is the threshold based on which the system will notify you to adjust Item Quantity for discount. For example, if the Min Quantity is 10 and the Threshold is 9, the system will notify to add 1 more Item for the discount to be applicable. This also applies to the amount set.
+* **Threshold for Suggestion**: เกณฑ์ที่ระบบจะแจ้งให้คุณปรับปริมาณสินค้าเพื่อรับส่วนลด ตัวอย่างเช่น หากปริมาณขั้นต่ำคือ 10 และเกณฑ์คือ 9 ระบบจะแจ้งให้เพิ่มสินค้าอีก 1 รายการเพื่อใช้ส่วนลด นอกจากนี้ยังใช้กับจำนวนเงินที่ตั้งไว้
 
-* **Priority**: Consider an Item Group, you want to set specific rules on one Item from the group. This can be done by creating a new Pricing Rule and setting a higher priority. This can also apply to Customer Group and Supplier Group.
+* **ลำดับความสำคัญ**: พิจารณากลุ่มรายการ คุณต้องการกำหนดกฎเฉพาะสำหรับรายการเดียวจากกลุ่ม ซึ่งสามารถทำได้โดยการสร้างกฎการกำหนดราคาใหม่และตั้งค่าลำดับความสำคัญที่สูงขึ้น นอกจากนี้ยังใช้กับกลุ่มลูกค้าและกลุ่มซัพพลายเออร์ได้อีกด้วย
 
-* **Apply Multiple Pricing Rules**: To understand this, consider an Item of Rate 500. There are two Pricing Rules on it P1 and P2. P1 applies 10% discount and P2 applies 5%. Enabling this option will apply a total of 15% on the Item Rate which gives 425.
+* **ใช้กฎการกำหนดราคาหลายข้อ**: ให้พิจารณารายการที่มีอัตรา 500 มีกฎการกำหนดราคาอยู่สองข้อคือ P1 และ P2 P1 รับส่วนลด 10% และ P2 รับส่วนลด 5% การเปิดใช้งานตัวเลือกนี้จะมีผลรวม 15% ของอัตราไอเท็มซึ่งให้ 425
 
-* **Apply Discount on Rate**: The discount will be compounded. Consider the same scenario as above. On enabling this option, 10% will be applied on 500 which will give 450, then 5% will be applied on 450 which will give 427.5.
+* **ใช้อัตราส่วนลด**: ส่วนลดจะถูกทบต้น พิจารณาสถานการณ์เดียวกันกับข้างต้น เมื่อเปิดใช้งานตัวเลือกนี้ 10% จะถูกนำไปใช้ใน 500 ซึ่งจะให้ 450 จากนั้น 5% จะถูกนำไปใช้ใน 450 ซึ่งจะให้ 427.5
 
-* **Validate Applied Rule**: Shows the entered validation message if the discount/rate set manually by you in a transaction does not match the Pricing Rule.
+* **ตรวจสอบกฎที่ใช้**: แสดงข้อความตรวจสอบความถูกต้องที่ป้อน หากส่วนลด/อัตราที่คุณกำหนดด้วยตนเองในธุรกรรมไม่ตรงกับกฎการกำหนดราคา
 
- This is useful when the top distributor in the hierarchy decides the discount/rate to be applied and you are only validating if the Pricing Rule is applied correctly.
+สิ่งนี้มีประโยชน์เมื่อผู้จัดจำหน่ายชั้นนำในลำดับชั้นตัดสินใจว่าจะใช้ส่วนลด/อัตรา และคุณกำลังตรวจสอบเฉพาะในกรณีที่ใช้กฎการกำหนดราคาอย่างถูกต้องเท่านั้น
 
-## 4. Pricing Rule discount types
-### 4.1 Price Discount
+## 4. ประเภทส่วนลดกฎการกำหนดราคา
+### 4.1 ส่วนลดราคา
 
-1. Under the Margin Type, you can set whether the margin is calculated as a percentage or an amount. Eg: 10% margin on supplier price list at the time of sales.
+1. คุณสามารถตั้งค่าว่าจะคำนวณมาร์จิ้นเป็นเปอร์เซ็นต์หรือจำนวนเงิน เช่น อัตรากำไรขั้นต้น 10% ของรายการราคาซัพพลายเออร์ ณ เวลาที่ขาย
 
-1. Rate mentioned in Pricing Rule will be given priority over Item's Price List (Item Price) rate.
+1. อัตราที่กล่าวถึงในกฎการกำหนดราคาจะมีความสำคัญเหนืออัตรารายการราคาของสินค้า (ราคาสินค้า)
 
  <img alt="Applicable Rate" class="screenshot" src="/docs/assets/img/articles/pricing-rule-price.png">
 
-1. Discount Percentage can be applied for a specific Price List (Selling or Buying). To apply it for both, leave the 'For Price List' field blank.
+1. เปอร์เซ็นต์ส่วนลดสามารถใช้ได้กับรายการราคาเฉพาะ (การขายหรือการซื้อ) หากต้องการนำไปใช้กับทั้งคู่ ให้เว้นฟิลด์ 'สำหรับรายการราคา' ว่างไว้
 
  <img alt="Discount" class="screenshot" src="{{docs_base_url}}/assets/img/articles/pricing-rule-discount.png">
 
-1. Discount can also be set in terms of amount.
+1. ส่วนลดสามารถกำหนดเป็นจำนวนเงินได้
 
  <img alt="Discount" class="screenshot" src="{{docs_base_url}}/assets/img/articles/pricing-rule-discount-amt.png">
 
-### 4.2 Product Discount
+### 4.2 ส่วนลดสินค้า
 
-1. "Buy 2 quantities get 1 free quantity of the same item." To configure such type of rules, set the Price or Product Discount as 'Product discount', tick the Same Item checkbox, and set the quantity.
+1. "ซื้อ 2 ปริมาณ แถมฟรี 1 ชิ้นต่อชิ้น" ในการกำหนดค่ากฎประเภทดังกล่าว ให้ตั้งค่าราคาหรือส่วนลดสินค้าเป็น 'ส่วนลดผลิตภัณฑ์' ทำเครื่องหมายในช่องรายการเดียวกัน และกำหนดปริมาณ
 
  <img alt="Discount" class="screenshot" src="{{docs_base_url}}/assets/img/articles/pricing-rule-same-product-free.png">
 
-1. "Buy 2 quantities get 1 free quantity of the another item." To configure such type of rules. Set the Price or Product Discount as Product discount, untick the 'Same Item' checkbox and set the 'Free Item' and quantity.
+1. "ซื้อ 2 ปริมาณ แถมฟรีอีก 1 ชิ้น" เพื่อกำหนดค่ากฎประเภทดังกล่าว กำหนดราคาหรือส่วนลดสินค้าเป็นส่วนลดสินค้า ยกเลิกการเลือกกล่องกาเครื่องหมาย 'รายการเดียวกัน' และตั้งค่า 'รายการฟรี' และจำนวน
 
  <img alt="Discount" class="screenshot" src="{{docs_base_url}}/assets/img/articles/pricing-rule-other-product-free.png">
 
-### 5. Related Topics
-1. [Promotional Scheme](/docs/user/manual/en/accounts/promotional-scheme)
-1. [Tax Rule](/docs/user/manual/en/accounts/tax-rule)
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Item](/docs/user/manual/en/stock/item)
+### 5. หัวข้อที่เกี่ยวข้อง
+1. [โครงการส่งเสริมการขาย](/docs/user/manual/th/accounts/promotional-scheme)
+1. [กฎภาษี](/docs/user/manual/th/accounts/tax-rule)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+1. [สินค้า](/docs/user/manual/th/stock/item)

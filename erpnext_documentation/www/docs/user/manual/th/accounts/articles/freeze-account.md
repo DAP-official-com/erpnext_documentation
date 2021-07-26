@@ -1,15 +1,15 @@
 <!-- add-breadcrumbs -->
-# Freeze an Account
+# การระงับบัญชี
 
-Once an Account is Frozen, you won't be able to use it for any accounting transaction. Since this is a critical action, you need to explicitly define a Role who can set an Account as Frozen. You can define this Role in the Account Settings.  
+เมื่อบัญชีถูกระงับ คุณจะไม่สามารถใช้สำหรับธุรกรรมทางบัญชีใดๆ เนื่องจากเป็นการดำเนินการที่สำคัญ คุณต้องกำหนดบทบาทอย่างชัดเจนว่าใครสามารถตั้งค่าบัญชีเป็น ถูกระงับ คุณสามารถกำหนดบทบาทนี้ได้ในการตั้งค่าบัญชี
 
-`Accounts > Account Settings`
+`บัญชี > การตั้งค่าบัญชี`
 
-To freeze an Account, go to Chart of Accounts, and edit an Account.
+ในการระงับบัญชี ไปที่ผังบัญชี และแก้ไขบัญชี
 
 <img class="screenshot" alt="Download Backup" src="{{docs_base_url}}/assets/img/articles/freeze-account-1.png">
 
-If User has Role define in the  Account Setting assigned, then he/she will be able to set an Account as Frozen.
+หากผู้ใช้มีการกำหนดบทบาทในการตั้งค่าบัญชีที่กำหนด เขา/เธอจะสามารถตั้งค่าบัญชีให้ถูกระงับได้
 
 <img class="screenshot" alt="Download Backup" src="{{docs_base_url}}/assets/img/articles/freeze-account-2.png">
 

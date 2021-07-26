@@ -1,51 +1,51 @@
 <!-- add-breadcrumbs -->
-# Gratuity
+#บำเหน็จ
 
-> This Feature is introduced in Version 13, which will be part of a separate Payroll Module.
+> คุณลักษณะนี้เปิดตัวในเวอร์ชัน 13 ซึ่งจะเป็นส่วนหนึ่งของโมดูลบัญชีเงินเดือนที่แยกต่างหาก
 
-**Gratuity is given by the employer to his/her employee for the services rendered by him/her during the period of employment. It is usually paid at the time of retirement but can be paid earlier, provided certain conditions are met.**
+**นายจ้างจะมอบเงินบำเหน็จให้แก่ลูกจ้างของตนสำหรับบริการที่ตนให้ในระหว่างระยะเวลาการจ้างงาน โดยปกติจ่ายเมื่อเกษียณอายุ แต่สามารถจ่ายได้เร็วกว่านี้ โดยต้องเป็นไปตามเงื่อนไขบางประการ**
 
-In ERPNext you can manage Gratuity Payments of employee, based on different [Gratuity Rule](/docs/user/manual/en/human-resources/gratuity) which vary from region to region.
+ใน ERPNext คุณสามารถจัดการการจ่ายเงินบำเหน็จของพนักงานได้ โดยอิงตาม [กฎเงินรางวัล](/docs/user/manual/th/human-resources/gratuity) ที่แตกต่างกัน ซึ่งแตกต่างกันไปในแต่ละภูมิภาค
 
-To access the Gratuity go to:
+ในการเข้าถึงบำเหน็จให้ไปที่:
 
-> Home > Payroll > Gratuity
+> หน้าแรก > เงินเดือน > บำเหน็จ
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Gratuity, it is advised to create the following:
+ก่อนสร้าง บำเหน็จ ขอแนะนำให้สร้างสิ่งต่อไปนี้:
 
-1. [Employee](/docs/user/manual/en/human-resources/employee)
-1. [Gratuity Rule](/docs/user/manual/en/human-resources/gratuity)
-1. [Salary Component](/docs/user/manual/en/human-resources/salary-component)
+1. [พนักงาน](/docs/user/manual/th/human-resources/employee)
+1. [กฎบำเหน็จ](/docs/user/manual/th/human-resources/gratuity)
+1. [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
 
-## 2. How to create Gratuity
+## 2. วิธีสร้างบำเหน็จ
 
-1. Got to Gratuity > New
-1. Select Employee and Gratuity Rule. On selecting it will calculate Current Work Experience and Total Gratuity Amount based on Gratuity rule and relieving date.
-1. Check checkbox Pay via Salary Slip. if you want gratuity payment through Salary Slip.
-1. Save and Submit
+1. ได้รับบำเหน็จ > ใหม่
+1. เลือกกฎพนักงานและเงินรางวัล ในการเลือก จะคำนวณประสบการณ์การทำงานปัจจุบันและจำนวนเงินบำเหน็จทั้งหมดตามกฎบำเหน็จและวันที่บรรเทา
+1. ทำเครื่องหมายที่ช่อง จ่ายผ่านสลิปเงินเดือน หากคุณต้องการจ่ายเงินบำเหน็จผ่านสลิปเงินเดือน
+1. บันทึกและส่ง
 
 <img class="screenshot" alt="Gratuity" src="{{docs_base_url}}/assets/img/human-resources/gratuity.png">
 
-## 3. Gratuity Payments Methods
+## 3. วิธีการจ่ายเงินบำเหน็จ
 
-In ERPNext, we allow you to pay the amount via Salary Slip or Payment Entry.
+ใน ERPNext เราอนุญาตให้คุณชำระเงินผ่านสลิปเงินเดือนหรือรายการชำระเงิน
 
-### 3.1 Payment via Salary Slip
-To pay the Gratuity amount via Salary Slip you need to check the checkbox **Pay via Salary Slip**. Select **Payroll Date** and **Salary Component**, which will appear on Check.
+### 3.1 ชำระผ่านสลิปเงินเดือน
+ในการชำระจำนวนเงินบำเหน็จผ่านสลิปเงินเดือน คุณต้องทำเครื่องหมายที่ช่อง **ชำระเงินผ่านสลิปเงินเดือน** เลือก **วันที่จ่ายเงิน** และ **ส่วนประกอบเงินเดือน** ซึ่งจะปรากฏบนเช็ค
 
 <img class="screenshot" alt="payment conf via salary slip" src="{{docs_base_url}}/assets/img/human-resources/payment-conf-via-salary-slip.png">
 
-On Submit, it will automatically create Additional Salary with respective Payroll Date and Salary Component.
+เมื่อส่งจะสร้างเงินเดือนเพิ่มเติมโดยอัตโนมัติพร้อมวันที่จ่ายเงินเดือนและส่วนประกอบเงินเดือนตามลำดับ
 
 <img class="screenshot" alt="gratuity payment via salary slip" src="{{docs_base_url}}/assets/img/human-resources/gratuity-payment-via-salary-slip.png">
 
-### Payment via Payment Entry
-To pay the Gratuity amount via Payment Entry you need to make sure that checkbox **Pay via Salary Slip** is unchecked. After that, it will allow you to select **Payable Account**, **Expense Account**, and **Mode of Payment**.
+### ชำระเงินผ่านรายการชำระเงิน
+ในการชำระจำนวนเงินบำเหน็จผ่านรายการชำระเงิน คุณต้องตรวจสอบให้แน่ใจว่าไม่ได้เลือกช่องทำเครื่องหมาย **ชำระเงินผ่านสลิปเงินเดือน** หลังจากนั้นจะให้คุณเลือก **บัญชีเจ้าหนี้**, **บัญชีค่าใช้จ่าย** และ **รูปแบบการชำระเงิน**
 
 <img class="screenshot" alt="payment conf via payment entry" src="{{docs_base_url}}/assets/img/human-resources/payment-conf-via-payment-entry.png">
 
-After Submitting the record click on the button "Create Payment Entry" which will redirect you to the Payment Entry Form fill in the details, save, and submit.
+หลังจากส่งบันทึกแล้ว ให้คลิกที่ปุ่ม "สร้างรายการชำระเงิน" ซึ่งจะนำคุณไปยังแบบฟอร์มรายการชำระเงิน กรอกรายละเอียด บันทึก และส่ง
 
 <img class="screenshot" alt="gratuity payment via payment entry" src="{{docs_base_url}}/assets/img/human-resources/gratuity-payment-via-payment-entry.png">

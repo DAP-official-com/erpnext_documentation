@@ -1,42 +1,42 @@
-# Vehicle
+# ยานพาหนะ
 
-**The Vehicle document allows you to define the different types of Vehicles in your Organization. It acts as the Vehicle Master for Fleet Management.**
+**เอกสารยานพาหนะช่วยให้คุณกำหนดประเภทยานพาหนะต่างๆ ในองค์กรของคุณได้ ทำหน้าที่เป็นยานพาหนะหลักสำหรับการจัดการยานพาหนะ**
 
-To access the Vehicle master, go to:
+ในการเข้าถึงต้นแบบยานพาหนะ ไปที่:
 
->   Human Resources > Fleet Management > Vehicle
+> ทรัพยากรบุคคล > การจัดการยานพาหนะ > ยานพาหนะ
 
-## 1. How to create a Vehicle document
+## 1. วิธีสร้างเอกสารยานพาหนะ
 
-1. Go to Vehicle list, click on New.
-1. Enter information such as License Plate, Make (Brand) and Model.
-1. Enter Odometer value (Last).
-1. Enter other additional details such as Fuel Type ad Fuel UOM.
-1. Save.
+1. ไปที่รายการรถ คลิกที่ใหม่
+1. ป้อนข้อมูล เช่น ป้ายทะเบียน ยี่ห้อ (ยี่ห้อ) รุ่น
+1. ป้อนค่ามาตรระยะทาง (สุดท้าย)
+1. กรอกรายละเอียดอื่นๆ เช่น ประเภทเชื้อเพลิง หรือ หน่วยวัดของเชื้อเพลิง
+1. บันทึก
 
 
 	<img class="screenshot" alt="Vehicle" src="{{docs_base_url}}/assets/img/human-resources/vehicle-mandatory.png">
 
 
-## 2. Features
+## 2. คุณสมบัติ
 
-Apart from the aforementioned mandatory features, some additional features that can be captured in the Vehicle master are as follows:
+นอกเหนือจากคุณสมบัติบังคับดังกล่าวแล้ว คุณสมบัติเพิ่มเติมบางอย่างที่สามารถบันทึกในต้นแบบยานพาหนะได้มีดังนี้:
 
-### 2.1 Additional Vehicle Details
+### 2.1 รายละเอียดรถเพิ่มเติม
 
-Additional Vehicle details such as Chassis No., Acquisition Date, Vehicle Value (Amount), Location, Employee managing the Vehicle and Insurance details can be captured in the Vehicle master.
+รายละเอียดยานพาหนะเพิ่มเติม เช่น หมายเลขแชสซี วันที่ได้รับ มูลค่ารถ (จำนวน) ตำแหน่ง พนักงานที่จัดการรายละเอียดยานพาหนะ และรายละเอียดการประกันภัย สามารถบันทึกได้ในต้นแบบรถ
 
 <img class="screenshot" alt="Vehicle" src="{{docs_base_url}}/assets/img/human-resources/vehicle1.png">
 
 
-### 2.2 Vehicle Attributes
+### 2.2 คุณสมบัติยานพาหนะ Vehicle
 
-Additionally, Vehicle attributes like Color, Wheels, Door, Last Carbon Check, Fuel Type and UOM can be saved in the Vehicle master.
+นอกจากนี้ คุณลักษณะของรถ เช่น สี, ล้อ, ประตู, Last Carbon Check, ประเภท และ UOM ของเชื้อเพลิง สามารถบันทึกไว้ในแบบรถหลักได้
 
 <img class="screenshot" alt="Vehicle" src="{{docs_base_url}}/assets/img/human-resources/vehicle2.png">
 
 
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Vehicle Log](/docs/user/manual/en/human-resources/vehicle-log)
+1. [บันทึกยานพาหนะ](/docs/user/manual/th/human-resources/vehicle-log)

@@ -1,36 +1,36 @@
 <!-- add-breadcrumbs -->
-# Designation
+# การกำหนด
 
-**Designations are the official job titles given to employees.**
+**การกำหนดเป็นตำแหน่งงานอย่างเป็นทางการที่มอบให้กับพนักงาน**
 
-With reference to company management, there are various stakeholders like directors, officers, managers and shareholders who guide a company towards the fulfillment of its business objectives.
+ในแง่ของการจัดการบริษัท มีผู้มีส่วนได้ส่วนเสียหลายฝ่าย เช่น กรรมการ เจ้าหน้าที่ ผู้จัดการ และผู้ถือหุ้นที่ชี้นำบริษัทไปสู่การบรรลุวัตถุประสงค์ทางธุรกิจ
 
-ERPNext allows you to create various designations and also mention the skills required for the same.
+ERPNext ช่วยให้คุณสร้างการกำหนดต่างๆ และพูดถึงทักษะที่จำเป็นสำหรับสิ่งเดียวกัน
 
-To access Designation, go to:
+ในการเข้าถึงการกำหนด ไปที่:
 
-> Home > Human Resources > Employee > Designation
+> หน้าหลัก > ทรัพยากรบุคคล > พนักงาน > การแต่งตั้ง
 
-## 1. How to create a Designation
+## 1. วิธีสร้างการกำหนด
 
-1. Go to Designation list, click on New.
-1. Enter the Designation name.
-1. Enter Description and Required Skills (optional).
-1. Save.
+1. ไปที่รายการการกำหนด คลิกที่ใหม่
+1. ป้อนชื่อการกำหนด
+1. ป้อนคำอธิบายและทักษะที่จำเป็น (ตัวเลือก)
+1. บันทึก
 
 
     <img class="screenshot" alt="Designation" src="{{docs_base_url}}/assets/img/human-resources/designation.png">
 
 
 
-> **Note:** The skills required for an Employee of a particular Designation that are specified in the "Required Skills" section of the Designation doctype can be directly fetched in the [Employee Skill Map](/docs/user/manual/en/human-resources/employee_skill_map) to evaluate an employee's performance based on his skills.
+> **หมายเหตุ:** สามารถดึงทักษะที่จำเป็นสำหรับพนักงานของการกำหนดตำแหน่งเฉพาะซึ่งระบุไว้ในส่วน "ทักษะที่จำเป็น" ของประเภทเอกสารการกำหนดได้โดยตรงใน [ทักษะพนักงาน](/docs/user/manual/ th/human-resources/employee_skill_map) เพื่อประเมินผลการปฏิบัติงานของพนักงานตามทักษะของเขา
 
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Employee](/docs/user/manual/en/human-resources/employee)
-1. [Employment Type](/docs/user/manual/en/human-resources/employment-type)
-1. [Branch](/docs/user/manual/en/human-resources/branch)
-1. [Department](/docs/user/manual/en/human-resources/department)
-1. [Employee Grade](/docs/user/manual/en/human-resources/employee-grade)
-1. [Employee Skill Map](/docs/user/manual/en/human-resources/employee_skill_map)
+1. [พนักงาน](/docs/user/manual/th/human-resources/employee)
+1. [ประเภทการจ้างงาน](/docs/user/manual/th/human-resources/employment-type)
+1. [สาขา](/docs/user/manual/th/human-resources/branch)
+1. [แผนก](/docs/user/manual/th/human-resources/department)
+1. [ระดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade)
+1. [ทักษะพนักงาน](/docs/user/manual/th/human-resources/employee_skill_map)

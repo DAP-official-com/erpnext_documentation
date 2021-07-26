@@ -1,20 +1,20 @@
 <!-- add-breadcrumbs -->
-# Lead Source
+#แหล่งที่มาของลูกค้าเป้าหมาย
 
-**A Lead Source is a source from which the leads are generated.**
+**แหล่งที่มาของโอกาสในการขายคือแหล่งที่สร้างลูกค้าเป้าหมาย**
 
-It is important to track the source from which you are getting the leads. This will help in measuring the effectiveness of marketing campaigns and allocate the budgets accordingly.
+สิ่งสำคัญคือต้องติดตามแหล่งที่มาที่คุณได้รับโอกาสในการขาย ซึ่งจะช่วยในการวัดประสิทธิภาพของแคมเปญการตลาดและจัดสรรงบประมาณให้เหมาะสม
 
-To access the Lead Source list, go to:
-> Home > Selling > Settings > Lead Source
+หากต้องการเข้าถึงรายการ Lead Source ให้ไปที่:
+> หน้าแรก > การขาย > การตั้งค่า > แหล่งลูกค้าเป้าหมาย
 
-## 1. How to Create a Lead Source
+## 1. วิธีสร้างแหล่งลูกค้าเป้าหมาย
 
-1. Go to the Lead Source list, click on New.
-1. Enter 'Source Name'.
-1. Enter 'Details'.
+1. ไปที่รายการ ลูกค้าเป้าหมาย คลิก ใหม่
+1. ป้อน 'ชื่อแหล่งที่มา'
+1. ป้อน 'รายละเอียด'
 
-Typical lead sources are contact forms on your website, marketing campaigns, events, references, ads on social media etc.
+แหล่งที่มาของลีดโดยทั่วไปคือแบบฟอร์มการติดต่อบนเว็บไซต์ แคมเปญการตลาด กิจกรรม ข้อมูลอ้างอิง โฆษณาบนโซเชียลมีเดีย ฯลฯ
 
 <img class="screenshot" alt="Lead" src="{{docs_base_url}}/assets/img/crm/lead_source.png">
 

@@ -1,33 +1,33 @@
 <!-- add-breadcrumbs -->
-# Setting up fairlogin
+# การตั้งค่า fairlogin
 
-fairlogin is an GDPR aware oAuth provider by fairkom.eu. 
+fairlogin เป็นผู้ให้บริการ oAuth ที่รับรู้ GDPR โดย fairkom.eu
 
-To setup fairlogin as an oAuth provider, go to:
-> Home > Integrations > Social Login Key
+ในการตั้งค่า fairlogin เป็นผู้ให้บริการ oAuth ให้ไปที่:
+> หน้าแรก > การรวมระบบ > รหัสเข้าสู่ระบบโซเชียล
 
-## Setup keycloak 
+## ตั้งค่า keycloak
 
-fairlogin is based on keycloak, so the parameters may be similar for any custom oAuth setting facilitating keycloak.
+fairlogin อิงตาม keycloak ดังนั้นพารามิเตอร์อาจคล้ายกันสำหรับการตั้งค่า oAuth ที่กำหนดเองซึ่งอำนวยความสะดวกให้ keycloak
 
-There you add a new client, select open-id as client protocol and enter the address of your ERPnext instance as the Root, Redirect and Base URL.
+จากที่นั่น คุณเพิ่มไคลเอนต์ใหม่ เลือก open-id เป็นโปรโตคอลไคลเอนต์ และป้อนที่อยู่ของอินสแตนซ์ ERPnext ของคุณเป็น Root, Redirect และ Base URL
 
-Adding your ERNext service as a client is being [offered as a service by fairkom](https://erp.fairkom.net/cloud/fairlogin-client). 
+กำลังเพิ่มบริการ ERNext ของคุณในฐานะลูกค้า [เสนอเป็นบริการโดย fairkom](https://erp.fairkom.net/cloud/fairlogin-client)
 
 ![ERPnext keycloak Settings](/docs/assets/img/erpnext_integrations/fairloginKeycloakERPnext.png)
 
-## Setup fairlogin
+## ตั้งค่า fairlogin
 
-To enable fairlogin as an ERPNext login option, you need to configure the following parameters:
+ในการเปิดใช้งาน fairlogin เป็นตัวเลือกการเข้าสู่ระบบ ERPNext คุณต้องกำหนดค่าพารามิเตอร์ต่อไปนี้:
 
-- Base URL https://id.fairkom.net/auth/realms/fairlogin/
-- Authorize URL https://id.fairkom.net/auth/realms/fairlogin/protocol/openid-connect/auth
-- Redirect URL /api/method/frappe.integrations.oauth2_logins.login_via_fairlogin
-- Access Token URL https://id.fairkom.net/auth/realms/fairlogin/protocol/openid-connect/token
-- API Endpoint https://id.fairkom.net/auth/realms/fairlogin/protocol/openid-connect/userinfo
+- URL พื้นฐาน https://id.fairkom.net/auth/realms/fairlogin/
+- อนุญาต URL https://id.fairkom.net/auth/realms/fairlogin/protocol/openid-connect/auth
+- เปลี่ยนเส้นทาง URL /api/method/frappe.integrations.oauth2_logins.login_via_fairlogin
+- เข้าถึง Token URL https://id.fairkom.net/auth/realms/fairlogin/protocol/openid-connect/token
+- ปลายทาง API https://id.fairkom.net/auth/realms/fairlogin/protocol/openid-connect/userinfo
 
 ![ERPnext fairlogin Settings](/docs/assets/img/erpnext_integrations/fairloginERPnextSettings.png)
 
-On enabling service, the system will allow to login with any fairlogin account. 
+ในการเปิดใช้บริการ ระบบจะอนุญาตให้เข้าสู่ระบบด้วยบัญชี fairlogin ใดก็ได้
 
-The default role of a new user is Blogger (currently hardcoded). 
+บทบาทเริ่มต้นของผู้ใช้ใหม่คือ Blogger (ปัจจุบันเป็นแบบฮาร์ดโค้ด)

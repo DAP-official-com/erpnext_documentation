@@ -1,28 +1,28 @@
 <!-- add-breadcrumbs -->
-# Support
+#สนับสนุน
 
-Great customer support and maintenance is at the heart of any successful business. With ERPNext, you track all incoming customer requests and issues and respond to them quickly. The database of incoming queries will also help you to identify the biggest opportunities for improvements.
+การสนับสนุนและบำรุงรักษาลูกค้าที่ยอดเยี่ยมเป็นหัวใจสำคัญของธุรกิจที่ประสบความสำเร็จ ด้วย ERPNext คุณจะติดตามคำขอและปัญหาของลูกค้าที่เข้ามาทั้งหมด และตอบกลับอย่างรวดเร็ว ฐานข้อมูลของข้อความค้นหาที่เข้ามาจะช่วยให้คุณระบุโอกาสที่ยิ่งใหญ่ที่สุดสำหรับการปรับปรุง
 
-You can track incoming queries from your email using Support
-Tickets. You can keep track of Customer Issues linked with a specific
-Serial No and respond to them based on their warranty and other information.
-You can also make Maintenance Schedules for Serial NOs and keep a record of all Maintenance Visits made to your Customers.
+คุณสามารถติดตามข้อความค้นหาที่เข้ามาจากอีเมลของคุณโดยใช้ Support
+ตั๋ว. คุณสามารถติดตามปัญหาของลูกค้าที่เชื่อมโยงกับ
+หมายเลขซีเรียลและตอบกลับตามการรับประกันและข้อมูลอื่น ๆ
+คุณยังสามารถจัดทำตารางการบำรุงรักษาสำหรับหมายเลขประจำเครื่องและเก็บบันทึกการเข้าตรวจบำรุงรักษาทั้งหมดที่ทำกับลูกค้าของคุณ
 
-## Topics
+## หัวข้อ
 
-## 1. Issues
-1. [Issue](/docs/user/manual/en/support/issue)
-1. [Issue Type and Priority](/docs/user/manual/en/support/issue-type-and-priority)
-1. [Service Level Agreement](/docs/user/manual/en/support/service-level-agreement)
+## 1. ปัญหา
+1. [ปัญหา](/docs/user/manual/th/support/issue)
+1. [ประเภทปัญหาและลำดับความสำคัญ](/docs/user/manual/th/support/issue-type-and-priority)
+1. [ข้อตกลงระดับบริการ](/docs/user/manual/th/support/service-level-agreement)
 
-## 2. Maintenance
-1. [Serial Number](/docs/user/manual/en/stock/serial-no)
-1. [Warranty Claim](/docs/user/manual/en/support/warranty-claim)
-1. [Maintenance Visit](/docs/user/manual/en/support/maintenance-visit)
-1. [Maintenance Schedule](/docs/user/manual/en/support/maintenance-schedule)
+## 2. การบำรุงรักษา
+1. [หมายเลขซีเรียล](/docs/user/manual/th/stock/serial-no)
+1. [การเคลมการรับประกัน](/docs/user/manual/th/support/warranty-claim)
+1. [Maintenance Visit](/docs/user/manual/th/support/maintenance-visit)
+1. [กำหนดการบำรุงรักษา](/docs/user/manual/th/support/maintenance-schedule)
 
-## 3. Settings
-1. [Support Settings](/docs/user/manual/en/support/support-settings)
+## 3. การตั้งค่า
+1. [การตั้งค่าการสนับสนุน](/docs/user/manual/th/support/support-settings)
 
-## 4. Reports
-1. [Support Reports](/docs/user/manual/en/support/support_reports)
+## 4. รายงาน
+1. [รายงานการสนับสนุน](/docs/user/manual/th/support/support_reports)

@@ -1,31 +1,31 @@
 <!-- add-breadcrumbs -->
-#Managing Fractions in UOM
+#การจัดการเศษส่วนใน UOM
 
-UoM stands for Unit of Measurement. Few examples of UoM are Numbers (Nos), Kgs, Litre, Meter, Box, Carton etc.
+UoM ย่อมาจากหน่วยวัด ตัวอย่างบางส่วนของ UoM ได้แก่ Numbers (Nos), Kgs, Litre, Meter, Box, Carton เป็นต้น
 
-There are few UOMs which cannot have value in decimal places. For example, if we have television for an item, with Nos as its UoM, we cannot have 1.5 Nos. of television, or 3.7 Nos. of computer sets. The value of quantity for these items must be whole number.
+มี UOM ไม่กี่แห่งที่ไม่สามารถมีค่าเป็นทศนิยมได้ ตัวอย่างเช่น หากเรามีโทรทัศน์สำหรับสินค้า โดยที่ Nos เป็น UoM เราจะไม่มีโทรทัศน์ 1.5 Nos หรือ 3.7 Nos. ของชุดคอมพิวเตอร์ มูลค่าของปริมาณสำหรับรายการเหล่านี้ต้องเป็นจำนวนเต็ม
 
-You can configure if particular UoM can have value in decimal place or no. By default, value in decimal places will be allowed for all the UOMs. To restrict decimal places or value in fraction for any UoM, you should follow these steps.
+คุณสามารถกำหนดค่าว่า UoM ใดสามารถมีค่าเป็นทศนิยมหรือไม่ โดยค่าเริ่มต้น ค่าในตำแหน่งทศนิยมจะได้รับอนุญาตสำหรับ UOM ทั้งหมด หากต้องการจำกัดตำแหน่งทศนิยมหรือค่าเป็นเศษส่วนสำหรับ UoM ใดๆ คุณควรทำตามขั้นตอนเหล่านี้
 
-####UOM List
+####รายการUOM
 
-For UOM list, go to:
+สำหรับรายการ UOM ไปที่:
 
-`Stock > Setup > UoM`
+`สต๊อค > ตั้งค่า > UoM`
 
-From the list of UOM, select UOM for which value in decimal place is to be restricted. Let's assume that UoM is Nos.
+จากรายการ UOM ให้เลือก UOM ที่จะจำกัดค่าในตำแหน่งทศนิยม สมมติว่า UoM เป็น Nos
 
-####Configure
+####กำหนดค่า
 
-In the UoOM master, you will find a field called "Must be whole number". Check this field to restrict user from enter value in decimal places in quantity field, for item having this UOM.
+ในรายการ UoM หลัก คุณจะพบฟิลด์ที่เรียกว่า "ต้องเป็นจำนวนเต็ม" ตรวจสอบฟิลด์นี้เพื่อจำกัดผู้ใช้จากการป้อนค่าเป็นทศนิยมในฟิลด์ปริมาณ สำหรับรายการที่มี UOM นี้
 
 <img alt="UoM Must be Whole No" class="screenshot" src="{{docs_base_url}}/assets/img/articles/uom-fraction-1.png">
 
-####Validation
+####การตรวจสอบความถูกต้อง
 
-While creating transaction, if you enter value in fraction for item whose UOM has "Must be whole number" checked, you will get error message stating:
+ขณะสร้างธุรกรรม หากคุณป้อนค่าเป็นเศษส่วนของรายการที่มีการตรวจสอบ UOM "ต้องเป็นจำนวนเต็ม" คุณจะได้รับข้อความแสดงข้อผิดพลาดที่ระบุว่า:
 
-`Quantity cannot be a fraction at row #`
+`ปริมาณไม่เป็นเศษส่วนในแถว #`
 
 <img alt="UoM Validation Message" class="screenshot" src="{{docs_base_url}}/assets/img/articles/uom-fraction-2.png">
 

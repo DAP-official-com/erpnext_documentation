@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-# Quick Stock Balance
+# ยอดคงเหลือในสต็อกด่วน
 
-**Quick Stock Balance is a tool that can be used to quickly retrieve the current stock balance (quantity) and value of an item, in the specified warehouse, on the specified date.**
+**ยอดคงเหลือในสต็อกด่วน คือเครื่องมือที่สามารถใช้เรียกข้อมูลยอดคงเหลือในสต็อคปัจจุบัน (ปริมาณ) และมูลค่าของสินค้าในคลังสินค้าที่ระบุได้อย่างรวดเร็ว ณ วันที่ระบุ**
 
-It comes in handy during audits, while verifying stock details before transactions, etc.
+มีประโยชน์ในระหว่างการตรวจสอบ ขณะที่ตรวจสอบรายละเอียดหุ้นก่อนทำธุรกรรม ฯลฯ
 
-To access this tool, go to:
-> Home > Stock > Tools > Quick Stock Balance
+ในการเข้าถึงเครื่องมือนี้ ไปที่:
+> หน้าหลัก > หุ้น > เครื่องมือ > ยอดคงเหลือในสต็อกด่วน
 
-## 1. Using Quick Stock Balance
-Item and Warehouse are the basic fields required to fully utilize Quick Stock Balance. Item Barcode can also be used to fetch stock details.
+## 1. การใช้ยอดคงเหลือในสต็อกด่วน
+รายการและคลังสินค้าเป็นฟิลด์พื้นฐานที่จำเป็นสำหรับการใช้ ยอดคงเหลือในสต็อกด่วน อย่างเต็มที่ บาร์โค้ดรายการยังสามารถใช้เพื่อดึงรายละเอียดหุ้น
 
 ![Quick Stock Balance](/docs/assets/img/stock/quick-stock-balance.png)
 
-You can opt to select a different warehouse or date. The stock value and quantity, will be fetched real-time according to the specified values.
+คุณสามารถเลือกที่จะเลือกคลังสินค้าหรือวันที่อื่นได้ มูลค่าและปริมาณของสต็อคจะถูกดึงตามเวลาจริงตามค่าที่ระบุ
 
-You can also view the Stock Balance report by clicking on 'Stock Balance Report' . It will redirect you to the report with the Item and Warehouse filters populated.
+คุณยังสามารถดูรายงานยอดคงเหลือในสต็อกได้โดยคลิกที่ 'รายงานยอดคงเหลือในสต็อก' จะนำคุณไปยังรายงานที่มีตัวกรองสินค้าและคลังสินค้า
 
 ![Stock Balance Report](/docs/assets/img/stock/stock-balance-report.png)
 
-### 2. Related Topics
-1. [Stock Level Report](/docs/user/manual/en/stock/stock-level-report)
-1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
+### 2. หัวข้อที่เกี่ยวข้อง
+1. [รายงานระดับสต็อค](/docs/user/manual/th/stock/stock-level-report)
+1. [รายการสต็อค](/docs/user/manual/th/stock/stock-entry)

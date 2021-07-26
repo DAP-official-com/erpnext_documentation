@@ -1,23 +1,23 @@
 <!-- add-breadcrumbs -->
-# Deleting Custom Reports
+# การลบรายงานที่กำหนดเอง
 
-ERPNext has several [types of reports](/docs/user/manual/en/customize-erpnext/articles/making-custom-reports) which can be customized as per the users' requirement.
+ERPNext มี [ประเภทรายงาน](/docs/user/manual/th/customize-erpnext/articles/making-custom-reports) หลายแบบ ซึ่งสามารถปรับแต่งได้ตามความต้องการของผู้ใช้
 
-If there is a custom report which needs to be deleted, it can be achieved by following steps. Please note that its applicable only for the Custom Reports, and not for the standard reports.
+หากมีรายงานที่กำหนดเองซึ่งจำเป็นต้องลบ สามารถทำได้โดยทำตามขั้นตอนต่อไปนี้ โปรดทราบว่าใช้ได้กับรายงานที่กำหนดเองเท่านั้น ไม่สามารถใช้กับรายงานมาตรฐานได้
 
-#### Step 1: Go to Report List
+#### ขั้นตอนที่ 1: ไปที่รายการรายงาน
 
-In the Awesome Bar, type and select "Report List" for an option.
+ใน Awesome Bar ให้พิมพ์และเลือก "รายการรายงาน" สำหรับตัวเลือก
 
 <img alt="Report Search" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-deleting-reports-1.png">
 
-#### Step 2: Delete the Report from the List
+#### ขั้นตอนที่ 2: ลบรายงานออกจากรายการ
 
-The Report List will have all the standard and custom reports of your account. You can select Custom Report to be deleted from the list itself, and click on Delete icon in the Actions Menu.
+รายการรายงานจะมีรายงานมาตรฐานและกำหนดเองทั้งหมดของบัญชีของคุณ คุณสามารถเลือกรายงานที่กำหนดเองที่จะลบออกจากรายการได้ และคลิกที่ไอคอนลบในเมนูการดำเนินการ
 
 <img alt="Report List" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-deleting-reports.png">
 
-Or you can open that report, and delete it from File menu.
+หรือคุณสามารถเปิดรายงานนั้นแล้วลบออกจากเมนูไฟล์
 
 <img alt="Report Delete" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-deleting-reports-2.png">
 

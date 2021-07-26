@@ -1,41 +1,41 @@
 <!-- add-breadcrumbs -->
-# Retaining Sample Stock
+# การเก็บตัวอย่างสต็อค
 
-**Sample stock is a batch of any Items stored for analyzing should the need arise later.**
+**สต็อคตัวอย่างคือชุดของรายการใดๆ ที่จัดเก็บไว้สำหรับการวิเคราะห์หากมีความจำเป็นในภายหลัง**
 
-The Item for which sample stock is stored can be raw material, packaging material, or finished product.
+รายการที่จัดเก็บตัวอย่างอาจเป็นวัตถุดิบ วัสดุบรรจุภัณฑ์ หรือผลิตภัณฑ์สำเร็จรูป
 
-## 1. Prerequisites
-Before using sample retention, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนใช้การเก็บข้อมูลตัวอย่าง ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Item](/docs/user/manual/en/stock/item)
-* [Batch](/docs/user/manual/en/stock/batch)
-* [Warehouse](/docs/user/manual/en/stock/warehouse)
+* [รายการ](/docs/user/manual/th/stock/item)
+* [แบทช์](/docs/user/manual/th/stock/batch)
+* [คลังสินค้า](/docs/user/manual/th/stock/warehouse)
 
-## 1. How to Set Sample Retention Warehouse in Stock Settings
+## 1. วิธีการตั้งค่าคลังสินค้าตัวอย่างในการตั้งค่าสต็อค Stock
 
-It is advised to create a new Warehouse separately for retaining samples and not use it in production.
+ขอแนะนำให้สร้างคลังสินค้าใหม่แยกกันเพื่อเก็บตัวอย่างและไม่ใช้ในการผลิต
 
 <img class="screenshot" alt="Sample Retention Warehouse" src="{{docs_base_url}}/assets/img/stock/sample-warehouse.png">
 
-### 1.2 Enable Retain Sample in Item master
-Retain Sample is based on Batch hence Has Batch No should be enabled first. Check Retain Sample and set the Maximum allowed samples for a batch. 
+### 1.2 เปิดใช้งานเก็บตัวอย่างในหลักรายการ
+การเก็บตัวอย่างขึ้นอยู่กับ แบชท์ ดังนั้น ควรเปิดใช้งาน หมายเลขแบชท์ ก่อน ตรวจสอบ การเก็บตัวอย่าง และตั้งค่าตัวอย่างสูงสุดที่อนุญาตสำหรับชุดงาน
 
 <img class="screenshot" alt="Retain Sample" src="{{docs_base_url}}/assets/img/stock/retain-sample.png">
 
-### 1.3 Make Stock Entry
+### 1.3 ทำรายการสต็อค
 
-* Whenever a [Stock Entry](/docs/user/manual/en/stock/stock-entry) is created with the purpose as Material Receipt, for items which have Retain Sample enabled, the Sample Quantity can be set during that Stock Entry. You need to select the Batch Number for the Item/Items. Sample quantity cannot be more than the Maximum sample quantity set in Item Master.
+* เมื่อใดก็ตามที่สร้าง [รายการสต็อค](/docs/user/manual/th/stock/stock-entry) โดยมีวัตถุประสงค์เพื่อเป็นการรับวัสดุ สำหรับรายการที่มีการเปิดใช้งาน Retain Sample จะสามารถกำหนดปริมาณตัวอย่างได้ในระหว่างการป้อนสินค้าคงคลังนั้น . คุณต้องเลือกหมายเลขแบทช์สำหรับรายการ/รายการ ปริมาณตัวอย่างต้องไม่เกินปริมาณตัวอย่างสูงสุดที่กำหนดไว้ในสินค้าหลัก
 
     <img class="screenshot" alt="Retain Sample" src="{{docs_base_url}}/assets/img/stock/material-receipt-sample.png">
 
-* On submission of this Stock Entry, button 'Make Retention Stock Entry' will be available to make another Stock Entry for the transfer of sample items from the mentioned batch to the retention warehouse set in Stock Settings.
+* ในการส่งรายการสต็อคนี้ ปุ่ม 'สร้างรายการสต็อคเพื่อเก็บรักษา' จะพร้อมใช้งานเพื่อสร้างรายการสต็อคอีกครั้งสำหรับการถ่ายโอนรายการตัวอย่างจากแบทช์ที่กล่าวถึงไปยังคลังสินค้าการเก็บข้อมูลที่ตั้งไว้ในการตั้งค่าสต็อก
 
     ![Sample Retention Button](/docs/assets/img/stock/sample-retention-button.png)
 
-* Clicking this button will direct you to new Stock Entry of type 'Material Transfer'. This entry is transfering your sample retention from your Target Warehouse (Stores) to the Sample Retention Warehouse. It will contain all the information, verify and click Submit.
+* การคลิกปุ่มนี้จะนำคุณไปยังรายการสต็อคใหม่ประเภท 'การโอนวัตถุดิบ' รายการนี้กำลังถ่ายโอนการเก็บตัวอย่างของคุณจาก Target Warehouse (ร้านค้า) ของคุณไปยัง Sample Retention Warehouse จะมีข้อมูลทั้งหมด ตรวจสอบ และคลิกส่ง
 
     <img class="screenshot" alt="Retain Sample" src="{{docs_base_url}}/assets/img/stock/material-transfer-sample.png">
 
-### 2. Related Topics
-1. [Warehouse](/docs/user/manual/en/stock/warehouse)
+### 2. หัวข้อที่เกี่ยวข้อง
+1. [คลังสินค้า](/docs/user/manual/th/stock/warehouse

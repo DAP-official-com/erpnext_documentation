@@ -1,13 +1,13 @@
 <!-- add-breadcrumbs -->
-# Unit of Measure (UoM)
+# หน่วยวัด (UoM)
 
-**A UoM is a unit using which an Item is measured.**
+**UoM คือหน่วยที่ใช้วัดรายการ**
 
-By default, there are many UoMs created in  ERPNext. However, more can be added depending on your business use case. 
-In the UoM there is an option 'Must be Whole Number'. If this is checked, you cannot use fraction numbers in this UoM. To know more about fractions and UoMs, check out [this page](/docs/user/manual/en/stock/articles/managing-fractions-in-uom).
+ตามค่าเริ่มต้น มี UoM จำนวนมากที่สร้างขึ้นใน ERPNext อย่างไรก็ตาม คุณสามารถเพิ่มได้อีกขึ้นอยู่กับกรณีการใช้งานธุรกิจของคุณ
+ใน UoM มีตัวเลือก 'ต้องเป็นจำนวนเต็ม' หากเลือกไว้ คุณจะใช้ตัวเลขเศษส่วนใน UoM นี้ไม่ได้ หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับเศษส่วนและ UoM โปรดดูที่ [หน้านี้](/docs/user/manual/th/stock/articles/managing-fractions-in-uom)
 
-The UoM list by itself only stores the name. The actual conversion rates are stored in a document called 'UoM Conversion Factor'. If you add new UoMs and plan to use it in transactions where it'll be converted to other UoMs, it is advised that you add it to this list.
+รายการ UoM เองจะเก็บเฉพาะชื่อเท่านั้น อัตราการแปลงจริงถูกเก็บไว้ในเอกสารที่เรียกว่า 'UoM Conversion Factor' หากคุณเพิ่ม UoM ใหม่และวางแผนที่จะใช้ในธุรกรรมที่จะถูกแปลงเป็น UoM อื่น ขอแนะนำให้เพิ่มลงในรายการนี้
 
-For example, here 1 Kg is approximately 2.2 Pounds and the exact conversion factor is stored:
+ตัวอย่างเช่น ที่นี่ 1 กก. มีค่าประมาณ 2.2 ปอนด์ และเก็บปัจจัยการแปลงที่แน่นอน:
 
 ![UoM conversion factor](/docs/assets/img/stock/uom_convert.png)

@@ -1,32 +1,32 @@
 <!-- add-breadcrumbs -->
-# Employment Type
+# ประเภทการจ้างงาน
 
-**You can employ people under a number of categories each having their own wage and leave entitlements. This is called an Employment Type.** 
+**คุณสามารถจ้างคนได้หลายประเภท โดยแต่ละประเภทจะได้รับค่าจ้างและสิทธิการลา ซึ่งเรียกว่าประเภทการจ้างงาน**
 
-ERPNext allows you to select an Employment Type from a pre-defined list or even create a new Employment Type based on your requirements.
+ERPNext ให้คุณเลือกประเภทการจ้างงานจากรายการที่กำหนดไว้ล่วงหน้า หรือแม้แต่สร้างประเภทการจ้างงานใหม่ตามความต้องการของคุณ
 
-To access the Employment Type, go to:
+ในการเข้าถึงประเภทการจ้างงาน ไปที่:
 
-> Home > Human Resources > Employee > Employment Type
+> หน้าหลัก > ทรัพยากรบุคคล > พนักงาน > ประเภทการจ้างงาน
 
-## 1. How to create an Employment Type
+## 1. วิธีสร้างประเภทการจ้างงาน
 
 
-1. Go to the Employment Type list, click on New.
-2. Enter the Name of the Employment Type.
-3. Save.
+1. ไปที่รายการประเภทการจ้างงาน คลิกที่ใหม่
+2. ป้อนชื่อประเภทการจ้างงาน
+3. บันทึก
 
     <img class="screenshot" alt="Employment Type" src="{{docs_base_url}}/assets/img/human-resources/employment-type.png">
 
-The Employment Type can be linked to the [Employee](/docs/user/manual/en/human-resources/employee) master.
+ประเภทการจ้างงานสามารถเชื่อมโยงกับ [รายการพนักงาน](/docs/user/manual/th/human-resources/employee) หลักได้
 
 
-## 2. Related Topics
+## 2. หัวข้อที่เกี่ยวข้อง
 
-1. [Employee](/docs/user/manual/en/human-resources/employee)
-1. [Employment Type](/docs/user/manual/en/human-resources/employment-type)
-1. [Branch](/docs/user/manual/en/human-resources/branch)
-1. [Department](/docs/user/manual/en/human-resources/department)
-1. [Designation](/docs/user/manual/en/human-resources/designation)
-1. [Employee Grade](/docs/user/manual/en/human-resources/employee-grade)
+1. [พนักงาน](/docs/user/manual/th/human-resources/employee)
+1. [ประเภทการจ้างงาน](/docs/user/manual/th/human-resources/employment-type)
+1. [สาขา](/docs/user/manual/th/human-resources/branch)
+1. [แผนก](/docs/user/manual/th/human-resources/department)
+1. [การกำหนด](/docs/user/manual/th/human-resources/designation)
+1. [ระดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade)
 

@@ -1,41 +1,42 @@
 <!-- add-breadcrumbs -->
-#Setting up Stripe
+#การตั้งค่า Stripe
 
-To setup Stripe,
-`Explore > Integrations > Stripe Settings`
+ในการตั้งค่า Stripe
+`สำรวจ> บูรณาการ> การตั้งค่า Stripe'
 
-#### Setup  Stripe 
+#### ตั้งค่า Stripe
 
-To enable Stripe payment service, you need to configure parameters like Publishable Key, Secret Key
+ในการเปิดใช้งานบริการชำระเงิน Stripe คุณต้องกำหนดค่าพารามิเตอร์ เช่น Publishable Key, Secret Key
 <img class="screenshot" alt="Razorpay Settings" src="{{docs_base_url}}/assets/img/setup/integrations/stripe_setting.png">
 
-On enabling service, the system will create Payment Gateway record and Account head in chart of account with account type as Bank.
+ในการเปิดใช้บริการ ระบบจะสร้างบันทึก ช่องทางการชำระเงิน และส่วนหัวของบัญชีตามผังบัญชีที่มีประเภทบัญชีเป็นธนาคาร
 
 <img class="screenshot" alt="Stripe COA" src="{{docs_base_url}}/assets/img/setup/integrations/stripe_coa.png">
 
-Also it will create Payment Gateway Account entry. Payment Gateway Account is configuration hub from this you can set account head from existing COA, default Payment Request email body template.
+นอกจากนี้ยังจะสร้างรายการบัญชี ช่องทางการชำระเงิน บัญชีเกตเวย์การชำระเงินเป็นฮับการกำหนดค่าจากสิ่งนี้ คุณสามารถตั้งค่าส่วนหัวของบัญชีจาก COA ที่มีอยู่ เทมเพลตเนื้อหาอีเมลคำขอชำระเงินเริ่มต้น
 
 <img class="screenshot" alt="Payment Gateway Account" src="{{docs_base_url}}/assets/img/setup/integrations/payment_gateway_account_stripe.png">
 
-After configuring Payment Gateway Account your system is able to accept online payments.
+หลังจากตั้งค่าบัญชี ช่องทางการชำระเงิน แล้ว ระบบของคุณสามารถยอมรับการชำระเงินออนไลน์ได้
 
-### Setup subscriptions plans
+### ตั้งค่าแผนการสมัครสมาชิก
 
-If you need to bill a recurring amount instead of a one-time charge, you can use Stripe's subscription system.
+หากคุณต้องการเรียกเก็บเงินเป็นจำนวนเป็นงวดแทนการเรียกเก็บเงินแบบครั้งเดียว คุณสามารถใช้ระบบสมัครสมาชิกของ Stripe ได้
 
-Once you have created your billing plans in Stripe, add one or several new "Payment Plan" in Frappe.
+เมื่อคุณสร้างแผนการเรียกเก็บเงินใน Stripe แล้ว ให้เพิ่ม "แผนการชำระเงิน" ใหม่อย่างน้อยหนึ่งรายการใน Frappe
 
 <img class="screenshot" alt="Payment Plan" src="{{docs_base_url}}/assets/img/setup/integrations/payment_plan.png">
 
 
-Afterwards, when you create your payment request, click the check field "Is a subscription" and add the system will fetch the corresponding susbscription plans from within the corresponding subscription.
+หลังจากนั้น เมื่อคุณสร้างคำขอชำระเงิน ให้คลิกช่องทำเครื่องหมาย "เป็นการสมัครสมาชิก" และเพิ่มระบบจะดึงแผนการสมัครสมาชิกที่เกี่ยวข้องจากภายในการสมัครรับข้อมูลที่เกี่ยวข้อง
 
 <img class="screenshot" alt="Payment Request" src="{{docs_base_url}}/assets/img/setup/integrations/subscription_payment_request.png">
 
-ERPNext will automatically create a new subscription for this customer in Stripe.
+
+ERPNext จะสร้างการสมัครสมาชิกใหม่โดยอัตโนมัติสำหรับลูกค้ารายนี้ใน Stripe
 
 
-####Supporting transaction currencies
+####สกุลเงินที่รองรับการทำธุรกรรม
 	"AED", "ALL", "ANG", "ARS", "AUD", "AWG", "BBD", "BDT", "BIF", "BMD", "BND",
 	"BOB", "BRL", "BSD", "BWP", "BZD", "CAD", "CHF", "CLP", "CNY", "COP", "CRC", "CVE", "CZK", "DJF",
 	"DKK", "DOP", "DZD", "EGP", "ETB", "EUR", "FJD", "FKP", "GBP", "GIP", "GMD", "GNF", "GTQ", "GYD",

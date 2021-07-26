@@ -1,121 +1,117 @@
 <!-- add-breadcrumbs -->
-# Employee
+#พนักงาน
 
-**An individual who works part-time or full-time under a contract of employment, and has recognized rights and duties of your company is your Employee.**
+**บุคคลที่ทำงานนอกเวลาหรือเต็มเวลาภายใต้สัญญาจ้าง และได้รับการยอมรับในสิทธิและหน้าที่ของบริษัทของคุณคือพนักงานของคุณ**
 
-In ERPNext, you can manage the Employee master. It captures the demographic, personal and professional details, joining and leave details, etc. of the Employee. 
+ใน ERPNext คุณสามารถจัดการข้อมูลหลักของพนักงานได้ โดยจะรวบรวมรายละเอียดทางประชากร ส่วนบุคคลและวิชาชีพ รายละเอียดการเข้าร่วมและออกจากงาน ฯลฯ ของพนักงาน
 
 
-To access the Employee master, go to:
+ในการเข้าถึงข้อมูลหลักของพนักงาน ไปที่:
 
-> Home > Human Resources > Employee
+> หน้าหลัก > ทรัพยากรบุคคล > พนักงาน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Employee, it is advised to create the following:
+ก่อนสร้างพนักงาน ขอแนะนำให้สร้างสิ่งต่อไปนี้:
 
-* [Employment Type](/docs/user/manual/en/human-resources/employment-type)
-* [Job Applicant](/docs/user/manual/en/human-resources/job-applicant) 
-* [Employee Department](/docs/user/manual/en/human-resources/department)
-* [Employee Grade](/docs/user/manual/en/human-resources/employee-grade)
-* [Employee Branch](/docs/user/manual/en/human-resources/branch)
-* [Employee Designation](/docs/user/manual/en/human-resources/designation)
-* [Leave Policy](/docs/user/manual/en/human-resources/leave-policy)
-* [Holiday List](/docs/user/manual/en/human-resources/holiday-list)
-* [Leave Encashment](/docs/user/manual/en/human-resources/leave-encashment)
-* [Shift Type](/docs/user/manual/en/human-resources/shift-management)
-* [Employee Health Insurance](/docs/user/manual/en/human-resources/health-insurance)
+* [ประเภทการจ้างงาน](/docs/user/manual/th/human-resources/employment-type)
+* [ใบสมัครงาน](/docs/user/manual/th/human-resources/job-applicant)
+* [ฝ่าย](/docs/user/manual/th/human-resources/department)
+* [ระดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade)
+* [สาขาพนักงาน](/docs/user/manual/th/human-resources/branch)
+* [การกำหนดพนักงาน](/docs/user/manual/th/human-resources/designation)
+* [ออกจากนโยบาย](/docs/user/manual/th/human-resources/leave-policy)
+* [รายการวันหยุด](/docs/user/manual/th/human-resources/holiday-list)
+* [Leave Encashment](/docs/user/manual/th/human-resources/leave-encashment)
+* [ประเภทของงานเป็นกะ (Shift)](/docs/user/manual/th/human-resources/shift-management)
+* [ประกันสุขภาพพนักงาน](/docs/user/manual/th/human-resources/health-insurance)
 
-## 2. How to create an Employee
+## 2. วิธีสร้างพนักงาน
   
-1. Go to the Employee list, click on New.
-1. Enter the Employee's personal details such as Name, Gender, Date of Birth, and Date of Joining.
-1. Save.
+1. ไปที่รายชื่อพนักงาน คลิกที่ ใหม่
+1. ใส่ข้อมูลส่วนตัวของพนักงาน เช่น ชื่อ เพศ วันเดือนปีเกิด และวันที่เข้าร่วม
+1. บันทึก
 
-As shown below, all the mandatory fields are highlighted.
+ดังที่แสดงด้านล่าง ฟิลด์บังคับทั้งหมดจะถูกไฮไลท์
+
+## 3. คุณสมบัติ
+
+นอกเหนือจากรายละเอียดบังคับดังกล่าวแล้ว รายละเอียดเพิ่มเติมบางอย่างที่สามารถบันทึกไว้ในหลักพนักงานมีดังนี้:
+
+### 3.1 ประเภทการจ้างงาน
+
+คุณสามารถตั้งค่า [ประเภทพนักงงาน](/docs/user/manual/th/human-resources/employment-type) เช่น Intern, Contract, Full-time, Part-time, Probation และอื่นๆ สำหรับพนักงานได้
 
 
-## 3. Features 
+### 3.2 สร้างผู้ใช้ ERPNext
 
-Apart from the aforementioned mandatory details, some additional details that can be captured in the Employee master are as follows:
-
-### 3.1 Employment Type
-
-You can set an [Employment Type](/docs/user/manual/en/human-resources/employment-type) such as Intern, Contract, Full-time, Part-time, Probation, etc. for an Employee.
-
-
-### 3.2 Create ERPNext User
-
-The User ID can be linked to the Employee. In case the User ID is not created, you can click on 'Create a New User' in the dropdown to create one. 
+User ID สามารถเชื่อมโยงกับพนักงานได้ ในกรณีที่ไม่ได้สร้าง ID ผู้ใช้ คุณสามารถคลิกที่ 'สร้างผู้ใช้ใหม่' ในเมนูดรอปดาวน์เพื่อสร้าง
  
-By clicking on the 'Create User Permission' checkbox, the Employee's access to other records can be restricted. Check [Adding Users](/docs/user/manual/en/setting-up/users-and-permissions/adding-users) to learn how to create users and add permissions.
+เมื่อคลิกที่ช่องทำเครื่องหมาย 'สร้างสิทธิ์ผู้ใช้' การเข้าถึงข้อมูลอื่นของพนักงานจะถูกจำกัด ตรวจสอบ [การเพิ่มผู้ใช้](/docs/user/manual/th/setting-up/users-and-permissions/adding-users) เพื่อเรียนรู้วิธีสร้างผู้ใช้และเพิ่มการอนุญาต
 
 
-### 3.3 Joining Details
+### 3.3 รายละเอียดการเข้าร่วม
 
-The Joining Details of the Employee such as the Offer Date, Confirmation Date, Contract End Date, Notice (Days), and Date of Retirement can be captured. 
-
-
-### 3.4 Department and Grade
-
-In a company, the Employees are usually grouped on the basis of [Department](/docs/user/manual/en/human-resources/department), [Grade](/docs/user/manual/en/human-resources/employee-grade), [Designation](/docs/user/manual/en/human-resources/designation), and [Branch](/docs/user/manual/en/human-resources/branch). 
-
-In the Department and Grade section, these details of the Employee can be saved. In the 'Reports to' field, the person to whom the Employee has to report his duties to can be captured.
+รายละเอียดการเข้าร่วมของพนักงาน เช่น วันที่เสนอซื้อ วันที่ยืนยัน วันที่สิ้นสุดสัญญา หนังสือบอกกล่าว (วัน) และวันที่เกษียณอายุสามารถบันทึกได้
 
 
-### 3.5 Leave Details
+### 3.4 แผนกและเกรด
 
-In Leave Details, you can save the [Leave Policy](/docs/user/manual/en/human-resources/leave-policy) and [Holiday List](/docs/user/manual/en/human-resources/holiday-list) details. Leave Policy specifies the type and number of leaves an Employee is entitled to, and Holiday List is a list which contains the dates of holidays and weekly offs.
+ในบริษัท พนักงานมักจะถูกจัดกลุ่มตาม [ฝ่ายงาน](/docs/user/manual/th/human-resources/department), [ระดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade), [การกำหนด](/docs/user/manual/th/human-resources/designation) และ [สาขา](/docs/user/manual/th/human-resources/branch)
 
+ในส่วนแผนกและเกรด สามารถบันทึกรายละเอียดเหล่านี้ของพนักงานได้ ในช่อง 'รายงานไปยัง' บุคคลที่พนักงานต้องรายงานหน้าที่ของตนสามารถถูกจับได้
 
-### 3.6 Salary Details
+### 3.5 ออกจากรายละเอียด
 
-Here, the mode of salary payment, i.e. through Bank, Cheque or Cash can be selected.
+ในรายละเอียดการลา คุณสามารถบันทึก [ข้อกำหนดการลา](/docs/user/manual/th/human-resources/leave-policy) และ [รายการวันหยุด](/docs/user/manual/th/human-resources/holiday-list) รายละเอียด นโยบายการลาจะระบุประเภทและจำนวนการลาที่พนักงานมีสิทธิได้รับ และรายการวันหยุดคือรายการที่มีวันที่ของวันหยุดและวันหยุดประจำสัปดาห์
 
+### 3.6 รายละเอียดเงินเดือน
 
-### 3.7 Contact Details
+ที่นี่สามารถเลือกรูปแบบการจ่ายเงินเดือน เช่น ผ่านธนาคาร เช็ค หรือเงินสดได้
 
-Employee's Contact information such as Mobile Number, Current and Permanent Address, Personal and Company Email ID can be captured here. In the Preferred Email ID field, either the the Company Email, Personal Email or User ID of the Employee can be selected depending on the user's preference.
+### 3.7 รายละเอียดการติดต่อ
+
+ข้อมูลติดต่อของพนักงาน เช่น หมายเลขโทรศัพท์มือถือ ที่อยู่ปัจจุบันและถาวร ID อีเมลส่วนตัวและของบริษัท สามารถบันทึกได้ที่นี่ ในฟิลด์ ID อีเมลที่ต้องการ คุณสามารถเลือกอีเมลของบริษัท อีเมลส่วนตัว หรือ ID ผู้ใช้ของพนักงานได้ ขึ้นอยู่กับความชอบของผู้ใช้
  
 
-### 3.8 Personal Details
+### 3.8 ข้อมูลส่วนตัว
 
-Personal Details of the Employee such as Family Background details like name and occupation of parent, spouse and children, Passport Details including date and place of issue, Health Details like height, weight, allergies, medical concerns, etc. can be saved. 
+รายละเอียดส่วนบุคคลของพนักงาน เช่น รายละเอียดประวัติครอบครัว เช่น ชื่อและอาชีพของบิดามารดา คู่สมรส และบุตร รายละเอียดหนังสือเดินทางรวมถึงวันที่และสถานที่ที่ออก รายละเอียดด้านสุขภาพ เช่น ส่วนสูง น้ำหนัก อาการแพ้ ข้อกังวลทางการแพทย์ ฯลฯ สามารถบันทึกได้
 
-### 3.9 Educational Qualification
+### 3.9 คุณสมบัติทางการศึกษา
 
-Here, the Educational Details such as School/University, Qualification, Level and Year of Passing of the Employee can be saved as shown below:
+สามารถบันทึกรายละเอียดการศึกษา เช่น โรงเรียน/มหาวิทยาลัย คุณสมบัติ ระดับ และปีที่ผ่านของพนักงานได้ดังภาพด้านล่าง:
 
 <img class="screenshot" alt="Educational Qualification" src="{{docs_base_url}}/assets/img/human-resources/educational-qualification.png">
 
-Additionally, details such as Class/Percentage and Subjects can also be saved by clicking on the downward arrow in the Education table.
+นอกจากนี้ยังสามารถบันทึกรายละเอียด เช่น ชั้นเรียน/เปอร์เซ็นต์ และ หัวเรื่อง โดยคลิกที่ลูกศรชี้ลงในตารางการศึกษา
 
-### 3.10 Previous Work Experience
+### 3.10 ประสบการณ์การทำงานที่ผ่านมา
 
-Just like Educational Qualification, an Employee's Previous Work Experience can also be captured in the External Work History table as shown below:
+เช่นเดียวกับคุณสมบัติทางการศึกษา ประสบการณ์การทำงานก่อนหน้าของพนักงานสามารถถูกบันทึกไว้ในตารางประวัติการทำงานภายนอกดังที่แสดงด้านล่าง:
 
 <img class="screenshot" alt="Previous Work Experience" src="{{docs_base_url}}/assets/img/human-resources/previous-work-experience.png">
 
-Additionally, details such as Contact of the previous company and Total Experience in years can also be saved in the External Work History table.
+นอกจากนี้ยังสามารถบันทึกรายละเอียดต่างๆ เช่น การติดต่อของบริษัทเดิมและประสบการณ์โดยรวมในปีต่างๆ ไว้ในตารางประวัติการทำงานภายนอกได้อีกด้วย
 
-### 3.11 Exit
+### 3.11 การออก
 
-Exit details of the employee (if any) such as Resignation, Exit Interview and [Leave Encashment](/docs/user/manual/en/human-resources/leave-encashment) details can be saved. When the status of the Employee is set to 'Left', it is mandatory to fill the Relieving Date. 
+รายละเอียดการออกจากงานของพนักงาน (ถ้ามี) เช่น การลาออก ออกจากการสัมภาษณ์ และ [Leave Encashment](/docs/user/manual/th/human-resources/leave-encashment) สามารถบันทึกรายละเอียดได้ เมื่อสถานะพนักงานถูกตั้งค่าเป็น 'ซ้าย' จำเป็นต้องกรอกวันที่ปลดเปลื้อง
 
-> **Note:** Once the Employee status is set to 'Left', that particular Employee master won't be accessible in further transactions.
+> **หมายเหตุ:** เมื่อตั้งค่าสถานะพนักงานเป็น 'ซ้าย' แล้ว ข้อมูลหลักพนักงานนั้นจะไม่สามารถเข้าถึงได้ในธุรกรรมเพิ่มเติม
 
-### 3.12 Additional Features
-Some additional features included in the Employee master are as follows:
+### 3.12 คุณสมบัติเพิ่มเติม
+คุณสมบัติเพิ่มเติมบางอย่างที่รวมอยู่ในต้นแบบพนักงานมีดังนี้:
 
-* Emergency Contact
-* Health Insurance
-* Personal Bio
-* History in the Company
+* ติดต่อในกรณีฉุกเฉิน
+* ประกันสุขภาพ
+* ประวัติส่วนตัว
+* ประวัติความเป็นมาในบริษัท
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Leave Management](/docs/user/manual/en/human-resources/leave-management-intro)
-1. [Payroll Management](/docs/user/manual/en/human-resources/payroll-intro) 
+1. [การจัดการออก](/docs/user/manual/th/human-resources/leave-management-intro)
+1. [การจัดการเงินเดือน](/docs/user/manual/th/human-resources/payroll-intro) 
 
 
 

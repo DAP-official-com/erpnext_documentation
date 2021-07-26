@@ -1,94 +1,94 @@
-# Selling Settings
+#การตั้งค่าการขาย
 
-Selling Settings is where you can define properties and validations which will be applied to the masters and transactions involved in the sales cycle.
+การตั้งค่าการขายเป็นที่ที่คุณสามารถกำหนดคุณสมบัติและการตรวจสอบความถูกต้อง ซึ่งจะนำไปใช้กับข้อมูลหลักและธุรกรรมที่เกี่ยวข้องในวงจรการขาย
 
-Let's see each option available under Selling Settings in ERPNext.
+มาดูแต่ละตัวเลือกที่มีในการตั้งค่าการขายใน ERPNext
 
 <img class="screenshot" alt="Selling Settings" src="{{docs_base_url}}/assets/img/selling/selling-settings.png">
 
-To access Selling Settings, go to:
-> Home > Selling > Settings > Selling Settings
+หากต้องการเข้าถึงการตั้งค่าการขาย ให้ไปที่:
+> หน้าแรก > การขาย > การตั้งค่า > การตั้งค่าการขาย
 
-## 1. Naming Series
-###1.1 Customer Naming By
+## 1. การตั้งชื่อเป็นชุด (Naming Series)
+###1.1 การตั้งชื่อลูกค้าโดย
 
-When a customer is saved, a unique ID is generated for that Customer.
+เมื่อลูกค้าได้รับการบันทึก ID ที่ไม่ซ้ำกันจะถูกสร้างขึ้นสำหรับลูกค้ารายนั้น
 
-By default, Customer ID is generated based on Customer Name. If you wish to save Customer using a naming series, in the field Customer Naming Series, set value as "Naming Series". Example of Customer ID's saved in Naming Series - "CUST00001, CUST00002, CUST00003..." and so on.
+โดยค่าเริ่มต้น รหัสลูกค้าจะถูกสร้างขึ้นตามชื่อลูกค้า หากคุณต้องการบันทึกลูกค้าโดยใช้ชุดการตั้งชื่อ ในฟิลด์ ชุดการตั้งชื่อลูกค้า ให้ตั้งค่าเป็น "การตั้งชื่อเป็นชุด (Naming Series)" ตัวอย่างรหัสลูกค้าที่บันทึกไว้ในชุดการตั้งชื่อ - "CUST00001, CUST00002, CUST00003..." เป็นต้น
 
-You can set Naming Series for Customers from:
+คุณสามารถตั้งค่า การตั้งชื่อเป็นชุด (Naming Series) สำหรับลูกค้าจาก:
 
-**Setup > Data > Naming Series**
+**การตั้งค่า > ข้อมูล > การตั้งชื่อเป็นชุด (Naming Series)**
 
-### 1.2 Campaign Naming By
+### 1.2 การตั้งชื่อแคมเปญโดย
 
-Just like for Customer, you can also configure the naming methodology for the Campaign master. By default, a campaign will be saved with Campaign Name.
+เช่นเดียวกับลูกค้า คุณยังสามารถกำหนดค่าวิธีการตั้งชื่อสำหรับต้นแบบแคมเปญได้ โดยค่าเริ่มต้น แคมเปญจะถูกบันทึกด้วยชื่อแคมเปญ
 
-## 2. Defaults
-### 2.1 Default Customer Group and Territory
+## 2. ค่าเริ่มต้น
+### 2.1 กลุ่มลูกค้าเริ่มต้นและอาณาเขต
 
-Select a default Customer Group which will be auto-updated when creating a new Customer.
+เลือกกลุ่มลูกค้าเริ่มต้นซึ่งจะได้รับการอัปเดตอัตโนมัติเมื่อสร้างลูกค้าใหม่
 
-Quotations can be created for the Customers as well as for the Leads. When converting a Quotation into a Sales Order, which is created for a Lead, the system attempts to convert that Lead into a Customer. While creating Customer in the backend, values for Customer Group and Territory is picked from Selling Settings. If no default values are found for Customer Group or Territory, then you will receive a validation message asking for Customer Group or Territory. You can also manually convert a Lead into a Customer.
+สามารถสร้างใบเสนอราคาสำหรับลูกค้าและลูกค้าเป้าหมายได้ เมื่อแปลงใบเสนอราคาเป็นใบสั่งขาย ซึ่งสร้างขึ้นสำหรับลูกค้าเป้าหมาย ระบบจะพยายามแปลงลูกค้าเป้าหมายนั้นเป็นลูกค้า ขณะสร้างลูกค้าในแบ็กเอนด์ ระบบจะเลือกค่าสำหรับกลุ่มลูกค้าและอาณาเขตจากการตั้งค่าการขาย หากไม่พบค่าเริ่มต้นสำหรับกลุ่มลูกค้าหรืออาณาเขต คุณจะได้รับข้อความตรวจสอบความถูกต้องที่ถามถึงกลุ่มลูกค้าหรืออาณาเขต คุณยังสามารถแปลงลูกค้าเป้าหมายเป็นลูกค้าได้ด้วยตนเอง
 
-### 2.2 Default Price List
+### 2.2 รายการราคาเริ่มต้น
 
-Price List set in this field will be auto-updated in the Price List field of sales transactions like Quotation, Sales Order, Delivery Note, and Sales Invoice.
+รายการราคาที่ตั้งค่าไว้ในฟิลด์นี้จะได้รับการอัปเดตอัตโนมัติในฟิลด์รายการราคาของธุรกรรมการขาย เช่น ใบเสนอราคา ใบสั่งขาย บันทึกการจัดส่ง และใบแจ้งหนี้การขาย
 
-### 2.3 Close Opportunity After Days
+### 2.3 ปิดโอกาสหลังจากวัน
 
-If there are many Opportunities having a status other than Open, then they will be auto-closed after the no. of days mentioned in this field.
+หากมีโอกาสจำนวนมากที่มีสถานะอื่นที่ไม่ใช่เปิด โอกาสเหล่านั้นจะถูกปิดโดยอัตโนมัติหลังจากวันที่กล่าวถึงในช่องนี้ครบกำหนด
 
-### 2.4 Default Quotation Validity Days
+### 2.4 วันที่มีผลบังคับใช้ของใบเสนอราคาเริ่มต้น
 
-Quotations to the customer are valid only for certain days. In the Quotation, you can update Valid Till Date manually. By default, the Valid Till date is auto-set as 30 days from the Quotation's Posting Date. You can change the no. of days in this field as per your business case.
+ใบเสนอราคาให้กับลูกค้าใช้ได้เฉพาะบางวันเท่านั้น ในใบเสนอราคา คุณสามารถอัปเดตที่ถูกต้องจนถึงวันที่ได้ด้วยตนเอง โดยค่าเริ่มต้น วันที่ที่ถูกต้องจนถึงวันที่ลงรายการบัญชีของใบเสนอราคาจะถูกตั้งค่าอัตโนมัติเป็น 30 วันนับจากวันที่ลงรายการบัญชีของใบเสนอราคา คุณสามารถเปลี่ยนหมายเลข จำนวนวันในฟิลด์นี้ตามกรณีธุรกิจของคุณ
 
-## 3. Requirement checks
-### 3.1 Sales Order Required
+## 3. การตรวจสอบความต้องการ
+### 3.1 ต้องมีใบสั่งขาย
 
-If you wish to make Sales Order creation mandatory before the creation of a Sales Invoice, then you should set the 'Sales Order Required' field as 'Yes'. By default, this will be 'No'.
+หากคุณต้องการบังคับให้สร้างใบสั่งขายก่อนที่จะสร้างใบแจ้งหนี้การขาย คุณควรตั้งค่าฟิลด์ 'ใบสั่งขายที่จำเป็น' เป็น 'ใช่' โดยค่าเริ่มต้น นี่จะเป็น 'ไม่'
 
-This configuration can be overridden for a particular customer by enabling the "Allow Sales Invoice Creation Without Sales Order" checkbox in customer master
+การกำหนดค่านี้สามารถแทนที่ได้สำหรับลูกค้าเฉพาะโดยเปิดใช้งานช่องกาเครื่องหมาย "อนุญาตให้สร้างใบแจ้งหนี้การขายโดยไม่มีใบสั่งขาย" ในข้อมูลหลักของลูกค้า
 
 <img alt="Sales Order Required" class="screenshot" src="{{docs_base_url}}/assets/img/selling/so-required.png">
 
-### 3.2 Delivery Note Required
+### 3.2 ต้องมีใบส่งสินค้า
 
-To make Delivery Note creation as mandatory before Sales Invoice creation, you should set this field as 'Yes'. By default, this will be 'No'.
+หากต้องการให้การสร้างใบส่งของเป็นคำสั่งบังคับก่อนการสร้างใบกำกับสินค้า คุณควรตั้งค่าฟิลด์นี้เป็น 'ใช่' โดยค่าเริ่มต้น นี่จะเป็น 'ไม่'
 
-This configuration can be overridden for a particular customer by enabling the "Allow Sales Invoice Creation Without Delivery Note" checkbox in customer master
+การกำหนดค่านี้สามารถแทนที่ได้สำหรับลูกค้ารายใดรายหนึ่งโดยเปิดใช้งานช่องกาเครื่องหมาย "อนุญาตให้สร้างใบแจ้งหนี้การขายโดยไม่มีบันทึกการจัดส่ง" ในข้อมูลหลักของลูกค้า
 
 <img alt="Delivery Note Required" class="screenshot" src="{{docs_base_url}}/assets/img/selling/dn-required.png">
 
-### 3.3 Sales Update Frequency
-The frequency at which project progress and company transaction details will be updated. By default it is for Each Transaction, you can also set it to Daily or Monthly if you have a lot of transactions every day.
+### 3.3 ความถี่ในการอัปเดตการขาย
+ความถี่ที่ความคืบหน้าของโครงการและรายละเอียดธุรกรรมของบริษัทจะได้รับการอัปเดต โดยค่าเริ่มต้นคือสำหรับแต่ละธุรกรรม คุณสามารถตั้งค่าเป็นรายวันหรือรายเดือนได้หากคุณมีธุรกรรมจำนวนมากทุกวัน
 
-## 4. Other checks
-### 4.1 Maintain Same Rate Throughout Sales Cycle
+## 4. เช็คอื่นๆ
+### 4.1 รักษาอัตราเดิมตลอดวงจรการขาย
 
-If this is enabled, ERPNext will validate whether an Item's price is changing in a Delivery Note or Sales Invoice created from a Sales Order, i.e. it will help you maintain the same rate throughout the sales cycle.
+หากเปิดใช้งาน ERPNext จะตรวจสอบว่าราคาของสินค้ามีการเปลี่ยนแปลงในใบส่งมอบหรือใบกำกับสินค้าที่สร้างจากใบสั่งขายหรือไม่ นั่นคือ จะช่วยให้คุณรักษาอัตราเดียวกันตลอดวงจรการขาย
 
-You can configure the action that system should take if the same rate is not maintained in the "Action If Same Rate is Not Maintained" field:
+คุณสามารถกำหนดค่าการดำเนินการที่ระบบควรทำได้หากไม่มีการรักษาอัตราเดียวกันในช่อง "การดำเนินการหากไม่ได้รักษาอัตราเดียวกัน":
 
-- **Stop**: ERPNext will stop you from changing the price by throwing a validation error.
-- **Warn**: The system will let you save the transaction but warn you with a message if the rate is changed.
+- **หยุด**: ERPNext จะหยุดคุณไม่ให้เปลี่ยนราคาโดยแสดงข้อผิดพลาดในการตรวจสอบความถูกต้อง
+- **คำเตือน**: ระบบจะให้คุณบันทึกธุรกรรม แต่เตือนคุณด้วยข้อความหากอัตรามีการเปลี่ยนแปลง
 
-### 4.2 Allow User to Edit Price List Rate in Transaction
+### 4.2 อนุญาตให้ผู้ใช้แก้ไขอัตรารายการราคาในการทำธุรกรรม
 
-The item table in sale transactions has a field called Price List Rate. This field is non-editable by default in all the sales transactions. This is to ensure that the price of an item is fetched from Item Price record and the user is not able to edit it.
+ตารางรายการในธุรกรรมการขายมีฟิลด์ที่เรียกว่า เรทรายการราคา ฟิลด์นี้ไม่สามารถแก้ไขได้ตามค่าเริ่มต้นในธุรกรรมการขายทั้งหมด ทั้งนี้เพื่อให้แน่ใจว่าราคาของสินค้าถูกดึงมาจากเรกคอร์ดราคาสินค้าและผู้ใช้ไม่สามารถแก้ไขได้
 
-If you need the Item Price fetched from Price List of an item to be editable, you should uncheck this field.
+หากคุณต้องการให้ราคาสินค้าที่ดึงมาจากรายการราคาของสินค้าจะสามารถแก้ไขได้ คุณควรยกเลิกการเลือกช่องนี้
 
-### 4.3 Allow Item to be added multiple times in a transaction
-This is a validation check which prevents an item from being added multiple times in the same transaction when unchecked. In some cases, this might be an explicit need if so check this box.
+### 4.3 อนุญาตให้เพิ่มรายการได้หลายครั้งในการทำธุรกรรม
+นี่คือการตรวจสอบความถูกต้องซึ่งป้องกันไม่ให้มีการเพิ่มรายการหลายครั้งในธุรกรรมเดียวกันเมื่อไม่ได้เลือก ในบางกรณี นี่อาจเป็นความต้องการที่ชัดเจน ให้เลือกช่องนี้
 
-### 4.4 Allow multiple Sales Orders against a Customer's Purchase Order
-When creating a Sales Order, you can update the Purchase Order ID and Date received from the Customer. You can create only one Sales Order against the Customer's PO No. and Date. However, if you wish to allow the creation of multiple Sales Orders against the same PO No. of the Customer, tick the checkbox "Allow multiple Sales Orders against a Customer's Purchase Order".
+### 4.4 อนุญาตให้มีคำสั่งซื้อขายหลายรายการกับใบสั่งซื้อของลูกค้า
+เมื่อสร้างใบสั่งขาย คุณสามารถอัปเดตรหัสใบสั่งซื้อและวันที่ที่ได้รับจากลูกค้าได้ คุณสามารถสร้างใบสั่งขายได้เพียงใบเดียวโดยเทียบกับหมายเลข PO และวันที่ของลูกค้า อย่างไรก็ตาม หากคุณต้องการอนุญาตให้สร้างคำสั่งขายหลายรายการกับ หมายเลข PO เดียวกันของลูกค้า ให้ทำเครื่องหมายที่ช่อง "อนุญาตใบสั่งขายหลายรายการต่อใบสั่งซื้อของลูกค้า"
 
-### 4.5 Validate Selling Price for Item against Purchase Rate or Valuation Rate
-When making sales, it's important to know that you're not making losses. Enabling this validation will validate the item's Selling Price with its valuation/buying price. If an item's selling price is found to be less than it's buying price, then you will get a prompt when this checkbox is ticked.
+### 4.5 ตรวจสอบราคาขายของสินค้ากับอัตราการซื้อหรืออัตราการประเมินค่า
+เมื่อทำการขาย สิ่งสำคัญคือต้องรู้ว่าคุณไม่ขาดทุน การเปิดใช้งานการตรวจสอบนี้จะตรวจสอบราคาขายของสินค้าด้วยการประเมินราคา/ราคาซื้อ หากพบว่าราคาขายของสินค้านั้นน้อยกว่าราคาซื้อ คุณจะได้รับข้อความแจ้งเมื่อทำเครื่องหมายที่ช่องทำเครื่องหมายนี้
 
-### 4.6 Hide Customer's Tax ID from Sales Transactions
-As per the statutory requirement, most of the Customers have unique Tax ID assigned to them. They also need to have this tax ID fetched in the selling transactions. However, if you don't wish to use this functionality, you can disable by checking this property.
+### 4.6 ซ่อนรหัสภาษีของลูกค้าจากธุรกรรมการขาย
+ตามข้อกำหนดทางกฎหมาย ลูกค้าส่วนใหญ่มีหมายเลขประจำตัวผู้เสียภาษีที่กำหนดให้เฉพาะ พวกเขายังต้องดึงหมายเลขประจำตัวผู้เสียภาษีนี้ในธุรกรรมการขาย อย่างไรก็ตาม หากคุณไม่ต้องการใช้ฟังก์ชันนี้ คุณสามารถปิดใช้งานได้โดยการตรวจสอบคุณสมบัตินี้
 
 {next}

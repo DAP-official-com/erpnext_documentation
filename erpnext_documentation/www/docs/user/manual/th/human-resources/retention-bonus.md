@@ -1,38 +1,38 @@
 <!-- add-breadcrumbs -->
-# Retention Bonus
+# โบนัส
 
 
-**Retention bonus is a payment or reward outside of an employee's regular salary that is offered as an incentive to keep a key employee on the job.**
+**โบนัสคือการจ่ายเงินหรือรางวัลนอกเหนือจากเงินเดือนประจำของพนักงานที่เสนอเพื่อเป็นแรงจูงใจให้พนักงานคนสำคัญทำงานต่อไป**
 
- ERPNext allows you to configure Retention Bonus for an Employee for a particular period.
+ ERPNext ช่วยให้คุณกำหนดค่าโบนัสให้พนักงานสำหรับช่วงเวลาหนึ่งๆ
 
-To access Retention Bonus, go to:
-> Home > Human Resources > Payroll > Retention Bonus
+ในการเข้าถึงโบนัสการรักษา ไปที่:
+> หน้าหลัก > ทรัพยากรบุคคล > เงินเดือน > โบนัส
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating a Retention Bonus, it is advisable to create the following:
+ก่อนสร้าง โบนัส ขอแนะนำให้สร้างสิ่งต่อไปนี้:
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Salary Component](/docs/user/manual/en/human-resources/salary-component)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
 
-## 2. How to create a Retention Bonus
+## 2. วิธีสร้างโบนัสการกักกัน
 
-1. Go to Retention Bonus list, click on New.
-1. Select Employee and Bonus Payment Date.
-1. Enter the Bonus Amount.
-1. Select the [Salary Component](/docs/user/manual/en/human-resources/salary-component) under which you want to give the bonus. 
-1. Save and Submit.
-1. On submit, 'Additional Salary' document of the specified 'Salary Component' is created. This will be fetched while running Payroll Entry.
+1. ไปที่รายการ โบนัส คลิก ใหม่
+1. เลือกวันที่จ่ายพนักงานและโบนัส
+1. ป้อนจำนวนโบนัส
+1. เลือก [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component) ที่คุณต้องการให้โบนัส
+1. บันทึกและส่ง
+1. เมื่อส่งเอกสาร 'เงินเดือนเพิ่มเติม' ของ 'ส่วนประกอบเงินเดือน' ที่ระบุจะถูกสร้างขึ้น สิ่งนี้จะถูกดึงออกมาในขณะที่เรียกใช้รายการบัญชีเงินเดือน
 
  <img class="screenshot" alt="Retention Bonus" src="/docs/assets/img/human-resources/retention-bonus.png">
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Employee Incentive](/docs/user/manual/en/human-resources/employee-incentive)
-1. [Additional Salary](/docs/user/manual/en/human-resources/additional-salary)
-1. [Salary Component](/docs/user/manual/en/human-resources/salary-component)
-1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
-1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
+1. [รางวัลจูงใจพนักงาน](/docs/user/manual/th/human-resources/employee-incentive)
+1. [เงินเดือนเพิ่มเติม](/docs/user/manual/th/human-resources/additional-salary)
+1. [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
+1. [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
+1. [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)
 
 {next}

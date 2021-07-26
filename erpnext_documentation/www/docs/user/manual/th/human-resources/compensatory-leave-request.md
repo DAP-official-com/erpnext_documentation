@@ -1,51 +1,51 @@
 <!-- add-breadcrumbs -->
-# Compensatory Leave Request
+# ลางานเพิ่มเติมหรือชดเชย
 
 
-**Compensatory Leave is a leave that is granted to an Employee as compensation for working overtime or on holidays.**
+**วันลาชดเชย คือ วันลาที่มอบให้แก่ลูกจ้างเป็นการชดเชยการทำงานล่วงเวลาหรือในวันหยุด**
 
- ERPNext allows Employees to request for Compensatory Leaves through the Compensatory Leave Request document. It is necessary that the dates mentioned in the Compensatory Leave Request should be in default Holiday List and also that the Employee should have their attendance marked Present. 
+ ERPNext ช่วยให้พนักงานสามารถขอการลาเพื่อชดเชยผ่านเอกสารคำร้องขอการลาเพื่อชดเชยได้ จำเป็นวันที่ที่ระบุไว้ในคำขอการลาเพื่อชดเชยควรอยู่ในรายการวันหยุดโดยปริยาย และพนักงานควรทำเครื่องหมายว่ามาทำงานปกติ
  
- > **Note:** Only Leave Types which are marked as 'Is Compensatory' can be selected in the Compensatory Leave Request.
+ > **หมายเหตุ:** เฉพาะประเภทการลาที่ทำเครื่องหมายว่า 'เป็นการชดเชย' เท่านั้นที่สามารถเลือกได้ในคำขอการลาเพื่อชดเชย
 
-To access Compensatory Leave Request, go to:
+ในการเข้าถึงคำขอการลาเพื่อชดเชย ไปที่:
 
-> Home > Human Resources > Leaves > Compensatory Leave Request 
-
-
-## 1. Prerequisites
-
-Before creating a Compensatory Leave Request, it is necessary to create the following documents:
-
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Leave Period](/docs/user/manual/en/human-resources/leave-period)
-* [Leave Type](/docs/user/manual/en/human-resources/leave-type)
-* [Leave Policy](/docs/user/manual/en/human-resources/leave-policy)
-* [Leave Allocation](/docs/user/manual/en/human-resources/leave-allocation)
-* [Holiday List](/docs/user/manual/en/human-resources/holiday-list)
-* [Attendance](/docs/user/manual/en/human-resources/attendance)
+> หน้าหลัก > ทรัพยากรบุคคล > การลางาน > คำขอลาเพื่อชดเชย
 
 
-## 2. How to create a Compensatory Leave Request
+## 1. ข้อกำหนดเบื้องต้น
 
-1. Go to Compensatory Leave Request list, click on New.
-1. Select the Employee ID. Once selected, The Employee Name and Department will get automatically fetched.
-1. Select Leave Type.
-1. Select Work From Date and Work End Date. This is the date of the day(s) the Employee has worked on, during a Holiday.
-1. Enter the Reason.
-1. Save and Submit.
+ก่อนสร้างคำขอลาเพื่อชดเชย จำเป็นต้องสร้างเอกสารดังต่อไปนี้:
+
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [ระยะเวลาการลา](/docs/user/manual/th/human-resources/leave-period)
+* [ประเภทการลา](/docs/user/manual/th/human-resources/leave-type)
+* [นโยบายการลา](/docs/user/manual/th/human-resources/leave-policy)
+* [การจัดสรรการลา](/docs/user/manual/th/human-resources/leave-allocation)
+* [รายการวันหยุด](/docs/user/manual/th/human-resources/holiday-list)
+* [การเข้างาน](/docs/user/manual/th/human-resources/attendance)
+
+
+## 2. วิธีสร้างคำขอลางานชดเชย
+
+1. ไปที่รายการคำขอลาเพื่อชดเชย คลิกที่ใหม่
+1. เลือกรหัสพนักงาน เมื่อเลือกแล้ว ชื่อพนักงานและแผนกจะถูกดึงออกมาโดยอัตโนมัติ
+1. เลือกประเภทการลา
+1. เลือกงานจากวันที่และวันที่สิ้นสุดการทำงาน นี่คือวันที่ของวันที่พนักงานทำงานในช่วงวันหยุด
+1. ใส่เหตุผล
+1. บันทึกและส่ง
 
     <img class="screenshot" alt="Compensatory Leave Request"
     src="{{docs_base_url}}/assets/img/human-resources/compensatory-leave.png">
 
 
 
-On submitting the Compensatory Leave Request, ERPNext updates the Leave Allocation record for the Compensatory leave type, allowing the Employee to apply for leaves of this type later on depending upon the number of leaves left.
+ในการส่งคำขอลาเพื่อชดเชย ERPNext จะอัปเดตเรกคอร์ดการจัดสรรการลาสำหรับประเภทการลาเพื่อชดเชย ซึ่งช่วยให้พนักงานสามารถยื่นขอลางานประเภทนี้ได้ในภายหลัง ขึ้นอยู่กับจำนวนใบที่เหลือ
 
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Leave Application](/docs/user/manual/en/human-resources/leave-application)
-1. [Leave Encashment](/docs/user/manual/en/human-resources/leave-encashment)
-1. [Leave Block List](/docs/user/manual/en/human-resources/leave-block-list)
+1. [ใบขอลางาน](/docs/user/manual/th/human-resources/leave-application)
+1. [Leave Encashment](/docs/user/manual/th/human-resources/leave-encashment)
+1. [Leave Block List](/docs/user/manual/th/human-resources/leave-block-list)
 

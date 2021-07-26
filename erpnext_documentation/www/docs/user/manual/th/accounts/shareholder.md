@@ -1,31 +1,31 @@
 <!-- add-breadcrumbs -->
-# Shareholder
+# ผู้ถือหุ้น
 
-**A Shareholder is someone who owns shares of a Company.**
+**ผู้ถือหุ้นคือบุคคลที่เป็นเจ้าของหุ้นของบริษัท**
 
-A Shareholder is any person, company or other institution that owns at least one share of a company’s stock. Because shareholders are a company's owners, they reap the benefits of the company's successes in the form of increased stock valuation. If the company does poorly, shareholders can lose money if the price of company stock declines.
+ผู้ถือหุ้นคือบุคคล บริษัท หรือสถาบันอื่นใดที่เป็นเจ้าของหุ้นของบริษัทอย่างน้อยหนึ่งหุ้น เนื่องจากผู้ถือหุ้นเป็นเจ้าของบริษัท พวกเขาจึงเก็บเกี่ยวผลประโยชน์จากความสำเร็จของบริษัทในรูปแบบของการประเมินมูลค่าหุ้นที่เพิ่มขึ้น หากบริษัททำผลงานได้ไม่ดี ผู้ถือหุ้นอาจสูญเสียเงินหากราคาหุ้นของบริษัทตกต่ำ
 
-Any profit or loss made by a Company belongs to the Shareholders and hence the Shareholders are a liability to the Company.
+กำไรหรือขาดทุนใด ๆ ที่เกิดขึ้นโดยบริษัทเป็นของผู้ถือหุ้น และด้วยเหตุนี้ผู้ถือหุ้นจึงเป็นความรับผิดชอบของบริษัท
 
-ERPNext allows you to keep a track of all your Shareholders and maintain Share Transfers, Share Ledger and Share Balances. A shareholder is uniquely identified by the Shareholder ID. Normally this ID is a [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series) starting with 'ACC-SH-'. Also as soon as the Shareholder makes even a single transaction, a Folio number is allocated to him. This also is unique to the Shareholder.
+ERPNext ช่วยให้คุณติดตามผู้ถือหุ้นทั้งหมดของคุณ และรักษาการโอนหุ้น บัญชีแยกประเภท และยอดคงเหลือในหุ้น ผู้ถือหุ้นจะถูกระบุโดย ID ผู้ถือหุ้นโดยไม่ซ้ำกัน โดยปกติ ID นี้เป็น [การตั้งชื่อเป็นชุด](/docs/user/manual/th/setting-up/settings/naming-series) ที่ขึ้นต้นด้วย 'ACC-SH-' นอกจากนี้ ทันทีที่ผู้ถือหุ้นทำธุรกรรมแม้แต่รายการเดียว หมายเลขโฟลิโอก็จะถูกจัดสรรให้เขา สิ่งนี้ยังเป็นเอกลักษณ์ของผู้ถือหุ้นอีกด้วย
 
-To access the Shareholder list, go to:
-> Home > Accounting > Share Management > Shareholder
+หากต้องการเข้าถึงรายชื่อผู้ถือหุ้น ให้ไปที่:
+> หน้าแรก > การบัญชี > การจัดการหุ้น > ผู้ถือหุ้น
 
-## 1. How to create a Shareholder
-1. Go to the Shareholder list and click on New.
-1. Enter the name of the Shareholder.
-1. Add Address and Contact details.
-1. Save.
+## 1. วิธีสร้างผู้ถือหุ้น
+1. ไปที่รายชื่อผู้ถือหุ้นและคลิกที่ใหม่
+1. ใส่ชื่อผู้ถือหุ้น
+1. เพิ่มที่อยู่และรายละเอียดการติดต่อ
+1. บันทึก
 
  <img class="screenshot" alt="Create Shareholder" src="/docs/assets/img/accounts/shareholder/shareholder.png">
 
-A Shareholder can avail the features (operations) in the [Share Transfer](/docs/user/manual/en/accounts/share-transfer) process. Only after shares are issued to them, a Folio Number and the shares will be visible.
+ผู้ถือหุ้นสามารถใช้คุณสมบัติ (การดำเนินการ) ในกระบวนการ [การโอนหุ้น](/docs/user/manual/th/accounts/share-transfer) ได้ หลังจากออกหุ้นแล้วเท่านั้น หมายเลขโฟลิโอและการแชร์จะปรากฏให้เห็น
 
-### 1.1 Contacts and Addresses
+### 1.1 ผู้ติดต่อและที่อยู่
 
-[Contacts](/docs/user/manual/en/CRM/contact) and [Addresses](/docs/user/manual/en/CRM/address) in ERPNext are stored separately so that you can attach multiple Contacts or Addresses to Shareholders and other parties.
+[ผู้ติดต่อ](/docs/user/manual/th/CRM/contact) และ [ที่อยู่](/docs/user/manual/th/CRM/address) ใน ERPNext จะถูกจัดเก็บแยกต่างหาก เพื่อให้คุณสามารถแนบผู้ติดต่อหรือที่อยู่หลายรายการกับผู้ถือหุ้นและผู้ที่เกี่ยวข้องอื่นๆ
 
-### 2. Related Topics
-1. [Share Transfer](/docs/user/manual/en/accounts/share-transfer)
-1. [Share Reports](/docs/user/manual/en/accounts/share-reports)
+### 2. หัวข้อที่เกี่ยวข้อง
+1. [โอนหุ้น](/docs/user/manual/th/accounts/share-transfer)
+1. [รายการหุ้น](/docs/user/manual/th/accounts/share-reports)

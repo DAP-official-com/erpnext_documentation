@@ -1,199 +1,199 @@
 <!-- add-breadcrumbs -->
-# Purchase Order
+#ใบสั่งซื้อ
 
-**A Purchase Order is a binding contract with your Supplier that you promise to buy a set of items under given conditions.**
+**ใบสั่งซื้อเป็นสัญญาที่มีผลผูกพันกับซัพพลายเออร์ของคุณ ซึ่งคุณสัญญาว่าจะซื้อชุดรายการภายใต้เงื่อนไขที่กำหนด**
 
-It is similar to a Sales Order but instead of sending it to an external party, you keep it for internal records.
+คล้ายกับใบสั่งขาย แต่แทนที่จะส่งให้บุคคลภายนอก คุณเก็บไว้เพื่อบันทึกภายใน
 
-> Home > Buying > Purchasing > Purchase Order
+> หน้าหลัก > การซื้อ > การจัดซื้อ > ใบสั่งซื้อ
 
 ![Buying Flow](/docs/assets/img/buying/buying_flow_po.png)
 
-## 1. Prerequisites
-Before creating and using a Purchase Order, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ใบสั่งซื้อ ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Supplier](/docs/user/manual/en/buying/supplier)
-* [Item](/docs/user/manual/en/stock/item)
+* [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+* [รายการ](/docs/user/manual/th/stock/item)
 
 
-## 2. How to create a Purchase Order
+## 2. วิธีสร้างใบสั่งซื้อ
 
-A Purchase Order can be automatically created from a Material Request or Supplier Quotation.
+สามารถสร้างใบสั่งซื้อได้โดยอัตโนมัติจากคำขอวัสดุหรือใบเสนอราคาของซัพพลายเออร์
 
-1. Go to the Purchase Order list, click on New.
-1. Select the Supplier, required by date.
-1. In the items table, select the item by code, you can change the required by date for each item.
-1. Set the quantity and the price will be fetched automatically if set in the Item master.
-1. Set taxes.
-1. Save and Submit.
+1. ไปที่รายการใบสั่งซื้อ คลิกที่ ใหม่
+1. เลือกซัพพลายเออร์ที่ต้องการตามวันที่
+1. ในตารางรายการ เลือกรายการตามรหัส คุณสามารถเปลี่ยนวันที่ที่จำเป็นสำหรับแต่ละรายการได้
+1. กำหนดปริมาณและราคาจะถูกดึงโดยอัตโนมัติหากตั้งค่าไว้ในหลักรายการ
+1. กำหนดภาษี
+1. บันทึกและส่ง
     <img class="screenshot" alt="Purchase Order" src="{{docs_base_url}}/assets/img/buying/purchase-order.png">
 
-### 2.1 Setting Warehouses
+### 2.1 การตั้งค่าคลังสินค้า
 
-* **Set Target Warehouse**: Optionally, you can set the default target Warehouse where the purchased Items will be delivered. This will be fetched into the Item table rows.
+* **การตั้งค่าคลังสินค้าปลายทาง**: คุณสามารถตั้งค่าคลังสินค้าปลายทางเริ่มต้นที่จะจัดส่งสินค้าที่ซื้อ สิ่งนี้จะถูกดึงเข้าไปในแถวตารางรายการ
 
-### 2.2 Fetching Items from Open Material Requests
-Items can be fetched into the Purchase Order automatically from open [Material Requests](/docs/user/manual/en/stock/material-request). For this to work, the following steps need to be done:
+### 2.2 การดึงรายการจากคำขอวัสดุที่เปิดอยู่
+สามารถดึงรายการลงในใบสั่งซื้อได้โดยอัตโนมัติจาก [คำขอวัสดุ](/docs/user/manual/th/stock/material-request) ที่เปิดอยู่ สำหรับสิ่งนี้จะต้องดำเนินการตามขั้นตอนต่อไปนี้:
 
-1. Select a Supplier in the Purchase Order.
-1. Set default Supplier in the Item form under [Item Defaults](/docs/user/manual/en/stock/item#39-item-defaults).
-1. A [Material Request](/docs/user/manual/en/stock/material-request) needs to present of type 'Purchase'.
-1. Click on the **Get Items from open Material Requests** button below the Supplier name. Now a dialog will appear with Material Requests containing Items for which the default Supplier is the same as the one selected in the Purchase Order. On selecting the Material Requests and clicking on **Get Items**, the Items will be fetched from the Material Requests.
+1. เลือกซัพพลายเออร์ในใบสั่งซื้อ
+1. ตั้งค่าเริ่มต้น ซัพพลายเออร์ ในแบบฟอร์มรายการ ภายใต้ [รายการเริ่มต้น](/docs/user/manual/th/stock/item#39-item-defaults)
+1. [คำขอวัสดุ](/docs/user/manual/th/stock/material-request) ต้องแสดงประเภท 'ซื้อ'
+1. คลิกที่ปุ่ม **รับรายการจากคำขอวัสดุที่เปิดอยู่** ด้านล่างชื่อซัพพลายเออร์ ตอนนี้กล่องโต้ตอบจะปรากฏขึ้นพร้อมกับคำขอวัสดุที่มีรายการซึ่งซัพพลายเออร์เริ่มต้นเหมือนกับรายการที่เลือกในใบสั่งซื้อ ในการเลือกคำขอวัสดุและคลิกที่ **รับรายการ** รายการจะถูกดึงมาจากคำขอวัสดุ
 <img class="screenshot" alt="Get Items from Open Material Requests" src="{{docs_base_url}}/assets/img/buying/get-items-from-open-mr.png">
 
-> **Note:** The **Get Items from Open Material Requests** button is visible as long as the Items table is empty.
+> **หมายเหตุ:** ปุ่ม **รับรายการจากคำขอวัสดุเปิด** จะปรากฏให้เห็นตราบใดที่ตารางรายการว่างเปล่า
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Address and Contact
+### 3.1 ที่อยู่และการติดต่อ
 
-* **Select Supplier Address**: The Supplier's billing address.
-* **Select Shipping Address**: The Supplier's shipping address from which they'll be sending the items.
-* Address, Shipping Address, Contact, Contact Email will be fetched if saved in the Supplier master.
+* **เลือกที่อยู่ซัพพลายเออร์**: ที่อยู่สำหรับการเรียกเก็บเงินของซัพพลายเออร์
+* **เลือกที่อยู่สำหรับจัดส่ง**: ที่อยู่สำหรับจัดส่งของซัพพลายเออร์ที่จะใช้ส่งสินค้า
+* ที่อยู่, ที่อยู่สำหรับจัดส่ง, ผู้ติดต่อ, อีเมลติดต่อจะถูกดึงออกมาหากบันทึกไว้ในข้อมูลหลักซัพพลายเออร์
 
-For India:
+<!--For India:
 
 * **Supplier and Company GSTIN**: The GST Identification Number of your Supplier and your company.
-* **Place of Supply**: For GST, Place of Supply is necessary. It consists of the state's name and number.
+* **Place of Supply**: For GST, Place of Supply is necessary. It consists of the state's name and number.-->
 
-### 3.2 Currency and Price List
-You can set the currency in which the purchase order is to be stored. If you set a Pricing List, then the item prices will be fetched from that list. Ticking on Ignore Pricing Rule will ignore the Pricing Rules set in Accounts > Pricing Rule.
+### 3.2 รายการสกุลเงินและราคา
+คุณสามารถตั้งค่าสกุลเงินที่จะจัดเก็บใบสั่งซื้อได้ หากคุณกำหนดรายการราคา ราคาสินค้าจะถูกดึงมาจากรายการนั้น การทำเครื่องหมายที่ละเว้นกฎการกำหนดราคาจะละเว้นกฎการกำหนดราคาที่ตั้งไว้ในบัญชี > กฎการกำหนดราคา
 
-Read about [Price Lists](/docs/user/manual/en/stock/price-lists) 
-and [Multi-Currency Transactions](/docs/user/manual/en/accounts/articles/managing-transactions-in-multiple-currency)
-to know more.
+อ่านเกี่ยวกับ [รายการราคา](/docs/user/manual/th/stock/price-lists)
+และ [ธุรกรรมหลายสกุลเงิน](/docs/user/manual/th/accounts/articles/managing-transactions-in-multiple-currency)
+เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.3 Subcontracting or 'Supply Raw Materials'
+### 3.3 การรับเหมาช่วงหรือ 'การจัดหาวัตถุดิบ'
 
-Setting 'Supply Raw Materials' option is useful for subcontracting where you provide the raw materials for manufacturing an item. To know more, visit the [Subcontracting page](/docs/user/manual/en/manufacturing/subcontracting).
+การตั้งค่าตัวเลือก 'การจัดหาวัตถุดิบ' มีประโยชน์สำหรับการรับเหมาช่วงที่คุณจัดหาวัตถุดิบสำหรับการผลิตสินค้า หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่ [การรับเหมาช่วง](/docs/user/manual/th/manufacturing/subcontracting)
 
-### 3.4 The Items table
+### 3.4 ตารางรายการ
 
-* **Scan Barcode**: You can add Items in the Items table by scanning their barcodes if you have a barcode scanner. Read documentation for [tracking items using barcode](/docs/user/manual/en/stock/articles/track-items-using-barcode) to know more.
+* **สแกนบาร์โค้ด**: คุณสามารถเพิ่มรายการในตารางรายการโดยการสแกนบาร์โค้ดหากคุณมีเครื่องสแกนบาร์โค้ด อ่านเอกสารประกอบสำหรับ [การติดตามรายการโดยใช้บาร์โค้ด](/docs/user/manual/th/stock/articles/track-items-using-barcode) เพื่อทราบข้อมูลเพิ่มเติม
 
-* **Quantity and Rate**: When you select the Item code, it's name, description, and UOM will be fetched. The 'UOM Conversion Factor' is set to 1 by default, you can change it depending on the UOM received from the seller, more in the next section.
+* **ปริมาณและอัตรา**: เมื่อคุณเลือกรหัสสินค้า ชื่อ คำอธิบาย และ UOM จะถูกดึงออกมา 'ปัจจัยการแปลง UOM' ถูกตั้งค่าเป็น 1 โดยค่าเริ่มต้น คุณสามารถเปลี่ยนได้โดยขึ้นอยู่กับ UOM ที่ได้รับจากผู้ขาย เพิ่มเติมในส่วนถัดไป
 
-    'Price List Rate' will be fetched if a Standard Buying rate is set. 'Last Purchase Rate' shows the rate of the item from your last Purchase Order. Rate is fetched if set in the item master. You can attach an Item Tax Template to apply a specific tax rate to the item.
+    'ราคารายการราคา' จะถูกดึงมาหากมีการตั้งค่าอัตราการซื้อมาตรฐาน 'อัตราการซื้อล่าสุด' แสดงอัตราของรายการจากใบสั่งซื้อล่าสุดของคุณ อัตราจะถูกดึงมาหากตั้งค่าไว้ในรายการหลัก คุณสามารถแนบเทมเพลตภาษีสินค้าเพื่อใช้อัตราภาษีเฉพาะกับสินค้า
 
-* **Item weights** will be fetched if set in the Item master else enter manually.
+* **น้ำหนักของรายการ** จะถูกดึงออกมาหากตั้งค่าใน Item master มิฉะนั้นให้ป้อนด้วยตนเอง
 
-* **Warehouse**: The warehouse where the items will be delivered, will be auto-filled if 'Set Target Warehouse' was set in the Purchase Order. Via Blanket Order, a Blanket Order can be linked, to know more [click here](/docs/user/manual/en/selling/blanket-order). A 'Project' can be linked to track progress. A 'BOM' or Bill of Materials can also be linked to track progress.
+* **คลังสินค้า**: คลังสินค้าที่จะจัดส่งสินค้าจะถูกเติมอัตโนมัติหากมีการตั้งค่า 'ตั้งคลังสินค้าเป้าหมาย' ในใบสั่งซื้อ ผ่าน การสั่งซื้อแบบครอบคลุม การสั่งซื้อแบบครอบคลุม สามารถเชื่อมโยง เพื่อทราบข้อมูลเพิ่มเติม [คลิกที่นี่](/docs/user/manual/th/selling/blanket-order). สามารถเชื่อมโยง 'โครงการ' เพื่อติดตามความคืบหน้าได้ นอกจากนี้ยังสามารถเชื่อมโยง 'BOM' หรือ Bill of Materials เพื่อติดตามความคืบหน้าได้
 
-* 'Qty as per Stock UOM' will show the current stock as per the UOM set in the Item master. 'Received Qty' will be updated when the items are billed.
+* 'จำนวนสต็อกตาม UOM ' จะแสดงสต็อกปัจจุบันตาม UOM ที่กำหนดไว้ในหลักรายการ 'จำนวนที่ได้รับ' จะได้รับการอัปเดตเมื่อมีการเรียกเก็บเงินรายการ
 
-* **Accounting Details**: This section is autofilled for a Purchase Order. 'Expense Account' is the account against which the PO is billed and Cost Center is the CC against which the PO is charged.
+* **รายละเอียดทางบัญชี**: ส่วนนี้จะถูกป้อนอัตโนมัติสำหรับใบสั่งซื้อ 'บัญชีค่าใช้จ่าย' คือบัญชีที่มีการเรียกเก็บเงินตามใบสั่งซื้อและศูนย์ต้นทุนคือสำเนาบัญชีที่เรียกเก็บเงินจากใบสั่งซื้อ
 
-A “Required By” date on each Item: If you are expecting part delivery, your Supplier will know how much quantity to deliver at which date. This will help you from preventing over-supply. It will also help you to track how well your Supplier is doing on timeliness.
+วันที่ "ต้องระบุภายใน" ในแต่ละรายการ: หากคุณคาดว่าจะมีการจัดส่งชิ้นส่วน ซัพพลายเออร์ของคุณจะทราบจำนวนที่จะส่งมอบในวันที่ดังกล่าว ซึ่งจะช่วยป้องกันไม่ให้มีอุปทานมากเกินไป นอกจากนี้ยังจะช่วยให้คุณติดตามว่าซัพพลายเออร์ของคุณทำงานได้ดีเพียงใดในเวลาที่เหมาะสม
 
-**Allow Zero Valuation Rate**: Ticking on 'Allow Zero Valuation Rate' will allow submitting the Purchase Receipt even if the Valuation Rate of the Item is 0. This can be a sample item or due to a mutual understanding with your Supplier.
+**อนุญาตอัตราการประเมินมูลค่าเป็นศูนย์**: การทำเครื่องหมายที่ 'อนุญาตอัตราการประเมินมูลค่าเป็นศูนย์' จะอนุญาตให้ส่งใบเสร็จรับเงินการซื้อแม้ว่าอัตราการประเมินมูลค่าของสินค้าจะเป็น 0 ซึ่งอาจเป็นรายการตัวอย่างหรือเนื่องมาจากความเข้าใจร่วมกันกับซัพพลายเออร์ของคุณ
 
-### 3.6 Raw Materials Supplied
-This section appears when 'Supply Raw Materials' supplied is set to 'Yes'. This section shows a table with the Items to be supplied to the Supplier for the subcontracting process.
+### 3.6 วัตถุดิบที่ให้มา
+ส่วนนี้จะปรากฏขึ้นเมื่อตั้งค่า 'Supply Raw Materials' เป็น 'Yes' ส่วนนี้แสดงตารางที่มีรายการที่จะจัดส่งให้กับซัพพลายเออร์สำหรับกระบวนการรับเหมาช่วง
 
-* **Set Reserve Warehouse**: When [Subcontracting](/docs/user/manual/en/manufacturing/subcontracting), the raw materials can be reserved in a separate Warehouse. On selecting the Reserved Warehouse here, it'll be fetched into Item rows of the Raw Materials Supplied table.
+* **Set Reserve Warehouse**: เมื่อ [การรับเหมาช่วง](/docs/user/manual/th/manufacturing/subcontracting) วัตถุดิบสามารถจองใน Warehouse แยกต่างหากได้ ในการเลือกโกดังสำรองที่นี่ จะถูกดึงเข้าไปในแถวรายการของตารางวัตถุดิบที่ให้มา
 
-#### Supplied Items Table
+#### ตารางรายการที่ให้มา
 
-* **Required Quantity**: The count of Items required to complete the subcontracting as specified in the [BOM](/docs/user/manual/en/manufacturing/bill-of-materials).
-* **Supplied Quantity**: This will be updated when you create Stock Entries to transfer materials to Supplier Warehouse from the Reserve Warehouse using the **Transfer** button.
+* **ปริมาณที่ต้องการ**: จำนวนรายการที่จำเป็นในการทำสัญญาย่อยให้เสร็จสิ้นตามที่ระบุใน [BOM](/docs/user/manual/th/manufacturing/bill-of-materials)
+* **ปริมาณที่จัดหา**: สิ่งนี้จะได้รับการอัปเดตเมื่อคุณสร้างรายการสต็อคเพื่อโอนวัสดุไปยังคลังสินค้าของซัพพลายเออร์จากคลังสินค้าสำรองโดยใช้ปุ่ม **โอน**
     ![Subcontract Transfer Material](/docs/assets/img/buying/subcontract-transfer-materials.gif)
 
-### 3.7 Purchase UOM and Stock UOM Conversion
+### 3.7 ซื้อ UOM และ การแปลงสต๊อก UOM 
 
-You can change your UOM as per your stock requirements in the Purchase Order.
+คุณสามารถเปลี่ยน UOM ของคุณตามความต้องการของสต็อกในใบสั่งซื้อ
 
-For example, If you have bought your raw material in large quantities with UOM - boxes, and wish to stock them in UOM - Nos; you can do so while making your Purchase Order.
+ตัวอย่างเช่น หากคุณซื้อวัตถุดิบในปริมาณมากด้วยกล่อง UOM และต้องการสต็อกใน UOM - Nos คุณสามารถทำได้ในขณะที่ทำใบสั่งซื้อของคุณ
 
-1. Store UOM as Nos in the Item master. Note that the UOM in the Item master is the stock UOM.
+1. จัดเก็บ UOM เป็น Nos ใน รายการหลัก โปรดทราบว่า UOM ใน รายการหลัก คือ UOM ของสต็อค
 
-2. In the Purchase Order mention UOM as Box. (Since material arrives in Boxes)
+2. ในใบสั่งซื้อระบุ UOM เป็นกล่อง (เนื่องจากพัสดุมาถึงกล่อง)
 
-3. In the Warehouse and Reference section, the UOM will be pulled in as Nos (from the Item form):
+3. ในส่วนคลังสินค้าและข้อมูลอ้างอิง UOM จะถูกดึงเข้ามาเป็นหมายเลข (จากแบบฟอร์มรายการ):
 
  <img class="screenshot" alt="Purchase Order - UOM" src="{{docs_base_url}}/assets/img/buying/purchase-order-uom.png">
 
-4. Mention the UOM conversion factor. For example, (1); If one box has 1 kilo.
+4. กล่าวถึงปัจจัยการแปลง UOM ตัวอย่างเช่น (1); ถ้าหนึ่งกล่องมี 1 กิโล
 
-5. Notice that the stock quantity will be updated accordingly.
+5. สังเกตว่าปริมาณสต็อคจะได้รับการอัปเดตตามลำดับ
 
  <img class="screenshot" alt="Purchase Order - UOM" src="{{docs_base_url}}/assets/img/buying/po-stock-uom.png">
 
-### 3.8 Taxes and Charges
+### 3.8 ภาษีและค่าธรรมเนียม
 
-If your Supplier is going to charge you additional taxes or charge like a
-shipping or insurance charge, you can add it here. It will help you to
-accurately track your costs. Also, if some of these charges add to the value
-of the product you will have to mention them in the Taxes table.
+หากซัพพลายเออร์ของคุณจะเรียกเก็บภาษีเพิ่มเติมจากคุณหรือเรียกเก็บเช่น
+ค่าขนส่งหรือค่าประกัน คุณสามารถเพิ่มได้ที่นี่ มันจะช่วยให้คุณ
+ติดตามค่าใช้จ่ายของคุณอย่างแม่นยำ นอกจากนี้ หากค่าใช้จ่ายบางส่วนเหล่านี้เพิ่มมูลค่า
+ของผลิตภัณฑ์ที่คุณต้องระบุในตารางภาษี
 
-Visit the [Purchase Taxes and Charges Template](/docs/user/manual/en/buying/purchase-taxes-and-charges-template) page to know more about taxes.
+ไปที่หน้า [เทมเพลตภาษีและค่าธรรมเนียม](/docs/user/manual/th/buying/purchase-taxes-and-charges-template) เพื่อทราบข้อมูลเพิ่มเติมเกี่ยวกับภาษี
 
-The total taxes and charges will be displayed below the table.
+ภาษีและค่าบริการทั้งหมดจะแสดงอยู่ใต้ตาราง
 
-To add taxes automatically via a Tax Category, visit [this page](/docs/user/manual/en/accounts/tax-category).
+หากต้องการเพิ่มภาษีโดยอัตโนมัติผ่านหมวดหมู่ภาษี โปรดไปที่ [หน้านี้](/docs/user/manual/th/accounts/tax-category)
 
-Make sure to mark all your taxes in the Taxes and Charges table correctly for an accurate valuation.
+ตรวจสอบให้แน่ใจว่าได้ทำเครื่องหมายภาษีทั้งหมดของคุณในตารางภาษีและค่าธรรมเนียมอย่างถูกต้องเพื่อการประเมินที่ถูกต้อง
 
-#### Shipping Rule
-A Shipping Rule helps set the cost of shipping an Item. The cost will usually increase with the distance of shipping. To know more, visit the [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) page.
+#### กฎการจัดส่ง
+กฎการจัดส่งช่วยกำหนดต้นทุนในการจัดส่งสินค้า ค่าใช้จ่ายมักจะเพิ่มขึ้นตามระยะทางในการขนส่ง หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [กฎการจัดส่ง](/docs/user/manual/th/selling/shipping-rule)
 
 <img class="screenshot" alt="Purchase Order Taxes" src="{{docs_base_url}}/assets/img/buying/po-taxes.png">
 
-For example, you buy Items worth X and sell them for 1.3X. So your Customer
-pays 1.3 times the tax you pay your Supplier. Since you have already paid tax
-to your Supplier for X, what you owe your government is only the tax on 0.3X.
+ตัวอย่างเช่น คุณซื้อไอเทมมูลค่า X และขายในราคา 1.3 เท่า ดังนั้นลูกค้าของคุณ
+จ่าย 1.3 เท่าของภาษีที่คุณจ่ายให้กับซัพพลายเออร์ของคุณ เนื่องจากท่านได้ชำระภาษีเรียบร้อยแล้ว
+สำหรับซัพพลายเออร์ของคุณสำหรับ X สิ่งที่คุณเป็นหนี้รัฐบาลของคุณเป็นเพียงภาษีใน 0.3X
 
-This is very easy to track in ERPNext since each tax head is also an Account.
-Ideally you must create two Accounts for each type of VAT you pay and collect,
-“Purchase VAT-X” (asset) and “Sales VAT-X” (liability), or something to that
-effect.
+การติดตามใน ERPNext ทำได้ง่ายมาก เนื่องจากแต่ละหัวหน้าภาษีเป็นบัญชีด้วย
+ตามหลักการแล้ว คุณต้องสร้างบัญชีสองบัญชีสำหรับภาษีมูลค่าเพิ่มแต่ละประเภทที่คุณจ่ายและเก็บ
+“ซื้อ VAT-X” (สินทรัพย์) และ “ขาย VAT-X” (ความรับผิด) หรืออะไรทำนองนั้น
+ผล
 
-### 3.9 Additional Discount
-Other than recording discount per item, you can add a discount to the whole purchase order in this section. This discount could be based on the Grand Total i.e., post tax/charges or Net total i.e., pre tax/charges. The additional discount can be applied as a percentage or an amount.
+### 3.9 ส่วนลดเพิ่มเติม
+นอกเหนือจากการบันทึกส่วนลดต่อรายการ คุณสามารถเพิ่มส่วนลดให้กับใบสั่งซื้อทั้งหมดได้ในส่วนนี้ ส่วนลดนี้อาจขึ้นอยู่กับยอดรวมทั้งหมด เช่น ภาษีหลังหัก/ค่าบริการ หรือยอดรวมสุทธิ เช่น ภาษี/ค่าใช้จ่ายก่อน ส่วนลดเพิ่มเติมสามารถใช้เป็นเปอร์เซ็นต์หรือจำนวนเงินได้
 
-Read [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) for more details.
+อ่าน [การใช้ส่วนลด](/docs/user/manual/th/selling/articles/applying-discount) สำหรับรายละเอียดเพิ่มเติม
 
-### 3.10 Payment Terms
-Sometimes payment is not done all at once. Depending on the agreement, half of the payment may be made before shipment and the other half after receiving the goods/services. You can add a Payment Terms template or add the terms manually in this section.
+### 3.10 เงื่อนไขการชำระเงิน
+บางครั้งการชำระเงินไม่ได้ทำทั้งหมดในครั้งเดียว ขึ้นอยู่กับข้อตกลง การชำระเงินครึ่งหนึ่งสามารถทำได้ก่อนการจัดส่งและอีกครึ่งหนึ่งหลังจากได้รับสินค้า/บริการ คุณสามารถเพิ่มเทมเพลตเงื่อนไขการชำระเงินหรือเพิ่มเงื่อนไขด้วยตนเองในส่วนนี้
 
-Read [Payment Terms](/docs/user/manual/en/accounts/payment-terms) to know more.
+อ่าน [เงื่อนไขการชำระเงิน](/docs/user/manual/th/accounts/payment-terms) เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.11 Terms and Conditions
-In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+### 3.11 ข้อกำหนดและเงื่อนไข
+ในธุรกรรมการขาย/การซื้อ อาจมีข้อกำหนดและเงื่อนไขบางประการซึ่งขึ้นอยู่กับที่ซัพพลายเออร์จัดหาสินค้าหรือบริการให้กับลูกค้า คุณสามารถใช้ข้อกำหนดและเงื่อนไขกับธุรกรรมกับธุรกรรมได้ และข้อกำหนดเหล่านี้จะปรากฏขึ้นเมื่อพิมพ์เอกสาร หากต้องการทราบเกี่ยวกับข้อกำหนดและเงื่อนไข [คลิกที่นี่](/docs/user/manual/th/setting-up/print/terms-and-conditions)
 
-### 3.12 Print Settings
-#### Letterhead
-You can print your request for quotation / purchase order on your company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+### 3.12 การตั้งค่าการพิมพ์
+#### หัวจดหมาย
+คุณสามารถพิมพ์คำขอใบเสนอราคา / ใบสั่งซื้อบนหัวจดหมายของบริษัทของคุณ เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/letter-head)
 
-'Group same items' will group the same items added multiple times in the items table. This can be seen when your print.
+'จัดกลุ่มรายการเดียวกัน' จะจัดกลุ่มรายการเดียวกันที่เพิ่มหลายครั้งในตารางรายการ สิ่งนี้สามารถเห็นได้เมื่อคุณพิมพ์
 
-#### Print Headings
-Titles of your documents can be changed. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### พิมพ์หัวเรื่อง
+ชื่อเรื่องของเอกสารของคุณสามารถเปลี่ยนแปลงได้ เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/print-headings)
 
-The seller's Additional Discount, Payment Terms, Terms and Conditions can be recorded in your Purchase Order.
+ส่วนลดเพิ่มเติมของผู้ขาย เงื่อนไขการชำระเงิน ข้อกำหนดและเงื่อนไขสามารถบันทึกไว้ในใบสั่งซื้อของคุณ
 
-### 3.13 More Information
-This section shows the status of the Purchase Order, percentage of items received, and percentage of items billed. If this is an Inter Company Order, the Sales Order can be linked here.
+### 3.13 ข้อมูลเพิ่มเติม
+ส่วนนี้แสดงสถานะของใบสั่งซื้อ เปอร์เซ็นต์ของสินค้าที่ได้รับ และเปอร์เซ็นต์ของรายการที่เรียกเก็บเงิน หากเป็นคำสั่งระหว่างบริษัท คำสั่งขายสามารถเชื่อมโยงได้ที่นี่
 
-### 3.14 After Submitting
-Once you “Submit” your Purchase Order, you can trigger actions these actions:
+### 3.14 หลังจากส่ง
+เมื่อคุณ "ส่ง" ใบสั่งซื้อของคุณ คุณสามารถทริกเกอร์การดำเนินการเหล่านี้ได้:
 
-* You can Add, Update, Delete items in the Purchase Order by clicking on the **Update Items** button. However you cannot delete items which has already been received.
+* คุณสามารถเพิ่ม อัปเดต ลบรายการในใบสั่งซื้อโดยคลิกที่ปุ่ม **อัปเดตรายการ** อย่างไรก็ตาม คุณไม่สามารถลบรายการที่ได้รับแล้วได้
 
-* Status: Once submitted, you can hold a Purchase Order or Close it.
+* สถานะ: เมื่อส่งแล้ว คุณสามารถระงับใบสั่งซื้อหรือปิดได้
 
-* Create: From a submitted Purchase Order, you can create the following:
+* สร้าง: จากใบสั่งซื้อที่ส่งมา คุณสามารถสร้างสิ่งต่อไปนี้:
 
-    * [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt) - A receipt indicating you've received the items.
-    * [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice) - An invoice/bill for the purchase order.
-    * [Payment Entry](/docs/user/manual/en/accounts/payment-entry) - A payment entry indicates that payment has been made against a purchase order.
-    * [Journal Entry](/docs/user/manual/en/accounts/journal-entry) - A Journal Entry is recorded in the general ledger.
+    * [ใบเสร็จการซื้อ](/docs/user/manual/th/stock/purchase-receipt) - ใบเสร็จที่ระบุว่าคุณได้รับสินค้าแล้ว
+    * [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice) - ใบแจ้งหนี้/ใบเรียกเก็บเงินสำหรับใบสั่งซื้อ
+    * [รายการชำระเงิน](/docs/user/manual/th/accounts/payment-entry) - รายการชำระเงินระบุว่ามีการชำระเงินตามใบสั่งซื้อ
+    * [รายการบันทึก](/docs/user/manual/th/accounts/journal-entry) - รายการบันทึกประจำวันจะถูกบันทึกในบัญชีแยกประเภททั่วไป
 
-    ![Purchase Order post submitting](/docs/assets/img/buying/po-after-submit.png)
+    ![โพสต์คำสั่งซื้อหลังส่ง](/docs/assets/img/buying/po-after-submit.png)
 
-### 4. Related Topics
-1. [Request For Quotation](/docs/user/manual/en/buying/request-for-quotation)
-1. [Purchase Taxes and Charges Template](/docs/user/manual/en/buying/purchase-taxes-and-charges-template)
-1. [Purchasing In Different Unit](/docs/user/manual/en/buying/articles/purchasing-in-different-unit)
-1. [Amending Purchase Order After Submit](/docs/user/manual/en/buying/articles/amending-purchase-order-after-submit)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [ขอใบเสนอราคา](/docs/user/manual/th/buying/request-for-quotation)
+1. [เทมเพลตภาษีและค่าธรรมเนียมการจัดซื้อ](/docs/user/manual/th/buying/purchase-taxes-and-charges-template)
+1. [การจัดซื้อในหน่วยต่าง ๆ ](/docs/user/manual/th/buying/articles/purchasing-in-different-unit)
+1. [แก้ไขใบสั่งซื้อหลังจากส่ง](/docs/user/manual/th/buying/articles/amending-purchase-order-after-submit)
 
 {next}

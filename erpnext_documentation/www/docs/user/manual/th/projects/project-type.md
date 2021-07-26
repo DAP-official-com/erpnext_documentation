@@ -1,22 +1,21 @@
 <!-- add-breadcrumbs -->
-# Project Type
+#ประเภทโครงการ
 
-**A Project Type is the classification of projects into different types to group similar kind of projects.**
+**ประเภทโครงการคือการจัดประเภทโครงการออกเป็นประเภทต่าง ๆ เพื่อจัดกลุ่มโครงการที่คล้ายกัน**
 
-Internal Projects, External Projects could be examples of Project types and are already created in the system. You can choose to add more Project Types. This comes handy when you are reviewing the Projects, and you want to filter the information based on Project Types.
-
+โครงการภายใน โครงการภายนอกอาจเป็นตัวอย่างของประเภทโครงการและสร้างขึ้นในระบบแล้ว คุณสามารถเลือกเพิ่มประเภทโครงการเพิ่มเติมได้ สิ่งนี้มีประโยชน์เมื่อคุณตรวจทานโครงการ และคุณต้องการกรองข้อมูลตามประเภทโครงการ
 <img class="screenshot" alt="Project Template" src="{{docs_base_url}}/assets/img/project/projects-project-type1.png">
 
-To access Project Type, go to:
+ในการเข้าถึงประเภทโครงการ ไปที่:
 
-> Home > Projects > Projects > Project Type
+> หน้าหลัก > โครงการ > โครงการ > ประเภทโครงการ
 
-## 1. How to Create a Project Type
+## 1. วิธีสร้างประเภทโครงการ
 
-  1. Go to the Project Type List and click on New.
-  2. Add the name of the Project Type and description
-  3. Save.
+  1. ไปที่รายการประเภทโครงการและคลิกที่ใหม่
+  2. เพิ่มชื่อประเภทโครงการและคำอธิบาย
+  3. บันทึก
 
-## 2. Related Topics
-  1. [Project](/docs/user/manual/en/projects/project)
-  2. [Project Template](/docs/user/manual/en/projects/project-template)
+## 2. หัวข้อที่เกี่ยวข้อง
+  1. [โครงการ](/docs/user/manual/th/projects/project)
+  2. [เทมเพลตโครงการ](/docs/user/manual/th/projects/project-template)

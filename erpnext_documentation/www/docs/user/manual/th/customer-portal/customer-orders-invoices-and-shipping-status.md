@@ -1,19 +1,19 @@
 <!-- add-breadcrumbs -->
-# Customer Orders Invoices And Shipping Status
+# ใบสั่งซื้อของลูกค้าและสถานะการจัดส่ง
 
-ERPNext Web Portal gives your customers quick access to their Orders, Invoices and Shipments Customers can check the status of their orders, invoices, and shipping status by logging on to the web.
+ERPNext Web Portal ช่วยให้ลูกค้าของคุณเข้าถึงคำสั่งซื้อ ใบแจ้งหนี้ และการจัดส่งได้อย่างรวดเร็ว ลูกค้าสามารถตรวจสอบสถานะของคำสั่งซื้อ ใบแจ้งหนี้ และสถานะการจัดส่งได้ด้วยการเข้าสู่ระบบบนเว็บ
 
 <img class="screenshot" alt="Customer Portal" src="{{docs_base_url}}/assets/img/website/portal-menu.png">
 
-Once an order is raised, either using the Shopping Cart or from within ERPNext, your customer can view the order and keep an eye on the billing and shipment status. When the invoice and payment against these orders are submitted, the customer can see the updated status on the portal, at a glance.
+เมื่อเพิ่มคำสั่งซื้อแล้ว ไม่ว่าจะใช้ตะกร้าสินค้าหรือจากภายใน ERPNext ลูกค้าของคุณสามารถดูคำสั่งซื้อและติดตามสถานะการเรียกเก็บเงินและการจัดส่งได้ เมื่อส่งใบแจ้งหนี้และการชำระเงินสำหรับคำสั่งซื้อเหล่านี้ ลูกค้าสามารถดูสถานะที่อัปเดตบนพอร์ทัลได้อย่างรวดเร็ว
 
 <img class="screenshot" alt="Customer Portal" src="{{docs_base_url}}/assets/img/website/website-login.png">
 
-#### Outstanding Sales Invoice
+#### ใบแจ้งหนี้การขาย
 
 <img class="screenshot" alt="Customer Portal" src="{{docs_base_url}}/assets/img/website/invoice-unpaid.png">
 
-#### Paid Sales Invoice
+#### ชำระใบแจ้งหนี้การขาย
 
 <img class="screenshot" alt="Customer Portal" src="{{docs_base_url}}/assets/img/website/invoice-paid.png">
 

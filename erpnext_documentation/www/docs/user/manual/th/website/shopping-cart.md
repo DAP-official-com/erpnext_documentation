@@ -1,68 +1,66 @@
 <!-- add-breadcrumbs -->
-# Shopping Cart
+# ตะกร้า่รถเข็นสินค้า
 
-In addition to listing your products, ERPNext also allows you to sell them via
-the Shopping Cart.
+นอกจากการลงรายการสินค้าของคุณแล้ว ERPNext ยังให้คุณขายผ่าน
+ตะกร้าสินค้า
 
-To enable Shopping Cart, go to:
+หากต้องการเปิดใช้งานรถเข็น ให้ไปที่:
 
-> Home > Website > Portal > Shopping Cart Settings
+> หน้าแรก > เว็บไซต์ > พอร์ทัล > การตั้งค่ารถเข็นสินค้า
 
 ![Shopping Cart Settings](/docs/assets/img/website/shopping-cart-settings.png)
-*Shopping Cart Settings*
+*การตั้งค่ารถเข็น*
 
-You can even build a **landing page** for your store at a custom route (eg. /*store*).
-Read the [documentation](/docs/user/manual/en/website/store-landing-page) to learn how to do so!
+คุณยังสามารถสร้าง **หน้า Landing Page** สำหรับร้านค้าของคุณโดยใช้เส้นทางที่กำหนดเอง (เช่น /*ร้านค้า*)
+อ่าน [เอกสารประกอบ](/docs/user/manual/th/website/store-landing-page) เพื่อเรียนรู้วิธีการทำเช่นนั้น!
 
-Here are some configuration options:
+นี่คือตัวเลือกการกำหนดค่าบางส่วน:
 
-1. **Show Price**: Show Item Price on the product page.
-1. **Show Stock Availability**: Show whether the Item is in stock.
-1. **Show Stock Quantity**: Show available stock on the product page.
-1. **Show Configure Button**: Show a configure button if the Item has variants.
-   It can be used to narrow down the specific item based on Attributes.
-1. **Show Contact Us Button**: Show a contact us button which customers can use
-   to enquire about the Item. It will create a Lead in the system.
+1. **แสดงราคา**: แสดงราคาสินค้าในหน้าสินค้า
+1. **แสดงสต๊อกสินค้า**: แสดงว่ามีสินค้าในสต็อกหรือไม่
+1. **แสดงจำนวนสต็อค**: แสดงสต็อกที่มีในหน้าสินค้า
+1. **แสดงปุ่มกำหนดค่า**: แสดงปุ่มกำหนดค่าหากรายการมีตัวเลือกย่อย
+   สามารถใช้เพื่อจำกัดรายการเฉพาะตามแอตทริบิวต์
+1. **แสดงปุ่มติดต่อเรา**: แสดงปุ่มติดต่อเราที่ลูกค้าสามารถใช้ได้
+   เพื่อสอบถามรายการ มันจะสร้างลูกค้าเป้าหมายในระบบ
 
-## 1. Item Types
+## 1. ประเภทรายการ
 
-Shopping Cart works differently for Items with and without variants.
+ตะกร้าสินค้าทำงานแตกต่างกันสำหรับสินค้าที่มีและไม่มีตัวเลือกสินค้า
 
-### 1.1 Items without variants
+### 1.1 รายการที่ไม่มีรายละเอียดปลีกย่อย
 
-Items without variants have their dedicated product page and an **Add to Cart**
-button. The stock information is also shown if they are enabled in Shopping Cart
-Settings.
+สินค้าที่ไม่มีตัวเลือกสินค้าจะมีหน้าสินค้าเฉพาะและปุ่ม **หยิบใส่ตะกร้า**  ข้อมูลสินค้าจะแสดงด้วยหากเปิดใช้งานในการตั้งค่าตะกร้าสินค้า
 
 ![Item without Variants](/docs/assets/img/website/item-without-variants.png)
-*Item without Variants*
+*รายการไม่มีรุ่น*
 
-### 1.2 Items with variants
+### 1.2 รายการที่มีรายละเอียดปลีกย่อย
 
-Since Item Templates can't be bought directly, there is a Configure button to
-choose the specific variant and add it to cart.
+เนื่องจากไม่สามารถซื้อเทมเพลตรายการได้โดยตรง จึงมีปุ่มกำหนดค่าเป็น
+เลือกรูปแบบเฉพาะและเพิ่มลงในรถเข็น
 
 ![Item with Variants](/docs/assets/img/website/item-with-variants.gif)
-*Item with Variants*
+*รายการที่มีรูปแบบ*
 
-## 2. Cart Quotation
+## 2. ใบเสนอราคารถเข็นสินค้า
 
-If checkout is disabled, when your customers add an item to cart, they can click
-on the **Request for Quotation** button to get a quote for it. A [Quotation](/docs/user/manual/en/selling/quotation)
-is generated in the system.
+หากการชำระเงินถูกปิดใช้งาน เมื่อลูกค้าของคุณเพิ่มสินค้าลงในรถเข็น พวกเขาสามารถคลิก
+บนปุ่ม **ขอใบเสนอราคา** เพื่อรับใบเสนอราคา [ใบเสนอราคา](/docs/user/manual/th/selling/quotation)
+ถูกสร้างขึ้นในระบบ
 
 ![Cart Quotation](/docs/assets/img/website/cart-quotation.png)
-*Cart Quotation*
+*ใบเสนอราคารถเข็นสินค้า*
 
-## 3. Cart Checkout
+## 3. ชำระเงินสินค้าในรถเข็นสินค้า
 
-You can enable checkout from **Checkout Settings** section in Shopping Cart
-Settings. You must have [PayPal Integration](/docs/user/manual/en/erpnext_integration/paypal-integration)
-or [Razorpay Integration](/docs/user/manual/en/erpnext_integration/razorpay-integration)
-for enabling payments.
+คุณสามารถเปิดใช้งานการชำระเงินได้จากส่วน **การตั้งค่าการชำระเงิน** ในตะกร้าสินค้า
+การตั้งค่า. คุณต้องมี [การรวมระบบ PayPal](/docs/user/manual/th/erpnext_integration/paypal-integration)
+หรือ [การรวม Razorpay](/docs/user/manual/th/erpnext_integration/razorpay-integration)
+เพื่อเปิดใช้งานการชำระเงิน
 
 ![Cart Checkout Settings](/docs/assets/img/website/cart-checkout-settings.png)
-*Cart Checkout Settings*
+*การตั้งค่าตะกร้าสินค้า*
 
 ![Cart Checkout](/docs/assets/img/website/cart-checkout.png)
-*Cart Checkout*
+*ชำระเงินในรถเข็น*

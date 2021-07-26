@@ -1,61 +1,59 @@
-# Loan
+#สินเชื่อ
 
-**Once the Loan Application is approved by the manager, a Loan record and repayment schedule can be created for the Applicant using the Loan.**
+**เมื่อใบสมัครสินเชื่อได้รับการอนุมัติจากผู้จัดการ สามารถสร้างบันทึกเงินกู้และกำหนดการชำระเงินสำหรับผู้สมัครโดยใช้เงินกู้**
 
-To access Loan, go to:
+ในการเข้าถึงสินเชื่อไปที่:
 
-> Human Resources > Loans > Loan
+> ทรัพยากรบุคคล > สินเชื่อ > สินเชื่อ
 
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating a Loan record, it is necessary that you create the following documents:
+ก่อนสร้างเรกคอร์ดเงินกู้ คุณจำเป็นต้องสร้างเอกสารต่อไปนี้:
 
-* [Loan Type](/docs/user/manual/en/human-resources/loan-type)
-* [Loan Application](/docs/user/manual/en/human-resources/loan-application)
-* [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts)
+* [ประเภทสินเชื่อ](/docs/user/manual/th/human-resources/loan-type)
+* [ใบสมัครสินเชื่อ](/docs/user/manual/th/human-resources/loan-application)
+* [ผังบัญชี](/docs/user/manual/th/accounts/chart-of-accounts)
 
-## 2. How to create a Loan record
+## 2. วิธีสร้างบันทึกเงินกู้
 
-1. Go to: Loan > New.
-1. Select the Applicant name.
-1. Select the Loan Application. Once selected, loan information such as Loan Type, Loan Amount, Rate of Interest, Repayment Method, Repayment Period in Months and Monthly Repayment Amount will be fetched.
-1. Enter Repayment Start Date.
+1. ไปที่: สินเชื่อ > ใหม่
+1. เลือกชื่อผู้สมัคร
+1. เลือกใบสมัครสินเชื่อ เมื่อเลือกแล้ว ระบบจะดึงข้อมูลเงินกู้ เช่น ประเภทเงินกู้ จำนวนเงินกู้ อัตราดอกเบี้ย วิธีชำระคืน ระยะเวลาชำระคืนในเดือนและจำนวนเงินชำระคืนรายเดือน
+1. ป้อนวันที่เริ่มต้นการชำระคืน
 
   <img class="screenshot" alt="Loan" src="{{docs_base_url}}/assets/img/human-resources/loan1.png">
 
-1. Enter Account Information such as Mode of Payment, Payment Account, Loan Account and Interest Income Account.
-1. Save. Once saved, a Repayment Schedule is automatically generated. The first repayment payment date would be set as per the "Repayment Start Date". The
+1. ป้อนข้อมูลบัญชี เช่น โหมดการชำระเงิน บัญชีชำระเงิน บัญชีเงินกู้ และบัญชีรายได้ดอกเบี้ย
+1. บันทึก เมื่อบันทึกแล้ว กำหนดการชำระเงินจะถูกสร้างขึ้นโดยอัตโนมัติ วันที่ชำระคืนครั้งแรกจะถูกกำหนดตาม "วันที่เริ่มต้นการชำระคืน"
 
 
   <img class="screenshot" alt="Repayment Schedule" src="{{docs_base_url}}/assets/img/human-resources/loan2.png">
 
-> Note: Check "Repay from Salary" if the loan repayment will be deducted from the salary
+> หมายเหตุ: ตรวจสอบ "ชำระคืนจากเงินเดือน" หากการชำระคืนเงินกู้จะถูกหักออกจากเงินเดือน
 
-You can alternatively create a Loan record directly from [Loan Application](/docs/user/manual/en/human-resources/loan-application)
+คุณสามารถสร้างบันทึกเงินกู้ได้โดยตรงจาก [ใบสมัครสินเชื่อ](/docs/user/manual/th/human-resources/loan-application)
 
+## 3. คุณสมบัติ
 
-## 3. Features
+### 3.1 การสร้างรายการเบิกจ่าย
 
-### 3.1 Creation of Disbursement Entry
-
-After submitting the Loan document, if the status is "Sanctioned", you can click on "Create Disbursement Entry" to create a Journal Entry of the Loan.
-
+หลังจากส่งเอกสารเงินกู้แล้ว หากสถานะเป็น "ถูกลงโทษ" คุณสามารถคลิกที่ "สร้างรายการเบิกจ่าย" เพื่อสร้างรายการบันทึกประจำวันของเงินกู้
 
 <img class="screenshot" alt="Disbursement Entry" src="{{docs_base_url}}/assets/img/human-resources/disbursement-entry.png">
 
-### 3.2 Loan repayment deduction from Salary
+### 3.2 การหักเงินกู้ยืมจากเงินเดือน
 
-To auto deduct the Loan repayment from Salary, check "Repay from Salary" in Loan. It will appear as Loan Repayment in Salary Slip.
+หากต้องการหักการชำระคืนเงินกู้จากเงินเดือนโดยอัตโนมัติ ให้เลือก "ชำระคืนจากเงินเดือน" ในเงินกู้ จะปรากฏเป็นการชำระคืนเงินกู้ในสลิปเงินเดือน
 
 <img class="screenshot" alt="Salary Slip" src="{{docs_base_url}}/assets/img/human-resources/loan-repayment-salary-slip.png">
 
-### 3.3 Extending the Loan
-Loan amount is deducted from the salary. If the employee is on leave without pay for some period, the existing loan can be extended without the need for creating a new loan. This can be done be editing the Repayment Schedule table even after submitting the loan.
+### 3.3 การขยายเวลาเงินกู้
+วงเงินกู้หักจากเงินเดือน หากพนักงานลาโดยไม่ได้รับค่าจ้างเป็นระยะเวลาหนึ่ง เงินกู้ที่มีอยู่สามารถขยายเวลาได้โดยไม่ต้องสร้างเงินกู้ใหม่ ซึ่งสามารถทำได้โดยแก้ไขตารางกำหนดการชำระเงินแม้หลังจากส่งเงินกู้แล้ว
 
-![Extending Loan](/docs/assets/img/human-resources/change-loan-amount.gif)
+![การขยายสินเชื่อ](/docs/assets/img/human-resources/change-loan-amount.gif)
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
-1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
+1. [รายการบันทึกประจำวัน](/docs/user/manual/th/accounts/journal-entry)
+1. [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)

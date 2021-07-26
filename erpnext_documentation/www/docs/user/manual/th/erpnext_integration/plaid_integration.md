@@ -1,47 +1,46 @@
 <!-- add-breadcrumbs -->
-# Plaid Integration
+# การใช้ Plaid
 
-ERPNext offers the possibility to synchronize your bank accounts through a service called [Plaid](https://plaid.com/). Please check [the Plaid FAQ](https://plaid.com/docs/faq/#does-plaid-support-international-bank-accounts-) to see if your country is supported.
+ERPNext นำเสนอความเป็นไปได้ในการซิงโครไนซ์บัญชีธนาคารของคุณผ่านบริการที่เรียกว่า [Plaid](https://plaid.com/) โปรดตรวจสอบ [คำถามที่พบบ่อยเกี่ยวกับลายสก๊อต](https://plaid.com/docs/faq/#does-plaid-support-international-bank-accounts-) เพื่อดูว่าประเทศของคุณรองรับหรือไม่
 
-If your instance is connected to Plaid, you are able to synchronize your bank account transactions without having to manually import a CSV or XLSX file.
+หากอินสแตนซ์ของคุณเชื่อมต่อกับ Plaid คุณสามารถซิงโครไนซ์ธุรกรรมบัญชีธนาคารของคุณโดยไม่ต้องนำเข้าไฟล์ CSV หรือ XLSX ด้วยตนเอง
 
 
-## Settings
+## การตั้งค่า
 
-In order to give ERPNext access to Plaid, you need to add the following three parameters to your `site_config.json` file.
+เพื่อให้ ERPNext เข้าถึง Plaid คุณต้องเพิ่มพารามิเตอร์สามตัวต่อไปนี้ในไฟล์ `site_config.json'
 
 - `plaid_env`
 - `plaid_public_key`
 - `plaid_secret`
 
-## Activation
+## การเปิดใช้งาน
 
-In order to activate Plaid on an instance, click on the button "Enable" in the Plaid Settings DocType.
+ในการเปิดใช้งาน Plaid บนอินสแตนซ์ ให้คลิกที่ปุ่ม "เปิดใช้งาน" ใน Plaid Settings DocType
 
 <img class="screenshot" alt="Enable Plaid" src="{{docs_base_url}}/assets/img/erpnext_integrations/plaid_enable.gif">
 
-Once activated, you can create a new account directly from the Bank Reconciliation dashboard.
+เมื่อเปิดใช้งานแล้ว คุณสามารถสร้างบัญชีใหม่ได้โดยตรงจากแดชบอร์ดการกระทบยอดธนาคาร
 
 
-## Bank account creation
+## การสร้างบัญชีธนาคาร
 
-In order to link one of your existing bank accounts to ERPNext, click on "Link a new bank account" and follow the steps proposed by Plaid.
+ในการเชื่อมโยงบัญชีธนาคารที่มีอยู่ของคุณกับ ERPNext ให้คลิกที่ "เชื่อมโยงบัญชีธนาคารใหม่" และทำตามขั้นตอนที่ Plaid เสนอ
 
 <img class="screenshot" alt="Link your bank account" src="{{docs_base_url}}/assets/img/erpnext_integrations/new_account_creation.gif">
 
 
-## Bank synchronization
+## การซิงโครไนซ์กับธนาคาร
 
-In order to synchronize a bank account with ERPNext, select an account and click on the "Action" button to select "Synchronize this account".
-
+ในการซิงโครไนซ์บัญชีธนาคารกับ ERPNext ให้เลือกบัญชีและคลิกที่ปุ่ม "การดำเนินการ" เพื่อเลือก "ซิงโครไนซ์บัญชีนี้"
 <img class="screenshot" alt="Synchronize your bank account" src="{{docs_base_url}}/assets/img/erpnext_integrations/plaid_synchronization.gif">
 
-The synchronization is based on the "Last integration date" available in the "Bank Account" doctype.
+การซิงโครไนซ์จะขึ้นอยู่กับ "วันที่รวมล่าสุด" ที่มีอยู่ในประเภทเอกสาร "บัญชีธนาคาร"
 
-If, for any reason, you want to redo a synchronization, you can change this date and synchronize the account again.
-Since all bank transactions are tagged with a specific transaction ID, the synchronization will only be incremental.
+ไม่ว่าด้วยเหตุผลใดก็ตาม หากคุณต้องการทำซ้ำการซิงโครไนซ์ คุณสามารถเปลี่ยนวันที่นี้และซิงโครไนซ์บัญชีอีกครั้งได้
+เนื่องจากธุรกรรมธนาคารทั้งหมดถูกแท็กด้วยรหัสธุรกรรมเฉพาะ การซิงโครไนซ์จะเพิ่มขึ้นเท่านั้น
 
 
-## Automatic Synchronization
+## การซิงโครไนซ์อัตโนมัติ
 
-You can allow plaid to synchronize your bank account with ERPNex every hour by selecting "Synchronize all accounts every hour" in Plaid Settings.
+คุณสามารถอนุญาตให้ Plaid ซิงโครไนซ์บัญชีธนาคารของคุณกับ ERPNex ทุกชั่วโมงโดยเลือก "ซิงโครไนซ์บัญชีทั้งหมดทุกชั่วโมง" ในการตั้งค่า Plaid

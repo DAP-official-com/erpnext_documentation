@@ -1,33 +1,33 @@
 <!-- add-breadcrumbs -->
-# Social Login Keys
+# Social Login Key
 
-Social Login enables users to login to ERPNext via their Google, Facebook or GitHub account.
+Social Login ช่วยให้ผู้ใช้สามารถเข้าสู่ระบบ ERPNext ผ่านบัญชี Google, Facebook หรือ GitHub
 
-### Enabling Social Logins.
+### การเปิดใช้งานการเข้าสู่ระบบโซเชียล
 
-Checkout the following Video Tutorials to understand how to enable social logins on ERPNext
+ชำระเงินวิดีโอแนะนำต่อไปนี้เพื่อทำความเข้าใจวิธีเปิดใช้งานการเข้าสู่ระบบโซเชียลบน ERPNext
 
-* for FaceBook: 
+* สำหรับ Facebook: 
 
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/zC6Q6gIfiw8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-* for Google:  
+* สำหรับ Google:  
 
 <div class="embed-container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/w_EAttrE9sw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-* for GitHub:  
+* สำหรับ GitHub:  
 
 <div class="embed-container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/bG71DxxkVjQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-For Google the *Authorized redirect URI* is [yoursite]/api/method/frappe.www.login.login_via_google
+สำหรับ Google * URI การเปลี่ยนเส้นทางที่ได้รับอนุญาต* คือ [ไซต์ของคุณ]/api/method/frappe.www.login.login_via_google
 
 {next}

@@ -1,68 +1,68 @@
 <!-- add-breadcrumbs -->
-# Service Level Agreement
+# ข้อตกลงระดับการให้บริการ
 
-**A service level agreement (SLA) is a contract between a service provider (either internal or external) and the end user on the level of service expected from the service provider.**
+**ข้อตกลงระดับการให้บริการ (SLA) เป็นสัญญาระหว่างผู้ให้บริการ (ทั้งภายในและภายนอก) กับผู้ใช้ปลายทางในระดับบริการที่คาดหวังจากผู้ให้บริการ**
 
-SLAs are output-based, their purpose is specifically to define the timeline in which the Customer will receive the service. SLAs do not define how the service itself is provided or delivered.
+SLA อิงตามผลลัพธ์ โดยมีวัตถุประสงค์เพื่อกำหนดไทม์ไลน์ที่ลูกค้าจะได้รับบริการโดยเฉพาะ SLA ไม่ได้กำหนดวิธีการจัดหาหรือส่งมอบบริการเอง
 
-To access the Service Level Agreement list, go to:
-> Home > Support > Service Level Agreement > Service Level Agreement
+ในการเข้าถึงรายการข้อตกลงระดับการให้บริการ ไปที่:
+> หน้าหลัก > การสนับสนุน > ข้อตกลงระดับบริการ > ข้อตกลงระดับบริการ
 
-## 1.Prerequisites
+## 1.ข้อกำหนดเบื้องต้น
 
-Before creating and using a Service Level Agreement, it is advised that you create/update the following first:
+ก่อนสร้างและใช้ข้อตกลงระดับการให้บริการ ขอแนะนำให้คุณสร้าง/อัปเดตสิ่งต่อไปนี้ก่อน:
 
-* [Holiday List](/docs/user/manual/en/human-resources/holiday-list)
+* [รายการวันหยุด](/docs/user/manual/th/human-resources/holiday-list)
 
-* Enable **Track Service Level Agreement** in Support Settings
+* เปิดใช้งาน **ติดตามข้อตกลงระดับการให้บริการ** ในการตั้งค่าการสนับสนุน
 
     <img class="screenshot" alt="Service Level Agreement" src="{{docs_base_url}}/assets/img/support/sla-setting.png">
 
-## 2. How to Create a Service Level Agreement
-1. Go to the Service Level Agreement list, click on New.
-1. Enter a name for the Service Level.
-1. Select an Employee group, that will handle a particular Service Level.
-1. Set a Holiday List. Service Level Agreement won't be applied in the days mentioned in the Holiday List.
-1. 'Enable' determines if a Service Level Agreement is enabled or disabled.
-1. Ticking 'Default Service Level Agreement' will apply this SLA to a customer if they don't have a particular SLA assigned to them.
-1. Entity Type: Service Level Agreements can be assigned to a Customer/Customer Group/Territory enabling you to apply Service Level Agreement based on these factors.
-1. Entity: Select the specific Customer/Customer Group/Territory.
-1. Start / End Date: Defines the validity of the agreement.
-1. Priorities: You can set multiple Issue Priorities and their Time to Respond and Resolve (in hours and mins).
+## 2. วิธีสร้างข้อตกลงระดับการให้บริการ
+1. ไปที่รายการข้อตกลงระดับบริการ คลิกที่ใหม่
+1. ป้อนชื่อสำหรับระดับการบริการ
+1. เลือกกลุ่มพนักงานที่จะจัดการระดับการบริการเฉพาะ
+1. ตั้งค่ารายการวันหยุด ข้อตกลงระดับการให้บริการจะไม่มีผลในวันที่ระบุในรายการวันหยุด
+1. 'เปิดใช้งาน' กำหนดว่าข้อตกลงระดับการบริการเปิดใช้งานหรือปิดใช้งาน
+1. การทำเครื่องหมาย 'ข้อตกลงระดับการให้บริการเริ่มต้น' จะใช้ SLA นี้กับลูกค้า หากพวกเขาไม่มี SLA เฉพาะที่ได้รับมอบหมาย
+1. ประเภทเอนทิตี: ข้อตกลงระดับบริการสามารถกำหนดให้กับลูกค้า/กลุ่มลูกค้า/อาณาเขตได้ ซึ่งทำให้คุณสามารถใช้ข้อตกลงระดับบริการตามปัจจัยเหล่านี้
+1. นิติบุคคล: เลือกลูกค้า/กลุ่มลูกค้า/อาณาเขตที่เฉพาะเจาะจง
+1. วันที่เริ่มต้น / สิ้นสุด: กำหนดความถูกต้องของข้อตกลง
+1. ลำดับความสำคัญ: คุณสามารถตั้งค่าลำดับความสำคัญของปัญหาหลายรายการและเวลาในการตอบสนองและแก้ไขได้ (เป็นชั่วโมงและนาที)
     <img class="screenshot" alt="Service Level" src="{{docs_base_url}}/assets/img/support/priorities.png">
-1. Default Priority: Default Priority selected in Priorities table that will be applied in the Service Level Agreement.
-1. Support Hours: Contains the Days of the week on which Support is provided. Has a Start Time and End Time of the Working day.
+1. ลำดับความสำคัญเริ่มต้น: ลำดับความสำคัญเริ่มต้นที่เลือกในตารางลำดับความสำคัญที่จะนำไปใช้ในข้อตกลงระดับบริการ
+1. ชั่วโมงการสนับสนุน: ประกอบด้วยวันในสัปดาห์ที่ให้การสนับสนุน มีเวลาเริ่มต้นและเวลาสิ้นสุดของวันทำการ
     <img class="screenshot" alt="Service Level" src="{{docs_base_url}}/assets/img/support/sla.png">
-1. Save.
+1. บันทึก
 
     ![SLA](/docs/assets/img/support/sla.png)
 
-## 3. Features
-### 3.1 Applies to New Issues
+## 3. คุณสมบัติ
+### 3.1 นำไปใช้กับปัญหาใหม่
 
-Once an SLA is saved, it'll be applied to Issues raised by Customers/Territories as per the option you chose in Entity Type:
+เมื่อบันทึก SLA แล้ว จะนำไปใช้กับปัญหาที่เกิดขึ้นโดยลูกค้า/เขตการขายตามตัวเลือกที่คุณเลือกในประเภทนิติบุคคล:
     ![SLA in Issue](/docs/assets/img/support/sla-issue.png)
 
-### 3.2 Resetting an SLA
-An SLA can also be reset until the time does not fail. For example, if the SLA is 3 days, you can reset the SLA only within 3 days of the Issue being created. After that, the Service Level will display failed.
+### 3.2 การรีเซ็ต SLA
+สามารถรีเซ็ต SLA ได้จนกว่าเวลาจะยังไม่ล้มเหลว ตัวอย่างเช่น หาก SLA คือ 3 วัน คุณสามารถรีเซ็ต SLA ได้ภายใน 3 วันหลังจากสร้างปัญหาเท่านั้น หลังจากนั้นจะแสดงระดับการบริการล้มเหลว
     ![SLA Issue](/docs/assets/img/support/reset-sla.gif)
 
-### 3.3 Time respond / resolve in Issues
-The time to respond to an Issue and the time to resolve will be shown:
+### 3.3 เวลาตอบสนอง / แก้ไขในปัญหา
+เวลาในการตอบสนองต่อปัญหาและเวลาในการแก้ไขจะแสดงขึ้น:
     ![SLA in Issue](/docs/assets/img/support/sla-in-issue.png)
 
-These times are based on the timelines set in the 'Priority' field in the Service Level's Priorities table.
+เวลาเหล่านี้ขึ้นอยู่กับไทม์ไลน์ที่กำหนดไว้ในฟิลด์ 'ลำดับความสำคัญ' ในตารางลำดับความสำคัญของระดับบริการ
 
 
-### 3.4 Pause SLA on Statuses
-From version 13 onwards, ERPNext allows you to pause SLA on issues when you are waiting for an event to happen. You can do this by selecting a status that is configured in this "Pause SLA On" table.
+### 3.4 หยุด SLA ชั่วคราวในสถานะ
+ตั้งแต่เวอร์ชัน 13 เป็นต้นไป ERPNext จะให้คุณหยุด SLA เกี่ยวกับปัญหาชั่วคราวเมื่อคุณกำลังรอให้เหตุการณ์เกิดขึ้น คุณสามารถทำได้โดยเลือกสถานะที่กำหนดค่าไว้ในตาราง "หยุด SLA ชั่วคราว" นี้
 
-* Set the statuses on which you want to pause SLA in the SLA document. You can also add custom statuses here.
+* ตั้งค่าสถานะที่คุณต้องการหยุด SLA ชั่วคราวในเอกสาร SLA คุณยังสามารถเพิ่มสถานะที่กำหนดเองได้ที่นี่
     <img class="screenshot" alt="Service Level" src="{{docs_base_url}}/assets/img/support/pause-sla.png">
-* When the status is changed to any of the above, resolution and response fields are unset and the dashboard indicators change to:
+* เมื่อสถานะเปลี่ยนเป็นช่องใด ๆ ข้างต้น ฟิลด์การแก้ไขและการตอบสนองจะไม่ถูกตั้งค่า และตัวบ่งชี้แดชบอร์ดจะเปลี่ยนเป็น:
     <img class="screenshot" alt="Service Level" src="{{docs_base_url}}/assets/img/support/hold-indicator.png">
-* When the status of the issue changes back to a non-hold status (which is not configured in the "Pause SLA On" table), the **Total Hold time** field will be set in your Issue document.
+* เมื่อสถานะของปัญหาเปลี่ยนกลับเป็นสถานะไม่ระงับ (ซึ่งไม่ได้กำหนดค่าในตาราง "หยุด SLA ชั่วคราว") ช่อง **เวลาพักทั้งหมด** จะถูกตั้งค่าในเอกสารปัญหาของคุณ
     <img class="screenshot" alt="Service Level" src="{{docs_base_url}}/assets/img/support/total-hold-time.png">
-The Response and Resolution time will be recalculated by adding the hold time, thereby restarting your SLA timers.
+เวลาตอบสนองและการแก้ปัญหาจะถูกคำนวณใหม่โดยการเพิ่มเวลาพัก ดังนั้นการรีสตาร์ทตัวจับเวลา SLA ของคุณ
 
-> Note: Service Level DocType was removed in version 13 and all functions are handled only with the Service Level Agreement DocType
+> หมายเหตุ: ระดับบริการ DocType ถูกลบในเวอร์ชัน 13 และฟังก์ชันทั้งหมดจะได้รับการจัดการเฉพาะกับ DocType ข้อตกลงระดับบริการ 

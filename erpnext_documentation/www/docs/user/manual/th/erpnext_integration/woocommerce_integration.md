@@ -1,85 +1,85 @@
 <!-- add-breadcrumbs -->
-# WooCommerce Integration
+# การใช่ WooCommerce
 
-Using WooCommerce Integration, the system creates Sales Orders in ERPNext for the orders created on WooCommerce using the WooCommerce webhook.
+การใช้ WooCommerce Integration ระบบจะสร้างใบสั่งขายใน ERPNext สำหรับคำสั่งซื้อที่สร้างบน WooCommerce โดยใช้ WooCommerce webhook
 
-While creating a Sales Order from WooCommerce, if the Customer or Item is missing in ERPNext, the system will create new Customer/Item by using the respective details from WooCommerce order data. It also creates Address linked to the Customer using the shipping details from the order data.
+ขณะสร้างใบสั่งขายจาก WooCommerce หากลูกค้าหรือรายการหายไปใน ERPNext ระบบจะสร้างลูกค้า/รายการใหม่โดยใช้รายละเอียดที่เกี่ยวข้องจากข้อมูลคำสั่งซื้อของ WooCommerce นอกจากนี้ยังสร้างที่อยู่ที่เชื่อมโยงกับลูกค้าโดยใช้รายละเอียดการจัดส่งจากข้อมูลการสั่งซื้อ
 
-## 1. How to set up WooCommerce?
+## 1. วิธีการตั้งค่า WooCommerce?
 
-### 1.1 Generate API Key and API Secret
+### 1.1 สร้างคีย์ API และ API Secret API
 
-1. From your WooCommerce site's sidebar, click on Settings.
-2. Click on the "Advanced" tab then click on the REST API link.
+1. จากแถบด้านข้างของไซต์ WooCommerce ให้คลิกที่การตั้งค่า
+2. คลิกที่แท็บ "ขั้นสูง" จากนั้นคลิกที่ลิงค์ REST API
 
     ![Woocommerce API](/docs/assets/img/erpnext_integrations/wc-add-key.png)
 
-3. Click on "Add key" button. Provide the necessary details and click on "Generate API key" button.
+3. คลิกที่ปุ่ม "เพิ่มคีย์" ระบุรายละเอียดที่จำเป็นและคลิกที่ปุ่ม "สร้างคีย์ API"
 
     ![Woocommerce API Key](/docs/assets/img/erpnext_integrations/wc-generate-keys.png)
 
-### 1.2 Woocommerce Settings
+### 1.2 การตั้งค่า Woocommerce
 
-1. On your ERPNext site, go to: **Home > Integrations > Settings > Woocommerce Settings**.
-2. Paste the API key and secret generated in the previous step into the "API consumer key" and "API consumer secret" fields.
-3. In the "Woocommerce Server URL" paste the url of your WooCommerce site.
-4. Make sure "Enable Sync" is checked.
-5. Select the "Tax Account" and "Freight and Forwarding Account" in the Account Details Section.
-6. Select the "Creation User" in Defaults section. This user will be used to create Customers, Items and Sales Orders. Ensure that the user has the relevant permissions.
-7. Select the "Company" that will be used to create the Sales Orders.
-8. Click Save.
-9. After saving the Woocommerce Settings, "Secret" and "Endpoint" are generated automatically.
+1. บนไซต์ ERPNext ของคุณ ไปที่: **หน้าแรก > การรวมระบบ > การตั้งค่า > การตั้งค่า Woocommerce**
+2. วางคีย์ API และข้อมูลลับที่สร้างในขั้นตอนก่อนหน้าลงในฟิลด์ "รหัสผู้ใช้ API" และ "รหัสลับของผู้ใช้ API"
+3. ใน "URL เซิร์ฟเวอร์ Woocommerce" ให้วาง URL ของไซต์ WooCommerce ของคุณ
+4. ตรวจสอบให้แน่ใจว่าได้เลือก "เปิดใช้งานการซิงค์"
+5. เลือก "บัญชีภาษี" และ "บัญชีขนส่งสินค้าและส่งต่อ" ในส่วนรายละเอียดบัญชี
+6. เลือก "สร้างผู้ใช้" ในส่วนค่าเริ่มต้น ผู้ใช้รายนี้จะถูกใช้เพื่อสร้างลูกค้า รายการ และใบสั่งขาย ตรวจสอบให้แน่ใจว่าผู้ใช้มีสิทธิ์ที่เกี่ยวข้อง
+7. เลือก "บริษัท" ที่จะใช้สร้างใบสั่งขาย
+8. คลิกบันทึก
+9. หลังจากบันทึกการตั้งค่า Woocommerce แล้ว "Secret" และ "Endpoint" จะถูกสร้างขึ้นโดยอัตโนมัติ
 
 ![Woocommerce Settings](/docs/assets/img/erpnext_integrations/woocommerce-settings.png)
 
-### 1.3 Woocommerce Webhook Settings
+### 1.3 การตั้งค่า Webhook ของ Woocommerce
 
-1. Now from your woocommerce site's sidebar, go to Settings.
-2. Click on the "Advanced" tab then click on the Webhooks link and then click on "Add webhook" button.
-3. Give the webhook a name of your choice.
-4. Click on Status dropdown and select "Active".
-5. Select Topic as "Order created".
-6. Copy the "Endpoint" from "Woocommerce Settings" doctype in your ERPNext site and paste it in "Delivery URL" field.
-7. Copy "Secret" from "Woocommerce Settings" doctype in your ERPNext site and paste it in "Secret" field.
-8. Keep API VERSION as it is and click on Save Webhook. Now it is successfully set up.
+1. จากแถบด้านข้างของไซต์ woocommerce ไปที่การตั้งค่า
+2. คลิกแท็บ "ขั้นสูง" จากนั้นคลิกลิงก์ Webhooks จากนั้นคลิกปุ่ม "เพิ่ม Webhook"
+3. ตั้งชื่อ Webhook ตามที่คุณต้องการ
+4. คลิกที่ดรอปดาวน์สถานะและเลือก "ใช้งานอยู่"
+5. เลือกหัวข้อว่า "สร้างคำสั่งซื้อแล้ว"
+6. คัดลอก "ปลายทาง" จากประเภทเอกสาร "การตั้งค่า Woocommerce" ในไซต์ ERPNext ของคุณ แล้ววางลงในฟิลด์ "URL การส่ง"
+7. คัดลอก "ความลับ" จากประเภทเอกสาร "การตั้งค่า Woocommerce" ในไซต์ ERPNext ของคุณ แล้ววางลงในฟิลด์ "ความลับ"
+8. รักษาเวอร์ชัน API ไว้ตามเดิม แล้วคลิกบันทึก Webhook ตอนนี้ตั้งค่าสำเร็จแล้ว
 
 ![Woocommerce Webhook](/docs/assets/img/erpnext_integrations/wc-webhook.png)
 
-A GIF below to show the entire process:
+GIF ด้านล่างเพื่อแสดงกระบวนการทั้งหมด:
 
 ![Woocommerce Set Up](/docs/assets/img/erpnext_integrations/woocommerce-setup.gif)
 
-> **Note:** In the above screenshot and GIF, in place of delivery url on woocommerce website, you need to paste the url you will obtain after saving the "Woocommerce Settings" in the "Endpoint" field in your ERPNext instance. Here other URL was pasted as localhost was being used.
+> **หมายเหตุ:** ในภาพหน้าจอด้านบนและ GIF แทน URL การจัดส่งบนเว็บไซต์ woocommerce คุณต้องวาง URL ที่คุณจะได้รับหลังจากบันทึก "การตั้งค่า Woocommerce" ในช่อง "ปลายทาง" ในอินสแตนซ์ ERPNext ของคุณ มีการวาง URL อื่นที่นี่เนื่องจากมีการใช้ localhost
 
-### 1.4 Woocommerce order creation and syncing
+### 1.4 การสร้างและการซิงค์คำสั่งซื้อของ Woocommerce
 
-1. From your Woocommerce website, register yourself as a user on the Account page.
-2. Now Click on Addresses option and provide the required details.
-3. Click on "Shop" option and now available products can be seen.
-4. Add the desired products into the cart and click on **View Cart**.
-5. From the cart, once you have added the desired products, you can click on "Proceed to Checkout".
-6. All billing details and Order details can be seen now. Once you are ok with it, click on **Place Order** button.
-7. "Order Received" message can been seen indicating that the order has been placed successfully.
-8. Now on your ERPNext instance, check the following Document Types: Customer, Address, Item, Sales Order. They will be fetched and created from the webhook data.
-9. In case the orders are not synced, you can check the error in **Home > Settings > Core > Error Log**.
+1. จากเว็บไซต์ Woocommerce ของคุณ ให้ลงทะเบียนตัวคุณเองในฐานะผู้ใช้ในหน้าบัญชี
+2. ตอนนี้คลิกที่ตัวเลือกที่อยู่และระบุรายละเอียดที่จำเป็น
+3. คลิกที่ตัวเลือก "ร้านค้า" และตอนนี้สามารถดูสินค้าที่มีจำหน่ายได้
+4. เพิ่มสินค้าที่ต้องการลงในรถเข็นแล้วคลิก **ดูตะกร้า**
+5. จากรถเข็น เมื่อคุณเพิ่มสินค้าที่ต้องการแล้ว คุณสามารถคลิก "ดำเนินการชำระเงิน"
+6. สามารถดูรายละเอียดการเรียกเก็บเงินและรายละเอียดการสั่งซื้อทั้งหมดได้แล้ว เมื่อคุณตกลงกับมันแล้ว ให้คลิกที่ปุ่ม **สั่งซื้อสินค้า**
+7. สามารถเห็นข้อความ "รับคำสั่งซื้อ" แสดงว่าคำสั่งซื้อสำเร็จแล้ว
+8. ตอนนี้ในอินสแตนซ์ ERPNext ของคุณ ให้ตรวจสอบประเภทเอกสารต่อไปนี้: ลูกค้า ที่อยู่ รายการ ใบสั่งขาย พวกเขาจะถูกดึงและสร้างจากข้อมูลเว็บฮุค
+9. ในกรณีที่ไม่ซิงค์คำสั่งซื้อ คุณสามารถตรวจสอบข้อผิดพลาดได้ใน **หน้าแรก > การตั้งค่า > Core > บันทึกข้อผิดพลาด**
 
 ![Woocommerce Set Up](/docs/assets/img/erpnext_integrations/woocommerce-order.gif)
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Defaults
+### 2.1 ค่าเริ่มต้น
 
-In the Woocommerce Settings DocType:
+ในการตั้งค่า Woocommerce DocType:
 
-- **Warehouse**: This Warehouse will be used to create Sales Orders. The default Warehouse is "Stores".
-- **Delivery After (Days)**: This is the default offset (days) for the Delivery Date in Sales Orders. The default offset is 7 days from the order placement date.
-- **Sales Order Series**: You can set a separate series for Sales Orders created via woocommerce. The default series is "SO-WOO-".
-- **UOM**: This is the default UOM used for Items and Sales Orders. The default UOM is "Nos".
+- **โกดัง**: โกดังนี้จะใช้สร้างใบสั่งขาย คลังสินค้าเริ่มต้นคือ "ร้านค้า"
+- **จัดส่งหลัง (วัน)**: นี่คือออฟเซ็ตเริ่มต้น (วัน) สำหรับวันที่จัดส่งในใบสั่งขาย ออฟเซ็ตเริ่มต้นคือ 7 วันนับจากวันที่วางคำสั่งซื้อ
+- **ชุดคำสั่งขาย**: คุณสามารถตั้งค่าชุดคำสั่งขายแยกต่างหากที่สร้างผ่าน woocommerce ได้ ซีรี่ส์เริ่มต้นคือ "SO-WOO-"
+- **UOM**: นี่คือ UOM เริ่มต้นที่ใช้สำหรับรายการและใบสั่งขาย UOM เริ่มต้นคือ "Nos"
 
 ![Woocommerce Defaults](/docs/assets/img/erpnext_integrations/wc-defaults.png)
 
-## 3. Related Topics
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-2. [Item](/docs/user/manual/en/stock/item)
-3. [Customer](/docs/user/manual/en/CRM/customer)
-4. [Address](/docs/user/manual/en/CRM/address)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [คำสั่งขาย](/docs/user/manual/th/selling/sales-order)
+2. [รายการ](/docs/user/manual/th/stock/item)
+3. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+4. [ที่อยู่](/docs/user/manual/th/CRM/address)

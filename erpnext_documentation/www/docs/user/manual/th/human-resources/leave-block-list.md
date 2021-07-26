@@ -1,43 +1,43 @@
 # Leave Block List
 
-**Leave Block List is a list of dates in a year, on which employees cannot apply for leave.**
+**Leave Block List เป็นรายการวันที่ในหนึ่งปีที่พนักงานไม่สามารถขอลาได้**
 
- To access Leave Block List, go to:
+ หากต้องการเข้าถึง Leave Block List ให้ไปที่:
 
-> Home > Human Resources > Leaves > Leave Block List 
+> หน้าหลัก > ทรัพยากรบุคคล > การลางาน > Leave Block List
 
-ERPNext allows you to define a list of Leave Approvers who can approve Leave Applications on blocked days, in case of urgency. You can also define whether the list will be applied to the entire company or on any specific departments.
+ERPNext ให้คุณกำหนดรายชื่อผู้อนุมัติการลาที่สามารถอนุมัติการลางานในวันที่ถูกปิดกั้น ในกรณีเร่งด่วน คุณยังสามารถกำหนดได้ว่าจะใช้รายการกับทั้งบริษัทหรือในแผนกใดแผนกหนึ่ง
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before you create a Leave Block List, it is advisable you have the following documents:
+ก่อนที่คุณจะสร้าง Leave Block List ขอแนะนำให้คุณมีเอกสารดังต่อไปนี้:
 
-* [Company](/docs/user/manual/en/setting-up/company-setup)
-* [Department](/docs/user/manual/en/human-resources/department)
-* [Leave Period](/docs/user/manual/en/human-resources/leave-period)
-* [Holiday List](/docs/user/manual/en/human-resources/holiday-list)
+* [ตั้งค่าบริษัท](/docs/user/manual/th/setting-up/company-setup)
+* [แผนก](/docs/user/manual/th/human-resources/department)
+* [ระยะเวลาการลา](/docs/user/manual/th/human-resources/leave-period)
+* [รายการวันหยุด](/docs/user/manual/th/human-resources/holiday-list)
 
 
-## 2. How to create a Leave Block List
+## 2. วิธีสร้าง Leave Block List
 
-1. Go to Leave Block list, and click on New.
-1. Enter Leave Block List Name.
-1. Enter Block Date and Reason in the 'Leave Block List Dates' table.
-1. Enter Users to approve Leave Applications for Blocked Days in the 'Leave BLock List Allowed' table.
-1. Save.
+1. ไปที่รายการ Leave Block แล้วคลิกใหม่
+1. ป้อนชื่อรายการ Leave Block List
+1. ป้อนวันที่บล็อกและเหตุผลในตาราง 'วันที่ Leave Block List'
+1. ป้อนผู้ใช้เพื่ออนุมัติ เอกสารการลาสำหรับวันที่ไม่สามารถขอลางานได้ในตาราง 'Leave BLock List Allowed'
+1. บันทึก
 
 
     <img class="screenshot" alt="Leave Block List"
     src="{{docs_base_url}}/assets/img/human-resources/leave-block-list.png">
 
-> **Note:** Enable the 'Applies to Company' option if you want the Leave Block List to be applicable for the entire Company. If not checked, the list will have to be added to each [Department](/docs/user/manual/en/human-resources/department) where it has to be applied.
+> **หมายเหตุ:** เปิดใช้งานตัวเลือก 'ใช้กับบริษัท' หากคุณต้องการให้ Leave Block List ใช้ได้กับทั้งบริษัท หากไม่เลือก จะต้องเพิ่มรายชื่อในแต่ละ [ฝ่าย](/docs/user/manual/th/human-resources/department) ที่จะนำไปใช้
 
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Leave Type](/docs/user/manual/en/human-resources/leave-type)
-1. [Leave Period](/docs/user/manual/en/human-resources/leave-period)
-1. [Leave Policy](/docs/user/manual/en/human-resources/leave-policy)
-1. [Leave Allocation](/docs/user/manual/en/human-resources/leave-allocation)
-1. [Leave Application](/docs/user/manual/en/human-resources/leave-application)
+1. [ประเภทการลา](/docs/user/manual/th/human-resources/leave-type)
+1. [ระยะเวลาการลา](/docs/user/manual/th/human-resources/leave-period)
+1. [นโยบายการลา](/docs/user/manual/th/human-resources/leave-policy)
+1. [การจัดสรรการลา](/docs/user/manual/th/human-resources/leave-allocation)
+1. [ใบลางาน](/docs/user/manual/th/human-resources/leave-application)
 

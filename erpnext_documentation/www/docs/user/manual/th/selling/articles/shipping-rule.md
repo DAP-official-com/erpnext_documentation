@@ -1,34 +1,34 @@
 <!-- add-breadcrumbs -->
-#Shipping Rule
+#กฎการจัดส่งสินค้า
 
-Shipping Rule master helps in defining a rule based on which shipping charge is applied on a sales transactions.
+หลักกฎการจัดส่งช่วยในการกำหนดกฎโดยยึดตามค่าธรรมเนียมการจัดส่งที่ใช้กับธุรกรรมการขาย
 
-Most of the companies (mainly retail) have shipping charge applied based on the invoice total. If invoice value is above certain value, then shipping charge applied are lesser. If invoice value is less, then shipping charges applied are bit more than high shipping charges applied on a high value invoice. You can setup Shipping Rule to address the requirement of varying shipping charge based on the Net Total of sales transaction.
+บริษัทส่วนใหญ่ (ส่วนใหญ่จะเป็นธุรกิจขายปลีก) คิดค่าจัดส่งตามยอดรวมในใบแจ้งหนี้ หากมูลค่าใบแจ้งหนี้สูงกว่ามูลค่าที่กำหนด ค่าจัดส่งที่ใช้จะน้อยกว่า หากมูลค่าใบแจ้งหนี้น้อยกว่า ค่าจัดส่งที่ใช้จะมากกว่าค่าธรรมเนียมการจัดส่งที่สูงในใบแจ้งหนี้มูลค่าสูงเล็กน้อย คุณสามารถตั้งค่ากฎการจัดส่งเพื่อจัดการกับข้อกำหนดของค่าธรรมเนียมการจัดส่งที่แตกต่างกันตามธุรกรรมยอดขายสุทธิ
 
-To setup Shipping Rule, go to:
+ในการตั้งค่ากฎการจัดส่ง ไปที่:
 
-`Selling > Setup > Shipping Rule` or `Accounts > Setup > Shipping Rule`
+`การขาย > การตั้งค่า > กฎการจัดส่ง' หรือ `บัญชี > การตั้งค่า > กฎการจัดส่ง`
 
-####Shipping Rule Conditions
+####เงื่อนไขกฎการจัดส่ง
 
 <img alt="Shipping Rule Prices" class="screenshot"  src="{{docs_base_url}}/assets/img/articles/shipping-charges-1.png">
 
-Referring above, you will notice that shipping charges are reducing as value is increasing. This shipping charge will only be applied if transaction total falls under one of the above range.
+จากการอ้างอิงข้างต้น คุณจะสังเกตเห็นว่าค่าขนส่งกำลังลดลงตามมูลค่าที่เพิ่มขึ้น ค่าขนส่งนี้จะถูกนำไปใช้ก็ต่อเมื่อยอดรวมของธุรกรรมต่ำกว่าช่วงใดช่วงหนึ่งข้างต้น
 
-####Valid for Countries
+####ใช้ได้สำหรับประเทศ
 
-You can set Shipping Charges valid for all the countries, or specify specific Country. If specific countries mentioned, then Shipping Charges will be applied only if Customer's country matches Country mentioned in the Shipping Rule.
+คุณสามารถกำหนดค่าจัดส่งที่ถูกต้องสำหรับทุกประเทศ หรือระบุประเทศที่ต้องการ หากระบุประเทศใดประเทศหนึ่ง ค่าจัดส่งจะถูกนำไปใช้ก็ต่อเมื่อประเทศของลูกค้าตรงกับประเทศที่กล่าวถึงในกฎการจัดส่งเท่านั้น
 
 <img alt="Shipping Rule " class="screenshot"  src="{{docs_base_url}}/assets/img/articles/shipping-charges-2.gif">
 
-####Shipping Account
+####บัญชีการจัดส่งสินค้า
 
-If shipping charges are applied based on Shipping Rule, then more values like Shipping Account, Cost Center will be needed as well to add row in the Taxes and Other Charges table of transaction. Hence these details are tracked as well in the Shipping Rule.
+หากมีการใช้ค่าธรรมเนียมในการจัดส่งตามกฎการจัดส่ง ค่าอื่นๆ เช่น บัญชีการจัดส่ง ศูนย์ต้นทุน ก็จำเป็นเช่นกันเพื่อเพิ่มแถวในตารางภาษีและค่าธรรมเนียมอื่นๆ ของธุรกรรม ดังนั้นรายละเอียดเหล่านี้จึงถูกติดตามเช่นกันในกฎการจัดส่ง
 
 <img alt="Shipping Account" class="screenshot"  src="{{docs_base_url}}/assets/img/articles/shipping-charges-3.png">
 
-####Shipping Rule Application
+####ใบกฎการจัดส่ง
 
-Following is an example of how shipping charges is auto-applied on Sales Order based on Shipping Rule.
+ต่อไปนี้เป็นตัวอย่างวิธีคิดค่าธรรมเนียมการจัดส่งโดยอัตโนมัติในใบสั่งขายตามกฎการจัดส่ง
 
 <img alt="Shipping Rule Application" class="screenshot"  src="{{docs_base_url}}/assets/img/articles/shipping-charges-4.gif">

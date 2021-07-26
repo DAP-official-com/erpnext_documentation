@@ -1,52 +1,52 @@
 <!-- add-breadcrumbs -->
-# Additional Salary
+# เงินเดือนเพิ่มเติม
 
-**Additional Salary is something that an Employee receives from the company they work for, other than their usual pay.**
-
-
-ERPNext offers you a feature called Additional Salary to add or deduct ad hoc salary for a particular Employee while processing the Payroll. Some examples of Additional Salary could be Performance Bonus, Deputation Allowance, Arrears, Incentives, or other adjustments.
-
-To access Additional Salary, go to:
-
-> Home > Human Resources > Payroll > Additional Salary
-
-## 1. Prerequisites
-
-Before creating an Additional Salary, it is advisable to create the following:
-
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Salary Component](/docs/user/manual/en/human-resources/salary-component)
+**เงินเดือนเพิ่มเติมคือสิ่งที่พนักงานได้รับจากบริษัทที่พวกเขาทำงานให้ นอกเหนือจากค่าจ้างปกติ**
 
 
-## 2. How to create an Additional Salary
+ERPNext นำเสนอคุณลักษณะที่เรียกว่าเงินเดือนเพิ่มเติมเพื่อเพิ่มหรือหักเงินเดือนเฉพาะสำหรับพนักงานรายใดรายหนึ่งในขณะที่ประมวลผลเงินเดือน ตัวอย่างของเงินเดือนเพิ่มเติมอาจเป็นโบนัสตามผลงาน ค่าเบี้ยเลี้ยงพนักงาน เงินค้างชำระ สิ่งจูงใจ หรือการปรับอื่นๆ
+
+ในการเข้าถึงเงินเดือนเพิ่มเติม ไปที่:
+
+> หน้าหลัก > ทรัพยากรบุคคล > เงินเดือน > เงินเดือนเพิ่มเติม
+
+## 1. ข้อกำหนดเบื้องต้น
+
+ก่อนสร้างเงินเดือนเพิ่มเติม ขอแนะนำให้สร้างสิ่งต่อไปนี้:
+
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
 
 
-1. Go to the Additional Salary list, click on New.
-2. Select Employee.
-3. Select Salary Component.
-4. Enter the Amount.
-1. Enter the Payroll Date. If Payroll Date for Additional Salary is in the interval when the salary is processed, it will be added to the earnings/deduction.
-1. Save and Submit.
+## 2. วิธีสร้างเงินเดือนเพิ่มเติม
 
-Select the 'Overwrite Salary Structure Amount' checkbox to overwrite the Additional Salary component on the Salary Structure amount. Additionally, the 'Deduct Full Tax on Selected Payroll Date' checkbox can be selected if full tax needs to be deducted on the Additional Salary component for that particular payroll date.
+
+1. ไปที่รายการเงินเดือนเพิ่มเติม คลิกที่ ใหม่
+2. เลือกพนักงาน
+3. เลือกองค์ประกอบเงินเดือน
+4. ป้อนจำนวนเงิน
+1. ป้อนวันที่จ่ายเงินเดือน หากวันจ่ายเงินเดือนสำหรับเงินเดือนเพิ่มเติมอยู่ในช่วงที่มีการประมวลผลเงินเดือน จะถูกบวกเข้ากับรายได้/การหักเงิน
+1. บันทึกและส่ง
+
+เลือกช่องกาเครื่องหมาย 'เขียนทับจำนวนเงินโครงสร้างเงินเดือน' เพื่อเขียนทับองค์ประกอบเงินเดือนเพิ่มเติมในจำนวนเงินโครงสร้างเงินเดือน นอกจากนี้ คุณสามารถเลือกกล่องกาเครื่องหมาย 'หักภาษีเต็มจำนวนในวันที่เงินเดือนที่เลือก' ได้ หากจำเป็นต้องหักภาษีเต็มจำนวนในองค์ประกอบเงินเดือนเพิ่มเติมสำหรับวันที่จ่ายเงินเดือนนั้นๆ
 
 <img class="screenshot" alt="Additional Salary" src="{{docs_base_url}}/assets/img/human-resources/additional-salary.png">
 
-## 3.Features
+## 3. คุณสมบัติ
 
-### 3.1 Recurring Additional Salary
-This feature allows users to create an Additional Salary for a fixed interval.
-When 'Is Recurring' is checked you need to fill 'To Date' and 'From Date'. 
-This will add or deduct the additional salary amount for this employee within the selected date range and it will be reflected in the Salary Slip for the employee. The Additional Salary will be repeated every month between 'From Date' and 'To Date' interval.
+### 3.1 เงินเดือนเพิ่มเติมที่เกิดขึ้นประจำ
+คุณลักษณะนี้ช่วยให้ผู้ใช้สามารถสร้างเงินเดือนเพิ่มเติมสำหรับช่วงเวลาที่กำหนดได้
+เมื่อเลือก 'เกิดซ้ำ' คุณต้องกรอก 'To Date' และ 'From Date'
+สิ่งนี้จะเพิ่มหรือหักจำนวนเงินเงินเดือนเพิ่มเติมสำหรับพนักงานนี้ภายในช่วงวันที่ที่เลือก และจะแสดงในสลิปเงินเดือนสำหรับพนักงาน เงินเดือนเพิ่มเติมจะถูกทำซ้ำทุกเดือนระหว่างช่วง 'วันที่เริ่มต้น' และ 'ถึงวันที่'
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Retention Bonus](/docs/user/manual/en/human-resources/retention-bonus)
-1. [Employee Incentive](/docs/user/manual/en/human-resources/employee-incentive)
-1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
-1. [Salary Structure Assignment](/docs/user/manual/en/human-resources/salary-structure-assignment)
-1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
-1. [Payroll Period](/docs/user/manual/en/human-resources/payroll-period)
+1. [โบนัส](/docs/user/manual/th/human-resources/retention-bonus)
+1. [รางวัลจูงใจพนักงาน](/docs/user/manual/th/human-resources/employee-incentive)
+1. [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
+1. [การกำหนดโครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure-assignment)
+1. [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)
+1. [ระยะเวลาการจ่ายเงินเดือน](/docs/user/manual/th/human-resources/payroll-period)
 
 
 {next}

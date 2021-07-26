@@ -1,33 +1,33 @@
 <!-- add-breadcrumbs -->
-#Applying a Discount
+#การใช้ส่วนลด
 
-There are several ways to apply a Discount on an item in a sales transactions. This can be done in all sales and purchase transactions.
+มีหลายวิธีในการใช้ส่วนลดกับสินค้าในธุรกรรมการขาย ซึ่งสามารถทำได้ในธุรกรรมการขายและการซื้อทั้งหมด
 
-## 1. Discount on Price List Rate of an item
+## 1. ส่วนลดราคารายการราคาสินค้า
 
-You can find the Discount field in the Item table of a transaction, click on the downward arrow at the righ-hand side of a row. A Discount can be applied as a percentage or a fixed amount related to the Price List Rate of the Item.
+คุณจะพบช่องส่วนลดในตารางรายการของธุรกรรม โดยคลิกที่ลูกศรชี้ลงที่ด้านขวามือของแถว ส่วนลดสามารถใช้เป็นเปอร์เซ็นต์หรือจำนวนคงที่ที่เกี่ยวข้องกับราคารายการราคาของสินค้า
 
 <img alt="Discount Percentage" class="screenshot" src="{{docs_base_url}}/assets/img/articles/discount-1.png">
 
-The feature of Discount (%) is available in all sales and purchase transactions.
+คุณลักษณะของส่วนลด (%) มีอยู่ในธุรกรรมการขายและการซื้อทั้งหมด
 
-If you want to apply a discount (as a Percentage) regularly for certain quantities you'd rather use a "Pricing Rule". Read [Pricing Rule](/docs/user/manual/en/accounts/pricing-rule) documentation to learn more.
+หากคุณต้องการใช้ส่วนลด (เป็นเปอร์เซ็นต์) เป็นประจำสำหรับจำนวนหนึ่ง คุณควรใช้ "กฎการกำหนดราคา" อ่าน [กฎการตั้งราคา](/docs/user/manual/th/accounts/pricing-rule) เพื่อเรียนรู้เพิ่มเติม
 
-## 2. Discount on Net Total or Grand Total
+## 2. ส่วนลดสำหรับยอดสุทธิหรือยอดรวมทั้งหมด
 
-In the "Additional Discount" section (of a "Sales Order" or "Sales Invoice" alike), you can apply a Discount as a fixed amount or a percentage on the total sum of the Sales.
+ในส่วน "ส่วนลดเพิ่มเติม" (ของ "ใบสั่งขาย" หรือ "ใบกำกับสินค้า" เหมือนกัน) คุณสามารถใช้ส่วนลดเป็นจำนวนเงินคงที่หรือเป็นเปอร์เซ็นต์กับยอดรวมของยอดขายได้
 
 <img alt="Discount Percentage" class="screenshot" src="{{docs_base_url}}/assets/img/articles/discount-2.png">
 
-### 2.1 Discount on "Net Total"
+### 2.1 ส่วนลดกับ "ยอดสุทธิ"
 
-If a Discount is applied on **Net Total**, then item's Net Rate and Net Amount is calculated as per the Discount Amount. Net Rate and Amount field will be visible only if Discount is applied using this feature.
+หากใช้ส่วนลดกับ **ยอดรวมสุทธิ** อัตราสุทธิของสินค้าและจำนวนเงินสุทธิของสินค้าจะถูกคำนวณตามยอดส่วนลด อัตราสุทธิและช่องจำนวนเงินจะปรากฏเฉพาะเมื่อมีการใช้ส่วนลดโดยใช้คุณลักษณะนี้
 
 <img alt="Discount Percentage" class="screenshot" src="{{docs_base_url}}/assets/img/articles/discount-on-net-total.png">
 
-### 2.2 Discount on "Grand Total"
+### 2.2 ส่วนลดสำหรับ "ยอดรวมทั้งหมด"
 
-If a Discount is applied based on the **Grand Total**, then with item's Net Rate, Net Amount as well as taxes are also re-calculated as per Discount Amount.
+หากใช้ส่วนลดโดยอิงตาม **ยอดรวม** จากนั้นด้วยอัตราสุทธิของรายการ จำนวนเงินสุทธิ และภาษีจะถูกคำนวณใหม่ตามจำนวนส่วนลดด้วย
 
 <img alt="Discount Percentage" class="screenshot" src="{{docs_base_url}}/assets/img/articles/discount-on-grand-total.png">
 

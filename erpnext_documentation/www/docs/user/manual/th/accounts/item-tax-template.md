@@ -1,94 +1,96 @@
 <!-- add-breadcrumbs -->
-# Item Tax Template
+# เทมเพลตภาษีสินค้า
 
-**Item Tax Template is useful for item wise taxation.**
+**เทมเพลตภาษีสินค้ามีประโยชน์สำหรับการจัดเก็บภาษี**
 
-If some of your Items have tax rates different from the standard tax rate assigned in the Taxes and Charges table, then you can create an Item Tax Template and assign it to an [Item](/docs/user/manual/en/stock/item) or [Item Group](/docs/user/manual/en/stock/item-group). The rate assigned in the Item Tax Template will get preference over the standard tax rate assigned in the Taxes and Charges table.
+หากบางส่วนของรายการของคุณมีอัตราภาษีที่แตกต่างจากอัตราภาษีมาตรฐานที่ได้รับมอบหมายในภาษีและตารางค่าใช้จ่ายแล้วคุณสามารถสร้างรายการแม่แบบภาษีและกำหนดไปยัง [สินค้า](/docs/user/manual/th/stock/item) หรือ [กลุ่มสินค้า](/docs/user/manual/th/stock/item-group)อัตราที่กำหนดในเท็มเพลตภาษีสินค้าจะได้รับการตั้งค่ามากกว่าอัตราภาษีมาตรฐานที่กำหนดในตารางภาษีและค่าธรรมเนียม
 
-For example, if tax GST 18% is added in the Taxes and Charges table in Sales Order, then it will be applied on all the items in that Sales Order. However, if you need to have different tax rate applied on some of the items, the steps are given below
+ตัวอย่างเช่น หากมีการเพิ่มภาษี 8% ในตารางภาษีและค่าธรรมเนียมในใบสั่งขาย จะถูกนำไปใช้กับรายการทั้งหมดในใบสั่งขายนั้น อย่างไรก็ตาม หากคุณต้องการใช้อัตราภาษีที่แตกต่างกันสำหรับสินค้าบางรายการ ขั้นตอนมีดังนี้
 
-To access the Item Tax Template list, go to
-> Home > Accounting > Taxes > Item Tax Template
+หากต้องการเข้าถึงรายการเทมเพลตภาษีสินค้า ให้ไปที่
+> หน้าหลัก > การบัญชี > ภาษี > เทมเพลตภาษีสินค้า
 
-Let's assume that we are creating a Sales Order. We have the [Sales Taxes and Charges Template](/docs/user/manual/en/selling/sales-taxes-and-charges-template) master for GST 9%. Out of all the Sales Items, on one Item, only 5% GST will be applied, while another item is exempted from tax (non taxable). You need to select the Account Head of the tax and set its overriding rate.
+สมมติว่าเรากำลังสร้างใบสั่งขาย เรามี [เทมเพลตภาษีขายและค่าธรรมเนียม](/docs/user/manual/th/selling/sales-taxes-and-charges-template) สำหรับ GST 9%จากรายการขายทั้งหมด รายการหนึ่งจะใช้ GST เพียง 5% ในขณะที่อีกรายการหนึ่งได้รับการยกเว้นภาษี (ไม่ต้องเสียภาษี) คุณต้องเลือกหัวหน้าบัญชีของภาษีและกำหนดอัตราการแทนที่
 
-## 1. Prerequisites
-Before creating and using an Item Tax Template, it is advised to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้เทมเพลตภาษีสินค้า ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-1. [Item](/docs/user/manual/en/stock/item)
-1. Enable 'Automatically add Taxes and Charges from Item Tax Template' in [Account Settings](/docs/user/manual/en/accounts/accounts-settings)
+1. [สินค้า](/docs/user/manual/th/stock/item)
+1. เปิดใช้งาน 'เพิ่มภาษีและค่าธรรมเนียมโดยอัตโนมัติจากเทมเพลตภาษีสินค้า' ใน[การตั้งค่าบัญชี](/docs/user/manual/th/accounts/accounts-settings)
 
-## 2. How to create an Item Tax Template
-1. Go to the Item Tax Template list and click on New.
-1. Enter a title for the Item Tax Template.
-1. Select an account and set the overriding rate. Add more rows if required.
-1. Save.
+## 2. วิธีสร้างเทมเพลตภาษีสินค้า
+1. ไปที่รายการเทมเพลตภาษีสินค้าแล้วคลิกใหม่
+1. ป้อนชื่อสำหรับเทมเพลตภาษีสินค้า
+1. เลือกบัญชีและกำหนดอัตราการแทนที่ เพิ่มแถวอื่นๆ ถ้าจำเป็น
+1. บันทึก
 
-Now the Item Tax Template is ready to be assigned to an Item. To do this, go the Item, Item Tax section and select an Item Tax Template:
+ตอนนี้เทมเพลตภาษีสินค้าพร้อมที่จะกำหนดให้กับรายการ ในการดำเนินการนี้ ให้ไปที่ส่วนรายการ ภาษีสินค้า และเลือกเทมเพลตภาษีสินค้า:
 
 ![Item Tax In Item](/docs/assets/img/accounts/item-tax-in-item.png)
 
-> Note: It is advised to not use the Sales/Purchase Template selected here in [Tax Rule](/docs/user/manual/en/accounts/tax-rule), it may cause interference. If you want to use same tax rates for Tax Rule and Item Tax Template, use a different name for the Sales/Purchase Tax Templates.
+> หมายเหตุ: ขอแนะนำว่าอย่าใช้เทมเพลตการขาย/การจัดซื้อที่เลือกไว้ที่นี่ใน [กฎภาษี](/docs/user/manual/th/accounts/tax-rule)เนื่องจากอาจทำให้เกิดข้อผิดพลาดด้ หากคุณต้องการใช้อัตราภาษีเดียวกันสำหรับกฎภาษีและเทมเพลตภาษีสินค้า ให้ใช้ชื่ออื่นสำหรับเทมเพลตภาษีการขาย/การซื้อ
 
-### 2.1 Mention Tax Applicable in the Item master
+### 2.1 ภาษีที่ใช้บังคับในรายการสินค้าหลัก 
 
-Tax templates are preset with values. For items which have a different tax rate than the others, you need to change it in the Item master. Go to the tax table in the Item, add a row, select the tax type and change the rate. Now, this new rate will over ride the template when creating an order/invoice. For example, in the below screenshot you can see that the tax rate is set as 5 and that's the rate which will be applied in transactions.
+เทมเพลตภาษีมีการตั้งค่าล่วงหน้าด้วยค่า สำหรับรายการที่มีอัตราภาษีแตกต่างจากรายการอื่น คุณต้องเปลี่ยนในหลักรายการ ไปที่ตารางภาษีในรายการ เพิ่มแถว เลือกประเภทภาษีและเปลี่ยนอัตรา ตอนนี้ อัตราใหม่นี้จะแทนที่เทมเพลตเมื่อสร้างคำสั่งซื้อ/ใบแจ้งหนี้ ตัวอย่างเช่น ในภาพหน้าจอด้านล่าง คุณจะเห็นว่าอัตราภาษีตั้งไว้ที่ 5 และนั่นคืออัตราที่จะใช้ในการทำธุรกรรม
 
 <img class="screenshot" alt="Opening Account" src="{{docs_base_url}}/assets/img/accounts/item-wise-tax.png">
 
-For the Item which is exempted from tax entirely, mention 0% as tax rate in the Item master.
+สำหรับสินค้าที่ได้รับการยกเว้นภาษีทั้งหมด ให้ระบุ 0% เป็นอัตราภาษีในรายการสินค้าหลัก 
 
 <img class="screenshot" alt="Opening Account" src="{{docs_base_url}}/assets/img/accounts/exempted-item.png">
 
-> Note: For Item Tax Template to work, you need to ensure that the tax types (accounts) set in Item Tax Template (with changed tax rates) are present in the Sales Taxes and Charges Template.
+> หมายเหตุ: เพื่อให้เทมเพลทภาษีสินค้าทำงานได้ คุณต้องตรวจสอบให้แน่ใจว่าประเภทภาษี (บัญชี) ที่กำหนดไว้ในเท็มเพลตภาษีสินค้า (ที่มีอัตราภาษีที่เปลี่ยนแปลง) มีอยู่ในเท็มเพลตภาษีขายและค่าธรรมเนียม
 
-> If you want to include multiple items with different tax rates, you need to have record them under different tax heads. For example, VAT 14%, VAT 5% etc.
+> หากคุณต้องการรวมสินค้าหลายรายการที่มีอัตราภาษีต่างกัน คุณต้องบันทึกรายการเหล่านั้นไว้ใต้หัวภาษีที่แตกต่างกัน เช่น ภาษีมูลค่าเพิ่ม 14% ภาษีมูลค่าเพิ่ม 5% เป็นต้น
 
-### 2.2 Tax Calculation in transaction
+### 2.2 การคำนวณภาษีในรายการธุรกรรม
 
-For example, in the following screenshot, the Item has an Item Tax Template assigned to it with 5% on two tax heads.
+ตัวอย่างเช่น ในภาพหน้าจอต่อไปนี้ คุณจะเห็นว่าภาษีคำนวณที่รายการมีเทมเพลตภาษีสินค้าที่กำหนดให้กับมันโดยมี 5%
 
 <img class="screenshot" alt="Opening Account" src="{{docs_base_url}}/assets/img/accounts/tax-calculation.png">
 
-The tax is fetched from the Item Tax Template and calculated:
+ภาษีถูกดึงมาจากเทมเพลตภาษีสินค้าและใช้คำนวณ:
 <img class="screenshot" alt="Opening Account" src="{{docs_base_url}}/assets/img/accounts/tax-calculation1.png">
 
-### 2.3 Item Tax Template for each Items
-You can also manually select a different Item Tax Template for each Item in a transaction:
+### 2.3 เทมเพลตภาษีสินค้าสำหรับแต่ละรายการ
+
+คุณยังสามารถเลือกเทมเพลตภาษีสินค้าที่แตกต่างกันสำหรับแต่ละรายการในธุรกรรมได้ด้วยตนเอง:
 
 ![Item Tax individual](/docs/assets/img/accounts/item-tax-each.png)
 
 
-### 2.4 Item wise tax on an Item Group
-You can assign the Item Tax Template to an Item Group by modifying the Item Tax table in the Item Tax section within the Item Group document.
+### 2.4 ภาษีตามรายการในกลุ่มสินค้า
+
+คุณสามารถกำหนดเทมเพลทภาษีสินค้าให้กับกลุ่มสินค้าได้โดยการแก้ไขตารางภาษีสินค้าในส่วนภาษีสินค้าภายในเอกสารกลุ่มสินค้า
+
 <img class="screenshot" alt="Item Tax in Item Group" src="{{docs_base_url}}/assets/img/accounts/item-group-tax.png">
 
-Item Tax Template applied on an Item Group will apply to all Items in that group unless an individual Item in the Item Group has its own Item Tax Template assigned to it.
+เทมเพลตภาษีสินค้าที่ใช้กับกลุ่มสินค้าจะนำไปใช้กับสินค้าทั้งหมดในกลุ่มนั้น เว้นแต่สินค้าแต่ละรายการในกลุ่มสินค้าจะมีเทมเพลตภาษีสินค้าของตนเอง
 
-
-### 2.5 Validity of Item Taxes
+### 2.5 ความถูกต้องของภาษีสินค้า
 
 <img class="screenshot" alt="Item Tax in Item Group" src="{{docs_base_url}}/assets/img/accounts/item-tax-in-item.png">
 
-You can also assign validity to tax templates as shown in the image above.
+คุณสามารถกำหนดความถูกต้องให้กับเทมเพลตภาษีตามที่แสดงในภาพด้านบน
 
-* Based on the posting date of the transaction, a valid tax template will be automatically fetched.
-* If there are more than one valid tax templates then the first valid tax template from Item Tax table will be fetched.
-* In case when there are no valid tax templates then the first tax template with no 'Valid From' date in the Item Tax table will be fetched.
+* ตามวันที่ลงรายการบัญชี เทมเพลตภาษีที่ถูกต้องจะถูกดึงโดยอัตโนมัติ
+* หากมีเทมเพลตภาษีที่ถูกต้องมากกว่าหนึ่งเทมเพลต เทมเพลตภาษีที่ถูกต้องรายการแรกจากตารางภาษีสินค้าจะถูกดึงออกมา
+* ในกรณีที่ไม่มีเท็มเพลตภาษีที่ถูกต้อง เท็มเพลตภาษีแรกที่ไม่มีวันที่ 'ถูกต้องตั้งแต่' ในตารางภาษีสินค้าจะถูกดึงมา
 
-> Note: While adding items in Purchase Invoice first preference will be given to 'Supplier Invoice Date' instead of 'Posting Date' for fetching valid Item Tax Template.
+> หมายเหตุ: ในขณะที่เพิ่มรายการในใบกำกับสินค้า ค่ากำหนดอันดับแรกจะเป็น 'วันที่ในใบแจ้งหนี้ของซัพพลายเออร์' แทนที่จะเป็น 'วันที่โพสต์ (Posting Date)' สำหรับการดึงแม่แบบภาษีสินค้าที่ถูกต้อง
 
-### 2.6 Some points to note
+### 2.6 เพิ่มเเติม
 
-- If you set the Tax Category as empty, the default Item Tax Template will be applied to Items in transactions.
+- หากคุณตั้งค่าประเภทภาษีเป็นว่างเปล่า เทมเพลตภาษีสินค้าเริ่มต้นจะถูกนำไปใช้กับรายการในธุรกรรม
 
-- You can apply different Item Tax Templates for different Tax Categories.
+- คุณสามารถใช้เทมเพลตภาษีสินค้าที่แตกต่างกันสำหรับหมวดหมู่ภาษีต่างๆ
 
-- For an Item Tax Template to override taxes, there must be a row in the Taxes and Charges table with the same tax Account Head with a standard tax rate.
+- สำหรับเทมเพลตภาษีสินค้าที่จะแทนที่ภาษี จะต้องมีแถวในตารางภาษีและค่าธรรมเนียมที่มีหัวหน้าบัญชีภาษีเดียวกันกับอัตราภาษีมาตรฐาน
 
-- If you wish to apply taxes only on the Items with an Item Tax Template then you can set the standard tax rate as 0.
+- หากคุณต้องการใช้ภาษีเฉพาะกับสินค้าที่มีเทมเพลตภาษีสินค้า คุณสามารถกำหนดอัตราภาษีมาตรฐานเป็น 0
 
-### 3. Related Topics
-1. [Tax Rule](/docs/user/manual/en/accounts/tax-rule)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [กฎภาษี](/docs/user/manual/th/accounts/tax-rule)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)

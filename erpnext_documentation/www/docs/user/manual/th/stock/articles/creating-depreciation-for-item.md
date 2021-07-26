@@ -1,30 +1,29 @@
 <!-- add-breadcrumbs -->
-#Depreciation Entry
+#ค่าเสื่อมราคา
 
-**Question:** A Fixed Asset Item has been purchased and stored in a warehouse. How to create a depreciation for a Fixed Asset Item?
+**คำถาม:** มีการซื้อและจัดเก็บรายการสินทรัพย์ถาวรในคลังสินค้า จะสร้างค่าเสื่อมราคาสำหรับรายการสินทรัพย์ถาวรได้อย่างไร
 
-**Answer:**You can post asset depreciation entry for the fixed asset item via [Stock Reconciliation](/docs/user/manual/en/stock/opening-stock.html) Entry.
+**คำตอบ:**คุณสามารถโพสต์รายการค่าเสื่อมราคาของสินทรัพย์สำหรับรายการสินทรัพย์ถาวรได้ผ่านรายการ [การกระทบยอดสต็อก](/docs/user/manual/th/stock/opening-stock.html)
 
-####Step 1:
+####ขั้นตอนที่ 1:
 
-In the Attachment file, fill in the appropriate columns;
+ในไฟล์แนบ ให้กรอกคอลัมน์ที่เหมาะสม
 
-- **Item Code** whose value is to be depreciated.
-- **Warehouse** in which item is stored.
-- **Qty (Quantity)** Leave this column blank.
-- **Valuation Rate** will be item's value after depreciation.
+- **รหัสสินค้า** ซึ่งมีมูลค่าที่จะคิดค่าเสื่อมราคา
+- **โกดัง** ที่จัดเก็บรายการ
+- **จำนวน (จำนวน)** เว้นคอลัมน์นี้ว่างไว้
+- **เรทการประเมินมูลค่า** จะเป็นมูลค่าของสินค้าหลังการคิดค่าเสื่อมราคา
 
 <img alt="reorder level" class="screenshot" src="{{docs_base_url}}/assets/img/articles/fixed-asset-dep-1.gif">
 
-After updating Valuation Rate for an item, come back to Stock Reconciliation and upload save .csv file.
+หลังจากอัปเดตอัตราการประเมินสำหรับสินค้าแล้ว ให้กลับมาที่การกระทบยอดสต็อกและอัปโหลดไฟล์บันทึก .csv
 
-####Step 2:
+####ขั้นตอนที่ 2:
 
-Select Expense account for depreciation in **Difference Account**. Value booked in the depreciation account will be the difference of old and next valuation rate of the fixed asset item, which will be actually the depreciation amount.
-
+เลือกบัญชีค่าใช้จ่ายสำหรับการคิดค่าเสื่อมราคาใน **บัญชีส่วนต่าง** มูลค่าที่จองในบัญชีค่าเสื่อมราคาจะเป็นส่วนต่างของอัตราการประเมินมูลค่าเก่าและถัดไปของรายการสินทรัพย์ถาวร ซึ่งจะเป็นมูลค่าค่าเสื่อมราคาจริงๆ
 <img alt="reorder level" class="screenshot" src="{{docs_base_url}}/assets/img/articles/fixed-asset-dep-2.png">
 
-####Stock Reconciliation Help Video
+####วิดีโอช่วยเหลือการกระทบยอดสต็อก
 
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/0yPgrtfeCTs" frameborder="0" allowfullscreen></iframe>

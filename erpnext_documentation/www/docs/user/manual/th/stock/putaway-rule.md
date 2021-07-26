@@ -8,101 +8,101 @@ metatags:
  keywords: Putaway Rule, Putaway, Put List, frappe, Warehouse Put Away, erpnext new features, WMS, Warehouse Capacity, erp, open source erp, free erp, stock, inventory
 ---
 
-# Putaway Rule
+# กฎการส่งสินค้าออก
 
-**A Putaway Rule defines a Warehouse Assignment Strategy for incoming stock.**
+**กฎการส่งสินค้าออกกำหนดกลยุทธ์การกำหนดคลังสินค้าสำหรับสินค้าขาเข้า**
 
-A Putaway Rule is uniquely defined for an Item-Warehouse combination in a Company. It takes Warehouse Capacity and Priority into consideration.
+กฎการส่งสินค้าถูกกำหนดไว้เฉพาะสำหรับชุดค่าผสมระหว่างรายการกับคลังสินค้าในบริษัท โดยคำนึงถึงความจุและลำดับความสำคัญของคลังสินค้า
 
-In **Purchase Receipts** and **Stock Entries** (Material Receipt & Material Transfer), the Putaway Rules are applied and Items are **auto-assigned** to Warehouses based on the given strategy.
+ใน **ใบเสร็จรับเงินการซื้อ** และ **รายการสินค้าในสต็อก** (การรับวัสดุและการโอนวัสดุ) กฎการจัดส่งจะถูกนำมาใช้และรายการ **กำหนดโดยอัตโนมัติ** ให้กับคลังสินค้าตามกลยุทธ์ที่กำหนด
 
-This is particularly useful for capacity management in large Warehouses with multiple locations.
+สิ่งนี้มีประโยชน์อย่างยิ่งสำหรับการจัดการกำลังการผลิตในคลังสินค้าขนาดใหญ่ที่มีหลายตำแหน่ง
 
-To access a Putaway Rule, go to:
+ในการเข้าถึงกฎ การส่งสินค้าออก ไปที่:
 
-> Home > Stock > Stock Transactions > Putaway Rule
+> หน้าหลัก > สต็อก > ธุรกรรมสต็อก > กฎการส่งสินค้า
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating and using a Putaway Rule, it is advised that you create the following first:
+ก่อนสร้างและใช้งาน กฎการส่งสินค้าออก ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-- [Stock Item](/docs/user/manual/en/stock/item)
-- [Warehouse](/docs/user/manual/en/stock/warehouse)
+- [รายการสต็อค](/docs/user/manual/en/stock/item)
+- [คลังสินค้า](/docs/user/manual/en/stock/warehouse)
 
-## 2. How to create a Putaway Rule
+## 2. วิธีสร้างกฎการส่งสินค้า
 
-1. Go to the Putaway Rule list, click on New.
+1. ไปที่รายการ สร้างกฎการส่งสินค้า คลิกที่ ใหม่
  <img class='screenshot' alt='Unsaved Putaway Rule' src='{{docs_base_url}}/assets/img/stock/unsaved-putaway-rule.png'>
 
-1. Set the Company and Select an Item.
-1. Select the Warehouse on which this rule is applicable.
-1. Set the Capacity. You can also select a UOM if you want to set the Capacity in a different UOM. The Capacity in Stock UOM will be set automatically.
+. ตั้งบริษัทและเลือกรายการ
+1. เลือกคลังสินค้าที่กฎนี้มีผลบังคับใช้
+1. ตั้งค่าความจุ คุณยังสามารถเลือก UOM ได้หากต้องการตั้งค่าความจุใน UOM อื่น ความจุในสต็อค UOM จะถูกตั้งค่าโดยอัตโนมัติ
  <img class='screenshot' alt='Multi UOM Putaway Rule' src='{{docs_base_url}}/assets/img/stock/multi-uom-putaway-rule.png'>
 
-1. Set the Priority. This can begin from 1 onwards, 1 being the highest priority.
-1. Save.
+1. ตั้งค่าลำดับความสำคัญ เริ่มตั้งแต่ 1 เป็นต้นไป โดย 1 เป็นลำดับความสำคัญสูงสุด
+1. บันทึก
  <img class='screenshot' alt='Saved Putaway Rule' src='{{docs_base_url}}/assets/img/stock/saved-putaway-rule.png'>
 
-1. You can additionally Disable a Putaway Rule as well.
+1. คุณสามารถปิดใช้กฎการหยุดทำงานเพิ่มเติมได้เช่นกัน
 
-The rule is unique to each Item-Warehouse combination.
+กฎจะไม่ซ้ำกันสำหรับการผสมผสานระหว่างไอเท็มและคลังสินค้า
 
-## 3. How Putaway is strategized
-1. Here the strategy is purely based on **Capacity** and **Priority**.
-1. Warehouses will be auto-assigned until they reach full capacity.
-1. Priority will be considered first. Followed by free space. If two rules have the same priority, the rule with more free space available will be assigned.
-1. If you are running at full capacity (no free space in any Warehouse), ERPNext will let you know.
+## 3. วิธีการวางกลยุทธ์ของการส่งสินค้าออก
+1. กลยุทธ์นี้มีพื้นฐานมาจาก **ความจุ** และ **ลำดับความสำคัญ** เท่านั้น
+1. คลังสินค้าจะถูกกำหนดโดยอัตโนมัติจนกว่าจะเต็มความจุ
+1. ลำดับความสำคัญจะได้รับการพิจารณาก่อน ตามด้วยพื้นที่ว่าง หากกฎสองข้อมีลำดับความสำคัญเท่ากัน กฎที่มีพื้นที่ว่างมากขึ้นจะได้รับการกำหนด
+1. หากคุณใช้งานอย่างเต็มประสิทธิภาพ (ไม่มีพื้นที่ว่างในคลังสินค้าใด ๆ ) ERPNext จะแจ้งให้คุณทราบ
 
-## 4. How it works
+## 4. มันทำงานอย่างไร
 
-As mentioned before, the Putaway Rules are applied on **Purchase Receipts** and **Stock Entries** (Material Receipt & Material Transfer).
+ดังที่กล่าวไว้ก่อนหน้านี้ กฎการส่งสินค้าจะถูกนำไปใช้กับ **ใบเสร็จรับเงินการซื้อ** และ **รายการสินค้าในสต็อก** (การรับวัสดุและการโอนวัสดุ)
 
-A checkbox called **Apply Putaway Rule** will allocate items to Warehouses based on the Putaway Rules.
+ช่องทำเครื่องหมาย **ใช้กฎการส่งสินค้า** จะจัดสรรสินค้าให้กับคลังสินค้าตามกฎการส่งสินค้า
  <img class='screenshot' alt='Apply Putaway Rule checkbox' src='{{docs_base_url}}/assets/img/stock/apply-putaway-rule.png'>
 
-Putaway Rules are applied on checking this checkbox. They are also re-applied on save if this checkbox is enabled.
+กฎการส่งสินค้าออกจะนำไปใช้กับการเลือกช่องทำเครื่องหมายนี้ นอกจากนี้ยังใช้อีกครั้งในการบันทึกหากเปิดใช้งานช่องทำเครื่องหมายนี้
 
-Let us see the same in action:
+ให้เราดูสิ่งเดียวกันในการดำเนินการ:
 
-1. Here is a Purchase Order with a requirement of 5 Cartons (60 Nos) of Mineral Water.
+1. นี่คือใบสั่งซื้อที่มีความต้องการน้ำแร่ 5 กล่อง (60 Nos)
  <img class='screenshot' alt='Purchase Order' src='{{docs_base_url}}/assets/img/stock/po-putaway-demo.png'>
 
-1. Two active Putaway Rules have been created below with capacity 4 Cartons (48 Nos) each. One has a higher priority than the other.
+1. มีการสร้างกฎการส่งสินค้าออกที่ใช้งานอยู่สองกฎด้านล่างด้วยความจุ 4 กล่อง (48 Nos) แต่ละรายการ หนึ่งมีลำดับความสำคัญสูงกว่าที่อื่น
  <img class='screenshot' alt='Active Putaway Rules List' src='{{docs_base_url}}/assets/img/stock/active-putaway-rules-list.png'>
 
-1. A Purchase Receipt is created from this Purchase Order.
+1. มีการสร้างใบเสร็จรับเงินจากใบสั่งซื้อนี้
 
-1. On checking **Apply Putaway Rule**, one row of 5 Cartons is split and assigned according to the rules.
+1. ในการตรวจสอบ **กฎการส่งสินค้าออก** แถวละ 5 กล่องจะถูกแบ่งและกำหนดตามกฎ
  <img class='screenshot' alt='Putaway Rules applied in a Purchase Receipt' src='{{docs_base_url}}/assets/img/stock/pr-putaway-apply.gif'>
 
-1. First, 4 out of 5 Cartons are accommodated in the 'Finished Goods - UPI' Warehouse. Once this Warehouse is at capacity, it assigns the rest (1 Carton) to the 'Stores - UPI' Warehouse.
+1. ขั้นแรก 4 ใน 5 กล่องจะอยู่ในคลังสินค้า 'Finished Goods - UPI' เมื่อคลังสินค้านี้เต็มแล้ว จะมอบหมายส่วนที่เหลือ (1 กล่อง) ให้กับคลังสินค้า 'ร้านค้า - UPI'
 
-## 5. Warehouse Capacity Summary
+## 5. สรุปความจุคลังสินค้า
 
-The **Warehouse Capacity Summary** Report shows Warehouse capacities and their respective stock levels.
+รายงาน **สรุปความจุของคลังสินค้า** แสดงความจุของคลังสินค้าและระดับสินค้าคงคลังตามลำดับ
 
-Only Warehouses having Putaway Rules will be listed here. The **Edit Capacity** button gives provision to edit the Putaway Rule capacity.
+เฉพาะคลังสินค้าที่มี Putaway Rules เท่านั้นที่จะแสดงรายการที่นี่ ปุ่ม **แก้ไขความจุ** ให้ข้อกำหนดในการแก้ไขความจุของกฎการจัดส่ง
 
  <img class='screenshot' alt='Warehouse Capacity Summary' src='{{docs_base_url}}/assets/img/stock/warehouse-capacity-summary.png'>
 
 
-## 6. Types of Putaway Application
+## 6. ประเภทของแอปพลิเคชันกฎการส่งสินค้าออก
 
-### 6.1. Direct Putaway
+### 6.1. กฎการส่งสินค้าออกโดยตรง
 
-1. The example in the previous section explains **Direct Putaway**.
-1. It is, essentially, directly assigning incoming stock to certain Warehouses based on a strategy.
-1. This can easily be exercised via a Purchase Receipt.
+1. ตัวอย่างในส่วนก่อนหน้าจะอธิบาย **กฎการส่งสินค้าออกโดยตรง**
+1. โดยพื้นฐานแล้ว มันคือการกำหนดสต็อคขาเข้าให้กับโกดังบางแห่งโดยตรงตามกลยุทธ์
+1. สามารถใช้สิทธิได้อย่างง่ายดายผ่านใบเสร็จการซื้อ
 
-### 6.2. Indirect (Combined) Putaway
+### 6.2. กฎการส่งสินค้าออกทางอ้อม (รวมกัน)
 
-1. Stock is often received into **temporary** or **staging** Warehouses first.
-1. From here it is placed into appropriate locations within the Warehouse.
-1. This is called **Indirect or Combined** Putaway.
-1. To simulate this within ERPNext, a simple Purchase Receipt can be created into the temporary Warehouse, without Putaway applied.
-1. From here, a Stock Entry (Material Transfer) can be done, where Putaway Rules can be applied similar to Purchase Receipts.
+1. สต็อคมักจะได้รับเข้าคลังสินค้า **ชั่วคราว** หรือ **ระยะ** ก่อน
+1. จากที่นี่ จะถูกจัดวางในตำแหน่งที่เหมาะสมภายในโกดังสินค้า
+1. สิ่งนี้เรียกว่า **ทางอ้อมหรือรวมกัน** Putaway
+1. ในการจำลองสิ่งนี้ภายใน ERPNext สามารถสร้างใบเสร็จการซื้อแบบง่ายลงในโกดังชั่วคราวได้โดยไม่ต้องใช้ Putaway
+1. จากที่นี่ สามารถทำรายการสต็อค (การโอนย้ายวัตถุดิบ) ได้ โดยสามารถใช้กฎการส่งสินค้าได้เหมือนกับใบเสร็จการซื้อ
 
-## 7. Related Topics
+## 7. หัวข้อที่เกี่ยวข้อง
 
-1. [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
-1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
+1. [ใบเสร็จการซื้อ](/docs/user/manual/en/stock/purchase-receipt)
+1. [รายการสต็อค](/docs/user/manual/en/stock/stock-entry)

@@ -1,42 +1,42 @@
 <!-- add-breadcrumbs -->
-#Purchasing in Different Unit (UoM)
+#การจัดซื้อในหน่วยต่าง ๆ (UoM)
 
-Each item has stock unit of measument (UoM) associated to it. For example UoM of pen could be numbers (Nos) and sand could be stocked kgs. However, when we place an order with Supplier, UoM for an item could change. Like we can order 1 set/box of Pen, or one truck of sand to our Supplier. When creating purchase transacton, you can change Purchase UoM for an item.
+แต่ละรายการมีหน่วยสต็อคของการวัด (UoM) ที่เกี่ยวข้อง ตัวอย่างเช่น UoM ของปากกาอาจเป็นตัวเลข (Nos) และทรายสามารถเก็บได้เป็นกก. อย่างไรก็ตาม เมื่อเราสั่งซื้อกับซัพพลายเออร์ UoM สำหรับสินค้าอาจเปลี่ยนแปลงได้ เช่น เราสามารถสั่งปากกา 1 ชุด/กล่อง หรือรถบรรทุกทรายหนึ่งคันให้ซัพพลายเออร์ของเรา เมื่อสร้างธุรกรรมการซื้อ คุณสามารถเปลี่ยน Purchase UoM สำหรับรายการได้
 
-### Scenario:
+### สถานการณ์:
 
-Item `Pen` is stocked in Nos, but purchased in Box. Hence we will make Purchase Order for Pen in Box.
+รายการ 'ปากกา' มีสต็อกใน Nos แต่ซื้อในกล่อง ดังนั้นเราจะทำการสั่งซื้อปากกาในกล่อง
 
-#### Step 1: Edit UoM in the Purchase Order
+#### ขั้นตอนที่ 1: แก้ไข UoM ในใบสั่งซื้อ
 
-In the Purchase Order, you will find two UoM fied.
+ในใบสั่งซื้อ คุณจะพบ UoM สองรายการ
 
 - UoM
-- Stock UoM
+- สต๊อก UoM
 
-In both the fields, default UoM of an item will be fetched by default. You should edit UoM field, and select Purchase UoM (Box in this case). Updating Purchase UoM is mainly for the reference of the supplier. In the print format, you will see item qty in the Purchase UoM.
+ในทั้งสองฟิลด์ UoM เริ่มต้นของรายการจะถูกดึงข้อมูลตามค่าเริ่มต้น คุณควรแก้ไขฟิลด์ UoM และเลือก ซื้อ UoM (กล่องในกรณีนี้) การอัปเดต UoM การซื้อเป็นหลักสำหรับการอ้างอิงของผู้จัดหา ในรูปแบบการพิมพ์ คุณจะเห็นจำนวนรายการใน UoM ซื้อ
 
 <img alt="Item Purchase UoM" class="screenshot" src="{{docs_base_url}}/assets/img/articles/editing-uom-in-po.gif">
 
-#### Step 2: Update UoM Conversion Factors
+#### ขั้นตอนที่ 2: อัปเดตปัจจัยการแปลง UoM
 
-In one Box, if you get 20 Nos. of Pen, UoM Conversion Factor would be 20.
+ในกล่องเดียว ถ้าคุณได้ปากกา 20 Nos UoM ปัจจัยการแปลง จะเท่ากับ 20
 
 <img alt="Item Conversion Factor" class="screenshot" src="{{docs_base_url}}/assets/img/articles/po-conversion-factor.png">
 
-Based on the Qty and Conversion Factor, qty will be calculated in the Stock UoM of an item. If you purchase just one Box, then Qty in the stock UoM will be set as 20.
+ตามจำนวนและปัจจัยการแปลง จำนวนจะถูกคำนวณใน UoM ของสต็อคของรายการ หากคุณซื้อเพียงกล่องเดียว จำนวนในสต็อค UoM จะถูกตั้งค่าเป็น 20
 
 <img alt="Purchase Qty in Default UoM" class="screenshot" src="{{docs_base_url}}/assets/img/articles/po-qty-in-stock-uom.png">
 
-### Stock Ledger Posting
+### การลงรายการบัญชีแยกประเภทหุ้น
 
-Irrespective of the Purchase UoM selected, stock ledger posting will be done in the Default UoM of an item. Hence you should ensure that conversion factor is entered correctly while purchasing item in different UoM.
+โดยไม่คำนึงถึง UoM การซื้อที่เลือก การผ่านรายการบัญชีแยกประเภทจะทำใน UoM เริ่มต้นของสินค้า ดังนั้นคุณควรตรวจสอบให้แน่ใจว่าได้ป้อนปัจจัยการแปลงอย่างถูกต้องในขณะที่ซื้อสินค้าใน UoM ที่แตกต่างกัน
 
 <img alt="Print Format in Purchase UoM" class="screenshot" src="{{docs_base_url}}/assets/img/articles/po-stock-uom-ledger.png">
 
-### Set Conversion Factor in Item
+### ตั้งค่าปัจจัยการแปลงในรายการ
 
-In the Item master, under Purchase section, you can list all the possible purchase UoM of an item, with its UoM Conversion Factor.
+ในหลักรายการ ภายใต้ส่วนการซื้อ คุณสามารถแสดงรายการ UoM การซื้อที่เป็นไปได้ทั้งหมดของรายการด้วยปัจจัยการแปลง UoM
 
 <img alt="Purchase UoM master" class="screenshot" src="{{docs_base_url}}/assets/img/articles/item-purchase-uom-conversion.png">
 

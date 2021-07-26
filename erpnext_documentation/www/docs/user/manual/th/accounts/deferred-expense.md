@@ -1,56 +1,56 @@
-# Deferred Expense
+# ค่าใช้จ่ายรอตัดบัญชี
 
-**Deferred expense is a cost that has already been incurred, but which has not yet been consumed.**
+**ค่าใช้จ่ายรอตัดบัญชีเป็นต้นทุนที่เกิดขึ้นแล้ว แต่ยังไม่ได้ใช้**
 
-The cost is recorded as an asset until such time as the underlying goods or services are consumed; at that point, the cost is charged to expense. A Deferred Expense is initially recorded as an asset, so that it appears on the balance sheet (usually as a Current Asset, since it is not used as of now and will probably be consumed within one year).
+ต้นทุนจะถูกบันทึกเป็นสินทรัพย์จนกว่าจะมีการบริโภคสินค้าหรือบริการอ้างอิง ณ จุดนั้น ค่าใช้จ่ายจะถูกเรียกเก็บเป็นค่าใช้จ่าย ค่าใช้จ่ายรอตัดบัญชีในขั้นต้นจะถูกบันทึกเป็นสินทรัพย์ เพื่อให้ปรากฏในงบดุล (โดยปกติจะเป็นสินทรัพย์หมุนเวียน เนื่องจากไม่ได้ใช้งาน ณ ตอนนี้ และอาจใช้หมดภายในหนึ่งปี)
 
-## 1. Configuring Deferred Accounting
+## 1. การกำหนดค่าการบัญชีรอตัดบัญชี
 
 > Introduced in Version 13
 
-Before you start using deferred accounting you should be aware of the below settings which will give you more control over how you manage your deferred accounting
+ก่อนที่คุณจะเริ่มใช้บัญชีรอตัดบัญชี คุณควรทราบการตั้งค่าด้านล่างซึ่งจะช่วยให้คุณควบคุมวิธีจัดการบัญชีรอตัดบัญชีได้มากขึ้น
 
 <img class="screenshot" alt="Deferred Accounting Settings" src="{{docs_base_url}}/assets/img/accounts/deferred-accounting-settings.png">
 
-1. **Automatically Process Deferred Accounting Entry:** This setting is enabled by default. In case you don't want the deferred accounting entries to be posted automatically, you can disable this setting. If this setting is disabled, deferred accounting will have to be processed manually using [Process Deferred Accounting](/docs/user/manual/en/accounts/process-deferred-accounting)
+1. **รายการบัญชีรอตัดบัญชีโดยอัตโนมัติ:** การตั้งค่านี้เปิดใช้งานโดยค่าเริ่มต้น ในกรณีที่คุณไม่ต้องการให้ลงรายการบัญชีที่รอการตัดบัญชีโดยอัตโนมัติ คุณสามารถปิดใช้งานการตั้งค่านี้ได้ หากการตั้งค่านี้ถูกปิดใช้งาน จะต้องดำเนินการบัญชีรอตัดบัญชีด้วยตนเองโดยใช้ [การบัญชีที่รอการตัดบัญชี](/docs/user/manual/th/accounts/process-deferred-accounting)
 
-1. **Book Deferred Entries Based On:** Deferred expense amount can be booked based on two criteria. The default option here is "Days". If "Days" is selected, the deferred expense amount will be booked based on the number of days in each month and if "Months" is selected then it will be booked based on the number of months. **For Eg:** If "Days" is selected and $12000 expense has to be deferred over a period of 12 months, then $986.30 will be for the month having 30 days and $1019.17 will be booked for the month having 31 days. If "Months" is selected, $1000 deferred expense will be booked each month irrespective of the number of days in a month.
+1. **รายการรอตัดบัญชีขึ้นอยู่กับ:** จำนวนเงินค่าใช้จ่ายรอการตัดบัญชีสามารถจองได้โดยใช้เกณฑ์สองข้อ ตัวเลือกเริ่มต้นที่นี่คือ "วัน" หากเลือก "วัน" ยอดค่าใช้จ่ายรอตัดบัญชีจะถูกจองตามจำนวนวันในแต่ละเดือน และหากเลือก "เดือน" จะถูกจองตามจำนวนเดือน **ตัวอย่างเช่น** หากเลือก "วัน" และค่าใช้จ่าย $12,000 จะถูกเลื่อนออกไปในช่วง 12 เดือน ดังนั้น $986.30 จะเป็นเดือนที่มี 30 วัน และ $1019.17 จะถูกจองสำหรับเดือนที่มี 31 วัน หากเลือก "เดือน" ค่าใช้จ่ายรอการตัดบัญชี $1,000 จะถูกจองในแต่ละเดือนโดยไม่คำนึงถึงจำนวนวันในหนึ่งเดือน
 
-1. **Book Deferred Entries Via Journal Entry:** By default Ledger Entries are posted directly to book deferred expense against an invoice. In order to book this deferred amount posting via Journal Entry, this option can be enabled.
+1. **รายการรอตัดบัญชีผ่านรายการบันทึกประจำวัน:** โดยค่าเริ่มต้น รายการบัญชีแยกประเภทจะถูกลงรายการบัญชีโดยตรงเพื่อจองค่าใช้จ่ายรอตัดบัญชีกับใบแจ้งหนี้ ในการจองจำนวนเงินที่รอการตัดบัญชีผ่านรายการบันทึกประจำวัน ตัวเลือกนี้สามารถเปิดใช้งานได้
 
-1. **Submit Journal Entries:** This option is applicable only if deferred accounting entries are posted via Journal Entry. By default, the Journal Entries for deferred posting are kept in Draft state and a user has to verify those entries and submit them manually. If this option is enabled, Journal Entries will be automatically submitted without any user intervention.
+1. **ส่งรายการบันทึกประจำวัน:** ตัวเลือกนี้ใช้ได้เฉพาะเมื่อมีการผ่านรายการบัญชีรอตัดบัญชีผ่านรายการบันทึกประจำวัน โดยค่าเริ่มต้น รายการบันทึกประจำวันสำหรับการผ่านรายการรอการตัดบัญชีจะถูกเก็บไว้ในสถานะร่างและผู้ใช้ต้องตรวจสอบรายการเหล่านั้นและส่งด้วยตนเอง หากเปิดใช้งานตัวเลือกนี้ รายการบันทึกประจำวันจะถูกส่งโดยอัตโนมัติโดยที่ผู้ใช้ไม่ต้องดำเนินการใดๆ
 
-## 2. How to use Deferred Expense
+## 2. วิธีการใช้รายจ่ายรอตัดบัญชี
 
-As an example of a Deferred Expense, Unico Plastics pays $10,000 in April for its May rent. It defers this cost at the point of payment (in April) in the prepaid rent asset account. In May, Unico Plastics has now consumed the prepaid asset, so it credits the prepaid rent asset account and debits the rent expense account.
+ตัวอย่างของค่าใช้จ่ายรอตัดบัญชี Unico Plastics จ่าย 10,000 ดอลลาร์ในเดือนเมษายนสำหรับค่าเช่าในเดือนพฤษภาคม โดยจะชะลอค่าใช้จ่ายนี้ ณ จุดชำระเงิน (ในเดือนเมษายน) ในบัญชีทรัพย์สินเช่าแบบชำระล่วงหน้า ในเดือนพฤษภาคม Unico Plastics ได้ใช้สินทรัพย์ที่จ่ายล่วงหน้าไปแล้ว ดังนั้นจึงให้เครดิตบัญชีทรัพย์สินเช่าแบบชำระล่วงหน้าและหักบัญชีค่าเช่า
 
-Other examples of Deferred Expenses are:
+ตัวอย่างอื่นๆ ของค่าใช้จ่ายรอตัดบัญชี ได้แก่
 
-* Interest costs that are capitalized as part of a fixed asset for which the costs were incurred
-* Insurance paid in advance for coverage in future months
-* The cost of a fixed asset that is charged to expense over its useful life in the form of depreciation
-* The cost incurred to register the issuance of a debt instrument
-* The cost of an intangible asset that is charged to expense over its useful life as amortization
-* For an Internet Subscription, the amount is paid upfront and service is delivered every month. So it is Deferred Expense for the Customer.
+* ต้นทุนดอกเบี้ยที่บันทึกเป็นส่วนหนึ่งของสินทรัพย์ถาวรที่เกิดต้นทุนขึ้น
+* ประกันจ่ายล่วงหน้าความคุ้มครองในเดือนต่อๆ ไป
+* ต้นทุนของสินทรัพย์ถาวรที่บันทึกเป็นค่าใช้จ่ายตลอดอายุการให้ประโยชน์ในรูปของค่าเสื่อมราคา
+* ค่าใช้จ่ายในการจดทะเบียนการออกตราสารหนี้
+* ต้นทุนของสินทรัพย์ไม่มีตัวตนที่บันทึกเป็นค่าใช้จ่ายตลอดอายุการให้ประโยชน์เป็นค่าตัดจำหน่าย
+* สำหรับการสมัครสมาชิกทางอินเทอร์เน็ต จำนวนเงินจะจ่ายล่วงหน้าและมีบริการจัดส่งทุกเดือน จึงเป็นค่าใช้จ่ายรอตัดบัญชีสำหรับลูกค้า
 
-Following is how you can configure Deferred Expense accounting in ERPNext to automate the process.
+วิธีที่คุณสามารถกำหนดค่าการบัญชีค่าใช้จ่ายรอตัดบัญชีใน ERPNext เพื่อทำให้กระบวนการเป็นไปโดยอัตโนมัติ
 
-### 2.1 Item
+### 2.1 สินค้า
 
-In the Item master, under Deferred Expense section, check field **Enable Deferred Expense**. In this section, you can also select a Deferred Expense account (Asset Account, preferably Current Asset) for this particular item and no. of months.
+ในรายการสินค้าหลักภายใต้ส่วนค่าใช้จ่ายรอการตัดบัญชีข้อมูลการตรวจสอบการเปิดใช้งานรอการตัดบัญชีค่าใช้จ่าย ในส่วนนี้ คุณยังสามารถเลือกบัญชีรายจ่ายรอตัดบัญชี (บัญชีสินทรัพย์ ควรใช้สินทรัพย์หมุนเวียน) สำหรับรายการนี้และหมายเลข ของเดือน
 
 <img class="screenshot" alt="Item - Deferred Revenue" src="{{docs_base_url}}/assets/img/accounts/deferred-item-expense.png">
 
 
-### 2.2 Purchase Invoice
+### 2.2 ใบแจ้งหนี้การซื้อ
 
-On creation of Purchase Invoice for the Deferred Expense Item, instead of posting in the Expense Account, Deferred Expense account (Asset account) is Credited by the purchase amount. Let's consider a simple example of an Internet subscription here:
+ในการสร้างใบแจ้งหนี้การซื้อ สำหรับรายการค่าใช้จ่ายรอตัดบัญชี แทนที่จะผ่านรายการในบัญชีค่าใช้จ่าย บัญชีค่าใช้จ่ายรอตัดบัญชี (บัญชีสินทรัพย์) จะได้รับเครดิตตามยอดซื้อ ลองพิจารณาตัวอย่างง่ายๆ ของการสมัครสมาชิกทางอินเทอร์เน็ตที่นี่:
 
 <img class="screenshot" alt="Item - Deferred Revenue" src="{{docs_base_url}}/assets/img/accounts/deferred-purchase-invoice.gif">
 
-### 2.3 Journal Entry
+### 2.3 รายการบันทึกประจำวัน
 
-Based on the From Date and To Date set in the Purchase Invoice Item table, Journal Entries are created automatically at the end of each month. It debits the value from Deferred Expense account and credits Expense Account selected for an Item in the Purchase Invoice.
+ตามวันที่เริ่มต้นและวันที่สิ้นสุดที่กำหนดไว้ในตารางรายการใบกำกับสินค้าที่ซื้อ รายการบันทึกประจำวันจะถูกสร้างขึ้นโดยอัตโนมัติทุกสิ้นเดือน โดยจะหักค่าจากบัญชีค่าใช้จ่ายรอตัดบัญชีและเครดิตบัญชีค่าใช้จ่ายที่เลือกสำหรับรายการในใบแจ้งหนี้การซื้อ
 
 
 {next}

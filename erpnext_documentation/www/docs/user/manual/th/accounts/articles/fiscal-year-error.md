@@ -1,35 +1,35 @@
 <!-- add-breadcrumbs -->
-# Fixing Fiscal Year Error
+# แก้ไขข้อผิดพลาดปีงบประมาณ
 
-While creating any entry, system validates if dates (like Posting Date, Transaction Date etc.) belongs to Fiscal Year selected. If not, system through an error message saying:
+ขณะสร้างรายการใดๆ ระบบจะตรวจสอบว่าวันที่ (เช่น วันที่ลงรายการบัญชี วันที่ทำธุรกรรม ฯลฯ) เป็นของปีบัญชีที่เลือก ถ้าไม่เช่นนั้น ระบบจะผ่านข้อความแสดงข้อผิดพลาดว่า:
 
-`Date ##-##-#### not in fiscal year`
+`วันที่ ##-##-#### ไม่อยู่ในปีงบประมาณ`
 
-You are more likely to receive this error message if your Fiscal Year has changes, but new Fiscal Year still not set a default. To ensure new Fiscal Year is auto updated in the transactions, you should setup your master as instructed below.
+คุณมักจะได้รับข้อความแสดงข้อผิดพลาดนี้หากปีงบประมาณของคุณมีการเปลี่ยนแปลง แต่ปีบัญชีใหม่ยังไม่ได้ตั้งค่าเริ่มต้น เพื่อให้แน่ใจว่าปีบัญชีใหม่มีการอัปเดตอัตโนมัติในธุรกรรม คุณควรตั้งค่าหลักของคุณตามคำแนะนำด้านล่าง
 
-#### Create New Fiscal Year
+#### สร้างปีบัญชีใหม่
 
-Only User with System Manager's Role Assigned has permission to create new Fiscal Year. To create new Fiscal Year, go to:
+เฉพาะผู้ใช้ที่ได้รับมอบหมายบทบาทของผู้จัดการระบบเท่านั้นที่มีสิทธิ์สร้างปีงบประมาณใหม่ หากต้องการสร้างปีบัญชีใหม่ ให้ไปที่:
 
-`Accounts > Setup > Fiscal Year`
+`บัญชี > ตั้งค่า > ปีงบประมาณ`
 
-Read [Fiscal Year](/docs/user/manual/en/accounts/fiscal-year) to learn more.
+อ่าน [ปีงบประมาณ](/docs/user/manual/th/accounts/fiscal-year) เพื่อทราบข้อมูลเพิ่มเติม
+#### ตั้งปีบัญชีเป็นค่าเริ่มต้น
 
-#### Set Fiscal Year as Default
-
-After Fiscal Year is saved, you will find option to set that Fiscal year as Default.
+หลังจากบันทึกปีบัญชีแล้ว คุณจะพบตัวเลือกในการตั้งปีบัญชีนั้นเป็นค่าเริ่มต้น
 
 <img alt="Debit Credit Not Equal" class="screenshot" src="{{docs_base_url}}/assets/img/articles/fiscal-year-error-1.png">
 
-Default Fiscal Year will be updated in the Global Default setting as well. You can manually update Default Fiscal Year from:
 
-`Setup > Settings > Global Default`
+ปีงบประมาณเริ่มต้นจะได้รับการอัปเดตในการตั้งค่าเริ่มต้นทั่วโลกเช่นกัน คุณสามารถอัปเดตปีบัญชีเริ่มต้นได้ด้วยตนเองจาก:
+
+`การตั้งค่า > การตั้งค่า > Global Default`
 
 <img alt="Debit Credit Not Equal" class="screenshot" src="{{docs_base_url}}/assets/img/articles/fiscal-year-error-2.png">
 
-Save Global Default, and Reload your ERPNext account. Then, default Fiscal Year will be auto-updated in your transactions.
+บันทึก Global Default และโหลดบัญชี ERPNext ของคุณใหม่ จากนั้น ปีบัญชีเริ่มต้นจะได้รับการอัปเดตอัตโนมัติในธุรกรรมของคุณ
 
-Note: In transactions, you can manually select required Fiscal Year, from More Info section.
+หมายเหตุ: ในธุรกรรม คุณสามารถเลือกปีงบประมาณที่ต้องการได้ด้วยตนเอง จากส่วนข้อมูลเพิ่มเติม
 
 <!-- markdown -->
 

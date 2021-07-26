@@ -1,100 +1,100 @@
 <!-- add-breadcrumbs -->
-# How To Customise Cash Flow Report
+# วิธีปรับแต่งรายงานกระแสเงินสด
 
-As your chart of accounts begins to get more complex and reporting standards change and evolve, the default cash flow 
-report might no longer suffice. This is because ERPNext might not be able to accurately guess the classification and 
-purpose of all accounts in the charts of accounts. Another gripe you might have is the inability to adjust the report 
-format to fit your needs.
+เมื่อผังบัญชีของคุณเริ่มมีความซับซ้อนมากขึ้น มาตรฐานการรายงานมีการเปลี่ยนแปลงและพัฒนา กระแสเงินสดเริ่มต้น
+รายงานอาจไม่เพียงพออีกต่อไป เนื่องจาก ERPNext อาจไม่สามารถคาดเดาการจัดประเภทได้อย่างถูกต้องและ
+วัตถุประสงค์ของบัญชีทั้งหมดในผังบัญชี ปัญหาอีกอย่างที่คุณอาจมีคือการไม่สามารถปรับรายงานได้
+รูปแบบให้เหมาะสมกับความต้องการของคุณ
 
-This will no longer be a problem because ERPNext now allows users to customise the cash flow report.
+สิ่งนี้จะไม่ใช่ปัญหาอีกต่อไปเพราะตอนนี้ ERPNext อนุญาตให้ผู้ใช้ปรับแต่งรายงานกระแสเงินสดได้
 
 
-## Technical Overview
-Customisation is made possible by the introduction of two new doctypes - Cash Flow Mapper and Cash Flow Mapping. Both 
-doctypes contain the information required to generate a cash flow report.
+## ภาพรวมทางเทคนิค
+การปรับแต่งทำได้โดยการแนะนำเอกสารใหม่สองประเภท - Cash Flow Mapper และ Cash Flow Mapping 
+doctypes ทั้งคู่ข้อมูลที่จำเป็นในการสร้างรายงานกระแสเงินสด
 
-Cash Flow Mapping shows how accounts in your charts of accounts map to a line item in your cash flow report while 
-Cash Flow Mapper gets all the Cash Flow Mappings that relate to the three sections of a cash flow statement.
+Cash Flow Mapping แสดงให้เห็นว่าบัญชีในผังบัญชีของคุณจับคู่กับรายการในรายงานกระแสเงินสดของคุณอย่างไรในขณะที่
+Cash Flow Mapper รับการแมปกระแสเงินสดทั้งหมดที่เกี่ยวข้องกับสามส่วนของงบกระแสเงินสด
 
-With this, you generate detailed cash flow reports to your requirements. This might not make a lot of sense but it will 
-after we go through an example.
+ด้วยวิธีนี้ คุณจะสร้างรายงานกระแสเงินสดโดยละเอียดตามความต้องการของคุณ สิ่งนี้อาจไม่สมเหตุสมผลมากนัก แต่จะ
+หลังจากที่เราผ่านตัวอย่าง
 
-## Example
-### Background information
-Let's assume we have a fictitious company for which we want to generate a cash flow report.
-This is what the cash flow report looks like at the moment:
+## ตัวอย่าง
+### ข้อมูลพื้นฐาน
+สมมติว่าเรามีบริษัทปลอมซึ่งเราต้องการสร้างรายงานกระแสเงินสด
+นี่คือลักษณะของรายงานกระแสเงินสดในขณะนี้:
 <img alt="Default cash flow report" class="screenshot" src="{{docs_base_url}}/assets/img/articles/default-cash-flow-report.png">
 
-We don't like the report for the following reasons:
-- The reporting format is too scant.
-- The 'Net Cash From Operations' figure is wrong
+เราไม่ชอบรายงานด้วยเหตุผลดังต่อไปนี้:
+- รูปแบบการรายงานมีน้อยเกินไป
+- ตัวเลข 'เงินสดสุทธิจากการดำเนินงาน' ไม่ถูกต้อง
 
-### Customisation Process
+### กระบวนการปรับแต่ง
 
-We wants the Cash Flow Report to look something similar to the format in the images below:
+เราต้องการให้รายงานกระแสเงินสดมีลักษณะคล้ายกับรูปแบบในภาพด้านล่าง:
 <img alt="cash flow format 1" class="screenshot" src="{{docs_base_url}}/assets/img/articles/format-1.png">
 <img alt="cash flow format 1" class="screenshot" src="{{docs_base_url}}/assets/img/articles/format-2.png">
 
-#### Activate Customised Cash Flow Report
-Do this in Accounts Settings by checking the 'Use Custom Cash Flow Format' checkbox. This will cause ERPNext to only 
-use your custom format for cash flow reports.
+#### เปิดใช้งานรายงานกระแสเงินสดที่กำหนดเอง
+ทำสิ่งนี้ในการตั้งค่าบัญชีโดยทำเครื่องหมายที่ช่อง 'ใช้รูปแบบกระแสเงินสดที่กำหนดเอง' ซึ่งจะทำให้ ERPNext เป็นเท่านั้น
+ใช้รูปแบบที่กำหนดเองของคุณสำหรับรายงานกระแสเงินสด
 
-After doing that, your cash flow report should look like this:
+หลังจากทำเช่นนั้น รายงานกระแสเงินสดของคุณควรมีลักษณะดังนี้:
 <img alt="custom cash flow statement" class="screenshot" src="{{docs_base_url}}/assets/img/articles/no-mappers.png">
 
-Move to the next section to build the report.
+ย้ายไปยังส่วนถัดไปเพื่อสร้างรายงาน
 
-#### Create Cash Flow Mappings
-For each line, we need to create a Cash Flow Mapping document to represent it.
+#### สร้างการแมปกระแสเงินสด
+สำหรับแต่ละบรรทัด เราจำเป็นต้องสร้างเอกสารการทำแผนที่กระแสเงินสดเพื่อเป็นตัวแทน
 
 <img alt="new cash flow mapping form" class="screenshot" src="{{docs_base_url}}/assets/img/articles/new-cash-flow-mapping.png">
 
-You can think of the Cash Flow Mapping as a representation of each line in the cash flow report. A Cash Flow Mapping 
-is a child of a Cash Flow Mapper which will be explained later. 
+คุณสามารถนึกถึงการจับคู่กระแสเงินสดเพื่อเป็นตัวแทนของแต่ละบรรทัดในรายงานกระแสเงินสด การทำแผนที่กระแสเงินสด
+เป็นลูกของ Cash Flow Mapper ซึ่งจะอธิบายในภายหลัง
 
-Let's start by creating Cash Flow Mappings that will represent the add back of non cash expenses already recodgnised in
-the Profit or Loss statement. We want them to appear on the cash statement as:
-- Income taxes recognised in profit or loss
-- Finance costs recognised in profit or loss
-- Depreciation of non-current assets
+เริ่มต้นด้วยการสร้างการแมปกระแสเงินสดที่จะแสดงถึงการบวกกลับของค่าใช้จ่ายที่ไม่ใช่เงินสดที่รับรู้แล้วใน
+งบกำไรขาดทุน เราต้องการให้ปรากฏในใบแจ้งยอดเงินสดเป็น:
+- ภาษีเงินได้รับรู้ในกำไรหรือขาดทุน
+- ต้นทุนทางการเงินรับรู้ในกำไรหรือขาดทุน
+- ค่าเสื่อมราคาของสินทรัพย์ไม่หมุนเวียน
 
-Start by opening a new Cash Flow Mapping form.
+เริ่มต้นด้วยการเปิดแบบฟอร์มการแมปกระแสเงินสดใหม่
 
-The fields in the Cash Flow Mapping doctype are:
-- **Name**: This something to identify this document. Name it something related to the label
-- **Label**: This is what will show in the cash flow statement
-- **Accounts**: This table contains all the accounts which this line relates to.
+ฟิลด์ในประเภทเอกสารการทำแผนที่กระแสเงินสดคือ:
+- **ชื่อ**: สิ่งนี้เพื่อระบุเอกสารนี้ ตั้งชื่อสิ่งที่เกี่ยวข้องกับฉลาก
+- **ป้ายกำกับ**: นี่คือสิ่งที่จะแสดงในงบกระแสเงินสด
+- **บัญชี**: ตารางนี้มีบัญชีทั้งหมดที่เกี่ยวข้องกับบรรทัดนี้
 
-With this information, let's go ahead and create the Cash Flow Mapping Document for the line 'Income taxes recognised in profit or loss'
+ด้วยข้อมูลนี้ ให้ไปข้างหน้าและสร้างเอกสารการแมปกระแสเงินสดสำหรับบรรทัด 'ภาษีเงินได้รับรู้ในกำไรหรือขาดทุน'
 
 <img alt="custom cash flow statement" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cash-flow-mapping-1.png">
 
-I have named it 'Income Tax Charge' and given it a label 'Income taxes recognised in profit or loss'. We want this 
-line to reflect income tax charges from our profit or loss statement. The account where this happens in our chart 
-of account is named 'Income Taxes' (an expense) so I have added 'Income Taxes' into the accounts table. If you have 
-more accounts representing income tax expenses, you should add all of them here.
+ฉันได้ตั้งชื่อว่า 'การเรียกเก็บภาษีเงินได้' และกำหนดป้ายกำกับว่า 'ภาษีเงินได้รับรู้ในกำไรหรือขาดทุน' เราต้องการสิ่งนี้
+บรรทัดเพื่อแสดงการเรียกเก็บภาษีเงินได้จากงบกำไรขาดทุนของเรา บัญชีที่เกิดเหตุการณ์นี้ในแผนภูมิของเรา
+ของบัญชีชื่อ 'ภาษีเงินได้' (ค่าใช้จ่าย) ดังนั้นฉันจึงเพิ่ม 'ภาษีเงินได้' ลงในตารางบัญชี ถ้าคุณมี
+บัญชีเพิ่มเติมที่แสดงค่าใช้จ่ายภาษีเงินได้ คุณควรเพิ่มทั้งหมดที่นี่
 
-Because Income Tax expense needs to be adjusted further in the cash flow statement, check the 'Is Income Tax Expense' 
-checkbox. This is what will help ERPNext properly calculate the adjustments to be made.
+เนื่องจากต้องมีการปรับค่าใช้จ่ายภาษีเงินได้เพิ่มเติมในงบกระแสเงินสด ให้ตรวจสอบ 'เป็นค่าใช้จ่ายภาษีเงินได้'
+ช่องทำเครื่องหมาย นี่คือสิ่งที่จะช่วยให้ ERPNext คำนวณการปรับที่ต้องทำได้อย่างถูกต้อง
 
-*For best results, let parent accounts have child accounts that have the same treatment for cash flow reporting 
-purposes because ERPNext will calculate net change of all children accounts in a situation where the selected account 
-is a parent account.* 
+*เพื่อผลลัพธ์ที่ดีที่สุด ให้บัญชีหลักมีบัญชีย่อยที่ใช้การรายงานกระแสเงินสดเหมือนกัน
+วัตถุประสงค์เพราะ ERPNext จะคำนวณการเปลี่ยนแปลงสุทธิของบัญชีย่อยทั้งหมดในสถานการณ์ที่บัญชีที่เลือก
+เป็นบัญชีหลัก*
 
-In the same way, I have created for the remaining two mappings.
+ในทำนองเดียวกัน ฉันได้สร้างการแมปสองรายการที่เหลือ
 
 <img alt="custom cash flow statement" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cash-flow-mapping-2.png">
 
-Finance costs also need to be adjusted so make sure to check the 'Is Finance Cost' checkbox.
+ต้นทุนทางการเงินยังต้องได้รับการปรับ ดังนั้นตรวจสอบให้แน่ใจว่าได้เลือกช่องกาเครื่องหมาย 'เป็นต้นทุนทางการเงิน'
 
 <img alt="custom cash flow statement" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cash-flow-mapping-3.png">
 
-Next let's add Cash Flow Mapping for items that show changes in working capital:
-- Increase/(decrease) in other liabilities
-- (Increase)/decrease in trade and other receivables
-- Increase/(decrease) in trade and other payables
-- VAT payable
-- (Increase)/decrease in inventory
+ต่อไป มาเพิ่ม Cash Flow Mapping สำหรับรายการที่แสดงการเปลี่ยนแปลงของเงินทุนหมุนเวียน:
+- เพิ่มขึ้น/(ลดลง) ในหนี้สินอื่น
+- (เพิ่มขึ้น)/ลดลงในการค้าและลูกหนี้อื่น
+- เพิ่มขึ้น/(ลดลง) ในการค้าและเจ้าหนี้อื่น
+- ภาษีมูลค่าเพิ่มที่ต้องชำระ
+- (เพิ่มขึ้น)/ลดลงในสินค้าคงคลัง
 
 <img alt="custom cash flow statement" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cash-flow-mapping-4.png">
 
@@ -106,44 +106,44 @@ Next let's add Cash Flow Mapping for items that show changes in working capital:
 
 <img alt="custom cash flow statement" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cash-flow-mapping-8.png">
 
-Don't forget to tell ERPNext that these mappings represent changes in working capital by checking the 'Is Working 
-Capital' checkbox.
+ต้องบอก ERPNext ว่าการจับคู่เหล่านี้แสดงถึงการเปลี่ยนแปลงในเงินทุนหมุนเวียนโดยทำเครื่องหมายที่ 'กำลังทำงานอยู่
+ช่องทำเครื่องหมาย 'ทุน'
 
-At this point we have created all the mappings necessary for the Operating Activities section of our cash flow 
-statement. However, ERPNext doesn't know that yet until we create Cash Flow Mapper documents. We'll create Cash Flow 
-Mapper documents next.
+ณ จุดนี้ เราได้สร้างการแมปทั้งหมดที่จำเป็นสำหรับส่วนกิจกรรมการดำเนินงานของกระแสเงินสดของเรา
+คำให้การ. อย่างไรก็ตาม ERPNext ไม่ทราบจนกว่าเราจะสร้างเอกสาร Cash Flow Mapper เราจะสร้างกระแสเงินสด
+เอกสาร Mapper ต่อไป
 
 
-#### Create Cash Flow Mappers
-Cash Flow Mappers represents the sections of the cash flow statement. A standard cash flow statement has only three 
-sections so when you view the Cash Flow Mapper list, you will that three have been created for you named:
-- Operating Activities
-- Financing Activities 
-- Investing Activities 
+#### สร้างแผนที่กระแสเงินสด
+ตัวแม็ปกระแสเงินสดแสดงถึงส่วนของงบกระแสเงินสด งบกระแสเงินสดมาตรฐานมีเพียงสาม
+ดังนั้นเมื่อคุณดูรายการ Cash Flow Mapper คุณจะมีการสร้างสามรายการสำหรับคุณ:
+- กิจกรรมการดำเนินงาน
+- กิจกรรมจัดหาเงิน
+- กิจกรรมการลงทุน
 
-You will not be able to add or remove any of them but they are editable and can be renamed.
+คุณจะไม่สามารถเพิ่มหรือลบรายการใดๆ ได้ แต่สามารถแก้ไขได้และเปลี่ยนชื่อได้
 <img alt="cash flow mapper list" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cash-flow-mapper-2.png">
 
 
-Open the Operating Activities Cash Flow Mapper so we can add the Cash Flow Mappings we have created.
+เปิด Cash flow Mapper ของกิจกรรมการดำเนินงาน เพื่อให้เราสามารถเพิ่มการแมปกระแสเงินสดที่เราสร้างขึ้นได้
 
 
-- **Section Name**: This is the heading of the section.
-- **Section Leader**: This is the first sub-header immediately after the profit figure. Relates only to Operating 
-Activities Cash Flow Mapper
-- **Section Subtotal**: This is the label for subtotal in the cash flow statement section. Relates only to Operating 
-Activities Cash Flow Mapper
-- **Section Footer**: This is the label for the total in the cash flow statement section.
-- **Mapping**: This table contains all the Cash Flow Mappings related to the Cash Flow Mapper.
+- **ชื่อส่วน**: นี่คือส่วนหัวของส่วน
+- **หัวหน้าส่วน**: นี่คือหัวข้อย่อยแรกทันทีหลังจากตัวเลขกำไร เกี่ยวข้องกับการดำเนินงานเท่านั้น
+ตัวทำแผนที่กระแสเงินสดของกิจกรรม
+- **ผลรวมย่อยของส่วน**: นี่คือป้ายกำกับสำหรับยอดรวมย่อยในส่วนงบกระแสเงินสด เกี่ยวข้องกับการดำเนินงานเท่านั้น
+ตัวทำแผนที่กระแสเงินสดของกิจกรรม
+- **ส่วนท้ายของส่วน**: นี่คือป้ายกำกับสำหรับยอดรวมในส่วนของงบกระแสเงินสด
+- **การทำแผนที่**: ตารางนี้ประกอบด้วยการแมปกระแสเงินสดทั้งหมดที่เกี่ยวข้องกับการทำแผนที่กระแสเงินสด
 
-Now add all the Cash Flow Mappings you have created and Save. You should have something like this:
+ตอนนี้เพิ่มการแมปกระแสเงินสดทั้งหมดที่คุณสร้างและบันทึก คุณควรมีสิ่งนี้:
 <img alt="cash flow mapper for operating activities" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cash-flow-mapper-4.png">
 
- Refresh the cash flow statement and view the changes.
+ รีเฟรชงบกระแสเงินสดและดูการเปลี่ยนแปลง
 <img alt="updated cash flow report" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cash-flow-mapper-3.png">
 
-Looks close to our requirements but we are not done yet. Create new mappings for 'Investing Activities' and 'Financing 
-Activities' sections of the cash flow statement.
+ตรวจสอบความต้องการของเราแต่เรายังไม่เสร็จ สร้างการแมปใหม่สำหรับ 'กิจกรรมการลงทุน' และ 'การเงิน
+ส่วนกิจกรรมของงบกระแสเงินสด
 
 <img alt="cash flow mapping" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cash-flow-mapping-9.png">
 
@@ -153,5 +153,5 @@ Activities' sections of the cash flow statement.
 
 <img alt="cash flow mapper for operating activities" class="screenshot" src="{{docs_base_url}}/assets/img/articles/cash-flow-mapper-6.png">
 
-Here's what our cash flow statement now looks like:
+นี่คือลักษณะที่งบกระแสเงินสดของเราตอนนี้:
 <img alt="final cash flow statement" class="screenshot" src="{{docs_base_url}}/assets/img/articles/final-cash-flow.png">

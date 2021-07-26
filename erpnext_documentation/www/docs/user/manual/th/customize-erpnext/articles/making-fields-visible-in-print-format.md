@@ -1,28 +1,28 @@
 <!-- add-breadcrumbs -->
-# Customizing Field Visibility in Print Format
+# การปรับแต่งการมองเห็นฟิลด์ในรูปแบบการพิมพ์
 
-Each transaction has a Standard Print Format. In the Standard format, only certain fields are displayed by default. If a user wants to display a particular field in the Standard format, it can be customized by using Customize Form tool.
+แต่ละรายการมีรูปแบบการพิมพ์มาตรฐาน ในรูปแบบมาตรฐาน จะแสดงเฉพาะบางฟิลด์ตามค่าเริ่มต้น ถ้าผู้ใช้ต้องการแสดงฟิลด์ใดฟิลด์หนึ่งในรูปแบบมาตรฐาน สามารถปรับแต่งได้โดยใช้เครื่องมือกำหนดฟอร์มเอง
 
-Let's assume in the Sales order, we need to make Shipping Address field visible in the standard print format.
+สมมติว่าในใบสั่งขาย เราจำเป็นต้องทำให้ฟิลด์ที่อยู่สำหรับจัดส่งมองเห็นได้ในรูปแบบการพิมพ์มาตรฐาน
 
-#### Step 1: Go to Customize Form
+#### ขั้นตอนที่ 1: ไปที่ปรับแต่งแบบฟอร์ม
 
-> Home > Customization > Form Customization > Customize Form
+> หน้าแรก > การปรับแต่ง > การปรับแต่งแบบฟอร์ม > ปรับแต่งแบบฟอร์ม
 
-#### Step 2: Document Type
+#### ขั้นตอนที่ 2: ประเภทเอกสาร
 
-As per our scenario, Sales Order will be selected as Document Type.
+ตามสถานการณ์ของเรา ใบสั่งขายจะถูกเลือกเป็นประเภทเอกสาร
 
 <img alt="Document Type" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-make-fields-visible.png">
 
-#### Step 3: Disable Print Hide
+#### ขั้นตอนที่ 3: ปิดใช้งานการซ่อนการพิมพ์
 
-Click to open field to be made visible in the Standard Print Format. Disable **Print Hide** field.
+คลิกเพื่อเปิดช่องเพื่อให้มองเห็นได้ในรูปแบบการพิมพ์มาตรฐาน ปิดการใช้งานช่อง **พิมพ์สิ่งที่ถูกซ่อน**
 
 <img alt="Uncheck Print Hide " class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-visible in print.gif">
 
-#### Step 4: Update
+#### ขั้นตอนที่ 4: อัปเดต
 
-Update Customize Form to save changed. Reload your ERPNext account, and then check Print Format for confirmation.
+อัปเดตปรับแต่งแบบฟอร์มเพื่อบันทึกการเปลี่ยนแปลง โหลดบัญชี ERPNext ของคุณใหม่ จากนั้นตรวจสอบรูปแบบการพิมพ์เพื่อยืนยัน
 
 {next}

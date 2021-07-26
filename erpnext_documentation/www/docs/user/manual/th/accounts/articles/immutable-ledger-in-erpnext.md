@@ -1,31 +1,31 @@
 <!-- add-breadcrumbs -->
-# Immutable Ledger In ERPNext
+# บัญชีแยกประเภทที่ไม่เปลี่ยนรูปใน ERPNext
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชั่น 13
 
-A major change has been introduced in ERPNext from version 13 onwards. This changes the way Accounting Ledger (General Ledger) and Stock Ledger works in ERPNext. There are multiple reasons why ledgers should be immutable. To list a few:
+มีการเปลี่ยนแปลงครั้งใหญ่ใน ERPNext ตั้งแต่เวอร์ชัน 13 เป็นต้นไป สิ่งนี้จะเปลี่ยนวิธีการทำงานของบัญชีแยกประเภท (บัญชีแยกประเภททั่วไป) และบัญชีแยกประเภทใน ERPNext มีสาเหตุหลายประการที่ทำให้บัญชีแยกประเภทไม่เปลี่ยนรูป หากต้องการแสดงรายการบางส่วน:
 
-* Reposting future entries is computationally expensive. To post a backdated transaction, all future entries need to be reposted.
-* In Stock Ledger, where the valuations are based on First-in-first-out (FIFO) method, the entire sequence may get regenerated which may upset valuations and profit for subsequent transactions.
-* Taxes paid for a period may also get changed.
+* การรีโพสต์รายการในอนาคตมีค่าใช้จ่ายในการประมวลผลสูง หากต้องการโพสต์ธุรกรรมย้อนหลัง จะต้องโพสต์รายการในอนาคตทั้งหมดอีกครั้ง
+* ในบัญชีแยกประเภทในสต็อก ซึ่งการประเมินค่าจะขึ้นอยู่กับวิธีเข้าก่อนออกก่อน (FIFO) ลำดับทั้งหมดอาจถูกสร้างขึ้นใหม่ ซึ่งอาจทำให้การประเมินมูลค่าและผลกำไรสำหรับธุรกรรมที่ตามมาไม่พอใจ
+* ภาษีที่ชำระเป็นระยะเวลาหนึ่งอาจมีการเปลี่ยนแปลงเช่นกัน
 
-## Following are the impacts on day to day transactions
+## ผลกระทบต่อการทำธุรกรรมในแต่ละวัน
 
-### 1. Reverse Entries on cancellation of transactions
+### 1. ย้อนกลับรายการการยกเลิกการทำธุรกรรม
 
 <img alt="General Ledger" class="screenshot" src="{{docs_base_url}}/assets/img/articles/general-ledger.png">
 
-On cancellation of any transaction instead of deleting the GL Entries for that transactions reverse entries will be passed to cancel the effect of that transaction on the date of cancellation.
+ในการยกเลิกธุรกรรมใดๆ แทนการลบรายการ GL สำหรับรายการย้อนกลับของธุรกรรมนั้น จะถูกส่งต่อเพื่อยกเลิกผลกระทบของธุรกรรมนั้นในวันที่ยกเลิก
 
 <img alt="Document Delete" class="screenshot" src="{{docs_base_url}}/assets/img/articles/document-delete.png">
 
-Since GL Entries linked to a transaction will never be deleted this also means that cancelled transactions and their linked documents can no longer be deleted.
+เนื่องจากรายการ GL ที่เชื่อมโยงกับธุรกรรมจะไม่ถูกลบ ซึ่งหมายความว่าธุรกรรมที่ยกเลิกและเอกสารที่เชื่อมโยงจะไม่สามารถลบได้อีกต่อไป
 
-### 2. Restriction on posting backdated stock entries
+### 2. ข้อ จำกัด ในการโพสต์รายการสินค้าย้อนหลัง
 
-Since the ledgers are immutable now this means future transactions cannot be updated or reposted.
-So users will no longer be able to post backdated stock transactions.
+เนื่องจากบัญชีแยกประเภทไม่สามารถเปลี่ยนแปลงได้ในขณะนี้ หมายความว่าธุรกรรมในอนาคตไม่สามารถอัปเดตหรือโพสต์ใหม่ได้
+ดังนั้นผู้ใช้จะไม่สามารถโพสต์ธุรกรรมสินค้าย้อนหลังได้อีกต่อไป
 
 <img alt="Back Dated Entry" class="screenshot" src="{{docs_base_url}}/assets/img/articles/backdated-entry.png">
 
-For Eg: Suppose a Stock Transaction has been made for **Item A** with posting time as `19-06-2020 23:00:10` then after this transaction you cannot post a transaction for **Item A** with posting time before this timestamp.
+ตัวอย่างเช่น: สมมติว่ามีการทำธุรกรรมหุ้นสำหรับ **สินค้า A** โดยมีเวลาโพสต์เป็น `19-06-2020 23:00:10` จากนั้นหลังจากการทำธุรกรรมนี้ คุณจะไม่สามารถลงรายการบัญชีสำหรับ **สินค้า A** ด้วย เวลาโพสต์ก่อนการประทับเวลานี้

@@ -1,18 +1,18 @@
 <!-- add-breadcrumbs -->
-# Sign Up
+# การสมัคร
 
-Your Customer and Suppliers can signup to your ERPNext account by following Signup option on the Login Page.
+ลูกค้าและซัพพลายเออร์ของคุณสามารถลงทะเบียนบัญชี ERPNext ของคุณโดยทำตามตัวเลือกการลงชื่อสมัครใช้ในหน้าเข้าสู่ระบบ
 
-#### Step 1: Signup
+#### ขั้นตอนที่ 1: สมัคร
 
-On the Login Page, you will find option to Signup.
+ในหน้าเข้าสู่ระบบ คุณจะพบตัวเลือกในการสมัคร
 
 <img class="screenshot" alt="Website User Signup" src="{{docs_base_url}}/assets/img/website/website-login.png">
 
-#### Step 2: Enter Customer Name and ID
+#### Step 2: ใส่ชื่อลูกค้าและ ID
 
 <img class="screenshot" alt="Website User Signup" src="{{docs_base_url}}/assets/img/website/website-signup-details.png">
 
-After the sign up process, an email will be sent to the customers Email Address with the password details.
+หลังจากขั้นตอนการลงทะเบียน อีเมลจะถูกส่งไปยังที่อยู่อีเมลของลูกค้าพร้อมรายละเอียดรหัสผ่าน
 
 {next}

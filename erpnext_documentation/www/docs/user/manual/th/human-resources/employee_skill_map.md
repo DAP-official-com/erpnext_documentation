@@ -1,24 +1,24 @@
-# Employee Skill Map
+# การจับคู่ทักษะพนักงาน
 
-Employee Skill Map is a record which helps your organization track your Employee's skill sets and trainings. It can be used to rate each skill of the Employee and track their growth after each internal training. This data can be used at the time of appraisals.
+การจับคู่ทักษะพนักงานเป็นบันทึกที่ช่วยให้องค์กรของคุณติดตามชุดทักษะและการฝึกอบรมของพนักงาน สามารถใช้เพื่อประเมินทักษะของพนักงานแต่ละคนและติดตามการเติบโตของพวกเขาหลังการฝึกอบรมภายในแต่ละครั้ง ข้อมูลนี้สามารถใช้ในช่วงเวลาของการประเมิน
 
-To record an Employee Skill Map go to:
+หากต้องการบันทึกแผนผังทักษะพนักงาน ให้ไปที่:
 
-> Home > Human Resource > Employee Lifecycle > Employee Skill Map
+> หน้าหลัก > ทรัพยากรบุคคล > วงจรชีวิตพนักงาน > การจับคู่ทักษะพนักงาน
 
-Make sure you have set the required Skills for designations from the Skill doctype.
+ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าทักษะที่จำเป็นสำหรับการกำหนดจากประเภทเอกสารทักษะ
 
-Example of Skills for a Designation:
+ตัวอย่างทักษะสำหรับการกำหนด:
 ![Designation Skills]({{docs_base_url}}/assets/img/human-resources/designation-skills.png)
 
-## 1. How to create an Employee Skill Map
+## 1. วิธีสร้างการจับคู่ทักษะพนักงาน
 
-1. Go to the Employee Skill Map list, click on New.
-1. Select the Employee.
-1. Based on the designation of the Employee system will pull the Skills. Set the Proficiency level out of 5, and the Evaluation Date.
-1. If the Employee is lacking in any skill, you can schedule trainings for the Employee.
-1. Under the Trainings table, select the Training Event and the Training Date.
-1. Save.
+1. ไปที่รายการ การจับคู่ทักษะพนักงาน คลิกที่ ใหม่
+1. เลือกพนักงาน
+1. ทักษะพนักงานจะถูกดึงขึ้นอยู่กับการกำหนดระบบ กำหนดระดับความชำนาญจาก 5 และวันที่ประเมิน
+1. หากพนักงานขาดทักษะใดๆ คุณสามารถกำหนดเวลาการฝึกอบรมสำหรับพนักงานได้
+1. ใต้ตารางการฝึกอบรม ให้เลือกกิจกรรมการฝึกอบรมและวันที่ฝึกอบรม
+1. บันทึก
 
 ![Employee Skill Map]({{docs_base_url}}/assets/img/human-resources/employee-skill-map.png)
 

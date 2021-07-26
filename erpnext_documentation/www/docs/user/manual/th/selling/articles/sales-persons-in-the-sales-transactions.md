@@ -1,36 +1,36 @@
 <!-- add-breadcrumbs -->
-#Sales Persons in the Sales Transactions
+#พนักงานขายในธุรกรรมการขาย
 
-In ERPNext, Sales Person master is maintained in [tree structure](/docs/user/manual/en/setting-up/articles/managing-tree-structure-masters.html). Sales Person is selectable in all the sales transactions.
+ใน ERPNext ข้อมูลหลักของพนักงานขายจะได้รับการดูแลใน [โครงสร้างแบบต้นไม้](/docs/user/manual/th/setting-up/articles/managing-tree-structure-masters.html) พนักงานขายสามารถเลือกได้ในทุกธุรกรรมการขาย
 
-Sales Persons can be updated in the Customer master as well. On selection of Customer in the transactions, Sales Persons as updated in the Customer will fetch into sales transaction.
+พนักงานขายสามารถอัปเดตในข้อมูลหลักของลูกค้าได้เช่นกัน ในการเลือกลูกค้าในธุรกรรม พนักงานขายที่อัปเดตในลูกค้าจะถูกดึงเข้าสู่ธุรกรรมการขาย
 
 <img class="screenshot" alt="Sales Person Customer" src="{{docs_base_url}}/assets/img/articles/sales-person-transaction-1.png">
 
-####Sales Person Contribution
+#### การมีส่วนร่วมของพนักงานขาย
 
-If more than one sales persons are working together on an order, then contribution (%) should be set for each Sales Person.
+หากมีพนักงานขายมากกว่าหนึ่งคนทำงานร่วมกันในคำสั่งซื้อ ควรมีการกำหนดผลงาน (%) ให้กับพนักงานขายแต่ละคน
 
 <img class="screenshot" alt="Sales Person Order" src="{{docs_base_url}}/assets/img/articles/sales-person-transaction-2.png">
 
-On saving transaction, based on the Net Total and Contriution (%), `Contribution to Net Total` will be calculated for each Sales Person.
+ในการบันทึกธุรกรรม ตามยอดรวมสุทธิและเงินสมทบ (%) `ส่วนร่วมต่อยอดสุทธิ' จะถูกคำนวณสำหรับพนักงานขายแต่ละคน
 
-<div class=well>Total % Contribution for all Sales Person must be 100%. If only one Sales Person is selected, then % Contribution will be 100.</div>
+<div class=well>การบริจาค % ทั้งหมดสำหรับพนักงานขายทั้งหมดต้องเป็น 100% หากเลือกพนักงานขายเพียงคนเดียว % ผลงานจะเป็น 100</div>
 
-####Sales Person Transaction Report
+####รายงานธุรกรรมพนักงานขาย
 
-Check Sales Person's Transaction report from:
+ตรวจสอบรายงานการทำธุรกรรมของพนักงานขายจาก:
 
-`Selling > Standard Reports > Sales Personwise Transaction Summary`
+`การขาย > รายงานมาตรฐาน > สรุปธุรกรรมของฝ่ายขาย`
 
-This report can be generated based on Sales Order, Delivery Note and Sales Invoice. It will give you total amount of sale made by an employe.
+สามารถสร้างรายงานนี้ตามใบสั่งขาย ใบส่งสินค้า และใบกำกับสินค้า จะทำให้คุณมียอดขายทั้งหมดที่ทำโดยพนักงาน
 
 <img class="screenshot" alt="Sales Person Report" src="{{docs_base_url}}/assets/img/articles/sales-person-transaction-3.png">
 
-####Sales Person wise Commission
+####ค่าคอมมิชชั่นพนักงานขาย
 
-ERPNext only provide total amount of sale made by a Sales Person. If you offer commission to Sales Person, you should add Sales Person as Sales Partners in ERPNext. For Sales Partners, you can define Commission (%). On selected on Sales Partner in a sales transction, based on Net Total, Commission Amount is calculated as well. You can check Sales Partner's commission report from:
+ERPNext ให้เฉพาะยอดรวมของการขายที่ทำโดยพนักงานขาย หากคุณเสนอค่าคอมมิชชั่นให้กับพนักงานขาย คุณควรเพิ่มพนักงานขายเป็นหุ้นส่วนการขายใน ERPNext สำหรับพาร์ทเนอร์การขาย คุณสามารถกำหนดคอมมิชชัน (%) ได้ เมื่อเลือกจากพันธมิตรการขายในธุรกรรมการขาย โดยอิงจากยอดรวมสุทธิ จำนวนเงินค่าคอมมิชชันจะถูกคำนวณเช่นกัน คุณสามารถตรวจสอบรายงานค่าคอมมิชชั่นของพาร์ทเนอร์การขายได้จาก:
 
-`Accounts > Standard Reports > Sales Partners Commission`
+`บัญชี > รายงานมาตรฐาน > คอมมิชชันพันธมิตรการขาย`
 
 <!-- markdown -->

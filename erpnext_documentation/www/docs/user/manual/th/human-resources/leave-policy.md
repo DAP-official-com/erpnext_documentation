@@ -1,34 +1,34 @@
-# Leave Policy
+#นโยบายการลางาน
 
-**The amount of entitled leaves in a Company for an Employee in a Leave Period is known as Leave Policy.** 
+**จำนวนการลางานที่มีสิทธิในบริษัทสำหรับพนักงานในช่วงลางานเรียกว่านโยบายการลา**
 
-It is a practice for many enterprises to enforce a general Leave Policy to effectively track and manage Employee leaves. ERPNext allows you to create and manage multiple Leave Policies and allocate leaves to Employees as defined by the policy.
+เป็นแนวปฏิบัติสำหรับองค์กรหลายแห่งในการบังคับใช้นโยบายการลางานทั่วไปเพื่อติดตามและจัดการการลางานของพนักงานอย่างมีประสิทธิภาพ ERPNext ช่วยให้คุณสร้างและจัดการนโยบายการลาหลายรายการ และจัดสรรการลางานให้กับพนักงานตามที่กำหนดไว้ในนโยบาย
 
-To access Leave Policy, go to:
+ในการเข้าถึงนโยบายการลา ให้ไปที่:
 
-> Home > Human Resources > Leaves > Leave Policy 
+> หน้าหลัก > ทรัพยากรบุคคล > การลา > นโยบายการลาออก
 
-## 1. How to create a Leave Policy
+## 1. วิธีสร้างนโยบายการลา
 
-1. Go to Leave Policy list, click on New.
-1. Select the Leave Type and enter its Annual Allocation.
-1. Save and Submit.
+1. ไปที่รายการออกจากนโยบาย คลิกใหม่
+1. เลือกประเภทการลาและป้อนการจัดสรรรายปี
+1. บันทึกและส่ง
 
 
 	<img class="screenshot" alt="Leave Policy"
 	src="{{docs_base_url}}/assets/img/human-resources/leave-policy.png">
 
 
-Once submitted, you can enforce the Leave Policy through the dashboard, either to an Employee or an Employee Grade. 
+เมื่อส่งแล้ว คุณสามารถบังคับใช้นโยบายการลางานผ่านแดชบอร์ด ไม่ว่าจะเป็นระดับพนักงานหรือระดับพนักงาน
 
-When a Leave Policy is assigned to an [Employee Grade](/docs/user/manual/en/human-resources/employee-grade), it will ensure that all leave allocations for employees of this grade will be as per the Leave Policy. In case you need to selectively update the Leave Policy for a particular Employee, you can do so by tagging the Leave Policy in the [Employee](/docs/user/manual/en/human-resources/employee) master under the 'Attendance and Leave Details' section.
-
-
+เมื่อมีการกำหนดนโยบายการลางานให้กับ [ระดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade) จะทำให้แน่ใจว่าการจัดสรรการลางานทั้งหมดสำหรับพนักงานระดับนี้จะเป็นไปตามนโยบายการลางาน . ในกรณีที่คุณจำเป็นต้องเลือกอัปเดตนโยบายการลาสำหรับพนักงานรายใดรายหนึ่ง คุณสามารถทำได้โดยแท็กนโยบายการลางานในต้นแบบ [Employee](/docs/user/manual/th/human-resources/employee) ภายใต้ 'การเข้าร่วม และออกจากส่วนรายละเอียด'
 
 
-## 2. Related Topics
 
-1. [Leave Period](/docs/user/manual/en/human-resources/leave-period)
-1. [Leave Type](/docs/user/manual/en/human-resources/leave-type)
-1. [Employee](/docs/user/manual/en/human-resources/employee)
-1. [Employee Grade](/docs/user/manual/en/human-resources/employee-grade)
+
+## 2. หัวข้อที่เกี่ยวข้อง
+
+1. [ระยะเวลาการลา](/docs/user/manual/th/human-resources/leave-period)
+1. [ประเภทการลา](/docs/user/manual/th/human-resources/leave-type)
+1. [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+1. [ระดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade)

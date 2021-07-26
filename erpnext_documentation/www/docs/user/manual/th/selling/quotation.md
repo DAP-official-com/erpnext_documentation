@@ -1,141 +1,139 @@
 <!-- add-breadcrumbs -->
-# Quotation
+# ใบเสนอราคา
 
-**A quotation is an estimated cost of the products/services you're selling to your future/present customer.** 
+**ใบเสนอราคาคือต้นทุนโดยประมาณของผลิตภัณฑ์/บริการที่คุณขายให้กับลูกค้าในอนาคต/ปัจจุบันของคุณ**
 
-During a sale, a customer may request for a note about the products
-or services you are planning to offer along with the prices and other terms
-of engagement. This has many names like "Proposal", Estimate", "Pro Forma
-Invoice" or a **Quotation**.
+ในระหว่างการขาย ลูกค้าสามารถขอหมายเหตุเกี่ยวกับสินค้าได้
+หรือบริการที่คุณวางแผนจะนำเสนอพร้อมกับราคาและเงื่อนไขอื่นๆ
+ของการมีส่วนร่วม มีหลายชื่อ เช่น "ข้อเสนอ (Proposal)", ประมาณราคา (Estimate)", "ใบแจ้งหนี้" หรือ **ใบเสนอราคา**
 
-To access the Quotation list, go to:
-> Home > Selling > Sales > Quotation
+ในการเข้าถึงรายการใบเสนอราคา ไปที่:
+> หน้าหลัก > การขาย > การขาย > ใบเสนอราคา
 
-A typical sales flow looks like:
+ขั้นตอนการขายโดยทั่วไปมีลักษณะดังนี้:
 
 <img class="screenshot" alt="Make Quotation from Opportunity" src="{{docs_base_url}}/assets/img/selling/selling-flow-quo.png">
 
-A Quotation contains details about:
+ใบเสนอราคาประกอบด้วยรายละเอียดเกี่ยวกับ:
 
-  * The recipient of the Quotation
-  * The Items and quantities you are offering.
-  * The rates at which they are offered.
-  * The taxes applicable.
-  * Other charges (like shipping, insurance) if applicable.
-  * The validity of contract.
-  * The time of delivery.
-  * Other conditions.
+  * ผู้รับใบเสนอราคา
+  * รายการและปริมาณที่คุณเสนอ
+  * อัตราที่พวกเขาเสนอ
+  * ภาษีที่ใช้บังคับ
+  * ค่าใช้จ่ายอื่นๆ (เช่น ค่าขนส่ง ค่าประกัน) ถ้ามี
+  * ความถูกต้องของสัญญา
+  * เวลาในการจัดส่ง
+  * เงื่อนไขอื่นๆ
 
-> Tip: Images look great on Quotations. Make sure your items have an image attached.
+> เคล็ดลับ: สามารถเพิ่มรูปภาพในใบเสนอราคาได้ ตรวจสอบให้แน่ใจว่ารายการของคุณมีรูปภาพแนบมาด้วย
 
 
-## 1. Prerequisites
-Before creating and using a Quotation, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ Quotation ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Customer](/docs/user/manual/en/CRM/customer)
-* [Lead](/docs/user/manual/en/CRM/lead)
-* [Item](/docs/user/manual/en/stock/item)
+* [ลูกค้า](/docs/user/manual/th/CRM/customer)
+* [ลูกค้าเป้าหมาย](/docs/user/manual/th/CRM/lead)
+* [รายการ](/docs/user/manual/th/stock/item)
 
-## 2. How to create a Quotation
-1. Go to the Quotation list, click on New.
-2. Select if the Quotation is to a Customer or a Lead from the 'Quotation To' field.
-3. Enter Customer/Lead name.
-1. Enter a Valid till date after which the quoted amount will be considered invalid.
-1. Order Type can be Sales, Maintenance, or Shopping Cart. Shopping Cart is for website shopping cart and is not intended to be created from here.
-4. Add the Items and their quantities in the items table, the prices will be fetched automatically from Item Price. You can also fetch items from an Opportunity by clicking on Get Items from > Opportunity.
-5. Add additional taxes and charges as applicable.
-6. Save.
+## 2. วิธีสร้างใบเสนอราคา
+1. ไปที่รายการใบเสนอราคา คลิกที่ ใหม่
+2. เลือกว่าใบเสนอราคาส่งถึงลูกค้าหรือลูกค้าเป้าหมายจากช่อง 'ใบเสนอราคาถึง'
+3. ป้อนชื่อลูกค้า/ลูกค้าเป้าหมาย
+1. ป้อนวันที่ใช้ได้จนถึงวันที่หลังจากนั้นจำนวนเงินที่เสนอจะถือว่าไม่ถูกต้อง
+1. ประเภทคำสั่งซื้ออาจเป็นการขาย การบำรุงรักษา หรือตะกร้าสินค้า ตะกร้าสินค้ามีไว้สำหรับตะกร้าสินค้าของเว็บไซต์และไม่ได้สร้างขึ้นจากที่นี่
+4. เพิ่มรายการและปริมาณในตารางรายการ ราคาจะถูกดึงโดยอัตโนมัติจากราคาสินค้า คุณยังสามารถดึงรายการจากโอกาสทางการขายได้โดยคลิกที่รับรายการจาก > โอกาสทางการขาย
+5. เพิ่มภาษีและค่าธรรมเนียมเพิ่มเติมตามความเหมาะสม
+6. บันทึก
 
-You can also create a Quotation from an Opportunity shown as follows.
+คุณยังสามารถสร้างใบเสนอราคาจากโอกาสทางการขายที่แสดงดังนี้
 
 <img class="screenshot" alt="Make Quotation from Opportunity" src="{{docs_base_url}}/assets/img/selling/make-quote-from-opp.png">
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Address and Contact
-In this section there are four fields:
+### 3.1 ที่อยู่และการติดต่อ
+ในส่วนนี้มีสี่ฟิลด์:
 
-* **Customer Address:** This is the Billing address of the customer.
-* **Shipping Address:** Address where the items will be shipped to.
-* **Contact Person:** If your customer is an organization, then you can add the person to contact in this field.
-* **Territory:** Region where the customer belongs to. Default is All Territories. 
+* **ที่อยู่ลูกค้า:** นี่คือที่อยู่สำหรับการเรียกเก็บเงินของลูกค้า
+* **ที่อยู่สำหรับจัดส่ง:** ที่อยู่สำหรับจัดส่งสินค้าไปยัง
+* **ผู้ติดต่อ:** หากลูกค้าของคุณเป็นองค์กร คุณสามารถเพิ่มบุคคลที่จะติดต่อในช่องนี้ได้
+* **อาณาเขต:** ภูมิภาคที่ลูกค้าอยู่ ค่าเริ่มต้นคืออาณาเขตทั้งหมด
 
-### 3.2 Currency and Price List
-You can set the currency in which the quotation/sales order is to be sent. If you set a Pricing List, then the item prices will be fetched from that list. Ticking on Ignore Pricing Rule will ignore the Pricing Rules set in Accounts > Pricing Rule.
+### 3.2 รายการสกุลเงินและราคา
+คุณสามารถตั้งค่าสกุลเงินที่จะส่งใบเสนอราคา/ใบสั่งขาย หากคุณกำหนดรายการราคา ราคาสินค้าจะถูกดึงมาจากรายการนั้น การทำเครื่องหมายที่ละเว้นกฎการกำหนดราคาจะละเว้นกฎการกำหนดราคาที่ตั้งไว้ในบัญชี > กฎการกำหนดราคา
 
-Read about [Price Lists](/docs/user/manual/en/stock/price-lists) 
-and [Multi-Currency Transactions](/docs/user/manual/en/accounts/articles/managing-transactions-in-multiple-currency)
-to know more.
+อ่านเกี่ยวกับ [รายการราคา](/docs/user/manual/th/stock/price-lists)
+และ [ธุรกรรมหลายสกุลเงิน](/docs/user/manual/th/accounts/articles/managing-transactions-in-multiple-currency)
+เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.3 The Items Table
-This table can be expanded by clicking on the inverted triangle present rightmost of the table.
+### 3.3 ตารางรายการ
+ตารางนี้สามารถขยายได้โดยคลิกที่สามเหลี่ยมคว่ำที่อยู่ด้านขวาสุดของตาราง
 
-* On selecting Item Code, the following will be fetched automatically: item name, description, any image if set, quantity default as 1, the rates. You can add discounts in the Discounts and Margin section. 
-* **Under Discount and Margin** you can add extra margin for profit or give a discount. Both can be set based on either amount or percentage. The final rate will be shown below in the Rate section. You can assign an Item Tax Template created specifically for an item.
-* **Item weights** will be fetched if set in the Item master.
-* In **Warehouse and Reference**, the warehouse will be fetched from the Item master, this is the warehouse where your stock is present.
-* Under **Planning** you can see the Projected quantity and the actual quantity present. To know more about these fields, [click here](/docs/user/manual/en/stock/projected-quantity). If you click on the 'Stock Balance' button, it'll take you to a doctype where you can generate a stock report for the item.
-* **Shopping cart**, additional notes is for website transactions. Notes about the item will be fetched here when added via a shopping cart. For example: make food extra spicy. *Introduced in v12*
-* **Page Break** Will create a page break just before this item when printing.
+* ในการเลือกรหัสรายการ ระบบจะดึงข้อมูลต่อไปนี้โดยอัตโนมัติ: ชื่อรายการ คำอธิบาย รูปภาพใดๆ หากมีการตั้งค่า ปริมาณเริ่มต้นเป็น 1 อัตรา คุณสามารถเพิ่มส่วนลดได้ในส่วนส่วนลดและหลักประกัน
+* **ภายใต้ส่วนลดและมาร์จิ้น** คุณสามารถเพิ่มมาร์จิ้นพิเศษเพื่อผลกำไรหรือให้ส่วนลด ทั้งสองแบบสามารถตั้งค่าได้ตามจำนวนหรือเปอร์เซ็นต์ อัตราสุดท้ายจะแสดงอยู่ด้านล่างในส่วนอัตรา คุณสามารถกำหนดเทมเพลตภาษีสินค้าที่สร้างขึ้นสำหรับสินค้าโดยเฉพาะได้
+* **น้ำหนักของรายการ** จะถูกดึงมาหากตั้งค่าไว้ในหลักรายการ
+* ใน **คลังสินค้าและข้อมูลอ้างอิง** คลังสินค้าจะถูกดึงมาจาก Item master ซึ่งเป็นคลังสินค้าที่คุณมีสินค้าอยู่
+* ใต้ **การวางแผน** คุณสามารถดูปริมาณที่คาดการณ์และปริมาณจริงที่มีอยู่ หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับฟิลด์เหล่านี้ [คลิกที่นี่](/docs/user/manual/th/stock/projected-quantity) หากคุณคลิกที่ปุ่ม 'ยอดคงเหลือในสต็อก' ระบบจะนำคุณไปยังประเภทเอกสารที่คุณสามารถสร้างรายงานสต็อคสำหรับสินค้านั้นได้
+* **ตะกร้าสินค้า** หมายเหตุเพิ่มเติมสำหรับการทำธุรกรรมบนเว็บไซต์ หมายเหตุเกี่ยวกับสินค้าจะถูกดึงมาที่นี่เมื่อเพิ่มผ่านตะกร้าสินค้า ตัวอย่างเช่น ทำให้อาหารมีรสเผ็ดเป็นพิเศษ *แนะนำใน v12*
+* **ตัวแบ่งหน้า** จะสร้างตัวแบ่งหน้าก่อนรายการนี้เมื่อพิมพ์
 
-* You can insert rows below/above, duplicate, move, or delete rows in this table.
+* คุณสามารถแทรกแถวด้านล่าง/ด้านบน ทำซ้ำ ย้าย หรือลบแถวในตารางนี้ได้
 
-* Tip: You can also Download the items table in CSV format and Upload it to another transaction.
+* เคล็ดลับ: คุณสามารถดาวน์โหลดตารางรายการในรูปแบบ CSV และอัปโหลดไปยังธุรกรรมอื่นได้
 
-The total quantity, rate, and net weight of all items will be shown below the item table. The rate shown here is pre-tax.
+ปริมาณรวม อัตรา และน้ำหนักสุทธิของสินค้าทั้งหมดจะแสดงอยู่ด้านล่างตารางรายการ อัตราที่แสดงนี้เป็นราคาก่อนหักภาษี
 
-### 3.4 Taxes and Charges
-To add taxes to your Quotation, you can select a [Sales Taxes and Charges Template](/docs/user/manual/en/selling/sales-taxes-and-charges-template) or add the taxes manually in the Sales Taxes and Charges table.
+### 3.4 ภาษีและค่าธรรมเนียม
+ในการเพิ่มภาษีในใบเสนอราคาของคุณ คุณสามารถเลือก [เทมเพลตภาษีและค่าธรรมเนียม](/docs/user/manual/th/selling/sales-taxes-and-charges-template) หรือเพิ่มภาษีด้วยตนเองในภาษีขายและ ตารางค่าใช้จ่าย.
 
-The total taxes and charges will be displayed below the table. Clicking on Tax Breakup will show all the components and amounts.
+ภาษีและค่าธรรมเนียมทั้งหมดจะแสดงอยู่ใต้ตาราง การคลิกที่การแบ่งภาษีจะแสดงส่วนประกอบและจำนวนเงินทั้งหมด
 
 <img class="screenshot" alt="Taxes in Quotation" src="{{docs_base_url}}/assets/img/selling/quotation-taxes.png">
 
-To add taxes automatically via a Tax Category, visit [this page](/docs/user/manual/en/accounts/tax-category).
+หากต้องการเพิ่มภาษีโดยอัตโนมัติผ่านหมวดหมู่ภาษี โปรดไปที่ [หน้านี้](/docs/user/manual/th/accounts/tax-category)
 
-#### Shipping Rule
-A Shipping Rule helps set the cost of shipping an Item. The cost will usually increase with the distance of shipping. To know more, visit the [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) page.
+#### กฎการจัดส่ง
+กฎการจัดส่งช่วยกำหนดต้นทุนในการจัดส่งสินค้า ค่าใช้จ่ายมักจะเพิ่มขึ้นตามระยะทางในการขนส่ง หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [กฎการจัดส่ง](/docs/user/manual/th/selling/shipping-rule)
 
-### 3.5 Additional Discount
-Other than offering discount per item, you can add a discount to the whole quotation in this section. This discount could be based on the Grand Total i.e., post tax/charges or Net total i.e., pre tax/charges. The additional discount can be applied as a percentage or an amount.
+### 3.5 ส่วนลดเพิ่มเติม
+นอกเหนือจากการเสนอส่วนลดต่อรายการ คุณสามารถเพิ่มส่วนลดให้กับใบเสนอราคาทั้งหมดได้ในส่วนนี้ ส่วนลดนี้อาจขึ้นอยู่กับยอดรวมทั้งหมด เช่น ภาษีหลังหัก/ค่าบริการ หรือยอดรวมสุทธิ เช่น ภาษี/ค่าใช้จ่ายก่อน ส่วนลดเพิ่มเติมสามารถใช้เป็นเปอร์เซ็นต์หรือจำนวนเงินได้
 
-Read [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) for more details.
+อ่าน [การให้ส่วนลด](/docs/user/manual/th/selling/articles/applying-discount) สำหรับรายละเอียดเพิ่มเติม
 
-### 3.6 Payment Terms
-Sometimes payment is not done all at once. Depending on the agreement, half of the payment may be made before shipment and the other half after receiving the goods/services. You can add a Payment Terms template or add the terms manually in this section.
+### 3.6 เงื่อนไขการชำระเงิน
+บางครั้งการชำระเงินไม่ได้ทำทั้งหมดในครั้งเดียว ขึ้นอยู่กับข้อตกลง การชำระเงินครึ่งหนึ่งสามารถทำได้ก่อนการจัดส่งและอีกครึ่งหนึ่งหลังจากได้รับสินค้า/บริการ คุณสามารถเพิ่มเทมเพลตเงื่อนไขการชำระเงินหรือเพิ่มเงื่อนไขด้วยตนเองในส่วนนี้
 
 <img class="screenshot" alt="Payment Terms in Quotation" src="{{docs_base_url}}/assets/img/selling/quotation-payment-terms.png">
 
-Read [Payment Terms](/docs/user/manual/en/accounts/payment-terms) to know more.
+อ่าน [เงื่อนไขการชำระเงิน](/docs/user/manual/th/accounts/payment-terms) เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.7 Terms and Conditions
-In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+### 3.7 ข้อกำหนดและเงื่อนไข
+ในธุรกรรมการขาย/การซื้อ อาจมีข้อกำหนดและเงื่อนไขบางประการซึ่งขึ้นอยู่กับที่ซัพพลายเออร์จัดหาสินค้าหรือบริการให้กับลูกค้า คุณสามารถใช้ข้อกำหนดและเงื่อนไขกับธุรกรรมกับธุรกรรมได้ และข้อกำหนดเหล่านี้จะปรากฏขึ้นเมื่อพิมพ์เอกสาร หากต้องการทราบเกี่ยวกับข้อกำหนดและเงื่อนไข [คลิกที่นี่](/docs/user/manual/th/setting-up/print/terms-and-conditions)
 
-### 3.8 Print Settings
-#### Letterhead
-You can print your quotation/sales order on your company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+### 3.8 การตั้งค่าการพิมพ์
+#### หัวจดหมาย
+คุณสามารถพิมพ์ใบเสนอราคา/ใบสั่งขายบนหัวจดหมายของบริษัทของคุณ เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/letter-head)
 
-'Group same items' will group the same items added multiple times in the items table. This can be seen when your print.
+'จัดกลุ่มรายการเดียวกัน' จะจัดกลุ่มรายการเดียวกันที่เพิ่มหลายครั้งในตารางรายการ สิ่งนี้สามารถเห็นได้เมื่อคุณพิมพ์
 
-#### Print Headings
-Quotations can also be titled as “Proforma Invoice” or “Proposal”.
-You can do this by selecting a **Print Heading**. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### พิมพ์หัวเรื่อง
+ใบเสนอราคาสามารถมีชื่อว่า "ใบแจ้งหนี้ Proforma" หรือ "ข้อเสนอ"
+คุณสามารถทำได้โดยเลือก **หัวเรื่องการพิมพ์** ในการสร้างหัวพิมพ์ใหม่ ให้ไปที่: หน้าแรก > การตั้งค่า > การพิมพ์ > พิมพ์หัวเรื่อง เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/print-headings)
 
-### 3.9 More Information
-* **Campaign:** A Sales campaign can be associated with the quotation. A set of quotations can be part of a sales campaign.
-* **Source:** A Lead Source type can be linked if quoting to a lead, whether from a campaign, from a supplier, an exhibition etc,. Select Existing Customer if quoting to a customer.
-* **Supplier Quotation:** A Supplier Quotation can be linked for comparing with your current quotation to a buyer. You can get an idea of profit/loss by comparing the two.
+### 3.9 ข้อมูลเพิ่มเติม
+* **แคมเปญ:** แคมเปญการขายสามารถเชื่อมโยงกับใบเสนอราคาได้ ชุดของใบเสนอราคาสามารถเป็นส่วนหนึ่งของแคมเปญการขาย
+* **แหล่งที่มา:** สามารถเชื่อมโยงประเภทแหล่งที่มาของโอกาสในการขายได้หากอ้างอิงถึงลูกค้าเป้าหมาย ไม่ว่าจะมาจากแคมเปญ จากซัพพลายเออร์ นิทรรศการ ฯลฯ เลือกลูกค้าที่มีอยู่หากอ้างอิงถึงลูกค้า
+* **ใบเสนอราคาซัพพลายเออร์:** สามารถเชื่อมโยงใบเสนอราคาซัพพลายเออร์เพื่อเปรียบเทียบกับใบเสนอราคาปัจจุบันของคุณกับผู้ซื้อ คุณสามารถรับแนวคิดของกำไร/ขาดทุนโดยการเปรียบเทียบทั้งสอง
 
-### 3.10 Submitting the Quotation
-Quotation is a “Submittable” transaction. When you click on Save, a draft is saved, on submitting, it is submitted permanently. Since you send this Quotation to
-your Customer or Lead, you must freeze it so that changes are not made after
-you send the Quotation.
+### 3.10 การส่งใบเสนอราคา
+ใบเสนอราคาเป็นธุรกรรมที่ "ส่งได้" เมื่อคุณคลิกบันทึก ร่างจดหมายจะถูกบันทึก เมื่อส่ง จะถูกส่งอย่างถาวร เนื่องจากคุณส่งใบเสนอราคานี้ไปที่
+ลูกค้าหรือลูกค้าเป้าหมายของคุณ คุณต้องหยุดการทำงานเพื่อไม่ให้เกิดการเปลี่ยนแปลงหลังจาก
+คุณส่งใบเสนอราคา
 
-On submitting, you can create a Sales Order or a Subscription from the Quotation using the Create button. In the Dashboard present on the top, you can go to the Sales Order linked with this Quotation. In case it didn't work out, you can set the Quotation as lost by clicking on the 'Set as Lost button'.
-
+ในการส่ง คุณสามารถสร้างใบสั่งขายหรือการสมัครรับข้อมูลจากใบเสนอราคาได้โดยใช้ปุ่มสร้าง ในแดชบอร์ดที่อยู่ด้านบน คุณสามารถไปที่ใบสั่งขายที่เชื่อมโยงกับใบเสนอราคานี้ได้ ในกรณีที่ไม่ได้ผล คุณสามารถตั้งค่าใบเสนอราคาว่าสูญหายได้โดยคลิกที่ 'ปุ่มตั้งเป็นสูญหาย'
 <img class="screenshot" alt="Submitted Quotation" src="{{docs_base_url}}/assets/img/selling/submitted-quotation.png">
 
-### 4. Related Topics
-1. [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [การให้ส่วนลด](/docs/user/manual/th/selling/articles/applying-discount)
 
 {next}

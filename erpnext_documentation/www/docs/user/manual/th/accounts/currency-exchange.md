@@ -1,21 +1,21 @@
 <!-- add-breadcrumbs -->
-# Currency Exchange
+# แลกเปลี่ยนเงินตรา
 
-The Currency Exchange form in ERPNext stores exchange rates manually stored by the User. By default, ERPNext automatically fetched the current exchange rates for currencies as per the market. However, you can store fixed exchange rates and use them. You need to enable 'Allow Stale Exchange Rates' in Accounts Settings for using the exchange rates stored in the Currency Exchange form.
+แบบฟอร์มการแลกเปลี่ยนสกุลเงินใน ERPNext จะจัดเก็บอัตราแลกเปลี่ยนที่ผู้ใช้เก็บไว้ด้วยตนเอง โดยค่าเริ่มต้น ERPNext จะดึงอัตราแลกเปลี่ยนปัจจุบันสำหรับสกุลเงินตามตลาดโดยอัตโนมัติ อย่างไรก็ตาม คุณสามารถจัดเก็บอัตราแลกเปลี่ยนคงที่และใช้งานได้ คุณต้องเปิดใช้งาน 'อนุญาตอัตราแลกเปลี่ยนเก่า' ในการตั้งค่าบัญชีเพื่อใช้อัตราแลกเปลี่ยนที่จัดเก็บไว้ในแบบฟอร์มการแลกเปลี่ยนสกุลเงิน
 
-To access the Currency Exchange list, go to:
-> Home > Accounting > Multi Currency > Currency Exchange
+ในการเข้าถึงรายการแลกเปลี่ยนเงินตรา ไปที่:
+> หน้าแรก > การบัญชี > หลายสกุลเงิน > แลกเปลี่ยนเงินตรา
 
-## 1. How to create a Currency Exchange
-1. Go to the Currency Exchange list and click on New.
-1. Enter a date from which this exchange rate will be valid. New Currency Exchange forms saved with newer dates will be used in transactions.
-1. Set the From and To currency.
-1. Enter the Exchange Rate, for example, 1 USD = 65 INR.
-1. Select whether the exchange rate applies to selling, buying, or both transactions.
-1. Save.
+## 1. วิธีสร้างการแลกเปลี่ยนเงินตรา
+1. ไปที่รายการแลกเปลี่ยนเงินตราและคลิกที่ใหม่
+1. ป้อนวันที่ที่อัตราแลกเปลี่ยนนี้จะใช้ได้ แบบฟอร์มการแลกเปลี่ยนสกุลเงินใหม่ที่บันทึกด้วยวันที่ใหม่กว่าจะถูกใช้ในธุรกรรม
+1. ตั้งค่าสกุลเงินจากและถึง
+1. ป้อนอัตราแลกเปลี่ยน เช่น 1 USD = 65 INR
+1. เลือกว่าจะใช้อัตราแลกเปลี่ยนกับการขาย การซื้อ หรือทั้งสองธุรกรรม
+1. บันทึก
 
     ![Currency Exchange](/docs/assets/img/accounts/currency-exchange.png)
 
-## 2. Related Topics
-1. [Exchange Rate Revaluation](/docs/user/manual/en/accounts/exchange-rate-revaluation)
-1. [Multi Currency Accounting](/docs/user/manual/en/accounts/multi-currency-accounting)
+## 2. หัวข้อที่เกี่ยวข้อง
+1. [การประเมินค่าอัตราแลกเปลี่ยนใหม่](/docs/user/manual/en/accounts/exchange-rate-revaluation)
+1. [การบัญชีหลายสกุลเงิน](/docs/user/manual/en/accounts/multi-currency-accounting)

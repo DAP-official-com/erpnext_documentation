@@ -1,105 +1,103 @@
 <!-- add-breadcrumbs -->
-# Lead
+#ลูกค้าเป้าหมาย (Leads)
 
-**A lead is a potential customer who might be interested in your products or services.**
+**ลูกค้าเป้าหมายคือผู้มีโอกาสเป็นลูกค้าที่อาจสนใจผลิตภัณฑ์หรือบริการของคุณ**
 
-To get the customer through the door, you may be doing all or any of the
-following:
+ในการทำให้ลูกค้าสนใจ คุณอาจทำทั้งหมดหรืออย่างใดอย่างหนึ่งต่อไปนี้:
 
-  * Listing your product on directories.
-  * Maintaining an updated and searchable website.
-  * Meeting people at trade events.
-  * Advertising your products or services.
+  * รายการผลิตภัณฑ์ของคุณในไดเรกทอรี
+  * ดูแลเว็บไซต์ให้ทันสมัยและค้นหาได้
+  * พบปะผู้คนในงานการค้า
+  * โฆษณาผลิตภัณฑ์หรือบริการของคุณ
 
-When you send out the word that you are around and have something valuable to
-offer, people will come in to check out your products. These are your Leads.
+เมื่อคุณมีข้อเสนอที่ดี ผู้คนจะเข้ามาตรวจสอบผลิตภัณฑ์ของคุณ นี่คือลีดของคุณ
 
-They are called Leads because they may lead you to a sale. Sales executives
-usually work on leads by calling them, building a relationship and sending
-information about products or services. It is important to track all
-this conversation to enable another person who may have to follow-up on that
-contact. The new person is then able to know the history of that particular
-Lead.
+พวกเขาเรียกว่าลูกค้าเป้าหมายเพราะพวกเขาอาจนำคุณไปสู่การขาย ผู้บริหารฝ่ายขาย
+มักจะทำงานบนลีดโดยการโทรหาพวกเขา สร้างความสัมพันธ์ และส่ง
+ข้อมูลเกี่ยวกับผลิตภัณฑ์หรือบริการ มันเป็นสิ่งสำคัญที่จะติดตามทั้งหมด
+การสนทนานี้เพื่อให้บุคคลอื่นที่อาจต้องติดตามว่า
+ติดต่อ. คนใหม่จะได้รู้ประวัติของตัวนั้นโดยเฉพาะ
+ลูกค้าเป้าหมาย.
 
-To access the Lead list, go to:
-> Home > CRM > Sales Pipeline > Lead
+หากต้องการเข้าถึงรายชื่อลูกค้าเป้าหมาย ให้ไปที่:
+> หน้าหลัก > CRM > ไปป์ไลน์การขาย > ลูกค้าเป้าหมาย
 
 ---
-## 1. How to Create a Lead
+## 1. วิธีสร้างลูกค้าเป้าหมาย
 
-1. Go to the Lead list and click on New.
-1. If the person represents an organization, check the 'Lead is an Organization' checkbox. Notice that when you check, the 'Company Name
-' field becomes mandatory. Enter the Company Name.
-1. If the person is an individual, leave the checkbox unchecked and enter Person Name and Gender.
-1. Enter the 'Email Address'.
-1. **Status is the important field** in the Lead. You can set the status manually and also it will be updated automatically based on your actions against the lead.
- * Lead: This is the default status assigned when a Lead is created and it indicates an action is needed against this Lead.
- * Open: Sales executive needs to contact the Lead.
- * Replied: A sales executive has provided the information needed and response from Lead is awaited.
- * Opportunity: If an Opportunity is created against the Lead, the status is set to Opportunity. It indicates that the Lead is qualified and may lead to sales.
- * Quotation: If a quotation is created against a Lead, then the status is set to Quotation.
- * Lost Quotation: If the quotation given to the lead has been marked as lost, then the status is set to 'Lost Quotation'.
- * Interested: The lead is interested in the products or services.
- * Converted: If the quotation given to the Lead has resulted in confirmation of an order and if the Sales Order has been created against the quotation, then the status is set to Converted.
- * Do Not Contact: Lead is not interested and no further communication is needed.
-1. You can set the Lead Source in Source field.
-1. Enter email ID for communication.
-1. Click on 'Save'.
+1. ไปที่รายการลูกค้าเป้าหมายและคลิกที่ใหม่
+1. หากบุคคลนั้นเป็นตัวแทนขององค์กร ให้เลือกช่องทำเครื่องหมาย 'ลูกค้าเป้าหมายคือองค์กร' สังเกตว่าเมื่อคุณตรวจสอบ 'ชื่อบริษัท
+' ฟิลด์บังคับ ใส่ชื่อบริษัท
+1. หากบุคคลนั้นเป็นบุคคล ให้ยกเลิกการเลือกช่องทำเครื่องหมายและป้อนชื่อบุคคลและเพศ
+1. ป้อน 'ที่อยู่อีเมล'
+1. **สถานะเป็นช่องสำคัญ** ในกลุ่มลูกค้าเป้าหมาย คุณสามารถกำหนดสถานะได้ด้วยตนเองและจะได้รับการอัปเดตโดยอัตโนมัติตามการกระทำของคุณกับลูกค้าเป้าหมาย
+ * ลูกค้าเป้าหมาย: นี่คือสถานะเริ่มต้นที่กำหนดเมื่อมีการสร้างลูกค้าเป้าหมายและบ่งชี้ว่าจำเป็นต้องมีการดำเนินการกับลูกค้าเป้าหมายรายนี้
+ * เปิด: ผู้บริหารฝ่ายขายต้องติดต่อลูกค้าเป้าหมาย
+ * ตอบกลับ: ผู้บริหารฝ่ายขายได้ให้ข้อมูลที่จำเป็นและรอการตอบกลับจากลูกค้าเป้าหมาย
+ * โอกาส: หากสร้างโอกาสโดยเทียบกับลูกค้าเป้าหมาย สถานะจะถูกตั้งค่าเป็นโอกาส บ่งชี้ว่าลูกค้าเป้าหมายมีคุณสมบัติและอาจนำไปสู่การขาย
+ * ใบเสนอราคา: หากมีการสร้างใบเสนอราคากับลูกค้าเป้าหมาย สถานะจะถูกตั้งค่าเป็นใบเสนอราคา
+ * ใบเสนอราคาสูยหาย: หากใบเสนอราคาที่มอบให้กับลูกค้าเป้าหมายถูกทำเครื่องหมายว่าสูญหาย สถานะจะถูกตั้งค่าเป็น 'ใบเสนอราคาสูยหาย'
+ * สนใจ : หัวหน้าสนใจสินค้าหรือบริการ
+ * แปลงแล้ว: หากใบเสนอราคาที่มอบให้กับลูกค้าเป้าหมายส่งผลให้มีการยืนยันคำสั่งซื้อ และหากมีการสร้างใบสั่งขายเทียบกับใบเสนอราคา สถานะจะถูกตั้งค่าเป็นแปลงแล้ว
+ * ห้ามติดต่อ: หัวหน้าไม่สนใจและไม่จำเป็นต้องมีการสื่อสารเพิ่มเติม
+1. คุณสามารถตั้งค่าแหล่งที่มาของโอกาสในการขายในฟิลด์แหล่งที่มา
+1. ป้อน ID อีเมลสำหรับการสื่อสาร
+1. คลิกที่ 'บันทึก'
 
 <img class="screenshot" alt="Lead" src="{{docs_base_url}}/assets/img/crm/lead.png">
 
-You can also record the details of the conversation in the NOTES section.
+คุณยังสามารถบันทึกรายละเอียดของการสนทนาในส่วนหมายเหตุ
 
-Further details like Lead Type, Market Segment, Industry can be added in the 'MORE INFORMATION' section.
+รายละเอียดเพิ่มเติม เช่น ประเภทลูกค้าเป้าหมาย กลุ่มตลาด อุตสาหกรรม สามารถเพิ่มได้ในส่วน 'ข้อมูลเพิ่มเติม'
 
-If you have a healthy number of leads, all this information will help you prioritize
-the leads you can pursue.
+หากคุณมีลีดจำนวนมาก ข้อมูลทั้งหมดนี้จะช่วยคุณจัดลำดับความสำคัญ
+โอกาสในการขายที่คุณสามารถติดตามได้
 
 
-You can assign the Lead to a user by clicking on 'Assign' button on left bar. You can also attach files/images by clicking on 'Attach File' button.
+คุณสามารถกำหนดลูกค้าเป้าหมายให้กับผู้ใช้โดยคลิกที่ปุ่ม 'กำหนด' ที่แถบด้านซ้าย คุณยังสามารถแนบไฟล์/รูปภาพโดยคลิกที่ปุ่ม 'แนบไฟล์'
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Reminders to Follow Up on the Leads
+### 2.1 การเตือนความจำเพื่อติดตามลูกค้าเป้าหมาย
 
-It is important to reach out to leads from time to time and build the relationship. You can set the 'Next Contact Date' and 'Next Contact By' fields and a calendar event will be added for the user chosen in 'Next Contact By' field and a notification is shown on that Date.
+สิ่งสำคัญคือต้องติดต่อผู้มุ่งหวังเป็นครั้งคราวและสร้างความสัมพันธ์ คุณสามารถตั้งค่าฟิลด์ 'วันที่ติดต่อถัดไป' และ 'ผู้ติดต่อถัดไปโดย' ได้ และกิจกรรมในปฏิทินจะถูกเพิ่มสำหรับผู้ใช้ที่เลือกไว้ในฟิลด์ 'ผู้ติดต่อถัดไปตาม' และการแจ้งเตือนจะแสดงในวันที่นั้น
 
-### 2.2 Adding Multiple Contacts and Addresses
+### 2.2 การเพิ่มผู้ติดต่อและที่อยู่หลายรายการ
 
-In Busines-to-business(B2B) scenario, in order to close a sales deal, you will have to contact multiple people working in the prospective company.
-You can add the details of all such people in the same lead. Once you save a Lead, you will get the option to add [Contact](/docs/user/manual/en/CRM/contact) details by clicking on 'New Contact' button. Similarly, you can add the [Address](/docs/user/manual/en/CRM/address) details by clicking on 'New Address'.
+ในสถานการณ์สมมติธุรกิจกับธุรกิจ (B2B) ในการปิดการขาย คุณจะต้องติดต่อบุคคลหลายคนที่ทำงานในบริษัทที่คาดหวัง
+คุณสามารถเพิ่มรายละเอียดของบุคคลดังกล่าวทั้งหมดในลีดเดียวกันได้ เมื่อคุณบันทึกลูกค้าเป้าหมายแล้ว คุณจะได้รับตัวเลือกในการเพิ่มรายละเอียด [ผู้ติดต่อ](/docs/user/manual/th/CRM/contact) โดยคลิกที่ปุ่ม 'ผู้ติดต่อใหม่' ในทำนองเดียวกัน คุณสามารถเพิ่มรายละเอียด [ที่อยู่](/docs/user/manual/th/CRM/address) โดยคลิกที่ 'ที่อยู่ใหม่'
 
 <img class="screenshot" alt="Lead" src="{{docs_base_url}}/assets/img/crm/multiple_address_contacts_in_lead.png">
 
-### 2.3 Recording Comments, Emails and Events
+### 2.3 การบันทึกความคิดเห็น อีเมลและกิจกรรม
 
-* **Comments**: You can write your comment in 'Add a comment' box and click on 'Comment'.
+* **ความคิดเห็น**: คุณสามารถเขียนความคิดเห็นของคุณในช่อง 'เพิ่มความคิดเห็น' และคลิกที่ 'ความคิดเห็น'
 
-* **Emails**: You can send an email to the lead by clicking on the 'New Email' button and when the lead responds to your email, it will be appended to your email creating an email thread.
+* **อีเมล**: คุณสามารถส่งอีเมลไปยังลูกค้าเป้าหมายได้โดยคลิกที่ปุ่ม 'อีเมลใหม่' และเมื่อลูกค้าเป้าหมายตอบกลับอีเมลของคุณ อีเมลนั้นจะถูกผนวกเข้ากับอีเมลของคุณเพื่อสร้างชุดข้อความอีเมล
 
-* **Events**: You can also records the Meetings, Calls etc you have had with the Lead by clicking on 'New Event'
+* **กิจกรรม**: คุณยังสามารถบันทึกการประชุม การโทร ฯลฯ ที่คุณมีกับผู้นำโดยคลิกที่ 'กิจกรรมใหม่'
 
-### 2.4 Creating Opportunity, Customer and Quotation
+### 2.4 การสร้างโอกาส ลูกค้า และใบเสนอราคา
 
-You can create an Opportunity, Customer or a Quotation from the Make dropdown. Relevant field values will be copied over.
+คุณสามารถสร้างโอกาส ลูกค้า หรือใบเสนอราคาจากดรอปดาวน์ Make ค่าฟิลด์ที่เกี่ยวข้องจะถูกคัดลอกไป
 
 
-### 2.5 Auto-assigning the Leads to Sales Executives
->Introduced in Version 12
+### 2.5 การกำหนดลูกค้าเป้าหมายให้กับผู้บริหารฝ่ายขายโดยอัตโนมัติ
+>เปิดตัวในเวอร์ชั่น12
 
-You can define [Assignment Rules](/docs/user/manual/en/automation/assignment-rule) to automatically assign the leads to sales executives.
+คุณสามารถกำหนด [กฎการมอบหมาย](/docs/user/manual/th/automation/assign-rule) เพื่อกำหนดลูกค้าเป้าหมายให้กับผู้บริหารฝ่ายขายโดยอัตโนมัติ
 
 <img class="screenshot" alt="Lead" src="{{docs_base_url}}/assets/img/crm/lead_assignment_rule.png">
 
-## 3. Adding Custom Fields
+## 3. การเพิ่มฟิลด์ที่กำหนดเอง
 
-You may need to add custom fields to capture additional details as per your needs.
+คุณอาจต้องเพิ่มฟิลด์ที่กำหนดเองเพื่อเก็บรายละเอียดเพิ่มเติมตามความต้องการของคุณ
 
-You can customize the Lead DocType using [Customize Form](/docs/user/manual/en/customize-erpnext/custom-field) tool.
+คุณสามารถปรับแต่ง Lead โดยใช้เครื่องมือ [แบบฟอร์มกำหนดเอง](/docs/user/manual/th/customize-erpnext/custom-field)
 
-## 4. Related Topics
-1. [Opportunity](/docs/user/manual/en/CRM/opportunity)
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Difference between Lead, Contact, and Customer](/docs/user/manual/en/CRM/articles/difference_between_lead_contact_and_customer)
+## 4. หัวข้อที่เกี่ยวข้อง
+1. [โอกาส](/docs/user/manual/th/CRM/opportunity)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ความแตกต่างระหว่างลูกค้าเป้าหมาย ผู้ติดต่อ และลูกค้า](/docs/user/manual/th/CRM/articles/difference_between_lead_contact_and_customer)
 
 {next}

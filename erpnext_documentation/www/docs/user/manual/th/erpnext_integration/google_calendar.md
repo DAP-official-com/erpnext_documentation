@@ -1,31 +1,31 @@
 <!-- add-breadcrumbs -->
-# Google Calendar Integration
+# การใช้ ปฏิทิน Google 
 
-ERPNext provides an integration with Google Calendar in order for all users to synchronize their Google Calendar Events with ERPNext.
+ERPNext ให้การผสานรวมกับ ปฏิทิน Google  เพื่อให้ผู้ใช้ทุกคนสามารถซิงโครไนซ์กิจกรรมในปฏิทินของ Google กับ ERPNext
 
 
-## How to set up Google Calendar Integration
+## วิธีตั้งค่าการใช้ ปฏิทิน Google 
 
-In order to allow a synchronization with Google Calendar, you need to authorize ERPNext to get Calendar Events data from Google. Google Calendar Integration is set up with the following steps:
+เพื่อให้สามารถซิงโครไนซ์กับ Google ปฏิทินได้ คุณต้องให้สิทธิ์ ERPNext เพื่อรับข้อมูลกิจกรรมในปฏิทินจาก Google การรวม Google ปฏิทินได้รับการตั้งค่าตามขั้นตอนต่อไปนี้:
 
-- Create OAuth 2.0 Credentials via [Google Settings](/docs/user/manual/en/erpnext_integration/google_settings).
-- In the Google Calendar list, click on New. Enter Calendar Name and the User for whom you want to sync and then save it.
-- Depending what data you want to sync, you can select following
-  - Pull from Google Calendar - Syncs all event from Google Calendar to ERPNext.
-  - Push to Google Calendar - Syncs all event from ERPNext to Google Calendar.
-- Now click on **Authorize Calendar Access** to authorize ERPNext to get Calendar Events data from Google.
-- Once Authorized, you can manually sync Google Calendar Event or let ERPNext sync Google Contacts daily.
+- สร้างข้อมูลรับรอง OAuth 2.0 ผ่าน [การตั้งค่า Google](/docs/user/manual/th/erpnext_integration/google_settings)
+- ในรายการ Google ปฏิทิน ให้คลิกใหม่ ป้อนชื่อปฏิทินและผู้ใช้ที่คุณต้องการซิงค์แล้วบันทึก
+- ขึ้นอยู่กับว่าคุณต้องการซิงค์ข้อมูลใด คุณสามารถเลือกติดตามได้
+  - ดึงจาก Google ปฏิทิน - ซิงค์กิจกรรมทั้งหมดจาก Google ปฏิทินไปยัง ERPNext
+  - พุชไปที่ Google ปฏิทิน - ซิงค์กิจกรรมทั้งหมดจาก ERPNext ไปยัง Google ปฏิทิน
+- ตอนนี้คลิกที่ **อนุญาตการเข้าถึงปฏิทิน** เพื่ออนุญาต ERPNext เพื่อรับข้อมูลกิจกรรมในปฏิทินจาก Google
+- เมื่อได้รับอนุญาตแล้ว คุณสามารถซิงค์ Google Calendar Event ด้วยตนเองหรือให้ ERPNext ซิงค์ Google Contacts ทุกวัน
 
-## How to use Google Calendar Integration
+## วิธีใช้ ปฏิทิน Google 
 
-### Creating an Event in ERPNext
-- Once Google Calendar Integration is succesful, all the events created in ERPNext will be synced if `Push to Google Calendar` is checked.
-- Creating an Event in ERPNext
+### การสร้างกิจกรรมใน ERPNext
+- เมื่อการผสานรวม Google ปฏิทินสำเร็จ กิจกรรมทั้งหมดที่สร้างใน ERPNext จะถูกซิงค์หากเลือก "พุชไปที่ Google ปฏิทิน"
+- การสร้างกิจกรรมใน ERPNext
   <img class="screenshot" src="/docs/assets/img/erpnext_integrations/erpnext-gc.gif">
-- Deleting an Event in ERPNext
+- การลบกิจกรรมใน ERPNext
   <img class="screenshot" src="/docs/assets/img/erpnext_integrations/gc-erpnext.gif">
 
-### Syncing Events from Google Calendar
-- Once Google Calendar Integration is succesful, all the events in Google Calendar will be synced if `Pull from Google Calendar` is checked.
-- Syncing Events from Google Calendar to ERPNext
+### กำลังซิงค์กิจกรรมจาก ปฏิทิน Google
+- เมื่อการผสานรวม ปฏิทิน Google สำเร็จ กิจกรรมทั้งหมดใน ปฏิทิน Google จะถูกซิงค์หากเลือก "ดึงจาก ปฏิทิน Google"
+- ซิงค์กิจกรรมจาก ปฏิทิน Google กับ ERPNext
   <img class="screenshot" src="/docs/assets/img/erpnext_integrations/gc-sync.gif">

@@ -1,52 +1,53 @@
 <!-- add-breadcrumbs -->
-# Dunning
+# การเร่งรัดหนี้สิน (ดันนิ่ง)
 
-**A document to be sent as a persistent demand for debt payment.**
+**เอกสารที่ต้องส่งเป็นการทวงถามชำระหนี้**
 
-Dunning is a document to store and send as a persistent demand for debt payment against an unpaid Sales Invoice.
+ดันนิ่งเป็นเอกสารในการจัดเก็บและส่งเพื่อเรียกร้องการชำระหนี้กับใบกำกับสินค้าที่ยังไม่ได้ชำระ
 
-To access the Dunning list, go to:
-> Home > Accounting > Dunning
+หากต้องการเข้าถึงรายการดันนิ่งให้ไปที่:
+> หน้าหลัก > บัญชี > ดันนิ่ง
 
-## 1. Prerequisites
-Before creating a Dunning, there must be a Sales Invoice since it is created against it.
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนที่จะสร้าง ดันนิ่ง จะต้องมี ใบแจ้งหนี้การขาย เนื่องจากมันถูกสร้างขึ้นมากับมัน
 
-* [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
+* [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
 
-## 2. How to create a Dunning
-A Dunning is created against a Sales Invoice.
+## 2. วิธีสร้างดันนิ่ง
 
-For manual creation, follow these steps:
+ดันนิ่งถูกสร้างขึ้นโดยเทียบกับใบแจ้งหนี้การขาย
 
-1. Go to the Dunning list and click on New.
-1. Select an overdue Sales Invoice.
-1. Set Dunning Type in the dunning type link field.
-1. Set printing setting for the print template of the Dunning letter.
-1. The posting date and time will be set to current, you can edit after you tick the checkbox below Posting Time to make a backdated entry.
-1. Save and Submit.
+สำหรับการสร้างด้วยตนเอง ให้ทำตามขั้นตอนเหล่านี้:
+
+1. ไปที่รายการ ดันนิ่ง และคลิกที่ ใหม่
+1. เลือกใบแจ้งหนี้การขายที่ค้างชำระ
+1. ตั้งค่า ประเภทของ ดันนิ่ง ในช่องลิงก์ประเภท ดันนิ่ง
+1. ตั้งค่าการพิมพ์สำหรับเทมเพลตการพิมพ์ของจดหมาย ดันนิ่ง
+1. วันที่และเวลาโพสต์จะถูกตั้งค่าเป็นปัจจุบัน คุณสามารถแก้ไขได้หลังจากทำเครื่องหมายที่ช่องด้านล่าง เวลาในการโพสต์ เพื่อสร้างรายการย้อนหลัง
+1. บันทึกและส่ง
 
  ![Dunning example](/docs/assets/img/accounts/dunning.gif)
 
-### 2.1 What is a Dunning Type
-Dunning Type stores default values for overdue days, dunning fee, interest rate and text blocks to be included. For example, a Dunning Type "First Notice" will not have any fees, but Dunning Type "Second Notice" will have a dunning fee and interest charged on the outstanding amount.
+### 2.1 ประเภท ดันนิ่ง คืออะไร
+ประเภทดันนิ่ง คือการจัดเก็บค่าเริ่มต้นสำหรับวันที่เกินกำหนด ค่าธรรมเนียมการค้างชำระ อัตราดอกเบี้ย และบล็อกข้อความที่จะรวมไว้ ตัวอย่างเช่น ดันนิ่งประเภท "การแจ้งเตือนครั้งแรก" จะไม่มีค่าธรรมเนียมใดๆ แต่ "การแจ้งเตือนครั้งที่สอง" จะมีค่าธรรมเนียมการค้างชำระและดอกเบี้ยที่เรียกเก็บจากยอดค้างชำระ
 
  ![Dunning Type](/docs/assets/img/accounts/dunning-type.png)
 
-### 2.2 Statuses
+### 2.2 สถานะ
 
-These are the statuses that are auto-assigned to Dunning.
+สถานะเหล่านี้เป็นสถานะที่กำหนดอัตโนมัติให้กับ ดันนื่ง
 
-* **Draft**: A draft is saved but yet to be submitted.
-* **Unresolved**: The Dunning is unresolved when it is submitted but no payments have been received.
-* **Resolved**: The Dunning is resolved when the outstanding payment has been received.
-* **Cancelled**: A cancelled status is a cancelled Dunning document.
+* **ดราฟ**: บันทึกแบบร่างแล้วแต่ยังไม่ได้ส่ง
+* **ยังไม่ได้รับการแก้ไข**: ดันนิ่งที่ไม่ได้รับการแก้ไขเมื่อมีการส่งแต่ยังไม่ได้รับการชำระเงิน
+* **แก้ไขแล้ว**: ดันนิ่งที่ได้รับการแก้ไขเมื่อได้รับการชำระเงินที่ค้างชำระ
+* **ยกเลิก**: สถานะถูกยกเลิกคือเอกสาร ดันนิ่ง ที่ถูกยกเลิก
 
-## 3. Payment
+## 3. การชำระเงิน
 
-A Payment Entry can be created from a Dunning. It will be pulled together with the Sales Invoice details it is against.
+สามารถสร้างรายการชำระเงินได้จาก Dunning มันจะถูกดึงพร้อมกับรายละเอียดใบแจ้งหนี้การขาย
  
 ![Dunning Payment](/docs/assets/img/accounts/dunning-payment.png)
 
-## 4. Related Topics
-1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
-1. [Sales Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+## 4. หัวข้อที่เกี่ยวข้อง
+1. [รายการชำระเงิน](/docs/user/manual/th/accounts/payment-entry)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/purchase-invoice)

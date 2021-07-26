@@ -1,20 +1,21 @@
 <!-- add-breadcrumbs -->
-# Cashier Closing
+# ปิดแคชเชียร์
 
-A retail counter may have multiple people operating it throughout the day in different shifts. Cashier closing in POS allows a cashier to record the sales and details at the end of his/her shift.
+เคาน์เตอร์ขายปลีกอาจมีคนทำงานหลายคนตลอดทั้งวันในกะทำงานที่แตกต่างกัน การปิดบัญชีแคชเชียร์ใน POS ช่วยให้แคชเชียร์สามารถบันทึกการขายและรายละเอียดเมื่อสิ้นสุดกะทำงาน
 
-To access the Cashier Closing list, go to:
-> Home > Retail > Retail Operations > POS
+นการเข้าถึงรายการปิดบัญชีแคชเชียร์ ไปที่:
+
+> หน้าหลัก > การขายปลีก > การดำเนินการขายปลีก > POS
 
 ## 1. How to create a Cashier Closing
-1. Go to the Cashier Closing list and click on New.
-1. Enter the shift start and end time.
-1. Enter any expenses incurred during the shift like refershments, tea, coffee, etc.
-1. In the Payments table, enter the mode of Payment and the amount received.
-1. Save and Submit.
+1. ไปที่รายการ Cashier Closing และคลิกที่ ใหม่
+1. ป้อนเวลาเริ่มต้นและสิ้นสุดของกะทำงาน
+1. ระบุค่าใช้จ่ายที่เกิดขึ้นระหว่างกะ เช่น ค่าอ้างอิง ชา กาแฟ ฯลฯ
+1. ในตารางการชำระเงิน ให้ป้อนโหมดการชำระเงินและจำนวนเงินที่ได้รับ
+1. บันทึกและส่ง
     ![POS Cashier Closing](/docs/assets/img/accounts/pos-cashier-closing.png)
 
-* **Custody**: The amount in the cash drawer.
-* **Returns**: The amount for the Items returned by Customers.
+* **การดูแล**: จำนวนเงินในลิ้นชักเก็บเงิน
+* **การคืนสินค้า**: จำนวนเงินสำหรับสินค้าที่ลูกค้าส่งคืน
 
-From here, the accountant or concerned person can collect, tally the cash and make the necessary [Journal Entries](/docs/user/manual/en/accounts/journal-entry) to update the Company ledgers.
+จากที่นี่ นักบัญชีหรือบุคคลที่เกี่ยวข้องสามารถรวบรวม นับเงินสด และทำ [รายการบันทึกประจำวัน](/docs/user/manual/th/accounts/journal-entry) ที่จำเป็นเพื่อปรับปรุงบัญชีแยกประเภทของบริษัท

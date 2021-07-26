@@ -1,75 +1,75 @@
 <!-- add-breadcrumbs -->
 
-# Custom Field
+# ฟิลด์กำหนดเอง
 
-**Every form in ERPNext has a standard set of fields. If you need to capture some information, but there is no standard Field available for it, you can insert Custom Field in a form as per your requirement.**
+**ทุกรูปแบบใน ERPNext มีชุดฟิลด์มาตรฐาน หากคุณต้องการบันทึกข้อมูลบางอย่าง แต่ไม่มีฟิลด์มาตรฐานสำหรับข้อมูลดังกล่าว คุณสามารถแทรกฟิลด์ที่กำหนดเองในแบบฟอร์มได้ตามความต้องการของคุณ**
 
-You can go to [Customize Form](/docs/user/manual/en/customize-erpnext/customize-form) and add the Field in a particular Form or a Document type _(hereafter referred to as DocType)_ .
+คุณสามารถไปที่ [Customize Form](/docs/user/manual/th/customize-erpnext/customize-form) และเพิ่มฟิลด์ในแบบฟอร์มเฉพาะหรือประเภทเอกสาร _(ต่อไปนี้จะเรียกว่า DocType)_
 
-To access Custom Field, go to:
+ในการเข้าถึงฟิลด์กำหนดเอง ไปที่:
 
-> Home > Customization > Form Customization > Custom Field
+> หน้าแรก > การปรับแต่ง > การปรับแต่งแบบฟอร์ม > ฟิลด์กำหนดเอง
 
-You can also go to the list view of any DocType and select Customize from the Menu options.
+คุณยังสามารถไปที่มุมมองรายการของ DocType และเลือกปรับแต่งจากตัวเลือกเมนู
 
 <img alt="Custom Field" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-custom-field-01.png">
 
-## 1. How to create a Custom Field
+## 1. วิธีสร้างฟิลด์ที่กำหนดเอง
 
-1. Go to the Custom Field list and click on New.
-2. **Document**: Select the Document in which you need to add the Custom Field.
-3. **Label**: Enter what Label would you like to give to your Custom Field.
-4.  **Field Type**: ERPNext already has a set of Field Types defined which can be fetched from this drop-down menu. You can select the Type of your Custom Field from within this menu.
-5. Update.
+1. ไปที่รายการ Custom Field และคลิกที่ New
+2. **เอกสาร**: เลือกเอกสารที่คุณต้องการเพิ่มฟิลด์ที่กำหนดเอง
+3. **ป้ายกำกับ**: ป้อนป้ายกำกับที่คุณต้องการให้ในช่องที่กำหนดเอง
+4. **ประเภทฟิลด์**: ERPNext มีชุดของประเภทฟิลด์ที่กำหนดไว้แล้ว ซึ่งสามารถดึงข้อมูลจากเมนูแบบเลื่อนลงนี้ คุณสามารถเลือกประเภทของฟิลด์ที่กำหนดเองได้จากภายในเมนูนี้
+5. อัพเดท
 
-  *Learn more about Field types [here](/docs/user/manual/en/customize-erpnext/articles/field-types.html).*
+  *เรียนรู้เพิ่มเติมเกี่ยวกับประเภทฟิลด์ [ที่นี่](/docs/user/manual/th/customize-erpnext/articles/field-types.html).*
 
-You can also go to [Customize Form](/docs/user/manual/en/customize-erpnext/customize-form) and add, edit or remove a Field in a particular Form.
+คุณยังสามารถไปที่ [กำหนดแบบฟอร์ม](/docs/user/manual/th/customize-erpnext/customize-form) และเพิ่ม แก้ไข หรือลบฟิลด์ในแบบฟอร์มเฉพาะ
 
 <img alt="Custom Field" class="screenshot" src="{{docs_base_url}}/assets/img/setup/customize-erpnext-custom-field-from-customize-form.gif">
 
-### 1.1. Additional Details
+### 1.1. รายละเอียดเพิ่มเติม
 
-1. **Options**: This Field comes into picture when you would want your data to be specific or specify the data. E.g., when you have selected the Field to be a 'Select Field', you would be required to enter the selection options here.
+1. **ตัวเลือก**: ฟิลด์นี้จะปรากฏในภาพเมื่อคุณต้องการให้ข้อมูลของคุณมีความเฉพาะเจาะจงหรือระบุข้อมูล เช่น เมื่อคุณเลือกฟิลด์ที่จะเป็น 'เลือกฟิลด์' คุณจะต้องป้อนตัวเลือกการเลือกที่นี่
 
   <img alt="Custom Field" class="screenshot" src="{{docs_base_url}}/assets/img/customize/custom-field-2.png">
 
-1. **Fetch From**: When you want your Custom Field to be 'Link Field', you would be required to specify the Form to which this Field is to be linked. E.g., you want to create a Custom Field 'Project' in the DocType 'Item'. You would be required to enter to specify your Field Type as 'Link' and enter 'Project' in the Fetch From Field to ensure that the Field is updated with the list of all the required DocTypes.
-1. **Fetch If Empty**: This check-box will ensure that this Field will be not overwritten based on Fetch From if a value already exists.
-1. **Default Value**: Enter the default value of the Field which you would want to be fetched for this Field.
-1. **Depends On**: You can define a condition here for the Field to be displayed. E.g., in the DocType Item, two fields 'Asset Category' and 'Asset Naming Series' will only appear if the Field 'Is Fixed Asset' is checked. The dependency condition here would be `is_fixed_asset`.
+1. **ดึงข้อมูลจาก**: เมื่อคุณต้องการให้ฟิลด์ที่กำหนดเองของคุณเป็น 'ฟิลด์ลิงก์' คุณจะต้องระบุแบบฟอร์มที่จะเชื่อมโยงฟิลด์นี้ เช่น คุณต้องการสร้างฟิลด์ที่กำหนดเอง 'โครงการ' ใน DocType 'รายการ' คุณจะต้องป้อนเพื่อระบุประเภทฟิลด์ของคุณเป็น 'ลิงก์' และป้อน 'โครงการ' ในช่องดึงข้อมูลจากฟิลด์ เพื่อให้แน่ใจว่าฟิลด์ได้รับการอัปเดตด้วยรายการของ DocTypes ที่จำเป็นทั้งหมด
+1. **ดึงข้อมูลถ้าว่าง**: ช่องทำเครื่องหมายนี้จะช่วยให้แน่ใจว่าฟิลด์นี้จะไม่ถูกเขียนทับตามการดึงข้อมูลจากหากมีค่าอยู่แล้ว
+1. **ค่าเริ่มต้น**: ป้อนค่าเริ่มต้นของฟิลด์ที่คุณต้องการให้ดึงข้อมูลสำหรับฟิลด์นี้
+1. **ขึ้นอยู่กับ**: คุณสามารถกำหนดเงื่อนไขที่นี่สำหรับฟิลด์ที่จะแสดง เช่น ในรายการ DocType สองฟิลด์ 'ประเภทสินทรัพย์' และ 'ชุดการตั้งชื่อสินทรัพย์' จะปรากฏขึ้นก็ต่อเมื่อเลือกฟิลด์ 'เป็นสินทรัพย์ถาวร' เท่านั้น เงื่อนไขการพึ่งพาที่นี่จะเป็น "is_fixed_asset"
 
   <img alt="Custom Field" class="screenshot" src="{{docs_base_url}}/assets/img/customize/custom-field-dpends-on.png">
 
-1. **Field Description**: You can add the description of the Field here which can be displayed below this Field.
+1. **คำอธิบายฟิลด์**: คุณสามารถเพิ่มคำอธิบายของฟิลด์ได้ที่นี่ ซึ่งสามารถแสดงได้ด้านล่างฟิลด์นี้
 
    <img alt="Custom Field" class="screenshot" src="{{docs_base_url}}/assets/img/customize/custom-field-description-1.png">
 
-1. **Permission Level**: This will allow you to specify which roles within your organization will be able to edit this Field. You can go through [Role Based Permissions](/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions) for more understanding on this.
-1. **In Preview**: If [Show Preview Popup](/docs/user/manual/en/customize-erpnext/customize-form#13-more-properties) for the document type is checked, the Field will be included in the popup that appears on hovering over links of the document type (in list view and other link fields).
-1. **Width**: This will define the width allocated to this Field while viewing the Form in a Grid View.
-1. **Columns**: You can define the number of Columns in the grid view of the DocType.
+1. **ระดับการอนุญาต**: สิ่งนี้จะช่วยให้คุณสามารถระบุว่าบทบาทใดภายในองค์กรของคุณจะสามารถแก้ไขฟิลด์นี้ได้ คุณสามารถอ่าน [Role Based Permissions](/docs/user/manual/th/setting-up/users-and-permissions/role-based-permissions) เพื่อความเข้าใจในเรื่องนี้มากขึ้น
+1. **ในตัวอย่าง**: หากเลือก [แสดงตัวอย่างป๊อปอัป](/docs/user/manual/th/customize-erpnext/customize-form#13-more-properties) สำหรับประเภทเอกสาร ฟิลด์จะเป็น รวมอยู่ในป๊อปอัปที่ปรากฏขึ้นเมื่อวางเมาส์เหนือลิงก์ของประเภทเอกสาร (ในมุมมองรายการและฟิลด์ลิงก์อื่นๆ)
+1. **ความกว้าง**: สิ่งนี้จะกำหนดความกว้างที่จัดสรรให้กับฟิลด์นี้ในขณะที่ดูแบบฟอร์มในมุมมองกริด
+1. **คอลัมน์**: คุณสามารถกำหนดจำนวนคอลัมน์ในมุมมองกริดของ DocType
 
   <img alt="Custom Field" class="screenshot" src="{{docs_base_url}}/assets/img/customize/cutom-field-changes.png">
 
-### 1.2. More Properties
+### 1.2. คุณสมบัติเพิ่มเติม
 
-* **Is Mandatory Field**: This box can be checked if you want to make this Field mandatory while submitting a DocType.
-* **Unique**: Check this box when you want the value of this Field to be unique. This can be done in cases where the Custom Field is for a code or an Identification Number. E.g., Item Code in case of Item, GST Number in case of Customer.
-* **Read Only**: When you want this Field to be a read only or a non-editable Field. In this case, the value of the Field shall be auto-fetched from other fields.
-* **Hidden**: Check this Field when you want this Field to be hidden, or to hide an existing Field.
-* **Print Hide**: In cases that you want the print button to be hidden from the Print Format. Checkout [Fields in Print Format](/docs/user/manual/en/customize-erpnext/articles/making-fields-visible-in-print-format) for more information.
-* **No Copy**: Checking this box will restrict copying of this Field in the DocType.
-* **Allow on Submit**: This will allow you to make changes to the Field even after you have submitted the Form. Checkout [Editing Value in Submitted Document](/docs/user/manual/en/customize-erpnext/articles/allow-fields-to-be-changed-after-submission) for more information.
-* **In List View**: This will make the field visible in the List View of the DocType.
-* **In Standard Filter**: The field will become a standard filter in the List view of the Document.
-* **In Global Search**: When this box is checked this Field can be searched form the Global Search.
-* **Bold**: This will make this Field type bold, this adds more value to the Field.
-* **Report Hide**: This field will not be visible in the reports when you check this box.
-* **Ignore XSS Filter**: This will allow you to view this Field without the HTML tags.
-* **Translatable**: When this box is checked, it becomes translatable while applying [Custom Translations](/docs/user/manual/en/setting-up/print/custom-translations) to this.
+* **เป็นฟิลด์บังคับ**: คุณสามารถเลือกช่องนี้หากคุณต้องการกำหนดให้ฟิลด์นี้เป็นฟิลด์บังคับขณะส่ง DocType
+* **ไม่ซ้ำกัน**: เลือกช่องนี้เมื่อคุณต้องการให้ค่าของฟิลด์นี้ไม่ซ้ำกัน ซึ่งสามารถทำได้ในกรณีที่ฟิลด์กำหนดเองสำหรับรหัสหรือหมายเลขประจำตัว เช่น รหัสสินค้า กรณีสินค้า หมายเลข GST กรณีลูกค้า
+* **อ่านอย่างเดียว**: เมื่อคุณต้องการให้ฟิลด์นี้เป็นฟิลด์แบบอ่านอย่างเดียวหรือฟิลด์ที่ไม่สามารถแก้ไขได้ ในกรณีนี้ ค่าของฟิลด์จะถูกดึงอัตโนมัติจากฟิลด์อื่น
+* **ซ่อน**: เลือกช่องนี้เมื่อคุณต้องการซ่อนช่องนี้ หรือเพื่อซ่อนช่องที่มีอยู่
+* **พิมพ์ซ่อน**: ในกรณีที่คุณต้องการซ่อนปุ่มพิมพ์จากรูปแบบการพิมพ์ ชำระเงิน [ฟิลด์ในรูปแบบการพิมพ์](/docs/user/manual/th/customize-erpnext/articles/making-fields-visible-in-print-format) สำหรับข้อมูลเพิ่มเติม
+* **ห้ามคัดลอก**: การทำเครื่องหมายที่ช่องนี้จะจำกัดการคัดลอกฟิลด์นี้ใน DocType
+* **อนุญาตให้ส่ง**: การดำเนินการนี้จะทำให้คุณสามารถเปลี่ยนแปลงฟิลด์ได้ แม้ว่าคุณจะส่งแบบฟอร์มไปแล้วก็ตาม ชำระเงิน [การแก้ไขค่าในเอกสารที่ส่ง](/docs/user/manual/th/customize-erpnext/articles/allow-fields-to-be-change-after-submission) สำหรับข้อมูลเพิ่มเติม
+* **ในมุมมองรายการ**: ซึ่งจะทำให้ฟิลด์ปรากฏในมุมมองรายการของประเภทเอกสาร
+* **ในตัวกรองมาตรฐาน**: ฟิลด์นี้จะกลายเป็นตัวกรองมาตรฐานในมุมมองรายการของเอกสาร
+* **ในการค้นหาทั่วโลก**: เมื่อทำเครื่องหมายที่ช่องนี้ ฟิลด์นี้สามารถค้นหาได้จากการค้นหาทั่วโลก
+* **ตัวหนา**: สิ่งนี้จะทำให้ฟิลด์ประเภทนี้เป็นตัวหนา ซึ่งจะเพิ่มมูลค่าให้กับฟิลด์มากขึ้น
+* **ซ่อนรายงาน**: ช่องนี้จะไม่ปรากฏในรายงานเมื่อคุณทำเครื่องหมายที่ช่องนี้
+* **ละเว้นตัวกรอง XSS**: ซึ่งจะทำให้คุณสามารถดูฟิลด์นี้โดยไม่ต้องใช้แท็ก HTML
+* **แปลได้**: เมื่อเลือกช่องนี้ ช่องนี้จะสามารถแปลได้ในขณะที่ใช้ [การแปลที่กำหนดเอง](/docs/user/manual/th/setting-up/print/custom-translations) กับสิ่งนี้
 
-## 2. Videos
+## 2. วิดีโอ
 
 <div class="embed-container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/WSzkpPm3iIU?start=218" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

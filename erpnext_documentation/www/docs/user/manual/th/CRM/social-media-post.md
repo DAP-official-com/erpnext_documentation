@@ -8,40 +8,40 @@ metatags:
  keywords: Social Media Post Scheduling, CRM, frappe, erpnext new features, erp, open source erp, free erp, security
 ---
 
-# Social Media Post
+# โพสต์โซเชียลมีเดีย
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-Social Media Post is used to create and schedule the post for LinkedIn and Twitter, it can be also linked with a [Campaign](/docs/user/manual/en/CRM/campaign).
+โพสต์โซเชียลมีเดียใช้ในการสร้างและกำหนดเวลาโพสต์สำหรับ LinkedIn และ Twitter นอกจากนี้ยังสามารถเชื่อมโยงกับ [แคมเปญ](/docs/user/manual/th/CRM/campaign)
 
-To access Social Media Post, go to:
-> Home > CRM > Campaign > Social Media Post
+ในการเข้าถึง Social Media Post ให้ไปที่:
+> หน้าแรก > CRM > แคมเปญ > โพสต์โซเชียลมีเดีย
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-1. [LinkedIn Settings](/docs/user/manual/en/CRM/linkedin-settings)
-2. [Twitter Settings](/docs/user/manual/en/CRM/twitter-settings)
+1. [การตั้งค่า LinkedIn](/docs/user/manual/th/CRM/linkedin-settings)
+2. [การตั้งค่าทวิตเตอร์](/docs/user/manual/th/CRM/twitter-settings)
 
-## 2. How to create a Social Media Post
+## 2. วิธีสร้างโพสต์โซเชียลมีเดีย
 
-1. Go to Social Media Post list, click on **New**.
-2. Select **Campaign** if any otherwise leave it blank.
-3. Choose the **Scheduled Time** of the post to be published.
-4. Select the social media platforms to which post has to be published.
-5. Enter content for Twitter and LinkedIn.
-6. Attach image(Optional).
-7. Save and Submit.
+1. ไปที่รายการ Social Media Post คลิก **ใหม่**
+2. เลือก **แคมเปญ** หากเว้นว่างไว้
+3. เลือก **กำหนดเวลา** ของโพสต์ที่จะเผยแพร่
+4. เลือกแพลตฟอร์มโซเชียลมีเดียที่ต้องการเผยแพร่โพสต์
+5. ป้อนเนื้อหาสำหรับ Twitter และ LinkedIn
+6. แนบรูปภาพ (ไม่บังคับ)
+7. บันทึกและส่ง
 ![New Social Media Post](/docs/assets/img/crm/social-media-post.png)
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Immediate Post
-Users can also immediately post just after submitting a Social Media Post by clicking the '**Post Now**' button.
+### 3.1 โพสต์ทันที
+ผู้ใช้ยังสามารถโพสต์ได้ทันทีหลังจากส่งโพสต์บนโซเชียลมีเดียโดยคลิกปุ่ม '**โพสต์เลย**'
 ![Post Now](/docs/assets/img/crm/post-now.png)
 
-### 3.2 Reschedule
-Users can change the Scheduled Time of the post. In case there is an error, users can reschedule the post by changing the '**Scheduled Time**' of the Social Media Post document.
+### 3.2 กำหนดการใหม่
+ผู้ใช้สามารถเปลี่ยนกำหนดเวลาของโพสต์ได้ ในกรณีที่มีข้อผิดพลาด ผู้ใช้สามารถกำหนดเวลาโพสต์ใหม่ได้โดยเปลี่ยน '**Scheduled Time**' ของเอกสาร Social Media Post
 ![Reschedule Post](/docs/assets/img/crm/reschedule-post.png)
 
-## 4. Related Topics
-1. [Campaign](/docs/user/manual/en/CRM/campaign)
+## 4. หัวข้อที่เกี่ยวข้อง
+1. [แคมเปญ](/docs/user/manual/th/CRM/campaign)

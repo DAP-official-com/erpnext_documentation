@@ -1,31 +1,31 @@
-# Table MultiSelect Field
+# ตาราง MultiSelect ฟิลด์
 
-The Table MultiSelect field is very similar to Link Field. The key difference is that Table MultiSelect field allows you to select multiple values.
+ฟิลด์ Table MultiSelect นั้นคล้ายกับฟิลด์ลิงก์มาก ความแตกต่างที่สำคัญคือฟิลด์ Table MultiSelect ให้คุณเลือกค่าได้หลายค่า
 
-Let us consider an example to understand the same. Let's say you want to assign a ToDo to multiple users, as shown below:
+ให้เราพิจารณาตัวอย่างเพื่อทำความเข้าใจในสิ่งเดียวกัน สมมติว่าคุณต้องการกำหนด ToDo ให้กับผู้ใช้หลายรายดังที่แสดงด้านล่าง:
 
 <img alt="Table MultiSelect Field" class="screenshot" src="{{docs_base_url}}/assets/img/articles/table-multiselect-field.png">
 
 You can add a Table MultiSelect Field by using the following steps:
 
-## Step 1: Create a child DocType.
+## ขั้นตอนที่ 1: สร้าง DocType ย่อย
 
-Create a new DocType, enable 'Is Child Table' and 'Editable Grid' check-boxes and add a field with 'Link' type as shown below.
+สร้าง DocType ใหม่ เปิดใช้งานช่องทำเครื่องหมาย 'Is Child Table' และ 'Editable Grid' และเพิ่มฟิลด์ที่มีประเภท 'Link' ดังที่แสดงด้านล่าง
 
-Set the link field as mandatory. Ensure that the field within the child table has "In List View" ticked.
+ตั้งค่าฟิลด์ลิงก์เป็นฟิลด์บังคับ ตรวจสอบให้แน่ใจว่าฟิลด์ภายในตารางย่อยมีการทำเครื่องหมาย "ในมุมมองรายการ"
 
 <img alt="DocType for Table MultiSelect" class="screenshot" src="{{docs_base_url}}/assets/img/articles/doctype-for-table-multi-select.png">
 
-## Step 2: Add a field with type 'Table MultiSelect'.
+## ขั้นตอนที่ 2: เพิ่มฟิลด์ด้วยประเภท 'Table MultiSelect'
 
-Create a field with type 'Table MultiSelect' and add the DocType created in first step in 'options'.
+สร้างฟิลด์ด้วยประเภท 'ตาราง MultiSelect' และเพิ่ม DocType ที่สร้างขึ้นในขั้นตอนแรกใน 'ตัวเลือก'
 
 <img alt="Field with type Table MultiSelect" class="screenshot" src="{{docs_base_url}}/assets/img/articles/multi-select-field.png">
 
-You can remove any selected value by clicking on the cross sign next to selected value or by placing the cursor next to the value and pressing Backspace.
+คุณสามารถลบค่าที่เลือกได้โดยคลิกที่เครื่องหมายกากบาทถัดจากค่าที่เลือก หรือโดยการวางเคอร์เซอร์ไว้ข้างๆ ค่านั้นแล้วกด Backspace
 
-This field allows one value to be selected only once.
+ฟิลด์นี้อนุญาตให้เลือกค่าได้เพียงครั้งเดียวเท่านั้น
 
-> Note: Table MultiSelect fields cannot be added in child DocTypes.
+> หมายเหตุ: ไม่สามารถเพิ่มฟิลด์ MultiSelect ของตารางใน DocTypes ย่อย
 
 {next}

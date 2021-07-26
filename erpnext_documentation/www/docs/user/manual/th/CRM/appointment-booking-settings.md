@@ -1,51 +1,51 @@
-# Appointment Booking Settings
+# การตั้งค่าการจองนัดหมาย
 
-You can find all settings related to booking appointments in Appointment Booking Settings.
+คุณสามารถค้นหาการตั้งค่าทั้งหมดที่เกี่ยวข้องกับการนัดหมายการจองได้ในการตั้งค่าการจองการนัดหมาย
 
 ![Appointment Booking Settings](/docs/assets/img/crm/appointment-booking-settings.png)
 
-## 1. Enable Appointment scheduling
+## 1. เปิดใช้งานการกำหนดเวลานัดหมาย
 
-This checkbox will enable appointment scheduling and also enable the `/book_appointment` Route for website users (your customers). Your customers will see a portal view. To know more, visit the [Appointment Page](/docs/user/manual/en/CRM/appointment)
+ช่องทำเครื่องหมายนี้จะเปิดใช้งานการกำหนดเวลานัดหมายและเปิดใช้งานเส้นทาง `/book_appointment` สำหรับผู้ใช้เว็บไซต์ (ลูกค้าของคุณ) ลูกค้าของคุณจะเห็นมุมมองพอร์ทัล หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่ [หน้าการนัดหมาย](/docs/user/manual/th/CRM/appointment)
 
-## 2. Agent Details 
+## 2. รายละเอียดตัวแทน
 
-In this section, you can add details about agents, such as their working hours and holidays.
+ในส่วนนี้ คุณสามารถเพิ่มรายละเอียดเกี่ยวกับตัวแทน เช่น ชั่วโมงทำงานและวันหยุดของพวกเขา
 
-### 2.1  Availability of Slots
+### 2.1 ความพร้อมใช้งานของสล็อต
 
-Here you can set the timing in which your agents are available to attend an appointment. This is set per day of the week. Each row represents a continuous block of time, you can have multiple entries for each day of the week.
+ที่นี่ คุณสามารถกำหนดเวลาที่ตัวแทนของคุณพร้อมที่จะเข้าร่วมการนัดหมายได้ กำหนดเป็นรายวันในสัปดาห์ แต่ละแถวแสดงถึงช่วงเวลาต่อเนื่อง คุณสามารถมีรายการได้หลายรายการในแต่ละวันของสัปดาห์
 
-For example if your agents work Monday to Friday, 9am to 5pm but with a lunch break at 1.30 for half and hour. You will need to create two entries for each day. One from 9am to 1.30pm and another from 2pm to 5pm.
+ตัวอย่างเช่น หากตัวแทนของคุณทำงานตั้งแต่วันจันทร์ถึงวันศุกร์ 9.00 น. ถึง 17.00 น. แต่พักกลางวันเวลา 13.30 น. เป็นเวลาครึ่งชั่วโมง คุณจะต้องสร้างสองรายการในแต่ละวัน เวลา 9.00 - 13.30 น. และ 14.00 - 17.00 น.
 
-### 2.2 Agents
+### 2.2 ตัวแทน
 
-This is the list of agents which will be **autoassigned** to appointments. The number of appointments which can exist in one timeslot also depends upon the number employees in this list.
+นี่คือรายชื่อตัวแทนที่จะ **กำหนดอัตโนมัติ** ให้กับการนัดหมาย จำนวนการนัดหมายที่สามารถมีได้ในหนึ่งช่วงเวลานั้นขึ้นอยู่กับจำนวนพนักงานในรายการนี้ด้วย
 
-### 2.3 Holiday list
+### 2.3 รายการวันหยุด
 
-You can link a (holiday list)[https://erpnext.com/docs/user/manual/en/human-resources/holiday-list] here to apply to the appointment schedule. If the day is a holiday, scheduling an appointment on that day won't be allowed.
+คุณสามารถเชื่อมโยง [รายการวันหยุด](https://erpnext.com/docs/user/manual/th/human-resources/holiday-list) ได้ที่นี่ เพื่อนำไปใช้กับตารางการนัดหมาย หากวันนั้นเป็นวันหยุด จะไม่อนุญาตให้ทำการนัดหมายในวันนั้น
 
-## 3. Appointment Details
+## 3. รายละเอียดการนัดหมาย
 
-This section contains details about the appointment themselves.
+ส่วนนี้มีรายละเอียดเกี่ยวกับการนัดหมายเอง
 
-### 3.1 Appointment Duration in minutes
+### 3.1 ระยะเวลานัดหมายเป็นนาที
 
-The duration of appointment in minutes. This is used to calculate appointment timeslots for the web portal. Changing this does not affect the appointments created before the change.
+ระยะเวลาของการนัดหมายเป็นนาที ใช้เพื่อคำนวณตารางเวลาการนัดหมายสำหรับเว็บพอร์ทัล การเปลี่ยนแปลงนี้จะไม่ส่งผลต่อการนัดหมายที่สร้างก่อนการเปลี่ยนแปลง
 
-### 3.2 Notify Via Email
+### 3.2 แจ้งทางอีเมล
 
-Enabling this checkbox will send an email to the participants of the appointments i.e. your employee and the customer on the day of the appointment. Changing this checkbox does not affect the appointments created before the change.
+การเปิดใช้งานช่องทำเครื่องหมายนี้จะส่งอีเมลไปยังผู้เข้าร่วมการนัดหมาย เช่น พนักงานของคุณและลูกค้าในวันที่นัดหมาย การเปลี่ยนช่องทำเครื่องหมายนี้จะไม่ส่งผลต่อการนัดหมายที่สร้างก่อนการเปลี่ยนแปลง
 
-### 3.3 Number of days appointment can be books in advance
+### 3.3 จำนวนวันที่นัดหมายสามารถจองล่วงหน้าได้
 
-This is the number of days the appointment can be booked in advance. If the Holiday List provided above ends before the date calculated using this number, appointment scheduling will be stopped at the end of holiday list end.
+นี่คือจำนวนวันที่สามารถจองล่วงหน้าได้ หากรายการวันหยุดที่ระบุข้างต้นสิ้นสุดลงก่อนวันที่ที่คำนวณโดยใช้หมายเลขนี้ การกำหนดเวลานัดหมายจะหยุดเมื่อสิ้นสุดรายการวันหยุด
 
 
-## 4. Success settings
+## 4. การตั้งค่าสำเร็จ
 
-### 4.1 Success Redirect URL
+### 4.1 URL เปลี่ยนเส้นทางสำเร็จ
 
-This is the URL where the user will be redirected on creation of successful appointment creation via Web Portal. This redirect will not occur when creating appointments from within Desk UI.
-Leave blank for home. This is relative to site URL, for example "about" will redirect to "https://yoursitename.com/about"
+นี่คือ URL ที่ผู้ใช้จะถูกเปลี่ยนเส้นทางในการสร้างการนัดหมายที่สำเร็จผ่านเว็บพอร์ทัล การเปลี่ยนเส้นทางนี้จะไม่เกิดขึ้นเมื่อสร้างการนัดหมายจากภายใน Desk UI
+เว้นว่างไว้ที่บ้าน ซึ่งสัมพันธ์กับ URL ของไซต์ เช่น "about" จะเปลี่ยนเส้นทางไปที่ "https://yoursitename.com/about"

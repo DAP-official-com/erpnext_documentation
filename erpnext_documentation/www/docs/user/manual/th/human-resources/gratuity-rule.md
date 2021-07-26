@@ -1,57 +1,57 @@
 <!-- add-breadcrumbs -->
-# Gratuity Rule
+#กฎบำเหน็จ
 
-> This Feature is introduced in Version 13, which will be part of separate Payroll Module.
+> คุณลักษณะนี้เปิดตัวในเวอร์ชัน 13 ซึ่งจะเป็นส่วนหนึ่งของโมดูลบัญชีเงินเดือนแยกต่างหาก
 
-**Gratuity Rule are set of rule defined by Central or State used during calculation of Gratuity Amount**
+**กฎบำเหน็จเป็นชุดของกฎที่กำหนดโดยส่วนกลางหรือรัฐที่ใช้ระหว่างการคำนวณจำนวนเงินบำเหน็จ**
 
-In ERPNext, you can define different Gratuity Rules based on different Region.
+ใน ERPNext คุณสามารถกำหนดกฎบำเหน็จต่างๆ ตามภูมิภาคต่างๆ ได้
 
-To access the Gratuity Rule, go to:
+ในการเข้าถึงกฎบำเหน็จ ไปที่:
 
-> Home > Payroll > Gratuity Rule
+> หน้าแรก > เงินเดือน > กฎบำเหน็จ
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Gratuity Rule, it is advised to create the following:
+ก่อนสร้างกฎบำเหน็จ ขอแนะนำให้สร้างสิ่งต่อไปนี้:
 
-1. [Employee](/docs/user/manual/en/human-resources/employee)
-1. [Salary Component](/docs/user/manual/en/human-resources/salary-component)
+1. [พนักงาน](/docs/user/manual/th/human-resources/employee)
+1. [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
 
-## 2. How to create Gratuity Rule
+## 2. วิธีสร้างกฎบำเหน็จ
 
-1. Got to Gratuity Rule > New
-1. Select Applicable Components. These Salary Components contribute during Gratuity Calculation.
-1. Select "Calculate Gratuity Amount based on"
-1. Define Gratuity Rule
-1. Save
+1. ไปที่กฎบำเหน็จ > ใหม่
+1. เลือกส่วนประกอบที่เกี่ยวข้อง องค์ประกอบเงินเดือนเหล่านี้มีส่วนในระหว่างการคำนวณบำเหน็จ
+1. เลือก "คำนวณจำนวนเงินบำเหน็จตาม"
+1. กำหนดกฎบำเหน็จ
+1. บันทึก
 
 <img class="screenshot" alt="Gratuity Rule" src="{{docs_base_url}}/assets/img/human-resources/gratuity-rule.png">
 
-## 3. Additional Properties
+## 3. คุณสมบัติเพิ่มเติม
 
-Some of the additional attributes used while gratuity Calculation are define below.
+คุณลักษณะเพิ่มเติมบางส่วนที่ใช้ในขณะที่การคำนวณบำเหน็จบำนาญมีการกำหนดไว้ด้านล่าง
 
-### 3.1 Work Experience Calculation method:
-ERPNext provide two different method for calculation of Work experience.
+### 3.1 วิธีการคำนวณประสบการณ์การทำงาน:
+ERPNext มีวิธีการคำนวณประสบการณ์การทำงานที่แตกต่างกันสองวิธี
 
-1. Round off Work Experience method Round off yor current experience. For example, if employee have total experience of 3 year and 6 month will be treated as 4 year experience.
-1. Take Exact Completed Year.
+1. วิธีปัดเศษประสบการณ์การทำงาน ปัดเศษประสบการณ์ปัจจุบันของคุณ ตัวอย่างเช่น หากพนักงานมีประสบการณ์ทั้งหมด 3 ปี 6 เดือน จะถือเป็นประสบการณ์ 4 ปี
+1. ใช้ปีที่เสร็จสมบูรณ์ที่แน่นอน
 
 
-### 3.2 Calculate Gratuity Amount Based On:
+### 3.2 คำนวณจำนวนเงินบำเหน็จตาม:
 
-Let's consider the following example to understand the calculation.
+ลองพิจารณาตัวอย่างต่อไปนี้เพื่อทำความเข้าใจการคำนวณ
 
 <img class="screenshot" alt="gratuity-rule-example" src="{{docs_base_url}}/assets/img/human-resources/gratuity-rule-example.png">
 
-1. **Current slab:** If Gratuity Amount calculation is based on Current Slab, then amount will be the product of Work Experience (in years), Fraction of Applicable Earnings and summation of the Applicable Earnings Components. Based on above Gratuity Rules/slab, if an employee has an experience of 5 years, then it falls in third slab. The calculation of Gratuity Amount will be as follows:
+1. **Slab ปัจจุบัน:** หากการคำนวณจำนวนเงินบำเหน็จบำนาญตาม Slab ปัจจุบัน จำนวนจะเป็นผลผลิตของประสบการณ์การทำงาน (เป็นปี) เศษส่วนของรายได้ที่เกี่ยวข้อง และผลรวมของส่วนประกอบรายได้ที่เกี่ยวข้อง ตามกฎบำเหน็จ / แผ่นพื้นด้านบนหากพนักงานมีประสบการณ์ 5 ปีก็ตกอยู่ในแผ่นที่สาม การคำนวณจำนวนเงินบำเหน็จจะเป็นดังนี้:
 
-> Gratuity amount = 5 * 0.467 * (Arrear + Basic)
+> จำนวนบำเหน็จ = 5 * 0.467 * (ค้างชำระ + พื้นฐาน)
 
-2. **Sum of all previous slabs:**  If Gratuity Amount calculation is based on Sum of all previous slabs, then amount will be the summation of product of individual slabs up to the year of experience and summation of Applicable Earnings Component. Based on above Gratuity Rules/slab, if an employee has an experience of 5 years, then the calculation of Gratuity Amount will be as follows:
+2. **ผลรวมของแผ่นพื้นก่อนหน้าทั้งหมด:** หากการคำนวณจำนวนเงินบำเหน็จขึ้นอยู่กับผลรวมของแผ่นงานก่อนหน้าทั้งหมด จำนวนเงินจะเป็นผลรวมของผลิตภัณฑ์ของแต่ละแผ่นจนถึงปีประสบการณ์และผลรวมของส่วนประกอบรายได้ที่เกี่ยวข้อง ตามกฎบำเหน็จ/แผ่นพื้นด้านบน หากพนักงานมีประสบการณ์ 5 ปี การคำนวณจำนวนเงินบำเหน็จจะเป็นดังนี้:
 
 
-> Gratuity amount = [(1 * 0) + (2 * 0.233) + (2 * 0.467)]*(Arrear + Basic)
+> จำนวนเงินบำเหน็จ = [(1 * 0) + (2 * 0.233) + (2 * 0.467)]*(ค้างชำระ + พื้นฐาน)
 
 

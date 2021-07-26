@@ -1,55 +1,55 @@
-# Attendance Request
+# การส่งใบลา
 
-**Using the Attendance Request, employees can submit their attendance request for the days when their attendance wasn't marked due to various reasons such as on-site duty or work from home.**
+**การส่งใบลา พนักงานสามารถส่งใบลาหรับวันที่ไม่มีการทำเครื่องหมายการมาทำงานเนื่องจากเหตุผลต่างๆ เช่น หน้าที่การงาน หรือการทำงานจากที่บ้าน**
 
-To access Attendance Request, go to:
+ในการเข้าถึงคำขอมาทำงาน ไปที่:
 
-> Home > Human Resources > Attendance > Attendance Request 
+> หน้าหลัก > ทรัพยากรบุคคล > การมาทำงาน > คำขอมาทำงาน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Attendance Request, it is advised that you create the following first:
+ก่อนสร้างคำขอมาทำงาน ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
 
 
-## 2. How to create an Attendance Request
+## 2. วิธีสร้างคำขอมาทำงาน
 
-1. Go to Attendance Request list, click on New.
-1. Select Employee who wants to submit the Attendance Request.
-1. Select From Date and To Date of Attendance Request.
-1. Select Reason and enter Explanation (optional).
-1. Save and Submit.
+1. ไปที่รายการขอเข้างาน คลิกที่ ใหม่
+1. เลือกพนักงานที่ต้องการส่งคำขอมาทำงาน
+1. เลือกจากวันที่และถึงวันที่ขอมาทำงาน
+1. เลือกเหตุผลและป้อนคำอธิบาย (ไม่บังคับ)
+1. บันทึกและส่ง
 
 
     <img class="screenshot"  alt="Attendance Request" src="{{docs_base_url}}/assets/img/human-resources/attendance-request.png">
 
-> **Note 1:** You can check the 'Half Day' checkbox and enter the Date in case the attendance is for Half Day.
+> **หมายเหตุ 1:** คุณสามารถทำเครื่องหมายที่ช่อง 'ครึ่งวัน' และป้อนวันที่ในกรณีที่ผู้มาทำงานเป็นแบบครึ่งวัน
 
-> **Note 2:** On submission of the same, Attendance documents will be created for the days you mentioned as shown.
+> **หมายเหตุ 2:** ในการยื่นแบบเดียวกัน เอกสารการมาทำงานจะถูกสร้างขึ้นสำหรับวันที่คุณกล่าวถึงตามที่แสดง
 
-> **Note 3:** You can submit Attendance Request of only unmarked Attendance.
+> **หมายเหตุ 3:** คุณสามารถส่งคำขอมาทำงานได้เฉพาะการมาทำงานที่ไม่ได้ทำเครื่องหมาย
 
 
 
 <img class="screenshot"  alt="Attendance Request Submit" src="{{docs_base_url}}/assets/img/human-resources/attendance-request-submission.png">
 
-As seen below, respective Attendance records are linked with the submitted Attendance Request.
+ตามที่เห็นด้านล่าง บันทึกการมาทำงานนั้นเชื่อมโยงกับคำขอมาทำงานที่ส่งมา
 
  <img class="screenshot"  alt="Attendance Request Linked" src="{{docs_base_url}}/assets/img/human-resources/attendance-request-link.png">
 
-If you cancel the Attendance Request, the linked Attendance documents created will be cancelled as well.
+หากคุณยกเลิกคำขอมาทำงาน เอกสารการมาทำงานที่เชื่อมโยงที่สร้างขึ้นจะถูกยกเลิกเช่นกัน
 
  <img class="screenshot"  alt="Attendance Request Cancelled" src="{{docs_base_url}}/assets/img/human-resources/attendance-request-cancelled.png">
 
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Employee Attendance Tool](/docs/user/manual/en/human-resources/employee-attendance-tool)
-1. [Shift Management](/docs/user/manual/en/human-resources/shift-management)
-1. [Auto Attendance](/docs/user/manual/en/human-resources/auto-attendance)
-1. [Upload Attendance](/docs/user/manual/en/human-resources/upload-attendance)
-1. [Attendance](/docs/user/manual/en/human-resources/attendance)
+1. [เครื่องมือการตรวจสอบการมาทำงานของพนักงาน](/docs/user/manual/th/human-resources/employee-attendance-tool)
+1. [การจัดการการทำงานเป็นกะ](/docs/user/manual/th/human-resources/shift-management)
+1. [ตรวจสอบผู้มาทำงานอัตโนมัติ](/docs/user/manual/th/human-resources/auto-attendance)
+1. [อัพโหลดผู้เข้ามาทำงาน](/docs/user/manual/th/human-resources/upload-attendance)
+1. [การมาทำงาน](/docs/user/manual/th/human-resources/attendance)
 
 
 {next}

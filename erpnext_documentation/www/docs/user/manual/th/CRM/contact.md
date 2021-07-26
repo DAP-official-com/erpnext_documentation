@@ -1,52 +1,52 @@
 <!-- add-breadcrumbs -->
-# Contact
+#ผู้ติดต่อ
 
-**Contact represents a person.**
+**ผู้ติดต่อเป็นตัวแทนของบุคคล**
 
-A contact may be associated with a Lead, Customer, Supplier, Shareholder, Sales Partner or a User.
+ผู้ติดต่ออาจเกี่ยวข้องกับลูกค้าเป้าหมาย ลูกค้า ผู้จัดหา ผู้ถือหุ้น พันธมิตรการขาย หรือผู้ใช้
 
-You can also add contact as a standalone record without linking it to any of the entities listed above.
+คุณยังสามารถเพิ่มผู้ติดต่อเป็นเรกคอร์ดแบบสแตนด์อโลนโดยไม่ต้องเชื่อมโยงกับเอนทิตีใดๆ ที่ระบุไว้ข้างต้น
 
-To access the Contact list, go to:
-> Home > CRM > Sales Pipeline > Contact 
+ในการเข้าถึงรายชื่อผู้ติดต่อ ไปที่:
+> หน้าแรก > CRM > ไปป์ไลน์การขาย > ผู้ติดต่อ
 
-## 1. How to create a Contact
+## 1. วิธีสร้างผู้ติดต่อ
 
-1. Go to the Contact list and click on New.
-1. Enter First Name and Last Name.
-2. Choose the status if the contact is passive, is open to contact or has replied.
-3. Enter contact details like email, phone, etc.
-4. Save.
+1. ไปที่รายชื่อผู้ติดต่อและคลิกที่ใหม่
+1. ป้อนชื่อและนามสกุล
+2. เลือกสถานะหากผู้ติดต่อเป็นแบบพาสซีฟ เปิดรับผู้ติดต่อ หรือตอบกลับแล้ว
+3. กรอกรายละเอียดการติดต่อ เช่น อีเมล โทรศัพท์ ฯลฯ
+4. บันทึก
     <img class="screenshot" alt="Contact" src="{{docs_base_url}}/assets/img/crm/contact.png">
 
-You can also add a Contact from the Customer or Supplier record by clicking on “New Contact” button as shown below.
+คุณยังสามารถเพิ่มผู้ติดต่อจากบันทึกลูกค้าหรือซัพพลายเออร์โดยคลิกที่ปุ่ม “ผู้ติดต่อใหม่” ดังที่แสดงด้านล่าง
 
 <img class="screenshot" alt="Contact" src="{{docs_base_url}}/assets/img/crm/contact-from-cust.png">
 
-When you have multiple contacts against an entity like customer/supplier, you can check 'Is Primary Contact' to indicate the preferred contact. The primary contact will be chosen automatically in transactions like sales order and sales invoice.
+เมื่อคุณมีผู้ติดต่อหลายรายหรือหน่วยงาน เช่น ลูกค้า/ซัพพลายเออร์ คุณสามารถเลือก 'เป็นผู้ติดต่อหลัก' เพื่อระบุผู้ติดต่อที่ต้องการได้ ผู้ติดต่อหลักจะถูกเลือกโดยอัตโนมัติในธุรกรรม เช่น ใบสั่งขายและใบแจ้งหนี้การขาย
 
-To Import multiple contacts from a spreadsheet, use the [Data Import Tool](/docs/user/manual/en/setting-up/data/data-import).
+ในการนำเข้าผู้ติดต่อหลายรายจากสเปรดชีต ให้ใช้ [เครื่องมือการนำเข้าข้อมูล](/docs/user/manual/th/setting-up/data/data-import)
 
 ---
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Link a Contact to Multiple Entities
+### 2.1 เชื่อมโยงผู้ติดต่อกับหลายหน่วยงาน
 
-A contact may be linked to multiple customers or multiple suppliers.
+ผู้ติดต่ออาจเชื่อมโยงกับลูกค้าหลายรายหรือซัพพลายเออร์หลายราย
 
-A contact can also be linked to customers and suppliers at the same time.
+ผู้ติดต่อยังสามารถเชื่อมโยงกับลูกค้าและซัพพลายเออร์ได้ในเวลาเดียวกัน
 
 <img class="screenshot" alt="Contact" src="{{docs_base_url}}/assets/img/crm/link_contact_to_multiple_entities.png">
 
-### 2.2 Invite the Contact as a User
-You can allow contacts of your customers and suppliers to log into your ERPNext system and view data relevant to them. Check [Customer Portal](/docs/user/manual/en/customer-portal) for more details on this.
-You can send an email invitation to a contact by clicking on 'Invite as User' button.
+### 2.2 เชิญผู้ติดต่อเป็นผู้ใช้
+คุณสามารถอนุญาตให้ผู้ติดต่อของลูกค้าและซัพพลายเออร์ของคุณเข้าสู่ระบบ ERPNext และดูข้อมูลที่เกี่ยวข้องกับพวกเขาได้ ตรวจสอบ [พอร์ทัลลูกค้า](/docs/user/manual/th/customer-portal) สำหรับรายละเอียดเพิ่มเติมเกี่ยวกับเรื่องนี้
+คุณสามารถส่งคำเชิญทางอีเมลไปยังผู้ติดต่อโดยคลิกที่ปุ่ม 'เชิญเป็นผู้ใช้'
 
 <img class="screenshot" alt="Contact" src="{{docs_base_url}}/assets/img/crm/invite_contact_as_a_user.png">
 
-### 3. Related Topics
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Supplier](/docs/user/manual/en/buying)
-1. [Sales Partner](/docs/user/manual/en/selling)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying)
+1. [พันธมิตรการขาย](/docs/user/manual/th/selling)
 
 {next}

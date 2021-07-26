@@ -1,23 +1,23 @@
 <!-- add-breadcrumbs -->
-#Freeze Accounting Entries
+#การหยุด (Freeze) รายการบัญชี 
 
-To freeze accounting entries upto a certain date, follow below given steps.
+หากต้องการหยุดรายการบัญชีไม่เกินวันที่กำหนด ให้ทำตามขั้นตอนที่ระบุด้านล่าง
 
-#### Step 1: Go to:
+#### Step 1: ไปที่
 
-`Accounts > Setup > Accounts Settings`
+`บัญชี > การตั้งค่า > การตั้งค่าบัญชี`
 
-#### Step 2: Set Date
+#### Step 2: ตั้งวันที่
 
-Set date in the **Accounts Frozen Upto** field.
+กำหนดวันในช่อง **หยุดบัญชีไปถึง** 
 
 <img alt="Accounts Frozen Date" class="screenshot" src="{{docs_base_url}}/assets/img/articles/frozen-date-1.png">
 
-Now, the system will not allow to make any accounting entries before set date. If at all someone tries creating entries, system will show error message as below.
+ระบบไม่อนุญาตให้ทำรายการบัญชีใด ๆ ก่อนวันที่กำหนด หากมีคนพยายามสร้างรายการ ระบบจะแสดงข้อความแสดงข้อผิดพลาดดังต่อไปนี้
 
 <img alt="Frozen Date Error" class="screenshot" src="{{docs_base_url}}/assets/img/articles/frozen-date-2.png">
 
-You can still allow user with certain role to create/edit entries within accounts frozen date. You can set that Role in the Account Settings itself.
+คุณยังสามารถอนุญาตให้ผู้ใช้ที่มีบทบาทบางอย่างสร้าง/แก้ไขรายการภายในวันที่ระงับบัญชีได้ คุณสามารถตั้งค่าบทบาทนั้นได้ในการตั้งค่าบัญชีเอง
 
 <img alt="Frozen Date Error" class="screenshot" src="{{docs_base_url}}/assets/img/articles/frozen-date-3.png">
 

@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
-# Leave Ledger Entry
+# รายการบัญชีแยกประเภทของวันลา
 
-A unified ledger for all leave related transactions for an employee. This maintains all the leaves related transactions, this includes the leave allocations, leave applications and leave encashments of your employees.
+บัญชีแยกประเภทแบบรวมสำหรับธุรกรรมที่เกี่ยวข้องกับการลาทั้งหมดสำหรับพนักงาน สิ่งนี้จะรักษาธุรกรรมที่เกี่ยวข้องกับการลางานทั้งหมด ซึ่งรวมถึงการจัดสรรการลา การขอลางาน และการฝากเงินของพนักงานของคุณ
 
 <img alt="Leave Ledger Entry" class="screenshot" src="{{docs_base_url}}/assets/img/human-resources/leave-ledger-entry.png">
 

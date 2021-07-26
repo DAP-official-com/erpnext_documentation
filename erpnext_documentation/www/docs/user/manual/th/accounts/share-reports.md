@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-# Share Reports
-There are two types of reports in ERPNext for shares. Share Balance and Share ledger.
+# รายงานหุ้น
+มีรายงานสองประเภทใน ERPNext สำหรับหุ้น ยอดคงเหลือหุ้นและหุ้นบัญชีแยกประเภท
 
-## 1. Share Balance
-This is a report view which gives the list of all the shares held by a given Shareholder and its value.
+## 1. ยอดคงเหลือหุ้น
+นี่คือมุมมองรายงานที่ให้รายชื่อหุ้นทั้งหมดที่ถือโดยผู้ถือหุ้นที่ระบุและมูลค่าของมัน
 
-To access the Share Balance report, go to:
-> Home > Accounting > Share Management > Share Balance
+หากต้องการเข้าถึงรายงาน Share Balance ให้ไปที่:
+> หน้าแรก > การบัญชี > การจัดการหุ้น > ยอดคงเหลือในหุ้น
 
 <img class="screenshot" alt="Create Shareholder" src="/docs/assets/img/accounts/shareholder/sharebalance_1.png">
 
-## 2. Share Ledger
+## 2. รายการธุรกรรมของหุ้น
 
-This is a report view which gives the list of all the transactions made by a given Shareholder.
+นี่คือมุมมองรายงานที่ให้รายการธุรกรรมทั้งหมดที่ทำโดยผู้ถือหุ้น
 
-To access the Share Ledger report, go to:
-> Home > Accounting > Share Management > Share Ledger
+ในการเข้าถึงรายงานบัญชีแยกประเภท ไปที่:
+> หน้าแรก > การบัญชี > การจัดการหุ้น > รายการธุรกรรมของหุ้น
 
 <img class="screenshot" alt="Create Shareholder" src="/docs/assets/img/accounts/shareholder/shareledger_1.png">
 
-### 3. Related Topics
-1. [Shareholder](/docs/user/manual/en/accounts/shareholder)
-1. [Share Transfer](/docs/user/manual/en/accounts/share-transfer)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [ผู้ถือหุ้น](/docs/user/manual/th/accounts/shareholder)
+1. [โอนหุ้น](/docs/user/manual/th/accounts/share-transfer)

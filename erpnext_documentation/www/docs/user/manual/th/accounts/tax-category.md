@@ -1,47 +1,46 @@
 <!-- add-breadcrumbs -->
-# Tax Category
+# ประเภทภาษี
 
-**A Tax Category allows applying one or more Tax Rules to transactions based on various criteria.**
+**ประเภทภาษีอนุญาตให้ใช้กฎภาษีตั้งแต่หนึ่งกฎขึ้นไปกับธุรกรรมตามเกณฑ์ต่างๆ**
 
-If you want to apply different kinds of taxes based on Tax Categories, create Tax Categories from:
+หากคุณต้องการใช้ภาษีประเภทต่างๆ ตามประเภทภาษี ให้สร้างประเภทภาษีจาก:
 
-> Home > Accounting > Taxes > Tax Category
+> หน้าแรก > การบัญชี > ภาษี > ประเภทภาษี
+## 1. ข้อกำหนดเบื้องต้น 
+ก่อนสร้างและใช้ประเภทภาษี ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-## 1. Prerequisites 
-Before creating and using a Tax Category, it is advised to create the following first:
+1. [กฎภาษี](/docs/user/manual/th/accounts/tax-rule)
 
-1. [Tax Rule](/docs/user/manual/en/accounts/tax-rule)
+## 2. ประเภทภาษีทำงานอย่างไร
 
-## 2. How does a Tax Category work
-Creating a Tax Category is simple, go to the Tax Category list, click on New and enter a name.
+การสร้างประเภทภาษีเป็นเรื่องง่าย ไปที่รายการประเภทภาษี คลิกที่ใหม่ และป้อนชื่อ
 
-- A Tax category can be linked to one or more [Tax Rules](/docs/user/manual/en/accounts/tax-rule).
-- This Tax Category can be assigned to a Customer, so when that Customer is selected, the Tax Category will be fetched. This also applies in case of a Supplier.
-- This will fetch the Sales Tax Template linked to the Tax Rule. Hence, the rows in the Tax table will be automatically filled.
-- Tax Category can be used to group Customers to whom same tax will be applied. For example, Government, NGO, commercial, etc.
+- ประเภทภาษีสามารถเชื่อมโยงกับ [กฎภาษี](/docs/user/manual/th/accounts/tax-rule) ได้ตั้งแต่หนึ่งกฎขึ้นไป
+- ประเภทภาษีนี้สามารถกำหนดให้กับลูกค้าได้ ดังนั้นเมื่อเลือกลูกค้ารายนั้น หมวดหมู่ภาษีจะถูกดึงมา นอกจากนี้ยังใช้ในกรณีของซัพพลายเออร์
+- การดำเนินการนี้จะดึงเทมเพลตภาษีขายที่เชื่อมโยงกับกฎภาษี ดังนั้น แถวในตารางภาษีจะถูกเติมโดยอัตโนมัติ
+- หมวดหมู่ภาษีสามารถใช้เพื่อจัดกลุ่มลูกค้าที่จะใช้ภาษีเดียวกันได้ ตัวอย่างเช่น รัฐบาล องค์กรพัฒนาเอกชน การค้า ฯลฯ
 
   <img class="screenshot" alt="Tax Category" src="{{docs_base_url}}/assets/img/accounts/tax-category.gif">
 
-> Tip: One Tax Category can be assigned to multiple Tax Rules. So you can create different combinations to apply taxes automatically to transactions.
+> หมายเหตุ: สามารถกำหนดหมวดหมู่ภาษีหนึ่งประเภทให้กับกฎภาษีได้หลายข้อ คุณจึงสร้างชุดค่าผสมต่างๆ เพื่อใช้ภาษีกับธุรกรรมได้โดยอัตโนมัติ
 
-## 3. Assigning Tax Category
-Tax Category is automatically determined in a transaction by either the Party Address or Party Master (Customer/Supplier). You can assign Tax Category based on: 
+## 3. การกำหนดประเภทภาษี
+ประเภทภาษีจะถูกกำหนดโดยอัตโนมัติในการทำธุรกรรมโดยที่อยู่คู่สัญญาหรือหัวหน้าฝ่าย (ลูกค้า/ซัพพลายเออร์) คุณสามารถกำหนดประเภทภาษีตาม:
 
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Address](/docs/user/manual/en/CRM/address) Billing or Shipping.
-  You can select whether Billing Address or Shipping Address gets preference by changing the 'Determine Address Tax Category From' option in Accounts Settings. Tax Category is determined from Party Address first. If the Address is not assigned any Tax Category, then the Party's Tax Category is used.
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+1. [ที่อยู่](/docs/user/manual/th/CRM/address) ในการเรียกเก็บเงินหรือการจัดส่งสินค้า คุณสามารถเลือกได้ว่าจะให้ที่อยู่สำหรับเรียกเก็บเงินหรือที่อยู่สำหรับจัดส่งได้รับการตั้งค่าโดยการเปลี่ยนตัวเลือก 'กำหนดที่อยู่ประเภทภาษีจาก' ในการตั้งค่าบัญชี หมวดหมู่ภาษีจะพิจารณาจากที่อยู่ของคู่กรณีก่อน หากที่อยู่ไม่ได้รับการกำหนดประเภทภาษีใด ๆ หมวดหมู่ภาษีของฝ่ายจะถูกใช้
       ![Tax Cat Address](/docs/assets/img/accounts/tax-cat-address.png)
-1. [Item](/docs/user/manual/en/stock/item#316-item-tax)
-1. You can also manually select the Tax Category in a transaction.
+1. [สินค้า](/docs/user/manual/th/stock/item#316-item-tax)
+1. คุณยังสามารถเลือกประเภทภาษีในธุรกรรมได้ด้วยตนเอ
   
-## 4. What effect does the Tax Category have in a transaction?
+## 4. ประเภทภาษีมีผลอย่างไรในการทำธุรกรรม?
 
-* Specific Item Tax Templates for that Tax Category are automatically set for items.
-* You can create [Tax Rules]({{docs_base_url}}/user/manual/en/accounts/tax-rule) to automatically set a specific Sales / Purchase Taxes and Charges Template based on different Tax Categories in transactions.
+* เทมเพลตภาษีสินค้าเฉพาะสำหรับประเภทภาษีนั้นจะถูกตั้งค่าโดยอัตโนมัติสำหรับสินค้า
+* คุณสามารถสร้าง[กฎภาษี]({{docs_base_url}}/user/manual/th/accounts/tax-rule) เพื่อตั้งค่าเทมเพลตภาษีขาย / ซื้อและค่าธรรมเนียมเฉพาะโดยอัตโนมัติตามหมวดหมู่ภาษีที่แตกต่างกันในธุรกรรม
 
-## 5. Related Topics
-1. [Tax Rule](/docs/user/manual/en/accounts/tax-rule)
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Address](/docs/user/manual/en/CRM/address)
+## 5. หัวข้อที่เกี่ยวข้อง
+1. [กฎภาษี](/docs/user/manual/th/accounts/tax-rule)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+1. [ที่อยู่](/docs/user/manual/th/CRM/address)

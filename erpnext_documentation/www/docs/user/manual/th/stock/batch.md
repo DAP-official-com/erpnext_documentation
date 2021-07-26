@@ -1,70 +1,70 @@
 <!-- add-breadcrumbs -->
-# Batch
+#แบทช์
 
-**Batch feature in ERPNext allows you to group multiple units of an Item and assign them a unique value/number/tag called Batch No.**
+**คุณลักษณะแบทช์ใน ERPNext ช่วยให้คุณสามารถจัดกลุ่มหลายหน่วยของรายการและกำหนดค่า/หมายเลข/แท็กเฉพาะที่เรียกว่าหมายเลขแบทช์**
 
-This is done based on the Item. If the Item is batched, then a Batch number must be mentioned in every stock transaction. Batch numbers can be maintained manually or automatically. This feature is useful to set the expiry date of multiple Items or move them together to different Warehouses.
+นี้จะทำขึ้นอยู่กับรายการ หากรายการเป็นชุดงาน จะต้องระบุหมายเลขชุดงานในทุกธุรกรรมสต็อค หมายเลขแบทช์สามารถรักษาได้ด้วยตนเองหรือโดยอัตโนมัติ คุณลักษณะนี้มีประโยชน์ในการกำหนดวันหมดอายุของสินค้าหลายรายการหรือย้ายเข้าด้วยกันไปยังคลังสินค้าอื่น
 
-To access the Batch No list, go to:
-> Home > Stock > Serial No and Batch > Batch
+หากต้องการเข้าถึงรายการ หมายเลขแบทช์ ให้ไปที่:
+> หน้าหลัก > สต็อก > หมายเลขซีเรียล และ แบทช์ > แบทช์
 
 
-## 1. Prerequisites
-Before creating and using a Batch, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้งานแบทช์ ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Item](/docs/user/manual/en/stock/item)
-* Enable 'Has Batch No' in the Item master
+* [รายการ](/docs/user/manual/th/stock/item)
+* เปิดใช้งาน 'มีหมายเลขแบทช์' ใน รายการสินค้าหลัก
     ![Batch No Enabled](/docs/assets/img/stock/batch-no-enabled.png)
 
 
-## 2. How to create a new Batch
+## 2. วิธีสร้างแบทช์ใหม่
 
-To set item as a batch item, "Has Batch No" field should be checked in the Item master. If you have not selected "Automatically Create New Batch" when creating an Item, you will have to make Batches Manually as you go along. 
+ในการตั้งค่ารายการเป็นรายการชุดงาน ควรตรวจสอบฟิลด์ "มีหมายเลขชุด" ในข้อมูลหลักรายการ หากคุณไม่ได้เลือก "สร้างชุดใหม่โดยอัตโนมัติ" เมื่อสร้างรายการ คุณจะต้องสร้างชุดงานด้วยตนเองตามที่คุณดำเนินการ
 
-To create new Batch No. master for an item, go to:
+ในการสร้าง หมายเลขแบทช์หลัก ใหม่สำหรับรายการ ให้ไปที่:
 
-1. Go to the Batch list, click on New.
-1. Set the Batch ID.
-1. Select the Item.
-1. If any transaction is done with an item, the batch cannot be set or unset.
-1. Save.
+1. ไปที่รายการแบทช์ คลิกที่ ใหม่
+1. ตั้งค่ารหัสแบทช์
+1. เลือกรายการ
+1. หากทำธุรกรรมใด ๆ กับไอเท็ม แบทช์จะไม่สามารถตั้งค่าหรือยกเลิกการตั้งค่าได้
+1. บันทึก
 
-When Batches are enabled for an Item, the option to [retain sample stock](/docs/user/manual/en/stock/retain-sample-stock) also becomes available. 
+เมื่อเปิดใช้งานแบทช์สำหรับไอเท็ม ตัวเลือกในการ [เก็บตัวอย่างสต็อค](/docs/user/manual/th/stock/retain-sample-stock) ก็จะสามารถใช้ได้เช่นกัน
 
-### 2.1 Batch Auto Creation
-If you want automatic batch creation at the time of Purchase Receipt, you must tick 'Automatically Create New Batch' in the Item master:
+### 2.1 การสร้างแบทช์อัตโนมัติ
+หากคุณต้องการสร้างชุดงานอัตโนมัติในขณะที่ได้รับใบสั่งซื้อ คุณต้องทำเครื่องหมายที่ 'สร้างชุดงานใหม่โดยอัตโนมัติ' ในข้อมูลหลักรายการ:
 
 <img class="screenshot" alt="Item Setup for Batches" src="{{docs_base_url}}/assets/img/stock/item_setup_for_batch.png">
 
-## 3. Features
-### 3.1 Splitting and Moving Batches
+## 3. คุณสมบัติ
+### 3.1 การแบ่งและการย้ายแบทช์
 
-When you open a batch, you will see all the quantities that belong to that batch on the page.
+เมื่อคุณเปิดชุดงาน คุณจะเห็นปริมาณทั้งหมดที่เป็นของชุดงานนั้นบนหน้า
 
 <img class="screenshot" alt="Batch View" src="{{docs_base_url}}/assets/img/stock/batch_view.png">
 
-* To move the batch from one Warehouse to another, you can click on the **Move** button.
+* หากต้องการย้ายแบทช์จากคลังสินค้าหนึ่งไปยังอีกคลังสินค้าหนึ่ง คุณสามารถคลิกที่ปุ่ม **ย้าย**
 
-* You can also split the batch into smaller one by clicking on the **Split** button. This will create a new Batch based on this Batch and the quantities will be split between the batches.
+* คุณสามารถแบ่งแบทช์ให้เล็กลงได้โดยคลิกที่ปุ่ม **แยก** สิ่งนี้จะสร้างแบทช์ใหม่ตามแบทช์นี้ และปริมาณจะถูกแบ่งระหว่างแบทช์
 
     ![Split Batch](/docs/assets/img/stock/batch_split.png)
 
-* If you set expiry date, the Batch will show 'Not Expired' until the expiry date, after which it'll show 'Expired'. If a date is not set, the Batch will show 'Not Set'.
+* หากคุณกำหนดวันหมดอายุ ชุดจะแสดง 'ยังไม่หมดอายุ' จนถึงวันหมดอายุ หลังจากนั้นจะแสดง 'หมดอายุ' หากไม่ได้กำหนดวันที่ ชุดจะแสดง 'ไม่ได้ตั้งค่า'
 
-### 3.2 Transacting Items with Batches
+### 3.2 รายการธุรกรรมกับแบทช์
 
-A Batch master should be created before the creation of Purchase Receipt.
-Hence, every time a Purchase Receipt or Work Order is being made for a batch item,
-you will first create its Batch No, and then select it in the Purchase order or Stock Entry.
+ควรสร้างต้นแบบแบทช์ก่อนที่จะสร้างใบเสร็จรับเงิน
+ดังนั้น ทุกครั้งที่มีการทำใบเสร็จรับเงินหรือใบสั่งงานสำหรับรายการชุดงาน
+คุณจะต้องสร้างหมายเลขแบทช์ก่อน แล้วจึงเลือกในใบสั่งซื้อหรือรายการสต็อค
 
-On every stock transaction (Purchase Receipt, Delivery Note, Invoice) with a batch item,
-you should provide the Item's Batch No.
+ในทุกธุรกรรมของสต็อค (ใบเสร็จรับเงิน ใบสั่งซื้อ ใบส่งสินค้า ใบแจ้งหนี้) ที่มีรายการแบทช์
+คุณควรระบุหมายเลขแบทช์ของรายการ
 
-> Note: In stock transactions, Batch IDs will be filtered based on Item Code, Warehouse,
-Batch Expiry Date (compared with a Posting date of a transaction) and Actual Qty in Warehouse.
-While searching for Batch ID  without value in the Warehouse field, Actual Qty filter won't be applied.
+> หมายเหตุ: ในธุรกรรมสต็อค รหัสแบทช์จะถูกกรองตามรหัสสินค้า คลังสินค้า
+วันที่หมดอายุของแบทช์ (เทียบกับวันที่ผ่านรายการของธุรกรรม) และจำนวนจริงในคลังสินค้า
+ขณะค้นหารหัสชุดงานที่ไม่มีค่าในฟิลด์คลังสินค้า ระบบจะไม่ใช้ตัวกรองปริมาณจริง
 
-### 4. Related Topics
-1. [Serial Number](/docs/user/manual/en/stock/serial-no)
-1. [Opening Stock Balance Entry For Serialized And Batch Item](/docs/user/manual/en/stock/articles/opening-stock-balance-entry-for-serialized-and-batch-item)
-1. [Managing Batch Wise Inventory](/docs/user/manual/en/stock/articles/managing-batch-wise-inventory)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [หมายเลขซีเรียล](/docs/user/manual/th/stock/serial-no)
+1. [การเปิดรายการยอดคงเหลือสำหรับรายการต่อเนื่องและรายการแบทช์](/docs/user/manual/th/stock/articles/opening-stock-balance-entry-for-serialized-and-batch-item)
+1. [Managing Batch Wise Inventory](/docs/user/manual/th/stock/articles/managing-batch-wise-inventory)

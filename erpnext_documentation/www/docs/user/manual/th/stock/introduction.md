@@ -1,25 +1,24 @@
 <!-- add-breadcrumbs -->
-# Introduction
+# บทนำ
 
-Businesses have a large part of their financial resources invested in the stock items they trade. With ERPNext, you can always keep a bird's eye view on your stock availability, replenishment, procurement, sales, and much more.
+ธุรกิจต่างๆ มีทรัพยากรทางการเงินส่วนใหญ่ที่ลงทุนในรายการสินค้าที่พวกเขาซื้อขาย ด้วย ERPNext คุณสามารถจับตามองจากมุมกว้างเกี่ยวกับความพร้อมในสต็อก การเติมสินค้า การจัดซื้อ การขาย และอื่นๆ อีกมากมาย
 
-## 1. Core Stock Transactions
-There are three **main** types of entries:
+## 1. ธุรกรรมหุ้นหลัก
+มีรายการ **หลัก** สามประเภท:
 
-* **Purchase Receipt**: Items received from Suppliers against Purchase Orders.
-* **Stock Entry**: Items transferred from one Warehouse to another.
-* **Delivery Note**: Items shipped to Customers.
+* **ใบเสร็จการซื้อ**: รายการที่ได้รับจากซัพพลายเออร์เทียบกับใบสั่งซื้อ
+* **รายการสต็อค**: รายการที่โอนจากโกดังหนึ่งไปยังอีกโกดังหนึ่ง
+* **หมายเหตุการจัดส่ง**: รายการจัดส่งให้กับลูกค้า
 
-Apart from these core transactions, there are other documents available in ERPNext Stock module to manage Stock Reconciliation, Item Prices, deliveries, serial numbers, batch numbers, quality inspections, returns, etc.
+นอกเหนือจากธุรกรรมหลักเหล่านี้ ยังมีเอกสารอื่น ๆ ที่มีอยู่ในโมดูล ERPNext Stock เพื่อจัดการการกระทบยอดสต็อก ราคาสินค้า การส่งมอบ หมายเลขซีเรียล หมายเลขแบทช์ การตรวจสอบคุณภาพ การคืนสินค้า ฯลฯ
 
-Here's a view of Item Stock Summary in ERPNext.
+นี่คือมุมมองสรุปสินค้าใน ERPNext
 
 <img class="screenshot" alt="ERPNext Stock" src="{{docs_base_url}}/assets/img/stock/stock-hero.png">
 
-## 2. A Distributor talks about ERPNext Implementation
+## 2. ผู้จัดจำหน่ายพูดถึงการติดตั้ง ERPNext
 
-When Tarun Gupta's security services startup Neural Integrated Services started growing, his ERP could not keep up and was full of bugs in spite of spending a lot of money. That's when Tarun decided to move to something better and discovered ERPNext.
-
+เมื่อบริการรักษาความปลอดภัยของ Tarun Gupta เริ่มให้บริการ Neural Integrated Services เริ่มเติบโตขึ้น ERP ของเขาไม่สามารถตามทันและเต็มไปด้วยข้อบกพร่องแม้จะใช้จ่ายเงินเป็นจำนวนมากก็ตาม นั่นคือตอนที่ธารุณตัดสินใจย้ายไปยังสิ่งที่ดีกว่าและค้นพบ ERPNext
 <div>
     <div class='embed-container'>
         <iframe src='https://www.youtube.com/embed/7tPifRTfbGo' frameborder='0' allowfullscreen>

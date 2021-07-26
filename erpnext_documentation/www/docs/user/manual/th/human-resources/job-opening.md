@@ -1,44 +1,44 @@
 <!-- add-breadcrumbs -->
-# Job Opening
+#เปิดรับสมัคร
 
-**A Job Opening is a job vacancy in your Company. You can make a record of the open vacancies in your company using Job Opening.**
+**การเปิดงานคือตำแหน่งงานว่างในบริษัทของคุณ คุณสามารถบันทึกตำแหน่งงานว่างในบริษัทของคุณได้โดยใช้การเปิดงาน**
 
-ERPNext allows to plan recruitments for your company. The number of Job Openings you can create for a Designation is restricted according to the vacancies planned by the Staffing Plan defined for the company or one of its parent group companies in the hierarchy. 
+ERPNext ช่วยให้สามารถวางแผนการสรรหาบุคลากรสำหรับบริษัทของคุณ จำนวนตำแหน่งงานว่างที่คุณสามารถสร้างได้สำหรับการกำหนดตำแหน่งจะถูกจำกัดตามตำแหน่งงานว่างที่วางแผนไว้โดยแผนการจัดหาพนักงานที่กำหนดไว้สำหรับบริษัทหรือหนึ่งในบริษัทกลุ่มหลักในลำดับชั้น
 
-> **Note:** Make sure the "Check Vacancies On Job Offer Creation" checkbox is checked in the Hiring Settings section of the HR Settings.
+> **หมายเหตุ:** ตรวจสอบให้แน่ใจว่าได้เลือกช่องทำเครื่องหมาย "ตรวจสอบตำแหน่งงานว่างในการสร้างข้อเสนองาน" ในส่วนการตั้งค่าการจ้างงานของการตั้งค่า ทรัพยากรบุคคล
 
-To access Job Opening, go to:
+ในการเข้าถึงตำแหน่งงาน ไปที่:
 
-> Home > Human Resource > Recruitment > Job Opening 
+> หน้าหลัก > ทรัพยากรบุคคล > การจ้างงาน > ตำแหน่งงานว่าง
 
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating a Job Opening, it is advisable you create the following:
+ก่อนสร้างการเปิดงาน ขอแนะนำให้คุณสร้างสิ่งต่อไปนี้:
 
-* [Staffing Plan](/docs/user/manual/en/human-resources/staffing-plan)
-* [Department](/docs/user/manual/en/human-resources/department)
+* [แผนการจัดบุคลากร](/docs/user/manual/th/human-resources/staffing-plan)
+* [แผนก](/docs/user/manual/th/human-resources/department)
 
-## 2. How to create a Job Opening
+## 2. วิธีสร้างตำแหน่งงานว่าง
 
-1. Go to Job Opening list, click on New.
-1. Enter the Job Title.
-1. Select the Designation and Department. Based on Designation selected, appropriate Staffing Plan and Planned Number of Positions will be fetched.
-1. Save.
+1. ไปที่รายการตำแหน่งงานว่าง คลิกใหม่
+1. ป้อนตำแหน่งงาน
+1. เลือกการกำหนดและแผนก ตามการกำหนดที่เลือก แผนการจัดหาพนักงานที่เหมาะสมและจำนวนตำแหน่งที่วางแผนไว้จะถูกดึงมา
+1. บันทึก
 
 
     <img class="screenshot" alt="Job Opening" src="{{docs_base_url}}/assets/img/human-resources/job-opening.png">
 
-Once the Job Opening is saved, you can directly create a new [Job Applicant](/docs/user/manual/en/human-resources/job-opening) from the dashboard.
+เมื่อบันทึกตำแหน่งงานว่างแล้ว คุณสามารถสร้าง [ผู้สมัครงาน](/docs/user/manual/th/human-resources/job-opening) ใหม่ได้โดยตรงจากแดชบอร์ด
 
-> **Note:** You can set the Status of the Job Opening as Open/Closed. Once a Job Opening is Closed, you cannot create a Job Applicant against it.  
-
-
-## 3. Related Topics
-
-1. [Job Applicant](/docs/user/manual/en/human-resources/job-applicant)
-1. [Job Offer](/docs/user/manual/en/human-resources/job-offer)
+> **หมายเหตุ:** คุณสามารถตั้งค่าสถานะการเปิดงานเป็นเปิด/ปิดได้ เมื่อปิดตำแหน่งงานว่างแล้ว คุณจะไม่สามารถสร้างผู้สมัครงานใหม่ได้
 
 
-ERPNext allows to plan your recruitment at a group company level. The number of Job Openings you can create for a Designation is restricted according to the Vacancies planned by the Staffing Plan defined for the company or one of it's parent group companies in the hierarchy. To understand how you can do configure this, check [Staffing Plan](/docs/user/manual/en/human-resources/staffing-plan)
+## 3. หัวข้อที่เกี่ยวข้อง
+
+1. [ผู้สมัครงาน](/docs/user/manual/th/human-resources/job-applicant)
+1. [ข้อเสนองาน](/docs/user/manual/th/human-resources/job-offer)
+
+
+ERPNext ช่วยให้สามารถวางแผนการสรรหาบุคลากรของคุณในระดับกลุ่มบริษัท จำนวนตำแหน่งงานว่างที่คุณสามารถสร้างได้สำหรับการกำหนดตำแหน่งจะถูกจำกัดตามตำแหน่งงานว่างที่วางแผนไว้โดยแผนการจัดหาพนักงานที่กำหนดไว้สำหรับบริษัทหรือหนึ่งในบริษัทในกลุ่มหลักในลำดับชั้น เพื่อให้เข้าใจว่าคุณสามารถกำหนดค่านี้ได้อย่างไร ให้เลือก [แผนการจัดหาพนักงาน](/docs/user/manual/th/human-resources/staffing-plan)
 

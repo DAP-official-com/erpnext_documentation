@@ -1,40 +1,36 @@
 <!-- add-breadcrumbs -->
-#Adjust Withhold Amount in the Payment Entry
+#ปรับจำนวนเงินหัก ณ ที่จ่ายในรายการการชำระเงิน
 
-###Question
+สมมติว่ายอดค้างชำระกับใบกำกับสินค้าคือ 20,000 เมื่อลูกค้าชำระเงินจะจ่ายเพียง 19,600 เท่านั้น ส่วนที่เหลือ 400 จะต้องจองภายใต้บัญชีหักภาษี ณ ที่จ่าย คุณสามารถจัดการสถานการณ์นี้ได้ตามที่อธิบายไว้ด้านล่าง
 
-Let's assume that outstanding against a Sales Invoice is 20,000. When client makes payment, they will only pay 19,600. Rest 400 will be booked under Withhold account. How to manage this scenario in the Payment Entry.
+ในรายการการชำระเงิน คุณสามารถระบุบัญชีหัก ณ ที่จ่ายในตารางการหักหรือขาดทุน รายละเอียดขั้นตอนด้านล่าง
 
-###Answer
+####ขั้นตอนที่ 1: ตั้งค่าบัญชีหัก ณ ที่จ่าย
 
-In the Payment Entry, you can mention Withhold Account in the Deductions or Loss table. Detailed steps below.
+สร้างบัญชีหัก ณ ที่จ่ายในผังบัญชีของคุณ
 
-####Step 1: Setup Withhold Account
+`บัญชี > ผังบัญชี'
 
-Create a Withhold Account in your Chart of Accounts master.
+####Step 2: รายการชำระเงิน
 
-`Accounts > Chart of Accounts'
+หากต้องการสร้างรายการชำระเงิน ให้ไปที่ใบกำกับสินค้าที่ยังไม่ได้ชำระ และสร้างคลิกที่ปุ่มชำระเงิน
 
-####Step 2: Payment Entry
+#####Step 2.1: จำนวนเงินรายการชำระเงิน
 
-To create Payment Entry, go to unpaid Sales Invoice and create click on Make Payment button.
-
-#####Step 2.1: Enter Payment Amount
-
-Enter Payment Amount as 19,600.
+ใส่จำนวนเงินที่ชำระเป็น 19,600
 
 <img alt="Sales Invoice Payment Amount" class="screenshot" src="{{docs_base_url}}/assets/img/articles/withhold-1.png">
 
-#####Step 2.2: Allocate Against Sales Invoice
+#####Step 2.2: จัดสรรตามใบแจ้งหนี้การขาย
 
-Against Sales Invoice, allocate 20,000 (explained in GIF below).
+เทียบกับใบกำกับสินค้า จัดสรร 20,000 (อธิบายไว้ใน GIF ด้านล่าง)
 
-#####Step 2.3: Add Deduction/Loss Account
+#####Step 2.3:  เพิ่มบัญชีหัก/ขาดทุน
 
-You can notice that there is a difference of 400 in the Payment Amount and the Amount Allocated against Sales Invoice. You can book this difference account under Withhold Account.
+คุณสามารถสังเกตได้ว่ามีความแตกต่าง 400 ในจำนวนเงินที่ชำระและจำนวนเงินที่ปันส่วนกับใบกำกับสินค้า คุณสามารถจองบัญชีส่วนต่างนี้ได้ภายใต้บัญชีหักหน้าที่จ่าย
 
 <img alt="Deduction/Loss Account" class="screenshot" src="{{docs_base_url}}/assets/img/articles/withhold-2.gif">
 
- Following same steps, you can also manage difference availed due to Currency Exchange Gain/Loss.
+ ทำตามขั้นตอนเดียวกันนี้ คุณยังสามารถจัดการส่วนต่างที่มีอยู่เนื่องจากกำไร/ขาดทุนจากการแลกเปลี่ยนสกุลเงิน
  
 {next}

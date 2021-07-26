@@ -1,88 +1,89 @@
 <!-- add-breadcrumbs -->
-# Expense Claim
+# เบิกค่าใช้จ่าย
 
-**Expense Claim is made when employees make expenses out of their pocket on behalf of the company.**
+**การเบิกค่าใช้จ่ายเกิดขึ้นเมื่อพนักงานนำค่าใช้จ่ายออกจากกระเป๋าในนามของบริษัท**
 
-For example, if they take a customer out for lunch, they can make a request for reimbursement via the Expense Claim form.
+ตัวอย่างเช่น หากพวกเขาพาลูกค้าออกไปรับประทานอาหารกลางวัน พวกเขาสามารถขอเงินคืนผ่านแบบฟอร์มเบิกค่าใช้จ่าย
 
-To access an Expense Claim, go to:
+ในการเข้าถึงการเบิกค่าใช้จ่าย ไปที่:
 
-> Human Resources > Expense Claims > Expense Claim
+> ทรัพยากรบุคคล > เบิกค่าใช้จ่าย > เบิกค่าใช้จ่าย
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-1. [Employee](/docs/user/manual/en/human-resources/employee)
-1. [Department](/docs/user/manual/en/human-resources/department)
-1. [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts)
+1. [พนักงาน](/docs/user/manual/th/human-resources/employee)
+1. [แผนก](/docs/user/manual/th/human-resources/department)
+1. [ผังบัญชี](/docs/user/manual/th/accounts/chart-of-accounts)
 
 
-## 2. How to create a Expense Claim
+## 2. วิธีสร้างการเบิกค่าใช้จ่าย
 
-1. Go to: Expense Claim > New.
-1. Select the Employee Name in the 'From Employee' field.
-1. Select the Expense Approver.
-1. Enter the Expense Date, Expense Claim Type and the Amount.
-1. Additionally, you can also enter the Expense Taxes and Charges.
-1. In Accounting Details, select the Company's Default Payable Account.
-1. Save and Submit.
+1. ไปที่: การเบิกค่าใช้จ่าย > ใหม่
+1. เลือกชื่อพนักงานในช่อง 'จากพนักงาน'
+1. เลือกผู้อนุมัติค่าใช้จ่าย
+1. ป้อนวันที่ใช้จ่าย ประเภทการเบิกค่าใช้จ่าย และจำนวนเงิน
+1. นอกจากนี้ คุณยังสามารถป้อนภาษีค่าใช้จ่ายและค่าธรรมเนียมได้อีกด้วย
+1. ในรายละเอียดบัญชี ให้เลือกบัญชีเจ้าหนี้ที่ผิดนัดของบริษัท
+1. บันทึกและส่ง
 
 <img class="screenshot" alt="Expense Claim" src="{{docs_base_url}}/assets/img/human-resources/expense_claim.png">
 
-Set the Employee ID, date, the list of expenses, and corresponding taxes that are to be claimed and “Submit” the record.
+ตั้งค่ารหัสพนักงาน วันที่ รายการค่าใช้จ่าย และภาษีที่เกี่ยวข้องที่จะเบิกและ "ส่ง" บันทึก
 
 <img class="screenshot" alt="Expense Claim" src="{{docs_base_url}}/assets/img/human-resources/expense-claim-expenses.png">
 
-Expense claim workflow
+เวิร์กโฟลว์การเบิกค่าใช้จ่าย
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/5SZHJF--ZFY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-### Approving Expenses
+### การอนุมัติค่าใช้จ่าย
 
-Approver for the Expense Claim is selected by an Employee himself. Employee can choose from the list of users who are configured as _Expense Approvers_ for their [Department](/docs/user/manual/en/human-resources/department).
+ผู้อนุมัติสำหรับการเบิกค่าใช้จ่ายจะถูกเลือกโดยพนักงานเอง พนักงานสามารถเลือกจากรายชื่อผู้ใช้ที่ได้รับการกำหนดค่าเป็น _Expense Approvers_ สำหรับ [แผนก](/docs/user/manual/th/human-resources/department)
 
-When a new Expense Claim is created, if the selected expense approver does not have access to it, the document is shared with the approver with "submit" permission.
+เมื่อมีการสร้างการเบิกค่าใช้จ่ายใหม่ ถ้าผู้อนุมัติค่าใช้จ่ายที่เลือกไม่มีสิทธิ์เข้าถึง เอกสารจะถูกแชร์กับผู้อนุมัติที่มีสิทธิ์ "ส่ง"
 
-After saving Expense Claim, Employee should [Assign document to Approver](/docs/user/manual/en/using-erpnext/assignment). On assignment, approving user will also receive email notification. To automate email notification, you can also setup Email Alert
+หลังจากบันทึก Expense Claim แล้ว พนักงานควร [มอบหมายเอกสารให้กับผู้อนุมัติ](/docs/user/manual/th/using-erpnext/assignment) ในการมอบหมาย ผู้ใช้ที่อนุมัติจะได้รับการแจ้งเตือนทางอีเมลด้วย ในการทำให้การแจ้งเตือนทางอีเมลอัตโนมัติ คุณยังสามารถตั้งค่า Email Alert
 
-Expense Claim Approver can update the “Sanctioned Amounts” against Claimed Amount of an Employee. If submitting, Approval Status should be submitted to Approved or Rejected. If Approved, then Expense Claim gets submitted. If rejected, then Expense Approver's comments can be added in the Comments section explaining why the claim was approved or rejected.
+ผู้อนุมัติการเบิกค่าใช้จ่ายสามารถอัปเดต "จำนวนเงินที่ถูกลงโทษ" กับจำนวนเงินที่เบิกของพนักงาน หากส่ง ควรส่งสถานะการอนุมัติไปที่อนุมัติหรือปฏิเสธ หากได้รับการอนุมัติ การเบิกค่าใช้จ่ายจะถูกส่งไป หากถูกปฏิเสธ คุณสามารถเพิ่มความคิดเห็นของผู้อนุมัติค่าใช้จ่ายได้ในส่วนความคิดเห็น โดยอธิบายว่าทำไมการอ้างสิทธิ์จึงได้รับการอนุมัติหรือปฏิเสธ
 
-### Booking the Expense
+### การจองค่าใช้จ่าย
 
-On submission of Expense Claim, system books an expense against the expense account and the employee account
+ในการยื่นขอเบิกค่าใช้จ่าย ระบบจะบันทึกค่าใช้จ่ายกับบัญชีค่าใช้จ่ายและบัญชีพนักงาน
 <img class="screenshot" alt="Expense Claim" src="{{docs_base_url}}/assets/img/human-resources/expense_claim_book.png">
 
-User can view unpaid expense claim using report "Unclaimed Expense Claims"
+
+ผู้ใช้สามารถดูการเบิกค่าใช้จ่ายที่ค้างชำระได้โดยใช้รายงาน "การเบิกค่าใช้จ่ายที่ยังไม่ได้อ้างสิทธิ์"
 <img class="screenshot" alt="Expense Claim" src="{{docs_base_url}}/assets/img/human-resources/unclaimed_expense_claims.png">
 
-### Payment for Expense Claim
+### การชำระเงินสำหรับการเบิกค่าใช้จ่าย
 
-To make payment against the expense claim, user has to click on Create > Payment.
+ในการชำระเงินจากการเบิกค่าใช้จ่าย ผู้ใช้ต้องคลิกสร้าง > การชำระเงิน
 
-#### Expense Claim
+#### ค่าใช้จ่ายในการเบิก
 
 <img class="screenshot" alt="Create Payment" src="{{ docs_base_url }}/assets/img/human-resources/expense_claim_create_payment.png">
 
-#### Payment Entry
+#### รายการชำระเงิน
 
-> Note: This amount should not be clubbed with Salary because the amount will then be taxable to the Employee.
+> หมายเหตุ: จำนวนเงินนี้ไม่ควรเชื่อมโยงกับเงินเดือนเพราะจำนวนเงินนั้นจะต้องเสียภาษีให้กับพนักงาน
 
 <img class="screenshot" alt="Expense Claim" src="{{docs_base_url}}/assets/img/human-resources/expense_claim_payment_entry.png">
 
-Alternatively, a Payment Entry can be made for an employee and all outstanding Expense Claims will be pulled in.
+อีกทางหนึ่ง สามารถทำรายการชำระเงินสำหรับพนักงานได้ และการเบิกค่าใช้จ่ายคงค้างทั้งหมดจะถูกดึงเข้ามา
 
-> Accounting > Payment Entry > New Payment Entry
+> การบัญชี > รายการชำระเงิน > รายการชำระเงินใหม่
 
-Set the Payment Type to "Pay", the Party Type to Employee, the Party to the employee being paid and the account being paid from. All outstanding expense claims will be pulled in and payments amounts can be allocated to each expense.
+ตั้งค่าประเภทการชำระเงินเป็น "จ่าย" ประเภทปาร์ตี้เป็นพนักงาน ฝ่ายที่จ่ายให้กับพนักงานและบัญชีที่จ่าย การเบิกค่าใช้จ่ายคงค้างทั้งหมดจะถูกดึงเข้ามา และสามารถจัดสรรจำนวนเงินที่ชำระให้กับแต่ละค่าใช้จ่ายได้
 
-### Linking with Task & Project
+### การเชื่อมโยงกับงานและโครงการ
 
-* To Link Expense Claim with Task or Project specify the Task or the Project while making an Expense Claim
+* หากต้องการเชื่อมโยงการเบิกค่าใช้จ่ายกับงานหรือโครงการให้ระบุงานหรือโครงการในขณะที่ทำการเบิกค่าใช้จ่าย
 
 <img class="screenshot" alt="Expense Claim - Project Link" src="{{docs_base_url}}/assets/img/project/project-expense-claim-1.png">
 
-This will update the Project cost with the Expense claim amounts
+การดำเนินการนี้จะอัปเดตต้นทุนโครงการด้วยยอดเบิกค่าใช้จ่าย
 
 <img class="screenshot" alt="Expense Claim - Project Link" src="{{docs_base_url}}/assets/img/project/project-expense-claim-2.png">
 

@@ -1,15 +1,15 @@
 <!-- add-breadcrumbs -->
-#Amending Sales Order after Submit
-Rate and Qty in Sales Order can now be amended after Submit using the `Update Items` button.
+#แก้ไขคำสั่งขายหลังส่ง
+อัตราและจำนวนในใบสั่งขายสามารถแก้ไขได้หลังจากส่งโดยใช้ปุ่ม 'อัปเดตรายการ'
 
 <img alt="Update Items" class="screenshot" src="{{docs_base_url}}/assets/img/articles/so-update-items.png">
 
-To Update Rate and Qty in a Submitted Sales Order, click on the `Update Items` button. A dialog will pop up to let you make the change.
+หากต้องการอัปเดตอัตราและจำนวนในใบสั่งขายที่ส่ง ให้คลิกปุ่ม 'อัปเดตรายการ' กล่องโต้ตอบจะปรากฏขึ้นเพื่อให้คุณทำการเปลี่ยนแปลงได้
 
 <img alt="Update Items" class="screenshot" src="{{docs_base_url}}/assets/img/articles/so-update-items-rate-and-qty.gif">
 
-Please Note the following validations and usecases:
+โปรดทราบการตรวจสอบและกรณีการใช้งานต่อไปนี้:
 
-- Update Features checks if Sales Order has Delivery Note and Sales Invoice.
-- Qty can be updated for undelivered Sales Order and for Partial Delivery Note. For Sales Order with completed Delivery Notes, it cannot be updated.
-- Rate can be updated for un-invoiced and partially-invoiced Sales Order. For Sales Order with submitted Sales Invoice, it cannot be updated.
+- อัปเดตคุณสมบัติตรวจสอบว่าใบสั่งขายมีใบส่งสินค้าและใบกำกับสินค้าหรือไม่
+- สามารถอัปเดตจำนวนสำหรับใบสั่งขายที่ยังไม่ได้ส่งมอบและสำหรับหมายเหตุการจัดส่งบางส่วน สำหรับใบสั่งขายที่มีใบส่งมอบที่ครบถ้วนแล้ว จะไม่สามารถอัปเดตได้
+- อัตราสามารถปรับปรุงสำหรับใบสั่งขายที่ยังไม่ได้ออกใบแจ้งหนี้และออกใบแจ้งหนี้บางส่วน สำหรับใบสั่งขายที่มีใบกำกับสินค้าที่ส่งมา จะไม่สามารถอัปเดตได้

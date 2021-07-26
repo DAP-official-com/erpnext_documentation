@@ -1,53 +1,53 @@
 <!-- add-breadcrumbs -->
-# Bank Account
+# บัญชีธนาคาร
 
-In ERPNext, Bank Accounts can be created for a Company as well as other parties like Customers, Suppliers etc. Doing this lets you record all the bank transactions correctly for accounting accuracy.
+ใน ERPNext คุณสามารถสร้างบัญชีธนาคารสำหรับบริษัทและฝ่ายอื่นๆ เช่น ลูกค้า ซัพพลายเออร์ ฯลฯ การทำเช่นนี้ช่วยให้คุณบันทึกธุรกรรมธนาคารทั้งหมดอย่างถูกต้องเพื่อความถูกต้องทางบัญชี
 
-You can add Bank Accounts in ERPNext for Company. Supplier, Customer, or any other party with whom transactions are carried out. Then the Bank Account can be chosen in [Payment Entries](/docs/user/manual/en/accounts/payment-entry) as a [Mode of Payment](/docs/user/manual/en/accounts/mode-of-payment).
+คุณสามารถเพิ่มบัญชีธนาคารใน ERPNext สำหรับบริษัท ซัพพลายเออร์ ลูกค้า หรือบุคคลอื่นใดที่มีการทำธุรกรรมด้วย แล้วบัญชีธนาคารสามารถเลือกใน [รายการการชำระเงิน ](/docs/user/manual/th/accounts/payment-entry) ใน [วิธีการชำระเงิน](/docs/user/manual/th/accounts/mode-of-payment).
 
-To access Bank Account, go to:
-> Home > Accounting > Bank Statement > Bank Account
+ในการเข้าถึงบัญชีธนาคาร ไปที่:
+> หน้าหลัก > การบัญชี > ใบแจ้งยอดธนาคาร > บัญชีธนาคาร
 
 ![Bank Account](/docs/assets/img/accounts/bank-account.png)
 
-## 1. Prerequisites
-Before creating and using Bank Account, it is advised to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้งานบัญชีธนาคาร ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Bank](/docs/user/manual/en/accounts/bank)
+* [ธนาคาร](/docs/user/manual/th/accounts/bank)
 
-## 2. How to create a Bank Account
-1. Enter an Account Name.
-1. Link the General Ledger account set in 'Bank Accounts' in the [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts).
-1. Select a Bank.
-1. Save.
+## 2. วิธีสร้างบัญชีธนาคาร
+1. ป้อนชื่อบัญชี
+1. เชื่อมชุดบัญชีแยกประเภททั่วไปใน 'บัญชีธนาคาร' ใน [ผังบัญชี](/docs/user/manual/th/accounts/chart-of-accounts).
+1. เลือกธนาคาร
+1. บันทึก
 
-### 2.1 Additional options when creating a Bank Account
+### 2.1 ตัวเลือกเพิ่มเติมเมื่อสร้างบัญชีธนาคาร
 
-* **Is the Default Account**: Enabling this will use this as the default bank account for all journal transactions.
-* **Is Company Account**: Enable if this Bank Account a Company account.
-* An Account Type and Account Subtype can be set for further classification in reports etc.
+* **เป็นบัญชีเริ่มต้น :** การเปิดใช้งานนี้จะใช้เป็นบัญชีธนาคารเริ่มต้นสำหรับธุรกรรมสมุดรายวันทั้งหมด
+* **เป็นบัญชีบริษัท :** เปิดใช้งานหากบัญชีธนาคารนี้เป็นบัญชีบริษัท
+* สามารถตั้งค่าประเภทบัญชีและประเภทย่อยของบัญชีสำหรับการจัดประเภทเพิ่มเติมในรายงาน ฯลฯ
 
-## 3. Features
-### 3.1 Party Details
+## 3. คุณสมบัติ
+### 3.1 รายละเอียดของผู้ที่เกี่ยวข้อง
 
-* **Party Type**: If this is not a company account, set who this account belongs to. The available options are: Customer, Employee, Member, Shareholder, Student, and Supplier. 
-* **Party**: Select the specific Customer/Supplier, etc.
+* **ประเภทของผู้ที่เกี่ยวข้อง**: หากนี่ไม่ใช่บัญชีบริษัท ให้ตั้งค่าว่าบัญชีนี้เป็นของใคร ตัวเลือกที่ใช้ได้คือ: ลูกค้า พนักงาน สมาชิก ผู้ถือหุ้น นักเรียน และซัพพลายเออร์
+* **ผู้ที่เกี่ยวข้อง**: เลือกลูกค้า/ซัพพลายเออร์ที่ต้องการ ฯลฯ
 
-### 3.2 Account Details
+### 3.2 รายละเอียดบัญชี
 
-For reference, the following details about a Bank Account can be stored in ERPNext:
+สำหรับการอ้างอิง รายละเอียดต่อไปนี้เกี่ยวกับบัญชีธนาคารสามารถเก็บไว้ใน ERPNext:
 
 * IBAN
-* Bank Account No
-* Branch Code
-* SWIFT number
+* เลขที่บัญชีธนาคาร
+* รหัสสาขา
+* หมายเลข SWIFT
 
-### 3.3 Address and Contact
+### 3.3 ที่อยู่และรายชื่อ
 
-* **Address**: A bank may have multiple in the same locality. The bank branch address can be set here.
-* **Contact**: A Contact Person can be linked here. Banks usually provide a dedicated contact person for corporate accounts, you can add that person's contact here.
-* **Website**: You can add the bank's website here.
+* **ที่อยู่**: ธนาคารอาจมีหลายแห่งในท้องที่เดียวกัน สามารถกำหนดที่อยู่สาขาของธนาคารได้ที่นี่
+* **รายชื่อผู้ติดต่อ**: สามารถเชื่อมโยงบุคคลที่ติดต่อได้ที่นี่ โดยปกติแล้วธนาคารจะมีผู้ติดต่อเฉพาะสำหรับบัญชีบริษัท คุณสามารถเพิ่มผู้ติดต่อของบุคคลนั้นได้ที่นี่
+* **เว็บไซต์**: คุณสามารถเพิ่มเว็บไซต์ของธนาคารได้ที่นี่
 
-### 3.4 Integration Details
+### 3.4 รายละเอียดการบูรณาการ
 
-**Last Integration Date**: If your bank supports [Plaid Integration](/docs/user/manual/en/erpnext_integration/plaid_integration), setting a date here will synchronize on the set date. This will create Bank Transactions entries.
+**Last Integration Date**: หากธนาคารของคุณรองรับ [Plaid Integration](/docs/user/manual/th/erpnext_integration/plaid_integration)การตั้งค่าวันที่ที่นี่จะซิงโครไนซ์กับวันที่ที่ตั้งไว้ นี้จะสร้างรายการธุรกรรมธนาคาร

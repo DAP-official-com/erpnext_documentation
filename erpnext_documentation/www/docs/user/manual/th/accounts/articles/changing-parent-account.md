@@ -1,33 +1,33 @@
 <!-- add-breadcrumbs -->
-#Changing Parent Account
+#เปลี่ยนบัญชีหลัก
 
-Chart of Account has hierarchical structure. Each account has a parent it is listed under. 
+ผังบัญชีมีโครงสร้างแบบลำดับชั้น แต่ละบัญชีมีบัญชีหลักซึ่งอยู่ในรายการ
 
-There are some accounts which are auto-created. For example, Account for Warehouse is auto-created when new Wareouse is added in the system. These accounts are added under pre-defined account ledger. Warehouse Account is always added under Stock Assets, under Current Assets.
+มีบางบัญชีที่สร้างขึ้นโดยอัตโนมัติ ตัวอย่างเช่น บัญชีสำหรับคลังสินค้าจะถูกสร้างขึ้นโดยอัตโนมัติเมื่อมีการเพิ่ม Wareouse ใหม่ลงในระบบ บัญชีเหล่านี้ถูกเพิ่มภายใต้บัญชีแยกประเภทที่กำหนดไว้ล่วงหน้า บัญชีคลังสินค้าจะถูกเพิ่มภายใต้สินทรัพย์สต็อก ภายใต้สินทรัพย์หมุนเวียนเสมอ
 
-If you wish to place specific Account into another parent Account, you can achieve the same as below.
+หากคุณต้องการวางบัญชีเฉพาะในบัญชีหลักอื่น คุณสามารถดำเนินการได้ดังด้านล่าง
 
-####1. Go to Chart of Account
+####1. ไปที่ผังบัญชี
 
-`Accounts > Setup > Chart of Account`
+`บัญชี > การตั้งค่า > ผังบัญชี`
 
-Click on Account for which Parent Account is to be changed.
+คลิกที่บัญชีที่จะเปลี่ยนบัญชีหลัก
 
-####2. Edit Account
+####2. แก้ไขบัญชี
 
 <img alt="Project Default Cost Center" class="screenshot" src="{{docs_base_url}}/assets/img/articles/change-parent-1.png"> 
 
 ####3. Change Parent Account
 
-Search and select preferred Parent Account and save.
+ค้นหาและเลือกบัญชีหลักที่ต้องการและบันทึก
 
 <img alt="Project Default Cost Center" class="screenshot" src="{{docs_base_url}}/assets/img/articles/change-parent-2.png">
 
-Refresh system from Help menu to experience the change.
+รีเฟรชระบบจากเมนูวิธีใช้เพื่อรับการเปลี่ยนแปลง
 
 <img alt="Project Default Cost Center" class="screenshot" src="{{docs_base_url}}/assets/img/articles/change-parent-3.png">
 
-<div class="well"> Note: Parent cannot be customized for the Root Accounts, like Asset, Liability, Income, Expense, Equity.</div>
+<div class="well"> หมายเหตุ: บัญชีหลักไม่สามารถปรับแต่งพาเรนต์สำหรับบัญชีรูท เช่น สินทรัพย์ ความรับผิด รายได้ ค่าใช้จ่าย ทุน.</div>
 
 #### Quick Help
 

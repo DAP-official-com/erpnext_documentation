@@ -1,136 +1,136 @@
 <!-- add-breadcrumbs -->
-# Shift Management
+#การจัดการกะการทำงาน
 
-Shift Management section of Human Resources helps your Organization manage shifts of your employees.
+ส่วนการจัดการกะของทรัพยากรบุคคลช่วยให้องค์กรของคุณจัดการกะของพนักงานของคุณ
 
-To use Shift Management in ERPNext,
+ในการใช้การจัดการกะใน ERPNext
 
-  1. Set Up a Shift Type.
-  2. Enter Shift Request.
-  3. View and Manage Shift Assignments.
+  1. ตั้งค่าประเภทกะ
+  2. ป้อนคำขอเปลี่ยน
+  3. ดูและจัดการการมอบหมายกะ
 
-## 1. Shift Type
+## 1. ประเภทกะการทำงาน
 
-The Shift Type document allows you to define the different types of Shifts in your Organization and setup the auto attendance for the shift. Auto attendance marks attendance based on 'Employee Checkin' for Employees assigned to the shift.
+เอกสารประเภทกะช่วยให้คุณสามารถกำหนดกะประเภทต่าง ๆ ในองค์กรของคุณและตั้งค่าการเข้าร่วมอัตโนมัติสำหรับกะได้ การเข้าร่วมอัตโนมัติทำเครื่องหมายการเข้าร่วมตาม 'การเช็คอินของพนักงาน' สำหรับพนักงานที่ได้รับมอบหมายให้ทำงานกะ
 
-To access Shift Type, go to:
-> Home > Human Resources > Shift Management > Shift Type
+ในการเข้าถึง Shift Type ให้ไปที่:
+> หน้าหลัก > ทรัพยากรบุคคล > การจัดการกะ > ประเภทกะการทำงาน
 
-1. Go to Shift Type List, Click on New.
-2. Enter Name, Start Time and End Time
-3. Save
+1. ไปที่ Shift Type List คลิกที่ New
+2. ป้อนชื่อ เวลาเริ่มต้น และเวลาสิ้นสุด
+3. บันทึก
 <img class="screenshot" alt="Shift Type" src="{{docs_base_url}}/assets/img/human-resources/new-shift-type.png">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-In addition to defining the different shifts in your organization, the Shift Type document also has the setting for auto attendance. Auto attendance marks the attendance for the employees assigned to this shift based on records in the 'Employee Checkin' Document. Auto Attendance for all shift type records are attempted to be marked every hour. You can also trigger the auto attendance manually for a single shift type by pressing the 'Mark Attendance' button in the shift type document.
+นอกจากการกำหนดกะต่างๆ ในองค์กรของคุณแล้ว เอกสารประเภทกะยังมีการตั้งค่าสำหรับการเข้าร่วมอัตโนมัติอีกด้วย การเข้าร่วมอัตโนมัติเป็นการทำเครื่องหมายการเข้างานสำหรับพนักงานที่ได้รับมอบหมายให้ทำงานกะนี้ตามบันทึกในเอกสาร 'การเช็คอินพนักงาน' การเข้าร่วมอัตโนมัติสำหรับเรกคอร์ดประเภทกะทั้งหมดจะพยายามทำเครื่องหมายทุกชั่วโมง คุณยังสามารถทริกเกอร์การเข้าร่วมอัตโนมัติด้วยตนเองสำหรับประเภทกะเดียวได้ โดยกดปุ่ม 'ทำเครื่องหมายการเข้างาน' ในเอกสารประเภทกะ
 <img class="screenshot" alt="Shift Type" src="{{docs_base_url}}/assets/img/human-resources/shift-type.png">
 
-### 2.1 Start Time
-The time of the day when this shift starts. The time is to be entered in 24Hrs format.
+### 2.1 เวลาเริ่มต้น
+เวลาของวันที่การเปลี่ยนแปลงนี้เริ่มต้น เวลาจะถูกป้อนในรูปแบบ 24 ชั่วโมง
 
-### 2.2 End Time
-The time of the day when this shift ends. The time is to be entered in 24Hrs format.
+### 2.2 เวลาสิ้นสุด
+เวลาของวันที่กะนี้สิ้นสุด เวลาจะถูกป้อนในรูปแบบ 24 ชั่วโมง
 
-> Note: For cases where the 'End Time' is less that 'Start Time', the shift is assumed to be a night shift that starts on one calendar date and end on the next calendar date.
+> หมายเหตุ: สำหรับกรณีที่ 'เวลาสิ้นสุด' น้อยกว่า 'เวลาเริ่มต้น' กะจะถือว่าเป็นกะกลางคืนที่เริ่มต้นในวันที่ปฏิทินหนึ่งและสิ้นสุดในวันที่ปฏิทินถัดไป
 
-### 2.3 Holiday List
-The Applicable Holidays for this shift can be selected here. If left blank then the default holiday list from the employee or the company document is taken in to account.
+### 2.3 รายการวันหยุด
+วันหยุดที่เกี่ยวข้องสำหรับกะนี้สามารถเลือกได้ที่นี่ หากเว้นว่างไว้ รายการวันหยุดเริ่มต้นจากพนักงานหรือเอกสารของบริษัทจะถูกนำเข้าบัญชี
 
-### 2.4 Enable Auto Attendance
-You can use this option to enable marking attendance for the employees assigned to this shift based on their 'Employee Checkin' records.
+### 2.4 เปิดใช้งานการเข้าร่วมประชุมอัตโนมัติ
+คุณสามารถใช้ตัวเลือกนี้เพื่อเปิดใช้งานการทำเครื่องหมายการเข้างานสำหรับพนักงานที่ได้รับมอบหมายให้กะนี้โดยยึดตามบันทึก 'การเช็คอินของพนักงาน'
 
-### 2.5 Auto Attendance Settings
-You can use the following settings to configure the Auto Attendance as per your requirements.
+### 2.5 การตั้งค่าการเข้าร่วมอัตโนมัติ
+คุณสามารถใช้การตั้งค่าต่อไปนี้เพื่อกำหนดค่าการเข้าร่วมอัตโนมัติตามความต้องการของคุณ
 
-### Determine Check-in and Check-out
-Employee Check-in may not always have an IN/OUT log type. For, such scenarios you could use this option to get appropriate results from the auto attendance system.
+### กำหนดเช็คอินและเช็คเอาท์
+การเช็คอินของพนักงานอาจไม่มีประเภทบันทึกการเข้า/ออกเสมอไป สำหรับสถานการณ์ดังกล่าว คุณสามารถใช้ตัวเลือกนี้เพื่อรับผลลัพธ์ที่เหมาะสมจากระบบการเข้างานอัตโนมัติ
 
-1. Alternating entries as IN and OUT during the same shift:
-	- The first entry is taken as IN followed by the next entry as OUT and the following entry as IN and so on.
-2. Strictly based on Log Type in Employee Checkin:
-	- The check-in is determined as IN or OUT strictly based on the 'Log Type' in the Employee Checkin record.
+1. รายการสลับเป็นเข้าและออกระหว่างกะเดียวกัน:
+- รายการแรกใช้เป็น IN ตามด้วยรายการถัดไปเป็น OUT และรายการต่อไปนี้เป็น IN และอื่นๆ
+2. ยึดตามประเภทบันทึกในการเช็คอินของพนักงานอย่างเคร่งครัด:
+- การเช็คอินถูกกำหนดเป็นเข้าหรือออกอย่างเคร่งครัดตาม 'ประเภทการเข้าสู่ระบบ' ในบันทึกการเช็คอินของพนักงาน
 
-### Working Hours Calculation Based On
-Working hours can be calculated either by including the breaks in between the shift or by excluding the breaks.
+### คำนวณชั่วโมงการทำงานตาม
+ชั่วโมงทำงานสามารถคำนวณได้โดยการรวมการพักระหว่างกะหรือโดยไม่รวมการพัก
 
-This can be configured using the following options:
+สามารถกำหนดค่าได้โดยใช้ตัวเลือกต่อไปนี้:
 
-1. First Check-in and Last Check-out:
-	- Selecting this option calculates the working hours by considering the first IN and last OUT Employee Checkin during the shift.
-	- In case the IN/OUT is determined by alternating entries then the first Employee Checkin is considered as IN and the last Employee Checkin is considered as OUT for the purpose of working hours calculation.
-2. Every Valid Check-in and Check-out:
-	- Selecting this option excludes the time during which the Employee is checked out.
-	- i.e. Only the time during which the employee is checked in is calculated as working hours.
+1. การเช็คอินครั้งแรกและเช็คเอาท์ครั้งสุดท้าย:
+- การเลือกตัวเลือกนี้จะคำนวณชั่วโมงทำงานโดยพิจารณาการเช็คอินพนักงานเข้าครั้งแรกและออกครั้งสุดท้ายระหว่างกะ
+- ในกรณีที่กำหนดการเข้า/ออกโดยการสลับรายการ การเช็คอินของพนักงานครั้งแรกจะถือเป็นการเข้า และการเช็คอินพนักงานครั้งสุดท้ายถือเป็นการ ออก เพื่อวัตถุประสงค์ในการคำนวณชั่วโมงทำงาน
+2. การเช็คอินและเช็คเอาต์ที่ถูกต้องทุกครั้ง:
+- การเลือกตัวเลือกนี้ไม่รวมเวลาที่เช็คเอาต์พนักงาน
+- กล่าวคือ เฉพาะเวลาที่พนักงานเช็คอินเท่านั้นที่คำนวณเป็นชั่วโมงทำงาน
 
-### Begin check-in before shift start time
-Often employees would check-in a few minutes before the shift start time. To consider these check-ins as part of the shift during the calculation of attendance, you could setup this value accordingly.
+### เริ่มเช็คอินก่อนเวลาเริ่มกะ
+บ่อยครั้งที่พนักงานจะเช็คอินสองสามนาทีก่อนเวลาเริ่มกะ หากต้องการพิจารณาการเช็คอินเหล่านี้เป็นส่วนหนึ่งของกะระหว่างการคำนวณการเข้างาน คุณสามารถตั้งค่านี้ตามความเหมาะสม
 
-### Allow check-out after shift end time
-Often employees would check-out after the shift end time. To consider these check-outs as part of the shift during the calculation of attendance, you could setup this value accordingly.
+### อนุญาตให้เช็คเอาท์หลังเวลาสิ้นสุดกะ
+บ่อยครั้งที่พนักงานจะเช็คเอาท์หลังเวลาสิ้นสุดกะ ในการพิจารณาการเช็คเอาท์เหล่านี้เป็นส่วนหนึ่งของกะระหว่างการคำนวณการเข้างาน คุณสามารถตั้งค่านี้ตามความเหมาะสม
 
-### Working Hours Threshold for Half Day
-If the actual number of working hours is less than the given value in this field then the employee attendance is marked as 'Half Day'. If you never want to mark Half Day based on working hours, you should set this value to zero.
+### เกณฑ์ชั่วโมงทำงานครึ่งวัน
+หากจำนวนชั่วโมงทำงานจริงน้อยกว่าค่าที่กำหนดในฟิลด์นี้ การเข้าร่วมของพนักงานจะถูกทำเครื่องหมายเป็น 'ครึ่งวัน' หากคุณไม่ต้องการทำเครื่องหมายครึ่งวันตามเวลาทำงาน คุณควรตั้งค่านี้เป็นศูนย์
 
-### Working Hours Threshold for Absent
-If the actual number of working hours is less than the given value in this field then the employee attendance is marked as 'Absent'. If you never want to mark Absent based on working hours, you should set this value to zero.
+### เกณฑ์ชั่วโมงทำงานสำหรับการขาดงาน
+หากจำนวนชั่วโมงทำงานจริงน้อยกว่าค่าที่กำหนดในฟิลด์นี้ การเข้าร่วมของพนักงานจะถูกทำเครื่องหมายเป็น 'ไม่มี' หากคุณไม่ต้องการทำเครื่องหมายขาดตามเวลาทำงาน คุณควรตั้งค่านี้เป็นศูนย์
 
-### Process Attendance After
-The date from which 'Auto Attendance' should start marking attendance. You should set it to a date after which you have Employee Checkin Records for this shift.
+### กระบวนการเข้าร่วมหลังจาก
+วันที่ที่ 'การเข้าร่วมอัตโนมัติ' ควรเริ่มทำเครื่องหมายการเข้าร่วม คุณควรตั้งค่าเป็นวันที่หลังจากที่คุณมีบันทึกการเช็คอินของพนักงานสำหรับกะนี้
 
-### Last Sync of Checkin
-This is the time upto which attendance is marked based on the Employee Checkin records. You should set this to a date and time upto which the Employee Checkin has been synced. Otherwise an employee might be marked as absent due to the lack of check-in records.
+### ซิงค์สุดท้ายของการเช็คอิน
+นี่คือเวลาที่มีการทำเครื่องหมายการเข้าร่วมตามบันทึกการเช็คอินของพนักงาน คุณควรตั้งค่านี้เป็นวันที่และเวลาที่ซิงค์การเช็คอินพนักงาน มิฉะนั้น พนักงานอาจถูกทำเครื่องหมายว่าไม่อยู่เนื่องจากไม่มีบันทึกการเช็คอิน
 
-# Shift Request
-
-
-## 1. Prerequisites
-To create a Shift Request, these need to be created first:
-
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Shift Type](docs/user/manual/en/human-resources/shift-management#1-shift-type)
-
-Shift Request is used by an employee to request for a particular Shift Type.
-
-To create a new Shift Request go to:
-> Human Resources > Shift Management > Shift Request
+# คำขอเปลี่ยน
 
 
-1. Go to Shift Request List, Click on New.
-1. Select Employee and Shift Type.
-1. Set the Shift duration using From Date and To Date.
-1. Select the Approver. If the selected approver does not have access to the Shift Request document, it is shared with the approver with "submit" permission.
-1. Save.
+## 1. ข้อกำหนดเบื้องต้น
+หากต้องการสร้าง Shift Request จะต้องสร้างสิ่งเหล่านี้ก่อน:
+
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [ประเภทกะการทำงาน](docs/user/manual/th/human-resources/shift-management#1-shift-type)
+
+พนักงานใช้คำขอกะเพื่อขอประเภทกะเฉพาะ
+
+หากต้องการสร้าง การขอกะการทำงาน ใหม่ ให้ไปที่:
+> ทรัพยากรบุคคล > การจัดการกะ > การขอกะการทำงาน
+
+
+1. ไปที่ รายการการขอกะการทำงาน คลิกใหม่
+1. เลือกประเภทพนักงานและประเภทกะ
+1. ตั้งค่าระยะเวลา Shift โดยใช้ From Date และ To Date
+1. เลือกผู้อนุมัติ หากผู้อนุมัติที่เลือกไม่มีสิทธิ์เข้าถึงเอกสารคำขอกะ จะมีการแชร์กับผู้อนุมัติที่มีสิทธิ์ "ส่ง"
+1. บันทึก
 
 	<img class="screenshot" alt="Shift Request" src="{{docs_base_url}}/assets/img/human-resources/shift-request.png">
 
-# Shift Assignment
+# การมอบหมายกะ
 
-* Once the Shift Request is Approved and submitted it automatically creates the Shift Assignments for an Employee.
+* เมื่อคำขอกะได้รับการอนุมัติและส่งแล้ว จะสร้างการมอบหมายกะสำหรับพนักงานโดยอัตโนมัติ
 
 	<img class="screenshot" alt="Shift Assignment" src="{{docs_base_url}}/assets/img/human-resources/shift-assignment.png">
 
-> Note: The Assignment for active shift-type will be for a fixed period if there is an End Date otherwise, it will be treated as an ongoing shift with no End Date. Users can update End Date and status even after submitting the document.
+> หมายเหตุ: การมอบหมายงานสำหรับประเภทกะที่ทำงานอยู่จะมีระยะเวลาคงที่ หากมีวันที่สิ้นสุด มิฉะนั้นจะถือเป็นกะต่อเนื่องโดยไม่มีวันที่สิ้นสุด ผู้ใช้สามารถอัปเดตวันที่สิ้นสุดและสถานะได้แม้หลังจากส่งเอกสารแล้ว
 
-### 3.1 Setting Shift Request Approver
+### 3.1 การอนุมัติคำขอเปลี่ยนการตั้งค่า
 
-A Shift Request Approver is a user who can approve a Shift Request of an Employee. In ERPNext version 13, Shift Request Approver can be set at two levels:
+ผู้อนุมัติคำขอกะคือผู้ใช้ที่สามารถอนุมัติคำขอกะของพนักงานได้ ใน ERPNext เวอร์ชัน 13 Shift Request Approver สามารถตั้งค่าได้สองระดับ:
 
-* **Department Level:** Shift Request Approvers for each department can be configured in the [Department](/docs/user/manual/en/human-resources/department) master. Multiple Shift Request Approver can be set in a Department.
+* **ระดับแผนก:** ผู้อนุมัติคำขอเปลี่ยนสำหรับแต่ละแผนกสามารถกำหนดค่าได้ในต้นแบบ [แผนก](/docs/user/manual/th/human-resources/department) สามารถตั้งค่าผู้อนุมัติคำขอเปลี่ยนหลายรายการในแผนกได้
 
 
     <img class="screenshot" alt="Shift Request Approvers" src="{{docs_base_url}}/assets/img/human-resources/shift-request-approvers.png">
 
-    When an Employee belonging to a particular department request for Shift Type, the Shift Request Approver set in that Employee's department master will be considered as his Shift Type Approvers.
+   เมื่อพนักงานที่อยู่ในแผนกใดแผนกหนึ่งร้องขอประเภทกะ Shift Request Approver ที่ตั้งไว้ในหัวหน้าแผนกของพนักงานนั้นจะถูกพิจารณาเป็นผู้อนุมัติประเภทกะของเขา
 
 
-* **Employee Level:**
-Shift Request Approver can also be set Employee-wise in the employee master.
+* **ระดับพนักงาน:**
+Shift Request Approver สามารถตั้งค่า Employee-wise ในพนักงานหลัก
 
 
  <img class="screenshot" alt="Shift Request Approvers" src="{{docs_base_url}}/assets/img/human-resources/employee-level-approvers.png">
 
 
-If Shift Request Approver are set at both Employee-level and Department-level, the Employee-level Shift Request Approver will be considered as the default Leave Approver in this case.
+หากมีการตั้งค่าผู้อนุมัติคำขอกะทั้งในระดับพนักงานและระดับแผนก ผู้อนุมัติคำขอกะระดับพนักงานจะถือเป็นผู้อนุมัติการลาเริ่มต้นในกรณีนี้
 
 {next}

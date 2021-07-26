@@ -1,56 +1,55 @@
 <!-- add-breadcrumbs -->
-# Payment Request
+# คำขอชำระเงิน
 
-**A Payment Request is used to request payment from a Customer for a Sales Order or Invoice.**
+**คำขอชำระเงินใช้เพื่อขอชำระเงินจากลูกค้าสำหรับใบสั่งขายหรือใบแจ้งหนี้**
 
-Payment Request is sent via email and will contain a link to a Payment Gateway if set up. You can create a payment request via a Sales Order or a Sales Invoice. A Payment Request can also be set up against a Purchase Order or a Purchase Invoice for internal records. Then, payments can be processed in bulk using a [Payment Order](/docs/user/manual/en/accounts/payment-order).
+คำขอชำระเงินจะถูกส่งทางอีเมลและจะมีลิงก์ไปยังเกตเวย์การชำระเงินหากตั้งค่าไว้ คุณสามารถสร้างคำขอชำระเงินผ่านใบสั่งขายหรือใบกำกับสินค้าได้ คำขอชำระเงินยังสามารถตั้งค่ากับใบสั่งซื้อหรือใบกำกับสินค้าสำหรับบันทึกภายใน จากนั้นการชำระเงินสามารถประมวลผลได้ในจำนวนมากโดยใช้ [การสั่งซื้อการชำระเงิน](/docs/user/manual/th/accounts/payment-order).
 
-To access Payment Term go to:
-> Home > Accounting > Accounts Receivable > Payment Term
+ในการเข้าถึงเงื่อนไขการชำระเงินไปที่:
+> หน้าหลัก > การบัญชี > บัญชีลูกหนี้ > เงื่อนไขการชำระเงิน
 
-## 1. Prerequisites
-Before creating and using Payment Request, it is advisable to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้คำขอชำระเงิน ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบกำกับสินค้า](/docs/user/manual/th/accounts/purchase-invoice)
+1. [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order)
+1. [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)
 
-## 2. How to create a Payment Request
-A Payment Request cannot be created manually, it is created from a Sales/Purchase Order or Invoice.
+## 2. วิธีสร้างคำขอชำระเงิน
+ไม่สามารถสร้างคำขอชำระเงินด้วยตนเองได้ แต่สร้างขึ้นจากใบสั่งซื้อ/ใบสั่งซื้อหรือใบแจ้งหนี้
 
-### 2.1 Creating Payment Request via Sales Order
-In a Sales Order, click on Create and then click on Payment to make an advance payment. To know more about advance payment, visit the [Advance Payment Entry](/docs/user/manual/en/accounts/advance-payment-entry) page.
+### 2.1 การสร้างคำขอชำระเงินผ่านคำสั่งขาย
+ในใบสั่งขาย ให้คลิกที่ สร้าง แล้วคลิก การชำระเงิน เพื่อชำระเงินล่วงหน้า หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับการชำระล่วงหน้า โปรดไปที่หน้า [รายการชำระเงินล่วงหน้า](/docs/user/manual/th/accounts/advance-payment-entry) page.
 
 <img class="screenshot" alt="Payment Request" src="{{docs_base_url}}/assets/img/accounts/pr-from-so.png">
 
-### 2.2 Creating payment Request via Sales Invoice
-In a Sales Invoice, click on Create and then click on Payment to make payment against the invoice. 
+### 2.2 การสร้างคำขอชำระเงินผ่านใบกำกับสินค้า
+ในใบแจ้งหนี้การขาย ให้คลิกที่ สร้าง แล้วคลิก การชำระเงิน เพื่อชำระเงินตามใบแจ้งหนี้
 <img class="screenshot" alt="Payment Request" src="{{docs_base_url}}/assets/img/accounts/pr-from-si.png">
 
-Select appropriate Payment Gateway Account on Payment Request for accounts posting. Account head specified on payment gateway will 
-be considered to create a Journal Entry.
+เลือกบัญชีเกตเวย์การชำระเงินที่เหมาะสมในคำขอชำระเงินสำหรับการผ่านรายการบัญชี หัวหน้าบัญชีที่ระบุในช่องทางการชำระเงินจะถูกพิจารณาให้สร้างรายการบันทึกประจำวัน
 
-> Note: Invoice/Order currency and 'Payment Gateway Account' currency should be the same.
+> หมายเหตุ: สกุลเงินของใบแจ้งหนี้/คำสั่งซื้อและสกุลเงิน 'บัญชีเกตเวย์การชำระเงิน' ควรเหมือนกัน
 
 <img class="screenshot" alt="Payment Request" src="{{docs_base_url}}/assets/img/accounts/pr-details-1.png">
 
-### 2.3 Notifying the Customer
-You can notify customer from Payment Request using [Print Format](/docs/user/manual/en/setting-up/print/print-format). If the customer contact email is set, it will be fetched automatically. If not so you can set an email address in Payment Request. 
+### 2.3 การแจ้งลูกค้า
+คุณสามารถแจ้งให้ลูกค้าทราบจากคำขอชำระโดยใช้ [รูปแบบการพิมพ์](/docs/user/manual/th/setting-up/print/print-format) หากตั้งค่าอีเมลติดต่อลูกค้าไว้ อีเมลนั้นจะถูกดึงข้อมูลโดยอัตโนมัติ หากไม่เป็นเช่นนั้น คุณสามารถตั้งค่าที่อยู่อีเมลในคำขอชำระเงิน
 
 <img class="screenshot" alt="Payment Request" src="{{docs_base_url}}/assets/img/accounts/pr-details-2.png">
 
-### 2.4 Request Mail
-Here is an example request email. The URL is generated automatically if you've set up the respective payment integration. To know more about integrations, [visit this page](/docs/user/manual/en/erpnext_integration).
+### 2.4 ขออีเมล
+นี่คือตัวอย่างอีเมลขอ URL จะถูกสร้างขึ้นโดยอัตโนมัติหากคุณได้ตั้งค่าการรวมการชำระเงินตามลำดับ หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับการผสานรวม โปรดไป [ที่หน้านี้](/docs/user/manual/th/erpnext_integration).
 
 <img class="screenshot" alt="Payment Request" src="{{docs_base_url}}/assets/img/accounts/pr-email.png">
 
-### 2.5 Payment Request without using any Gateway
+### 2.5 คำขอชำระเงินโดยไม่ต้องใช้เกตเวย์ใด ๆ
 
-In case you don't want to use any integration or payment gateway and only want to send a notification, simply set the Bank Account. You'll have to compose the message accordingly with bank details. The party can then transfer the amount to the mentioned bank account.
+ในกรณีที่คุณไม่ต้องการใช้การรวมหรือเกตเวย์การชำระเงินและต้องการส่งการแจ้งเตือนเพียงตั้งค่าบัญชีธนาคาร คุณจะต้องเขียนข้อความตามรายละเอียดธนาคาร จากนั้นคู่กรณีสามารถโอนเงินเข้าบัญชีธนาคารดังกล่าวได้
 
-## 3. Related Topics
-1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
-1. [Payment Terms](/docs/user/manual/en/accounts/payment-terms)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [รายการชำระเงิน](/docs/user/manual/th/accounts/payment-entry)
+1. [เงื่อนไขการชำระเงิน](/docs/user/manual/th/accounts/payment-terms)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบกำกับสินค้า](/docs/user/manual/th/accounts/purchase-invoice)

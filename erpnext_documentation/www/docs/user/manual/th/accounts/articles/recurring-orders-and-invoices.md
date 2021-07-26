@@ -1,41 +1,42 @@
 <!-- add-breadcrumbs -->
-# Recurring Orders and Invoices
 
-If you have a contract with a **Customer** where you bill the Customer on a monthly, quarterly, half-yearly or annual basis, you should use recurring feature in orders and invoices.
+# คำสั่งซื้อและใบแจ้งหนี้ที่เกิดซ้ำ
 
-## 1. Consider a scenario
+หากคุณมีสัญญากับ **ลูกค้า** ซึ่งคุณเรียกเก็บเงินจากลูกค้าเป็นรายเดือน รายไตรมาส รายครึ่งปี หรือรายปี คุณควรใช้คุณลักษณะที่เกิดซ้ำในคำสั่งซื้อและใบแจ้งหนี้
 
-Subscription for your hosted ERPNext account requires yearly renewal. We use Sales Order for generating proforma invoices. To automate proforma invoicing for renewal, we set original Sales Order as recurring. Recurring proforma invoice is created automatically just before customer's account is about to expire, and requires renewal. This recurring Proforma Invoice is also emailed automatically to the customer.
+## 1. พิจารณาสถานการณ์
 
-Feature of setting document as recurring is available in Sales Order, Sales Invoice, Purchase Order and Purchase Invoice.
+การสมัครสมาชิกบัญชี ERPNext ที่โฮสต์ไว้ของคุณต้องต่ออายุทุกปี เราใช้ใบสั่งขายเพื่อสร้างใบแจ้งหนี้ Proforma ในการออกใบแจ้งหนี้ Proforma โดยอัตโนมัติสำหรับการต่ออายุ เราตั้งค่าใบสั่งขายเดิมเป็นแบบที่เกิดซ้ำ ใบแจ้งหนี้ Proforma ที่เกิดซ้ำจะถูกสร้างขึ้นโดยอัตโนมัติก่อนที่บัญชีของลูกค้าจะหมดอายุ และจำเป็นต้องต่ออายุ ใบแจ้งหนี้ Proforma ที่เกิดซ้ำนี้จะถูกส่งไปยังลูกค้าโดยอัตโนมัติ
 
-## 2. How to create recurring orders/invoices
-Option to set document as recurring will be visible only after it's submitted. This is the **Auto Repeat** option.
+คุณลักษณะของการตั้งค่าเอกสารเป็นกิจวัตรมีอยู่ในใบสั่งขาย ใบกำกับสินค้า ใบสั่งซื้อ และใบสั่งซื้อ
 
-1. Click on the + button next to Auto Repeat.
-1. Select the Reference Doctype.
-1. Select the Reference Document.
-1. Set the Start Date and End Date(optional).
-1. Select the frequency whether daily, weekly, etc,.
-1. Save.
+## 2. วิธีสร้างคำสั่งซื้อประจำ/ใบแจ้งหนี้
+ตัวเลือกในการตั้งค่าเอกสารเป็นกิจวัตรจะปรากฏหลังจากส่งแล้วเท่านั้น นี่คือตัวเลือก **เล่นซ้ำอัตโนมัติ**
 
-Here is a explanation of the fields:
+1. คลิกที่ปุ่ม + ถัดจากการทำซ้ำอัตโนมัติ
+1. เลือกประเภทเอกสารอ้างอิง
+1. เลือกเอกสารอ้างอิง
+1. ตั้งวันที่เริ่มต้นและวันที่สิ้นสุด (ไม่บังคับ)
+1. เลือกความถี่ได้ ไม่ว่าจะเป็นรายวัน รายสัปดาห์ ฯลฯ
+1. บันทึก
 
-* **From Date and To Date:** This defines contract period with the customer.
-* **Repeat on the Day of Month:** If recurring type is set as Monthly, then it will be day of the month on which recurring invoice will be generated.
-* **Repeat on Last Day of the Month:** Recurring invoices will be created on the last day of every month.
-* **Notify by Email:** Email Addresses (separated by comma) on which recurring invoice will be emailed when auto-generated.
+นี่คือคำอธิบายของฟิลด์:
 
-Read [Auto Repeat](/docs/user/manual/en/automation/auto-repeat) for more details.
+* **ตั้งแต่วันที่และถึงวันที่:** กำหนดระยะเวลาของสัญญากับลูกค้า
+* **ทำซ้ำในวันของเดือน:** หากประเภทที่เกิดซ้ำถูกตั้งค่าเป็นรายเดือน จะเป็นวันของเดือนที่จะสร้างใบแจ้งหนี้ที่เกิดซ้ำ
+* **ทำซ้ำในวันสุดท้ายของเดือน:** ใบแจ้งหนี้ที่เกิดซ้ำจะถูกสร้างขึ้นในวันสุดท้ายของทุกเดือน
+* **แจ้งทางอีเมล:** ที่อยู่อีเมล (คั่นด้วยเครื่องหมายจุลภาค) ซึ่งระบบจะส่งอีเมลใบแจ้งหนี้ที่เกิดซ้ำเมื่อสร้างโดยอัตโนมัติ
 
-## 3. Exception Handling
+อ่าน [การทำซ้ำอัตโนมัติ](/docs/user/manual/th/automation/auto-repeat) เพื่อทราบข้อมูลเพิ่มเติม
 
-In a situation where recurring invoice is not created successfully, user with System Manager role is notified about it via email. Failure in creation of recurring invoice could be due to multiple reasons like wrong Email Address mentioned in the Email Notification field in Recurring section etc.
+## 3. การจัดการข้อยกเว้น
 
-On receipt of notification, if cause of failure is fixed (like correcting Email Address) within 24 hours, then recurring invoice will be generated automatically. If issue is not fixed within the said time, then document should be created for that month/year manually.
+ในสถานการณ์ที่ไม่สร้างใบแจ้งหนี้ที่เกิดซ้ำได้สำเร็จ ผู้ใช้ที่มีบทบาทผู้จัดการระบบจะได้รับแจ้งเกี่ยวกับเรื่องนี้ทางอีเมล ความล้มเหลวในการสร้างใบแจ้งหนี้ที่เกิดซ้ำอาจเกิดจากหลายสาเหตุ เช่น ที่อยู่อีเมลที่ไม่ถูกต้องที่ระบุไว้ในช่องการแจ้งเตือนทางอีเมลในส่วนที่เกิดซ้ำ เป็นต้น
 
-### 4. Related Topics
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
+เมื่อได้รับการแจ้งเตือน หากสาเหตุของความล้มเหลวได้รับการแก้ไข (เช่น การแก้ไขที่อยู่อีเมล) ภายใน 24 ชั่วโมง ระบบจะสร้างใบแจ้งหนี้ที่เกิดซ้ำโดยอัตโนมัติ หากปัญหาไม่ได้รับการแก้ไขภายในเวลาดังกล่าว ควรสร้างเอกสารสำหรับเดือน/ปีนั้นด้วยตนเอง
+
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบแจ้งหนี้การซื้อ](/docs/user/manual/th/accounts/purchase-invoice)
+1. [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order)
+1. [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)

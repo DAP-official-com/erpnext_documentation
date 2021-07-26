@@ -1,70 +1,70 @@
 <!-- add-breadcrumbs -->
 
-# Customize ERPNext
+# ปรับแต่ง ERPNext
 
-ERPNext, while being a system which is extremely easy to use, is also highly customizable. Depending on the nature of your business and business processes, you can choose to add new or customize existing fields,reports, print formats, Document Type (DocType) and more.
+ERPNext แม้จะเป็นระบบที่ใช้งานง่ายมาก แต่ก็ปรับแต่งได้สูงเช่นกัน คุณสามารถเลือกเพิ่มใหม่หรือปรับแต่งฟิลด์ที่มีอยู่ รายงาน รูปแบบการพิมพ์ ประเภทเอกสาร (DocType) และอื่นๆ ขึ้นอยู่กับลักษณะธุรกิจและกระบวนการทางธุรกิจของคุณ
 
-## 1. Topics
-### 1.1 Customizations
-1. [Custom Field](/docs/user/manual/en/customize-erpnext/custom-field)
-1. [Customize Form](/docs/user/manual/en/customize-erpnext/customize-form)
-1. [Doctype](/docs/user/manual/en/customize-erpnext/doctype)
-1. [Custom Scripts](/docs/user/manual/en/customize-erpnext/custom-scripts)
-1. [Server Scripts](/docs/user/manual/en/customize-erpnext/server-script)
-1. [Custom Translations](/docs/user/manual/en/setting-up/print/custom-translations)
-1. [Dashboard](/docs/user/manual/en/using-erpnext/dashboard)
-1. [Desk Page](/docs/user/manual/en/customize-erpnext/desk-page)
+## 1. หัวข้อ
+### 1.1 การปรับแต่ง
+1. [ฟิลด์กำหนดเอง](/docs/user/manual/th/customize-erpnext/custom-field)
+1. [ปรับแต่งแบบฟอร์ม](/docs/user/manual/th/customize-erpnext/customize-form)
+1. [Doctype](/docs/user/manual/th/customize-erpnext/doctype)
+1. [สคริปต์ที่กำหนดเอง](/docs/user/manual/th/customize-erpnext/custom-scripts)
+1. [สคริปต์เซิร์ฟเวอร์](/docs/user/manual/th/customize-erpnext/server-script)
+1. [การแปลแบบกำหนดเอง](/docs/user/manual/th/setting-up/print/custom-translations)
+1. [แดชบอร์ด](/docs/user/manual/th/using-erpnext/dashboard)
+1. [หน้าหลัก](/docs/user/manual/th/customize-erpnext/desk-page)
 
-### 1.2 Documents and Reports
-1. [Print Format](/docs/user/manual/en/customize-erpnext/print-format)
-1. [Making Custom Reports](/docs/user/manual/en/customize-erpnext/articles/making-custom-reports)
-1. [Customizing Module Visibility](/docs/user/manual/en/customize-erpnext/customizing-module-visibility)
-1. [Document Title](/docs/user/manual/en/customize-erpnext/document-title)
-1. [Kanban Board](/docs/user/manual/en/customize-erpnext/kanban-board)
-1. [Authorization Rule](/docs/user/manual/en/customize-erpnext/authorization-rule)
+### 1.2 เอกสารและรายงาน
+1. [รูปแบบการพิมพ์](/docs/user/manual/th/customize-erpnext/print-format)
+1. [การทำรายงานแบบกำหนดเอง](/docs/user/manual/th/customize-erpnext/articles/making-custom-reports)
+1. [การปรับแต่งการมองเห็นโมดูล](/docs/user/manual/th/customize-erpnext/customizing-module-visibility)
+1. [ชื่อเอกสาร](/docs/user/manual/th/customize-erpnext/document-title)
+1. [บอร์ดคัมบัง](/docs/user/manual/th/customize-erpnext/kanban-board)
+1. [กฎการให้สิทธิ์](/docs/user/manual/th/customize-erpnext/authorization-rule)
 
-### 1.3 Workflows
+### 1.3 เวิร์กโฟลว์
 
-1. [Workflows](/docs/user/manual/en/setting-up/workflows)
-1. [Workflow Actions](/docs/user/manual/en/setting-up/workflow-actions)
-1. [Workflow State](/docs/user/manual/en/setting-up/workflow-state)
-1. [Assignment Rule](/docs/user/manual/en/automation/assignment-rule)
+1. [เวิร์กโฟลว์](/docs/user/manual/th/setting-up/workflows)
+1. [การดำเนินการเวิร์กโฟลว์](/docs/user/manual/th/setting-up/workflow-actions)
+1. [สถานะเวิร์กโฟลว์](/docs/user/manual/th/setting-up/workflow-state)
+1. [กฎการมอบหมาย](/docs/user/manual/th/automation/assign-rule)
 
-## 2. [Articles](/docs/user/manual/en/customize-erpnext/articles)
+## 2. [บทความ](/docs/user/manual/th/customize-erpnext/articles)
 
-### 2.1 Field Level Customizations
+### 2.1 การปรับแต่งระดับสนาม
 
-1. [Field Types](/docs/user/manual/en/customize-erpnext/articles/field-types)
-1. [Allow Fields to be Changed After Submission](/docs/user/manual/en/customize-erpnext/articles/allow-fields-to-be-changed-after-submission)
-1. [Search Record by Specific Field](/docs/user/manual/en/customize-erpnext/articles/search-record-by-specific-field)
-1. [Link Field](/docs/user/manual/en/customize-erpnext/articles/creating-custom-link-field)
-1. [Dynamic Link Fields](/docs/user/manual/en/customize-erpnext/articles/dynamic-link-fields)
-1. [Signature Field](/docs/user/manual/en/customize-erpnext/articles/signature-field)
-1. [Geolocation Field](/docs/user/manual/en/customize-erpnext/articles/geolocation-field)
-1. [Table Multiselect Field](/docs/user/manual/en/customize-erpnext/articles/table-multiselect-field)
+1. [ประเภทฟิลด์](/docs/user/manual/th/customize-erpnext/articles/field-types)
+1. [อนุญาตให้เปลี่ยนฟิลด์หลังจากส่ง](/docs/user/manual/th/customize-erpnext/articles/allow-fields-to-be-change-after-submission)
+1. [ค้นหาบันทึกตามฟิลด์เฉพาะ](/docs/user/manual/th/customize-erpnext/articles/search-record-by-specific-field)
+1. [ฟิลด์ลิงก์](/docs/user/manual/th/customize-erpnext/articles/creating-custom-link-field)
+1. [ช่องลิงก์แบบไดนามิก](/docs/user/manual/th/customize-erpnext/articles/dynamic-link-fields)
+1. [ฟิลด์ลายเซ็น](/docs/user/manual/th/customize-erpnext/articles/signature-field)
+1. [ฟิลด์ตำแหน่งทางภูมิศาสตร์](/docs/user/manual/th/customize-erpnext/articles/geolocation-field)
+1. [Table Multiselect Field](/docs/user/manual/th/customize-erpnext/articles/table-multiselect-field)
 
-### 2.2 Custom Permissions
-1. [Perm Level Error In Permission Manager](/docs/user/manual/en/customize-erpnext/articles/perm-level-error-in-permission-manager)
-1. [User Restriction](/docs/user/manual/en/customize-erpnext/articles/user-restriction)
-1. [Deleting Custom Reports](/docs/user/manual/en/customize-erpnext/articles/deleting-custom-reports)
+### 2.2 สิทธิ์ที่กำหนดเอง
+1. [ข้อผิดพลาดระดับการอนุญาตในตัวจัดการการอนุญาต](/docs/user/manual/th/customize-erpnext/articles/perm-level-error-in-permission-manager)
+1. [การจำกัดผู้ใช้](/docs/user/manual/th/customize-erpnext/articles/user-restriction)
+1. [การลบรายงานที่กำหนดเอง](/docs/user/manual/th/customize-erpnext/articles/deleting-custom-reports)
 
-### 2.3 Global Configuration
-1. [Set Language](/docs/user/manual/en/customize-erpnext/articles/set-language)
-1. [Set Precision](/docs/user/manual/en/customize-erpnext/articles/set-precision)
+### 2.3 การกำหนดค่าส่วนกลาง
+1. [ตั้งค่าภาษา](/docs/user/manual/th/customize-erpnext/articles/set-language)
+1. [ตั้งค่าความแม่นยำ](/docs/user/manual/th/customize-erpnext/articles/set-precision)
 
-### 2.4 Some Basic Customizations
-1. [Customizing Data Visibility In Child Table](/docs/user/manual/en/customize-erpnext/articles/customizing-data-visibility-in-child-table)
-1. [Customizing Sorting Order in List View](/docs/user/manual/en/customize-erpnext/articles/customizing-sorting-order-in-the-list-view)
-1. [Customizing Field Visibility in Print Format](/docs/user/manual/en/customize-erpnext/articles/making-fields-visible-in-print-format)
-1. [Maximum Number of Fields in a Form](/docs/user/manual/en/customize-erpnext/articles/maximum-number-of-fields-in-a-form)
+### 2.4 การปรับแต่งพื้นฐานบางอย่าง
+1. [การกำหนดการเปิดเผยข้อมูลในตารางย่อย](/docs/user/manual/th/customize-erpnext/articles/customizing-data-visibility-in-child-table)
+1. [การปรับแต่งการเรียงลำดับในมุมมองรายการ](/docs/user/manual/th/customize-erpnext/articles/customizing-sorting-order-in-the-list-view)
+1. [กำหนดการมองเห็นฟิลด์เองในรูปแบบการพิมพ์](/docs/user/manual/th/customize-erpnext/articles/making-fields-visible-in-print-format)
+1. [จำนวนฟิลด์สูงสุดในแบบฟอร์ม](/docs/user/manual/th/customize-erpnext/articles/maximum-number-of-fields-in-a-form)
 
-### 2.5 Other Actions
-1. [Disable Rounded Total](/docs/user/manual/en/customize-erpnext/articles/disable-rounded-total)
-1. [Attachment Limits](https://www.frappeframework.com/docs/user/en/desk/attachments#limits)
-1. [Fetching Data From a Document](/docs/user/manual/en/customize-erpnext/articles/fetching-data-from-a-document)
+### 2.5 การดำเนินการอื่นๆ
+1. [ปิดการใช้งาน Rounded Total](/docs/user/manual/th/customize-erpnext/articles/disable-rounded-total)
+1. [ขีดจำกัดของไฟล์แนบ](https://www.frappeframework.com/docs/user/th/desk/attachments#limits)
+1. [กำลังดึงข้อมูลจากเอกสาร](/docs/user/manual/th/customize-erpnext/articles/fetching-data-from-a-document)
 
-## 3. Videos
-1. [Field Customization](/docs/user/videos/learn/field-customization.html)
-1. [Report Builder](/docs/user/videos/learn/report-builder.html)
-1. [Workflows](/docs/user/videos/learn/workflow.html)
-1. [Bulk Update Data](/docs/user/videos/learn/bulk-update.html)
+## 3. วิดีโอ
+1. [การปรับแต่งฟิลด์](/docs/user/videos/learn/field-customization.html)
+1. [ตัวสร้างรายงาน](/docs/user/videos/learn/report-builder.html)
+1. [เวิร์กโฟลว์](/docs/user/videos/learn/workflow.html)
+1. [ข้อมูลการอัปเดตจำนวนมาก](/docs/user/videos/learn/bulk-update.html)

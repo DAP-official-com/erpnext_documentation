@@ -9,32 +9,32 @@ metatags:
 ---
 
 <!-- add-breadcrumbs -->
-# Distributed Cost Center
+# ศูนย์กระจายต้นทุน
 
-**A Distributed Cost Center is a Cost Center in which multiple Cost Centers are tagged with an appropriate percentage.**
+**ศูนย์ต้นทุนแบบกระจายคือศูนย์ต้นทุนซึ่งศูนย์ต้นทุนหลายแห่งถูกแท็กด้วยเปอร์เซ็นต์ที่เหมาะสม**
 
-If a business has a master Cost Center with dependent Cost Centers. In every master Cost Center transaction, it is difficult to update the budget, profit, and loss to each dependent Cost Center manually with the allocated percentage of the master Cost Center. This feature helps to automate the process of manual entry.
+หากธุรกิจมีศูนย์ต้นทุนหลักที่มีศูนย์ต้นทุนที่ต้องพึ่งพา ในทุกธุรกรรมศูนย์ต้นทุนหลัก เป็นการยากที่จะปรับปรุงงบประมาณ กำไร และขาดทุนให้กับแต่ละศูนย์ต้นทุนที่ขึ้นต่อกันด้วยตนเองด้วยเปอร์เซ็นต์ที่ปันส่วนของศูนย์ต้นทุนหลัก คุณลักษณะนี้ช่วยให้ขั้นตอนการป้อนด้วยตนเองเป็นไปโดยอัตโนมัติ
 
-For example, In your business, If the Cost Center 'B' and 'C' depend on Cost Center 'A' by 20% and 80%. Then, you can mention 'A' as a Distributed Cost Center. It helps to reflect income, expense, and budget of 'A' in 'B' and 'C' with allocated percentages.
+ตัวอย่างเช่น ในธุรกิจของคุณ หากศูนย์ต้นทุน 'B' และ 'C' ขึ้นอยู่กับศูนย์ต้นทุน 'A' 20% และ 80% จากนั้น คุณสามารถพูดถึง 'A' เป็นศูนย์ต้นทุนแบบกระจาย ช่วยสะท้อนรายได้ ค่าใช้จ่าย และงบประมาณของ 'A' ใน 'B' และ 'C' ด้วยเปอร์เซ็นต์ที่จัดสรร
 
-In ERPNext you can create Distributed Cost Center and use them in transactions and reports.
+ใน ERPNext คุณสามารถสร้าง Distributed Cost Center และใช้ในธุรกรรมและรายงานได้
 
-## 1. How to create a Distributed Cost Center
-1. Go to the Cost Center list, click on New.
-1. Enter the Cost Center name.
-1. Select the parent Cost Center.
-1. Enable the checkbox, **Enable Distributed Cost Center**: On enabling this, the distributed Cost Center table will show. Here, select the Cost Centers and allocate the corresponding percentage.
-1. Once you are done click on Save.
+## 1. วิธีสร้างศูนย์กระจายต้นทุน
+1. ไปที่รายการศูนย์ต้นทุน คลิกที่ใหม่
+1. ป้อนชื่อศูนย์ต้นทุน
+1. เลือกศูนย์ต้นทุนหลัก
+1. เปิดใช้งานช่องทำเครื่องหมาย **เปิดใช้งานงศูนย์กระจายต้นทุน** : เมื่อเปิดใช้งานสิ่งนี้ ตารางศูนย์ต้นทุนแบบกระจายจะแสดงขึ้น ที่นี่ เลือกศูนย์ต้นทุนและจัดสรรเปอร์เซ็นต์ที่เกี่ยวข้อง
+1. เมื่อเสร็จแล้วให้คลิกที่บันทึก
 
   <img class="screenshot" alt="Distributed Cost Center" src="{{docs_base_url}}/assets/img/accounts/distributed_cost_center.png">
 
-The following reports will be automatically updated when Cost Center filter is added:
+รายงานต่อไปนี้จะได้รับการอัปเดตโดยอัตโนมัติเมื่อมีการเพิ่มตัวกรองศูนย์ต้นทุน:
 
-  * [Accounting Reports](/docs/user/manual/en/accounts/accounting-reports)
-    * Financial Statements
-    * Budget Variance
-    * General Ledger
-  * [Profitability Analysis](/docs/user/manual/en/accounts/articles/tracking-project-profitability-using-cost-center)
+  * [รายงานการบัญชี](/docs/user/manual/th/accounts/accounting-reports)
+    * งบการเงิน
+    * ผลต่างงบประมาณ
+    * บัญชีแยกประเภททั่วไป
+  * [การวิเคราะห์การทำกำไร](/docs/user/manual/th/accounts/articles/tracking-project-profitability-using-cost-center)
 
-### 2. Related Topics
-1. [Cost Center](/docs/user/manual/en/accounts/cost-center)
+### 2. หัวข้อที่เกี่ยวข้อง
+1. [ศูนย์ต้นทุน](/docs/user/manual/th/accounts/cost-center)

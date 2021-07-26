@@ -1,50 +1,50 @@
-# Leave Period
+#ระยะเวลาการลา
 
-**A Leave Period is a duration of time for which leaves are allocated.**
+**ระยะเวลาการลาคือระยะเวลาที่มีการจัดสรรใบ**
 
-Most companies manage leaves based on a Leave Period, corresponding to a calendar year or the fiscal year. To access Leave Period, go to:
+บริษัทส่วนใหญ่จัดการการลางานตามระยะเวลาการลา ซึ่งสอดคล้องกับปีปฏิทินหรือปีบัญชี หากต้องการเข้าถึงระยะเวลาลา ให้ไปที่:
 
-> Home > Human Resources > Leaves > Leave Period
+> หน้าหลัก > ทรัพยากรบุคคล > การลา > ระยะเวลาลา
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating a Leave Period, it is advisable to create the following:
+ก่อนสร้างระยะเวลาการลา ขอแนะนำให้สร้างสิ่งต่อไปนี้:
 
-* [Company](/docs/user/manual/en/setting-up/company-setup)
-* [Holiday List](/docs/user/manual/en/human-resources/holiday-list)
+* [บริษัท](/docs/user/manual/th/setting-up/company-setup)
+* [รายการวันหยุด](/docs/user/manual/th/human-resources/holiday-list)
 
-## 2. How to create a Leave Period
+## 2. วิธีสร้างช่วงเวลาลา
 
-1. Go to Leave Period list, click on New.
-1. Enter the From Date and To Date of the Leave Period.
-1. Select the Company name for which the Leave Period is applicable.
-1. Save.
+1. ไปที่รายการ ระยะเวลาลา คลิก New
+1. ป้อนวันที่เริ่มต้นและวันที่ของระยะเวลาลา
+1. เลือกชื่อบริษัทสำหรับระยะเวลาการลางาน
+1. บันทึก
 
-The Leave Period also allows you to select a [Holiday List for Optional Leaves](/docs/user/manual/en/human-resources/holiday-list) (optional) which will be considered for allocating Optional Leaves for the period.
+ระยะเวลาการลายังช่วยให้คุณเลือก [รายการวันหยุดสำหรับทางเลือกการลางาน](/docs/user/manual/th/human-resources/holiday-list) (ทางเลือก) ซึ่งจะได้รับการพิจารณาสำหรับการจัดสรร Optional Leaves สำหรับช่วงเวลานั้น
 
-> **Note:** The 'Holiday List for Optional Leaves' is not the same as the usual 'Holiday List'. This list will contain a list of optional holidays only. 'Holiday List for Optional Leaves' can be created from the [Holiday List](/docs/user/manual/en/human-resources/holiday-list) document. You can create two Holiday Lists for a Leave Period; one containing the usual set of holidays and the other for optional holidays.
+> **หมายเหตุ:** 'รายการวันหยุดสำหรับตัวเลือกการลาหยุด' ไม่เหมือนกับ 'รายการวันหยุด' ปกติ รายการนี้จะมีรายการวันหยุดที่ไม่บังคับเท่านั้น 'รายการวันหยุดสำหรับการลาแบบเลือกเอง' สามารถสร้างได้จากเอกสาร [รายการวันหยุด](/docs/user/manual/th/human-resources/holiday-list) คุณสามารถสร้างรายการวันหยุดสองรายการสำหรับช่วงเวลาลาได้ หนึ่งประกอบด้วยชุดของวันหยุดปกติและอีกชุดหนึ่งสำหรับวันหยุดที่ไม่บังคับ
 
-Additionally, you can check the 'Is Active' checkbox if you want to enable this particular Leave Period.
+นอกจากนี้ คุณสามารถเลือกช่องกาเครื่องหมาย 'ใช้งานอยู่' ได้หากต้องการเปิดใช้งานช่วงเวลาลางานโดยเฉพาะ
 
 
 <img class="screenshot" alt="Leave Period"
 	src="{{docs_base_url}}/assets/img/human-resources/leave-period.png">
 
-## 3. Granting leave using Leave Period
+## 3. การอนุญาตให้ลาโดยใช้ระยะเวลาการลา
 
-> In version 12, leaves could be granted via Leave Period through the "Grant Leaves" button. In version 13, leaves will be granted using [Leave Policy Assignment](/docs/user/manual/en/human-resources/leave-policy-assignment).
+> ในเวอร์ชัน 12 สามารถให้ใบผ่านระยะเวลาการลาได้โดยใช้ปุ่ม "ให้ใบ" ในเวอร์ชัน 13 ใบไม้จะได้รับโดยใช้ [Leave Policy Assignment](/docs/user/manual/th/human-resources/leave-policy-assignment)
 
-Once the information is saved, the Leave Period will also be used as a tool to help you grant leaves for a category of employees.
+เมื่อบันทึกข้อมูลแล้ว ระยะเวลาลางานก็จะถูกใช้เป็นเครื่องมือเพื่อช่วยให้คุณอนุญาตให้ลางานสำหรับประเภทพนักงานได้
 
-The **Grant** button will generate Leave Allocations based on the [Leave Policy](/docs/user/manual/en/human-resources/leave-policy) applicable to each Employee. You can allocate leaves based on [Employee Grade](/docs/user/manual/en/human-resources/employee-grade), [Department](/docs/user/manual/en/human-resources/department) or [Designation](/docs/user/manual/en/human-resources/designation) as shown below.
+ปุ่ม **Grant** จะสร้าง Leave Allocations ตาม [นโยบายการลา](/docs/user/manual/th/human-resources/leave-policy) ที่บังคับใช้กับพนักงานแต่ละคน คุณสามารถจัดสรรใบได้ตาม [ลำดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade), [ฝ่าย](/docs/user/manual/th/human-resources/department) หรือ [การกำหนด](/docs/user/manual/th/human-resources/designation) ดังที่แสดงด้านล่าง
 
 
 <img class="screenshot" alt="Leave Period"
 	src="{{docs_base_url}}/assets/img/human-resources/grant-button.gif">
 
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Leave Allocation](/docs/user/manual/en/human-resources/leave-allocation)
-1. [Leave Policy](/docs/user/manual/en/human-resources/leave-policy)
-1. [Leave Type](/docs/user/manual/en/human-resources/leave-type)
+1. [การจัดสรรการลา](/docs/user/manual/th/human-resources/leave-allocation)
+1. [นโยบายการลา](/docs/user/manual/th/human-resources/leave-policy)
+1. [ประเภทการลา](/docs/user/manual/th/human-resources/leave-type)

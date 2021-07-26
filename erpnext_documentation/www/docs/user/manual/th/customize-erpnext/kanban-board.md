@@ -45,7 +45,7 @@
 
 ## ตัวกรอง
 
-คุณสามารถสร้างบอร์ด Kanban ได้หลายแบบตามตัวกรองต่างๆ หากต้องการบันทึกตัวกรองสำหรับ Kanban Board ให้คลิกที่เมนูแล้วคลิก "บันทึกตัวกรอง"
+คุณสามารถสร้าง Kanban ได้หลายแบบตามตัวกรองต่างๆ หากต้องการบันทึกตัวกรองสำหรับ Kanban Board ให้คลิกที่เมนูแล้วคลิก "บันทึกตัวกรอง"
 
 <img class="screenshot" alt="Save filters in Kanban Board" src="{{docs_base_url}}/assets/img/customize/customize erpnext-kanban-board-5.gif">
 

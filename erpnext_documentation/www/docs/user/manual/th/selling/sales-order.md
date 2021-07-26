@@ -1,192 +1,191 @@
 <!-- add-breadcrumbs -->
-# Sales Order
+# ใบสั่งขาย
 
-**A Sales Order is a confirmation of an order from your customer.**
+**ใบสั่งขายคือการยืนยันคำสั่งซื้อจากลูกค้าของคุณ**
 
-It is usually a binding Contract with your Customer. Once your customer confirms the Quotation you can convert your Quotation into a Sales Order.
+โดยปกติแล้วจะเป็นสัญญาที่มีผลผูกพันกับลูกค้าของคุณ เมื่อลูกค้าของคุณยืนยันใบเสนอราคาแล้ว คุณสามารถแปลงใบเสนอราคาของคุณเป็นใบสั่งขายได้
 
 <img class="screenshot" alt="Make Quotation from Opportunity" src="{{docs_base_url}}/assets/img/selling/selling-flow-so.png">
 
-To access Sales Order, go to:
-> Home > Selling > Sales > Sales Order
+ในการเข้าถึงใบสั่งขาย ไปที่:
+> หน้าหลัก > การขาย > ขาย > ใบสั่งขาย
 
-## 1. Prerequisites
-Before creating and using a Sales Order, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ใบสั่งขาย ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Customer](/docs/user/manual/en/CRM/customer)
-* [Item](/docs/user/manual/en/stock/item)
+* [ลูกค้า](/docs/user/manual/th/CRM/customer)
+* [รายการ](/docs/user/manual/th/stock/item)
 
-## 2. How to create a Sales Order
-1. Go to the Sales Order list, click on New.
-1. Select the Customer.
-1. Set the 'Delivery Date' - applied to the whole order.
-1. With Order Type, you can set whether it's a Sales order, Maintenance order, or from the online [Shopping Cart](/docs/user/manual/en/website/shopping-cart) of your website. By default, this value is set to "Sales".
-1. In the "Customer's Purchase Order" you can enter the Customers Purchase Order No. or other details which may be useful as a reference.
-1. Enter the items and quantities to be delivered in the Item table. If Item Prices are set for the items, the Rate field will be populated automatically. If not, enter the item Rate manually. You can also overwrite the auto-populated Item Rate in case you want to change that value.
-1. Click "Save" to save a draft of the Sales Order.
-1. "Submit" to submit the Sales Order to the System.
+## 2. วิธีสร้างใบสั่งขาย
+1. ไปที่รายการใบสั่งขาย คลิกที่ ใหม่
+1. เลือกลูกค้า
+1. ตั้งค่า 'วันที่จัดส่ง' - ใช้กับคำสั่งซื้อทั้งหมด
+1. ด้วยประเภทคำสั่งซื้อ คุณสามารถกำหนดได้ว่าจะเป็นใบสั่งขาย คำสั่งซ่อม หรือจาก [ตะกร้าสินค้า](/docs/user/manual/th/website/shopping-cart) ออนไลน์ของเว็บไซต์ของคุณ โดยค่าเริ่มต้น ค่านี้ถูกกำหนดเป็น "การขาย"
+1. ใน "ใบสั่งซื้อของลูกค้า" คุณสามารถป้อนหมายเลขคำสั่งซื้อของลูกค้าหรือรายละเอียดอื่น ๆ ที่อาจเป็นประโยชน์สำหรับการอ้างอิง
+1. ระบุรายการและจำนวนที่จะจัดส่งในตารางรายการ หากมีการกำหนดราคาสินค้าสำหรับสินค้า ฟิลด์อัตราจะถูกเติมโดยอัตโนมัติ หากไม่เป็นเช่นนั้น ให้ป้อนอัตรารายการด้วยตนเอง คุณยังสามารถเขียนทับอัตรารายการที่เติมอัตโนมัติได้ในกรณีที่คุณต้องการเปลี่ยนค่านั้น
+1. คลิก "บันทึก" เพื่อบันทึกร่างคำสั่งขาย
+1. "ส่ง" เพื่อส่งคำสั่งขายเข้าระบบ
 
-### 2.1 Other ways to create a Sales Order
-1. You can also create a Sales Order from a submitted Quotation via the Create button on the top right.
+### 2.1 วิธีอื่นๆ ในการสร้างใบสั่งขาย
+1. คุณยังสามารถสร้างใบสั่งขายจากใบเสนอราคาที่ส่งผ่านปุ่มสร้างที่ด้านบนขวา
 
   <img class="screenshot" alt="Make Sales Order from Quotation" src="{{docs_base_url}}/assets/img/selling/make-SO-from-quote.png">
 
-1. Or you can create a new Sales Order and pull details from a Quotation.
+1. หรือคุณสามารถสร้างใบสั่งขายใหม่และดึงรายละเอียดจากใบเสนอราคาได้
 
   <img class="screenshot" alt="Make Sales Order from Quotation" src="{{docs_base_url}}/assets/img/selling/so-from-quote.gif">
 
-To allow for per-Customer, per-Item Pricing Rules, ("Customer A" pays $1.00 for "Item 1" but "Customer B" pays $1.25 for "Item 1"), there's a check box called 'Allow User to Edit Price List Rate in Transaction' in [Selling Settings](/docs/user/manual/en/selling/selling-settings). This enables saving the specific item price per customer when you change a price in the Sales Order.
+เพื่อให้กฎการกำหนดราคาต่อลูกค้าหนึ่งราย ("ลูกค้า A" จ่าย $1.00 สำหรับ "รายการ 1" แต่ "ลูกค้า B" จ่าย 1.25 เหรียญสำหรับ "สินค้า 1") มีช่องเครื่องหมาย 'อนุญาตให้ผู้ใช้แก้ไขราคา รายการอัตราในการทำธุรกรรม' ใน [การตั้งค่าการขาย](/docs/user/manual/th/selling/selling-settings) ซึ่งช่วยให้สามารถบันทึกราคาสินค้าเฉพาะต่อลูกค้าหนึ่งรายเมื่อคุณเปลี่ยนแปลงราคาในใบสั่งขาย
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Currency and Price List
-You can set the currency in which the quotation/sales order is to be sent. If you set a Pricing List, then the item prices will be fetched from that list. Ticking on 'Ignore Pricing Rule' will ignore the [Pricing Rules](/docs/user/manual/en/accounts/pricing-rule) set in Accounts > Pricing Rule.
+### 3.1 รายการสกุลเงินและราคา
+คุณสามารถตั้งค่าสกุลเงินที่จะส่งใบเสนอราคา/ใบสั่งขาย หากคุณกำหนดรายการราคา ราคาสินค้าจะถูกดึงมาจากรายการนั้น การทำเครื่องหมายที่ 'ละเว้นกฎการกำหนดราคา' จะละเว้น [กฎการกำหนดราคา](/docs/user/manual/th/accounts/pricing-rule) ที่ตั้งไว้ในบัญชี > กฎการกำหนดราคา
 
-Read about [Price Lists](/docs/user/manual/en/stock/price-lists) 
-and [Multi-Currency Transactions](/docs/user/manual/en/accounts/articles/managing-transactions-in-multiple-currency)
-to know more.
+อ่านเกี่ยวกับ [รายการราคา](/docs/user/manual/th/stock/price-lists)
+และ [ธุรกรรมหลายสกุลเงิน](/docs/user/manual/th/accounts/articles/managing-transactions-in-multiple-currency)
+เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.1 Set Source Warehouse
-If you have the same stock in multiple warehouses, setting a warehouse here will cause all the items from the item table to be fetched from this warehouse. You need to have stock available in this 'source warehouse' you're setting. Note that this option will override the 'Default Warehouse' you've set in the Item master.
+### 3.1 ตั้งคลังสินค้าต้นทาง
+หากคุณมีคลังสินค้าเดียวกันในคลังสินค้าหลายแห่ง การตั้งค่าคลังสินค้าที่นี่จะทำให้รายการทั้งหมดจากตารางรายการถูกดึงมาจากคลังสินค้านี้ คุณต้องมีสต็อกสินค้าใน 'คลังสินค้าต้นทาง' ที่คุณกำลังตั้งค่า โปรดทราบว่าตัวเลือกนี้จะแทนที่ 'คลังเริ่มต้น' ที่คุณได้ตั้งค่าไว้ในหลักรายการ
 
-### 3.2 The Items Table
+### 3.2 ตารางรายการ
 
-* **Delivery Date against each item**: If there are multiple items and if you enter a delivery date in the first row, the date will be copied to other rows as well where it is blank. You'll have to set these if not set globally at the top of the Sales Order.
+* **วันที่จัดส่งเทียบกับแต่ละรายการ**: หากมีหลายรายการและหากคุณป้อนวันที่จัดส่งในแถวแรก วันที่จะถูกคัดลอกไปยังแถวอื่นและเว้นว่างไว้ด้วย คุณจะต้องตั้งค่าเหล่านี้หากไม่ได้ตั้งค่าไว้ทั่วโลกที่ด้านบนสุดของใบสั่งขาย
 
-    A Sales Order displays the billed amount, valuation rate, and gross profit in the items table when you click on the inverted triangle to expand a row.
+    ใบสั่งขายจะแสดงจำนวนเงินที่เรียกเก็บเงิน อัตราการประเมินค่า และกำไรขั้นต้นในตารางรายการเมื่อคุณคลิกที่สัญลักษณ์สามเหลี่ยมคว่ำเพื่อขยายแถว
 
-    You can also add Items in the Items table by scanning their barcodes if you have a barcode scanner. Read documentation for [tracking items using barcode](/docs/user/manual/en/stock/articles/track-items-using-barcode) to know more.
+    คุณยังสามารถเพิ่มรายการในตารางรายการโดยการสแกนบาร์โค้ดหากคุณมีเครื่องสแกนบาร์โค้ด อ่านเอกสารประกอบสำหรับ [การติดตามรายการโดยใช้บาร์โค้ด](/docs/user/manual/th/stock/articles/track-items-using-barcode) เพื่อทราบข้อมูลเพิ่มเติม
 
-* **Delivery Warehouse**: This is the warehouse from where the stock will be picked to be delivered to your customer.
+* **คลังสินค้าจัดส่ง**: นี่คือคลังสินค้าที่จะเลือกคลังสินค้าเพื่อส่งมอบให้กับลูกค้าของคุณ
 
-* **Drop Ship**: This is a situation where you do not keep items in stock in your own Warehouse but deliver items directly to a customer from a distributor. To enable drop shipping for an item tick on the 'Supplier delivers to Customer'. When you tick on this, the Delivery Warehouse option will disappear since you're not shipping the item. Select your supplier in the 'Supplier' field.
+* **Drop Ship**: นี่คือสถานการณ์ที่คุณไม่ได้เก็บสินค้าไว้ในคลังสินค้าของคุณเอง แต่ส่งสินค้าไปให้ลูกค้าโดยตรงจากผู้จัดจำหน่าย เพื่อเปิดใช้งานการจัดส่งแบบดรอปสำหรับรายการทำเครื่องหมายใน 'ซัพพลายเออร์จัดส่งถึงลูกค้า' เมื่อคุณทำเครื่องหมายที่ตัวเลือกนี้ ตัวเลือก คลังสินค้าจัดส่ง จะหายไปเนื่องจากคุณไม่ได้จัดส่งสินค้า เลือกซัพพลายเออร์ของคุณในฟิลด์ 'ซัพพลายเออร์'
 
-    Further, if you create a purchase order from this sales order, it'll be created for the supplier you selected here and only the items which are valid for drop shipping.
+    นอกจากนี้ หากคุณสร้างใบสั่งซื้อจากใบสั่งขายนี้ ระบบจะสร้างใบสั่งซื้อสำหรับซัพพลายเออร์ที่คุณเลือกที่นี่และเฉพาะรายการที่ถูกต้องสำหรับการจัดส่งแบบดรอป
 
-* **Planning**: Read [Projected Quantity](/docs/user/manual/en/stock/projected-quantity) to know about the fields under planning.
+* **การวางแผน**: อ่าน [ปริมาณที่คาดการณ์](/docs/user/manual/th/stock/projected-quantity) เพื่อทราบเกี่ยวกับสาขาต่างๆ ที่อยู่ระหว่างการวางแผน
 
-The other fields in the item table are similar as explained in [Quotation](/docs/user/manual/en/selling/quotation#23-the-items-table).
+ช่องอื่นๆ ในตารางรายการจะคล้ายกันตามที่อธิบายไว้ใน [ใบเสนอราคา](/docs/user/manual/th/selling/quotation#23-the-items-table)
 
-### 3.3 Packing List
+### 3.3 รายการบรรจุภัณฑ์
 
-This is linked to the [Product Bundle](/docs/user/manual/en/selling/product-bundle) and appears only when the transaction involves a product bundle.
+สิ่งนี้เชื่อมโยงกับ [สินค้าเป็นชุด (Product Bundle)](/docs/user/manual/th/selling/product-bundle) และจะปรากฏเฉพาะเมื่อธุรกรรมเกี่ยวข้องกับชุดผลิตภัณฑ์
 
-The “Packing List” table will be automatically updated when you “Save” the Sales Order. If any Items in your table are Product Bundle (packets), then the “Packing List” will contain the exploded (detailed) list of your Items.
+ตาราง "รายการบรรจุภัณฑ์" จะได้รับการอัปเดตโดยอัตโนมัติเมื่อคุณ "บันทึก" ใบสั่งขาย หากรายการใด ๆ ในตารางของคุณเป็นชุดผลิตภัณฑ์ (แพ็คเก็ต) ดังนั้น "รายการบรรจุภัณฑ์" จะประกอบด้วยรายการที่แยกออกมา(รายละเอียด) ของรายการของคุณ
 
-You will be asked to select a Delivery Warehouse even for a product bundle item, this warehouse will be then updated in the Packing List items. You can change the warehouse, serial number, and batch in the packing list items in case items in your product bundle come from different warehouses.
+คุณจะถูกขอให้เลือก Delivery Warehouse แม้กระทั่งสำหรับสินค้าในกลุ่มสินค้า จากนั้นคลังสินค้านี้จะได้รับการอัปเดตในรายการบรรจุภัณฑ์ คุณสามารถเปลี่ยนคลังสินค้า หมายเลขลำดับประจำสินค้า และชุดงานในรายการบรรจุภัณฑ์ได้ ในกรณีที่สินค้าในชุดรวมผลิตภัณฑ์ของคุณมาจากคลังสินค้าอื่น
 
-Here is what a Packing List looks like:
+รายการบรรจุภัณฑ์มีลักษณะดังนี้:
 
 <img class="screenshot" alt="Packing List" src="{{docs_base_url}}/assets/img/selling/so-packing-list.png">
 
-### 3.4 Taxes and Charges
-To add taxes to your Quotation, you can select a [Sales Taxes and Charges Template](/docs/user/manual/en/selling/sales-taxes-and-charges-template) or add the taxes manually in the Sales Taxes and Charges table.
+### 3.4 ภาษีและค่าธรรมเนียม
+ในการเพิ่มภาษีในใบเสนอราคาของคุณ คุณสามารถเลือก [เทมเพลตภาษีและค่าธรรมเนียม](/docs/user/manual/th/selling/sales-taxes-and-charges-template) หรือเพิ่มภาษีด้วยตนเองในภาษีขายและ ตารางค่าใช้จ่าย.
 
-The total taxes and charges will be displayed below the table. Clicking on Tax Breakup will show all the components and amounts.
+ภาษีและค่าธรรมเนียมทั้งหมดจะแสดงอยู่ใต้ตาราง การคลิกที่การแบ่งภาษีจะแสดงส่วนประกอบและจำนวนเงินทั้งหมด
 
 <img class="screenshot" alt="Taxes in Quotation" src="{{docs_base_url}}/assets/img/selling/sales-order-taxes.png">
 
-#### Shipping Rule
-A Shipping Rule helps set the cost of shipping an Item. The cost will usually increase with the distance of shipping. To know more, visit the [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) page.
+#### กฎการจัดส่ง
+กฎการจัดส่งช่วยกำหนดต้นทุนในการจัดส่งสินค้า ค่าใช้จ่ายมักจะเพิ่มขึ้นตามระยะทางในการขนส่ง หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [กฎการจัดส่ง](/docs/user/manual/th/selling/shipping-rule)
 
-If a Tax Category is selected, the template and tax table will be automatically populated. To know more, visit [this page](/docs/user/manual/en/accounts/tax-category).
+หากเลือกประเภทภาษี แม่แบบและตารางภาษีจะถูกเติมโดยอัตโนมัติ หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่ [หน้านี้](/docs/user/manual/th/accounts/tax-category)
 
-### 3.5 Additional Discount
-Other than offering discount per item, you can add a discount to the whole sales order in this section. This discount could be based on the Grand Total i.e., post tax/charges or Net total i.e., pre tax/charges. The additional discount can be applied as a percentage or an amount.
+### 3.5 ส่วนลดเพิ่มเติม
+นอกเหนือจากการเสนอส่วนลดต่อรายการ คุณสามารถเพิ่มส่วนลดให้กับใบสั่งขายทั้งหมดได้ในส่วนนี้ ส่วนลดนี้อาจขึ้นอยู่กับยอดรวมทั้งหมด เช่น ภาษีหลังหัก/ค่าบริการ หรือยอดรวมสุทธิ เช่น ภาษี/ค่าใช้จ่ายก่อน ส่วนลดเพิ่มเติมสามารถใช้เป็นเปอร์เซ็นต์หรือจำนวนเงินได้
 
-Read [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) for more details.
+อ่าน [การใช้ส่วนลด](/docs/user/manual/th/selling/articles/applying-discount) สำหรับรายละเอียดเพิ่มเติม
 
-### 3.6 Payment Terms
-Sometimes payment is not done all at once. Depending on the agreement, half of the payment may be made before shipment and the other half after receiving the goods/services. You can add a Payment Terms template or add the terms manually in this section.
+### 3.6 เงื่อนไขการชำระเงิน
+บางครั้งการชำระเงินไม่ได้ทำทั้งหมดในครั้งเดียว ขึ้นอยู่กับข้อตกลง การชำระเงินครึ่งหนึ่งสามารถทำได้ก่อนการจัดส่งและอีกครึ่งหนึ่งหลังจากได้รับสินค้า/บริการ คุณสามารถเพิ่มเทมเพลตเงื่อนไขการชำระเงินหรือเพิ่มเงื่อนไขด้วยตนเองในส่วนนี้
 
-Read [Payment Terms](/docs/user/manual/en/accounts/payment-terms) to know more.
+อ่าน [เงื่อนไขการชำระเงิน](/docs/user/manual/th/accounts/payment-terms) เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.7 Terms and Conditions
-In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+### 3.7 ข้อกำหนดและเงื่อนไข
+ในธุรกรรมการขาย/การซื้อ อาจมีข้อกำหนดและเงื่อนไขบางประการซึ่งขึ้นอยู่กับที่ซัพพลายเออร์จัดหาสินค้าหรือบริการให้กับลูกค้า คุณสามารถใช้ข้อกำหนดและเงื่อนไขกับธุรกรรมกับธุรกรรมได้ และข้อกำหนดเหล่านี้จะปรากฏขึ้นเมื่อพิมพ์เอกสาร หากต้องการทราบเกี่ยวกับข้อกำหนดและเงื่อนไข [คลิกที่นี่](/docs/user/manual/th/setting-up/print/terms-and-conditions)
 
-### 3.8 Print Settings
-#### Letterhead
-You can print your quotation/sales order on your company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+### 3.8 การตั้งค่าการพิมพ์
+#### หัวจดหมาย
+คุณสามารถพิมพ์ใบเสนอราคา/ใบสั่งขายบนหัวจดหมายของบริษัทของคุณ เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/letter-head)
 
-'Group same items' will group the same items added multiple times in the items table. This can be seen when your print.
+'จัดกลุ่มรายการเดียวกัน' จะจัดกลุ่มรายการเดียวกันที่เพิ่มหลายครั้งในตารางรายการ สิ่งนี้สามารถเห็นได้เมื่อคุณพิมพ์
 
-#### Print Headings
-Quotations can also be titled as “Proforma Invoice” or “Proposal”.
-You can do this by selecting a **Print Heading**. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### พิมพ์หัวเรื่อง
+ใบเสนอราคาสามารถมีชื่อว่า "ใบแจ้งหนี้ Proforma" หรือ "ข้อเสนอ"
+คุณสามารถทำได้โดยเลือก **หัวเรื่องการพิมพ์** ในการสร้างหัวพิมพ์ใหม่ ให้ไปที่: หน้าแรก > การตั้งค่า > การพิมพ์ > หัวเรื่องพิมพ์ เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/print-headings)
 
-### 3.9 More Information
-* **Campaign:** A Sales campaign can be associated with the quotation. A set of quotations can be part of a sales campaign.
-* **Source:** A Lead Source type can be linked if quoting to a lead, whether from a campaign, from a supplier, an exhibition etc,. Select Existing Customer if quoting to a customer.
-* **Inter Company Order Reference**: If two of your companies are part of the same organization or have a parent-child relationship, you can link a Purchase Order to this Sales Order. Know more about inter-company invoicing [here](/docs/user/manual/en/accounts/inter-company-invoices).
-* **Project**: If your Sales Order is part of a project, you can link it here and the Project progress will be updated.
+### 3.9 ข้อมูลเพิ่มเติม
+* **แคมเปญ:** แคมเปญการขายสามารถเชื่อมโยงกับใบเสนอราคาได้ ชุดของใบเสนอราคาสามารถเป็นส่วนหนึ่งของแคมเปญการขาย
+* **แหล่งที่มา:** สามารถเชื่อมโยงประเภทแหล่งที่มาของโอกาสในการขายได้หากอ้างอิงถึงลูกค้าเป้าหมาย ไม่ว่าจะมาจากแคมเปญ จากซัพพลายเออร์ นิทรรศการ ฯลฯ เลือกลูกค้าที่มีอยู่หากอ้างอิงถึงลูกค้า
+* **การอ้างอิงคำสั่งซื้อระหว่างบริษัท**: หากบริษัทของคุณสองแห่งเป็นส่วนหนึ่งขององค์กรเดียวกันหรือมีความสัมพันธ์แบบพ่อแม่และลูก คุณสามารถเชื่อมโยงใบสั่งซื้อกับใบสั่งขายนี้ได้ เรียนรู้เพิ่มเติมเกี่ยวกับการออกใบแจ้งหนี้ระหว่างบริษัท [ที่นี่](/docs/user/manual/th/accounts/inter-company-invoices)
+* **โครงการ**: หากใบสั่งขายของคุณเป็นส่วนหนึ่งของโครงการ คุณสามารถเชื่อมโยงได้ที่นี่ และความคืบหน้าของโครงการจะได้รับการอัปเดต
 
-### 3.10 Billing and Delivery Status
+### 3.10 สถานะการเรียกเก็บเงินและการจัดส่ง
 
-* **Status**: The status of the Sales Order whether a Draft, On Hold, To Deliver and Bill, To Bill, To Deliver, Completed, Cancelled, or Closed.
-* **Amount Billed and Delivered percent**: The percentage of amount billed and the items delivered from the Sales Order.
+* **สถานะ**: สถานะของใบสั่งขายไม่ว่าจะเป็นแบบร่าง ถูกระงับ เพื่อส่งมอบ และเรียกเก็บเงิน วางบิล ส่งมอบ เสร็จสิ้น ยกเลิก หรือปิด
+* **จำนวนเงินที่เรียกเก็บเงินและเปอร์เซ็นต์ที่จัดส่ง**: เปอร์เซ็นต์ของจำนวนเงินที่เรียกเก็บเงินและรายการที่จัดส่งจากใบสั่งขาย
 
-### 3.11 Commission
-If the sale took place via one of your Sales Partners, you can add their commission details here. Enter the commission rate and the commission amount will be displayed below.
+### 3.11 คอมมิชชั่น
+หากการขายเกิดขึ้นผ่านพาร์ทเนอร์การขายรายใดรายหนึ่งของคุณ คุณสามารถเพิ่มรายละเอียดค่าคอมมิชชันได้ที่นี่ ป้อนอัตราค่าคอมมิชชันและจำนวนค่าคอมมิชชันจะแสดงด้านล่าง
 
-### 3.12 Sales Team
-**Sales Persons:** ERPNext allows you to add multiple Sales Persons who may have worked on this deal. You can change the contribution percentage of the Sales Persons and track how much incentives they earned on this deal.
+### 3.12 ทีมขาย
+**พนักงานขาย:** ERPNext ให้คุณเพิ่มพนักงานขายหลายคนที่อาจเคยทำงานในข้อตกลงนี้ คุณสามารถเปลี่ยนเปอร์เซ็นต์การมีส่วนร่วมของพนักงานขายและติดตามจำนวนแรงจูงใจที่พวกเขาได้รับจากดีลนี้
 
 <img class="screenshot" alt="Sales Team in Sales Order" src="{{docs_base_url}}/assets/img/selling/so-sales-team.png">
 
-### 3.13 Auto Repeat Section
-Auto repeating Sales Orders is like a subscription. Set a start and end date for the auto-repeat. Select the Auto Repeat created. To know more about auto repeat [click here](/docs/user/manual/en/automation/auto-repeat).
+### 3.13 ส่วนการทำซ้ำอัตโนมัติ
+คำสั่งซื้อขายซ้ำอัตโนมัติเป็นเหมือนการสมัครรับข้อมูล กำหนดวันที่เริ่มต้นและสิ้นสุดสำหรับการทำซ้ำอัตโนมัติ เลือกสร้างการทำซ้ำอัตโนมัติ หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับการทำซ้ำอัตโนมัติ [คลิกที่นี่](/docs/user/manual/th/automation/auto-repeat)
 
-### 3.14 After Submitting
-Sales Order is a “Submittable” transaction. You will be able to execute further steps (like making a Delivery Note) only after “Submitting” a Sales Order.
+### 3.14 หลังจากส่ง
+คำสั่งขายเป็นธุรกรรมแบบ "ส่งได้" คุณจะสามารถดำเนินการตามขั้นตอนเพิ่มเติม (เช่น การทำใบส่งของ) ได้หลังจาก “ส่ง” ใบสั่งขายแล้วเท่านั้น
 
-Once you “Submit” your Sales Order, you can trigger actions from the Sales Order:
+เมื่อคุณ "ส่ง" คำสั่งขายของคุณ คุณสามารถทริกเกอร์การดำเนินการจากคำสั่งขายได้:
 
-* You can Add, Update, Delete items in the Sales Order by clicking on the **Update Items** button. However you cannot delete items which has already been delivered or has work order assigned to it.
+* คุณสามารถเพิ่ม อัปเดต ลบรายการในใบสั่งขายโดยคลิกที่ปุ่ม **อัปเดตรายการ** อย่างไรก็ตาม คุณไม่สามารถลบสินค้าที่จัดส่งแล้วหรือมีการกำหนดใบสั่งงานได้
 
-* Status: Once submitted, you can hold a Sales Order or Close it.
+* สถานะ: เมื่อส่งแล้ว คุณสามารถระงับคำสั่งขายหรือปิดได้
 
-* Create: From a submitted Sales Order, you can create the following:
+* สร้าง: จากใบสั่งขายที่ส่ง คุณสามารถสร้างสิ่งต่อไปนี้:
 
-    * Delivery Note - To make a shipment entry. You can also make Delivery Note for selected items based on the delivery date.
-    * Work Order - To start a Work Order with the raw materials.
-    * Sales Invoice - To bill the Order.
-    * Material Request - To request re-stocking materials if out of stock.
-    * Request for Raw Materials - To request raw materials required for manufacturing.
-    * Project - To create a project based on the Sales Order.
-    * Subscription - To auto repeat the Sales Order, i.e., make it a subscription.
-    * Payment Request - To make a Payment Request.
-    * Payment - To record payment against the Sales Order.
+    * บันทึกการจัดส่ง - เพื่อทำรายการจัดส่ง คุณยังสามารถทำบันทึกการจัดส่งสำหรับรายการที่เลือกโดยอิงตามวันที่จัดส่ง
+    * สั่งงาน - เพื่อเริ่มสั่งงานด้วยวัตถุดิบ
+    * ใบแจ้งหนี้การขาย - เพื่อเรียกเก็บเงินตามคำสั่งซื้อ
+    * คำขอวัสดุ - หากต้องการขอวัสดุในสต็อกใหม่หากสินค้าหมด
+    * ขอวัตถุดิบ - ขอวัตถุดิบที่จำเป็นสำหรับการผลิต
+    * โครงการ - เพื่อสร้างโครงการตามใบสั่งขาย
+    * การสมัครสมาชิก - หากต้องการทำซ้ำคำสั่งซื้อขายโดยอัตโนมัติ เช่น ทำให้เป็นการสมัครรับข้อมูล
+    * คำขอชำระเงิน - เพื่อขอชำระเงิน
+    * การชำระเงิน - เพื่อบันทึกการชำระเงินกับใบสั่งขาย
 
-These actions can also be seen at the top of the Dashboard. You can also make an accounting Journal Entry based on the Sales Order from the dashboard.
+การดำเนินการเหล่านี้สามารถดูได้ที่ด้านบนของแดชบอร์ด คุณยังสามารถสร้างรายการบันทึกประจำวันทางบัญชีตามใบสั่งขายจากแดชบอร์ดได้อีกด้วย
 
 <img class="screenshot" alt="Actions from Submitted Sales Order" src="{{docs_base_url}}/assets/img/selling/submit-so.png">
 
-### 3.15 Sales Order with Order type 'Maintenance'
-When the 'Order Type' of the Sales Order is 'Maintenance' follow these steps:
+### 3.15 ใบสั่งขายที่มีประเภทคำสั่ง 'การบำรุงรักษา'
+เมื่อ 'ประเภทคำสั่งซื้อ' ของใบสั่งขายคือ 'การบำรุงรักษา' ให้ทำตามขั้นตอนเหล่านี้:
 
-1. Enter Currency, Price list, and Item details.
-2. Mention taxes and other information.
-3. Save and Submit the form.
-4. Once the form is submitted, the Create button will provide these choices specific to the maintenance Order Type.
+1. ป้อนสกุลเงิน รายการราคา และรายละเอียดรายการ
+2. กล่าวถึงภาษีและข้อมูลอื่น ๆ
+3. บันทึกและส่งแบบฟอร์ม
+4. เมื่อส่งแบบฟอร์มแล้ว ปุ่มสร้างจะมีตัวเลือกเหล่านี้เฉพาะสำหรับประเภทคำสั่งบำรุงรักษา
 
-    i) Maintenance Visit ii) Maintenance Schedule.
+    i) การเยี่ยมชมการบำรุงรักษา ii) ตารางการบำรุงรักษา
 
   ![Sales Order Maintenance Type](/docs/assets/img/selling/so-maintenance.png)
 
-> **Note 1:**
-By clicking on the Action button and selecting 'Maintenance Visit' you can directly fill the visit form. The Sales Order details will be fetched directly.
+> **หมายเหตุ 1:**
+โดยคลิกที่ปุ่มการดำเนินการและเลือก 'การเยี่ยมชมการบำรุงรักษา' คุณสามารถกรอกแบบฟอร์มการเยี่ยมชมได้โดยตรง รายละเอียดใบสั่งขายจะถูกดึงโดยตรง
 
-> **Note 2:**
-By clicking on the Action button and selecting 'Maintenance Schedule' you can fill the schedule details. The Sales Order details will be fetched directly.
+> **หมายเหตุ 2:**
+โดยคลิกที่ปุ่มการดำเนินการและเลือก 'กำหนดการบำรุงรักษา' คุณสามารถกรอกรายละเอียดกำหนดการ รายละเอียดใบสั่งขายจะถูกดึงโดยตรง
 
-> **Note 3:**
-By clicking on the Invoice button you can make an Invoice for your
-services. The sales orders details will be fetched directly.
+> **หมายเหตุ 3:**
+โดยคลิกที่ปุ่มใบแจ้งหนี้คุณสามารถสร้างใบแจ้งหนี้สำหรับบริการ รายละเอียดใบสั่งขายจะถูกดึงโดยตรง
 
-### 4. Related Topics
-1. [Quotation](/docs/user/manual/en/selling/quotation)
-1. [Close Sales Order](/docs/user/manual/en/selling/articles/close-sales-order)
-1. [Amending Sales Order After Submit](/docs/user/manual/en/selling/articles/amending-sales-order-after-submit)
-1. [Pick List](/docs/user/manual/en/stock/pick-list#21-create-pick-list-from-sales-order)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [ใบเสนอราคา](/docs/user/manual/th/selling/quotation)
+1. [ปิดคำสั่งขาย](/docs/user/manual/th/selling/articles/close-sales-order)
+1. [แก้ไขคำสั่งขายหลังจากส่ง](/docs/user/manual/th/selling/articles/amending-sales-order-after-submit)
+1. [Pick List](/docs/user/manual/th/stock/pick-list#21-create-pick-list-from-sales-order)
 
 {next}

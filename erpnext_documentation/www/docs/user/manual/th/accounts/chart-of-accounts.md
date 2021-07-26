@@ -1,194 +1,161 @@
 <!-- add-breadcrumbs -->
-# Chart Of Accounts
+# ผังบัญชี
 
-**The Chart of Accounts is the blueprint of the accounts in your organization.**
+**ผังบัญชีเป็นพิมพ์เขียวของบัญชีในองค์กรของคุณ**
 
-The overall structure of your Chart of Accounts is based on a system of double entry
-accounting that has become a standard all over the world to quantify how a
-company is doing financially.
+โครงสร้างโดยรวมของผังบัญชีของคุณขึ้นอยู่กับระบบการบัญชีแบบเข้าคู่ซึ่งกลายเป็นมาตรฐานทั่วโลกในการวัดปริมาณว่าบริษัทดำเนินการด้านการเงินอย่างไร
 
-Chart of Accounts is a tree view of the names of the Accounts (Ledgers and
-Groups) that a Company requires to manage its books of accounts. ERPNext sets
-up a simple chart of accounts for each Company you create, but you can
-modify it according to your needs and legal requirements.
+ผังบัญชีเป็นมุมมองแบบต้นไม้ของชื่อบัญชี (บัญชีแยกประเภทและกลุ่ม) ที่บริษัทต้องการเพื่อจัดการสมุดบัญชี ERPNext ตั้งค่าผังบัญชีอย่างง่ายสำหรับแต่ละบริษัทที่คุณสร้าง แต่คุณสามารถปรับเปลี่ยนได้ตามความต้องการและข้อกำหนดทางกฎหมายของคุณ
 
-For each company, Chart of Accounts signifies the way to classify the accounting entries, mostly
-based on statutory (tax, compliance to government regulations) requirements.
+สำหรับแต่ละบริษัท ผังบัญชี หมายถึงวิธีการจัดประเภทรายการบัญชี ซึ่งส่วนใหญ่เป็นไปตามข้อกำหนดทางกฎหมาย (ภาษี การปฏิบัติตามกฎระเบียบของรัฐบาล)
 
 ![CoA Tree](/docs/assets/img/accounts/chart-of-accounts-tree.png)
 
-The Chart of Accounts helps you to answer questions like:
+ผังบัญชีช่วยให้คุณตอบคำถามเช่น:
 
- * What is your organization worth?
- * How much debt have you taken?
- * How much profit are you making (and hence paying tax)?
- * How much are you selling?
- * What is your expense break-up?
+* องค์กรของคุณมีค่าแค่ไหน?
+* ติดหนี้ไปเท่าไหร่แล้ว?
+* คุณทำกำไรได้เท่าไหร่ (และด้วยเหตุนี้จึงต้องเสียภาษี)?
+* ขายเท่าไหร่?
+* การแบ่งค่าใช้จ่ายของคุณคืออะไร?
 
-As someone managing a business, it is very valuable to see how well
-your business is doing.
+* ในฐานะที่เป็นคนจัดการธุรกิจ การดูว่าธุรกิจของคุณทำได้ดีเพียงใดนั้นมีประโยชน์มาก
 
-> **Tip**: If you can’t read a Balance Sheet it's a good opportunity to start learning about this. It will be worth the effort. You can also take the help of your accountant to set up your Chart of Accounts.
+> **หมายเหตุ**: หากคุณอ่านงบดุลไม่ได้ เป็นโอกาสที่ดีที่จะเริ่มเรียนรู้เกี่ยวกับเรื่องนี้ มันจะคุ้มค่ากับความพยายาม คุณยังสามารถใช้ความช่วยเหลือจากนักบัญชีของคุณในการตั้งค่าผังบัญชีได้
 
-To access the Chart of Accounts list, go to:
-> Home > Accounting > Accounting Masters > Chart of Accounts
+ในการเข้าถึงรายการผังบัญชี ไปที่:
+> หน้าหลัก > บัญชี > บัญชีหลัก > ผังบัญชี
 
-## 1. How to Create/Edit Accounts
-ERPNext comes with a standard set Chart of Accounts. Instead of creating/modifying, you can also use the [Chart of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer) tool. Note that the existing Chart of Accounts will be overwritten when this tool is used.
+## 1. วิธีสร้าง/แก้ไขบัญชี
+ERPNext มาพร้อมกับผังบัญชีชุดมาตรฐาน แทนที่จะสร้าง/แก้ไข คุณสามารถใช้เครื่องมือ [ตัวนำเข้าผังบัญชี](/docs/user/manual/th/setting-up/chart-of-accounts-importer) ได้ 
 
-1. Go to the Chart of Accounts list.
+> **หมายเหตุ : ** ผังบัญชีที่มีอยู่จะถูกเขียนทับเมื่อใช้เครื่องมือนี้
+
+1. ไปที่รายการผังบัญชี
  
- Here you can open group accounts which contain other accounts. There are options to “Add Child” in an account, Edit or Delete the account.
+ คุณสามารถเปิดบัญชีกลุ่มที่มีบัญชีอื่นได้ มีตัวเลือกในการ "เพิ่มรายการย่อย" ในบัญชี แก้ไขหรือลบบัญชี
 
  <img class="screenshot" alt="Chart of Accounts" src="{{docs_base_url}}/assets/img/accounts/chart-of-accounts-add.gif">
 
-1. The option to create a child account will only appear if you click on a Group (folder) type
-Account. 
-1. Enter a name for the account.
-1. Enter a number for the account.
-1. Tick 'Is Group' if you want this to be a group account which can contain other accounts.
-1. Select the Account Type. Selecting this is important as some fields allow selecting only specific type of accounts.
-1. Change the currency if this account will be used for transactions with different currency. By default, it's the Company's currency. To know more, visit the [Multi Currency Accounting](/docs/user/manual/en/accounts/multi-currency-accounting) page.
-1. Click on **Create New**.
+1. ตัวเลือกในการสร้างบัญชีเด็กจะปรากฏขึ้นก็ต่อเมื่อคุณคลิกที่บัญชีประเภทกลุ่ม (โฟลเดอร์)
+1. ป้อนชื่อสำหรับบัญชี
+1. ป้อนหมายเลขสำหรับบัญชี
+1. เลือก 'Is Group' หากคุณต้องการให้เป็นบัญชีกลุ่มซึ่งสามารถมีบัญชีอื่นได้
+1. เลือก ประเภทบัญชี การเลือกสิ่งนี้มีความสำคัญเนื่องจากบางฟิลด์อนุญาตให้เลือกเฉพาะประเภทบัญชีเท่านั้น
+1. เปลี่ยนสกุลเงินหากบัญชีนี้ใช้สำหรับการทำธุรกรรมด้วยสกุลเงินอื่น โดยค่าเริ่มต้น จะเป็นสกุลเงินของบริษัท หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [บัญชีหลายสกุลเงิน](/docs/user/manual/th/accounts/multi-currency-accounting) page.
+1. เลือก **สร้างใหม่**
 
-Typically, you might want to create Accounts for:
+โดยปกติ คุณอาจต้องการสร้างบัญชีสำหรับ:
 
- * Travel, salaries, telephone, etc. under **Expenses**.
- * Value Added Tax (VAT), Sales Tax, Equity, etc. under **Current Liabilities**.
- * Product Sales, Service Sales, etc. under **Income**.
- * Building, machinery, furniture, etc. under **Fixed Assets**.
+* ท่องเที่ยว, เงินเดือน, โทรศัพท์, ฯลฯ ภายใต้ **ค่าใช้จ่าย**
+* ภาษีมูลค่าเพิ่ม (VAT) ภาษีขาย, ทุน ฯลฯ ภายใต้ **หนี้สินหมุนเวียน**
+* การขายสินค้า การขายบริการ ฯลฯ ภายใต้ **รายได้**
+* ก่อสร้าง, เครื่องจักร, เฟอร์นิเจอร์ ฯลฯ ภายใต้ **สินทรัพย์ถาวร**
 
 <img class="screenshot" alt="Chart of Accounts" src="{{docs_base_url}}/assets/img/accounts/chart-of-accounts-1.png">
 
-> Tip: Accounts with different currencies are created when you receive or make payments to or from different currencies. For example if you are based in India and transact with USA, you may need to create accounts like 'Debtors US', 'Creditors US', etc.
+> เคล็ดลับ: บัญชีที่มีสกุลเงินต่างกันจะถูกสร้างขึ้นเมื่อคุณรับหรือชำระเงินเข้าหรือออกจากสกุลเงินอื่น ตัวอย่างเช่น หากคุณอาศัยอยู่ในอินเดียและทำธุรกรรมกับสหรัฐอเมริกา คุณอาจต้องสร้างบัญชี เช่น 'Debtors US', 'Creditors US' เป็นต้น
 
-Let us understand the main groups of the Chart of Accounts.
+ทำความเข้าใจกลุ่มหลักของผังบัญชี
 
-## 2. Account Types
-Account types are mainly classified as income, expense, asset, or liability.
+## 2. ประเภทบัญชี 
+ประเภทบัญชีส่วนใหญ่จัดประเภทเป็นรายได้ ค่าใช้จ่าย สินทรัพย์หรือหนี้สิน
 
-### 2.1 Balance Sheet Accounts
+### 2.1 บัญชีงบดุล 
+บัญชีงบดุลคือ 'การใช้เงินทุน (สินทรัพย์)' และ 'แหล่งที่มาของเงินทุน (หนี้สิน)' ที่แสดงถึงมูลค่าสุทธิของบริษัทของคุณในเวลาใดก็ตาม เมื่อคุณเริ่มต้นหรือสิ้นสุดรอบระยะเวลาการเงิน สินทรัพย์ทั้งหมดจะเท่ากับหนี้สิน
 
-Balance Sheet accounts are 'Application of Funds (Assets)' and 'Sources of Funds
-(Liabilities)' that signifies the net-worth of your company at any given time.
-When you begin or end a financial period, all the Assets are equal to the
-Liabilities.
+> **หมายเหตุเกี่ยวกับการบัญชี**: หากคุณยังใหม่ต่อการบัญชี คุณอาจสงสัยว่า สินทรัพย์จะเท่ากับหนี้สินได้อย่างไร? นั่นหมายความว่าบริษัทไม่มีอะไรเป็นของตัวเอง ถูกต้อง! “การลงทุน” ทั้งหมดในบริษัทเพื่อซื้อสินทรัพย์ (เช่น ที่ดิน เฟอร์นิเจอร์ เครื่องจักร) เกิดขึ้นโดยเจ้าของ เจ้าของเป็นความรับผิดชอบของ บริษัท เนื่องจากผลกำไรเป็นของเจ้าของ
 
-> **A note on Accounting**: If you are new to accounting, you might be wondering, how can
-Assets be equal to Liabilities? That would mean the company has nothing of its
-own. That's correct! All the “investments” made in the company to buy assets (like
-land, furniture, machines) is made by the owners. The owners are a liability to the
-company since the profits belong to the owners.
+> หากบริษัทจะปิดตัวลง บริษัทจะต้องขายทรัพย์สินทั้งหมดและชำระหนี้สินทั้งหมด (รวมถึงกำไร) ให้กับเจ้าของ โดยปล่อยให้ตัวเองไม่มีอะไรเลย
 
-> If a company were to shut down, it would need to sell all the
-assets and pay back all the liabilities (including profits) to the owners,
-leaving itself with nothing.
+บัญชีทั้งหมดภายใต้บัญชีงบดุลแสดงถึงสินทรัพย์ที่บริษัทเป็นเจ้าของ เช่น "บัญชีธนาคาร" "ที่ดินและทรัพย์สิน" "เฟอร์นิเจอร์" หรือหนี้สิน (กองทุนที่บริษัทเป็นหนี้ผู้อื่น) เช่น "เจ้าของกองทุน" "หนี้" เป็นต้น
 
-All the accounts under Balance Sheet accounts represent an asset owned by the company like "Bank
-Account", "Land and Property", "Furniture" or a liability (funds that the
-company owes to others) like "Owners funds", "Debt" etc.
-
-Two special accounts to note here are Accounts Receivable (money you have to
-collect from your Customers) and Accounts Payable (money you have to pay to
-your Suppliers) under Assets and Liabilities respectively.
-
+บัญชีพิเศษสองบัญชีที่ควรทราบคือบัญชีลูกหนี้ (เงินที่คุณต้องเก็บจากลูกค้าของคุณ) และบัญชีเจ้าหนี้ (เงินที่คุณต้องจ่ายให้กับซัพพลายเออร์ของคุณ) ภายใต้สินทรัพย์และหนี้สินตามลำดับ
 
 ### 2.2 Profit and Loss Accounts
 
-Profit and Loss is the group of 'Income' and 'Expense' accounts that represent
-your accounting transactions over a period.
+กำไรและขาดทุนเป็นกลุ่มของบัญชี 'รายได้' และ 'ค่าใช้จ่าย' ที่แสดงธุรกรรมทางบัญชีของคุณในช่วงเวลาหนึ่ง
 
-Unlike Balance Sheet accounts, Profit and Loss accounts (or PL accounts) do
-not represent net worth (Assets), but rather represent the amount of money
-spent and collected in servicing customers during the period. Hence, at the
-beginning and end of your Fiscal Year, they become zero.
+ต่างจากบัญชีงบดุล บัญชีกำไรขาดทุน (P/L) ไม่ได้แสดงถึงมูลค่าสุทธิ (สินทรัพย์) แต่แสดงถึงจำนวนเงินที่ใช้และรวบรวมในการให้บริการลูกค้าในช่วงเวลาดังกล่าว ดังนั้นเมื่อเริ่มต้นและสิ้นสุดปีงบประมาณของคุณ ค่าเหล่านั้นจะกลายเป็นศูนย์
 
-In ERPNext it is easy to keep track of Profit and Loss via the Profit and Loss chart.
-
-![Profit and Loss Report]({{docs_base_url}}/assets/img/accounts/profit_n_loss_report_1.png)
+ใน ERPNext ง่ายต่อการติดตามกำไรขาดทุนผ่าน ![รายงานกำไรขาดทุน]({{docs_base_url}}/assets/img/accounts/profit_n_loss_report_1.png)
 
 
-Note that, on the first day of the year you have not made any profit or loss, but you
-still have assets, hence balance sheet accounts never become zero at the
-beginning or end of a period.
+หมายเหตุ : ในวันแรกของปี คุณไม่ได้ทำกำไรหรือขาดทุน แต่คุณยังมีสินทรัพย์ ดังนั้นบัญชีงบดุลจะไม่กลายเป็นศูนย์ในตอนต้นหรือปลายงวด
 
 ### 2.3 Groups and Ledgers
 
-There are two main kinds of Accounts in ERPNext - Group and Ledger. Groups can
-have sub-groups and ledgers within them, whereas ledgers are the leaf nodes of
-your chart and cannot contain more accounts in them.
+กลุ่มและบัญชีแยกประเภท 
+บัญชีมีสองประเภทหลักใน ERPNext - กลุ่มและบัญชีแยกประเภท กลุ่มสามารถมีกลุ่มย่อยและบัญชีแยกประเภทภายในได้ ในขณะที่บัญชีแยกประเภทเป็นโหนดปลายสุดของแผนภูมิของคุณ และไม่สามารถมีบัญชีเพิ่มเติมได้
 
-Accounting Transactions can only be made against Ledger Accounts (not Groups)
+ธุรกรรมทางบัญชีสามารถทำได้กับบัญชีแยกประเภทเท่านั้น (ไม่ใช่ทั้งกลุ่ม)
 
-> Info: The term "Ledger" means a page in an accounting book where entries are
-made. There is usually one ledger for each account (like a Customer or a
-Supplier).
+> **ข้อมูลเพิ่มเติม** : คำว่า "บัญชีแยกประเภท" หมายถึงหน้าในสมุดบัญชีที่มีการลงรายการ โดยปกติจะมีหนึ่งบัญชีแยกประเภทสำหรับแต่ละบัญชี (เช่น ลูกค้าหรือซัพพลายเออร์)
 
-> Note: An Account “Ledger” is also sometimes called as Account “Head”.
+> **หมายเหตุ:** บัญชี "บัญชีแยกประเภท" บางครั้งเรียกว่าเป็นบัญชี "บัญชีทั้งหมด"
 
 <img class="screenshot" alt="Chart of Accounts" src="{{docs_base_url}}/assets/img/accounts/chart-of-accounts-2.png">
 
 
-### 2.4 Other Account Types
+### 2.4 ประเภทบัญชีอื่นๆ
 
-In ERPNext, you can also specify more information when you create a new
-Account, this is there to help you select that particular account in a scenario like 'Bank Account' or a 'Tax Account' and has no effect on the Chart
-itself.
+ใน ERPNext คุณยังสามารถระบุข้อมูลเพิ่มเติมเมื่อคุณสร้างบัญชีใหม่ ซึ่งจะช่วยให้คุณเลือกบัญชีนั้นในสถานการณ์ เช่น 'บัญชีธนาคาร' หรือ 'บัญชีภาษี' และไม่มีผลกระทบต่อแผนภูมิ
 
-Explanation of account types:
+คำอธิบายของประเภทบัญชี:
 
-* **Accumulated Depreciation**: To store the total accumulated depreciation information of the Company Assets. Accumulated depreciation appears on the balance sheet.
-* **Asset Received But Not Billed**: A temporary liability account which holds the value of Asset received but not billed yet.
-* **Bank**: The account type under which bank accounts will be created. There must be at least one group account of type "Bank" in the CoA.
-* **Cash**: The account type under which cash account will be created. There must be at least one group account of type "Cash" in the CoA.
-* **Chargeable**: Additional charges applied to Items can be stored in accounts of this type. For example, "Freight and Forwarding Charges".
-* **Capital Work in Progress**: Current charges when creating Fixed Assets are stored in CWIP accounts. For example, construction costs when constructing a building. In ERPNext Assets are booked against CWIP accounts when they are not yet being used. 
-* **Cost of Goods Sold**: An account under this type is used to book the accumulated total of all costs incurred while manufacturing/purchasing a product or service, sold by a Company.
-* **Depreciation**: The expense account to book the depreciation of the fixed assets. This appears on the Income statement.
-* **Equity**: These type of accounts represent transactions with people that own the business, i.e. the shareholders/owners.
-* **Expenses Included In Asset Valuation**: The account to book the expenses (apart from the direct material costs of Assets) included in the landed cost of an Asset.
-* **Expenses Included In Valuation**: The account to book the expenses (apart from direct material costs) included in the landed cost of an item/product, used in Perpetual Inventory.
-* **Fixed Asset**: The account to maintain the costs of fixed assets.
-* **Income Account**: This type of accounts represents any source of income or revenue booked for the Company.
-* **Payable**: The account type represents the amount owed by a company to its creditors (Suppliers).
-* **Receivable**: The account type represents the amount owed to a company by its debtors (Customers).
-* **Round Off**: In many Invoices there can be some [rounding off](/docs/user/manual/en/accounts/articles/round-off-account-validation) in the final amount. For accurate tracking, those amounts can be booked to accounts of this type.
-* **Stock**: The account group under which [Warehouse accounts](/docs/user/manual/en/accounts/articles/round-off-account-validation) will be created. 
-* **Stock Adjustment**: An expense account to book any adjustment entry of stock/inventory. Generally comes at the same level of Cost of Goods Sold.
-* **Stock Received But Not Billed**: A temporary liability account which holds the value of stock received but not billed yet and used in Perpetual Inventory.
-* **Tax**: All tax accounts like VAT, TDS, GST, etc. come under this type.
-* **Temporary**: A Temporary account is useful for balancing incomes, expenses and nullifying them when shifting to ERPNext mid-year with outstanding accounting entries.
+* **ค่าเสื่อมราคาสะสม :** เพื่อเก็บข้อมูลค่าเสื่อมราคาสะสมทั้งหมดของสินทรัพย์ของบริษัท ค่าเสื่อมราคาสะสมปรากฏในงบดุล
+* **ทรัพย์สินที่ได้รับแต่ยังไม่ถูกเรียกเก็บเงิน :** บัญชีหนี้สินชั่วคราวซึ่งมีมูลค่าของสินทรัพย์ที่ได้รับแต่ยังไม่ถูกเรียกเก็บเงิน
+* **ธนาคาร :** ประเภทบัญชีที่จะสร้างบัญชีธนาคาร ต้องมีบัญชีกลุ่มประเภท "ธนาคาร" อย่างน้อยหนึ่งบัญชีใน CoA
+* **เงินสด :** ประเภทบัญชีที่จะสร้างบัญชีเงินสด ต้องมีบัญชีกลุ่มประเภท "เงินสด" อย่างน้อยหนึ่งบัญชีใน CoA
+* **ค่าธรรมเนียม :** ค่าใช้จ่ายเพิ่มเติมที่ใช้กับรายการสามารถเก็บไว้ในบัญชีประเภทนี้ได้ ตัวอย่างเช่น "ค่าขนส่งและค่าขนส่ง"
+* **Capital Work in Progress :** ค่าใช้จ่ายปัจจุบันเมื่อสร้างสินทรัพย์ถาวรจะถูกเก็บไว้ในบัญชี CWIP ตัวอย่างเช่น ค่าก่อสร้างเมื่อสร้างอาคาร ใน ERPNext สินทรัพย์จะถูกจองกับบัญชี CWIP เมื่อยังไม่ได้ใช้งาน
+* **ต้นทุนขาย :** บัญชีประเภทนี้จะใช้เพื่อจองยอดรวมของต้นทุนทั้งหมดที่เกิดขึ้นขณะผลิต/ซื้อผลิตภัณฑ์หรือบริการที่ขายโดยบริษัท
+* **ค่าเสื่อมราคา :** บัญชีค่าใช้จ่ายในการจองค่าเสื่อมราคาของสินทรัพย์ถาวร สิ่งนี้ปรากฏในงบกำไรขาดทุน
+* **Equity :** บัญชีประเภทนี้แสดงถึงการทำธุรกรรมกับผู้ที่เป็นเจ้าของธุรกิจ ได้แก่ ผู้ถือหุ้น/เจ้าของ
+* **ค่าใช้จ่ายที่รวมอยู่ในการประเมินมูลค่าทรัพย์สิน :** บัญชีสำหรับบันทึกค่าใช้จ่าย (นอกเหนือจากต้นทุนวัสดุทางตรงของสินทรัพย์) รวมอยู่ในต้นทุนที่ดินของสินทรัพย์
+* **ค่าใช้จ่ายที่รวมอยู่ในการประเมินมูลค่า :** บัญชีสำหรับจองค่าใช้จ่าย (นอกเหนือจากต้นทุนวัสดุทางตรง) ที่รวมอยู่ในต้นทุนที่ดินของรายการ/ผลิตภัณฑ์ ที่ใช้ในสินค้าคงคลังถาวร
+* **สินทรัพย์ถาวร :** บัญชีสำหรับรักษาต้นทุนของสินทรัพย์ถาวร
+* **บัญชีรายได้ :** บัญชีประเภทนี้แสดงถึงแหล่งที่มาของรายได้หรือรายได้ที่จองไว้สำหรับบริษัท
+* **เจ้าหนี้ :** ประเภทบัญชีแสดงถึงจำนวนเงินที่บริษัทเป็นหนี้เจ้าหนี้ (ซัพพลายเออร์)
+* **ลูกหนี้ :**ประเภทบัญชีแสดงถึงจำนวนเงินที่เป็นหนี้กับบริษัทโดยลูกหนี้ (ลูกค้า)
+* **ปัดเศษ**: ในหลายใบแจ้งหนี้อาจมี [การปัดเศษ](/docs/user/manual/th/accounts/articles/round-off-account-validation) ในจำนวนเงินสุดท้าย เพื่อการติดตามที่แม่นยำ จำนวนเงินเหล่านั้นสามารถจองไปยังบัญชีประเภทนี้ได้
+* **คลังสินค้า**: กลุ่มบัญชีที่จะสร้าง [บัญชีคลังสินค้า](/docs/user/manual/th/accounts/articles/round-off-account-validation)
+* **การจัดการสินค้า**: บัญชีค่าใช้จ่ายในการจองรายการปรับปรุงใด ๆ ของสินค้าคงคลัง/สินค้าคงคลัง โดยทั่วไปมาที่ระดับเดียวกับต้นทุนขาย
+* **สินค้าที่ได้รับแต่ยังไม่ถูกเรียกเก็บเงิน**: บัญชีความรับผิดชอบชั่วคราวที่มีมูลค่าของสินที่ได้รับแต่ยังไม่ได้เรียกเก็บเงินและใช้ในสินค้าคงคลังแบบถาวร
+* **ภาษี**: บัญชีภาษีทั้งหมดเช่น VAT อยู่ภายใต้บัญชีประเภทนี้
+* **บัญชีชั่วคราว**: บัญชีชั่วคราวมีประโยชน์ในการสร้างสมดุลของรายได้ ค่าใช้จ่าย และทำให้เป็นโมฆะเมื่อเปลี่ยนไปใช้ ERPNext ในช่วงกลางปีที่มีรายการบัญชีคงค้าง
 
-> **Note**: When making Payment Entries, the default bank account will be fetched in the following order if set:
+> **หมายเหตุ**: เมื่อทำรายการชำระเงิน บัญชีธนาคารเริ่มต้นจะถูกดึงมาตามลำดับต่อไปนี้หากตั้งค่าไว้:
     
 >       * Company form
 >       * Mode of Payment default account
 >       * Customer/Supplier default bank account
 >       * Select manually in Payment Entry
 
-### 2.5 Financial statements
-Financial statements for your company are easily viewable in ERPNext. You can view financial statements
-such as Balance Sheet, Profit and Loss statement, and Cash flow statement.
+### 2.5 งบการเงิน
 
-An Example of various financial statement are given below:
+สามารถดูงบการเงินสำหรับบริษัทของคุณได้อย่างง่ายดายใน ERPNext คุณสามารถดูงบการเงิน เช่น งบดุล งบกำไรขาดทุน และงบกระแสเงินสด
 
-1. Cash Flow Report:
+ตัวอย่างของงบการเงินต่างๆ แสดงไว้ด้านล่าง:
+
+1. รายงานกระแสเงินสด:
  <img class="screenshot" alt="Cash Flow Report" src="{{docs_base_url}}/assets/img/accounts/cash_flow_report.png">
 
-1. Profit and Loss Report:
+1. รายงานกำไรขาดทุน:
  <img class="screenshot" alt="Profit and Loss Report" src="{{docs_base_url}}/assets/img/accounts/profit_n_loss_report.png">
  
-1. Balance Sheet Report:
+1. รายงานงบดุล:
  <img class="screenshot" alt="Balance Sheet Report" src="{{docs_base_url}}/assets/img/accounts/balance_sheet_report.png">
 
-### 2.6 Account Number
-A standard Chart of Accounts is organized according to a numerical system. Each major category will begin with a certain number, and then the sub-categories within that major category will all begin with the same number. For example, if assets are classified by numbers starting with the digit 1000, then cash accounts might be labeled 1100, bank accounts might be labeled 1200, accounts receivable might be labeled 1300, and so on. A gap between account numbers is generally maintained for adding accounts in the future.
+### 2.6 เลขที่บัญชี
 
-You can assign a number while creating an account from Chart of Accounts page. You can also edit a number from account record, by clicking **Update Account Name / Number** button. On updating account number, the system renames the account name automatically to embed the number in the account name.
+ผังบัญชีมาตรฐานถูกจัดระเบียบตามระบบตัวเลข หมวดหมู่หลักแต่ละหมวดหมู่จะเริ่มต้นด้วยจำนวนหนึ่ง จากนั้นหมวดหมู่ย่อยภายในหมวดหมู่หลักนั้นทั้งหมดจะขึ้นต้นด้วยหมายเลขเดียวกัน ตัวอย่างเช่น หากสินทรัพย์ถูกจำแนกตามตัวเลขที่ขึ้นต้นด้วยหลัก 1000 บัญชีเงินสดอาจระบุเป็น 1100 บัญชีธนาคารอาจระบุเป็น 1200 บัญชีลูกหนี้อาจระบุเป็น 1300 เป็นต้น โดยทั่วไปจะมีการเว้นช่องว่างระหว่างหมายเลขบัญชีเพื่อเพิ่มบัญชีในอนาคต
+
+คุณสามารถกำหนดหมายเลขในขณะที่สร้างบัญชีได้จากหน้าผังบัญชี นอกจากนี้คุณยังสามารถแก้ไขตัวเลขจากการบันทึกบัญชีโดยการคลิกที่ **อัปเดตชื่อหรือหมายเลขบัญชี**  ในการอัปเดตหมายเลขบัญชี ระบบจะเปลี่ยนชื่อบัญชีโดยอัตโนมัติเพื่อฝังหมายเลขในชื่อบัญชี
 
 ![Account Number]({{docs_base_url}}/assets/img/accounts/acc-no.png)
 
-## 3. Video
+## 3. วิดีโอ
 
 <div>
  <div class="embed-container">
@@ -197,10 +164,10 @@ You can assign a number while creating an account from Chart of Accounts page. Y
  </div>
 </div>
 
-### 4. Related Topics
-1. [Opening Balance](/docs/user/manual/en/accounts/opening-balance)
-1. [Accounts Settings](/docs/user/manual/en/accounts/accounts-settings)
-1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
-1. [Inter Company Journal Entry](/docs/user/manual/en/accounts/inter-company-journal-entry)
-1. [Accounting Reports](/docs/user/manual/en/accounts/accounting-reports)
-1. [Multi Currency Accounting](/docs/user/manual/en/accounts/multi-currency-accounting)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [ยอดยก](/docs/user/manual/th/accounts/opening-balance)
+1. [การตั้งค่าบัญชี](/docs/user/manual/th/accounts/accounts-settings)
+1. [รายการบันทึก](/docs/user/manual/th/accounts/journal-entry)
+1. [รายการบันทึกประจำวันของบริษัทภายใน](/docs/user/manual/th/accounts/inter-company-journal-entry)
+1. [รายงานการบัญชี](/docs/user/manual/th/accounts/accounting-reports)
+1. [การบัญชีหลายสกุลเงิน](/docs/user/manual/th/accounts/multi-currency-accounting)

@@ -1,66 +1,66 @@
 <!-- add-breadcrumbs -->
-# Warehouse
+# คลังสินค้า
 
-**A warehouse is a commercial building for storage of goods. Warehouses are used
-by manufacturers, importers, exporters, wholesalers, transport businesses,
-customs, etc.**
+**คลังสินค้าเป็นอาคารพาณิชย์สำหรับจัดเก็บสินค้า ใช้คลังสินค้า are
+โดยผู้ผลิต ผู้นำเข้า ผู้ส่งออก ผู้ค้าส่ง ธุรกิจขนส่ง
+ศุลกากร ฯลฯ**
 
-They are usually large plain buildings in industrial areas of
-cities, towns, and villages. They mostly have loading docks to load and unload
-goods from trucks.
+มักเป็นอาคารธรรมดาขนาดใหญ่ในเขตอุตสาหกรรมของ
+เมือง เมือง และหมู่บ้าน ส่วนใหญ่จะมีท่าเทียบเรือสำหรับขนถ่าย
+สินค้าจากรถบรรทุก
 
-The terminology of 'Warehouse' in ERPNext is a bit broader though and maybe can be regarded as "storage locations". You can create a sub-Warehouse which could be a shelf inside your actual location. 
+คำศัพท์ของ 'คลังสินค้า' ใน ERPNext นั้นกว้างกว่าเล็กน้อยและอาจถือได้ว่าเป็น "สถานที่จัดเก็บ" คุณสามารถสร้าง คลังสินค้าย่อย ซึ่งอาจเป็นชั้นวางภายในตำแหน่งจริงของคุณ
 
-This can become quite a detailed Tree like the following:
+นี่จะกลายเป็นต้นไม้ที่มีรายละเอียดค่อนข้างมากดังต่อไปนี้:
 
-*Warehouse > Room > Row > Shelf > Bin*
+*คลังสินค้า> ห้อง > แถว > ชั้นวางของ > ถังขยะ*
 
-To access the Warehouse list, go to:
-> Home > Stock > Settings > Warehouse
+ในการเข้าถึงรายการคลังสินค้า ไปที่:
+> หน้าหลัก > สต็อก > การตั้งค่า > คลังสินค้า
 
-## 1. How to create a Warehouse
-1. Go to the Warehouse list, click on New.
-1. Enter a name for the Warehouse.
-1. Set/check the Parent Warehouse. If you tick on 'Is Group', you can create sub-Warehouses under this group Warehouse.
-1. Save. 
+## 1. วิธีสร้างคลังสินค้า
+1. ไปที่รายการคลังสินค้า คลิกที่ ใหม่
+1. ป้อนชื่อคลังสินค้า
+1. ตั้งค่า/ตรวจสอบ Parent Warehouse หากคุณติ๊กที่ 'Is Group' คุณสามารถสร้าง คลังสินค้าย่อย ภายใต้กลุ่มนี้ 
+1. บันทึก
 
-Warehouses are saved with their respective Company’s abbreviations. This facilitates 
-identifying which Warehouse belongs to which company at a glance.
+คลังสินค้าจะถูกบันทึกด้วยตัวย่อของบริษัทนั้น ๆ สิ่งนี้อำนวยความสะดวก
+ระบุว่าคลังสินค้าใดเป็นของ บริษัทใด
 
-### 1.1 Additional options when creating a Warehouse
-**Account**: Set a default account here for all transactions with this Warehouse. Setting this account will show transactions from this Warehouse in the Accounting Ledger.
-**Warehouse Type**: You can create a Warehouse Type to classify Warehouses. For example, Supplier Warehouses, Stock Warehouses, WIP Warehouses, Rooms, etc. can be tagged. This classification is useful when generating reports or in certain stock transactions.
+### 1.1 ตัวเลือกเพิ่มเติมเมื่อสร้างคลังสินค้า
+**บัญชี**: ตั้งค่าบัญชีเริ่มต้นที่นี่สำหรับธุรกรรมทั้งหมดกับคลังสินค้านี้ การตั้งค่าบัญชีนี้จะแสดงธุรกรรมจากคลังสินค้านี้ในบัญชีแยกประเภท
+**ประเภทคลังสินค้า**: คุณสามารถสร้างประเภทคลังสินค้าเพื่อจำแนกประเภทคลังสินค้าได้ ตัวอย่างเช่น คลังสินค้าของซัพพลายเออร์ คลังสินค้าสต็อก คลังสินค้า WIP ห้อง ฯลฯ สามารถติดแท็กได้ การจัดประเภทนี้มีประโยชน์เมื่อสร้างรายงานหรือในการทำธุรกรรมหุ้นบางรายการ
 
-#### Address and contact
-You can add Billing, Shipping, and other types of addresses for the Warehouse. You can also add a contact, this could be the Warehouse Manager for example.
+#### ที่อยู่และการติดต่อ
+คุณสามารถเพิ่มการเรียกเก็บเงิน การจัดส่ง และที่อยู่ประเภทอื่นๆ สำหรับคลังสินค้าได้ คุณยังสามารถเพิ่มผู้ติดต่อ ซึ่งอาจเป็นผู้จัดการคลังสินค้า เป็นต้น
 
 ![Warehouse](/docs/assets/img/stock/warehouse.png)
 
-### 1.2 After Saving
-After saving a Warehouse, you'll see the following options:
+### 1.2 หลังจากบันทึกแล้ว
+หลังจากบันทึกคลังสินค้าแล้ว คุณจะเห็นตัวเลือกต่อไปนี้:
 
-* **Stock Balance**: This will open the Stock Balance report to display the quantity, valuation, balance, etc.
-* **General Ledger**: This will open the General Ledger to display the accounting transactions.
-* **Non-Group to Group**: If the Warehouse is a Non-Group Warehouse, i.e. cannot contain other Warehouses under it, this button will make this a Group Warehouse.
+* **ยอดคงเหลือในสต็อค**: การดำเนินการนี้จะเปิดรายงานยอดสต็อคเพื่อแสดงปริมาณ การประเมินมูลค่า ยอดคงเหลือ ฯลฯ
+* **บัญชีแยกประเภททั่วไป**: จะเป็นการเปิดบัญชีแยกประเภททั่วไปเพื่อแสดงธุรกรรมทางบัญชี
+* **Non-Group to Group**: หาก Warehouse เป็น Non-Group Warehouse นั่นคือ ไม่สามารถมี Warehouse อื่น ๆ อยู่ข้างใต้ได้ ปุ่มนี้จะทำให้ Group Warehouse เป็น Group Warehouse
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Tree View
-You can also switch to 'Tree' View which will show all the group and child Warehouses.
+### 2.1 มุมมองต้นไม้
+คุณยังสามารถเปลี่ยนเป็น 'มุมมองแบบต้นไม้ (Tree View)' ซึ่งจะแสดงกลุ่มและคลังสินค้าย่อยทั้งหมด
 
 <img class="screenshot" alt="Warehouse" src="{{docs_base_url}}/assets/img/stock/warehouse-tree.png">
 
 ### 2.2 Warehouse Account
-In ERPNext, if you enable [Perpetual Inventory](/docs/user/manual/en/stock/perpetual-inventory), every Warehouse must belong to a specific company to maintain
-company-wise stock balance. To do so, each Warehouse should be linked with an 
-Account in the Chart of Accounts (the same name as the Warehouse itself). This account captures the monetary equivalent of the goods or materials stored in that specific warehouse.
+ใน ERPNext หากคุณเปิดใช้งาน [Perpetual Inventory](/docs/user/manual/th/stock/perpetual-inventory) ทุกโกดังจะต้องอยู่ในบริษัทเฉพาะเพื่อรักษา
+ความสมดุลของหุ้นที่ชาญฉลาด ในการทำเช่นนั้น แต่ละโกดังควรเชื่อมโยงกับ an
+บัญชีในผังบัญชี (ชื่อเดียวกับตัวโกดัง) บัญชีนี้จะบันทึกมูลค่าเทียบเท่าเงินของสินค้าหรือวัสดุที่จัดเก็บไว้ในคลังสินค้านั้นๆ
 
-If you have a more detailed Warehouse Tree, most likely it's a good idea to link the sub-locations (room, row, shelf, etc.) to the account of the actual Warehouse (the root Warehouse of that Tree) as most 
-scenarios do not require to account for value of stock items per Shelf or Bin. For example, if you have Warehouse A, and the room, rows are B, C, etc., then link B and C to the account of A.
+หากคุณมีแผนผังคลังสินค้าที่มีรายละเอียดมากกว่านี้ น่าจะเป็นความคิดที่ดีที่จะเชื่อมโยงที่ตั้งย่อย (ห้อง แถว ชั้นวาง ฯลฯ) กับบัญชีของคลังสินค้าจริง (คลังสินค้ารากของต้นไม้นั้น) มากที่สุด
+สถานการณ์ไม่จำเป็นต้องคำนึงถึงมูลค่าของสินค้าในสต็อกต่อชั้นวางหรือถัง ตัวอย่างเช่น หากคุณมีคลังสินค้า A และห้อง แถวคือ B, C เป็นต้น ให้เชื่อมโยง B และ C กับบัญชีของ A
 
-> Tip: ERPNext maintains stock balance for every distinct combination
-of Item and Warehouse. Thus you can get the stock balance for any specific Item in a particular Warehouse on any particular date.
+> เคล็ดลับ: ERPNext รักษายอดสต็อกสำหรับชุดค่าผสมที่แตกต่างกันทุกรายการ distinct
+ของรายการและคลังสินค้า ดังนั้น คุณสามารถรับยอดคงเหลือของสต็อกสำหรับสินค้าเฉพาะใดๆ ในโกดังเฉพาะในวันใดก็ได้
 
-### 3. Related Topics
-1. [Stock Entry Purpose](/docs/user/manual/en/stock/articles/stock-entry-purpose)
-1. [Stock Level Report](/docs/user/manual/en/stock/stock-level-report)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [วัตถุประสงค์ในการเข้าสต็อค](/docs/user/manual/th/stock/articles/stock-entry-purpose)
+1. [รายงานระดับสต็อค](/docs/user/manual/th/stock/stock-level-report)

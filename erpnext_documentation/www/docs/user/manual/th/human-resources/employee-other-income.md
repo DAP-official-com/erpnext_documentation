@@ -1,29 +1,29 @@
 <!-- add-breadcrumbs -->
-# Employee Other Income
+# รายได้อื่นของพนักงาน
 
 
-**Employee Other Income is a document to declare other income of an employee from different sources.**
+**รายได้อื่นของพนักงานเป็นเอกสารประกาศรายได้อื่นของพนักงานจากแหล่งต่างๆ**
 
 
-Other income of an employee is also important to calculate the income tax liability of an employee. In ERPNext, an employee can declare their other income using this document.
+รายได้อื่นของพนักงานก็มีความสำคัญในการคำนวณภาระภาษีเงินได้ของพนักงานเช่นกัน ใน ERPNext พนักงานสามารถประกาศรายได้อื่นโดยใช้เอกสารนี้
 
-To access Employee Other Income, go to:
-> Home > Human Resources > Employee Tax and Benefits > Employee Other Income
+ในการเข้าถึงรายได้อื่นของพนักงาน ไปที่:
+> หน้าหลัก > ทรัพยากรบุคคล > ภาษีและผลประโยชน์พนักงาน > รายได้อื่นของพนักงาน
 
-## 1. How to create an Employee Other Income
+## 1. วิธีสร้างรายได้อื่นให้กับพนักงาน
 
-1. Go to: Employee Other Income > New.
-1. Select the Employee and Company.
-1. Select the Payroll Period.
-1. Enter the Amount and its Source.
-1. Save and Submit.
+1. ไปที่: รายได้อื่นของพนักงาน > ใหม่
+1. เลือกพนักงานและบริษัท
+1. เลือกระยะเวลาการจ่ายเงินเดือน
+1. ป้อนจำนวนเงินและแหล่งที่มา
+1. บันทึกและส่ง
 
 <img class="screenshot" alt="Employee Other Income" src="/docs/assets/img/human-resources/employee-other-income.png">
 
-## 2. Related Topics
+## 2. หัวข้อที่เกี่ยวข้อง
 
-1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
-1. [Salary Structure](/docs/user/manual/en/human-resources/salary-slip)
-1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
+1. [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
+1. [สลิปเงินเดือน](/docs/user/manual/th/human-resources/salary-slip)
+1. [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)
 
 {next}

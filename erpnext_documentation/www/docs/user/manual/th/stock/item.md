@@ -1,291 +1,291 @@
 <!-- add-breadcrumbs -->
-# Item
+# สินค้า
 
-**An Item is a product or a service offered by your company.**
+**สินค้าคือผลิตภัณฑ์หรือบริการที่นำเสนอโดยบริษัทของคุณ**
 
-The term Item is also applicable to raw materials or components of products yet to be produced (before they can be sold to customers). ERPNext allows you to manage all sorts of items like raw-materials, sub-assemblies, finished goods, item variants, and service items.
+คำว่า สินค้า ยังใช้กับวัตถุดิบหรือส่วนประกอบของผลิตภัณฑ์ที่ยังไม่ได้ผลิต (ก่อนที่จะขายให้กับลูกค้า) ERPNext ช่วยให้คุณจัดการสินค้าทุกประเภท เช่น วัตถุดิบ ส่วนประกอบย่อย สินค้าสำเร็จรูป ตัวเลือกสินค้า และสินค้าบริการ
 
-ERPNext is optimized for itemized management of your sales and purchase. If you are in services, you can create an Item for each service that you offer. Completing the Item Master is very essential for the successful implementation of ERPNext.
+ERPNext ได้รับการปรับให้เหมาะสมสำหรับการจัดการการขายและการซื้อของคุณแบบแยกสินค้า หากคุณอยู่ในบริการ คุณสามารถสร้างสินค้าสำหรับแต่ละบริการที่คุณนำเสนอได้ การทำ Item Master ให้เสร็จเป็นสิ่งสำคัญมากสำหรับการนำ ERPNext ไปใช้งานที่ประสบความสำเร็จ
 
-To access the Item list, go to:
-> Home > Stock > Items and Pricing > Item
+หากต้องการเข้าถึงสินค้า ให้ไปที่:
+> หน้าหลัก > สต๊อก > สินค้าและราคา > สินค้า
 
-## 1. Prerequisites
-Before creating and using an Item, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้งานไอเท็ม ขอแนะนำให้คุณสร้างสิ่งต่อไปนี้ก่อน:
 
-* [Item Group](/docs/user/manual/en/stock/item-group)
-* [Warehouse](/docs/user/manual/en/stock/warehouse)
-* A Unit of Measure if required
+* [กลุ่มสินค้า](/docs/user/manual/th/stock/item-group)
+* [คลังสินค้า](/docs/user/manual/th/stock/warehouse)
+* หน่วยวัดถ้าจำเป็น
 
-## 2. How to create an Item
-1. Go to the Item list, click on new.
-2. Enter an Item Code, the name will be auto-filled the same as Item Code on clicking inside the Item Name field.
-1. Select an Item Group.
-1. Enter the opening stock units and standard selling rate.
-3. Save.
+## 2. วิธีสร้างไอเท็ม
+1. ไปที่สินค้า คลิกที่ใหม่
+2. ป้อนรหัสสินค้า ชื่อจะถูกกรอกอัตโนมัติเหมือนกับรหัสสินค้าเมื่อคลิกในช่องชื่อสินค้า
+1. เลือกกลุ่มสินค้า
+1. ป้อนหน่วยสินค้าเปิดและอัตราขายมาตรฐาน
+3. บันทึก
   ![Item Saved](/docs/assets/img/stock/item-saved.png)
 
-### 2.1 Item Properties
+### 2.1 คุณสมบัติรายการ
 
-  * **Item Name:** Item name is the actual name of your product or service.
+  * **ชื่อสินค้า:** ชื่อสินค้าคือชื่อจริงของผลิตภัณฑ์หรือบริการของคุณ
   
-  * **Item Code:** Item Code is a short-form to denote your Item. If you have very few Items, it is advisable to keep the Item Name and the Item Code same. This helps new users to recognize and update Item details in all transactions. In case you have a lot of Items with long names and the list runs in hundreds, it is advisable to code. To understand naming Item codes see [Item Codification](/docs/user/manual/en/stock/articles/item-codification). You can also generate Item Code based on a [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series) by enabling this feature in [Stock Settings](/docs/user/manual/en/stock/stock-settings#1-item-naming-by).
+  * **รหัสสินค้า:** รหัสสินค้าเป็นแบบสั้นเพื่อระบุสินค้าของคุณ หากคุณมีรายการน้อยมาก ขอแนะนำให้เก็บชื่อรายการและรหัสรายการไว้ ซึ่งจะช่วยให้ผู้ใช้รายใหม่รู้จักและอัปเดตรายละเอียดของรายการในธุรกรรมทั้งหมด ในกรณีที่คุณมีรายการจำนวนมากที่มีชื่อยาวและรายการมีหลายร้อยรายการ ขอแนะนำให้เขียนโค้ด เพื่อทำความเข้าใจการตั้งชื่อรหัสสินค้า โปรดดูที่ [Item Codification](/docs/user/manual/th/stock/articles/item-codification) คุณยังสามารถสร้างรหัสรายการตาม [ชุดการตั้งชื่อ](/docs/user/manual/th/setting-up/settings/naming-series) โดยเปิดใช้งานคุณสมบัตินี้ใน [การตั้งค่าสต็อก](/docs/user/manual/ th/stock/stock-settings#1-item-naming-by).
   
-  * **Item Group:** Item Group is used to categorize an Item under various criteria like products, raw materials, services, sub-assemblies, consumables or all Item groups. Create your default Item Group list under Setup > Item Group and pre-select the option while filling your New Item details under [Item Group](/docs/user/manual/en/stock/item-group). Item groups can be sub-assemblies, raw materials, etc, or based on your business use case.
+  * **กลุ่มสินค้า:** Item Group ใช้เพื่อจัดหมวดหมู่สินค้าภายใต้เกณฑ์ต่างๆ เช่น ผลิตภัณฑ์ วัตถุดิบ บริการ ส่วนประกอบย่อย วัสดุสิ้นเปลือง หรือกลุ่มสินค้าทั้งหมด สร้างรายการกลุ่มรายการเริ่มต้นของคุณภายใต้การตั้งค่า > กลุ่มรายการ และเลือกตัวเลือกล่วงหน้าในขณะที่กรอกรายละเอียดรายการใหม่ของคุณภายใต้ [กลุ่มรายการ](/docs/user/manual/th/stock/item-group) กลุ่มสินค้าอาจเป็นส่วนประกอบย่อย วัตถุดิบ ฯลฯ หรือขึ้นอยู่กับกรณีการใช้งานทางธุรกิจของคุณ
   
-  * **Default Unit of Measure:** This is the default measuring unit that you will use for your product. It could be Nos, Kgs, Meters, etc. You can store all the UOMs that your product will require under Set Up> Master Data > UOM. These can be preselected while filling New Item by using % sign to get a pop up of the UOM list. Visit the [UoM](/docs/user/manual/en/stock/uom) page for more details
+  * **หน่วยวัดเริ่มต้น:** นี่คือหน่วยวัดเริ่มต้นที่คุณจะใช้สำหรับผลิตภัณฑ์ของคุณ อาจเป็น Nos, Kgs, Meters เป็นต้น คุณสามารถจัดเก็บ UOM ทั้งหมดที่ผลิตภัณฑ์ของคุณต้องการได้ใน Set Up> Master Data > UOM สามารถเลือกล่วงหน้าได้ในขณะที่เติม New Item โดยใช้เครื่องหมาย % เพื่อรับป๊อปอัปของรายการ UOM ไปที่หน้า [UoM](/docs/user/manual/th/stock/uom) สำหรับรายละเอียดเพิ่มเติม
 
-### 2.2 Options when creating an item
-* **Disabled**: If you disable an Item, it cannot be selected in any transaction.
+### 2.2 ตัวเลือกเมื่อสร้างรายการ
+* **ปิดการใช้งาน**: หากคุณปิดการใช้งานรายการ จะไม่สามารถเลือกรายการนั้นในการทำธุรกรรมใดๆ
 
-* **Allow Alternative Item**: Sometimes when manufacturing a finished good, specific material may not be available. If you tick this, you can create and select an alternative item from the Item Alternative list. To know more, visit the [Item Alternative](/docs/user/manual/en/manufacturing/item-alternative) page.
+* **อนุญาตรายการทางเลือก**: บางครั้งเมื่อทำการผลิตสินค้าสำเร็จรูป วัสดุเฉพาะอาจไม่สามารถใช้ได้ หากคุณทำเครื่องหมายที่ช่องนี้ คุณสามารถสร้างและเลือกรายการอื่นจากรายการทางเลือกรายการ หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [Item Alternative](/docs/user/manual/th/manufacturing/item-alternative)
 
-* **Maintain Stock:** If you are maintaining stock of this Item in your Inventory, ERPNext will make a stock ledger entry for each transaction of this item. Ensure to keep this option unchecked when creating a non-stock Item (make to order/engineer) or a service.
+* **รักษาสต็อก:** หากคุณกำลังรักษาสต็อกของรายการนี้ในสินค้าคงคลังของคุณ ERPNext จะทำรายการบัญชีแยกประเภทสำหรับแต่ละรายการของรายการนี้ ตรวจสอบให้แน่ใจว่าไม่ได้เลือกตัวเลือกนี้เมื่อสร้างรายการที่ไม่มีสต็อก (สั่งทำ/วิศวกร) หรือบริการ
 
-* **Include Item in Manufacturing**: This is for raw material Items that'll be used to create finished goods. If the Item is an additional service like 'washing' that'll be used in the BOM, keep this unchecked.
+* **รวมรายการในการผลิต**: นี่คือรายการวัตถุดิบที่จะใช้ในการสร้างสินค้าสำเร็จรูป หากสินค้าเป็นบริการเพิ่มเติม เช่น 'การซัก' ที่จะใช้ใน BOM ให้ยกเลิกการเลือกนี้
 
-* **Valuation Rate**: There are two options to maintain valuation of stock. FIFO (first in - first out) and Moving Average. To understand this topic in detail please visit [Item Valuation, FIFO and Moving Average](/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average).
+* **อัตราการประเมินมูลค่า**: มีสองทางเลือกในการรักษามูลค่าหุ้น FIFO (เข้าก่อน - ออกก่อน) และค่าเฉลี่ยเคลื่อนที่ หากต้องการทำความเข้าใจหัวข้อนี้โดยละเอียด โปรดไปที่ [Item Valuation, FIFO and Moving Average](/docs/user/manual/th/stock/articles/item-valuation-fifo-and-moving-average)
 
-* **Standard Selling Rate**: When *creating* an Item, entering a value for this field will automatically create an [Item Price](/docs/user/manual/en/stock/item-price) at the backend. Entering a value after the Item has been saved will not work. In this case, the Item Price is created from any transactions with the Item. The rate at which you'll sell the item. This will be fetched in Sales Orders and Sales Invoices.
+* **อัตราขายมาตรฐาน**: เมื่อ *สร้าง* รายการ การป้อนค่าสำหรับฟิลด์นี้จะสร้าง [ราคาสินค้า](/docs/user/manual/th/stock/item-price) ที่ส่วนหลังโดยอัตโนมัติ การป้อนค่าหลังจากบันทึกรายการแล้วจะไม่ทำงาน ในกรณีนี้ ราคาสินค้าจะถูกสร้างขึ้นจากธุรกรรมใดๆ กับสินค้านั้น อัตราที่คุณจะขายสินค้า สิ่งนี้จะถูกดึงมาในใบสั่งขายและใบแจ้งหนี้การขาย
 
-* **Is Fixed Asset**: Tick this checkbox if this item is a company Asset. Check out the [Asset Module](/docs/user/manual/en/asset) to know more.
+* **เป็นสินทรัพย์ถาวร**: ทำเครื่องหมายที่ช่องนี้หากรายการนี้เป็นสินทรัพย์ของบริษัท ตรวจสอบ [โมดูลสินทรัพย์](/docs/user/manual/th/asset) เพื่อทราบข้อมูลเพิ่มเติม
 
-* **Auto Create Assets on Purchase**: If Item is a Company Asset, tick this checkbox if you want to auto create assets while purchasing this item through [Purchase Cycle](/docs/user/manual/en/buying/purchase-order). Check out the [Asset Page](/docs/user/manual/en/asset/asset) to know more.
+* **สร้างสินทรัพย์อัตโนมัติเมื่อซื้อ**: หากรายการเป็นสินทรัพย์ของบริษัท ให้ทำเครื่องหมายที่ช่องนี้หากคุณต้องการสร้างสินทรัพย์โดยอัตโนมัติขณะซื้อสินค้านี้ผ่าน [รอบการซื้อ](/docs/user/manual/th/buying/purchase -ใบสั่ง). ตรวจสอบ [หน้าเนื้อหา](/docs/user/manual/th/asset/asset) เพื่อทราบข้อมูลเพิ่มเติม
 
-* **Allowance Percentage**: This option will be available only when you create and save the item. This is the percent by which you will be allowed to over-bill or over-deliver this Item. If not set, it will select from [Stock Settings](/docs/user/manual/en/stock/stock-settings#3-limit-percent).
+* **เปอร์เซ็นต์ค่าเผื่อ**: ตัวเลือกนี้จะใช้ได้เฉพาะเมื่อคุณสร้างและบันทึกรายการ นี่คือเปอร์เซ็นต์ที่คุณจะได้รับอนุญาตให้เรียกเก็บเงินเกินหรือส่งมอบรายการนี้มากเกินไป หากไม่ได้ตั้งค่า ระบบจะเลือกจาก [การตั้งค่าสต็อค](/docs/user/manual/th/stock/stock-settings#3-limit-percent)
 
-* **Uploading an Image**: To upload an image for your icon that will appear in all transactions, save the partially filled form. Only after your file is saved the 'Change' button will appear on the Image icon. Click on Change, then click on Upload, and upload the image.
+* **การอัปโหลดรูปภาพ**: หากต้องการอัปโหลดรูปภาพสำหรับไอคอนของคุณที่จะปรากฏในธุรกรรมทั้งหมด ให้บันทึกแบบฟอร์มที่กรอกไว้บางส่วน หลังจากบันทึกไฟล์ของคุณแล้ว ปุ่ม 'เปลี่ยน' จะปรากฏบนไอคอนรูปภาพเท่านั้น คลิกที่ Change จากนั้นคลิกที่ Upload และอัพโหลดรูปภาพ
 
-For India:
+<!--For India:
 
 * **HSN/SAC**: Harmonized System of Nomenclature (HSN) and Service Accounting Code (SAC) for GST. These numbers are defined by the government and different Items fall under different codes. New HSN codes can be added if not present in the list.
 * **Is nil rated or exempted**: For an Item that is under GST, but no tax is applied to it. Eg: Cereals.
-* **Is Non GST**: For an item that is not covered under GST. Eg: petrol.
+* **Is Non GST**: For an item that is not covered under GST. Eg: petrol. -->
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Brand and Description
+### 3.1 ยี่ห้อและคำอธิบาย
 
-* **Brand**: If you have more than one brand save them under Selling > Brand and pre-select them while filling a New Item.
-* **Description**: Description of the item. The text from the Item Code will be fetched by default.
-  ![Item brand and description](/docs/assets/img/stock/item-brand-description.png)
+* **แบรนด์**: หากคุณมีมากกว่าหนึ่งแบรนด์ ให้บันทึกภายใต้การขาย > แบรนด์ และเลือกไว้ล่วงหน้าในขณะที่เติมรายการใหม่
+* **คำอธิบาย**: คำอธิบายของรายการ ข้อความจากรหัสรายการจะถูกดึงมาโดยค่าเริ่มต้น
+  ![ยี่ห้อสินค้าและคำอธิบาย](/docs/assets/img/stock/item-brand-description.png)
 
-### 3.2 Barcodes
+### 3.2 บาร์โค้ด
 
-Barcodes can be recorded in Items to quickly scan and add them in transactions. In the Barcodes table you can add an Item's [barcode for scanning](/docs/user/manual/en/stock/articles/track-items-using-barcode). There are two types of barcodes in ERPNext:
+สามารถบันทึกบาร์โค้ดในรายการเพื่อสแกนและเพิ่มลงในธุรกรรมได้อย่างรวดเร็ว ในตารางบาร์โค้ด คุณสามารถเพิ่ม [บาร์โค้ดสำหรับการสแกน](/docs/user/manual/th/stock/articles/track-items-using-barcode) ของรายการได้ มีบาร์โค้ดสองประเภทใน ERPNext:
 
-* **EAN**: The European Article Number is a 13 digit number. EAN is used internationally and recognized by more POS systems.
-* **UPC**: The Universal Product Code is a 12 digit number. UPC is generally used only in USA and Canada.
+* **EAN**: หมายเลขบทความของยุโรปเป็นตัวเลข 13 หลัก EAN ถูกใช้ในระดับสากลและได้รับการยอมรับจากระบบ POS มากขึ้น
+* **UPC**: Universal Product Code เป็นตัวเลข 12 หลัก โดยทั่วไปแล้ว UPC จะใช้ในสหรัฐอเมริกาและแคนาดาเท่านั้น
 
-### 3.3 Inventory
+### 3.3 สินค้าคงคลัง
 
-* **Shelf Life In Days**: This is for a product [Batch](/docs/user/manual/en/stock/batch). The number of days after which product batch will be unusable. For example, medicines.
-* **End of Life**: For a single item/product, the date after which it'll be completely unusable. That is, the item will be unusable in transactions and manufacturing. For example, you're using plastic crystals for manufacturing Items for the next 5 years after which you want to use plastic beads. 
-* **Warranty**: To track a warranty period, it is necessary that the Item is serialized. When this Item is delivered, the delivery date and the expiry period is saved in the Serial Number master. Through the serial number master, you can track the warranty status.
-
-  A warranty period is a time period in which a purchased product may be returned or exchanged.
+* **อายุการเก็บรักษาในแต่ละวัน**: สำหรับผลิตภัณฑ์ [แบทช์](/docs/user/manual/th/stock/batch) จำนวนวันหลังจากที่ชุดผลิตภัณฑ์จะใช้ไม่ได้ ตัวอย่างเช่นยา
+* **หมดอายุ**: สำหรับสินค้าชิ้นเดียว วันที่หลังจากนั้นจะใช้ไม่ได้ทั้งหมด กล่าวคือ สินค้าจะใช้งานไม่ได้ในการทำธุรกรรมและการผลิต ตัวอย่างเช่น คุณกำลังใช้คริสตัลพลาสติกสำหรับการผลิตสินค้าในอีก 5 ปีข้างหน้า หลังจากนั้นคุณต้องการใช้ลูกปัดพลาสติก
+* **การรับประกัน**: ในการติดตามระยะเวลาการรับประกัน จำเป็นต้องมีการจัดลำดับสินค้า เมื่อจัดส่งสินค้านี้ วันที่จัดส่งและระยะเวลาหมดอายุจะถูกบันทึกไว้ในข้อมูลหลักหมายเลขซีเรียล คุณสามารถติดตามสถานะการรับประกันได้โดยใช้หมายเลขหลัก
+  ระยะเวลาการรับประกันคือช่วงเวลาที่สินค้าที่ซื้อสามารถส่งคืนหรือเปลี่ยนได้
 
   <img class="screenshot" alt="Item Warranty" src="{{docs_base_url}}/assets/img/stock/item-inventory.png">
 
-* **Weight UOM**: The Unit of Measure for the item. This can be Nos, Kilo, etc. The Weight UoM which you use internally can be different from the purchase UoM.
-* **Weight Per Unit**: The actual weight per unit of the item. Eg: 1 kilo biscuits or 10 biscuits per pack.
-* **Default Material Request Type**: When you create a new Material Request for this item, the field set here will be selected by default in the new Material Request. This is also known as an 'indent'.
-* **Valuation Method**: Select the Valuation Method whether FIFO or Moving Average. Read [Item Valuation methods](/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average) to know more.
+* **น้ำหนัก UOM**: หน่วยวัดสำหรับสินค้า ซึ่งอาจเป็น Nos, Kilo เป็นต้น Weight UoM ที่คุณใช้ภายในอาจแตกต่างจาก UoM ที่ซื้อ
+* **น้ำหนักต่อหน่วย**: น้ำหนักจริงต่อหน่วยของสินค้า เช่น บิสกิต 1 กิโลกรัมหรือบิสกิต 10 ชิ้นต่อแพ็ค
+* **ประเภทคำขอวัสดุเริ่มต้น**: เมื่อคุณสร้างคำขอวัสดุใหม่สำหรับรายการนี้ ฟิลด์ที่กำหนดที่นี่จะถูกเลือกโดยค่าเริ่มต้นในคำขอวัสดุใหม่ สิ่งนี้เรียกอีกอย่างว่า 'เยื้อง'
+* **วิธีการประเมินค่า**: เลือกวิธีการประเมินมูลค่าไม่ว่าจะเป็น FIFO หรือเส้นค่าเฉลี่ยเคลื่อนที่ อ่าน [วิธีการประเมินมูลค่าสินค้า](/docs/user/manual/th/stock/articles/item-valuation-fifo-and-moving-average) เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.4 Automatic Reordering
-When the stock of an item dips under a certain quantity, you can set an automatic reorder under 'Auto Reorder' section. This should be enabled in [Stock Settings](/docs/user/manual/en/stock/stock-settings#9-automatic-material-request). This will raise a [Material Request](/docs/user/manual/en/stock/material-request) for the Item. The user with roles Purchase Manager and Stock Manager will be **notified** when the Material Request is created.
+### 3.4 การจัดลำดับใหม่อัตโนมัติ
+เมื่อสต็อคของสินค้าลดลงต่ำกว่าปริมาณที่กำหนด คุณสามารถตั้งค่าการสั่งซื้อใหม่อัตโนมัติได้ในส่วน 'จัดลำดับใหม่อัตโนมัติ' ควรเปิดใช้งานใน [การตั้งค่าสต็อก](/docs/user/manual/th/stock/stock-settings#9-automatic-material-request) สิ่งนี้จะเพิ่ม [คำขอวัสดุ](/docs/user/manual/th/stock/material-request) สำหรับรายการ ผู้ใช้ที่มีบทบาทเป็นผู้จัดการฝ่ายจัดซื้อและผู้จัดการสต็อกจะได้รับ **แจ้ง** เมื่อมีการสร้างคำขอวัสดุ
 
-* **Check in (group)**: In which group warehouses to check the quantity of the item.
-* **Request for**: Which warehouse to stock the item reorder.
-* **Re-order Level**: When this quantity is reached, the reorder will be triggered. Re-order level can be determined based on the lead time and the average daily consumption. For example, you can set the reorder level of Motherboard at 10. When only 10 Motherboards are remaining in stock, the system will either automatically create a Material Request in your ERPNext account. 
-* **Re-order Qty**: The number of units to be reordered so that the sum of ordering cost and holding cost is at its minimum. The re-order quantity is based on the 'Minimum Order Qty' specified by the supplier and many other factors.
+* **Check in (group)**: เข้ากลุ่มโกดังสินค้าที่จะตรวจสอบปริมาณของสินค้า
+* **คำขอ**: คลังสินค้าใดที่จะจัดเรียงรายการใหม่
+* **Re-order Level**: เมื่อถึงจำนวนนี้ การสั่งซื้อใหม่จะถูกทริกเกอร์ สามารถกำหนดระดับการสั่งซื้อใหม่ได้ตามเวลารอคอยสินค้าและปริมาณการใช้เฉลี่ยต่อวัน ตัวอย่างเช่น คุณสามารถตั้งค่าระดับการสั่งซื้อใหม่ของมาเธอร์บอร์ดที่ 10 เมื่อเมนบอร์ดเหลืออยู่เพียง 10 ตัวในสต็อก ระบบจะสร้างคำขอวัสดุในบัญชี ERPNext ของคุณโดยอัตโนมัติ
+* **Re-order Qty**: จำนวนหน่วยที่จะสั่งซื้อใหม่เพื่อให้ผลรวมของต้นทุนการสั่งซื้อและต้นทุนการถือครองอยู่ที่ขั้นต่ำ ปริมาณการสั่งซื้อซ้ำจะขึ้นอยู่กับ 'จำนวนการสั่งซื้อขั้นต่ำ' ที่ระบุโดยซัพพลายเออร์และปัจจัยอื่นๆ อีกมากมาย
 
-  For example, If reorder level is 100 items, your reorder quantity may not necessarily be 100 items. The Reorder quantity can be greater than or equal to the reorder level. It may depend upon lead time, discount, transportation and average daily consumption.
+  ตัวอย่างเช่น หากระดับการสั่งซื้อใหม่คือ 100 รายการ ปริมาณการสั่งซื้อใหม่อาจไม่จำเป็นต้องเป็น 100 รายการ ปริมาณการสั่งซื้อใหม่สามารถมากกว่าหรือเท่ากับระดับการสั่งซื้อใหม่ อาจขึ้นอยู่กับระยะเวลารอคอยสินค้า ส่วนลด การขนส่ง และการบริโภคเฉลี่ยต่อวัน
 
-* **Material Request Type**: The [Material Request](/docs/user/manual/en/stock/material-request) type with which the stock will be reordered. This depends whether you buy the Item, manufacture it yourself or transfer it between Warehouses.
+* **ประเภทคำขอใช้วัสดุ**: ประเภท [คำขอวัสดุ](/docs/user/manual/th/stock/material-request) ที่จะสั่งซื้อสต็อคใหม่ ขึ้นอยู่กับว่าคุณซื้อสินค้า ผลิตเอง หรือโอนระหว่างคลังสินค้า
 
   <img alt="Item Reorder" class="screenshot" src="{{docs_base_url}}/assets/img/stock/item-reorder.png">
 
-> **Note**: The Material Request is created at 12 midnight depending on the set reorder level.
+> **หมายเหตุ**: คำขอวัสดุจะถูกสร้างขึ้นในเวลาเที่ยงคืน ขึ้นอยู่กับระดับการจัดลำดับใหม่
 
-### 3.5 Multiple Units of Measure
-You can add alternate UoMs for an Item. If the default UoM in which you sell is numbers (NoS) but you receive it in Kilos, you can set an additional UoM with an appropriate conversion factor. For example, 500 Nos of screws = 1 Kilogram, so select Kilogram/Litre as UOM and set the conversion factor as 500. To know more about selling in different UoM, visit [this page](/docs/user/manual/en/selling/articles/Selling-in-different-UOM).
+### 3.5 หน่วยวัดหลายหน่วย
+คุณสามารถเพิ่ม UoM สำรองสำหรับรายการได้ หาก UoM เริ่มต้นที่คุณขายเป็นตัวเลข (NoS) แต่คุณได้รับเป็นกิโล คุณสามารถตั้งค่า UoM เพิ่มเติมด้วยปัจจัยการแปลงที่เหมาะสม ตัวอย่างเช่น 500 Nos of screws = 1 Kilogram ดังนั้นให้เลือก Kilogram/Litre เป็น UOM และตั้งค่าปัจจัยการแปลงเป็น 500 หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับการขายใน UoM ต่างๆ โปรดไปที่ [หน้านี้](/docs/user/manual/th/ การขาย/บทความ/การขายในส่วนต่าง-UOM)
 
-### 3.6 Serial Numbers
+### 3.6 หมายเลขซีเรียล
 
-With Serial Numbers, you can track warranty and returns. In case any individual Item is recalled by the supplier the number system helps to track individual Item. The numbering system also manages expiry dates.
+ด้วยหมายเลขซีเรียล คุณสามารถติดตามการรับประกันและการคืนสินค้าได้ ในกรณีที่ซัพพลายเออร์เรียกคืนรายการใดรายการหนึ่ง ระบบหมายเลขจะช่วยติดตามรายการแต่ละรายการ ระบบการนับยังจัดการวันหมดอายุ
 
-Please note that if you sell your items in thousands, and if the items are very small like pens or erasers, you need not serialize them.
+โปรดทราบว่าหากคุณขายสินค้าของคุณเป็นพัน ๆ รายการ และหากรายการมีขนาดเล็กมาก เช่น ปากกาหรือยางลบ คุณไม่จำเป็นต้องจัดลำดับรายการเหล่านั้น
 
-In ERPNext, you will have to mention the Serial Number in some accounting entries. If your product is not a big consumer durable Item, if it has no warranty and has no chances of being recalled, avoid giving serial numbers.
+ใน ERPNext คุณจะต้องระบุ Serial Number ในรายการบัญชีบางรายการ หากผลิตภัณฑ์ของคุณไม่ใช่สินค้าคงทนสำหรับผู้บริโภครายใหญ่ หากไม่มีการรับประกันและไม่มีโอกาสถูกเรียกคืน ให้หลีกเลี่ยงการให้หมายเลขซีเรียล
 
 <img alt="Serial No modal" class="screenshot" src="{{docs_base_url}}/assets/img/stock/serial_no_modal.gif">
 
-### 3.7 Batches
+### 3.7 แบตช์
 
-A set of Items can be manufactured in batches. This is useful for moving the batch and associate an expiry date with a certain batch. 
+ชุดของรายการสามารถผลิตเป็นชุดได้ สิ่งนี้มีประโยชน์สำหรับการย้ายชุดงานและเชื่อมโยงวันหมดอายุกับชุดงานบางชุด
 
-* **Has Batch No**: Options for batch number, expiry date, and retaining sample stock will be revealed on ticking this checkbox. You cannot activate this if there is any pre-existing transaction for this item. If this is disabled, you'll have to enter the serial numbers manually for every transaction.
+* **มีหมายเลขแบทช์**: ตัวเลือกสำหรับหมายเลขแบทช์ วันหมดอายุ และการเก็บตัวอย่างสต็อคจะแสดงขึ้นเมื่อทำเครื่องหมายที่ช่องทำเครื่องหมายนี้ คุณไม่สามารถเปิดใช้งานได้หากมีธุรกรรมที่มีอยู่ก่อนสำหรับรายการนี้ หากปิดใช้งาน คุณจะต้องป้อนหมายเลขซีเรียลด้วยตนเองสำหรับทุกธุรกรรม
 
-* **Batch Number Series**: Prefix that'll be applied to batch numbers. If you set 5x1SCR, then the first batch will be named like 5x1SCR00001 on first transaction/manufacture.
+* **ชุดหมายเลขชุด**: คำนำหน้าที่จะใช้กับหมายเลขชุดงาน หากคุณตั้งค่า 5x1SCR ชุดแรกจะมีชื่อเหมือน 5x1SCR00001 ในธุรกรรม/การผลิตครั้งแรก
 
-* **Automatically Create New Batch**: If the batch number is not mentioned in transactions, then they will be automatically created according to a format like AAAA.00001. If you always want to manually create a batch number for this item, leave this field blank. This setting will override 'Naming Series Prefix' in Stock Settings. Batch numbers can be set to be generated automatically if you manufacture the Items or can be entered manually if it comes from an external manufacturer.
+* **สร้างแบทช์ใหม่โดยอัตโนมัติ**: หากไม่มีการระบุหมายเลขแบทช์ในธุรกรรม ระบบจะสร้างหมายเลขแบทช์ใหม่โดยอัตโนมัติตามรูปแบบเช่น AAAA.00001 หากคุณต้องการสร้างหมายเลขแบทช์สำหรับรายการนี้ด้วยตนเองเสมอ ให้ปล่อยฟิลด์นี้ว่างไว้ การตั้งค่านี้จะแทนที่ 'การตั้งชื่อชุดคำนำหน้า' ในการตั้งค่าสต็อก คุณสามารถตั้งค่าหมายเลขแบทช์ให้สร้างขึ้นโดยอัตโนมัติหากคุณผลิตรายการหรือสามารถป้อนด้วยตนเองได้หากมาจากผู้ผลิตภายนอก
 
-* **Has Expiry Date**: If you tick this, the batch number will be created according to the expiry date. The expiry dates can be set in the 'Batch' master.
+* **มีวันหมดอายุ**: หากคุณทำเครื่องหมายที่ช่องนี้ หมายเลขแบทช์จะถูกสร้างขึ้นตามวันหมดอายุ สามารถกำหนดวันหมดอายุได้ในต้นแบบ 'แบทช์'
 
-* **Retain Sample**: To retain a minimum number of sample stock of the item. You need to set a Sample Retention Warehouse in Stock Settings for this. To know more, [click here](/docs/user/manual/en/stock/retain-sample-stock).
+* **เก็บตัวอย่าง**: เพื่อรักษาจำนวนตัวอย่างขั้นต่ำของสินค้า คุณต้องตั้งค่า Sample Retention Warehouse ใน Stock Settings สำหรับสิ่งนี้ หากต้องการทราบข้อมูลเพิ่มเติม [คลิกที่นี่](/docs/user/manual/th/stock/retain-sample-stock)
 
-* **Has Serial No**: This is similar to Batch Number Series, it'll be created when you make transactions/manufacture. If you set Serial Number Series as AA, then on the first transaction a serial number like AA00001 will be created.
+* **มี Serial No**: คล้ายกับ Batch Number Series ซึ่งสร้างขึ้นเมื่อคุณทำธุรกรรม/ผลิต หากคุณตั้งค่า Serial Number Series เป็น AA ในการทำธุรกรรมครั้งแรก หมายเลขซีเรียลเช่น AA00001 จะถูกสร้างขึ้น
 
-> Tip: While entering an Item Code in an Items table, if the table requires inventory details, then depending on whether the entered item is batched or serialized, you can enter serial or batch numbers right away in a pop-up dialog.
+> เคล็ดลับ: ขณะป้อนรหัสรายการในตารางรายการ หากตารางนั้นต้องการรายละเอียดสินค้าคงคลัง จากนั้นขึ้นอยู่กับว่ารายการที่ป้อนเป็นแบบชุดหรือแบบอนุกรม คุณสามารถป้อนหมายเลขซีเรียลหรือชุดงานได้ทันทีในกล่องโต้ตอบป๊อปอัป
 
 <img alt="Batch No modal" class="screenshot" src="{{docs_base_url}}/assets/img/stock/batch_no_modal.png">
 
-> **Note**: Once you mark an item as serialized or batched or neither, you cannot change it after you have made a Stock Entry.
+> **หมายเหตุ**: เมื่อคุณทำเครื่องหมายรายการเป็นซีเรียลไลซ์หรือแบทช์หรือไม่ใช่ทั้งสองอย่าง คุณจะไม่สามารถเปลี่ยนแปลงได้หลังจากคุณสร้างรายการสต็อคแล้ว
 
-To know more, visit the [Stock Reconciliation](/docs/user/manual/en/stock/stock-reconciliation) page.
+อ่าน [การกระทบยอดสินค้า](/docs/user/manual/th/stock/stock-reconciliation) เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.8 Variants
-An Item Variant is a different version of a Item. To learn more about managing variants see [Item Variants](/docs/user/manual/en/stock/item-variants).
+### 3.8 ตัวเลือก
+ตัวเลือกรายการเป็นเวอร์ชันอื่นของรายการ หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับการจัดการตัวเลือกสินค้า โปรดดูที่ [Item Variants](/docs/user/manual/th/stock/item-variants)
 
-### 3.9 Item Defaults
+### 3.9 ค่าเริ่มต้นของรายการ
 
-In this section, you can define Company-wide transaction-related defaults for this Item.
+ในส่วนนี้ คุณสามารถกำหนดค่าเริ่มต้นที่เกี่ยวข้องกับธุรกรรมทั่วทั้งบริษัทสำหรับรายการนี้
 
-* **Default Warehouse:** This is the Warehouse that is automatically selected in your transactions with this item.
-* **Default Price List:** Whether Standard Selling or Standard Buying. Likewise, you can also set the purchasing and selling default accounts
-* **Supplier**: If a default supplier is set, this supplier will be selected for new purchase transactions.
-* **Default Expense Account:** It is the account in which cost of the Item will be debited.
-* **Default Income Account:** It is the account in which income from selling the Item will be credited.
-* **Default Cost Center:** It is used for tracking expense for this Item.
+* **โกดังเริ่มต้น:** นี่คือโกดังที่ถูกเลือกโดยอัตโนมัติในธุรกรรมของคุณกับรายการนี้
+* **รายการราคาเริ่มต้น:** ไม่ว่าจะเป็น Standard Selling หรือ Standard Buying ในทำนองเดียวกัน คุณยังสามารถตั้งค่าบัญชีเริ่มต้นสำหรับการซื้อและขายได้
+* **ซัพพลายเออร์**: หากมีการตั้งค่าซัพพลายเออร์เริ่มต้น ซัพพลายเออร์รายนี้จะถูกเลือกสำหรับธุรกรรมการซื้อใหม่
+* **บัญชีค่าใช้จ่ายเริ่มต้น:** เป็นบัญชีที่จะหักค่าใช้จ่ายของรายการ
+* **บัญชีรายได้เริ่มต้น:** เป็นบัญชีที่จะให้เครดิตรายได้จากการขายไอเท็ม
+* **ศูนย์ต้นทุนเริ่มต้น:** ใช้สำหรับติดตามค่าใช้จ่ายสำหรับรายการนี้
 
   ![Item defaults](/docs/assets/img/stock/item-defaults.png)
 
-> Tip: You can add more rows for multiple companies.
+> เคล็ดลับ: คุณสามารถเพิ่มแถวสำหรับหลายบริษัทได้
 
-### 3.10 Purchase, Replenishment Details
+### 3.10 การซื้อ รายละเอียดการเติม
 
-* **Default Purchase Unit of Measure**: The default UoM that will be used in Purchase transactions.
-* **Minimum Order Qty**: The minimum quantity required for purchase transactions like Purchase Orders. If set, the system will not let you proceed with the purchase transaction if the item quantity in the purchase transaction is lesser than the quantity set in this field.
-* **Safety Stock**: “Safety Stock” is used in the report “Itemwise Recommended Reorder Level”. Based on Safety Stock, average daily consumption and the lead time, the system suggests Reorder Level of an item.
+* **หน่วยวัดการซื้อเริ่มต้น**: UoM เริ่มต้นที่จะใช้ในธุรกรรมการซื้อ
+* **ปริมาณการสั่งซื้อขั้นต่ำ**: ปริมาณขั้นต่ำที่จำเป็นสำหรับธุรกรรมการซื้อ เช่น ใบสั่งซื้อ หากมีการตั้งค่า ระบบจะไม่อนุญาตให้คุณดำเนินการกับธุรกรรมการซื้อ ถ้าปริมาณสินค้าในธุรกรรมการซื้อน้อยกว่าปริมาณที่กำหนดไว้ในฟิลด์นี้
+* **Safety Stock**: "Safety Stock" ใช้ในรายงาน "Itemwise Recommended Reorder Level" ตามสต็อกความปลอดภัย ปริมาณการใช้เฉลี่ยต่อวันและระยะเวลารอคอยสินค้า ระบบจะแนะนำการจัดลำดับของรายการใหม่
 
-  Reorder Level = Safety Stock + (Average Daily Consumption * Lead Time)
-* **Last Purchase Rate**: The rate at which you last purchased this item using a [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice) will be displayed here.
-* **Is Purchase Item:** If unticked, you won't be able to use this item in purchase transactions.
-* **Is Customer Provided Item:** Checked if Item is provided by a customer and received through **Stock Entry > Material Receipt**. If Checked, **Customer** field is Mandatory as the default customer for **Material Request**. To know more visit [this page](/docs/user/manual/en/manufacturing/articles/customer-provided-items).
-* **Lead time days:** Lead time days are the number of days between ordering the Item and it to reach the Warehouse.
+  ระดับการสั่งซื้อใหม่ = สต็อกความปลอดภัย + (การบริโภคเฉลี่ยต่อวัน * ระยะเวลารอคอยสินค้า)
+* **อัตราการซื้อล่าสุด**: อัตราที่คุณซื้อรายการนี้ครั้งล่าสุดโดยใช้ [ใบกำกับสินค้า](/docs/user/manual/th/accounts/purchase-invoice) จะแสดงที่นี่
+* **เป็นสินค้าที่ซื้อ:** หากยกเลิกการเลือก คุณจะไม่สามารถใช้รายการนี้ในธุรกรรมการซื้อได้
+* **เป็นสินค้าที่ลูกค้าจัดหาให้หรือไม่:** ตรวจสอบว่าลูกค้าเป็นผู้จัดหาสินค้าและได้รับผ่านทาง **รายการสินค้า > ใบรับวัสดุ** หากเลือก ช่อง **ลูกค้า** จะเป็นช่องบังคับในฐานะลูกค้าเริ่มต้นสำหรับ **คำขอวัสดุ** หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่ [หน้านี้](/docs/user/manual/th/manufacturing/articles/customer-provided-items)
+* **ระยะเวลารอคอยสินค้า:** ระยะเวลารอคอยสินค้าคือจำนวนวันระหว่างการสั่งซื้อรายการกับสินค้าถึงคลังสินค้า
 
   <img class="screenshot" alt="Purchase details" src="{{docs_base_url}}/assets/img/stock/item-purchase-details.png">
 
-### 3.11 Supplier Details
+### 3.11 รายละเอียดซัพพลายเออร์
 
-* **Delivered by Supplier (Drop Ship)**: If the item is delivered directly by the supplier to the customer, tick this checkbox. Read more [here](/docs/user/manual/en/selling/articles/drop-shipping).
-* **Supplier Codes:** Track Item Code defined by the Suppliers for this Item. In the Purchase transactions, on selecting an Item, a Supplier Part No. will be fetched as well for the Supplier's reference. You can read more about it [here](/docs/user/manual/en/buying/articles/maintaining-suppliers-part-no-in-item).
+* **จัดส่งโดยซัพพลายเออร์ (Drop Ship)**: หากสินค้าถูกจัดส่งโดยซัพพลายเออร์ไปยังลูกค้าโดยตรง ให้ทำเครื่องหมายที่ช่องทำเครื่องหมายนี้ อ่านเพิ่มเติม [ที่นี่](/docs/user/manual/th/selling/articles/drop-shipping)
+* **รหัสซัพพลายเออร์:** รหัสรายการติดตามที่กำหนดโดยซัพพลายเออร์สำหรับรายการนี้ ในธุรกรรมการซื้อ ในการเลือกรายการ หมายเลขชิ้นส่วนของซัพพลายเออร์จะถูกดึงมาด้วยเช่นกันสำหรับการอ้างอิงของผู้จัดหา คุณสามารถอ่านเพิ่มเติมเกี่ยวกับเรื่องนี้ได้ [ที่นี่](/docs/user/manual/th/buying/articles/maintaining-suppliers-part-no-in-item)
 
   ![Item Supplier Details](/docs/assets/img/stock/item-supplier.png)
 
-### 3.12 Foreign Trade Details
-If you're sourcing the item from another country, you can set the details here.
+### 3.12 รายละเอียดการค้าต่างประเทศ
+หากคุณกำลังจัดหาสินค้าจากประเทศอื่น คุณสามารถกำหนดรายละเอียดได้ที่นี่
 
-* **Country of Origin**: The country from which you're sourcing the item.
-* **Customs Tariff Number**: You can create a customs tariff number with a description and use it for reference here to share with custom agencies. Later it can be used to add in Delivery Notes.
+* **ประเทศต้นกำเนิด**: ประเทศที่คุณจัดหาสินค้า
+* **หมายเลขภาษีศุลกากร**: คุณสามารถสร้างหมายเลขภาษีศุลกากรพร้อมคำอธิบายและใช้สำหรับอ้างอิงที่นี่เพื่อแบ่งปันกับหน่วยงานที่กำหนดเอง ภายหลังสามารถใช้เพื่อเพิ่มใน Delivery Notes
 
-### 3.13 Sales Details
+### 3.13 รายละเอียดการขาย
 
-* **Default Sales Unit of Measure**: The default UoM that'll be fetched for sales transactions.
-* **Max Discount (%)**: You can define the maximum discount in % to be applied to an item. Eg: if you set 20%, you cannot sell this item with a discount greater than 20%.
-* **Is Sales Item**: If unticked, you won't be able to use this item in sales transactions.
+* **หน่วยวัดการขายเริ่มต้น**: UoM เริ่มต้นที่จะถูกดึงข้อมูลสำหรับธุรกรรมการขาย
+* **ส่วนลดสูงสุด (%)**: คุณสามารถกำหนดส่วนลดสูงสุดเป็น % เพื่อใช้กับสินค้าได้ เช่น หากคุณตั้งค่า 20% คุณจะไม่สามารถขายสินค้านี้ด้วยส่วนลดที่มากกว่า 20%
+* **เป็นรายการขาย**: หากไม่เลือก คุณจะไม่สามารถใช้รายการนี้ในธุรกรรมการขายได้
 
   ![Item Sales Details](/docs/assets/img/stock/item-sales.png)
 
-### 3.14 Deferred Revenue and Deferred Expense
-You can enable deferred revenue or expense from the item. Once you tick the checkbox, you'll see options to set the Deferred Expense Account and the number of months through which the revenue/expense is deferred. 
+### 3.14 รายได้รอตัดบัญชีและค่าใช้จ่ายรอตัดบัญชี
+คุณสามารถเปิดใช้งานรายได้หรือค่าใช้จ่ายรอตัดบัญชีจากรายการ เมื่อคุณทำเครื่องหมายที่ช่องทำเครื่องหมาย คุณจะเห็นตัวเลือกในการตั้งค่าบัญชีค่าใช้จ่ายรอตัดบัญชีและจำนวนเดือนที่รายได้/ค่าใช้จ่ายถูกเลื่อนออกไป
 
-For example, consider a yearly gym membership, you pay the money upfront at once but the service is given throughout the year. For the gym owner, this is deferred revenue and for the customer, it is a deferred expense.
+ตัวอย่างเช่น พิจารณาการเป็นสมาชิกยิมรายปี คุณจ่ายเงินล่วงหน้าในครั้งเดียว แต่ให้บริการตลอดทั้งปี สำหรับเจ้าของโรงยิม นี่คือรายได้รอการตัดบัญชี และสำหรับลูกค้า เป็นค่าใช้จ่ายรอการตัดบัญชี
 
   ![Deferred Revenue](/docs/assets/img/stock/deferred-revenue.png)
 
-Check out the pages on [Deferred Revenue](/docs/user/manual/en/accounts/deferred-revenue) for more details.
+อ่าน [รายได้รอตัดบัญชี](/docs/user/manual/th/accounts/deferred-revenue) สำหรับรายละเอียดเพิ่มเติม
 
 ### 3.15 Customer Details
 
-The Customer may identify an Item with a different Item Code. this is Similar to [Supplier Code](/docs/user/manual/en/stock/item#311-supplier-details). 
+3.15 รายละเอียดลูกค้า
 
-* **Customer Name**: Select a customer here.
-* **Customer Group**: This will be fetched based on the Customer you selected in the previous field.
-* **Ref Code:** A customer can identify this item with a different number. You can track Item Code assigned by the Customer for this Item. When you create a Sales Order, the Customer's Reference Code for this Item will be shown.
+ลูกค้าอาจระบุรายการด้วยรหัสรายการอื่น สิ่งนี้คล้ายกับ [รหัสซัพพลายเออร์](/docs/user/manual/th/stock/item#311-supplier-details). 
 
-### 3.16 Item Tax
+* **ชื่อลูกค้า**: เลือกลูกค้าที่นี่
+* **กลุ่มลูกค้า**: ระบบจะดึงข้อมูลนี้ตามลูกค้าที่คุณเลือกในช่องก่อนหน้า
+* **รหัสอ้างอิง:** ลูกค้าสามารถระบุรายการนี้ด้วยหมายเลขอื่น คุณสามารถติดตามรหัสสินค้าที่ลูกค้ากำหนดสำหรับรายการนี้ เมื่อคุณสร้างใบสั่งขาย รหัสอ้างอิงของลูกค้าสำหรับรายการนี้จะปรากฏขึ้น
 
-These settings are required only if a particular Item has a different tax rate than the rate defined in the standard tax Account.
+### 3.16 ภาษีสินค้า
 
-You need to create a new 'Item Tax Template' or choose an existing one. For example, if you have a tax Account, “VAT 14%” and this particular Item is exempted from tax, then you select “VAT 14%” in the first column, and set “0” as the tax rate in the second column. Visit the [Item Tax Template](/docs/user/manual/en/accounts/item-tax-template) page for more details.
+การตั้งค่าเหล่านี้จำเป็นเฉพาะในกรณีที่สินค้าบางรายการมีอัตราภาษีที่แตกต่างจากอัตราที่กำหนดไว้ในบัญชีภาษีมาตรฐาน
+
+คุณต้องสร้าง 'เทมเพลตภาษีสินค้า' ใหม่หรือเลือกแบบที่มีอยู่ ตัวอย่างเช่น หากคุณมีบัญชีภาษี “VAT 14%” และรายการนี้ได้รับการยกเว้นภาษี ให้เลือก “VAT 14%” ในคอลัมน์แรก และตั้ง “0” เป็นอัตราภาษีในคอลัมน์ที่สอง . ไปที่หน้า [เทมเพลตภาษีสินค้า](/docs/user/manual/th/accounts/item-tax-template) สำหรับรายละเอียดเพิ่มเติม
 
 ![Item tax template](/docs/assets/img/stock/item-tax-template.png)
 
-You can also set a [Tax Category](/docs/user/manual/en/accounts/tax-category) for this Item.
+สามารถตั้ง [ประเภทภาษี](/docs/user/manual/th/accounts/tax-category) สำหรับสินค้านี้
 
 
-### 3.17 Inspection Criteria
+### 3.17 เกณฑ์การตรวจสอบ
 
-* **Inspection Required before Purchase**: If an inspection is mandatory before the item is purchased, i.e., before you generate Purchase Receipt, tick this checkbox.
-* **Inspection Required before Delivery**: If an inspection is required at the time of delivery from your Supplier is mandatory for this Item, tick this checkbox. That is, before you generate a Delivery Note. 
-* **Quality Inspection Template**: If a Quality Inspection is prepared for this Item, then this template of criteria will automatically be updated in the Quality Inspection table of the Quality Inspection. Examples of Criteria are: Weight, Length, Finish, etc.
+* **ต้องตรวจสอบก่อนซื้อ**: หากจำเป็นต้องตรวจสอบก่อนซื้อสินค้า กล่าวคือ ก่อนที่คุณจะสร้างใบเสร็จการซื้อ ให้ทำเครื่องหมายที่ช่องทำเครื่องหมายนี้
+* **ต้องตรวจสอบก่อนจัดส่ง**: หากจำเป็นต้องมีการตรวจสอบ ณ เวลาที่จัดส่งจากซัพพลายเออร์ของคุณสำหรับสินค้านี้ ให้ทำเครื่องหมายในช่องนี้ นั่นคือก่อนที่คุณจะสร้างใบส่งมอบ
+* **เทมเพลตการตรวจสอบคุณภาพ**: หากมีการเตรียมการตรวจสอบคุณภาพสำหรับรายการนี้ เทมเพลตเกณฑ์นี้จะได้รับการอัปเดตโดยอัตโนมัติในตารางการตรวจสอบคุณภาพของการตรวจสอบคุณภาพ ตัวอย่างของเกณฑ์ ได้แก่ น้ำหนัก ความยาว เสร็จสิ้น ฯลฯ
 
-Quality Inspection can be done with Quick View and you need not go to a different page to update the details inspection in ERPNext.
+การตรวจสอบคุณภาพสามารถทำได้ด้วย Quick View และคุณไม่จำเป็นต้องไปที่หน้าอื่นเพื่ออัปเดตการตรวจสอบรายละเอียดใน ERPNext
 
-Read [Quality Inspection](/docs/user/manual/en/stock/quality-inspection) to know more.
+อ่าน [การตรวจสอบคุณภาพ](/docs/user/manual/th/stock/quality-inspection) เพื่อทราบข้อมูลเพิ่มเติม
+### 3.18 การผลิต
 
-### 3.18 Manufacturing
-
-* **Default BOM**: The default [Bill of Materials](/docs/user/manual/en/manufacturing/bill-of-materials) used to manufacture this Item.
-* **Supply Raw Materials for Purchase**:  If you're subcontracting to a vendor, you can choose to provide them with the raw materials to manufacture the item using the default BOM.
-* **Manufacturer:** Select the Manufacturer who manufactured this item.
-* **Manufacturer Part Number:** Enter the manufacturer part number that the manufacturer has assigned to this item.
+* **BOM เริ่มต้น**: ค่าเริ่มต้น [Bill of Materials](/docs/user/manual/th/manufacturing/bill-of-materials) ที่ใช้ในการผลิตรายการนี้
+* **จัดหาวัตถุดิบสำหรับการซื้อ**: หากคุณกำลังทำสัญญาช่วงกับผู้ขาย คุณสามารถเลือกจัดหาวัตถุดิบเพื่อผลิตสินค้าโดยใช้ BOM เริ่มต้นได้
+* **ผู้ผลิต:** เลือกผู้ผลิตที่ผลิตรายการนี้
+* **หมายเลขชิ้นส่วนของผู้ผลิต:** ป้อนหมายเลขชิ้นส่วนของผู้ผลิตที่ผู้ผลิตกำหนดให้กับรายการนี้
 
   ![Item Manufacturing](/docs/assets/img/stock/item-manufacturing.png)
 
-* The manufacturer details appear after you've created an 'Item Manufacturer' from the dashboard and selected that record as default. Here, add details for:
-  * Item Code
-  * Enter the manufacturer name
-  * Enter the part number the manufacturer uses to identify this item
-  * Select 'Is Default' to show the manufacturer and part number in the Item record
+* รายละเอียดผู้ผลิตจะปรากฏขึ้นหลังจากที่คุณสร้าง 'ผู้ผลิตรายการ' จากแดชบอร์ดและเลือกเรกคอร์ดนั้นเป็นค่าเริ่มต้น ที่นี่ เพิ่มรายละเอียดสำหรับ:
+  * รหัสสินค้า
+  * ใส่ชื่อผู้ผลิต
+  * ระบุหมายเลขชิ้นส่วนที่ผู้ผลิตใช้ในการระบุรายการนี้
+  * เลือก 'เป็นค่าเริ่มต้น' เพื่อแสดงผู้ผลิตและหมายเลขชิ้นส่วนในบันทึกรายการ
 
   ![Item Manufacturer](/docs/assets/img/stock/item-manufacturer.png)
 
-### 3.19  Website
+### 3.19 เว็บไซต์
 
-* **Show in Website**: Choose if you want to show this Item on your website. Once you tick this, additional options will be visible to configure the item on your website. To view the item on the website click on the 'See on Website' link on the top left just above the item image. Visit the [Website module](/docs/user/manual/en/website) to know more.
+* **แสดงในเว็บไซต์**: เลือกว่าต้องการแสดงรายการนี้บนเว็บไซต์ของคุณหรือไม่ เมื่อคุณทำเครื่องหมายที่ตัวเลือกนี้แล้ว คุณจะเห็นตัวเลือกเพิ่มเติมในการกำหนดค่ารายการบนเว็บไซต์ของคุณ หากต้องการดูรายการบนเว็บไซต์ ให้คลิกที่ลิงก์ 'ดูบนเว็บไซต์' ที่ด้านบนซ้ายเหนือรูปภาพของรายการ อ่าน [โมดูลเว็บไซต์](/docs/user/manual/th/website) เพื่อทราบข้อมูลเพิ่มเติม
 
   <img class="screenshot" alt="Manufaturing details" src="{{docs_base_url}}/assets/img/stock/item-manufacturing-website.png">
 
-* **Weightage**: Items with higher weight will be displayed first on the website. The limit for the number you can enter here is very high. 
+* **น้ำหนัก**: รายการที่มีน้ำหนักสูงกว่าจะแสดงเป็นอันดับแรกบนเว็บไซต์ ขีดจำกัดสำหรับจำนวนที่คุณสามารถป้อนที่นี่สูงมาก
 
-* **Slideshow**: A slideshow can be displayed at the top of the page. Visit the [Homepage](/docs/user/manual/en/website/homepage) page in Website module to know more.
-* **Image**: You can attach an image instead of a Slideshow. 
-* **Website Warehouse**: Select an existing or create a new warehouse for transactions via your website. This Warehouse will be different from your offline Warehouses. Stock for any online transactions will be deducted from the Warehouses set under Website Warehouse.
-* **Website Item Groups**: In this table you can select existing or create new [Item Groups](/docs/user/manual/en/stock/item-group) to classify items on your website.
-* **Set Meta Tags**: Meta tags help with SEO. See [Web Page](/docs/user/manual/en/website/web-page) to know how to add them.
+* **สไลด์โชว์**: สามารถแสดงสไลด์โชว์ที่ด้านบนของหน้า ไปที่หน้า [Homepage](/docs/user/manual/th/website/homepage) ในโมดูลเว็บไซต์เพื่อดูข้อมูลเพิ่มเติม
+* **รูปภาพ**: คุณสามารถแนบรูปภาพแทนสไลด์โชว์
+* **คลังเว็บไซต์**: เลือกคลังสินค้าที่มีอยู่หรือสร้างคลังสินค้าใหม่สำหรับการทำธุรกรรมผ่านเว็บไซต์ของคุณ โกดังนี้จะแตกต่างจากโกดังออฟไลน์ของคุณ สต็อคสำหรับธุรกรรมออนไลน์ใดๆ จะถูกหักออกจาก Warehouses ที่ตั้งอยู่ภายใต้ Website Warehouse
+* **กลุ่มรายการเว็บไซต์**: ในตารางนี้ คุณสามารถเลือกที่มีอยู่หรือสร้าง [กลุ่มรายการ](/docs/user/manual/th/stock/item-group) ใหม่เพื่อจัดประเภทรายการบนเว็บไซต์ของคุณ
+* **ตั้งเมตาแท็ก**: เมตาแท็กช่วยเรื่อง SEO ดู [หน้าเว็บ](/docs/user/manual/th/website/web-page) เพื่อทราบวิธีการเพิ่ม
 
-Visit [Manufacturing](/docs/user/manual/en/manufacturing) and [Website](/docs/user/manual/en/website) to understand these topics in detail.
+อ่าน [การผลิต](/docs/user/manual/th/manufacturing) และ [เว็บไซต์](/docs/user/manual/th/website) เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.20 Website Specifications
-This section is for configuring other details about the item.
+### 3.20 ข้อมูลจำเพาะของเว็บไซต์
+ส่วนนี้ใช้สำหรับกำหนดค่ารายละเอียดอื่นๆ เกี่ยวกับรายการ
 
-* **Copy from Item Group:** The 'Website Specifications' details will be fetched as set in a specific Item Group chosen on the previous section (2.17).
-* **Website Specifications**: Label and its description for the item. For example, 'Warranty: 1 year'.
-* **Website Description**: This will appear on the item page.
-* **Website Content**: (*Introduced in v12*) You can create additional styling, etc., use Bootstrap 4 markup to display on the item page.
+* **คัดลอกจากกลุ่มรายการ:** รายละเอียด 'ข้อมูลจำเพาะของเว็บไซต์' จะถูกดึงมาตามการตั้งค่าในกลุ่มรายการเฉพาะที่เลือกไว้ในส่วนก่อนหน้า (2.17)
+* **ข้อมูลจำเพาะของเว็บไซต์**: ป้ายกำกับและคำอธิบายสำหรับสินค้า ตัวอย่างเช่น 'การรับประกัน: 1 ปี'
+* **คำอธิบายเว็บไซต์**: สิ่งนี้จะปรากฏบนหน้ารายการ
+* **เนื้อหาเว็บไซต์**: (*แนะนำใน v12*) คุณสามารถสร้างสไตล์เพิ่มเติม ฯลฯ ใช้มาร์กอัป Bootstrap 4 เพื่อแสดงบนหน้ารายการ
 
-### 3.21 Hub Publishing Details
+### 3.21 รายละเอียดการเผยแพร่ฮับ
 
-The hub is a free online marketplace where Suppliers and Customers can transact. If both parties are on ERPNext, the transactions happen seamlessly. You can visit the hub at: https://hubmarket.org.
+ศูนย์กลางเป็นตลาดออนไลน์ฟรีที่ซัพพลายเออร์และลูกค้าสามารถทำธุรกรรมได้ หากทั้งสองฝ่ายอยู่ใน ERPNext การทำธุรกรรมจะเกิดขึ้นได้อย่างราบรื่น คุณสามารถเยี่ยมชมฮับได้ที่: https://hubmarket.org
 
-* **Publish in Hub**: Choose if you want to publish your item on https://hubmarket.org/. It is a free marketplace. If your supplier/customer is also on ERPNext, the transactions will be seamless. For example, on creating a Purchase Order from your end, a Sales Order will be created on the Supplier's end.
-* **Hub Warehouse**: This is a separate Warehouse to maintain the stock for your hub transactions.
-* **Synced With Hub**: Sync item and other details with the hub when transactions take place.
+* **เผยแพร่ในฮับ**: เลือกว่าคุณต้องการเผยแพร่รายการของคุณบน https://hubmarket.org/ หรือไม่ เป็นตลาดเสรี หากซัพพลายเออร์/ลูกค้าของคุณใช้ ERPNext ด้วย ธุรกรรมจะราบรื่น ตัวอย่างเช่น ในการสร้างใบสั่งซื้อจากฝั่งของคุณ ใบสั่งขายจะถูกสร้างขึ้นที่ส่วนท้ายของซัพพลายเออร์
+* ** Hub Warehouse**: นี่คือคลังสินค้าแยกต่างหากสำหรับดูแลสต็อกสำหรับธุรกรรมฮับของคุณ
+* **ซิงค์กับฮับ**: ซิงค์รายการและรายละเอียดอื่นๆ กับฮับเมื่อมีการทำธุรกรรม
 
-## 4. Video
+## 4. วีดีโอ
 
 <div>
   <div class='embed-container'>
@@ -294,20 +294,20 @@ The hub is a free online marketplace where Suppliers and Customers can transact.
   </div>
 </div>
 
-### 5. Related Topics
-1. [Item Price](/docs/user/manual/en/stock/item-price)
-1. [Item Codification](/docs/user/manual/en/stock/articles/item-codification)
-1. [Item Variants](/docs/user/manual/en/stock/item-variants)
-1. [Item Group](/docs/user/manual/en/stock/item-group)
-1. [Item Attribute](/docs/user/manual/en/stock/item-attribute)
-1. [Item Valuation FIFO And Moving Average](/docs/user/manual/en/stock/articles//item-valuation-fifo-and-moving-average)
-1. [Item Valuation Transactions](/docs/user/manual/en/stock/articles/item-valuation-transactions)
-1. [Maintain Stock Field Frozen In Item Master](/docs/user/manual/en/stock/articles/maintain-stock-field-frozen-in-item-master)
-1. [Managing Rejected Finished Goods Items](/docs/user/manual/en/stock/articles/managing-rejected-finished-goods-items)
-1. [Return Rejected Item](/docs/user/manual/en/stock/articles/return-rejected-item)
-1. [Track Items Using Barcode](/docs/user/manual/en/stock/articles/track-items-using-barcode)
-1. [Creating Depreciation For Item](/docs/user/manual/en/stock/articles/creating-depreciation-for-item)
-1. [Serial Number Naming](/docs/user/manual/en/stock/articles/serial-no-naming)
-1. [Opening Stock Balance Entry For Serialized And Batch Item](/docs/user/manual/en/stock/articles/opening-stock-balance-entry-for-serialized-and-batch-item)
-1. [Serial Number](/docs/user/manual/en/stock/serial-no)
-1. [Serial Number Naming](/docs/user/manual/en/stock/articles/serial-no-naming)
+### 5. หัวข้อที่เกี่ยวข้อง
+1. [ราคาสินค้า](/docs/user/manual/th/stock/item-price)
+1. [Item Codification](/docs/user/manual/th/stock/articles/item-codification)
+1. [รายการสินค้า](/docs/user/manual/th/stock/item-variants)
+1. [กลุ่มสินค้า](/docs/user/manual/th/stock/item-group)
+1. [Item Attribute](/docs/user/manual/th/stock/item-attribute)
+1. [Item Valuation FIFO And Moving Average](/docs/user/manual/th/stock/articles//item-valuation-fifo-and-moving-average)
+1. [รายการประเมินมูลค่าสินค้า](/docs/user/manual/th/stock/articles/item-valuation-transactions)
+1. [รักษาช่องสต็อคแช่แข็งใน Item Master](/docs/user/manual/th/stock/articles/maintain-stock-field-frozen-in-item-master)
+1. [การจัดการรายการสินค้าสำเร็จรูปที่ถูกปฏิเสธ](/docs/user/manual/th/stock/articles/managing-rejected-finished-goods-items)
+1. [ส่งคืนสินค้าที่ถูกปฏิเสธ](/docs/user/manual/th/stock/articles/return-rejected-item)
+1. [ติดตามรายการโดยใช้บาร์โค้ด](/docs/user/manual/th/stock/articles/track-items-using-barcode)
+1. [การสร้างค่าเสื่อมราคาสำหรับสินค้า](/docs/user/manual/th/stock/articles/creating-depreciation-for-item)
+1. [การตั้งชื่อหมายเลขซีเรียล](/docs/user/manual/th/stock/articles/serial-no-naming)
+1. [การเปิดรายการยอดคงเหลือสำหรับรายการต่อเนื่องและรายการแบทช์](/docs/user/manual/th/stock/articles/opening-stock-balance-entry-for-serialized-and-batch-item)
+1. [หมายเลขซีเรียล](/docs/user/manual/th/stock/serial-no)
+1. [การตั้งชื่อหมายเลขซีเรียล](/docs/user/manual/th/stock/articles/serial-no-naming)

@@ -1,18 +1,18 @@
 <!-- add-breadcrumbs -->
-# Payroll Management
+# การจัดการเงินเดือน
 
-Payroll processing is an important function of every enterprise HR. ERPNext greatly simplifies this process by offering an array of features that you can utilize from Salary Structure management to bulk processing Payroll of employees. Read the following documentation to understand how to configure and use ERPNext Human Resources to super power your Payroll processing.
+การประมวลผลเงินเดือนเป็นหน้าที่ที่สำคัญของ HR ทุกองค์กร ERPNext ช่วยลดความซับซ้อนของกระบวนการนี้อย่างมากโดยนำเสนอคุณสมบัติมากมายที่คุณสามารถใช้ได้ตั้งแต่การจัดการโครงสร้างเงินเดือนไปจนถึงการประมวลผลเงินเดือนของพนักงานจำนวนมาก อ่านเอกสารต่อไปนี้เพื่อทำความเข้าใจวิธีกำหนดค่าและใช้ ERPNext Human Resources เพื่อเพิ่มประสิทธิภาพการประมวลผลเงินเดือนของคุณ
 
-## Related Topics
+## หัวข้อที่เกี่ยวข้อง
 
-1. [Payroll Period](/docs/user/manual/en/human-resources/payroll-period)
-1. [Salary Component](/docs/user/manual/en/human-resources/salary-component)
-1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
-1. [Salary Structure Assignment](/docs/user/manual/en/human-resources/salary-structure-assignment)
-1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
-1. [Additional Salary](/docs/user/manual/en/human-resources/additional-salary)
-1. [Retention Bonus](/docs/user/manual/en/human-resources/retention-bonus)
-1. [Employee Incentive](/docs/user/manual/en/human-resources/employee-incentive)
+1. [ระยะเวลาการจ่ายเงินเดือน](/docs/user/manual/th/human-resources/payroll-period)
+1. [องค์ประกอบเงินเดือน](/docs/user/manual/th/human-resources/salary-component)
+1. [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
+1. [การกำหนดโครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure-assignment)
+1. [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)
+1. [เงินเดือนเพิ่มเติม](/docs/user/manual/th/human-resources/additional-salary)
+1. [โบนัสการเก็บรักษา](/docs/user/manual/th/human-resources/retention-bonus)
+1. [รางวัลจูงใจพนักงาน](/docs/user/manual/th/human-resources/employee-incentive)
 
 
 {next}

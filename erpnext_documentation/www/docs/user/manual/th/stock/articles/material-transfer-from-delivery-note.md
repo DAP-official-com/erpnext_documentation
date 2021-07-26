@@ -1,59 +1,58 @@
 <!-- add-breadcrumbs -->
-# Material Transfer from Delivery Note and Purchase Receipt
+# การโอนวัสดุจากใบส่งมอบและใบเสร็จการซื้อ
 
+ใน ERPNext คุณสามารถสร้างรายการการโอนย้ายวัสดุได้จากเอกสาร [รายการสต็อค](/docs/user/manual/th/stock/stock-entry.html) อย่างไรก็ตาม มีบางสถานการณ์ในการโอนวัสดุที่ต้องแสดงเป็นใบส่งมอบและใบเสร็จการซื้อ
 
-In ERPNext, you can create Material Transfer entry from [Stock Entry](/docs/user/manual/en/stock/stock-entry.html) document. However, there are some scenarios in the Material Transfer where it needs to be presented as a Delivery Note and Purchase Receipt.
+## การโอนวัสดุจากใบส่งของ
 
-## Material Transfer from Delivery Note
+### สถานการณ์
 
-### Scenarios
+1. ตัวอย่างหนึ่งคือเมื่อคุณโอนวัสดุจากร้านค้าของคุณไปยังไซต์โครงการ อย่างไรก็ตาม คุณต้องนำเสนอเป็นใบส่งมอบให้กับลูกค้า
 
-1. One of the examples is when you transfer a Material from your stores to project site, however, you need to present it as a Delivery Note to the client.
+2. นอกจากนี้ยังมีข้อกำหนดทางกฎหมายที่ต้องเสียภาษีในการโอนวัสดุแต่ละครั้ง การจัดการในธุรกรรมเช่น ใบส่งมอบ ง่ายกว่าในรายการสต็อค
 
-2. Also, there are statutory requirements where taxes are to be applied on each transfer of Material. It is easier to manage in a transaction like Delivery Note, than in the Stock Entry.
+เมื่อพิจารณาจากสถานการณ์เหล่านี้แล้ว บทบัญญัติของการโอนวัสดุก็ถูกเพิ่มเข้าไปในใบส่งมอบด้วยเช่นกัน ต่อไปนี้เป็นขั้นตอนในการใช้ใบส่งของสำหรับสร้างรายการโอนวัสดุ
 
-Considering these scenarios, the provision of Material Transfer has been added in the Delivery Note as well. Following are the steps to use Delivery Note for creating Material Transfer entry.
+### ขั้นตอน
 
-### Steps
+#### เปิดใช้งานคลังสินค้าของลูกค้า
 
-#### Enable Customer Warehouse
-
-Delivery Note Item doctype has a hidden field of Customer Warehouse. You can enable it from [Stock Settings](/docs/user/manual/en/stock/stock-settings) by enabling "Allow Material Transfer From Delivery Note and Sales Invoice"
+ประเภทเอกสารการจัดส่งหมายเหตุมีฟิลด์ที่ซ่อนอยู่ในคลังสินค้าของลูกค้า คุณสามารถเปิดใช้งานได้จาก [การตั้งค่าสต็อค](/docs/user/manual/th/stock/stock-settings) โดยเปิดใช้งาน "อนุญาตการโอนวัสดุจากใบส่งมอบและใบแจ้งหนี้การขาย"
 
 <img class="screenshot" alt="Delivery Note Material Transfer" src="{{docs_base_url}}/assets/img/stock/customer-warehouse.gif">
 
-### Select Warehouses
+### เลือกคลังสินค้า
 
-When creating a Delivery Note for Material Transfer, for an item select source Warehouse as From Warehouse.
+เมื่อสร้างใบส่งสินค้าสำหรับการโอนวัสดุ สำหรับสินค้า ให้เลือกต้นทางของโกดังเป็นจากโกดัง
 
-In the Customer Warehouse, select a Warehouse where Material is to be transferred or select a target warehouse.
+ในคลังสินค้าของลูกค้า เลือกคลังสินค้าที่จะโอนวัสดุหรือเลือกคลังสินค้าปลายทาง
 
 <img class="screenshot" alt="Delivery Note Material Transfer" src="{{docs_base_url}}/assets/img/stock/customer-warehouse-2.png">
 
-On the submission of a Delivery Note, item's stock will be deducted from "From Warehouse" and added to the "Customer Warehouse".
+ในการยื่นใบส่งสินค้า สต็อคของสินค้าจะถูกหักจาก "จากคลังสินค้า" และเพิ่มไปยัง "คลังสินค้าของลูกค้า"
 
-## Material Transfer from Purchase Receipt
+## การโอนวัสดุจากใบเสร็จรับเงิน
 
-### Scenarios
+### สถานการณ์
 
-There are statutory requirements where taxes are to be applied on each transfer of Material. It is easier to manage a situation like this in a transaction like Purchase Receipt, than in the Stock Entry as taxes cannot be applied on transfers of items via Stock Entry
+มีข้อกำหนดทางกฎหมายที่ต้องเสียภาษีในการโอนวัสดุแต่ละครั้ง การจัดการสถานการณ์เช่นนี้ในธุรกรรมเช่น ใบเสร็จการซื้อ ง่ายกว่าในรายการสินค้าเนื่องจากไม่สามารถใช้ภาษีในการโอนสินค้าผ่านรายการสินค้าได้
 
-Following are the steps to use Purchase Receipt for creating Material Transfer Entry.
+ต่อไปนี้เป็นขั้นตอนในการใช้ใบเสร็จรับเงินสำหรับการสร้างรายการโอนวัสดุ
 
-### Steps
+### ขั้นตอน
 
-#### Enable Supplier Warehouse
+#### เปิดใช้งานคลังสินค้าของซัพพลายเออร์
 
-Similar to the Customer Warehouse shown above, the first step is to enable the Supplier Warehouse from [Stock Settings](/docs/user/manual/en/stock/stock-settings) as shown above.
+คล้ายกับ Customer Warehouse ที่แสดงด้านบน ขั้นตอนแรกคือการเปิดใช้งานคลังสินค้าซัพพลายเออร์ จาก [การตั้งค่าสต็อค](/docs/user/manual/th/stock/stock-settings) ดังที่แสดงด้านบน
 
 <img class="screenshot" alt="Delivery Note Material Transfer" src="{{docs_base_url}}/assets/img/stock/supplier-warehouse-enable.gif">
 
-### Select Warehouses
+### เลือกคลังสินค้า
 
-When creating a Purchase Receipt for Material Transfer, for an Item, select the target Warehouse as Accepted Warehouse.
+เมื่อสร้างใบเสร็จการซื้อสำหรับการโอนวัสดุ สำหรับสินค้า ให้เลือกคลังสินค้าปลายทางเป็นคลังสินค้าที่ยอมรับ
 
-In the Supplier Warehouse, select a Warehouse from where Material is to be transferred.
+ในคลังสินค้าของซัพพลายเออร์ เลือกคลังสินค้าที่จะโอนวัสดุ
 
 <img class="screenshot" alt="Purchase Receipt Material Transfer" src="{{docs_base_url}}/assets/img/stock/supplier-warehouse.png">
 
-On submission of the Purchase Receipt, item's stock will be deducted from "Supplier Warehouse" and added to the "Accepted Warehouse".
+เมื่อส่งใบเสร็จรับเงิน สต็อคของสินค้าจะถูกหักออกจาก "คลังสินค้าซัพพลายเออร์" และเพิ่มลงใน "คลังสินค้ารับของ"

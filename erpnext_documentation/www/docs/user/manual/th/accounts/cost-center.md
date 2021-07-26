@@ -1,67 +1,59 @@
 <!-- add-breadcrumbs -->
-# Cost Center
+# ศูนย์ต้นทุน
 
-**A Cost Center is a part of an organization where costs or income can be charged.**
+**ศูนย์ต้นทุนเป็นส่วนหนึ่งขององค์กรที่สามารถเรียกเก็บค่าใช้จ่ายหรือรายได้**
 
-In ERPNext you can use the Cost Center as a Profit Center.
+ใน ERPNext คุณสามารถใช้ศูนย์ต้นทุนเป็นศูนย์กำไรได้
 
-Your Chart of Accounts is mainly designed to provide reports to the government and tax authorities.
+ผังบัญชีของคุณได้รับการออกแบบมาเป็นหลักเพื่อจัดทำรายงานต่อรัฐบาลและหน่วยงานด้านภาษี
 
-Most businesses have multiple activities like different product lines, market segments, areas of business, etc that share some common overheads. They should ideally have their own structure to report whether they
-are profitable or not. For this purpose, there is an alternate structure called the Chart of Cost Centers.
+ธุรกิจส่วนใหญ่มีกิจกรรมหลายอย่าง เช่น สายผลิตภัณฑ์ที่แตกต่างกัน ส่วนตลาด พื้นที่ของธุรกิจ ฯลฯ ที่มีค่าใช้จ่ายร่วมกันบางส่วน พวกเขาควรมีโครงสร้างของตนเองในการรายงานว่ามีผลกำไรหรือไม่ เพื่อจุดประสงค์นี้ มีโครงสร้างอื่นที่เรียกว่าผังศูนย์ต้นทุน
 
-A Cost Center acts like an [Accounting Dimension](/docs/user/manual/en/accounts/accounting-dimensions) which helps you track costing based on particular areas.
+ศูนย์ต้นทุนทำหน้าที่เหมือน [ลำดับขั้นทางบัญชี](/docs/user/manual/th/accounts/accounting-dimensions) ซึ่งช่วยให้คุณติดตามการคิดต้นทุนตามพื้นที่เฉพาะ
 
-The Cost Center can be set at these levels:
+ศูนย์ต้นทุนสามารถตั้งค่าได้ที่ระดับเหล่านี้:
 
-* Company
-* Item
-* Order/Invoice
+* บริษัท
+* สิ่งของ
+* สั่งซื้อ/ใบแจ้งหนี้
 
-The Cost Center can be linked to the following transactions:
+ศูนย์ต้นทุนสามารถเชื่อมโยงกับธุรกรรมต่อไปนี้:
 
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
-1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
-1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบกำกับสินค้า](/docs/user/manual/th/accounts/purchase-invoice)
+1. [รายการบันทึก](/docs/user/manual/th/accounts/journal-entry)
+1. [รายการชำระเงิน](/docs/user/manual/th/accounts/payment-entry)
+1. [บันทึกการส่งมอบ](/docs/user/manual/th/stock/delivery-note)
 
-And other transactions which can be used for budgeting. You can also use Cost Center for [Budgeting](/docs/user/manual/en/accounts/budgeting).
+และธุรกรรมอื่น ๆ ที่สามารถใช้ในการจัดทำงบประมาณได้ นอกจากนี้คุณยังสามารถใช้ศูนย์ค่าใช้จ่ายสำหรับ [การจัดทำงบประมาณ](/docs/user/manual/th/accounts/budgeting).
 
-## 1. Cost Center tree
+## 1. ศูนย์ต้นทุนตามโครงสร้างต้นไม้
 
-You can create a tree of Cost Centers to represent your business better. Each
-Income / Expense entry is also tagged against a Cost Center. If 'Allow Cost Center In Entry of Balance Sheet Account' is checked under Account Settings, the system will allow a User to tag entry in Balance Sheet Accounts against a Cost Center.
+คุณสามารถสร้างศูนย์ต้นทุนเพื่อเป็นตัวแทนธุรกิจของคุณได้ดีขึ้น รายการรายรับ / ค่าใช้จ่ายแต่ละรายการจะถูกติดแท็กกับศูนย์ต้นทุนด้วย หากเลือก If 'Allow Cost Center In Entry of Balance Sheet Account' ภายใต้การตั้งค่าบัญชี ระบบจะอนุญาตให้ผู้ใช้แท็กรายการในบัญชีงบดุลกับศูนย์ต้นทุน
 
-For example, if you have two types of sales:
+ตัวอย่างเช่น หากคุณมีการขายสองประเภท:
 
- * Walk-in Sales
- * Online Sales
+ * การขายแบบวอล์กอิน (Offline)
+ * การขายออนไลน์
 
-You may not have shipping expenses for your walk-in customers, and no shop-
-rent for your online customers. If you want to get the profitability of each
-of these separately, you should create the two as Cost Centers and mark all
-sales with either "Walk-in" or "Online" Cost Center. Mark all your purchases in the
-same way.
+คุณอาจไม่มีค่าขนส่งสำหรับลูกค้าที่เดินเข้าร้าน และไม่มีร้านเช่าสำหรับลูกค้าออนไลน์ของคุณ หากคุณต้องการได้รับผลกำไรจากแต่ละรายการแยกกัน คุณควรสร้างทั้งสองเป็นศูนย์ต้นทุน และทำเครื่องหมายการขายทั้งหมดด้วยศูนย์ต้นทุน "วอล์กอิน" หรือ "ออนไลน์" ทำเครื่องหมายการซื้อทั้งหมดของคุณในลักษณะเดียวกัน
 
-Thus when you do your analysis you get a better understanding as to which side
-of your business is doing better. Since ERPNext has an option to add multiple
-Companies, you can create Cost Centers for each Company and manage them
-separately.
+ดังนั้น เมื่อคุณทำการวิเคราะห์ คุณจะได้รับความเข้าใจที่ดีขึ้นว่าธุรกิจของคุณด้านใดดีกว่า เนื่องจาก ERPNext มีตัวเลือกในการเพิ่มหลายบริษัท คุณจึงสร้างศูนย์ต้นทุนสำหรับแต่ละบริษัทและจัดการแยกกันได้
 
-To access the Chart of Cost Centers, go to:
-> Home > Accounting > Budget and Cost Center > Chart of Cost Centers
+ในการเข้าถึงผังศูนย์ต้นทุน ไปที่:
 
-## 2. How to set up Chart of Cost Centers
-1. Go to the Chart of Cost Centers.
-1. Add region-wise nodes.
-1. Add other nodes as per your needs.
+> หน้าหลัก > การบัญชี > ศูนย์งบประมาณและต้นทุน > ผังศูนย์ต้นทุน
 
-Selecting a different Company will display the Cost Centers for that Company.
+## 2. วิธีการตั้งค่าผังศูนย์ต้นทุน
+
+1. ไปที่ผังศูนย์ต้นทุน
+1. เพิ่มโหนดตามภูมิภาค
+1. เพิ่มโหนดอื่น ๆ ตามความต้องการของคุณ
+การเลือกบริษัทอื่นจะแสดงศูนย์ต้นทุนสำหรับบริษัทนั้น
 
 <img class="screenshot" alt="Cost Center" src="{{docs_base_url}}/assets/img/accounts/chart-of-cost-center.png"> 
 
-### 3. Related Topics
-1. [Budgeting](/docs/user/manual/en/accounts/budgeting)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [การจัดทำงบประมาณ](/docs/user/manual/th/accounts/budgeting)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ใบกำกับสินค้า](/docs/user/manual/th/accounts/purchase-invoice)

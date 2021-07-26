@@ -1,43 +1,43 @@
 <!-- add-breadcrumbs -->
-# Accounting Dimensions Filters
+# ตัวกรองลำดับขั้นทางบัญชี
 
 > Introduced in Version 13
 
-In ERPNext, you can control the tagging of various accounting dimensions against a specific account.
-You can either allow or restrict certain accounting dimensions against an account using the accounting dimension filters
+ใน ERPNext คุณสามารถควบคุมการแท็กของลำดับขั้นทางบัญชีต่างๆ กับบัญชีเฉพาะได้ คุณสามารถอนุญาตหรือจำกัดลำดับขั้นทางบัญชีบางอย่างกับบัญชีโดยใช้ตัวกรองลำดับขั้นทางบัญชี
 
-To access the Accounting Dimension Filter list, go to:
-> Home > Accounting > Accounting Dimension Filters
+ในการเข้าถึงรายการตัวกรองลำดับขั้นทางบัญชี ไปที่:
 
-## 1. How to create an Accounting Dimension Filter in ERPNext.
+> หน้าหลัก > การบัญชี > ตัวกรองลำดับขั้นทางบัญชี
 
-1. Go to the Accounting Dimension Filter list and click on New.
-1. Select the Accounting Dimension on which restriction has to be applied.
-1. Select "Allow" or "Restrict" in the Allow Or Restrict field based on the type of restriction you want to apply.
-1. Add accounts on which restriction will be applied in the Accounts table. Optionally you can also check the "Is Mandatory" checkbox if the accounting dimension has to be made mandatory for any specific account.
-1. Add dimension values in the Dimensions table that will be allowed or restricted for the mentioned accounts.
+## 1. วิธีสร้างตัวกรองลำดับขั้นทางบัญชีใน ERPNext
+
+1. ไปที่รายการตัวกรองลำดับขั้นทางบัญชีแล้วคลิกใหม่
+1. เลือกลำดับขั้นทางบัญชีที่จะใช้ข้อจำกัด
+1. เลือก "อนุญาต" หรือ "จำกัด" ในช่องอนุญาตหรือจำกัดตามประเภทของข้อจำกัดที่คุณต้องการใช้
+1. เพิ่มบัญชีที่จะใช้ข้อจำกัดในตารางบัญชี นอกจากนี้ คุณยังสามารถเลือกช่องกาเครื่องหมาย "เป็นข้อบังคับ" หากจำเป็นต้องมีการกำหนดลำดับขั้นทางบัญชีสำหรับบัญชีใดบัญชีหนึ่งโดยเฉพาะ
+1. เพิ่มค่าลำดับขั้นในตารางลำดับขั้นที่จะได้รับอนุญาตหรือจำกัดสำหรับบัญชีดังกล่าว
 
 <img alt="Create accounting dimension filter" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/accounting-dimension-filter.png">
 
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Filtering accounting dimensions in transactions
+### 2.1 การกรองลำดับขั้นทางบัญชีในธุรกรรม
 
-Based on the restrictions applied on the account, only allowed dimensions will be filtered and shown in the transactions.
+ขึ้นอยู่กับข้อจำกัดที่ใช้กับบัญชี เฉพาะลำดับขั้นที่อนุญาตเท่านั้นที่จะถูกกรองและแสดงในธุรกรรม
 
 <img alt="Filter Apply" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/accounting-dimension-filter-apply.png">
 
-### 2.2 Validations for Invalid and Mandatory Dimensions
+### 2.2 การตรวจสอบสำหรับลำดับขั้นข้อมูลที่ไม่ถูกต้องและลำดับขั้นบังคับ
 
-In case any mandatory dimension is missing or a restricted dimension is tagged against any applicable account, the system won't allow submitting that transaction until the correct accounting dimension is selected.
+ในกรณีที่ลำดับขั้นบังคับขาดหายไปหรือลำดับขั้นที่จำกัดถูกแท็กกับบัญชีที่เกี่ยวข้อง ระบบจะไม่อนุญาตให้ส่งธุรกรรมนั้นจนกว่าจะเลือกลำดับขั้นทางบัญชีที่ถูกต้อง
 
 <img alt="Invalid Dimension" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/invalid-dimension.png">
 
 <img alt="Mandatory Dimension" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/mandatory-dimension.png">
 
 
-### Related Topics
-1. [Cost Center](/docs/user/manual/en/accounts/cost-center)
-1. [Budgeting](/docs/user/manual/en/accounts/budgeting)
-1. [Accounting Dimensions](/docs/user/manual/en/accounts/accounting-dimensions)
+### หัวข้อที่เกี่ยวข้อง
+1. [ศูนย์ต้นทุน](/docs/user/manual/th/accounts/cost-center)
+1. [การจัดทำงบประมาณ](/docs/user/manual/th/accounts/budgeting)
+1. [ลำดับขั้นทางบัญชี](/docs/user/manual/th/accounts/accounting-dimensions)

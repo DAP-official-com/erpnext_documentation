@@ -1,49 +1,49 @@
 <!-- add-breadcrumbs -->
-# Invoice Discounting
+# ส่วนลดใบแจ้งหนี้
 
-**Invoice discounting is the practice of using a company's unpaid sales invoices as collateral for a short term loan, which is issued by a bank or a finance company.**
+**การลดหย่อนใบแจ้งหนี้เป็นวิธีปฏิบัติในการใช้ใบแจ้งหนี้การขายที่ยังไม่ได้ชำระเงินของบริษัทเป็นหลักประกันเงินกู้ระยะสั้น ซึ่งออกโดยธนาคารหรือบริษัทเงินทุน**
 
-To access the Invoice discounting list, go to:
-> Home > Accounting > Banking and Payments > Invoice Discounting
+หากต้องการเข้าถึงรายการส่วนลดในใบแจ้งหนี้ ให้ไปที่:
+> หน้าแรก > การบัญชี > การธนาคารและการชำระเงิน > ส่วนลดใบแจ้งหนี้
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-You need to create following ledgers in order to post invoice discounting transactions.
+คุณต้องสร้างบัญชีแยกประเภทต่อไปนี้เพื่อลงรายการบัญชีธุรกรรมส่วนลดในใบแจ้งหนี้
 
-* **Short Term Loan:** A ledger under the 'Current Liabilities' > 'Loans (Liabilities)' group for loan.
-* **Bank Account Charges:** An expense ledger for charges levied by the bank.
-* **Accounts Receivable Credit Account:** A control account of type receivable.
-* **Accounts Receivable Discounted Account:** A receivable account for invoices which have been discounted.
-* **Accounts Receivable Unpaid Account:** A receivable account for invoices which were discounted and remain unpaid even after the loan period is over.
+* **เงินกู้ระยะสั้น** : บัญชีแยกประเภทภายใต้กลุ่ม 'หนี้สินหมุนเวียน' > 'เงินกู้ (หนี้สิน)' สำหรับเงินกู้
+* **ค่าธรรมเนียมบัญชีธนาคาร** : บัญชีแยกประเภทค่าใช้จ่ายสำหรับค่าใช้จ่ายที่ธนาคารเรียกเก็บ
+* **บัญชีเครดิตลูกหนี้** : บัญชีควบคุมประเภทลูกหนี้
+* **บัญชีลูกหนี้ลดราคา** : บัญชีลูกหนี้สำหรับใบแจ้งหนี้ที่มีการลดราคา
+* **บัญชีลูกหนี้ค้างชำระ** : บัญชีลูกหนี้สำหรับใบแจ้งหนี้ที่ลดราคาและยังไม่ได้ชำระแม้หลังจากพ้นระยะเวลาเงินกู้
 
 ## 2. How to Post an Invoice Discounting Transaction
 
-1. Go to the Invoice Discounting list, click on New.
-1. Enter Posting Date and Loan Start Date. Enter the Loan Period in days.
-1. Select invoices either manually in the table or by clicking on the 'Get Invoices' button on the top right.
-1. Select Short Term Loan Account, Bank Account, and Bank Charges Account.
-1. Select Accounts Receivable Credit Account, Accounts Receivable Discounted Account and Accounts Receivable Unpaid Account.
-1. Click on Save then Submit.
-1. After submitting the Invoice Discounting form, click on the **Disburse Loan**.
+1. ไปที่รายการส่วนลดใบแจ้งหนี้ คลิกที่ใหม่
+1. ป้อนวันที่โพสต์และวันที่เริ่มต้นเงินกู้ ป้อนระยะเวลาเงินกู้เป็นวัน
+1. เลือกใบแจ้งหนี้ด้วยตนเองในตารางหรือโดยคลิกที่ปุ่ม 'รับใบแจ้งหนี้' ที่ด้านบนขวา
+1. เลือกบัญชีเงินกู้ระยะสั้น บัญชีธนาคาร และบัญชีค่าธรรมเนียมธนาคาร
+1. เลือกบัญชีเครดิตลูกหนี้ บัญชีลูกหนี้ลดบัญชี และบัญชีลูกหนี้ค้างชำระ
+1. คลิกบันทึกแล้วส่ง
+1. หลังจากส่งแบบฟอร์มใบแจ้งหนี้ส่วนลด กดที่ **เงินกู้เบิกจ่าย**
   <img class="screenshot" alt="Lead" src="{{docs_base_url}}/assets/img/accounts/invoice_discounting.png">
-1. You'll be taken to a [Journal Entry](/docs/user/manual/en/accounts/journal-entry) screen. Save and Submit the Journal Entry.
+1. คุณจะเข้าสู่หน้า [รายการบันทึกประจำวัน](/docs/user/manual/th/accounts/journal-entry) บันทึกและส่งรายการบันทึกประจำวัน
   ![Journal Entry](/docs/assets/img/accounts/invoice-discounting-je.png)
   
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Import Invoices
-Click on 'Get Invoices' button to import invoices. You can import invoices by filtering on certain criteria.
+### 2.1 นำเข้าใบแจ้งหนี้
+คลิกที่ปุ่ม 'รับใบแจ้งหนี้' เพื่อนำเข้าใบแจ้งหนี้ คุณสามารถนำเข้าใบแจ้งหนี้ได้โดยการกรองตามเกณฑ์บางอย่าง
 
-* Invoices created against a specific Customer.
-* Date range between which the invoices were raised.
-* Minimum and maximum amount.
+* ใบแจ้งหนี้ที่สร้างขึ้นโดยเทียบกับลูกค้ารายใดรายหนึ่ง
+* ช่วงวันที่ระหว่างที่ใบแจ้งหนี้ถูกยกขึ้น
+* จำนวนเงินขั้นต่ำและสูงสุด
 
-You can also specify multiple of the above filters.
+คุณยังสามารถระบุตัวกรองด้านบนได้หลายตัว
 
-### 2.2 Closing the Loan
-When you repay the loan at the end of the loan period or before that, you can update the same by clicking on 'Close Loan' button.
+### 2.2 การปิดเงินกู้
+เมื่อคุณชำระคืนเงินกู้เมื่อสิ้นสุดระยะเวลาเงินกู้หรือก่อนหน้านั้น คุณสามารถอัปเดตข้อมูลเดียวกันได้โดยคลิกที่ปุ่ม 'ปิดสินเชื่อ'
   ![Journal Entry](/docs/assets/img/accounts/invoice-discounting-disbursed.png)
-System will prepare the Journal Entry. Review and Submit the it.
+ระบบจะทำการจัดเตรียมรายการบันทึกประจำวันตรวจสอบและส่งมัน
 
-### 2.3 Auto Update of Ledgers at the end of Loan Period
-If the loan is not repaid at the end of loan period, system will create a Journal Entry via a scheduled job to shift value from 'Accounts Receivable Discounted Account' to 'Accounts Receivable Unpaid Account'. This will make it easy to trace the invoices which were discounted and remained unpaid at the end of the loan period.
+### 2.3 อัปเดตอัตโนมัติของบัญชีแยกประเภทเมื่อสิ้นสุดระยะเวลาเงินกู้
+หากเงินกู้ไม่ชำระคืนเมื่อสิ้นสุดระยะเวลากู้ยืม ระบบจะสร้างรายการบันทึกประจำวันผ่านงานที่กำหนดเวลาไว้เพื่อเปลี่ยนค่าจาก 'บัญชีลูกหนี้ที่มีส่วนลดบัญชี' เป็น 'บัญชีลูกหนี้ค้างชำระ' ซึ่งจะทำให้ง่ายต่อการติดตามใบแจ้งหนี้ที่มีส่วนลดและยังไม่ได้ชำระเมื่อสิ้นสุดระยะเวลาเงินกู้

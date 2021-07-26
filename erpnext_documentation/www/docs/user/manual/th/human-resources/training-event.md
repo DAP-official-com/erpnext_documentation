@@ -1,52 +1,52 @@
-# Training Event
+# กิจกรรมการฝึกอบรม
 
-**Training Event allows you to schedule seminars, workshops, conferences, etc. under a Training Program.**
+**กิจกรรมการฝึกอบรมช่วยให้คุณสามารถจัดกำหนดการสัมมนา เวิร์กช็อป การประชุม ฯลฯ ภายใต้โปรแกรมการฝึกอบรม**
 
-You can also invite your employees to attend the event using this feature.
+คุณยังสามารถเชิญพนักงานของคุณเข้าร่วมกิจกรรมโดยใช้คุณสมบัตินี้
 
-To access Training Event, go to:
+ในการเข้าถึงกิจกรรมการฝึกอบรม ไปที่:
 
-> Home > Human Resources > Training > Training Event
+> หน้าแรก > ทรัพยากรบุคคล > การอบรม > งานอบรม
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating a Training Event, it is advisable you create the following documents:
+ก่อนสร้างกิจกรรมการฝึกอบรม ขอแนะนำให้คุณสร้างเอกสารต่อไปนี้:
 
-* [Training Program](/docs/user/manual/en/human-resources/training-program)
-* [Employee](/docs/user/manual/en/human-resources/employee)
+* [โปรแกรมการฝึกอบรม](/docs/user/manual/th/human-resources/training-program)
+* [พนักงาน](/docs/user/manual/th/human-resources/employee)
 
-## 2. How to create a Training Event
+## 2. วิธีสร้างกิจกรรมการฝึกอบรม
 
-1. Go to the Training Event list, click on New.
-1. Enter the Event Name.
-1. Select the Event Type.
-1. Select Event Level (Beginner, Intermediate, Expert).
-1. Enter the Trainer Name, Email and Contact Number.
-1. Select the Event [Course](/docs/user/manual/en/education/course). Enter the Start Time, End Time and Location of the Training Event.
-1. Additionally, you can also write a short description of the Event in the Description box.
-1. Save and Submit.
+1. ไปที่รายการกิจกรรมการฝึกอบรม คลิกที่ ใหม่
+1. ป้อนชื่อกิจกรรม
+1. เลือกประเภทเหตุการณ์
+1. เลือกระดับเหตุการณ์ (ระดับเริ่มต้น ระดับกลาง ระดับผู้เชี่ยวชาญ)
+1. กรอกชื่อเทรนเนอร์ อีเมล และเบอร์ติดต่อ
+1. เลือกกิจกรรม [หลักสูตร](/docs/user/manual/th/education/course) ป้อนเวลาเริ่มต้น เวลาสิ้นสุด และสถานที่ของกิจกรรมการฝึกอบรม
+1. นอกจากนี้ คุณยังสามารถเขียนคำอธิบายสั้นๆ ของกิจกรรมในกล่องคำอธิบาย
+1. บันทึกและส่ง
 
     <img class="screenshot" alt="Employee" src="{{docs_base_url}}/assets/img/human-resources/training-event.png">
 
-> **Note:**  Check the 'Has Certificate' checkbox if the Training Event is a certified course.
+> **หมายเหตุ:** เลือกช่องทำเครื่องหมาย 'มีใบรับรอง' หากกิจกรรมการฝึกอบรมเป็นหลักสูตรที่ผ่านการรับรอง
 
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Inviting Employees for the Event
+### 3.1 การเชิญพนักงานเข้าร่วมกิจกรรม
 
-You can invite your employees to attend the Training Event. You can do so by selecting the employees to be invited in the Employees table.
+คุณสามารถเชิญพนักงานของคุณเข้าร่วมกิจกรรมการฝึกอบรม คุณสามารถทำได้โดยเลือกพนักงานที่จะได้รับเชิญในตารางพนักงาน
 
-By default the status of the employee will be 'Open'. You can mark the Event as Mandatory.
+โดยค่าเริ่มต้น สถานะของพนักงานจะเป็น 'เปิด' คุณสามารถทำเครื่องหมายกิจกรรมเป็นข้อบังคับ
 
 <img class="screenshot" alt="Employee" src="{{docs_base_url}}/assets/img/human-resources/training-event-employee.png">
 
-When you submit the Training Event, a notification will be sent to the employee notifying that the Training has been scheduled. This is sent via Email Alert "Training Scheduled". You can modify this Email Alert to customize the message.
+เมื่อคุณส่งกิจกรรมการฝึกอบรม จะมีการส่งการแจ้งเตือนไปยังพนักงานเพื่อแจ้งว่าได้กำหนดเวลาการฝึกอบรมแล้ว ซึ่งจะถูกส่งผ่าน อีเมลแจ้งเตือน "ตารางการเรียน" คุณสามารถแก้ไข อีเมลแจ้งเตือน นี้เพื่อปรับแต่งข้อความ
 
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Training Result](/docs/user/manual/en/human-resources/training-result)
-1. [Training Feedback](/docs/user/manual/en/human-resources/training-feedback)
-1. [Course](/docs/user/manual/en/education/course)
+1. [ผลการฝึกอบรม](/docs/user/manual/th/human-resources/training-result)
+1. [ข้อเสนอแนะการฝึกอบรม](/docs/user/manual/th/human-resources/training-feedback)
+1. [หลักสูตร](/docs/user/manual/th/education/course)
 `

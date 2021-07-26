@@ -1,87 +1,87 @@
 <!-- add-breadcrumbs -->
-# Opportunity
+# โอกาส
 
-**Opportunity is a qualified lead.**
+**โอกาสจะมาจากลูกค้าเป้าหมายที่มีความเป็นไปได้**
 
-When you get a hint that lead is looking for a product/service that you offer, you can convert that lead into an opportunity. You can also create an opportunity against an existing customer. Multiple Opportunities can be collected against a lead or a customer.
+เมื่อคุณได้รับคำแนะนำว่าลูกค้าเป้าหมายกำลังมองหาผลิตภัณฑ์/บริการที่คุณนำเสนอ คุณสามารถเปลี่ยนโอกาสในการขายนั้นเป็นโอกาสทางการขาย คุณยังสามารถสร้างโอกาสทางการขายกับลูกค้าที่มีอยู่ได้ สามารถรวบรวมโอกาสที่หลากหลายกับลูกค้าเป้าหมายหรือลูกค้า
 
-To access the Opportunity list, go to:
-> Home > CRM > Sales Pipeline > Opportunity
+ในการเข้าถึงรายการโอกาส ไปที่:
+> หน้าหลัก > CRM > ไปป์ไลน์การขาย > โอกาส
 
-## 1. How to Create an Opportunity
+## 1. วิธีสร้างโอกาส
 
-1. Go to the Opportunity list and click on New.
-1. In 'Opportunity From', select Lead if opportunity is from a lead.
+1. ไปที่รายการโอกาสและคลิกที่ใหม่
+1. ใน 'โอกาสจาก' เลือกลูกค้าเป้าหมาย ถ้าโอกาสมาจากลูกค้าเป้าหมาย
 
    <img class="screenshot" alt="Opportunity" src="{{docs_base_url}}/assets/img/crm/new-opportunity.gif">
 
-1. You can also go to an “Open” Lead and select “Opportunity” from the **Make** dropdown as shown below.
+1. คุณสามารถไปที่ลูกค้าเป้าหมาย "เปิด" และเลือก "โอกาส" จากดรอปดาวน์ **สร้าง** ดังที่แสดงด้านล่าง
 
     <img class="screenshot" alt="Opportunity" src="{{docs_base_url}}/assets/img/crm/lead-to-opportunity.png">
 
-1. In 'Opportunity From', select Customer if opportunity is from a customer.
+1. ใน 'โอกาสจาก' เลือกลูกค้า ถ้าโอกาสมาจากลูกค้า
 
     <img class="screenshot" alt="Opportunity" src="{{docs_base_url}}/assets/img/crm/requirement-gathering.png">
 
-1. Select Opportunity Type. This indicates the broad category of opportunity like Sales, Support, Maintenance etc.
+1. เลือกประเภทโอกาส ซึ่งระบุประเภทของโอกาสกว้างๆ เช่น การขาย การสนับสนุน การบำรุงรักษา ฯลฯ
 
-1. You can add more details like Opportunity Amount, Probability (of conversion), Currency in 'SALES' section.
+1. คุณสามารถเพิ่มรายละเอียดเพิ่มเติม เช่น จำนวนโอกาส ความน่าจะเป็น (ของการแปลง) สกุลเงิน ในส่วน 'การขาย'
 
-1. You can capture the details of the products/services needed by clicking on 'With Items' checkbox and adding the item and quantity details in 'ITEMS' section.
+1. คุณสามารถบันทึกรายละเอียดของผลิตภัณฑ์/บริการที่ต้องการได้โดยคลิกที่ช่องทำเครื่องหมาย 'มีรายการ' และเพิ่มรายละเอียดรายการและปริมาณในส่วน 'รายการ'
 
-1. Enter the Source of the opportunity in the SOURCE section.
+1. ป้อนแหล่งที่มาของโอกาสทางการขายในส่วนแหล่งที่มา
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Reminders to Follow Up on Opportunities
+### 2.1 คำเตือนเพื่อติดตามโอกาส
 
-It is important to reach out to opportunities from time to time and build the relationship. You can set the 'Next Contact Date' and 'Next Contact By' fields and a calendar event will be added for the user chosen in 'Next Contact By' field and a notification is shown on the that Date.
+สิ่งสำคัญคือต้องเข้าถึงโอกาสเป็นครั้งคราวและสร้างความสัมพันธ์ คุณสามารถตั้งค่าฟิลด์ 'วันที่ติดต่อถัดไป' และ 'ผู้ติดต่อถัดไปโดย' ได้ และกิจกรรมในปฏิทินจะถูกเพิ่มสำหรับผู้ใช้ที่เลือกไว้ในฟิลด์ 'ผู้ติดต่อถัดไปโดย' และการแจ้งเตือนจะแสดงในวันที่นั้น
 
-### 2.2 Auto-assign Opportunities to Sales Executives
->Introduced in Version 12
+### 2.2 กำหนดโอกาสอัตโนมัติให้กับผู้บริหารฝ่ายขาย
+>เปิดตัวในเวอร์ชั่น12
 
-You can define [Assignment Rules](/docs/user/manual/en/automation/assignment-rule) to automatically assign the opportunities to sales executives.
+คุณสามารถกำหนด [กฎการมอบหมาย](/docs/user/manual/th/automation/assign-rule) เพื่อกำหนดโอกาสให้กับผู้บริหารฝ่ายขายได้โดยอัตโนมัติ
 
 <img class="screenshot" alt="Lead" src="{{docs_base_url}}/assets/img/crm/opportunity_assignment.png">
 
-### 2.3 Auto-close Opportunities
+### 2.3 ปิดโอกาสอัตโนมัติ
 
-If you do not receive a response from an opportunity for a certain number of days, you may want that opportunity to be closed automatically.
+หากคุณไม่ได้รับการตอบกลับจากโอกาสทางการขายในจำนวนวันที่กำหนด คุณอาจต้องการปิดโอกาสนั้นโดยอัตโนมัติ
 
-You can set the number of days in [Selling Settings](/docs/user/manual/en/selling/selling-settings).
+คุณสามารถกำหนดจำนวนวันใน [การตั้งค่าการขาย](/docs/user/manual/th/selling/selling-settings)
 
 <img class="screenshot" alt="Opportunity" src="{{docs_base_url}}/assets/img/crm/autoclose_opportunities.png">
 
-### 2.4 Create a Quotation
-You can create a [Quotation](/docs/user/manual/en/selling/quotation) from the **Make** dropdown. Relevant field values will be copied over.
+### 2.4 สร้างใบเสนอราคา
+คุณสามารถสร้าง [ใบเสนอราคา](/docs/user/manual/th/selling/quotation) จากดรอปดาวน์ **Make** ค่าฟิลด์ที่เกี่ยวข้องจะถูกคัดลอกไป
 
 <img class="screenshot" alt="Opportunity" src="{{docs_base_url}}/assets/img/crm/make-sq-from-opportunity.png">
 
-### 2.5 Create a Supplier Quotation
+### 2.5 สร้างใบเสนอราคาซัพพลายเออร์
 
-You may need to get a quotation from your supplier against the customer requirement and based on that, prepare the quotation for your customer. With ERPNext, you can make a [Supplier Quotation](/docs/user/manual/en/buying/supplier-quotation) from the opportunity itself.
+คุณอาจต้องขอใบเสนอราคาจากซัพพลายเออร์ของคุณโดยเทียบกับความต้องการของลูกค้า และเตรียมใบเสนอราคาสำหรับลูกค้าของคุณ ด้วย ERPNext คุณสามารถสร้าง [ใบเสนอราคาซัพพลายเออร์](/docs/user/manual/th/buying/supplier-quotation) จากโอกาสทางการขาย
 
-> Best Practice: Leads and Opportunities are often referred as your “Sales
-Pipeline” this is what you need to track if you want to be able to predict how
-much business you are going to get in the future. Its always a good idea to be
-able to track what is coming in order to adjust your resources.
+> แนวทางปฏิบัติที่ดีที่สุด: โอกาสในการขายและโอกาสมักถูกเรียกว่า "การขาย" ของคุณ
+ไปป์ไลน์” นี่คือสิ่งที่คุณต้องติดตามหากคุณต้องการที่จะทำนายได้อย่างไร
+ธุรกิจมากมายที่คุณจะได้รับในอนาคต เป็นความคิดที่ดีเสมอที่จะ
+สามารถติดตามสิ่งที่กำลังจะเกิดขึ้นเพื่อปรับทรัพยากรของคุณ
 
-### 2.6 Capture the Reasons for Losing Opportunities
+### 2.6 จับสาเหตุของการสูญเสียโอกาส
 
-When an opportunity is lost, you can capture the reasons for losing. This will help you to analyse the trends over a long period of time and identify the insights needed for improvements at various areas in the organisation.
+เมื่อสูญเสียโอกาส คุณสามารถจับสาเหตุของการสูญเสียได้ ซึ่งจะช่วยให้คุณวิเคราะห์แนวโน้มในช่วงเวลาที่ยาวนานและระบุข้อมูลเชิงลึกที่จำเป็นสำหรับการปรับปรุงในด้านต่างๆ ในองค์กร
 
 <img class="screenshot" alt="Quotation Lost Reason" src="{{docs_base_url}}/assets/img/crm/quotation_lost_reason.png">
 
-### 2.7 Minutes to First Response
+### 2.7 นาทีในการตอบกลับครั้งแรก
 
-When you send the first reply(email) to an Opportunity, it calculates Mins to First Response and is displayed in a field.
+เมื่อคุณส่งการตอบกลับครั้งแรก (อีเมล) ไปยังโอกาสทางการขาย ระบบจะคำนวณ นาที ไปที่ การตอบกลับครั้งแรก และแสดงในฟิลด์
 
-A report is generated called 'Minutes to First Response for Opportunity'. Read [CRM Reports](/docs/user/manual/en/CRM/crm_reports) for more details.
-### 3. Related Topics
-1. [Quotation](/docs/user/manual/en/selling/quotation.html)
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Lead](/docs/user/manual/en/CRM/lead)
-1. [Supplier Quotation](/docs/user/manual/en/buying/supplier-quotation)
-1. [Difference between Lead, Contact, and Customer](/docs/user/manual/en/CRM/articles/difference_between_lead_contact_and_customer)
+มีการสร้างรายงานที่เรียกว่า 'นาทีในการตอบกลับครั้งแรกสำหรับโอกาส' อ่าน [รายงาน CRM](/docs/user/manual/th/CRM/crm_reports) สำหรับรายละเอียดเพิ่มเติม
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [ใบเสนอราคา](/docs/user/manual/th/selling/quotation.html)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ลูกค้าเป้าหมาย](/docs/user/manual/th/CRM/lead)
+1. [ใบเสนอราคาซัพพลายเออร์n](/docs/user/manual/th/buying/supplier-quotation)
+1. [ความแตกต่างระหว่างลูกค้าเป้าหมาย ผู้ติดต่อ และลูกค้า](/docs/user/manual/th/CRM/articles/difference_between_lead_contact_and_customer)
 
 {next}

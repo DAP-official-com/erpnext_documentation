@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-# Allow Fields to be Changed After Submission
+# อนุญาตให้เปลี่ยนฟิลด์หลังจากส่ง
 
-Once a document is submitted, fields are frozen, and no editing is allowed. However, there are certain standard fields like Letter Head, Print Heading which can still be edited. Under Custom Field, if **Allow on Submit** property is checked, this custom field will be editable even after the document is submitted.
+เมื่อส่งเอกสารแล้ว ฟิลด์ต่างๆ จะถูกระงับและไม่อนุญาตให้แก้ไข อย่างไรก็ตาม มีฟิลด์มาตรฐานบางอย่างเช่น Letter Head, Print Heading ซึ่งยังคงสามารถแก้ไขได้ ภายใต้ฟิลด์กำหนดเอง ถ้ามีการตรวจสอบคุณสมบัติ **อนุญาตให้ส่ง** ฟิลด์ที่กำหนดเองนี้จะสามารถแก้ไขได้แม้หลังจากส่งเอกสารแล้ว
 
-> Note: Standard fields cannot be set as Allow on Submit.
+> หมายเหตุ: ไม่สามารถตั้งค่าฟิลด์มาตรฐานเป็นอนุญาตเมื่อส่ง
 
-To set this property,
+ในการตั้งค่าคุณสมบัตินี้
 
-1. Go to Customize Form.
-2. Select the Form in which you want to set this property.
+1. ไปที่ปรับแต่งแบบฟอร์ม
+2. เลือกแบบฟอร์มที่คุณต้องการตั้งค่าคุณสมบัตินี้
 
     <img alt="select docytpe" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-allow on submit.gif">
 
-3. Edit the field with this property.
+3. แก้ไขฟิลด์ด้วยคุณสมบัตินี้
 
     <img alt="Check Allow on Submit" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-allow on submit-1.gif">
 
-4. Update.
+4. อัพเดท
 
-After updating Customize Form, you should reload your ERPNext account. Then check form, and field to confirm whether or not it is editable in submitted form as well.
+หลังจากอัปเดต แบบฟอร์มกำหนดเอง คุณควรโหลดบัญชี ERPNext ของคุณใหม่ จากนั้นตรวจสอบแบบฟอร์มและฟิลด์เพื่อยืนยันว่าสามารถแก้ไขได้ในแบบฟอร์มที่ส่งมาด้วยหรือไม่
 
 {next}
 

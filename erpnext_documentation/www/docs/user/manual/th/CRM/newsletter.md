@@ -1,53 +1,53 @@
 <!-- add-breadcrumbs -->
-# Newsletter
+# จดหมายข่าว
 
-**Newsletter is an email which is sent to a specific group of subscribers periodically.**
+**จดหมายข่าวคืออีเมลที่ส่งไปยังกลุ่มสมาชิกบางกลุ่มเป็นระยะๆ**
 
-In the context of CRM, its is an informational and product-focused email that is sent to existing and potential customers with an intention of softly pushing the subscriber to do required actions.
+ในบริบทของ CRM เป็นอีเมลที่ให้ข้อมูลและเน้นผลิตภัณฑ์ซึ่งส่งไปยังลูกค้าปัจจุบันและผู้มีโอกาสเป็นลูกค้าโดยมีเจตนาที่จะผลักดันให้สมาชิกดำเนินการตามที่จำเป็นอย่างนุ่มนวล
 
-Newsletter can also be used to share information to employees, investors etc.
+จดหมายข่าวยังสามารถใช้เพื่อแบ่งปันข้อมูลกับพนักงาน นักลงทุน ฯลฯ
 
-You need to create [Email Groups](/docs/user/manual/en/CRM/email_group) before sending the newsletters.
+คุณต้องสร้าง [กลุ่มอีเมล](/docs/user/manual/th/CRM/email_group) ก่อนส่งจดหมายข่าว
 
-To access the Newsletter list, go to:
-> Home > Settings > Email > Newsletter
+ในการเข้าถึงรายการจดหมายข่าว ไปที่:
+> หน้าแรก > การตั้งค่า > อีเมล > จดหมายข่าว
 
-## 1. How to Create a Newsletter
-1. Go to the Newsletter list and click on New.
-1. Select the Email Group in RECIPIENT table.
-1. Enter 'Subject'.
-1. Enter 'Message'.
-1. 'Publish' the newsletter to make it available on the web.
-1. Tick 'Send Unsubscribe Link' if you would like to include unsubscribe link in the email.
-1. 'Send Web View Link' will include a link in the email to open the newsletter on the web. This option is only visible when the newsletter is published.
+## 1. วิธีสร้างจดหมายข่าว
+1. ไปที่รายการจดหมายข่าวแล้วคลิกใหม่
+1. เลือกกลุ่มอีเมลในตาราง ผู้รับ
+1. ป้อน 'เรื่อง'
+1. ป้อน 'ข้อความ'
+1. 'เผยแพร่' จดหมายข่าวเพื่อให้พร้อมใช้งานบนเว็บ
+1. เลือก 'ส่งลิงก์ยกเลิกการสมัคร' หากคุณต้องการรวมลิงก์ยกเลิกการสมัครในอีเมล
+1. 'Send Web View Link' จะรวมลิงก์ในอีเมลเพื่อเปิดจดหมายข่าวบนเว็บ ตัวเลือกนี้จะปรากฏเฉพาะเมื่อมีการเผยแพร่จดหมายข่าว
 
 <img class="screenshot" alt="Newsletter" src="{{docs_base_url}}/assets/img/crm/newsletter-doc.png">
 
 <img class="screenshot" alt="Newsletter" src="{{docs_base_url}}/assets/img/crm/newsletter-doc-2.png">
 
-Below is the screenshot of the email received with link to unsubscribe and a link to open the email on the web.
+ด้านล่างนี้คือภาพหน้าจอของอีเมลที่ได้รับพร้อมลิงก์สำหรับยกเลิกการสมัครและลิงก์สำหรับเปิดอีเมลบนเว็บ
 
 <img class="screenshot" alt="Lead" src="{{docs_base_url}}/assets/img/crm/newsletter-doc-web-link.png">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Create Subscriber Groups
+### 2.1 สร้างกลุ่มสมาชิก
 
-You can manage subscribers by grouping them into different [Email Groups](/docs/user/manual/en/CRM/email_group).
+คุณสามารถจัดการสมาชิกได้โดยจัดกลุ่มเป็น [กลุ่มอีเมล](/docs/user/manual/th/CRM/email_group) ที่แตกต่างกัน
 
-You can select multiple email groups in the 'RECIPIENT' tables in the newsletter.
+คุณสามารถเลือกกลุ่มอีเมลหลายกลุ่มในตาราง 'ผู้รับ' ในจดหมายข่าว
 
-### 2.2 Schedule Send
+### 2.2 กำหนดการส่ง
 
-You can choose to send your newsletter at any future datetime by specifying time in hourly steps.
+คุณสามารถเลือกที่จะส่งจดหมายข่าวของคุณในวันเวลาใด ๆ ในอนาคตโดยระบุเวลาเป็นรายชั่วโมง
 
 <img class="screenshot" alt="Scheduled Newsletter" src="{{docs_base_url}}/assets/img/crm/scheduled-newsletter.png">
 
-### 2.3 Test Newsletter Before Sending to Subscribers
+### 2.3 ทดสอบจดหมายข่าวก่อนส่งให้สมาชิก
 
-Once the newsletter is ready you can provide a 'Test Email Address' and click on 'Test'.
+เมื่อจดหมายข่าวพร้อมแล้ว คุณสามารถระบุ 'Test Email Address' และคลิกที่ 'Test'
 
-You can review the newsletter received in the test email, verify it and then send it to all subscribers by clicking on 'Send'.
+คุณสามารถตรวจสอบจดหมายข่าวที่ได้รับในอีเมลทดสอบ ยืนยัน และส่งไปยังสมาชิกทั้งหมดโดยคลิกที่ 'ส่ง'
 
 <img class="screenshot" alt="Newsletter Test" src="{{docs_base_url}}/assets/img/crm/newsletter-test.png">
 

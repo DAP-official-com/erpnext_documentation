@@ -1,105 +1,104 @@
 <!-- add-breadcrumbs -->
-# Stock Settings
+# การตั้งค่าสต็อก
 
-You can set default settings for your stock related transactions from the Stock Settings page.
+คุณสามารถตั้งค่าเริ่มต้นสำหรับธุรกรรมเกี่ยวกับหุ้นของคุณได้จากหน้าการตั้งค่าหุ้น
 
 
-## 1. Item Naming By
+## 1. การตั้งชื่อรายการ
 
 ![Stock Settings](/docs/assets/img/stock/stock-settings-1.png)
 
-By default, the Item Name is set as per the Item Code entered. If you want Items to be named by a set [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series) choose the 'Naming Series' option .
+โดยค่าเริ่มต้น ชื่อรายการจะถูกตั้งค่าตามรหัสสินค้าที่ป้อน หากคุณต้องการตั้งชื่อรายการตามชุด [ชุดการตั้งชื่อ](/docs/user/manual/th/setting-up/settings/naming-series) ให้เลือกตัวเลือก 'การตั้งชื่อซีรี่ส์'
 
 
-## 2. Defaults
+## 2. ค่าเริ่มต้น
 
-### 2.1 Default Item Group
-This will be the default item group allocated to a newly created item. Item groups are useful for classification and setting properties for the whole group. To know more visit the [Item Group](/docs/user/manual/en/stock/item-group) page.
+### 2.1 กลุ่มรายการเริ่มต้น
+นี่จะเป็นกลุ่มสินค้าเริ่มต้นที่จัดสรรให้กับรายการที่สร้างขึ้นใหม่ กลุ่มรายการมีประโยชน์สำหรับการจัดประเภทและการตั้งค่าคุณสมบัติสำหรับทั้งกลุ่ม หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [กลุ่มสินค้า](/docs/user/manual/th/stock/item-group)
 
-### 2.2 Default Stock UOM
-The default unit of measure for stock is set as numbers (Nos), it can be changed from here.
+### 2.2 หุ้นผิดนัด UOM
+หน่วยวัดเริ่มต้นสำหรับสต็อกถูกกำหนดเป็นตัวเลข (Nos) ซึ่งสามารถเปลี่ยนแปลงได้จากที่นี่
 
-### 2.3 Default Warehouse
-Set the default Warehouse from which the stock transactions are done. This will be fetched into the Default Warehouse in the Item master:
+### 2.3 คลังสินค้าเริ่มต้น
+ตั้งค่าเริ่มต้นของคลังสินค้าที่ทำธุรกรรมสต็อค สิ่งนี้จะถูกดึงเข้าไปใน คลังสินค้าเริ่มต้น ใน สินค้าหลัก:
     ![Stock Settings](/docs/assets/img/stock/stock-settings-def.png)
 
-### 2.4 Sample Retention Warehouse
-This is the Warehouse where sample retentions are stored. To know more, visit [this page](/docs/user/manual/en/stock/retain-sample-stock).
+### 2.4 ตัวอย่างโกดังเก็บตัวอย่าง
+นี่คือโกดังที่เก็บตัวอย่างไว้ หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่ [หน้านี้](/docs/user/manual/th/stock/retain-sample-stock)
 
-### 2.5 Default Valuation method
-FIFO - first in first out or moving average valuation for your items. The default method is FIFO. If you select Moving Average, new Items will be valuated on Moving Average. You can change this when creating new Items in the Item form. Once the Item is saved, the Valuation Method cannot be changed.  Read more [here](https://frappe.io/blog/erpnext-features/inventory-valuation-method-fifo-vs-moving-average).
+### 2.5 วิธีการประเมินค่าดีฟอลต์
+FIFO - เข้าก่อนออกก่อนหรือประเมินค่าเฉลี่ยเคลื่อนที่สำหรับรายการของคุณ วิธีการเริ่มต้นคือ FIFO หากคุณเลือกเส้นค่าเฉลี่ยเคลื่อนที่ รายการใหม่จะถูกประเมินบนเส้นค่าเฉลี่ยเคลื่อนที่ คุณสามารถเปลี่ยนแปลงได้เมื่อสร้างรายการใหม่ในแบบฟอร์มรายการ เมื่อบันทึกรายการแล้ว วิธีการประเมินมูลค่าจะไม่สามารถเปลี่ยนแปลงได้ อ่านเพิ่มเติม [ที่นี่](https://frappe.io/blog/erpnext-features/inventory-valuation-method-fifo-vs-moving-average)
 
-## 3. Limit Percent
-This is the percentage you are allowed to receive or deliver more against the quantity ordered. For example: If you have ordered 100 units, Supplier sends 120 units and the percentage is set to 10% then you are allowed to receive 110 units. By default, this is set to 0.
+## 3. เปอร์เซ็นต์ขีดจำกัด
+นี่คือเปอร์เซ็นต์ที่คุณได้รับอนุญาตให้รับหรือส่งมอบมากขึ้นเมื่อเทียบกับปริมาณที่สั่งซื้อ ตัวอย่างเช่น หากคุณสั่งซื้อ 100 หน่วย ซัพพลายเออร์จะส่ง 120 หน่วยและตั้งค่าเปอร์เซ็นต์เป็น 10% คุณจะได้รับอนุญาตให้ได้รับ 110 หน่วย โดยค่าเริ่มต้น ค่านี้จะถูกตั้งค่าเป็น 0
 
-## 4. Role Allowed to Over Deliver/Receive
-Users with this role are allowed to over deliver/receive against orders above the allowance percentage
+## 4. บทบาทที่อนุญาตให้ส่ง/รับเกินได้
+ผู้ใช้ที่มีบทบาทนี้ได้รับอนุญาตให้ส่ง/รับเกินเมื่อเทียบกับคำสั่งซื้อที่สูงกว่าเปอร์เซ็นต์ที่อนุญาต
 
-## 5. Show Barcode Field
-A field to enter Barcode details for an item. If unticked, the field won't be visible in the Item form.
+## 5. แสดงช่องบาร์โค้ด
+ช่องสำหรับป้อนรายละเอียดบาร์โค้ดสำหรับรายการ หากไม่ได้เลือก ช่องจะไม่ปรากฏในแบบฟอร์มรายการ
 
-## 6. Convert Item Description to Clean HTML
-Usually, descriptions are copy-pasted from a website or Word/PDF file and they contain a lot of embedded styles. This messes up the Print view of your invoices or quotes.
+## 6. แปลงคำอธิบายรายการเป็น Clean HTML
+โดยปกติ คำอธิบายจะถูกคัดลอกและวางจากเว็บไซต์หรือไฟล์ Word/PDF และมีลักษณะที่ฝังอยู่จำนวนมาก สิ่งนี้ทำให้มุมมองการพิมพ์ของใบแจ้งหนี้หรือใบเสนอราคาของคุณยุ่งเหยิง
 
-To fix this, you can check "Convert Item Description to Clean HTML" in Stock Settings. This will ensure that when you save the Items, their descriptions will be cleaned up.
+ในการแก้ไขปัญหานี้ คุณสามารถตรวจสอบ "แปลงคำอธิบายรายการเป็น HTML ที่สะอาด" ในการตั้งค่าสต็อก เพื่อให้แน่ใจว่าเมื่อคุณบันทึกรายการ คำอธิบายจะถูกล้าง
 
-If you want to control your description, views, and allow any HTML to be embedded, you can uncheck this property.
+หากคุณต้องการควบคุมคำอธิบาย มุมมอง และอนุญาตให้ฝัง HTML ใดๆ ก็ตาม คุณสามารถยกเลิกการเลือกคุณสมบัตินี้
 
-## 7. Auto insert
+## 7. แทรกอัตโนมัติ
 
 ![Stock Settings](/docs/assets/img/stock/stock-settings-2.png)
 
-### 7.1 Auto insert Price List rate if missing
-Enabling this will insert an Item Price to the Price List of an Item automatically when using the Item in its first transaction. This price is fetched from the 'Rate' set in the first transaction with the Item. The Price List depends on whether you're using a Purchase or Sales transaction.
+### 7.1 อัตรารายการราคาแทรกอัตโนมัติหากไม่มี if
+การเปิดใช้งานนี้จะแทรกราคาสินค้าลงในรายการราคาของสินค้าโดยอัตโนมัติเมื่อใช้สินค้าในการทำธุรกรรมครั้งแรก ราคานี้ดึงมาจาก 'อัตรา' ที่กำหนดไว้ในการทำธุรกรรมครั้งแรกกับรายการ รายการราคาขึ้นอยู่กับว่าคุณกำลังใช้ธุรกรรมการซื้อหรือการขาย
 
-Note that, the Item Price will be automatically inserted only in the first transaction if not already present.
+โปรดทราบว่าราคาสินค้าจะถูกแทรกโดยอัตโนมัติในการทำธุรกรรมครั้งแรกเท่านั้น หากยังไม่มีอยู่
 
-If this is unticked, the 'Standard Selling Rate' set in the Item when creating the Item will be added as Item Price.
+หากไม่ได้เลือก 'อัตราการขายมาตรฐาน' ที่ตั้งไว้ในรายการเมื่อสร้างรายการจะถูกเพิ่มเป็นราคาสินค้า
 
-### 7.2 Automatically Set Serial Nos based on FIFO
-Serial numbers for stock will be set automatically based on the Items entered based on first in first out. The Serial Numbers will be set automatically in transactions like Purchase/Sales Invoices, Delivery Notes, etc.
+### 7.2 ตั้งค่า Serial Nos โดยอัตโนมัติตาม FIFO
+หมายเลขซีเรียลของสต็อกจะถูกตั้งค่าโดยอัตโนมัติตามรายการที่ป้อนตามการเข้าก่อนออกก่อน หมายเลขซีเรียลจะถูกตั้งค่าโดยอัตโนมัติในธุรกรรมต่างๆ เช่น ใบสั่งซื้อ/ขาย ใบส่งของ ฯลฯ
 
-## 8. Allow Negative Stock
-This will allow stock items to be displayed in negative values. Using this option depends on your use case. For example, the stock transaction entries are entered at the weekend or month-end. In this case, negative stock needs to be enabled so that you can continue with your purchase/sales transaction entries.
+## 8. อนุญาตหุ้นติดลบ
+ซึ่งจะช่วยให้สามารถแสดงรายการสต็อกในค่าลบได้ การใช้ตัวเลือกนี้ขึ้นอยู่กับกรณีการใช้งานของคุณ ตัวอย่างเช่น รายการธุรกรรมหุ้นจะถูกป้อนในวันหยุดสุดสัปดาห์หรือสิ้นเดือน ในกรณีนี้ จำเป็นต้องเปิดใช้งานสต็อคติดลบเพื่อให้คุณสามารถดำเนินการกับรายการธุรกรรมการซื้อ/ขายของคุณต่อไปได้
 
-## 9. Set Qty in Transactions based on Serial No Input
-The quantity of items will be set according to the serial numbers. For example, if the user has added serial nos like A001, A002, and A003 then the system will set the quantity as 3 in the transaction.
+## 9. กำหนดจำนวนในการทำธุรกรรมตาม Serial No Input
+จำนวนรายการจะถูกกำหนดตามหมายเลขซีเรียล ตัวอย่างเช่น หากผู้ใช้เพิ่มหมายเลขซีเรียล เช่น A001, A002 และ A003 ระบบจะกำหนดปริมาณเป็น 3 ในธุรกรรม
 
-## 10. Automatic Material Request
+## 10. ขอวัสดุอัตโนมัติ
 
 ![Stock Settings](/docs/assets/img/stock/stock-settings-3.png)
 
-### 10.1 Raise Material Request when the stock reaches re-order level
+### 10.1 เพิ่มคำขอวัสดุเมื่อสต็อกถึงระดับการสั่งซื้อใหม่
 
-This option is useful if you want to ensure a constant supply of raw materials/products and avoid shortage.
-A [Material Request](/docs/user/manual/en/stock/material-request) will be raised automatically when stock reached the re-order level defined in the [Item form](/docs/user/manual/en/stock/item#34-automatic-reordering).
+ตัวเลือกนี้มีประโยชน์หากคุณต้องการให้แน่ใจว่ามีการจัดหาวัตถุดิบ/ผลิตภัณฑ์อย่างต่อเนื่องและหลีกเลี่ยงปัญหาการขาดแคลน
+[คำขอวัสดุ](/docs/user/manual/th/stock/material-request) จะเพิ่มขึ้นโดยอัตโนมัติเมื่อสต็อกถึงระดับการสั่งซื้อใหม่ที่กำหนดไว้ใน [แบบฟอร์มไอเท็ม](/docs/user/manual/th/ stock/item#34-automatic-reordering).
 
-### 10.2 Notify by Email on the creation of automatic Material Request
-An email will be sent to notify the User with the role 'Purchase Manager' when an automatic Material Request is created.
+### 10.2 แจ้งทางอีเมลเกี่ยวกับการสร้างคำขอวัสดุอัตโนมัติ
+อีเมลจะถูกส่งไปยังผู้ใช้ที่มีบทบาท 'ผู้จัดการฝ่ายจัดซื้อ' เมื่อมีการสร้างคำขอวัสดุอัตโนมัติ
 
-## 11. Inter Warehouse Transfer Settings
+## 11. การตั้งค่าการโอนระหว่างคลังสินค้า
 
 <img class="screenshot" alt="Delivery Note Material Transfer" src="{{docs_base_url}}/assets/img/stock/inter-warehouse.png">
 
-### 11.1 Enable customer warehouse for material transfer from Delivery Note and Sales Invoice
+### 11.1 เปิดใช้งานคลังสินค้าของลูกค้าสำหรับการถ่ายโอนวัสดุจากใบส่งมอบและใบกำกับสินค้า
 
-This option is useful when material transfer needs to be presented as a Delivery Note. For example, if there are statutory requirements where taxes are to be applied on each transfer of Material. It is easier to manage in a transaction like Delivery Note, than in the Stock Entry
+ตัวเลือกนี้มีประโยชน์เมื่อจำเป็นต้องแสดงการโอนย้ายวัสดุเป็นใบส่งมอบ ตัวอย่างเช่น หากมีข้อกำหนดทางกฎหมายที่ต้องเสียภาษีในการโอนวัสดุแต่ละครั้ง ง่ายต่อการจัดการในการทำธุรกรรมเช่น Delivery Note มากกว่าใน Stock Entry
 
-### 11.2 Enable supplier warehouse for material transfer from Purchase Receipt and Purchase Invoice
+### 11.2 เปิดใช้งานคลังสินค้าของซัพพลายเออร์สำหรับการถ่ายโอนวัสดุจากใบเสร็จการซื้อและใบกำกับสินค้า
 
-Similar to above option this option is useful when material transfer needs to be presented as Purchase Receipt.
+คล้ายกับตัวเลือกด้านบน ตัวเลือกนี้มีประโยชน์เมื่อจำเป็นต้องแสดงการโอนย้ายวัสดุเป็นใบเสร็จการซื้อ
 
-To know more about inter warehouse material transfer via Delivery Note and Purchase Invoice please refer this article [Material Transfer From Delivery Note](/docs/user/manual/en/stock/articles/material-transfer-from-delivery-note)
+หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับการโอนย้ายวัสดุระหว่างคลังสินค้าผ่านใบจัดส่งและใบกำกับสินค้า โปรดอ้างอิงบทความนี้ [Material-transfer-from-delivery-note] (/docs/user/manual/th/stock/articles/material-transfer-from-delivery-note)
 
-## 12. Freeze Stock Entries
+## 12. ตรึงรายการสต็อค
 
-The User will not be allowed to make stock postings beyond this date.
-
+ผู้ใช้จะไม่ได้รับอนุญาตให้ทำการผ่านรายการสินค้าเกินวันที่นี้
 ![Stock Settings](/docs/assets/img/stock/stock-settings-4.png)
 
-* **Stock Frozen Upto**: A threshold date till which stocks will be frozen.
-* **Freeze Stocks Older Than [Days]**: Stocks older than x days will be frozen. This is calculated based on the creation date of the item.
-* **Role Allowed to edit frozen stock**: The role you choose here will be allowed to edit frozen stock.
+* **ระงับสต็อกไม่เกิน**: วันที่เกณฑ์จนถึงจำนวนที่จะถูกระงับ
+* **ระงับสต็อกที่เก่ากว่า [วัน]**: สต็อคที่เก่ากว่า x วันจะถูกระงับ ซึ่งคำนวณตามวันที่สร้างรายการ
+* **บทบาทที่ได้รับอนุญาตให้แก้ไขสต็อคที่ถูกระงับ**: บทบาทที่คุณเลือกที่นี่จะได้รับอนุญาตให้แก้ไขสต็อคที่ถูกระงับ
 
-## 13. Batch identification
-Global setting for batches of stocks to be identified by a [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series). You can override this in the Item DocType.
+## 13. การระบุแบทช์
+การตั้งค่าส่วนกลางสำหรับกลุ่มหุ้นที่จะระบุโดย [ชุดการตั้งชื่อ](/docs/user/manual/th/setting-up/settings/naming-series) คุณสามารถแทนที่สิ่งนี้ได้ใน DocType Item 

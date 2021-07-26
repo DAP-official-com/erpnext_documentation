@@ -1,21 +1,20 @@
 <!-- add-breadcrumbs -->
-# Support Settings
+# การตั้งค่าการสนับสนุน
 
-**All the global settings for support related documents can be found in Support Settings.**
+**การตั้งค่าส่วนกลางทั้งหมดสำหรับเอกสารที่เกี่ยวข้องกับการสนับสนุนสามารถพบได้ในการตั้งค่าการสนับสนุน**
 
-To access Support Settings, go to:
-> Home > Support > Settings > Support Settings
+ในการเข้าถึงการตั้งค่าการสนับสนุน ไปที่:
+> หน้าแรก > การสนับสนุน > การตั้งค่า > การตั้งค่าการสนับสนุน
 
 <img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/support-settings.png">
 
-## 1. Service Level Agreements
-### 1.1 Track Service Level Agreement
-Enable this feature to start using and tracking [Service Level Agreement](/docs/user/manual/en/support/service-level-agreement) in Issues.
+## 1. ข้อตกลงระดับการให้บริการ
+### 1.1 ติดตามข้อตกลงระดับการให้บริการ
+เปิดใช้งานคุณลักษณะนี้เพื่อเริ่มใช้และติดตาม [ข้อตกลงระดับบริการ](/docs/user/manual/th/support/service-level-agreement) ในปัญหา
 
-### 1.2 Allow Resetting Service Level Agreement
-This allows a User to reset the Service Level Agreement in Issues. User will get a button to **Reset Service Level Agreement** for Open Issues in the Service Level tab. Clicking on the button before the SLA fails will reset the SLA. The support team user will have to state a reason for resetting the SLA.
+### 1.2 อนุญาตให้รีเซ็ตข้อตกลงระดับการให้บริการ
+สิ่งนี้ทำให้ผู้ใช้สามารถรีเซ็ตข้อตกลงระดับการบริการในประเด็นต่างๆ ผู้ใช้จะได้รับปุ่ม **รีเซ็ตข้อตกลงระดับบริการ** สำหรับปัญหาที่เปิดอยู่ในแท็บระดับบริการ การคลิกที่ปุ่มก่อนที่ SLA จะล้มเหลวจะเป็นการรีเซ็ต SLA ผู้ใช้ทีมสนับสนุนจะต้องระบุเหตุผลในการรีเซ็ต SLA
 
-## 2. Issues
-### 2.1 Close Issue After Days
-Any "Replied" or "Resolved" issue will be closed after the number of days defined in this field. However, if the Customer replies to a closed Issue, the Issue will Open again.
-
+## 2. ปัญหา
+### 2.1 ปิดฉบับหลังจากวัน
+ปัญหา "ตอบแล้ว" หรือ "แก้ไขแล้ว" จะถูกปิดหลังจากจำนวนวันที่กำหนดไว้ในฟิลด์นี้ อย่างไรก็ตาม หากลูกค้าตอบกลับปัญหาที่ปิดไปแล้ว ปัญหาจะเปิดขึ้นอีกครั้ง

@@ -1,50 +1,50 @@
 <!-- add-breadcrumbs -->
-# Leave Encashment
+#Leave Encashment
 
 
 
-**Leave Encashment refers to an amount of money received in exchange for Leaves not availed by an Employee. You can submit Leave Encashment for Leave Types which are encashable.**
+**Leave Encashment หมายถึงจำนวนเงินที่ได้รับเพื่อแลกกับ ันลา ที่พนักงานไม่ได้ใช้ประโยชน์ คุณสามารถส่ง Leave Encashment สำหรับ ประเภทของการลา ซึ่งสามารถแลกเปลี่ยนเป็นค่าจ้างด้**
 
-To access Leave Encashment, go to:
+หากต้องการเข้าถึง Leave Encashment ให้ไปที่:
 
-> Home > Human Resources > Leaves > Leave Encashment 
+> หน้าหลัก > ทรัพยากรบุคคล > การลางาน > Leave Encashment
 
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating Leave Encashment, it is advisable you create the following documents:
+ก่อนสร้าง Leave Encashment ขอแนะนำให้สร้างเอกสารต่อไปนี้:
 
-1. [Employee](/docs/user/manual/en/human-resources/leave-allocation)
-1. [Leave Type](/docs/user/manual/en/human-resources/leave-type)
-1. [Leave Policy](/docs/user/manual/en/human-resources/leave-policy)
-1. [Leave Period](/docs/user/manual/en/human-resources/leave-period)
-1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
-1. [Salary Structure Assignment](/docs/user/manual/en/human-resources/salary-structure-assignment)
+1. [พนักงาน](/docs/user/manual/th/human-resources/leave-allocation)
+1. [ประเภทการลา](/docs/user/manual/th/human-resources/leave-type)
+1. [นโยบายการลา](/docs/user/manual/th/human-resources/leave-policy)
+1. [ระยะเวลาการลา](/docs/user/manual/th/human-resources/leave-period)
+1. [โครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure)
+1. [การกำหนดโครงสร้างเงินเดือน](/docs/user/manual/th/human-resources/salary-structure-assignment)
 
-## 2. How to create a Leave Encashment
+## 2. วิธีสร้าง Leave Encashment
 
-1. Go to Leave Encashment list, click on New.
-1. Select Leave Period.
-1. Select the Employee. Once the Employee is selected, the Employee's Department is automatically fetched.
-1. Select Leave Type for which the Leave is encashed. Make sure the Leave Type is encashable (the 'Allow Encashment' checkbox in the Leave Type is checked).
-1. Select Encashment Date. Based on the date selected, the amount will be encashed in that particular Payroll Entry.
-1. Save and Submit.
+1. ไปที่รายการ Leave Encashment คลิก New
+1. เลือกระยะเวลาลา
+1. เลือกพนักงาน เมื่อเลือกพนักงานแล้ว ระบบจะดึงข้อมูลแผนกของพนักงานโดยอัตโนมัติ
+1. เลือกประเภทการลาที่การลาถูกเข้ารหัส ตรวจสอบให้แน่ใจว่าประเภทการฝากสามารถเข้ารหัสได้ (ทำเครื่องหมายที่ช่อง 'อนุญาตการเก็บเงิน' ในประเภทการลาไว้)
+1. เลือกวันที่ได้รับเงิน ตามวันที่เลือก จำนวนเงินจะถูกโอนเข้าในรายการบัญชีเงินเดือนนั้น
+1. บันทึกและส่ง
 
 	<img class="screenshot" alt="Leave Encashment"
 	src="{{docs_base_url}}/assets/img/human-resources/leave-encashment-new.png">
 
 
-> **Note:** As you select Employee and Leave Type, Leave Balance and Encashable Days (which is total leave balance minus the threshold days set in Leave Type) will be shown along with the Encashment Amount based on the Leave Encashment per day as configured in the Employee's assigned Salary Structure.
+> **หมายเหตุ:** เมื่อคุณเลือกประเภทพนักงานและวันลา ยอดคงเหลือการลางานและวันที่สามารถถอนเงินได้ (ซึ่งเป็นยอดดุลการลาทั้งหมดลบด้วยจำนวนวันตามเกณฑ์ที่กำหนดไว้ในประเภทการลา) จะแสดงพร้อมกับจำนวนเงินที่เพิ่มตามการฝากเงินต่อวัน ตามที่กำหนดไว้ในโครงสร้างเงินเดือนที่ได้รับมอบหมายของพนักงาน
 
 
-On submitting a Leave Encashment for an Employee, ERPNext automatically creates an [Additional Salary](/docs/user/manual/en/human-resources/additional-salary) which will get added to the Salary Slip of the Employee when processing the payroll.
+ในการยื่น Leave Encashment สำหรับพนักงาน ERPNext จะสร้าง [เงินเดือนเพิ่มเติม](/docs/user/manual/th/human-resources/additional-salary) โดยอัตโนมัติ ซึ่งจะถูกเพิ่มเข้าไปในสลิปเงินเดือนของพนักงานเมื่อดำเนินการจ่ายเงินเดือน .
 
 
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Payroll Period](/docs/user/manual/en/human-resources/payroll-period)
-1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
-1. [Additional Salary](/docs/user/manual/en/human-resources/additional-salary)
+1. [ระยะเวลาการจ่ายเงินเดือน](/docs/user/manual/th/human-resources/payroll-period)
+1. [รายการบัญชีเงินเดือน](/docs/user/manual/th/human-resources/payroll-entry)
+1. [เงินเดือนเพิ่มเติม](/docs/user/manual/th/human-resources/additional-salary)
 
 

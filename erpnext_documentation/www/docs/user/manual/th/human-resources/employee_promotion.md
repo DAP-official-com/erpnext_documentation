@@ -1,40 +1,40 @@
 <!-- add-breadcrumbs -->
-# Employee Promotion
+#เลื่อนตำแหน่งพนักงาน
 
-**Promotion or career advancement is a process through which an Employee of a company is given a higher share of duties, a higher pay-scale or both.**
+**การเลื่อนตำแหน่งหรือความก้าวหน้าในอาชีพเป็นกระบวนการที่พนักงานของบริษัทได้รับส่วนแบ่งหน้าที่การงานที่สูงขึ้น เงินเดือนที่สูงขึ้น หรือทั้งสองอย่าง**
 
-In ERPNext, you can manage Employee Promotion and its various associated activities using this document.
+ใน ERPNext คุณสามารถจัดการการเลื่อนขั้นพนักงานและกิจกรรมต่างๆ ที่เกี่ยวข้องได้โดยใช้เอกสารนี้
 
-To access Employee Promotion, go to:
+ในการเข้าถึงเลื่อนตำแหน่งพนักงาน ไปที่:
 
-> Human Resources > Employee Lifecycle > Employee Promotion
-
-
-## 1. Prerequisites
-
-Before creating an Employee Promotion, it is advisable that you create the following documents:
-
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Department](/docs/user/manual/en/human-resources/department)
+> ทรัพยากรบุคคล > วงจรชีวิตพนักงาน > เลื่อนตำแหน่งพนักงาน
 
 
-## 2. How to create an Employee Promotion
+## 1. ข้อกำหนดเบื้องต้น
 
-1. Go to: Employee Promotion > New.
-1. Select the Employee.
-1. Enter the Promotion Date.
-1. In the Employee Promotion Detail table, select the Property and set the Current and New value.
+ก่อนสร้างโปรโมชันพนักงาน ขอแนะนำให้สร้างเอกสารต่อไปนี้:
+
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [แผนก](/docs/user/manual/th/human-resources/department)
+
+
+## 2. วิธีสร้างโปรโมชั่นพนักงาน
+
+1. ไปที่: การเลื่อนตำแหน่งพนักงาน > ใหม่
+1. เลือกพนักงาน
+1. ป้อนวันที่โปรโมชั่น
+1. ในตารางรายละเอียดการส่งเสริมพนักงาน เลือกคุณสมบัติและตั้งค่าปัจจุบันและใหม่
 
     <img class="screenshot" alt="Employee Promotion" src="{{docs_base_url}}/assets/img/human-resources/employee-promotion.png">
 
-> Note: Promotion document can be submitted on or after Promotion Date. Once submitted all the changes added to Promotion Details table will be applied to the Employee. ERPNext also keeps a record of all promotions of the Employee in the Employment History table in Employee document.
+> หมายเหตุ: สามารถส่งเอกสารโปรโมชั่นในหรือหลังวันที่โปรโมชั่น เมื่อส่งการเปลี่ยนแปลงทั้งหมดที่เพิ่มลงในตารางรายละเอียดโปรโมชั่นจะถูกนำไปใช้กับพนักงาน ERPNext ยังเก็บบันทึกการเลื่อนตำแหน่งทั้งหมดของพนักงานในตารางประวัติการจ้างงานในเอกสารพนักงาน
 
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Employee Onboarding](/docs/user/manual/en/human-resources/employee-onboarding)
-1. [Employee Separation](/docs/user/manual/en/human-resources/employee-separation)
-1. [Employee Transfer](/docs/user/manual/en/human-resources/employee_transfer)
+1. [การเตรียมความพร้อมของพนักงาน](/docs/user/manual/th/human-resources/employee-onboarding)
+1. [แยกพนักงาน](/docs/user/manual/th/human-resources/employee-separation)
+1. [การย้ายพนักงาน](/docs/user/manual/th/human-resources/employee_transfer)
 
 
 

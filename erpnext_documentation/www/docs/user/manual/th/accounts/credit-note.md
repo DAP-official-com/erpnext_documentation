@@ -1,43 +1,46 @@
 <!-- add-breadcrumbs -->
-# Credit Note
+# เครดิตโน๊ต (ใบลดหนี้)
 
-**A Credit Note is a document sent by a seller to the Customer, notifying that a credit has been made to their account against the goods returned by the buyer.**
+**เครดิตโน๊ตเป็นเอกสารที่ผู้ขายส่งถึงลูกค้าเพื่อแจ้งว่ามีการให้เครดิตกับสินค้าที่ผู้ซื้อส่งคืนไปยังบัญชีของพวกเขา**
 
-A Credit Note is issued for the value of goods returned by the Customer, it may be less than or equal to the total amount of the order. 
+เครดิตโน๊ตจะออกสำหรับมูลค่าของสินค้าที่ส่งคืนโดยลูกค้า ซึ่งอาจน้อยกว่าหรือเท่ากับยอดรวมของการสั่งซื้อ
 
-## 1. How to make a Credit Note
+## 1. วิธีการสร้างเครดิตโน๊ต
 
-The user can make a Credit Note against the Sales Invoice or they can directly make Credit Note from the Sales Invoice without reference. Note that to create a Credit Note, the invoice must be paid using a [Payment Entry](/docs/user/manual/en/accounts/payment-entry).
+ผู้ใช้สามารถสร้างใบลดหนี้เทียบกับใบกำกับสินค้าหรือสร้างใบลดหนี้จากใบกำกับสินค้าได้โดยตรงโดยไม่ต้องอ้างอิง โปรดทราบว่าการสร้างหมายเหตุเครดิตใบแจ้งหนี้ที่จะต้องจ่ายเงินโดยใช้ [รายการการชำระเงิน](/docs/user/manual/th/accounts/payment-entry).
 
-1. Go to the respective Sales Invoice and click on **Create > Return / Credit Note**.
+1. ใบแจ้งหนี้การขาย  **คลิกที่สร้าง > ส่งคืน / เครดิตโน๊ต**.
     ![Credit Note from Invoice](/docs/assets/img/accounts/credit-note-from-invoice.png)
-1. The Customer and Item details will be fetched as set in the Sales Invoice.
-1. If the Customer had paid partially or fully, make a Payment Entry against the original Sales Invoice.
-1. Save and Submit.
+1. รายละเอียดลูกค้าและรายการจะถูกดึงตามที่กำหนดไว้ในใบแจ้งหนี้การขาย
+1. หากลูกค้าได้ชำระเงินบางส่วนหรือทั้งหมดแล้ว ให้ทำรายการชำระเงินกับใบแจ้งหนี้การขายเดิม
+1. บันทึกและส่ง
     <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/accounts/credit-note.png">
 
-The Item quantity and Payment amount will be negative since it's a return.
+ปริมาณสินค้าและจำนวนเงินที่ชำระจะเป็นค่าลบเนื่องจากเป็นการคืนสินค้า
 
-### 1.1 How does Credit Note affect ledger
-Once a Payment Entry is created against the original Sales Invoice, the amount will be added to the Customer's account in negative so that the next time they make a purchase, this amount will be adjusted. 
+### 1.1 เครดิตโน๊ตมีผลกระทบต่อบัญชีแยกประเภทอย่างไร
 
-This is how the ledger is affected after a payment entry against a returned invoice:
+เมื่อมีการสร้างรายการการชำระเงินกับใบแจ้งหนี้การขายเดิม จำนวนเงินจะถูกเพิ่มไปยังบัญชีของลูกค้าเป็นค่าลบ เพื่อที่ว่าในครั้งต่อไปที่พวกเขาทำการซื้อ จำนวนเงินนี้จะถูกปรับ
+
+นี่คือวิธีที่บัญชีแยกประเภทได้รับผลกระทบหลังจากรายการชำระเงินกับใบแจ้งหนี้ที่ส่งคืน:
+
 ![Credit Note Ledger](/docs/assets/img/accounts/credit-note-ledger.png)
 
-Refer the [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice) page for any other details.
+อ่าน [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice) เพื่อทราบข้อมูลเพิ่มเติม
 
-### 1.2 No payment was made against Sales Invoice
-In case **no payment** was made against the original invoice, you could just cancel the Sales Invoice. But, if only 5 out of 10 Items are being returned from an invoice, creating a Credit Note is useful for updating the ledger.
+### 1.2 ไม่มีการชำระเงินกับใบแจ้งหนี้การซื้อ
 
-## 2. Example
+ในกรณีที่ **ไม่มีการชำระเงิน** กับใบแจ้งหนี้เดิม คุณสามารถยกเลิกใบกำกับสินค้าได้ แต่ถ้ามีการส่งคืนสินค้าเพียง 5 ใน 10 รายการจากใบแจ้งหนี้ การสร้างใบลดหนี้จะมีประโยชน์สำหรับการอัปเดตบัญชีแยกประเภท
 
-Customer Rohan had purchased PVC pipes worth Rs 300 + taxes and at the time of delivery, Customer found that the products were damaged. Now Rohan has returned the product a Credit Note will be issued.
+## 2. ตัวอย่าง
 
-Credit Note with payment entry in ERPNext for above example is as below:
+ลูกค้า Rohan ซื้อท่อ PVC มูลค่า 300 Rs + ภาษี และ ณ เวลาที่จัดส่ง ลูกค้าพบว่าสินค้าได้รับความเสียหาย ตอนนี้ Rohan ได้คืนสินค้าแล้วจะออกเครดิตโน๊ตให้
+
+เครดิตโน๊ตพร้อมรายการชำระเงินใน ERPNext สำหรับตัวอย่างข้างต้นมีดังนี้:
 
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/accounts/credit_note_example1.gif">
 
-### 3. Related Topics
-1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
-1. [Debit Note](/docs/user/manual/en/accounts/debit-note)
-1. [Sales Return](/docs/user/manual/en/stock/sales-return)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [รายการชำระเงิน](/docs/user/manual/th/accounts/payment-entry)
+1. [เดบิตโน๊ต](/docs/user/manual/th/accounts/debit-note)
+1. [ผลตอบแทนจากการขาย](/docs/user/manual/th/stock/sales-return)

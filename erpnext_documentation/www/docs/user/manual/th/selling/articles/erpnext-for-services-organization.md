@@ -1,45 +1,45 @@
 <!-- add-breadcrumbs -->
-#ERPNext for Service Organization
+#ERPNext สำหรับองค์กรบริการ
 
-**Question:** ERPNext looks primarily designed for the traders and manufacturers. Is ERPNext used by companies offering servies?
+**คำถาม:** ERPNext ออกแบบมาเพื่อผู้ค้าและผู้ผลิตเป็นหลัก ERPNext ใช้โดยบริษัทที่ให้บริการหรือไม่
 
-**Answer:**
+**ตอบ:**
 
-About 30% of ERPNext customers are companies into services. These are companies into software development, certification services, individual consultants and many more. Being into service business ourselves, we use ERPNext to manage our sales, accounting, support and HR operations. Check following video to learn how ERPNext uses ERPNext.
+ลูกค้า ERPNext ประมาณ 30% เป็นบริษัทที่ให้บริการ บริษัทเหล่านี้เป็นบริษัทด้านการพัฒนาซอฟต์แวร์ บริการออกใบรับรอง ที่ปรึกษารายบุคคล และอื่นๆ อีกมากมาย ในการดำเนินธุรกิจบริการ เราใช้ ERPNext เพื่อจัดการการขาย การบัญชี การสนับสนุนและการดำเนินงานด้านทรัพยากรบุคคล ตรวจสอบวิดีโอต่อไปนี้เพื่อเรียนรู้วิธีที่ ERPNext ใช้ ERPNext
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/b6r7WxJMfFA" frameborder="0" allowfullscreen=""></iframe>
 
-###Master Setup
+###การตั้งค่าหลัก
 
-The setup for a Service company differs primarily for Items. They don't maintain the Stock for Items and thus, don't have Warehouses.
+การตั้งค่าสำหรับบริษัทที่ให้บริการจะแตกต่างกันสำหรับรายการเป็นหลัก พวกเขาไม่ได้ดูแลสต็อกสินค้า ดังนั้นจึงไม่มีคลังสินค้า
 
-To create a Service (non-stock) Item, in the item master, uncheck "Maintain Stock" field.
+ในการสร้างรายการบริการ (ไม่มีสต็อก) ในหลักรายการ ให้ยกเลิกการเลือกช่อง "รักษาสต็อก"
 
 <img alt="Service Item" class="screenshot"  src="{{docs_base_url}}/assets/img/articles/services-1.png">
 
-When creating Sales Order for the services, select Order Type as **Maintenance**. Sales Order of Maintenance Type needs lesser details compared to stock item's order like Delivery Note, item warehouse etc.
+เมื่อสร้างใบสั่งขายสำหรับบริการ ให้เลือกประเภทคำสั่งซื้อเป็น **การบำรุงรักษา** ใบสั่งขายประเภทการบำรุงรักษาต้องการรายละเอียดน้อยกว่าเมื่อเปรียบเทียบกับใบสั่งของรายการสต็อค เช่น ใบส่งสินค้า คลังสินค้ารายการ ฯลฯ
 
-Service company can still add stock items to mantain their fixed assets like computers, furniture and other office equipments.
+บริษัทผู้ให้บริการยังคงเพิ่มสินค้าในสต็อกเพื่อรักษาสินทรัพย์ถาวร เช่น คอมพิวเตอร์ เฟอร์นิเจอร์และอุปกรณ์สำนักงานอื่นๆ ได้
 
-###Hiding Non-required Features
+###การซ่อนคุณสมบัติที่ไม่จำเป็น
 
-Since many modules like Manufacturing and Stock will not be required for the services company, you can hide those modules from:
+เนื่องจากบริษัทที่ให้บริการไม่จำเป็นต้องมีโมดูลจำนวนมาก เช่น การผลิตและสต็อก คุณจึงสามารถซ่อนโมดูลเหล่านั้นจาก:
 
-`Setup > Permissions > Show/Hide Modules`
+`การตั้งค่า > สิทธิ์ > แสดง/ซ่อนโมดูล'
 
-Modules unchecked here will be hidden from all the User.
+โมดูลที่ไม่ได้เลือกที่นี่จะถูกซ่อนจากผู้ใช้ทั้งหมด
 
-####Feature Setup
+####การตั้งค่าคุณสมบัติ
 
-Within the form, there are many fields only needed for companies into trading and manufacturing businesses. These fields can be hidden for the service company. Feature Setup is a tool where you can enable/disable specific feature. If a feature is disabled, then fields relevant to that feature is hidden from all the forms. For example, if Serial No. feature is disabled, then Serial. No. field from Item as well as from all the sales and purchase transaction will be hidden.
+ภายในแบบฟอร์ม มีหลายฟิลด์ที่จำเป็นสำหรับบริษัทในธุรกิจการค้าและการผลิตเท่านั้น ฟิลด์เหล่านี้สามารถซ่อนไว้สำหรับบริษัทที่ให้บริการ การตั้งค่าคุณลักษณะเป็นเครื่องมือที่คุณสามารถเปิด/ปิดคุณลักษณะเฉพาะได้ หากฟีเจอร์ถูกปิดใช้งาน ช่องที่เกี่ยวข้องกับฟีเจอร์นั้นจะถูกซ่อนจากทุกฟอร์ม ตัวอย่างเช่น หากปิดใช้งานคุณสมบัติ Serial No. แสดงว่า Serial ช่องหมายเลขจากรายการและจากธุรกรรมการขายและการซื้อทั้งหมดจะถูกซ่อนไว้
 
-[To learn more about Feature Setup, click here.](/docs/user/manual/en/customize-erpnext/hiding-modules-and-features).
+หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับการตั้งค่าคุณสมบัติ [คลิกที่นี่](/docs/user/manual/th/customize-erpnext/hiding-modules-and-features)
 
-####Permissions
+#### สิทธิ์
 
-ERPNext is the permission controlled system. Users access system based on permissions assigned to them. So, if user is not assigned Role related to Stock and Manufacturing module, it will be hidden from that User. [Click here to learn more about permission management.](/docs/user/manual/en/setting-up/users-and-permissions.html).
+ERPNext คือระบบควบคุมการอนุญาต ผู้ใช้เข้าถึงระบบตามสิทธิ์ที่ได้รับมอบหมาย ดังนั้น หากผู้ใช้ไม่ได้รับมอบหมายบทบาทที่เกี่ยวข้องกับโมดูลสต็อกและการผลิต จะถูกซ่อนจากผู้ใช้รายนั้น [คลิกที่นี่](/docs/user/manual/th/setting-up/users-and-permissions.html) เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับการจัดการสิทธิ์
 
-You can also refer to help video on User and Permissions setting in ERPNext.
+คุณยังสามารถอ้างถึงวิดีโอความช่วยเหลือเกี่ยวกับการตั้งค่าผู้ใช้และสิทธิ์ใน ERPNext
 
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/8Slw1hsTmUI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>

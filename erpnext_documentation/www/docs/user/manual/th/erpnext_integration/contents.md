@@ -1,39 +1,39 @@
 <!-- add-breadcrumbs -->
-# ERPNext Integrations
+# การบูรณาการ ERPNext
 
-### Authentication Integration
-1. [Ldap Integration](/docs/user/manual/en/erpnext_integration/ldap-integration)
-1. [fairlogin Integration](/docs/user/manual/en/erpnext_integration/fairlogin-integration)
+### การรวมการรับรองความถูกต้อง
+1. [การรวม Ldap](/docs/user/manual/th/erpnext_integration/ldap-integration)
+1. [การรวม fairlogin](/docs/user/manual/th/erpnext_integration/fairlogin-integration)
 
-### Backup Integration
-1. [Dropbox Backup](/docs/user/manual/en/erpnext_integration/dropbox-backup)
-2. [Google Drive Backup](/docs/user/manual/en/erpnext_integration/google_drive)
+### การรวมการสำรองข้อมูล
+1. [Dropbox Backup](/docs/user/manual/th/erpnext_integration/dropbox-backup)
+2. [Google Drive Backup](/docs/user/manual/th/erpnext_integration/google_drive)
 
-### Bank Integration
-1. [Plaid Integration](/docs/user/manual/en/erpnext_integration/plaid_integration)
+### การรวมธนาคาร
+1. [การรวมลายสก๊อต](/docs/user/manual/th/erpnext_integration/plaid_integration)
 
-### E-commerce Integration
-1. [Shopify Integration](/docs/user/manual/en/erpnext_integration/shopify_integration)
-2. [Woocommerce Integration](/docs/user/manual/en/erpnext_integration/woocommerce_integration)
-3. [Amazon Integration](/docs/user/manual/en/erpnext_integration/amazon_integration)
+### การรวมอีคอมเมิร์ซ
+1. [การผสานรวมของ Shopify](/docs/user/manual/th/erpnext_integration/shopify_integration)
+2. [การรวม Woocommerce](/docs/user/manual/th/erpnext_integration/woocommerce_integration)
+3. [การรวม Amazon](/docs/user/manual/th/erpnext_integration/amazon_integration)
 
-### Shipping Integration
-1. [ERPNext Shipping](/docs/user/manual/en/erpnext_integration/erpnext_shipping)
+### การรวมการจัดส่ง
+1. [ERPNext Shipping](/docs/user/manual/th/erpnext_integration/erpnext_shipping)
 
-### Google Integration
-1. [Google Settings](/docs/user/manual/en/erpnext_integration/google_settings)
-2. [Google Calendar](/docs/user/manual/en/erpnext_integration/google_calendar)
-3. [Google Contacts](/docs/user/manual/en/erpnext_integration/google_contacts)
-4. [Google Drive (Only Backup)](/docs/user/manual/en/erpnext_integration/google_drive)
-5. [Google Maps](/docs/user/manual/en/erpnext_integration/google_maps)
+### Google บูรณาการ
+1. [การตั้งค่า Google](/docs/user/manual/th/erpnext_integration/google_settings)
+2. [Google ปฏิทิน](/docs/user/manual/th/erpnext_integration/google_calendar)
+3. [Google Contacts](/docs/user/manual/th/erpnext_integration/google_contacts)
+4. [Google Drive (สำรองเท่านั้น)](/docs/user/manual/th/erpnext_integration/google_drive)
+5. [Google Maps](/docs/user/manual/th/erpnext_integration/google_maps)
 
-### Payment Integration
-1. [Paypal Integration](/docs/user/manual/en/erpnext_integration/paypal-integration)
-2. [Razorpay Integration](/docs/user/manual/en/erpnext_integration/razorpay-integration)
-3. [Gocardless Integration](/docs/user/manual/en/erpnext_integration/gocardless-integration)
-4. [Stripe Integration](/docs/user/manual/en/erpnext_integration/stripe-integration)
-5. [Braintree Integration](/docs/user/manual/en/erpnext_integration/braintree-integration)
-6. [Paytm Integration](/docs/user/manual/en/erpnext_integration/paytm-integration)
+### การรวมการชำระเงิน
+1. [การรวม Paypal](/docs/user/manual/th/erpnext_integration/paypal-integration)
+2. [การรวม Razorpay](/docs/user/manual/th/erpnext_integration/razorpay-integration)
+3. [การรวม Gocardless](/docs/user/manual/th/erpnext_integration/gocardless-integration)
+4. [การรวมแถบ](/docs/user/manual/th/erpnext_integration/stripe-integration)
+5. [การรวม Braintree](/docs/user/manual/th/erpnext_integration/braintree-integration)
+6. [การรวม Paytm](/docs/user/manual/th/erpnext_integration/paytm-integration)
 
-### Telephony Integration
-1. [Exotel Integration](/docs/user/manual/en/erpnext_integration/exotel_integration)
+### การรวมระบบโทรศัพท์
+1. [การผสานรวม Exotel](/docs/user/manual/th/erpnext_integration/exotel_integration)

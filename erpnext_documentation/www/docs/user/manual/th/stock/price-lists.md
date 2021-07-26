@@ -1,35 +1,35 @@
 <!-- add-breadcrumbs -->
-# Price Lists
+# รายการราคา
 
-**A Price List is a collection of Item Prices either Selling, Buying, or both.**
+**รายการราคาคือชุดของราคาสินค้าทั้งแบบขาย ซื้อ หรือทั้งสองอย่าง**
 
-ERPNext lets you maintain multiple Selling and Buying [Item Prices](/docs/user/manual/en/stock/item-price) using Price Lists.
+ERPNext ให้คุณรักษาการขายและการซื้อหลายรายการ [ราคาสินค้า](/docs/user/manual/th/stock/item-price) โดยใช้รายการราคา
 
-Price Lists can be used in scenarios where you have different prices for different zones (based on the shipping costs), for different currencies, etc. An Item can have multiple prices based on customer, currency, region, shipping cost, etc, which can be stored as different rate plans.
+รายการราคาสามารถใช้ในสถานการณ์ที่คุณมีราคาที่แตกต่างกันสำหรับโซนต่างๆ (ตามค่าจัดส่ง) สำหรับสกุลเงินต่างๆ ฯลฯ รายการสามารถมีราคาได้หลายแบบขึ้นอยู่กับลูกค้า สกุลเงิน ภูมิภาค ค่าจัดส่ง ฯลฯ ซึ่งสามารถ จะถูกเก็บไว้เป็นแผนอัตราต่างๆ
 
-In ERPNext, all the Item Prices are stored separately. Buying Price for an item is different from Selling Price and thus they're stored separately.
+ใน ERPNext ราคาสินค้าทั้งหมดจะถูกจัดเก็บแยกต่างหาก ราคาซื้อของสินค้าจะแตกต่างจากราคาขาย ดังนั้นจึงมีการจัดเก็บแยกไว้ต่างหาก
 
-To access a Price List go to:
+ในการเข้าถึงรายการราคาไปที่:
 
-> Home > Selling/Buying/Stock > Items and Pricing > Price List
+> หน้าหลัก > ขาย/ซื้อ/หุ้น > รายการและราคา > รายการราคา
 
 <img class="screenshot" alt="Price List" src="{{docs_base_url}}/assets/img/stock/price-list.png">
 
-## 1. How to use a Price List
+## 1. วิธีการใช้รายการราคา
 
-* Price Lists will be used when creating an [Item Prices](/docs/user/manual/en/stock/item-price) to track selling or buying price of an item.
+* รายการราคาจะใช้เมื่อสร้าง [ราคาสินค้า](/docs/user/manual/th/stock/item-price) เพื่อติดตามราคาขายหรือซื้อของรายการ
 
-* Specific countries can be assigned in the Price List.
+* สามารถกำหนดประเทศเฉพาะในรายการราคา
 
-* To disable specific Price List, untick the 'Enabled' checkbox. Disabled Price List will not be available for selection in the Sales and Purchase transactions.
+* หากต้องการปิดใช้งานรายการราคาเฉพาะ ให้ยกเลิกการเลือกช่องทำเครื่องหมาย 'เปิดใช้งาน' รายการราคาที่ปิดใช้งานจะไม่สามารถใช้ได้สำหรับการเลือกในธุรกรรมการขายและการซื้อ
 
-* **Price Not UOM Dependent**: Consider an item, Tomatoes which you buy in Boxes and sell in Kilos. 1 Box = 10 Kilos and 1 Kilo buying price is 10rs. If this Box is unchecked and you select 1 Box in your transaction, the price will show up only for a Kilo since that's the only Item Price saved.
+* **ราคาไม่ขึ้นกับหน่วยลงทุน**: พิจารณารายการ มะเขือเทศที่คุณซื้อในกล่องและขายเป็นกิโล 1 กล่อง = 10 กิโล ซื้อ 1 กิโล ราคา 10 บาท หากไม่ได้เลือกกล่องนี้ และคุณเลือก 1 กล่องในการทำธุรกรรม ราคาจะแสดงเป็นกิโลเท่านั้น เนื่องจากเป็นราคาสินค้าเพียงรายการเดียวที่บันทึกไว้
 
-    Now, if you tick this checkbox and make a transaction with a Box of Tomatoes, then the price will be automatically set as 100 since the price of 1 Box (10 Kilos) is 100.
+    ตอนนี้ หากคุณทำเครื่องหมายที่ช่องทำเครื่องหมายนี้ และทำธุรกรรมกับกล่องมะเขือเทศ ราคาจะถูกตั้งเป็น 100 โดยอัตโนมัติ เนื่องจากราคา 1 กล่อง (10 กิโลกรัม) คือ 100
 
-* Standard Buying and Selling Price Lists are created by default.
+* รายการราคาซื้อและขายมาตรฐานถูกสร้างขึ้นโดยค่าเริ่มต้น
 
-**Note**: If you have multiple Price Lists, you can select a Price List or tag it to a Customer (so that it is auto-selected). Your Item Prices will automatically be updated from the Price List. 
+**หมายเหตุ**: หากคุณมีรายการราคาหลายรายการ คุณสามารถเลือกรายการราคาหรือแท็กให้กับลูกค้าได้ (เพื่อให้ระบบเลือกรายการอัตโนมัติ) ราคาสินค้าของคุณจะได้รับการอัปเดตโดยอัตโนมัติจากรายการราคา
 
-### Related Topics
-1. [Item Price](/docs/user/manual/en/stock/item-price)
+### หัวข้อที่เกี่ยวข้อง
+1. [ราคาสินค้า](/docs/user/manual/th/stock/item-price)

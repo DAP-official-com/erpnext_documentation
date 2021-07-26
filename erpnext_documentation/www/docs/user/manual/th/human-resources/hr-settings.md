@@ -1,68 +1,68 @@
 <!-- add-breadcrumbs -->
 <!-- title: HR Settings -->
 
-# HR Settings
+# การตั้งค่าทรัพยากรบุคคล (การตั้งค่า HR)
 
-**HR Settings allow global settings for HR-related documents.**
+**การตั้งค่า HR อนุญาตการตั้งค่าส่วนกลางสำหรับเอกสารที่เกี่ยวข้องกับ HR**
 
-To access HR Settings, go to:
-> Home > Human Resources > Settings > HR Settings
+ในการเข้าถึงการตั้งค่า HR ไปที่:
+> หน้าหลัก > ทรัพยากรบุคคล > การตั้งค่า > การตั้งค่า HR
 
-There are various settings available in the HR Settings.
+มีการตั้งค่าต่างๆ ในการตั้งค่า HR
 
-## 1. Employee Settings
+## 1. การตั้งค่าพนักงาน
 
 <img class="screenshot" alt="Previous Work Experience" src="{{docs_base_url}}/assets/img/human-resources/hr-settings1.png">
 
-### 1.1. Retirement Age:
-You can enter the retirement age (in years) for your employees.
+### 1.1. วัยเกษียณ:
+คุณสามารถป้อนอายุเกษียณ (เป็นปี) สำหรับพนักงานของคุณได้
 
-### 1.2 Employee Records to be created by
-The naming for employee documents is based on the value selected in this field.
+### 1.2 บันทึกพนักงานที่จะสร้างโดย
+การตั้งชื่อเอกสารพนักงานขึ้นอยู่กับค่าที่เลือกในฟิลด์นี้
 
-* **Naming Series**: The employee documents created will be named using the naming series selected in the 'Series' field.
-* **Employee Number**: The Employee Number field becomes visible in selecting this field, and the naming of the employee document happens based on this field.
-* **Full Name**: The employee document is named using the full name of the employee.
+* **ชุดการตั้งชื่อ**: เอกสารพนักงานที่สร้างจะตั้งชื่อโดยใช้ชุดการตั้งชื่อที่เลือกในช่อง 'ชุด'
+* **หมายเลขพนักงาน**: ฟิลด์หมายเลขพนักงานจะปรากฏในการเลือกฟิลด์นี้ และการตั้งชื่อเอกสารพนักงานจะเกิดขึ้นตามฟิลด์นี้
+* **ชื่อเต็ม**: เอกสารพนักงานตั้งชื่อโดยใช้ชื่อเต็มของพนักงาน
 
-### 1.3 Stop Birthday Reminders
-An email is sent to all the employees of the company when an employee has a birthday. To stop this email from being sent you can check this option.
+### 1.3 หยุดเตือนวันเกิด
+อีเมลจะถูกส่งไปยังพนักงานทุกคนของบริษัทเมื่อพนักงานมีวันเกิด หากต้องการหยุดส่งอีเมลนี้ ให้เลือกตัวเลือกนี้
 
-### 1.4 Expense Approver Mandatory In Expense Claim
-In Expense Claim Document the 'Expense Approver' field is set to mandatory on checking this option.
+### 1.4 ผู้อนุมัติค่าใช้จ่ายบังคับในการเรียกร้องค่าใช้จ่าย
+ในเอกสารการเรียกร้องค่าใช้จ่าย ฟิลด์ 'ผู้อนุมัติค่าใช้จ่าย' ถูกกำหนดเป็นฟิลด์บังคับในการเลือกตัวเลือกนี้
 
-> Payroll Settings will be part of HR Settings till version 12. In version 13, Payroll Settings will be part of the new module, Payroll.
+> การตั้งค่า เงินเดือน จะเป็นส่วนหนึ่งของการตั้งค่า HR จนถึงเวอร์ชัน 12 ในเวอร์ชัน 13 การตั้งค่าเงินเดือน จะเป็นส่วนหนึ่งของโมดูลใหม่ นั่นคือ เงินเดือน
 
-## 2. Payroll Settings
+## 2. การตั้งค่าเงินเดือน
 
 <img class="screenshot" alt="Previous Work Experience" src="{{docs_base_url}}/assets/img/human-resources/hr-settings2.png">
 
-#### 2.1 Calculate Payroll Working Days Based On
-Working Days in Salary Slip can be calculated based on Leave Application or Attendance records. You can select the option based on what you want to calculate working days.
+#### 2.1 คำนวณวันทำงานของเงินเดือนตาม
+วันทำงานในสลิปเงินเดือนสามารถคำนวณได้จากบันทึกการลางานหรือบันทึกการเข้างาน คุณสามารถเลือกตัวเลือกตามสิ่งที่คุณต้องการคำนวณวันทำการ
 
-#### 2.2 Max working hours against Timesheet
-For salary slips based on the timesheet, you can set the maximum allowed hours against a single timesheet. Set this value to zero to disable this validation.
+#### 2.2 ชั่วโมงการทำงานสูงสุดเทียบกับตารางเวลาทำงาน
+สำหรับสลิปเงินเดือนตามไทม์ชีท คุณสามารถตั้งค่าชั่วโมงสูงสุดที่อนุญาตกับไทม์ชีทเดียวได้ ตั้งค่านี้เป็นศูนย์เพื่อปิดใช้งานการตรวจสอบนี้
 
-### 2.3 Include holidays in Total no. of Working Days
-If checked, the total number of working days will include holidays, and this will reduce the value of salary per day.
+### 2.3 รวมวันหยุดในจำนวนทั้งหมด ของวันทำงาน
+หากเลือกไว้ จำนวนวันทำงานทั้งหมดจะรวมวันหยุดด้วย และจะเป็นการลดมูลค่าของเงินเดือนต่อวัน
 
-### 2.4 Disable Rounded Total
-You can enable this to disable rounding off the total amount in salary slips.
+### 2.4 ปิดการปัดเศษยอดทั้งหมด
+คุณสามารถเปิดใช้งานสิ่งนี้เพื่อปิดใช้งานการปัดเศษจำนวนเงินทั้งหมดในสลิปเงินเดือน
 
-### 2.5 Daily Wages Fraction for Half Day
-Based on this fraction, the salary for Half Day will be calculated. For example, if the value is set as 0.75, the three-fourth salary will be given for half-day attendance.
+### 2.5 เศษส่วนของค่าจ้างรายวันสำหรับครึ่งวัน
+จากเศษนี้ เงินเดือนครึ่งวันจะถูกคำนวณ ตัวอย่างเช่น หากตั้งค่าเป็น 0.75 เงินเดือนสามในสี่จะได้รับสำหรับการเข้าร่วมครึ่งวัน
 
-### 2.6 Email Salary Slip to Employee
-An email with the salary slip is sent to the respective employee's preferred email address on submission of the salary slip.
+### 2.6 อีเมลสลิปเงินเดือนถึงพนักงาน
+อีเมลพร้อมสลิปเงินเดือนจะถูกส่งไปยังที่อยู่อีเมลที่ต้องการของพนักงานที่เกี่ยวข้องในการส่งสลิปเงินเดือน
 
-### 2.7 Encrypt Salary Slips in Emails
-The salary slip PDF sent to the employee is encrypted using the mentioned Password Policy.
+### 2.7 เข้ารหัสสลิปเงินเดือนในอีเมล
+สลิปเงินเดือน PDF ที่ส่งถึงพนักงานจะถูกเข้ารหัสโดยใช้นโยบายรหัสผ่านที่กล่าวถึง
 
-### 2.8 Password Policy
-This field becomes visible and mandatory on checking the above option for encrypting the salary slip in email.
+### 2.8 นโยบายรหัสผ่าน
+ช่องนี้จะมองเห็นได้และจำเป็นต้องตรวจสอบตัวเลือกด้านบนเพื่อเข้ารหัสสลิปเงินเดือนในอีเมล
 
-Here is an example of how to set a Password Policy for the salary slip PDF.
+นี่คือตัวอย่างวิธีการกำหนดนโยบายรหัสผ่านสำหรับสลิปเงินเดือน PDF
 
-**Example:**
+**ตัวอย่าง:**
 
 ```
 SAL-{first_name}-{date_of_birth.year}
@@ -70,36 +70,36 @@ SAL-{first_name}-{date_of_birth.year}
 
 This will generate a password like SAL-Jane-1972
 
-## 3. Leave Settings
+## 3. การตั้งค่าวันลางาน
 
 <img class="screenshot" alt="Previous Work Experience" src="{{docs_base_url}}/assets/img/human-resources/hr-settings3.png">
 
-### 3.1 Leave Approval Notification Template
-On creating or updating a leave application with a leave approver, an email is sent to this leave approver notifying about the new leave application. The email template used for this purpose can be selected here.
+### 3.1 เทมเพลตการแจ้งเตือนการอนุมัติการลางาน
+ในการสร้างหรืออัปเดตใบลางานด้วยผู้อนุมัติการลา อีเมลจะถูกส่งไปยังผู้อนุมัติการลาเพื่อแจ้งเกี่ยวกับการขอลาใหม่ เทมเพลตอีเมลที่ใช้เพื่อการนี้สามารถเลือกได้ที่นี่
 
-### 3.2 Leave Status Notification Template
-On Submission/Cancellation of a leave application, the employee receives an email with the updated status of their leave application. The email template used for this purpose can be selected here.
+### 3.2 เทมเพลตการแจ้งเตือนสถานะการลางาน
+ในการยื่น/ยกเลิกใบลางาน พนักงานจะได้รับอีเมลแจ้งสถานะล่าสุดของใบลางาน เทมเพลตอีเมลที่ใช้เพื่อการนี้สามารถเลือกได้ที่นี่
 
-### 3.3 Leave Approver Mandatory In Leave Application
-In Leave Application document the 'Leave Approver' field is set to mandatory on checking this option.
+### 3.3 ปล่อยให้ผู้อนุมัติบังคับในใบลางาน
+ในเอกสารขอลางาน ฟิลด์ 'ผู้อนุมัติการออกจาก' ถูกกำหนดเป็นฟิลด์บังคับในการเลือกตัวเลือกนี้
 
-### 3.4 Show Leaves Of All Department Members In Calendar
-The approved leaves of all employees in the same department are shown in the calendar view on checking this option.
+### 3.4 แสดงใบลาของสมาชิกแผนกทั้งหมดในปฏิทิน
+การลางานที่ได้รับอนุมัติของพนักงานทั้งหมดในแผนกเดียวกันจะแสดงในมุมมองปฏิทินเมื่อเลือกตัวเลือกนี้
 
-### 3.5 Auto Leave Encashment
-If checked, the system generates a draft Leave Encashment record on the expiry of the leave allocation for all encashable Leave Types.
+### 3.5 การฝากเงินอัตโนมัติ
+หากเลือก ระบบจะสร้างเรกคอร์ด Leave Encashment ฉบับร่างเกี่ยวกับการหมดอายุของการจัดสรรการลาสำหรับประเภทการลาที่เข้ารหัสได้ทั้งหมด
 
-### 3.6 Restrict Backdated Leave Application
-If checked, the system will not allow making a backdated leave application.
+### 3.6 จำกัดการขอลางานย้อนหลัง
+หากเลือก ระบบจะไม่อนุญาตให้ทำการขอลาย้อนหลัง
 
-> Introduced in version 13
+> เปิดตัวในเวอร์ชั่น 13
 
-### 3.7 Automatic Allocate Leaves Based On Leave Policy
-If checked, leaves will be granted to the employees automatically based on the Effective From date as per the present Leave Policy Assignment.
+### 3.7 จัดสรรการลาโดยอัตโนมัติตามนโยบายการลา
+หากตรวจสอบแล้ว จะมอบการลางานให้กับพนักงานโดยอัตโนมัติตามวันที่เริ่มมีผลบังคับใช้ตามการกำหนดนโยบายการลาปัจจุบัน
 
-## 4. Hiring Settings
+## 4. การตั้งค่าการจ้างงาน
 
-### 4.1 Check Vacancies On Job Offer Creation
-On the creation of a job offer for a particular position, vacancies present in the staffing plan for that position are checked to warn the user from over hiring for a particular position.
+### 4.1 ตรวจสอบตำแหน่งงานว่างในการสร้างข้อเสนองาน
+ในการสร้างข้อเสนองานสำหรับตำแหน่งใดตำแหน่งหนึ่ง ตำแหน่งงานว่างที่มีอยู่ในแผนการจัดหาพนักงานสำหรับตำแหน่งนั้นจะได้รับการตรวจสอบเพื่อเตือนผู้ใช้จากการจ้างงานในตำแหน่งใดตำแหน่งหนึ่งมากเกินไป
 
 {next}

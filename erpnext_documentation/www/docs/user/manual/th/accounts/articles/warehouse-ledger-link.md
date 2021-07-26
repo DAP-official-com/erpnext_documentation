@@ -1,20 +1,20 @@
 <!-- add-breadcrumbs -->
-# Stock and Accounting Module Integration
+# การรวมโมดูลสต็อกและการบัญชี
 
-The value of stock stored in the warehouses needs to be tracked.
+มูลค่าของสต็อคที่เก็บไว้ในคลังสินค้าจะต้องมีการติดตาม
 
-Each warehouse is linked to a ledger in chart of accounts through the 'Account' field in the warehouse.
+คลังสินค้าแต่ละแห่งเชื่อมโยงกับบัญชีแยกประเภทในผังบัญชีผ่านฟิลด์ 'บัญชี' ในคลังสินค้า
 
 <img class="screenshot" alt="Opening Account" src="{{docs_base_url}}/assets/img/accounts/stock_asset_ledger_in_warehouse.png">
 
-If the Account field is empty in a warehouse, then the Account mentioned in the parent of that warehouse is considered. If an Account could not be determined by tracing the hierarchy, then the Default Inventory Account mentioned in the Company record is considered.
+หากฟิลด์บัญชีว่างเปล่าในคลังสินค้า จะพิจารณาบัญชีที่กล่าวถึงในพาเรนต์ของคลังสินค้านั้น หากไม่สามารถกำหนดบัญชีโดยการติดตามลำดับชั้น บัญชีสินค้าคงคลังเริ่มต้นที่กล่าวถึงในบันทึกของบริษัทจะได้รับการพิจารณา
 
 <img class="screenshot" alt="Opening Account" src="{{docs_base_url}}/assets/img/accounts/default_inventory_account.png">
 
-When a company is created, a ledger named 'Stock In Hand' is created by default in Chart of Accounts.
+เมื่อมีการสร้างบริษัท บัญชีแยกประเภทชื่อ 'สต็อกในมือ' จะถูกสร้างขึ้นตามค่าเริ่มต้นในผังบัญชี
 
-**Chart of Accounts > Assets > Current Assets > Stock Assets > Stock In Hand.**
+**ผังบัญชี > สินทรัพย์ > สินทรัพย์หมุนเวียน > สินทรัพย์หุ้น > สต็อกในมือ**
 
-If required, you can create additional ledgers under 'Stock Assets' group.
+หากจำเป็น คุณสามารถสร้างบัญชีแยกประเภทเพิ่มเติมได้ภายใต้กลุ่ม 'สินทรัพย์ในสต็อก'
 
 <img class="screenshot" alt="Stock Asset Ledger" src="{{docs_base_url}}/assets/img/accounts/stock_asset_ledger.png">

@@ -1,21 +1,21 @@
 <!-- add-breadcrumbs -->
-# Perm Level Error in Permission Manager
+# ระดับการอนุญาตผิดพลาดในตัวจัดการการอนุญาต
 
-While customizing rules in the [Permission Manager](/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions), you might receive an error message saying:
+ขณะกำหนดกฎเองใน [ตัวจัดการบทบาท](/docs/user/manual/th/setting-up/users-and-permissions/role-based-permissions) คุณอาจได้รับข้อความแสดงข้อผิดพลาดว่า:
 
-> For System Manager _(or any other role)_ at level 2 _(or another level)_ in Customer _(or any other document)_ in row 8: Permission at level 0 must be set before higher levels are set.
+> สำหรับ System Manager _(หรือบทบาทอื่นใด)_ ที่ระดับ 2 _(หรือระดับอื่น)_ ในลูกค้า _(หรือเอกสารอื่นใด)_ ในแถวที่ 8: ต้องตั้งค่าการอนุญาตที่ระดับ 0 ก่อนที่จะตั้งค่าระดับที่สูงกว่า
 
-Error message indicates problem is in the existing permission setting for this document.
+ข้อความแสดงข้อผิดพลาดระบุว่าปัญหาอยู่ในการตั้งค่าการอนุญาตที่มีอยู่สำหรับเอกสารนี้
 
-For any role, before assigning permission at Perm Level 1 or 2 (and so on), permission at Perm Level 0 must be assigned. Error message says that System Manager has been assigned permission at Perm Level 1 and 2, but not at level 0. You should first correct the permission for System Manager's role by:
+สำหรับบทบาทใดๆ ก่อนมอบหมายสิทธิ์ในระดับการใช้งานระดับ 1 หรือ 2 (และอื่นๆ) จะต้องมอบหมายสิทธิ์ในระดับระดับ 0 ก่อน ข้อความแสดงข้อผิดพลาดแจ้งว่า System Manager ได้รับมอบหมายสิทธิ์อนุญาตที่ระดับการใช้งาน 1 และ 2 แต่ไม่ใช่ที่ระดับ 0 ก่อนอื่นคุณควรแก้ไขการอนุญาตสำหรับบทบาทของผู้จัดการระบบโดย:
 
-- Assigning permission to System Manager at level 0.
+- การกำหนดสิทธิ์ให้กับ System Manager ที่ระดับ 0
 
-    Or
+    หรือ
 
-- By removing permission at level 1 and 2.
+- โดยการลบการอนุญาตที่ระดับ 1 และ 2
 
-After executing one of the above steps, you should be able to successfully add new permissions rules in the Role Permission Manager.
+หลังจากดำเนินการตามขั้นตอนข้างต้นแล้ว คุณควรจะเพิ่มกฎการอนุญาตใหม่ใน ตัวจัดการบทบาทและอนุญาต ได้สำเร็จ
 
 {next}
 

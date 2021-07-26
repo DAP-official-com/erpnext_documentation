@@ -1,8 +1,8 @@
 <!-- add-breadcrumbs -->
-# Delivery Note Negative Stock Error
+# บันทึกการจัดส่งขผิดพลาดในสต็อก
 
-**Question**: When submitting a Delivery Note, receiving a message says that item's stock is insufficient, but we have item's stock available in the Warehouse.
+**คำถาม**: เมื่อส่งใบส่งสินค้า ได้รับข้อความแจ้งว่าสต็อคของสินค้าไม่เพียงพอ แต่เรามีสต็อคของสินค้าในคลังสินค้า
 
-**Answer**: On submission of Delivery Note, stock level is checked as on Posting Date and Posting Time of a Delivery Note. It's possible that you have stock of an Item available in the Warehouse. But if you are creating back-dated Delivery Note, and if item was not available in the warehouse on the Posting Date and Posting Time of Delivery Note, you are likely to receive an error message on the negative stock. You can refer to the Stock Ledger report to confirm the same.
+**คำตอบ**: เมื่อส่งใบส่งมอบ ระดับสต็อกจะถูกตรวจสอบตามวันที่โพสต์และเวลาในการโพสต์ของใบส่งมอบ เป็นไปได้ว่าคุณมีสต็อคของรายการที่มีอยู่ในโกดัง แต่ถ้าคุณกำลังสร้างบันทึกการจัดส่งที่ลงวันที่ย้อนหลัง และถ้าสินค้าไม่มีอยู่ในคลังสินค้าในวันที่ผ่านรายการและเวลาที่ลงรายการบัญชีของบันทึกการจัดส่ง คุณมักจะได้รับข้อความแสดงข้อผิดพลาดเกี่ยวกับสต็อคค่าลบ คุณสามารถดูรายงานบัญชีแยกประเภทหุ้นเพื่อยืนยันได้
 
-If this is the case, you should edit the Posting Date and Time of a Delivery Note, and ensure that it is after the Posting Date and Time of item's receipt entry.
+หากเป็นกรณีนี้ คุณควรแก้ไขวันที่และเวลาที่ลงรายการบัญชีของใบส่งสินค้า และตรวจสอบให้แน่ใจว่าอยู่หลังวันที่และเวลาที่ลงรายการบัญชีของรายการรับสินค้า

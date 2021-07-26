@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-# Track Items Using Barcode
+# ติดตามรายการโดยใช้บาร์โค้ด
 
-A barcode is a value decoded into vertical spaced lines. Barcode scanners are the input medium, like Keyboard. When it scans a barcode, the data appears in the computer screens at the point of a cursor.
+บาร์โค้ดคือค่าที่ถอดรหัสเป็นเส้นเว้นระยะแนวตั้ง เครื่องสแกนบาร์โค้ดเป็นสื่อป้อนเข้า เช่น แป้นพิมพ์ เมื่อสแกนบาร์โค้ด ข้อมูลจะปรากฏในหน้าจอคอมพิวเตอร์ที่จุดเคอร์เซอร์
 
-## Item Master
+## รายการสินค้าหลัก
 
-To set the barcode of a particular item, you will have to open the Item record. You can also enter barcode while creating a new item.
+ในการตั้งค่าบาร์โค้ดของรายการใดรายการหนึ่ง คุณจะต้องเปิดเรกคอร์ดรายการ คุณยังสามารถป้อนบาร์โค้ดในขณะที่สร้างรายการใหม่
 
 <img alt="Material Transfer" class="screenshot" src="{{docs_base_url}}/assets/img/articles/barcode-item-master.png">
 
-Once barcode field is updated in item master, items can be fetched using barcode. This feature will be available in Delivery Note, Sales Invoice, Purchase Receipt, and Stock Reconciliation transactions only.
+เมื่อฟิลด์บาร์โค้ดได้รับการอัปเดตในต้นแบบรายการแล้ว สามารถดึงข้อมูลรายการโดยใช้บาร์โค้ดได้ คุณลักษณะนี้จะพร้อมใช้งานในใบส่งสินค้า ใบกำกับสินค้า ใบรับซื้อ และธุรกรรมการกระทบยอดสินค้าเท่านั้น
 
 <img alt="Material Transfer" class="screenshot" src="{{docs_base_url}}/assets/img/articles/barcode-item-selection.gif">
 
-## Using mobile phone / smartphone to scan and add items
+## ใช้โทรศัพท์มือถือ / สมาร์ทโฟนเพื่อสแกนและเพิ่มรายการ
 
-> Introduced in version 12
+> เปิดตัวในเวอร์ชัน 12
 
-After downloading the ERPNext app from the [Google Play Store](https://play.google.com/store/apps/details?id=io.frappe.mobile&hl=en) or [Apple App Store](https://apps.apple.com/us/app/erpnext/id1027318091). 
+หลังจากดาวน์โหลดแอป ERPNext จาก [Google Play Store](https://play.google.com/store/apps/details?id=io.frappe.mobile&hl=th) หรือ [Apple App Store](https:// apps.apple.com/us/app/erpnext/id1027318091)
 
-Log in to your ERPNext account, go to the Item master and you'll be able to scan barcodes and add Items right from your smartphone!
+เข้าสู่ระบบบัญชี ERPNext ของคุณ ไปที่ Item master แล้วคุณจะสามารถสแกนบาร์โค้ดและเพิ่มรายการได้จากสมาร์ทโฟนของคุณ
 
 ![Item Barcode using Smartphone](/docs/assets/img/articles/item-barcode-phone.gif)

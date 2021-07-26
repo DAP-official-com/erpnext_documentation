@@ -1,12 +1,12 @@
 <!-- add-breadcrumbs -->
-#Delivery from Sales Invoice
+# การจัดส่งจากใบแจ้งหนี้การขาย
 
-If you have items delivery and invoicing happening at the same time, you can create delivery from with Sales Invoice itself. Sales Invoice has field called **Update Stock**, just before Item table. If this field is checked, on submission of Sales Invoice, stock of Item will be deducted from selected Warehouse.
+หากคุณมีการส่งมอบสินค้าและการออกใบแจ้งหนี้พร้อมกัน คุณสามารถสร้างการจัดส่งจากใบกำกับสินค้าเองได้ Sales Invoice มีช่อง **Update Stock** ก่อนตาราง Item หากมีการตรวจสอบฟิลด์นี้ เมื่อส่งใบกำกับสินค้า สต็อคของสินค้าจะถูกหักออกจากคลังสินค้าที่เลือก
 
 <img alt="Update Stock" class="screenshot" src="{{docs_base_url}}/assets/img/articles/update-stock.png">
 
-On checking Update Stock, Sales Invoice Item will show relevant fields like Warehouse, Serial No., Batch No., Item valuation etc.
+ในการตรวจสอบ Update Stock รายการ Sales Invoice Item จะแสดงฟิลด์ที่เกี่ยวข้อง เช่น คลังสินค้า, Serial No., Batch No., Item valuation เป็นต้น
 
-On submission of Sales Invoice, with general ledger posting, stock ledger posting will happen as well.
+ในการส่งใบกำกับสินค้า การผ่านรายการบัญชีแยกประเภททั่วไป การผ่านรายการบัญชีแยกประเภทก็จะเกิดขึ้นเช่นกัน
 
 {next}

@@ -1,127 +1,126 @@
 <!-- add-breadcrumbs -->
-# Homepage
+#โฮมเพจ
 
-**A homepage is the default landing page of your website.**
+**หน้าแรกคือหน้า Landing Page เริ่มต้นของเว็บไซต์ของคุณ**
 
-ERPNext's Website Module generates a default landing page for your website. You
-can customize it in Homepage.
+โมดูลเว็บไซต์ของ ERPNext สร้างหน้า Landing Page เริ่มต้นสำหรับเว็บไซต์ของคุณ คุณ
+ปรับแต่งได้ในหน้าแรก
 
-To access the Homepage page in ERPNext, go to:
+ในการเข้าถึงโฮมเพจใน ERPNext ให้ไปที่:
 
-> Home > Website > Portal > Homepage
+> หน้าแรก > เว็บไซต์ > พอร์ทัล > หน้าแรก
 
-## 1. How to setup Home Page
-1. Select the Company.
-1. Set the Title. This will be shown in the Browser Tab.
-1. Configure the Hero Section as explained in the next section.
+## 1. วิธีตั้งค่าโฮมเพจ
+1. เลือกบริษัท
+1. ตั้งชื่อ ซึ่งจะแสดงในแท็บเบราว์เซอร์
+1. กำหนดค่าส่วนฮีโร่ตามที่อธิบายไว้ในส่วนถัดไป
 
 ![Homepage](/docs/assets/img/website/homepage.png)
-*Homepage*
+*โฮมเพจ*
 
-> Make sure your default 'Home Page' is set as `home` in Website Settings for
-> this to work.
+> ตรวจสอบให้แน่ใจว่า 'หน้าแรก' เริ่มต้นของคุณถูกตั้งค่าเป็น 'หน้าแรก' ในการตั้งค่าเว็บไซต์สำหรับ
 
-## 2. Hero Section
+## 2. หมวดฮีโร่
 
-There are three ways in which you can customize the way the Hero Section looks:
+มีสามวิธีที่คุณสามารถปรับแต่งลักษณะของส่วนฮีโร่ได้:
 
-1. Tag Line and Description (Default).
-1. Homepage Slideshow.
-1. Custom Hero Section.
+1. Tag Line และ คำอธิบาย (ค่าเริ่มต้น)
+1. สไลด์โชว์หน้าแรก
+1. ส่วนฮีโร่ที่กำหนดเอง
 
-### 2.1 Tag Line and Description
+### 2.1 แท็กไลน์และคำอธิบาย
 
-After you set your Tag Line, Description and Hero Image you'll have a decent
-looking front page. You can also change the URL for the Explore button under **URL for "All Products"**.
+หลังจากที่คุณตั้งค่า Tag Line, Description และ Hero Image แล้ว คุณจะมีดี
+มองไปข้างหน้า คุณยังสามารถเปลี่ยน URL สำหรับปุ่มสำรวจภายใต้ **URL สำหรับ "ผลิตภัณฑ์ทั้งหมด"**
 
 ![Website Homepage](/docs/assets/img/website/website-homepage.png)
-*Website Homepage*
+*หน้าแรกของเว็บไซต์*
 
-### 2.2 Homepage Slideshow
 
-Set the **Hero Section Based On** to **Slideshow** and the **Homepage Slideshow**
-field will appear.
+### 2.2 สไลด์โชว์หน้าแรก
+
+ตั้งค่า **ส่วนฮีโร่ตาม** เป็น **สไลด์โชว์** และ **สไลด์โชว์หน้าแรก**
+ฟิลด์จะปรากฏขึ้น
 
 ![Homepage Slideshow Setting](/docs/assets/img/website/homepage-slideshow-setting.png)
-*Homepage Slideshow Setting*
+*การตั้งค่าสไลด์โชว์หน้าแรก*
 
-Now, select an existing Slideshow or create a new one shown as follows:
+ตอนนี้ เลือกสไลด์โชว์ที่มีอยู่หรือสร้างใหม่ที่แสดงดังนี้:
 
 ![Website Slideshow](/docs/assets/img/website/website-slideshow.png)
-*Website Slideshow*
+*สไลด์โชว์เว็บไซต์*
 
-> For best results, make sure all of your slideshow images have same height and
-> their width is greater than the height.
+> เพื่อผลลัพธ์ที่ดีที่สุด ตรวจสอบให้แน่ใจว่ารูปภาพสไลด์โชว์ทั้งหมดของคุณมีความสูงเท่ากันและ
+> ความกว้างมากกว่าความสูง
 
 ![Website Homepage with Slideshow](/docs/assets/img/website/website-homepage-slideshow.gif)
 
-### 2.3 Custom Hero Section
+### 2.3 Hero Section ที่กำหนดเอง
 
-The third type of Hero Section allows you to write your own HTML.
+ส่วนฮีโร่ประเภทที่สามช่วยให้คุณเขียน HTML ของคุณเองได้
 
-Set **Hero Section Based On** to **Hero Section**.
+ตั้งค่า **Hero Section Based On** เป็น **Hero Section**
 
-Now create a new Hero Section. Set **Section Based On** as **Custom HTML**.
-Write your custom HTML in the Section HTML field.
+ตอนนี้สร้าง Hero Section ใหม่ ตั้งค่า **ตามส่วน** เป็น **HTML ที่กำหนดเอง**
+เขียน HTML ที่กำหนดเองของคุณในฟิลด์ HTML ของส่วน
 
 ![Homepage Settings](/docs/assets/img/website/homepage-hero-custom.png)
-*Homepage Settings*
+*การตั้งค่า โฮมเพจ*
 
-You can write any valid [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) markup here.
+คุณสามารถเขียนมาร์กอัป [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) ที่ถูกต้องได้ที่นี่
 
 ![New Hero Section](/docs/assets/img/website/hero-custom.png)
-*New Hero Section*
+*Hero Section ใหม่*
 
-It will look something like this:
+มันจะมีลักษณะดังนี้:
 ![Homepage Hero Custom](/docs/assets/img/website/website-homepage-custom.png)
-*Homepage Hero Custom*
+*Homepage Hero ที่กำหนดเอง*
 
-## 3. Featured Products
+## 3. สินค้าแนะนำ
 
-You can also show featured products on your Homepage by adding them to the
-Products table.
+คุณยังสามารถแสดงสินค้าเด่นบนโฮมเพจของคุณโดยเพิ่มลงในตารางสินค้า
 
 ![Homepage Products Table](/docs/assets/img/website/homepage-featured-products.png)
-*Homepage Products Table*
+*โฮมเพจตารางสินค้า*
 
-It will look something like this:
+มันจะมีลักษณะดังนี้:
 ![Featured Products on Homepage](/docs/assets/img/website/website-featured-products.png)
-*Featured Products on Homepage*
+*สินค้าแนะนำในโฮมเพจ*
 
-## 4. Homepage Section
+## 4. ส่วนของหน้าแรก (โฮมเพจ)
 
-You can add custom sections on your Homepage by creating new Homepage Sections.
+คุณสามารถเพิ่มส่วนที่กำหนดเองบนโฮมเพจของคุณโดยการสร้างส่วนโฮมเพจใหม่
 
-> Go to Website > Portal > Homepage Section
+> ไปที่เว็บไซต์ > พอร์ทัล > ส่วนโฮมเพจ
 
-A homepage section can consist of cards or Custom HTML. Set **Section Based On**
-to **Cards**.
+ส่วนของหน้าแรกอาจประกอบด้วยการ์ดหรือ HTML ที่กำหนดเอง กำหนด **ส่วนตาม**
+ถึง **การ์ด**
 
 ![New Homepage Section](/docs/assets/img/website/new-homepage-section.png)
-*New Homepage Section*
+*ส่วนโฮมเพจใหม่*
 
-Add details for each card like Title, Subtitle, Image, Content and Route in the
-Section Cards table.
+เพิ่มรายละเอียดของการ์ดแต่ละใบ เช่น ชื่อเรื่อง คำบรรยาย รูปภาพ เนื้อหา และเส้นทางใน
+ตารางบัตรมาตรา.
 
-It will look something like this:
+มันจะมีลักษณะดังนี้:
 ![Homepage Section](/docs/assets/img/website/homepage-section.png)
-*Homepage Section*
+*ส่วนโฮมเพจ*
 
-You can also control the order in which these sections appear by setting the
-**Section Order**. 0 will be shown first, followed by 1, and so on.
+คุณยังสามารถควบคุมลำดับที่ส่วนเหล่านี้ปรากฏโดยการตั้งค่า
+**ลำดับมาตรา**. 0 จะแสดงก่อน ตามด้วย 1 และอื่นๆ
 
-> To add Sections with Custom HTML refer [Custom Hero Section](#23-custom-hero-section).
+> หากต้องการเพิ่มส่วนด้วย HTML ที่กำหนดเอง โปรดดู [ส่วนฮีโร่ที่กำหนดเอง](#23-ส่วนฮีโร่ที่กำหนดเอง)
 
-## 5. Custom Homepage
+## 5. หน้าแรกที่กำหนดเอง
 
-ERPNext allows you to have a completely different homepage if you don't want to
-use the default one described above.
+ERPNext ช่วยให้คุณมีโฮมเพจที่แตกต่างไปจากเดิมอย่างสิ้นเชิงหากคุณไม่ต้องการ
+ใช้ค่าเริ่มต้นที่อธิบายไว้ข้างต้น
 
-To setup a custom homepage:
+ในการตั้งค่าโฮมเพจที่กำหนดเอง:
 
-1. Create a [Web Page](/docs/user/manual/en/website/web-page).
-1. Go to Website > Setup > Website Settings.
-1. Set Home Page as the `route` of your Web Page.
+1. สร้าง [เว็บเพจ](/docs/user/manual/th/website/web-page)
+1. ไปที่เว็บไซต์ > ตั้งค่า > การตั้งค่าเว็บไซต์
+1. ตั้งค่าโฮมเพจเป็น "เส้นทาง" ของหน้าเว็บของคุณ
    ![](/docs/assets/img/website/custom-homepage.png)
 
 {next}

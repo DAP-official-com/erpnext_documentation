@@ -1,33 +1,33 @@
-# Leave Calculation In Salary Slip
+# การคำนวณวันลาในสลิปเงินเดือน
 
-There are two types of leave which user can apply for.
+การลามีสองประเภทที่ผู้ใช้สามารถสมัครได้
 
-* Paid Leave (Sick Leave, Privilege Leave, Casual Leave etc.)
-* Unpaid Leave
+* ลาจ่าย (ลาป่วย, ลาสิทธิ์, ลาพักร้อน ฯลฯ )
+* ลาที่ค้างชำระ
 
-Paid Leave are firstly allocated by HR manager. As and when Employee creates Leave Application, leaves allocated to him/her are deducted. These leaves doesn't have impact on the employee's Salary Slip.
+การลางานจะได้รับการจัดสรรโดยผู้จัดการฝ่ายทรัพยากรบุคคลก่อน และเมื่อพนักงานสร้างใบลาออก ใบที่จัดสรรให้กับเขา/เธอจะถูกหักออก ใบเหล่านี้ไม่มีผลกับสลิปเงินเดือนของพนักงาน
 
-When Employee is out of paid leave, he create Leave Application for unpaid leave. The term used for unpaid leave in ERPNext is Leave Without Pay (LWP). These leaves does have impact on the Employee's Salary Slip.
+เมื่อพนักงานลาออกโดยได้รับค่าจ้าง เขาจะจัดทำใบลาหยุดโดยไม่ได้รับค่าจ้าง คำที่ใช้สำหรับการลาที่ไม่ได้รับค่าจ้างใน ERPNext คือ ปล่อยให้โดยไม่ต้องจ่าย (LWP) ใบเหล่านี้มีผลกระทบต่อสลิปเงินเดือนของพนักงาน
 
-<div class="well">Just marking Absent in the Attendance record do not have impact on salary calculation of an Employee, as that absenteeism could be because of paid leave. Hence creating Leave Application should be created incase of absenteeism. Let's consider a scenario to understand how leaves impact employees Salary Slip.
+<div class="well">ทำเครื่องหมายว่าไม่อยู่ในบันทึกการเข้างานจะไม่มีผลกระทบต่อการคำนวณเงินเดือนของพนักงาน เนื่องจากการขาดงานนั้นอาจเป็นเพราะการลาที่ได้รับค่าจ้าง ดังนั้นการสร้างใบขอลางาน ควรสร้างขึ้นในกรณีที่ขาดงาน ลองพิจารณาสถานการณ์สมมติเพื่อทำความเข้าใจว่าใบลาส่งผลกระทบต่อพนักงานอย่างไร
 
-1. Setup Employee
-1. Allocate him paid leaves
-1. Create Salary Structure for that Employee. In the Earning and Deduction table, select which component of salary should be affected if Employee takes LWP.
-1. Create Holiday List (if any), and link it with Employee master.
+1. ตั้งค่าพนักงาน
+1. จัดสรรใบที่ชำระแล้ว
+1. สร้างโครงสร้างเงินเดือนสำหรับพนักงานคนนั้น ในตาราง Earning and Deduction ให้เลือกว่าส่วนประกอบใดของเงินเดือนควรได้รับผลกระทบ หากพนักงานใช้ LWP
+1. สร้างรายการวันหยุด (ถ้ามี) และเชื่อมโยงกับหลักพนักงาน
 
-**Working Days:** Working Days in Salary Slip are calculated based on number of days selected above. If you don't wish to consider holiday in Working Days, then you should do following setting.
+**วันทำการ:** วันทำงานในสลิปเงินเดือนคำนวณตามจำนวนวันที่เลือกข้างต้น หากคุณไม่ต้องการพิจารณาวันหยุดในวันทำงาน คุณควรตั้งค่าตามนี้
 
-> Human Resource > Setup > HR Setting
+> ทรัพยากรบุคคล > การตั้งค่า > การตั้งค่าทรัพยากรบุคคล
 
-Uncheck field "Include Holidays in Total No. of Working Days"
+ยกเลิกการเลือกช่อง "รวมวันหยุดในจำนวนวันทำงานทั้งหมด"
 
-Holidays are counted based on Holiday List attached to the Employee's master.
+วันหยุดจะถูกนับตามรายการวันหยุดที่แนบมากับหลักของพนักงาน
 
-**Leave Without Pay:** Leave Without Pay is updated based on Leave Application made for this Employee, in the month for which Salary Slip is created, and which has Leave Type as "Leave Without Pay".
+**ลางานโดยไม่รับค่าจ้าง:** ลางานโดยไม่รับค่าจ้างจะได้รับการอัปเดตตามใบสมัครลาที่จัดทำขึ้นสำหรับพนักงานรายนี้ ในเดือนที่สร้างสลิปเงินเดือน และมีประเภทการลาเป็น "ลางานโดยไม่รับค่าจ้าง"
 
-Payment Days: Following is how Payment Days are calculated:
+วันชำระเงิน: ต่อไปนี้เป็นวิธีคำนวณวันชำระเงิน:
 
-Payment Days = Working Days - Leave Without Pay
+วันที่จ่ายเงิน = วันทำงาน - ลางานโดยไม่จ่ายเงิน
 
-If you have LWP checked for the Salary Component, there will be reduction in Amount based on no. of LWP of an Employee for that month.
+หากคุณได้ตรวจสอบ LWP สำหรับองค์ประกอบเงินเดือนแล้ว จำนวนเงินจะลดลงตามหมายเลข ของ LWP ของพนักงานในเดือนนั้น

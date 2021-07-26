@@ -1,247 +1,246 @@
 <!-- add-breadcrumbs -->
-# Delivery Note
+# ใบส่งสินค้า
 
-**A Delivery Note is made when a shipment is shipped from the company’s Warehouse to the customer.**
+**ใบส่งสินค้าจะทำเมื่อมีการส่งสินค้าจากคลังสินค้าของบริษัทไปยังลูกค้า**
 
-A copy of the Delivery Note is usually sent with the transporter. The Delivery
-Note contains the list of Items that are sent in the shipment and updates the
-inventory. The Delivery Note is an optional step and a Sales Invoice can be created directly from a Sales Order.
+โดยปกติแล้ว สำเนาใบส่งสินค้าจะถูกส่งไปพร้อมกับผู้ขนส่ง การส่งมอบ
+หมายเหตุประกอบด้วยรายการของรายการที่ส่งในการจัดส่งและอัปเดต
+สินค้าคงคลัง ใบส่งของเป็นขั้นตอนที่ไม่บังคับ และสามารถสร้างใบกำกับสินค้าได้โดยตรงจากใบสั่งขาย
 
-To access the Delivery Note list, go to:
-> Home > Stock > Stock Transactions > Delivery Note
+หากต้องการเข้าถึงรายการ ใบส่งสินค้า ให้ไปที่:
+> หน้าหลัก > สต๊อก > ธุรกรรมสต๊อก > ใบส่งสินค้า
 
 ![Delivery Note flow](/docs/assets/img/stock/delivery-note-flow.png)
 
 
-## 1. Prerequisites
-Before creating and using a Delivery Note, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ ใบส่งสินค้า ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Sales Order](/docs/user/manual/en/selling/sales-order)
+* [คำสั่งขาย](/docs/user/manual/th/selling/sales-order)
 
-> Note: From version-13 onwards we have introduced immutable ledger which changes the rules for cancellation of stock entries and posting backdated stock transactions in ERPNext. [Learn more here](/docs/user/manual/en/accounts/articles/immutable-ledger-in-erpnext).
+> หมายเหตุ: ตั้งแต่เวอร์ชัน 13 เป็นต้นไป เราได้แนะนำบัญชีแยกประเภทที่ไม่เปลี่ยนรูปแบบ ซึ่งจะเปลี่ยนกฎสำหรับการยกเลิกรายการสต็อกและการผ่านรายการธุรกรรมสต็อคย้อนหลังใน ERPNext [เรียนรู้เพิ่มเติมที่นี่](/docs/user/manual/th/accounts/articles/immutable-ledger-in-erpnext)
 
-## 2. How to create a Delivery Note
-The entry of the Delivery Note is very similar to a Purchase Receipt. It is usually created from a “Submitted” Sales Order (that is not shipped) by clicking on Create > Delivery.
+## 2. วิธีสร้างใบส่งสินค้า
+รายการในใบส่งของจะคล้ายกับใบเสร็จการซื้อ โดยปกติแล้วจะสร้างจากคำสั่งขายที่ "ส่งแล้ว" (ที่ไม่ได้จัดส่ง) โดยคลิกที่สร้าง > การจัดส่ง
 
-To create a Delivery Note _manually_ (not recommended), follow these steps:
+ในการสร้างใบนำส่งสินค้า _manually_ (ไม่แนะนำ) ให้ทำตามขั้นตอนเหล่านี้:
 
-1. Go to the Delivery Note list, click on New.
-1. The Customer and Item details can be fetched by clicking on 'Get Items from > Sales Order'.
-1. The UOM and Rates will be fetched automatically.
-1. Save and Submit.
+1. ไปที่รายการ Delivery Note คลิก New
+1. สามารถดึงรายละเอียดลูกค้าและรายการโดยคลิกที่ 'รับรายการจาก > ใบสั่งขาย'
+1. UOM และอัตราจะถูกดึงโดยอัตโนมัติ
+1. บันทึกและส่ง
 
     <img class="screenshot" alt="Delivery Note" src="{{docs_base_url}}/assets/img/stock/delivery-note.png">
 
-To fetch Items from a Sales Order, click on Get Items from > Sales Order. This will open a popup from where you can search for Sales Orders and select one.
+ในการดึงรายการจากใบสั่งขาย ให้คลิกที่ รับรายการจาก > ใบสั่งขาย ซึ่งจะเปิดป๊อปอัปจากตำแหน่งที่คุณสามารถค้นหาใบสั่งขายและเลือกหนึ่งรายการ
 
-You will notice that all the information about unshipped Items and other details are carried over from your Sales Order if you create the Delivery Note from there.
+คุณจะสังเกตเห็นว่าข้อมูลทั้งหมดเกี่ยวกับสินค้าที่ยังไม่ได้จัดส่งและรายละเอียดอื่นๆ จะถูกยกมาจากคำสั่งขายของคุณ หากคุณสร้างใบส่งสินค้าจากที่นั่น
 
-You can also edit the posting date and time, the current date and time are set when you create the Delivery Note.
-
-
-### 2.1 Statuses
-
-These are the statuses a Delivery Note can be in:
-
-* **Draft**: A draft is saved but yet to be submitted to the system.
-* **To Bill**: Yet to be billed using a [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice).
-* **Completed**: Submitted and sent all the Items.
-* **Return Issued**: All the Items have been returned.
-* **Cancelled**: Cancelled the Delivery Note.
-* **Closed**: The purpose of the Close is to manage short-closing. For example, your Customer ordered for 20 qty but closed at 15 qty. The remaining 5 is not to be sent or billed.
-
-### 2.2 Partial Deliveries
-
-When you create a Delivery Note from a Sales Order, the quantities can be changed. So if the Sales Order contains 10 Items to be delivered and you're delivering only 5 this week and the remaining next week, then you can create 2 Delivery Notes in two weeks.
+คุณยังสามารถแก้ไขวันที่และเวลาที่โพสต์ วันที่และเวลาปัจจุบันจะถูกตั้งค่าเมื่อคุณสร้างใบนำส่งสินค้า
 
 
-## 3. Related Actions
-### 3.1 Customer Purchase Order Details
-You can enter the Customer's Purchase Order number here for Reference.
+### 2.1 สถานะ
 
-### 3.2 Address and Contact
-* **Shipping Address**: The Customer's address where the Items will be shipped.
-* **Contact Person**: If the Customer is an organization, add the Contact person in this field.
+นี่คือสถานะที่ใบส่งของสามารถอยู่ใน:
 
-For India, the following details can be added for GST:
+* **ร่าง**: บันทึกแบบร่างแล้วแต่ยังไม่ได้ส่งไปยังระบบ
+* **To Bill**: ยังคงถูกเรียกเก็บเงินโดยใช้ [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+* **เสร็จสมบูรณ์**: ส่งและส่งรายการทั้งหมดแล้ว
+* **ส่งคืนสินค้าแล้ว**: ส่งคืนสินค้าทั้งหมดแล้ว
+* **ยกเลิกแล้ว**: ยกเลิกใบส่งของ
+* **ปิด**: วัตถุประสงค์ของการปิดคือการจัดการการปิดระยะสั้น ตัวอย่างเช่น ลูกค้าของคุณสั่งซื้อจำนวน 20 รายการ แต่ปิดที่จำนวน 15 รายการ ส่วนที่เหลืออีก 5 รายการจะไม่ส่งหรือเรียกเก็บเงิน
+
+### 2.2 การส่งมอบบางส่วน
+
+เมื่อคุณสร้างใบส่งสินค้าจากใบสั่งขาย ปริมาณสามารถเปลี่ยนแปลงได้ ดังนั้น หากใบสั่งขายมี 10 รายการที่จะจัดส่ง และคุณกำลังส่งมอบเพียง 5 รายการในสัปดาห์นี้และอีกรายการที่เหลือในสัปดาห์หน้า คุณสามารถสร้างบันทึกการจัดส่ง 2 รายการในสองสัปดาห์
+
+
+## 3. การดำเนินการที่เกี่ยวข้อง
+### 3.1 รายละเอียดใบสั่งซื้อของลูกค้า
+คุณสามารถป้อนหมายเลขใบสั่งซื้อของลูกค้าที่นี่สำหรับการอ้างอิง
+
+### 3.2 ที่อยู่และการติดต่อ
+* **ที่อยู่ในการจัดส่ง**: ที่อยู่ของลูกค้าที่จะจัดส่งสินค้า
+* **ผู้ติดต่อ**: หากลูกค้าเป็นองค์กร ให้เพิ่มผู้ติดต่อในช่องนี้
+
+<!--For India, the following details can be added for GST:
 
 * Customer GSTIN
 * Place of Supply
 * Billing Address GSTIN
 * Company GSTIN
-* Company Address Name
+* Company Address Name-->
 
-[Contacts](/docs/user/manual/en/CRM/contact) and [Addresses](/docs/user/manual/en/CRM/address) are stored separately so that you can attach multiple Contacts or Addresses to the customer.
+[ผู้ติดต่อ](/docs/user/manual/th/CRM/contact) และ [ที่อยู่](/docs/user/manual/th/CRM/address) ถูกจัดเก็บแยกกัน เพื่อให้คุณสามารถแนบผู้ติดต่อหรือที่อยู่หลายรายการกับลูกค้าได้ .
 
-### 3.3 Currency and Price List
-You can set the currency in which the Deliver Note is to be sent. This is usually fetched if set in the Sales Order. If you set a Pricing List, then the item prices will be fetched from that list. Ticking on Ignore Pricing Rule will ignore the Pricing Rules set in Accounts > Pricing Rule.
+### 3.3 รายการสกุลเงินและราคา
+คุณสามารถกำหนดสกุลเงินที่จะส่งใบนำส่ง โดยปกติจะมีการดึงข้อมูลนี้หากตั้งค่าไว้ในใบสั่งขาย หากคุณกำหนดรายการราคา ราคาสินค้าจะถูกดึงมาจากรายการนั้น การทำเครื่องหมายที่ละเว้นกฎการกำหนดราคาจะละเว้นกฎการกำหนดราคาที่ตั้งไว้ในบัญชี > กฎการกำหนดราคา
 
-Read about [Price Lists](/docs/user/manual/en/stock/price-lists) 
-and [Multi-Currency Transactions](/docs/user/manual/en/accounts/articles/managing-transactions-in-multiple-currency)
-to know more.
+อ่านเกี่ยวกับ [รายการราคา](/docs/user/manual/th/stock/price-lists)
+และ [ธุรกรรมหลายสกุลเงิน](/docs/user/manual/th/accounts/articles/managing-transactions-in-multiple-currency)
+เพื่อทราบข้อมูลเพิ่มเติม
 
-### 3.4 Warehouses
+### 3.4 คลังสินค้า
 
-* **Set Source Warehouse**: This is where the Items will be sourced from to send to the Customer.
-* **To Warehouse**: In a regular Sales scenario, the Item exits your Warehouse and reaches the Customer. However, if you wish to retain sample stock, enter a Warehouse here.
+* **คลังสินค้าต้นทาง**: นี่คือที่ที่สินค้าจะถูกส่งไปยังลูกค้า
+* **ไปยังคลังสินค้า**: ในสถานการณ์การขายปกติ รายการจะออกจากคลังสินค้าของคุณและไปถึงลูกค้า อย่างไรก็ตาม หากคุณต้องการเก็บตัวอย่างสต็อค ให้ป้อนคลังสินค้าที่นี่
 
-### 3.5 Items Table
-* **Barcode**: You can track Items using [barcodes](/docs/user/manual/en/stock/articles/track-items-using-barcode).
+### 3.5 รายการตาราง
+* **บาร์โค้ด**: คุณสามารถติดตามรายการโดยใช้ [บาร์โค้ด](/docs/user/manual/th/stock/articles/track-items-using-barcode)
 
-* The Item Code, name, description, Image, and Manufacturer will be fetched from the [Item master](/docs/user/manual/en/stock/item).
+* รหัสสินค้า ชื่อ คำอธิบาย รูปภาพ และผู้ผลิต จะถูกดึงมาจาก [Item master](/docs/user/manual/th/stock/item)
 
-* **Scan Barcode**: You can add Items in the Items table by scanning their barcodes if you have a barcode scanner. Read documentation for [tracking items using barcode](/docs/user/manual/en/stock/articles/track-items-using-barcode) to know more.
+* **สแกนบาร์โค้ด**: คุณสามารถเพิ่มรายการในตารางรายการโดยการสแกนบาร์โค้ดหากคุณมีเครื่องสแกนบาร์โค้ด อ่านเอกสารประกอบสำหรับ [การติดตามรายการโดยใช้บาร์โค้ด](/docs/user/manual/th/stock/articles/track-items-using-barcode) เพื่อทราบข้อมูลเพิ่มเติม
 
-* **Discount and Margin**: You can apply a discount on individual Items percentage-wise or the total amount of the Item. Read [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) for more details.
+* **ส่วนลดและส่วนต่าง**: คุณสามารถใช้ส่วนลดกับสินค้าแต่ละรายการเป็นเปอร์เซ็นต์หรือยอดรวมของสินค้าได้ อ่าน [Applying Discount](/docs/user/manual/th/selling/articles/applying-discount) สำหรับรายละเอียดเพิ่มเติม
 
-* **Rate**: The Rate is fetched if set in the [Price List](/docs/user/manual/en/stock/price-lists) and the total Amount is calculated.
+* **อัตรา**: อัตราจะถูกดึงออกมาหากตั้งค่าไว้ใน [รายการราคา](/docs/user/manual/th/stock/price-lists) และยอดรวมจะถูกคำนวณ
 
-* **Item Tax Template**: You can set an Item Tax Template to apply a specific Tax amount to this particular Item. To know more, visit [this page](/docs/user/manual/en/accounts/item-tax-template).
+* **เทมเพลตภาษีสินค้า**: คุณสามารถตั้งค่าเทมเพลตภาษีสินค้าเพื่อใช้จำนวนภาษีเฉพาะกับรายการนี้ หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่ [หน้านี้](/docs/user/manual/th/accounts/item-tax-template)
 
-* The Item Weight details per unit and Weight UOM are fetched if set in the Item master.
+* รายละเอียดน้ำหนักสินค้าต่อหน่วยและ UOM จะถูกดึงออกมาหากตั้งค่าไว้ในสินค้าหลัก (Item master)
 
-* **Warehouse and Reference**: The Warehouse from which the Items are sent to the Customer is shown. Also, a Sales Order will be shown if this Delivery Note was the creation flow: 'Sales Order > Deliver Note'.
+* **คลังสินค้าและข้อมูลอ้างอิง**: ระบบจะแสดงคลังสินค้าที่ส่งสินค้าให้กับลูกค้า นอกจากนี้ ใบสั่งขายจะแสดงขึ้นหากใบนำส่งนี้เป็นขั้นตอนการสร้าง: 'ใบสั่งขาย > ส่งบันทึก'
 
-* **Batch No and Serial No**: If your Item is serialized or batched, you will have to enter [Serial Number](/docs/user/manual/en/stock/serial-no) and [Batch](/docs/user/manual/en/stock/batch) in the Items table. You are allowed to enter multiple Serial Numbers in one row (each on a separate line) and you must enter the same number of Serial Numbers as the quantity.
+* **หมายเลขแบทช์และหมายเลขซีเรียล**: หากสินค้าของคุณเป็นแบบซีเรียลไลซ์หรือแบทช์ คุณจะต้องป้อน [หมายเลขซีเรียล](/docs/user/manual/th/stock/serial-no) และ [Batch](/ docs/user/manual/th/stock/batch) ในตารางรายการ คุณได้รับอนุญาตให้ป้อน Serial Numbers หลายหมายเลขในแถวเดียว (แต่ละบรรทัดแยกกัน) และคุณต้องป้อนหมายเลข Serial Numbers เดียวกันกับปริมาณ
 
-    The 'Available Qty at From Warehouse', 'Available Batch Qty at From Warehouse', and 'Installed Qty' will be shown. To know more about installation, visit the [Installation Note](/docs/user/manual/en/stock/installation-note) page.
+    'จำนวนที่มีจำหน่ายที่จากคลังสินค้า' 'จำนวนแบทช์ที่มีจำหน่ายที่จากโกดัง' และ 'จำนวนที่ติดตั้ง' จะปรากฏขึ้น หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับการติดตั้ง โปรดไปที่หน้า [หมายเหตุการติดตั้ง](/docs/user/manual/th/stock/installation-note)
 
-    **Note**: The Item has to be serialized or batched for these features to work. If the Item is serialized a popup will appear where you can enter the Serial Numbers.
+    **หมายเหตุ**: รายการต้องได้รับการจัดลำดับหรือจัดเป็นชุดเพื่อให้คุณลักษณะเหล่านี้ทำงานได้ หากรายการเป็นแบบอนุกรม ป๊อปอัปจะปรากฏขึ้นเพื่อให้คุณป้อนหมายเลขซีเรียลได้
 
-* Expense Account is the account from which the amount will be debited. Ticking on 'Allow Zero Valuation Rate' will allow submitting the Delivery Note even if the Valuation Rate of the Item is 0. This can be a sample item or due to a mutual understanding with your Supplier.
+* บัญชีค่าใช้จ่ายคือบัญชีที่จะหักจำนวนเงิน การทำเครื่องหมายที่ 'อนุญาตอัตราการประเมินค่าเป็นศูนย์' จะอนุญาตให้ส่งใบส่งสินค้าแม้ว่าอัตราการประเมินมูลค่าของสินค้าจะเป็น 0 ซึ่งอาจเป็นรายการตัวอย่างหรือเนื่องมาจากความเข้าใจร่วมกันกับซัพพลายเออร์ของคุณ
 
-* Accounting Dimensions help to tag each transaction with different Dimensions without the need for creating new Cost Centers. You need to create Accounting Dimensions first, to know more, visit [this page](/docs/user/manual/en/accounts/accounting-dimensions).
+* มิติทางบัญชีช่วยในการติดแท็กแต่ละรายการด้วยมิติที่แตกต่างกันโดยไม่จำเป็นต้องสร้างศูนย์ต้นทุนใหม่ คุณต้องสร้างมิติทางบัญชีก่อน หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่ [หน้านี้](/docs/user/manual/th/accounts/accounting-dimensions)
 
-* **Page Break** will create a page break just before this Item when printing.
+* **ตัวแบ่งหน้า** จะสร้างตัวแบ่งหน้าก่อนรายการนี้เมื่อพิมพ์
 
-### 3.6 Tracking Quality Inspection
-If for certain Items, it is mandatory to record Quality Inspections (if you have set it in your Item master), you will need to update the “Quality Inspection" field. The system will only allow you to “Submit” the
-Delivery Note if you update the “Quality Inspection”.
+### 3.6 ติดตามการตรวจสอบคุณภาพ
+หากสำหรับบางรายการ จำเป็นต้องบันทึกการตรวจสอบคุณภาพ (หากคุณได้ตั้งค่าไว้ในหลักรายการของคุณ) คุณจะต้องอัปเดตฟิลด์ "การตรวจสอบคุณภาพ" ระบบจะอนุญาตให้คุณ "ส่ง" เฉพาะรายการ
+หมายเหตุการจัดส่งหากคุณอัปเดต "การตรวจสอบคุณภาพ"
 
-After enabling Inspection Criteria in the [Item form](/docs/user/manual/en/stock/item#216-inspection-criteria) for Sales and attaching a Quality Inspection Template there, Quality Inspections can be recorded in Delivery Notes.
+หลังจากเปิดใช้เกณฑ์การตรวจสอบใน [แบบฟอร์มรายการ](/docs/user/manual/th/stock/item#216-inspection-criteria) สำหรับการขายและแนบเทมเพลตการตรวจสอบคุณภาพที่นั่นแล้ว การตรวจสอบคุณภาพสามารถบันทึกลงในบันทึกการจัดส่งได้
 
-### 3.7 Taxes and Charges
-The Taxes and Charges will be fetched from the [Sales Order](/docs/user/manual/en/buying/purchase-order).
+### 3.7 ภาษีและค่าธรรมเนียม
+ภาษีและค่าธรรมเนียมจะถูกดึงมาจาก [คำสั่งขาย](/docs/user/manual/th/buying/purchase-order)
 
-Visit the [Sales Taxes and Charges Template](/docs/user/manual/en/selling/sales-taxes-and-charges-template) page to know more about taxes.
+ไปที่หน้า [เทมเพลตภาษีขายและค่าธรรมเนียม](/docs/user/manual/th/selling/sales-taxes-and-charges-template) เพื่อทราบข้อมูลเพิ่มเติมเกี่ยวกับภาษี
 
-The total taxes and charges will be displayed below the table.
+ภาษีและค่าธรรมเนียมทั้งหมดจะแสดงอยู่ใต้ตาราง
 
-To add taxes automatically via a Tax Category, visit [this page](/docs/user/manual/en/accounts/tax-category).
+หากต้องการเพิ่มภาษีโดยอัตโนมัติผ่านหมวดหมู่ภาษี โปรดไปที่ [หน้านี้](/docs/user/manual/th/accounts/tax-category)
 
-Make sure to mark all your taxes in the Taxes and Charges table correctly for an accurate valuation.
+ตรวจสอบให้แน่ใจว่าได้ทำเครื่องหมายภาษีทั้งหมดของคุณในตารางภาษีและค่าธรรมเนียมอย่างถูกต้องเพื่อการประเมินที่ถูกต้อง
 
-#### Shipping Rule
-A Shipping Rule helps set the cost of shipping an Item. The cost will usually increase with the distance of shipping. To know more, visit the [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) page.
+#### กฎการจัดส่ง
+กฎการจัดส่งช่วยกำหนดต้นทุนในการจัดส่งสินค้า ค่าใช้จ่ายมักจะเพิ่มขึ้นตามระยะทางในการขนส่ง หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [กฎการจัดส่ง](/docs/user/manual/th/selling/shipping-rule)
 
-### 3.8 Additional Discount
-Any additional discounts to the whole order can be set in this section. This discount could be based on the Grand Total i.e., post tax/charges or Net total i.e., pre tax/charges. The additional discount can be applied as a percentage or an amount.
-Read [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) for more details.
+### 3.8 ส่วนลดเพิ่มเติม
+คุณสามารถกำหนดส่วนลดเพิ่มเติมสำหรับคำสั่งซื้อทั้งหมดได้ในส่วนนี้ ส่วนลดนี้อาจขึ้นอยู่กับยอดรวมทั้งหมด เช่น ภาษีหลังหัก/ค่าบริการ หรือยอดรวมสุทธิ เช่น ภาษี/ค่าใช้จ่ายก่อน ส่วนลดเพิ่มเติมสามารถใช้เป็นเปอร์เซ็นต์หรือจำนวนเงินได้
+อ่าน [การใช้ส่วนลด](/docs/user/manual/th/selling/articles/applying-discount) สำหรับรายละเอียดเพิ่มเติม
 
-### 3.9 Terms and Conditions
-In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+### 3.9 ข้อกำหนดและเงื่อนไข
+ในธุรกรรมการขาย/การซื้อ อาจมีข้อกำหนดและเงื่อนไขบางประการซึ่งขึ้นอยู่กับที่ซัพพลายเออร์จัดหาสินค้าหรือบริการให้กับลูกค้า คุณสามารถใช้ข้อกำหนดและเงื่อนไขกับธุรกรรมกับธุรกรรมได้ และข้อกำหนดเหล่านี้จะปรากฏขึ้นเมื่อพิมพ์เอกสาร หากต้องการทราบเกี่ยวกับข้อกำหนดและเงื่อนไข [คลิกที่นี่](/docs/user/manual/th/setting-up/print/terms-and-conditions)
 
-### 3.10 Transporter Information
+### 3.10 ข้อมูลผู้ขนส่ง
 
-If you outsource transporting Items to their delivery location, the transporter details can be added. This is not the same as [drop shipping](/docs/user/manual/en/selling/articles/drop-shipping).
+หากคุณจ้างบริษัทภายนอกเพื่อขนส่งสินค้าไปยังสถานที่จัดส่ง คุณสามารถเพิ่มรายละเอียดผู้ขนส่งได้ สิ่งนี้ไม่เหมือนกับ [drop shipping](/docs/user/manual/th/selling/articles/drop-shipping)
 
-* **Transporter**: The Supplier who will transport the Item to your Customer. The transporter feature should be enabled in the Supplier master to select the [Supplier](/docs/user/manual/en/buying/supplier) here.
-* **Driver**: You can add a Driver here who will drive the mode of transport.
+* **ผู้ขนส่ง**: ซัพพลายเออร์ที่จะขนส่งสินค้าไปยังลูกค้าของคุณ ควรเปิดใช้งานคุณสมบัติผู้ขนส่งในผู้จัดหาหลักเพื่อเลือก [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier) ที่นี่
+* **คนขับ**: คุณสามารถเพิ่มคนขับได้ที่นี่ ซึ่งจะเป็นผู้ขับโหมดการขนส่ง
 
 ![Delivery Note Transport](/docs/assets/img/stock/delivery-note-transport.png)
 
-The following details can be recorded:
+สามารถบันทึกรายละเอียดต่อไปนี้:
 
-* Distance in km
-* Mode of Transport whether road, air, rail, or ship.
+* ระยะทางเป็นkm
+* รูปแบบการคมนาคมไม่ว่าจะเป็นทางถนน ทางอากาศ ทางราง หรือทางเรือ
 
-For India, GST:
+<!--สำหรับอินเดีย GST:
 
 * GST Transporter ID
-* Transport Receipt No
-* Vehicle No
-    The GST Vehicle Type can be changed
+* ใบเสร็จการขนส่งเลขที่
+* หมายเลขยานพาหนะ
+    ประเภทรถ GST สามารถเปลี่ยนแปลงได้-->
 
-The Transport Receipt Date and Driver Name will be fetched.
+วันที่รับขนส่งและชื่อผู้ขับขี่จะถูกเรียก
 
-### 3.11 More Information
+### 3.11 ข้อมูลเพิ่มเติม
 
-The Delivery Note can be linked to the following for tracking purposes:
+บันทึกการจัดส่งสามารถเชื่อมโยงกับสิ่งต่อไปนี้เพื่อวัตถุประสงค์ในการติดตาม:
 
-* [Project](/docs/user/manual/en/projects/project)
-* [Campaign](/docs/user/manual/en/CRM/campaign)
-* [Source](/docs/user/manual/en/CRM/lead_source)
+* [โครงการ](/docs/user/manual/th/projects/project)
+* [แคมเปญ](/docs/user/manual/th/CRM/campaign)
+* [ที่มา](/docs/user/manual/th/CRM/lead_source)
 
-### 3.11 Printing Settings
+### 3.11 การตั้งค่าการพิมพ์
 
-#### Letterhead
-You can print your Delivery Note on your company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+#### หัวจดหมาย
+คุณสามารถพิมพ์ใบนำส่งสินค้าบนหัวจดหมายของบริษัทของคุณ เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/letter-head)
 
-'Group same items' will group the same items added multiple times in the Items table. This can be seen when your print.
+'จัดกลุ่มรายการเดียวกัน' จะจัดกลุ่มรายการเดียวกันที่เพิ่มหลายครั้งในตารางรายการ สิ่งนี้สามารถเห็นได้เมื่อคุณพิมพ์
 
-#### Print Headings
-Purchase Receipt headings can also be changed when printing the document. You can do this by selecting a **Print Heading**. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### พิมพ์หัวเรื่อง
+ส่วนหัวของใบเสร็จการซื้อสามารถเปลี่ยนแปลงได้เมื่อพิมพ์เอกสาร คุณสามารถทำได้โดยเลือก **หัวเรื่องการพิมพ์** ในการสร้างหัวพิมพ์ใหม่ ให้ไปที่: หน้าแรก > การตั้งค่า > การพิมพ์ > หัวเรื่องพิมพ์ เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/print-headings)
 
-There are additional checkboxes for printing the Delivery Note without the amount, this might be useful when the Item is of high value. You can also group the same Items in one row when printing.
+มีกล่องกาเครื่องหมายเพิ่มเติมสำหรับการพิมพ์ใบส่งของโดยไม่มีจำนวนเงิน ซึ่งอาจเป็นประโยชน์เมื่อสินค้ามีมูลค่าสูง คุณยังสามารถจัดกลุ่มรายการเดียวกันในแถวเดียวเมื่อพิมพ์
 
-### 3.12 Status
-The status of the document and installation percentage is shown here. Any additional instructions for delivery can be entered here.
+### 3.12 สถานะ
+สถานะของเอกสารและเปอร์เซ็นต์การติดตั้งจะแสดงที่นี่ คุณสามารถป้อนคำแนะนำเพิ่มเติมสำหรับการจัดส่งได้ที่นี่
 
-### 3.13 Commission
+### 3.13 คอมมิชชั่น
 
-If the sale took place via one of your Sales Partners, you can add their commission details here. This is usually fetched from the Sales Order.
+หากการขายเกิดขึ้นผ่านพาร์ทเนอร์การขายรายใดรายหนึ่งของคุณ คุณสามารถเพิ่มรายละเอียดค่าคอมมิชชันได้ที่นี่ โดยปกติแล้วจะดึงมาจากใบสั่งขาย
 
-### 3.14 Sales Team
-**Sales Persons:** ERPNext allows you to add multiple Sales Persons who may have worked on this deal.
+### 3.14 ทีมขาย
+**พนักงานขาย:** ERPNext ให้คุณเพิ่มพนักงานขายหลายคนที่อาจเคยทำงานในข้อตกลงนี้
 
-This is usually fetched from a Sales Order, for example:
+โดยปกติแล้วจะดึงมาจากใบสั่งขาย ตัวอย่างเช่น
 
 <img class="screenshot" alt="Sales Team in Sales Order" src="{{docs_base_url}}/assets/img/selling/so-sales-team.png">
 
-### 3.15 Shipping Packets or Items with Product Bundle
+### 3.15 แพ็คเก็ตหรือรายการจัดส่งสินค้าเป็นชุด (Bundle)
 
-If you are shipping Items that have a [Product Bundle](/docs/user/manual/en/selling/product-bundle), ERPNext will automatically create a “Packing List” table for you based on the sub-Items in that Item.
+หากคุณกำลังจัดส่งสินค้าที่มี [สินค้าเป็นชุด](/docs/user/manual/th/selling/product-bundle) ERPNext จะสร้างตาราง "Packing List" ให้คุณโดยอัตโนมัติตามรายการย่อยในรายการนั้น .
 
-If your Items are serialized, then for Product Bundle type of Items, you will have
-to update the Serial Number in the “Packing List” table.
+หากรายการของคุณได้รับการจัดลำดับ ดังนั้นสำหรับประเภทรายการบันเดิลผลิตภัณฑ์ คุณจะมี
+เพื่ออัพเดทหมายเลขประจำเครื่องในตาราง “Packing List”
 
-### 3.16 Packing Items into Cases, for Container Shipment
+### 3.16 การบรรจุรายการลงในกล่องสำหรับการขนส่งตู้คอนเทนเนอร์
 
-If you are doing making the delivery via container shipment or by weight, then you can use the Packing
-Slip to break up your Delivery Note into smaller units. To know more about a Packing Slip, visit [this page](/docs/user/manual/en/stock/packing-slip).
-go to:
+หากคุณกำลังดำเนินการจัดส่งโดยการขนส่งตู้คอนเทนเนอร์หรือตามน้ำหนัก คุณสามารถใช้กล่องบรรจุ
+สลิปเพื่อแยกใบส่งของออกเป็นหน่วยย่อย หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับสลิปการบรรจุ โปรดไปที่ [หน้านี้](/docs/user/manual/th/stock/packing-slip)
 
-You can create multiple Packing Slips for your Delivery Note and ERPNext will
-ensure that the quantities in the Packing Slip do not exceed the quantities in
-the Delivery Note. Note that you can create a Packing Slip from a Delivery Note only when the Delivery Note is in the Draft stage.
+คุณสามารถสร้างใบบรรจุสินค้าได้หลายใบสำหรับใบส่งของและ ERPNext จะ
+ตรวจสอบให้แน่ใจว่าปริมาณในใบบรรจุสินค้าไม่เกินปริมาณใน
+ใบส่งของ โปรดทราบว่าคุณสามารถสร้างใบบรรจุสินค้าจากใบส่งสินค้าได้ก็ต่อเมื่อใบส่งสินค้าอยู่ในขั้นตอนแบบร่างเท่านั้น
 
-### 3.17 After Submitting
+### 3.17 หลังจากส่ง
 
-When the Delivery Note is submitted, a Stock Ledger Entry is made for each Item and stock is updated. Pending
-Quantity in the Sales Order is updated (if applicable).
+เมื่อมีการส่งใบส่งสินค้า รายการบัญชีแยกประเภทจะถูกสร้างสำหรับสินค้าแต่ละรายการและสต็อกจะได้รับการอัปเดต รอดำเนินการ
+มีการอัปเดตปริมาณในใบสั่งขาย (ถ้ามี)
 
-The Dashboard will show the following options:
+แดชบอร์ดจะแสดงตัวเลือกต่อไปนี้:
 
-* [Installation Note](/docs/user/manual/en/stock/installation-note)
-* [Sales Return](/docs/user/manual/en/stock/sales-return)
-* [Delivery Trip](/docs/user/manual/en/stock/delivery-trip)
-* [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
+* [หมายเหตุการติดตั้ง](/docs/user/manual/th/stock/installation-note)
+* [การคืนสินค้า](/docs/user/manual/th/stock/sales-return)
+* [ทริปส่งของ](/docs/user/manual/th/stock/delivery-trip)
+* [ใบกำกับการขาย](/docs/user/manual/th/accounts/sales-invoice)
 
-![Delivery Note after submit](/docs/assets/img/stock/delivery-note-submit.png)
+![ใบส่งสินค้าหลังจากส่ง](/docs/assets/img/stock/delivery-note-submit.png)
 
-> Tip: To disallow the creation of Delivery Notes without a Sales Order against it:
+> หมายเหตุ: ในการไม่อนุญาตให้สร้าง Delivery Notes โดยไม่มีใบสั่งขาย:
 
-### 3.18 Returning a Sales Order
-Once you've delivered a Sales Order using a Delivery Note, you can create a return entry in case the [Customer](/docs/user/manual/en/CRM/customer) returns the Item. To know more, visit the [Sales Return](/docs/user/manual/en/stock/sales-return) page.
+### 3.18 การส่งคืนใบสั่งขาย
+เมื่อคุณได้ส่งใบสั่งขายโดยใช้ใบแจ้งการจัดส่ง คุณสามารถสร้างรายการส่งคืนได้ในกรณีที่ [ลูกค้า](/docs/user/manual/th/CRM/customer) ส่งคืนสินค้า หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [การส่งคืน](/docs/user/manual/th/stock/sales-return)
 
-### 3.19 Skipping Delivery Note
+### 3.19 ไม่ส่งใบส่งสินค้า
 
-If you don't want to create a Delivery Note after a Sales Order and directly want to create a Sales Invoice, enable the feature for it in [Selling Settings](/docs/user/manual/en/selling/selling-settings#32-delivery-note-required).
+หากคุณไม่ต้องการสร้างใบส่งสินค้าหลังใบสั่งขายและต้องการสร้างใบกำกับสินค้าโดยตรง ให้เปิดใช้งานคุณลักษณะนี้ใน [การตั้งค่าการขาย](/docs/user/manual/th/selling/selling-settings# 32-ต้องระบุใบส่งสินค้า)
 
 
-### 4. Related Topics
-1. [Warehouse](/docs/user/manual/en/stock/warehouse)
-1. [Delivery Note Stock Error](/docs/user/manual/en/stock/articles/delivery-note-stock-error)
-1. [Material Transfer From Delivery Note and Purchase Receipt](/docs/user/manual/en/stock/articles/material-transfer-from-delivery-note)
-1. [Installation Note](/docs/user/manual/en/stock/installation-note)
-1. [Delivery Trip](/docs/user/manual/en/stock/delivery-trip)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [คลังสินค้า](/docs/user/manual/th/stock/warehouse)
+1. [Delivery Note Stock Error](/docs/user/manual/th/stock/articles/delivery-note-stock-error)
+1. [การโอนเงินจากใบส่งของและใบเสร็จรับเงิน](/docs/user/manual/th/stock/articles/material-transfer-from-delivery-note)
+1. [หมายเหตุการติดตั้ง](/docs/user/manual/th/stock/installation-note)
+1. [ทริปส่งของ](/docs/user/manual/th/stock/delivery-trip)

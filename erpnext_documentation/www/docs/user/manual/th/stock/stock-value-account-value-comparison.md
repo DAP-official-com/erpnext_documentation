@@ -1,10 +1,10 @@
 <!-- add-breadcrumbs -->
-#Stock Value and Account Value Comparison Report
+#รายงานเปรียบเทียบมูลค่าสต็อคและมูลค่าบัญชี
 
-This report helps the user to understand the difference value between the stock account and stock balance report. At the end of the financial year, every organization has to match its closing stock balance with the closing stock account. Sometimes they do not match due to some issues. In that case, users can view the "Stock Value and Account Value Comparison" report to understand the incorrect transactions. Then, users can make adjustments entries accordingly.
+รายงานนี้ช่วยให้ผู้ใช้เข้าใจมูลค่าความแตกต่างระหว่างบัญชีสต็อคและรายงานยอดสต็อก ณ สิ้นปีการเงิน ทุกองค์กรต้องจับคู่ยอดคงเหลือของสต็อคที่ปิดไว้กับบัญชีสต็อคที่ปิด บางครั้งก็ไม่ตรงกันเนื่องจากปัญหาบางอย่าง ในกรณีดังกล่าว ผู้ใช้สามารถดูรายงาน "การเปรียบเทียบมูลค่าสต็อคและมูลค่าทางบัญชี" เพื่อทำความเข้าใจธุรกรรมที่ไม่ถูกต้อง จากนั้น ผู้ใช้สามารถปรับเปลี่ยนรายการได้ตามความเหมาะสม
 
-To view the report, go to:
+หากต้องการดูรายงาน ไปที่:
 
-> Home > Stock > Other Reports > Stock and Account Value Comparison
+> หน้าหลัก > สต็อค > รายงานอื่นๆ > การเปรียบเทียบมูลค่าสต็อคและบัญชี
 
 <img class="screenshot" alt="Stock Report" src="{{docs_base_url}}/assets/img/stock/stock-value-account-value-comparison.png">

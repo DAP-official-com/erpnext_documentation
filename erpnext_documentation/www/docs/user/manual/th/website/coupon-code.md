@@ -1,87 +1,88 @@
-# Coupon Code
+# รหัสคูปองส่วนลด
 
-**Coupon Code allows a Customer to avail discount on shoppping cart products.**
+**รหัสคูปองส่วนลดช่วยให้ลูกค้าสามารถใช้ส่วนลดสำหรับสินค้าในรถเข็นช็อปปิ้ง**
 
-Everyone loves discount! so do the coupons offering such discounts. To encourage Customers to buy from the e-commerce website, 
-coupon code feature is exciting.
+ใครๆ ก็ชอบส่วนลด! คูปองที่เสนอส่วนลดดังกล่าวก็เช่นกัน เพื่อกระตุ้นให้ลูกค้าซื้อจากเว็บไซต์อีคอมเมิร์ซ
+คุณสมบัติรหัสคูปองนั้นน่าตื่นเต้น
 
-There are resellers/other site which generates leads for your ERPNext e-commerce website products/items/services. 
+มีผู้ค้าปลีก/ไซต์อื่นๆ ที่สร้างโอกาสในการขายสำหรับผลิตภัณฑ์/รายการ/บริการของเว็บไซต์อีคอมเมิร์ซ ERPNext ของคุณ
 
-When the potential Customer comes from other sites OR promotional emails to your ERPNext website for purchase, you should have the ability to:
+เมื่อผู้มีโอกาสเป็นลูกค้ามาจากไซต์อื่นหรืออีเมลส่งเสริมการขายไปยังเว็บไซต์ ERPNext ของคุณเพื่อซื้อ คุณควรมีความสามารถใน:
 	
-	a) Track from which affiliate / Sales Partner the Lead is coming i.e. [referral code]
-	(/docs/user/manual/en/selling/sales-partner)
+	ก) ติดตามจากพันธมิตร / พันธมิตรการขายที่ลูกค้าเป้าหมายกำลังจะมา เช่น [รหัสอ้างอิง]
+	(/docs/user/manual/th/selling/sales-partner)
 
-	b) Give discount (based on Pricing Rule) on overall purchase i.e. Coupon code
+	ข) ให้ส่วนลด (ตามกฎการกำหนดราคา) สำหรับการซื้อโดยรวม เช่น รหัสคูปองส่วนลด
 
-To access the Coupon Code list, go to:
+ในการเข้าถึงรายการรหัสคูปอง ไปที่:
 
-> Home > Accounting > Coupon Code
+> หน้าหลัก > การบัญชี > รหัสคูปอง
 
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-1. Coupon Code feature needs to be enabled from Shopping Cart Settings:
+1. ต้องเปิดใช้งานคุณสมบัติรหัสคูปองจากการตั้งค่ารถเข็น:
 
-	> Home > Settings > Shopping Cart Settings
+	> หน้าแรก > การตั้งค่า > การตั้งค่ารถเข็นสินค้า
 
 	<img class="screenshot" alt="Shopping Cart Settings to enable Coupon Code" src="{{docs_base_url}}/assets/img/selling/coupon-code-shoppingcart-settings.png">
 
-1. Create a Pricing Rule having **Coupon Code Based** flag enabled.
+1. สร้างกฎการกำหนดราคาโดยเปิดใช้งานแฟล็ก **ตามรหัสคูปอง**
 
-## 2. How to create Coupon Code
+## 2. วิธีสร้างรหัสคูปอง
 
-1. Go to Coupon Code list and click on New.
-2. Enter a **Coupon Name**, e.g. "SAVE 20"
-3. Under **Coupon Type**, select from Promotional or Gift Card.
-   	
-	Promotional, is to promote a generic scheme. 
-   	
-	Gift Card, is to randomly generate coupon code and to distribute to specific customer/user.
+1. ไปที่รายการรหัสคูปองและคลิกที่ใหม่
+2. ป้อน **ชื่อคูปอง** เช่น "SAVE 20"
+3. ใต้ **ประเภทคูปอง** เลือกจากบัตรส่งเสริมการขายหรือบัตรของขวัญ
    
-4. **Coupon Code** is unique readonly code in all capital letters , which gets generated based on Coupon Type & Coupon Name.
-	
-	For Coupon Type,
-	
-	a) *Promotional* , it removes all spaces and takes upto the first 8 characters. e.g. SAVE20
-	
-	b) *GiftCard* ,it generates random code of 11 digits. e.g. AP48K7CT9LP
+โปรโมชั่น คือการส่งเสริมโครงการทั่วไป
+   
+บัตรของขวัญเป็นการสุ่มสร้างรหัสคูปองและแจกจ่ายให้กับลูกค้า/ผู้ใช้เฉพาะ
+   
+4. **รหัสคูปอง** เป็นรหัสแบบอ่านอย่างเดียวที่ไม่ซ้ำกับตัวพิมพ์ใหญ่ทั้งหมด ซึ่งสร้างขึ้นตามประเภทคูปองและชื่อคูปอง
 
-    It can be used on the shopping cart page before placing the order to avail discount. 
+สำหรับประเภทคูปอง
+
+a) *Promotional* จะลบช่องว่างทั้งหมดและใช้อักขระไม่เกิน 8 ตัวแรก เช่น. SAVE20
+
+b) *GiftCard* จะสร้างรหัสสุ่ม 11 หลัก เช่น. AP48K7CT9LP
+
+    สามารถใช้ในหน้าตะกร้าสินค้าก่อนทำการสั่งซื้อเพื่อรับส่วนลด
   
-4. Select [Pricing Rule](/docs/user/manual/en/accounts/pricing-rule)  having **coupon code based** flag enabled. 
+4. เลือก [กฎการกำหนดราคา](/docs/user/manual/th/accounts/pricing-rule) ที่เปิดใช้งานตัวติดตาม (Flag) ตาม **รหัสคูปอง**
 
-5. Click  on Save 
+5. คลิกที่บันทึก
 
 	<img class="screenshot" alt="Coupon Code Doctype" src="{{docs_base_url}}/assets/img/selling/coupon-code.png">
 
-## 3. Features
 
-### 3.1 Validity and Usage
+## 3. คุณสมบัติ
 
-1. **Valid From - To** - validity of the coupon
-2. **Maximum Use** - Cap to limit the usage of the coupon code
-3. **Used** - for each Sales Order submitted with coupon code , the used count increments by 1.
-4. **Coupon Code Description** - can be used while creating Email Template to inform potential customers about the coupon code and scheme information
+### 3.1 ความถูกต้องและการใช้งาน
+
+1. **ใช้ได้ตั้งแต่ - ถึง** - ความถูกต้องของคูปอง
+2. **ใช้สูงสุด** - ขีด จำกัด การใช้รหัสคูปอง
+3. **ใช้แล้ว** - สำหรับใบสั่งขายแต่ละรายการที่ส่งพร้อมรหัสคูปอง จำนวนที่ใช้จะเพิ่มขึ้นทีละ 1
+4. **คำอธิบายรหัสคูปอง** - สามารถใช้ในขณะที่สร้างเทมเพลตอีเมลเพื่อแจ้งให้ผู้มีโอกาสเป็นลูกค้าทราบเกี่ยวกับรหัสคูปองและข้อมูลโครงการ
 
 	<img class="screenshot" alt="Pricing Rule Coupon Code Based" src="{{docs_base_url}}/assets/img/selling/coupon-code-pricing-rule.png">
 
 
 
-### 3.2 Coupon Code can be applied in two ways
+### 3.2 รหัสคูปองสามารถใช้ได้สองวิธี
 
-1. Through URL , coupon code will be automatically fetched from the URL parameter ("cc") and filled in the Apply Coupon Code textbox, for ease of user to apply.
+1. ผ่าน URL รหัสคูปองจะถูกดึงโดยอัตโนมัติจากพารามิเตอร์ URL ("cc") และกรอกในช่องข้อความ Apply Coupon Code เพื่อให้ผู้ใช้สมัครได้ง่าย
 
 	http://xyz.erpnext.com/products/golden-ring?cc=SAVE5
 
-2. Explicitly applying the code , by filling the code and clicking on "Apply Coupon Code" button as shown below in shopping cart page
+2. ใส่รหัสให้ชัดเจน โดยการกรอกรหัสและคลิกที่ปุ่ม "ใช้รหัสคูปอง" ดังที่แสดงด้านล่างในหน้าตะกร้าสินค้า
 
 	<img class="screenshot" alt="Shopping Cart Apply CouponCode" src="{{docs_base_url}}/assets/img/selling/coupon-code-pricing-rule.png">
 
-Price will get updated on successful application of the coupon code.
+ราคาจะได้รับการอัปเดตเมื่อสมัครรหัสคูปองสำเร็จ
 
 
-### 4. Related Topics
+### 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Shopping Cart](/docs/user/manual/en/website/shopping-cart)
-2. [Pricing Rule](/docs/user/manual/en/accounts/pricing-rule)
+1. [ตะกร้าสินค้า](/docs/user/manual/th/website/shopping-cart)
+2. [กฎการกำหนดราคา](/docs/user/manual/th/accounts/pricing-rule)

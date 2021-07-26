@@ -1,91 +1,92 @@
 <!-- add-breadcrumbs -->
-# Email Campaign
+# แคมเปญอีเมล
 
-**An Email Campaign is a coordinated set of emails sent to leads or contacts according to a particular schedule.**
+**แคมเปญอีเมลคือชุดอีเมลที่ประสานงานกันซึ่งส่งไปยังลูกค้าเป้าหมายหรือผู้ติดต่อตามกำหนดการเฉพาะ**
 
-Email Campaigns are still one of the most effective ways to reach your Customers, Contacts or Leads and keep them engaged. For example, you could set up Email Campaigns for introducing your product to the customers, with every email revealing an interesting feature of your product.
+แคมเปญอีเมลยังคงเป็นวิธีที่มีประสิทธิภาพมากที่สุดวิธีหนึ่งในการเข้าถึงลูกค้า ผู้ติดต่อ หรือลูกค้าเป้าหมาย และทำให้พวกเขามีส่วนร่วม ตัวอย่างเช่น คุณสามารถตั้งค่าแคมเปญอีเมลเพื่อแนะนำผลิตภัณฑ์ของคุณให้กับลูกค้า โดยอีเมลทุกฉบับจะเปิดเผยคุณลักษณะที่น่าสนใจของผลิตภัณฑ์ของคุณ
 
-To create an Email Campaign, go to:
+ในการสร้างแคมเปญอีเมล ไปที่:
 
- > Home > CRM > Campaign > Email Campaign
+ > หน้าแรก > CRM > แคมเปญ > แคมเปญอีเมล
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating and using Email Campaign, these need to be created first:
+ก่อนสร้างและใช้ Email Campaign คุณต้องสร้างสิ่งเหล่านี้ก่อน:
 
-* [Campaign](/docs/user/manual/en/CRM/campaign)
-* [Lead](/docs/user/manual/en/CRM/lead) or [Contact](/docs/user/manual/en/CRM/contact) or [Email Group](/docs/user/manual/en/CRM/email_group)
+* [แคมเปญ](/docs/user/manual/th/CRM/campaign)
+* [ลูกค้าเป้าหมาย](/docs/user/manual/th/CRM/lead) หรือ [ผู้ติดต่อ](/docs/user/manual/th/CRM/contact) หรือ [กลุ่มอีเมล](/docs/user/manual/th /CRM/email_group)
 
-## 2. How to Create an Email Campaign
+## 2. วิธีสร้างแคมเปญอีเมล
 
-1. Go to the Email Campaign list, click on New.
-2. Select the [Campaign](/docs/user/manual/en/CRM/campaign) for which you want to set up an Email Campaign.
-3. Set the 'Start Date' for the Email Campaign.
-4. In 'Email Campaign For', select whether you want to set up Email Campaign for a Lead or a Contact or for an Email Group to send to multiple email contacts.
-5. In 'Recipient', select the respective Lead or Contact or Email Group for whom you want to start the Email Campaign.
-6. In 'Sender', select the user of the system who should be the sender of the emails.
-7. Save
+1. ไปที่รายการ Email Campaign คลิก New
+2. เลือก [แคมเปญ](/docs/user/manual/th/CRM/campaign) ที่คุณต้องการตั้งค่าแคมเปญอีเมล
+3. กำหนด 'วันที่เริ่มต้น' สำหรับแคมเปญอีเมล
+4. ใน 'แคมเปญอีเมลสำหรับ' เลือกว่าคุณต้องการตั้งค่าแคมเปญอีเมลสำหรับลูกค้าเป้าหมายหรือผู้ติดต่อ หรือสำหรับกลุ่มอีเมลเพื่อส่งไปยังผู้ติดต่อทางอีเมลหลายราย
+5. ใน 'ผู้รับ' เลือกลูกค้าเป้าหมายหรือผู้ติดต่อหรือกลุ่มอีเมลที่คุณต้องการเริ่มต้นแคมเปญอีเมล
+6. ใน 'ผู้ส่ง' ให้เลือกผู้ใช้ของระบบที่ควรเป็นผู้ส่งอีเมล
+7. บันทึก
 
     <img class="screenshot" alt="Email Campaign" src="{{docs_base_url}}/assets/img/crm/email-campaign.png">
 
-    The above Email Campaign is for the following Campaign:
+    แคมเปญอีเมลข้างต้นมีไว้สำหรับแคมเปญต่อไปนี้:
 
     <img class="screenshot" alt="Campaign Schedule" src="{{docs_base_url}}/assets/img/crm/campaign-email-schedule.png">
 
-    **Note**: The **Send After (days)** field in Campaign specifies the day on which email is to be sent relative to the **Start Date** of **Email Campaign**. Notice the 'End Date' in the above Email Campaign. It is '26-07-2019', which is 4 days after the 'Start Date', '22-07-2029', as the Campaign Schedule ends on day 4.
+    **หมายเหตุ**: ช่อง **ส่งหลังจาก (วัน)** ในแคมเปญระบุวันที่ส่งอีเมลโดยสัมพันธ์กับ **วันที่เริ่มต้น** ของ **แคมเปญอีเมล** สังเกต 'วันที่สิ้นสุด' ในแคมเปญอีเมลด้านบน คือ '26-07-2019' ซึ่งเป็น 4 วันหลังจาก 'วันที่เริ่มต้น', '22-07-2029' เนื่องจากกำหนดการแคมเปญสิ้นสุดในวันที่ 4
 
-### 2.1 Create multiple Email Campaigns for a Campaign
+### 2.1 สร้างแคมเปญอีเมลหลายรายการสำหรับแคมเปญหนึ่งๆ
 
-You can also create new Email Campaigns for different Leads or Contacts for the same Campaign though the Campaign Dashboard.
+คุณยังสามารถสร้างแคมเปญอีเมลใหม่สำหรับลูกค้าเป้าหมายหรือผู้ติดต่อที่แตกต่างกันสำหรับแคมเปญเดียวกันผ่านแดชบอร์ดแคมเปญ
 
-1. Go to the Campaign for which you want to create Email Campaigns.
-2. Click on + in front of Email Campaigns to create a new Email Campaign for the Campaign.
+1. ไปที่แคมเปญที่คุณต้องการสร้างแคมเปญอีเมล
+2. คลิก + หน้า แคมเปญอีเมล เพื่อสร้าง แคมเปญอีเมล ใหม่สำหรับแคมเปญ
 
     <img class="screenshot" alt="Email Campaigns from Dashboard" src="{{docs_base_url}}/assets/img/crm/email-campaigns-from-dash.png">
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Linked Communication
+### 3.1 การสื่อสารที่เชื่อมโยง
 
-When emails are sent to the respective leads or contacts, Communication is linked to the Email Campaign document. You can view all the emails sent in your document.
+เมื่ออีเมลถูกส่งไปยังลูกค้าเป้าหมายหรือผู้ติดต่อที่เกี่ยวข้อง การสื่อสารจะเชื่อมโยงกับเอกสารแคมเปญอีเมล คุณสามารถดูอีเมลทั้งหมดที่ส่งในเอกสารของคุณ
 
 <img class="screenshot" alt="Linked Communication" src="{{docs_base_url}}/assets/img/crm/email-campaign-linked-comm.png">
 
-### 3.2 Unsubscribe from Email Campaign
+### 3.2 Unsubscribe จากแคมเปญอีเมล
 
-If a lead or contact does not want to continue getting emails regarding the campaign, he or she can unsubscribe from the Email Campaign via the unsubscribe link sent with the email.
+หากลูกค้าเป้าหมายหรือผู้ติดต่อไม่ต้องการรับอีเมลเกี่ยวกับแคมเปญต่อไป เขาหรือเธอสามารถยกเลิกการสมัครรับอีเมลแคมเปญผ่านลิงก์ยกเลิกการสมัครที่ส่งมาพร้อมกับอีเมล
 
 <img class="screenshot" alt="Unsubscribe link" src="{{docs_base_url}}/assets/img/crm/unsubscribe-link.png">
 
-When the lead or contact unsubscribes, the status of the Email Campaign document changes to 'Unsubscribed'.
+เมื่อลูกค้าเป้าหมายหรือผู้ติดต่อยกเลิกการสมัคร สถานะของเอกสารแคมเปญอีเมลจะเปลี่ยนเป็น 'ยกเลิกการสมัครแล้ว (Unsubscribe)'
 
 <img class="screenshot" alt="Unsubscribed" src="{{docs_base_url}}/assets/img/crm/email-campaign-unsubscribed.png">
 
-### 3.3 Use Lead or Contact fields in Email Template
+### 3.3 ใช้ฟิลด์ลูกค้าเป้าหมายหรือผู้ติดต่อในเทมเพลตอีเมล
 
- The Email Template has the context of the document you have specified in the 'Email Campaign For' field. If you want to display the fields from your Lead or Contact document in your Email Template you will have to use `doc.fieldname` for the same.
- For example, if 'Email Campaign For' is 'Contact', you can mention the 'first name' of your Contact as `doc.first_name` in the Email Template as shown below:
+ เทมเพลตอีเมลมีบริบทของเอกสารที่คุณระบุไว้ในฟิลด์ 'แคมเปญอีเมลสำหรับ' หากคุณต้องการแสดงฟิลด์จากเอกสารลูกค้าเป้าหมายหรือผู้ติดต่อของคุณในเทมเพลตอีเมล คุณจะต้องใช้ `doc.fieldname' สำหรับฟิลด์เดียวกัน
+ ตัวอย่างเช่น หาก 'แคมเปญอีเมลสำหรับ' คือ 'ผู้ติดต่อ' คุณสามารถระบุ 'ชื่อ' ของผู้ติดต่อของคุณเป็น `doc.first_name` ในเทมเพลตอีเมลดังที่แสดงด้านล่าง:
 
 <img class="screenshot" alt="Email Template Document" src="{{docs_base_url}}/assets/img/crm/email-template-doc.png">
 
-Then the emails sent would look like this:
+จากนั้นอีเมลที่ส่งจะมีลักษณะดังนี้:
 
 <img class="screenshot" alt="Email Campaign Doc Data" src="{{docs_base_url}}/assets/img/crm/email-campaign-doc-data.png">
 
-### 3.4 Status indication
+### 3.4 ตัวบ่งชี้สถานะ
 
-Status indicates the state of the Email Campaign, the various Statuses are:
+สถานะระบุสถานะของแคมเปญอีเมล สถานะต่างๆ คือ:
 
-- **Scheduled**: When the Email Campaign has not yet started but scheduled on a future 'Start Date'.
-- **In Progress**: The campaign would be marked as 'In Progress' between 'Start Date' and 'End Date' of the campaign.
-- **Completed**: After the 'End Date' of the campaign, the status will be changed to 'Completed'.
-- **Unsubscribed**: When the Lead or Contact unsubscribes from the Campaign.
+- **ตามกำหนดการ**: เมื่อแคมเปญอีเมลยังไม่เริ่มต้น แต่มีกำหนดเป็น 'วันที่เริ่มต้น' ในอนาคต
+- **อยู่ระหว่างดำเนินการ**: แคมเปญจะถูกทำเครื่องหมายเป็น 'กำลังดำเนินการ' ระหว่าง 'วันที่เริ่มต้น' และ 'วันที่สิ้นสุด' ของแคมเปญ
+- **เสร็จสมบูรณ์**: หลังจาก 'วันที่สิ้นสุด' ของแคมเปญ สถานะจะเปลี่ยนเป็น 'เสร็จสิ้น'
+- **Unsubscribed**: เมื่อ ลูกค้าเป้าหมาย หรือ ผู้ติดต่อ ยกเลิกการสมัครจากแคมเปญ
 
     <img class="screenshot" alt="Email Campaign Status" src="{{docs_base_url}}/assets/img/crm/email-campaign-status.png">
 
-## 4. Related Topics
-1. [Campaign](/docs/user/manual/en/CRM/campaign)
-1. [Lead](/docs/user/manual/en/CRM/lead)
-1. [Contact](/docs/user/manual/en/CRM/contact)
 
-Next: [Newsletter](/docs/user/manual/en/CRM/newsletter)
+## 4. หัวข้อที่เกี่ยวข้อง
+1. [แคมเปญ](/docs/user/manual/th/CRM/campaign)
+1. [ลูกค้าเป้าหมาย](/docs/user/manual/th/CRM/lead)
+1. [ผู้ติดต่อ](/docs/user/manual/th/CRM/contact)
+
+Next: [Newsletter](/docs/user/manual/th/CRM/newsletter)

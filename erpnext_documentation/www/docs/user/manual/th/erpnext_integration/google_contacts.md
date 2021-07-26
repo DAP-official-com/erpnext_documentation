@@ -1,26 +1,24 @@
 <!-- add-breadcrumbs -->
-# Google Contacts Integration
+# การรวม Google Contacts
 
-ERPNext provides an integration with Google Contacts in order for all users to synchronize their Google Contacts with ERPNext.
+ERPNext ให้การผสานรวมกับ Google Contacts เพื่อให้ผู้ใช้ทั้งหมดซิงโครไนซ์ Google Contacts กับ ERPNext
 
-## How to set up Google Contacts Integration
+## วิธีตั้งค่าการใช้ Google Contacts
+เพื่อให้สามารถซิงโครไนซ์กับ Google Contacts ได้ คุณต้องอนุญาต ERPNext เพื่อรับข้อมูล Contacts จาก Google การรวม Google Contacts ถูกตั้งค่าด้วยขั้นตอนต่อไปนี้:
 
-In order to allow a synchronization with Google Contacts, you need to authorize ERPNext to get Contacts data from Google. Google Contacts Integration is set up with the following steps:
+- สร้างข้อมูลรับรอง OAuth 2.0 ผ่าน [การตั้งค่า Google](/docs/user/manual/th/erpnext_integration/google_settings)
+- ในรายการ Google Contacts ให้คลิกใหม่ ป้อนอีเมลบัญชี Google ที่คุณต้องการซิงค์แล้วบันทึก ตอนนี้คลิกที่ **อนุญาตการเข้าถึงผู้ติดต่อ** เพื่ออนุญาต ERPNext เพื่อรับข้อมูลผู้ติดต่อจาก Google
 
-- Create OAuth 2.0 Credentials via [Google Settings](/docs/user/manual/en/erpnext_integration/google_settings).
-- In the Google Contacts list, click on New. Enter the Google Account Email you want to sync and then save it. Now click on **Authorize Contacts Access** to authorize ERPNext to get Contacts data from Google.
+## วิธีใช้ Google Contacts
 
-## How to use Google Contacts Integration
+### การสร้างผู้ติดต่อใน ERPNext
+- เมื่อการรวม Google Contacts สำเร็จ ผู้ติดต่อทั้งหมดที่สร้างใน ERPNext จะถูกซิงค์หากเลือก 'Push to Google Contacts'
 
-### Creating a Contacts in ERPNext
-- Once Google Contacts Integration is succesful, all the contacts created in ERPNext will be synced if `Push to Google Contacts` is checked.
-
-Creating a Contact in ERPNext:
+การสร้างผู้ติดต่อใน ERPNext:
 <img class="screenshot" src="/docs/assets/img/erpnext_integrations/google_contacts_create_contact.gif">
 
-It will be shown in Google Contacts:
+จะแสดงใน Google Contacts:
 <img class="screenshot" src="/docs/assets/img/erpnext_integrations/google_contacts_create_contact_!.gif">
-
-### Syncing Contacts from Google Contacts
-- Once Google Contacts Integration is succesful, all the contacts in Google Contacts will be synced if `Pull from Google Contacts` is checked.
+### ซิงค์ผู้ติดต่อจาก Google Contacts
+- เมื่อการรวม Google Contacts สำเร็จ ผู้ติดต่อทั้งหมดใน Google Contacts จะถูกซิงค์หากเลือก "ดึงจาก Google Contacts"
   <img class="screenshot" src="/docs/assets/img/erpnext_integrations/google_contacts_contact_sync.gif">

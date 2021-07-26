@@ -1,80 +1,80 @@
 <!-- add-breadcrumbs -->
-# Supplier Scorecard
+# ตารางคะแนนของซัพพลายเออร์
 
-**A Supplier Scorecard is an evaluation tool used to assess the performance of suppliers.**
+**ตารางสรุปสถิติซัพพลายเออร์เป็นเครื่องมือประเมินผลที่ใช้ในการประเมินประสิทธิภาพของซัพพลายเออร์**
 
-Supplier scorecards can be used to keep track of item quality, delivery, and responsiveness of suppliers across long periods of time. This data is typically used to help in purchasing decisions.
-A Supplier Scorecard is manually created for each supplier.
+ตารางคะแนนซัพพลายเออร์สามารถใช้เพื่อติดตามคุณภาพของสินค้า การส่งมอบ และการตอบสนองของซัพพลายเออร์ในระยะเวลานาน ข้อมูลนี้มักใช้เพื่อช่วยในการตัดสินใจซื้อ
+ตารางสรุปสถิติซัพพลายเออร์ถูกสร้างขึ้นด้วยตนเองสำหรับซัพพลายเออร์แต่ละราย
 
-To access Supplier Scorecard, go to:
-> Home > Buying > Supplier Scorecard > Supplier Scorecard
+ในการเข้าถึงตารางสรุปสถิติซัพพลายเออร์ ไปที่:
+> หน้าหลัก > การซื้อ > ตารางคะแนนของซัพพลายเออร์ > ตารางคะแนนของซัพพลายเออร์
 
 
-## 1. Prerequisites
-Before creating and using a Supplier Scorecard, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ Scorecard ของซัพพลายเออร์ ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Supplier](/docs/user/manual/en/buying/supplier)
+* [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
 
-## 1. How to create Supplier Scorecard
+## 1. วิธีสร้างตารางสรุปสถิติซัพพลายเออร์
 
-1. Go to the Supplier Scorecard list, click on New.
-2. Select a Supplier to score.
-3. Select the evaluating period whether weekly, monthly, or yearly.
-4. Setup the scoring function (details in next section).
-5. A supplier scorecard is created for each supplier individually. Only one supplier scorecard can be created for each supplier. 
+1. ไปที่รายการ ตารางคะแนนของซัพพลายเออร์ คลิก ใหม่
+2. เลือกซัพพลายเออร์เพื่อทำคะแนน
+3. เลือกช่วงเวลาการประเมินเป็นรายสัปดาห์ รายเดือน หรือรายปี
+4. ตั้งค่าฟังก์ชันการให้คะแนน (รายละเอียดในหัวข้อถัดไป)
+5. หน้าต่างสรุปซัพพลายเออร์จะถูกสร้างขึ้นสำหรับซัพพลายเออร์แต่ละราย สามารถสร้างดัชนีชี้วัดซัพพลายเออร์ได้เพียงใบเดียวสำหรับซัพพลายเออร์แต่ละราย 
 <img class="screenshot" alt="Purchase Order" src="{{docs_base_url}}/assets/img/buying/supplier-scorecard.png">
 
-## 2. Features
-### 2.1 Scoring Setup
-The supplier scorecard consists of a set evaluation periods, during which the performance of a supplier is evaluated. This period can be weekly, monthly or yearly. The current score is calculated from the score of each evaluation period based on the weighting function. The default formula is linearly weighed over the previous 12 scoring periods. 
+## 2. คุณสมบัติ
+### 2.1 การตั้งค่าการให้คะแนน
+ตารางสรุปสถิติซัพพลายเออร์ประกอบด้วยช่วงการประเมินที่กำหนดไว้ ซึ่งในระหว่างนั้นจะมีการประเมินประสิทธิภาพของซัพพลายเออร์ ช่วงเวลานี้สามารถเป็นรายสัปดาห์ รายเดือน หรือรายปี คะแนนปัจจุบันคำนวณจากคะแนนของแต่ละช่วงการประเมินตามฟังก์ชันการถ่วงน้ำหนัก สูตรเริ่มต้นจะชั่งน้ำหนักแบบเส้นตรงในช่วงการให้คะแนน 12 ช่วงก่อนหน้า 
 <img class="screenshot" alt="Purchase Order" src="{{docs_base_url}}/assets/img/buying/supplier-scorecard-weighing.png">
 This formula is customizable.
 
-#### Supplier Standings
+#### อันดับซัพพลายเออร์
 
-The supplier standing is used to quickly sort suppliers based on their performance. These are customizable for each supplier. 
+สถานะซัพพลายเออร์ใช้เพื่อจัดเรียงซัพพลายเออร์อย่างรวดเร็วตามประสิทธิภาพของพวกเขา สิ่งเหล่านี้สามารถปรับแต่งได้สำหรับซัพพลายเออร์แต่ละราย
 
-The scorecard standing of a supplier can also be used to restrict suppliers from being included in Request for Quotations or being issued Purchase Orders. The following screen can be seen on expanding a row in the 'Scoring Standings' table, click on the downward facing arrow.
+สถานะบัตรคะแนนของซัพพลายเออร์ยังสามารถใช้เพื่อจำกัดซัพพลายเออร์ไม่ให้รวมอยู่ในคำขอใบเสนอราคาหรือการออกใบสั่งซื้อ หน้าจอต่อไปนี้สามารถเห็นได้ในการขยายแถวในตาราง 'อันดับคะแนน' ให้คลิกที่ลูกศรชี้ลง
 <img class="screenshot" alt="Purchase Order" src="{{docs_base_url}}/assets/img/buying/supplier-scorecard-standing.png">
 
-### 2.2 Criteria Setup
-A supplier can be evaluated on several individual evaluation criteria, including (but not limited to) quotation response time, delivered item quality, and delivery timeliness. These criteria are weighed to determine the final period score. 
+### 2.2 การตั้งค่าเกณฑ์
+ซัพพลายเออร์สามารถประเมินได้จากเกณฑ์การประเมินแต่ละรายการ ซึ่งรวมถึง (แต่ไม่จำกัดเพียง) เวลาตอบกลับใบเสนอราคา คุณภาพของสินค้าที่จัดส่ง และระยะเวลาในการจัดส่ง เกณฑ์เหล่านี้จะชั่งน้ำหนักเพื่อกำหนดคะแนนของช่วงสุดท้าย
 
-To create a  new Criteria, go to Buying > Supplier Scorecard > Supplier Scorecard Criteria:
+ในการสร้างเกณฑ์ใหม่ ไปที่การซื้อ > ตารางสรุปสถิติซัพพลายเออร์ > เกณฑ์ตารางคะแนนซัพพลายเออร์:
 <img class="screenshot" alt="Purchase Order" src="{{docs_base_url}}/assets/img/buying/supplier-scorecard-criteria.png">
 
-Note: Criteria weights for a scorecard should add up to 100. 
+หมายเหตุ: น้ำหนักเกณฑ์สำหรับดัชนีชี้วัดควรรวมกันได้ไม่เกิน 100
 
-### 2.3 Supplier Scorecard Variables
-The method for calculating each criteria is determined through the Criteria Formula field, which can use a number of pre-established variables. This can be seen in the preceding screenshot.
+### 2.3 ตัวแปรตารางสรุปสถิติซัพพลายเออร์
+วิธีการคำนวณแต่ละเกณฑ์จะถูกกำหนดผ่านฟิลด์ สูตรคำนวณเกณฑ์ ซึ่งสามารถใช้ตัวแปรที่กำหนดไว้ล่วงหน้าจำนวนหนึ่งได้ ซึ่งสามารถเห็นได้ในภาพหน้าจอก่อนหน้านี้
 
-The value of each of these variables is calculated over the scoring period for each supplier. Examples of such variables include:
+ค่าของตัวแปรแต่ละตัวเหล่านี้จะถูกคำนวณตลอดระยะเวลาการให้คะแนนสำหรับซัพพลายเออร์แต่ละราย ตัวอย่างของตัวแปรดังกล่าว ได้แก่:
 
- - The total number of items received from the supplier
- - The total number of accepted items from the supplier
- - The total number of rejected items from the supplier
- - The total number of deliveries from the supplier
- - The total amount (in dollars) received from a supplier
+ - จำนวนสินค้าทั้งหมดที่ได้รับจากซัพพลายเออร์
+ - จำนวนสินค้าที่รับจากซัพพลายเออร์ทั้งหมด
+ - จำนวนสินค้าที่ถูกปฏิเสธทั้งหมดจากซัพพลายเออร์
+ - จำนวนการส่งมอบทั้งหมดจากซัพพลายเออร์
+ - จำนวนเงินทั้งหมด (เป็นดอลลาร์) ที่ได้รับจากซัพพลายเออร์
 
 ![Supplier Scorecard variable](/docs/assets/img/buying/supplier-scorecard-variables.png)
 
-Variables are pre-set, additional variables can be added through server-side customizations. Tick the Custom checkbox if the variable you're creating is for a custom field.
+ตัวแปรถูกกำหนดไว้ล่วงหน้า สามารถเพิ่มตัวแปรเพิ่มเติมได้ผ่านการปรับแต่งฝั่งเซิร์ฟเวอร์ ทำเครื่องหมายที่ช่องกำหนดเอง หากตัวแปรที่คุณกำลังสร้างมีไว้สำหรับฟิลด์ที่กำหนดเอง
 
-The criteria formula should be customized to evaluate the suppliers in each criteria in a way that best fits the company requirements.
+สูตรเกณฑ์ควรได้รับการปรับแต่งเพื่อประเมินซัพพลายเออร์ในแต่ละเกณฑ์ในลักษณะที่เหมาะสมกับข้อกำหนดของบริษัทมากที่สุด
 
-### 2.4 Evaluation Formulas
-The evaluation formula uses the pre-established or custom variables to evaluate an aspect of supplier performance over the scoring period. Formulas can use the following mathematical functions:
+### 2.4 สูตรการประเมินผล
+สูตรการประเมินใช้ตัวแปรที่กำหนดไว้ล่วงหน้าหรือตัวแปรที่กำหนดเองเพื่อประเมินด้านประสิทธิภาพของซัพพลายเออร์ในช่วงการให้คะแนน สูตรสามารถใช้ฟังก์ชันทางคณิตศาสตร์ต่อไปนี้:
 
-* addition: + 
-* subtraction: -
-* multiplication: *
-* division: /
-* min: min(x,y)
-* max: max(x,y)
-* if/else: (x) if (formula) else (y)
-* less than: <
-* greater than: >
-* variables: {variable_name}
+* นอกจากนี้: +
+* การลบ: -
+* การคูณ: *
+* แผนก: /
+* นาที: นาที(x,y)
+* สูงสุด: สูงสุด (x, y)
+* if/else: (x) if (สูตร) ​​อื่น (y)
+* น้อยกว่า: <
+* มากกว่า: >
+* ตัวแปร: {variable_name} (ชื่อตัวแปร)
 
 It is crucial that the formula be solvable for all variable values. This is most often an issue if the value resolves to 0. For example:
 ```
@@ -88,11 +88,11 @@ if {total_received_items} > 0
 else 1.
 ```
 
-### 2.5 Evaluating the Supplier
-An evaluation is generated for each Supplier Scorecard Period by clicking the "Generate Missing Scorecard Periods" button. The supplier's current score can be seen, as well as a visual graphic showing the performance of the supplier over time. Any actions against the supplier are also noted here, including warnings when creating RFQs and POs or preventing these features for this supplier altogether.
+### 2.5 การประเมินซัพพลายเออร์
+การประเมินจะถูกสร้างขึ้นสำหรับช่วงเวลาบัตรคะแนนซัพพลายเออร์แต่ละงวดโดยคลิกปุ่ม "สร้างช่วงเวลาบัตรคะแนนที่ขาดหายไป" สามารถดูคะแนนปัจจุบันของซัพพลายเออร์ได้ เช่นเดียวกับภาพกราฟิกที่แสดงประสิทธิภาพของซัพพลายเออร์ในช่วงเวลาหนึ่ง การดำเนินการใดๆ ต่อซัพพลายเออร์จะระบุไว้ที่นี่ รวมทั้งคำเตือนเมื่อสร้าง RFQ และ PO หรือป้องกันคุณลักษณะเหล่านี้สำหรับซัพพลายเออร์รายนี้โดยสิ้นเชิง
 
-### 3. Related Topics
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Supplier Quotation](/docs/user/manual/en/buying/supplier-quotation)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+1. [ใบเสนอราคาซัพพลายเออร์](/docs/user/manual/th/buying/supplier-quotation)
 
 {next}

@@ -1,55 +1,55 @@
 <!-- add-breadcrumbs -->
-# M-Pesa Integration
+# การใช้ M-Pesa
 
-**M-Pesa integration allows processing transactions with the payment gateway provider M-Pesa.**
+**การรวม M-Pesa ช่วยให้ประมวลผลธุรกรรมกับผู้ให้บริการเกตเวย์การชำระเงิน M-Pesa**
 
-M-Pesa Integration facilitates the processing of payments between the M-Pesa application and ERPNext. M-Pesa Integration only works with the POS to facilitate the payments for the same. This feature doesn't work with the shopping cart.
+การรวม M-Pesa อำนวยความสะดวกในการประมวลผลการชำระเงินระหว่างแอปพลิเคชัน M-Pesa และ ERPNext M-Pesa Integration ใช้งานได้กับ POS เพื่ออำนวยความสะดวกในการชำระเงินเท่านั้น คุณลักษณะนี้ใช้ไม่ได้กับตะกร้าสินค้า
 
-To set up M-Pesa, go to:
-> Integrations > Payments > M-Pesa Settings
+ในการตั้งค่า M-Pesa ไปที่:
+> บูรณาการ > การชำระเงิน > การตั้งค่า M-Pesa
 
-## 1.How to get your M-Pesa credentials?
-1. In order to activate your API credentials, you need to log in to your M-Pesa account.
-2. Then, open the Go Live section of the application and follow the steps to get the approval for the app.
-3. When all the test cases are satisfied and expected results match the final results, you need to submit the document and follow the steps to get the final credentials for your application.
-4. Details mentioned in the Production URL and Credentials section are the credentials that you are supposed to use in M-Pesa Settings.
+## 1. จะรับข้อมูลรับรอง M-Pesa ของคุณได้อย่างไร
+1. ในการเปิดใช้งานข้อมูลรับรอง API ของคุณ คุณต้องลงชื่อเข้าใช้บัญชี M-Pesa ของคุณ
+2. จากนั้น เปิดส่วน Go Live ของแอปพลิเคชัน และทำตามขั้นตอนเพื่อขอรับการอนุมัติสำหรับแอป
+3. เมื่อทุกกรณีทดสอบเป็นที่น่าพอใจและผลลัพธ์ที่คาดหวังตรงกับผลลัพธ์สุดท้าย คุณต้องส่งเอกสารและทำตามขั้นตอนเพื่อรับข้อมูลรับรองขั้นสุดท้ายสำหรับการสมัครของคุณ
+4. รายละเอียดที่กล่าวถึงใน URL การผลิตและส่วนข้อมูลรับรองเป็นข้อมูลประจำตัวที่คุณควรใช้ในการตั้งค่า M-Pesa
 
 <img class="screenshot" alt="Mpesa Credentials" src="{{docs_base_url}}/assets/img/setup/integrations/mpesa_credentials.png">
 
 
-## 2.Setting up M-Pesa
+## 2.ตั้งค่า M-Pesa
 
-To enable M-Pesa Express, you need to configure all the mandatory parameters which you have received from M-Pesa. If you want to use the staging environment of the integration, you can select the staging option and use the staging credentials provided by M-Pesa by creating a separate application for the same.
+ในการเปิดใช้งาน M-Pesa Express คุณต้องกำหนดค่าพารามิเตอร์บังคับทั้งหมดที่คุณได้รับจาก M-Pesa หากคุณต้องการใช้สภาวะแวดล้อม staging ของการผสานรวม คุณสามารถเลือกอ็อพชัน staging และใช้ staging credential ที่ M-Pesa จัดเตรียมไว้โดยการสร้างแอปพลิเคชันแยกต่างหากสำหรับที่เดียวกัน
 <img class="screenshot" alt="Mpesa Settings" src="{{docs_base_url}}/assets/img/setup/integrations/mpesa_settings.png">
 
-On enabling the M-Pesa integration in ERPNext, the system will create a Payment Gateway record and an Account head in the Chart of Accounts with the Account type as Bank as seen in the following screenshot.
+ในการเปิดใช้งาน M-Pesa ใน ERPNext ระบบจะสร้างบันทึกเกตเวย์การชำระเงินและส่วนหัวของบัญชีในผังบัญชีที่มีประเภทบัญชีเป็นธนาคารดังที่เห็นในภาพหน้าจอต่อไปนี้
 
 <img class="screenshot" alt="Mpesa COA" src="{{docs_base_url}}/assets/img/setup/integrations/mpesa_coa.png">
 
 <img class="screenshot" alt="Mpesa POS Settings" src="{{docs_base_url}}/assets/img/setup/integrations/mpesa_pos_settings.png">
 
-It will also create a Mode of Payment with the same name and account as the payment gateway's, along with certain custom fields in POS Settings to handle the POS payments.
+นอกจากนี้ยังจะสร้างวิธีการการชำระเงินที่มีชื่อและบัญชีเดียวกันกับช่องทางการชำระเงิน พร้อมด้วยฟิลด์แบบกำหนดเองบางอย่างในการตั้งค่า POS เพื่อจัดการการชำระเงิน POS
 
 <img class="screenshot" alt="Payment Gateway Account" src="{{docs_base_url}}/assets/img/setup/integrations/payment_gateway_account_mpesa.png">
 
-After configuring the Payment Gateway Account, you will be able to accept online payments via M-Pesa.
+หลังจากตั้งค่าบัญชี ช่องทางการชำระเงิน แล้ว คุณจะสามารถรับการชำระเงินออนไลน์ผ่าน M-Pesa ได้
 
 
-## 3. M-Pesa POS Payments
+## 3. การชำระเงิน POS M-Pesa
 
-On setting up the POS profile with M-Pesa mode of payment, the POS checkout would show an additional information section. This section contains two fields that were automatically set-up on adding M-Pesa settings.
+ในการตั้งค่าโปรไฟล์ POS ด้วยโหมดการชำระเงิน M-Pesa การชำระเงิน POS จะแสดงส่วนข้อมูลเพิ่มเติม ส่วนนี้ประกอบด้วยสองฟิลด์ที่ตั้งค่าโดยอัตโนมัติเมื่อเพิ่มการตั้งค่า M-Pesa
 
 <img class="screenshot" alt="POS Additional Information" src="{{docs_base_url}}/assets/img/setup/integrations/additional-information.png">
 
-As soon as a POS user fills the mobile number of the customer, they can initiate a request for payment from the customer. A request is sent to the customer's M-Pesa mobile application linked with the specified mobile number. Once the payment is processed by the user, the user is prompted by a confirmation dialog to submit the payment.
+ทันทีที่ผู้ใช้ POS กรอกหมายเลขโทรศัพท์มือถือของลูกค้า พวกเขาสามารถเริ่มต้นคำขอชำระเงินจากลูกค้าได้ คำขอจะถูกส่งไปยังแอปพลิเคชันมือถือ M-Pesa ของลูกค้าที่เชื่อมโยงกับหมายเลขโทรศัพท์มือถือที่ระบุ เมื่อผู้ใช้ประมวลผลการชำระเงินแล้ว ผู้ใช้จะได้รับข้อความแจ้งจากกล่องโต้ตอบการยืนยันเพื่อส่งการชำระเงิน
 
-## 4. M-Pesa Account Balance
+## 4. ยอดคงเหลือในบัญชี M-Pesa
 
-Account balance linked with an individual M-Pesa can be fetched via the Get Account Balance button. This will load the M-Pesa account balance details in the dashboard.
+สามารถดึงยอดเงินในบัญชีที่เชื่อมโยงกับ M-Pesa แต่ละรายการได้โดยใช้ปุ่มรับยอดคงเหลือในบัญชี การดำเนินการนี้จะโหลดรายละเอียดยอดเงินในบัญชี M-Pesa ในแดชบอร์ด
 
 <img class="screenshot" alt="POS Account Balance" src="{{docs_base_url}}/assets/img/setup/integrations/mpesa_account_balance.png">
 
 
-## 5. Supporting transaction currencies
+## 5. สกุลเงินที่รองรับการทำธุรกรรม
 
-M-Pesa will only work for the Company which has KSH (Kenyan Shilling) as the Company Currency.
+M-Pesa จะทำงานให้กับบริษัทที่มี KSH (ชิลลิงเคนยา) เป็นสกุลเงินของบริษัทเท่านั้น

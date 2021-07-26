@@ -1,35 +1,35 @@
 <!-- add-breadcrumbs -->
-# Training Program
+#โปรแกรมการฝึกอบรม
 
-**Training Program defines programs designed for training employees or other individuals in specific skills.** 
+**โปรแกรมการฝึกอบรมกำหนดโปรแกรมที่ออกแบบมาสำหรับการฝึกอบรมพนักงานหรือบุคคลอื่นๆ ในทักษะเฉพาะ**
 
-In ERPNext, you can create a Training Program and schedule [Training Events](/docs/user/manual/en/human-resources/training-event) under it. 
+ใน ERPNext คุณสามารถสร้างโปรแกรมการฝึกอบรมและกำหนดเวลา [กิจกรรมการฝึกอบรม](/docs/user/manual/th/human-resources/training-event) ได้
 
-To access Training Program, go to:
+ในการเข้าถึงโปรแกรมการฝึกอบรม ไปที่:
 
-> Home > Human Resources > Training > Training Program
+> หน้าหลัก > ทรัพยากรบุคคล > การอบรม > โครงการอบรม
 
 
-## 1. How to create a Training Program
+## 1. วิธีสร้างโปรแกรมการฝึกอบรม
 
-1. Go to Training Program list, click on New.
-1. Enter the Training Program name.
-1. Enter the Trainer Name, Trainer Email and Contact Number.
-1. Select the Supplier n(optional) in case an outside vendor/expert was called to conduct the training.
-1. Additionally, you can also write a short description of the Training Program in the Description box (optional).
+1. ไปที่รายการโปรแกรมการฝึกอบรม คลิกที่ ใหม่
+1. ป้อนชื่อโปรแกรมการฝึกอบรม
+1. ใส่ชื่อเทรนเนอร์ อีเมลเทรนเนอร์ และเบอร์ติดต่อ
+1. เลือกซัพพลายเออร์ n (ตัวเลือก) ในกรณีที่มีการเรียกผู้จำหน่าย/ผู้เชี่ยวชาญภายนอกให้ทำการฝึกอบรม
+1. นอกจากนี้ คุณยังสามารถเขียนคำอธิบายสั้นๆ ของโปรแกรมการฝึกอบรมในกล่องคำอธิบาย (ตัวเลือก)
 
     <img class="screenshot" alt="Training Program" src="{{docs_base_url}}/assets/img/human-resources/training-program.png">
 
-> **Note:** By default, the Status of the Training Program is 'Scheduled'. However, you can change the status to 'Completed' or 'Cancelled' as per the requirement.
+> **หมายเหตุ:** โดยค่าเริ่มต้น สถานะของโปรแกรมการฝึกอบรมคือ 'Scheduled' อย่างไรก็ตาม คุณสามารถเปลี่ยนสถานะเป็น 'เสร็จสิ้น' หรือ 'ยกเลิก' ได้ตามความต้องการ
 
-Once the Training Program is saved, you can create Training Events under the same.
+เมื่อบันทึกโปรแกรมการฝึกอบรมแล้ว คุณสามารถสร้างกิจกรรมการฝึกอบรมภายใต้กิจกรรมเดียวกันได้
 
 
-## 2. Related Topics
+## 2. หัวข้อที่เกี่ยวข้อง
 
-1. [Training Event](/docs/user/manual/en/human-resources/training-event)
-1. [Training Result](/docs/user/manual/en/human-resources/training-result)
-1. [Training Feedback](/docs/user/manual/en/human-resources/training-feedback)
+1. [กิจกรรมการฝึกอบรม](/docs/user/manual/th/human-resources/training-event)
+1. [ผลการฝึกอบรม](/docs/user/manual/th/human-resources/training-result)
+1. [ข้อเสนอแนะการฝึกอบรม](/docs/user/manual/th/human-resources/training-feedback)
 
 
 

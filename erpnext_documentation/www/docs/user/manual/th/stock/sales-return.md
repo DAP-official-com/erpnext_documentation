@@ -1,52 +1,52 @@
 <!-- add-breadcrumbs -->
-# Sales Return
+#สินค้าที่ขายถูกส่งคืน
 
-**A sold Item being returned is known as a Sales Return.**
+**สินค้าที่ขายถูกส่งคืนเรียกว่า Sales Return**
 
-Businesses often return goods that are already sold. They could be returned by the customer due to quality issues, non-delivery on the agreed date, or any other reason.
+ธุรกิจมักจะคืนสินค้าที่ขายไปแล้ว ลูกค้าสามารถส่งคืนได้เนื่องจากปัญหาด้านคุณภาพ การไม่จัดส่งในวันที่ตกลงกันไว้ หรือเหตุผลอื่นใด
 
-## 1. Prerequisites
-Before creating and using a Sales Return, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ Sales Return ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Item](/docs/user/manual/en/stock/item)
-* [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
+* [รายการ](/docs/user/manual/th/stock/item)
+* [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
 
-    Or
+    หรือ
 
-    [Delivery Note](/docs/user/manual/en/stock/delivery-note)
+    [หมายเหตุการจัดส่ง](/docs/user/manual/th/stock/delivery-note)
 
-## 2. How to create a Sales Return
+## 2. วิธีสร้างผลตอบแทนจากการขาย
 
-1. First open the original Delivery Note / Sales Invoice, against which Customer returned the Items.
+1. ขั้นแรกให้เปิดใบนำส่งสินค้า / ใบกำกับสินค้าเดิมที่ลูกค้าส่งคืน
 
     <img class="screenshot" alt="Original Delivery Note" src="{{docs_base_url}}/assets/img/stock/sales-return-original-delivery-note.png">
 
-1. Then click on 'Create > Sales Return', it will open a new Delivery Note with 'Is Return' checked, Items, Rate, and taxes will negative numbers.
+1. จากนั้นคลิกที่ 'สร้าง > การคืนสินค้าจากการขาย' จะเปิดบันทึกการจัดส่งใหม่โดยทำเครื่องหมายที่ 'คือผลตอบแทน' รายการ อัตรา และภาษีจะเป็นตัวเลขติดลบ
 
     <img class="screenshot" alt="Return Against Delivery Note" src="{{docs_base_url}}/assets/img/stock/sales-return-against-delivery-note.png">
 
-1. You can also create the return entry against the original Sales Invoice, to return stock along with credit note, check "Update Stock" option in Return Sales Invoice.
+1. คุณยังสามารถสร้างรายการส่งคืนกับใบแจ้งหนี้การขายเดิม เพื่อส่งคืนสินค้าพร้อมกับใบลดหนี้ ให้ทำเครื่องหมายที่ตัวเลือก "อัปเดตสต็อก" ในการส่งคืนใบกำกับสินค้า
 
     <img class="screenshot" alt="Return Against Sales Invoice" src="{{docs_base_url}}/assets/img/stock/sales-return-against-sales-invoice.png">
 
-1. On submission of Return Delivery Note / Sales Invoice, the system will increase stock balance in the mentioned Warehouse. To maintain correct stock valuation, stock balance will go up according to the original purchase rate of the returned items.
+1. เมื่อยื่น หมายเหตุการจัดส่งสินค้าคืน / ใบแจ้งหนี้การขาย ระบบจะเพิ่มยอดสต๊อกในโกดังดังกล่าว เพื่อรักษามูลค่าหุ้นที่ถูกต้อง ยอดสต็อกจะเพิ่มขึ้นตามอัตราการซื้อเดิมของสินค้าที่ส่งคืน
 
     <img class="screenshot" alt="Return Stock Ledger" src="{{docs_base_url}}/assets/img/stock/sales-return-stock-ledger.png">
 
-1. In case of Return Sales Invoice, Customer account will be credited and associated income and tax account will be debited as shown in the Accounting Ledger.
+1. ในกรณีของการส่งคืนใบกำกับสินค้า บัญชีลูกค้าจะได้รับเครดิตและบัญชีรายได้และภาษีที่เกี่ยวข้องจะถูกหักตามที่แสดงในบัญชีแยกประเภท
 
     <img class="screenshot" alt="Return Stock Ledger" src="{{docs_base_url}}/assets/img/stock/sales-return-general-ledger.png">
 
-If Perpetual Inventory is enabled, the system will also post accounting entry against warehouse account to sync warehouse account balance with stock balance as per Stock Ledger.
+หากเปิดใช้งาน สินค้าคงคลังถาวร ระบบจะโพสต์รายการบัญชีกับบัญชีคลังสินค้าเพื่อซิงค์ยอดคงเหลือในบัญชีคลังสินค้ากับยอดคงเหลือในสต็อกตามบัญชีแยกประเภท
 
-## 3. Impact on Stock Return via Delivery Note
-On Creating a Sales Return against a Delivery Note:
+## 3. ผลกระทบต่อการคืนสต็อคผ่านใบส่งสินค้า
+ในการสร้างผลตอบแทนจากการขายเทียบกับใบส่งสินค้า:
 
-* The **Returned Quantity** in the original Delivery Note along with any Sales Order linked to it, is updated.
+* **จำนวนที่ส่งคืน** ในบันทึกการจัดส่งเดิมพร้อมกับใบสั่งขายที่เชื่อมโยงกับข้อมูลนั้น ได้รับการอัปเดต
 
-* The original Delivery Note's status is changed to **Return Issued** if 100% returned:
+* สถานะของใบนำส่งสินค้าเดิมจะเปลี่ยนเป็น **ส่งคืนแล้ว** หากส่งคืน 100%:
   ![Return Issued](/docs/assets/img/stock/sales-return-issue.png)
 
-## 4. Related Topics
-1. [Purchase Return](/docs/user/manual/en/stock/purchase-return)
-1. [Perpetual Inventory](/docs/user/manual/en/stock/perpetual-inventory)
+## 4. หัวข้อที่เกี่ยวข้อง
+1. [การคืนสินค้า](/docs/user/manual/th/stock/purchase-return)
+1. [สินค้าคงคลังถาวร](/docs/user/manual/th/stock/perpetual-inventory)

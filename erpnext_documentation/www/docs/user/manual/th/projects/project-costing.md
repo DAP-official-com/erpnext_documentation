@@ -1,36 +1,36 @@
 <!-- add-breadcrumbs -->
-# Project Costing
+# ต้นทุนโครงการ
 
-Each project has multiple tasks associated with it. To track the actual cost of a Project, primarily in terms of services, a User has to create a Timesheet based on the time spent on a Task within a Project. You can track the service cost against a Project in the following ways.
+แต่ละโครงการมีงานหลายอย่างที่เกี่ยวข้องกัน ในการติดตามต้นทุนจริงของโปรเจ็กต์ ในแง่ของบริการเป็นหลัก ผู้ใช้ต้องสร้างไทม์ชีทตามเวลาที่ใช้ไปกับงานภายในโปรเจ็กต์ คุณสามารถติดตามค่าบริการเทียบกับโปรเจ็กต์ได้ด้วยวิธีต่อไปนี้
 
-## Activity Type
+## ประเภทกิจกรรม
 
-[Activity Type](/docs/user/manual/en/projects/activity-type) is a master of services offered by your personnel. You can add a new Activity type from:
+[ประเภทกิจกรรม](/docs/user/manual/th/projects/activity-type) เป็นบริการหลักที่นำเสนอโดยบุคลากรของคุณ คุณสามารถเพิ่มประเภทกิจกรรมใหม่ได้จาก:
 
-> Home > Project > Activity Type > New
+> หน้าแรก > โครงการ > ประเภทกิจกรรม > ใหม่
 
-## Activity Cost
+## ค่ากิจกรรม
 
-Activity Cost is a master where you can track billing and costing rate for each Employee, for each Activity Type.
+ต้นทุนกิจกรรมเป็นข้อมูลหลักที่คุณสามารถติดตามการเรียกเก็บเงินและอัตราการคิดต้นทุนสำหรับพนักงานแต่ละคน สำหรับประเภทกิจกรรมแต่ละประเภท
 
 <img class="screenshot" alt="Activity Cost" src="{{docs_base_url}}/assets/img/project/projects-activity-cost.png">
 
-## Timesheet
+## ไทม์ชีท
 
-Based on the time spent on the Project-Task, an Employee will create a [Timesheet](/docs/user/manual/en/projects/timesheets).
+ตามเวลาที่ใช้ในงานโครงการ พนักงานจะสร้าง [ตารางเวลางาน](/docs/user/manual/th/projects/timesheets)
 
 <img class="screenshot" alt="Timesheet" src="{{docs_base_url}}/assets/img/project/projects-timesheet.png">
 
-On selection of the Activity Type in the Time Log, Billing and Costing Rate will be fetched for that Employee from the respective [Activity Cost](/docs/user/manual/en/projects/activity-cost).
+ในการเลือกประเภทกิจกรรมในบันทึกเวลา อัตราการเรียกเก็บเงินและต้นทุนจะถูกเรียกสำหรับพนักงานนั้นจาก [ต้นทุนกิจกรรม](/docs/user/manual/th/projects/activity-cost) ที่เกี่ยวข้อง
 
-Multiplying these rates with total no. of hours in the Time Log gives Costing Amount and Billing Amount for the specific Time Log.
+คูณอัตราเหล่านี้ด้วยจำนวนทั้งหมด ของชั่วโมงในบันทึกเวลาจะให้จำนวนเงินที่คิดต้นทุนและจำนวนเงินที่เรียกเก็บสำหรับบันทึกเวลาที่ระบุ
 
-## Costing in Project and Task
+## ต้นทุนในโครงการและงาน
 
-Based on all the Timesheets created for specific Tasks, its costing will be updated in the respective Task. 
+ตามตารางเวลางานทั้งหมดที่สร้างขึ้นสำหรับงานเฉพาะ การคิดต้นทุนของงานนั้นจะได้รับการอัปเดตในงานที่เกี่ยวข้อง 
 
 <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/project/projects-task-costing.png">
 
-Same way, the Project cost will be updated based on Timesheets created against each of its associated tasks and the cost of the Project gets updated simultaneously.
+ในทำนองเดียวกัน ต้นทุนโครงการจะได้รับการอัปเดตตามไทม์ชีทที่สร้างขึ้นโดยเทียบกับแต่ละงานที่เกี่ยวข้อง และค่าใช้จ่ายของโครงการจะได้รับการอัปเดตพร้อมกัน
 
 <img class="screenshot" alt="Project - Costing" src="{{docs_base_url}}/assets/img/project/projects-costing-and-billing.png">

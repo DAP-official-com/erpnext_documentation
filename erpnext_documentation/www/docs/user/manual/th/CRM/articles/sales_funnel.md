@@ -1,32 +1,32 @@
 <!-- add-breadcrumbs -->
-# CRM Analytics
+#การวิเคราะห์ CRM
 
 
-For example, if you notice that very few communications with the prospects have taken place in a month which may have led to decrease in the sales. You can make sure that the sales executives reach out and followup on the leads and opportunities on regular basis.
+ตัวอย่างเช่น หากคุณสังเกตเห็นว่ามีการสื่อสารกับผู้ที่มีแนวโน้มจะเป็นลูกค้าน้อยมากในหนึ่งเดือน ซึ่งอาจส่งผลให้ยอดขายลดลง คุณสามารถมั่นใจได้ว่าผู้บริหารฝ่ายขายติดต่อและติดตามลูกค้าเป้าหมายและโอกาสอย่างสม่ำเสมอ
 
-### 1. Sales Funnel
+### 1. ช่องทางการขาย
 
-By using the sales funnel report, you can quantify the number of prospects at each stage of the process and you can get an idea of your potential customers.
+ด้วยการใช้รายงานกระบวนการขาย คุณสามารถระบุจำนวนผู้มีโอกาสเป็นลูกค้าในแต่ละขั้นตอนของกระบวนการ และคุณสามารถรับทราบแนวคิดเกี่ยวกับผู้มีโอกาสเป็นลูกค้าของคุณ
 
-More than this, by looking at the way these numbers change over time, you can identify problems in the sales pipeline and take any corrective action at an early stage.
+ยิ่งไปกว่านั้น เมื่อดูจากการเปลี่ยนแปลงของตัวเลขเหล่านี้เมื่อเวลาผ่านไป คุณจะระบุปัญหาในไปป์ไลน์การขายและดำเนินการแก้ไขได้ตั้งแต่เริ่มต้น
 
-Select the Company, select the From Date, To Date and select Sales Funnel in Chart.
+เลือกบริษัท เลือกวันที่เริ่มต้น ถึงวันที่ และเลือกช่องทางการขายในแผนภูมิ
 
 <img alt="Lead Details" class="screenshot" src="{{docs_base_url}}/assets/img/crm/sales_funnel.png">
 
-### 2. Sales Pipeline
+### 2. ไปป์ไลน์การขาย
 
-An opportunity will pass through many sales stages before it yields any business. Using this report you can visualise the total amount of business the opportunities have and compare them across the stages.  
+โอกาสจะผ่านหลายขั้นตอนการขายก่อนที่จะให้ผลทางธุรกิจใดๆ การใช้รายงานนี้จะทำให้คุณเห็นภาพจำนวนรวมของธุรกิจที่มีโอกาสทางการขายและเปรียบเทียบระหว่างขั้นตอนต่างๆ
 
-Select the Company, select the From Date, To Date and select Sales Pipeline in Chart.
+เลือกบริษัท เลือกวันที่เริ่มต้น ถึงวันที่ และเลือกไปป์ไลน์การขายในแผนภูมิ
 
 <img alt="Lead Details" class="screenshot" src="{{docs_base_url}}/assets/img/crm/analysis_on_sales_stage.png">
 
-### 3. Opportunities by Lead Source
+### 3. โอกาสตามแหล่งที่มาของลูกค้าเป้าหมาย
 
-This report helps you visualise the business potential of opportunities based on the Lead Sources.
+รายงานนี้ช่วยให้คุณเห็นภาพศักยภาพทางธุรกิจของโอกาสโดยพิจารณาจากแหล่งที่มาของลูกค้าเป้าหมาย
 
-Select the Company, select the From Date, To Date and select 'Opportunities by Lead Source' in Chart.
+เลือกบริษัท เลือกวันที่เริ่มต้น ถึงวันที่ และเลือก 'โอกาสตามแหล่งที่มาของลูกค้าเป้าหมาย' ในแผนภูมิ
 
 <img alt="Lead Details" class="screenshot" src="{{docs_base_url}}/assets/img/crm/opportunities_by_lead_source.png">
 

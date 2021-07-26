@@ -1,165 +1,167 @@
-# Promotional Scheme
+# โครงการส่งเสริมการขาย (Promotional Scheme)
 
 > Introduced in version 12
 
-**A Promotional Scheme is a temporary discount on one or more products.**
+**การส่งเสริมการขายเป็นส่วนลดชั่วคราวสำหรับผลิตภัณฑ์อย่างน้อยหนึ่งรายการ**
 
-Promotional schemes help businesses become successful as lower prices for a limited period of time to attract more Customers. They can be easily configured in ERPNext. A Promotional scheme is linked to a pricing rule, against each slab system that will generate the pricing rule.
+รูปแบบการส่งเสริมการขายช่วยให้ธุรกิจประสบความสำเร็จด้วยราคาที่ต่ำกว่าในระยะเวลาที่จำกัดเพื่อดึงดูดลูกค้ามากขึ้น สามารถกำหนดค่าได้อย่างง่ายดายใน ERPNext แผนการส่งเสริมการขายเชื่อมโยงกับกฎการกำหนดราคา เทียบกับระบบแผ่นงานแต่ละระบบที่จะสร้างกฎการกำหนดราคา
 
-On creating a Promotional Scheme, the system creates a [Pricing Rule](/docs/user/manual/en/accounts/pricing-rule). A Promotional Scheme can have multiple Pricing Rules associated with it. In ERPNext, a Promotional Scheme is an easier way to manage pricing on multiple Item/Groups based on different parties and conditions.
+เกี่ยวกับการสร้างโครงการส่งเสริมการขาย, ระบบการสร้าง [กฎการกำหนดราคา ](/docs/user/manual/th/accounts/pricing-rule)การส่งเสริมการขายสามารถมีกฎการกำหนดราคาได้หลายข้อเชื่อมโยงอยู่ ใน ERPNext โครงการส่งเสริมการขายเป็นวิธีที่ง่ายกว่าในการจัดการราคาสำหรับหลายรายการ/กลุ่มตามฝ่ายและเงื่อนไขที่แตกต่างกัน
 
-To access the Promotional Scheme list, go to:
-> Home > Selling > Items and Pricing > Promotional Scheme
+หากต้องการเข้าถึงรายการโครงการส่งเสริมการขาย ไปที่:
+> หน้าหลัก > การขาย > รายการและราคา > การส่งเสริมการขาย
 
-## 1. Prerequisites
-Before creating and using a Promotional Scheme, it is advisable to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้โครงการส่งเสริมการขาย ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-1. [Item](/docs/user/manual/en/stock/item)
-1. [Item Group](/docs/user/manual/en/stock/item-group)
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Supplier](/docs/user/manual/en/buying/supplier)
+1. [สินค้า](/docs/user/manual/th/stock/item)
+1. [กลุ่มสินค้า](/docs/user/manual/th/stock/item-group)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
 
-## 2. How to create a Promotional Scheme
+## 2. วิธีสร้างโครงการส่งเสริมการขาย
 
-1. Go to the Promotional Scheme list and click on New.
-1. Enter a title for the rule.
-1. Select what to Apply On like Item Code, Item Group, Brand, or Transaction. Selecting Transaction will apply the scheme on the total amount of the transaction.
-1. Based on the 'Apply On', system will give you the provision to select the Item Code / Item Group / Brand in the table.
-1. Select whether the scheme is for Selling, Buying, or both and set the part information.
-1. In the Price Discount Slabs table, set the price discount, product discount.
-1. Users can also apply the discount on the other Item Code / Item Group / Brand by selecting the value for Apply Rule On Other field.
+1. ไปที่รายการโครงการส่งเสริมการขายแล้วคลิกใหม่
+1. ป้อนชื่อเรื่องสำหรับกฎ
+1. เลือกสิ่งที่จะสมัคร เช่น รหัสสินค้า กลุ่มสินค้า แบรนด์ หรือธุรกรรม การเลือกธุรกรรมจะใช้รูปแบบกับยอดรวมของธุรกรรม
+1. เลือก 'ใช้กับ' ระบบจะให้ข้อกำหนดในการเลือกรหัสรายการ / กลุ่มสินค้า / แบรนด์ในตาราง
+1. เลือกว่าโครงการมีไว้สำหรับการขาย การซื้อ หรือทั้งสองอย่าง แล้วตั้งค่าข้อมูลชิ้นส่วน
+1. ในตาราง Price Discount Slabs ให้ตั้งค่าส่วนลดราคา ส่วนลดสินค้า
+1. ผู้ใช้ยังสามารถใช้ส่วนลดกับรหัสสินค้า / กลุ่มสินค้า / แบรนด์อื่น ๆ โดยเลือกค่าสำหรับใช้กฎกับช่องอื่น ๆ
 
  <img alt="Promotional Scheme" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/promotional-schemes.png">
-1. Save.
 
-> Note: On saving a Promotional Scheme, a new Pricing Rule is created.
+1. บันทึก
 
-### 2.1 Additional fields when creating a Promotional Scheme
+> หมายเหตุ: ในการบันทึกโครงการส่งเสริมการขาย กฎการกำหนดราคาใหม่จะถูกสร้างขึ้น
 
-#### Mixed Conditions
-If you select two or more Items and set the Min and Max Quantity. The Promotional Scheme will be applied only if the total sum of Items matches the set quantities. For example, you create a Promotional Scheme on Item 1 and Item 2 and set the Min and Max Quantity as 30, the Promotional Scheme will apply only if the total quantity is 30.
+### 2.1 ช่องเพิ่มเติมเมื่อสร้างโครงการส่งเสริมการขาย
 
-#### Is Cumulative
-Enabling this options allows the Promotional Scheme to be applied cumulatively. You need to set the 'Min Amt' and 'Max Amt' for this.
+#### เงื่อนไขผสม 
+หากคุณเลือกรายการตั้งแต่สองรายการขึ้นไปและตั้งค่าจำนวนต่ำสุดและสูงสุด โครงการส่งเสริมการขายจะใช้ได้ก็ต่อเมื่อยอดรวมของรายการตรงกับปริมาณที่กำหนดไว้เท่านั้น ตัวอย่างเช่น คุณสร้างแผนส่งเสริมการขายในรายการ 1 และรายการ 2 และตั้งค่าจำนวนต่ำสุดและสูงสุดเป็น 30 โครงการส่งเสริมการขายจะใช้ได้เฉพาะเมื่อปริมาณรวมเป็น 30
 
-Consider a scenario where the Min Amt is 1,500 and Max Amt is 2,000. Now, if one transaction is created for 1,400 then the Promotional Scheme will not be applied. However, on creating a second invoice of amount 600, Promotional Scheme will be applied. This happened since the total (cumulative) amount of the invoices added up to 2,000. Note that the discount will be applied only to the latest transaction that crosses the cumulative limit.
+#### เป็นค่าสะสม 
+การเปิดใช้งานตัวเลือกนี้จะทำให้สามารถใช้แผนส่งเสริมการขายแบบสะสมได้ คุณต้องตั้งค่า 'Min Amt' และ 'Max Amt' สำหรับสิ่งนี้
 
-This can be useful to give discounts if a Customer buys an Item multiple times and you want to reward him with discounts/special prices.
+พิจารณาสถานการณ์ที่ Min Amt คือ 1,500 และ Max Amt คือ 2,000 ตอนนี้ หากมีการสร้างธุรกรรมหนึ่งรายการสำหรับ 1,400 โครงการส่งเสริมการขายจะไม่ถูกนำไปใช้ อย่างไรก็ตาม ในการสร้างใบแจ้งหนี้ใบที่สองจำนวน 600 แผนส่งเสริมการขายจะถูกนำมาใช้ สิ่งนี้เกิดขึ้นเนื่องจากยอดรวม (สะสม) ของใบแจ้งหนี้รวมกันเป็น 2,000 โปรดทราบว่าส่วนลดจะใช้กับธุรกรรมล่าสุดที่เกินขีดจำกัดสะสมเท่านั้น
 
-## 3. Features
+สิ่งนี้มีประโยชน์ในการให้ส่วนลดหากลูกค้าซื้อสินค้าหลายครั้งและคุณต้องการให้รางวัลเขาด้วยส่วนลด/ราคาพิเศษ
 
-### 3.1 Apply Scheme On Other Item
-This feature checks condition on the first Item but applies scheme/discount/rate on another Item.
+## 3. คุณสมบัติ
 
-For example, set Item1 and Item2 in the 'Apply Rule On' table and set 'Apply Rule On Other' on Item3. Now, if the transaction has Item1, Item2, and Item3, the Pricing Rule will apply on Item3 since the first two Items were present in the transaction.
+### 3.1 ใช้แผนงานกับรายการอื่น 
+คุณสมบัตินี้จะตรวจสอบเงื่อนไขของสินค้าชิ้นแรกแต่ใช้รูปแบบ/ส่วนลด/อัตรากับสินค้าอื่น
 
-### 3.2 Party Information
+ตัวอย่างเช่น ตั้งค่า สินค้า1 และ สินค้า2 ในตาราง 'ใช้กฎกับ' และตั้งค่า 'ใช้กฎกับที่อื่น' บน สินค้า3 ตอนนี้ หากธุรกรรมมีรายการที่ 1 รายการที่ 2 และรายการที่ 3 กฎการกำหนดราคาจะมีผลกับรายการที่ 3 เนื่องจากรายการสองรายการแรกมีอยู่ในธุรกรรม
 
-Set whether the Promotional Scheme is for Selling of Buying the Item.
+### 3.2 ข้อมูลของผู้ที่เกี่ยวข้อง
 
-Based on your selection you can set applicability to one of the following masters.
+กำหนดว่าโครงการส่งเสริมการขายมีไว้สำหรับการขายการซื้อสินค้าหรือไม่
 
-* [Customer](/docs/user/manual/en/CRM/customer)
-* [Customer Group](/docs/user/manual/en/CRM/customer-group)
-* [Territory](/docs/user/manual/en/selling/territory)
-* [Sales Partner](/docs/user/manual/en/selling/sales-partner)
-* [Campaign](/docs/user/manual/en/CRM/campaign)
-* [Supplier](/docs/user/manual/en/buying/supplier)
-* Supplier Group
+จากการเลือกของคุณ คุณสามารถตั้งค่าการบังคับใช้กับหนึ่งในต้นแบบต่อไปนี้
 
-### 3.3 Validity 
-You can also set a date interval for when the Promotional Scheme will be valid. This is useful for a sales promotion. On leaving the dates blank the Promotional Scheme will not have any time frame limit. 
+* [ลูกค้า](/docs/user/manual/th/CRM/customer)
+* [กลุ่มลูกค้า](/docs/user/manual/th/CRM/customer-group)
+* [เขตพื้นที่](/docs/user/manual/th/selling/territory)
+* [พันธมิตรการขาย](/docs/user/manual/th/selling/sales-partner)
+* [แคมเปญ](/docs/user/manual/th/CRM/campaign)
+* [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+* กลุ่มซัพพลายเออร์
 
-**Currency**: Setting a Currency here will cause the Promotional Scheme to be applied only when the Currency is the same in the transaction.
+### 3.3 ความถูกต้องของข้อมูล
+คุณยังสามารถกำหนดช่วงวันที่ว่าโครงการส่งเสริมการขายจะมีผลเมื่อใด สิ่งนี้มีประโยชน์สำหรับการส่งเสริมการขาย เมื่อเว้นวันที่ว่างไว้ โครงการส่งเสริมการขายจะไม่มีการจำกัดกรอบเวลาใดๆ
 
-### 3.4 Price Discount Slabs
+**สกุลเงิน** : การตั้งค่าสกุลเงินที่นี่จะทำให้โครงการส่งเสริมการขายมีผลเมื่อสกุลเงินเหมือนกันในการทำธุรกรรมเท่านั้น
 
-**Rule Description**: Enter a description to keep a not of what this Promotional Scheme entails.
+### 3.4 ลดราคา 
 
-#### Quantity and Amount
-Specify minimum qty, maximum qty, minimum amount, or maximum amount of an Item when this Promotional Scheme should be applicable.
+**คำอธิบายกฎ**: ป้อนคำอธิบายเพื่อไม่ให้เป็นไปตามโครงการส่งเสริมการขายนี้
 
-Note that if the quantity or amount falls short or exceeds the limits set here, the Promotional Scheme will not be applied at all. However, it will be applied if you have enabled the options Mixed Conditions or Cumulative.
+#### ปริมาณและราคา 
+ระบุจำนวนขั้นต่ำ จำนวนสูงสุด จำนวนขั้นต่ำ หรือจำนวนสูงสุดของรายการเมื่อควรใช้แผนส่งเสริมการขายนี้
 
-### Setting the Discount/Rate
-* **Rate**: This will be the new rate for an Item. For example, if you sell an Item for 100 and want to sell it for 112 for a specific party, then select Rate and set the Rate as 112.
-* **Discount Percentage**: A specific discount percentage can be set. For example, a 10% discount on an Item worth 500 would result in a price of 450.
-* **Discount Amount**: A fixed discount amount will be applied. For example if you sell an Item for 100 and want to sell it with a discount of 7, then this condition can be set using the Discount Amount option.
+หากปริมาณหรือจำนวนเงินขาดหายไปหรือเกินขีดจำกัดที่กำหนดไว้ที่นี่ แผนส่งเสริมการขายจะไม่ถูกนำไปใช้เลย อย่างไรก็ตาม จะมีผลหากคุณเปิดใช้งานตัวเลือก เงื่อนไขแบบผสม หรือ แบบสะสม
 
-#### Filters for setting discount
+### การตั้งค่าส่วนลด/อัตรา 
+* **อัตรา** : นี่จะเป็นอัตราใหม่สำหรับไอเท็ม ตัวอย่างเช่น หากคุณขายสินค้าในราคา 100 และต้องการขายในราคา 112 สำหรับบุคคลใดฝ่ายหนึ่ง ให้เลือกอัตราและกำหนดอัตราเป็น 112
+* **เปอร์เซ็นต์ส่วนลด** : สามารถกำหนดเปอร์เซ็นต์ส่วนลดเฉพาะได้ ตัวอย่างเช่น ส่วนลด 10% สำหรับสินค้ามูลค่า 500 จะส่งผลให้ราคา 450
+* **จำนวนส่วนลด** : จำนวนส่วนลดคงที่จะถูกนำไปใช้ ตัวอย่างเช่น หากคุณขายสินค้าในราคา 100 และต้องการขายโดยมีส่วนลด 7 เงื่อนไขนี้สามารถตั้งค่าได้โดยใช้ตัวเลือกจำนวนส่วนลด
 
-* **Warehouse**: Setting a Warehouse here will cause the Promotional Scheme to be applied only if the Item is selected from the Warehouse specified here.
+#### ตัวกรองสำหรับการตั้งค่าส่วนลด
 
-* **Priority**: Consider an Item Group, you want to set specific rules on one Item from the group. This can be done by creating a new Promotional Scheme and setting a higher priority. 
+* **คลังสินค้า** : การตั้งโกดังที่นี่จะทำให้แผนส่งเสริมการขายถูกนำไปใช้ก็ต่อเมื่อรายการถูกเลือกจากโกดังที่ระบุไว้ที่นี่
 
-* **Threshold for Suggestion**: This is the threshold based on which the system will notify you to adjust Item Quantity for discount. For example, if the Min Quantity is 10 and the Threshold is 9, the system will notify to add 1 more Item for the discount to be applicable. This also applies to the amount set.
+* **ลำดับความสำคัญ** : พิจารณากลุ่มรายการ คุณต้องการกำหนดกฎเฉพาะสำหรับรายการเดียวจากกลุ่ม ซึ่งสามารถทำได้โดยการสร้างโครงการส่งเสริมการขายใหม่และกำหนดลำดับความสำคัญให้สูงขึ้น
 
-* **Validate Applied Rule**: If the entered price is not valid for the Item, the system will not allow you to apply a different rate/discount.
+* **Threshold for Suggestion** : นี่คือเกณฑ์ที่ระบบจะแจ้งให้คุณปรับปริมาณสินค้าเพื่อรับส่วนลด ตัวอย่างเช่น หากปริมาณขั้นต่ำคือ 10 และเกณฑ์คือ 9 ระบบจะแจ้งให้เพิ่มสินค้าอีก 1 รายการเพื่อใช้ส่วนลด นอกจากนี้ยังใช้กับจำนวนเงินที่ตั้งไว้
+
+* **ตรวจสอบกฎที่ใช้บังคับ** : หากราคาที่ป้อนไม่ถูกต้องสำหรับสินค้า ระบบจะไม่อนุญาตให้คุณใช้อัตรา/ส่วนลดอื่น
 
 ### 3.5 Product Discount Slabs
-A Product Discount is applicable when one or more Items are free on the purchase of other Items. Most fields in this table are the same as the previous section.
 
-The additional options are:
-* **Same Item**: If you want to give the same Item as free (product discount) on purchase of an Item, enable this checkbox. If you want to give another Item, untick and select the Item to be given as free.
+ส่วนลดสินค้าสามารถใช้ได้เมื่อมีสินค้าหนึ่งชิ้นขึ้นไปฟรีเมื่อซื้อสินค้าอื่นๆ ฟิลด์ส่วนใหญ่ในตารางนี้จะเหมือนกับส่วนก่อนหน้า
 
-* **Apply Multiple Pricing Rules**: To understand this, consider an Item of Rate 500. There are two Pricing Rules on it P1 and P2. P1 applies 10% discount and P2 applies 5%. Enabling this option will apply a total of 15% on the Item Rate which gives 425.
+ตัวเลือกเพิ่มเติมคือ:
 
-* **UoM**: The Promotional Scheme will apply only if the UoM set here matches with the transaction.
+* **รายการเดียวกัน** : หากคุณต้องการให้สินค้าชิ้นเดียวกันเป็นส่วนลดฟรี (ส่วนลดผลิตภัณฑ์) เมื่อซื้อสินค้า ให้เปิดใช้งานช่องทำเครื่องหมายนี้ หากคุณต้องการมอบไอเท็มอื่น ให้ยกเลิกการเลือกและเลือกไอเท็มที่จะมอบให้ฟรี
 
-* **Rate**: An Item may be offered free of cost by the Supplier but there may be some tax applicable. Entering a Rate here means that the Customer will have to pay the applicable taxes.
+* **ใช้กฎการกำหนดราคาหลายข้อ** : เพื่อให้เข้าใจสิ่งนี้ ให้พิจารณารายการที่มีอัตรา 500 มีกฎการกำหนดราคาอยู่สองข้อคือ P1 และ P2 P1 รับส่วนลด 10% และ P2 รับส่วนลด 5% การเปิดใช้งานตัวเลือกนี้จะมีผลรวม 15% ของอัตราไอเท็มซึ่งให้ 425
 
+* **UoM** : โครงการส่งเสริมการขายจะใช้ได้ก็ต่อเมื่อ UoM ที่ตั้งไว้ที่นี่ตรงกับธุรกรรม
 
-## 4. Promotional Scheme types
-### 4.1 Price Discount
+* **อัตรา** : ซัพพลายเออร์อาจเสนอรายการโดยไม่เสียค่าใช้จ่าย แต่อาจมีภาษีที่เกี่ยวข้อง การป้อนอัตราที่นี่หมายความว่าลูกค้าจะต้องชำระภาษีที่เกี่ยวข้อง
 
-In this type of promotional scheme, the user gets an option to set the discount in terms of percentage or amount based on the min quantity, max quantity, min amount and max amount on the products. Users can also configure the scheme where they can set the flat rate for the product based on the quantity or the amount of the product.
+## 4. ประเภทโครงการส่งเสริมการขาย
+### 4.1 ส่วนลดราคา 
+
+ในรูปแบบการส่งเสริมการขายนี้ ผู้ใช้จะได้รับตัวเลือกในการตั้งค่าส่วนลดในรูปของเปอร์เซ็นต์หรือจำนวนตามปริมาณขั้นต่ำ ปริมาณสูงสุด จำนวนเงินขั้นต่ำ และจำนวนเงินสูงสุดในผลิตภัณฑ์ ผู้ใช้ยังสามารถกำหนดค่าโครงร่างที่พวกเขาสามารถกำหนดอัตราคงที่สำหรับผลิตภัณฑ์ตามปริมาณหรือปริมาณของผลิตภัณฑ์
 
 <img alt="Promotional Scheme" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/promotional-schemes-price-discount.png">
 
-### 4.2 Product Discount
+### 4.2 ส่วนลดสินค้า 
 
-In this type of promotional scheme, the user gets an option to give a free product on purchase of the same or different product with conditions like min quantity, max quantity, min amount, max amount.
+ในรูปแบบการส่งเสริมการขายนี้ ผู้ใช้จะได้รับตัวเลือกในการมอบผลิตภัณฑ์ฟรีเมื่อซื้อผลิตภัณฑ์เดียวกันหรือต่างกันโดยมีเงื่อนไข เช่น ปริมาณขั้นต่ำ ปริมาณสูงสุด จำนวนขั้นต่ำ จำนวนเงินสูงสุด
 
 <img alt="Promotional Scheme" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/promotional-schemes-product-discount.png">
 
-## 5. How to configure a Promotional Scheme (Examples)
+## 5. วิธีกำหนดค่าโครงการส่งเสริมการขาย
 
-Let's understand how to configure a promotional scheme in ERPNext using some examples.
+มาทำความเข้าใจวิธีกำหนดค่าโครงการส่งเสริมการขายใน ERPNext โดยใช้ตัวอย่าง
 
 ### 5.1 Mixed Conditions Schemes
 
-Customer A has purchased 10 quantities of Britannia Cake 5 Rs packet and 5 quantities of Britannia Cake 10 Rs packet. Now, the Supplier wants to give a discount of 10% to Customer A. This Supplier also wants to give a 10 % discount to Customer B who has purchased 15 quantities of Britannia Cake 5 Rs packet.
+ลูกค้า A ซื้อแพ็คเก็ต Britannia Cake 5 Rs จำนวน 10 ชุดและ Britannia Cake 10 Rs จำนวน 5 ชุด ตอนนี้ซัพพลายเออร์ต้องการมอบส่วนลด 10% ให้กับลูกค้า A ซัพพลายเออร์รายนี้ต้องการมอบส่วนลด 10% ให้กับลูกค้า B ที่ซื้อแพ็คเก็ต Britannia Cake 5 Rs จำนวน 15 แพ็ค
 
-So, the Supplier wants to apply the discount on products Britannia Cake 5 Rs, Britannia Cake 10 Rs only if his Customers have purchased 15 quantities of any product or sum of both products.
+ดังนั้น ซัพพลายเออร์จึงต้องการใช้ส่วนลดสำหรับผลิตภัณฑ์ Britannia Cake 5 Rs, Britannia Cake 10 Rs เฉพาะในกรณีที่ลูกค้าของเขาซื้อผลิตภัณฑ์ใดๆ 15 ปริมาณหรือผลรวมของทั้งสองผลิตภัณฑ์
 
-To configure this in ERPNext the steps are as follows:
+ในการกำหนดค่านี้ใน ERP ขั้นตอนต่อไปมีดังนี้:
 
-1. Set Apply On as Item Code.
-1. Set the Item Code Britannia Cake 5 Rs, Britannia Cake 10 Rs in the Pricing Rule Item Code table.
-1. Enable the "Mixed Conditions" field.
-1. In the price discount table, set the min qty, max qty as 15.
-1. Set the discount type as Discount Percentage and rate as 10.
+1. ตั้งค่า Apply On เป็นรหัสสินค้า
+1. ตั้งรหัสรายการเค้ก Britannia 5 Rs เค้ก Britannia 10 Rs ในตารางรหัสสินค้ากฎการกำหนดราคา
+1. เปิดใช้งานฟิลด์ "เงื่อนไขแบบผสม"
+1. ในตารางส่วนลดราคา กำหนดจำนวนขั้นต่ำ จำนวนสูงสุดเป็น 15
+1. กำหนดประเภทส่วนลดเป็นเปอร์เซ็นต์ส่วนลดและอัตราเป็น 10
 
 <img alt="Promotional Scheme" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/promotional-schemes-mixed-conditions.png">
 
 ### 5.2 To apply a discount on other Item
 
-Customer A has purchased 30 quantities of Britannia Cake 5 Rs packet and 2 quantities of Britannia Cake 15 Rs. The Supplier wants to sell the product Britannia Cake 15 Rs at the flat rate 12. Here the original price for the product Britannia Cake 15 Rs is 15.
+ลูกค้า A ซื้อเค้ก Britannia Cake 5 Rs จำนวน 30 ชิ้น และ Britannia Cake จำนวน 2 ชิ้น จำนวน 15 รูปี ซัพพลายเออร์ต้องการขายผลิตภัณฑ์ Britannia Cake 15 Rs ที่อัตราคงที่ 12 นี่คือราคาเดิมของผลิตภัณฑ์ Britannia Cake 15 Rs คือ 15
 
-The Supplier wants to apply the rule only if the Customer has purchased min 30 quantities of the product Britannia Cake 5 Rs or Britannia Cake 10 Rs.
+ซัพพลายเออร์ต้องการใช้กฎเฉพาะในกรณีที่ลูกค้าซื้อผลิตภัณฑ์ Britannia Cake 5 Rs หรือ Britannia Cake 10 Rs ขั้นต่ำ 30 ปริมาณ
 
-To configure this in ERPNext the steps are as follows
+การกำหนดค่านี้ใน ERP ถัดไปมีขั้นตอนดังนี้
 
-1. Set Apply On as Item Code.
-1. Set the item code Britannia Cake 5 Rs, Britannia Cake 10 Rs in the Pricing Rule Item Code table.
-1. Apply Rule On Other as Item Code and set Item Code as Britannia Cake 15 Rs.
-1. In the price discount table, set the min qty as 30.
-1. Set the discount type as Rate and rate as 12.
+1. ตั้งค่า Apply On เป็นรหัสสินค้า
+1. ตั้งรหัสสินค้า Britannia Cake 5 Rs, Britannia Cake 10 Rs ในตารางรหัสสินค้ากฎการกำหนดราคา
+1. ใช้ Rule On Other เป็นรหัสสินค้าและตั้งรหัสสินค้าเป็น Britannia Cake 15 Rs.
+1. ในตารางส่วนลดราคา กำหนดจำนวนขั้นต่ำเป็น 30
+1. กำหนดประเภทส่วนลดเป็นอัตราและอัตราเป็น 12.
 
 <img alt="Promotional Scheme" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/promotional-schemes-discount-on-other.png">
 
-## 6. Related Topics
-1. [Pricing Rule](/docs/user/manual/en/accounts/pricing-rule)
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Item](/docs/user/manual/en/stock/item)
+## 6. หัวข้อที่เกี่ยวข้อง
+1. [กฎการกำหนดราคา](/docs/user/manual/th/accounts/pricing-rule)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying/supplier)
+1. [สินค้า](/docs/user/manual/th/stock/item)

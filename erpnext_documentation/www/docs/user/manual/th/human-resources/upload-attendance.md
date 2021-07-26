@@ -1,43 +1,43 @@
 <!-- add-breadcrumbs -->
-# Upload Attendance
+# อัพโหลดผู้มาทำงาน
 
-**This tool helps you to upload bulk attendance from a csv file.**
+**เครื่องมือนี้ช่วยให้คุณอัปโหลดการมาทำงานจำนวนมากจากไฟล์ csv**
 
-To upload the attendance go to:
+ในการอัปโหลดการมาทำงานไปที่:
 
-> Home > Human Resources > Attendance > Upload Attendance
-
-
-## 1. Prerequisites
-
-Before uploading bulk Attendance record, it is advised that you create the following first:
-
-* [Employee](/docs/user/manual/en/human-resources/employee)
+> หน้าหลัก > ทรัพยากรบุคคล > การมาทำงาน > อัปโหลดการมาทำงาน
 
 
-## 2. How to upload attendance in bulk
+## 1. ข้อกำหนดเบื้องต้น
 
-1. Enter Attendance From Date and Attendance To Date.
-1. Click on 'Get Template' button. It will download a csv file with the Employee Details as shown.
+ก่อนอัปโหลดบันทึกการมาทำงานจำนวนมาก ขอแนะนำให้คุณสร้างสิ่งต่อไปนี้ก่อน:
+
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+
+
+## 2. วิธีอัปโหลดการมาทำงานจำนวนมาก
+
+1. ป้อนการมาทำงานจากวันที่และจนถึงปัจจุบัน
+1. คลิกที่ปุ่ม 'รับแม่แบบ' มันจะดาวน์โหลดไฟล์ csv พร้อมรายละเอียดพนักงานตามที่แสดง
 
     <img class="screenshot" alt="Attendance Template" src="{{docs_base_url}}/assets/img/human-resources/upload-attendance1.png">
 
-1. Enter the Status (Present / Absent) of the Employee for the selected dates.
-1. Save the file.
-1. Upload the saved file.
+1. ป้อนสถานะ (มา / ขาด) ของพนักงานสำหรับวันที่เลือก
+1. บันทึกไฟล์
+1. อัปโหลดไฟล์ที่บันทึกไว้
 
 
     <img class="screenshot" alt="Attendance upload" src="{{docs_base_url}}/assets/img/human-resources/upload-attendance.png">
 
 
-Once the bulk attendance is uploaded, respective attendance records will be created. 
+เมื่ออัปโหลดการมาทำงานจำนวนมากแล้ว ระบบจะสร้างบันทึกการเข้างานตามลำดับ
 
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
 
-1. [Employee Attendance Tool](/docs/user/manual/en/human-resources/employee-attendance-tool)
-1. [Shift Management](/docs/user/manual/en/human-resources/shift-management)
-1. [Auto Attendance](/docs/user/manual/en/human-resources/auto-attendance)
-1. [Attendance Request](/docs/user/manual/en/human-resources/attendance-request)
-1. [Attendance](/docs/user/manual/en/human-resources/attendance)
+1. [เครื่องมือการตรวจสอบการมาทำงาน](/docs/user/manual/th/human-resources/employee-attendance-tool)
+1. [การจัดการทำงานเป็นกะ](/docs/user/manual/th/human-resources/shift-management)
+1. [ตรวจสอบการมาทำงานอัตโนมัติ](/docs/user/manual/th/human-resources/auto-attendance)
+1. [ใบลา](/docs/user/manual/th/human-resources/attendance-request)
+1. [การมาทำงาน](/docs/user/manual/th/human-resources/attendance)

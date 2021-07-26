@@ -1,18 +1,18 @@
 <!-- add-breadcrumbs -->
-# Opportunity Type
+#ประเภทโอกาส
 
-**Opportunity Type indicates the broad category of opportunity like Sales, Support, Maintenance, Partnership etc.**
+**ประเภทโอกาสระบุประเภทของโอกาสอย่างกว้างๆ เช่น การขาย การสนับสนุน การบำรุงรักษา ความร่วมมือ ฯลฯ**
 
-Adding the appropriate opportunity type helps in assigning the opportunity to the right sales executive.
+การเพิ่มประเภทโอกาสทางการขายที่เหมาะสมช่วยในการกำหนดโอกาสทางการขายให้กับผู้บริหารฝ่ายขายที่เหมาะสม
 
-To access the Opportunity Type, go to:
-> Home > CRM > Settings > Opportunity Type
+ในการเข้าถึงประเภทโอกาส ไปที่:
+> หน้าแรก > CRM > การตั้งค่า > ประเภทโอกาส
 
-## 1. How to Create an Opportunity Type
+## 1. วิธีสร้างประเภทโอกาส
 
-1. Go to the Opportunity list and click on New.
-1. Enter 'Name'.
-1. Enter 'Description'
+1. ไปที่รายการโอกาสและคลิกที่ใหม่
+1. ป้อน 'ชื่อ'
+1. ป้อน 'คำอธิบาย'
 
 <img class="screenshot" alt="Opportunity" src="{{docs_base_url}}/assets/img/crm/opportunity_type.png">
 

@@ -1,37 +1,38 @@
 <!-- add-breadcrumbs -->
-# Issue Type
+# ประเภทปัญหา
 
-**Issue Type is useful for tagging and classifying Issues.**
+**ประเภทปัญหามีประโยชน์สำหรับการติดแท็กและจัดประเภทปัญหา**
 
-Classifying Issues helps in assigning the concerned team members to specific Issues. Examples of Issue Types can be: 'Functional', 'Technical', 'Hardware', etc. So engineers can be assigned to technical or hardware issues and consultants would be assigned to address functional issues.
+การจำแนกปัญหาช่วยในการมอบหมายสมาชิกในทีมที่เกี่ยวข้องให้กับปัญหาเฉพาะ ตัวอย่างของประเภทปัญหา ได้แก่ 'การทำงาน', 'ทางเทคนิค', 'ฮาร์ดแวร์' เป็นต้น ดังนั้นวิศวกรสามารถกำหนดปัญหาด้านเทคนิคหรือฮาร์ดแวร์ได้ และที่ปรึกษาจะได้รับมอบหมายให้แก้ไขปัญหาการทำงาน
 
-To access the Issue Type list, go to: 
-> Home > Support > Issues > Issue Type
+ในการเข้าถึงรายการประเภทปัญหา ไปที่:
+> หน้าหลัก > การสนับสนุน > ปัญหา > ประเภทปัญหา
 
-To create an Issue Type, click on New and enter a name for the type. A description can be added.
+ในการสร้างประเภทปัญหา ให้คลิกที่ ใหม่ และป้อนชื่อสำหรับประเภทนั้น สามารถเพิ่มคำอธิบายได้
 
 <img class="screenshot" alt="Issue Type" src="{{docs_base_url}}/assets/img/support/issue-type.png">
 
-# Issue Priority
+# ลำดับความสำคัญของปัญหา
 
-**Issue Priority indicates the urgency of solving an Issue**
+**ลำดับความสำคัญของปัญหาแสดงถึงความเร่งด่วนในการแก้ปัญหา**
 
-User can create priorities like "Low", "Medium", "High", "Critical", etc. Issue Priority will be used while creating the [Service Level Agreement](/docs/user/manual/en/support/service-level-agreement).
+ผู้ใช้สามารถสร้างลำดับความสำคัญได้ เช่น "ต่ำ" "ปานกลาง" "สูง" "วิกฤติ" เป็นต้น ระบบจะใช้ลำดับความสำคัญของปัญหาในขณะที่สร้าง [ข้อตกลงระดับบริการ](/docs/user/manual/th/support/service-service-level-agreement)
 
-To access the Issue Priority list, go to: 
-> Home > Support > Issues > Issue Priority
+ในการเข้าถึงรายการลำดับความสำคัญของปัญหา ไปที่:
+> หน้าหลัก > การสนับสนุน > ปัญหา > ลำดับความสำคัญของปัญหา
 
-To create an Issue Priority, click on New and enter a name for the type. A description can be added.
+ในการสร้างลำดับความสำคัญของปัญหา ให้คลิกที่ New และป้อนชื่อสำหรับประเภท สามารถเพิ่มคำอธิบายได้
 
 <img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/issue-priority.png">
 
-**Issue Priority list**
+**รายการลำดับความสำคัญของปัญหา**
 
 <img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/issue-priority-list.png">
 
-### Related Topics
-1. [Issue](/docs/user/manual/en/support/issue)
-1. [Service Level Agreement](/docs/user/manual/en/support/service-level-agreement)
+### หัวข้อที่เกี่ยวข้อง
+1. [ปัญหา](/docs/user/manual/th/support/issue)
+1. [ข้อตกลงระดับบริการ](/docs/user/manual/th/support/service-level-agreement)
+
 
 
 {next}

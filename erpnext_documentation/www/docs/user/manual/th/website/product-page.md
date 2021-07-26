@@ -1,88 +1,88 @@
 <!-- add-breadcrumbs -->
-# Product Page
+#หน้าสินค้า
 
-ERPNext provides product pages for your Sales Items, they can be configured from
-the Item Master.
+ERPNext จัดเตรียมหน้าผลิตภัณฑ์สำหรับรายการขายของคุณ โดยสามารถกำหนดค่าได้จาก
+ไอเทมมาสเตอร์
 
-Product Page is built for an Item. If you haven't created any Item go to:
-> Home > Stock > Items and Pricing > Item
+หน้าผลิตภัณฑ์ถูกสร้างขึ้นสำหรับรายการ หากคุณยังไม่ได้สร้างรายการใดๆ ให้ไปที่:
+> หน้าหลัก > หุ้น > รายการและราคา > รายการ
 
-## 1. How to configure a Product Page
-1. Enter the Item Code, Item Name, Item Group, and Selling Rate.
+## 1. วิธีกำหนดค่าหน้าผลิตภัณฑ์
+1. ป้อนรหัสสินค้า ชื่อรายการ กลุ่มสินค้า และอัตราขาย
     ![New Item](/docs/assets/img/website/new-item.png)
-1. Click on **Edit in full page** button to open the form.
-1. Go to the Website section and enable **Show in Website**.
-1. Click on Save.
-1. View your Product Page by clicking on **Show on Website** in the sidebar.
+1. คลิกที่ปุ่ม **แก้ไขแบบเต็มหน้า** เพื่อเปิดแบบฟอร์ม
+1. ไปที่ส่วนเว็บไซต์และเปิดใช้งาน **แสดงในเว็บไซต์**
+1. คลิกที่บันทึก
+1. ดูหน้าผลิตภัณฑ์ของคุณโดยคลิกที่ **แสดงบนเว็บไซต์** ในแถบด้านข้าง
 
-> Read [Item documentation](/docs/user/manual/en/stock/item) to learn more.
+> อ่าน [เอกสารรายการ](/docs/user/manual/th/stock/item) เพื่อเรียนรู้เพิ่มเติม
 
-### 1.1 Items with Variants
+### 1.1 รายการที่มีรูปแบบต่างๆ
 
-If you have an Item that has multiple variants, for example, Apple iPhone XR
-with different colors and storage sizes, you can create a Template Item.
+หากคุณมีสินค้าที่มีรายละเอียดปลีกย่อยหลายแบบ เช่น Apple iPhone XR
+ด้วยสีและขนาดพื้นที่จัดเก็บที่แตกต่างกัน คุณสามารถสร้างรายการเทมเพลตได้
 
-Go to the Variants section and enable **Has Variants** and add the
-attributes in the attributes table.
+ไปที่ส่วน Variants และเปิดใช้งาน **Has Variants** และเพิ่ม the
+คุณลักษณะในตารางคุณลักษณะ
 
 ![Item with Variants](/docs/assets/img/website/item-with-variants.png)
-*Item with Variants*
+*รายการที่มีรูปแบบ*
 
-> Learn more about creating Items with Variants [here](/docs/user/manual/en/stock/item-variants)
+> เรียนรู้เพิ่มเติมเกี่ยวกับการสร้างรายการด้วยตัวแปร [ที่นี่](/docs/user/manual/th/stock/item-variants)
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Website Description
+### 2.1 คำอธิบายเว็บไซต์
 
-You can add a **Website Description** from the Website Specifications section.
-It will only show on your product page.
+คุณสามารถเพิ่ม **คำอธิบายเว็บไซต์** ได้จากส่วนข้อกำหนดของเว็บไซต์
+จะแสดงเฉพาะในหน้าผลิตภัณฑ์ของคุณ
 
 ![Item Website Description](/docs/assets/img/website/item-website-description.png)
-*Item Website Description*
+*รายละเอียดสินค้าเว็บไซต์*
 
-### 2.2 Image and Slideshow
+### 2.2 รูปภาพและสไลด์โชว์
 
-You can add a different image and slideshow to show on your website from the
-Website Section.
+คุณสามารถเพิ่มรูปภาพและสไลด์โชว์อื่นเพื่อแสดงบนเว็บไซต์ของคุณได้จาก
+ส่วนเว็บไซต์.
 
 ![Item Image and Slideshow](/docs/assets/img/website/item-image-slideshow.png)
-*Item Image and Slideshow*
+*รูปภาพสินค้าและสไลด์โชว์*
 
-### 2.3 Item Specifications
+### 2.3 ข้อมูลจำเพาะของรายการ
 
-You can add your Item Specifications in the Website Specifications section. It
-will show up as a table on your Product Page.
+คุณสามารถเพิ่มข้อกำหนดรายการของคุณในส่วนข้อกำหนดของเว็บไซต์ มัน
+จะแสดงเป็นตารางในหน้าผลิตภัณฑ์ของคุณ
 
 ![Item Website Specifications](/docs/assets/img/website/item-website-specifications.png)
-*Item Website Specifications*
+*ข้อมูลจำเพาะของเว็บไซต์รายการ*
 
-### 2.4 Publish Item
+### 2.4 เผยแพร่รายการ
 
-To publish your item, go to the Website section and enable **Show in Website**.
+หากต้องการเผยแพร่รายการของคุณ ไปที่ส่วนเว็บไซต์และเปิดใช้งาน **แสดงในเว็บไซต์**
 
 ![Publish Item](/docs/assets/img/website/publish-item.png)
-*Publish Item*
+*เผยแพร่รายการ*
 
-You will now see the **See on Website** link in the sidebar. Click on it to view
-your product page.
+ตอนนี้คุณจะเห็นลิงก์ **ดูบนเว็บไซต์** ในแถบด้านข้าง คลิกเพื่อดู
+หน้าผลิตภัณฑ์ของคุณ
 
 ![Product Page](/docs/assets/img/website/product-page.png)
-*Product Page*
+*หน้าสินค้า*
 
-### 2.5 Custom HTML
+### 2.5 HTML ที่กำหนดเอง
 
-You can further customize your Product Page by adding Custom HTML in the Website
-Content field of the Website Specifications section.
+คุณสามารถปรับแต่งหน้าผลิตภัณฑ์ของคุณเพิ่มเติมโดยเพิ่ม HTML ที่กำหนดเองในเว็บไซต์
+ฟิลด์เนื้อหาของส่วนข้อมูลจำเพาะของเว็บไซต์
 
 ![Custom Website Content](/docs/assets/img/website/custom-website-content.png)
-*Custom Website Content*
+*เนื้อหาเว็บไซต์ที่กำหนดเอง*
 
 ![Product Page with Custom Content](/docs/assets/img/website/product-page-with-custom-content.png)
-*Product Page with Custom Content*
+*หน้าผลิตภัณฑ์พร้อมเนื้อหาที่กำหนดเอง*
 
-### 2.6 Website Warehouse
-This feature is available in the [Item master](/docs/user/manual/en/stock/item#318-website). Select an existing or create a new warehouse for transactions via your website. This Warehouse will be different from your offline Warehouses. Stock for any online transactions will be deducted from the Warehouses set under Website Warehouse.
+### 2.6 คลังเว็บไซต์
+คุณลักษณะนี้มีอยู่ใน [สินค้าหลัก](/docs/user/manual/th/stock/item#318-website) เลือกคลังสินค้าที่มีอยู่หรือสร้างใหม่สำหรับการทำธุรกรรมผ่านเว็บไซต์ของคุณ โกดังนี้จะแตกต่างจากโกดังออฟไลน์ของคุณ สต็อคสำหรับธุรกรรมออนไลน์ใดๆ จะถูกหักออกจาก คลังสินค้า ที่ตั้งอยู่ภายใต้ คลังสินค้าเว็บไซต์
 
-> Note: If the Website Warehouse isn't set and 'Maintain Stock' for an Item is ticked, the product page will list the Item as 'Not in Stock'.
+> หมายเหตุ: หากไม่ได้ตั้งค่า คลังสินค้าเว็บไซต์ และ 'Maintain Stock' สำหรับสินค้าถูกทำเครื่องหมาย หน้าผลิตภัณฑ์จะแสดงรายการเป็น 'ไม่มีในสต็อก'
 
 {next}

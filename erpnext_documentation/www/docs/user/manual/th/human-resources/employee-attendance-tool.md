@@ -1,47 +1,47 @@
 <!-- add-breadcrumbs -->
-# Employee Attendance Tool
+# เครื่องมือการมาทำงานของพนักงาน
 
-**Employee Attendance Tool allows you to mark attendance of multiple employees for a particular date.**
+**เครื่องมือการมาทำงานของพนักงานช่วยให้คุณสามารถทำเครื่องหมายการมาทำงานของพนักงานหลายคนสำหรับวันที่เฉพาะ**
 
-To access the Employee Attendance Tool, go to:
+ในการเข้าถึงเครื่องมือการมาทำงานของพนักงาน ไปที่:
 
-> Home > Human Resources > Attendance > Employee Attendance Tool
+> หน้าหลัก > ทรัพยากรบุคคล > การมาทำงาน > เครื่องมือการมาทำงานของพนักงาน
 
-This tool allows you to add attendance records for multiple employees based on their Department and Branch for a given day quickly.
+เครื่องมือนี้ช่วยให้คุณเพิ่มบันทึกการเข้างานสำหรับพนักงานหลายคนตามแผนกและสาขาของพวกเขาในวันที่กำหนดได้อย่างรวดเร็ว
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
 
-Before creating an Employee Attendance, it is advised that you create the following first:
+ก่อนสร้างการมาทำงานของพนักงาน ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Department](/docs/user/manual/en/human-resources/department)
-* [Branch](/docs/user/manual/en/human-resources/branch)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [แผนก](/docs/user/manual/th/human-resources/department)
+* [สาขา](/docs/user/manual/th/human-resources/branch)
 
-## 2. How to mark attendance using Employee Attendance Tool
+## 2. วิธีการทำเครื่องหมายการเข้างานโดยใช้ Employee Attendance Tool
 
-1. Enter the Date.
-1. Select the Department and Branch (optional).
-1. Select the Employees.
-1. Mark Present, Absent or Half Day as required.
+1. ป้อนวันที่
+1. เลือกแผนกและสาขา (ไม่บังคับ)
+1. เลือกพนักงาน
+1. ทำเครื่องหมายปัจจุบัน ขาดเรียน หรือครึ่งวันตามต้องการ
 
 
     <img class="screenshot" alt="Attendance upload" src="{{docs_base_url}}/assets/img/human-resources/employee-attendance-tool.gif">
 
-> **Note:** Attendance cannot be marked for future dates.
+> **หมายเหตุ:** ไม่สามารถทำเครื่องหมายการมาทำงานสำหรับวันที่ในอนาคตได้
 
-Once the attendance is marked using the Employee Attendance Tool, the employee attendance is saved in the [Attendance](/docs/user/manual/en/human-resources/attendance) record as shown:
+เมื่อการมาทำงานถูกทำเครื่องหมายโดยใช้เครื่องมือการมาทำงานของพนักงาน การมาทำงานของพนักงานจะถูกบันทึกไว้ในบันทึก [การมาทำงาน](/docs/user/manual/th/human-resources/attendance) ดังที่แสดง:
 
 <img class="screenshot" alt="Attendance" src="{{docs_base_url}}/assets/img/human-resources/attendance_tool1.png">
 
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Attendance](/docs/user/manual/en/human-resources/attendance)
-1. [Attendance Request](/docs/user/manual/en/human-resources/attendance-request)
-1. [Upload Attendance](/docs/user/manual/en/human-resources/upload-attendance)
-1. [Shift Management](/docs/user/manual/en/human-resources/shift-management)
-1. [Auto Attendance](/docs/user/manual/en/human-resources/auto-attendance)
+1. [การมาทำงาน](/docs/user/manual/th/human-resources/attendance)
+1. [ใบลา](/docs/user/manual/th/human-resources/attendance-request)
+1. [อัพโหลดผู้เข้าร่วม](/docs/user/manual/th/human-resources/upload-attendance)
+1. [การจัดการการทำงานแบบกะ](/docs/user/manual/th/human-resources/shift-management)
+1. [เครื่องมือตรวจสอบการมาทำงานอัตโนมัติ](/docs/user/manual/th/human-resources/auto-attendance)
 
 
 {next}

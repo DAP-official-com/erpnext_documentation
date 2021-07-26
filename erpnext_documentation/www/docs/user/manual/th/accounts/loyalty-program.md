@@ -1,88 +1,89 @@
 <!-- add-breadcrumbs -->
-# Loyalty Program
+# โปรแกรมความภักดี (Loyalty Program)
 
-**A Loyalty Program allows Customers to earn points by spending a certain amount and lets them redeem the points in future purchases.**
+**โปรแกรมความภักดีช่วยให้ลูกค้าได้รับคะแนนจากการใช้จ่ายจำนวนหนึ่งและอนุญาตให้พวกเขาแลกคะแนนในการซื้อในอนาคต**
 
-A Customer Loyalty Program is a structured and long-term marketing effort that provides incentives to repeat Customers. Successful programs are designed to motivate Customers in a business's target market to return often, make frequent purchases, and shun competitors.
+โปรแกรมความภักดีของลูกค้าเป็นความพยายามทางการตลาดที่มีโครงสร้างและระยะยาวซึ่งสร้างแรงจูงใจให้ลูกค้ากลับมาซื้อซ้ำ โปรแกรมที่ประสบความสำเร็จได้รับการออกแบบมาเพื่อจูงใจลูกค้าในตลาดเป้าหมายของธุรกิจให้กลับมาบ่อยครั้ง ทำการซื้อบ่อย และหลีกเลี่ยงคู่แข่ง
 
-To access the Loyalty Program list, go to:
-> Home > Retail > Retail Operations > Loyalty Program
+หากต้องการเข้าถึงรายการ โปรแกรมความภักดี ให้ไปที่:
 
-## 1. Prerequisites
-Before creating and using a Loyalty Program, it is advised to create the following first:
+> หน้าหลัก > การค้าปลีก > การขายปลีก > โปรแกรมความภักดี
 
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
+## 1. ข้อกำหนดเบื้องต้น 
+ก่อนสร้างและใช้งานโปรแกรมความภักดี ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-## 2. How to Create a Loyalty Program
-1. Go to the Loyalty Program list and click on New.
-1. Enter a Name for the Loyalty Program.
-1. Select whether the program is Single Tiered or Multi Tiered (gold, silver, etc).
-1. Set a start and end date for the program.
-1. Select the Customer Group and Territory for which this program is applicable, the default is all.
-1. For opting in all Customers by default, tick on 'Auto Opt In (For all customers)'. Otherwise, the program needs to be assigned from the [Customer master](/docs/user/manual/en/accounts/loyalty-program#22-loyalty-points-in-customer).
-1. In the table, enter:
- 2. **Tier name**: To be assigned to a Customer based on his eligibility.
- 2. **Collection Factor**: How much amount needs to be spent to gain 1 Loyalty Point in ERPNext.
- 2. **Minimum Amount**: Minimum amount to be spent to qualify into a tier.
-1. Set the Conversion Factor, eg: 10 USD = 1 point.
-1. Save. 
+1. [ลุกค้า](/docs/user/manual/th/CRM/customer)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+
+## 2. วิธีสร้างโปรแกรมความภักดี
+1. ไปที่รายการ โปรแกรมความภักดี แล้วคลิก ใหม่
+1. ป้อนชื่อโปรแกรมความภักดี
+1. เลือกว่าโปรแกรมเป็นแบบชั้นเดียวหรือหลายชั้น (ทอง เงิน ฯลฯ)
+1. กำหนดวันเริ่มต้นและสิ้นสุดของโปรแกรม
+1. เลือกกลุ่มลูกค้าและอาณาเขตสำหรับโปรแกรมนี้ ค่าเริ่มต้นคือทั้งหมด
+1. สำหรับการเลือกใช้ลูกค้าทั้งหมดโดยค่าเริ่มต้น ให้ทำเครื่องหมายที่ 'การเลือกใช้อัตโนมัติ (สำหรับลูกค้าทั้งหมด)' มิฉะนั้นโปรแกรมจะต้องได้รับมอบหมายจาก [ข้อมูลลูกค้าหลัก](/docs/user/manual/th/accounts/loyalty-program#22-loyalty-points-in-customer).
+1. ในตาราง ใส่:
+ 2. **ชื่อระดับ** : เพื่อกำหนดให้กับลูกค้าตามคุณสมบัติของเขา
+ 2. **Collection Factor** : จำนวนเงินที่ต้องใช้เพื่อให้ได้ 1 คะแนนความภักดีใน ERPNext
+ 2. **จำนวนเงินขั้นต่ำ** : จำนวนเงินขั้นต่ำที่จะใช้เพื่อให้มีคุณสมบัติเป็นระดับ
+1. กำหนดปัจจัยการแปลง เช่น 10 USD = 1 คะแนน
+1. บันทึก
 
  <img class="screenshot" alt="Loyalty Program" src="{{docs_base_url}}/assets/img/accounts/loyalty-program.png">
 
-### 2.1 Redemption section
+### 2.1 Redemption point
 
-* **Conversion Factor**: When redeeming loyalty points, this factor decides how much money is 1 Loyalty Point worth. For example, if a Customer has 100 Loyalty Points, and 1 Loyalty Point = 1 USD, then the Customer use Items up to 100 USD with their loyalty points for future purchases.
+* **ปัจจัยการแปลง** : เมื่อแลกคะแนนสะสม ปัจจัยนี้จะตัดสินว่าเงิน 1 คะแนนสะสมมีมูลค่าเท่าใด ตัวอย่างเช่น หากลูกค้ามีคะแนนสะสม 100 คะแนน และคะแนนสะสม 1 คะแนน = 1 USD ลูกค้าจะใช้สินค้าที่มีคะแนนสะสมสูงสุด 100 USD สำหรับการซื้อในอนาคต
 
-* **Expense Account**: Set an Expense Account from where you'll offer the benefits. This is useful to track the benefits offered separately. 
+* **บัญชีค่าใช้จ่าย** : ตั้งค่าบัญชีค่าใช้จ่ายที่คุณจะเสนอสิทธิประโยชน์ สิ่งนี้มีประโยชน์ในการติดตามผลประโยชน์ที่เสนอแยกต่างหาก
 
-* **Expiry Duration (in days)**: The collected loyalty points will expire after the number of days set in this field.
+* **ระยะเวลาหมดอายุ (เป็นวัน)** : คะแนนสะสมจะหมดอายุหลังจากจำนวนวันที่กำหนดในช่องนี้
 
-### 2.2 Loyalty Points in Customer
+### 2.2 คะแนนความภักดีของลูกค้า
 
-Set a Loyalty Program section in the Customer master to assign a Loyalty Program to a Customer.
+ตั้งค่าโปรแกรมความภักดีในข้อมูลหลักของลูกค้าเพื่อกำหนดโปรแกรมความภักดีให้กับลูกค้า
 
 <img class="screenshot" alt="Loyalty Program 1" src="{{docs_base_url}}/assets/img/accounts/loyalty-program-1.png">
 
-**Loyalty points** earned can be viewed in the Customer's dashboard.
+**คะแนนสะสม** ที่ได้รับสามารถดูได้ในแดชบอร์ดของลูกค้า
 
 <img class="screenshot" alt="Loyalty Program 2" src="{{docs_base_url}}/assets/img/accounts/loyalty-program-2.png">
 
-### 2.3 Loyalty Point Entry
-Go to: **Accounts > Retail Operations > Loyalty Point Entry**.
-This acts as a log to give an overview of which Customer earned how many points against which Sales Invoice. It holds the data Invoice and Customer.
+### 2.3 รายการคะแนนสะสม
+ไปที่: **บัญชี > การค้าปลีก > รายการคะแนนสะสม**
+ซึ่งทำหน้าที่เป็นบันทึกเพื่อให้ภาพรวมว่าลูกค้ารายใดได้รับคะแนนจากใบแจ้งหนี้การขายใด มันถือข้อมูลใบแจ้งหนี้และลูกค้า
 
 <img class="screenshot" alt="Loyalty Program 3" src="{{docs_base_url}}/assets/img/accounts/loyalty-program-3.png">
 
-## 3. How does a Loyalty Program work?
+## 3. โปรแกรมความภักดีทำงานอย่างไร
 
-### 3.1 Earning Points
+### 3.1 การรับคะแนน
 
-* Firstly, a **Loyalty Program** needs to be created as explained in the first section.
-* Assign this **Loyalty Program** to a **Customer**.
-* Create a new Sales Invoice for the **Customer** to whom you have assigned **Loyalty Program**.
-* For this example, an invoice is created with a grand total of 3,000 INR and according to the **Loyalty Program** for a minimum spent of 2,000 INR, the Silver Tier collection factor will be eligible and for each 300 INR spent, the **Customer** will receive 1 point (hence the total points earned on this transaction is 15).
-* Upon submission of the invoice, a **Loyalty Point Entry** will be created for this invoice (as shown above under Loyalty Program Entry section).
-* In our **Loyalty Program** upon minimum spent of 6,000, Gold Tier would be eligible. So, when another invoice is submitted with the same value, the total sales from this Customer becomes 6,000. So now, the **Customer** will be automatically upgraded to the Gold tier.
+* ประการแรกต้องสร้าง**โปรแกรมความภักดี**ตามที่อธิบายไว้ในส่วนแรก
+* กําหนด**ความภักดี**ของโครงการไปยัง**ลูกค้า**
+* สร้างใบแจ้งหนี้การขายใหม่สำหรับ**ลูกค้า**ที่คุณได้รับมอบหมาย**โปรแกรม**
+* สำหรับตัวอย่างนี้ ใบแจ้งหนี้ถูกสร้างขึ้นด้วยยอดรวมทั้งหมด 3,000 INR และตาม**โปรแกรมความภักดี**สำหรับการใช้จ่ายขั้นต่ำ 2,000 INR ปัจจัยการรวบรวมระดับ Silver จะมีสิทธิ์และสำหรับการใช้จ่าย 300 INR แต่ละครั้ง**ลูกค้า**จะได้รับ 1 คะแนน (ดังนั้นคะแนนรวมที่ได้รับจากการทำธุรกรรมนี้คือ 15)
+* เมื่อส่งใบแจ้งหนี้**รายการสะสมคะแนน**จะถูกสร้างขึ้นสำหรับใบแจ้งหนี้นี้ (ดังที่แสดงไว้ด้านบนในส่วนรายการโปรแกรมความภักดี)
+* ใน**โปรแกรมความภักดี**ของเราเมื่อมีการใช้จ่ายขั้นต่ำ 6,000 ระดับโกลด์จะมีสิทธิ์ ดังนั้น เมื่อมีการส่งใบแจ้งหนี้อื่นที่มีมูลค่าเท่ากัน ยอดขายทั้งหมดจากลูกค้ารายนี้จะกลายเป็น 6,000 ดังนั้นตอนนี้**ลูกค้า**จะได้รับการอัปเกรดเป็นระดับโกลด์โดยอัตโนมัติ
 
-> Note: The minimum spent in Loyalty Program does not mean a minimum value for a single invoice. Rather it means the sum of amount of invoices for the Customer under a particular Loyalty Program scheme.
+> หมายเหตุ: การใช้จ่ายขั้นต่ำในโปรแกรมความภักดีไม่ได้หมายถึงมูลค่าขั้นต่ำสำหรับใบแจ้งหนี้ใบเดียว แต่หมายถึงผลรวมของจำนวนใบแจ้งหนี้สำหรับลูกค้าภายใต้โครงการความภักดี
 
-### 3.2 Redeeming Points
+### 3.2 การแลกคะแนน
 
-* Let's continue from the above example where we created 1 invoice and earned 15 points from it. When creating another invoice for the same Customer, go to the Loyalty Points section and enable the checkbox to 'Redeem Loyalty Points'.
+* ตัวอย่างด้านบนที่เราสร้างใบแจ้งหนี้ 1 ใบและได้รับ 15 คะแนนจากมัน เมื่อสร้างใบแจ้งหนี้อื่นสำหรับลูกค้ารายเดียวกัน ให้ไปที่ส่วนคะแนนความภักดี และเปิดใช้งานช่องทำเครื่องหมายเพื่อ 'แลกคะแนนสะสม'
  ![Loyalty Program Invoice](/docs/assets/img/accounts/loyalty-program-inv.png)
-* The fields for 'Loyalty Point', 'Redemption Account' and 'Redemption Cost Center' will become visible under this section. The account and Cost Center will be fetched from the **Loyalty Program** assigned to the **Customer**.
-* Since the Customer has earned 15 points, we can use all of it until expiry. If we try to use more than what we have an error will be thrown.
-* For this example, we'll use all 15 points to be redeemed. Doing so will enable another field that will display the amount calculated using (loyalty point * Conversion Factor). So, '150' INR will be deducted from our the amount since our 'Conversion Factor' was '10'.
+* ช่องสำหรับ 'คะแนนสะสม' 'บัญชีแลกรับ' และ 'ศูนย์ต้นทุนการแลกของรางวัล' จะปรากฏในส่วนนี้ บัญชีและศูนย์ต้นทุนจะดึงข้อมูลจาก**โปรแกรมความภักดี**ได้รับมอบหมายให้**ลูกค้า**
+* เนื่องจากลูกค้าได้รับคะแนน 15 คะแนน เราจึงสามารถใช้ทั้งหมดได้จนกว่าจะหมดอายุ หากเราพยายามใช้มากกว่าสิ่งที่เรามีจะข้อผิดพลาดเกิดขึ้น
+* สำหรับตัวอย่างนี้ เราจะใช้คะแนนทั้งหมด 15 คะแนนในการแลก การทำเช่นนี้จะเปิดใช้งานฟิลด์อื่นที่จะแสดงจำนวนเงินที่คำนวณโดยใช้ (จุดสะสม * ปัจจัยการแปลง) ดังนั้น '150' INR จะถูกหักออกจากจำนวนเงินของเรา เนื่องจาก 'ปัจจัยการแปลง' คือ '10'
  ![Loyalty Invoice](/docs/assets/img/accounts/loyalty-program-inv2.png)
-* When submitted, 2 **Loyalty Point Entries** will be created. One for redeemed, which will be a negative value and one for the current invoice (as the amount is still eligible under a tier). The Customer was also upgraded to Gold since the minimum amount to be spent for Gold was 6,000.
+* เมื่อส่ง 2 **รายการคะแนนสะสม** จะถูกสร้างขึ้น หนึ่งรายการสำหรับแลกซึ่งจะเป็นค่าลบและอีกหนึ่งรายการสำหรับใบแจ้งหนี้ปัจจุบัน (เนื่องจากจำนวนเงินยังคงมีสิทธิ์ภายใต้ระดับ) ลูกค้ายังได้รับการอัปเกรดเป็น Gold เนื่องจากจำนวนขั้นต่ำที่จะใช้สำหรับ Gold คือ 6,000
  ![Loyalty Point](/docs/assets/img/accounts/loyalty-point-2.png)
 
-> Note: For an invoice on which points have been earned, if a return invoice is created, it will delete the original Loyalty Point Entry and create a new one after subtracting the returned amount from the original amount. Also, when canceling an invoice, its subsequent Loyalty Point Entry will be deleted.
+> หมายเหตุ: สำหรับใบแจ้งหนี้ที่ได้รับคะแนน หากมีการสร้างใบแจ้งหนี้คืน จะเป็นการลบรายการคะแนนความภักดีเดิมและสร้างใหม่หลังจากลบจำนวนเงินที่ส่งคืนออกจากจำนวนเงินเดิม นอกจากนี้ เมื่อยกเลิกใบแจ้งหนี้ รายการคะแนนสะสมที่ตามมาจะถูกลบออก
 
-### 4. Related Topics
-1. [Cost Center](/docs/user/manual/en/accounts/cost-center)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Customer Group](/docs/user/manual/en/CRM/customer-group)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [ศูนย์ต้นทุน](/docs/user/manual/th/accounts/cost-center)
+1. [ใบแจ้งหนี้การขาย](/docs/user/manual/th/accounts/sales-invoice)
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [กลุ่มลูกค้า](/docs/user/manual/th/CRM/customer-group)
 

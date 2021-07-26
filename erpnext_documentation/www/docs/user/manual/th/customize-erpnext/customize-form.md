@@ -1,75 +1,75 @@
 <!-- add-breadcrumbs -->
-# Customize Form
+# ปรับแต่งแบบฟอร์ม
 
 <!--markdown-->
-**Customize Form is a tool which enables you to make changes to a Form Type or a Document Type (DocType) on the front-end.**
+**แบบฟอร์มแบบกำหนดเอง เป็นเครื่องมือที่ช่วยให้คุณสามารถเปลี่ยนแปลงประเภทแบบฟอร์มหรือประเภทเอกสาร (DocType) ที่ส่วนหน้าได้**
 
-It allows you to insert [Custom Fields](/docs/user/manual/en/customize-erpnext/custom-field) as per your requirement or customize the properties of standard fields.
+อนุญาตให้คุณแทรก [ฟิลด์ที่กำหนดเอง](/docs/user/manual/th/customize-erpnext/custom-field) ตามความต้องการของคุณหรือปรับแต่งคุณสมบัติของฟิลด์มาตรฐาน
 
-Before we venture to learn the Form Customization tool, [click here](https://frappe.io/docs/user/en/understanding-doctypes) to understand the architecture of forms in ERPNext. It will help you in using the Customize Form tool more efficiently.
+ก่อนที่เราจะลองเรียนรู้เครื่องมือการปรับแต่งแบบฟอร์ม [คลิกที่นี่](https://frappe.io/docs/user/th/understanding-doctypes) เพื่อทำความเข้าใจสถาปัตยกรรมของแบบฟอร์มใน ERPNext จะช่วยคุณในการใช้เครื่องมือปรับแต่งแบบฟอร์มได้อย่างมีประสิทธิภาพมากขึ้น
 
-To access Customize Form, go to:
+ในการเข้าถึงแบบฟอร์มปรับแต่ง ไปที่:
 
-> Home > Customization > Form Customization > Customize Form
+> หน้าแรก > การปรับแต่ง > การปรับแต่งแบบฟอร์ม > ปรับแต่งแบบฟอร์ม
 
-You can also go to the list view of any DocType and select Customize from the Menu options.
+คุณยังสามารถไปที่มุมมองรายการของ DocType และเลือกปรับแต่งจากตัวเลือกเมนู
 
 <img alt="Customize Form" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-custom-field-01.png">
 
 
-## 1. How to Customize a Form
+## 1. วิธีปรับแต่งแบบฟอร์ม
 
-1. Click on Customize Form.
-1. You will be redirected to a page wherein you will be asked to Enter Form Type.
-1. Once you enter the Form Type in this field, the page further expands and you will be able to see multiple features.
+1. คลิกที่ปรับแต่งแบบฟอร์ม
+1. คุณจะถูกเปลี่ยนเส้นทางไปยังหน้าที่คุณจะต้องป้อนประเภทแบบฟอร์ม
+1. เมื่อคุณป้อนประเภทแบบฟอร์มในฟิลด์นี้ หน้าจะขยายเพิ่มเติมและคุณจะสามารถดูคุณลักษณะต่างๆ ได้
 
   <img alt="Customize Form select doctype" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-erpnext-customize-form-1.gif">
 
-### 1.1. Options While Customizing a Form
+### 1.1. ตัวเลือกขณะปรับแต่งแบบฟอร์ม
 
-1. **Change Label**: This field gets fetched via Custom Translation. You can change the name of the field to suit your industry/language. E.g., if you are a services business and you want to change the Label from 'Customer' to 'Consumer', the same can be done via [Custom Translation](/docs/user/manual/en/setting-up/print/custom-translations) and the same shall be reflected here.
+1. **เปลี่ยนป้ายกำกับ**: ฟิลด์นี้ดึงข้อมูลผ่าน แปลแบบกำหนดเอง คุณสามารถเปลี่ยนชื่อฟิลด์เพื่อให้เหมาะกับอุตสาหกรรม/ภาษาของคุณ เช่น หากคุณเป็นธุรกิจบริการและต้องการเปลี่ยนป้ายกำกับจาก 'ลูกค้า' เป็น 'ผู้บริโภค' สามารถทำได้ผ่าน [แปลแบบกำหนดเอง](/docs/user/manual/th/setting-up/print/custom-translations) และเช่นเดียวกันจะสะท้อนให้เห็นที่นี่
 
   <img alt="Customize Form select doctype" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-customize-form-label.png">
 
-1. **Title Field**: This field can be used to generate the title while viewing the lists. Any "Data" type field can be set as the Title Field while viewing the forms in the list view. E.g., if you wish to view the list of all your employees with the Title field as the 'Employee Code' instead of Employee Name, the same can be configured here. Check our article on [Document title](/docs/user/manual/en/customize-erpnext/document-title) for more information.
+1. **ชื่อฟิลด์**: ฟิลด์นี้สามารถใช้เพื่อสร้างชื่อในขณะที่ดูรายการ ฟิลด์ประเภท "ข้อมูล" ใดๆ สามารถตั้งค่าเป็นฟิลด์ชื่อในขณะที่ดูแบบฟอร์มในมุมมองรายการ เช่น หากคุณต้องการดูรายชื่อพนักงานทั้งหมดของคุณที่มีฟิลด์ตำแหน่งเป็น 'รหัสพนักงาน' แทนที่จะเป็นชื่อพนักงาน คุณสามารถกำหนดค่าเดียวกันได้ที่นี่ ตรวจสอบบทความของเราใน [ชื่อเอกสาร](/docs/user/manual/th/customize-erpnext/document-title) สำหรับข้อมูลเพิ่มเติม
 
-  *Learn more about field types [here](/docs/user/manual/en/customize-erpnext/articles/field-types.html).*
+  *เรียนรู้เพิ่มเติมเกี่ยวกับประเภทฟิลด์ [ที่นี่](/docs/user/manual/th/customize-erpnext/articles/field-types.html).*
 
-1. **Default Print Format**: For a single DocType, there could be multiple Print Formats. Here you can select the default Print Format for the selected DocType. For e.g., a company may have different Letter Heads for different purposes which can be configured through Print Formats. However, you can select two different Default Print Formats for a Sales Order and an Appointment Letter. Check [Custom Print Formats](/docs/user/manual/en/customize-erpnext/print-format) for more information.
-1. **Image Field**: You can select an "Attach Image" Field for your Image Field. This becomes the Image representing that particular DocType. E.g., the 'Image Field' for an Employee could be their photograph or a snapshot of their ID cards; the same can be configured here.
+1. **รูปแบบการพิมพ์เริ่มต้น**: สำหรับ DocType เดียว อาจมีรูปแบบการพิมพ์ได้หลายรูปแบบ ที่นี่คุณสามารถเลือกรูปแบบการพิมพ์เริ่มต้นสำหรับ DocType ที่เลือก ตัวอย่างเช่น บริษัทอาจมีหัวจดหมายต่างกันเพื่อวัตถุประสงค์ที่แตกต่างกัน ซึ่งสามารถกำหนดค่าผ่านรูปแบบการพิมพ์ได้ อย่างไรก็ตาม คุณสามารถเลือกรูปแบบการพิมพ์เริ่มต้นที่แตกต่างกันสองรูปแบบสำหรับใบสั่งขายและจดหมายนัดหมาย ตรวจสอบ [รูปแบบการพิมพ์แบบกำหนดเอง](/docs/user/manual/th/customize-erpnext/print-format) สำหรับข้อมูลเพิ่มเติม
+1. **ฟิลด์รูปภาพ**: คุณสามารถเลือกฟิลด์ "แนบรูปภาพ" สำหรับฟิลด์รูปภาพของคุณ นี่จะกลายเป็นภาพที่แสดงถึง DocType นั้น ๆ เช่น 'ช่องรูปภาพ' สำหรับพนักงานอาจเป็นรูปถ่ายหรือสแนปชอตของบัตรประจำตัว เดียวกันสามารถกำหนดค่าได้ที่นี่
 
   <img alt="Customize Form select doctype" class="screenshot" src="{{docs_base_url}}/assets/img/setup/customize-form-2.png">
 
-1. **Max Attachments**: You can enter the maximum number of attachments that could be added to this DocType.
-1. **Search Fields**: While creating any DocType, you may want to link a particular field to another DocType. For ease in selection, you can also ensure that you are able to see the value of another field of the latter DocType in the search result. For more information [click here](/docs/user/manual/en/customize-erpnext/articles/search-record-by-specific-field).
-1. **Sort Field**: Records in any DocType List are generated based on the Field that you set at the Sort Field over here. E.g., for Items, if you want your list to be generated as per Item Name, you can configure the same here.
+1. **ไฟล์แนบสูงสุด**: คุณสามารถป้อนจำนวนไฟล์แนบสูงสุดที่สามารถเพิ่มลงใน DocType นี้ได้
+1. **ช่องค้นหา**: ขณะสร้าง DocType คุณอาจต้องการเชื่อมโยงช่องใดช่องหนึ่งกับ DocType อื่น เพื่อความสะดวกในการเลือก คุณยังสามารถตรวจสอบได้ว่าคุณสามารถเห็นค่าของฟิลด์อื่นของ DocType หลังในผลการค้นหา สำหรับข้อมูลเพิ่มเติม [คลิกที่นี่](/docs/user/manual/th/customize-erpnext/articles/search-record-by-specific-field)
+1. **การเรียงฟิลด์**: บันทึกในรายการ DocType ใด ๆ จะถูกสร้างขึ้นตามฟิลด์ที่คุณตั้งค่าไว้ที่ฟิลด์ Sort ที่นี่ เช่น สำหรับรายการ หากคุณต้องการให้สร้างรายการของคุณตามชื่อรายการ คุณสามารถกำหนดค่าเดียวกันได้ที่นี่
 
   <img alt="Customize Form select doctype" class="screenshot" src="{{docs_base_url}}//assets/img/customize/customize-sort-field.png">
 
-1. **Sort Order**: You can select whether you want the Sorting to be done in Ascending Order or Descending Order. To get more understanding on Sort Field and Sort Order, check out [Customizing Sorting Order in the List View](/docs/user/manual/en/customize-erpnext/articles/customizing-sorting-order-in-the-list-view).
-1. **Default Email Template**: For a single DocType, there could be multiple [Email Templates](/docs/user/manual/en/setting-up/email/email-template). Here you can set the default Email Template for the selected DocType. For example, you can set a different Default Email Template for a Sales Order and an Appointment Letter.
+1. **การเรียงลำดับ**: คุณสามารถเลือกได้ว่าต้องการให้เรียงลำดับจากน้อยไปมากหรือมากไปน้อย เพื่อให้ได้ความเข้าใจมากขึ้นเกี่ยวกับช่องการจัดเรียงและลำดับการจัดเรียง โปรดดู [การปรับแต่งลำดับการเรียงลำดับในมุมมองรายการ](/docs/user/manual/th/customize-erpnext/articles/customizing-sorting-order-in-the-list-view).
+1. **เทมเพลตอีเมลเริ่มต้น**: สำหรับ DocType เดียว อาจมีหลาย [เทมเพลตอีเมล](/docs/user/manual/th/setting-up/email/email-template) คุณสามารถตั้งค่าเทมเพลตอีเมลเริ่มต้นสำหรับ DocType ที่เลือกได้ที่นี่ ตัวอย่างเช่น คุณสามารถตั้งค่าเทมเพลตอีเมลเริ่มต้นที่แตกต่างกันสำหรับใบสั่งขายและจดหมายนัดหมาย
 
-### 1.3. More Properties
+### 1.3. คุณสมบัติเพิ่มเติม
 
-* **Hide Copy**: This box, when checked, restricts a User to create a 'Copy' of a particular Form.
-* **Is Table**: This option is available only while customizing the Forms which are present in table forms in the system. For e.g., if you are creating an Item Table to be added into a Custom Form, you can enable this option. Check out [Child Table](/docs/user/manual/en/customize-erpnext/articles/customizing-data-visibility-in-child-table) for more information.
-* **Quick Entry**: Checking this box will allow you to create a 'Quick Entry' using a particular form. This means that whenever a user is creating this Form from another existing Form, a box will Pop Up which will allow the user to create the DocType by entering only the basic details. For example, check Quick Entry in [Journal Entry](/docs/user/manual/en/accounts/journal-entry#11-quick-entry).
-* **Track Changes**: Checking this box will ensure that any changes made by any of the users to this DocType will be tracked and displayed.
+* **ซ่อนสำเนา**: เมื่อทำเครื่องหมายในช่องนี้ จะจำกัดผู้ใช้ในการสร้าง 'สำเนา' ของแบบฟอร์มเฉพาะ
+* **เป็นตาราง**: ตัวเลือกนี้ใช้ได้เฉพาะในขณะที่กำหนดแบบฟอร์มซึ่งมีอยู่ในรูปแบบตารางในระบบเท่านั้น ตัวอย่างเช่น หากคุณกำลังสร้างตารางรายการเพื่อเพิ่มลงในแบบฟอร์มที่กำหนดเอง คุณสามารถเปิดใช้งานตัวเลือกนี้ได้ ตรวจสอบ [Child Table](/docs/user/manual/th/customize-erpnext/articles/customizing-data-visibility-in-child-table) สำหรับข้อมูลเพิ่มเติม
+* **รายการด่วน**: การเลือกช่องนี้จะทำให้คุณสามารถสร้าง 'รายการด่วน' โดยใช้แบบฟอร์มเฉพาะ ซึ่งหมายความว่าเมื่อใดก็ตามที่ผู้ใช้สร้างแบบฟอร์มนี้จากแบบฟอร์มอื่นที่มีอยู่ จะมีกล่องป๊อปอัปซึ่งอนุญาตให้ผู้ใช้สร้าง DocType โดยป้อนเฉพาะรายละเอียดพื้นฐานเท่านั้น ตัวอย่างเช่น ตรวจสอบรายการด่วนใน [รายการบันทึก](/docs/user/manual/th/accounts/journal-entry#11-quick-entry)
+* **ติดตามการเปลี่ยนแปลง**: การเลือกช่องนี้จะช่วยให้มั่นใจได้ว่าการเปลี่ยนแปลงใดๆ ที่ทำโดยผู้ใช้ DocType นี้จะถูกติดตามและแสดงผล
 
   <img alt="Customize Form" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-track-changes-1.png">
 
-* **Track Views**: This option will give you a trail of all the views towards this particular DocType.
-* **Allow Auto-Repeat**: This option, if checked, will allow you to enable Auto Repetition of a DocType periodically. E.g., if there is a Sales Order which has to be made multiple number of times, you can enable this option and then [Set Up Auto Repeat](/docs/user/manual/en/automation/auto-repeat) for any particular Sales Order.
-* **Allow Import**: This option will allow the user to Import data from any files. Check out [Data Import Tool](/docs/user/manual/en/setting-up/data/data-import) for more information.
-* **Show Preview Popup**: This option was introduced in Version 12. If checked, a small popup will appear on hover of links of this document type (in list view and other link fields). This popup will contain the mandatory fields of the document and the fields for which `in_preview` is checked. Check out [Link Preview](https://erpnext.com/version-12/release-notes/features#link-preview) for more information.
+* **ติดตามการดู**: ตัวเลือกนี้จะให้เส้นทางของมุมมองทั้งหมดที่มีต่อ DocType เฉพาะนี้
+* **อนุญาตการทำซ้ำอัตโนมัติ**: หากเลือกตัวเลือกนี้ จะอนุญาตให้คุณเปิดใช้งานการทำซ้ำอัตโนมัติของประเภทเอกสารเป็นระยะ เช่น หากมีใบสั่งขายที่ต้องทำหลายครั้ง คุณสามารถเปิดใช้งานตัวเลือกนี้ จากนั้น [ตั้งค่าการทำซ้ำอัตโนมัติ](/docs/user/manual/th/automation/auto-repeat) สำหรับรายการใดรายการหนึ่ง ใบสั่งขาย.
+* **อนุญาตการนำเข้า**: ตัวเลือกนี้จะอนุญาตให้ผู้ใช้นำเข้าข้อมูลจากไฟล์ใดๆ ตรวจสอบ [เครื่องมือนำเข้าข้อมูล](/docs/user/manual/th/setting-up/data/data-import) สำหรับข้อมูลเพิ่มเติม
+* **แสดงตัวอย่างป๊อปอัป**: ตัวเลือกนี้เปิดตัวในเวอร์ชัน 12 หากเลือก ป๊อปอัปขนาดเล็กจะปรากฏขึ้นเมื่อวางเมาส์เหนือลิงก์ของเอกสารประเภทนี้ (ในมุมมองรายการและฟิลด์ลิงก์อื่นๆ) ป๊อปอัปนี้จะประกอบด้วยฟิลด์บังคับของเอกสารและฟิลด์ที่มีการตรวจสอบ "in_preview" ตรวจสอบ [Link Preview](https://erpnext.com/version-12/release-notes/features#link-preview) สำหรับข้อมูลเพิ่มเติม
 
-Once you click Update, your Customizations will be updated to the Form.
+เมื่อคุณคลิก อัปเดต การปรับแต่งของคุณจะได้รับการอัปเดตเป็นแบบฟอร์ม
 
-### 1.2. Customizing the Fields
+### 1.2. การปรับแต่งฟิลด์
 
-Every form in ERPNext has a standard set of fields. If you need to capture some information, but there is no standard field available for it, you can insert Custom Field in a form as per your requirement. Adding, editing or deleting of Fields can also be done here. You can also place the fields as per your requirement in the form by adding it below or above any other already present fields. [Click here](/docs/user/manual/en/customize-erpnext/custom-field) for more information on Custom Fields.
+ทุกรูปแบบใน ERPNext มีชุดฟิลด์มาตรฐาน ถ้าคุณต้องการเก็บข้อมูลบางอย่าง แต่ไม่มีฟิลด์มาตรฐานสำหรับข้อมูลนั้น คุณสามารถแทรกฟิลด์ที่กำหนดเองในแบบฟอร์มได้ตามความต้องการของคุณ การเพิ่ม แก้ไข หรือลบฟิลด์สามารถทำได้ที่นี่ คุณยังสามารถวางฟิลด์ตามความต้องการของคุณในแบบฟอร์มโดยเพิ่มด้านล่างหรือด้านบนฟิลด์อื่นที่มีอยู่แล้ว [คลิกที่นี่](/docs/user/manual/th/customize-erpnext/custom-field) สำหรับข้อมูลเพิ่มเติมเกี่ยวกับฟิลด์แบบกำหนดเอง
 
-## 2. Videos
+## 2. วิดีโอ
 
 <div class="embed-container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/WSzkpPm3iIU?start=80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

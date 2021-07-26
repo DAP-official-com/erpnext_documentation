@@ -1,139 +1,138 @@
 <!-- add-breadcrumbs -->
-# Web Forms
+# เว็บฟอร์ม
 
-Stakeholders who are not part of your organization may need to interact with
-your ERPNext instance. You can authorize customers, suppliers, job applicants,
-students, and guardians to access certain information or even create certain
-transactions. For example, you can let anyone create an account on your website
-(created with ERPNext) and apply for a job. You can let your customers see the
-details of the complaints they have registered. These can be done using Web Forms.
+ผู้มีส่วนได้ส่วนเสียที่ไม่ได้เป็นส่วนหนึ่งขององค์กรของคุณอาจต้องโต้ตอบกับ
+อินสแตนซ์ ERPNext ของคุณ คุณสามารถอนุญาตลูกค้า ซัพพลายเออร์ ผู้สมัครงาน
+นักเรียนและผู้ปกครองในการเข้าถึงข้อมูลบางอย่างหรือแม้แต่สร้างบางอย่าง
+การทำธุรกรรม ตัวอย่างเช่น คุณสามารถให้ใครก็ได้สร้างบัญชีบนเว็บไซต์ของคุณ
+(สร้างด้วย ERPNext) และสมัครงาน คุณสามารถให้ลูกค้าของคุณเห็น
+รายละเอียดเรื่องร้องเรียนที่ได้ลงทะเบียนไว้ สามารถทำได้โดยใช้เว็บฟอร์ม
 
-> There are two types of in-built interfaces available in ERPNext. The
-> *Desk View* and the *Web View*. Desk is for users who regularly interact
-> with ERPNext instance, like employees of your organization.
+> มีอินเทอร์เฟซในตัวสองประเภทใน ERPNext NS
+> *มุมมอง Desk* และ *มุมมองเว็บ* Desk มีไว้สำหรับผู้ใช้ที่โต้ตอบเป็นประจำ
+> ด้วยอินสแตนซ์ ERPNext เช่น พนักงานในองค์กรของคุณ
 
-> Web View is for users who need to interact with an ERPNext instance occasionally.
-> Web forms are similar to the forms you generally fill in various websites on the
-> internet. Webforms are part of the *Web View* interface in ERPNext.
+> Web View มีไว้สำหรับผู้ใช้ที่ต้องการโต้ตอบกับอินสแตนซ์ ERPNext เป็นครั้งคราว
+> แบบฟอร์มเว็บจะคล้ายกับแบบฟอร์มที่คุณกรอกในเว็บไซต์ต่างๆ บน ทั่วไป
+> อินเทอร์เน็ต เว็บฟอร์มเป็นส่วนหนึ่งของอินเทอร์เฟซ *Web View* ใน ERPNext
 
-To create a new **Web Form** go to:
+ในการสร้าง **เว็บฟอร์ม** ใหม่ ให้ไปที่:
 
-> Home > Website > Web Site > Web Form
+> หน้าแรก > เว็บไซต์ > เว็บไซต์ > เว็บฟอร์ม
 
 ![New Web Form](/docs/assets/img/website/new-web-form-1.png)
-*New Web Form*
+*เว็บฟอร์มใหม่*
 
-Select the **DocType** based on which you want to build your Web Form. The
-**Route** will be set based on the **Title** of your Web Form. You can also add
-an Introduction text to show a friendly message above your form.
+เลือก **DocType** ตามที่คุณต้องการสร้างเว็บฟอร์มของคุณ NS
+**เส้นทาง** จะถูกตั้งค่าตาม **ชื่อ** ของเว็บฟอร์มของคุณ นอกจากนี้คุณยังสามารถเพิ่ม
+ข้อความแนะนำเพื่อแสดงข้อความที่เป็นมิตรเหนือแบบฟอร์มของคุณ
 
-Add fields to your Web Form. These are the fields from the DocType you have
-selected. You can change the Label for these fields. Try to keep number of
-fields to be minimum as long forms are cumbersome to fill.
+เพิ่มฟิลด์ลงในเว็บฟอร์มของคุณ นี่คือฟิลด์จาก DocType ที่คุณมี
+เลือก คุณสามารถเปลี่ยนป้ายกำกับสำหรับฟิลด์เหล่านี้ พยายามเก็บจำนวน
+ฟิลด์ให้น้อยที่สุดเนื่องจากแบบฟอร์มยาวจะยุ่งยากในการกรอก
 
 ![Web Form Fields](/docs/assets/img/website/new-web-form-2.png)
-*Web Form Fields*
+*ช่องแบบฟอร์มเว็บ*
 
-Click on **See on Website** in the sidebar to view your Web form.
+คลิก **ดูบนเว็บไซต์** ในแถบด้านข้างเพื่อดูแบบฟอร์มเว็บของคุณ
 ![Web Form](/docs/assets/img/website/web-form.png)
-*Web Form*
+*เว็บฟอร์ม*
 
-Here is an explanation of each of the checkboxes on the right.
+คำอธิบายของช่องทำเครื่องหมายแต่ละช่องทางด้านขวา
 
-1. **Published**: Web Form will be accessible only if this is enabled.
-1. **Login Required**: User can fill the Web Form only if they are logged in.
-    When Login Required is checked,
-1. **Route to Success Link**: Go to Success Link after the form is submitted.
-1. **Allow Edit**: If this is unchecked the form becomes read-only once it is
-   saved.
-1. **Allow Multiple**: Allow user to create more than one record.
-1. **Show as Grid**: Show records in a table format.
-1. **Allow Delete**: Allow user to delete the records that he/she has
-   created.
-1. **Allow Comments**: Allow user to add comments on the created form.
-1. **Allow Print**: Allow user to print the document in the selected Print Format.
-1. **Allow Incomplete Forms**: Allow user to submit form with partial data.
+1. **เผยแพร่แล้ว**: เว็บฟอร์มจะสามารถเข้าถึงได้ก็ต่อเมื่อเปิดใช้งานสิ่งนี้
+1. **ต้องเข้าสู่ระบบ**: ผู้ใช้สามารถกรอกแบบฟอร์มบนเว็บได้ก็ต่อเมื่อเข้าสู่ระบบแล้วเท่านั้น
+    เมื่อเลือกการเข้าสู่ระบบที่จำเป็น
+1. **Route to Success Link**: ไปที่ Success Link หลังจากส่งแบบฟอร์มแล้ว
+1. **อนุญาตให้แก้ไข**: หากไม่ได้เลือก แบบฟอร์มจะกลายเป็นแบบอ่านอย่างเดียวเมื่อเป็น
+   บันทึกไว้
+1. **Allow Multiple**: อนุญาตให้ผู้ใช้สร้างมากกว่าหนึ่งระเบียน
+1. **แสดงเป็นเส้นตาราง**: แสดงระเบียนในรูปแบบตาราง
+1. **อนุญาตให้ลบ**: อนุญาตให้ผู้ใช้ลบบันทึกที่เขา/เธอมี
+   สร้าง.
+1. **อนุญาตให้แสดงความคิดเห็น**: อนุญาตให้ผู้ใช้เพิ่มความคิดเห็นในแบบฟอร์มที่สร้างขึ้น
+1. **อนุญาตให้พิมพ์**: อนุญาตให้ผู้ใช้พิมพ์เอกสารในรูปแบบการพิมพ์ที่เลือก
+1. **อนุญาตแบบฟอร์มที่ไม่สมบูรณ์**: อนุญาตให้ผู้ใช้ส่งแบบฟอร์มพร้อมข้อมูลบางส่วน
 
-## 2. Features
-### 2.1 Sidebar
+## 2. คุณสมบัติ
+### 2.1 แถบด้านข้าง
 
-You can also show contextual links in a sidebar on your Web Form. Set it up in
-**Sidebar Settings**.
+คุณยังสามารถแสดงลิงก์ตามบริบทในแถบด้านข้างบนเว็บฟอร์มของคุณได้อีกด้วย ตั้งค่าใน
+**การตั้งค่าแถบด้านข้าง**
 
 ![Web Form Sidebar](/docs/assets/img/website/web-form-sidebar.png)
-*Web Form Sidebar*
+*แถบด้านข้างของเว็บฟอร์ม*
 
 ![Web Form with Sidebar](/docs/assets/img/website/web-form-with-sidebar.png)
-*Web Form with Sidebar*
+*เว็บฟอร์มพร้อมแถบด้านข้าง*
 
-### 2.2 Creating Web Forms with Child Table
+### 2.2 การสร้างเว็บฟอร์มด้วยตารางลูก
 
-You can add child tables to your web forms, just like regular forms.
+คุณสามารถเพิ่มตารางย่อยลงในแบบฟอร์มบนเว็บได้ เช่นเดียวกับแบบฟอร์มทั่วไป
 
 <img class="screenshot" alt="Web form Grid"
 src="{{docs_base_url}}/assets/img/website/grid-in-webform.png">
 
 
-### 2.3 Payment Gateway Integration
+### 2.3 การใช้ช่องทางการชำระเงิน
 
-You can now add a Payment Gateway to the web form, so that you can ask users to
-pay against a web form. A good example for this is a conference ticket.
+คุณสามารถเพิ่ม Payment Gateway ลงในเว็บฟอร์มได้แล้ว เพื่อขอให้ผู้ใช้ทำ
+จ่ายกับแบบฟอร์มเว็บ ตัวอย่างที่ดีสำหรับสิ่งนี้คือตั๋วการประชุม
 
 <img class="screenshot" alt="Web form payment"
 src="{{docs_base_url}}/assets/img/website/payment-in-webform.png">
 
-### 2.4 Portal User
+### 2.4 พอร์ทัลผู้ใช้
 
-We have also introduced roles for Website users. Before version 11, if you
-assigned any 'Role' to a user he would get access to 'Desk View'. From version
-11 you can assign a 'Role' but still disallow access to 'Desk View' by
-unchecking 'Desk Access' in Role.
+เรายังได้แนะนำบทบาทสำหรับผู้ใช้เว็บไซต์ ก่อนเวอร์ชัน 11 ถ้าคุณ
+กำหนด 'บทบาท' ให้กับผู้ใช้ที่เขาจะเข้าถึง 'มุมมองเดสก์ท็อป' จากเวอร์ชั่น
+11 คุณสามารถกำหนด 'บทบาท' แต่ยังไม่อนุญาตให้เข้าถึง 'มุมมองเดสก์ท็อป' โดย
+ยกเลิกการเลือก 'การเข้าถึงเดสก์ท็อป' ในบทบาท
 
 <img class="screenshot" alt="Disallow Desk Access"
 src="{{docs_base_url}}/assets/img/website/disallow_desk_access.png">
 
-In Portal Settings, you can set a role against each menu item so that only users
-with that role will be allowed to see that item.
+ในการตั้งค่าพอร์ทัล คุณสามารถกำหนดบทบาทกับแต่ละรายการในเมนูเพื่อให้เฉพาะผู้ใช้เท่านั้น
+ที่มีบทบาทนั้นจะได้รับอนุญาตให้ดูรายการนั้น
 
 <img class="screenshot" alt="portal settings"
 src="{{docs_base_url}}/assets/img/website/portal-settings.png">
 
-### 2.5 Custom Script
+### 2.5 สคริปต์ที่กำหนดเอง
 
-You can write custom scripts for your Web Form for things like validating your
-inputs, auto-filling values, showing a success message, or any arbitrary
-action.
+คุณสามารถเขียนสคริปต์ที่กำหนดเองสำหรับเว็บฟอร์มของคุณสำหรับสิ่งต่างๆ เช่น ตรวจสอบความถูกต้องของคุณ
+อินพุต, ค่าการเติมอัตโนมัติ, แสดงข้อความแสดงความสำเร็จ, หรือตามอำเภอใจ
+การกระทำ.
 
-To learn how to write custom scripts for your Web Forms, read
-[Custom Scripts documentation](https://frappe.io/docs/user/en/web-forms#custom-script).
+หากต้องการเรียนรู้วิธีเขียนสคริปต์ที่กำหนดเองสำหรับเว็บฟอร์มของคุณ โปรดอ่าน
+[เอกสารประกอบสคริปต์ที่กำหนดเอง](https://frappe.io/docs/user/th/web-forms#custom-script)
 
-### 2.6 Custom CSS
+### 2.6 CSS ที่กำหนดเอง
 
-You can customize the look and feel of your Web Form by writing your own Custom
-CSS. Inspect the elements on the page to see what classes are available for
-styling. Learn more about CSS [here](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics).
+คุณสามารถปรับแต่งรูปลักษณ์ของเว็บฟอร์มของคุณได้โดยการเขียน Custom your ของคุณเอง
+ซีเอสเอส. ตรวจสอบองค์ประกอบบนหน้าเพื่อดูว่ามีคลาสใดบ้างสำหรับ
+จัดแต่งทรงผม เรียนรู้เพิ่มเติมเกี่ยวกับ CSS [ที่นี่](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
 
-### 2.7 Actions
+### 2.7 การดำเนินการ
 
-You can add the text in 'Success Message' field and this text will be shown to
-user once he successfully submits the web form . And the user is redirected to
-the URL given at 'Success URL' when clicked on 'Continue' button. This is only
-applicable to webforms accessible without the user login(webforms with 'Login
-Required' checkbox unchecked).
+คุณสามารถเพิ่มข้อความในช่อง 'ข้อความสำเร็จ' และข้อความนี้จะแสดงไปที่
+ผู้ใช้เมื่อเขาส่งแบบฟอร์มเว็บเรียบร้อยแล้ว และผู้ใช้จะถูกเปลี่ยนเส้นทางไปที่
+URL ที่ให้ไว้ที่ 'Success URL' เมื่อคลิกที่ปุ่ม 'Continue' นี้เท่านั้น
+ใช้ได้กับเว็บฟอร์มที่เข้าถึงได้โดยไม่ต้องเข้าสู่ระบบของผู้ใช้ (เว็บฟอร์มที่มี 'เข้าสู่ระบบ
+จำเป็นต้องยกเลิกการเลือกช่องทำเครื่องหมาย)
 
 <img class="screenshot" alt="Success Message"
 src="{{docs_base_url}}/assets/img/website/success_message.png">
 
 
-### 2.8 Result
+### 2.8 ผลลัพธ์
 
-When a website user submits the form, the data will be stored in the
-document/doctype for which web form is created.
+เมื่อผู้ใช้เว็บไซต์ส่งแบบฟอร์ม ข้อมูลจะถูกเก็บไว้ใน
+เอกสาร/doctype ที่สร้างเว็บฟอร์ม
 
-### 2.9 Customizing
+### 2.9 การปรับแต่ง
 
-For customizing web forms, see the [Frappe Web
-Forms Documentation](https://frappe.io/docs/user/en/guides/portal-development/web-forms)
+สำหรับการปรับแต่งเว็บฟอร์ม โปรดดูที่ [เอกสารแบบฟอร์ม](https://frappe.io/docs/user/th/guides/portal-development/web-forms)
 
 
 {next}

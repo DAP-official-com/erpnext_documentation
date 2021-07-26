@@ -1,60 +1,60 @@
 <!-- add-breadcrumbs -->
-# Staffing Plan
+# แผนการจัดบุคลากร
 
-**Staffing Plan helps you to plan manpower requirements for your Company.**
+**แผนการจัดหาพนักงานช่วยให้คุณวางแผนความต้องการด้านกำลังคนสำหรับบริษัทของคุณ**
 
- ERPNext allows you to do this at a company level helping you efficiently plan and budget new hirings for a period. Job Openings can only be created as per the number of vacancies and budget as per the active Staffing Plan. 
+ ERPNext ช่วยให้คุณทำสิ่งนี้ได้ในระดับบริษัท ช่วยให้คุณวางแผนและจัดงบประมาณการจ้างงานใหม่ในช่วงเวลาหนึ่งได้อย่างมีประสิทธิภาพ ตำแหน่งงานว่างสามารถสร้างได้ตามจำนวนตำแหน่งงานว่างและงบประมาณตามแผนการจัดบุคลากรที่ใช้งานอยู่เท่านั้น
 
- To access Staffing, go to:
+ ในการเข้าถึงบุคลากร ไปที่:
 
-> Home > Human Resources > Recruitment > Staffing Plan 
+> หน้าหลัก > ทรัพยากรบุคคล > การสรรหา > แผนการจัดบุคลากร
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating a Staffing Plan, it is necessary you create the following:
+ก่อนสร้างแผนการจัดบุคลากร คุณจำเป็นต้องสร้างสิ่งต่อไปนี้:
 
-* [Department](/docs/user/manual/en/human-resources/department)
-* [Designation](/docs/user/manual/en/human-resources/designation)
+* [แผนก](/docs/user/manual/th/human-resources/department)
+* [การกำหนด](/docs/user/manual/th/human-resources/designation)
 
 
-## 2. How to create a Staffing Plan
+## 2. วิธีสร้างแผนการจัดหาพนักงาน
 
-1. Go to Staffing Plan list, click on New.
-1. Enter the Name, From and To Date and select the Department  for which you want to create the Staffing Plan.
-1. Enter the Staffing Plan Details such as Designation, Vacancies, Estimated Cost Per Position, Total Estimated Cost and Number of Positions.
-1. Save and Submit.
+1. ไปที่รายการแผนการจัดหาพนักงาน คลิกที่ใหม่
+1. ป้อน ชื่อ จาก และ วันที่ และเลือกแผนกที่คุณต้องการสร้างแผนการจัดบุคลากร
+1. ป้อนรายละเอียดแผนการจัดหาพนักงาน เช่น การแต่งตั้ง ตำแหน่งงานว่าง ค่าใช้จ่ายโดยประมาณต่อตำแหน่ง ค่าใช้จ่ายโดยประมาณทั้งหมด และจำนวนตำแหน่ง
+1. บันทึกและส่ง
 
 
 	<img class="screenshot" alt="Staffing Plan"
 	src="{{docs_base_url}}/assets/img/human-resources/staffing-plan.png">
 
-## 3. Features
+## 3. คุณสมบัติ
 
-Some of the additional features in the Staffing Plan doctype are explained below:
+คุณลักษณะเพิ่มเติมบางอย่างในเอกสารประเภทแผนการจัดหาพนักงานมีการอธิบายไว้ด้านล่าง:
 
-* **Designation:** The designations for which the Staffing Plan is created.
+* **การกำหนด:** การกำหนดที่สร้างแผนการจัดบุคลากร
 
-* **Number of Positions:** The number of positions you plan to recruit for between the  From and To Dates of the Staffing Plan.
+* **จำนวนตำแหน่ง:** จำนวนตำแหน่งที่คุณวางแผนจะรับสมัครระหว่างวันที่เริ่มต้นและถึงวันที่ของแผนการจัดพนักงาน
 
-* **Current Count:** This is the number of Employees already hired against the particular Designation.
+* **จำนวนปัจจุบัน:** นี่คือจำนวนพนักงานที่ได้รับการว่าจ้างจากตำแหน่งเฉพาะ
 
-* **Vacancies:** The number of vacancies based on the Number of Positions you wish to recruit and the current Employee count.
+* **ตำแหน่งงานว่าง:** จำนวนตำแหน่งงานว่างตามจำนวนตำแหน่งที่คุณต้องการรับสมัครและจำนวนพนักงานปัจจุบัน
 
-* **Estimated Cost Per Position:** You can specify the cost to company per position so that hiring officials can stick to the budget.
+* **ต้นทุนต่อตำแหน่งโดยประมาณ:** คุณสามารถระบุต้นทุนต่อบริษัทต่อตำแหน่งเพื่อให้เจ้าหน้าที่ที่จ้างงานสามารถยึดติดกับงบประมาณได้
 
 
 	<img class="screenshot" alt="Staffing Plan Detail"
 	src="{{docs_base_url}}/assets/img/human-resources/staffing-plan-detail.png">
 
-* **Total Estimated Budget:** Once you enter the recruitment plan for all the designations, Staffing Plan will draw up the total estimated budget as per the plan.
+* **งบประมาณรวมโดยประมาณ:** เมื่อคุณเข้าสู่แผนการสรรหาสำหรับการกำหนดตำแหน่งทั้งหมด แผนการจัดหาพนักงานจะจัดทำงบประมาณโดยประมาณทั้งหมดตามแผน
 
 
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Job Opening](/docs/user/manual/en/human-resources/job-opening)
-1. [Job Applicant](/docs/user/manual/en/human-resources/job-applicant)
-1. [Job Offer](/docs/user/manual/en/human-resources/job-offer)
+1. [ตำแหน่งงานว่าง](/docs/user/manual/th/human-resources/job-opening)
+1. [ผู้สมัครงาน](/docs/user/manual/th/human-resources/job-applicant)
+1. [ข้อเสนองาน](/docs/user/manual/th/human-resources/job-offer)
 
 
 

@@ -1,52 +1,52 @@
 <!-- add-breadcrumbs -->
-# Migrate To Perpetual Inventory
+# โยกย้ายไปยังสินค้าคงคลังถาวร
 
-Perpetual Inventory Valuation is activated by default in the system.
+การประเมินมูลค่าสินค้าคงคลังถาวรถูกเปิดใช้งานโดยค่าเริ่มต้นในระบบ
 
-For the users who are currently following periodic inventory valuation system, and wish to migrate to perpetual inventory valuation system, please follow the steps explained below.
+สำหรับผู้ใช้ที่กำลังติดตามระบบการประเมินมูลค่าสินค้าคงคลังเป็นระยะ และต้องการย้ายไปยังระบบการประเมินมูลค่าสินค้าคงคลังแบบถาวร โปรดทำตามขั้นตอนที่อธิบายไว้ด้านล่าง
 
-### 1. How to Migrate to Perpetual Inventory
+### 1. วิธีการโยกย้ายไปยังสินค้าคงคลังถาวร
 
-1. To enable perpetual Inventory, ensure that the Stock in Hand Account is synced with the value of actual stock value in your Warehouse(s). To sync it, you will have to create a Journal Entry for the difference amount against expense account (generally used in Purchase Invoice).
+1. ในการเปิดใช้งาน สินค้าคงคลังถาวร ตรวจสอบให้แน่ใจว่า บัญชีสินค้าในคลัง ซิงค์กับมูลค่าของมูลค่าหุ้นจริงในคลังสินค้าของคุณ ในการซิงค์ คุณจะต้องสร้างรายการบันทึกประจำวันสำหรับจำนวนเงินส่วนต่างกับบัญชีค่าใช้จ่าย (โดยทั่วไปจะใช้ในใบกำกับสินค้า)
 
-  For example, when perpetual inventory was disabled, you must be having Expense (Cost of Goods Sold) booked via Purchase Invoices. Now, you will have to create a Journal Entry to move the value of existing stock from expense account to stock in hand account.
+  ตัวอย่างเช่น เมื่อปิดใช้งานสินค้าคงคลังถาวร คุณจะต้องจองค่าใช้จ่าย (ต้นทุนขาย) ผ่านใบกำกับสินค้า ตอนนี้ คุณจะต้องสร้างรายการบันทึกประจำวันเพื่อย้ายมูลค่าหุ้นที่มีอยู่จากบัญชีค่าใช้จ่ายไปยังบัญชีสต็อกในมือ
 
-  Cr. Expense account ......... XXX
+  Cr. บัญชีค่าใช้จ่าย ......... XXX
   
-  Dr. Stock in Hand account ... XXX
+  Dr. บัญชีสินค้าในคลัง ... XXX
 
-  It can also work other-way round if you were selecting a stock in hand account in the Purchase Invoice.
+  นอกจากนี้ยังสามารถทำงานอย่างอื่นได้หากคุณเลือกหุ้นในบัญชีมือในใบกำกับสินค้า
 
-1. Before enabling Perpetual Inventory, ensure that Stock Accounts (ledger) is linked for the existing Warehouse. The stock account for a Warehouse can be set at three levels.
+1. ก่อนเปิดใช้งาน สินค้าคงคลังถาวร ตรวจสอบให้แน่ใจว่าบัญชีสต็อก (บัญชีแยกประเภท) เชื่อมโยงกับคลังสินค้าที่มีอยู่แล้ว บัญชีสต็อคสำหรับคลังสินค้าสามารถตั้งค่าได้สามระดับ
 
-  * In the Warehouse master itself
-  * In the Parent Warehouse master
-  * Default Stock in Hand Account in the Company master, if you maintain only one Stock-in-hand account for all the Warehouses.
+  * ในโกดังมาสเตอร์เอง
+  * ใน คลังสินค้าหลัก
+  * ค่าเริ่มต้นบัญชีสินค้าในคลัง ใน บริษัทหลัก หากคุณรักษาบัญชี สินค้าในคลัง เพียงบัญชีเดียวสำหรับคลังสินค้าทั้งหมด
 
-1. Journal Entry to Update Stock Received but not Billed account
+1. รายการบันทึกเพื่ออัพเดทสต็อคที่ได้รับแต่ไม่ใช่บัญชีที่เรียกเก็บเงิน
 
-  An account "Stock Received but not Billed" is an adjustment account which reflects the value of the stock for which Purchase Receipt has been submitted, but Purchase Invoice is yet to created. A Journal Entry should be created to update the value open Purchase Receipt pending for billing into "Stock Received but not Billed" account.
+  บัญชี "ได้รับสต็อคแล้วแต่ไม่ถูกเรียกเก็บเงิน" เป็นบัญชีการปรับปรุงซึ่งสะท้อนถึงมูลค่าของสต็อคที่ส่งใบเสร็จรับเงิน แต่ยังไม่ได้สร้างใบกำกับสินค้า ควรสร้างรายการบันทึกประจำวันเพื่ออัปเดตมูลค่าที่เปิดอยู่ ใบรับซื้อที่รอการเรียกเก็บเงินในบัญชี "ได้รับสินค้าแล้ว แต่ไม่ถูกเรียกเก็บเงิน"
 
-  To know the value of the stock received but not billed, you can refer the report "Received Items Pending for Billing" in the Accounts module.
+  หากต้องการทราบมูลค่าของสต็อคที่ได้รับแต่ไม่ถูกเรียกเก็บเงิน คุณสามารถดูรายงาน "รายการที่ได้รับรอดำเนินการเรียกเก็บเงิน" ในโมดูลบัญชี
 
-  Create a Journal Entry as follows to update the value in Stock Received but not Billed account.
+  สร้างรายการบันทึกประจำวันดังต่อไปนี้เพื่ออัปเดตค่าในบัญชีที่ได้รับแต่ไม่ใช่บัญชีที่เรียกเก็บเงิน
 
-  Cr. Stock Received but not Billed ........... XXX
+  Cr. ได้รับสินค้าแล้วแต่ไม่เรียกเก็บเงิน ........... XXX
   
-  Dr. Expense Account (COGS) .................. XXX
+  Dr. บัญชีค่าใช้จ่าย (COGS) .................. XXX
 
-1. Setup the following default accounts for each Company 
+1. ตั้งค่าบัญชีเริ่มต้นต่อไปนี้สำหรับแต่ละบริษัท
 
-  * Stock Received But Not Billed
-  * Stock Adjustment Account
-  * Expenses Included In Valuation
-  * Cost Center
-  * Activate Perpetual Inventory
+  * รับสินค้าแล้วแต่ไม่เรียกเก็บเงิน
+  * บัญชีปรับสต็อก
+  * ค่าใช้จ่ายรวมอยู่ในการประเมินมูลค่า
+  * ศูนย์ต้นทุน
+  * เปิดใช้งานสินค้าคงคลังถาวร
 
-1. Go to: **Home > Accounting > Company**
+1. ไปที่: **หน้าแรก > การบัญชี > บริษัท**
     
     <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-1.png">
 
-#### 2. Related Topics
-1. [Accounting Of Inventory Stock](/docs/user/manual/en/stock/accounting-of-inventory-stock)
-1. [Perpetual Inventory](/docs/user/manual/en/stock/perpetual-inventory)
+#### 2. หัวข้อที่เกี่ยวข้อง
+1. [การบัญชีสินค้าคงคลัง](/docs/user/manual/th/stock/accounting-of-inventory-stock)
+1. [สินค้าคงคลังถาวร](/docs/user/manual/th/stock/perpetual-inventory)

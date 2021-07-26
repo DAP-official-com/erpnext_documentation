@@ -1,55 +1,55 @@
 <!-- add-breadcrumbs -->
-# Address
+#ที่อยู่
 
-You can record the addresses associated with a Lead, Customer, Supplier, Shareholder, Sales Partner or a Warehouse.
+คุณสามารถบันทึกที่อยู่ที่เกี่ยวข้องกับลูกค้าเป้าหมาย ลูกค้า ผู้จัดหา ผู้ถือหุ้น หุ้นส่วนการขาย หรือคลังสินค้า
 
-You can also add an Address as a standalone record without linking it to any of the entities listed above.
+คุณยังสามารถเพิ่มที่อยู่เป็นเรกคอร์ดแบบสแตนด์อโลนโดยไม่ต้องเชื่อมโยงกับเอนทิตีใดๆ ที่ระบุไว้ข้างต้น
 
-To access the Address list, go to:
-> Home > CRM > Address
+ในการเข้าถึงรายการที่อยู่ ให้ไปที่:
+> หน้าแรก > CRM > ที่อยู่
 
-## 1. How to create an Address
+## 1. วิธีสร้างที่อยู่
 
-1. Go to the Address list and click on New.
-1. Select Address Type.
-1. Enter details in Address Line 1, Address Line 2, City/Town, County, State, Country.
-1. Enter Email Address, Phone and Fax.
-1. Enter Link DocType and Link Name to link this address to customer, supplier etc.
-4. Save.
+1. ไปที่รายการที่อยู่และคลิกที่ใหม่
+1. เลือกประเภทที่อยู่
+1. กรอกรายละเอียดใน ที่อยู่บรรทัดที่ 1 ที่อยู่บรรทัดที่ 2 เมือง/เมือง ประเทศ
+1. ป้อนที่อยู่อีเมล โทรศัพท์ และแฟกซ์
+1. ป้อน DocType และ ชื่อ เพื่อเชื่อมโยงที่อยู่นี้กับลูกค้า ซัพพลายเออร์ ฯลฯ
+4. บันทึก
     <img class="screenshot" alt="Contact" src="{{docs_base_url}}/assets/img/crm/address.png">
 
-You can also add an Address from the Customer or Supplier record by clicking on “New Address" button as shown below.
+คุณสามารถเพิ่มที่อยู่จากบันทึกลูกค้าหรือซัพพลายเออร์ได้โดยคลิกที่ปุ่ม "ที่อยู่ใหม่" ดังที่แสดงด้านล่าง
 
 <img class="screenshot" alt="Contact" src="{{docs_base_url}}/assets/img/crm/address-from-supp.png">
 
-To Import multiple addresses from a spreadsheet, use the [Data Import Tool](/docs/user/manual/en/setting-up/data/data-import).
+ในการนำเข้าที่อยู่หลายรายการจากสเปรดชีต ให้ใช้ [เครื่องมือนำเข้าข้อมูล](/docs/user/manual/th/setting-up/data/data-import).
 
 ---
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Link an Address to Multiple Entities
+### 2.1 เชื่อมโยงที่อยู่ไปยังหลายหน่วยงาน
 
-An address may be linked to multiple customers or multiple suppliers.
+ที่อยู่อาจเชื่อมโยงกับลูกค้าหลายรายหรือซัพพลายเออร์หลายราย
 
-An address can also be linked to customers and suppliers at the same time.
+ที่อยู่สามารถเชื่อมโยงกับลูกค้าและซัพพลายเออร์ได้ในเวลาเดียวกัน
 
 <img class="screenshot" alt="Contact" src="{{docs_base_url}}/assets/img/crm/link_address_to_multipl_entities.png">
 
-### 2.2 Address Title
+### 2.2 ชื่อที่อยู่
 
-If the address is not linked to any entity you need to manually add a title.
+หากที่อยู่ไม่ได้เชื่อมโยงกับหน่วยงานใดๆ คุณต้องเพิ่มชื่อด้วยตนเอง
 
-If the address is linked to an entity like a customer or supplier, the title is generated automatically in 'Entity Name-Address Type' format.
+หากที่อยู่เชื่อมโยงกับหน่วยงาน เช่น ลูกค้าหรือซัพพลายเออร์ ชื่อจะถูกสร้างขึ้นโดยอัตโนมัติในรูปแบบ 'ชื่อหน่วยงาน-ประเภทที่อยู่'
 
 <img class="screenshot" alt="Contact" src="{{docs_base_url}}/assets/img/crm/address_title_generation.png">
 
-### 2.3 Preferred Billing Address and Shipping Address
+### 2.3 ที่อยู่สำหรับการเรียกเก็บเงินที่ต้องการและที่อยู่สำหรับจัดส่ง
 
-If you check 'Preferred Shipping Address', the address would be automatically added in the Shipping Address in Sales Order, Sales Invoice and Delivery Note transactions.
+หากคุณเลือก 'ที่อยู่สำหรับจัดส่งที่ต้องการ' ที่อยู่จะถูกเพิ่มโดยอัตโนมัติในที่อยู่สำหรับจัดส่งในธุรกรรมใบสั่งขาย ใบกำกับสินค้า และใบส่งสินค้า
 
-Similarly, if you check 'Preferred Billing Address', the address would be automatically added in the Billing Address in Sales Order, Sales Invoice and Delivery Note transactions.
+ในทำนองเดียวกัน หากคุณทำเครื่องหมายที่ 'ที่อยู่สำหรับการเรียกเก็บเงินที่ต้องการ' ที่อยู่จะถูกเพิ่มโดยอัตโนมัติในที่อยู่สำหรับการเรียกเก็บเงินในใบสั่งขาย ใบกำกับสินค้า และธุรกรรมใบส่งของ
 
-### 2.4 GST Localization for India
+<!--### 2.4 GST Localization for India
 If the customer/supplier has registered for GST, enter Party GSTIN and GST State.Make sure GSTIN entered is in valid format.
 
 In sales transactions along with address, GSTIN is also fetched.
@@ -61,12 +61,12 @@ You can also add addresses of your own company's facilities. Check 'Is Your Comp
 <img class="screenshot" alt="Contact" src="{{docs_base_url}}/assets/img/crm/own_company_address.png">
 
 
->GSTIN is to be added in Address and not in Customer/Supplier, as one Customer/Supplier may have multiple GSTIN (one for each state where he conducts his business).
+>GSTIN is to be added in Address and not in Customer/Supplier, as one Customer/Supplier may have multiple GSTIN (one for each state where he conducts his business).-->
 
 
-### 3. Related Topics
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Supplier](/docs/user/manual/en/buying)
-1. [Sales Partner](/docs/user/manual/en/selling)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [ลูกค้า](/docs/user/manual/th/CRM/customer)
+1. [ซัพพลายเออร์](/docs/user/manual/th/buying)
+1. [พันธมิตรการขาย](/docs/user/manual/th/selling)
 
 {next}

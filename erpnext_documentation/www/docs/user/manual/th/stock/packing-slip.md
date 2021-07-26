@@ -1,60 +1,60 @@
 <!-- add-breadcrumbs -->
-# Packing Slip
+#สลิปการบรรจุสินค้า
 
-**A packing slip is a document that lists the items in a shipment.**
+**สลิปการบรรจุสินค้าป็นเอกสารที่แสดงรายการในการจัดส่ง**
 
-It is usually attached to the goods delivered.
+มักจะแนบมากับสินค้าที่จัดส่ง
 
-From a single Delivery Note, multiple Packing Slips can be created. It is useful when the shipment is packed in different boxes. Each box can have a weight and number of Items it contains. For example, if you're shipping 20 chairs in 4 boxes, each box can contain 5 chairs with different Packing Slips for each box.
+จากใบจัดส่งใบเดียว สามารถสร้างใบบรรจุสินค้าได้หลายใบ มีประโยชน์เมื่อสินค้าถูกบรรจุในกล่องต่างๆ แต่ละกล่องสามารถมีน้ำหนักและจำนวนสิ่งของที่บรรจุได้ ตัวอย่างเช่น หากคุณกำลังจัดส่งเก้าอี้ 20 ตัวใน 4 กล่อง แต่ละกล่องสามารถมีเก้าอี้ 5 ตัวพร้อมใบบรรจุหีบห่อที่แตกต่างกันสำหรับแต่ละกล่อง
 
-To access the Packing Slip list, go to:
-> Home > Stock > Tools > Packing Slip
+หากต้องการเข้าถึงรายการสลิปการบรรจุ ไปที่:
+> หน้าหลัก > สต็อก > เครื่องมือ > สลิปการบรรจุสินค้า
 <p></p>
-> Note: In order to create Packing Slips from a Delivery Note, the Delivery Note needs to be in the Draft stage.
+> หมายเหตุ: ในการสร้างใบบรรจุสินค้าจากใบนำส่ง ใบส่งสินค้าจะต้องอยู่ในขั้นตอนร่าง
 
-## 1. Prerequisites
-Before creating and using a Packing Slip, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้งาน สลิปการบรรจุสินค้า ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Delivery Note](/docs/user/manual/en/stock/delivery-note)
+* [หมายเหตุการจัดส่ง](/docs/user/manual/th/stock/delivery-note)
 
 
-## 2. How to create a new Packing Slip
-Usually, you should create a Packing Slip from a Delivery Note when it is in the Draft stage, however, if you want to create a Packing Slip manually, follow these steps.
+## 2. วิธีสร้างใบบรรจุสินค้าใหม่
+โดยปกติ คุณควรสร้างใบบรรจุภัณฑ์จากใบจัดส่งเมื่ออยู่ในขั้นตอนร่าง อย่างไรก็ตาม หากคุณต้องการสร้างใบจัดส่งด้วยตนเอง ให้ทำตามขั้นตอนเหล่านี้
 
-1. Go to the Packing Slip list, click on New.
-1. Select the Delivery Note.
-1. Enter the From Package No of this Packing Slip.
-1. Click on the Get Items button to fetch the Items and Quantities into the Items table.
-1. Save.
+1. ไปที่รายการสลิปการบรรจุ คลิกที่ ใหม่
+1. เลือกใบส่งของ
+1. ระบุ หมายเลขสินค้า ของสลิปการบรรจุนี้
+1. คลิกที่ปุ่ม เลือกสินค้า เพื่อดึงรายการและปริมาณลงในตารางรายการ
+1. บันทึก
 
-Most of these details will be fetched if you create the Packing Slip from the Delivery Note.
+รายละเอียดส่วนใหญ่เหล่านี้จะถูกดึงมาหากคุณสร้างใบบรรจุภัณฑ์จากใบส่งของ
 
 <img class="screenshot" alt="Packing Slip" src="{{docs_base_url}}/assets/img/stock/packing-slip.png">
 
 
-### 1.1 Additional options when creating a Packing Slip
-**To Package No**: If there are multiple packages of the same type to be shipped at once then set the From and To Package numbers. For example, package numbers 1 to 5 in one Packing Slip, then package numbers 6 to 10 in the next Packing Slip and so on. This will be shown if you print then Packing Slip. Note that this will only work if you Shipment has that many quantities of the Items.
+### 1.1 ตัวเลือกเพิ่มเติมเมื่อสร้างใบบรรจุสินค้า
+**ไปยังหมายเลขบรรจุภัณฑ์**: หากมีหลายหีบห่อที่เป็นประเภทเดียวกันที่จะจัดส่งในคราวเดียว ให้ตั้งค่าหมายเลขพัสดุจากและไปยังพัสดุภัณฑ์ ตัวอย่างเช่น หมายเลขบรรจุภัณฑ์ 1 ถึง 5 ในใบบรรจุภัณฑ์เดียว จากนั้นหมายเลขบรรจุภัณฑ์ 6 ถึง 10 ในใบบรรจุภัณฑ์ถัดไป เป็นต้น นี้จะแสดงหากคุณพิมพ์แล้วจัดส่งสลิป โปรดทราบว่าการดำเนินการนี้จะใช้ได้ก็ต่อเมื่อ การจัดส่ง ของคุณมีสินค้าในปริมาณมากเท่านั้น
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Items table
+### ตาราง 2.1 รายการ
 
-* If this is a Batched Item, you'll have to select the Batch Number.
-* The Quantity, UoM, Net Weight, and Weight UoM will be fetched from the Delivery Note.
-* Page Break will create a page break just before this item when printing.
+* หากเป็น รายการแบทช์ คุณจะต้องเลือก หมายเลขแบทช์
+* ปริมาณ UoM น้ำหนักสุทธิ และน้ำหนัก UoM จะถูกดึงมาจากใบส่งสินค้า
+* ตัวแบ่งหน้าจะสร้างตัวแบ่งหน้าก่อนรายการนี้เมื่อพิมพ์
 
-### 2.2 Package weight details
+### 2.2 รายละเอียดน้ำหนักแพ็คเกจ
 
-These details will be shown when printing the Packing Slip.
+รายละเอียดเหล่านี้จะแสดงเมื่อพิมพ์ใบบรรจุภัณฑ์
 
-**Net Weight**: This is calculated as the sum of weights of all Items in the table.
-**Gross Weight**: This is the final total weight including the weight of the packing materials used.
-**Gross Weight UOM**: A UoM can be set here for the final weight of the product.
+**น้ำหนักสุทธิ**: คำนวณเป็นผลรวมของน้ำหนักของรายการทั้งหมดในตาราง
+**น้ำหนักรวม**: นี่คือน้ำหนักรวมสุดท้ายรวมทั้งน้ำหนักของวัสดุบรรจุภัณฑ์ที่ใช้
+**Gross Weight UOM**: สามารถตั้งค่า UoM สำหรับน้ำหนักสุดท้ายของผลิตภัณฑ์ได้ที่นี่
 
-### 2.3 Letterhead
-You can print your Packing Slip on your company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+### 2.3 หัวจดหมาย
+คุณสามารถพิมพ์สลิปการบรรจุบนหัวจดหมายของบริษัทของคุณ เรียนรู้เพิ่มเติม [ที่นี่](/docs/user/manual/th/setting-up/print/letter-head)
 
 
-### 2. Related Topics
-1. [Quality Inspection](/docs/user/manual/en/stock/quality-inspection)
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
+### 2. หัวข้อที่เกี่ยวข้อง
+1. [การตรวจสอบคุณภาพ](/docs/user/manual/th/stock/quality-inspection)
+1. [Delivery Note](/docs/user/manual/th/stock/delivery-note)

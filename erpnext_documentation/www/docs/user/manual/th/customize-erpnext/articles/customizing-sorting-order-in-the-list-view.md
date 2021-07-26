@@ -1,30 +1,30 @@
 <!-- add-breadcrumbs -->
-# Customizing Sorting Order in the List View
+# การปรับแต่งการเรียงลำดับในมุมมองรายการ
 
-**Question:** I want records in my Item List sorted based on Descending Order of Item Code.
+**คำถาม:** ฉันต้องการบันทึกข้อมูลในรายการสินค้าของฉันโดยเรียงลำดับจากมากไปหาน้อยของรหัสสินค้า
 
-**Answers:** Following are the steps to customize Sort Order for the Item master. These steps will be applicable for customizing Sort Order for the other documents as well.
+**คำตอบ:** ต่อไปนี้เป็นขั้นตอนในการปรับแต่งการเรียงลำดับสำหรับรายการหลัก ขั้นตอนเหล่านี้จะใช้ได้กับการปรับแต่ง Sort Order สำหรับเอกสารอื่นๆ เช่นกัน
 
-#### Step 1: Go to Customize Form
+#### ขั้นตอนที่ 1: ไปที่ปรับแต่งแบบฟอร์ม
 
-> Home > Customization > Form Customization > Customize Form
+> หน้าแรก > การปรับแต่ง > การปรับแต่งแบบฟอร์ม > ปรับแต่งแบบฟอร์ม
 
-#### Step 2: Select DocType
+#### ขั้นตอนที่ 2: เลือก DocType
 
-Select document type for which Sort Order is to be customized.
+เลือกประเภทเอกสารที่จะกำหนดลำดับการจัดเรียง
 
 <img alt="Sort Order field" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-sorting-order-2.png">
 
-#### Step 3: Update Sort Details
+#### ขั้นตอนที่ 3: อัปเดตรายละเอียดการจัดเรียง
 
-In the Customize Form, you will find these fields.
+ในแบบฟอร์มปรับแต่ง คุณจะพบฟิลด์เหล่านี้
 
 <img alt="Sort Order Field" class="screenshot" src="{{docs_base_url}}//assets/img/customize/customize-sort-field.png">
 
 <img alt="Sort Order field" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-sorting-order-1.png">
 
-1. Sort Field: Select the Field based on which sorting will be done. It will be "Item_Code" field in the scenario.
-2. Sort Order: Sort Order will be two possible options, **Asc** for ascending, and **Desc** for descending.
+1. ฟิลด์การเรียงลำดับ: เลือกฟิลด์ตามการเรียงลำดับที่จะดำเนินการ มันจะเป็นฟิลด์ "Item_Code" ในสถานการณ์สมมติ
+2. Sort Order: Sort Order จะมีสองตัวเลือกคือ **Asc** สำหรับจากน้อยไปมาก และ **Desc** สำหรับจากมากไปน้อย
 
 {next}
 

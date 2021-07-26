@@ -1,42 +1,42 @@
 <!-- add-breadcrumbs -->
-# Document Title
+#ชื่อเอกสาร
 
-**You can customize the title of documents based on properties so that you have meaningful information for the list views.**
+**คุณปรับแต่งชื่อเอกสารตามคุณสมบัติได้ เพื่อให้คุณมีข้อมูลที่มีความหมายสำหรับมุมมองรายการ**
 
-For example, the default title on a Quotation is the customer name, but if you are dealing with only a few customers and sending lots of quotations to each customer, you may want to customize.
+ตัวอย่างเช่น ชื่อเริ่มต้นในใบเสนอราคาคือชื่อลูกค้า แต่ถ้าคุณติดต่อกับลูกค้าเพียงไม่กี่รายและส่งใบเสนอราคาให้กับลูกค้าแต่ละรายเป็นจำนวนมาก คุณอาจต้องการปรับแต่ง
 
 <img class="screenshot" alt = "Customize Title"
     src="{{docs_base_url}}/assets/img/customize/customize-document-title.png">
 
-## Setting Title Fields
+## การตั้งชื่อฟิลด์
 
-From ERPNext Version 6.0 onwards, all transactions have a 'Title' property. If there is not a title property, you can add a **Custom Field** as title and set the **Title Field** via **Customize Form**.
+ตั้งแต่ ERPNext เวอร์ชัน 6.0 เป็นต้นไป ธุรกรรมทั้งหมดจะมีคุณสมบัติ 'Title' หากไม่มีคุณสมบัติหัวเรื่อง คุณสามารถเพิ่ม **ฟิลด์ที่กำหนดเอง** เป็นชื่อและตั้งค่า **ฟิลด์ชื่อเรื่อง** ผ่าน **กำหนดแบบฟอร์ม**
 
-You can set the default value of that property by using Python style string formatting in **Default** or **Options**
+คุณสามารถตั้งค่าเริ่มต้นของคุณสมบัตินั้นได้โดยใช้การจัดรูปแบบสตริงสไตล์ Python ใน **ค่าเริ่มต้น** หรือ **ตัวเลือก**
 
-1. To edit a default title, go to Customize Form
-2. Select the Form for which you would like to change the Title Field.
-3. Edit the **Title Field** in the form.
+1. หากต้องการแก้ไขชื่อเริ่มต้น ให้ไปที่ปรับแต่งแบบฟอร์ม
+2. เลือกแบบฟอร์มที่คุณต้องการเปลี่ยนฟิลด์ชื่อ
+3. แก้ไข **ช่องชื่อ** ในแบบฟอร์ม
 
-## Defining Titles
+## การกำหนดชื่อเรื่อง
 
-You can define the title by setting document properties in braces `{}`. For example, if your document has fields `customer_name`, you can specify that as the Title of the Form.
+คุณสามารถกำหนดชื่อเรื่องโดยการตั้งค่าคุณสมบัติของเอกสารในวงเล็บปีกกา `{}` ตัวอย่างเช่น หากเอกสารของคุณมีช่อง "customer_name" คุณสามารถระบุให้เป็นชื่อของแบบฟอร์มได้
 
 <img class="screenshot" alt = "Customize Title"
     src="{{docs_base_url}}/assets/img/customize/customize erpnext-defining-titles.gif">
 
-Alternatively, you can also define a particular field as the 'Title Field' in Customize Form.
+อีกวิธีหนึ่ง คุณยังสามารถกำหนดฟิลด์เฉพาะเป็น 'ชื่อฟิลด์' ในแบบฟอร์มปรับแต่ง
 
 <img class="screenshot" alt = "Customize Title"
     src="{{docs_base_url}}/assets/img/customize/customize-document-title-6.png">
 
-## Fixed or Editable Titles
+## ชื่อคงที่หรือแก้ไขได้
 
-If your title is generated as a default title, it can be edited by the user by clicking on the heading of the document.
+หากชื่อของคุณถูกสร้างขึ้นเป็นชื่อเริ่มต้น ผู้ใช้สามารถแก้ไขได้โดยคลิกที่ส่วนหัวของเอกสาร
 
 <img class="screenshot" alt = "Editable Title"
     src="{{docs_base_url}}/assets/img/customize/customize-document title.gif">
 
-If you want a fixed title, you can set the rule in the **Options** property. In this way, the title will be automatically updated every time the document is updated.
+หากคุณต้องการชื่อแบบตายตัว คุณสามารถตั้งค่ากฎในคุณสมบัติ **ตัวเลือก** ด้วยวิธีนี้ ชื่อเรื่องจะได้รับการอัปเดตโดยอัตโนมัติทุกครั้งที่มีการอัปเดตเอกสาร
 
 {next}

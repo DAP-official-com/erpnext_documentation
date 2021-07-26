@@ -1,110 +1,110 @@
 <!-- add-breadcrumbs -->
-# Blog Post
+# บล็อกโพสต์
 
-**A Blog Post is an article on your website.**
+**บล็อกโพสต์คือบทความบนเว็บไซต์ของคุณ**
 
-Blogs are a great way to share your thoughts about your business.
-It helps keep your customers and readers updated on news related to your business.
+บล็อกเป็นวิธีที่ดีในการแบ่งปันความคิดของคุณเกี่ยวกับธุรกิจของคุณ
+ช่วยให้ลูกค้าและผู้อ่านอัปเดตข่าวสารที่เกี่ยวข้องกับธุรกิจของคุณ
 
-In the age of the internet, writing assumes a lot of significance because when
-people come to your website, they want to read about you and your product.
+ในยุคของอินเทอร์เน็ต การเขียนมีความสำคัญมากเพราะเมื่อ
+ผู้คนมาที่เว็บไซต์ของคุณ พวกเขาต้องการอ่านเกี่ยวกับคุณและผลิตภัณฑ์ของคุณ
 
-To access the Blog Post, go to:
-> Home > Website > Blog > Blog Post
+ในการเข้าถึงบล็อกโพสต์ ไปที่:
+> หน้าแรก > เว็บไซต์ > บล็อก > บล็อกโพสต์
 
-## 1. How to create a Blog Post
+## 1. วิธีสร้างบล็อกโพสต์
 
-1. Go to the Blog Post list and click on New.
-1. Enter the Title, Blog Category, Blogger, and the Content.
-1. Enable Published and click on Save.
+1. ไปที่รายการบล็อกโพสต์แล้วคลิกใหม่
+1. ป้อนชื่อ หมวดหมู่บล็อก บล็อกเกอร์ และเนื้อหา
+1. เปิดใช้งานเผยแพร่แล้วคลิกบันทึก
 
-The Blog Intro is a short description of your blog that appears just after the
-title and before the content.
+บทนำของบล็อกคือคำอธิบายสั้นๆ เกี่ยวกับบล็อกของคุณที่ปรากฏต่อจากเครื่องหมาย
+ชื่อเรื่องและก่อนเนื้อหา
 
 ![New Blog Post](/docs/assets/img/website/new-blog-post.png)
 
-You can write your blog in Rich Text, Markdown, or HTML. If you want to write
-simple content pages, Rich Text and Markdown are great options. Learn how to
-attach images to your blog [here](/docs/user/manual/en/website/web-page#images).
+คุณสามารถเขียนบล็อกของคุณใน Rich Text, Markdown หรือ HTML ถ้าคุณต้องการเขียน
+หน้าเนื้อหาอย่างง่าย Rich Text และ Markdown เป็นตัวเลือกที่ยอดเยี่ยม เรียนรู้วิธีการ
+แนบรูปภาพในบล็อกของคุณ [ที่นี่](/docs/user/manual/th/website/web-page#images)
 
-> Learn markdown in a few minutes at [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+> เรียนรู้ markdown ในไม่กี่นาทีที่ [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 
 ![Blog Post in Markdown](/docs/assets/img/website/blog-post-in-markdown.png)
-*Blog Post in Markdown*
+*บล็อกโพสต์ในรูปแบบ Markdown*
 
-View your Blog Post by clicking on **See on Website** in the sidebar.
+ดูบล็อกโพสต์ของคุณโดยคลิกที่ **ดูบนเว็บไซต์** ในแถบด้านข้าง
 ![Blog Post](/docs/assets/img/website/blog-post.png)
-*Blog Post*
+*บล็อกโพสต์*
 
-Check the **Disable Comments** option if you'd like to disable the ability for readers to add comments to the current blog post.
+ทำเครื่องหมายที่ตัวเลือก **ปิดใช้งานความคิดเห็น** หากคุณต้องการปิดใช้งานความสามารถในการให้ผู้อ่านเพิ่มความคิดเห็นในโพสต์บล็อกปัจจุบัน
 ![Blog Post](/docs/assets/img/website/blog-post-disable-comments.png)
 
 ![Blog Post](/docs/assets/img/website/blog-post-no-comments.png)
-*Adding Comments Disabled*
+*ปิดการแสดงความคิดเห็น*
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Blogger
+### 2.1 บล็อกเกอร์
 
-Blogger is a user who can post blogs. To create a Blogger, go to:
+Blogger คือผู้ใช้ที่สามารถโพสต์บล็อกได้ หากต้องการสร้างบล็อกเกอร์ ให้ไปที่:
 
-**Home > Website > Blog > Blogger**.
+**หน้าแรก > เว็บไซต์ > บล็อก > บล็อกเกอร์**
 
-You can mention a short bio about the blogger and also set an avatar here.
+คุณสามารถพูดถึงประวัติสั้น ๆ เกี่ยวกับบล็อกเกอร์และตั้งอวาตาร์ได้ที่นี่
 
 ![Blogger](/docs/assets/img/website/blogger.png)
-*Blogger*
+*บล็อกเกอร์*
 
-The preview will be shown at the end of the blog post.
+ตัวอย่างจะแสดงที่ส่วนท้ายของบล็อกโพสต์
 ![Blogger Preview](/docs/assets/img/website/blogger-preview.png)
-*Blogger Preview*
+*ตัวอย่างบล็อกเกอร์*
 
-### 2.2 Blog Category
+### 2.2 หมวดหมู่บล็อก
 
-You can group your blogs into categories. To create a new Blog Category, go to:
+คุณสามารถจัดกลุ่มบล็อกของคุณเป็นหมวดหมู่ได้ หากต้องการสร้างหมวดหมู่บล็อกใหม่ ให้ไปที่:
 
-**Home > Website > Blog > Blog Category**.
+**หน้าแรก > เว็บไซต์ > บล็อก > หมวดหมู่บล็อก**
 
 ![Blog Category](/docs/assets/img/website/blog-category.png)
-*Blog Category*
+*หมวดหมู่บล็อก*
 
-If you click on **See on Website** in the sidebar, you'll be redirected to a
-list of blogs under that category.
+หากคุณคลิก **ดูบนเว็บไซต์** ในแถบด้านข้าง คุณจะถูกนำไปที่
+รายชื่อบล็อกในหมวดนั้นๆ
 
 ![Blog Category - General](/docs/assets/img/website/blog-category-web-view.png)
-*Blog Category - General*
+*หมวดหมู่บล็อก - ทั่วไป*
 
-### 2.3 Meta Tags
+### 2.3 เมตาแท็ก
 
-Meta tags are HTML tags which describe a page and its content to a search engine or a social media platform. A meta description provides a brief description of a webpage. 
+เมตาแท็กคือแท็ก HTML ที่อธิบายหน้าและเนื้อหาไปยังเครื่องมือค้นหาหรือแพลตฟอร์มโซเชียลมีเดีย คำอธิบายเมตาให้คำอธิบายสั้น ๆ ของหน้าเว็บ
 
-In HTML, the meta description tag will be written as follows:
+ใน HTML แท็กคำอธิบายเมตาจะถูกเขียนดังนี้:
 
 ```<head>
     <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
     </head>
 ```
 
-Under the SEO section, you can add the meta description and image for your blog post. ERPNext will generate a preview of the blog when listed as a search result by Google.
+ในส่วน SEO คุณสามารถเพิ่มคำอธิบายเมตาและรูปภาพสำหรับโพสต์บล็อกของคุณได้ ERPNext จะสร้างตัวอย่างบล็อกเมื่อแสดงเป็นผลการค้นหาโดย Google
 
-If you leave this section empty, the blog introduction or the first 140 characters of the blog will be shown as the meta description. In the same way, if you leave the meta image empty, the first image in the blog will be selected.
+หากคุณปล่อยส่วนนี้ว่างไว้ บทนำบล็อกหรือ 140 อักขระแรกของบล็อกจะแสดงเป็นคำอธิบายเมตา ในทำนองเดียวกัน หากคุณปล่อยภาพเมตาว่างไว้ ภาพแรกในบล็อกจะถูกเลือก
 
 ![Google Search Preview](/docs/assets/img/website/blog-post-seo-meta.png)
-*Blog Post Google Search Preview*
+*บล็อกโพสต์แสดงตัวอย่างการค้นหาของ Google*
 
-On submitting the blog, you can also preview how the blog will look when shared on a social media platform like Facebook or Twitter. To check this, use the debugging tools offered by the platforms:
+เมื่อส่งบล็อก คุณยังสามารถดูตัวอย่างลักษณะของบล็อกเมื่อแชร์บนแพลตฟอร์มโซเชียลมีเดีย เช่น Facebook หรือ Twitter ในการตรวจสอบนี้ ให้ใช้เครื่องมือแก้ไขข้อบกพร่องที่แพลตฟอร์มนำเสนอ:
 
-- Facebook: [Sharing Debugger](https://developers.facebook.com/tools/debug/)
+- Facebook: [การแชร์ดีบักเกอร์](https://developers.facebook.com/tools/debug/)
 
-- Twitter: [Card Validator](https://cards-dev.twitter.com/validator)
+- Twitter: [ตัวตรวจสอบการ์ด](https://cards-dev.twitter.com/validator)
 
-- LinkedIn: [Post Inspector](https://www.linkedin.com/post-inspector/inspect/)
+- LinkedIn: [ตรวจสอบโพสต์](https://www.linkedin.com/post-inspector/inspect/)
 
-To check the post preview, simply enter the webpage/blog link in the tool:
+หากต้องการตรวจสอบตัวอย่างโพสต์ เพียงป้อนลิงก์หน้าเว็บ/บล็อกในเครื่องมือ:
 
-![Facebook Sharing Debugger](/docs/assets/img/website/blog-post-facebook-debugger.png)
-*Using Facebook's Sharing Debugger Tool*
+![โปรแกรมแก้ไขข้อบกพร่องการแชร์ Facebook](/docs/assets/img/website/blog-post-facebook-debugger.png)
+*การใช้เครื่องมือดีบักเกอร์การแชร์ของ Facebook*
 
-Using these tools, you can optimize your blog post for sharing.
+คุณสามารถใช้เครื่องมือเหล่านี้เพื่อเพิ่มประสิทธิภาพการโพสต์บล็อกของคุณสำหรับการแบ่งปัน
 
 {next}

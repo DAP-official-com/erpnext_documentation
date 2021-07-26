@@ -1,100 +1,80 @@
-# Leave Type
+#ประเภทการลา
 
-**Leave Type refers to the types of leaves allocated to an Employee which they can use while making Leave Applications.**
+**ประเภทการลาหมายถึงประเภทของการลาที่จัดสรรให้กับพนักงานซึ่งสามารถใช้ในขณะที่ทำใบแจ้งลาได้**
 
 
-You can create any number of Leave Types based on your company’s requirements.
+คุณสามารถสร้างประเภทการลาได้ไม่จำกัดจำนวนตามความต้องการของบริษัทของคุณ
 
-To access Leave Type, go to:
+ในการเข้าถึงประเภทการลา ให้ไปที่:
 
-> Home > Human Resources > Leaves > Leave Type
+> หน้าหลัก > ประเภทการลา > การลา > ประเภทการลา
 
-## 1. How to create a Leave Type
+## 1. วิธีสร้างประเภทการลา
 
-1. Go to Leave Type list, click on New.
-1. Enter Leave Type Name.
-1. Enter Max Leaves Allowed, Applicable After (Working Days), Maximum Continuous Days Applicable (optional).
-1. Save.
+1. ไปที่รายการ ประเภทการลา คลิก หม่
+1. ป้อนชื่อประเภทการลา
+1. ป้อนจำนวนสูงสุดที่อนุญาต ใช้ได้หลังจาก (วันทำการ) จำนวนวันที่ต่อเนื่องสูงสุดที่ใช้ได้ (ตัวเลือก)
+1. บันทึก
 
     <img class="screenshot" alt="New Leave Type"
     src="{{docs_base_url}}/assets/img/human-resources/new-leave-type.png">
 
-Below is a detailed explanation of all the fields and checkboxes in Leave Type.
+> เปิดตัวในเวอร์ชั่น 13
 
-* **Max Leaves Allowed:** This field allows you to set the maximum number of the annual allocation of this Leave Type while creating the Leave Policy.
-
-* **Applicable After (Working Days):** Enter the minimum number of working days here. Only the employees who have worked for this number of days or more will be allowed to apply for this particular leave type. Any other leaves (such as Casual Leave, Sick Leave.etc.) availed by the Employees after their joining date will also be considered while calculating working days of the Employee.
-
-* **Maximum Continuous Days Applicable:** It refers to the maximum number of days this particular Leave Type can be availed at a stretch. If an employee exceeds the maximum number of days, their extended leave will be considered as ‘Leave Without Pay'.
-
-* **Is Carry Forward:** If checked, the balance leaves of this Leave Type will be carried forward to the next allocation period.
-
-* **Is Leave Without Pay:** This ensures that the Leave Type will be treated as leaves without pay and salary will get deducted for this Leave Type.
-
-* **Is Optional:** Optional Leaves are holidays that Employees can choose to avail from a list of holidays published by the company. The Holiday List for Optional Leaves can have any number of holidays, but you can restrict the number of such leaves by setting the Max Days Leave Allowed field.
-
-* **Allow Negative Balance:** If checked, the system will always allow to apply and approve [Leave Applications](/docs/user/manual/en/human-resources/leave-application) for the Leave Type, even if there is no leave balance.
-
-* **Include holidays within leaves as leaves:** Check this option if you wish to count holidays within leaves as a ‘leave’. For example, if an Employee has applied for leave on Friday and Monday, and Saturday and Sunday are weekly offs, if the 'Include holidays within leaves as leaves' checkbox for the Leave Type is checked, the system will consider Saturday as Sunday as leaves too. Such holidays will be deducted from the total number of leaves.
-
-* **Is Compensatory:** Compensatory leaves are leaves granted for working overtime or on holidays, normally compensated as an encashable leave. You can check this option to mark the Leave Type as compensatory. An Employee can request for compensatory leaves using [Compensatory Leave Request](/docs/user/manual/en/human-resources/compensatory-leave-request).
-
-> Introduced in version 13
-
-* **Is Partially Paid Leaves:** This checkbox ensures that Leave Type will be treated as partially paid and some part of daily earnings will be paid through salary slip. If this checkbox is enabled then a field "Fraction of Daily Salary Per Leave" appears where you can define the fraction of daily salary paid on the partial leave day.
+* **ลาชำระแล้วบางส่วน:** เครื่องหมายนี้ช่วยให้แน่ใจว่าประเภทการลาจะถือว่าได้รับเงินบางส่วน และรายได้บางส่วนรายวันจะจ่ายผ่านสลิปเงินเดือน หากช่องทำเครื่องหมายนี้เปิดใช้งาน ช่อง "เศษส่วนของเงินเดือนรายวันต่อการลางาน" จะปรากฏขึ้น ซึ่งคุณสามารถกำหนดเศษส่วนของเงินเดือนรายวันที่จ่ายในวันที่ลางานบางส่วนได้
 
     <img class="screenshot" alt="New Leave Type"
     src="{{docs_base_url}}/assets/img/human-resources/is-partially-paid-leaves.png">
 
-> **Note:** The Leave Type can be either Leave Without pay or Partially Paid.
+> **หมายเหตุ:** ประเภทการลาสามารถเป็นได้ทั้ง การลาโดยไม่ต้องจ่าย หรือ ชำระเงินบางส่วน
 
-## 2. Features
+## 2. คุณสมบัติ
 
 ### 2.1 Leave Encashment
 
-It is possible that Employees can receive cash from their Employer for unused leaves granted to them in a Leave Period. Not all Leave Types need to be encashable, so, you should set "Allow Encashment" for only those Leave Types which are encashable.
+เป็นไปได้ว่าพนักงานสามารถรับเงินสดจากนายจ้างสำหรับใบลาที่ไม่ได้ใช้ที่ได้รับในช่วงระยะเวลาลางาน ไม่จำเป็นต้องเข้ารหัสทุกประเภทการลางาน ดังนั้น คุณควรตั้งค่า "Allow Encashment" สำหรับประเภทการลาที่สามารถเข้ารหัสได้เท่านั้น
 
-> **Note:** Leave encashment is allowed only in the last month of the Leave Period.
+> **หมายเหตุ:** Leave Encashment สามารถใช้ในเดือนสุดท้ายของระยะเวลาลาเท่านั้น
 
 <img class="screenshot" alt="Leave Encashment"
         src="{{docs_base_url}}/assets/img/human-resources/leave-encashment.png">
 
-**Encashment Threshold Days:**  This field indicates the number of leave days the Employees won't be able to encash. Above the mentioned days, the Employee is eligible to encash leaves.
+**วันเกณฑ์การรับเงิน:** ฟิลด์นี้ระบุจำนวนวันที่ลาที่พนักงานจะไม่สามารถรับเงินสดได้ เหนือวันดังกล่าว ลูกจ้างมีสิทธิได้รับเงินลา
 
-For example, if there are 10 leaves of a particular Leave Type which is encashable, and the Employee has 8 leaves left. If Encashment Threshold Days = 5, the Employee is given encashment of only 8 - 5 = 3 leaves.
+ตัวอย่างเช่น ถ้ามี 10 ใบของประเภทการลาใดประเภทหนึ่งที่สามารถ encashable ได้ และพนักงานมีเหลืออีก 8 ใบ ถ้าวันเกณฑ์การจ่ายเงิน = 5 พนักงานจะได้รับเงินสดเพียง 8 - 5 = 3 ใบ
 
-**Earning Component:** This field allows you to specify the Salary Component that will be encashed to Employees as a part of their Salary in the Salary Slip.
+**ส่วนประกอบในการหารายได้:** ช่องนี้ให้คุณระบุส่วนประกอบเงินเดือนที่จะถูกโอนไปยังพนักงานโดยเป็นส่วนหนึ่งของเงินเดือนของพวกเขาในสลิปเงินเดือน
 
-> **Note:** On submitting a [Leave Encashment](/docs/user/manual/en/human-resources/leave-encashment) for an Employee, ERPNext automatically creates an [Additional Salary](/docs/user/manual/en/human-resources/additional-salary) which will get added to the Salary Slip of the Employee when processing the next payroll.
+> **หมายเหตุ:** ในการส่ง [Leave Encashment](/docs/user/manual/th/human-resources/leave-encashment) ให้กับพนักงาน ERPNext จะสร้าง [เงินเดือนเพิ่มเติม](/docs/user/ manual/th/human-resources/additional-salary) ซึ่งจะถูกเพิ่มเข้าไปในสลิปเงินเดือนของพนักงานเมื่อดำเนินการจ่ายเงินเดือนครั้งต่อไป
 
-### 2.2 Earned Leave
+### 2.2 ลาที่ได้รับ
 
-Earned Leaves are leaves earned by an Employee after working with the company for a certain amount of time. Checking "Is Earned Leave" will allot leaves pro-rata basis by automatically updating Leave Allocation for leaves of this type at intervals set by 'Earned Leave Frequency'.
+Earned Leaves คือใบที่พนักงานได้รับหลังจากทำงานกับบริษัทเป็นระยะเวลาหนึ่ง การตรวจสอบ "ได้รับเงิน" จะจัดสรรใบตามสัดส่วนโดยอัปเดตการจัดสรรการลาโดยอัตโนมัติสำหรับใบไม้ประเภทนี้ตามช่วงเวลาที่กำหนดโดย 'ความถี่การลาที่ได้รับ'
 
 
-For example, an Employee is allotted 24 Privilege Leaves in a year, wherein the Privilege Leave is set as Earned Leave with Monthly allotment. In this case, the Employee will earn 2 (24 leaves/12 months) Privilege Leaves at the end of every month. The leave allotment process (background job) will only allot leaves considering the max leaves for the leave type and will round to 'Rounding' for fractions.
+ตัวอย่างเช่น พนักงานได้รับสิทธิ์ 24 สิทธิ์ในการลางานในหนึ่งปี โดยที่สิทธิ์ลางานจะถูกตั้งค่าเป็นวันลาที่ได้รับพร้อมการจัดสรรรายเดือน ในกรณีนี้ พนักงานจะได้รับสิทธิพิเศษ 2 (24 ใบ/12 เดือน) ทุกสิ้นเดือน ขั้นตอนการจัดสรรการลา (งานเบื้องหลัง) จะจัดสรรเฉพาะการลาโดยพิจารณาจำนวนใบสูงสุดสำหรับประเภทการลางาน และจะปัดเศษเป็น 'การปัดเศษ' สำหรับเศษส่วน
 
 <img class="screenshot" alt="Earned Leave"
         src="{{docs_base_url}}/assets/img/human-resources/earned-leave.png">
 
-> **Note:** The initial allocation of this Leave Tye will be 0. Leaves will be updated at the end of the Month (or as per the 'Earned Leave Frequency' set).
+> **หมายเหตุ:** การจัดสรรเริ่มต้นของ ประเภทการลา นี้จะเป็น 0 การลางานจะได้รับการอัปเดตเมื่อสิ้นเดือน (หรือตามชุด 'Earned Leave Frequency')
 
-### 2.3 Default Leave Types
+### 2.3 ประเภทการลาเริ่มต้น
 
-There are some pre-loaded Leave Types in the system, as below:
+มีประเภทการลาที่โหลดไว้ล่วงหน้าในระบบดังนี้:
 
-- **Leave Without Pay:** You can avail these leaves for different purposes, such as extended medical issues, educational purposes, or unavoidable personal reasons. The 'Leave Without Pay' checkbox for this Leave Type is checked by default. The employee does not get paid for such leaves.
-- **Privilege leave:** These are like earned leaves that can be availed for travel, family vacation, and so on.
-- **Sick leave:** You can avail of these leaves if you are unwell.
-- **Compensatory off:** These are compensatory leaves allotted to employees for overtime work. The 'Is Compensatory' checkbox for this Leave Type is checked by default.
-- **Casual leave:** You can avail of this leave to take care of urgent and unseen matters.
+- **การลาโดยไม่จ่าย:** คุณสามารถใช้ใบเหล่านี้เพื่อวัตถุประสงค์ที่แตกต่างกัน เช่น การขยายเวลาปัญหาทางการแพทย์ วัตถุประสงค์ด้านการศึกษา หรือเหตุผลส่วนตัวที่หลีกเลี่ยงไม่ได้ ช่องกาเครื่องหมาย 'ออกโดยไม่จ่าย' สำหรับประเภทการลานี้ถูกเลือกไว้โดยค่าเริ่มต้น พนักงานไม่ได้รับเงินสำหรับใบดังกล่าว
+- **สิทธิลาพักร้อน:** เปรียบเสมือนใบไม้ที่หามาได้เพื่อใช้สำหรับการเดินทาง เที่ยวพักผ่อนกับครอบครัว และอื่นๆ
+- **ลาป่วย:** คุณสามารถใช้ใบเหล่านี้ได้หากคุณไม่สบาย
+- **ชดเชยนอกเวลา:** เป็นใบชดเชยที่จัดสรรให้กับพนักงานสำหรับการทำงานล่วงเวลา ช่องกาเครื่องหมาย 'เป็นการชดเชย' สำหรับประเภทการลางานนี้ถูกเลือกไว้โดยค่าเริ่มต้น
+- **วันลาพักผ่อน:** คุณสามารถใช้ประโยชน์จากการลานี้เพื่อดูแลเรื่องเร่งด่วนและเรื่องที่มองไม่เห็น
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Leave Period](/docs/user/manual/en/human-resources/leave-period)
-1. [Leave Policy](/docs/user/manual/en/human-resources/leave-policy)
-1. [Leave Allocation](/docs/user/manual/en/human-resources/leave-allocation)
-1. [Leave Application](/docs/user/manual/en/human-resources/leave-application)
-1. [Compensatory Leave Request](/docs/user/manual/en/human-resources/compensatory-leave-request)
-1. [Leave Encashment](/docs/user/manual/en/human-resources/leave-encashment)
+1. [ระยะเวลาการลา](/docs/user/manual/th/human-resources/leave-period)
+1. [นโยบายการลา](/docs/user/manual/th/human-resources/leave-policy)
+1. [การจัดสรรการลา](/docs/user/manual/th/human-resources/leave-allocation)
+1. [ใบแจ้งการลา](/docs/user/manual/th/human-resources/leave-application)
+1. [คำขอลางานชดเชย](/docs/user/manual/th/human-resources/compensatory-leave-request)
+1. [Leave Encashment](/docs/user/manual/th/human-resources/leave-encashment)
 

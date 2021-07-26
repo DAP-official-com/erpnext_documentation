@@ -1,23 +1,23 @@
 <!-- add-breadcrumbs -->
-#Allow Over Delivery/Billing
+#อนุญาตให้การจัดส่ง/การเรียกเก็บเงิน เกิน
 
-When creating a Delivery Note, system validates if item's qty is same as in the Sales Order. If item's qty has been increased, you will get the validation message of over-delivery or receipt. 
+เมื่อสร้าง ใบส่งสินค้า ระบบจะตรวจสอบว่าปริมาณของสินค้าเหมือนกับในใบสั่งขายหรือไม่ หากปริมาณของสินค้าเพิ่มขึ้น คุณจะได้รับข้อความตรวจสอบความถูกต้องของการจัดส่งเกินหรือใบเสร็จ
 
-Considering the case fo sales, if you want to be able to deliver more items than mentioned in the Sales Order, you should update "Allow over delivery or receipt upto this percent" in the Item master.
+เมื่อพิจารณาถึงกรณีของการขาย ถ้าคุณต้องการส่งสินค้ามากกว่าที่ระบุไว้ในใบสั่งขาย คุณควรอัปเดต "อนุญาตเกินการจัดส่งหรือการรับไม่เกินเปอร์เซ็นต์นี้" ในข้อมูลรายการหลัก
 
 <img alt="Itemised Limit Percentage" class="screenshot" src="{{docs_base_url}}/assets/img/articles/limit-1.png">
 
-When creating an invoice, item's rate is also validated based on the preceding transaction like Sales Order. This also applies when creating Purchase Receipt or Purchaes Invoice from Purchase Order. Updating "Allow over delivery or receipt upto this percent" will be affective in all sales and purchase transactions.
+เมื่อสร้างใบแจ้งหนี้ อัตราของสินค้าจะได้รับการตรวจสอบตามธุรกรรมก่อนหน้านี้ เช่น ใบสั่งขาย นอกจากนี้ยังใช้เมื่อสร้างใบเสร็จรับเงินหรือใบสั่งซื้อจากใบสั่งซื้อ การอัปเดต "อนุญาตให้ส่งเกินหรือใบเสร็จไม่เกินเปอร์เซ็นต์ที่กำหนดไว้" จะมีผลกับธุรกรรมการขายและการซื้อทั้งหมด
 
-For example, if you have ordered 100 units of an item, and if item's over receipt percent is 50, then you are allowed to make Purchase Receipt for upto 150 units.
+ตัวอย่างเช่น หากคุณสั่งซื้อสินค้า 100 หน่วย และหากสินค้ามีเปอร์เซ็นต์การรับสินค้าเกิน 50 คุณจะได้รับอนุญาตให้สร้างใบเสร็จการซื้อได้ไม่เกิน 150 หน่วย
 
-Update global value for "Allow over delivery or receipt upto this percent" from Stock Settings. Value updated here will be applicable for all the items.
+อัปเดตค่าส่วนกลางสำหรับ "อนุญาตให้ส่งเกินหรือรับไม่เกินเปอร์เซ็นต์นี้" จากการตั้งค่าสต็อค ค่าที่อัพเดทที่นี่จะใช้ได้กับทุกรายการ
 
-1. Go to `Stock > Setup > Stock Settings`
+1. ไปที่ `สต็อก > ตั้งค่า > การตั้งค่าสต็อก'
 
-2. Set `Limit Percentage`.
+2. ตั้งค่า 'เปอร์เซ็นต์ขีดจำกัด'
 
-3. Save Stock Settings.
+3. บันทึกการตั้งค่าสต็อก
 
 <img alt="Item wise Allowance percentage" class="screenshot" src="{{docs_base_url}}/assets/img/articles/limit-2.png">
 

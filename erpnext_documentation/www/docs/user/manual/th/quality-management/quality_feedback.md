@@ -1,29 +1,29 @@
 <!-- add-breadcrumbs -->
-# Quality Feedback
+#ผลตอบรับคุณภาพ
 
-**Quality Feedback is the information that a Customer expresses about the satisfaction or dissatisfaction about the products or services you offer.**
+**ผลตอบรับด้านคุณภาพคือข้อมูลที่ลูกค้าแสดงออกเกี่ยวกับความพึงพอใจหรือความไม่พอใจเกี่ยวกับผลิตภัณฑ์หรือบริการที่คุณนำเสนอ**
 
-Quality Feedback has different fields to rate different parameters. The Customer/User can easily give their feedback by selecting their template to rate on different parameters and also provide qualitative feedback on these parameters.
+คำติชมด้านคุณภาพมีฟิลด์ที่แตกต่างกันเพื่อให้คะแนนพารามิเตอร์ต่างๆ ลูกค้า/ผู้ใช้สามารถให้ข้อเสนอแนะได้อย่างง่ายดายโดยเลือกเทมเพลตเพื่อให้คะแนนกับพารามิเตอร์ต่างๆ และให้ข้อเสนอแนะเชิงคุณภาพเกี่ยวกับพารามิเตอร์เหล่านี้
 
-You can also fetch the parameters using a [Quality Feedback Template](/docs/user/manual/en/quality-management/quality-feedback-template). The templates store preset information for you to select in the Quality Feedback.
+คุณยังสามารถดึงข้อมูลพารามิเตอร์โดยใช้ [เทมเพลตคำติชมคุณภาพ](/docs/user/manual/th/quality-management/quality-feedback-template) เทมเพลตจะเก็บข้อมูลที่ตั้งไว้ล่วงหน้าเพื่อให้คุณเลือกในคำติชมด้านคุณภาพ
 
-If the Feedback is not as per expectations, a Quality Action may be initialized on the basis of the seriousness of the Feedback.
+หากคำติชมไม่เป็นไปตามความคาดหวัง การดำเนินการด้านคุณภาพอาจเริ่มต้นได้บนพื้นฐานของความจริงจังของคำติชม
 
-To access Quality Feedback, go to:
-> Home > Quality > Feedback > Quality Feedback
+หากต้องการเข้าถึงคำติชมด้านคุณภาพ ให้ไปที่:
+> หน้าหลัก > คุณภาพ > คำติชม > คำติชมคุณภาพ
 
-## 1. How to create a Quality Feedback
+## 1. วิธีสร้างคำติชมที่มีคุณภาพ
 
-1. Go to the Quality Feedback list, click on New.
-1. Select whether Feedback is by a Customer or a User (ERPNext account User).
-1. Select the particular Customer or User.
-1. Selecting a Quality Feedback Template will automatically populate the parameters for the Quality Feedback.
-1. The date will be automatically set to the current date.
-1. The Parameters table has the following columns:
+1. ไปที่รายการ Quality Feedback คลิก New
+1. เลือกว่าคำติชมมาจากลูกค้าหรือผู้ใช้ (ผู้ใช้บัญชี ERPNext)
+1. เลือกลูกค้าหรือผู้ใช้เฉพาะ
+1. การเลือกเทมเพลตคำติชมคุณภาพจะเติมพารามิเตอร์สำหรับคำติชมคุณภาพโดยอัตโนมัติ
+1. วันที่จะถูกตั้งค่าโดยอัตโนมัติเป็นวันที่ปัจจุบัน
+1. ตารางพารามิเตอร์มีคอลัมน์ต่อไปนี้:
 
-    - Parameter: Various Parameters that are pre-defined in the Quality Feedback Template you create.
-    - Rating: Rating for a parameter from 1 to 5.
-    - Feedback: Feedback based on the given Rating.
-1. Save.
+    - พารามิเตอร์: พารามิเตอร์ต่างๆ ที่กำหนดไว้ล่วงหน้าในเทมเพลตคำติชมคุณภาพที่คุณสร้างขึ้น
+    - การให้คะแนน: การให้คะแนนสำหรับพารามิเตอร์ตั้งแต่ 1 ถึง 5
+    - คำติชม: คำติชมตามการให้คะแนนที่กำหนด
+1. บันทึก
 
     <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback.gif">

@@ -1,73 +1,73 @@
 <!-- add-breadcrumbs -->
-# Item Variants
+# รายการสินค้า
 
-**An Item Variant is a version of an Item with different attributes like sizes or colors.**
+**รูปแบบรายการคือเวอร์ชันของรายการที่มีคุณสมบัติต่างกัน เช่น ขนาดหรือสี**
 
-Eg: Suppose t-shirt is an Item and it comes in different sizes and colors like small, medium, large and red, blue, green. In ERPNext the t-shirt will be considered as an Item template and each of the variations will be an Item Variant. 
+ตัวอย่าง: สมมติว่าเสื้อยืดเป็นสินค้าและมีหลายขนาดและหลายสี เช่น เล็ก กลาง ใหญ่ และแดง น้ำเงิน เขียว ใน ERPNext เสื้อยืดจะถือเป็นเทมเพลตรายการและรูปแบบแต่ละรายการจะเป็นแบบรายการ
 
-A _blue_ t-shirt in size _small_ rather than just a t-shirt. Item variants let you treat the _small_, _medium_, and _large_ versions of a t-shirt as variations of one Item 't-shirt'.
+เสื้อยืด _blue_ ขนาด _small_ ไม่ใช่แค่เสื้อยืด ตัวเลือกสินค้าช่วยให้คุณปฏิบัติต่อเสื้อยืดรุ่น _small_, _medium_ และ _large_ เป็นรูปแบบหนึ่งของ 'เสื้อยืด' รายการหนึ่งได้
 
-Without Item variants, you would have to treat the _small_, _medium_ and _large_ versions of a t-shirt as three separate Items.
+หากไม่มีตัวเลือกรายการ คุณจะต้องถือว่าเสื้อยืดรุ่น _small_, _medium_ และ _large_ เป็นสามรายการแยกกัน
 
-## 1. Using Item Variants
+## 1. การใช้รายการสินค้า
 
-Variants can be based on two things:
+ตัวแปรสามารถขึ้นอยู่กับสองสิ่ง:
 
-1. Item Attributes
-1. Manufacturers
+1. คุณสมบัติของไอเทม
+1. ผู้ผลิต
 
-> Tip: Once an item template is created, when you update this template, all the variants are also updated accordingly.
+> เคล็ดลับ: เมื่อสร้างเทมเพลตรายการแล้ว เมื่อคุณอัปเดตเทมเพลตนี้ ตัวเลือกสินค้าทั้งหมดจะได้รับการอัปเดตตามนั้นด้วย
 
-### 1.1 Creating the Item Variant Template
+### 1.1 การสร้างเทมเพลตรายการสินค้า
 
-1. To use Item Variants in ERPNext, create an Item and tick 'Has Variants' under Variants. 
+1. ในการใช้ รายการสินค้า ใน ERPNext ให้สร้าง สินค้า และทำเครื่องหมายที่ 'Has Variants' ใต้ Variants
 
-1. The Item then shall be referred to as a so-called 'Template'. Such a Template is not identical to a regular 'Item' any longer. For example, it (the Template) cannot be used directly in any transaction (Sales Order, Delivery Note, Purchase Invoice) itself.
+1. รายการนั้นจะเรียกว่า 'แม่แบบ' เทมเพลตดังกล่าวไม่เหมือนกับ 'ไอเท็ม' ปกติอีกต่อไป ตัวอย่างเช่น ไม่สามารถใช้ (เทมเพลต) ในธุรกรรมใดๆ ได้โดยตรง (ใบสั่งขาย ใบส่งสินค้า ใบกำกับสินค้า)
  
-1. Only the Variants of the Item (_blue_ t-shirt in size _small)_ can be practically used. Therefore it would be ideal to decide whether an item 'Has Variants' or not directly when creating it.
+1. ใช้ได้จริงเฉพาะ Variants of the Item (_blue_ t-shirt in size _small)_ เท่านั้น ดังนั้นจึงเป็นการดีที่จะตัดสินใจว่ารายการ 'มีรูปแบบ' หรือไม่โดยตรงเมื่อสร้าง
     <img class="screenshot" alt="Has Variants" src="{{docs_base_url}}/assets/img/stock/item-has-variants.png">
 
-1. On selecting 'Has Variants' a table will appear. Specify the variant attributes for the Item in the table. In case the attribute has Numeric Values, you can specify the range and create intervals based on the increment values.
+1. ในการเลือก 'Has Variants' ตารางจะปรากฏขึ้น ระบุคุณลักษณะรายละเอียดปลีกย่อยสำหรับสินค้าในตาราง ในกรณีที่คุณลักษณะมีค่าตัวเลข คุณสามารถระบุช่วงและสร้างช่วงเวลาตามค่าที่เพิ่มขึ้นได้
     <img class="screenshot" alt="Valid Attributes" src="{{docs_base_url}}/assets/img/stock/item-attributes.png">
-> Note: You cannot make Transactions against a 'Template'.
+> หมายเหตุ: คุณไม่สามารถทำธุรกรรมกับ 'เทมเพลต'
 
-### 1.2 Creating the Item Variants Based on Item Attributes
-To create 'Item Variants' against a 'Template' click on 'Create'. From there, choose whether to create a single variant or multiple. Single is simple where you create just one or more attributes and one Item will be created. When choosing multiple variants, tick the attributes and multiple items will be created. For example, if you choose Color: Red, Green and Size: Small, Medium, Large, 6 variants will be created.
+### 1.2 การสร้างตัวแปรรายการตามคุณสมบัติของรายการ
+ในการสร้าง 'รายการสินค้า' เทียบกับ 'เทมเพลต' ให้คลิกที่ 'สร้าง' จากที่นั่น เลือกว่าจะสร้างรายละเอียดปลีกย่อยเดียวหรือหลายรายการ โสดเป็นเรื่องง่ายที่คุณสร้างเพียงหนึ่งหรือหลายคุณลักษณะและหนึ่งรายการจะถูกสร้างขึ้น เมื่อเลือกรายละเอียดปลีกย่อยหลายรายการ ให้ทำเครื่องหมายที่คุณลักษณะและจะสร้างหลายรายการ ตัวอย่างเช่น หากคุณเลือก Color: Red, Green และ Size: Small, Medium, Large, 6 ตัวแปรจะถูกสร้างขึ้น
 
-Creating multiple variants in ERPNext:
+การสร้างตัวแปรหลายรายการใน ERPNext:
 
 <img class="screenshot" alt="Make Variants" src="{{docs_base_url}}/assets/img/stock/make-multiple-variants.png">
 
-To learn more about setting attributes check out [Item Attributes](/docs/user/manual/en/stock/item-attribute)
+หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับการตั้งค่าคุณลักษณะ โปรดดู [คุณลักษณะสินค้า](/docs/user/manual/th/stock/item-attribute)
 
-### 1.3 Item Variants Based on Manufacturers
+### 1.3 ตัวแปรรายการตามผู้ผลิต
 
-To setup variants based on Manufacturers, in your Item template, set "Variants Based On" as "Manufacturers"
-In this case, to create variants, click on Create > Make Variant. The system will prompt you to select a Manufacturer. You can also optionally put in a Manufacturer Part Number.
+ในการตั้งค่าตัวเลือกสินค้าตามผู้ผลิต ในเทมเพลตรายการของคุณ ให้ตั้งค่า "ตัวแปรตาม" เป็น "ผู้ผลิต"
+ในกรณีนี้ หากต้องการสร้างตัวเลือกสินค้า ให้คลิกที่ สร้าง > สร้างคุณลักษระ ระบบจะแจ้งให้คุณเลือกผู้ผลิต คุณยังสามารถใส่หมายเลขชิ้นส่วนของผู้ผลิตได้อีกด้วย
 
 <img class='screenshot' alt='Setup Item Variant by Manufacturer' src='{{docs_base_url}}/assets/img/stock/select-mfg-for-variant.png'>
 
-The naming of the variant will be based on the name (ID) of the template Item with a number suffix. e.g. "Screwdriver" will have variant "Screwdriver-1".
+การตั้งชื่อตัวแปรจะขึ้นอยู่กับชื่อ (ID) ของรายการแม่แบบที่มีส่วนต่อท้ายตัวเลข เช่น. "ไขควง" จะมีตัวแปร "ไขควง-1"
 
-## 2. Update Item Variants Based on Template
-Go to: **Home > Stock > Items and Pricing > Item Variant Settings**. The fields displayed here will be copied over to the variants as well. By default, all fields are shown, delete any rows you don't want to be updated from the item template to the variants.
+## 2. อัปเดตรายการตัวแปรตามเทมเพลต
+ไปที่: **หน้าแรก > สต็อก > รายการและราคา > การตั้งค่าตัวเลือกสินค้า** ฟิลด์ที่แสดงที่นี่จะถูกคัดลอกไปยังรายละเอียดปลีกย่อยด้วย ตามค่าเริ่มต้น ฟิลด์ทั้งหมดจะแสดงขึ้น ลบแถวใดๆ ที่คุณไม่ต้องการให้อัปเดตจากเทมเพลตรายการเป็นรายละเอียดปลีกย่อย
 
-## 3. Video
+## 3. วิดีโอ
 
-### 3.1 Creating Item Variant one by one
+### 3.1 การสร้างรายการตัวแปรทีละรายการ
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/kogIricF40I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-### 3.2 Creating Item Variants in bulk
+### 3.2 การสร้างรายการตัวแปรจำนวนมาก
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/SngZtDIMdiQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-### 4. Related Topics
-1. [Item Group](/docs/user/manual/en/stock/item-group)
-1. [Item Attribute](/docs/user/manual/en/stock/item-attribute)
-1. [Item Price](/docs/user/manual/en/stock/item-price)
-1. [Item Codification](/docs/user/manual/en/stock/articles/item-codification)
+### 4. หัวข้อที่เกี่ยวข้อง
+1. [กลุ่มสินค้า](/docs/user/manual/th/stock/item-group)
+1. [คุณลักษณะสินค้า](/docs/user/manual/th/stock/item-attribute)
+1. [ราคาสินค้า](/docs/user/manual/th/stock/item-price)
+1. [Item Codification](/docs/user/manual/th/stock/articles/item-codification)

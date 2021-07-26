@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-# Issues
+# ปัญหา
 
-The customer portal makes it very easy for a customer to raise concerns. A
-simple and intuitive interface facilitates your customer to report their
-concerns as Issues. They can view the complete thread of their
-conversation.
+พอร์ทัลลูกค้าช่วยให้ลูกค้าแจ้งข้อกังวลได้ง่าย
+อินเทอร์เฟซที่เรียบง่ายและใช้งานง่ายช่วยให้ลูกค้าของคุณรายงาน
+ความกังวลเป็นปัญหา พวกเขาสามารถดูเธรดที่สมบูรณ์ของพวกเขา
+การสนทนา.
 
-#### Empty Issue List
+#### รายการปัญหาว่างเปล่า
 
 <img class="screenshot" alt="Issue List" src="{{docs_base_url}}/assets/img/website/portal-ticket-list-empty.png">
 
-#### New Issue
+#### ปัญหาใหม่
 
 <img class="screenshot" alt="New Issue " src="{{docs_base_url}}/assets/img/website/portal-new-ticket.png">
 
-#### Open Issue
+#### ปัญหาที่เปิดอยู่
 
 <img class="screenshot" alt="Issue Raised" src="{{docs_base_url}}/assets/img/website/portal-ticket-1.gif">
 
-#### Reply on Issue
+#### การตอบรับปัญหา
 
 <img class="screenshot" alt="Issue reply" src="{{docs_base_url}}/assets/img/website/portal-ticket-reply.gif">
 

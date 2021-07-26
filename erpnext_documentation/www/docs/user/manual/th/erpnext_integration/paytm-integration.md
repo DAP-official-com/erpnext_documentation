@@ -1,37 +1,37 @@
 <!-- add-breadcrumbs -->
-# Paytm Integration
+# การใช้ Paytm
 
-**Paytm integration allows processing transactions with the payment gateway provider Paytm.**
+**การใช้ Paytm ช่วยให้ประมวลผลธุรกรรมกับ Paytm ผู้ให้บริการเกตเวย์การชำระเงิน**
 
-Paytm Integration facilitates processing of payments between Paytm payment portal and ERPNext. Your customers can choose to pay from any credit/debit card, UPI, Netbanking, Paytm Wallet.
+การใช้ Paytm อำนวยความสะดวกในการประมวลผลการชำระเงินระหว่างพอร์ทัลการชำระเงิน Paytm และ ERPNext ลูกค้าของคุณสามารถเลือกชำระเงินจากบัตรเครดิต/เดบิต, UPI, Netbanking, Paytm Wallet
 
-To set up Paytm, go to:
-> Integrations > Payments > Paytm Settings
+ในการตั้งค่า Paytm ไปที่:
+> บูรณาการ > การชำระเงิน > การตั้งค่า Paytm
 
-## 1.How to get your Paytm API credentials?
-1. In order to activate your API credentials, you need to log in to your Paytm account.
-2. Then, open the Developer Settings option in the sidebar.
-3. Choose API Keys option, it should display a two types of API details (Test/Production).
-4. Details mentioned in the Production API details are the credentials that you are supposed to use in Paytm Settings.
+## 1. วิธีรับข้อมูลประจำตัว Paytm API ของคุณ
+1. ในการเปิดใช้งานข้อมูลประจำตัว API ของคุณ คุณต้องลงชื่อเข้าใช้บัญชี Paytm ของคุณ
+2. จากนั้นเปิดตัวเลือกการตั้งค่านักพัฒนาซอฟต์แวร์ในแถบด้านข้าง
+3. เลือกตัวเลือกคีย์ API ซึ่งควรแสดงรายละเอียด API สองประเภท (การทดสอบ/การผลิต)
+4. รายละเอียดที่กล่าวถึงในรายละเอียด Production API เป็นข้อมูลประจำตัวที่คุณควรใช้ในการตั้งค่า Paytm
 
 <img class="screenshot" alt="Razorpay Settings" src="{{docs_base_url}}/assets/img/setup/integrations/paytm_credentials.png">
 
 
-## 2.Setting up Paytm
+## 2.การตั้งค่า Paytm
 
-To enable Paytm payment service, you need to configure all the mandatory parameters which you received from the Paytm. If you want to use staging environment of the integration, you can select the staging option and use the test API developer credentials provided by Paytm.
+ในการเปิดใช้งานบริการชำระเงิน Paytm คุณต้องกำหนดค่าพารามิเตอร์บังคับทั้งหมดที่คุณได้รับจาก Paytm หากคุณต้องการใช้สภาวะแวดล้อม staging ของการผสานรวม คุณสามารถเลือกอ็อพชัน staging และใช้ข้อมูลรับรองนักพัฒนา API การทดสอบที่ Paytm ให้มา
 <img class="screenshot" alt="Razorpay Settings" src="{{docs_base_url}}/assets/img/setup/integrations/paytm_settings.png">
 
-On enabling the Paytm integration in ERPNext, the system will create a Payment Gateway record and an Account Head in Chart of Account with the Account type as Bank as seen in the following screenshot.
+ในการเปิดใช้งานการรวม Paytm ใน ERPNext ระบบจะสร้างบันทึกเกตเวย์การชำระเงินและหัวหน้าบัญชีในผังบัญชีที่มีประเภทบัญชีเป็นธนาคารดังที่เห็นในภาพหน้าจอต่อไปนี้
 
 <img class="screenshot" alt="Stripe COA" src="{{docs_base_url}}/assets/img/setup/integrations/paytm_coa.png">
 
-Also, it will create a Payment Gateway Account entry. Payment Gateway Account is the configuration hub from where you can set Account Heads and the default Payment Request email template for requesting payments from customers.
+นอกจากนี้ยังจะสร้างรายการบัญชีช่องทางการชำระเงินบัญชีเกตเวย์การชำระเงินคือศูนย์กลางการกำหนดค่าซึ่งคุณสามารถตั้งค่าหัวหน้าบัญชีและเทมเพลตอีเมลคำขอชำระเงินเริ่มต้นสำหรับการขอชำระเงินจากลูกค้า
 
 <img class="screenshot" alt="Payment Gateway Account" src="{{docs_base_url}}/assets/img/setup/integrations/payment_gateway_account_paytm.png">
 
-After configuring Payment Gateway Account, you will be able to accept online payments via Paytm.
+หลังจากกำหนดค่าบัญชี ช่องทางการชำระเงิน แล้ว คุณจะสามารถรับการชำระเงินออนไลน์ผ่าน Paytm ได้
 
-## 3.Supporting transaction currencies
+## 3. รองรับสกุลเงินการทำธุรกรรม
 
-Paytm will only work for the Company which has INR (Indian Rupee) as Company Currency.
+Paytm จะใช้ได้กับบริษัทที่มี INR (รูปีอินเดีย) เป็นสกุลเงินของบริษัทเท่านั้น

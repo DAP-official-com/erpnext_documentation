@@ -1,19 +1,19 @@
 <!-- add-breadcrumbs -->
-#Maintaining Supplier's Item Code In the Item master
+#การดูแลรักษารหัสสินค้าของซัพพลายเออร์ในสินค้าหลัก
 
-For each item, code assigned might differ from the code your supplier has given to that same item. ERPNext allows you to track Supplier's Item Code in the item master. Also you can fetch Supplier's Item Code in your purchase transactions, so that they can easily recognize item referring to their Item Code.
+สำหรับแต่ละรายการ รหัสที่กำหนดอาจแตกต่างจากรหัสที่ซัพพลายเออร์ของคุณให้กับรายการเดียวกันนั้น ERPNext ช่วยให้คุณติดตามรหัสสินค้าของซัพพลายเออร์ในหลักรายการ นอกจากนี้ คุณยังสามารถดึงรหัสสินค้าของซัพพลายเออร์ในธุรกรรมการซื้อของคุณ เพื่อให้พวกเขาสามารถจดจำรายการที่อ้างอิงถึงรหัสสินค้าของพวกเขาได้อย่างง่ายดาย
 
-#### 1. Updating Supplier Item Code In Item
+#### 1. กำลังอัปเดตรหัสรายการซัพพลายเออร์ในรายการ
 
-In the Item master, under Supplier Details section, enter Item Code as given by the Supplier to this item.
+ในหลักรายการ ในส่วนรายละเอียดซัพพลายเออร์ ให้ป้อนรหัสสินค้าตามที่ซัพพลายเออร์กำหนดให้กับรายการนี้
 
 <img alt="Supplier Item Code" class="screenshot" src="{{docs_base_url}}/assets/img/articles/supplier-item-code.png">
 
-#### 2. Supplier's Item Code In Transactions
+#### 2. รหัสสินค้าของซัพพลายเออร์ในการทำธุรกรรม
 
-Each purchase transaction has field in the Item table where Supplier's Item Code is fetched. This field is hidden in form as well as in the Standard print format. You can make it visible by changing property for this field from [Customize Form.](/docs/user/manual/en/customize-erpnext/customize-form.html)
+ธุรกรรมการซื้อแต่ละรายการมีฟิลด์ในตารางสินค้าที่ดึงรหัสสินค้าของผู้จัดหา ฟิลด์นี้ถูกซ่อนอยู่ในรูปแบบเช่นเดียวกับในรูปแบบการพิมพ์มาตรฐาน คุณสามารถทำให้มองเห็นได้โดยการเปลี่ยนคุณสมบัติของฟิลด์นี้จาก [แบบฟอร์มกำหนดเอง](/docs/user/manual/th/customize-erpnext/customize-form.html)
 
-Supplier Item Code will only be fetched in the purchase transaction, if both Supplier and Item Code selected in purchase transaction is mapped with value mentioned in the Item master.
+รหัสรายการซัพพลายเออร์จะถูกดึงในธุรกรรมการซื้อเท่านั้น หากทั้งซัพพลายเออร์และรหัสรายการที่เลือกในธุรกรรมการซื้อถูกแมปกับมูลค่าที่กล่าวถึงในหลักรายการ
 
 <img alt="Supplier Item Code in transaction" class="screenshot" src="{{docs_base_url}}/assets/img/articles/supplier-item-code-in-purchase-order.png">
 

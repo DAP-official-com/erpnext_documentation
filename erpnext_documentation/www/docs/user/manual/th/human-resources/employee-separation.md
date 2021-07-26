@@ -1,88 +1,88 @@
-# Employee Separation
+# การแยกพนักงาน
 
-**Employee Separation is a situation when the service agreement of an Employee with his/her organization comes to an end and the Employee leaves the organization.**
+**การแยกพนักงานเป็นสถานการณ์ที่ข้อตกลงการบริการของพนักงานกับองค์กรของเขา/เธอสิ้นสุดลงและพนักงานออกจากองค์กร**
 
-Employee Separation is created for an Employee who has resigned or terminated from the organization.
+การแยกพนักงานถูกสร้างขึ้นสำหรับพนักงานที่ลาออกหรือเลิกจ้างจากองค์กร
 
-**Use Case:** Let's assume that following are the activities which need to be performed as soon as an Employee needs to be separated from the organization.
+**กรณีการใช้งาน:** สมมติว่าต่อไปนี้เป็นกิจกรรมที่ต้องดำเนินการทันทีที่พนักงานจำเป็นต้องแยกออกจากองค์กร
 
-- Collect laptop
-- Clear dues
-- Delete Employee Email Account
-- Collect identity card
+- รวบรวมแล็ปท็อป
+- เคลียร์ค่าธรรมเนียม
+- ลบบัญชีอีเมลพนักงาน
+- รวบรวมบัตรประจำตัวประชาชน
 
 
-In ERPNext, these standard activities can be tracked in the Employee Separation Template. To access Employee Separation, go to: 
+ใน ERPNext กิจกรรมมาตรฐานเหล่านี้สามารถติดตามได้ในเทมเพลตการแยกพนักงาน ในการเข้าถึงการแยกพนักงาน ไปที่:
 
-> Human Resources > Employee Lifecycle > Employee Separation
+> ทรัพยากรบุคคล > วงจรชีวิตพนักงาน > การแยกพนักงาน
 
-## 1.  Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Employee Separation, it is advisable that you create the following documents:
+ก่อนสร้างการแยกพนักงาน ขอแนะนำให้สร้างเอกสารต่อไปนี้:
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Department](/docs/user/manual/en/human-resources/department)
-* [Designation](/docs/user/manual/en/human-resources/designation)
-* [Employee Grade](/docs/user/manual/en/human-resources/employee-grade)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [แผนก](/docs/user/manual/th/human-resources/department)
+* [การกำหนด](/docs/user/manual/th/human-resources/designation)
+* [ระดับพนักงาน](/docs/user/manual/th/human-resources/employee-grade)
 
-## 2. How to create an Employee Separation
+## 2. วิธีสร้างการแยกพนักงาน
 
-1. Go to: Employee Separation > New.
-1. Select the Employee. Once the Employee is selected, the corresponding Employee information such as Department, Designation and Employee Grade will automatically get fetched.
-1. Select the [Employee Separation Template](#31-employee-separation-template). Based on the template selected, information such as Department, Designation and Employee grade will be automatically fetched (if already mentioned in the Separation Template).
-1. Enter the Resignation Letter Date.
-1. Additionally, you can also enter the Exit Interview Summary.
-1. Save and Submit.
+1. ไปที่: การแยกพนักงาน > ใหม่
+1. เลือกพนักงาน เมื่อเลือกพนักงานแล้ว ระบบจะดึงข้อมูลพนักงานที่เกี่ยวข้อง เช่น แผนก การแต่งตั้ง และเกรดพนักงานโดยอัตโนมัติ
+1. เลือก [เทมเพลตการแยกพนักงาน](#31-employee-separation-template) ตามเทมเพลตที่เลือก ข้อมูล เช่น แผนก การแต่งตั้ง และเกรดพนักงาน จะถูกดึงข้อมูลโดยอัตโนมัติ (หากระบุไว้แล้วในเทมเพลตการแยก)
+1. ป้อนวันที่จดหมายลาออก
+1. นอกจากนี้ คุณยังสามารถเข้าสู่บทสรุปการสัมภาษณ์ได้
+1. บันทึกและส่ง
 
 
   <img class="screenshot" alt="Separation Template" src="{{docs_base_url}}/assets/img/human-resources/employee-separation.png">
 
 
 
-> Note 1: If an Employee Separation Template isn't created, you can directly fill the separation information in the Employee Separation doctype itself.
+> หมายเหตุ 1: หากไม่มีการสร้างเทมเพลตการแยกพนักงาน คุณสามารถกรอกข้อมูลการแยกในประเภทเอกสารการแยกพนักงานได้โดยตรง
 
-> Note 2: The 'Status' of the Employee Separation will change to Completed once all the associated Activities are complete.
+> หมายเหตุ 2: 'สถานะ' ของการแยกพนักงานจะเปลี่ยนเป็นเสร็จสิ้นเมื่อกิจกรรมที่เกี่ยวข้องทั้งหมดเสร็จสมบูรณ์
 
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Employee Separation Template
+### 3.1 เทมเพลตการแยกพนักงาน
 
-The Employee Separation Template is a blueprint which contains a predefined list of Activities for Employee Separation. An Employee Separation Template can be created for a particular Department, Designation and Employee Grade. 
+เทมเพลตการแยกพนักงานเป็นพิมพ์เขียวที่มีรายการกิจกรรมสำหรับการแยกพนักงานที่กำหนดไว้ล่วงหน้า สามารถสร้างเทมเพลตการแยกพนักงานสำหรับแผนก การแต่งตั้ง และเกรดพนักงาน
 
-To create a new Employee Separation Template:
+ในการสร้างเทมเพลตการแยกพนักงานใหม่:
 
-1. Go to: Human Resources > Employee Lifecycle > Employee Separation Template > New.
-1. Enter the Department, Designation and Employee Grade (optional).
-1. Mention the Activities for separation. For each Activity, you can also mention the User or Role, or one of it, to whom this Activity will be assigned.
+1. ไปที่: ทรัพยากรบุคคล > วงจรชีวิตพนักงาน > แม่แบบการแยกพนักงาน > ใหม่
+1. เข้าแผนก ตำแหน่ง และ เกรดพนักงาน (ถ้ามี)
+1. กล่าวถึงกิจกรรมการแยกกันอยู่ สำหรับแต่ละกิจกรรม คุณยังสามารถพูดถึงผู้ใช้หรือบทบาท หรือคนใดคนหนึ่งที่จะมอบหมายกิจกรรมนี้ให้
   
   <img class="screenshot" alt="Onboarding Template" src="{{docs_base_url}}/assets/img/human-resources/employee-separation-template.png">
 
 
-### 3.2 Tasks and Assignments
+### 3.2 งานและการมอบหมาย
 
-On submission of the Employee Separation, a [Project](/docs/user/videos/learn/project-and-task) will be created. Within the Project, [Tasks](/docs/user/videos/learn/project-and-task) will also be created for each Activity. 
+ในการส่งการแยกพนักงาน จะมีการสร้าง [โครงการ](/docs/user/videos/learn/project-and-task) ภายในโครงการ [งาน](/docs/user/videos/learn/project-and-task) จะถูกสร้างขึ้นสำหรับแต่ละกิจกรรม
 
-You can view the created Projects and Tasks through View > Project/ Tasks.
+คุณสามารถดูโครงการและงานที่สร้างขึ้นผ่านมุมมอง > โครงการ/งาน
 
 
-Additionally, each Activity can be assigned weights based on its importance.
+นอกจากนี้ แต่ละกิจกรรมสามารถกำหนดน้ำหนักตามความสำคัญได้
 
 <img class="screenshot" alt="Tasks and Assignments" src="{{docs_base_url}}/assets/img/human-resources/employee-sep1.png">
 
-Based on the progress on the Tasks, progress can be updated in the Employee Separation process.
+ตามความคืบหน้าของงาน ความคืบหน้าสามารถปรับปรุงได้ในกระบวนการแยกพนักงาน
 
 
-### 3.3 Employee Status
+### 3.3 สถานะพนักงาน
 
-You can directly view the separated Employee through the Employee Separation doctype through View > Employee once the form is submitted.
+คุณสามารถดูพนักงานที่แยกจากกันได้โดยตรงผ่านประเภทเอกสารการแยกพนักงานผ่านมุมมอง > พนักงานเมื่อส่งแบบฟอร์มแล้ว
 
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Employee Onboarding](/docs/user/manual/en/human-resources/employee-onboarding)
-1. [Employee Promotion](/docs/user/manual/en/human-resources/employee_promotion)
-1. [Employee Separation](/docs/user/manual/en/human-resources/employee-separation)
+1. [การเตรียมความพร้อมให้พนักงาน](/docs/user/manual/th/human-resources/employee-onboarding)
+1. [เลื่อนตำแหน่งพนักงาน](/docs/user/manual/th/human-resources/employee_promotion)
+1. [แยกพนักงาน](/docs/user/manual/th/human-resources/employee-separation)
 
 
 

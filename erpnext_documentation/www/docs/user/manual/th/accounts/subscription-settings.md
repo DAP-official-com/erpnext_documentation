@@ -1,14 +1,14 @@
 <!-- add-breadcrumbs -->
-# Subscription Settings
+# การตั้งค่าการสมัครสมาชิก
 
-The Subscription Settings page allows configuring settings for your ERPNext subscriptions.
+หน้าการตั้งค่าการสมัครสมาชิกอนุญาตให้กำหนดการตั้งค่าสำหรับการสมัครสมาชิก ERPNext ของคุณ
 
-To access the Subscription list, go to:
-> Home > Accounting > Subscription Management > Subscription Settings
+ในการเข้าถึงรายการสมัครสมาชิก ไปที่:
+> หน้าแรก > การบัญชี > การจัดการการสมัครสมาชิก > การตั้งค่าการสมัครสมาชิก
 
-* **Grace Period**: Number of days after invoice date has elapsed before canceling subscription or marking subscription as unpaid.
+* **ระยะเวลาผ่อนผัน** : จำนวนวันหลังจากวันที่ในใบแจ้งหนี้ผ่านไปก่อนที่จะยกเลิกการสมัครรับข้อมูลหรือทำเครื่องหมายการสมัครเป็นสมาชิกว่ายังไม่ได้ชำระเงิน
 
-* **Cancel Invoice After Grace Period**: Instead of displaying 'Unpaid', the Subscription will be canceled in ERPNext if the Customer does not pay.
+* **ยกเลิกใบแจ้งหนี้หลังจากช่วงผ่อนผัน** : แทนที่จะแสดง 'ยังไม่ได้ชำระเงิน' การสมัครสมาชิกจะถูกยกเลิกใน ERPNext หากลูกค้าไม่ชำระเงิน
 
 ![Subscription](/docs/assets/img/accounts/subscription-settings.png)
 

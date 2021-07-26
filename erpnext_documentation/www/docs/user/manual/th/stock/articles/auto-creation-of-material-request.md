@@ -1,28 +1,28 @@
 <!-- add-breadcrumbs -->
-#Auto Creation of Material Request
+#การสร้างคำขอวัสดุอัตโนมัติ
 
-To prevent stockouts, you can track item's reorder level. When stock level goes below reorder level, purchase manager is notified and instructed to initiate purchase process for the item.
+เพื่อป้องกันไม่ให้สินค้าหมด คุณสามารถติดตามระดับการสั่งซื้อใหม่ของสินค้าได้ เมื่อระดับสต็อกต่ำกว่าระดับการสั่งซื้อใหม่ ผู้จัดการฝ่ายจัดซื้อจะได้รับแจ้งและแนะนำให้เริ่มกระบวนการซื้อสำหรับสินค้า
 
-In ERPNext, you can update item's Reorder Level and Reorder Qty in the Item master. If same item has different reorder level, you can also update warehouse-wise reorder level and reorder qty.
+ใน ERPNext คุณสามารถอัปเดต ระดับและจำนวนการสั่งซ้ำ ของไอเท็มใน รายการสินค้าหลัก ได้ หากสินค้าเดียวกันมีระดับการสั่งซื้อใหม่ที่แตกต่างกัน คุณยังสามารถอัปเดตระดับการสั่งซื้อใหม่ตามคลังสินค้าและจัดลำดับจำนวนใหม่ได้
 
 <img alt="reorder level" class="screenshot" src="{{docs_base_url}}/assets/img/articles/reorder-request-1.png">
 
-With reorder level, you can also define what should be the next action. Either new purchase or transfer from another warehouse. Based on setting in Item master, purpose will be updated in the Material Request as well.
+ด้วยระดับการสั่งซ้ำใหม่ คุณยังสามารถกำหนดสิ่งที่ควรเป็นการดำเนินการต่อไปได้ ทั้งการซื้อใหม่หรือโอนจากคลังสินค้าอื่น ตามการตั้งค่าใน รายการสินค้าหลัก วัตถุประสงค์จะได้รับการอัปเดตในคำขอวัสดุด้วย
 
 <img alt="reorder level next action" class="screenshot" src="{{docs_base_url}}/assets/img/articles/reorder-request-2.png">
 
-When item's stock reaches reorder level, Material Request is auto-created automatically. You can enable this feature from:
+เมื่อสต็อคของสินค้าถึงระดับการสั่งซื้อใหม่ คำขอวัสดุจะถูกสร้างขึ้นโดยอัตโนมัติ คุณสามารถเปิดใช้งานคุณสมบัตินี้ได้จาก:
 
-`Stock > Setup > Stock Settings`
+`สต็อค > ตั้งค่า > การตั้งค่าสต็อค'
 
 <img alt="active auto-material request" class="screenshot" src="{{docs_base_url}}/assets/img/articles/reorder-request-3.png">
 
-A separate Material Request will be created for each item. User with Purchase Manager's role will receive email alert about these Material Requests.
+จะมีการสร้างคำขอวัสดุแยกต่างหากสำหรับแต่ละรายการ ผู้ใช้ที่มีบทบาทเป็นผู้จัดการฝ่ายจัดซื้อจะได้รับการแจ้งเตือนทางอีเมลเกี่ยวกับคำขอวัสดุเหล่านี้
 
-If auto creation of Material Request is failed, User with Purchase Manager role will be informed about error message. One of the most encountered error message is:
+หากการสร้างคำขอวัสดุโดยอัตโนมัติล้มเหลว ผู้ใช้ที่มีบทบาทผู้จัดการการจัดซื้อจะได้รับแจ้งเกี่ยวกับข้อความแสดงข้อผิดพลาด หนึ่งในข้อความแสดงข้อผิดพลาดที่พบบ่อยที่สุดคือ:
 
-**An error occurred for certain Items while creating Material Requests based on Re-order level.**
-**Date 01-04-2016 not in any Fiscal Year.**
+**เกิดข้อผิดพลาดสำหรับบางรายการขณะสร้างคำขอวัสดุตามระดับการสั่งซื้อใหม่**
+**วันที่ 01-04-2016 ไม่ใช่ปีงบประมาณใด ๆ **
 
-One of the reason of error could be Fiscal Year as well. Click [here](/docs/user/manual/en/accounts/articles/fiscal-year-error.html) to learn more about it.
+สาเหตุของข้อผิดพลาดประการหนึ่งอาจเป็นปีงบประมาณเช่นกัน คลิก [ที่นี่](/docs/user/manual/th/accounts/articles/fiscal-year-error.html) เพื่อเรียนรู้เพิ่มเติม
 <!-- markdown -->

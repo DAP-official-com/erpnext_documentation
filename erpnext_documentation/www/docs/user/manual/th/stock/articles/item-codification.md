@@ -1,39 +1,39 @@
 <!-- add-breadcrumbs -->
-# Item Codification
+# การเข้ารหัสรายการ
 
-If you already have a full-fledged business with a number of physical items,
-you would have probably coded your items. If you have not, you have a choice.
-We recommend that you should codify if you have lot of products with long or
-complicated names. In case you have few products with short names, it is
-preferable to keep the Item Code same as Item Name.
+หากคุณมีธุรกิจที่เต็มเปี่ยมอยู่แล้วด้วยสิ่งของที่จับต้องได้จำนวนมาก
+คุณอาจจะได้รหัสรายการของคุณ ถ้าคุณไม่มี คุณมีทางเลือก
+ขอแนะนำว่าควรประมวลว่าสินค้ามียาวหรือ
+ชื่อที่ซับซ้อน ในกรณีที่คุณมีสินค้าที่มีชื่อย่อน้อย มันคือ
+ดีกว่าที่จะเก็บรหัสรายการเหมือนกับชื่อรายการ
 
-Item codification has been a sensitive topic and wars have been fought on this
-(not joking). In our experience, when you have items that cross a certain
-size, life without codification is a nightmare.
+การเข้ารหัสรายการเป็นหัวข้อที่ละเอียดอ่อนและมีการต่อสู้ในเรื่องนี้
+(ไม่ได้ล้อเล่น) จากประสบการณ์ของเรา เมื่อคุณมีไอเทมที่ข้ามเส้นบางๆ
+ขนาดชีวิตที่ไม่มีการประมวลเป็นฝันร้าย
 
-### 1. Benefits
+### 1. ประโยชน์
 
-  * Standard way of naming things.
-  * Less likely to have duplicates.
-  * Explicit definition.
-  * Helps to quickly find if a similar item exists.
-  * Item names get longer and longer as more types get introduced. Codes are shorter.
+  * วิธีมาตรฐานในการตั้งชื่อสิ่งของ
+  * มีโอกาสน้อยที่จะซ้ำกัน
+  * คำจำกัดความที่ชัดเจน
+  * ช่วยให้ค้นหาได้อย่างรวดเร็วว่ามีรายการที่คล้ายกันอยู่หรือไม่
+  * ชื่อรายการจะยาวขึ้นและยาวขึ้นเมื่อมีการแนะนำประเภทมากขึ้น รหัสจะสั้นกว่า
 
-### 2. Challenges
+### 2. ความท้าทาย
 
-  * You have to remember the codes!
-  * Harder for new team members to pick up.
-  * You have to create new codes all the time.
+  * คุณต้องจำรหัส!
+  * ยากขึ้นสำหรับสมาชิกใหม่ในทีมที่จะรับ
+  * คุณต้องสร้างรหัสใหม่ตลอดเวลา
 
-### 3. Example
+### 3. ตัวอย่าง
 
-You should have a simple manual / cheat-sheet to codify your Items instead of
-just numbering them sequentially. Each letter should mean something. Here is
-an example:
+คุณควรมีคู่มือ / แผ่นโกงง่าย ๆ เพื่อประมวลรายการของคุณแทน
+เพียงแค่นับพวกเขาตามลำดับ จดหมายแต่ละฉบับควรมีความหมายบางอย่าง ที่นี่คือ
+ตัวอย่าง:
 
-If your business involves wooden furniture, then you may codify as follows:
+หากธุรกิจของคุณเกี่ยวข้องกับเฟอร์นิเจอร์ไม้ คุณอาจจัดเป็นดังนี้:
 
-Item Codification Summary Sheet (SAMPLE)
+เอกสารสรุปการจัดรายการสินค้า (SAMPLE)
 
     
     
@@ -56,31 +56,31 @@ Item Codification Summary Sheet (SAMPLE)
     - R - Round
     
 
-The last few letters could be sequential. So by looking at code **WM304** \-
-you know its a wooden molding less than 10cm in size
+อักษรสองสามตัวสุดท้ายอาจเป็นแบบเรียงตามลำดับ โดยดูจากโค้ด **WM304** \-
+คุณรู้ไหมว่ามันเป็นแม่พิมพ์ไม้ที่มีขนาดไม่ถึง 10 ซม.
 
-### 4. Standardization
+### 4. มาตรฐาน
 
-If you have more than one person naming items, the style of naming items will
-change for everyone. Sometimes, even for one person, he or she may forget how
-they had named the item and may create a duplicate name _"Wooden Sheet 3mm" or
-"3mm Sheet of Wood"?_
+หากคุณมีมากกว่าหนึ่งคนที่ตั้งชื่อรายการ รูปแบบการตั้งชื่อรายการจะ
+เปลี่ยนแปลงเพื่อทุกคน บางครั้งแม้เพียงคนเดียว เขาหรือเธออาจลืมไปว่า
+พวกเขาตั้งชื่อรายการและอาจสร้างชื่อซ้ำ _"แผ่นไม้ 3 มม." หรือ
+"แผ่นไม้ 3 มม."?_
 
-### 5. Rationalizing
+### 5. การหาเหตุผลเข้าข้างตนเอง
 
-It is a good practice to have minimum varieties of items so that you keep
-minimum stock, housekeeping is simpler etc. When you are planning a new
-product and you want to know if you are already purchasing a part in some
-other product, the item codes will help you quickly determine if you are using
-a similar raw material in another product.
+เป็นแนวปฏิบัติที่ดีที่จะมีรายการสินค้าให้น้อยที่สุดเพื่อให้คุณเก็บ
+สต๊อกขั้นต่ำ การดูแลทำความสะอาดง่ายกว่า ฯลฯ เมื่อคุณกำลังวางแผนใหม่
+ผลิตภัณฑ์และคุณต้องการทราบว่าคุณซื้อชิ้นส่วนในบางส่วนแล้วหรือไม่
+สินค้าอื่นๆ รหัสสินค้าจะช่วยให้คุณทราบได้อย่างรวดเร็วว่าคุณกำลังใช้
+วัตถุดิบที่คล้ายกันในผลิตภัณฑ์อื่น
 
-We believe if you do this small investment, it will help you rationalize
-things as your business grows, though its okay not to codify if you have less
-items.
+เราเชื่อว่าหากคุณลงทุนเพียงเล็กน้อยนี้ มันจะช่วยให้คุณหาเหตุผลเข้าข้างตนเองได้
+สิ่งต่างๆ เมื่อธุรกิจของคุณเติบโตขึ้น แม้ว่าจะไม่ได้ประมวลข้อมูลหากคุณมีน้อยกว่าก็ตาม
+รายการ
 
-#### 6. Related Topics
-1. [Item Group](/docs/user/manual/en/stock/item-group)
-1. [Item Attribute](/docs/user/manual/en/stock/item-attribute)
-1. [Item Price](/docs/user/manual/en/stock/item-price)
-1. [Item Variants](/docs/user/manual/en/stock/item-variants)
+#### 6. หัวข้อที่เกี่ยวข้อง
+1. [กลุ่มสินค้า](/docs/user/manual/th/stock/item-group)
+1. [คุณลักษณะสินค้า](/docs/user/manual/th/stock/item-attribute)
+1. [ราคาสินค้า](/docs/user/manual/th/stock/item-price)
+1. [รายการสินค้า](/docs/user/manual/th/stock/item-variants)
 

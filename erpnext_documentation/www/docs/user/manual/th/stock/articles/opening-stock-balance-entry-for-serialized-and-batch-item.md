@@ -1,61 +1,61 @@
 <!-- add-breadcrumbs -->
-#Opening Stock Balance Entry for Serialized and Batch Item
+#การเปิดรายการยอดคงเหลือสำหรับรายการต่อเนื่องและรายการแบทช์
 
-Items for which Serial No. and Batch No. is maintained, opening stock balance entry for them is update via Stock Entry. [Click here to learn how serialized inventory is managed in ERPNext](/docs/user/manual/en/stock/serial-no.html).
+รายการที่มีการรักษา sหมายเลขซีเรียล และ หมายเลขแบทช์ การเปิดรายการยอดคงเหลือในสต็อคสำหรับรายการเหล่านั้นจะได้รับการอัปเดตผ่านรายการสต็อค [คลิกที่นี่เพื่อเรียนรู้วิธีจัดการสินค้าคงคลังต่อเนื่องใน ERPNext](/docs/user/manual/th/stock/serial-no.html)
 
-**Question:** Why Opening Balance entry for the Serialized and Batch Item cannot be updated via Stock Reconciliation?
+**คำถาม:** เหตุใดรายการยอดคงเหลือเปิดสำหรับรายการต่อเนื่องและรายการแบทช์จึงไม่สามารถอัปเดตผ่านการกระทบยอดสต็อกได้
 
-In the ERPNext, stock level of a serialized item is derived based on the count of Serial Nos for that item. Hence, unless Serial Nos. are created for the serialized item, its stock level will not be updated. In the Stock Reconciliation Tool, you can only update opening quantity of an item, but not the Serial No. and Batch No.
+ใน ERPNext ระดับสต็อคของสินค้าต่อเนื่องจะได้รับตามจำนวน Serial Nos สำหรับสินค้านั้น ดังนั้น เว้นแต่จะมีการสร้าง Serial Nos สำหรับสินค้าต่อเนื่อง ระดับสต็อกของสินค้าจะไม่ได้รับการอัปเดต ในเครื่องมือการกระทบยอดสต็อก คุณสามารถอัปเดตได้เฉพาะปริมาณเปิดของสินค้าเท่านั้น แต่ไม่สามารถอัปเดตหมายเลขซีเรียลและหมายเลขแบทช์ได้
 
-### Opening Balance for the Serialized Item
+### ยอดเงินคงเหลือสำหรับรายการต่อเนื่อง
 
-Following are the steps to create opening stock balance entry for the Serialized and Batch item.
+ต่อไปนี้คือขั้นตอนในการสร้างรายการยอดคงเหลือของสต็อคเปิดสำหรับรายการซีเรียลไลซ์และแบทช์
 
-#### Step 1: New Stock Entry
+#### ขั้นตอนที่ 1: รายการสต็อคใหม่
 
-`Stock > Stock Entry > New`
+`สต็อค > รายการสต็อค > ใหม่`
 
-#### Step 2: Select Purpose
+#### ขั้นตอนที่ 2: เลือกวัตถุประสงค์
 
-Stock Entry Purpose should be updated as `Material Receipt`.
+วัตถุประสงค์ในการเข้าสต็อคควรได้รับการอัปเดตเป็น 'ใบเสร็จรับเงินวัสดุ'
 
-#### Step 3: Update Posting Date
+#### ขั้นตอนที่ 3: อัปเดตวันที่โพสต์
 
-Posting Date should be date on which you wish to update opening balance for an item.
+วันที่ลงรายการบัญชีควรเป็นวันที่ที่คุณต้องการอัปเดตยอดคงค้างของรายการ
 
-#### Step 4: Update Target Warehouse
+#### ขั้นตอนที่ 4: อัปเดตคลังสินค้าเป้าหมาย
 
-Target Warehouse will be one in which opening balance of an item will be updated.
+Target Warehouse จะเป็นคลังเก็บสินค้าที่จะอัปเดตยอดดุลเปิดของรายการ
 
-#### Step 5: Select Items
+#### ขั้นตอนที่ 5: เลือกรายการ
 
-Select Items for which opening balance is to be updated.
+เลือกรายการที่จะอัพเดตยอดดุลยกมา
 
-#### Step 6: Update Opening Qty
+#### ขั้นตอนที่ 6: อัปเดตจำนวนการเปิด
 
-For the serialized item, update quantity as many Serial Nos are their.
+สำหรับรายการซีเรียลไลซ์ ให้อัพเดตปริมาณตามจำนวนซีเรียลที่มีอยู่
 
-For the serialized item, mention Serial Nos. equivalent to it's Qty. Or if Serial Nos. are configured to be created based on Prefix, then no need to mention Serial Nos. manually. Click [here](/docs/user/manual/en/stock/articles/serial-no-naming.html) to learn more about Serial No. naming.
+สำหรับรายการที่ต่อเนื่องกัน ให้ระบุ Serial Nos. ที่เทียบเท่ากับ Qty หรือหากมีการกำหนดค่า Serial Nos. ให้สร้างตาม Prefix ก็ไม่จำเป็นต้องพูดถึง Serial Nos ด้วยตนเอง คลิก [ที่นี่](/docs/user/manual/th/stock/articles/serial-no-naming.html) เพื่อเรียนรู้เพิ่มเติมเกี่ยวกับการตั้งชื่อหมายเลขซีเรียล
 
-For a batch item, provide Batch ID in which opening balance will be updated. Keep batch master ready, and updated it for the Batch Item. To create new Batch, go to:
+สำหรับรายการชุดงาน ให้ระบุรหัสชุดงานที่จะอัปเดตยอดดุลยกมา เตรียมต้นแบบชุดงานให้พร้อม และอัปเดตสำหรับรายการชุดงาน ในการสร้างแบทช์ใหม่ ไปที่:
 
-`Stock > Setup > Batch > New`
+`สต็อก > ตั้งค่า > แบทช์ > ใหม่`
 
-[Click here to learn how Batchwise inventory is managed in ERPNext.](/docs/user/manual/en/stock/articles/managing-batch-wise-inventory.html)
+[คลิกที่นี่เพื่อเรียนรู้วิธีจัดการสินค้าคงคลังแบบแบตช์ใน ERPNext](/docs/user/manual/th/stock/articles/managing-batch-wise-inventory.html)
 
-#### Step 7: Update Item Valuation Rate 
+#### ขั้นตอนที่ 7: อัปเดตอัตราการประเมินมูลค่าสินค้า
 
-Update valuation rate, which will be per unit value of item. If different units of the same items having different valuation rate, they should be updated in a separate row, with different Valuation Rates.
+อัพเดทราคาประเมิน ซึ่งจะคิดเป็นมูลค่าต่อหน่วยของรายการ หากหน่วยต่าง ๆ ของรายการเดียวกันมีอัตราการตีราคาต่างกัน หน่วยเหล่านั้นควรได้รับการอัปเดตในแถวที่แยกจากกัน โดยมีอัตราการประเมินค่าต่างกัน
 
-#### Step 8: Difference Account
+#### ขั้นตอนที่ 8: บัญชีส่วนต่าง
 
-As per perpetual inventory valuation system, accounting entry is created for every stock transaction. Double entry accounting system requires Total Debit matching with Total Credit in an entry. On the submission of Stock Entry, system debits Warehouse account by total value of items. To balance the same, we use Temporary Opening account as a Difference Account.
+ตามระบบการประเมินมูลค่าสินค้าคงคลังแบบถาวร รายการทางบัญชีจะถูกสร้างขึ้นสำหรับธุรกรรมสต็อคทุกรายการ ระบบบัญชีสองรายการต้องใช้ Total Debit ที่ตรงกับ Total Credit ในรายการ ในการยื่นรายการสต็อค ระบบจะหักบัญชีโกดังตามมูลค่ารวมของสินค้า เพื่อให้สมดุลกัน เราใช้บัญชีเปิดชั่วคราวเป็นบัญชีส่วนต่าง
 
 <img alt="Difference Account" class="screenshot" src="{{docs_base_url}}/assets/img/articles/difference-account-1.png">
 
-#### Step 9: Save and Submit Stock Entry
+#### ขั้นตอนที่ 9: บันทึกและส่งรายการสต็อค
 
-On submission of Stock Entry, stock ledger posting will be posted, and opening balance will be updated for the items on a given Posting Date.
+ในการส่งรายการสต็อค การลงรายการบัญชีแยกประเภทสต็อกจะถูกโพสต์ และยอดดุลต้นงวดจะได้รับการอัปเดตสำหรับรายการในวันที่ลงรายการบัญชีที่กำหนด
 
 
 <div>

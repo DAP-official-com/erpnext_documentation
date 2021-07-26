@@ -1,27 +1,27 @@
 <!--add breadcrumbs-->
 
-# Make A Colorful Gantt Chart
+#สร้างแผนภูมิแกนต์ที่มีสีสัน
 
-ERPNext allows users to add colours to certain documents for better visual cues and representation. A good example of this would be the [Event Calendar](/docs/user/manual/en/using-erpnext/calendar), where, for each event you can add a colour.
+ERPNext ให้ผู้ใช้เพิ่มสีให้กับเอกสารบางอย่างเพื่อให้เห็นภาพและการนำเสนอที่ดีขึ้น ตัวอย่างที่ดีคือ [ปฏิทินกิจกรรม](/docs/user/manual/th/using-erpnext/calendar) โดยคุณสามารถเพิ่มสีสำหรับแต่ละกิจกรรมได้
 
-We will be doing so by customizing [Tasks](/docs/user/manual/en/projects/tasks) under Projects module.
+เราจะดำเนินการดังกล่าวโดยกำหนด [งาน](/docs/user/manual/th/projects/tasks) เองภายใต้โมดูล Projects
 
-## Steps To Add Colours To The Gantt Chart
+## ขั้นตอนในการเพิ่มสีสันให้กับแผนภูมิแกนต์
 
-1. Go to [Customize Form](/docs/user/manual/en/customize-erpnext/customize-form) in the system and select *Task* in _Enter Form Type_ option. Alternatively, you can reach this screen by going to **Menu > Customize** from the Task list or form.
+1. ไปที่ [แบบฟอร์มกำหนดเอง](/docs/user/manual/th/customize-erpnext/customize-form) ในระบบและเลือก *Task* ใน _Enter Form Type_ ตัวเลือก หรือคุณสามารถเข้าถึงหน้าจอนี้ได้โดยไปที่ **เมนู > ปรับแต่ง** จากรายการงานหรือแบบฟอร์ม
 
  <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-customize-form-1.gif">
 
-1. Add a new field in the doctype of fieldtype color.
-1. Check *In List View* option.
+1. เพิ่มฟิลด์ใหม่ใน doctype ของ fieldtype color
+1. ตรวจสอบตัวเลือก *ในมุมมองรายการ*
 
  <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-in-list.png">
 
-1. Save the form, go back to the Task list, and reload.
-1. When opening an existing or new Task, you should see a color field. Pick a color for the Task.
+1. บันทึกแบบฟอร์ม กลับไปที่รายการงาน และโหลดซ้ำ
+1. เมื่อเปิดงานที่มีอยู่หรือใหม่ คุณควรเห็นช่องสี เลือกสีสำหรับงาน
 
  <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-pick-color.png">
 
-1. Go back to the Task list and switch to Gantt view.
+1. กลับไปที่รายการงานและสลับไปที่มุมมองแกนต์
 
   <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-colors.png">

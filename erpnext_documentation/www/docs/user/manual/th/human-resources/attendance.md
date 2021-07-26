@@ -1,68 +1,67 @@
 <!-- add-breadcrumbs -->
-# Attendance
+# การเข้างาน
 
-**Attendance is a record stating whether an Employee has been present on a particular
-day or not.**
+**การเข้างานป็นบันทึกที่ระบุว่าพนักงานได้มาทำงานในเหตุการณ์ใดโดยเฉพาะหรือไม่
+วันหรือไม่.**
 
-In ERPNext, you can mark and record attendance of an Employee on a daily basis using the Attendance doctype.
+ใน ERPNext คุณสามารถทำเครื่องหมายและบันทึกการเข้างานของพนักงานทุกวันโดยใช้ประเภทเอกสาการเข้างาน
 
-To access Attendance, go to:
+ในการเข้าถึงการเข้างานไปที่:
 
-> Home > Human Resources > Attendance
+> หน้าแรก > ทรัพยากรบุคคล > การเข้างาน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Attendance record, it is advised that you create the following first:
+ก่อนสร้างเรกคอร์ดการเข้างาน ขอแนะนำให้คุณสร้างสิ่งต่อไปนี้ก่อน:
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Shift Type](/docs/user/manual/en/human-resources/shift-management)
+* [ลูกจ้าง](/docs/user/manual/th/human-resources/employee)
+* [ประเภทของกะการทำงาน](/docs/user/manual/th/human-resources/shift-management)
 
-## 2. How to create an Attendance
+## 2. วิธีสร้างการเข้างาน
 
-1. Go to the Attendance list, click on New.
-1. Select the Employee.
-1. Select the Attendance Date.
-1. Select the Shift (optional).
-1. Select the Status (Present, Absent, On Leave, Half Day).
-1. Save and Submit.
+1. ไปที่รายการผู้มาทำงาน คลิกที่ ใหม่
+1. เลือกพนักงาน
+1. เลือกวันที่มาทำงาน
+1. เลือกกะการทำงาน (ไม่บังคับ)
+1. เลือกสถานะ (ปัจจุบัน, ขาด, ลา, ครึ่งวัน)
+1. บันทึกและส่ง
 
     <img class="screenshot" alt="Attendance" src="{{docs_base_url}}/assets/img/human-resources/attendance.png">
 
 
-> **Note:** Attendance cannot be marked for future dates.
+> **หมายเหตุ:** ไม่สามารถทำเครื่องหมายการมาทำงานสำหรับวันที่ในอนาคตได้
 
 
-You can get a monthly report of your Attendance data by going to the **Monthly
-Attendance Details** report.
+คุณสามารถรับรายงานข้อมูลการมาทำงานรายเดือนของคุณได้โดยไปที่ **รายละเอียดการมาทำงานรายเดือน** รายงาน
 
-You can easily set attendance for Employees using the [Employee Attendance Tool](/docs/user/manual/en/human-resources/employee-attendance-tool).
+คุณสามารถตั้งค่าการเข้างานของพนักงานได้อย่างง่ายดายโดยใช้ [เครื่องมือการตรวจสอบการมาทำงานของพนักงาน](/docs/user/manual/th/human-resources/employee-attendance-tool)
 
-You can also bulk upload attendance using the [Upload Attendance](/docs/user/manual/en/human-resources/upload-attendance).
+คุณยังสามารถอัปโหลดการมาทำงานจำนวนมากโดยใช้ [อัปโหลดการมาทำงาน](/docs/user/manual/th/human-resources/upload-attendance)
 
-## 3. Features
-### 3.1 Marking Unmarked Attendance
-In case the attendance for some employees is not marked, you can mark them as present, absent, or half-day.
+## 3. คุณสมบัติ
+### 3.1 การทำเครื่องหมายการมาทำงานที่ไม่ได้ทำเครื่องหมาย
+ในกรณีที่ไม่มีการทำเครื่องหมายการเข้างานสำหรับพนักงานบางคน คุณสามารถทำเครื่องหมายว่าเป็นปัจจุบัน ไม่อยู่ หรือครึ่งวัน
 
-#### How to Mark Attendance
-1. Go to the Attendance list.
-1. Click on the **Mark Attendance** button.
-1. A dialog will appear.
-1. Select the Employee and Month.
-1. Select the Status whether Present, Absent, or Half Day.
-1. Select the dates on which you want to mark attendance for a selected Employee.
-1. Click on the **Mark Attendance** button and click on **Yes**.
+#### วิธีการทำเครื่องหมายผู้มาทำงาน
+1. ไปที่รายการผู้มาทำงาน
+1. คลิกที่ปุ่ม **ทำเครื่องหมายการเข้างาน**
+1. กล่องโต้ตอบจะปรากฏขึ้น
+1. เลือกพนักงานและเดือน
+1. เลือกสถานะว่าปัจจุบัน ขาด หรือครึ่งวัน
+1. เลือกวันที่ที่คุณต้องการทำเครื่องหมายการเข้างานสำหรับพนักงานที่เลือก
+1. คลิกที่ปุ่ม **ทำเครื่องหมายการมาทำงาน** และคลิก **ใช่**
 
     <img class="screenshot" alt="Attendance" src="{{docs_base_url}}/assets/img/human-resources/marking_unmarked_attendance.gif">
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Employee Attendance Tool](/docs/user/manual/en/human-resources/employee-attendance-tool)
-1. [Shift Management](/docs/user/manual/en/human-resources/shift-management)
-1. [Auto Attendance](/docs/user/manual/en/human-resources/auto-attendance)
-1. [Upload Attendance](/docs/user/manual/en/human-resources/upload-attendance)
-1. [Attendance Request](/docs/user/manual/en/human-resources/attendance-request)
+1. [เครื่องมือการตรวจสอบการมาทำงานของพนักงาน](/docs/user/manual/th/human-resources/employee-attendance-tool)
+1. [การจัดการกะ](/docs/user/manual/th/human-resources/shift-management)
+1. [การมาทำงานอัตโนมัติ](/docs/user/manual/th/human-resources/auto-attendance)
+1. [อัพโหลดผู้มาทำงาน](/docs/user/manual/th/human-resources/upload-attendance)
+1. [ใบลา](/docs/user/manual/th/human-resources/attendance-request)
 
 
-It is also, possible to set up marking of attendance automatically based on check-in/check-out logs from Biometric/RFID Devices (or any other similar mechanisms that produce IN/OUT logs of the employee). Please refer to [Auto Attendance](/docs/user/manual/en/human-resources/auto-attendance) feature for more information.
+นอกจากนี้ยังสามารถตั้งค่าการทำเครื่องหมายการเข้างานโดยอัตโนมัติตามบันทึกการเช็คอิน/เช็คเอาท์จากอุปกรณ์ไบโอเมตริกซ์/RFID (หรือกลไกอื่นๆ ที่คล้ายคลึงกันซึ่งสร้างบันทึกการเข้า/ออกของพนักงาน) โปรดดูข้อมูลเพิ่มเติมที่ [เครื่องมือการตรวจสอบการมาทำงานของพนักงานอัตโนมัติ](/docs/user/manual/th/human-resources/auto-attendance)
 
 {next}

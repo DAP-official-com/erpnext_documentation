@@ -1,29 +1,29 @@
 <!-- add-breadcrumbs -->
-# Asset Maintenance Team
+#ทีมบำรุงรักษาทรัพย์สิน
 
-**The Asset Maintenance Team is responsible for carrying out maintenance activities on the Asset.**
+**ทีมบำรุงรักษาทรัพย์สินมีหน้าที่รับผิดชอบในการดำเนินการบำรุงรักษาสินทรัพย์**
 
-The maintenance activities can be cleaning, polishing, servicing, or any other activity required to maintain the Asset in good condition.
+กิจกรรมการบำรุงรักษาอาจเป็นการทำความสะอาด ขัดเงา การบริการ หรือกิจกรรมอื่นใดที่จำเป็นในการรักษาทรัพย์สินให้อยู่ในสภาพดี
 
-To access the Asset Maintenance Team, go to:
-> Home > Asset > Maintenance > Asset Maintenance Team
+ในการเข้าถึงทีมบำรุงรักษาสินทรัพย์ ไปที่:
+> หน้าหลัก > ทรัพย์สิน > บำรุงรักษา > ทีมงานบำรุงรักษาทรัพย์สิน
 
-## 1. Prerequisites
-Before creating and using Asset Maintenance Team, it is advised to create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้งาน Asset Maintenance Team ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Employee](/docs/user/manual/en/human-resources/employee)
-* [Asset](/docs/user/manual/en/asset/asset)
+* [พนักงาน](/docs/user/manual/th/human-resources/employee)
+* [สินทรัพย์](/docs/user/manual/th/asset/asset)
 
-## 2. How to create an Asset Maintenance Team
+## 2. วิธีสร้างทีมบำรุงรักษาทรัพย์สิน
 
-1. Go to the Asset Maintenance Team list, click on New.
-1. Enter a name for the team.
-1. Select a manager for the team.
-1. In the Maintenance Team Members table, add the team members and select their maintenance [roles](/docs/user/manual/en/setting-up/users-and-permissions/role-and-role-profile).
-1. Save.
+1. ไปที่รายการทีมบำรุงรักษาสินทรัพย์ คลิกที่ใหม่
+1. ป้อนชื่อทีม
+1. เลือกผู้จัดการทีม
+1. ในตารางสมาชิกทีมบำรุงรักษา เพิ่มสมาชิกในทีมและเลือก [ตำแหน่ง](/docs/user/manual/th/setting-up/users-and-permissions/role-and-role-profile) ของพวกเขา
+1. บันทึก
 
     <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset_maintenance_team.png">
 
-## 3. Related Topics
-1. [Asset Maintenance](/docs/user/manual/en/asset/asset-maintenance)
-1. [Asset Repair](/docs/user/manual/en/asset/asset-repair)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [การบํารุงรักษาสินทรัพย์](/docs/user/manual/th/asset/asset-maintenance)
+1. [การซ่อมสินทรัพย์](/docs/user/manual/th/asset/asset-repair)

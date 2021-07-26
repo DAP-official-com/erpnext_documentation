@@ -1,36 +1,36 @@
 <!-- add-breadcrumbs -->
-# Sales Invoice from Timesheet
+# ใบแจ้งหนี้การขายจาก ตารางเวลางาน
 
-A customer can be billed based on the total number of hours an employee has worked for that customer. The actual number of hours of billable work can be tracked via a [Timesheet](/docs/user/manual/en/projects/timesheets/). 
+ลูกค้าสามารถเรียกเก็บเงินตามจำนวนชั่วโมงทั้งหมดที่พนักงานทำงานให้กับลูกค้ารายนั้น สามารถติดตามจำนวนชั่วโมงการทำงานที่เรียกเก็บเงินได้จริงผ่าน [ตารางเวลางาน](/docs/user/manual/th/projects/timesheets/)
 
-**A sales invoice can be generated from each Timesheet submitted by an employee which can be used to bill the customer.**
+**สามารถสร้างอินวอยซ์การขายได้จาก ตารางเวลางาน แต่ละใบที่ส่งโดยพนักงาน ซึ่งสามารถใช้เรียกเก็บเงินลูกค้าได้**
 
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/project/projects-sales-invoice-from-timesheet.png">
 
-## 1. How to Create A Sales Invoice from A Timesheet
+## 1. วิธีสร้างใบแจ้งหนี้การขายจาก ตารางเวลางาน
 
-  1. Once the Timesheet is submitted, click on 'Create Sales Invoice'.
-  2. Enter the Item Code and name of the Customer who has to be billed against this Timesheet. The Item could be a Product as well as a Service. Click on 'Create Sales Invoice'.
-  3. All the details of the Timesheet will get auto-populated in the Sales Invoice.
-  4. The posting date and time will be set to current, you can edit after you tick the checkbox below Posting Time.
-  5. Optionally, you can include payments for POS or make this a credit note.
-  6. Save and Submit.
+  1. เมื่อส่ง ตารางเวลางาน แล้ว ให้คลิกที่ 'Create Sales Invoice'
+  2. ป้อนรหัสสินค้าและชื่อของลูกค้าที่จะต้องถูกเรียกเก็บเงินกับ ตารางเวลางาน นี้ รายการอาจเป็นผลิตภัณฑ์และบริการ คลิกที่ 'สร้างใบแจ้งหนี้การขาย'
+  3. รายละเอียดทั้งหมดของ ตารางเวลางาน จะได้รับการเติมอัตโนมัติในใบกำกับการขาย
+  4. วันที่และเวลาโพสต์จะถูกตั้งค่าเป็นปัจจุบัน คุณสามารถแก้ไขได้หลังจากทำเครื่องหมายที่ช่องด้านล่างเวลาโพสต์
+  5. คุณสามารถเลือกรวมการชำระเงินสำหรับ POS หรือทำใบลดหนี้ได้
+  6. บันทึกและส่ง
   
-To fetch the details automatically in a Sales Invoice, click on the **Get items from** button. The details can be fetched from a Sales Order, Delivery Note, or a Quotation. The details like Customer PO, Address and Contact Number, Currency and Price List, Items will get auto-populated.
+หากต้องการดึงรายละเอียดโดยอัตโนมัติในใบกำกับสินค้า ให้คลิกที่ปุ่ม **รับสินค้าจาก** รายละเอียดสามารถดึงมาจากใบสั่งขาย ใบส่งสินค้า หรือใบเสนอราคา รายละเอียดเช่น PO ของลูกค้า ที่อยู่และหมายเลขติดต่อ สกุลเงินและราคา รายการจะถูกเติมโดยอัตโนมัติ
 
 <img class="screenshot"alt="Sales Invoice" src="{{docs_base_url}}/assets/img/project/timesheet/timesheet-billing-to-sales-invoice.gif">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-Additional Details while creating a Sales Invoice from a Timesheet:
+รายละเอียดเพิ่มเติมในขณะที่สร้างใบกำกับการขายจากแผ่นเวลา:
 
-  * **Accounting Dimensions**: Accounting Dimensions lets you tag transactions to a specific Territory, Branch, Project, etc. This helps in viewing accounting statements separately based on the criteria selected. To know more, visit the [Accounting Dimensions](/docs/user/manual/en/accounts/accounting-dimensions) page.
-  * **Time Sheet List**: Since the Project is created from a Time Sheet, the details of the Time Sheet will get auto-fetched. You can click on 'Add Row' to add more Time Sheets to this Invoice. 
+  * **ลำดับขั้นางบัญชี**: ลำดับขั้นทางบัญชีช่วยให้คุณแท็กธุรกรรมไปยังอาณาเขต สาขา โครงการ ฯลฯ ซึ่งช่วยในการดูใบแจ้งยอดบัญชีแยกกันตามเกณฑ์ที่เลือก หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่หน้า [ขนาดบัญชี](/docs/user/manual/th/accounts/accounting-dimensions)
+  * **รายการบันทึกเวลา**: เนื่องจากโครงการถูกสร้างขึ้นจากใบบันทึกเวลา รายละเอียดของใบบันทึกเวลาจะถูกดึงโดยอัตโนมัติ คุณสามารถคลิกที่ 'เพิ่มแถว' เพื่อเพิ่มไทม์ชีทลงในใบแจ้งหนี้นี้
 
-All the other details can be added as you would add them in any [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice).
+คุณสามารถเพิ่มรายละเอียดอื่นๆ ทั้งหมดได้เช่นเดียวกับที่คุณเพิ่มไว้ใน [Sales Invoice](/docs/user/manual/th/accounts/sales-invoice)
 
-## 3. After submitting
+## 3. หลังจากส่ง
 
-Once you have submitted the Sales Invoice, The details like 'Total Billed Hours', 'Total Billed Amount' and '% Amount Billed' will get updated in the Timesheet. Further, a [Salary Slip](/docs/user/manual/en/projects/salary-slip-from-timesheet) can also be generated from the Timesheet.
+เมื่อคุณส่งใบกำกับสินค้าแล้ว รายละเอียดเช่น 'จำนวนชั่วโมงที่เรียกเก็บเงินทั้งหมด', 'จำนวนเงินที่เรียกเก็บเงินทั้งหมด' และ '% จำนวนเงินที่เรียกเก็บเงิน' จะได้รับการอัปเดตในแผ่นเวลา นอกจากนี้ยังสามารถสร้าง [สลิปเงินเดือน](/docs/user/manual/th/projects/salary-slip-from-timesheet) จากไทม์ชีทได้
 
 {next}

@@ -1,106 +1,106 @@
 <!-- add-breadcrumbs -->
-# Stock Reconciliation
+# การกระทบยอดสต็อก
 
-**Stock Reconciliation is the process of counting and evaluating material/products, periodically at the year end.**
+**การกระทบยอดสต็อกเป็นกระบวนการนับและประเมินวัสดุ/ผลิตภัณฑ์ เป็นระยะๆ ณ สิ้นปี**
 
-This is done in order to:
+สิ่งนี้ทำเพื่อ:
 
-* Keep the actual physical stock count and book stock count in sync
-* Value the stock for preparation of the accounting statements
+* รักษาจำนวนสต็อกที่มีอยู่จริงและนับจำนวนสต็อกในซิงค์
+* มูลค่าสต็อกเพื่อจัดทำงบการเงิน
 
-The Stock Reconciliation feature in ERPNext is used for:
+คุณลักษณะการกระทบยอดสต็อกใน ERPNext ใช้สำหรับ:
 
-* Posting opening stock
-* Reconciling book and actual stock
+* ลงสต็อคเปิด
+* หนังสือกระทบยอดกับสต๊อกจริง
 
-To access the Stock Reconciliation list, go to:
-> Home > Stock > Tools > Stock Reconciliation
+หากต้องการเข้าถึงรายการกระทบยอดสต็อก ไปที่:
+> หน้าหลัก > สต็อก > เครื่องมือ > การกระทบยอดสต็อก
 
-## 1. How to Create a Stock Reconciliation to Post Opening Stock
+## 1. วิธีสร้างการกระทบยอดสต็อกเพื่อโพสต์การเปิดสต็อค
 
-Using stock reconciliation you can update the number of specific items in a warehouse as of specific time.
-You can also add Items in the stock which have Serial Numbers or the Batch Numbers.
+การใช้การกระทบยอดสต็อคทำให้คุณสามารถอัพเดตจำนวนของสินค้าเฉพาะในคลังสินค้า ณ เวลาที่กำหนดได้
+คุณสามารถเพิ่มรายการในสต็อกที่มีหมายเลขซีเรียลหรือหมายเลขแบทช์ได้
 
-1. Go to the Stock Reconciliation list, click on New.
-1. Select the Purpose as 'Opening Stock'. You can edit the posting Date and Time.
-1. Select Item Code, Warehouse, Quantity, and Valuation Rate. If there is a Serial / Batch No involved, add it.
-1. If you want to auto-generate Serial No / Batch No then keep those fields blank.
-    * For auto-generation of Serial No, you need to set "Serial Number Series" in the Item master.
-    * For auto-generation of Batch no, you need to enable "Automatically Create New Batch" checkbox in the item master.
-1. The Difference Account will be set as 'Temporary Opening'.
-1. Save and Submit.
+1. ไปที่รายการการกระทบยอดสต็อก คลิกที่ ใหม่
+1. เลือกวัตถุประสงค์เป็น 'การเปิดสต๊อก' คุณสามารถแก้ไขวันที่และเวลาที่โพสต์ได้
+1. เลือกรหัสสินค้า คลังสินค้า ปริมาณ และอัตราการประเมินมูลค่า หากมี หมายเลขซีเรียล / หมายเลขแบทช์ ที่เกี่ยวข้อง ให้เพิ่มเข้าไป
+1. หากคุณต้องการสร้าง หมายเลขซีเรียล / หมายเลขแบทช์ โดยอัตโนมัติ ให้เว้นฟิลด์เหล่านั้นว่างไว้
+    * สำหรับการสร้าง หมายเลขซีเรียล อัตโนมัติ คุณต้องตั้งค่า "หมายเลขซีเรียลเป็นกลุ่ม" ใน รายการสินค้าหลัก
+    * สำหรับการสร้างแบทช์อัตโนมัติ คุณต้องเปิดใช้งานช่องกาเครื่องหมาย "สร้างแบทช์ใหม่โดยอัตโนมัติ" ในรายการหลัก
+1. บัญชีส่วนต่างจะถูกตั้งค่าเป็น 'การเปิดบัญชีชั่วคราว'
+1. บันทึกและส่ง
 
     ![Opening Stock](/docs/assets/img/stock/opening_stock.png)
 
-> Note: Maintain Stock option should be enabled in Item master for this to work.
+> หมายเหตุ: ควรเปิดใช้งานตัวเลือกการรักษาสต็อกในข้อมูลหลักรายการเพื่อให้ใช้งานได้
 
-## 2. How to Create a Stock Reconciliation to Reconcile Book and Physical Stock Count
+## 2. วิธีสร้างการกระทบยอดสต็อกเพื่อกระทบยอดหนังสือและจำนวนสต็อคที่มีอยู่จริง
 
-Stock Reconciliation is the process of counting and evaluating stock-in-trade, periodically and at year-end in order to value the total stock for preparing accounting statements. In this process, the actual physical stocks are checked and recorded in the system. The actual stocks and the stock in the system should be in agreement and accurate. If they are not, you can use the Stock Reconciliation tool to reconcile stock balance and value with actuals.
+การกระทบยอดสต็อกเป็นกระบวนการนับและประเมินสต็อกที่ซื้อขาย เป็นระยะ และ ณ สิ้นปี เพื่อประเมินมูลค่าของสต็อคทั้งหมดสำหรับการจัดทำงบบัญชี ในกระบวนการนี้ สต็อคที่มีอยู่จริงจะถูกตรวจสอบและบันทึกไว้ในระบบ สต็อคจริงและสต็อคในระบบควรมีความสอดคล้องและถูกต้อง หากไม่เป็นเช่นนั้น คุณสามารถใช้เครื่องมือการกระทบยอดสต็อกเพื่อกระทบยอดยอดดุลสต็อกและมูลค่ากับค่าจริงได้
 
-To reconcile the stock:
+ในการกระทบยอดหุ้น:
 
-1. Go to the Stock Reconciliation list, click on New
-1. Select the Purpose as 'Stock Reconciliation'. You can edit the posting Date and Time.
-1. Set Item Code, Warehouse.
-1. The current Quantity and Valuation Rate will be fetched, change the quantity as required.
-1. The expense account in Difference Account will be set to 'Stock Adjustment' by default.
-1. The Cost Center default will be 'Main', change if needed.
-1. Save and Submit.
+1. ไปที่รายการการกระทบยอดสต็อก คลิกที่ New
+1. เลือกวัตถุประสงค์เป็น 'การกระทบยอดสต็อก' คุณสามารถแก้ไขวันที่และเวลาที่โพสต์ได้
+1. ตั้งรหัสสินค้า โกดัง
+1. ระบบจะดึงปริมาณและอัตราการประเมินมูลค่าปัจจุบัน เปลี่ยนปริมาณตามต้องการ
+1. บัญชีค่าใช้จ่ายในบัญชีส่วนต่างจะถูกตั้งค่าเป็น 'การปรับสต็อก' โดยค่าเริ่มต้น
+1. ค่าเริ่มต้นของศูนย์ต้นทุนจะเป็น 'หลัก' เปลี่ยนแปลงหากจำเป็น
+1. บันทึกและส่ง
   
     ![Stock Reconciliation](/docs/assets/img/stock/stock_recon.png)
 
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Upload Data Through Spreadsheet
+### 3.1 อัปโหลดข้อมูลผ่านสเปรดชีต
 
-If you have a lot of items, you can upload the details via a spreadsheet.
+หากคุณมีรายการจำนวนมาก คุณสามารถอัปโหลดรายละเอียดผ่านสเปรดชีตได้
 
-1. Download Template
+1. ดาวน์โหลดเทมเพลต
 
-  Open new Stock Reconciliation and click on Download button to download the template in CSV format.
+  เปิดการกระทบยอดสต็อกใหม่และคลิกที่ปุ่มดาวน์โหลดเพื่อดาวน์โหลดเทมเพลตในรูปแบบ CSV
 
   <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock-recon-1.png">
 
-2. Enter Data in CSV Template.
+2. ป้อนข้อมูลในเทมเพลต CSV
 
-  The CSV format is case-sensitive. Do not edit the headers which are pre-set in the template. In the Item Code and Warehouse column, enter exact Item Code and Warehouse as created in your ERPNext account. For quantity, enter the stock level you wish to set for that item, in a specific warehouse.
+  รูปแบบ CSV คำนึงถึงขนาดตัวพิมพ์ ห้ามแก้ไขส่วนหัวที่กำหนดไว้ล่วงหน้าในเทมเพลต ในคอลัมน์รหัสสินค้าและคลังสินค้า ให้ป้อนรหัสสินค้าและคลังสินค้าตามที่สร้างขึ้นในบัญชี ERPNext ของคุณ สำหรับปริมาณ ป้อนระดับสินค้าคงคลังที่คุณต้องการตั้งค่าสำหรับสินค้านั้น ในคลังสินค้าเฉพาะ
 
   <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock-reco-data.png">
 
 
-3. Upload the CSV file with the data by clicking on 'Upload' button.
+3. อัปโหลดไฟล์ CSV พร้อมข้อมูลโดยคลิกที่ปุ่ม 'อัปโหลด'
 
   <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock-recon-2.png">
 
 
-4. Review, Save and Submit.
+4. ตรวจสอบ บันทึก และส่ง
 
   <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock-reco-upload.gif">
 
-5. Check Stock Ledger Report for updated stock balance.
+5. ตรวจสอบรายงานบัญชีแยกประเภทเพื่ออัพเดทยอดสต็อก
 
   <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock-reco-ledger.png">
 
-### 3.2 Get Stock Balance and Valuation as of Specific Date and Time
+### 3.2 รับยอดคงเหลือของสต็อคและการประเมินมูลค่า ณ วันที่และเวลาที่ระบุ
 
-You can import the stock balance and valuation as of specific date and time from a selected Warehouse by clicking on **Items** button. You can update the Quantity and Valuation Rate as needed.
+คุณสามารถนำเข้ายอดคงเหลือของสต็อคและการประเมินมูลค่า ณ วันที่และเวลาที่ระบุจากคลังสินค้าที่เลือกโดยคลิกที่ปุ่ม **รายการ** คุณสามารถอัปเดตปริมาณและอัตราการประเมินมูลค่าได้ตามต้องการ
 
 <img class="screenshot" alt="Stock Reconciliation Items Button" src="{{docs_base_url}}/assets/img/stock/stock_reconciliation_items_button.gif">
 
-## 4. How Stock Reconciliation Works
+## 4. การกระทบยอดสต็อกทำงานอย่างไร
 
-Once a stock reconciliation is posted to update the quantity on specific date and time for an item in a warehouse, it will not be modified by subsequent stock transactions even if such transactions have a posting date which is prior to the stock reconciliation date. In other words, backdated entries will not change the stock numbers after a Stock Reconciliation entry is posted.
+เมื่อมีการผ่านรายการการกระทบยอดสต็อกเพื่ออัปเดตปริมาณในวันที่และเวลาที่ระบุสำหรับสินค้าในคลังสินค้า ธุรกรรมดังกล่าวจะไม่ถูกแก้ไขโดยธุรกรรมสินค้าคงคลังที่ตามมา แม้ว่าธุรกรรมดังกล่าวจะมีวันที่ผ่านรายการซึ่งอยู่ก่อนวันที่กระทบยอดสต็อก กล่าวอีกนัยหนึ่ง รายการย้อนหลังจะไม่เปลี่ยนหมายเลขหุ้นหลังจากผ่านรายการการกระทบยอดสต็อกแล้ว
 
-Examples are as follows.
+ตัวอย่างมีดังนี้
 
-### 4.1 For non-serialized Items
-Consider an item with code 'ABC001' in a 'Mumbai' warehouse.
-Let's assume that stock as on 10th January is 100 units.
-Stock Reconciliation is made on 12th January to set stock balance to 150 units.
+### 4.1 สำหรับรายการที่ไม่ต่อเนื่องกัน
+พิจารณารายการที่มีรหัส 'ABC001' ในคลังสินค้า 'มุมไบ'
+สมมติว่าสต็อก ณ วันที่ 10 มกราคม มี 100 หน่วย
+การกระทบยอดสต็อกจะทำขึ้นในวันที่ 12 มกราคม เพื่อกำหนดยอดคงเหลือในสต็อกเป็น 150 หน่วย
 
-Stock Ledger would look as shown below:
+บัญชีแยกประเภทสต็อกจะมีลักษณะดังนี้:
 <html>
 <style>
     td {
@@ -142,7 +142,7 @@ Stock Ledger would look as shown below:
         </table>
 </html>
 
-If a new Purchase Receipt entry is made on 5th January 2014, which is prior to the date of Stock Reconciliation entry, Stock Ledger would look as shown below.
+หากมีรายการรับซื้อใหม่เกิดขึ้นในวันที่ 5 มกราคม 2557 ซึ่งอยู่ก่อนวันที่รายการกระทบยอดสต็อก บัญชีแยกประเภทหุ้นจะมีลักษณะดังนี้
 <html>
     <table border="1" cellspacing="0px">
         <tbody>
@@ -174,49 +174,49 @@ If a new Purchase Receipt entry is made on 5th January 2014, which is prior to t
     </table>
 </html>
 
-As you can see, the Balance Qty as on 10th January got updated from 100 to 120. But the Balance Qty as on 12th January did not get updated from 150 to 170.
+ยอดดุล ณ วันที่ 10 มกราคม ได้รับการอัปเดตจาก 100 เป็น 120 แต่ยอดดุล ณ วันที่ 12 มกราคม ไม่ได้รับการอัปเดตจาก 150 เป็น 170
 
 
-### 4.2 For Serialized Items
+### 4.2 สำหรับรายการที่ต่อเนื่องกัน
 
-For an Item, ITEM-00225 that has has the 6 serial nos HJF00020, HJF00021, HJF00022, HJF00023, HJF00024, HJF00025 with valuation rate as 530 per serial no. At the end of the year, the user has come to know that they have only 3 Serial Nos against that item with Valuation Rate 620. So to remove the old serial nos HJF00020, HJF00021, HJF00022, HJF00023, HJF00024, HJF00025 and add the new serial nos with new Valuation Rate, Stock Reconciliation can be used as follows:
+สำหรับรายการ ITEM-00225 ที่มีหมายเลขซีเรียล 6 หมายเลข HJF00020, HJF00021, HJF00022, HJF00023, HJF00024, HJF00025 โดยมีอัตราการประเมินมูลค่า 530 ต่อหมายเลขซีเรียล ปลายปีนี้ ผู้ใช้ได้รู้ว่ามี หมายเลขซีเรียล เพียง 3 หมายเลขซีเรียล เทียบกับรายการนั้นที่มี Valuation Rate 620 ดังนั้นให้ลบ หมายเลขซีเรียล เก่า HJF00020, HJF00021, HJF00022, HJF00023, HJF00024, HJF00025 ออก และเพิ่มใหม่ หมายเลขซีเรียลที่มีอัตราการตีราคาใหม่ การกระทบยอดสต็อก สามารถใช้ได้ดังนี้:
 
-Select the item ITEM-00225 in the stock reconciliation, on the selection of the Item the system will auto pull the existing serials nos. Then set Qty as 3, Valuation Rate as 530 and serial no as HJF00026, HJF00027, HJF00028.
+เลือกรายการ ITEM-00225 ในการกระทบยอดสต็อก ในการเลือกรายการ ระบบจะดึงหมายเลขซีเรียลที่มีอยู่โดยอัตโนมัติ จากนั้นตั้งค่า Qty เป็น 3, Valuation Rate เป็น 530 และ หมายเลขซีเรียล เป็น HJF00026, HJF00027, HJF00028
 
 
 <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock-recon-for-serialized.png">
 
-Before reconciliation, the valuation rate was 530 and the available qty was 6, so the total stock value was 3,180. After reconciliation, the valuation rate has changed to 620 and available qty changed to 3, so the new stock value becomes 1,860. To adjust the stock value in the accounting, the system has credited extra amount 3,180 - 1,860 = 1,320 to Warehouse's account and debited to stock adjustment account. The GL entries for the above entry is as follows:
+ก่อนการกระทบยอด อัตราการประเมินมูลค่าคือ 530 และจำนวนที่มีอยู่คือ 6 ดังนั้นมูลค่าสต็อคทั้งหมดจึงเท่ากับ 3,180 หลังจากการกระทบยอด อัตราการประเมินมูลค่าเปลี่ยนเป็น 620 และจำนวนที่มีอยู่เปลี่ยนเป็น 3 ดังนั้นมูลค่าหุ้นใหม่จึงกลายเป็น 1,860 ในการปรับมูลค่าสต็อคในการบัญชี ระบบได้เพิ่มยอดเงินพิเศษ 3,180 - 1,860 = 1,320 เข้าบัญชีของ คลังสินค้า และหักเข้าบัญชีการปรับปรุงสต็อก รายการ GL สำหรับรายการด้านบนมีดังนี้:
 
-To view GL entries, click on button View > Accounting Ledger
+หากต้องการดูรายการ GL ให้คลิกที่ปุ่ม ดู > บัญชีแยกประเภท
 
 <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/gl_entry_for_serialized_items.png">
 
-The stock balance after submission of the stock reconciliation:
+ยอดเงินคงเหลือหลังจากส่งการกระทบยอดสต็อก:
 <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock_balance_after_stock_reco_submission.png">
 
-The general ledger for the warehouse account Nagpur after submission of the stock reconciliation:
+บัญชีแยกประเภททั่วไปสำหรับบัญชีคลังสินค้านาคปุระหลังจากส่งการกระทบยอดสต็อก:
 <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/general_ledger_after_stock_reco_submission.png">
 
-### 4.3 For Batch Items
+### 4.3 สำหรับรายการแบทช์
 
-Stock reconciliation for batch items will be used to add a new batch or to update the quantity of the existing batch. For example, the batch JHGJH00003 has the current quantity as 60 but if the user wants to make it 100 then by using stock reconciliation, user can update the batch quantity.
+การกระทบยอดสินค้าคงคลังสำหรับสินค้าชุดงานจะใช้เพื่อเพิ่มชุดงานใหม่หรือปรับปรุงปริมาณของชุดงานที่มีอยู่ ตัวอย่างเช่น แบทช์ JHGJH00003 มีปริมาณปัจจุบันเป็น 60 แต่ถ้าผู้ใช้ต้องการทำให้เป็น 100 โดยใช้การกระทบยอดสต็อก ผู้ใช้สามารถอัปเดตปริมาณแบทช์ได้
 
 <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/for_batch_item_after_stock_reco_submission.png">
 
-Batch-Wise Balance History report after submission of the stock reconciliation:
+รายงานประวัติยอดคงเหลือแบบ Batch-Wise หลังจากส่งการกระทบยอดสต็อก:
 <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/batchwise_balance_history_after_stock_reco_submission.png">
 
-## 5. Video
+## 5. วีดีโอ
 
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/nlHX0ZZ84Lw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-### 6. Related Topics
-1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
-1. [Accounting Of Inventory Stock](/docs/user/manual/en/stock/accounting-of-inventory-stock)
+### 6. หัวข้อที่เกี่ยวข้อง
+1. [รายการสต็อค](/docs/user/manual/th/stock/stock-entry)
+1. [การบัญชีสินค้าคงคลัง](/docs/user/manual/th/stock/accounting-of-inventory-stock)
 
 
 {next}

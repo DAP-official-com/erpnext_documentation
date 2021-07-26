@@ -1,15 +1,15 @@
 <!-- add-breadcrumbs -->
-# Bulk Payment Entry
+# รายการชำระเงินจำนวนมาก
 
-If you want to create a single payment entry adjusting against multiple invoices, follow the steps given below.
+หากคุณต้องการสร้างรายการชำระเงินรายการเดียวที่ปรับตามใบแจ้งหนี้หลายใบ ให้ทำตามขั้นตอนด้านล่าง
 
-* Make a "New Payment Entry".
-* Select a Party Type and Party. On selection of a Party, all the outstanding invoices will be fetched for that Customer/Supplier.
-* Enter the Payment Amount.
-* Allocate the amount against invoices/orders as needed.
-* Save and Submit Payment Entry.
+* ทำ "รายการชำระเงินใหม่"
+* เลือกประเภทผู้ที่เกี่ยวข้อง ในการเลือกคู่สัญญา จะมีการเรียกใบแจ้งหนี้ที่ค้างชำระทั้งหมดสำหรับลูกค้า/ซัพพลายเออร์รายนั้น
+* ป้อนจำนวนเงินที่ชำระ
+* จัดสรรจำนวนเงินกับใบแจ้งหนี้/คำสั่งซื้อตามความจำเป็น
+* บันทึกและส่งรายการการชำระเงิน
 
-### Demo of Bulk Payment Entry
+### ตัวอย่างรายการชำระเงินจำนวนมาก
 
 <img class="screenshot" alt="Bulk Payment" src="{{docs_base_url}}/assets/img/accounts/bulk-payment.gif">
 

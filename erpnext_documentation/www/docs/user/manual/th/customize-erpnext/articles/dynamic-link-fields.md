@@ -1,48 +1,48 @@
 <!-- add-breadcrumbs -->
-# Dynamic Link Fields
+# ฟิลด์ลิงค์ไดนามิก
 
-Dynamic Link field is a field which can search and hold the value of any DocType. Let's consider an example to learn how Dynamic Link field works.
+ฟิลด์ Dynamic Link เป็นฟิลด์ที่สามารถค้นหาและเก็บค่าของ DocType ใดๆ ลองพิจารณาตัวอย่างเพื่อเรียนรู้วิธีการทำงานของช่องลิงก์แบบไดนามิก
 
-While creating Opportunity or Quotation, we have to explicitly define if it is for a Lead or a Customer. Based on our selection (Lead/Customer), another link field shows up where we can select the actual Lead or Customer.
+ขณะสร้างโอกาสหรือใบเสนอราคา เราต้องกำหนดอย่างชัดเจนว่ามีไว้สำหรับลูกค้าเป้าหมายหรือลูกค้า ตามการเลือกของเรา (ลูกค้าเป้าหมาย/ลูกค้า) ฟิลด์ลิงก์อื่นจะปรากฏขึ้นซึ่งเราสามารถเลือกลูกค้าเป้าหมายหรือลูกค้าที่แท้จริงได้
 
-If you set the former field as Dynamic Link, where we select actual Lead or Customer, then the later field will be automatically linked to master selected in the first field, i.e. Leads or Customers. Hence we need not insert separate link fields for Customer and Lead.
+หากคุณตั้งค่าฟิลด์เดิมเป็น Dynamic Link ซึ่งเราเลือกลูกค้าเป้าหมายจริงหรือลูกค้า จากนั้นฟิลด์ภายหลังจะเชื่อมโยงกับข้อมูลหลักที่เลือกในช่องแรกโดยอัตโนมัติ นั่นคือ ลูกค้าเป้าหมายหรือลูกค้า ดังนั้นเราจึงไม่จำเป็นต้องแทรกฟิลด์ลิงก์แยกสำหรับลูกค้าและลูกค้าเป้าหมาย
 
-Below are the steps to insert Custom Dynamic Field. For instance, we will insert Dynamic Link Field in Journal Entry.
+ด้านล่างนี้คือขั้นตอนในการแทรก Dynamic Field แบบกำหนดเองตัวอย่างเช่น เราจะแทรก Dynamic Link Field ในรายการบันทึกประจำวัน
 
-#### Step 1: Insert Link Field for DocType
+#### ขั้นตอนที่ 1: แทรกฟิลด์ลิงก์สำหรับ DocType
 
-First, we will create a link field that will be linked to the DocType.
+ขั้นแรก เราจะสร้างช่องลิงก์ที่จะเชื่อมโยงกับ DocType
 
 <img alt="Custom Link Field" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-dynamic-link-1.gif">
 
-By **DocType** mentioned in the Option field, we mean parent DocType. So, just like Quotation is one DocType, which has multiple Quotation under it. Same way, DocType is also a DocType which has Sales Order, Purchase Order and other doctypes created as DocType records.
+โดย **DocType** ที่กล่าวถึงในช่องตัวเลือก เราหมายถึง DocType หลัก เช่นเดียวกับ Quotation คือ DocType หนึ่งรายการซึ่งมี Quotation หลายรายการอยู่ข้างใต้ เช่นเดียวกับ DocType ที่เป็น DocType ซึ่งมีใบสั่งขาย ใบสั่งซื้อ และประเภทเอกสารอื่นๆ ที่สร้างเป็นระเบียน DocType
 
 **DocType**<br>
----- Sales Order<br>
----- Purchase Invoice<br>
----- Quotation<br>
----- Sales Invoice<br>
----- Employee<br>
----- Work Order<br>
-.. and so on.
+---- คำสั่งขาย<br>
+---- ใบสั่งซื้อ<br>
+---- ใบเสนอราคา<br>
+---- ใบแจ้งหนี้การขาย<br>
+---- พนักงาน<br>
+----สั่งงาน<br>
+..และอื่นๆ.
 
-So linking this field with parent DocType will list all the DocType records.
+ดังนั้นการเชื่อมโยงฟิลด์นี้กับ DocType หลักจะแสดงรายการระเบียน DocType ทั้งหมด
 
 <img alt="journal Voucher Link Field" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-dynamic-link.png">
 
-#### Step 2: Insert Dynamic Link Field
+#### ขั้นตอนที่ 2: แทรกช่องลิงก์แบบไดนามิก
 
-This custom field's type will be "Dynamic Link". In the Option field, the name of the Doctype link field will be mentioned.
+ประเภทของฟิลด์ที่กำหนดเองนี้จะเป็น "Dynamic Link" ในฟิลด์ตัวเลือก ชื่อของฟิลด์ลิงก์ Doctype จะถูกกล่าวถึง
 
 <img alt="Custom Dynamic Field" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-dynamic-link-2.gif">
 
-This field will allow selecting document id, based on the value selected in the Doctype link field. For example, if we select Sales Order in the prior field, the Dynamic Link field will list all the Sales Orders ids.
+ช่องนี้จะอนุญาตให้เลือกรหัสเอกสารตามค่าที่เลือกในช่องลิงก์ประเภทเอกสาร ตัวอย่างเช่น หากเราเลือก Sales Order ในฟิลด์ก่อนหน้า ฟิลด์ Dynamic Link จะแสดงรายการรหัสใบสั่งขายทั้งหมด
 
 <img alt="Custom Dynamic Field" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-dynamic-link-3.gif">
 
-**Customizing options in the Doctype Link field**
+**ตัวเลือกการปรับแต่งในช่อง Doctype Link**
 
-By default, the DocType link field will provide all the forms/docTypes for selection. If you wish this field to show certain specific docTypes in the search result, you will need to write Custom Script for it.
+โดยค่าเริ่มต้น ฟิลด์ลิงก์ DocType จะให้แบบฟอร์ม/docType ทั้งหมดสำหรับการเลือก หากคุณต้องการให้ฟิลด์นี้แสดง docType เฉพาะเจาะจงในผลการค้นหา คุณจะต้องเขียนสคริปต์ที่กำหนดเองสำหรับฟิลด์นี้
 
 {next}
 <!-- markdown -->

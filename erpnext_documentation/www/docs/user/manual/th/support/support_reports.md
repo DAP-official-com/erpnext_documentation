@@ -1,50 +1,50 @@
 <!-- add-breadcrumbs -->
-# Support Reports
+# รายงานการสนับสนุน
 
-The various reports in the Support module help understand data on how quickly support staff responded to customer issues, the issue types, issue priorities, timelines, and more.
+รายงานต่างๆ ในโมดูลการสนับสนุนช่วยให้เข้าใจข้อมูลที่เจ้าหน้าที่ฝ่ายสนับสนุนตอบสนองต่อปัญหาของลูกค้า ประเภทปัญหา ลำดับความสำคัญของปัญหา ไทม์ไลน์ และอื่นๆ ได้รวดเร็วเพียงใด
 
-## 1. First Response Time for Issues
+## 1. เวลาตอบกลับครั้งแรกสำหรับปัญหา
 
-This report provides a date-wise summary of Average First Response Time for Issues reported during the selected time frame. It will display the date and the "Average First Response Time" taken to respond to all the issues created on the respective date.
+รายงานนี้ให้ข้อมูลสรุปตามวันที่ของเวลาในการตอบกลับครั้งแรกโดยเฉลี่ยสำหรับปัญหาที่รายงานในช่วงเวลาที่เลือก มันจะแสดงวันที่และ "เวลาตอบสนองครั้งแรกโดยเฉลี่ย" ที่ใช้เพื่อตอบสนองต่อปัญหาทั้งหมดที่สร้างขึ้นในวันที่นั้น ๆ
 
-To access the First Response Time for Issues report, go to:
-> Home > Support > Reports > First Response Time for Issues
+หากต้องการเข้าถึงรายงาน First Response Time for Issues ให้ไปที่:
+> หน้าหลัก > การสนับสนุน > รายงาน > เวลาตอบกลับครั้งแรกสำหรับปัญหา
 
 <img class="screenshot" alt="First Response Time for Issues" src="{{docs_base_url}}/assets/img/support/first-response-time.png">
 
-## 2. Issue Summary
+## 2. สรุปประเด็น
 
-This report provides a detailed summary of issues reported based on the filters. You can view the summary based on the following parameters:
+รายงานนี้ให้ข้อมูลสรุปโดยละเอียดของปัญหาที่รายงานตามตัวกรอง คุณสามารถดูสรุปตามพารามิเตอร์ต่อไปนี้:
 
-1. Customer
-2. Assigned To
-3. Issue Type
-4. Issue Priority
+1. ลูกค้า
+2. มอบหมายให้
+3. ประเภทปัญหา
+4. ลำดับความสำคัญของการออก
 
-For example, if we select the report based on Customer, it will show a list of all the Customers along with the following details for every customer based on the filters applied:
+ตัวอย่างเช่น หากเราเลือกรายงานตามลูกค้า รายงานจะแสดงรายการลูกค้าทั้งหมดพร้อมกับรายละเอียดต่อไปนี้สำหรับลูกค้าทุกรายตามตัวกรองที่ใช้:
 
-1. Number of Open, Replied, Resolved, and Closed issues.
-2. Total Number of Issues raised by that customer.
-3. Number of Issues for which the SLA has been fulfilled, failed, and ongoing.
-4. Average support metrics like Avg First Response Time, Avg Response Time, Avg Resolution Time, Avg User Resolution Time, Avg Hold Time.
+1. จำนวนปัญหาที่เปิด ตอบ แก้ไข และปิด
+2. จำนวนปัญหาทั้งหมดที่ลูกค้ารายนั้นแจ้ง
+3. จำนวนปัญหาที่ SLA ได้รับการปฏิบัติตาม ล้มเหลว และต่อเนื่อง
+4. ตัวชี้วัดการสนับสนุนโดยเฉลี่ย เช่น เวลาตอบสนองครั้งแรกเฉลี่ย เวลาตอบสนองเฉลี่ย เวลาแก้ไขเฉลี่ย เวลาแก้ปัญหาผู้ใช้เฉลี่ย เวลาพักเฉลี่ย
 
-The stacked chart shows the number of issues classified by status for each customer. Report Summary shows the total number of Open, Replied, Resolved, and Closed issues in the entire report.
+แผนภูมิแบบเรียงซ้อนแสดงจำนวนปัญหาที่จำแนกตามสถานะสำหรับลูกค้าแต่ละราย สรุปรายงานแสดงจำนวนรวมของปัญหาเปิด ตอบแล้ว แก้ไขแล้ว และปิดในรายงานทั้งหมด
 
-To access the Issue Summary report, go to:
-> Home > Support > Reports > Issue Summary
+หากต้องการเข้าถึงรายงานสรุปปัญหา ไปที่:
+> หน้าหลัก > การสนับสนุน > รายงาน > สรุปปัญหา
 
 <img class="screenshot" alt="Issue Summary" src="{{docs_base_url}}/assets/img/support/issue-summary-report.png">
 
-## 3. Issue Analytics
+## 3. การวิเคราะห์ปัญหา
 
-This report provides a count of issues according to weekly, monthly, quarterly, and yearly time series based on the following parameters:
+รายงานนี้แสดงจำนวนปัญหาตามอนุกรมเวลารายสัปดาห์ รายเดือน รายไตรมาส และรายปีตามพารามิเตอร์ต่อไปนี้
 
-1. Customer
-2. Assigned To
-3. Issue Type
-4. Issue Priority
+1. ลูกค้า
+2. มอบหมายให้
+3. ประเภทปัญหา
+4. ลำดับความสำคัญของการออก
 
-To access the Issue Analytics report, go to:
-> Home > Support > Reports > Issue Analytics
+หากต้องการเข้าถึงรายงานการวิเคราะห์ปัญหา ให้ไปที่:
+> หน้าหลัก > การสนับสนุน > รายงาน > การวิเคราะห์ปัญหา
 
 <img class="screenshot" alt="Issue Analytics" src="{{docs_base_url}}/assets/img/support/issue-analytics.png">

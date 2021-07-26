@@ -1,67 +1,67 @@
 
 <!-- add-breadcrumbs -->
-#Setting Up Dropbox Backups
+#การตั้งค่าการสำรองข้อมูล Dropbox
 
-We always recommend customers to maintain backup of their data in ERPNext. The database backup is downloaded in the form of an SQL file. If needed, this SQL file of backup can be restored in the another ERPNext account as well.
+เราแนะนำให้ลูกค้าสำรองข้อมูลใน ERPNext เสมอ การสำรองข้อมูลฐานข้อมูลจะถูกดาวน์โหลดในรูปแบบของไฟล์ SQL หากจำเป็น ไฟล์ SQL ของการสำรองข้อมูลนี้สามารถกู้คืนได้ในบัญชี ERPNext อื่นเช่นกัน
 
-You can automate database backup download of your ERPNext account into your Dropbox account.
+คุณสามารถทำการดาวน์โหลดสำรองฐานข้อมูลของบัญชี ERPNext ลงในบัญชี Dropbox ของคุณโดยอัตโนมัติ
 
-To setup Dropbox Backup,
-> Home > Integrations > Dropbox Settings
+ในการตั้งค่าการสำรองข้อมูล Dropbox
+> หน้าแรก > การผสานการทำงาน > การตั้งค่า Dropbox
 
-##Steps are different for ERPnext managed versions and open-source versions
+##ขั้นตอนต่างกันสำหรับ ERP เวอร์ชันที่มีการจัดการถัดไปและเวอร์ชันโอเพ่นซอร์ส
 
-###ERPnext Managed Version Instructions
+###ERPnext Managed Version คำแนะนำ
 
-####Step 1: Set Frequency
+####ขั้นตอนที่ 1: ตั้งค่าความถี่
 
-Set Frequency to download backup in your Dropbox account.
+ตั้งค่าความถี่เพื่อดาวน์โหลดข้อมูลสำรองในบัญชี Dropbox ของคุณ
 
 <img class="screenshot" alt="set frequency" src="{{docs_base_url}}/assets/img/setup/integrations/setup-backup-frequency.png">
 
-####Step 2: Allow Dropbox Access
+####ขั้นตอนที่ 2: อนุญาตการเข้าถึง Dropbox
 
-After setting frequency and updating other details, click on `Allow Dropbox access`. On clicking this button, the Dropbox login page will open in the new tab. This might require you to allow pop-up for your ERPNext account.
+หลังจากตั้งค่าความถี่และอัปเดตรายละเอียดอื่นๆ แล้ว ให้คลิกที่ 'อนุญาตการเข้าถึง Dropbox' เมื่อคลิกปุ่มนี้ หน้าเข้าสู่ระบบ Dropbox จะเปิดขึ้นในแท็บใหม่ ซึ่งอาจต้องการให้คุณอนุญาตป๊อปอัปสำหรับบัญชี ERPNext ของคุณ
 
-####Step 3: Login to Dropbox
+####ขั้นตอนที่ 3: เข้าสู่ระบบ Dropbox
 
-Login to your Dropbox account by entering login credentials.
+เข้าสู่ระบบบัญชี Dropbox ของคุณโดยป้อนข้อมูลรับรองการเข้าสู่ระบบ
 
 <img class="screenshot" alt="Login" src="{{docs_base_url}}/assets/img/setup/integrations/dropbox-2.png">
 
-####Step 4: Allow
+####ขั้นตอนที่ 4: อนุญาต
 
-On successful login, you will find a confirmation message as following. Click on "Allow" to let your ERPNext account have access to your Dropbox account.
+เมื่อเข้าสู่ระบบสำเร็จ คุณจะพบข้อความยืนยันดังต่อไปนี้ คลิกที่ "อนุญาต" เพื่อให้บัญชี ERPNext ของคุณสามารถเข้าถึงบัญชี Dropbox ของคุณได้
 
 <img class="screenshot" alt="Allow" src="{{docs_base_url}}/assets/img/setup/integrations/dropbox-3.png">
 
-With this, a folder called "ERPNext" will be created in your Dropbox account, and database backup will start to auto-download in it.
+ด้วยวิธีนี้ โฟลเดอร์ชื่อ "ERPNext" จะถูกสร้างขึ้นในบัญชี Dropbox ของคุณ และการสำรองฐานข้อมูลจะเริ่มดาวน์โหลดอัตโนมัติในนั้น
 
 
-##Open Source Version Instructions
+## คำแนะนำเวอร์ชันโอเพ่นซอร์ส
 
-####Step 1: Login to Dropbox Developer area
+####ขั้นตอนที่ 1: ลงชื่อเข้าใช้พื้นที่นักพัฒนา Dropbox
 
 <a href="https://www.dropbox.com/developers/apps" target="_blank" style="line-height: 1.42857143;">https://www.dropbox.com/developers/apps</a>
-####Step 2: Create a new Dropbox app
+####ขั้นตอนที่ 2: สร้างแอป Dropbox ใหม่
 <img class="screenshot" alt="Create new" src="{{docs_base_url}}/assets/img/setup/integrations/dropbox-open-3.png">
-####Step 3: Fill in the details for your new app
+####ขั้นตอนที่ 3: กรอกรายละเอียดสำหรับแอปใหม่ของคุณ
 <img class="screenshot" alt="Choose Dropbox API and type as APP Folder" src="{{docs_base_url}}/assets/img/setup/integrations/dropbox-open-1.png">
 -
 <img class="screenshot" alt="Setup APP Name" src="{{docs_base_url}}/assets/img/setup/integrations/dropbox-open-2.png">
-####Step 4: Insert your custom domain Redirect URI
+####ขั้นตอนที่ 4: แทรก URI การเปลี่ยนเส้นทางโดเมนที่กำหนดเองของคุณ
 `https://{yourwebsite.com}/api/method/frappe.integrations.doctype.dropbox_settings.dropbox_settings.dropbox_auth_finish`
 <img class="screenshot" alt="Set Redirect URL" src="{{docs_base_url}}/assets/img/setup/integrations/dropbox_redirect_uri.png">
 
-####Step 5: In a new window, open the Dropbox Settings page in your ERPnext installation
-####Step 6: Set backup frequency and email
-Set the frequency to download your site backups to your Dropbox account.
+####ขั้นตอนที่ 5: ในหน้าต่างใหม่ เปิดหน้าการตั้งค่า Dropbox ในการติดตั้ง ERPnext ของคุณ
+####ขั้นตอนที่ 6: ตั้งค่าความถี่ในการสำรองข้อมูลและอีเมล
+กำหนดความถี่ในการดาวน์โหลดข้อมูลสำรองไซต์ของคุณไปยังบัญชี Dropbox ของคุณ
 <img class="screenshot" alt="set frequency" src="/docs/assets/img/setup/integrations/setup-backup-frequency.png">
 
-####Step 7: Input Keys from your Dropbox App window
-From your Dropbox App page, enter the app key and (unhidden) app secret into the ERPnext Dropbox settings page.
+####ขั้นตอนที่ 7: ปุ่มป้อนข้อมูลจากหน้าต่างแอป Dropbox ของคุณ
+จากหน้าแอพ Dropbox ของคุณ ให้ป้อนรหัสแอพและ (ไม่ได้ซ่อน) ความลับของแอพลงในหน้าการตั้งค่า ERP ถัดไป Dropbox
 
-Alternatively, you can enter it manually in `sites/{sitename}/site_config.json` as follows,
+หรือคุณสามารถป้อนด้วยตนเองใน `sites/{sitename}/site_config.json` ดังนี้
 <div>
 	<pre>
 		<code>{ 
@@ -74,19 +74,19 @@ Alternatively, you can enter it manually in `sites/{sitename}/site_config.json` 
 	</pre>
 </div>
 
-####Step 8: Click Save before continuing!!!
-####Step 9: After saving, click "Allow Dropbox Access"
-The Dropbox login page will open in the new tab. This might require you to allow pop-up for your ERPNext account.
-####Step 11: Allow Dropbox Access
-On successful login, you will find a confirmation message as following. Click on "Allow" to let your ERPNext account have access to your Dropbox account.
+####ขั้นตอนที่ 8: คลิกบันทึกก่อนดำเนินการต่อ
+####ขั้นตอนที่ 9: หลังจากบันทึกแล้ว ให้คลิก "อนุญาตการเข้าถึง Dropbox"
+หน้าเข้าสู่ระบบ Dropbox จะเปิดขึ้นในแท็บใหม่ ซึ่งอาจต้องการให้คุณอนุญาตป๊อปอัปสำหรับบัญชี ERPNext ของคุณ
+####ขั้นตอนที่ 11: อนุญาตการเข้าถึง Dropbox
+เมื่อเข้าสู่ระบบสำเร็จ คุณจะพบข้อความยืนยันดังต่อไปนี้ คลิกที่ "อนุญาต" เพื่อให้บัญชี ERPNext ของคุณสามารถเข้าถึงบัญชี Dropbox ของคุณได้
 <img class="screenshot" alt="Allow" src="/docs/assets/img/setup/integrations/dropbox-3.png">
-####Step 12: Confirm Backups Work
-From the ERPnext Dropbox page, click `Take Backup Now` and then go to you Dropbox files view. You should see a new folder in Dropbox named `Apps` and inside of it your {New App} folder. Inside of it should be backup folders for both files and database.
-So for an app named `erpnext`, following are the folder locations:
+####ขั้นตอนที่ 12: ยืนยันการทำงานของการสำรองข้อมูล
+จากหน้า ERPnext Dropbox ให้คลิก 'Take Backup Now' จากนั้นไปที่มุมมองไฟล์ Dropbox คุณควรเห็นโฟลเดอร์ใหม่ใน Dropbox ชื่อ 'Apps' และภายในโฟลเดอร์ {New App} ของคุณ ข้างในควรเป็นโฟลเดอร์สำรองสำหรับทั้งไฟล์และฐานข้อมูล
+ดังนั้นสำหรับแอปชื่อ `erpnext' ต่อไปนี้เป็นตำแหน่งของโฟลเดอร์:
 ```
 Database files: /Apps/erpnext/database
 Public files: /Apps/erpnext/files
 Private files: /Apps/erpnext/private/files
 ```
 
-> **Note**: If the compressed backup size exceeds 1GB (Gigabyte), the system will upload the latest available backup to Dropbox instead of generating a new backup file.
+> **หมายเหตุ**: หากขนาดการสำรองข้อมูลที่บีบอัดเกิน 1GB (กิกะไบต์) ระบบจะอัปโหลดข้อมูลสำรองล่าสุดที่มีไปยัง Dropbox แทนที่จะสร้างไฟล์สำรองใหม่

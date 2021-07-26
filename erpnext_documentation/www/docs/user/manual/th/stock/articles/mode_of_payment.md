@@ -1,11 +1,11 @@
-#Mode of Payment
+#วิธีการชำระเงิน
 
-In the sales and purchase transactions, there are various options to settle the payment. We can do it in cash, via bank transfer, via promotion voucher to list a few. In ERPNext, you can create Mode of Payments as per your requirement. In the Payment Entry, you can select the Mode of Payment applicable.
+ในธุรกรรมการขายและการซื้อ มีตัวเลือกมากมายในการชำระเงิน เราสามารถทำได้ด้วยเงินสด โดยการโอนเงินผ่านธนาคาร ผ่านบัตรกำนัลส่งเสริมการขายเพื่อแสดงรายการบางส่วน ใน ERPNext คุณสามารถสร้างโหมดการชำระเงินได้ตามความต้องการของคุณ ในรายการการชำระเงิน คุณสามารถเลือกรูปแบบการชำระเงินที่ใช้ได้
 
-You can manage standard Mode of Payments and create new ones from:
+คุณสามารถจัดการโหมดการชำระเงินมาตรฐานและสร้างรูปแบบใหม่ได้จาก:
 
-> Accounting > Setup > Mode of Payment
+> การบัญชี > การตั้งค่า > วิธีการชำระเงิน
 
 <img alt="reorder level" class="screenshot" src="{{docs_base_url}}/assets/img/accounts/mode-of-payments.png">
 
-In each Mode of Payment master, you can also set a default payment account. On selection of Mode of Payment, the respective payment account will be fetched automatically in the transaction.
+ในแต่ละวิธีการชำระเงินหลัก คุณยังสามารถตั้งค่าบัญชีการชำระเงินเริ่มต้นได้ ในการเลือกรูปแบบการชำระเงิน บัญชีการชำระเงินที่เกี่ยวข้องจะถูกดึงโดยอัตโนมัติในการทำธุรกรรม

@@ -1,17 +1,17 @@
 <!-- add-breadcrumbs -->
-# Exchange Rate Field Frozen
+# ช่องอัตราแลกเปลี่ยนถูกระงับ
 
-In ERPNext, you can fetch Exchange Rates between currencies in real-time, or save specific exchange rates as well. In ERPNext, saved exchange rates are also referred as Stale Exchange Rate.
+ใน ERPNext คุณสามารถดึงอัตราแลกเปลี่ยนระหว่างสกุลเงินต่างๆ แบบเรียลไทม์ หรือบันทึกอัตราแลกเปลี่ยนเฉพาะได้เช่นกัน ใน ERPNext อัตราแลกเปลี่ยนที่บันทึกไว้ยังเรียกว่าอัตราแลกเปลี่ยนเก่า
 
-In your sales and purchase transactions, if the field of Currency Exchange Rate is frozen, that is because the feature of allowing stale exchange rates in transactions is enabled. To you wish to make Currency Exchange Rate field editable again, then disable the feature of Stale Exchange Rate from:
+ในธุรกรรมการขายและการซื้อของคุณ ถ้าฟิลด์ของอัตราแลกเปลี่ยนเงินตราถูกระงับ นั่นเป็นเพราะคุณลักษณะของการอนุญาตอัตราแลกเปลี่ยนที่ค้างในธุรกรรมถูกเปิดใช้งาน หากต้องการให้แก้ไขช่องอัตราแลกเปลี่ยนเงินตราได้อีกครั้ง จากนั้นปิดใช้งานคุณลักษณะอัตราแลกเปลี่ยนเก่าจาก:
 
-* Accounts > Setup > Accounts Settings
-* Uncheck field "Allow Stale Exchange Rates".
+* บัญชี > ตั้งค่า > การตั้งค่าบัญชี
+* ยกเลิกการเลือกช่อง "อนุญาตอัตราแลกเปลี่ยนเก่า"
     <img class="screenshot" alt="Exchange Rate Frozen" src="{{docs_base_url}}/assets/img/accounts/exchange-rate-frozen.png">
-* Save Account Settings
-* Refresh your ERPNext account
-* Check Sales / Purchase transaction once again
+* บันทึกการตั้งค่าบัญชี
+* รีเฟรชบัญชี ERPNext ของคุณ
+* ตรวจสอบรายการขาย / ซื้ออีกครั้ง
 
-After this setting, the Exchange Rate field in the transactions should become editable once again.
+หลังจากการตั้งค่านี้ ฟิลด์อัตราแลกเปลี่ยนในธุรกรรมควรจะสามารถแก้ไขได้อีกครั้ง
 
 {next}
