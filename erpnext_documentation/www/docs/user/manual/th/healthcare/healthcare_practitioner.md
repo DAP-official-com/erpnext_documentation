@@ -1,64 +1,64 @@
 <!-- add-breadcrumbs -->
-# Healthcare Practitioner
+#ผู้ประกอบวิชาชีพด้านการแพทย์
 
-Healthcare Practitioners are the doctors, nurses, ward boys, lab technicians, etc. who are serving the hospital unit in one way or another. ERPNext Healthcare allows you to create multiple practitioners and link to a User with appropriate Roles. You can also link a Healthcare Practitioner to an [Employee](/docs/user/manual/en/human-resources/employee) to track Payroll, Attendance or other Human Resource Management activities.
+ผู้ประกอบวิชาชีพด้านการแพทย์ ได้แก่ แพทย์ พยาบาล เด็กชายวอร์ด ช่างเทคนิคในห้องปฏิบัติการ ฯลฯ ที่กำลังให้บริการหน่วยโรงพยาบาลไม่ทางใดก็ทางหนึ่ง ERPNext Healthcare ช่วยให้คุณสร้างผู้ปฏิบัติงานหลายคนและเชื่อมโยงไปยังผู้ใช้ที่มีบทบาทที่เหมาะสม คุณยังสามารถเชื่อมโยงผู้ปฏิบัติงานด้านการดูแลสุขภาพกับ [พนักงาน](/docs/user/manual/th/human-resources/employee) เพื่อติดตามเงินเดือน การเข้าร่วม หรือกิจกรรมการจัดการทรัพยากรมนุษย์อื่นๆ
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/practitioner_1.png">
 
-To create a Practitioner, go to,
+ในการสร้างผู้ประกอบวิชาชีพ ไปที่
 
-> Home > Healthcare > Masters > Healthcare Practitioner
+> หน้าหลัก > การดูแลสุขภาพ > รายการหลัก > ผู้ประกอบวิชาชีพด้านการแพทย์
 
-## 1. How to Create a Healthcare Practitioner
+## 1. วิธีสร้างผู้ประกอบวิชาชีพด้านการดูแลสุขภาพ
 
-1. Go to the Healthcare Practitioner list and click on New.
-2. Select the Naming Series.
-3. Enter basic details like First Name, Last Name, Gender, Mobile number.
-4. Optionally, select a Medical Department.
-4. Save.
+1. ไปที่รายการ ผู้ประกอบวิชาชีพด้านการแพทย์ แล้วคลิก ใหม่
+2. เลือกชุดการตั้งชื่อ
+3. กรอกรายละเอียดพื้นฐาน เช่น ชื่อ นามสกุล เพศ เบอร์มือถือ
+4. หรือเลือกแผนกการแพทย์
+4. บันทึก
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/practitioner.png">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Track Payroll, Attendance, Roles and Permissions
+### 2.1 ติดตามเงินเดือน การเข้าร่วม บทบาทและการอนุญาต
 
-In order to track all Human Resource Management activities for the Practitioner, you need to create and select the [Employee](/docs/user/manual/en/human-resources/employee) in the "Employee" field in practitioner. This will help run [Payroll](/docs/user/manual/en/human-resources/payroll-intro) and also track availability and attendance for booking appointments by setting appropriate [Holiday List](/docs/user/manual/en/human-resources/holiday-list) and [Practitioner Schedule](/docs/user/manual/en/healthcare/practitioner_schedule). You can then create an ERPNext User linked to the Employee document. This will help track permissions for the Practitioner.
+ในการติดตามกิจกรรมการจัดการทรัพยากรมนุษย์ทั้งหมดสำหรับผู้ปฏิบัติงาน คุณต้องสร้างและเลือก [หนักงาน](/docs/user/manual/th/human-resources/employee) ในช่อง "หนักงาน" ในผู้ปฏิบัติงาน สิ่งนี้จะช่วยเรียกใช้ [เงินเดือน](/docs/user/manual/th/human-resources/payroll-intro) และยังติดตามความพร้อมใช้งานและการเข้าร่วมสำหรับการจองการนัดหมายด้วยการตั้งค่า [Holiday List](/docs/user/manual/th /human-resources/holiday-list) และ [ตารางแพทย์](/docs/user/manual/th/healthcare/practitioner_schedule) จากนั้นคุณสามารถสร้างผู้ใช้ ERPNext ที่เชื่อมโยงกับเอกสารพนักงาน ซึ่งจะช่วยติดตามการอนุญาตสำหรับผู้ปฏิบัติงาน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/practitioner-employee.png">
 
-> Note: Selecting the Employee field will fetch in all relevant fields as configured in the Employee document to help you easily set up the Practitioner
+> หมายเหตุ: การเลือกฟิลด์พนักงานจะดึงข้อมูลในฟิลด์ที่เกี่ยวข้องทั้งหมดตามที่กำหนดค่าไว้ในเอกสารพนักงานเพื่อช่วยให้คุณตั้งค่าผู้ปฏิบัติงานได้อย่างง่ายดาย
 
-If the Healthcare Practitioners are not employees in your Healthcare Units you can link User to the Practitioner and assign them the required roles.
+หากผู้ปฏิบัติงานด้านการดูแลสุขภาพไม่ใช่พนักงานในหน่วยบริการสุขภาพของคุณ คุณสามารถเชื่อมโยงผู้ใช้กับผู้ปฏิบัติงานและมอบหมายบทบาทที่จำเป็นให้พวกเขาได้
 
-### 2.2 Practitioner Availability
+### 2.2 ความพร้อมใช้งานของผู้ปฏิบัติงาน
 
-You can select multiple [Practitioner Schedule](/docs/user/manual/en/healthcare/practitioner_schedule) for each practitioner and optionally set a service unit at which the practitioner will be available.
+คุณสามารถเลือก [กำหนดการของผู้ปฏิบัติงาน](/docs/user/manual/th/healthcare/practitioner_schedule) ได้หลายรายการ และเลือกกำหนดหน่วยบริการที่ผู้ประกอบวิชาชีพจะพร้อมให้บริการ
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/practitioner_availability.png">
 
-### 2.3 Healthcare Practitioner Charges
+### 2.3 ค่าแพทย์พยาบาล
 
-You can select or create the service items for consulting charges and set them in "Out-Patient Consulting Charge Item" and "In-Patient Consulting Charge Item". These will be fetched in Sales Invoices. You can set the consultation charges which are applicable to the practitioner. If required, you can also select an Income Account for a Physician to book all Consultation charges into separate accounts.
+คุณสามารถเลือกหรือสร้างรายการบริการสำหรับค่าธรรมเนียมการให้คำปรึกษาและตั้งค่าใน "รายการค่าธรรมเนียมการให้คำปรึกษาผู้ป่วยนอก" และ "รายการค่าธรรมเนียมการให้คำปรึกษาผู้ป่วยใน" สิ่งเหล่านี้จะถูกดึงมาในใบแจ้งหนี้การขาย คุณสามารถกำหนดค่าธรรมเนียมการให้คำปรึกษาที่เกี่ยวข้องกับผู้ประกอบวิชาชีพได้ หากจำเป็น คุณยังสามารถเลือกบัญชีรายได้สำหรับแพทย์เพื่อจองค่าบริการให้คำปรึกษาทั้งหมดเป็นบัญชีแยกต่างหาก
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/practitioner_charges.png">
 
-> Note: Make sure that the Items you create for services have "Maintain Stock" and "Include Items in Manufacturing" unchecked since they are service items.
+> หมายเหตุ: ตรวจสอบให้แน่ใจว่ารายการที่คุณสร้างสำหรับบริการไม่ได้เลือก "รักษาสต็อก" และ "รวมรายการในการผลิต" เนื่องจากเป็นรายการบริการ
 
-### 2.4 Referring Physicians
+### 2.4 แพทย์อ้างอิง
 
-You may also want to manage a list of Doctors who refers Patients to your facility. You can manage such data in the Healthcare Practitioner document itself by leaving out the Employee and User links.
+คุณอาจต้องการจัดการรายชื่อแพทย์ที่ส่งต่อผู้ป่วยมายังสถานพยาบาลของคุณ คุณสามารถจัดการข้อมูลดังกล่าวได้ในเอกสารของ ผู้ประกอบวิชาชีพด้านการแพทย์ โดยละเว้นลิงก์พนักงานและผู้ใช้
 
-### 2.5 Link Multiple Addresses and Contacts
+### 2.5 เชื่อมโยงที่อยู่และที่อยู่ติดต่อหลายรายการ
 
-Suppose the Practitioner works at various hospitals, you can link multiple contacts and addresses for that Practitioner.
+สมมติว่าผู้ปฏิบัติงานทำงานในโรงพยาบาลต่างๆ คุณสามารถเชื่อมโยงผู้ติดต่อและที่อยู่หลายรายการสำหรับผู้ปฏิบัติงานนั้นได้
 
-> This Form has been Changed in Version 13
+> แบบฟอร์มนี้มีการเปลี่ยนแปลงในเวอร์ชัน 13
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Users and Permissions](/docs/user/manual/en/setting-up/users-and-permissions)
-2. [Employee](/docs/user/manual/en/human-resources/employee)
-3. [Practitioner Schedule](/docs/user/manual/en/healthcare/practitioner_schedule)
+1. [ผู้ใช้และการอนุญาต](/docs/user/manual/th/setting-up/users-and-permissions)
+2. [พนักงาน](/docs/user/manual/th/human-resources/employee)
+3. [ตารางแพทย์](/docs/user/manual/th/healthcare/practitioner_schedule)
 
 {next}

@@ -1,110 +1,110 @@
 <!-- add-breadcrumbs -->
-# Lab Test Template
+# เทมเพลตการทดสอบในห้องปฏิบัติการ
 
-**Lab Test Template in ERPNext allows you to create all types of Lab Tests rapidly.**
+**Lab Test Template ใน ERPNext ช่วยให้คุณสร้าง Lab Tests ทุกประเภทได้อย่างรวดเร็ว**
 
-You can pre-configure the events and result components for Single, Compound, Descriptive, or Grouped tests, so that, you don't have to fill in redundant data every single time.
+คุณสามารถกำหนดค่าเหตุการณ์ล่วงหน้าและส่วนประกอบผลลัพธ์สำหรับการทดสอบเดี่ยว แบบผสม คำอธิบาย หรือแบบกลุ่ม เพื่อที่คุณจะได้ไม่ต้องกรอกข้อมูลซ้ำซ้อนทุกครั้ง
 
-## 1. How to create a Lab Test Template
+## 1. วิธีสร้างเทมเพลตการทดสอบในห้องปฏิบัติการ
 
-To create a Lab Test Template, go to:
+หากต้องการสร้างเทมเพลตการทดสอบในห้องปฏิบัติการ ให้ไปที่:
 
-> Home > Healthcare > Laboratory > Lab Test Template > New Lab Test Template
+> หน้าหลัก > การดูแลสุขภาพ > ห้องปฏิบัติการ > เทมเพลตการทดสอบในห้องปฏิบัติการ > เทมเพลตการทดสอบแล็บใหม่
 
-The following are the common fields in the Template of every result format.
+ต่อไปนี้เป็นฟิลด์ทั่วไปในเทมเพลตของทุกรูปแบบผลลัพธ์
 
-1. **Test Name**: Specify the name of the Lab Test.
-2. **Item Code**: For managing the billing workflow of lab tests, items are created automatically on template creation. Provide the Item Code for the test in this field.
-3. **Item Group**: You can group the lab tests based on different criteria using this field. Create an Item Group or choose from the existing ones.
-4. **Department**: Medical department for which this lab test is conducted.
-5. **Result Format**: Specify the result format for the lab test:
-  - Single: In this type of lab test only one result value is interpreted.
-  - Compound: In compound lab tests, the sample is tested for multiple events.
-  - Descriptive: These types of tests are used for testing multiple result components and you can also configure checking the sensitivity of the sample for various antibiotics here.
-  - Grouped: These are a group of other test templates.
-  - No Result: These are the tests that have no result values.
-6. **Description**: You can provide a detailed description of the test here.
-7. **Is Billable**: Check this if the test is billable.
-8. **Rate**: If _Is Billable_ is checked, then you have to specify the rate for the lab test in this field. In this case, Item Price will be configured automatically upon saving the template.
+1. **ชื่อการทดสอบ**: ระบุชื่อการทดสอบในห้องปฏิบัติการ
+2. **รหัสสินค้า**: สำหรับการจัดการเวิร์กโฟลว์การเรียกเก็บเงินของการทดสอบในห้องปฏิบัติการ รายการจะถูกสร้างขึ้นโดยอัตโนมัติในการสร้างเทมเพลต ระบุ รหัสสินค้า สำหรับการทดสอบในช่องนี้
+3. **กลุ่มรายการ**: คุณสามารถจัดกลุ่มการทดสอบในห้องปฏิบัติการตามเกณฑ์ต่างๆ โดยใช้ฟิลด์นี้ สร้างกลุ่มรายการหรือเลือกจากกลุ่มที่มีอยู่
+4. **แผนก**: แผนกการแพทย์ที่ทำการทดสอบในห้องปฏิบัติการนี้
+5. **รูปแบบผลลัพธ์**: ระบุรูปแบบผลลัพธ์สำหรับการทดสอบในห้องปฏิบัติการ:
+  - เดี่ยว: ในการทดสอบในห้องปฏิบัติการประเภทนี้ จะมีการตีความค่าผลลัพธ์เพียงค่าเดียว
+  - สารประกอบ: ในการทดสอบในห้องปฏิบัติการผสม ตัวอย่างจะได้รับการทดสอบหลายเหตุการณ์
+  - คำอธิบาย: การทดสอบประเภทนี้ใช้สำหรับการทดสอบส่วนประกอบผลลัพธ์หลายส่วน และคุณยังสามารถกำหนดค่าการตรวจสอบความไวของตัวอย่างสำหรับยาปฏิชีวนะต่างๆ ได้ที่นี่
+  - จัดกลุ่ม: นี่คือกลุ่มของเทมเพลตการทดสอบอื่นๆ
+  - ไม่มีผลลัพธ์: นี่คือการทดสอบที่ไม่มีค่าผลลัพธ์
+6. **คำอธิบาย**: คุณสามารถให้คำอธิบายโดยละเอียดของการทดสอบได้ที่นี่
+7. **เรียกเก็บเงินได้**: เลือกตัวเลือกนี้หากการทดสอบเรียกเก็บเงินได้
+8. **อัตรา**: หากเลือก _Is Billable_ คุณจะต้องระบุอัตราสำหรับการทดสอบในห้องปฏิบัติการในช่องนี้ ในกรณีนี้ ราคาสินค้าจะได้รับการกำหนดค่าโดยอัตโนมัติเมื่อบันทึกเทมเพลต
 
-### 1.1 Single Result Format
+### 1.1 รูปแบบผลลัพธ์เดียว
 
-In this result format, only one result value is interpreted. After filling up the details specified in the first step, the UOM, Secondary UOM, and Normal Range need to be set. For example, the Haemoglobin test is often used to check for anemia, usually along with a hematocrit or as part of a complete blood count (CBC).
+ในรูปแบบผลลัพธ์นี้ จะมีการตีความค่าผลลัพธ์เพียงค่าเดียว หลังจากกรอกรายละเอียดที่ระบุไว้ในขั้นตอนแรกแล้ว จะต้องตั้งค่า UOM, UOM รอง และ Normal Range ตัวอย่างเช่น การทดสอบเฮโมโกลบินมักใช้เพื่อตรวจหาภาวะโลหิตจาง มักใช้ร่วมกับฮีมาโตคริตหรือเป็นส่วนหนึ่งของการตรวจนับเม็ดเลือด (CBC)
 
 ![Single Result Format](/docs/assets/img/healthcare/single-result.png)
 
-### 1.2 Compound Result Format
+### 1.2 รูปแบบผลลัพธ์แบบผสม
 
-In this result format, the sample is tested for multiple events. These events need to be configured in the "Compound" table. You can set the Events and specify the UOM, Secondary UOM, Conversion Factor, and Normal Range for each event. If at all some event's result need not be specified in the Lab Test, you can check "Allow Blank" for that event. If this is not checked, the system will not let you submit the Lab Test unless all the result values are set.
+ในรูปแบบผลลัพธ์นี้ ตัวอย่างจะถูกทดสอบสำหรับหลายเหตุการณ์ เหตุการณ์เหล่านี้ต้องได้รับการกำหนดค่าในตาราง "สารประกอบ" คุณสามารถตั้งค่าเหตุการณ์และระบุ UOM, UOM รอง, ปัจจัยการแปลง และช่วงปกติ สำหรับแต่ละเหตุการณ์ หากไม่จำเป็นต้องระบุผลลัพธ์ของเหตุการณ์บางอย่างในการทดสอบห้องแล็บ คุณสามารถเลือก "อนุญาตให้ว่างเปล่า" สำหรับกิจกรรมนั้นได้ หากไม่ตรวจสอบ ระบบจะไม่อนุญาตให้คุณส่ง Lab Test เว้นแต่จะตั้งค่าผลลัพธ์ทั้งหมดไว้
 
 ![Compound Result Format](/docs/assets/img/healthcare/compound-result.png)
 
-### 1.3 Descriptive Result Format
+### 1.3 รูปแบบผลลัพธ์เชิงพรรณนา
 
-These types of tests are used for testing multiple result components. You can also configure testing the sensitivity of the sample for various antibiotics by enabling the "Sensitivity" option in the template. You can use the "Allow Blank" option to allow keeping result entries blank for certain components.
+การทดสอบประเภทนี้ใช้สำหรับการทดสอบส่วนประกอบผลลัพธ์หลายรายการ คุณยังสามารถกำหนดค่าการทดสอบความไวของตัวอย่างสำหรับยาปฏิชีวนะต่างๆ โดยเปิดใช้งานตัวเลือก "ความไว" ในเทมเพลต คุณสามารถใช้ตัวเลือก "Allow Blank" เพื่ออนุญาตให้เก็บรายการผลลัพธ์ว่างไว้สำหรับส่วนประกอบบางอย่าง
 
 ![Descriptive Result Format](/docs/assets/img/healthcare/descriptive-result.png)
 
-### 1.4 Grouped Result Format
+### 1.4 รูปแบบผลลัพธ์ที่จัดกลุ่ม
 
-A grouped result format is used to create a Lab Test result as a group of other tests or events eg: Complete Haemogram. The Complete haemogram test is a group of tests performed on a sample of blood. Haemogram serves as a broad screening panel that checks for the presence of any diseases and infections in the body. Haemogram tests mainly the three components of blood:
+รูปแบบผลลัพธ์ที่จัดกลุ่มจะใช้เพื่อสร้างผลการทดสอบในห้องปฏิบัติการเป็นกลุ่มของการทดสอบหรือเหตุการณ์อื่น ๆ เช่น Complete Haemogram การทดสอบฮีโมแกรมแบบสมบูรณ์เป็นกลุ่มของการทดสอบที่ทำกับตัวอย่างเลือด Haemogram ทำหน้าที่เป็นแผงตรวจคัดกรองในวงกว้างที่ตรวจหาโรคและการติดเชื้อในร่างกาย การตรวจ Hemogram จะตรวจเลือดเป็นหลัก 3 ส่วน ได้แก่
 
-- The hemoglobin test is often used to check for anemia, usually along with a hematocrit or as part of a complete blood count (CBC).
-- A DLC blood test is one that measures the percentage of every single type of WBCs in the body.
-- TLC is a test that determines the number of WBCs in our bodies.
-- Neutrophils (Event)
+- การทดสอบฮีโมโกลบินมักใช้เพื่อตรวจหาภาวะโลหิตจาง มักใช้ร่วมกับฮีมาโตคริตหรือเป็นส่วนหนึ่งของการตรวจนับเม็ดเลือด (CBC)
+- การตรวจเลือด DLC เป็นการตรวจเปอร์เซ็นต์ของ WBCs ทุกชนิดในร่างกาย
+- TLC เป็นการทดสอบที่กำหนดจำนวน WBCs ในร่างกายของเรา
+- นิวโทรฟิล (เหตุการณ์)
 
-You can configure the UOM, Secondary UOM and, Normal Range in case of events. On selecting other tests in the table, the system automatically fetches the description and rate of those single/compound tests
+คุณสามารถกำหนดค่า UOM, UOM รอง และ Normal Range ในกรณีของเหตุการณ์ ในการเลือกการทดสอบอื่นๆ ในตาราง ระบบจะดึงคำอธิบายและอัตราของการทดสอบเดี่ยว/แบบผสมโดยอัตโนมัติ
 
 ![Grouped Result Format](/docs/assets/img/healthcare/grouped-result.png)
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Automatic Item Creation for Templates
+### 2.1 การสร้างรายการอัตโนมัติสำหรับเทมเพลต
 
-Templates allow you to manage the billable item, rate, etc. for a particular lab test. The system automatically creates an Item linked to the template when it is saved. If the template is billable, then item price is also created for it.
+เทมเพลตช่วยให้คุณจัดการรายการที่เรียกเก็บเงินได้ อัตรา ฯลฯ สำหรับการทดสอบในห้องปฏิบัติการโดยเฉพาะ ระบบจะสร้างรายการที่เชื่อมโยงกับเทมเพลตโดยอัตโนมัติเมื่อบันทึก หากเทมเพลตสามารถเรียกเก็บเงินได้ จะมีการสร้างราคาสินค้าสำหรับเทมเพลตนั้นด้วย
 
 ![Lab Test Item](/docs/assets/img/healthcare/lab-test-item.png)
 
-You can change the Item Code linked to the Lab Template if needed, using the **Change Template Code** button.
+คุณสามารถเปลี่ยนรหัสสินค้าที่เชื่อมโยงกับเทมเพลตห้องทดลองได้ หากจำเป็น โดยใช้ปุ่ม **เปลี่ยนรหัสเทมเพลต**
 
-### 2.2 Disable Templates
+### 2.2 ปิดการใช้งานเทมเพลต
 
-You can disable the templates when they are not being used by checking the "Disabled" checkbox. The linked item is also disabled on disabling a Lab Test Template.
+คุณสามารถปิดใช้งานเทมเพลตเมื่อไม่ได้ใช้งานโดยทำเครื่องหมายที่ช่อง "ปิดใช้งาน" รายการที่เชื่อมโยงยังถูกปิดใช้งานเมื่อปิดใช้งานเทมเพลตการทดสอบแล็บ
 
-### 2.3 Medical Coding
+### 2.3 การเข้ารหัสทางการแพทย์
 
-You can also configure the Medical Code Standard and Medical Code for your templates in the Medical Coding section.
+คุณยังสามารถกำหนดค่า Medical Code Standard และ Medical Code สำหรับเทมเพลตของคุณได้ในส่วน Medical Coding
 
 ![Medical Code](/docs/assets/img/healthcare/lab-test-medical-code.png)
 
-### 2.4 Configure Sample Collection
+### 2.4 กำหนดค่าการเก็บตัวอย่าง
 
-You can configure the Sample that has to be collected while creating the Lab Test. Select the Lab Test Sample, set the UOM and quantity required.
+คุณสามารถกำหนดค่าตัวอย่างที่ต้องรวบรวมขณะสร้างการทดสอบในห้องปฏิบัติการ เลือก ตัวอย่างการทดสอบในห้องปฏิบัติการ ตั้งค่า UOM และจำนวนที่ต้องการ
 
 ![Medical Code](/docs/assets/img/healthcare/lab-test-template-sample.png)
 
-### 2.5 Worksheet Print
+### 2.5 พิมพ์แผ่นงาน
 
-You can configure the instructions for Lab Technicians here. These instructions will be visible in the "Lab Test Print" format for Lab Test doctype only when it is not submitted.
+คุณสามารถกำหนดค่าคำแนะนำสำหรับช่างเทคนิคในห้องปฏิบัติการได้ที่นี่ คำแนะนำเหล่านี้จะมองเห็นได้ในรูปแบบ "Lab Test Print" สำหรับประเภทเอกสาร Lab Test เฉพาะเมื่อไม่ได้ส่ง
 
 ![Worksheet](/docs/assets/img/healthcare/worksheet.png)
 
-### 2.6 Result Legend Print
+### 2.6 พิมพ์คำอธิบายผลลัพธ์
 
-> This Form has been Changed in Version 13
+> แบบฟอร์มนี้มีการเปลี่ยนแปลงในเวอร์ชัน 13
 
-You can configure the sample that has to be collected while creating the Lab Test. Select the Lab Test Sample, set the UOM and quantity required. Select the position where you want to print this legend and configure the legend in the "Result Legend" field.
+คุณสามารถกำหนดค่าตัวอย่างที่ต้องรวบรวมขณะสร้าง Lab Test เลือก Lab Test Sample ตั้งค่า UOM และจำนวนที่ต้องการ เลือกตำแหน่งที่คุณต้องการพิมพ์คำอธิบายนี้และกำหนดค่าคำอธิบายในฟิลด์ "คำอธิบายผลลัพธ์"
 
 ![Result Legend](/docs/assets/img/healthcare/result-legend.png)
 
-Lab Test Print format:
+รูปแบบการพิมพ์การทดสอบในห้องปฏิบัติการ:
 
 ![Result Legend Print](/docs/assets/img/healthcare/result-legend-print.png)
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Lab Test](/docs/user/manual/en/healthcare/lab_test)
-1. [Sample Collection](/docs/user/manual/en/healthcare/sample_collection)
+1. [การทดสอบในห้องปฏิบัติการ](/docs/user/manual/th/healthcare/lab_test)
+1. [การเก็บตัวอย่าง](/docs/user/manual/th/healthcare/sample_collection)
 
 {next}

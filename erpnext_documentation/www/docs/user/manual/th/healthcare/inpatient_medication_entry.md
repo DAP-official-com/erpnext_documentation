@@ -1,72 +1,71 @@
 <!-- add-breadcrumbs -->
-# Inpatient Medication Entry
+# รายการยาสำหรับผู้ป่วยใน
 
-**An Inpatient Medication Entry (IPME) is created to process Inpatient Medication Orders in bulk based on some filters and to optionally update stock on dispensing the drugs.**
+**รายการยาสำหรับผู้ป่วยใน (IPME) ถูกสร้างขึ้นเพื่อประมวลผลใบสั่งยาสำหรับผู้ป่วยในจำนวนมากตามตัวกรองบางตัวและเพื่ออัปเดตสต็อกในการจ่ายยา**
 
-To access the Inpatient Medication Entry list, go to:
+หากต้องการเข้าถึงรายการรายการยาสำหรับผู้ป่วยใน ให้ไปที่:
 
-> Home > Healthcare > Inpatient > Inpatient Medication Entry
+> หน้าหลัก > การดูแลสุขภาพ > ผู้ป่วยใน > รายการยาผู้ป่วยใน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Inpatient Medication Entry, you need to create the following records first:
+ก่อนสร้างรายการยาสำหรับผู้ป่วยใน คุณต้องสร้างเรกคอร์ดต่อไปนี้ก่อน:
 
-* [Patient](/docs/user/manual/en/healthcare/patient)
-* [Inpatient Record](/docs/user/manual/en/healthcare/inpatient_record)
-* [Inpatient Medication Order](/docs/user/manual/en/healthcare/inpatient_medication_order)
+* [ผู้ป่วย](/docs/user/manual/th/healthcare/patient)
+* [บันทึกผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_record)
+* [ใบสั่งยาผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_medication_order)
 
-## 2. How to Create an Inpatient Medication Entry
+## 2. วิธีสร้างรายการยาสำหรับผู้ป่วยใน
 
-1. Go to the Inpatient Medication Entry list and click on New.
-2. Select the Company.
-3. Set the Posting Date.
-4. There are various filters available to fetch the pending Inpatient Medication Orders:
+1. ไปที่รายการรายการยาสำหรับผู้ป่วยใน แล้วคลิก ใหม่
+2. เลือกบริษัท
+3. ตั้งวันที่โพสต์
+4. มีตัวกรองต่างๆ ที่สามารถดึงใบสั่งยาสำหรับผู้ป่วยในที่รอดำเนินการได้:
 
-    - **Item Code (Drug)**
-    - **Assigned To**: You can select the user who is assigned for the Inpatient Medication Order completion.
-    - **Patient**
-    - **Healthcare Practitioner** who has prescribed the drugs.
-    - **Healthcare Service Unit** where you want to dispense the drugs. You can use these filters whenever you are dispensing drugs in a particular HSU like an Isolation Ward, etc.
-    - **Date and Time filters**
+    - **รหัสสินค้า (ยา)**
+    - **มอบหมายให้**: คุณสามารถเลือกผู้ใช้ที่ได้รับมอบหมายให้เสร็จสิ้นใบสั่งยาสำหรับผู้ป่วยใน
+    - **อดทน**
+    - **แพทย์เวชปฏิบัติ** ที่ได้สั่งยา
+    - **หน่วยบริการสุขภาพ** ที่ท่านต้องการจ่ายยา คุณสามารถใช้ตัวกรองเหล่านี้ได้ทุกเมื่อที่คุณจ่ายยาใน HSU โดยเฉพาะ เช่น Isolation Ward เป็นต้น
+    - **ตัวกรองวันที่และเวลา**
 
     <img class="screenshot" alt="Inpatient Medication Entry filters" src="{{docs_base_url}}/assets/img/healthcare/ime-filters.png">
 
-5. After setting the filters, click on the **Get Pending Medication Orders** button to fetch the pending orders which fall under the selected filters.
-6. Optionally, check/uncheck _Update Stock_. If checked, specify the Warehouse from where drugs should be consumed.
+5. หลังจากตั้งค่าตัวกรองแล้ว ให้คลิกปุ่ม **รับคำสั่งซื้อยาที่รอดำเนินการ** เพื่อดึงข้อมูลคำสั่งซื้อที่รอดำเนินการซึ่งอยู่ภายใต้ตัวกรองที่เลือก
+6. เลือก/ยกเลิกการเลือก _Update Stock_ หากตรวจสอบแล้ว ให้ระบุโกดังสินค้าที่ควรบริโภคยา
 
     <img class="screenshot" alt="Update Stock" src="{{docs_base_url}}/assets/img/healthcare/ime-stock.png">
 
-### 2.2 On Submission of Inpatient Medication Entry
+### 2.2 ในการส่งรายการยาสำหรับผู้ป่วยใน
 
-The corresponding Inpatient Medication Order Entries are marked as completed.
+รายการใบสั่งยาสำหรับผู้ป่วยในที่เกี่ยวข้องจะถูกทำเครื่องหมายว่าเสร็จสมบูรณ์
 
 <img class="screenshot" alt="Completed Inpatient Medication Order Entry" src="{{docs_base_url}}/assets/img/healthcare/imoe-completed.png">
 
-If _Update Stock_ is checked, then stock validations are made and orders are processed to make Stock Entry with references updated against each entry.
-You can check the references for Inpatient Medication Entry in the Stock Entry, and in Stock Entry Detail table for the Patient and corresponding Entry.
+หากเลือก _Update Stock_ จะมีการตรวจสอบความถูกต้องของสต็อกและคำสั่งซื้อจะได้รับการประมวลผลเพื่อให้รายการสต็อคมีข้อมูลอ้างอิงที่อัปเดตกับแต่ละรายการ
+คุณสามารถตรวจสอบข้อมูลอ้างอิงสำหรับรายการยาสำหรับผู้ป่วยในในรายการสินค้าคงคลัง และในตารางรายละเอียดรายการสินค้าสำหรับผู้ป่วยและรายการที่เกี่ยวข้อง
 
 <img class="screenshot" alt="Stock Entry" src="{{docs_base_url}}/assets/img/healthcare/ime-stock-entry.png">
 
 <img class="screenshot" alt="Stock Entry Detail" src="{{docs_base_url}}/assets/img/healthcare/ime-stock-entry-detail.png">
 
-### 2.3 On Cancellation of Inpatient Medication Entry
+### 2.3 การยกเลิกรายการยาสำหรับผู้ป่วยใน
 
-The corresponding Stock Entry is cancelled and the linked Inpatient Medication Order Entry is marked as incomplete again.
+รายการสต็อคที่เกี่ยวข้องจะถูกยกเลิกและรายการใบสั่งยาสำหรับผู้ป่วยในที่เชื่อมโยงจะถูกทำเครื่องหมายว่าไม่สมบูรณ์อีกครั้ง
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Make Stock Entry for Drug Shortage
+### 3.1 จัดทำรายการสต็อกสำหรับปัญหาการขาดแคลนยา
 
-If _Update Stock_ is checked, and the required quantity of drugs is not available for consumption in the selected warehouse, on submission, you will see a summary of all the drugs and the shortage quantity.
+หากมีการตรวจสอบ _อัพเดตสต็อค_ และปริมาณยาที่ต้องการไม่สามารถใช้ได้ในคลังสินค้าที่เลือก เมื่อส่ง คุณจะเห็นสรุปของยาทั้งหมดและปริมาณการขาดแคลน
 
 <img class="screenshot" alt="Drug Shortage Dialog" src="{{docs_base_url}}/assets/img/healthcare/drug-shortage-dialog.gif">
 
-A **Make Stock Entry** button will be visible when the document is in the draft state and _Update Stock_ is checked. On clicking this button, the system will check for drug shortage and create a new Stock Entry for Material Transfer by mapping all the drugs and the shortage quantity for each. The "To Warehouse" for this Stock Entry will be the Medication Warehouse that you have selected in the Inpatient Medication Entry. You can then set the "Source Warehouse", save, and submit the Stock Entry to proceed with the Medication Entry.
-
+ปุ่ม **สร้างรายการสินค้า** จะปรากฏให้เห็นเมื่อเอกสารอยู่ในสถานะร่างและเลือก _Update Stock_ เมื่อคลิกปุ่มนี้ ระบบจะตรวจสอบการขาดแคลนยาและสร้างรายการสต็อคใหม่สำหรับการโอนวัตถุดิบ โดยการจับคู่ยาทั้งหมดและปริมาณการขาดแคลนยาแต่ละรายการ "ไปที่คลังสินค้า" สำหรับรายการสินค้าในสต็อกนี้จะเป็นคลังยาที่คุณเลือกในรายการยาสำหรับผู้ป่วยใน จากนั้นคุณสามารถตั้งค่า "คลังสินค้าต้นทาง บันทึกและส่งรายการสต็อคเพื่อดำเนินการกับรายการยาได้
 <img class="screenshot" alt="Make Stock Entry for Drug Shortage" src="{{docs_base_url}}/assets/img/healthcare/make-stock-entry.gif">
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Inpatient Medication Order](/docs/user/manual/en/healthcare/inpatient_medication_order)
+1. [ใบสั่งยาผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_medication_order)
 
 {next}

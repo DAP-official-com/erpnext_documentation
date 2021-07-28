@@ -1,61 +1,61 @@
 <!-- add-breadcrumbs -->
-# Setting Up Laboratory
+# การจัดตั้งห้องปฏิบัติการ
 
-If you wish to use features of Laboratory, you can create Users with _Laboratory User_. Lab Tests, Sample Collection etc. are only visible to users with this Role enabled.
+หากคุณต้องการใช้คุณลักษณะของ ห้องปฏิบัติการ คุณสามารถสร้างผู้ใช้ด้วย _ผู้ใช้ห้องปฏิบัติการ_ การทดสอบในห้องปฏิบัติการ การเก็บตัวอย่าง ฯลฯ จะปรากฏต่อผู้ใช้ที่เปิดใช้งานบทบาทนี้เท่านั้น
 
-Read [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings) for setting up the Healthcare module.
+อ่าน [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings) สำหรับการตั้งค่าโมดูล Healthcare
 
-### Lab Test Templates
-Whenever you create a new Lab Test, the Lab Test document is loaded based on the template configured for that particular test. This means, you will have to have separate templates configured for each Lab Test.
+### เทมเพลตการทดสอบในห้องปฏิบัติการ
+เมื่อใดก็ตามที่คุณสร้าง Lab Test ใหม่ เอกสาร Lab Test จะถูกโหลดตามเทมเพลตที่กำหนดค่าไว้สำหรับการทดสอบนั้น ซึ่งหมายความว่า คุณจะต้องกำหนดค่าเทมเพลตแยกต่างหากสำหรับการทดสอบในห้องปฏิบัติการแต่ละครั้ง
 
-Here's how you can configure various types of templates.
+ต่อไปนี้คือวิธีกำหนดค่าเทมเพลตประเภทต่างๆ
 
-`Healthcare > Setup > Lab Test Template > New Lab Test Template`
+`การดูแลสุขภาพ > ตั้งค่า > เทมเพลตการทดสอบในแล็บ > เทมเพลตการทดสอบแล็บใหม่`
 
-After providing the Name for the Test you will have to select a Code and Item group for creating the mapped Item. ERPNext Healthcare maps every Lab Test (every other billable healthcare service) to an Item with "Maintain Stock" set to false. This way, the Accounts Module will invoice the Item and you can see the Sales related reports of Selling Module. You can also set selling rate of the Lab Test here - this will update the Selling Price List.
+หลังจากระบุชื่อสำหรับการทดสอบแล้ว คุณจะต้องเลือกรหัสและกลุ่มรายการเพื่อสร้างรายการที่แมป ERPNext Healthcare จะจับคู่การทดสอบในห้องปฏิบัติการทุกรายการ (บริการด้านสุขภาพที่เรียกเก็บเงินได้อื่นๆ ทุกรายการ) กับรายการโดยตั้งค่า "รักษาสต็อก" เป็นเท็จ ด้วยวิธีนี้ โมดูลบัญชีจะออกใบแจ้งหนี้สำหรับสินค้า และคุณสามารถดูรายงานที่เกี่ยวข้องกับการขายของโมดูลการขายได้ คุณยังสามารถกำหนดอัตราการขายของ Lab Test ได้ที่นี่ ซึ่งจะอัปเดตรายการราคาขาย
 
-> The Standard Selling Rate field behaves similar to the Item Standard Selling Rate, updating this will not update the Selling Price List
+> ช่องอัตราขายมาตรฐานทำงานคล้ายกับอัตราขายมาตรฐานของสินค้า การอัปเดตนี้จะไม่อัปเดตรายการราคาขาย
 
-The `Is Billable` flag in Lab Test Template creates the Item, but as Disabled. Likewise, unchecking this flag will Enable the Item.
+แฟล็ก 'Is Billable' ในเทมเพลตการทดสอบของ Lab จะสร้างรายการ แต่ถูกปิดใช้งาน ในทำนองเดียวกัน การยกเลิกการเลือกแฟล็กนี้จะเปิดใช้งานรายการ
 
-###### Result Format
-Following are the result formats available in ERPNext Healthcare
+###### รูปแบบผลลัพธ์
+ต่อไปนี้เป็นรูปแบบผลลัพธ์ที่มีอยู่ใน ERPNext Healthcare
 
-* Single: select this format for results which require only a single input, result UOM and normal value
-* Compound: allows you to configure results which require multiple input fields with corresponding event names, result UOMs and normal values
-* Descriptive: this format is helpful for results which have multiple result components and corresponding result entry fields.
-* Grouped: You can group test templates which are already configured and combine as a single test. For such templates select `Grouped`.
-* No Result: Select this if you don not need to enter or manage test result. Also, no Lab Test document will be created. e.g., Sub Tests for Grouped results.
+* Single: เลือกรูปแบบนี้สำหรับผลลัพธ์ที่ต้องการเพียงอินพุตเดียว, ผลลัพธ์ UOM และค่าปกติ
+* สารประกอบ: ให้คุณกำหนดค่าผลลัพธ์ที่ต้องการฟิลด์อินพุตหลายช่องพร้อมชื่อเหตุการณ์ที่สอดคล้องกัน UOM ผลลัพธ์และค่าปกติ
+* คำอธิบาย: รูปแบบนี้มีประโยชน์สำหรับผลลัพธ์ที่มีองค์ประกอบผลลัพธ์หลายรายการและช่องป้อนผลลัพธ์ที่สอดคล้องกัน
+* จัดกลุ่ม: คุณสามารถจัดกลุ่มเทมเพลตการทดสอบที่ได้รับการกำหนดค่าและรวมเป็นการทดสอบเดียว สำหรับเทมเพลตดังกล่าว ให้เลือก "จัดกลุ่ม"
+* ไม่มีผลลัพธ์: เลือกตัวเลือกนี้หากคุณไม่ต้องการป้อนหรือจัดการผลการทดสอบ นอกจากนี้ จะไม่มีการสร้างเอกสารการทดสอบในห้องปฏิบัติการ เช่น การทดสอบย่อยสำหรับผลลัพธ์ที่จัดกลุ่ม
 
-###### Normal values
-For Single and Compound result formats, you can set the normal values.
+###### ค่าปกติ
+สำหรับรูปแบบผลลัพธ์แบบเดี่ยวและแบบผสม คุณสามารถตั้งค่าปกติได้
 
-###### Sample
-You will have to select the Sample required for the test. You can also mention the quantity of sample that needs to be collected. These details will be used when creating the Sample Collection document for the Lab Test.
+###### ตัวอย่าง
+คุณจะต้องเลือกตัวอย่างที่จำเป็นสำหรับการทดสอบ คุณยังระบุปริมาณตัวอย่างที่ต้องเก็บได้อีกด้วย รายละเอียดเหล่านี้จะถูกนำมาใช้ในการสร้างเอกสารการเก็บตัวอย่างสำหรับการทดสอบในห้องปฏิบัติการ
 
-### Medical Department
-To organize your clinic into departments, you can create multiple Medical Departments. You can select appropriate departments in Lab Test Template and will be included in the Lab Test result print.
+### กรมการแพทย์
+ในการจัดระเบียบคลินิกของคุณออกเป็นแผนกต่างๆ คุณสามารถสร้างแผนกการแพทย์ได้หลายแผนก คุณสามารถเลือกแผนกที่เหมาะสมในเทมเพลต Lab Test และจะรวมอยู่ในการพิมพ์ผลการทดสอบในห้องปฏิบัติการ
 
-`Healthcare > Setup > Medical Department > New Medical Department`
+`การดูแลสุขภาพ > ตั้งค่า > แผนกการแพทย์ > แผนกการแพทย์ใหม่`
 
-### Lab Test Sample
-You can create various masters for Samples that are to be collected for a Lab Test.
+### ตัวอย่างการทดสอบในห้องปฏิบัติการ
+คุณสามารถสร้างต้นแบบต่างๆ สำหรับตัวอย่างที่จะรวบรวมสำหรับการทดสอบในห้องปฏิบัติการ
 
-`Healthcare > Setup > Lab Test Sample > New Lab Test Sample`
+`การดูแลสุขภาพ > การตั้งค่า > ตัวอย่างการทดสอบในห้องปฏิบัติการ > ตัวอย่างการทดสอบในห้องปฏิบัติการใหม่`
 
 ### Lab Test UOM
-You can create various masters for Unit of Measures to be used in Lab Test document.
+คุณสามารถสร้างต้นแบบต่างๆ สำหรับหน่วยวัดเพื่อใช้ในเอกสาร Lab Test
 
-`Healthcare > Setup > Lab Test UOM > New Lab Test UOM`
+`การดูแลสุขภาพ > ตั้งค่า > Lab Test UOM > New Lab Test UOM`
 
-### Antibiotic
-You can create masters for a list of Antibiotics.
+### ยาปฏิชีวนะ
+คุณสามารถสร้างต้นแบบสำหรับรายการยาปฏิชีวนะ
 
-`Healthcare > Setup > Antibiotic > New Antibiotic`
+`การดูแลสุขภาพ > ตั้งค่า > ยาปฏิชีวนะ > ยาปฏิชีวนะใหม่`
 
-### Sensitivity
-You can create masters for a list of Sensitivity to various Antibiotics.
+### ความไว (Sensitivity)
+คุณสามารถสร้างสำหรับรายการความไวต่อยาปฏิชีวนะหลักต่างๆ
 
-`Healthcare > Setup > Sensitivity > New Sensitivity`
+`การดูแลสุขภาพ > ตั้งค่า > ความไว (Sensitivity) > ความไวใหม่ (New Sensitivity)`
 
 {next}

@@ -1,95 +1,95 @@
 <!-- add-breadcrumbs -->
 
-# Patient Encounter
+# พบผู้ป่วย
 
-ERPNext Healthcare allows you to record every encounter with patients through the Patient Encounter document. You can also create a Patient Encounter based on a previously booked Appointment.
+ERPNext Healthcare ช่วยให้คุณบันทึกทุกการพบกับผู้ป่วยผ่านเอกสารการพบผู้ป่วย คุณยังสามารถสร้างการพบผู้ป่วยตามการนัดหมายที่จองไว้ก่อนหน้านี้
 
-## 1. How to Create a Patient Encounter
+## 1. วิธีสร้างการพบปะผู้ป่วย Patient
 
-To create a Patient Encounter, go to:
+หากต้องการสร้างการพบผู้ป่วย ไปที่:
 
-> Home > Healthcare > Consultation > Patient Encounter
+> หน้าหลัก > การดูแลสุขภาพ > ให้คำปรึกษา > พบผู้ป่วย
 
-1. Select a Naming Series for the document.
-2. If you select an Appointment, Patient details, Department and Healthcare Practitioner, etc will be fetched automatically.
-3. Otherwise, you can separately select a Patient. Patient details will be fetched.
-4. Select the Healthcare Practitioner. The Department will be fetched automatically.
-5. Set the Encounter Date and Time.
-6. Select the Symptoms and Diagnosis in the Encounter Impression section. You can opt to include the captured data in Patient Encounter print by checking "In Print".
-7. Save.
+1. เลือก ชื่อ สำหรับเอกสาร
+2. หากคุณเลือกการนัดหมาย รายละเอียดผู้ป่วย แผนกและแพทย์ ฯลฯ จะถูกดึงข้อมูลโดยอัตโนมัติ
+3. มิฉะนั้น คุณสามารถเลือกผู้ป่วยแยกกันได้ รายละเอียดผู้ป่วยจะถูกเรียก
+4. เลือกผู้ประกอบวิชาชีพด้านการดูแลสุขภาพ แผนกจะถูกดึงข้อมูลโดยอัตโนมัติ
+5. ตั้งวันที่และเวลาการพบ
+6. เลือกอาการและการวินิจฉัยในหัวข้อ Encounter Impression คุณสามารถเลือกที่จะรวมข้อมูลที่บันทึกไว้ในการพิมพ์การพบของผู้ป่วยโดยทำเครื่องหมายที่ "ในการพิมพ์"
+7. บันทึก
 
-You can also create and record encounter details for a patient from Patient Appointment, the Patient Encounter or the Patient master documents by using the **Create > Patient Encounter** button.
-If you are creating a Patient Encounter manually, you can search for a Patient by name, email, phone number etc.
+คุณยังสามารถสร้างและบันทึกรายละเอียดการพบสำหรับผู้ป่วยจากการนัดหมายผู้ป่วย การพบปะผู้ป่วย หรือเอกสารหลักของผู้ป่วยโดยใช้ปุ่ม **สร้าง > พบผู้ป่วย**
+หากคุณกำลังสร้างการพบผู้ป่วยด้วยตนเอง คุณสามารถค้นหาผู้ป่วยตามชื่อ อีเมล หมายเลขโทรศัพท์ ฯลฯ
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient_encounter_1.png">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Medical Coding
+### 2.1 รหัสทางการแพทย์
 
-You can also attach one or more Medical Codes to designate the Diagnosis in the Medical Coding Section. You will have to select the Medical Code Standard with which you wish to encode the diagnosis and then select the Code by searching the Code itself or the Code Description.
+คุณยังสามารถแนบรหัสการแพทย์อย่างน้อยหนึ่งรหัสเพื่อกำหนดการวินิจฉัยในส่วนการเข้ารหัสทางการแพทย์ คุณจะต้องเลือกมาตรฐานรหัสทางการแพทย์ที่คุณต้องการเข้ารหัสการวินิจฉัย จากนั้นเลือกรหัสโดยการค้นหารหัสเองหรือคำอธิบายรหัส
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/encounter_4.png">
 
-### 2.2 Medication
+### 2.2 ยา
 
-You can prescribe medicines in the Medication section by selecting the drug codes (Stock Item) and appropriate dosages. If you are not managing Stock, and Items are not configured, you can simply enter the Medicine name and strength in the Strength field which will be printed. You can optionally add a comment in the Medication table entry and select a Dosage Form (Tablet, Syrup).
+คุณสามารถกำหนดยาได้ในส่วนยาโดยเลือกรหัสยา (รายการในสต็อค) และขนาดยาที่เหมาะสม หากคุณไม่ได้จัดการสต็อค และรายการไม่ได้รับการกำหนดค่า คุณสามารถป้อนชื่อยาและความแข็งแกร่งในช่องความแข็งแกร่งที่จะพิมพ์ คุณสามารถเลือกเพิ่มความคิดเห็นในรายการตารางยาและเลือกแบบฟอร์มการให้ยา (เม็ด, น้ำ)
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/encounter_medication.png">
 
-If you maintain stock, Inventory for medicines can be managed using the Stocks Module:
+หากคุณรักษาสต็อค คุณสามารถจัดการสินค้าคงคลังสำหรับยาได้โดยใช้โมดูลสต็อค:
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare-inventory.png">
 
-### 2.3 Lab Tests (Investigations)
+### 2.3 การทดสอบในห้องปฏิบัติการ (การสืบสวน)
 
-In the Investigations section, you can prescribe Lab Tests for the Patient. If you have Lab Test Templates configured, you can select from the list and add comments optionally.
+ในส่วนการตรวจสอบ คุณสามารถกำหนดการทดสอบในห้องปฏิบัติการสำหรับผู้ป่วยได้ หากคุณมีการกำหนดค่าเทมเพลตการทดสอบแล็บ คุณสามารถเลือกจากรายการและเพิ่มความคิดเห็นได้ตามต้องการ
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/encounter_investigation.png">
 
-Lab Tests can be configured to be created automatically on Sales Invoice submission by checking _Create Lab Test(s) on Sales Invoice Submission_ in [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings).
+การทดสอบในห้องปฏิบัติการสามารถกำหนดค่าให้สร้างโดยอัตโนมัติในการส่งใบแจ้งหนี้การขายโดยทำเครื่องหมายที่ _สร้างการทดสอบในห้องปฏิบัติการในการส่งใบกำกับสินค้า_ ใน [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings)
 
-### 2.4 Clinical Procedures
+### 2.4 ขั้นตอนทางคลินิก
 
-You can also prescribe a Clinical Procedure to be performed for the Patient in the Procedures section. Select the Clinical Procedure Template and optionally assign a date for conducting the Procedure.
+คุณยังสามารถกำหนดขั้นตอนทางคลินิกสำหรับผู้ป่วยได้ในส่วนขั้นตอน เลือกเทมเพลตขั้นตอนทางคลินิกและเลือกกำหนดวันที่สำหรับการดำเนินการตามขั้นตอน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/encounter_procedures.png">
 
-### 2.5 Therapies
+### 2.5 การบำบัด
 
-If your Healthcare facility offers Rehabilitation and Physiotherapy services, you can prescribe therapies in the Patient Encounter and a Therapy Plan will be created automatically on submission of Patient Encounter.
+หากสถานพยาบาลของคุณให้บริการฟื้นฟูและกายภาพบำบัด คุณสามารถกำหนดการบำบัดในการพบผู้ป่วย และแผนการบำบัดจะถูกสร้างขึ้นโดยอัตโนมัติเมื่อยื่นการพบผู้ป่วย
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/therapy-encounter.jpg">
 
-### 2.6 Billing and Prescriptions
+### 2.6 การเรียกเก็บเงินและใบสั่งยา
 
-The Pharmacy (Sales / Accounts) User can fetch medication and investigation (Lab Test) orders from Patient Encounter using the **Get items from > Prescription** in Sales Invoice.
+ผู้ใช้ร้านขายยา (การขาย / บัญชี) สามารถดึงคำสั่งซื้อยาและการตรวจสอบ (Lab Test) จากการพบผู้ป่วยโดยใช้ **รับรายการจาก > ใบสั่งยา** ในใบแจ้งหนี้การขาย
 
-Clinical Procedure orders can be fetched using the **Get Prescribed Clinical Procedures** button while booking an Appointment for the procedure. These will then be available for billing via the **Get items from > Healthcare Services**.
+สามารถเรียกคำสั่งขั้นตอนทางคลินิกได้โดยใช้ปุ่ม **รับขั้นตอนทางคลินิกที่กำหนด** ขณะจองการนัดหมายสำหรับขั้นตอน สิ่งเหล่านี้จะพร้อมสำหรับการเรียกเก็บเงินผ่านทาง **รับรายการจาก > บริการด้านสุขภาพ**
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/prescription.png">
 
-## 3. Actions
+## 3. การกระทำ
 
-> Note: User should have appropriate privileges (User Role) to view the buttons
+> หมายเหตุ: ผู้ใช้ควรมีสิทธิ์ที่เหมาะสม (User Role) เพื่อดู
 
-After you have completed filling up all the necessary sections, you can Submit the document. The Action buttons will be visible only after submission.
+หลังจากที่คุณกรอกส่วนที่จำเป็นทั้งหมดเรียบร้อยแล้ว คุณสามารถส่งเอกสารได้ ปุ่มการดำเนินการจะปรากฏหลังจากส่งแล้วเท่านั้น
 
-  * Vital Signs: **Create > Vital Signs** button will take you to the new Vital Signs screen to record the vitals of the Patient.
+  * สัญญาณชีพ: ปุ่ม **สร้าง > สัญญาณชีพ** จะนำคุณไปยังหน้าจอสัญญาณชีพใหม่เพื่อบันทึกพลังชีวิตของผู้ป่วย
 
-  * Medical Record: **Create > Medical Record** button will take you to the new Medical Record screen to record details. You can also attach some report to the record.
+  * เวชระเบียน: ปุ่ม **สร้าง > เวชระเบียน** จะนำคุณไปยังหน้าจอเวชระเบียนใหม่เพื่อบันทึกรายละเอียด คุณยังสามารถแนบรายงานบางรายการกับเรกคอร์ดได้อีกด้วย
 
-  * Clinical Procedure: Using **Create > Clinical Procedure** button you can create a Clinical Procedure.
+  * ขั้นตอนทางคลินิก: การใช้ปุ่ม **สร้าง > ขั้นตอนทางคลินิก** คุณสามารถสร้างขั้นตอนทางคลินิกได้
 
-  * Patient History: **View > Patient History**.
+  * ประวัติผู้ป่วย: **ดู > ประวัติผู้ป่วย**
 
-  * Schedule Admission: You can Schedule Admission using this button. This will create an Inpatient Record.
+  * ตารางการรับเข้าเรียน: คุณสามารถกำหนดเวลาการรับเข้าเรียนโดยใช้ปุ่มนี้ สิ่งนี้จะสร้างบันทึกผู้ป่วยใน
 
-> This Form has been Changed in Version 13
+> แบบฟอร์มนี้มีการเปลี่ยนแปลงในเวอร์ชัน 13
 
-## 4. Related Topics
+## 4. หัวข้อที่เกี่ยวข้อง
 
-1. [Patient Appointment](/docs/user/manual/en/healthcare/patient_appointment)
-1. [Clinical Procedure Template](/docs/user/manual/en/healthcare/clinical_procedure_template)
+1. [การนัดหมายผู้ป่วย](/docs/user/manual/th/healthcare/patient_appointment)
+1. [เทมเพลตขั้นตอนทางคลินิก](/docs/user/manual/th/healthcare/clinical_procedure_template)
 
 {next}

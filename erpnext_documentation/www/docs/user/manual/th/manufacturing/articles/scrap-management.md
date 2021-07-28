@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-# Production Scrap Management
+# การจัดการเศษการผลิต
 
-Scrap means waste that either has no economic value or only the value of its basic material content recoverable through recycling.
+เศษซากหมายถึงของเสียที่ไม่มีมูลค่าทางเศรษฐกิจหรือมีเพียงมูลค่าของเนื้อหาวัสดุพื้นฐานที่สามารถกู้คืนได้ผ่านการรีไซเคิล
 
-Scrap is generally availed at the end of the manufacture process. Also you can find some products that are damaged or that are unusable due to expiry or for some other reason, which needs to be scraped.
+โดยทั่วไปจะใช้เศษการผลิตเมื่อสิ้นสุดกระบวนการผลิต นอกจากนี้ คุณยังอาจพบผลิตภัณฑ์บางอย่างที่เสียหายหรือใช้งานไม่ได้เนื่องจากหมดอายุหรือด้วยเหตุผลอื่นซึ่งจำเป็นต้องขูดออก
 
-In ERPNext, at the end of manufacturing process, scrap items are accounted in the scrap warehouses.
+ใน ERPNext เมื่อสิ้นสุดกระบวนการผลิต รายการของเสียจะถูกบันทึกในคลังสินค้าของเสีย
 
-## Scrap in Bill of Materials
+## เรื่องที่สนใจใน Bill of Materials
 
-You can update estimated scrap quantity of an item in the BOM, Scrap table. If required, you can reselect a raw-material item as scrap.
+คุณสามารถอัปเดตปริมาณเศษการผลิตโดยประมาณของสินค้าในตาราง BOM, เศษซาก หากจำเป็น คุณสามารถเลือกรายการวัตถุดิบใหม่เป็นเศษการผลิตได้
 
 <img class="screenshot" alt="Scrap in BOM" src="{{docs_base_url}}/assets/img/manufacturing/scrap-1.png">
 
-## Scrap in Manufacture Entry
+## เศษวัสดุในการผลิตรายการ
 
-When production is completed, Finish / Manufacture Entry is created against a Production Order. In this entry, scrap item is fetched in the Item table, with only Target Warehouse updated for it. Ensure that Valuation Rate is updated for this item for the accounts posting purposes.
+เมื่อการผลิตเสร็จสิ้น รายการเสร็จสิ้น / ผลิตจะถูกสร้างขึ้นโดยเทียบกับใบสั่งผลิต ในรายการนี้ รายการของเสียจะถูกดึงมาในตาราง Item โดยมีเฉพาะ คลังสินค้าปลายทางเท่านั้นที่อัพเดต ตรวจสอบให้แน่ใจว่าได้อัปเดตอัตราการประเมินสำหรับรายการนี้เพื่อวัตถุประสงค์ในการลงรายการบัญชี
 
 <img class="screenshot" alt="Scrap in Manufacture Entry" src="{{docs_base_url}}/assets/img/manufacturing/scrap-2.gif">
 
-> Scrap from the BOM will only work if Manufacture Entry is created based on BOM, and not based on Material Transfer. This is configurable from Manufacturing Settings.
+> เศษจาก BOM จะใช้ได้ก็ต่อเมื่อรายการการผลิตถูกสร้างขึ้นตาม BOM และไม่ยึดตามการถ่ายโอนวัสดุ กำหนดค่าได้จากการตั้งค่าการผลิต
 
 <img class="screenshot" alt="Manufacturing Settings" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-settings.png">

@@ -1,70 +1,70 @@
 <!-- add-breadcrumbs -->
 
-# Therapy Plan
+# แผนการบำบัด
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-A Therapy Plan lists all the therapies required for the Patient along with the number of sessions which will be conducted for each therapy. It also keeps a track of the progress as per the number of sessions completed.
+แผนการบำบัดจะแสดงรายการการรักษาทั้งหมดที่จำเป็นสำหรับผู้ป่วยพร้อมกับจำนวนเซสชันที่จะดำเนินการสำหรับการบำบัดแต่ละครั้ง นอกจากนี้ยังติดตามความคืบหน้าตามจำนวนเซสชันที่เสร็จสิ้น
 
-To create a Therapy Plan, go to:
+ในการสร้างแผนการบำบัด ไปที่:
 
-> Home > Healthcare > Rehabilitation and Physiotherapy > Therapy Plan
+> หน้าหลัก > การดูแลสุขภาพ > การฟื้นฟูสมรรถภาพและกายภาพบำบัด > แผนการบำบัด
 
-## 1. How to Create a Therapy Type
+## 1. วิธีสร้างประเภทการบำบัด
 
-## 1.1 Therapy Plan for billing Therapy Sessions individually
+## 1.1 แผนการบำบัดสำหรับการเรียกเก็บเงินจากเซสชันการบำบัดเป็นรายบุคคล
 
-1. Go to Therapy Plan list, click on New.
-2. Select the Naming Series.
-3. Select the Patient.
-4. Select the Start Date for the Plan.
-5. In order to add therapies to the plan, click on **Add Row** button in the child table. Select the Therapy Type and set the number of sessions required to complete it.
-6. Save.
+1. ไปที่รายการแผนการบำบัด คลิกใหม่
+2. เลือกชุดการตั้งชื่อ
+3. เลือกผู้ป่วย
+4. เลือกวันที่เริ่มต้นสำหรับแผน
+5. ในการเพิ่มการรักษาลงในแผน ให้คลิกที่ปุ่ม **เพิ่มแถว** ในตารางย่อย เลือกประเภทการบำบัดและกำหนดจำนวนเซสชันที่จำเป็นเพื่อให้เสร็จสิ้น
+6. บันทึก
 
 <img class="screenshot" alt=Therapy Plan" src="{{docs_base_url}}/assets/img/healthcare/therapy-plan.png">
 
-## 1.2 Therapy Plan from Therapy Plan Template
+## 1.2 แผนการบำบัดจากเทมเพลตแผนการบำบัด
 
-Therapy Plan Templates are used by some healthcare facilities for prescribing therapy plans as packages. In such cases, the number of sessions to be conducted, and the total cost is fixed. The Therapy Plan created using the Therapy Plan Template will not be billed for individual sessions but for the package as a whole.
+สถานพยาบาลบางแห่งใช้เทมเพลตแผนการบำบัดเพื่อกำหนดแผนการบำบัดเป็นแพ็คเกจ ในกรณีดังกล่าว จำนวนเซสชันที่จะดำเนินการ และต้นทุนทั้งหมดจะคงที่ แผนการบำบัดที่สร้างขึ้นโดยใช้เทมเพลตแผนการบำบัดจะไม่ถูกเรียกเก็บเงินสำหรับแต่ละเซสชัน แต่สำหรับแพ็คเกจโดยรวม
 
-1. Select the Naming Series.
-2. Select the Patient.
-3. Set the Start Date for the Therapy Plan.
-4. Select the [Therapy Plan Template](/docs/user/manual/en/healthcare/therapy_plan_template) from which you want to create the Plan.
-5. The Therapy Types, and No. of Sessions will be fetched automatically.
-6. Save.
+1. เลือกชุดการตั้งชื่อ
+2. เลือกผู้ป่วย
+3. กำหนดวันที่เริ่มต้นสำหรับแผนการบำบัด
+4. เลือก [เทมเพลตแผนการบำบัด](/docs/user/manual/th/healthcare/therapy_plan_template) ที่คุณต้องการสร้างแผน
+5. ประเภทการบำบัดและจำนวนเซสชันจะถูกดึงข้อมูลโดยอัตโนมัติ
+6. บันทึก
 
 <img class="screenshot" alt="Therapy Plan from Therapy Template" src="{{docs_base_url}}/assets/img/healthcare/therapy-plan-from-template.gif">
 
-While fetching Healthcare Services for invoicing, the Therapy Plan is only available for billing if the plan is created using a Therapy Plan Template. If the Therapy Plan is not created from a Therapy Plan Template, individual Therapy Sessions are fetched during billing.
+ขณะเรียกบริการด้านการดูแลสุขภาพเพื่อออกใบแจ้งหนี้ แผนการบำบัดจะใช้ได้สำหรับการเรียกเก็บเงินก็ต่อเมื่อสร้างแผนโดยใช้เทมเพลตแผนการบำบัด หากไม่ได้สร้างแผนการบำบัดจากเทมเพลตแผนการบำบัด ระบบจะดึงข้อมูลเซสชันการบำบัดแต่ละรายการระหว่างการเรียกเก็บเงิน
 
 <img class="screenshot" alt="Therapy Plan Template Invoice" src="{{docs_base_url}}/assets/img/healthcare/therapy-plan-template-invoice.gif">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Automatic creation of Therapy Plan from Patient Encounter
+### 2.1 การสร้างแผนการบำบัดโดยอัตโนมัติจากการพบผู้ป่วย
 
-You can prescribe therapies in Patient Encounter and a Therapy Plan will be created automatically on submission of Patient Encounter.
+คุณสามารถกำหนดการรักษาได้ในการพบผู้ป่วย และแผนการบำบัดจะถูกสร้างขึ้นโดยอัตโนมัติเมื่อส่งการพบผู้ป่วย
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/therapy-encounter.jpg">
 
-### 2.2 Create and Track Therapy Sessions
+### 2.2 สร้างและติดตามเซสชันการบำบัด
 
-You can create Therapy Session from the Therapy Plan. It will give you options based on the Therapy Types prescribed in the current plan.
+คุณสามารถสร้างเซสชันการบำบัดได้จากแผนการบำบัด มันจะให้ทางเลือกแก่คุณตามประเภทการบำบัดที่กำหนดไว้ในแผนปัจจุบัน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/create-therapy-session.png">
 
-Once the Therapy Session is submitted, the count for _Sessions Completed_ for that Therapy is automatically updated in the Therapy Plan.
+เมื่อส่งเซสชันการบำบัดแล้ว จำนวนสำหรับ _เซสชันที่เสร็จสิ้น_ สำหรับการบำบัดนั้นจะได้รับการอัปเดตโดยอัตโนมัติในแผนการบำบัด
 
-### 2.3 Create Sales Invoice from Therapy Plan
+### 2.3 สร้างใบแจ้งหนี้การขายจากแผนการบำบัด
 
-If the Therapy Plan is created from Therapy Plan Template and is not invoiced yet, it will give you an option to create a Sales Invoice from the Therapy Plan.
+หากแผนการบำบัดถูกสร้างขึ้นจากเทมเพลตแผนการบำบัดและยังไม่ได้ออกใบแจ้งหนี้ จะทำให้คุณมีตัวเลือกในการสร้างใบกำกับสินค้าจากแผนการบำบัด
 
 <img class="screenshot" alt="Sales Invoice from Therapy Plan" src="{{docs_base_url}}/assets/img/healthcare/sales-invoice-from-therapy-plan.png">
 
-## 3. Related Topics
-1. [Therapy Type](/docs/user/manual/en/healthcare/therapy_type)
-1. [Therapy Session](/docs/user/manual/en/healthcare/therapy_session)
-1. [Patient Encounter](/docs/user/manual/en/healthcare/patient_encounter)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [ประเภทการบำบัด](/docs/user/manual/th/healthcare/therapy_type)
+1. [ช่วงการบำบัด](/docs/user/manual/th/healthcare/therapy_session)
+1. [พบผู้ป่วย](/docs/user/manual/th/healthcare/patient_encounter)
 
 {next}

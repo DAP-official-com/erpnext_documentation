@@ -1,17 +1,17 @@
 <!-- add-breadcrumbs -->
-#Valuation Based On in BOM
+#การประเมินตาม BOM
 
-**Question:** What are for various options in `Valuation Based On` in the Bill Of Materials (BOM)? 
+**คำถาม:** ตัวเลือกต่างๆ ใน ​​'การประเมินตาม' ใน Bill Of Materials (BOM) มีอะไรบ้าง
 
-**Answer:** There are 3 available options in the <i>Valuation Based On</i> field:
+**คำตอบ:** มี 3 ตัวเลือกในช่อง <i>Valuation Based On</i>:
 
 <img alt="Nested BOM" class="screenshot" src="{{docs_base_url}}/assets/img/articles/valuation-based-on-1.png">
 
-**Valuation Rate:** Item valuation rate is defined based on it's purchase or manufacture value. 
+**อัตราการประเมินมูลค่า:** อัตราการประเมินมูลค่าสินค้าถูกกำหนดตามมูลค่าการซื้อหรือการผลิต
 
-For Purchase Item, it is defined based on charges entered in the Purchase Receipt. If you don't have any Purchase Receipt
-made for an item or a Stock Reconciliation, then there won't be any Valuation Rate for that item.
+สำหรับรายการซื้อ จะมีการกำหนดตามค่าธรรมเนียมที่ป้อนในใบเสร็จการซื้อ หากคุณไม่มีใบเสร็จการซื้อใดๆ
+สร้างขึ้นสำหรับสินค้าหรือการกระทบยอดสต็อก ดังนั้นจะไม่มีอัตราการประเมินมูลค่าสำหรับสินค้านั้น
 
-**Price List Rate:** This option allows to pull item rates from [Price List.](/docs/user/manual/en/stock/item-price) 
+**ราคารายการราคา:** ตัวเลือกนี้ช่วยให้ดึงราคาสินค้าจาก [รายการราคา](/docs/user/manual/th/stock/item-price)
 
-**Last Purchase Rate:** It will be the last Purchase (Order) Rate of an item.
+**อัตราการซื้อครั้งสุดท้าย:** จะเป็นอัตราการซื้อ (คำสั่งซื้อ) สุดท้ายของรายการ

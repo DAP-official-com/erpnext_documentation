@@ -1,58 +1,58 @@
 <!-- add-breadcrumbs -->
 
-# Therapy Session
+# เซสชั่นบำบัด
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-ERPNext helps you track every session conducted with the Patient in the Therapy Session DocType. Booking an appointment is optional for a Therapy Session. It helps you map the Patient's progress by keeping a track of the Targeted Counts, Counts Completed and the Assistance Level required for the Patient to complete each Exercise.
+ERPNext ช่วยให้คุณติดตามทุกเซสชั่นที่ดำเนินการกับผู้ป่วยใน DocType ของเซสชันการบำบัด การจองนัดหมายเป็นทางเลือกสำหรับการบำบัด ช่วยให้คุณทำแผนที่ความคืบหน้าของผู้ป่วยโดยการติดตามการนับเป้าหมาย จำนวนที่เสร็จสมบูรณ์ และระดับความช่วยเหลือที่จำเป็นสำหรับผู้ป่วยในการดำเนินการออกกำลังกายแต่ละครั้ง
 
-To create a Therapy Session, go to:
+หากต้องการสร้างเซสชันการบำบัด ให้ไปที่:
 
-> Home > Healthcare > Rehabilitation and Physiotherapy > Therapy Session
+> หน้าหลัก > การดูแลสุขภาพ > การฟื้นฟูสมรรถภาพและกายภาพบำบัด > เซสชั่นบำบัด
 
-## 1. How to Create a Therapy Session
+## 1. วิธีการสร้างเซสชั่นบำบัด
 
-### 1.1 Create a Therapy Session document
+### 1.1 สร้างเอกสารเซสชั่นการบำบัด
 
-1. Go to the Therapy Session list, click on New.
-2. Select the Naming Series.
-3. If a Patient Appointment has been booked for the session, select the Patient Appointment. All the other details will be automatically fetched.
-4. If no Appointment has been booked, select the Patient.
-5. Select the Therapy Type and the Therapy Plan for that Patient. As soon as you select the Therapy Type, the Healthcare Service Unit, Rate, Duration Medical Department and all Exercises from the template will be automatically fetched.
-6. If the session is being conducted by some therapist, select the therapist in the Healthcare Practitioner field.
-7. You can select a Start Date and Time.
-8. Save.
-9. You can then increase the number of Counts Completed, and once a particular exercise has been completed, select the Level of Assistance required for that exercise. The count indicators are shown on the dashboard of the document. Green indicates completion, Orange indicates unreached goals.
-10. Once you have recorded the entire session with the counts, you can submit the document. The Therapy Plan will then be updated with the number of sessions.
+1. ไปที่รายการ Therapy Session คลิก New
+2. เลือกชุดการตั้งชื่อ
+3. หากมีการจองการนัดหมายผู้ป่วยสำหรับเซสชั่น ให้เลือกการนัดหมายผู้ป่วย รายละเอียดอื่นๆ ทั้งหมดจะถูกดึงมาโดยอัตโนมัติ
+4. หากไม่มีการจองนัดหมาย ให้เลือกผู้ป่วย
+5. เลือกประเภทการบำบัดและแผนการบำบัดสำหรับผู้ป่วยรายนั้น ทันทีที่คุณเลือกประเภทการบำบัด หน่วยบริการสุขภาพ อัตรา แผนกการแพทย์ระยะเวลา และแบบฝึกหัดทั้งหมดจากเทมเพลตจะถูกดึงข้อมูลโดยอัตโนมัติ
+6. หากนักบำบัดกำลังดำเนินการเซสชั่นอยู่ ให้เลือกนักบำบัดโรคในฟิลด์ ผู้ปฏิบัติงานด้านการดูแลสุขภาพ
+7. คุณสามารถเลือกวันที่และเวลาเริ่มต้นได้
+8. บันทึก
+9. จากนั้นคุณสามารถเพิ่มจำนวนการนับที่เสร็จสมบูรณ์ และเมื่อการฝึกหัดใดเสร็จสิ้น ให้เลือกระดับความช่วยเหลือที่จำเป็นสำหรับการฝึกหัดนั้น ตัวบ่งชี้การนับจะแสดงบนแดชบอร์ดของเอกสาร สีเขียวแสดงว่าสำเร็จ สีส้มหมายถึงเป้าหมายที่ยังไม่บรรลุ
+10. เมื่อคุณบันทึกเซสชันทั้งหมดพร้อมจำนวนแล้ว คุณสามารถส่งเอกสารได้ แผนการบำบัดจะได้รับการอัปเดตด้วยจำนวนเซสชัน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/therapy-session.png">
 
-### 1.2 Create Therapy Session from Patient Appointment
+### 1.2 สร้างเซสชั่นการบำบัดจากการนัดหมายผู้ป่วย
 
-After booking an appointment for a Therapy Type, click on **Create > Therapy Session** to create a session from Patient Appointment.
+หลังจากจองการนัดหมายสำหรับประเภทการบำบัดแล้ว ให้คลิกที่ **สร้าง > ช่วงการบำบัด** เพื่อสร้างเซสชันจากการนัดหมายผู้ป่วย
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/therapy-session-from-appointment.png">
 
-Refer [Therapy Plan](/docs/user/manual/en/healthcare/therapy_plan) to understand the creation of Therapy Sessions from Therapy Plan.
+ดู [แผนการบำบัด](/docs/user/manual/th/healthcare/therapy_plan) เพื่อทำความเข้าใจการสร้างเซสชันการบำบัดจากแผนการบำบัด
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Invoicing Therapy Sessions
+### 2.1 เซสชันการบำบัดด้วยการออกใบแจ้งหนี้
 
-In order to invoice Therapy Sessions:
+ในการออกใบแจ้งหนี้ Therapy Sessions:
 
-1. You can create a new Sales Invoice.
-2. Select the Patient.
-3. Click on **Get Items From > Healthcare Services_**.
-4. The dialog will show you all the unbilled sessions of that particular patient. After selecting the items, the rates for the sessions will be fetched automatically from the Therapy Type template.
-5. You can also manually add items in the "Items" child table for billing.
-6. Save and Submit.
+1. คุณสามารถสร้างใบกำกับการขายใหม่ได้
+2. เลือกผู้ป่วย
+3. คลิก **รับรายการจาก > บริการด้านสุขภาพ_**
+4. กล่องโต้ตอบจะแสดงเซสชันที่ยังไม่ได้เรียกเก็บเงินทั้งหมดของผู้ป่วยรายนั้น หลังจากเลือกรายการแล้ว อัตราสำหรับเซสชันจะถูกดึงโดยอัตโนมัติจากเทมเพลตประเภทการบำบัด
+5. คุณสามารถเพิ่มรายการในตารางย่อย "รายการ" สำหรับการเรียกเก็บเงินได้ด้วยตนเอง
+6. บันทึกและส่ง
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/therapy-invoicing.png">
 
-## 3. Related Topics
-1. [Therapy Type](/docs/user/manual/en/healthcare/therapy_type)
-1. [Therapy Plan](/docs/user/manual/en/healthcare/therapy_plan)
-1. [Patient Appointment](/docs/user/manual/en/healthcare/patient_appointment)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [ประเภทการบำบัด](/docs/user/manual/th/healthcare/therapy_type)
+1. [แผนการบำบัด](/docs/user/manual/th/healthcare/therapy_plan)
+1. [การนัดหมายผู้ป่วย](/docs/user/manual/th/healthcare/patient_appointment)
 
 {next}

@@ -1,20 +1,20 @@
 <!-- add-breadcrumbs -->
 
-# Complaint and Diagnosis
+# การร้องเรียนและการวินิจฉัย
 
-To ease out the data entry while recording the Patient Encounter, ERPNext Healthcare allows you to save every Complaint / Diagnosis data you enter as a Master, from the Patient Encounter screen itself. This way, the database keeps building a list of all complaints and diagnoses you entered. This is done for better analytics and reporting.
+เพื่อความสะดวกในการป้อนข้อมูลในขณะที่บันทึกการเผชิญหน้าของผู้ป่วย ERPNext Healthcare ช่วยให้คุณสามารถบันทึกข้อมูลการร้องเรียน / การวินิจฉัยทั้งหมดที่คุณป้อนในฐานะผู้เชี่ยวชาญจากหน้าจอการเผชิญหน้าผู้ป่วยเอง ด้วยวิธีนี้ ฐานข้อมูลยังคงสร้างรายการข้อร้องเรียนและการวินิจฉัยทั้งหมดที่คุณป้อน สิ่งนี้ทำเพื่อการวิเคราะห์และการรายงานที่ดีขึ้น
 
-You can also configure the masters manually by going to,
+คุณยังสามารถกำหนดค่าต้นแบบด้วยตนเองได้โดยไปที่
 
-> Home > Healthcare > Consultation > Complaint
+> หน้าหลัก > การดูแลสุขภาพ > ให้คำปรึกษา > ร้องเรียน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/complaint.png">
 
-> Home > Healthcare > Consultation > Diagnosis
+> หน้าหลัก > การดูแลสุขภาพ > การให้คำปรึกษา > การวินิจฉัย
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/diagnosis.png">
 
-You can then select the Complaints and Diagnosis in the Patient Encounter Screen:
+จากนั้นคุณสามารถเลือกการร้องเรียนและการวินิจฉัยในหน้าจอพบผู้ป่วย:
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient_encounter_1.png">
 

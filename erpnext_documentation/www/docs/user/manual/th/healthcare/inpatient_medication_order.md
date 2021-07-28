@@ -1,59 +1,59 @@
 <!-- add-breadcrumbs -->
-# Inpatient Medication Order
+ ใบสั่งยาผู้ป่วยใน
 
-**An Inpatient Medication Order (IPMO) is created to make the nursing process easier. When patients are admitted to the hospital, there are medications that need to be provided to them according to the prescribed schedule. An Inpatient Medication Order is created to prescribe the medications to the admitted patient with the service unit information, the drug, dosage, dosage form, and the date and time when the drug has to be consumed.**
+**ใบสั่งยาสำหรับผู้ป่วยใน (IPMO) จัดทำขึ้นเพื่อให้กระบวนการพยาบาลง่ายขึ้น เมื่อผู้ป่วยเข้ารับการรักษาในโรงพยาบาล ก็มียาที่จำเป็นต้องให้ตามตารางเวลาที่กำหนด ใบสั่งยาสำหรับผู้ป่วยในสร้างขึ้นเพื่อกำหนดยาให้กับผู้ป่วยที่เข้ารับการรักษาด้วยข้อมูลหน่วยบริการ ยา ขนาดยา รูปแบบการให้ยา และวันที่และเวลาที่ต้องใช้ยา**
 
-To access the Inpatient Medication Order list, go to:
+หากต้องการเข้าถึงรายการใบสั่งยาสำหรับผู้ป่วยใน ให้ไปที่:
 
-> Home > Healthcare > Inpatient > Inpatient Medication Order
+> หน้าหลัก > การดูแลสุขภาพ > ผู้ป่วยใน > ใบสั่งยาผู้ป่วยใน
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating an Inpatient Medication Order, you need to create the following records first:
+ก่อนสร้างใบสั่งยาสำหรับผู้ป่วยใน คุณต้องสร้างเรกคอร์ดต่อไปนี้ก่อน:
 
-* [Patient](/docs/user/manual/en/healthcare/patient)
-* [Inpatient Record](/docs/user/manual/en/healthcare/inpatient_record)
+* [ผู้ป่วย](/docs/user/manual/th/healthcare/patient)
+* [บันทึกผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_record)
 
-## 2. How to Create an Inpatient Medication Order
+## 2. วิธีสร้างใบสั่งยาสำหรับผู้ป่วยใน
 
-You can create an Inpatient Medication Order in two ways.
+คุณสามารถสร้างใบสั่งยาสำหรับผู้ป่วยในได้สองวิธี
 
-### 2.1 Manual creation
+### 2.1 การสร้างด้วยตนเอง
 
-1. Go to Inpatient Medication Order list view and click on New.
-2. Select the Patient. The patient list is filtered to only have inpatients as options here.
-3. Optionally select the Healthcare Practitioner.
-4. Set the Start Date for the order. The schedule for the prescribed drugs will be created starting from this date.
-5. In the Medication Orders table, there is an **Add Medication Orders** button. Click on the button. A dialog box will be shown to fill up the prescription details.
-6. Select the drug (item), dosage, period, and dosage form. Then click on **Add**.
-7. Detailed schedule entries for the order beginning from the Start Date are added to the table. Close the dialog.
-8. Save and Submit. The End Date will be set automatically based on the prescription duration.
-9. You can see the Total Orders and Completed Orders in the Other Details section.
+1. ไปที่มุมมองรายการใบสั่งยาสำหรับผู้ป่วยใน แล้วคลิก ใหม่
+2. เลือกผู้ป่วย รายชื่อผู้ป่วยถูกกรองให้มีเฉพาะผู้ป่วยในเป็นตัวเลือกที่นี่
+3. เลือกผู้ประกอบวิชาชีพด้านการดูแลสุขภาพ
+4. กำหนดวันที่เริ่มต้นสำหรับคำสั่งซื้อ กำหนดการสำหรับยาที่กำหนดจะถูกสร้างขึ้นตั้งแต่วันที่นี้
+5. ในตารางใบสั่งยา จะมีปุ่ม **เพิ่มใบสั่งยา** คลิกที่ปุ่ม กล่องโต้ตอบจะปรากฏขึ้นเพื่อกรอกรายละเอียดใบสั่งยา
+6. เลือกยา (รายการ) ปริมาณ ระยะเวลา และรูปแบบการให้ยา จากนั้นคลิกที่ **เพิ่ม**
+7. รายการกำหนดการโดยละเอียดสำหรับคำสั่งซื้อที่เริ่มต้นจากวันที่เริ่มต้นจะถูกเพิ่มลงในตาราง ปิดกล่องโต้ตอบ
+8. บันทึกและส่ง วันที่สิ้นสุดจะถูกตั้งค่าโดยอัตโนมัติตามระยะเวลาของใบสั่งยา
+9. คุณสามารถดูคำสั่งซื้อทั้งหมดและคำสั่งซื้อที่เสร็จสมบูรณ์ได้ในส่วนรายละเอียดอื่นๆ
 
 <img class="screenshot" alt="IPMO-PE" src="{{docs_base_url}}/assets/img/healthcare/ipmo-manual.gif">
 
-### 2.2 IPMO from Patient Encounter
+### 2.2 IPMO จากพบหน้าผู้ป่วย
 
-1. After creating a Patient Encounter for an inpatient, with drugs prescribed in the Drug Prescription table, you can see an option for creating Inpatient Medication Order under **Create > Inpatient Medication Order**.
-2. You can use this button to create the IPMO. IPMO with an expanded view of the schedule will be created. Save and Submit.
+1. หลังจากสร้างการเผชิญหน้าผู้ป่วยสำหรับผู้ป่วยใน ด้วยยาที่กำหนดในตารางใบสั่งยา คุณจะเห็นตัวเลือกสำหรับสร้างใบสั่งยาสำหรับผู้ป่วยในภายใต้ **สร้าง > ใบสั่งยาสำหรับผู้ป่วยใน**
+2. คุณสามารถใช้ปุ่มนี้เพื่อสร้าง IPMO พร้อมมุมมองแบบขยายของกำหนดการจะถูกสร้างขึ้น บันทึกและส่ง
 
 <img class="screenshot" alt="IPMO-PE" src="{{docs_base_url}}/assets/img/healthcare/ipmo-pe.gif">
 
-### 2.3 Statuses
+### 2.3 สถานะ
 
-The statuses for IPMO are governed by the total completed order entries. The order entries are marked as completed when an [Inpatient Medication Entry](/docs/user/manual/en/healthcare/inpatient_medication_entry) is created against that order entry.
+สถานะของ IPMO ถูกควบคุมโดยรายการคำสั่งซื้อที่เสร็จสมบูรณ์ทั้งหมด รายการคำสั่งซื้อจะถูกทำเครื่องหมายว่าเสร็จสิ้นเมื่อมีการสร้าง [รายการยาสำหรับผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_medication_entry) เทียบกับรายการคำสั่งซื้อนั้น
 
-* **Draft**: A draft is saved but yet to be submitted to the system.
-* **Pending**: No order entry in the Medication Orders table has been completed.
-* **In Progress**: Some order entries in the Medication Orders table have been completed.
-* **Completed**: All order entries in the Medication Orders table have been completed.
-* **Cancelled**: The Inpatient Medication Order has been cancelled.
+* **ฉบับร่าง**: บันทึกแบบร่างแล้วแต่ยังไม่ได้ส่งไปยังระบบ
+* **รอดำเนินการ**: ไม่มีการป้อนคำสั่งในตารางใบสั่งยาที่เสร็จสมบูรณ์
+* **อยู่ระหว่างดำเนินการ**: รายการสั่งซื้อบางรายการในตารางใบสั่งยาเสร็จสมบูรณ์แล้ว
+* **เสร็จสมบูรณ์**: รายการสั่งซื้อทั้งหมดในตารางใบสั่งยาเสร็จสมบูรณ์แล้ว
+* **ยกเลิกแล้ว**: คำสั่งการรักษาผู้ป่วยในถูกยกเลิก
 
 <img class="screenshot" alt="IPMO-PE" src="{{docs_base_url}}/assets/img/healthcare/ipmo-status.png">
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Inpatient Medication Entry](/docs/user/manual/en/healthcare/inpatient_medication_entry)
-1. [Patient Encounter](/docs/user/manual/en/healthcare/patient_encounter)
+1. [รายการยาสำหรับผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_medication_entry)
+1. [พบผู้ป่วย](/docs/user/manual/th/healthcare/patient_encounter)
 
 {next}

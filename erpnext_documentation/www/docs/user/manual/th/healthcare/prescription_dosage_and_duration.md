@@ -1,43 +1,42 @@
 <!-- add-breadcrumbs -->
 
-# Prescription Dosage and Prescription Duration
+# ปริมาณที่ต้องสั่งโดยแพทย์และระยะเวลาตามใบสั่งแพทย์
 
-The Prescription Dosage and Duration are used while prescribing medications to Patients in Patient Encounter
+ปริมาณและระยะเวลาที่ต้องสั่งโดยแพทย์จะใช้ในขณะที่กำหนดยาให้กับผู้ป่วยในการเผชิญหน้าผู้ป่วย
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/prescription_dosage_duration.png">
 
-## Prescription Dosage
+## ปริมาณยาตามใบสั่งแพทย์
 
-You can configure different dosages to be used while prescribing medication to patients in the Prescription Dosage master.
+คุณสามารถกำหนดค่าขนาดยาที่แตกต่างกันเพื่อใช้ในขณะที่กำหนดยาให้กับผู้ป่วยในยาหลักตามใบสั่งแพทย์
 
-This master is pre-configured in ERPNext.
+ต้นแบบนี้ได้รับการกำหนดค่าไว้ล่วงหน้าใน ERPNext
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/prescription_dosage.png">
 
-To Create a new Prescription Dosage, go to:
+ในการสร้างขนาดยาตามใบสั่งแพทย์ใหม่ ไปที่:
 
-> Home > Heathcare > Consultation Setup > Prescription Dosage
+> หน้าหลัก > Heathcare > การตั้งค่าการให้คำปรึกษา > ยาที่ต้องสั่งโดยแพทย์
 
-You can name the Prescription Dosage in any way you want (for example, BID or I-0-I), and then set the strength of the drug and the times at which it should be consumed.
-
+คุณสามารถตั้งชื่อยาตามใบสั่งแพทย์ได้ตามที่คุณต้องการ (เช่น BID หรือ I-0-I) จากนั้นตั้งค่าความแรงของยาและเวลาที่ควรจะบริโภค
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/prescription_dosage_1.png">
 
-## Prescription Duration
+## ระยะเวลาตามใบสั่งแพทย์
 
-You can configure the duration for which the Patient has to consume the dosages prescribed for the medication in the Prescription Duration master.
+คุณสามารถกำหนดระยะเวลาที่ผู้ป่วยต้องรับประทานยาตามที่กำหนดสำหรับยาได้ในหลักระยะเวลาการสั่งยา
 
-This master is pre-configured in ERPNext.
+ต้นแบบนี้ได้รับการกำหนดค่าไว้ล่วงหน้าใน ERPNext
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/prescription_duration.png">
 
-To Create a new Prescription Duration, go to:
+หากต้องการสร้างระยะเวลาการสั่งยาใหม่ ให้ไปที่:
 
-> Home > Heathcare > Consultation Setup > Prescription Duration
+> หน้าหลัก > Heathcare > ให้คำปรึกษา > ระยะเวลาตามใบสั่งแพทย์
 
-You have to specify the number and the period for the duration
+คุณต้องระบุจำนวนและระยะเวลาสำหรับระยะเวลา
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/prescription_duration_1.png">
 
-## Related Topics
+## หัวข้อที่เกี่ยวข้อง
 
-1. [Patient Encounter](/docs/user/manual/en/healthcare/patient_encounter)
+1. [พบผู้ป่วย](/docs/user/manual/en/healthcare/patient_encounter)

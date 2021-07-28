@@ -1,36 +1,35 @@
 <!-- add-breadcrumbs -->
-# Healthcare Service Unit
+#หน่วยบริการสุขภาพ
 
-ERPNext Healthcare helps you map your Facility Infrastructure and manage Appointment Scheduling, Billing, etc by creating Healthcare Service Units. These are made available for Appointment Booking or Inpatient Occupancy and also for Billing.
+ERPNext Healthcare ช่วยให้คุณทำแผนที่โครงสร้างพื้นฐานสิ่งอำนวยความสะดวกและจัดการกำหนดการนัดหมาย การเรียกเก็บเงิน ฯลฯ โดยการสร้างหน่วยบริการด้านสุขภาพ สิ่งเหล่านี้มีให้สำหรับการจองนัดหมายหรือการเข้าพักผู้ป่วยในและสำหรับการเรียกเก็บเงิน
 
-## 1. How to Create a Healthcare Service Unit
+## 1. วิธีสร้างหน่วยบริการสุขภาพ
 
-To create a Healthcare Service Unit, go to:
+หากต้องการสร้างหน่วยบริการด้านสุขภาพ ไปที่:
 
-> Home > Healthcare > Masters > Healthcare Service Unit
+> หน้าหลัก > การดูแลสุขภาพ > ปริญญาโท > หน่วยบริการสุขภาพ
 
-1. Give a name to the Service Unit.
-2. Specify the Parent Service Unit.
-3. You can create a hierarchy and check "Is Group" if you want to create some units under it.
-4. If "Is Group" is not check, select the Healthcare Service Unit Type. The configurations such as "Allow Appointment", "Inpatient Occupancy", "Is Billable", "Allow Overlap" are auto-fetched from the Healthcare Service Unit Type.
-5. Set the Warehouse if the type is linked to an item.
-6. Select the Company (Hospital) where this unit will be used.
-7. Save.
+1. ตั้งชื่อหน่วยบริการ
+2. ระบุหน่วยบริการหลัก
+3. คุณสามารถสร้างลำดับชั้นและกาเครื่องหมาย "เป็นกลุ่ม" ถ้าคุณต้องการสร้างบางหน่วยภายใต้นั้น
+4. หากไม่เลือก "เป็นกลุ่ม" ให้เลือกประเภทหน่วยบริการสุขภาพ การกำหนดค่าต่างๆ เช่น "อนุญาตการนัดหมาย" "การเข้าพักผู้ป่วยใน" "เรียกเก็บเงินได้" "อนุญาตการทับซ้อน" จะถูกดึงข้อมูลอัตโนมัติจากประเภทหน่วยบริการสุขภาพ
+5. ตั้งค่าคลังสินค้าหากประเภทนั้นเชื่อมโยงกับรายการ
+6. เลือกบริษัท (โรงพยาบาล) ที่จะใช้หน่วยนี้
+7. บันทึก
 
-For Example, Healthcare Service Unit for the type "Healthcare Practitioner Consulting Rooms":
-
+ตัวอย่างเช่น หน่วยบริการสุขภาพประเภท "ห้องให้คำปรึกษาผู้ประกอบการด้านสุขภาพ":
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_service_unit_1.png">
 
-## 2. Healthcare Service Unit Tree View
+## 2. หน่วยบริการสุขภาพ มุมมองแบบต้นไม้
 
-It is also possible that you can group and organize all the service units in a hierarchical manner and edit them from the tree view.
+คุณยังสามารถจัดกลุ่มและจัดระเบียบหน่วยบริการทั้งหมดในลักษณะลำดับชั้น และแก้ไขจากมุมมองแบบต้นไม้ได้
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_service_unit.png">
 
-> This Form has been Changed in Version 13
+> แบบฟอร์มนี้มีการเปลี่ยนแปลงในเวอร์ชัน 13
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Healthcare Service Unit Type](/docs/user/manual/en/healthcare/healthcare_service_unit_type)
+1. [ประเภทหน่วยบริการสุขภาพ](/docs/user/manual/th/healthcare/healthcare_service_unit_type)
 
 {next}

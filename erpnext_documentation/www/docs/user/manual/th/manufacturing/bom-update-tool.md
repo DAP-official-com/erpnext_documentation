@@ -1,57 +1,57 @@
 <!-- add-breadcrumbs -->
-# BOM Update Tool
+# เครื่องมืออัปเดต BOM
 
-**From the BOM Update Tool, you can replace a sub-assembly BOM and update costs of all parent BOMs.**
+**จากเครื่องมืออัปเดต BOM คุณสามารถแทนที่ BOM ของแอสเซมบลีย่อยและอัปเดตต้นทุนของ BOM หลักทั้งหมดได้**
 
-Using this utility, you can replace an existing BOM of a sub-assembly item which is linked to a parent BOM. The system will update the new BOM in all the parent BOMs where it was used. You need to create a new BOM first.
+การใช้ยูทิลิตี้นี้ คุณสามารถแทนที่ BOM ที่มีอยู่ของรายการแอสเซมบลีย่อยที่เชื่อมโยงกับ BOM หลัก ระบบจะอัปเดต BOM ใหม่ใน BOM หลักทั้งหมดที่ใช้ คุณต้องสร้าง BOM ใหม่ก่อน
 
-To use the BOM Update Tool, go to:
+หากต้องการใช้เครื่องมืออัปเดต BOM ให้ไปที่:
 
-> Home > Manufacturing > Tools > BOM Update Tool
+> หน้าหลัก > การผลิต > เครื่องมือ > BOM Update Tool
 
-## 1. How to use the BOM Update Tool
-Let's consider a scenario to understand this better.
+## 1. วิธีใช้งาน BOM Update Tool
+ลองพิจารณาสถานการณ์สมมติเพื่อให้เข้าใจเรื่องนี้ดีขึ้น
 
-Suppose a company manufactures computers, Bill of Materials for the computer will look like this:
+สมมติว่าบริษัทผลิตคอมพิวเตอร์ Bill of Materials สำหรับคอมพิวเตอร์จะมีลักษณะดังนี้:
 
-1. Monitor
-1. Key Board
-1. Mouse
+1. มอนิเตอร์
+1. คีย์บอร์ด
+1. เมาส์
 1. CPU
 
-Out of all the items above, CPU is assembled separately. Hence separate BOM will be created for the CPU. Following are the items from the BOM of CPU.
+จากทั้งหมดข้างต้น CPU ถูกประกอบแยกกัน ดังนั้น BOM แยกต่างหากจะถูกสร้างขึ้นสำหรับ CPU ต่อไปนี้เป็นรายการจาก BOM ของ CPU
 
-1. 250 GB Hard Disk
-1. MotherBoard
-1. Processor
+1. ฮาร์ดดิสก์ 250 GB
+1. เมนบอร์ด
+1. โปรเซสเซอร์
 1. SMTP
-1. DVD player
+1. เครื่องเล่นดีวีดี
 
-If more items need to be added, or existing items to be edited in the CPU BOM, then create new BOM for it.
+หากต้องการเพิ่มรายการเพิ่มเติม หรือรายการที่มีอยู่ที่จะแก้ไขใน CPU BOM ให้สร้าง BOM ใหม่สำหรับรายการนั้น
 
-1. _950 GB Hard Disk_
-1. MotherBoard
-1. Processor
+1. _950 GB ฮาร์ดดิสก์_
+1. เมนบอร์ด
+1. โปรเซสเซอร์
 1. SMTP
-1. DVD player
+1. เครื่องเล่นดีวีดี
 
-Select Current BOM and New BOM of the **sub-assembly** Item:
+เลือก BOM ปัจจุบันและ BOM ใหม่ของรายการ **แอสเซมบลีย่อย**:
 
 <img class="screenshot" alt="BOM Update Tool" src="{{docs_base_url}}/assets/img/manufacturing/bom-update-tool.png">
 
-To update the new BOM in all the parent BOMs, where CPU is selected as sub-assembly, you can use the **Replace** button.
+ในการอัปเดต BOM ใหม่ใน BOM หลักทั้งหมด โดยที่ CPU ถูกเลือกเป็นแอสเซมบลีย่อย คุณสามารถใช้ปุ่ม **แทนที่**
 
-On clicking Replace button, old BOM of CPU will be replaced with the new BOM in the BOM of finished Item (Computer).
+เมื่อคลิกปุ่มแทนที่ BOM เก่าของ CPU จะถูกแทนที่ด้วย BOM ใหม่ใน BOM ของรายการสำเร็จรูป (คอมพิวเตอร์)
 
-**Will BOM Replace Tool work for replacing the exploded Items in the parent BOM?**
+**เครื่องมือแทนที่ BOM จะใช้แทนรายการที่ระเบิดใน BOM หลักได้หรือไม่**
 
-No, exploded Items which do not have any BOMs of their own cannot be replaced in the parent BOM. For example, consider if the Item Monitor does not have a sub-assembly and it cannot be updated using this tool. For updating exploded Items you should Cancel and Amend current BOM, or create a new BOM for the finished item.
+ไม่ รายการที่ระเบิดซึ่งไม่มี BOM ของตัวเองไม่สามารถแทนที่ใน BOM หลักได้ ตัวอย่างเช่น พิจารณาว่า Item Monitor ไม่มีแอสเซมบลีย่อยและไม่สามารถอัปเดตโดยใช้เครื่องมือนี้ สำหรับการอัปเดตรายการที่ระเบิด คุณควรยกเลิกและแก้ไข BOM ปัจจุบัน หรือสร้าง BOM ใหม่สำหรับรายการที่เสร็จแล้ว
 
-## Update BOM Cost
-Using the button **Update latest price in all BOMs**, you can update the cost of all Bill of Materials, based on the latest purchase price/price list rate/valuation rate of raw materials. This is useful if your updated BOM has materials with different Rates.
+## อัปเดตต้นทุน BOM
+การใช้ปุ่ม **อัปเดตราคาล่าสุดใน BOM ทั้งหมด** คุณสามารถอัปเดตต้นทุนของรายการวัสดุทั้งหมดตามราคาซื้อล่าสุด/อัตรารายการราคา/อัตราการประเมินมูลค่าของวัตถุดิบ สิ่งนี้มีประโยชน์หาก BOM ที่อัปเดตของคุณมีวัสดุที่มีอัตราต่างกัน
 
-On clicking this button, the system will create a background process to update all the BOM's cost. It is processed via background jobs because this process can take a few minutes (depending on the number of BOMs) to update all the BOMs.
+เมื่อคลิกปุ่มนี้ ระบบจะสร้างกระบวนการพื้นหลังเพื่ออัปเดตค่าใช้จ่ายทั้งหมดของ BOM มีการประมวลผลผ่านงานพื้นหลังเนื่องจากกระบวนการนี้อาจใช้เวลาสองสามนาที (ขึ้นอยู่กับจำนวนของ BOM) เพื่ออัปเดต BOM ทั้งหมด
 
-This functionality can also be executed automatically daily. For that, you need to enable "Update BOM Cost Automatically" from Manufacturing Settings.
+ฟังก์ชันนี้ยังสามารถดำเนินการได้โดยอัตโนมัติทุกวัน สำหรับสิ่งนั้น คุณต้องเปิดใช้งาน "อัปเดตต้นทุน BOM โดยอัตโนมัติ" จากการตั้งค่าการผลิต
 
 

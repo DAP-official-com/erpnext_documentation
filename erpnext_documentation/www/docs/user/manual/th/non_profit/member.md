@@ -1,42 +1,42 @@
 <!-- add-breadcrumbs -->
-# Member
+# สมาชิก
 
-The Member doctype allows you to record the Member details for a **Membership**.
+เอกสารประเภทสมาชิกอนุญาตให้คุณบันทึกรายละเอียดสมาชิกสำหรับ **สมาชิก**
 
-Members are simply contacts in your ERPNext database with one or more memberships. The contact may be an individual, a household, an organization, or some other contact sub-type, but it is always a contact to which a membership is applied.
+สมาชิกเป็นเพียงผู้ติดต่อในฐานข้อมูล ERPNext ของคุณด้วยการเป็นสมาชิกตั้งแต่หนึ่งรายการขึ้นไป ผู้ติดต่ออาจเป็นบุคคล ครอบครัว องค์กร หรือประเภทย่อยของผู้ติดต่ออื่นๆ แต่จะเป็นผู้ติดต่อที่มีการสมัครสมาชิกเสมอ
 
-To create new Member go to:
+ในการสร้างสมาชิกใหม่ไปที่:
 
-> Home > Non Profit > Member > New
+> หน้าหลัก > องค์กรไม่แสวงหากำไร > สมาชิก > ใหม่
 
-## 1. How to Create a Member
+## 1. วิธีสร้างสมาชิก
 
 <img class="screenshot" alt="Member" src="{{docs_base_url}}/assets/img/non_profit/membership/member.png">
 
-**Email Address:** You can capture the member's email address here. This will be used while sending membership acknowledgments.
+**ที่อยู่อีเมล:** คุณสามารถบันทึกที่อยู่อีเมลของสมาชิกได้ที่นี่ จะใช้ในขณะที่ส่งการตอบรับการเป็นสมาชิก
 
-**Membership Type:** Select the Membership Type here.
+**ประเภทสมาชิก:** เลือกประเภทสมาชิกที่นี่
 
-**Membership Expiry Date:** This Field fetches the membership end date details from the member's corresponding Membership record.
+**วันหมดอายุการเป็นสมาชิก:** ช่องนี้จะดึงรายละเอียดวันที่สิ้นสุดการเป็นสมาชิกจากบันทึกการเป็นสมาชิกที่เกี่ยวข้องของสมาชิก
 
-## 2. Features
+## 2. คุณสมบัติ
 
 
-### 2.1 Member linking with Customer or Supplier
+### 2.1 สมาชิกที่เชื่อมโยงกับลูกค้าหรือซัพพลายเออร์
 
 <img class="screenshot" alt="Member" src="{{docs_base_url}}/assets/img/non_profit/membership/member-details.png">
 
-ERPNext gives you the provision to link your members to customers or suppliers or both.
+ERPNext ให้ข้อกำหนดในการเชื่อมโยงสมาชิกของคุณกับลูกค้าหรือซัพพลายเออร์หรือทั้งสองอย่าง
 
-**Customer**: If the members of your NGO are paying membership fees and donations, you might want to generate invoices and track receivables for them. In this case, you can link a member to a customer record.
+**ลูกค้า**: หากสมาชิกของ NGO ของคุณจ่ายค่าธรรมเนียมสมาชิกและการบริจาค คุณอาจต้องการสร้างใบแจ้งหนี้และติดตามลูกหนี้สำหรับพวกเขา ในกรณีนี้ คุณสามารถเชื่อมโยงสมาชิกกับเรกคอร์ดลูกค้าได้
 
-**Supplier**: Members can also be treated as Suppliers when they are offering goods and services to the NGO in some form or the other. You might want to create Purchase Invoices and maintain payables for the same. In this case, you can link a member to a supplier record.
+**ซัพพลายเออร์**: สมาชิกสามารถได้รับการปฏิบัติเหมือนเป็นซัพพลายเออร์เมื่อพวกเขาเสนอสินค้าและบริการให้กับ NGO ในรูปแบบใดรูปแบบหนึ่ง คุณอาจต้องการสร้างใบสั่งซื้อและรักษาเจ้าหนี้ไว้เหมือนเดิม ในกรณีนี้ คุณสามารถเชื่อมโยงสมาชิกกับเรกคอร์ดซัพพลายเออร์ได้
 
-**Address and Contact Section:** This Section allows you to link existing or add new address and contact records for the member.
+**ส่วนที่อยู่และการติดต่อ:** ส่วนนี้อนุญาตให้คุณเชื่อมโยงที่มีอยู่หรือเพิ่มที่อยู่ใหม่และบันทึกการติดต่อสำหรับสมาชิก
 
-### 2.2 Razorpay Details
+### 2.2 รายละเอียด Razorpay
 
-If _Enable RazorPay For Memberships_ has been enabled in Membership Settings, then, the subscription details will be shown in the Razorpay Details section.
+หากเปิดใช้งาน _Enable RazorPay For Memberships_ ในการตั้งค่าการเป็นสมาชิก รายละเอียดการสมัครจะแสดงในส่วนรายละเอียด Razorpay
 
 
 {next}

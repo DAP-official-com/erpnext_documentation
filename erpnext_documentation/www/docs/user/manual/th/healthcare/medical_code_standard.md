@@ -1,19 +1,19 @@
 <!-- add-breadcrumbs -->
 
-# Medical Code Standard
+#รหัสทางการแพทย์มาตรฐาน
 
-Medical Coding is required in many countries for regulatory compliance and many of the Medical Insurance companies manage eligibility and coverage based on Medical Code Standards. ERPNext Healthcare helps encode diagnosis and assessments recorded as part of Patient Encounters. You can also codify Clinical Procedures. You can configure Medical Code Standards and related Medical Codes - which usually can be easily done by [Data Import](/docs/user/manual/en/setting-up/data/data-import) as the code data tends to be quite large. You can create as many Medical Code Standards as you wish if you need to comply with multiple Coding Standards.
+จำเป็นต้องมีการเข้ารหัสทางการแพทย์ในหลายประเทศเพื่อการปฏิบัติตามกฎระเบียบ และบริษัทประกันสุขภาพหลายแห่งจัดการคุณสมบัติและความคุ้มครองตามมาตรฐานรหัสทางการแพทย์ ERPNext Healthcare ช่วยเข้ารหัสการวินิจฉัยและการประเมินที่บันทึกไว้เป็นส่วนหนึ่งของการเผชิญหน้าผู้ป่วย คุณยังสามารถกำหนดขั้นตอนทางคลินิกได้ คุณสามารถกำหนดค่า รหัสทางการแพทย์มาตรฐาน และ รหัสทางการแพทย์ ที่เกี่ยวข้องได้ ซึ่งโดยปกติแล้วจะทำได้ง่ายๆ ด้วย [Data Import](/docs/user/manual/th/setting-up/data/data-import) เนื่องจากข้อมูลรหัสมีแนวโน้มค่อนข้างจะสูงและใหญ่ คุณสามารถสร้างมาตรฐานรหัสทางการแพทย์ได้มากเท่าที่คุณต้องการ หากคุณต้องการปฏิบัติตามมาตรฐานการเข้ารหัสหลายฉบับ
 
-In order to create Medical Code Standards, go to:
+ในการสร้างมาตรฐานรหัสทางการแพทย์ ไปที่:
 
-> Home > Healthcare > Masters > Medical Code Standard
+> หน้าหลัก > การดูแลสุขภาพ > รายการหลัก > รหัสทางการแพทย์มาตรฐาน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/medical_code_standard.png">
 
-Two common medical coding classification systems are in use — the International Classification of Diseases (ICD) and the Current Procedural Terminology (CPT).
+มีการใช้ระบบการจำแนกรหัสทางการแพทย์ทั่วไป 2 ระบบ ได้แก่ การจำแนกประเภทโรคระหว่างประเทศ (ICD) และคำศัพท์เกี่ยวกับขั้นตอนปัจจุบัน (CPT)
 
-## Related Topics
+## หัวข้อที่เกี่ยวข้อง
 
-1. [Medical Code](/docs/user/manual/en/healthcare/medical_code)
+1. [รหัสการแพทย์](/docs/user/manual/th/healthcare/medical_code)
 
 {next}

@@ -1,42 +1,42 @@
 <!-- add-breadcrumbs -->
 
-# Appointment Type
+# ประเภทการนัดหมาย
 
-You can create masters for various types of Appointments. Appointment Type allows you to predefine the duration of the appointment, specify whether it's inpatient, and set colors to differentiate between different Appointment Types for analysis.
+คุณสามารถสร้างต้นแบบสำหรับการนัดหมายประเภทต่างๆ ประเภทการนัดหมายช่วยให้คุณกำหนดระยะเวลาของการนัดหมายล่วงหน้า ระบุว่าเป็นผู้ป่วยในหรือไม่ และตั้งค่าสีเพื่อแยกความแตกต่างระหว่างประเภทการนัดหมายต่างๆ เพื่อการวิเคราะห์
 
-## 1. How to Create an Appointment Type
+## 1. วิธีสร้างประเภทการนัดหมาย
 
-To Create an Appointment Type, go to:
+ในการสร้างประเภทการนัดหมาย ไปที่:
 
-> Home > Healthcare > Consultation Setup > Appointment Type
+> หน้าหลัก > การดูแลสุขภาพ > การตั้งค่าการให้คำปรึกษา > ประเภทการนัดหมาย
 
-1. Enter the "Type".
-2. Check "Is Inpatient" if the Appointments created under this Type will be used for IPD.
-3. Set the Default Duration (In Mins) so that when the Appointment Type is selected in Patient Appointment, the duration gets set automatically.
-4. You can also set a color for each Appointment Type.
+1. ป้อน "ประเภท"
+2. ตรวจสอบ "เป็นผู้ป่วยใน" หากการนัดหมายที่สร้างขึ้นภายใต้ประเภทนี้จะใช้สำหรับ IPD
+3. ตั้งค่าระยะเวลาเริ่มต้น (เป็นนาที) เพื่อให้เมื่อเลือกประเภทการนัดหมายในการนัดหมายผู้ป่วย ระยะเวลาจะถูกตั้งค่าโดยอัตโนมัติ
+4. คุณยังสามารถกำหนดสีสำหรับประเภทการนัดหมายแต่ละประเภทได้
 
 <img class="screenshot" alt="Appointment Type" src="{{docs_base_url}}/assets/img/healthcare/appointment_type.png">
 
-The color will help you identify the appointments of a particular type in the Calendar view.
+สีจะช่วยคุณระบุการนัดหมายของประเภทใดประเภทหนึ่งในมุมมองปฏิทิน
 
 <img class="screenshot" alt="Appointment Calendar" src="{{docs_base_url}}/assets/img/healthcare/healthcare-appointments.png">
 
-## 2 Features
+## 2 คุณสมบัติ
 
-### 2.1 Medical Department wise Billing Items and Charges
+### 2.1 รายการเรียกเก็บเงินและค่าใช้จ่ายของแผนกการแพทย์ที่ชาญฉลาด
 
-From version 13 onwards, you can set up department-wise appointment/consultation charges in the Appointment Type.
+ตั้งแต่เวอร์ชัน 13 เป็นต้นไป คุณสามารถตั้งค่าการนัดหมาย/ค่าที่ปรึกษาตามแผนกในประเภทการนัดหมาย
 
 <img class="screenshot" alt="Appointment Type Wise Charge" src="{{docs_base_url}}/assets/img/healthcare/appointment-type-wise-charge.png">
 
-If you want to set generic default charges and billing items, irrespective of any department, you can add a record in the Appointment Type Service Items table with no department selected.
+หากคุณต้องการตั้งค่าค่าธรรมเนียมเริ่มต้นทั่วไปและรายการวางบิล โดยไม่คำนึงถึงแผนกใดๆ คุณสามารถเพิ่มเรกคอร์ดในตารางรายการบริการประเภทการนัดหมาย โดยไม่ได้เลือกแผนก
 
 <img class="screenshot" alt="Appointment Invoicing" src="{{docs_base_url}}/assets/img/healthcare/appointment-invoicing.png">
 
 
-## 2. Related Topics
+## 2. หัวข้อที่เกี่ยวข้อง
 
-1. [Patient Appointment](/docs/user/manual/en/healthcare/patient_appointment)
+1. [การนัดหมายผู้ป่วย](/docs/user/manual/th/healthcare/patient_appointment)
 
 {next}
 

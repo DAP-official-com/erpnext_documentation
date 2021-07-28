@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-#Donor
+#ผู้บริจาค
 
-A donor in general is a person, organization or government who donates something voluntarily. The term is usually used to represent a form of pure altruism but sometimes used when the payment for a service is recognized by all parties as representing less than the value of the donation and that the motivation is altruistic. In business law, a donor is someone who is giving the gift (law), and a donee the person receiving the gift.
+ผู้บริจาคโดยทั่วไปคือบุคคล องค์กร หรือรัฐบาลที่บริจาคสิ่งของด้วยความสมัครใจ คำนี้มักใช้เพื่อแสดงรูปแบบของการเห็นแก่ผู้อื่นอย่างบริสุทธิ์ใจ แต่บางครั้งใช้เมื่อทุกฝ่ายรับรู้การชำระค่าบริการว่าเป็นตัวแทนน้อยกว่ามูลค่าของการบริจาคและแรงจูงใจนั้นเห็นแก่ผู้อื่น ในกฎหมายธุรกิจ ผู้บริจาคคือผู้ที่ให้ของขวัญ (กฎหมาย) และผู้ที่ได้รับของขวัญ
 
-The Donor doctype allows you to record the Donor details.
+ประเภทเอกสารผู้บริจาคช่วยให้คุณบันทึกรายละเอียดผู้บริจาคได้
 
-Donor are simply contacts in your ERPNext database with one or more Donation. The contact may be an individual, a household, an organization, or some other contact sub-type, but it is always a contact to which a donation is applied.
+ผู้บริจาคเป็นเพียงผู้ติดต่อในฐานข้อมูล ERPNext ของคุณด้วยการบริจาคอย่างน้อยหนึ่งรายการ ผู้ติดต่ออาจเป็นบุคคล ครัวเรือน องค์กร หรือประเภทย่อยของผู้ติดต่ออื่นๆ แต่จะเป็นผู้ติดต่อที่มีการบริจาคเสมอ
 
-To create new Donor go to:
+ในการสร้างผู้บริจาคใหม่ไปที่:
 
-> Non Profit > Donor > New
+> องค์กรไม่แสวงหากำไร > ผู้บริจาค > ใหม่
 
 <img class="screenshot" alt="Student" src="{{docs_base_url}}/assets/img/non_profit/donor/donor.png">
 
-**Email:** Email field is the id of Member doctype.
+**อีเมล:** ฟิลด์อีเมลคือรหัสของ doctype สมาชิก
 
-**Donor Type:** DonorType is link field to Donor Type Doctype. Member can select Available Doctype.
+**ประเภทผู้บริจาค:** DonorType คือช่องลิงก์ไปยังประเภท Doctype ของผู้บริจาค สมาชิกสามารถเลือก Available Doctype
 
-**Address and Contact Section:** This Section linked to address and contact doctypes.
+**ส่วนที่อยู่และการติดต่อ:** ส่วนนี้เชื่อมโยงกับที่อยู่และประเภทเอกสารการติดต่อ
 
-**Accounting Section:** This section allowed to set member accounting details such as Account Receivable.
+**ส่วนบัญชี:** ส่วนนี้อนุญาตให้กำหนดรายละเอียดบัญชีของสมาชิก เช่น บัญชีลูกหนี้
 
 {next}

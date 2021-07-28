@@ -1,56 +1,55 @@
 <!-- add-breadcrumbs -->
 
-# Clinical Procedures Template
+# เทมเพลตขั้นตอนทางคลินิก
 
-ERPNext Healthcare allows you to configure templates with various properties of Clinical Procedures to ease out the Procedure creation process. You can create templates so that you don't have to enter the consumables, rates and linked items every time you create a [Clinical Procedure](/docs/user/manual/en/healthcare/clinical_procedure) for a Patient.
+ERPNext Healthcare ช่วยให้คุณสามารถกำหนดค่าเทมเพลตด้วยคุณสมบัติต่างๆ ของขั้นตอนทางคลินิกเพื่อให้ขั้นตอนการสร้างขั้นตอนง่ายขึ้น คุณสามารถสร้างเทมเพลตเพื่อที่คุณจะได้ไม่ต้องป้อนวัสดุสิ้นเปลือง อัตรา และรายการที่เชื่อมโยงทุกครั้งที่คุณสร้าง [ขั้นตอนทางคลินิก](/docs/user/manual/th/healthcare/clinical_procedure) สำหรับผู้ป่วย
 
-## 1. How to Create a Clinical Procedure Template
+## 1. วิธีสร้างเทมเพลตขั้นตอนทางคลินิก
 
-You can create new Clinical Procedure Templates by going to:
+คุณสามารถสร้างเทมเพลตขั้นตอนทางคลินิกใหม่ได้โดยไปที่:
 
-> Home > Healthcare > Consultation Setup > Clinical Procedure Template
+> หน้าหลัก > การดูแลสุขภาพ > การตั้งค่าการให้คำปรึกษา > เทมเพลตขั้นตอนทางคลินิก
 
-1. Enter a unique name for the Template.
-2. The Clinical Procedure Template automatically creates an Item linked to it for billing purposes. For this reason, enter an Item Code, Item Group and Description for the item.
-3. Optionally select the Medical Department for which the Clinical Procedures will be conducted.
-4. Check "Is Billable" if you want to bill the procedure like a Knee Surgery. If you check this, set a rate for the Procedure. You may not want to bill procedures like Wound Cleaning.
-5. Save.
+1. ป้อนชื่อเฉพาะสำหรับเทมเพลต
+2. เทมเพลตขั้นตอนทางคลินิกสร้างรายการที่เชื่อมโยงกับเทมเพลตโดยอัตโนมัติเพื่อวัตถุประสงค์ในการเรียกเก็บเงิน ด้วยเหตุผลนี้ ให้ป้อนรหัสสินค้า กลุ่มสินค้า และคำอธิบายสำหรับสินค้า
+3. เลือกแผนกการแพทย์ที่จะดำเนินการตามขั้นตอนทางคลินิก
+4. ตรวจสอบ "Is Billable" หากคุณต้องการเรียกเก็บเงินตามขั้นตอนเช่นการผ่าตัดเข่า หากคุณตรวจสอบสิ่งนี้ ให้กำหนดอัตราสำหรับขั้นตอน คุณอาจไม่ต้องการเรียกเก็บเงินตามขั้นตอน เช่น การทำความสะอาดบาดแผล
+5. บันทึก
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/clinical_procedure_template.png">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Automatic Item Creation for Templates
+### 2.1 การสร้างรายการอัตโนมัติสำหรับเทมเพลต
 
-Templates allow you to manage the billable Item, rate, etc. for a particular procedure. The system automatically creates an Item linked to the template when it is saved.
+เทมเพลตช่วยให้คุณจัดการรายการที่เรียกเก็บเงินได้ อัตรา ฯลฯ สำหรับขั้นตอนเฉพาะ ระบบจะสร้างรายการที่เชื่อมโยงกับแม่แบบโดยอัตโนมัติเมื่อบันทึก
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/clinical_procedure_item.png">
 
-You can change the Item Code linked to the Procedure if needed using the **Change Item Code** button.
+คุณสามารถเปลี่ยนรหัสรายการที่เชื่อมโยงกับขั้นตอนได้หากต้องการโดยใช้ปุ่ม **เปลี่ยนรหัสสินค้า**
 
-### 2.2 Manage Procedure Consumables
+### 2.2 จัดการวัสดุสิ้นเปลืองขั้นตอน
 
-The Consumables section lets you set the consumable Stock Items with default quantities etc. which will be needed during the Procedure so that these items will be preloaded in the Clinical Procedures created based on the template. This allows the performing practitioner to easily input the consumed quantities or add additional items that have been consumed during the actual procedure.
+ส่วนวัสดุสิ้นเปลืองช่วยให้คุณตั้งค่ารายการสต็อกวัสดุสิ้นเปลืองที่มีปริมาณเริ่มต้น ฯลฯ ซึ่งจำเป็นในระหว่างขั้นตอนเพื่อให้รายการเหล่านี้ถูกโหลดไว้ล่วงหน้าในขั้นตอนทางคลินิกที่สร้างขึ้นตามเทมเพลต ซึ่งช่วยให้ผู้ปฏิบัติงานที่ปฏิบัติงานสามารถป้อนปริมาณที่บริโภคหรือเพิ่มรายการเพิ่มเติมที่มีการบริโภคในระหว่างขั้นตอนจริงได้อย่างง่ายดาย
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/procedure_consumables.png">
 
-### 2.3 Invoice Consumables Separately
+### 2.3 วัสดุสิ้นเปลืองในใบแจ้งหนี้แยกกัน
 
-If the "Invoice Consumables Separately" option is checked, the charges for the consumable Items will be added to the Sales Invoice separately in addition to the "Billing Rate" of the procedure.
+หากเลือกตัวเลือก "วัสดุสิ้นเปลืองในใบแจ้งหนี้แยกกัน" ค่าบริการสำหรับสินค้าสิ้นเปลืองจะถูกเพิ่มไปยังใบกำกับสินค้าแยกต่างหากนอกเหนือจาก "อัตราการเรียกเก็บเงิน" ของขั้นตอน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/invoice_separately.png">
 
-### 2.4 Configure Sample Collection
+### 2.4 กำหนดค่าการเก็บตัวอย่าง
 
-Note that you can also enable "Sample Collection" for a Clinical Procedure if applicable.
+โปรดทราบว่าคุณยังสามารถเปิดใช้งาน "การเก็บตัวอย่าง" สำหรับขั้นตอนทางคลินิก หากมี
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/sample_collection.png">
 
-> This Form has been Changed in Version 13
+> แบบฟอร์มนี้มีการเปลี่ยนแปลงในเวอร์ชัน 13
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Clinical Procedure](/docs/user/manual/en/healthcare/clinical_procedure)
-1. [Sample Collection](/docs/user/manual/en/healthcare/sample_collection)
-
+1. [ขั้นตอนทางคลินิก](/docs/user/manual/th/healthcare/clinical_procedure)
+1. [การเก็บตัวอย่าง](/docs/user/manual/th/healthcare/sample_collection)
 {next}

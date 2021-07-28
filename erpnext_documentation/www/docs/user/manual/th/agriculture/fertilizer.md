@@ -1,6 +1,6 @@
 <!-- add-breadcrumbs -->
-# Fertilizer
+#ปุ๋ย
 
-This is used to keep track of available fertilizers, and their chemical composition, which is linked to the Item master
+ใช้เพื่อติดตามปุ๋ยที่มีอยู่ และองค์ประกอบทางเคมีของปุ๋ย ซึ่งเชื่อมโยงกับ รายการหลัก
 
 <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/agriculture/diseases_and_fertilizer/fertilizer.png">

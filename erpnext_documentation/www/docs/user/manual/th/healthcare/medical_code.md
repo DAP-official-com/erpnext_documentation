@@ -1,40 +1,40 @@
 <!-- add-breadcrumbs -->
 
-# Medical Code
+# รหัสทางการแพทย์
 
-Medical Code Standard document is used to name the Code Standard and act as a container for all the medical codes which are standardized under it. For example, ICD (International Classification of Diseases) is a Medical Code Standard and ICD-10 codes are alphanumeric, containing 3-7 characters. Each code is a Medical Code that described a particular diagnosis in detail.
+เอกสาร รหัสทางการแพทย์มาตรฐาน ใช้เพื่อตั้งชื่อ รหัสมาตรฐาน และทำหน้าที่เป็นภาชนะสำหรับรหัสทางการแพทย์ทั้งหมดที่เป็นมาตรฐานภายใต้นั้น ตัวอย่างเช่น ICD (International Classification of Diseases) เป็นมาตรฐานรหัสทางการแพทย์ และรหัส ICD-10 เป็นตัวอักษรและตัวเลขคละกัน ประกอบด้วยอักขระ 3-7 ตัว แต่ละรหัสคือรหัสทางการแพทย์ที่อธิบายการวินิจฉัยโรคโดยละเอียด
 
-## 1. How to Create a Medical Code
+## 1. วิธีสร้างรหัสการแพทย์
 
-### 1.1 Create Codes Manually
+### 1.1 สร้างรหัสด้วยตนเอง
 
-To create a Medical Code, go to:
+หากต้องการสร้างรหัสการแพทย์ ให้ไปที่:
 
-> Home > Healthcare > Masters > Medical Code
+> หน้าหลัก > การดูแลสุขภาพ > รายการหลัก > รหัสทางการแพทย์
 
-1. Select the Medical Code Standard.
-2. Enter the Code in the "Code" field.
-3. Enter the standard description for the code.
-4. Save.
+1. เลือกมาตรฐานรหัสแพทย์
+2. ป้อนรหัสในช่อง "รหัส"
+3. ป้อนคำอธิบายมาตรฐานสำหรับรหัส
+4. บันทึก
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/medical_code.png">
 
-### 1.2 Data Import
+### 1.2 การนำเข้าข้อมูล
 
-Medical Codes and Descriptions can also be imported to create the "Medical Code" documents, after ensuring that you have created the Medical Code Standards appropriately.
+นอกจากนี้ยังสามารถนำเข้ารหัสและคำอธิบายทางการแพทย์เพื่อสร้างเอกสาร "รหัสทางการแพทย์" หลังจากตรวจสอบให้แน่ใจว่าคุณได้สร้างมาตรฐานรหัสทางการแพทย์อย่างเหมาะสมแล้ว
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/medical_code_1.png">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-In the Patient Encounter, a practitioner can easily search and select appropriate ones from preconfigured Medical Codes to enable codification based on each of the services your facility offers. In many regions this is mandatory for processing Patient Insurance eligibility, claim processing and billing.
+ในการเจอผู้ป่วยผู้ประกอบวิชาชีพสามารถค้นหาและเลือกรหัสที่เหมาะสมได้อย่างง่ายดายจากรหัสทางการแพทย์ที่กำหนดค่าไว้ล่วงหน้าเพื่อเปิดใช้งานการเข้ารหัสตามแต่ละบริการที่สถานประกอบการของคุณเสนอ ในหลายภูมิภาค การดำเนินการนี้จำเป็นสำหรับการประมวลผลสิทธิ์ในการประกันผู้ป่วย การดำเนินการเรียกร้องค่าสินไหมทดแทน และการเรียกเก็บเงิน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/encounter_4.png">
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Medical Code Standard](/docs/user/manual/en/healthcare/medical_code_standard)
-1. [Patient Appointment](/docs/user/manual/en/healthcare/patient_appointment)
-1. [Clinical Procedure Template](/docs/user/manual/en/healthcare/clinical_procedure_template)
+1. [รหัสทางการแพทย์มาตรฐาน](/docs/user/manual/th/healthcare/medical_code_standard)
+1. [การนัดหมายผู้ป่วย](/docs/user/manual/th/healthcare/patient_appointment)
+1. [เทมเพลตขั้นตอนทางคลินิก](/docs/user/manual/th/healthcare/clinical_procedure_template)
 
 {next}

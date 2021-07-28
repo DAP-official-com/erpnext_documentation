@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-# BOM Comparison Tool
+# เครื่องมือเปรียบเทียบ BOM
 
-**Using the BOM Comparison Tool, you can compare two BOMs and see what changed between their iterations.**
+**การใช้เครื่องมือเปรียบเทียบ BOM คุณสามารถเปรียบเทียบ BOM สองรายการและดูว่ามีการเปลี่ยนแปลงอย่างไรระหว่างการทำซ้ำ**
 
-A BOM ([Bill of Materials](/docs/user/manual/en/manufacturing/bill-of-materials)) of an Item undergoes several changes over time. When you need to change something in your BOM, you have to Cancel the BOM, Amend it, make
-the change and create a new version of the BOM. Now you have two different BOMs and
-change history is lost.
+BOM ([Bill of Materials](/docs/user/manual/th/manufacturing/bill-of-materials)) ของรายการมีการเปลี่ยนแปลงหลายอย่างเมื่อเวลาผ่านไป เมื่อคุณต้องการเปลี่ยนแปลงบางสิ่งใน BOM ของคุณ คุณต้องยกเลิก BOM แก้ไขมัน ทำ
+การเปลี่ยนแปลงและสร้าง BOM เวอร์ชันใหม่ ตอนนี้คุณมี BOM ที่แตกต่างกันสองรายการและ
+ประวัติการเปลี่ยนแปลงจะหายไป
 
-The BOM Comparison Tool lets you compare two different BOMs and will show you
-what changed between them.
+เครื่องมือเปรียบเทียบ BOM ให้คุณเปรียบเทียบ BOM สองรายการที่แตกต่างกัน และจะแสดงให้คุณเห็น
+สิ่งที่เปลี่ยนไประหว่างพวกเขา
 
-To use the BOM Update Tool, go to:
+หากต้องการใช้เครื่องมืออัปเดต BOM ให้ไปที่:
 
-> Home > Manufacturing > Tools > BOM Comparison Tool
+> หน้าหลัก > การผลิต > เครื่องมือ > BOM Comparison Tool
 
-## 1. How to use the BOM Comparison Tool
+## 1. วิธีใช้เครื่องมือเปรียบเทียบ BOM
 
-1. Select the old BOM against which you want to compare in **BOM 1** field.
-2. Select the new BOM of which you want to see the changes in **BOM 2** field.
-3. The changes will be shown as soon as you select both the values.
+1. เลือก BOM เก่าที่คุณต้องการเปรียบเทียบในฟิลด์ **BOM 1**
+2. เลือก BOM ใหม่ที่คุณต้องการดูการเปลี่ยนแปลงในฟิลด์ **BOM 2**
+3. การเปลี่ยนแปลงจะแสดงทันทีที่คุณเลือกทั้งสองค่า
 
 ![BOM Comparison Tool](/docs/assets/img/manufacturing/bom-comparison-tool.png)
 

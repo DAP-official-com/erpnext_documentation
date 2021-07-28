@@ -1,12 +1,12 @@
 <!-- add-breadcrumbs -->
-# BOM Costing in different Currency
+# การคิดต้นทุนในสกุลเงินต่างๆใน BOM
 
-User can change the Currency in the BOM *before* submitting. The system calculates the costing based on the Price List currency. You can check the manufacturing cost in a particular Currency by changing the Currency in the BOM.
+ผู้ใช้สามารถเปลี่ยนสกุลเงินใน BOM *ก่อน* ส่ง ระบบจะคำนวณต้นทุนตามสกุลเงินของรายการราคา คุณสามารถตรวจสอบต้นทุนการผลิตในสกุลเงินใดสกุลเงินหนึ่งได้โดยการเปลี่ยนสกุลเงินใน BOM
 
-Consider that you import plastic as a raw material from Japan and the Sales Invoices are in the Yen currency. Your company Currency is INR but you want the BOM costing to be done in Yen. On setting 'Rate Of Materials Based On' to 'Price List' the raw materials used in the BOM will also have rates set in Yen. These rates are fetched from the Price List you create for Japan. In this case, it is a buying Price List called 'Import Japan'.
+พิจารณาว่าคุณนำเข้าพลาสติกเป็นวัตถุดิบจากประเทศญี่ปุ่นและใบกำกับการขายอยู่ในสกุลเงินเยน สกุลเงินของบริษัทของคุณคือ INR แต่คุณต้องการให้ BOM คิดต้นทุนเป็นเยน ในการตั้งค่า 'อัตราของวัสดุตาม' เป็น 'รายการราคา' วัตถุดิบที่ใช้ใน BOM จะกำหนดอัตราเป็นเงินเยนด้วย อัตราเหล่านี้ดึงมาจากรายการราคาที่คุณสร้างสำหรับประเทศญี่ปุ่น ในกรณีนี้ เป็นรายการราคาซื้อที่เรียกว่า 'นำเข้าญี่ปุ่น'
 
 ![BOM in different Currency](/docs/assets/img/manufacturing/bom-currency.png)
 
-If you select 'Rate Of Materials Based On' to 'Valuation Rate' or 'Last Purchase Rate', the prices will be fetched from the Item master or the Sales Invoice respectively. In case of Item master, you'll need to enter the Valuation Rate in **your** Currency. In the BOM, Valuation Rate will be converted to the Currency set in the BOM.
+หากคุณเลือก 'อัตราของวัสดุตาม' เป็น 'อัตรามูลค่า' หรือ 'อัตราการซื้อล่าสุด' ราคาจะถูกดึงมาจากรายการหลักหรือใบกำกับสินค้าตามลำดับ ในกรณีของ Item master คุณจะต้องป้อนอัตราการประเมินในสกุลเงิน **ของคุณ** ใน BOM อัตราการประเมินมูลค่าจะถูกแปลงเป็นสกุลเงินที่กำหนดไว้ใน BOM
 
 ![BOM in different Currency](/docs/assets/img/manufacturing/bom-currency-1.png)

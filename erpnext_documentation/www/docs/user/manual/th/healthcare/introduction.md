@@ -1,17 +1,17 @@
-# Introduction
+# บทนำ
 
-Here is what a patient appointment looks like in ERPNext:
+นี่คือลักษณะการนัดหมายผู้ป่วยใน ERPNext:
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient-appointment.png">
 
-Here are some analytics:
+นี่คือการวิเคราะห์บางส่วน:
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/appointment-analytics.png">
 
-ERPNext Healthcare helps you manage your hospital, clinic, or practice efficiently by scheduling Appointments, capturing Vitals, and managing medication and investigation orders by recording Patient Encounters. You can easily pull out a Patient's Medical History anytime to review the patient's past conditions and treatments assisting you in providing effective, high-quality care. ERPNext Healthcare allows you to manage multiple Medical Code Standards like the ICD 10 and easily search for Medical Codes simplifying the coding process. ERPNext Healthcare also comes with a Laboratory module with predefined templates for recording common Lab Tests. Reports like Appointment Analytics and Lab Test Report help you get a thorough idea of the operations.
+ERPNext Healthcare ช่วยให้คุณจัดการโรงพยาบาล คลินิก หรือสถานปฏิบัติได้อย่างมีประสิทธิภาพโดยกำหนดเวลานัดหมาย รวบรวม Vitals และจัดการคำสั่งยาและการตรวจสอบโดยการบันทึกการเผชิญหน้าของผู้ป่วย คุณสามารถดึงประวัติการรักษาของผู้ป่วยออกได้ทุกเมื่อเพื่อตรวจสอบสภาพและการรักษาที่ผ่านมาของผู้ป่วยซึ่งจะช่วยคุณในการให้การดูแลที่มีประสิทธิภาพและมีคุณภาพสูง ERPNext Healthcare ช่วยให้คุณจัดการมาตรฐานรหัสทางการแพทย์หลายมาตรฐาน เช่น ICD 10 และค้นหารหัสทางการแพทย์ได้อย่างง่ายดาย ซึ่งทำให้กระบวนการเข้ารหัสง่ายขึ้น ERPNext Healthcare ยังมาพร้อมกับโมดูลสำหรับห้องปฏิบัติการซึ่งมีเทมเพลตที่กำหนดไว้ล่วงหน้าสำหรับบันทึกการทดสอบในห้องปฏิบัติการทั่วไป รายงานต่างๆ เช่น การวิเคราะห์การนัดหมาย และ รายงานผลการทดสอบในห้องปฏิบัติการ ช่วยให้คุณเข้าใจถึงภาพรวมของการดำเนินงาน
 
-## Contributors of ERPNext Healthcare domain
-The Healthcare domain of ERPNext is the first domain to be completely contributed by a ERPNext community member, ***Earthians***. Listen to Anoop, founder of Earthians on what motivated him to venture into Healthcare domain and how it benefit all stake holders of the community.
+## ผู้สนับสนุนโดเมน ERPNext Healthcarecare
+โดเมน Healthcare ของ ERPNext เป็นโดเมนแรกที่มีส่วนร่วมอย่างสมบูรณ์โดยสมาชิกชุมชน ERPNext ***Earthians*** ฟัง Anoop ผู้ก่อตั้ง Earthians เกี่ยวกับสิ่งที่กระตุ้นให้เขาเข้าสู่โดเมน Healthcare และประโยชน์ต่อผู้มีส่วนได้ส่วนเสียในชุมชนอย่างไร
 
 <div>
     <div class='embed-container'>
@@ -20,12 +20,12 @@ The Healthcare domain of ERPNext is the first domain to be completely contribute
     </div>
 </div>
 
-## Power your operations with ERPNext
-Of course, a Healthcare institution needs lots more than just the Healthcare domain to operate efficiently - ERPNext has all of it built-in, out of box!
+## ขับเคลื่อนการดำเนินงานของคุณด้วย ERPNext
+แน่นอน สถาบันการดูแลสุขภาพต้องการมากกว่าแค่โดเมน Healthcare เพื่อดำเนินการอย่างมีประสิทธิภาพ - ERPNext มีทุกอย่างในตัว แกะกล่อง!
 
-- You can track your books of accounts using [Accounts module](/docs/user/manual/en/accounts).
-- Manage your staff's payroll, leaves, recruitment, appraisals, claims and much more with [HR module](/docs/user/manual/en/human-resources).
-- Organize your [Purchases](/docs/user/manual/en/buying) and place an approval system.
-- Track and manage your Pharmacy [Stock](/docs/user/manual/en/stock) and other supplies effectively.
-- Manage your [Fixed Assets](/docs/user/manual/en/asset) purchases and sales, depreciation and ensure timely maintenance.
-- Receive online payments and [Integrations](/docs/user/manual/en/erpnext_integration) with other services including various Google Services
+- คุณสามารถติดตามสมุดบัญชีโดยใช้ [โมดูลบัญชี](/docs/user/manual/th/accounts)
+- จัดการการจ่ายเงินเดือน การลางาน การสรรหา การประเมิน การเรียกร้องและอื่น ๆ อีกมากมายของพนักงานของคุณด้วย [โมดูลทรัพยากรบุคคล](/docs/user/manual/th/human-resources)
+- จัดระเบียบ [การขาย](/docs/user/manual/th/buying) ของคุณ และวางระบบการอนุมัติ
+- ติดตามและจัดการร้านขายยาของคุณ [สต็อก] (/docs/user/manual/th/stock) และอุปกรณ์อื่นๆ อย่างมีประสิทธิภาพ
+- จัดการการซื้อและการขาย [สินทรัพย์ถาวร](/docs/user/manual/th/asset) ค่าเสื่อมราคา และการบำรุงรักษาตามกำหนดเวลา
+- รับการชำระเงินออนไลน์และ [การใช้ร่วมกัน](/docs/user/manual/th/erpnext_integration) กับบริการอื่นๆ รวมถึงบริการต่างๆ ของ Google

@@ -1,17 +1,17 @@
-# Open Work Order Report
+#รายงานการสั่งงาน
 
-We can easily identify the progress of manufacturing of certain items in our organizations using Open Work Orders in ERPNext.
+เราสามารถระบุความคืบหน้าของการผลิตสินค้าบางรายการในองค์กรของเราได้อย่างง่ายดายโดยใช้ เปิดใบสั่งงาน ใน ERPNext
 
 <img class="screenshot" alt="Sales Funnel" src="/docs/assets/img/manufacturing/open-work-order.png">
 
-In this report, users are able to see what items need to be produced, total quantity to be produced and also any produced items before. To further detail, users can proceed to click on the work order e.g; MFG-WO-2018-00005.
+ในรายงานนี้ ผู้ใช้จะสามารถดูรายการที่ต้องผลิต ปริมาณรวมที่จะผลิต และรายการที่ผลิตก่อนหน้านี้ เพื่อดูรายละเอียดเพิ่มเติม ผู้ใช้สามารถคลิกสั่งงานได้ เช่น , , , , , , , , , , , , , , , , , , ,,,,,,,,,,,,,,,, MFG-WO-2018-00005.
 
-With this report, we are able to know what items to be produced, in this report qty to manufacture is 2.
+ด้วยรายงานนี้ เราสามารถทราบได้ว่ารายการใดที่จะผลิต ในรายงานนี้ ปริมาณที่จะผลิตคือ 2
 
-The important information is the warehouses which warehouses to store our in-progress items and the finished manufactured items. This should enable us to track our stocks inventory and translate to efficiency in costing. 
+ข้อมูลสำคัญคือคลังสินค้าซึ่งคลังสินค้าจะจัดเก็บสินค้าที่อยู่ระหว่างดำเนินการและสินค้าที่ผลิตเสร็จแล้ว สิ่งนี้จะช่วยให้เราสามารถติดตามสินค้าคงคลังของเราและแปลไปสู่ประสิทธิภาพในการคิดต้นทุน
 
-We can prepare our manufacturing in mannerly order based on the required items in source warehouse where the items been stored. See figure 3. 
+เราสามารถจัดเตรียมการผลิตของเราอย่างมีมารยาทตามรายการที่ต้องการในคลังสินค้าต้นทางที่จัดเก็บรายการไว้ ดูรูปที่ 3
 
-Figure 4 Manufacturing operationsCertain items required certain manufacturing processes and steps. The open work orders will be able to tell us the manufacturing steps and their status if done or not yet done. It definitely will help in organizing the jobs in better way. 
+รูปที่ 4 การดำเนินงานด้านการผลิตสินค้าบางรายการจำเป็นต้องมีกระบวนการและขั้นตอนการผลิตบางอย่าง ใบสั่งงานที่เปิดอยู่จะสามารถบอกเราถึงขั้นตอนการผลิตและสถานะของพวกเขาได้หากเสร็จสิ้นหรือยังไม่ได้ดำเนินการ จะช่วยจัดระเบียบงานให้ดีขึ้นได้อย่างแน่นอน
 
-This report is helping to calculate the operation cost required in the manufacturing. This is to give us certain information required to make the business decision. See below for more details.
+รายงานนี้ช่วยคำนวณต้นทุนการดำเนินการที่จำเป็นในการผลิต เพื่อให้ข้อมูลที่จำเป็นต่อการตัดสินใจทางธุรกิจ ดูรายละเอียดเพิ่มเติมด้านล่าง

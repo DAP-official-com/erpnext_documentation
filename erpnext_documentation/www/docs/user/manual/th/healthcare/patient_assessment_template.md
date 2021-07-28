@@ -1,27 +1,27 @@
 <!-- add-breadcrumbs -->
 
-# Patient Assessment Template
+# เทมเพลตการประเมินผู้ป่วย
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-There are over 20-25 evaluation forms that you will need to fill up during a patient's rehab therapy to track their progress. These evaluations have certain parameters based on which the Patient's progress will be evaluated. Different forms have different scales to rate progress. You can create all such Patient Assessment forms seamlessly in ERPNext by creating Patient Assessment Templates.
+มีแบบฟอร์มการประเมินมากกว่า 20-25 แบบที่คุณจะต้องกรอกในระหว่างการบำบัดฟื้นฟูของผู้ป่วยเพื่อติดตามความคืบหน้า การประเมินเหล่านี้มีพารามิเตอร์บางอย่างขึ้นอยู่กับความคืบหน้าของผู้ป่วยที่จะได้รับการประเมิน รูปแบบที่แตกต่างกันมีมาตราส่วนที่แตกต่างกันเพื่อประเมินความคืบหน้า คุณสามารถสร้างแบบฟอร์มการประเมินผู้ป่วยทั้งหมดได้อย่างราบรื่นใน ERPNext โดยการสร้างเทมเพลตการประเมินผู้ป่วย
 
-To create a Patient Assessment Template, go to:
+ในการสร้างเทมเพลตการประเมินผู้ป่วย ไปที่:
 
-> Home > Healthcare > Rehabilitation and Physiotherapy > Patient Assessment Template
+> หน้าแรก > การดูแลสุขภาพ > การฟื้นฟูสมรรถภาพและกายภาพบำบัด > เทมเพลตการประเมินผู้ป่วย
 
-## 1. How to Create a Patient Assessment Template
+## 1. วิธีสร้างเทมเพลตการประเมินผู้ป่วย
 
-1. Go to the Patient Assessment Template list, click on New.
-2. Enter a unique Assessment Name.
-3. Add all the Assessment Parameters that you want to examine in the Parameters table. Patient Assessment Parameter is a master that keeps a track of all the parameters based on which the Patient will be assessed. For example, in the Motor Assessment Scale, the patient's movements are evaluated by certain performance parameters like walking, advanced hand activities, hand movements and balance sitting to name a few.
-4. For most of the Patient Assessments, the patient's movements or performance are evaluated based on some numeric scale. In the Assessment Scale section, you can set the Scale Minimum and Scale Maximum on the basis of which the Patient will be evaluated.
-5. You can optionally add some Assessment Descriptions and instructions about the scoring rules.
-6. Save.
+1. ไปที่รายการเทมเพลตการประเมินผู้ป่วย คลิกที่ใหม่
+2. ป้อนชื่อการประเมินที่ไม่ซ้ำ
+3. เพิ่มพารามิเตอร์การประเมินทั้งหมดที่คุณต้องการตรวจสอบในตารางพารามิเตอร์ พารามิเตอร์การประเมินผู้ป่วยเป็นหลักที่ติดตามพารามิเตอร์ทั้งหมดโดยพิจารณาจากที่ผู้ป่วยจะได้รับการประเมิน ตัวอย่างเช่น ในมาตราส่วนการประเมินมอเตอร์ การเคลื่อนไหวของผู้ป่วยจะได้รับการประเมินโดยพารามิเตอร์ประสิทธิภาพบางอย่าง เช่น การเดิน กิจกรรมของมือขั้นสูง การเคลื่อนไหวของมือ และการนั่งทรงตัว เป็นต้น
+4. สำหรับการประเมินผู้ป่วยส่วนใหญ่ การเคลื่อนไหวหรือประสิทธิภาพของผู้ป่วยจะได้รับการประเมินตามมาตราส่วนตัวเลขบางส่วน ในส่วนมาตราส่วนการประเมิน คุณสามารถตั้งค่ามาตราส่วนต่ำสุดและสูงสุดตามเกณฑ์การประเมินผู้ป่วย
+5. คุณสามารถเพิ่มคำอธิบายการประเมินและคำแนะนำเกี่ยวกับกฎการให้คะแนนได้
+6. บันทึก
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient-assessment-template.png">
 
-## 3. Related Topics
-1. [Patient Assessment](/docs/user/manual/en/healthcare/patient_assessment)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [การประเมินผู้ป่วย](/docs/user/manual/th/healthcare/patient_assessment)
 
 {next}

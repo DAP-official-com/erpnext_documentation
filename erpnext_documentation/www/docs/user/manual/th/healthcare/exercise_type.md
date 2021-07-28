@@ -1,42 +1,42 @@
 <!-- add-breadcrumbs -->
 
-# Exercise Type
+#ประเภทออกกำลังกาย
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชั่น 13
 
-Mapping Exercises for a Patient is at the heart of Rehabilitation and Physiotherapy. Exercise Type in ERPNext helps you templatize the Exercise based on its difficulty level, body parts for which it is prescribed and the steps involved in the same.
+การจับคู่การออกกำลังกายสำหรับผู้ป่วยเป็นหัวใจสำคัญของการฟื้นฟูและกายภาพบำบัด ประเภทการออกกำลังกายใน ERPNext ช่วยให้คุณสร้างแบบจำลองการออกกำลังกายตามระดับความยาก ส่วนของร่างกายที่กำหนดไว้ และขั้นตอนที่เกี่ยวข้องเช่นเดียวกัน
 
-To create an Exercise Type, go to:
+หากต้องการสร้างประเภทการออกกำลังกาย ให้ไปที่:
 
-> Home > Healthcare > Rehabilitation and Physiotherapy > Exercise Type
+> หน้าหลัก > การดูแลสุขภาพ > การฟื้นฟูสมรรถภาพและกายภาพบำบัด > ประเภทการออกกำลังกาย
 
-## 1. How to Create an Exercise Type
+## 1. วิธีสร้างประเภทการออกกำลังกาย
 
-1. Go to Exercise Type list, click on New.
-2. Enter a unique Exercise Name.
-3. Optionally select a Difficulty Level, add some description for the Exercise Type.
-4. You can also select the Body Parts for which the Exercise will be prescribed. This linking will help you add exercises automatically to a Therapy Type.
-5. Save.
+1. ไปที่รายการประเภทการออกกำลังกาย คลิกที่ใหม่
+2. ป้อนชื่อการออกกำลังกายที่ไม่ซ้ำกัน
+3. เลือกระดับความยาก เพิ่มคำอธิบายสำหรับประเภทการฝึก
+4. คุณสามารถเลือกส่วนต่างๆ ของร่างกายที่จะกำหนดการออกกำลังกายได้ การเชื่อมโยงนี้จะช่วยให้คุณเพิ่มการออกกำลังกายลงในประเภทการบำบัดโดยอัตโนมัติ
+5. บันทึก
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/exercise-type.png">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Add Exercise Steps
+### 2.1 เพิ่มขั้นตอนการออกกำลังกาย
 
-You can attach a document for Exercise Instructions or also create a Video document and link it in Exercise Type.
+คุณสามารถแนบเอกสารคำแนะนำในการออกกำลังกายหรือสร้างเอกสารวิดีโอและลิงก์ในประเภทการออกกำลังกายได้
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/exercise-video.png">
 
-You can also add instructions with images and descriptions for detailed demonstrations using the **Add** button under the "Exercise Steps" section.
+คุณยังสามารถเพิ่มคำแนะนำพร้อมรูปภาพและคำอธิบายสำหรับการสาธิตโดยละเอียดโดยใช้ปุ่ม **เพิ่ม** ใต้ส่วน "ขั้นตอนการออกกำลังกาย"
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/exercise-type-steps.png">
 
-Click on the edit button on each card to edit the content.
+คลิกที่ปุ่มแก้ไขบนการ์ดแต่ละใบเพื่อแก้ไขเนื้อหา
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/edit-exercise-step.png">
 
-## 3. Related Topics
-1. [Therapy Type](/docs/user/manual/en/healthcare/therapy_type)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [ประเภทการบำบัด](/docs/user/manual/th/healthcare/therapy_type)
 
 {next}

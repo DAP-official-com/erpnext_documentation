@@ -1,95 +1,95 @@
 <!-- add-breadcrumbs -->
-# Lab Test
+# การทดสอบในห้องปฏิบัติการ
 
-**Lab Test allows recording multiple laboratory test details including organism, sensitivity, etc.**
+**การทดสอบในห้องปฏิบัติการช่วยให้สามารถบันทึกรายละเอียดการทดสอบในห้องปฏิบัติการได้หลายแบบ เช่น สิ่งมีชีวิต ความไว ฯลฯ**
 
-ERPNext Healthcare allows you to manage a clinical laboratory efficiently by allowing you to enter lab tests and print or email test results, manage samples collected, create invoices, etc. You can configure Lab Test Templates for each Test and its result format or create new ones as explained in [Setting Up Laboratory](/docs/user/manual/en/healthcare/setup_laboratory)
+ERPNext Healthcare ช่วยให้คุณสามารถจัดการห้องปฏิบัติการทางคลินิกได้อย่างมีประสิทธิภาพโดยอนุญาตให้คุณเข้าสู่การทดสอบในห้องปฏิบัติการและพิมพ์หรือส่งอีเมลผลการทดสอบ จัดการตัวอย่างที่รวบรวม สร้างใบแจ้งหนี้ ฯลฯ คุณสามารถกำหนดค่าเทมเพลตการทดสอบในห้องปฏิบัติการสำหรับการทดสอบแต่ละรายการและรูปแบบผลลัพธ์ของการทดสอบหรือสร้างใหม่ ตามที่อธิบายไว้ใน [การจัดตั้งห้องปฏิบัติการ](/docs/user/manual/th/healthcare/setup_laboratory)
 
-Once you have all the necessary Lab Test Templates configured, you can start creating Lab Tests by selecting a Test Template every time you create a Test.
+เมื่อคุณกำหนดค่าเทมเพลตการทดสอบ Lab ที่จำเป็นทั้งหมดแล้ว คุณสามารถเริ่มสร้าง Lab Tests ได้โดยเลือกเทมเพลตการทดสอบทุกครั้งที่สร้างการทดสอบ
 
-## 1. How to create a Lab Test
+## 1. วิธีสร้างการทดสอบแล็บ
 
-To create a Lab Test, go to:
+ในการสร้าง การทดสอบแล็บ ไปที่:
 
-> Home > Healthcare > Laboratory > Lab Test > New Lab Test
+> หน้าหลัก > การดูแลสุขภาพ > ห้องปฏิบัติการ > การทดสอบในห้องปฏิบัติการ > การทดสอบแล็บใหม่
 
-1. Set the Naming Series.
-2. Select the [Lab Test Template](/docs/user/manual/en/healthcare/lab_test_template). Medical Department will automatically be fetched from the template.
-3. Select the Patient. The patient details will be auto-fetched.
-4. You can optionally select the Requesting Practitioner and the Lab Technician.
-5. Save.
-6. After saving all the data configured in the template will be fetched and set in the lab test document.
-7. You can change the pre-configured data according to your requirements. Add comments if any, in the Comments section.
+1. ตั้งค่าชุดการตั้งชื่อ
+2. เลือก [เทมเพลตการทดสอบในห้องปฏิบัติการ](/docs/user/manual/th/healthcare/lab_test_template) แผนกการแพทย์จะถูกดึงจากแม่แบบโดยอัตโนมัติ
+3. เลือกผู้ป่วย รายละเอียดผู้ป่วยจะถูกดึงโดยอัตโนมัติ
+4. คุณสามารถเลือกผู้ปฏิบัติงานที่ร้องขอและช่างเทคนิคในห้องปฏิบัติการได้
+5. บันทึก
+6. หลังจากบันทึกข้อมูลทั้งหมดที่กำหนดค่าไว้ในเทมเพลตแล้ว จะถูกดึงและตั้งค่าในเอกสารการทดสอบในห้องปฏิบัติการ
+7. คุณสามารถเปลี่ยนข้อมูลที่กำหนดค่าไว้ล่วงหน้าได้ตามความต้องการของคุณ เพิ่มความคิดเห็น หากมี ในส่วนความคิดเห็น
 
     ![Lab Test](/docs/assets/img/healthcare/lab-test.png)
 
-8. As the results get ready, you can enter the details of the results in the Lab Test document. All presets, Normal Values etc. as configured in the Lab Test Template are made available Lab Test for easy data capture.
+8. เมื่อผลลัพธ์พร้อมแล้ว คุณสามารถป้อนรายละเอียดของผลลัพธ์ในเอกสาร Lab Test ค่าที่ตั้งไว้ล่วงหน้าทั้งหมด ค่าปกติ ฯลฯ ตามที่กำหนดค่าไว้ในเทมเพลตการทดสอบของแล็บนั้นจะมีให้ใช้งาน Lab Test เพื่อให้บันทึกข้อมูลได้ง่าย
 
-For example, Grouped Test:
+ตัวอย่างเช่น การทดสอบแบบกลุ่ม:
     ![Lab Result](/docs/assets/img/healthcare/lab_test_2.png)
 
-Descriptive Test:
+การทดสอบเชิงพรรณนา:
     ![Lab Result](/docs/assets/img/healthcare/lab-result.png)
 
-Components for which _Allow Blank_ is not checked, will throw a validation if left blank on submit.
+ส่วนประกอบที่ _Allow Blank_ ไม่ถูกตรวจสอบ จะทำให้เกิดการตรวจสอบหากปล่อยว่างไว้เมื่อส่ง
 
     ![Lab Result](/docs/assets/img/healthcare/result-mandatory.png)
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Create multiple Lab Tests
+### 2.1 สร้างการทดสอบในห้องปฏิบัติการหลายรายการ
 
-It is also possible to use the "Create Multiple" option from the Lab Test list view to create all the lab tests ordered or billed for a patient. You can create multiple lab tests from a previously created Sales Invoice or Patient Encounter.
+นอกจากนี้ยังสามารถใช้ตัวเลือก "สร้างหลายรายการ" จากมุมมองรายการการทดสอบในห้องปฏิบัติการเพื่อสร้างการทดสอบในห้องปฏิบัติการทั้งหมดที่สั่งซื้อหรือเรียกเก็บเงินสำหรับผู้ป่วย คุณสามารถสร้างการทดสอบในห้องปฏิบัติการได้หลายรายการจากใบแจ้งหนี้การขายหรือการเผชิญหน้าผู้ป่วยที่สร้างไว้ก่อนหน้านี้
 
 ![Lab Test Multiple](/docs/assets/img/healthcare/lab_test_3.png)
 
-You can select the Patient and then the Encounter or Invoice from which you need to pull the tests without having to open the Encounter/Sales Invoice to look up the orders.
+คุณสามารถเลือกผู้ป่วยจากนั้นเลือกการเผชิญหน้าหรือใบแจ้งหนี้ที่คุณต้องการดึงการทดสอบโดยไม่ต้องเปิดใบเผชิญหน้า/ใบกำกับการขายเพื่อค้นหาคำสั่งซื้อ
 
 ![Lab Test](/docs/assets/img/healthcare/patient-encounter-lab-tests-1.png)
 
-The tests prescribed in the Investigations section of that Patient Encounter would be pulled.
+การทดสอบที่กำหนดไว้ในส่วนการสอบสวนของการเผชิญหน้าผู้ป่วยนั้นจะถูกดึงออกมา
 
 ![Lab Test](/docs/assets/img/healthcare/patient-encounter-lab-tests.png)
 
 ![Lab Test](/docs/assets/img/healthcare/patient-encounter-lab-tests-2.png)
 
-In the case of Sales Invoice, the items (Lab Test Template items) billed in the invoice will be pulled to create Lab Tests.
+ในกรณีของรายการ ใบแจ้งหนี้การขาย  (รายการเทมเพลตการทดสอบแล็บ) ที่เรียกเก็บเงินในใบแจ้งหนี้จะถูกดึงออกมาเพื่อสร้าง การทดสอบแล็บ
 
-### 2.2 Automatic Sample Collection document creation
+### 2.2 การสร้างเอกสารการเก็บตัวอย่างอัตโนมัติ
 
-If the Lab Test Template has sample collection configured, then on creating the Lab Test, sample collection document(s) will be created automatically. To create Sample Collection documents for every Lab Test, enable _Create Sample Collection document for Lab Test_ option in Healthcare Settings and configure samples in the Lab Test Template.
+หากเทมเพลตการทดสอบในห้องปฏิบัติการมีการกำหนดค่าการรวบรวมตัวอย่าง ในการสร้างการทดสอบในห้องปฏิบัติการ เอกสารการรวบรวมตัวอย่างจะถูกสร้างขึ้นโดยอัตโนมัติ ในการสร้างเอกสารการเก็บตัวอย่างสำหรับการทดสอบในห้องปฏิบัติการทุกครั้ง ให้เปิดใช้งานตัวเลือก _สร้างเอกสารการเก็บตัวอย่างสำหรับ Lab Test_ ในการตั้งค่าการดูแลสุขภาพ และกำหนดค่าตัวอย่างในเทมเพลตการทดสอบในห้องปฏิบัติการ
 
 ![Lab Sample Collection](/docs/assets/img/healthcare/lab-sample-collection.png)
 
-### 2.3 Automatic Lab Test creation on Sales Invoice submission
+### 2.3 การสร้าง Lab Test อัตโนมัติในการส่งใบกำกับสินค้า
 
-ERPNext Healthcare also allows creation of Lab Tests automatically when any lab tests are billed (via Sales Invoice). To configure this enable _Create Lab Test(s) on Sales Invoice Submission_ option in [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings).
+ERPNext Healthcare ยังอนุญาตให้สร้าง Lab Tests โดยอัตโนมัติเมื่อมีการเรียกเก็บเงินการทดสอบในห้องปฏิบัติการ (ผ่าน Sales Invoice) ในการกำหนดค่าให้เปิดใช้งาน _สร้างการทดสอบในห้องปฏิบัติการบนตัวเลือกการส่งใบแจ้งหนี้การขาย_ใน [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings)
 
-### 2.4 Organism Test Results
+### 2.4 ผลการทดสอบสิ่งมีชีวิต
 
-Organisms are an optional entry for descriptive lab tests. You can select the organism, set the colony population and select the colony UOM.
+สิ่งมีชีวิตเป็นตัวเลือกสำหรับการทดสอบในห้องปฏิบัติการเชิงพรรณนา คุณสามารถเลือกสิ่งมีชีวิต กำหนดประชากร และเลือก UOM
 
-### 2.5 Sensitivity Results
+### 2.5 ผลลัพธ์ของความไว (Sensitivity)
 
-In the case of Descriptive lab tests, if _Sensitivity_ option is enabled in the template you can enter the sensitivity results of the sample against various antibiotics in the Sensitivity child table. The Sensitivity and Antibiotic masters are pre-configured in ERPNext. You can extend or modify them as per your needs.
+ในกรณีของการทดสอบในห้องปฏิบัติการเชิงพรรณนา หากเปิดใช้งานตัวเลือก _Sensitivity_ ในเทมเพลต คุณสามารถป้อนผลลัพธ์ความไวของตัวอย่างกับยาปฏิชีวนะต่างๆ ในตารางย่อย Sensitivity ต้นแบบความไวและยาปฏิชีวนะได้รับการกำหนดค่าไว้ล่วงหน้าใน ERPNext คุณสามารถขยายหรือปรับเปลี่ยนได้ตามความต้องการของคุณ
 
 ![Sensitivity](/docs/assets/img/healthcare/sensitivity.png)
 
-### 2.6 Format Test Result
+### 2.6 รูปแบบผลการทดสอบ
 
-ERPNext also allows you to format test result for each test/event in your result.
+ERPNext ยังให้คุณจัดรูปแบบผลการทดสอบสำหรับแต่ละการทดสอบ/เหตุการณ์ในผลลัพธ์ของคุณ
 
 ![Format Test Result](/docs/assets/img/healthcare/format-result-value.png)
 
 ![Formatted Result](/docs/assets/img/healthcare/formatted-result.png)
 
-### 2.7 Laboratory SMS Alerts
+### 2.7 การแจ้งเตือนทาง SMS ของห้องปฏิบัติการ
 
-You can configure the messages for sending SMS alerts to patients whenever the lab test results are ready in the [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings). For this, you must setup [SMS Settings](/docs/user/manual/en/setting-up/sms-setting) first.
+คุณสามารถกำหนดค่าข้อความเพื่อส่งการแจ้งเตือนทาง SMS ไปยังผู้ป่วยเมื่อใดก็ตามที่ผลการทดสอบในห้องปฏิบัติการพร้อมใน [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings) สำหรับสิ่งนี้ คุณต้องตั้งค่า [การตั้งค่า SMS](/docs/user/manual/th/setting-up/sms-setting) ก่อน
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Lab Test](/docs/user/manual/en/healthcare/lab_test)
-1. [Sample Collection](/docs/user/manual/en/healthcare/sample_collection)
+1. [Lab Test](/docs/user/manual/th/healthcare/lab_test)
+1. [การเก็บตัวอย่าง](/docs/user/manual/th/healthcare/sample_collection)
 
 {next}

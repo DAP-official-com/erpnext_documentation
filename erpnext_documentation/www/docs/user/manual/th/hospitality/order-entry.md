@@ -1,27 +1,27 @@
 <!-- add-breadcrumbs -->
-# Restaurant Order Entry
+# รายการสั่งซื้อร้านอาหาร
 
-The Restaurant Order Entry is the screen where the waiters will punch in orders related to a particular table.
+รายการสั่งซื้อร้านอาหารเป็นหน้าจอที่พนักงานเสิร์ฟจะต่อยตามคำสั่งที่เกี่ยวข้องกับโต๊ะใดโต๊ะหนึ่ง
 
-This screen makes it easy for the waiters in your restaurant to punch in orders from various tables.
+หน้าจอนี้ทำให้บริกรในร้านอาหารของคุณสั่งอาหารจากโต๊ะต่างๆ ได้อย่างง่ายดาย
 
-When the guest places an order, the waiter will select the table number and add the items in the Order Entry. This can be changed until it is time for the bill. Unless you bill a table, you can change the items and they will automatically appear when you select the table ID.
+เมื่อแขกสั่งอาหาร พนักงานเสิร์ฟจะเลือกหมายเลขโต๊ะและเพิ่มรายการในรายการคำสั่งซื้อ นี้สามารถเปลี่ยนแปลงได้จนกว่าจะถึงเวลาสำหรับการเรียกเก็บเงิน คุณสามารถเปลี่ยนรายการและรายการเหล่านั้นจะปรากฏขึ้นโดยอัตโนมัติเมื่อคุณเลือกรหัสตาราง เว้นแต่คุณจะเรียกเก็บเงินจากโต๊ะ
 
-To place an order you can select an item and click the enter key so that the item will be updated in the items table.
+ในการสั่งซื้อ คุณสามารถเลือกรายการและคลิกปุ่ม Enter เพื่อให้รายการนั้นได้รับการอัปเดตในตารางรายการ
 
 <img class="screenshot" alt="Order Entry" src="{{docs_base_url}}/assets/img/restaurant/order-entry.png">
 
-You can also choose items with the POS style item selector.
+คุณยังสามารถเลือกรายการด้วยตัวเลือกรายการสไตล์ POS ได้อีกด้วย
 
-### Billing
+### การเรียกเก็บเงิน
 
-When it is time for billing, you just choose the bill and you can select the customer and mode of payment. On saving, a Sales Invoice is generated and the order section becomes empty.
+เมื่อถึงเวลาวางบิล คุณเพียงแค่เลือกบิล และคุณสามารถเลือกลูกค้าและรูปแบบการชำระเงินได้ ในการบันทึก จะมีการสร้างใบแจ้งหนี้การขายและส่วนคำสั่งซื้อจะว่างเปล่า
 
 <img class="screenshot" alt="Order Entry" src="{{docs_base_url}}/assets/img/restaurant/order-entry-bill.png">
 
-### Sales Invoice
+### ใบแจ้งหนี้การขาย
 
-To print the invoice, you can click on the Invoice Link and print the invoice
+หากต้องการพิมพ์ใบแจ้งหนี้ คุณสามารถคลิกที่ลิงก์ใบแจ้งหนี้และพิมพ์ใบแจ้งหนี้
 
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/restaurant/restaurant-invoice.png">
 

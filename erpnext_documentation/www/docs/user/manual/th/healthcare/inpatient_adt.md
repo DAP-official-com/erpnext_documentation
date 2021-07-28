@@ -1,47 +1,48 @@
 <!-- add-breadcrumbs -->
-# Inpatient ADT
+# ผู้ป่วยใน ADT
 
-Managing ADT (Admission, Discharge, Transfer) in a busy Hospital is quite a tricky function and ERPNext Healthcare eases this to a great extent. In ERPNext Healthcare every patient admission is managed using the [Inpatient Record](/docs/user/manual/en/healthcare/inpatient_record.html) document.
+การจัดการ ADT (การรับเข้า การปล่อย การโอนย้าย) ในโรงพยาบาลที่พลุกพล่านเป็นหน้าที่ที่ค่อนข้างยุ่งยาก และ ERPNext Healthcare ช่วยลดปัญหานี้ได้ในระดับที่ดี ใน ERPNext Healthcare การรับผู้ป่วยทุกรายจะได้รับการจัดการโดยใช้เอกสาร [บันทึกผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_record.html)
 
-## Admission
-A Practitioner can order a patient for admission from the Patient Encounter screen using the `Order Admission`.
+## ค่าเข้า
+ผู้ประกอบวิชาชีพสามารถสั่งให้ผู้ป่วยเข้ารับการรักษาจากหน้าจอการเผชิญหน้าผู้ป่วยได้โดยใช้ "การรับคำสั่งซื้อ"
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/ip_order_admission.png">
 
-As part of the Admission Order, the practitioner can provide necessary details as to which type of ward bed the Patient needs to be admitted to, and any other admission instructions for the staff.
+ในฐานะที่เป็นส่วนหนึ่งของใบสั่งการรับสมัคร ผู้ประกอบวิชาชีพสามารถให้รายละเอียดที่จำเป็นเกี่ยวกับประเภทของเตียงผู้ป่วยที่ผู้ป่วยต้องเข้ารับการรักษา และคำแนะนำในการรับเข้าเรียนอื่นๆ สำหรับเจ้าหน้าที่
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/ip_admission_order.png">
 
-On ordering a patient for admission, ERPNext Healthcare creates an Inpatient Record for the Patient with all instructions provided by the Practitioner. Any prescribed medications and investigations or procedure orders as part of the ordered Encounter will be carried to the IP record.
+ในการสั่งให้ผู้ป่วยเข้ารับการรักษา ERPNext Healthcare จะสร้างบันทึกผู้ป่วยในสำหรับผู้ป่วยพร้อมคำแนะนำทั้งหมดจากผู้ปฏิบัติงาน ยาตามที่กำหนดและการสอบสวนหรือคำสั่งตามขั้นตอนซึ่งเป็นส่วนหนึ่งของการเผชิญหน้าที่ได้รับคำสั่งจะถูกนำไปที่บันทึก IP
 
-> Note: Field Level permissions are by default applied so that Diagnosis information, Admission Instructions and other details are only visible to users with roles Physician and Nursing User enabled
+> หมายเหตุ: โดยค่าเริ่มต้น สิทธิ์ระดับฟิลด์จะถูกนำไปใช้เพื่อให้ข้อมูลการวินิจฉัย คำแนะนำในการรับสมัคร และรายละเอียดอื่น ๆ ปรากฏต่อผู้ใช้ที่มีบทบาทแพทย์และผู้ใช้พยาบาลเท่านั้น
 
-Inpatient admission officer can see the Inpatient Record with status _Admission Scheduled_ and allot the Patient the Ward as per the availability. The `Admit` button in the Inpatient Record will allow the admission officer to select a ward bed for the Patient and process the admission.
+เจ้าหน้าที่รับผู้ป่วยในสามารถดูบันทึกผู้ป่วยในที่มีสถานะ _Admission Scheduled_ และจัดสรรผู้ป่วยใน Ward ตามความพร้อม ปุ่ม 'ยอมรับ' ในบันทึกผู้ป่วยในจะช่วยให้เจ้าหน้าที่รับเข้าเรียนสามารถเลือกเตียงวอร์ดสำหรับผู้ป่วยและดำเนินการรับเข้าเรียน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/ip_admit_patient.png">
 
 Once a Service Unit is assigned for the patient, the Inpatient Record status will be updated to _Admitted_.
+ในการสั่งให้ผู้ป่วยเข้ารับการรักษา ERPNext Healthcare จะสร้างบันทึกผู้ป่วยในสำหรับผู้ป่วยพร้อมคำแนะนำทั้งหมดจากผู้ปฏิบัติงาน ยาตามที่กำหนดและการสอบสวนหรือคำสั่งตามขั้นตอนซึ่งเป็นส่วนหนึ่งของการเผชิญหน้าที่ได้รับคำสั่งจะถูกนำไปที่บันทึก IP
 
-## Discharge
+> หมายเหตุ: โดยค่าเริ่มต้น สิทธิ์ระดับฟิลด์จะถูกนำไปใช้เพื่อให้ข้อมูลการวินิจฉัย คำแนะนำในการรับสมัคร และรายละเอียดอื่น ๆ ปรากฏต่อผู้ใช้ที่มีบทบาทแพทย์และผู้ใช้พยาบาลเท่านั้น
 
-Similar to the Schedule Admission, Patient Encounters for admitted Patients will have the option to `Order Discharge` triggering the status of the impatient Record to _Discharge Scheduled_.
+เจ้าหน้าที่รับผู้ป่วยในสามารถดูบันทึกผู้ป่วยในที่มีสถานะ _Admission Scheduled_ และจัดสรรผู้ป่วยใน Ward ตามความพร้อม ปุ่ม 'ยอมรับ' ในบันทึกผู้ป่วยในจะช่วยให้เจ้าหน้าที่รับเข้าเรียนสามารถเลือกเตียงวอร์ดสำหรับผู้ป่วยและดำเนินการรับเข้าเรียน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/ip_order_discharge.png">
 
-The Practitioner can order an inpatient's discharge through a Patient Encounter or the Inpatient Record. The Discharge Order allows Practitioner to select the contents of the `Discharge Notes` (or the Discharge Summary) which gets updated in the patient's Inpatient Record document. The practitioner can select the investigations, medications and procedures which were included in the Patient's treatment at the facility which are to be printed in the discharge notes and optionally add his comments to print.
+ผู้ประกอบโรคศิลปะสามารถสั่งการจำหน่ายของผู้ป่วยในผ่านการเผชิญหน้าผู้ป่วยหรือบันทึกผู้ป่วยใน คำสั่งการจำหน่ายช่วยให้ผู้ปฏิบัติงานสามารถเลือกเนื้อหาของ 'หมายเหตุการจำหน่าย' (หรือสรุปการจำหน่าย) ซึ่งได้รับการปรับปรุงในเอกสารบันทึกผู้ป่วยในของผู้ป่วย ผู้ประกอบวิชาชีพสามารถเลือกการสอบสวน การใช้ยา และขั้นตอนต่างๆ ที่รวมอยู่ในการรักษาของผู้ป่วยที่สถานประกอบการ ซึ่งจะพิมพ์ในบันทึกการจำหน่าย และเลือกเพิ่มความคิดเห็นของเขาเพื่อพิมพ์
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/ip_discharge_order.png">
 
-The admission officer can print the Discharge Notes from the Inpatient Record and use the `Discharge` button to record patient's leave and marking the status to _Discharged_
+เจ้าหน้าที่รับสมัครสามารถพิมพ์ Discharge Notes จากบันทึกผู้ป่วยในและใช้ปุ่ม 'Discharge' เพื่อบันทึกการลาของผู้ป่วยและทำเครื่องหมายสถานะเป็น _Discharged_
 
->Note: ERPNext healthcare validates that all services availed during the stay at the facility are Invoiced to successfully complete the `Discharge` option. However, note that this validation _does not_ consider the Invoice status.
+>หมายเหตุ: การดูแลสุขภาพของ ERPNext จะตรวจสอบว่าบริการทั้งหมดที่มีระหว่างการเข้าพักที่สถานพยาบาลนั้นได้รับการออกใบแจ้งหนี้เพื่อให้ตัวเลือก 'Discharge' เสร็จสมบูรณ์ อย่างไรก็ตาม โปรดทราบว่าการตรวจสอบความถูกต้องนี้ _ไม่_ พิจารณาสถานะใบแจ้งหนี้
 
-## Transfer
-The Inpatient Record holds all data related to the Patient's stay at the facility including all the wards beds (Service Unit) utilized.
+## โอนย้าย
+บันทึกผู้ป่วยในเก็บข้อมูลทั้งหมดที่เกี่ยวข้องกับการเข้าพักของผู้ป่วยในสถานพยาบาล รวมถึงเตียงผู้ป่วยใน (หน่วยบริการ) ทั้งหมดที่ใช้
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/ip_transfer.png">
 
-You can always transfer a patient from one Service Unit to another using the `Transfer` button. This will allow you to select the Service Unit to which the Patient is being transferred.
+คุณสามารถย้ายผู้ป่วยจากหน่วยบริการหนึ่งไปยังอีกหน่วยหนึ่งได้โดยใช้ปุ่ม 'โอน' ซึ่งจะช่วยให้คุณสามารถเลือกหน่วยบริการที่จะโอนย้ายผู้ป่วยได้
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/ip_transfer_patient.png">
 

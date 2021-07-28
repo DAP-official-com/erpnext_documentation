@@ -1,76 +1,76 @@
 <!-- add-breadcrumbs -->
-# Donation
+#บริจาค
 
-> Introduced in version 13
+> เปิดตัวในเวอร์ชั่น 13
 
-The Donation doctype allows you to record donation details for the **Donor**.
+เอกสารการบริจาคช่วยให้คุณบันทึกรายละเอียดการบริจาคสำหรับ **ผู้บริจาค**
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating a Donation, you need to create a [Donor](/docs/user/manual/en/non_profit/donor) first.
+ก่อนสร้างการบริจาค คุณต้องสร้าง [ผู้บริจาค](/docs/user/manual/th/non_profit/donor) ก่อน
 
-## 2. How to Create a Donation
+## 2. วิธีสร้างการบริจาค
 
-To create a new Donation go to:
+หากต้องการสร้างการบริจาคใหม่ให้ไปที่:
 
-> Non Profit > Donation > New
+> องค์กรไม่แสวงหากำไร > การบริจาค > ใหม่
 
 <img class="screenshot" alt="Donation" src="{{docs_base_url}}/assets/img/non_profit/donation.png">
 
-1. Select the Donor. The Donor Name and Email will be fetched automatically.
-2. Set the Date of Donation.
-3. Set the Amount and Mode of Payment.
-4. Save and Submit.
+1. เลือกผู้บริจาค ชื่อผู้บริจาคและอีเมลจะถูกดึงโดยอัตโนมัติ
+2. กำหนดวันที่บริจาค
+3. กำหนดจำนวนเงินและรูปแบบการชำระเงิน
+4. บันทึกและส่ง
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Payment Entry for Donation
+### 3.1 รายการชำระเงินสำหรับการบริจาค
 
-On submitting a donation, you can create a Payment Entry against it using the **Create Payment Entry** button.
+ในการส่งการบริจาค คุณสามารถสร้างรายการการชำระเงินโดยใช้ปุ่ม **สร้างรายการการชำระเงิน**
 
-### 3.2 RazorPay for Donations
+### 3.2 RazorPay สำหรับการบริจาค
 
-You can set up RazorPay for capturing donations. You can find instructions on setting up razorpay [here](/docs/user/manual/en/erpnext_integration/razorpay-integration).
+คุณสามารถตั้งค่า RazorPay เพื่อรวบรวมเงินบริจาคได้ คุณสามารถดูคำแนะนำในการตั้งค่า razorpay ได้ [ที่นี่](/docs/user/manual/th/erpnext_integration/razorpay-integration)
 
-You can follow the steps listed below to setup Razorpay for donations.
+คุณสามารถทำตามขั้นตอนด้านล่างเพื่อตั้งค่า Razorpay สำหรับการบริจาค
 
-1. Setup RazorPay
-1. Setup RazorPay Webhook
+1. ตั้งค่า RazorPay
+1. ตั้งค่า RazorPay Webhook
 
-#### 3.2.1 Setup RazorPay
+#### 3.2.1 ตั้งค่า RazorPay
 
-You can find instructions on setting up razorpay [here](/docs/user/manual/en/erpnext_integration/razorpay-integration).
+คุณสามารถดูคำแนะนำในการตั้งค่า razorpay ได้ [ที่นี่](/docs/user/manual/th/erpnext_integration/razorpay-integration)
 
-In order to capture the donations, you need to set certain defaults in the Donation Settings section in the [Non Profit Settings](/docs/user/manual/en/non_profit/non_profit_settings)
+ในการจับภาพการบริจาค คุณต้องตั้งค่าเริ่มต้นบางอย่างในส่วนการตั้งค่าการบริจาคใน [การตั้งค่าองค์กรที่ไม่แสวงหากำไร](/docs/user/manual/th/non_profit/non_profit_settings)
 
-1. **Default Company**: This company will be set for the Donations created via webhook.
-1. **Default Donor Type**: This Donor Type will be set for the Donor created via Donation webhook.
-1. **Automate Donation Payment Entries**: You can enable this to auto-create Payment Entry for Donation entry created via webhook.
+1. **บริษัทเริ่มต้น**: บริษัทนี้จะถูกตั้งค่าสำหรับการบริจาคที่สร้างผ่านเว็บฮุค
+1. **ประเภทผู้บริจาคเริ่มต้น**: ประเภทผู้บริจาคนี้จะถูกตั้งค่าสำหรับผู้บริจาคที่สร้างผ่านเว็บฮุคการบริจาค
+1. **รายการชำระเงินบริจาคอัตโนมัติ**: คุณสามารถเปิดใช้งานสิ่งนี้เพื่อสร้างรายการชำระเงินอัตโนมัติสำหรับรายการบริจาคที่สร้างผ่านเว็บฮุค
 
-If _Automate Donation Payment Entries_ is enabled, you will have to set the default Debit Account and Donation Payment Account for Payment Entry.
+หากเปิดใช้งาน _Automate Donation Payment Entries_ คุณจะต้องตั้งค่าบัญชีเดบิตเริ่มต้นและบัญชีชำระเงินการบริจาคสำหรับรายการการชำระเงิน
 
 <img class="screenshot" alt="Donation Settings" src="{{docs_base_url}}/assets/img/non_profit/donation-settings.png">
 
-#### 3.2.2 Setting up webhook
+#### 3.2.2 การตั้งค่า webhook
 
-You can set up a webhook from the RazorPay dashboard in Settings. You can read more about webhooks in RazorPay [here](https://razorpay.com/docs/webhooks/). This webhook will notify your ERPNext site whenever a new donation is created.
+คุณสามารถตั้งค่าเว็บฮุคจากแดชบอร์ด RazorPay ในการตั้งค่า คุณสามารถอ่านเพิ่มเติมเกี่ยวกับเว็บฮุคใน RazorPay ได้ [ที่นี่](https://razorpay.com/docs/webhooks/) เว็บฮุคนี้จะแจ้งไซต์ ERPNext ของคุณทุกครั้งที่มีการบริจาคใหม่
 
 <img class="screenshot" alt="Donation Webhook" src="{{docs_base_url}}/assets/img/non_profit/donation-webhook.png">
 
-You will need the following details to set up the webhook.
+คุณจะต้องใช้รายละเอียดต่อไปนี้เพื่อตั้งค่าเว็บฮุค
 
-1. **Webhook URL**: The following is the URL for your ERPNext site. This is the endpoint RazorPay will utilize to notify of any new donations created.
+1. **Webhook URL**: ต่อไปนี้เป็น URL สำหรับไซต์ ERPNext ของคุณ นี่คือจุดสิ้นสุด RazorPay จะใช้เพื่อแจ้งการบริจาคใหม่ที่สร้างขึ้น
 
     ```sh
     https://<your-site>/api/method/erpnext.non_profit.doctype.donation.donation.capture_razorpay_donations
     ```
 
-2. **Secret**: In order to secure your API endpoint, it is always better to generate and set a Webhook Secret for the API Endpoint. To do so, on your ERPNext site, you can click on the **Donations > Generate Webhook Secret** button in the Non Profit Settings. Copy the secret and paste it in the secret field on the RazorPay dashboard to set up webhooks.
+2. **Secret**: ในการรักษาความปลอดภัยปลายทาง API ของคุณ จะดีกว่าเสมอที่จะสร้างและตั้งค่า Webhook Secret สำหรับ API Endpoint ในการดำเนินการดังกล่าว บนไซต์ ERPNext ของคุณ คุณสามารถคลิกที่ปุ่ม **การบริจาค > สร้าง Secret ของ Webhook** ในการตั้งค่าองค์กรที่ไม่แสวงหากำไร คัดลอกข้อมูลลับแล้ววางในช่องข้อมูลลับบนแดชบอร์ด RazorPay เพื่อตั้งค่าเว็บฮุค
 
-3. **Event**: You have to enable the `payment.captured` event.
+3. **เหตุการณ์**: คุณต้องเปิดใช้งานเหตุการณ์ 'payment.captured'
 
-4. **Active**: Check this to enable the webhook.
+4. **ใช้งานอยู่**: เลือกรายการนี้เพื่อเปิดใช้งานเว็บฮุค
 
-With this, your webhook is activated.
+ด้วยวิธีนี้ เว็บฮุคของคุณจะเปิดใช้งาน
 
 {next}

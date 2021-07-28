@@ -1,53 +1,51 @@
 <!-- add-breadcrumbs -->
-# Introduction
+# บทนำ
 
-ERPNext comes batteries included for all requirements of a manufacturing business like maintaining Warehouses, Workstation / Machine, Operations, Finished Goods, Raw Materials, Bill of Materials tracking, Work Order planning and execution, procurement, and a lot more.
+ERPNext มาพร้อมสิ่งต่างๆสำหรับข้อกำหนดทั้งหมดของธุรกิจการผลิต เช่น การบำรุงรักษาคลังสินค้า เวิร์กสเตชัน / เครื่องจักร การปฏิบัติงาน สินค้าสำเร็จรูป วัตถุดิบ การติดตามรายการวัสดุ การวางแผนและดำเนินการสั่งงาน การจัดซื้อ และอื่นๆ อีกมากมาย
 
 <img class="screenshot" alt="BOM" src="{{docs_base_url}}/assets/img/manufacturing/onboarding.png">
 
-## 1. Master Data
+## 1. ข้อมูลหลัก
 
-The Manufacturing module in ERPNext helps you to maintain Warehouses(location), Workstations, Operations, Finished Goods, and Raw Materials. For manufacturing Operations and their respective Workstations are important, which can be configured based on the Finished Goods in the Bill of Materials. Warehouses are useful to store the Raw Materials and the Finished Goods. In ERPNext, users can create separate Warehouse to keep Raw Materials, and Finished Goods.
+โมดูลการผลิตใน ERPNext ช่วยให้คุณดูแลคลังสินค้า (ที่ตั้ง) เวิร์กสเตชัน การปฏิบัติงาน สินค้าสำเร็จรูป และวัตถุดิบ สำหรับการดำเนินการด้านการผลิตและเวิร์กสเตชันที่เกี่ยวข้องนั้นมีความสำคัญ ซึ่งสามารถกำหนดค่าตามสินค้าสำเร็จรูปใน Bill of Materials คลังสินค้ามีประโยชน์ในการจัดเก็บวัตถุดิบและสินค้าสำเร็จรูป ใน ERPNext ผู้ใช้สามารถสร้างคลังสินค้าแยกกันเพื่อเก็บวัตถุดิบและสินค้าสำเร็จรูป
 
-More details are as below:
+รายละเอียดเพิ่มเติมดังต่อไปนี้:
 
-1. [Warehouse](/docs/user/manual/en/stock/warehouse)
-1. [Workstation / Machine](/docs/user/manual/en/manufacturing/workstation)
-1. [Operation](/docs/user/manual/en/manufacturing/operation)
-1. [Raw Material / Finished Good](/docs/user/manual/en/stock/item)
-1. [Routing](/docs/user/manual/en/manufacturing/routing)
+1. [คลังสินค้า](/docs/user/manual/th/stock/warehouse)
+1. [เวิร์กสเตชัน / เครื่องจักร](/docs/user/manual/th/manufacturing/workstation)
+1. [การทำงาน](/docs/user/manual/th/manufacturing/operation)
+1. [วัตถุดิบ / สินค้าสำเร็จรูป](/docs/user/manual/th/stock/item)
+1. [การกำหนดเส้นทาง](/docs/user/manual/th/manufacturing/routing)
 
+## 2. ข้อมูลการทำธุรกรรม
 
-## 2. Transaction Data
+โมดูลการผลิตใน ERPNext ช่วยให้คุณรักษารายการวัสดุ (BOM) หลายระดับสำหรับสินค้าของคุณ ช่วยในการคิดต้นทุนผลิตภัณฑ์ การวางแผนการผลิต การสร้างใบสั่งงานสำหรับพื้นโรงงานการผลิตของคุณ การสร้างบัตรงาน และการวางแผนสินค้าคงคลังโดยรับความต้องการวัสดุของคุณผ่าน BOM (เรียกอีกอย่างว่า [การวางแผนความต้องการวัสดุหรือ MRP] (http://erpnext.com /blog/general/what-is-mrp-and-do-yo…))
 
-The Manufacturing module in ERPNext helps you to maintain a multilevel Bill of Materials (BOMs) for your Items. It helps in product costing, production planning, creating work orders for your manufacturing shop floors, creating job cards, and planning inventory by getting your material requirements via BOMs (also called [Material Requirements Planning or MRP](http://erpnext.com/blog/general/what-is-mrp-and-do-yo…)).
+รายละเอียดเพิ่มเติมดังต่อไปนี้:
 
-More details are as below:
+1. [รายการวัสดุ](/docs/user/manual/th/manufacturing/bill-of-materials)
+1. [สั่งงาน](/docs/user/manual/th/manufacturing/work-order)
+1. [บัตรงาน](/docs/user/manual/th/manufacturing/job-card)
+1. [แผนการผลิต](/docs/user/manual/th/manufacturing/production-plan)
+## 3. ประเภทของการวางแผนการผลิต
 
-1. [Bill Of Materials](/docs/user/manual/en/manufacturing/bill-of-materials)
-1. [Work Order](/docs/user/manual/en/manufacturing/work-order)
-1. [Job Card](/docs/user/manual/en/manufacturing/job-card)
-1. [Production Plan](/docs/user/manual/en/manufacturing/production-plan)
+โดยทั่วไปแล้ว ระบบการวางแผนการผลิตมีสามประเภท:
 
-## 3. Types of Production Planning
+ * __Make to Stock:__ ในระบบเหล่านี้ การผลิตจะถูกวางแผนตามการคาดการณ์ จากนั้นสินค้าจะถูกขายให้กับผู้จัดจำหน่ายหรือลูกค้า สินค้าอุปโภคบริโภคที่เคลื่อนไหวเร็วทั้งหมดที่จำหน่ายในร้านค้าปลีก เช่น สบู่ น้ำบรรจุหีบห่อ ฯลฯ และอุปกรณ์อิเล็กทรอนิกส์ เช่น โทรศัพท์ ล้วนถูกผลิตขึ้นเพื่อสต็อก
+ * __Make to Order:__ ในระบบเหล่านี้ สินค้าผลิตขึ้นหลังจากที่ลูกค้าทำการสั่งซื้อจำนวนหนึ่งตามความต้องการของลูกค้าเท่านั้น ตัวอย่างเช่น เค้กแต่งงาน.
+ * __Engineer to Order:__ ในกรณีนี้ การขายแต่ละครั้งเป็นโปรเจ็กต์ที่แยกจากกัน และต้องได้รับการออกแบบและปรับแต่งตามความต้องการของลูกค้า ตัวอย่างทั่วไปของสิ่งนี้ ได้แก่ เฟอร์นิเจอร์ที่ปรับแต่งตามสั่งสำหรับธุรกิจ เครื่องมือกล อุปกรณ์พิเศษ การแปรรูปโลหะ ฯลฯ
 
-Broadly, there are three types of Production Planning Systems:
+ธุรกิจการผลิตขนาดกลางและขนาดย่อมส่วนใหญ่อิงตามระบบการผลิตตามสั่งหรือวิศวกรรมตามสั่ง ERPNext ก็เช่นกัน
 
- * __Make to Stock:__ In these systems, production is planned based on a forecast and the Items are then sold to distributors or customers. All fast-moving consumer goods that are sold in retail shops like soaps, packaged water, etc. and electronics like phones are made to stock.
- * __Make to Order:__ In these systems, items are manufactured only after the customer places an order of a certain number according to the customer's requirement. For example, a wedding cake.
- * __Engineer to Order:__ In this case, each sale is a separate project and has to be designed and engineered to the requirements of the customer. Common examples of this are any custom business-like furniture, machine tools, specialty devices, metal fabrication, etc.
+สำหรับระบบสั่งวิศวกร ควรใช้โมดูลการผลิตร่วมกับ [โมดูลโครงการ](/docs/user/manual/th/projects)
 
-Most small and medium-sized manufacturing businesses are based on a make to order or engineer to order system and so is ERPNext.
+## 4. ผลกระทบของการผลิตต่อสินค้าคงคลัง
 
-For engineer to order systems, the Manufacturing module should be used along with the [Project module](/docs/user/manual/en/projects).
+สถานะใบสั่งงานขึ้นอยู่กับธุรกรรมสต็อคที่ทำกับมัน ใน ERPNext คุณสามารถโอนวัตถุดิบที่จำเป็นสำหรับการผลิตสินค้าสำเร็จรูปจาก Store ไปยัง Work In Progress Warehouse จากคลังสินค้าระหว่างดำเนินการ สามารถใช้วัตถุดิบได้โดยใช้รายการสต็อค คุณจะได้รับตัวเลือกในการใช้วัตถุดิบจำนวนมากและเพิ่มสินค้าสำเร็จรูปหรือใช้วัสดุก่อนแล้วจึงเพิ่มสินค้าสำเร็จรูป
 
-## 4. Manufacturing impact on Inventory
+## 5. การสาธิตโมดูลการผลิต ERPNext
 
-Work order status is dependent upon the stock transactions made against it. In ERPNext, you can transfer the raw materials required to make finished goods from Store to Work In Progress Warehouse. From Work-In-Progress warehouse the raw materials can be consumed using the Stock Entry. You get the option to either bulk consume the raw materials and add the finished good or consumed the materials first and then add the finished good.
-
-## 5. ERPNext Manufacturing Demo
-
-Check out the following video to know about features in the manufacturing module.
+ดูวิดีโอต่อไปนี้เพื่อเรียนรู้เกี่ยวกับคุณสมบัติต่างๆ ในโมดูลการผลิต
 
 <div class="embed-container">
  <iframe src="https://www.youtube.com/embed/xE74wdQU5cc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

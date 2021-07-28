@@ -1,27 +1,27 @@
-# Introduction
+# บทนำ
 
-Farmers know that even a small operation requires intensive record keeping. A well-run farm requires proper management of accounting, payroll, suppliers, customers and logistics to name a few areas. ERPNext already helps organize these activities.
+เกษตรกรทราบดีว่าแม้แต่การดำเนินการเล็กๆ น้อยๆ ก็ยังต้องมีการเก็บบันทึกอย่างเข้มข้น ฟาร์มที่ดำเนินการอย่างดีจำเป็นต้องมีการจัดการบัญชี การจ่ายเงินเดือน ซัพพลายเออร์ ลูกค้า และโลจิสติกส์อย่างเหมาะสมเพื่อระบุพื้นที่บางส่วน ERPNext ได้ช่วยจัดกิจกรรมเหล่านี้แล้ว
 
 <img class="screenshot" alt="Land Unit" src="{{docs_base_url}}/assets/img/agriculture/land-unit.png">
 
-## Capture Land Units and Manage Crops
+## หน่วยที่ดินและจัดการพืชผล
 
-A farm requires additional attention to manage its productive units (plots of land), time sensitive crop activities (such as planting, irrigating, fertilizing etc.), recording environmental and crop data for analysis, and reports to help make effective decisions.
+ฟาร์มต้องการความเอาใจใส่เพิ่มเติมในการจัดการหน่วยการผลิต (แปลงที่ดิน) กิจกรรมพืชผลที่มีความอ่อนไหวต่อเวลา (เช่น การปลูก การให้น้ำ การใส่ปุ๋ย เป็นต้น) การบันทึกข้อมูลสิ่งแวดล้อมและพืชผลเพื่อการวิเคราะห์ และรายงานเพื่อช่วยในการตัดสินใจอย่างมีประสิทธิภาพ
 
 <img class="screenshot" alt="Soil Texture" src="{{docs_base_url}}/assets/img/agriculture/soil-texture.png">
 
-## ERPNext Agriculture Demo
+## การสาธิตโมดูลการเกษตร ERPNext
 
-The Agriculture module in ERPNext helps you keep track of your farming operations. It allows you keep records for each field where you farm, such as geospatial and soil texture characteristics. It allows you to:
+โมดูลการเกษตรใน ERPNext ช่วยให้คุณติดตามการทำฟาร์มของคุณ ช่วยให้คุณเก็บบันทึกสำหรับแต่ละฟิลด์ที่คุณทำฟาร์ม เช่น ลักษณะภูมิสารสนเทศและพื้นผิวของดิน ช่วยให้คุณ:
 
-* Manage the physical spaces where you plant your crops
-* Manage your crops
-* Record analysis data
-* Plan activities related to your crops
-* Record sale of the harvest or transfer to warehouse for further processing
-* View reports
+* จัดการพื้นที่ทางกายภาพที่คุณปลูกพืชผลของคุณ
+* จัดการพืชผลของคุณ
+* บันทึกข้อมูลการวิเคราะห์
+* วางแผนกิจกรรมที่เกี่ยวข้องกับพืชผลของคุณ
+* บันทึกการขายการเก็บเกี่ยวหรือโอนไปยังคลังสินค้าเพื่อดำเนินการต่อไป
+* ดูรายงาน
 
-To see feature of ERPNext Agriculture in action, check the following demo video.
+หากต้องการดูการทำงานของ ERPNext Agriculture ให้ตรวจสอบวิดีโอสาธิตต่อไปนี้
 
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/A14cnWwE0vQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

@@ -1,10 +1,10 @@
 <!-- add-breadcrumbs -->
-# Downtime Entry
+# รายการหยุดทำงาน
 
-To access the Downtime Entry, go to:
+หากต้องการเข้าถึงรายการหยุดทำงาน ให้ไปที่:
 
-> Home > Manufacturing > Production > Downtime Entry
+> หน้าหลัก > การผลิต > การผลิต > รายการหยุดทำงาน
 
 <img class="screenshot" alt="Production Forecasting" src="{{docs_base_url}}/assets/img/manufacturing/downtime-entry.png">
 
-Downtime Entry document is used to capture the machine's Downtime in minutes. User needs to manually create the downtime record by selecting the proper machine alongwith the machine's down time. Using Downtime entry data operator knows which machine not performing well and needs maintenance.
+เอกสาร รายการหยุดทำงาน ใช้สำหรับบันทึก การหยุดทำงาน ของเครื่องเป็นนาที ผู้ใช้จำเป็นต้องสร้างบันทึกการหยุดทำงานด้วยตนเองโดยเลือกเครื่องที่เหมาะสมพร้อมกับเวลาหยุดทำงานของเครื่อง การใช้ตัวดำเนินการข้อมูลการหยุดทำงานของเครื่องจะทราบว่าเครื่องใดทำงานได้ไม่ดีและจำเป็นต้องบำรุงรักษา

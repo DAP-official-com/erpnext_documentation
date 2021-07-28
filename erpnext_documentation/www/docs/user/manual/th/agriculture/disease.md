@@ -1,25 +1,24 @@
 <!-- add-breadcrumbs -->
-# Disease 
+# โรค
 
-This part of Agriculture module deals with the management of Diseases, which may include various types of bacteria, funcgi, viruses, or pests which affect he Crop
+โมดูลการเกษตรส่วนนี้เกี่ยวข้องกับการจัดการโรค ซึ่งอาจรวมถึงแบคทีเรีย เชื้อรา ไวรัส หรือแมลงศัตรูพืชประเภทต่างๆ ที่ส่งผลต่อพืชผล
 
-On the desk, click on the Disease icon. A list will show any existing Diseases.
+บน ERPNext คลิกที่ไอคอนโรค รายการจะแสดงโรคที่มีอยู่
 
-> Agriculture > Disease
+> เกษตรกรรม > โรค
 
-The basic information should be entered as such:
+ควรป้อนข้อมูลพื้นฐานดังนี้:
 
-* Disease Name: Aphids
-* Scientific name: Aphidoidea
-* Description: you could give a description of the disease here
-* Treatment Task: This may contain a list of all the Tasks which need to to be executed in orfer to get rid of the Disease
+* ชื่อโรค: เพลี้ย
+* ชื่อวิทยาศาสตร์ : Aphidoidea
+* คำอธิบาย: คุณสามารถให้คำอธิบายของโรคได้ที่นี่
+* งานการรักษา: นี้อาจมีรายการของงานทั้งหมดที่จำเป็นต้องดำเนินการในการสั่งซื้อเพื่อกำจัดโรค
 
-Once you fill the form, click Save
+เมื่อคุณกรอกแบบฟอร์มแล้ว ให้คลิกบันทึก
 
-Click Save
+คลิกบันทึก
 
-Now it should look something like this
-
+ตอนนี้มันควรจะมีลักษณะเช่นนี้
 <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/agriculture/diseases_and_fertilizer/disease.png">
 
-These Tasks will be imported into the Crop Cycle Project if you choose to add this Disease to the list of Detected Diesase in Crop Cycle
+งานเหล่านี้จะถูกนำเข้าสู่โครงการวัฏจักรพืชผล หากคุณเลือกที่จะเพิ่มโรคนี้ลงในรายการของ การตรวจจับโรคในวัฏจักรพืชผล

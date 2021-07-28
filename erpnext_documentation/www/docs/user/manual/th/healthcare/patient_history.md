@@ -1,39 +1,39 @@
 <!-- add-breadcrumbs -->
-# Patient Medical History
+#ประวัติการตรวจผู้ป่วย
 
-Maintenance of accurate and complete medical records of patients is one of the rudiments for healthcare practitioners and providers. Over and above, the ease at which the information is accessible by a practitioner is critical in rendering effective, high quality care.
+การดูแลรักษาเวชระเบียนของผู้ป่วยอย่างถูกต้องและครบถ้วนเป็นหนึ่งในพื้นฐานสำหรับผู้ปฏิบัติงานและผู้ให้บริการด้านสุขภาพ ความสะดวกในการเข้าถึงข้อมูลโดยผู้ประกอบวิชาชีพเป็นสิ่งสำคัญในการแสดงการดูแลที่มีประสิทธิภาพและมีคุณภาพสูง
 
-ERPNext Healthcare helps you to draw up the medical history of a Patient anytime by quickly searching and selecting the Patient.
+ERPNext Healthcare ช่วยให้คุณสร้างประวัติทางการแพทย์ของผู้ป่วยได้ทุกเมื่อโดยการค้นหาและเลือกผู้ป่วยอย่างรวดเร็ว
 
-To view the Patient History, you can go to:
+หากต้องการดูประวัติผู้ป่วย คุณสามารถไปที่:
 
-> Home > Healthcare > Records and History > Patient History
+> หน้าหลัก > การดูแลสุขภาพ > บันทึกและประวัติ > ประวัติการตรวจผู้ป่วย
 
-The history of patient interactions is maintained in the Patient Medical Record document type. These records are automatically created on submission of Patient Encounter, Vital Signs, Clinical Procedure, Lab Test, Therapy Session, and Inpatient Medication Order.
+ประวัติการโต้ตอบของผู้ป่วยจะคงอยู่ในประเภทเอกสารเวชระเบียนของผู้ป่วย บันทึกเหล่านี้ถูกสร้างขึ้นโดยอัตโนมัติเมื่อส่งการพบผู้ป่วย สัญญาณชีพ ขั้นตอนทางคลินิก การทดสอบในห้องปฏิบัติการ เซสชั่นการบำบัด และใบสั่งยาสำหรับผู้ป่วยใน
 
-From version 13 onwards, you can configure what all document types and fields should be a part of the Patient Medical Record and Patient History using [Patient History Settings](/docs/user/manual/en/healthcare/patient_history_settings).
+ตั้งแต่เวอร์ชัน 13 เป็นต้นไป คุณสามารถกำหนดค่าประเภทเอกสารและฟิลด์ทั้งหมดที่ควรเป็นส่วนหนึ่งของบันทึกทางการแพทย์ของผู้ป่วยและประวัติผู้ป่วยโดยใช้ [การตั้งค่าประวัติผู้ป่วย](/docs/user/manual/th/healthcare/patient_history_settings)
 
-**View > Patient History** button is available in all the forms which Healthcare Practitioners use so that they can easily switch to the "Patient  History" page to view the patient history.
+ปุ่ม **ดู > ประวัติผู้ป่วย** มีอยู่ในทุกรูปแบบที่ผู้ปฏิบัติงานด้านการดูแลสุขภาพใช้ เพื่อให้สามารถสลับไปที่หน้า "ประวัติผู้ป่วย" เพื่อดูประวัติผู้ป่วยได้อย่างง่ายดาย
 
-## 1. Sections
+## 1. ส่วน
 
-- **Patient Information**: As soon as you select the Patient, all the information from the Patient record is fetched and displayed on the page's sidebar.
-- **Patient Vitals**: Based on the Vital Signs captured for the patient over, this section renders charts for visualizing how the Blood Pressure, Respiratory/Pulse Rate, Temperature, and BMI are varying with time. You can click on individual buttons render the required chart.
-- **Documents for Patient Interactions**: A timeline of documents fetched from the Patient Medical Records is shown in this section. You can see the doctype name, link to the document, and the date on which the record was created. On load, a summary of each document is shown. You can use the arrow below each document to get a detailed view.
-- **Filters**: From version 13 onwards, you can also filter what all doctypes you want to see the interactions of using a multi-select list filter. Using the date range filter you can get the history feed between any two dates.
+- **ข้อมูลผู้ป่วย**: ทันทีที่คุณเลือกผู้ป่วย ข้อมูลทั้งหมดจากบันทึกผู้ป่วยจะถูกดึงและแสดงบนแถบด้านข้างของหน้า
+- **ข้อมูลสำคัญสำหรับผู้ป่วย**: อ้างอิงจากสัญญาณชีพที่บันทึกไว้สำหรับผู้ป่วย ส่วนนี้แสดงแผนภูมิสำหรับการแสดงภาพว่าความดันโลหิต อัตราการหายใจ/อัตราการเต้นของชีพจร อุณหภูมิ และดัชนีมวลกายเปลี่ยนแปลงตามเวลาอย่างไร คุณสามารถคลิกที่ปุ่มแต่ละปุ่มเพื่อแสดงแผนภูมิที่ต้องการ
+- **เอกสารสำหรับการโต้ตอบกับผู้ป่วย**: เส้นเวลาของเอกสารที่ดึงมาจากบันทึกทางการแพทย์ของผู้ป่วยแสดงอยู่ในส่วนนี้ คุณสามารถดูชื่อประเภทเอกสาร ลิงก์ไปยังเอกสาร และวันที่สร้างเรกคอร์ด ขณะโหลด ข้อมูลสรุปของแต่ละเอกสารจะแสดงขึ้น คุณสามารถใช้ลูกศรด้านล่างแต่ละเอกสารเพื่อดูมุมมองโดยละเอียด
+- **ตัวกรอง**: ตั้งแต่เวอร์ชัน 13 เป็นต้นไป คุณยังสามารถกรองประเภทเอกสารทั้งหมดที่คุณต้องการดูการโต้ตอบของการใช้ตัวกรองรายการแบบเลือกได้หลายรายการ เมื่อใช้ตัวกรองช่วงวันที่ คุณจะได้รับฟีดประวัติระหว่างวันที่สองวันใดก็ได้
 
 <img class="screenshot" alt="Patient History" src="{{docs_base_url}}/assets/img/healthcare/patient-history-1.gif">
 
-## 2. Adding Medical Records Manually
+## 2. การเพิ่มเวชระเบียนด้วยตนเอง
 
-Medical Record automatically keeps track of all Complaints, Diagnosis, and other information captured as part of a Patient Encounter, Vital Signs, Lab Investigations, ordered Clinical Procedures, Admissions, etc.
+เวชระเบียนจะติดตามการร้องเรียน การวินิจฉัย และข้อมูลอื่น ๆ ทั้งหมดโดยอัตโนมัติซึ่งเป็นส่วนหนึ่งของการพบผู้ป่วย สัญญาณชีพ การสอบสวนในห้องปฏิบัติการ ขั้นตอนทางคลินิกที่สั่ง การรับเข้าเรียน ฯลฯ
 
-In the Patient document, **Create > Medical Record** will allow you to record notes manually. You can also attach files when doing this, and the Medical Record will display links to the attached file alongside the notes. It's also possible to add Medical Records from the Patient Encounter.
+ในเอกสารผู้ป่วย **สร้าง > บันทึกทางการแพทย์** จะอนุญาตให้คุณบันทึกบันทึกด้วยตนเอง คุณยังสามารถแนบไฟล์เมื่อทำเช่นนี้ และเวชระเบียนจะแสดงลิงก์ไปยังไฟล์ที่แนบมาพร้อมกับบันทึกย่อ นอกจากนี้ยังสามารถเพิ่มบันทึกทางการแพทย์จากการพบผู้ป่วย
 
 <img class="screenshot" alt="Patient Medical Record" src="{{docs_base_url}}/assets/img/healthcare/medical_record_2.png">
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Patient History Settings](/docs/user/manual/en/healthcare/patient_history_settings)
+1. [การตั้งค่าประวัติผู้ป่วย](/docs/user/manual/th/healthcare/patient_history_settings)
 
 {next}
