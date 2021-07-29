@@ -1,14 +1,14 @@
 <!-- add-breadcrumbs -->
-# Medical Department
+#แผนกการแพทย์
 
-To organize your clinic or healthcare units into departments, you can create multiple Medical Departments.
+ในการจัดระเบียบคลินิกหรือหน่วยดูแลสุขภาพของคุณออกเป็นแผนกต่างๆ คุณสามารถสร้างแผนกการแพทย์ได้หลายแผนก
 
-To create a Medical Department, go to:
+ในการสร้างแผนกการแพทย์ ไปที่:
 
-> Home > Healthcare > Masters > Medical Department
+> หน้าหลัก > การดูแลสุขภาพ > รายการหลัก > กรมการแพทย์
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/medical-department.png">
 
-You can set the department for Healthcare Service Units, Healthcare Practitioners, Laboratory related DocTypes and book appointments accordingly.
+คุณสามารถตั้งแผนกสำหรับหน่วยบริการด้านสุขภาพ, ผู้ปฏิบัติงานด้านการดูแลสุขภาพ, DocTypes ที่เกี่ยวข้องกับห้องปฏิบัติการและจองการนัดหมายตามลำดับ
 
 {next}

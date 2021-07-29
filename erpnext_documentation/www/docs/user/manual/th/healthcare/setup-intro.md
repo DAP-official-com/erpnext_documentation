@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Setup
+# การตั้งค่า
 
-Setting up the Healthcare domain is fairly easy. Once you setup ERPNext (Company, Chart Of Accounts etc.), you can start with setting up your domain. To setup Healthcare module completely, you should have `Healthcare Administrator` Role enabled. You can configure each of the departments as detailed in the Setup section.
+การตั้งค่าโดเมน Healthcare นั้นค่อนข้างง่าย เมื่อคุณตั้งค่า ERPNext (บริษัท ผังบัญชี ฯลฯ) คุณสามารถเริ่มต้นด้วยการตั้งค่าโดเมนของคุณ ในการตั้งค่าโมดูล Healthcare อย่างสมบูรณ์ คุณควรเปิดใช้งานบทบาท `Healthcare Administrator' คุณสามารถกำหนดค่าแต่ละแผนกได้ตามรายละเอียดในส่วนการตั้งค่า
 

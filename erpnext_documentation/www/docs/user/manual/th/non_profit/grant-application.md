@@ -1,21 +1,21 @@
 <!-- add-breadcrumbs -->
-# Grant Application
+#ใบสมัครทุน
 
-Grant Application is designed to be used by organisations that distribute funds to others, for example grant seeker, etc.
+ใบสมัครทุน ได้รับการออกแบบเพื่อใช้โดยองค์กรที่แจกจ่ายเงินทุนให้กับผู้อื่น เช่น ผู้ขอทุน ฯลฯ
 
-Grants are non-repayable funds or products disbursed or gifted by one party (grantmakers), often a government department, corporation, foundation or trust, to a recipient, often (but not always) a nonprofit entity, educational institution, business or an individual. In order to receive a grant, some form of "Grant Writing" often referred to as either a proposal or an application is required.
+เงินช่วยเหลือเป็นเงินหรือผลิตภัณฑ์ที่ไม่สามารถชำระคืนได้หรือมอบให้โดยฝ่ายใดฝ่ายหนึ่ง (ผู้ให้ทุน) ซึ่งมักจะเป็นหน่วยงานของรัฐ บริษัท มูลนิธิหรือความไว้วางใจให้กับผู้รับ บ่อยครั้ง (แต่ไม่เสมอไป) องค์กรไม่แสวงหาผลกำไร สถาบันการศึกษา ธุรกิจ หรือบุคคลธรรมดา . ในการรับทุน จำเป็นต้องมี "การเขียนทุนสนับสนุน" บางรูปแบบซึ่งมักเรียกกันว่าเป็นข้อเสนอหรือใบสมัคร
 
-Most grants are made to fund a specific project and require some level of compliance and reporting.
+เงินช่วยเหลือส่วนใหญ่ทำขึ้นเพื่อเป็นเงินทุนสำหรับโครงการเฉพาะและต้องมีการปฏิบัติตามและการรายงานในระดับหนึ่ง
 
-The grant writing process involves an applicant submitting a proposal (or submission) to a potential funder, either on the applicant's own initiative or in response to a Request for Proposal from the funder. Other grants can be given to individuals, such as victims of natural disasters or individuals who seek to open a small business. Sometimes grant makers require grant seekers to have some form of tax-exempt status, be a registered nonprofit organization or a local government.
+กระบวนการเขียนทุนเกี่ยวข้องกับผู้สมัครที่ยื่นข้อเสนอ (หรือยื่นข้อเสนอ) ให้กับผู้ให้ทุนที่มีศักยภาพ ไม่ว่าจะด้วยความคิดริเริ่มของผู้สมัครเองหรือเพื่อตอบสนองต่อคำขอข้อเสนอจากผู้ให้ทุน สามารถให้เงินช่วยเหลืออื่นๆ แก่บุคคลทั่วไปได้ เช่น ผู้ประสบภัยธรรมชาติหรือบุคคลที่พยายามจะเปิดธุรกิจขนาดเล็ก บางครั้งผู้ให้ทุนกำหนดให้ผู้ขอทุนต้องมีสถานะการยกเว้นภาษีบางรูปแบบ เป็นองค์กรไม่แสวงหาผลกำไรที่จดทะเบียนหรือรัฐบาลท้องถิ่น
 
-Grant Application is grant writing process which can be review by assessment manager and then decided by the organization to disburse grant amount to the applicant or not.
+ใบสมัครทุนเป็นกระบวนการเขียนทุนที่สามารถตรวจสอบได้โดยผู้จัดการการประเมินแล้วจึงตัดสินใจโดยองค์กรที่จะจ่ายจำนวนเงินให้ทุนแก่ผู้สมัครหรือไม่
 
-The Grant Application doctype allows you to record the Grant Applicants details.
+ประเภทเอกสารการสมัครขอรับทุนอนุญาตให้คุณบันทึกรายละเอียดผู้สมัครทุน
 
-To Generate Online Grant Application go to:
+ในการสร้างใบสมัครออนไลน์ให้ไปที่:
 
-> My Account on website > Grant Application from sidebar > Apply for new Grant Application.
+> บัญชีของฉันบนเว็บไซต์ > ใบสมัครทุนจากแถบด้านข้าง > สมัครขอทุนใหม่
 
 
 <img class="screenshot" alt="Online Grant Application row" src="{{docs_base_url}}/assets/img/non_profit/grant_application/grant_application_row.png">
@@ -25,27 +25,27 @@ To Generate Online Grant Application go to:
 <img class="screenshot" alt="Online Grant Application" src="{{docs_base_url}}/assets/img/non_profit/grant_application/grant_portal.png">
 
 
-To Generate Grant Application go to:
+ในการสร้างใบสมัครให้ไปที่:
 
-> Non Profit > Grant Application > New.
+> องค์กรไม่แสวงหากำไร > การสมัครขอรับทุน > ใหม่
 
 
 <img class="screenshot" alt="Grant Application" src="{{docs_base_url}}/assets/img/non_profit/grant_application/grant_application.png">
 
 
-**Email:** Email is a mandatory field.
+**อีเมล:** อีเมลเป็นฟิลด์บังคับ
 
-**Organization:** Organization is data field contain organizaion name set as name field in erpnext.
+**องค์กร:** องค์กรเป็นฟิลด์ข้อมูลที่มีชื่อองค์กรที่ตั้งค่าเป็นฟิลด์ชื่อใน erpnext
 
 
-**Address and Contact Section:** This Section linked to address and contact doctypes.
+**ส่วนที่อยู่และการติดต่อ:** ส่วนนี้เชื่อมโยงกับที่อยู่และประเภทเอกสารการติดต่อ
 
-**Grant Application Details Section:** This section contains information about grant description.
+**ส่วนรายละเอียดการสมัครทุน:** ส่วนนี้มีข้อมูลเกี่ยวกับคำอธิบายทุน
 
-**Amount:** Amount field describe requested amount by an applicant.
+**จำนวนเงิน:** ฟิลด์จำนวนเงินอธิบายจำนวนเงินที่ร้องขอโดยผู้สมัคร
 
-**Route:** Route field leave blank it will automatically create route path grant-application/organization_name
+**เส้นทาง:** ช่องเส้นทางเว้นว่างไว้ ระบบจะสร้างเส้นทางเส้นทางให้สิทธิ์แอปพลิเคชัน/องค์กร_ชื่อโดยอัตโนมัติ
 
-**Assessment Result Section:** In This section when status field selected as received, send Grant Review Email button appear on the top right corner which sends grant URL to Assessment Manager.
+**ส่วนผลการประเมิน:** ในส่วนนี้เมื่อเลือกช่องสถานะเป็นได้รับแล้ว ให้ส่งปุ่มส่งอีเมลตรวจสอบสิทธิ์ปรากฏที่มุมบนขวาซึ่งส่ง URL การให้สิทธิ์ไปยังผู้จัดการการประเมิน
 
-After reviewing grant. Grant Assessment Manager scale application at 0 - 9 point and left a note about a grant.
+หลังจากตรวจสอบทุนแล้ว Grant Assessment Manager ปรับขนาดแอปพลิเคชันที่ 0 - 9 จุด และทิ้งข้อความเกี่ยวกับการให้ทุนไว้

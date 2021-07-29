@@ -1,37 +1,37 @@
 <!-- add-breadcrumbs -->
 
-# Inpatient Medication Orders Report
+# รายงานใบสั่งยาสำหรับผู้ป่วยใน
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-The Inpatient Medication Orders Report shows all the data related to the medication orders for inpatients. This report is based on the [Inpatient Medication Order](/docs/user/manual/en/healthcare/inpatient_medication_order) Document Type.
+รายงานใบสั่งยาสำหรับผู้ป่วยในจะแสดงข้อมูลทั้งหมดที่เกี่ยวข้องกับใบสั่งยาสำหรับผู้ป่วยใน รายงานนี้อิงตามประเภทเอกสาร [คำสั่งผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_medication_order)
 
-To view this report, you can go to:
+หากต้องการดูรายงานนี้ คุณสามารถไปที่:
 
-> Home > Healthcare > Reports > Inpatient Medication Orders
+> หน้าหลัก > การดูแลสุขภาพ > รายงาน > ใบสั่งยาสำหรับผู้ป่วยใน
 
-This report shows the Inpatient Medication Orders with the following data:
+รายงานนี้แสดงใบสั่งยาสำหรับผู้ป่วยในพร้อมข้อมูลต่อไปนี้:
 
-- Patient
-- Healthcare Service Unit (where the patient is admitted)
-- Drug Code and Name
-- Dosage and Dosage Form
-- Date and Time
-- Order Completion Status
-- Healthcare Practitioner
-- Inpatient Medication Entry: If the order is completed, then the inpatient medication entry against the order is shown.
-- Inpatient Record
+- อดทน
+- หน่วยบริการสุขภาพ (ที่รับผู้ป่วย)
+- รหัสยาและชื่อ
+- แบบฟอร์มการให้ยาและปริมาณ
+- วันและเวลา
+- สถานะการเสร็จสิ้นการสั่งซื้อ
+- แพทย์เวชปฏิบัติ
+- รายการยาสำหรับผู้ป่วยใน: หากใบสั่งยาเสร็จสิ้น ระบบจะแสดงรายการยาสำหรับผู้ป่วยในที่ขัดกับคำสั่ง
+- บันทึกผู้ป่วยใน
 
-The toolbar provides filters to select what data is to be used. Using the dropdown selections, the data displayed can be refined. As the selections are made, data is reflected in the data window as well as the graph window. The filters available are:
+แถบเครื่องมือมีตัวกรองเพื่อเลือกข้อมูลที่จะใช้ ข้อมูลที่แสดงสามารถปรับปรุงได้โดยใช้การเลือกดรอปดาวน์ เมื่อทำการเลือก ข้อมูลจะแสดงในหน้าต่างข้อมูลและหน้าต่างกราฟ ตัวกรองที่ใช้ได้คือ:
 
-- Company
-- From date and To Date: By default the report shows data for the last 30 days.
-- Patient
-- Healthcare Service Unit
-- Show Completed Orders: By default this checkbox is enabled. If you just want to see the data related to pending orders, you can uncheck this. Pending here refers to the order entries in Inpatient Medication Order table which have the _Is Order Completed_ checkbox unchecked.
+- บริษัท
+- จากวันที่และถึงวันที่: โดยค่าเริ่มต้น รายงานจะแสดงข้อมูลในช่วง 30 วันที่ผ่านมา
+- อดทน
+- หน่วยบริการสุขภาพ
+- แสดงคำสั่งซื้อที่เสร็จสมบูรณ์: โดยค่าเริ่มต้น ช่องทำเครื่องหมายนี้จะเปิดใช้งาน หากคุณต้องการดูข้อมูลที่เกี่ยวข้องกับคำสั่งซื้อที่รอดำเนินการ คุณสามารถยกเลิกการเลือกตัวเลือกนี้ได้ รอดำเนินการที่นี่หมายถึงรายการคำสั่งซื้อในตารางใบสั่งยาสำหรับผู้ป่วยในซึ่งไม่ได้เลือกช่องทำเครื่องหมาย _Is Order Completed_
 
 <img class="screenshot" src="/docs/assets/img/healthcare/inpatient-medication-orders.gif">
 
-Using the **Set Chart** button, you can set values for the X and Y fields, use different types of charts and select a color.
+เมื่อใช้ปุ่ม **ตั้งค่าแผนภูมิ** คุณสามารถตั้งค่าสำหรับฟิลด์ X และ Y ใช้แผนภูมิประเภทต่างๆ และเลือกสีได้
 
 {next}

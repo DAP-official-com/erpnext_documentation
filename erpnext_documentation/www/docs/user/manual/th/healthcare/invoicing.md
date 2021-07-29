@@ -1,14 +1,14 @@
 <!-- add-breadcrumbs -->
-# Billing
+# การเรียกเก็บเงิน
 
-Billing is an integral part of any undertaking and ERPNext Healthcare achieves this by making use of the `Sales Invoice` document in the ERPNext Accounts module.
+การเรียกเก็บเงินเป็นส่วนสำคัญของการดำเนินการใดๆ และ ERPNext Healthcare บรรลุเป้าหมายนี้โดยใช้เอกสาร "ใบกำกับสินค้า" ในโมดูลบัญชี ERPNext
 
-The Healthcare domain links Patient document with `Customer` and all billable services like, Lab Tests, Clinical Procedures, Consulting Fees etc. with the `Item` document _(with Maintain Stock set to false)_. You can set the links manually too.
+โดเมน Healthcare เชื่อมโยงเอกสารผู้ป่วยกับ "ลูกค้า" และบริการที่เรียกเก็บเงินได้ทั้งหมด เช่น การทดสอบในห้องปฏิบัติการ ขั้นตอนทางคลินิก ค่าธรรมเนียมการให้คำปรึกษา ฯลฯ กับเอกสาร "รายการ" _(with Maintain Stock set to false)_ คุณสามารถตั้งค่าลิงก์ด้วยตนเองได้เช่นกัน
 
-The Sales Invoice already has the `Get Items` button which helps User to get a list of Items from other related documents. ERPNext Healthcare brings two more option here to fetch all un-billed services for a Patient as well as prescribed medications from Patient Encounter. This way, the billing user can fetch all billable services as well as medications without having to have access to the Patient Encounter or the Healthcare module itself.
+ใบกำกับสินค้ามีปุ่ม "รับรายการ" อยู่แล้ว ซึ่งช่วยให้ผู้ใช้รับรายการสินค้าจากเอกสารที่เกี่ยวข้องอื่นๆ ERPNext Healthcare นำเสนออีกสองตัวเลือกที่นี่เพื่อดึงบริการที่ยังไม่ได้เรียกเก็บเงินทั้งหมดสำหรับผู้ป่วยรวมถึงยาตามใบสั่งแพทย์จากการเผชิญหน้าของผู้ป่วย ด้วยวิธีนี้ ผู้ใช้ที่เรียกเก็บเงินสามารถเรียกบริการที่เรียกเก็บเงินได้ทั้งหมดรวมถึงยาโดยไม่ต้องเข้าถึงการเผชิญหน้าผู้ป่วยหรือโมดูลการดูแลสุขภาพ
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/get_items.png">
 
-> Note: All transactions of a Patient are booked against the Customer which it is linked to. You may want to look up various Accounting Reports available in ERPNext Accounts module (like Accounts Receivable) using this Customer link.
+> หมายเหตุ: ธุรกรรมทั้งหมดของผู้ป่วยจะถูกจองกับลูกค้าที่เชื่อมโยงกับ คุณอาจต้องการค้นหารายงานการบัญชีต่างๆ ที่มีอยู่ในโมดูลบัญชี ERPNext (เช่น บัญชีลูกหนี้) โดยใช้ลิงก์ลูกค้านี้
 
 {next}

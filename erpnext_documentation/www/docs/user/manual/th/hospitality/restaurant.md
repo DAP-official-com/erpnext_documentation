@@ -1,19 +1,19 @@
 <!-- add-breadcrumbs -->
-# Restaurant
+# ร้านอาหาร
 
-The Restaurant record represents one restaurant in your organization. To create a new Restaurant, just set the name, Company and Default Customer.
+บันทึกร้านอาหารแสดงถึงร้านอาหารหนึ่งแห่งในองค์กรของคุณ ในการสร้างร้านอาหารใหม่ เพียงแค่ตั้งชื่อ บริษัท และลูกค้าที่เป็นค่าเริ่มต้น
 
-You can set a unique numbering prefix for each of your restaurants. All invoices for that restuarant will follow that numbering prefix.
+คุณสามารถกำหนดหมายเลขนำหน้าสำหรับร้านอาหารแต่ละแห่งได้ ใบแจ้งหนี้ทั้งหมดสำหรับร้านอาหารนั้นจะเป็นไปตามคำนำหน้าหมายเลขนั้น
 
-If you have a default Sales Taxes and Charges Template, you can add it so that the same charge + tax will be applicable for all invoices in the restaurant.
+หากคุณมีเทมเพลตภาษีขายและค่าธรรมเนียมเริ่มต้น คุณสามารถเพิ่มเพื่อให้การเรียกเก็บเงิน + ภาษีเดียวกันมีผลกับใบแจ้งหนี้ทั้งหมดในร้านอาหาร
 
 <img class="screenshot" alt="Restaurant" src="{{docs_base_url}}/assets/img/restaurant/restaurant.png">
 
-After your restaurant is created, you can add Tables and Menus for that restaurant
+หลังจากสร้างร้านอาหารของคุณแล้ว คุณสามารถเพิ่มตารางและเมนูสำหรับร้านอาหารนั้นได้
 
-### Adding Tables
+### การเพิ่มตาราง
 
-You can add a Restaurant Table by creating a new Restaurant Table from the dashboard.
+คุณสามารถเพิ่มตารางร้านอาหารโดยการสร้างตารางร้านอาหารใหม่จากแดชบอร์ด
 
 <img class="screenshot" alt="Restaurant Table" src="{{docs_base_url}}/assets/img/restaurant/restaurant-table.png">
 

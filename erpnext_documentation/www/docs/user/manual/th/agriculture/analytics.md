@@ -1,13 +1,13 @@
 <!-- add-breadcrumbs -->
-# Analytics
+# การวิเคราะห์
 
-This part of the Agriculture module is used for tracking data and report generation
+โมดูลการเกษตรส่วนนี้ใช้สำหรับการติดตามข้อมูลและการสร้างรายงาน
 
-All the data pertaining to the following doctypes can be tracked by ERPNext
+ข้อมูลทั้งหมดที่เกี่ยวข้องกับประเภทเอกสารต่อไปนี้สามารถติดตามได้โดย ERPNext
 
-* Plant Analysis
-* Soil Analysis
-* Water Analysis
-* Soil Texture
-* Weather
-* Agriculture Analysis Criteria
+* การวิเคราะห์พืช
+* การวิเคราะห์ดิน
+* การวิเคราะห์น้ำ
+* เนื้อดิน
+* สภาพอากาศ
+* เกณฑ์การวิเคราะห์ทางการเกษตร

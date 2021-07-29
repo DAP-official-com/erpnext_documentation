@@ -1,91 +1,91 @@
 <!-- add-breadcrumbs -->
-# Healthcare Settings
+# การตั้งค่าการดูแลสุขภาพ
 
-Most of the global settings for the Healthcare module can be done via the Healthcare Settings page.
+การตั้งค่าส่วนกลางส่วนใหญ่สำหรับโมดูล Healthcare สามารถทำได้ผ่านหน้าการตั้งค่า Healthcare
 
-To view and change the settings, go to:
+หากต้องการดูและเปลี่ยนการตั้งค่า ให้ไปที่:
 
-> Home > Healthcare > Settings > Healthcare Settings
+> หน้าหลัก > การดูแลสุขภาพ > ตั้งค่า > การตั้งค่าการดูแลสุขภาพ
 
-> Note: Ensure that you have the "Healthcare Administrator" role enabled for your User to access this page.
+> หมายเหตุ: ตรวจสอบให้แน่ใจว่าคุณได้เปิดใช้งานบทบาท "ผู้ดูแลระบบการดูแลสุขภาพ" สำหรับผู้ใช้ของคุณในการเข้าถึงหน้านี้
 
-## 1. Out-Patient Settings
+## 1. การตั้งค่าผู้ป่วยนอก
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_settings_1.png">
 
-* **Patient Name By**: By default Patient document uses naming series for naming but you can also opt to change this to "Patient Name" if required.
+* **ชื่อผู้ป่วยตาม**: โดยค่าเริ่มต้น เอกสารผู้ป่วยใช้ชุดการตั้งชื่อสำหรับการตั้งชื่อ แต่คุณยังสามารถเลือกที่จะเปลี่ยนเป็น "ชื่อผู้ป่วย" ได้หากต้องการ
 
-* **Link Customer to Patient**: This option will enable the system to create and link a Customer whenever a new Patient is created. This Customer is used while booking all transactions. Patient Invoices will be created against this Customer. You can also select an existing Customer while creating a Patient.
+* **เชื่อมโยงลูกค้ากับผู้ป่วย**: ตัวเลือกนี้จะเปิดใช้งานระบบเพื่อสร้างและเชื่อมโยงลูกค้าทุกครั้งที่มีการสร้างผู้ป่วยใหม่ ลูกค้ารายนี้ถูกใช้ในขณะทำการจองธุรกรรมทั้งหมด ใบแจ้งหนี้ของผู้ป่วยจะถูกสร้างขึ้นกับลูกค้ารายนี้ คุณยังสามารถเลือกลูกค้าที่มีอยู่ในขณะที่สร้างผู้ป่วยได้
 
-* **Default Medical Code Standard**: ERPNext Healthcare allows you to use multiple Medical Code Standards. Here, you can also select the default Medical Code Standard.
+* **มาตรฐานรหัสทางการแพทย์เริ่มต้น**: ERPNext Healthcare อนุญาตให้คุณใช้มาตรฐานรหัสทางการแพทย์หลายฉบับ ที่นี่ คุณสามารถเลือกมาตรฐานรหัสทางการแพทย์ที่เป็นค่าเริ่มต้นได้
 
-* **Collect Fee for Patient Registration**: If you enable this, all new Patients you create will be _Disabled_ by default and will only be enabled after Invoicing the Registration Fee. To create an Invoice and record the Payment Receipt, you can use the **Invoice Patient Registration** button in the Patient document. Also note that all ERPNext Healthcare documents, filter out Patient records that are disabled.
+* **เก็บค่าธรรมเนียมสำหรับการลงทะเบียนผู้ป่วย**: หากคุณเปิดใช้งานสิ่งนี้ ผู้ป่วยใหม่ทั้งหมดที่คุณสร้างจะเป็น _Disabled_ โดยค่าเริ่มต้น และจะเปิดใช้งานหลังจากออกใบแจ้งหนี้ค่าธรรมเนียมการลงทะเบียนเท่านั้น ในการสร้างใบแจ้งหนี้และบันทึกใบเสร็จรับเงิน คุณสามารถใช้ปุ่ม **การลงทะเบียนผู้ป่วยตามใบแจ้งหนี้** ในเอกสารของผู้ป่วย นอกจากนี้ โปรดทราบด้วยว่าเอกสาร ERPNext Healthcare ทั้งหมด กรองบันทึกผู้ป่วยที่ถูกปิดใช้งาน
 
-* **Registration Fee**: You can set the Registration Fee to be collected here if you have checked "Collect Fee for Patient Registration".
+* **ค่าลงทะเบียน**: คุณสามารถกำหนดค่าธรรมเนียมการลงทะเบียนที่จะเก็บได้ที่นี่ หากคุณได้เลือก "เก็บค่าธรรมเนียมสำหรับการลงทะเบียนผู้ป่วย"
 
-* **Automate Appointment Invoicing**: If you wish to automatically create a Sales Invoice (with the selected Practitioner's consultation charges), you can enable this option. This feature is particularly helpful if your facility collects payment while booking an appointment. The Patient Appointment form will allow you to select the Payment Method and Amount Received. Also, the invoices will be canceled automatically on Appointment cancellation.
+* **การออกใบแจ้งหนี้การนัดหมายอัตโนมัติ**: หากคุณต้องการสร้างใบแจ้งหนี้การขายโดยอัตโนมัติ (พร้อมค่าปรึกษาของผู้ปฏิบัติงานที่เลือก) คุณสามารถเปิดใช้งานตัวเลือกนี้ได้ คุณลักษณะนี้มีประโยชน์อย่างยิ่งหากสถานที่ของคุณเรียกเก็บเงินขณะจองการนัดหมาย แบบฟอร์มการนัดหมายผู้ป่วยจะช่วยให้คุณสามารถเลือกวิธีการชำระเงินและจำนวนเงินที่ได้รับ นอกจากนี้ ใบแจ้งหนี้จะถูกยกเลิกโดยอัตโนมัติเมื่อยกเลิกการนัดหมาย
 
-* **Enable Free Follow-ups**: Many healthcare facilities do not charge for follow-up consultations within a time period after the first visit (Patient Registration). Check this if you want to enable free follow-ups. After this is checked, configure the number of free follow-ups (_Patient Encounters in Valid Days_) allowed as well as the time period (_Valid number of days_) for free consultations here.
+* **เปิดใช้งานการติดตามผลฟรี**: สถานพยาบาลหลายแห่งไม่คิดค่าใช้จ่ายสำหรับการให้คำปรึกษาติดตามผลภายในระยะเวลาหลังจากการเยี่ยมครั้งแรก (การลงทะเบียนผู้ป่วย) เลือกตัวเลือกนี้หากคุณต้องการเปิดใช้งานการติดตามฟรี หลังจากตรวจสอบแล้ว ให้กำหนดจำนวนการติดตามฟรี (_Patient Encounters in Valid Days_) ที่อนุญาต รวมถึงช่วงเวลา (_Valid number of days_) สำหรับการให้คำปรึกษาฟรีที่นี่
 
-## 2. Inpatient Settings
+## 2. การตั้งค่าผู้ป่วยใน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/inpatient-settings.png">
 
-* **Allow Discharge Despite Unbilled Healthcare Services**: Some healthcare facilities discharge the patient to make the room vacant for new admissions and then generate the bill later. If this is checked then while discharging a patient, the system will not validate unbilled services against the patient.
+* **อนุญาตให้กลับบ้านทั้งๆ ที่บริการด้านสุขภาพที่ยังไม่ได้เรียกเก็บเงิน**: สถานพยาบาลบางแห่งจะปล่อยตัวผู้ป่วยเพื่อให้ห้องว่างสำหรับการรับสมัครใหม่ แล้วจึงเรียกเก็บเงินในภายหลัง หากมีการตรวจสอบในขณะที่ปล่อยผู้ป่วย ระบบจะไม่ตรวจสอบบริการที่ยังไม่ได้เรียกเก็บเงินกับผู้ป่วย
 
-* **Do Not Bill Patient Encounters for Inpatients**: Some healthcare facilities do not bill Inpatients for Patient Encounters separately. If this is checked then while using the **Get Items From > Healthcare Services** functionality in the Sales Invoice, the system will not fetch patient encounters which have an Inpatient Record linked to them.
+* **ห้ามเรียกเก็บเงินการพบผู้ป่วยสำหรับผู้ป่วยใน**: สถานพยาบาลบางแห่งไม่เรียกเก็บเงินผู้ป่วยในสำหรับการพบผู้ป่วยแยกต่างหาก หากมีการตรวจสอบในขณะที่ใช้ฟังก์ชัน **รับรายการจาก > บริการด้านสุขภาพ** ในใบกำกับสินค้า ระบบจะไม่เรียกข้อมูลการเผชิญหน้าของผู้ป่วยซึ่งมีบันทึกผู้ป่วยในที่เชื่อมโยงกับพวกเขา
 
-## 3. Default Healthcare Service Items
+## 3. รายการบริการดูแลสุขภาพเริ่มต้น
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_settings_2.png">
 
-ERPNext Healthcare utilizes the Accounts module for billing Patients. You can configure default "Items" for billing consultation charges, procedure consumption items, etc. here. Make sure that the "Inpatient Visit Charge Item" and "Out-Patient Consulting Charge Item" are service items i.e they have _Maintain Stock_ checkbox disabled.
+โมดูล  Healthcare ใน ERPNext ใช้โมดูลบัญชีสำหรับการเรียกเก็บเงินผู้ป่วย คุณสามารถกำหนดค่า "รายการ" เริ่มต้นสำหรับค่าธรรมเนียมการให้คำปรึกษาการเรียกเก็บเงิน รายการการใช้ขั้นตอน ฯลฯ ที่นี่ ตรวจสอบให้แน่ใจว่า "รายการค่าธรรมเนียมการเยี่ยมชมผู้ป่วยใน" และ "รายการค่าธรรมเนียมการให้คำปรึกษาผู้ป่วยนอก" เป็นรายการบริการ กล่าวคือ ปิดใช้งานช่องทำเครื่องหมาย _Maintain Stock_
 
-## 4. Default Accounts
+## 4. บัญชีเริ่มต้น
 
-If you wish to override default accounts settings and configure the Income and Receivable accounts for Healthcare, you can do so here.
+หากคุณต้องการแทนที่การตั้งค่าบัญชีเริ่มต้นและกำหนดค่าบัญชีรายรับและรายรับสำหรับ Healthcare คุณสามารถทำได้ที่นี่
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_settings_3.png">
 
-* **Income Account**: Default Income Accounts to be used if not set in Healthcare Practitioner to book Appointment charges.
+* **บัญชีรายได้**: บัญชีรายได้เริ่มต้นที่จะใช้หากไม่ได้ตั้งค่าใน แพทย์เวชปฏิบัติ เพื่อจองค่าธรรมเนียมการนัดหมาย
 
-* **Receivable Account**: Default Receivable Accounts to be used to book Appointment charges.
+* **บัญชีลูกหนี้**: บัญชีลูกหนี้ผิดนัดที่จะใช้ในการจองค่าธรรมเนียมการนัดหมาย
 
-## 5. Out-Patient SMS Alerts
+## 5. SMS แจ้งเตือนผู้ป่วยนอก
 
-You can enable sending SMS alerts on Patient appointment Booking, Patient Registration, etc., and also configure a message in this section.
+คุณสามารถเปิดใช้งานการส่งการแจ้งเตือนทาง SMS ในการจองนัดหมายผู้ป่วย การลงทะเบียนผู้ป่วย ฯลฯ และยังกำหนดค่าข้อความในส่วนนี้
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_settings_4.png">
 
-* **Patient Registration**: This message will be sent when a new Patient is created in your instance.
+* **การลงทะเบียนผู้ป่วย**: ข้อความนี้จะถูกส่งเมื่อมีการสร้างผู้ป่วยรายใหม่ในอินสแตนซ์ของคุณ
 
-* **Appointment Confirmation**: This message will be sent when an Appointment is booked for the Patient.
+* **การยืนยันการนัดหมาย**: ข้อความนี้จะถูกส่งเมื่อมีการจองนัดหมายสำหรับผู้ป่วย
 
-* **Avoid Confirmation**: Check this if you don't want to send the Appointment Booking message when the Appointment is booked on the same day.
+* **หลีกเลี่ยงการยืนยัน**: เลือกตัวเลือกนี้หากคุณไม่ต้องการส่งข้อความจองการนัดหมายเมื่อมีการจองในวันเดียวกัน
 
-* **Appointment Reminder**: This message will be sent on the day of the appointment as a reminder.
+* **การแจ้งเตือนการนัดหมาย**: ข้อความนี้จะถูกส่งในวันที่นัดหมายเพื่อเป็นการเตือนความจำ
 
-* **Remind Before**: You can configure the time before all reminder messages should be sent.
+* **เตือนก่อน**: คุณสามารถกำหนดเวลาก่อนที่จะส่งข้อความเตือนทั้งหมด
 
-## 6. Laboratory Settings
+## 6. การตั้งค่าห้องปฏิบัติการ
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_settings_5.png">
 
-* **Create Lab Test(s) on Sales Invoice Submit**: If your facility creates Invoices and collects payments from Patients before performing the Lab Test, you can enable this option to create Lab tests automatically for all the Tests that are billed. If you have enabled the "Create Sample Collection document for Lab Test" and the Lab Test has a _Sample_ configured in the Lab Test Template, a Sample Collection document will also be created.
+* **สร้างการทดสอบในห้องปฏิบัติการในการส่งใบแจ้งหนี้การขาย**: หากสถานที่ของคุณสร้างใบแจ้งหนี้และเรียกเก็บเงินจากผู้ป่วยก่อนทำการทดสอบในห้องปฏิบัติการ คุณสามารถเปิดใช้งานตัวเลือกนี้เพื่อสร้างการทดสอบในห้องปฏิบัติการโดยอัตโนมัติสำหรับการทดสอบทั้งหมดที่มีการเรียกเก็บเงิน หากคุณเปิดใช้งาน "สร้างเอกสารการเก็บตัวอย่างสำหรับการทดสอบในห้องปฏิบัติการ" และการทดสอบในห้องปฏิบัติการมีการกำหนดค่า _Sample_ ในเทมเพลตการทดสอบของแล็บ เอกสารการรวบรวมตัวอย่างจะถูกสร้างขึ้นด้วย
 
-* **Create Sample Collection document for Lab Test**: If this flag is enabled, every time you create a Lab Test, a Sample Collection document will be created.
+* **สร้างเอกสารการเก็บตัวอย่างสำหรับการทดสอบในห้องปฏิบัติการ**: หากเปิดใช้งานการตั้งค่าสถานะนี้ ทุกครั้งที่คุณสร้างการทดสอบในห้องปฏิบัติการ เอกสารการรวบรวมตัวอย่างจะถูกสร้างขึ้น
 
-* **Employee Name and Designation in Print**: Enable this option if you want the name and designation of the Employee associated with the User who submits the document to be printed in the Lab Test Report.
+* **ชื่อพนักงานและการกำหนดในการพิมพ์**: เปิดใช้งานตัวเลือกนี้หากคุณต้องการให้ชื่อและการกำหนดของพนักงานที่เกี่ยวข้องกับผู้ใช้ที่ส่งเอกสารที่จะพิมพ์ในรายงานการทดสอบห้องปฏิบัติการ
 
-* **Do not print or email Lab Tests without Approval**: Checking this will restrict printing and emailing of Lab Tests unless they have the status as Approved. You can use this flag to ensure that every Test result leaves your facility after verification.
+* **อย่าพิมพ์หรือส่งอีเมลการทดสอบในห้องปฏิบัติการโดยไม่ได้รับอนุมัติ**: การตรวจสอบนี้จะจำกัดการพิมพ์และการส่งอีเมลของการทดสอบในห้องปฏิบัติการ เว้นแต่จะมีสถานะเป็นอนุมัติ คุณสามารถใช้แฟล็กนี้เพื่อให้แน่ใจว่าผลการทดสอบทุกรายการออกจากสถานที่ของคุณหลังจากการตรวจสอบ
 
-## 7. Laboratory SMS Alerts
+## 7. การแจ้งเตือน SMS ของห้องปฏิบัติการ 
 
-You can configure ERPNext Healthcare to alert Patients via SMS when the Lab Test result gets ready (Submit) and when you Email the result. You can configure the templates for the SMS as registered with your provider here.
+คุณสามารถกำหนดค่า ERPNext Healthcare ให้แจ้งเตือนผู้ป่วยผ่านทาง SMS เมื่อผลการทดสอบในห้องปฏิบัติการพร้อม (ส่ง) และเมื่อคุณส่งอีเมลผลการทดสอบ คุณสามารถกำหนดค่าเทมเพลตสำหรับ SMS ตามที่ลงทะเบียนกับผู้ให้บริการของคุณได้ที่นี่
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_settings_6.png">
 
-> This Form has been Changed in Version 13
+> แบบฟอร์มนี้มีการเปลี่ยนแปลงในเวอร์ชัน 13
 
 {next}
 <!-- add-breadcrumbs -->

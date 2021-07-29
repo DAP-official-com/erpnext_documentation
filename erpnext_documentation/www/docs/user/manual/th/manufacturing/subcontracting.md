@@ -1,98 +1,98 @@
 <!-- add-breadcrumbs -->
-# Subcontracting
+#รับเหมาช่วง
 
-**In subcontracting, you employ an external party to carry out tasks for your organization, especially manufacturing.**
+**ในการรับเหมาช่วง คุณต้องจ้างบุคคลภายนอกเพื่อดำเนินงานให้กับองค์กรของคุณ โดยเฉพาะด้านการผลิต**
 
-Subcontracting is a type of job contract that seeks to outsource certain types
-of work to other companies. It allows work on more than one phase of the
-project to be done at once, often leading to quicker completion.
+การรับเหมาช่วงเป็นสัญญาจ้างงานประเภทหนึ่งที่พยายามจ้างภายนอกบางประเภท
+ในการทำงานให้กับบริษัทอื่น อนุญาตให้ทำงานมากกว่าหนึ่งเฟสของ
+โครงการที่จะทำในครั้งเดียว มักจะทำให้เสร็จเร็วขึ้น
 
-Subcontracting is practiced by various industries. For example, manufacturers
-who make a number of products from complex components subcontract certain
-components and package them at their facilities.
+การรับเหมาช่วงดำเนินการโดยอุตสาหกรรมต่างๆ ตัวอย่างเช่น ผู้ผลิต
+ซึ่งสร้างผลิตภัณฑ์จำนวนหนึ่งจากผู้รับเหมาช่วงส่วนประกอบที่ซับซ้อนบางอย่าง
+ส่วนประกอบและบรรจุไว้ที่โรงงาน
 
-If your business involves outsourcing certain processes to a third party Supplier where you supply the raw materials and the third party does the labor/production, you can track this by using the subcontracting feature of ERPNext.
+หากธุรกิจของคุณเกี่ยวข้องกับการเอาท์ซอร์สกระบวนการบางอย่างไปยังซัพพลายเออร์ที่เป็นบุคคลภายนอก ซึ่งคุณจัดหาวัตถุดิบและบุคคลภายนอกทำหน้าที่ด้านแรงงาน/การผลิต คุณสามารถติดตามสิ่งนี้ได้โดยใช้คุณสมบัติการจ้างช่วงของ ERPNext
 
-## 1. How to Set up Subcontracting
+## 1. วิธีการตั้งค่าการรับเหมาช่วง
 
-1. Create separate Items for the unprocessed and the processed product. For example, if you supply unpainted X to your Supplier and the Supplier returns you X, you can create two Items: “X-unpainted” and “X”.
-2. Create a Warehouse for your Supplier so that you can keep track of Items supplied. (you may supply a month's worth of Items in one go).
-3. For the processed Item, in the Item master, enable “Is Sub Contracted Item”.
+1. สร้างรายการแยกสำหรับสินค้าที่ยังไม่ได้แปรรูปและสินค้าแปรรูป ตัวอย่างเช่น หากคุณจัดหา X ที่ไม่ทาสีให้กับซัพพลายเออร์ของคุณ และผู้จัดหาส่งคืน X ให้คุณ คุณสามารถสร้างรายการสองรายการ: "X-unpainted" และ "X"
+2. สร้างโกดังสำหรับซัพพลายเออร์ของคุณเพื่อให้คุณสามารถติดตามรายการที่มีให้ (คุณสามารถจัดหาไอเท็มมูลค่าหนึ่งเดือนได้ในครั้งเดียว)
+3. สำหรับไอเทมที่ประมวลผล ใน Item master ให้เปิดใช้งาน “เป็นไอเทมที่ทำสัญญาย่อย”
 
   <img class="screenshot" alt="Sub-Contracting" src="{{docs_base_url}}/assets/img/manufacturing/subcontract.png">
 
-### 1.1 Creating a BOM
-Make a [Bill Of Materials](/docs/user/manual/en/manufacturing/bill-of-materials) for the processed Item, with the unprocessed Items as sub-items. Let's consider a simple example, where you manufacture a pen. The processed
-pen will be named under Bill of Materials(BOM), whereas, the nib, plastic, ink, etc. will be categorized as sub-items.
+### 1.1 การสร้าง BOM
+สร้าง [Bill Of Materials](/docs/user/manual/th/manufacturing/bill-of-materials) สำหรับรายการที่ดำเนินการ โดยมีรายการที่ยังไม่ได้ดำเนินการเป็นรายการย่อย ลองพิจารณาตัวอย่างง่ายๆ ที่คุณผลิตปากกา แปรรูป
+ปากกาจะอยู่ภายใต้ Bill of Materials (BOM) ในขณะที่ปลายปากกา พลาสติก หมึก ฯลฯ จะถูกจัดประเภทเป็นรายการย่อย
 
-This BOM will be without Operations if all of the production work is done by the third party.
+BOM นี้จะไม่มีกระบวนการทำงาน หากงานการผลิตทั้งหมดดำเนินการโดยบุคคลที่สาม
 
 <img class="screenshot" alt="Sub-Contracting" src="{{docs_base_url}}/assets/img/manufacturing/subcontract2.png">
 
-### 1.2 Creating a Purchase Order
-Make a Purchase Order for the processed Item, the one for which you've created a BOM. When you “Save”, in the “Raw Materials Supplied”, all your un-processed Items will be updated based on your Bill of Materials. You can also select the Warehouse in which the raw materials would be reserved for subcontracting under Reserve Warehouse.
+### 1.2 การสร้างใบสั่งซื้อ
+ทำใบสั่งซื้อสำหรับสินค้าที่ดำเนินการ ซึ่งคุณได้สร้าง BOM เมื่อคุณ "บันทึก" ใน "วัตถุดิบที่ให้มา" รายการที่ยังไม่ได้ดำเนินการทั้งหมดของคุณจะได้รับการอัปเดตตามรายการวัสดุของคุณ คุณยังสามารถเลือกคลังสินค้าที่จะสำรองวัตถุดิบสำหรับการรับเหมาช่วงภายใต้คลังสินค้าสำรอง
 
-1. The costs involved with the subcontracting process should be recorded in the Rate field of the Items table in the Purchase Order shown as follows:
+1. ค่าใช้จ่ายที่เกี่ยวข้องกับกระบวนการรับเหมาช่วงควรบันทึกไว้ในฟิลด์อัตราของตารางรายการในใบสั่งซื้อที่แสดงดังนี้:
 
   <img class="screenshot" alt="Sub-Contracting" src="{{docs_base_url}}/assets/img/manufacturing/subcontract3.png">
 
-1. In the previous image, we are providing the subcontractor with 2 boxes of each of the 3 materials to manufacture 240 pens. The cost involved with one pen is 27 and the total cost for all pens is hence 6,480
+1. ในภาพก่อนหน้านี้ เราจัดหาวัสดุ 2 กล่องให้ผู้รับเหมาช่วงด้วยวัสดุ 3 ชิ้นอย่างละ 2 กล่องเพื่อผลิตปากกา 240 ด้าม ค่าใช้จ่ายที่เกี่ยวข้องกับปากกาหนึ่งด้ามคือ 27 และค่าใช้จ่ายทั้งหมดสำหรับปากกาทั้งหมดจึงเท่ากับ 6,480
 
-1. You need to set 'Supply Raw Materials' as Yes since this Purchase Order is for subcontracting.
+1. คุณต้องตั้งค่า 'การจัดหาวัตถุดิบ' เป็นใช่ เนื่องจากใบสั่งซื้อนี้มีไว้สำหรับการรับเหมาช่วง
 
-1. From a Purchase Order, select the raw materials to transfer to subcontractor:
+1. จากใบสั่งซื้อ เลือกวัตถุดิบที่จะโอนไปยังผู้รับเหมาช่วง:
   ![Sub-Contracting](/docs/assets/img/buying/subcontract-transfer-materials.gif)
 
-1. Once the [Purchase Order](/docs/user/manual/en/buying/purchase-order#35-raw-materials-supplied) is submitted, you can view the reserved quantity of the item from the item dashboard as well.
+1. เมื่อส่ง [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order#35-raw-materials-supplied) แล้ว คุณสามารถดูปริมาณที่จองไว้ได้จากแดชบอร์ดรายการเช่นกัน .
 
   <img class="screenshot" alt="Sub-Contracting" src="{{docs_base_url}}/assets/img/manufacturing/subcontract3-reserved-material.png">
 
-### 1.3 Creating Stock Entry to Transfer Raw Materials
-Now that the raw materials are reserved, make a Stock Entry to deliver the raw material Items to your Supplier.
+### 1.3 การสร้างรายการสต็อคเพื่อโอนวัตถุดิบ
+เมื่อวัตถุดิบถูกจองแล้ว ให้สร้างรายการสต็อคเพื่อส่งมอบรายการวัตถุดิบไปยังซัพพลายเออร์ของคุณ
 
-In the Purchase Order, click on Transfer > Material to Supplier. Set the Source and Target Warehouses. The Stock Entry will be of type 'Send to Subcontractor' where you transfer from one Warehouse to another. Tick 'From BOM' and select the BOM, enter the quantity, and click on the Get Items button.
+ในใบสั่งซื้อ ให้คลิกที่ โอน > วัสดุไปยังซัพพลายเออร์ กำหนดแหล่งที่มาและเป้าหมายของโกดังสินค้า รายการสต็อคจะเป็นประเภท 'ส่งไปยังผู้รับเหมาช่วง' ซึ่งคุณจะโอนจากโกดังหนึ่งไปยังอีกโกดังหนึ่ง ทำเครื่องหมาย 'จาก BOM' และเลือก BOM ป้อนปริมาณ และคลิกที่ปุ่มรับรายการ
 
 <img class="screenshot" alt="Sub-Contracting" src="{{docs_base_url}}/assets/img/manufacturing/subcontract4.png">
 
-### 1.4 Creating a Purchase Receipt to receive the finished items
-Receive the Items from your Supplier using a [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt). You need to enter the Supplier Warehouse from where the raw materials will be taken and finished goods will be received in the Accepted Warehouse. Consider this like a backflush for subcontracting.
+### 1.4 การสร้างใบเสร็จรับเงินเพื่อรับสินค้าสำเร็จรูป
+รับรายการจากซัพพลายเออร์ของคุณโดยใช้ [ใบเสร็จการซื้อ](/docs/user/manual/th/stock/purchase-receipt) คุณต้องเข้าไปในคลังสินค้าของซัพพลายเออร์จากจุดที่จะรับวัตถุดิบและจะได้รับสินค้าสำเร็จรูปในคลังสินค้าที่ยอมรับ พิจารณาว่านี่เป็นการย้อนกลับสำหรับการรับเหมาช่วง
 
-Click on Create > Purchase Receipt from the Purchase Order. Set the Accepted and Supplier Warehouses. Make sure to check the “Consumed Quantity” in the “Raw Materials” table so that the correct stock is maintained at the Supplier’s end. You need to select the Supplier's Warehouse where you'll receive the finished goods.
+คลิกที่ สร้าง > ใบเสร็จการซื้อ จากใบสั่งซื้อ ตั้งค่าคลังสินค้าที่ยอมรับและผู้จัดจำหน่าย ตรวจสอบให้แน่ใจว่าได้ตรวจสอบ "ปริมาณที่ใช้ไป" ในตาราง "วัตถุดิบ" เพื่อรักษาสต็อกที่ถูกต้องไว้ที่ส่วนท้ายของซัพพลายเออร์ คุณต้องเลือกคลังสินค้าของซัพพลายเออร์ที่คุณจะได้รับสินค้าสำเร็จรูป
 
 <img class="screenshot" alt="Sub-Contracting" src="{{docs_base_url}}/assets/img/manufacturing/subcontract5.png">
 
-### 1.5 Supplier Sourced Raw Material
-While creating a BOM for subcontracting, there might be few raw materials like nuts and bolts which the Suppliers will have to procure themselves.
+### 1.5 วัตถุดิบที่มาจากซัพพลายเออร์
+ขณะสร้าง BOM สำหรับการรับเหมาช่วง อาจมีวัตถุดิบบางอย่าง เช่น น็อตและสลักเกลียวที่ซัพพลายเออร์จะต้องจัดหาด้วยตนเอง
 
-While creating a Stock Entry for "Transfer" from Purchase Order, these items can be excluded one by one, but it is impossible to do so if you have more than 100 items. 
+ขณะสร้างรายการสต็อคสำหรับ "โอน" จากใบสั่งซื้อ รายการเหล่านี้สามารถยกเว้นได้ทีละรายการ แต่เป็นไปไม่ได้หากคุณมีมากกว่า 100 รายการ
 
-If some raw material is sourced by the Supplier directly, then such raw materials have to be included in the BOM.
+หากซัพพลายเออร์เป็นผู้จัดหาวัตถุดิบบางอย่างโดยตรง จะต้องรวมวัตถุดิบดังกล่าวไว้ใน BOM
 
-* It will have zero value in BOM
-* In Purchase Order, this raw material will not appear in Supplied Items since it is not supplied
-* Also, while creating a "Transfer", such items will be excluded from the Stock Entry
+* มันจะมีค่าเป็นศูนย์ใน BOM
+* ในใบสั่งซื้อ วัตถุดิบนี้จะไม่ปรากฏในสินค้าที่ให้มา เนื่องจากไม่ได้ให้มา
+* นอกจากนี้ ขณะสร้าง "การโอน" รายการดังกล่าวจะไม่รวมอยู่ในรายการสต็อค
 
 <img class="screenshot" alt="Supplier Sourced Raw Material" src="{{docs_base_url}}/assets/img/manufacturing/supplier_sourced_subcontracting.png">
 
-However, the Supplier may choose to include the supplier-provided items in their Sales Order sent to you.
+อย่างไรก็ตาม ซัพพลายเออร์อาจเลือกที่จะรวมสินค้าที่ซัพพลายเออร์จัดให้ในใบสั่งขายที่ส่งถึงคุณ
 
-## 2. Notes
-* Make sure that the “Rate” of processed Item is the processing rate
-(excluding the raw material rate).
+## 2. หมายเหตุ
+* ตรวจสอบให้แน่ใจว่า “อัตรา” ของสินค้าที่ประมวลผลเป็นอัตราการประมวลผล
+(ไม่รวมอัตราวัตถุดิบ)
 
-* ERPNext will automatically add the raw material rate for your
-valuation purpose when you receive the finished Item in your stock.
+* ERPNext จะเพิ่มอัตราวัตถุดิบสำหรับคุณ .โดยอัตโนมัติ
+วัตถุประสงค์ในการประเมินมูลค่าเมื่อคุณได้รับสินค้าสำเร็จรูปในสต็อกของคุณ
 
-* ERPNext will automatically default the 'Reserve Warehouse' in the Purchase Order
-from the BOM. If not found in the BOM, it would default it from the default
-Warehouse set in the Item. You can set the default Reserve Warehouse for all the Items in the Purchase Order from the 'Reserve Warehouse' field in the Raw Materials Supplied section.
+* ERPNext จะตั้งค่าเริ่มต้น 'คลังสินค้าสำรอง' ในใบสั่งซื้อโดยอัตโนมัติ
+จาก บมจ. หากไม่พบใน BOM จะเป็นค่าเริ่มต้นจากค่าเริ่มต้น
+โกดังตั้งอยู่ในรายการ คุณสามารถตั้งค่าคลังสินค้าสำรองเริ่มต้นสำหรับสินค้าทั้งหมดในใบสั่งซื้อได้จากฟิลด์ 'คลังสินค้าสำรอง' ในส่วนวัตถุดิบที่จัดหา
 
-## 3. Video
+## 3. วีดีโอ
 
 <iframe width="660" height="371" src="https://www.youtube.com/embed/ThiMCC2DtKo" frameborder="0" allowfullscreen></iframe>
 
-## 4. Related Topics
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-1. [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
+## 4. หัวข้อที่เกี่ยวข้อง
+1. [ใบสั่งซื้อ](/docs/user/manual/th/buying/purchase-order)
+1. [ใบเสร็จการซื้อ](/docs/user/manual/th/stock/purchase-receipt)
 
 {next}

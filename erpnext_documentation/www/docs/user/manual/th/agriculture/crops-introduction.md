@@ -1,12 +1,12 @@
 <!-- add-breadcrumbs -->
-# Crops and Land
+# พืชผลและที่ดิน
 
-The core and most important elements of Agriculture module are:
+แกนหลักและองค์ประกอบที่สำคัญที่สุดของโมดูลการเกษตรคือ:
 
-* Land Unit: Representing the physical space where the crops are planted.
-* Crop: Characteristics of the crop, inputs and expected outputs, expected calendar of activities and harvest, etc.
-* Crop Cycle: Individual representation of a single planting in a specific area. (Links a crop to a Land Unit for a specified period)
+* หน่วยที่ดิน: แสดงถึงพื้นที่ทางกายภาพที่ปลูกพืชผล
+* พืชผล: ลักษณะของพืชผล ปัจจัยการผลิตและผลผลิตที่คาดหวัง ปฏิทินกิจกรรมและการเก็บเกี่ยวที่คาดหวัง ฯลฯ
+* วัฏจักรพืชผล: การแสดงรายบุคคลของการปลูกเดี่ยวในพื้นที่เฉพาะ (เชื่อมโยงพืชผลกับหน่วยที่ดินในช่วงเวลาที่กำหนด)
 
-Here we will learn to do a quick setup with the essential requirements to manage a simple example crop, Carrots.
+ที่นี่ เราจะเรียนรู้วิธีตั้งค่าอย่างรวดเร็วด้วยข้อกำหนดที่จำเป็นในการจัดการตัวอย่างง่ายๆ เช่น แครอท
 
-These instructions assume you have already completed the basic ERPNext setup, and you have the ERPNext desk on your browser window.
+คำแนะนำเหล่านี้ถือว่าคุณได้เสร็จสิ้นการตั้งค่า ERPNext พื้นฐานแล้ว และคุณมี ERPNext ในหน้าต่างเบราว์เซอร์ของคุณ

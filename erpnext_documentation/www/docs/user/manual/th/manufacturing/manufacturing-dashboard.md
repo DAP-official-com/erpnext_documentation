@@ -1,71 +1,70 @@
 <!-- add-breadcrumbs -->
-# Manufacturing Dashboard
+#แดชบอร์ดการผลิต
 
-To access the Manufacturing Dashboard, go to:
+ในการเข้าถึงแดชบอร์ดการผลิต ไปที่:
 
-> Home > Customization > Dashboard > Manufacturing
-
+> หน้าหลัก > การปรับแต่ง > แดชบอร์ด > การผลิต
 <img class="screenshot" alt="Manufacturing Dashboard" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-dashboard.png">
 
-## Number Cards
+## หมายเลขบัตร
 
 <img class="screenshot" alt="Number Cards" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-number-cards.png">
 
-1. **Monthly Total Work Order** :- You will get the total count of Work Orders which are in Open, In Progress, and Completed state. The Work Orders created one month before the current date will be displayed in the number card.
-1. **Monthly Completed Work Order** :- The user will get the total count of Work Orders which are in the Completed state. The Work Orders created one month before the current date will be displayed in the number card.
-1. **Ongoing Job Card** :- he user will get the total count of Job Cards that are not in the Completed state.
-1. **Monthly Quality Inspection** :- The user will get the total count of Quality Inspection records which are in the Submitted state. The Work Orders created one month before the current date will be displayed in the number card.
+1. **ใบสั่งงานรวมรายเดือน**:- คุณจะได้รับจำนวนรวมของใบสั่งงานที่อยู่ในสถานะเปิด กำลังดำเนินการ และเสร็จสมบูรณ์ ใบสั่งงานที่สร้างขึ้นหนึ่งเดือนก่อนวันที่ปัจจุบันจะปรากฏในบัตรตัวเลข
+1. **ใบสั่งงานที่ทำเสร็จทุกเดือน**:- ผู้ใช้จะได้รับจำนวนรวมของคำสั่งงานที่อยู่ในสถานะเสร็จสมบูรณ์ ใบสั่งงานที่สร้างขึ้นหนึ่งเดือนก่อนวันที่ปัจจุบันจะปรากฏในบัตรตัวเลข
+1. **บัตรงานต่อเนื่อง**:- ผู้ใช้จะได้รับจำนวนรวมของบัตรงานที่ไม่อยู่ในสถานะเสร็จสมบูรณ์
+1. **การตรวจสอบคุณภาพรายเดือน**:- ผู้ใช้จะได้รับจำนวนรวมของบันทึกการตรวจสอบคุณภาพที่อยู่ในสถานะส่งแล้ว ใบสั่งงานที่สร้างขึ้นหนึ่งเดือนก่อนวันที่ปัจจุบันจะปรากฏในบัตรตัวเลข
 
-## Dashboard
+## แดชบอร์ด
 
-You can see some predefined graph reports in the dashboard when you open the Manufacturing module. These reports are fully customizable, you can choose what to show or hide and also configure the metrics on which the reports are shown.
+คุณสามารถดูรายงานกราฟที่กำหนดไว้ล่วงหน้าในแดชบอร์ดได้เมื่อคุณเปิดโมดูลการผลิต รายงานเหล่านี้ปรับแต่งได้อย่างเต็มที่ คุณสามารถเลือกสิ่งที่จะแสดงหรือซ่อน และกำหนดค่าเมตริกที่จะแสดงรายงานได้
 
 <img class="screenshot" alt="Produced Quantity & Completed Operation" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-dashboard-2.png">
 
-### Produced Quantity
+### ปริมาณที่ผลิต
 
-The chart will give the information about the total quantity produced (using Work Order) in the last year on a Quarterly basis. Users can also view the chart data based on Daily, Weekly, Monthly, Yearly basis.
+แผนภูมิจะให้ข้อมูลเกี่ยวกับปริมาณทั้งหมดที่ผลิต (โดยใช้ใบสั่งงาน) ในปีที่แล้วเป็นรายไตรมาส ผู้ใช้ยังสามารถดูข้อมูลแผนภูมิตามรายวัน รายสัปดาห์ รายเดือน รายปี
 
-### Completed Operation
+### เสร็จสิ้นการดำเนินงาน
 
-The chart will give information about the total number of operations completed in the last year on Quarterly basis. Users can also view the chart data based on Daily, Weekly, Monthly, Yearly basis.
+แผนภูมิจะให้ข้อมูลเกี่ยวกับจำนวนการดำเนินการทั้งหมดที่เสร็จสิ้นในปีที่แล้วแบบรายไตรมาส ผู้ใช้ยังสามารถดูข้อมูลแผนภูมิตามรายวัน รายสัปดาห์ รายเดือน รายปี
 
 <hr>
 
 <img class="screenshot" alt="Work Order & Quality Inspction Analysis" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-dashboard-3.png">
 
-### Work Order Analysis
+### การวิเคราะห์ใบสั่งงาน
 
-This chart will give the information about the number of Work Orders based on Not Started, In Process, Stopped, Completed statuses. This Donut chart will provide the information based on the last year's Work Order data. Your can also change the date range by clicking on the **Filter** button.
+แผนภูมินี้จะให้ข้อมูลเกี่ยวกับจำนวนคำสั่งงานตามสถานะ ยังไม่เริ่ม อยู่ระหว่างดำเนินการ หยุดแล้ว เสร็จสมบูรณ์ แผนภูมิโดนัทนี้จะให้ข้อมูลตามข้อมูลใบสั่งงานของปีที่แล้ว คุณยังสามารถเปลี่ยนช่วงวันที่ได้โดยคลิกที่ปุ่ม **ตัวกรอง**
 
-### Quality Inspction Analysis
+### การวิเคราะห์การตรวจสอบคุณภาพ
 
-This chart will give information about the number of Quality Inspections based on Accepted and Rejected status. The chart type is a donut and it will provide the information based on the last year's quality inspection data. Your can change the date range by clicking on the **Filter** button.
+แผนภูมินี้จะให้ข้อมูลเกี่ยวกับจำนวนการตรวจสอบคุณภาพตามสถานะที่ยอมรับและปฏิเสธ ประเภทแผนภูมิคือโดนัท และจะให้ข้อมูลตามข้อมูลการตรวจสอบคุณภาพของปีที่แล้ว คุณสามารถเปลี่ยนช่วงวันที่ได้โดยคลิกที่ปุ่ม **ตัวกรอง**
 
 <hr>
 
 <img class="screenshot" alt="Pending Work Order & Downtime Analysis" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-dashboard-4.png">
 
-### Pending Work Orders
+### คำสั่งงานที่รอดำเนินการ
 
-The chart will give information about the number of Work Orders that are pending based on the aging days. The number of aging days is calculated based on the difference between the current date and planned start / actual start date days.
+แผนภูมิจะให้ข้อมูลเกี่ยวกับจำนวนใบสั่งงานที่รอดำเนินการตามวันที่หมดอายุ จำนวนวันที่หมดอายุคำนวณตามความแตกต่างระหว่างวันที่ปัจจุบันและวันที่เริ่มต้นตามแผน / วันที่เริ่มต้นจริง
 
-### Last Month Downtime Analysis
+### การวิเคราะห์การหยุดทำงานของเดือนที่แล้ว
 
-The chart will give information about the total number of minutes a machine was not working in the last month. This helps the operator to know which machine has not performed well and requires maintenance.
+แผนภูมิจะให้ข้อมูลเกี่ยวกับจำนวนนาทีทั้งหมดที่เครื่องไม่ทำงานในเดือนที่แล้ว ซึ่งช่วยให้ผู้ปฏิบัติงานทราบว่าเครื่องใดทำงานได้ไม่ดีและต้องบำรุงรักษา
 
 <hr>
 
 <img class="screenshot" alt="Work Order Quantity Analysis" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-dashboard-5.png">
 
-### Work Order Quantity Analysis
+### การวิเคราะห์ปริมาณใบสั่งงาน
 
-The chart will give information about the total number of quantities that are Pending and Completed based on the Work Orders every month for the last year.
+แผนภูมิจะให้ข้อมูลเกี่ยวกับจำนวนรวมของปริมาณที่รอดำเนินการและดำเนินการเสร็จสิ้นตามใบสั่งงานทุกเดือนสำหรับปีที่แล้ว
 
 <hr>
 
 <img class="screenshot" alt="Job Card Analysis" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-dashboard-6.png">
 
-### Job Card Analysis
+### การวิเคราะห์บัตรงาน
 
-The chart will give information about the total number of Job Cards which are in the Pending and Completed states every month for the last year.
+แผนภูมิจะให้ข้อมูลเกี่ยวกับจำนวนการ์ดงานทั้งหมดที่อยู่ในสถานะรอดำเนินการและเสร็จสิ้นทุกเดือนสำหรับปีที่แล้ว

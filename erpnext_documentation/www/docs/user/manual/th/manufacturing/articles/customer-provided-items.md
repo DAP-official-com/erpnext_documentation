@@ -1,38 +1,38 @@
 <!-- add-breadcrumbs -->
-# Customer Provided Items
+# รายการที่ลูกค้าให้มา
 
-In Contract Manufacturing, in some cases, the Customer provides specific items as one or few of the BOM components. These items cannot be received using a 'Buying Cycle' since that will mean making Customer as a Supplier at the same time. It will also go through each doctype in the cycle.
+ในการผลิตตามสัญญา ในบางกรณี ลูกค้าจะจัดเตรียมสินค้าเฉพาะเป็นส่วนประกอบ BOM หนึ่งหรือสองสามชิ้น ไม่สามารถรับสินค้าเหล่านี้ได้โดยใช้ 'รอบการซื้อ' เนื่องจากนั่นจะทำให้ลูกค้าเป็นซัพพลายเออร์ในเวลาเดียวกัน นอกจากนี้ยังจะผ่านแต่ละประเภทเอกสารในวงจร
 
-In this feature, Customer Provided Item is received through 'Stock Entry' with type 'Material Receipt' from a 'Material Request' with type 'Customer provided'. This feature is used when someone subcontracts the manufacturing process to you and supplies the raw materials.
+ในคุณลักษณะนี้ ลูกค้าจะได้รับสินค้าที่จัดเตรียมโดย 'รายการสต็อค' ด้วยประเภท 'ใบเสร็จรับเงินวัสดุ' จาก 'คำขอวัสดุ' ด้วยประเภท 'ลูกค้าระบุ' คุณลักษณะนี้ใช้เมื่อมีคนจ้างช่วงกระบวนการผลิตให้กับคุณและจัดหาวัตถุดิบ
 
 <img alt="Customer Provided Material Request" class="screenshot" src="/docs/assets/img/articles/material-request-customer-provided.png">
 
-Here are the steps on how to setup a 'Customer Provided' item.
+ต่อไปนี้เป็นขั้นตอนในการตั้งค่ารายการ 'ลูกค้าจัดให้'
 
-1.  Got to [Item Doctype](/docs/user/manual/en/stock) and add a new 'Customer Provided' item.
+1. ไปที่ [Item Doctype](/docs/user/manual/th/stock) และเพิ่มรายการ 'ที่ลูกค้าให้มา' ใหม่
 
-    > Home > Stock > Items and Pricing > Item
+    > หน้าหลัก > หุ้น > รายการและราคา > รายการสินค้า
 
-2.  In the 'Purchase, Replenishment Details' section, check 'Is Customer
-    Provided' and set a default Customer. Note that 'Is Purchase Item' needs to be unticked to use this feature.
+2. ในส่วน 'การซื้อ รายละเอียดการเติมสินค้า' ให้เลือก 'เป็นลูกค้าหรือไม่'
+    ให้' และตั้งค่าลูกค้าเริ่มต้น โปรดทราบว่าต้องยกเลิกการเลือก 'เป็นรายการซื้อ' เพื่อใช้คุณสมบัตินี้
 
     <img alt="Item Purchase Details" class="screenshot" src="{{docs_base_url}}/assets/img/articles/item-customer-provided.png">
 
-How to receive a 'Customer Provided' Item?
+จะรับสินค้าที่ 'ลูกค้าจัดให้' ได้อย่างไร?
 
-1.  If a 'Production Plan' is used, 'Material Request' for this item can be auto created. That is, the item to be manufactured is fetched first via Sales Order or Material Request, Items are fetched for the Work Order using the 'Get Items for Work Order' button, then click on the 'Get Raw Materials for Production' button.
+1. หากใช้ 'แผนการผลิต' สามารถสร้าง 'คำขอวัสดุ' สำหรับรายการนี้ได้โดยอัตโนมัติ นั่นคือ รายการที่จะผลิตจะถูกดึงออกมาก่อนผ่านใบสั่งขายหรือคำขอวัสดุ รายการจะถูกดึงมาสำหรับใบสั่งงานโดยใช้ปุ่ม 'รับรายการสำหรับใบสั่งงาน' จากนั้นคลิกที่ปุ่ม 'รับวัตถุดิบสำหรับการผลิต'
 
     <img alt="Material Request in Production Plan" class="screenshot" src="{{docs_base_url}}/assets/img/articles/material-request-production-plan.png">
 
-2. Once a component in a BOM is set as 'Customer Provided' and 'Material Request' is created from a 'Production Plan', it will create both 'Material Request' with type 'Purchase' and 'Customer Provided'. From there, a 'Stock Entry' with purpose 'Material Receipt' can be created.
+2. เมื่อส่วนประกอบใน BOM ถูกตั้งค่าเป็น 'ที่ลูกค้าให้มา' และ 'Material Request' ถูกสร้างขึ้นจาก 'แผนการผลิต' จะสร้างทั้ง 'คำขอวัสดุ' ด้วยประเภท 'ซื้อ' และ 'ลูกค้าให้' จากนั้น คุณสามารถสร้าง 'รายการสต็อค' ที่มีจุดประสงค์ 'ใบเสร็จรับเงินวัสดุ' ได้
 
    <img alt="Stock Entry from Material Request" class="screenshot" src="{{docs_base_url}}/assets/img/articles/create-mr-from-production-plan.png">
 
-3. A 'Material Request' can have multiple 'Stock Entry' - Material Receipt. It
-   will reflect it in the status.
+3. 'คำขอวัตถุดิบ' สามารถมี 'รายการสต็อค' ได้หลายรายการ - ใบเสร็จวัสดุ มัน
+   จะสะท้อนให้เห็นในสถานะ
 
-4. Customer will be able to track their 'Material Requests' in a Web Portal
-   'Material Requests'. The portal is filtered to show only the 'Material Request' of the customer.
+4. ลูกค้าจะสามารถติดตาม 'คำขอวัสดุ' ของพวกเขาในเว็บพอร์ทัล
+   'คำขอวัสดุ'. พอร์ทัลถูกกรองเพื่อแสดงเฉพาะ 'คำขอวัสดุ' ของลูกค้า
 
    <!-- <img alt="Partial Delivery from Stock Entry" class="screenshot" src="{{docs_base_url}}/assets/img/articles/partial-delivery-mr.png"> -->
 

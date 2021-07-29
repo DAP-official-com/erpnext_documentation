@@ -1,105 +1,105 @@
 <!-- add-breadcrumbs -->
-# Membership
+#สมาชิก
 
-The Membership doctype allows you to record membership details for the **Member**.
+เอกสารประเภทสมาชิกช่วยให้คุณสามารถบันทึกรายละเอียดการเป็นสมาชิกสำหรับ **สมาชิก**
 
-Membership is a term that refers to any organization that allows people to subscribe, and often requires them to pay a membership fee or "subscription".
+การเป็นสมาชิกเป็นคำที่อ้างถึงองค์กรใดๆ ที่อนุญาตให้ผู้คนสมัครสมาชิก และมักต้องการให้พวกเขาชำระค่าธรรมเนียมการเป็นสมาชิกหรือ "การสมัครสมาชิก"
 
-## 1. How to Create a Membership
+## 1. วิธีสร้างสมาชิก
 
-To create new Membership go to:
+ในการสร้างสมาชิกใหม่ไปที่:
 
-> Non Profit > Membership > New
+> องค์กรไม่แสวงหากำไร > การเป็นสมาชิก > ใหม่
 
 <img class="screenshot" alt="Membership" src="{{docs_base_url}}/assets/img/non_profit/membership/membership.png">
 
-**Member:** Member is a link field that fetches member details from Member doctype.
+**สมาชิก:** สมาชิกคือช่องลิงก์ที่ดึงรายละเอียดสมาชิกจาก doctype สมาชิก
 
-**Membership Status:** Membership Status is a select field that contains New, Current, Expired, Pending, and Cancelled. The Expired status will automatically be updated when the membership period gets over.
+**สถานะสมาชิก:** สถานะสมาชิกคือฟิลด์เลือกที่มีใหม่ ปัจจุบัน หมดอายุ รอดำเนินการ และยกเลิก สถานะหมดอายุจะอัปเดตโดยอัตโนมัติเมื่อระยะเวลาการเป็นสมาชิกหมดลง
 
-**Membership Date Details section:** This section contain information related to the Membership start date, end date, and member since date.
+**ส่วนรายละเอียดวันที่สมาชิก:** ส่วนนี้ประกอบด้วยข้อมูลที่เกี่ยวข้องกับวันที่เริ่มต้นการเป็นสมาชิก วันที่สิ้นสุด และสมาชิกตั้งแต่วันที่
 
-**Payment Details:** This section contains payment-related details. If the person paid for membership checkbox paid is marked as checked else unmarked. The Amount is fetch based on the membership type.
+**รายละเอียดการชำระเงิน:** ส่วนนี้มีรายละเอียดเกี่ยวกับการชำระเงิน หากช่องทำเครื่องหมายบุคคลที่ชำระเงินสำหรับการเป็นสมาชิกที่ชำระเงินแล้วถูกทำเครื่องหมายว่าถูกทำเครื่องหมายเป็นอย่างอื่นที่ไม่ได้ทำเครื่องหมาย จำนวนเงินจะถูกดึงตามประเภทการเป็นสมาชิก
 
-## 2. Features
+## 2. คุณสมบัติ
 
-## 2.1 Generate Invoice
+## 2.1 สร้างใบแจ้งหนี้
 
-If you have checked _Enable Invoicing_ in Membership Settings, you will see a button to generate a Sales Invoice from the Membership form.
+หากคุณเลือก _เปิดใช้งานการออกใบแจ้งหนี้_ ในการตั้งค่าการเป็นสมาชิก คุณจะเห็นปุ่มสำหรับสร้างใบกำกับสินค้าจากแบบฟอร์มการเป็นสมาชิก
 
-## 3. Membership Payments using RazorPay
+## 3. ชำระเงินค่าสมาชิกโดยใช้ RazorPay
 
-For recurring membership payments you can setup razorpay subscription for members. You can find instructions on setting up razorpay [here](/docs/user/manual/en/erpnext_integration/razorpay-integration)
+สำหรับการชำระค่าสมาชิกแบบเป็นงวด คุณสามารถตั้งค่าการสมัครสมาชิก razorpay สำหรับสมาชิกได้ คุณสามารถดูคำแนะนำในการตั้งค่า razorpay ได้ [ที่นี่](/docs/user/manual/th/erpnext_integration/razorpay-integration)
 
-> Note: This feature is available in Version 13 and above only.
+> หมายเหตุ: คุณลักษณะนี้มีให้ในเวอร์ชัน 13 ขึ้นไปเท่านั้น
 
-You can follow the steps listed below to setup a Razorpay subscription for memberships.
+คุณสามารถทำตามขั้นตอนด้านล่างเพื่อตั้งค่าการสมัครสมาชิก Razorpay สำหรับการเป็นสมาชิก
 
-1. Setup RazorPay
-1. Setup Billing details
-1. Setup Plans
-1. Import Existing Members
-1. Setup RazorPay Webhook
-1. Setup Website
+1. ตั้งค่า RazorPay
+1. ตั้งค่ารายละเอียดการเรียกเก็บเงิน
+1. ตั้งค่าแผน
+1. นำเข้าสมาชิกที่มีอยู่
+1. ตั้งค่า RazorPay Webhook
+1. ตั้งค่าเว็บไซต์
 
-## 3.1 Membership Settings
+## 3.1 การตั้งค่าสมาชิก
 
-You can find instructions on setting up razorpay [here](/docs/user/manual/en/erpnext_integration/razorpay-integration). You can setup billing in Membership Settings in the Non Profit module.
+คุณสามารถดูคำแนะนำในการตั้งค่า razorpay ได้ [ที่นี่](/docs/user/manual/th/erpnext_integration/razorpay-integration) คุณสามารถตั้งค่าการเรียกเก็บเงินในการตั้งค่าการเป็นสมาชิกในโมดูลองค์กรไม่แสวงหากำไร
 
 <img class="screenshot" alt="Membership" src="{{docs_base_url}}/assets/img/non_profit/razorpay-enabled.png">
 
-Checking _Enable RazorPay For Memberships_ will show you more configuration options.
+การตรวจสอบ _Enable RazorPay For Memberships_ จะแสดงตัวเลือกการกำหนดค่าเพิ่มเติม
 
-- **Billing Cycle**: This is the period of time between billings. You can either select Monthly or Yearly Billing.
-- **Billing Frequency**: The number of billing cycles for which the customer should be charged. For example, if a customer is buying a 1-year membership that should be billed on a monthly basis, this value should be 12.
+- **รอบการเรียกเก็บเงิน**: นี่คือช่วงเวลาระหว่างการเรียกเก็บเงิน คุณสามารถเลือกการเรียกเก็บเงินรายเดือนหรือรายปี
+- **ความถี่ในการเรียกเก็บเงิน**: จำนวนรอบการเรียกเก็บเงินที่ลูกค้าควรถูกเรียกเก็บเงิน ตัวอย่างเช่น หากลูกค้าซื้อการเป็นสมาชิก 1 ปีซึ่งควรเรียกเก็บเงินเป็นรายเดือน ค่านี้ควรเป็น 12
 
 <img class="screenshot" alt="Membership" src="{{docs_base_url}}/assets/img/non_profit/membership/membership-settings.png">
 
-There are other configurations available for Invoicing.
+มีการกำหนดค่าอื่นๆ สำหรับการออกใบแจ้งหนี้
 
-- **Enable Invoicing**: Checking this will enable creating invoices for memberships using a **Generate Invoice** button.
-- **Auto Create Invoice for Web Forms**: If you have custom web forms set-up, enabling this will automatically create Sales Invoice when payment is authorized.
-- **Make Payment Entry**: Auto creates Payment Entry for Sales Invoices created from Membership using web forms.
+- **เปิดใช้งานการออกใบแจ้งหนี้**: การตรวจสอบนี้จะเปิดใช้งานการสร้างใบแจ้งหนี้สำหรับการเป็นสมาชิกโดยใช้ปุ่ม **สร้างใบแจ้งหนี้**
+- **สร้างใบแจ้งหนี้อัตโนมัติสำหรับเว็บฟอร์ม**: หากคุณมีการตั้งค่าเว็บฟอร์มแบบกำหนดเอง การเปิดใช้งานนี้จะสร้างใบแจ้งหนี้การขายโดยอัตโนมัติเมื่อมีการอนุมัติการชำระเงิน
+- **ชำระเงิน**: สร้างรายการชำระเงินอัตโนมัติสำหรับใบแจ้งหนี้การขายที่สร้างจากการเป็นสมาชิกโดยใช้แบบฟอร์มบนเว็บ
 
-Checking _Enable Invoicing_ will allow you to configure the Company and Debit Account for your invoices. Checking **Make Payment Entry** will allow you to configure the Payment Account.
+การตรวจสอบ _เปิดใช้งานการออกใบแจ้งหนี้_ จะช่วยให้คุณสามารถกำหนดค่าบริษัทและบัญชีเดบิตสำหรับใบแจ้งหนี้ของคุณได้ การตรวจสอบ **ชำระเงิน** จะช่วยให้คุณสามารถกำหนดค่าบัญชีการชำระเงินได้
 
-- **Send Membership Acknowledgement**: If this is enabled, you will get an option to send an acknowledgment about the Membership to the member once the invoice has been generated.
-- **Email Template**: You can configure the email template for the acknowledgment and set it here.
+- **ส่งการตอบรับการเป็นสมาชิก**: หากเปิดใช้งาน คุณจะมีตัวเลือกในการส่งการตอบรับเกี่ยวกับการเป็นสมาชิกไปยังสมาชิกเมื่อมีการสร้างใบแจ้งหนี้
+- **เทมเพลตอีเมล**: คุณสามารถกำหนดค่าเทมเพลตอีเมลสำหรับการตอบรับและตั้งค่าได้ที่นี่
 
-If _Send Membership Acknowledgement_ is enabled, you can enable _Send Invoice with Email_ to send the Invoice along with the Membership. You can also configure print formats for Membership and Invoice individually here.
+หากเปิดใช้งาน _Send Membership Acknowledgement_ คุณสามารถเปิดใช้งาน _Send Invoice with Email_ เพื่อส่งใบแจ้งหนี้พร้อมกับการเป็นสมาชิกได้ คุณยังสามารถกำหนดค่ารูปแบบการพิมพ์สำหรับการเป็นสมาชิกและใบแจ้งหนี้ทีละรายการได้ที่นี่
 
-## 3.2 Setting Up Plans
+## 3.2 การตั้งค่าแผน
 
-Membership Type corresponds to your RazorPay plan. You can read more about Membership Plan [here](/docs/user/manual/en/non_profit/membership_type)
+ประเภทสมาชิกสอดคล้องกับแผน RazorPay ของคุณ คุณสามารถอ่านเพิ่มเติมเกี่ยวกับแผนการเป็นสมาชิกได้ [ที่นี่](/docs/user/manual/th/non_profit/membership_type)
 
 <img class="screenshot" alt="Membership" src="{{docs_base_url}}/assets/img/non_profit/plan.png">
 
-When Razorpay subscription options are activated, you will see a **Plan ID** field. This is where you can add the plan id from Razorpay.
+เมื่อเปิดใช้งานตัวเลือกการสมัครสมาชิก Razorpay คุณจะเห็นฟิลด์ **รหัสแผน** นี่คือที่ที่คุณสามารถเพิ่มรหัสแผนจาก Razorpay
 
-> Note: You have to add all your active plans and legacy plans for seamless billing.
+> หมายเหตุ: คุณต้องเพิ่มแผนที่ใช้งานอยู่และแผนเดิมทั้งหมดเพื่อการเรียกเก็บเงินที่ราบรื่น
 
-## 3.3 Importing Members
+## 3.3 การนำเข้าสมาชิก
 
-If you already have members you can import them using the [Data Import Tool](/docs/user/manual/en/setting-up/data/data-import). Here's a [video tutorial](https://www.youtube.com/watch?v=WlGD35DM5LI) of the same.
+หากคุณมีสมาชิกอยู่แล้ว คุณสามารถนำเข้าโดยใช้ [เครื่องมือนำเข้าข้อมูล](/docs/user/manual/th/setting-up/data/data-import) นี่คือ[วิดีโอสอน](https://www.youtube.com/watch?v=WlGD35DM5LI) ของสิ่งเดียวกัน
 
-You need to import members with the following fields.
+คุณต้องนำเข้าสมาชิกด้วยฟิลด์ต่อไปนี้
 
-1. **Member Name**: Full name of the member
-1. **Membership Type**: Name of the plan they are subscribed to
-1. **Email Address**: Email ID used for Razorpay transactions
-1. **Subscription ID**: Subscription ID provided by RazorPay
-1. **Customer ID**: Subscription ID provided by RazorPay
-1. **Member PAN**: This is optional
+1. **ชื่อสมาชิก**: ชื่อเต็มของสมาชิก
+1. **ประเภทสมาชิก**: ชื่อของแผนงานที่สมัครไว้
+1. **ที่อยู่อีเมล**: ID อีเมลที่ใช้สำหรับการทำธุรกรรมของ Razorpay
+1. **รหัสการสมัครสมาชิก**: รหัสการสมัครสมาชิกที่ RazorPay . ให้มา
+1. **รหัสลูกค้า**: รหัสการสมัครสมาชิกที่ RazorPay . ให้มา
+1. **สมาชิก PAN**: เป็นตัวเลือก
 
-> Note: RazorPay subscriptions will only be tracked for those members whose data exists in the Member list.
+> หมายเหตุ: การสมัครสมาชิก RazorPay จะถูกติดตามสำหรับสมาชิกที่มีข้อมูลอยู่ในรายชื่อสมาชิกเท่านั้น
 
-This is how a member will look like in ERPNext.
+นี่คือลักษณะของสมาชิกใน ERPNext
 <img class="screenshot" alt="Membership" src="{{docs_base_url}}/assets/img/non_profit/member.png">
 
 
-## 3.4 Setting up webhook
+## 3.4 การตั้งค่า webhook
 
-You can set up a webhook from the RazorPay dashboard in settings. You can read more about webhooks in RazorPay [here](https://razorpay.com/docs/webhooks/). This webhook will notify your ERPNext site whenever a new subscription is created or renewed.
+คุณสามารถตั้งค่าเว็บฮุคจากแดชบอร์ด RazorPay ในการตั้งค่า คุณสามารถอ่านเพิ่มเติมเกี่ยวกับเว็บฮุคใน RazorPay ได้ [ที่นี่](https://razorpay.com/docs/webhooks/) เว็บฮุคนี้จะแจ้งไซต์ ERPNext ของคุณทุกครั้งที่มีการสร้างหรือต่ออายุการสมัครใหม่
 
 <img class="screenshot" alt="Membership" src="{{docs_base_url}}/assets/img/non_profit/razorpay-webhook.png">
 
@@ -107,34 +107,34 @@ You will need the following details to set up the webhook.
 
 ### 3.4.1 Webhook URL
 
-The following is the URL for your ERPNext site. This is the endpoint RazorPay will utilize to notify of any subscription related activity.
+ต่อไปนี้คือ URL สำหรับไซต์ ERPNext ของคุณ นี่คือจุดสิ้นสุด RazorPay จะใช้เพื่อแจ้งกิจกรรมที่เกี่ยวข้องกับการสมัครรับข้อมูล
 
 ```sh
 https://<your-site>/api/method/erpnext.non_profit.doctype.membership.membership.trigger_razorpay_subscription
 ```
 
-### 3.4.2 Events
+### 3.4.2 กิจกรรม
 
-You have to enable `subscription.activated` and `subscription.charged` events.
+คุณต้องเปิดใช้งานเหตุการณ์ "subscription.activated" และ "subscription.charged"
 
-### 3.4.3 Active
-Check this to enable the webhook
+### 3.4.3 ใช้งานอยู่
+เลือกตัวเลือกนี้เพื่อเปิดใช้งาน Webhook
 
-With this, your webhook is activated
+ด้วยวิธีนี้ Webhook ของคุณจะถูกเปิดใช้งาน
 
-## 3.5 Triggering new subscription from your website
+## 3.5 เรียกการสมัครใหม่จากเว็บไซต์ของคุณ
 
-You can use the [RazorPay client side integration](https://razorpay.com/docs/payment-gateway/web-integration/) to set up payment on your site. To do so, you will first have to create a subscription order with RazorPay against which you can trigger a payment.
+คุณสามารถใช้ [การรวมฝั่งไคลเอ็นต์ของ RazorPay](https://razorpay.com/docs/payment-gateway/web-integration/) เพื่อตั้งค่าการชำระเงินบนไซต์ของคุณ ในการดำเนินการดังกล่าว คุณจะต้องสร้างคำสั่งซื้อการสมัครใช้งานด้วย RazorPay ก่อน ซึ่งคุณสามารถเรียกชำระเงินได้
 
-To create a subscription order, you can use the `create_member_subscription_order` endpoint in ERPNext.
+ในการสร้างคำสั่งซื้อการสมัคร คุณสามารถใช้ปลายทาง `create_member_subscription_order` ใน ERPNext
 
-You can send a POST request at the following endpoint
+คุณสามารถส่งคำขอ POST ได้ที่จุดสิ้นสุดต่อไปนี้
 
 ```sh
 https://<your-site>/api/method/erpnext.non_profit.doctype.member.member.create_member_subscription_order
 ```
 
-The arguments to be passed is a dictionary with member details
+อาร์กิวเมนต์ที่จะส่งผ่านคือพจนานุกรมที่มีรายละเอียดสมาชิก
 
 ```javascript
 {
@@ -146,7 +146,7 @@ The arguments to be passed is a dictionary with member details
 }
 ```
 
-On successful creation, a member and customer will automatically be created. The endpoint will return a JSON as follows.
+เมื่อสร้างสำเร็จ สมาชิกและลูกค้าจะถูกสร้างขึ้นโดยอัตโนมัติ จุดสิ้นสุดจะส่งคืน JSON ดังนี้
 
 ```javascript
 {
@@ -158,6 +158,6 @@ On successful creation, a member and customer will automatically be created. The
 }
 ```
 
-You can use the `subscription_id` to trigger a payment.
+คุณสามารถใช้ `subscription_id` เพื่อเรียกชำระเงินได้
 
 {next}

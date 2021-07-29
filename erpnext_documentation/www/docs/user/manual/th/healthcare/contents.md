@@ -1,62 +1,62 @@
 <!-- add-breadcrumbs -->
-# Healthcare
+# ดูแลสุขภาพ
 
-Life is priceless, and you, as a healthcare practitioner would need the best tools to honor it. ERPNext Healthcare domain is a humble initiative to help you serve your patients better.
+ชีวิตนั้นประเมินค่าไม่ได้ และคุณในฐานะผู้ประกอบวิชาชีพด้านการแพทย์ย่อมต้องการเครื่องมือที่ดีที่สุดเพื่อเป็นเกียรติแก่ชีวิต โดเมน ERPNext Healthcare เป็นความคิดริเริ่มที่จะช่วยให้คุณให้บริการผู้ป่วยได้ดียิ่งขึ้น
 
-ERPNext Healthcare helps you manage your hospital, clinic or practice efficiently by scheduling **Appointments**, capturing **Vitals** and managing medication and investigation orders by recording **Patient Encounters**. You can easily pull out a **Patient's Medical History** anytime to review the patient's past conditions and treatments assisting you in providing effective, high-quality care. ERPNext Healthcare allows you to manage multiple **Medical Code Standards** like the ICD 10 and easily search for Medical Codes simplifying the coding process. ERPNext Healthcare also comes with a **Laboratory** module with predefined templates for recording common Lab Tests. Reports like **Appointment Analytics** and **Lab Test Report** help you get a thorough idea of the operations.
+ERPNext Healthcare ช่วยให้คุณจัดการโรงพยาบาล คลินิก หรือสถานปฏิบัติได้อย่างมีประสิทธิภาพโดยกำหนดเวลา **การนัดหมาย** จับ **Vitals** และจัดการคำสั่งยาและการตรวจสอบโดยการบันทึก **การเผชิญหน้าผู้ป่วย** คุณสามารถดึง **ประวัติทางการแพทย์ของผู้ป่วย** ออกมาได้อย่างง่ายดายทุกเมื่อเพื่อตรวจสอบสภาพและการรักษาที่ผ่านมาของผู้ป่วย ซึ่งจะช่วยให้คุณให้การดูแลที่มีประสิทธิภาพและมีคุณภาพสูง ERPNext Healthcare ช่วยให้คุณจัดการ **มาตรฐานรหัสทางการแพทย์** ได้หลายแบบ เช่น ICD 10 และค้นหารหัสทางการแพทย์ได้อย่างง่ายดาย ซึ่งทำให้กระบวนการเข้ารหัสง่ายขึ้น ERPNext Healthcare ยังมาพร้อมกับโมดูล **ห้องปฏิบัติการ** พร้อมเทมเพลตที่กำหนดไว้ล่วงหน้าสำหรับการบันทึกการทดสอบในห้องปฏิบัติการทั่วไป รายงานต่างๆ เช่น **การวิเคราะห์การนัดหมาย** และ **รายงานการทดสอบในห้องปฏิบัติการ** ช่วยให้คุณทราบถึงแนวคิดโดยละเอียดเกี่ยวกับการดำเนินงาน
 
-## Topics
+## หัวข้อ
 
-The following are the detailed guides on each of the functionalities ready to use in the ERPNext Healthcare domain.
+ต่อไปนี้เป็นคำแนะนำโดยละเอียดเกี่ยวกับฟังก์ชันการทำงานแต่ละรายการที่พร้อมใช้งานในโดเมน ERPNext Healthcare
 
-### 1. Basics
-1. [Introduction](/docs/user/manual/en/healthcare/introduction)
-1. [Patient](/docs/user/manual/en/healthcare/patient)
-1. [Healthcare Practitioner](/docs/user/manual/en/healthcare/healthcare_practitioner)
-1. [Practitioner Schedule](/docs/user/manual/en/healthcare/practitioner_schedule)
-1. [Medical Department](/docs/user/manual/en/healthcare/medical_department)
-1. [Healthcare Service Unit Type](/docs/user/manual/en/healthcare/healthcare_service_unit_type)
-1. [Healthcare Service Unit](/docs/user/manual/en/healthcare/healthcare_service_unit)
-1. [Medical Code Standards](/docs/user/manual/en/healthcare/medical_code_standard)
-1. [Medical Code](/docs/user/manual/en/healthcare/medical_code)
+### 1. พื้นฐาน
+1. [บทนำ](/docs/user/manual/th/healthcare/introduction)
+1. [ผู้ป่วย](/docs/user/manual/th/healthcare/patient)
+1. [แพทย์เวชปฏิบัติ](/docs/user/manual/th/healthcare/healthcare_practitioner)
+1. [ตารางแพทย์](/docs/user/manual/th/healthcare/practitioner_schedule)
+1. [กรมการแพทย์](/docs/user/manual/th/healthcare/medical_department)
+1. [ประเภทหน่วยบริการสุขภาพ](/docs/user/manual/th/healthcare/healthcare_service_unit_type)
+1. [หน่วยบริการสุขภาพ](/docs/user/manual/th/healthcare/healthcare_service_unit)
+1. [Medical Code Standards](/docs/user/manual/th/healthcare/medical_code_standard)
+1. [รหัสการแพทย์](/docs/user/manual/th/healthcare/medical_code)
 
-### 2. Consultation Setup
-1. [Appointment Type](/docs/user/manual/en/healthcare/appointment_type)
-1. [Clinical Procedure Template](/docs/user/manual/en/healthcare/clinical_procedure_template)
-1. [Prescription Dosage and Duration](/docs/user/manual/en/healthcare/prescription_dosage_and_duration)
+### 2. การตั้งค่าการให้คำปรึกษา
+1. [ประเภทการนัดหมาย](/docs/user/manual/th/healthcare/appointment_type)
+1. [เทมเพลตขั้นตอนทางคลินิก](/docs/user/manual/th/healthcare/clinical_procedure_template)
+1. [ขนาดยาและระยะเวลาที่ต้องสั่งโดยแพทย์](/docs/user/manual/th/healthcare/prescription_dosage_and_duration)
 
-### 3. Consultation
-1. [Patient Appointment](/docs/user/manual/en/healthcare/patient_appointment)
-1. [Clinical Procedure](/docs/user/manual/en/healthcare/clinical_procedure)
-1. [Patient Encounter](/docs/user/manual/en/healthcare/patient_encounter)
-1. [Vital Signs](/docs/user/manual/en/healthcare/vital_signs)
-1. [Complaints and Diagnosis](/docs/user/manual/en/healthcare/complaint_and_diagnosis)
-1. [Fee Validity](/docs/user/manual/en/healthcare/fee_validity)
+### 3. ให้คำปรึกษา
+1. [การนัดหมายผู้ป่วย](/docs/user/manual/th/healthcare/patient_appointment)
+1. [ขั้นตอนทางคลินิก](/docs/user/manual/th/healthcare/clinical_procedure)
+1. [พบผู้ป่วย](/docs/user/manual/th/healthcare/patient_encounter)
+1. [Vital Signs](/docs/user/manual/th/healthcare/vital_signs)
+1. [ข้อร้องเรียนและการวินิจฉัย](/docs/user/manual/th/healthcare/complaint_and_diagnosis)
+1. [ความถูกต้องของค่าธรรมเนียม](/docs/user/manual/th/healthcare/fee_validity)
 
-### 4. Inpatient
-1. [Inpatient Record](/docs/user/manual/en/healthcare/inpatient_record)
-2. [Inpatient Medication Order](/docs/user/manual/en/healthcare/inpatient_medication_order)
-3. [Inpatient Medication Entry](/docs/user/manual/en/healthcare/inpatient_medication_entry)
+### 4. ผู้ป่วยใน
+1. [บันทึกผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_record)
+2. [ใบสั่งยาผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_medication_order)
+3. [รายการยาสำหรับผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_medication_entry)
 
-### 5. Rehabilitation and Physiotherapy
-1. [Exercise Type](/docs/user/manual/en/healthcare/exercise_type)
-1. [Therapy Type](/docs/user/manual/en/healthcare/therapy_type)
-1. [Therapy Plan Template](/docs/user/manual/en/healthcare/therapy_plan_template)
-1. [Therapy Plan](/docs/user/manual/en/healthcare/therapy_plan)
-1. [Therapy Session](/docs/user/manual/en/healthcare/therapy_session)
-1. [Patient Assessment Template](/docs/user/manual/en/healthcare/patient_assessment_template)
-1. [Patient Assessment](/docs/user/manual/en/healthcare/patient_assessment)
+### 5. การฟื้นฟูสมรรถภาพและกายภาพบำบัด
+1. [ประเภทการออกกำลังกาย](/docs/user/manual/th/healthcare/exercise_type)
+1. [ประเภทการบำบัด](/docs/user/manual/th/healthcare/therapy_type)
+1. [เทมเพลตแผนการบำบัด](/docs/user/manual/th/healthcare/therapy_plan_template)
+1. [แผนการบำบัด](/docs/user/manual/th/healthcare/therapy_plan)
+1. [ช่วงการบำบัด](/docs/user/manual/th/healthcare/therapy_session)
+1. [แม่แบบการประเมินผู้ป่วย](/docs/user/manual/th/healthcare/patient_assessment_template)
+1. [การประเมินผู้ป่วย](/docs/user/manual/th/healthcare/patient_assessment)
 
-### 6. Settings
-1. [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings)
-1. [Patient History Settings](/docs/user/manual/en/healthcare/patient_history_settings)
+### 6. การตั้งค่า
+1. [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings)
+1. [การตั้งค่าประวัติผู้ป่วย](/docs/user/manual/th/healthcare/patient_history_settings)
 
-### 7. Laboratory
-1. [Lab Test Template](/docs/user/manual/en/healthcare/lab_test_template)
-1. [Lab Test](/docs/user/manual/en/healthcare/lab_test)
-1. [Sample Collection](/docs/user/manual/en/healthcare/sample_collection)
+### 7. ห้องปฏิบัติการ
+1. [Lab Test Template](/docs/user/manual/th/healthcare/lab_test_template)
+1. [Lab Test](/docs/user/manual/th/healthcare/lab_test)
+1. [Sample Collection](/docs/user/manual/th/healthcare/sample_collection)
 
-### 8. Records, History and Reports
-1. [Patient History](/docs/user/manual/en/healthcare/patient_history)
-1. [Patient Appointment Analytics](/docs/user/manual/en/healthcare/patient_appointment_analytics)
-1. [Inpatient Medication Orders Report](/docs/user/manual/en/healthcare/inpatient_medication_orders_report)
+### 8. บันทึก ประวัติ และรายงาน
+1. [ประวัติผู้ป่วย](/docs/user/manual/th/healthcare/patient_history)
+1. [การวิเคราะห์การนัดหมายผู้ป่วย](/docs/user/manual/th/healthcare/patient_appointment_analytics)
+1. [รายงานใบสั่งยาผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_medication_orders_report)

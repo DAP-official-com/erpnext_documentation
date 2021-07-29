@@ -1,39 +1,39 @@
 <!-- add-breadcrumbs -->
 
-# Patient Appointment Analytics
+# การวิเคราะห์การนัดหมายผู้ป่วย
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-Appointment Analytics Report helps you get insights about the number of Appointments created according to:
+รายงานการวิเคราะห์การนัดหมายช่วยให้คุณได้รับข้อมูลเชิงลึกเกี่ยวกับจำนวนการนัดหมายที่สร้างขึ้นตาม:
 
-- Medical Departments
-- Healthcare Practitioners
+- แผนกการแพทย์
+- ผู้ประกอบการด้านการดูแลสุขภาพ
 
-To view the Patient Appointment Analytics, you can go to:
+หากต้องการดูการวิเคราะห์การนัดหมายผู้ป่วย คุณสามารถไปที่:
 
-> Home > Healthcare > Reports > Patient Appointment Analytics
+> หน้าแรก > การดูแลสุขภาพ > รายงาน > การวิเคราะห์การนัดหมายผู้ป่วย
 
-Appointment Analytics according to Healthcare Practitioner is the default view:
+การวิเคราะห์การนัดหมายตาม Healthcare Practitioner เป็นข้อมูลพร็อพเพอร์ตี้เริ่มต้น:
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/appointment_analytics_1.png">
 
-According to Medical Department:
+ตามที่แผนกการแพทย์:
 
 <img class="screenshot" alt="ERPNext Healthcare" src="/docs/assets/img/healthcare/appointment_analytics_2.png">
 
-The toolbar provides filters to select what data is to be used. Using the dropdown selections, the data displayed can be refined. As the selections are made, data is reflected in the data window as well as the graph window. The various filters available are:
+แถบเครื่องมือมีตัวกรองเพื่อเลือกข้อมูลที่จะใช้ ข้อมูลที่แสดงสามารถปรับปรุงได้โดยใช้การเลือกดรอปดาวน์ เมื่อทำการเลือก ข้อมูลจะแสดงในหน้าต่างข้อมูลและหน้าต่างกราฟ ตัวกรองต่างๆ ที่มีอยู่คือ:
 
-- Appointment Type
-- Healthcare Practitioner
-- Appointment Status
-- Medical Department
+- ประเภทการนัดหมาย
+- แพทย์เวชปฏิบัติ
+- สถานะการนัดหมาย
+- แผนกการแพทย์
 
     <img class="screenshot" alt="Appointment Analytics Filters" src="/docs/assets/img/healthcare/appointment_analytics_filters.png">
 
-You can use the checkboxes on the Left Hand Side to choose what rows you want to see in the chart:
+คุณสามารถใช้ช่องทำเครื่องหมายทางด้านซ้ายมือเพื่อเลือกแถวที่คุณต้องการดูในแผนภูมิ:
 
 <img class="screenshot" src="/docs/assets/img/healthcare/appointment_analytics.gif">
 
-Using the **Set Chart** button, you can set values for the X and Y fields, use different types of charts and select a color.
+เมื่อใช้ปุ่ม **ตั้งค่าแผนภูมิ** คุณสามารถตั้งค่าสำหรับฟิลด์ X และ Y ใช้แผนภูมิประเภทต่างๆ และเลือกสีได้
 
 {next}

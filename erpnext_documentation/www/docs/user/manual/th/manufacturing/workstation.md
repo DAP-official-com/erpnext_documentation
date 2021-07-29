@@ -1,64 +1,63 @@
 <!-- add-breadcrumbs -->
-# Workstation
+#เวิร์คสเตชั่น
 
-**A Workstation stores information regarding the place where the workstation operations are carried out.**
+**เวิร์กสเตชันจัดเก็บข้อมูลเกี่ยวกับสถานที่ดำเนินการเวิร์กสเตชัน**
 
-Data regarding the operation cost, rent, electricity can be stored here. 
+ข้อมูลเกี่ยวกับค่าดำเนินการ ค่าเช่า ค่าไฟฟ้า สามารถจัดเก็บได้ที่นี่
 
-> Note: An Operation can take place at multiple Workstations.
+> หมายเหตุ: การดำเนินการสามารถเกิดขึ้นได้ในหลายเวิร์กสเตชัน
 
-> An Operation takes place at a Workstation. The Operation is the work performed and the Workstation is the place/machine where it is performed. For example, melting is an Operation that can be done at 10 different Workstations.
+> การดำเนินการเกิดขึ้นที่เวิร์กสเตชัน การดำเนินการคืองานที่ทำ และเวิร์กสเตชันเป็นสถานที่/เครื่องจักรที่ดำเนินการ ตัวอย่างเช่น การหลอมเป็นการดำเนินการที่สามารถทำได้ใน 10 เวิร์กสเตชันที่แตกต่างกัน
 
-To access the Workstation list, go to:
+ในการเข้าถึงรายการเวิร์กสเตชัน ไปที่:
 
-> Home > Manufacturing > Bill of Materials > Workstation
+> หน้าหลัก > การผลิต > รายการวัสดุ > เวิร์กสเตชัน
 
-## 1. How to create a Workstation
-1. Go to the Workstation list, click on New.
-1. Enter a name for the Workstation.
-1. Under Operating Costs, enter the following as applicable:
- * Electricity Cost
- * Rent Cost
- * Consumable Cost
- * Wages
-1. Save.
+## 1. วิธีสร้างเวิร์กสเตชัน
+1. ไปที่รายการเวิร์กสเตชัน คลิกที่ใหม่
+1. ป้อนชื่อสำหรับเวิร์กสเตชัน
+1. ภายใต้ ต้นทุนการดำเนินงาน ให้ป้อนข้อมูลต่อไปนี้ตามความเหมาะสม:
+ * ค่าไฟฟ้า
+ * ค่าเช่า
+ * ต้นทุนวัสดุสิ้นเปลือง
+ * ค่าจ้าง
+1. บันทึก
 
-Optionally, you can enter a description for the Workstation.
+คุณสามารถป้อนคำอธิบายสำหรับเวิร์กสเตชันได้
 
 ![Workstation](/docs/assets/img/manufacturing/workstation.png)
 
-The hours when the Workstation will be Operational can be added. On adding a Holiday list, the days listed as holidays won't be counted as working for the Workstation.
+สามารถเพิ่มชั่วโมงที่เวิร์กสเตชันจะทำงานได้ ในการเพิ่มรายการวันหยุด วันที่ที่ระบุว่าเป็นวันหยุดจะไม่ถูกนับเป็นการทำงานสำหรับเวิร์กสเตชัน
 ![Workstation Hours](/docs/assets/img/manufacturing/workstation-hours.png)
 
-After saving the Workstation, the following actions can be performed against it:
+หลังจากบันทึกเวิร์กสเตชันแล้ว การดำเนินการต่อไปนี้สามารถดำเนินการได้:
 ![Workstation submit](/docs/assets/img/manufacturing/workstation-submit.png)
 
-## 2. Features
-### 2.1 Production Capacity
-Production Capacity is the total number of jobs can be executed at the same time in the respective workstation.
+## 2. คุณสมบัติ
+### 2.1 กำลังการผลิต
+กำลังการผลิตคือจำนวนงานทั้งหมดที่สามารถดำเนินการได้พร้อมกันในเวิร์กสเตชันที่เกี่ยวข้อง
 
 <img class="screenshot" alt="Work Order" src="{{docs_base_url}}/assets/img/manufacturing/work_station_capacity.png">
 
-### 2.2 Working Hours
-Under Working Hours table, you can add start and end times for a Workstation. For example, a Workstation may be active from 9 am to 1 pm, then 2 pm to 5 pm. You can also specify the working hours based on shifts. While scheduling a [Work Order](/docs/user/manual/en/manufacturing/work-order), the system will check for the availability of the Workstation based on the working hours specified.
+### 2.2 ชั่วโมงการทำงาน
+ภายใต้ตารางชั่วโมงทำงาน คุณสามารถเพิ่มเวลาเริ่มต้นและสิ้นสุดสำหรับเวิร์กสเตชันได้ ตัวอย่างเช่น เวิร์กสเตชันอาจเปิดใช้งานตั้งแต่ 9.00 น. ถึง 13.00 น. จากนั้น 14.00 น. ถึง 17.00 น. คุณยังสามารถระบุชั่วโมงทำงานตามกะได้ ขณะกำหนดเวลา [ใบสั่งงาน](/docs/user/manual/th/manufacturing/work-order) ระบบจะตรวจสอบความพร้อมของเวิร์กสเตชันตามเวลาทำงานที่ระบุ
 
-### 2.3 Holiday List
-1. A [Holiday List](/docs/user/manual/en/human-resources/holiday-list) can be added to exclude counting these days for the Workstation.
+### 2.3 รายการวันหยุด
+1. สามารถเพิ่ม [Holiday List](/docs/user/manual/th/human-resources/holiday-list) เพื่อยกเว้นการนับวันเหล่านี้สำหรับเวิร์กสเตชัน
 
+> หมายเหตุ : คุณสามารถเปิดใช้งานการทำงานล่วงเวลาสำหรับเวิร์กสเตชันได้ใน [การตั้งค่าผู้ผลิต](/docs/user/manual/th/manufacturing/manufacturing-settings)
 
-> Note : You can enable overtime for a Workstation in [Manufacturing Settings](/docs/user/manual/en/manufacturing/manufacturing-settings)
-
-## 3. Video
+## 3. วีดีโอ
 <div class="embed-container">
  <iframe src="https://www.youtube.com/embed/UVGfzwOOZC4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
  </iframe>
 </div>
 
-## 4. Related Topics
-1. [Bill Of Materials](/docs/user/manual/en/manufacturing/bill-of-materials)
-1. [Operation](/docs/user/manual/en/manufacturing/operation)
-1. [Routing](/docs/user/manual/en/manufacturing/routing)
-1. [Work Order](/docs/user/manual/en/manufacturing/work-order)
-1. [Job Card](/docs/user/manual/en/manufacturing/job-card)
+## 4. หัวข้อที่เกี่ยวข้อง
+1. [รายการวัสดุ](/docs/user/manual/th/manufacturing/bill-of-materials)
+1. [การทำงาน](/docs/user/manual/th/manufacturing/operation)
+1. [การกำหนดเส้นทาง](/docs/user/manual/th/manufacturing/routing)
+1. [สั่งงาน](/docs/user/manual/th/manufacturing/work-order)
+1. [บัตรงาน](/docs/user/manual/th/manufacturing/job-card)
 
 {next}

@@ -1,61 +1,61 @@
 <!-- add-breadcrumbs -->
-# Setting Up Clinic / Practice
+# การจัดตั้งคลินิก / การปฏิบัติ
 
-You can easily configure the masters for setting up ERPNext Healthcare for your practice. Below are a list of documents which helps you speed up data entry. Also read [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings) for setting up the Healthcare module.
+คุณสามารถกำหนดค่าต้นแบบสำหรับการตั้งค่า ERPNext Healthcare สำหรับสถานประกอบการของคุณได้อย่างง่ายดาย ด้านล่างนี้คือรายการเอกสารที่ช่วยให้คุณป้อนข้อมูลได้เร็วขึ้น โปรดอ่าน [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings) เพื่อตั้งค่าโมดูล Healthcare
 
-## Medical Department
-To organize your clinic into departments, you can create multiple Medical Departments.
+## กรมการแพทย์
+ในการจัดระเบียบคลินิกของคุณออกเป็นแผนกต่างๆ คุณสามารถสร้างแผนกการแพทย์ได้หลายแผนก
 
-`Healthcare > Setup > Medical Department > New Medical Department`
+`การดูแลสุขภาพ > ตั้งค่า > แผนกการแพทย์ > แผนกการแพทย์ใหม่`
 
-## Appointment Type
-You can create masters for various type of Appointments. Appointment Type allows you to predefine the duration of the appointment so that while selecting Appointment Type, the duration gets set in the Appointment automatically. This will allow you to override the duration of appointments set by the Practitioner Schedule and the time slots will adjust to the next available time automatically.
+## ประเภทนัดหมาย
+คุณสามารถสร้างต้นแบบสำหรับการนัดหมายประเภทต่างๆ ประเภทการนัดหมายช่วยให้คุณสามารถกำหนดระยะเวลาของการนัดหมายล่วงหน้า เพื่อที่ว่าในขณะที่เลือกประเภทการนัดหมาย ระยะเวลาจะได้รับการตั้งค่าในการนัดหมายโดยอัตโนมัติ ซึ่งจะทำให้คุณสามารถแทนที่ระยะเวลาของการนัดหมายที่กำหนดโดยตารางผู้ปฏิบัติงานและช่วงเวลาจะปรับเป็นเวลาที่ว่างถัดไปโดยอัตโนมัติ
 
->Note: To disable this behavior, you can enable `Always Use Slot Duration as Appointment Duration` in the Practitioner master. This is will always set the slot duration configured in the Practitioner Schedule as the Appointment duration. 
+>หมายเหตุ: หากต้องการปิดใช้งานลักษณะการทำงานนี้ คุณสามารถเปิดใช้งาน `ใช้ระยะเวลาของสล็อตเป็นช่วงเวลานัดหมายเสมอ' ในต้นแบบผู้ปฏิบัติงาน ซึ่งจะกำหนดระยะเวลาของสล็อตที่กำหนดค่าไว้ในตารางผู้ปฏิบัติงานเป็นระยะเวลาการนัดหมายเสมอ
 
-You can also set a color for each Appointment Type which will help you identify the appointments of a particular type in the Calendar view.
+คุณยังสามารถกำหนดสีสำหรับประเภทการนัดหมายแต่ละประเภท ซึ่งจะช่วยคุณระบุการนัดหมายประเภทใดประเภทหนึ่งในมุมมองปฏิทิน
 
-`Healthcare > Setup > Appointment Type > New Appointment Type`
+`การดูแลสุขภาพ > การตั้งค่า > ประเภทการนัดหมาย > ประเภทการนัดหมายใหม่`
 
-## Healthcare Service Unit Type
-While setting up the schedule for Healthcare Practitioner, you can optionally select a [Healthcare Service Unit](/docs/user/manual/en/healthcare/healthcare_service_unit) at which the Practitioner will be conducting his consultations. You should have `Allow Appointments` option checked for Healthcare Service Unit for booking appointments. You can also define the properties of service units in `Healthcare Service Unit Type`, also read about [Setting up Inpatient Facility](/docs/user/manual/en/healthcare/setup_inpatient) for more details.
+## ประเภทหน่วยบริการสุขภาพ
+ขณะตั้งค่ากำหนดการสำหรับผู้ปฏิบัติงานด้านการดูแลสุขภาพ คุณสามารถเลือก [หน่วยบริการด้านสุขภาพ](/docs/user/manual/th/healthcare/healthcare_service_unit) ที่ผู้ปฏิบัติงานจะดำเนินการให้คำปรึกษา คุณควรเลือกตัวเลือก 'อนุญาตการนัดหมาย' สำหรับหน่วยบริการสุขภาพสำหรับการจองการนัดหมาย คุณยังสามารถกำหนดคุณสมบัติของหน่วยบริการใน "ประเภทหน่วยบริการด้านสุขภาพ" และอ่านเกี่ยวกับ [การตั้งค่าสิ่งอำนวยความสะดวกผู้ป่วยใน] (/docs/user/manual/th/healthcare/setup_inpatient) เพื่อดูรายละเอียดเพิ่มเติม
 
-## Masters to Ease Data Input
-ERPNext Healthcare allows you to configure some of the frequently used masters to make the data entry more easy.
+## ผู้เชี่ยวชาญในการป้อนข้อมูลอย่างง่ายดาย
+ERPNext Healthcare ช่วยให้คุณสามารถกำหนดค่าต้นแบบที่ใช้บ่อยบางรายการเพื่อให้การป้อนข้อมูลง่ายขึ้น
 
-#### Dosage Forms
-Dosage Forms help you configure the form in which the medications are packaged, for example Capsules, Syrups etc.
+#### แบบฟอร์มการให้ยา
+Dosage Forms ช่วยให้คุณกำหนดรูปแบบการบรรจุยา เช่น แคปซูล น้ำเชื่อม เป็นต้น
 
-`Healthcare > Setup > Complaints > New Dosage Form`
+`การดูแลสุขภาพ > การตั้งค่า > การร้องเรียน > แบบฟอร์มการให้ยาใหม่`
 
-#### Route of Administration
-The Route of Administration corresponds to the path by which the medication is induced into to Patient. For example, Oral, Intravenous etc.
+#### เส้นทางการบริหาร
+เส้นทางการบริหารสอดคล้องกับเส้นทางที่ยาถูกชักนำเข้าสู่ผู้ป่วย เช่น ทางปาก ทางหลอดเลือดดำ เป็นต้น
 
-`Healthcare > Setup > Complaints > New Route of Administration`
+`การดูแลสุขภาพ > การตั้งค่า > การร้องเรียน > เส้นทางใหม่ของการบริหาร`
 
-#### Prescription Dosage & Duration
-You can configure different dosages to be used while prescribing medication to patients. You can name the Prescription dosage in anyway you want (for example, BID or I-0-I), and then set the strength of the drug and the times at which it should be administered.
+#### ปริมาณและระยะเวลาที่ต้องสั่งโดยแพทย์
+คุณสามารถกำหนดขนาดยาที่แตกต่างกันเพื่อใช้ในขณะที่กำหนดยาให้กับผู้ป่วยได้ คุณสามารถตั้งชื่อขนาดยาตามใบสั่งแพทย์ได้ตามที่คุณต้องการ (เช่น BID หรือ I-0-I) จากนั้นกำหนดความแรงของยาและเวลาที่ควรจะให้ยา
 
-`Healthcare > Setup > Prescription Dosage > New Prescription Dosage`
+`การดูแลสุขภาพ > การตั้งค่า > ปริมาณยา > ปริมาณยาตามใบสั่งแพทย์ใหม่`
 
-`Healthcare > Setup > Prescription Duration > New Prescription Duration`
+`การดูแลสุขภาพ > การตั้งค่า > ระยะเวลาการกําหนด > ระยะเวลาการกําหนดใหม่`
 
-#### Complaint and Diagnosis
-To ease the data entry while recording the encounter impression, ERPNext Healthcare allows you to save every Complaint / Diagnosis data you enter, from the Patient Encounter screen itself. This way, the database keeps building a list of all complaints and diagnosis you entered. Later on, every time you start keying in, you will be able to select the previously entered word / sentence from the search field. You can also configure the masters manually by going to,
+#### การร้องเรียนและการวินิจฉัย
+เพื่อความสะดวกในการป้อนข้อมูลในขณะที่บันทึกการแสดงผลการเผชิญหน้า ERPNext Healthcare ช่วยให้คุณสามารถบันทึกข้อมูลการร้องเรียน / การวินิจฉัยทั้งหมดที่คุณป้อนจากหน้าจอการเผชิญหน้าของผู้ป่วยเอง ด้วยวิธีนี้ ฐานข้อมูลยังคงสร้างรายการข้อร้องเรียนและการวินิจฉัยทั้งหมดที่คุณป้อน หลังจากนั้น ทุกครั้งที่คุณเริ่มพิมพ์ คุณจะสามารถเลือกคำ/ประโยคที่ป้อนก่อนหน้านี้ได้จากช่องค้นหา คุณยังสามารถกำหนดค่าต้นแบบด้วยตนเองได้โดยไปที่
 
-`Healthcare > Setup > Complaints > New Complaint`
+`การดูแลสุขภาพ > การตั้งค่า > การร้องเรียน > การร้องเรียนใหม่`
 
-`Healthcare > Setup > Diagnosis > New Diagnosis`
+`การดูแลสุขภาพ > การตั้งค่า > การวินิจฉัย > การวินิจฉัยใหม่`
 
-# Clinical Procedures Templates
-ERPNext Healthcare allows you to configure templates with the various properties of Clinical Procedures to ease the Procedure creation process. You can create new Clinical Procedure Templates by going to,
+# เทมเพลตขั้นตอนทางคลินิก
+ERPNext Healthcare ช่วยให้คุณสามารถกำหนดค่าเทมเพลตด้วยคุณสมบัติต่างๆ ของขั้นตอนทางคลินิกเพื่อให้ขั้นตอนการสร้างขั้นตอนง่ายขึ้น คุณสามารถสร้างเทมเพลตขั้นตอนทางคลินิกใหม่ได้โดยไปที่
 
-`Healthcare > Setup > Clinical Procedure Template`
+`การดูแลสุขภาพ > ตั้งค่า > เทมเพลตขั้นตอนทางคลินิก`
 
-Templates allow you to manage the billable Item, rate etc. for a particular procedure. The `Consumables` section lets you set the consumable stock Items, default quantities etc. so that these items will preloaded in the Clinical Procedures created based on the template. This allows the performing practitioner can easily input the consumed quantities or add additional items which in reality has been consumed as part of the procedure.
+แม่แบบช่วยให้คุณสามารถจัดการรายการที่เรียกเก็บเงินได้ อัตรา ฯลฯ สำหรับขั้นตอนเฉพาะ ส่วน 'วัสดุสิ้นเปลือง' ให้คุณตั้งค่ารายการสต็อกวัสดุสิ้นเปลือง ปริมาณเริ่มต้น ฯลฯ เพื่อให้รายการเหล่านี้โหลดไว้ล่วงหน้าในขั้นตอนทางคลินิกที่สร้างขึ้นตามเทมเพลต วิธีนี้ช่วยให้ผู้ปฏิบัติงานสามารถป้อนปริมาณที่บริโภคหรือเพิ่มรายการเพิ่มเติมซึ่งในความเป็นจริงได้ถูกใช้เป็นส่วนหนึ่งของขั้นตอน
 
-If the `Invoice Consumables Separately` option is turned on, the charges for the consumable Items will be added to the Sales Invoice separately in addition to the `Billing Rate` of the procedure.
+หากเปิดตัวเลือก "ใบแจ้งหนี้วัสดุสิ้นเปลืองแยก" ค่าบริการสำหรับสินค้าสิ้นเปลืองจะถูกเพิ่มไปยังใบกำกับสินค้าแยกต่างหากนอกเหนือจาก "อัตราการเรียกเก็บเงิน" ของขั้นตอน
 
-Note that you can also enable `Sample Collection` for a Clinical Procedure if applicable. Also, possible is to add multiple stages to the Template so that the Clinical Procedure can be tracked by the various stages as configured in the template.
+โปรดทราบว่าคุณยังสามารถเปิดใช้งาน 'การเก็บตัวอย่าง' สำหรับขั้นตอนทางคลินิกได้ หากมี นอกจากนี้ เป็นไปได้ที่จะเพิ่มหลายขั้นตอนในเทมเพลต เพื่อให้สามารถติดตามขั้นตอนทางคลินิกโดยขั้นตอนต่างๆ ตามที่กำหนดค่าไว้ในเทมเพลต
 
 {next}

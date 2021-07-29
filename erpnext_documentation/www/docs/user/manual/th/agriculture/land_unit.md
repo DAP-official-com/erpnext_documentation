@@ -1,32 +1,32 @@
 <!-- add-breadcrumbs -->
-# Land Unit
+#หน่วยที่ดิน
 
-Before we do anything, we need to define some details about where our crops will be planted. We will first create our farm as a parent land unit, and then we will add one or more fields as children or nodes, belonging to the parent.
+ก่อนที่เราจะทำสิ่งใด เราจำเป็นต้องกำหนดรายละเอียดบางอย่างเกี่ยวกับที่ที่จะปลูกพืชผลของเรา ก่อนอื่นเราจะสร้างฟาร์มของเราเป็นหน่วยที่ดินหลัก จากนั้นเราจะเพิ่มอย่างน้อยหนึ่งฟิลด์เป็นลูกหรือโหนดซึ่งเป็นของผู้ปกครอง
 
-> Agriculture > Land Unit
+> เกษตรกรรม > หน่วยที่ดิน
 
-On the desk, click on the Land Unit icon. assets/img/new-land-unit-icon.png A list will show any existing Land Units.
+บนโต๊ะ ให้คลิกที่ไอคอนหน่วยที่ดิน Asset/img/new-land-unit-icon.png รายการจะแสดงหน่วยที่ดินที่มีอยู่
 
-On the top right, click on New  to create the first Land Unit.
+ที่ด้านบนขวา ให้คลิกใหม่ เพื่อสร้างหน่วยที่ดินหน่วยแรก
 
-* Land Unit Name: Carrot Farm
-* Parent Land Unit: All Land Units
-* Check the box next to 'Is Group'
-* Location: plot the area as you please
+* ชื่อที่ดิน: ฟาร์มแครอท
+* หน่วยที่ดินหลัก: หน่วยที่ดินทั้งหมด
+* ทำเครื่องหมายที่ช่องถัดจาก 'เป็นกลุ่ม'
+* ที่ตั้ง: แปลงพื้นที่ตามที่คุณต้องการ
 
-Click Save
+คลิกบันทึก
 
-It should look something like this
+หน้าตาน่าจะประมาณนี้
 
 <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/agriculture/crops_and_land/land_unit.png">
 
-With the farm created, we can now create our first Carrot Field! Click on New 
+ด้วยฟาร์มที่สร้างขึ้น ตอนนี้เราสามารถสร้าง ฟาร์มแครอท แรกของเราได้แล้ว! คลิกที่ใหม่
 
-* Land Unit Name: Carrot Field 1
-* Parent Land Unit:select the one we just created in step two, i.e. Carrot Farm
-* Leave the 'Is Group' box unchecked
-* Location: plot the area as you please
+* ชื่อหน่วยที่ดิน: ฟาร์มแครอท 1
+* Parent Land Unit: เลือกอันที่เราเพิ่งสร้างในขั้นตอนที่สอง เช่น ฟาร์มแครอท
+* ยกเลิกการเลือกช่อง 'เป็นกลุ่ม'
+* ที่ตั้ง: แปลงพื้นที่ตามที่คุณต้องการ
 
-Click Save
+คลิกบันทึก
 
-Repeat step 3 for as many fields as you need
+ทำซ้ำขั้นตอนที่ 3 สำหรับฟิลด์มากเท่าที่คุณต้องการ

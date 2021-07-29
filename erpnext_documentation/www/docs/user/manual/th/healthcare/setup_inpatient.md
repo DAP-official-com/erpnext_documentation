@@ -1,23 +1,23 @@
 <!-- add-breadcrumbs -->
-# Setting Up Inpatient Facility
+# การจัดตั้งสิ่งอำนวยความสะดวกผู้ป่วยใน
 
-ERPNext Healthcare allows you to easily configure your Inpatient facility, Admit, Discharge and Transfer (ADT) patients and Invoice the Patient for the care services rendered. Here's how you can setup this.
+ERPNext Healthcare ช่วยให้คุณกำหนดค่าสิ่งอำนวยความสะดวกผู้ป่วยใน ผู้ป่วยใน การรับผู้ป่วย การปลดปล่อยและการโอนย้าย (ADT) และออกใบแจ้งหนี้ให้กับผู้ป่วยสำหรับบริการการดูแลที่ได้รับได้อย่างง่ายดาย นี่คือวิธีที่คุณสามารถตั้งค่าได้
 
-You can map your facility infrastructure (wards, beds etc.) in ERPNext using the [Healthcare Service Unit](/docs/user/manual/en/healthcare/healthcare_service_unit.html) document.
+คุณสามารถแมปโครงสร้างพื้นฐานสิ่งอำนวยความสะดวกของคุณ (หอผู้ป่วย เตียง ฯลฯ) ใน ERPNext โดยใช้เอกสาร [หน่วยบริการสุขภาพ](/docs/user/manual/th/healthcare/healthcare_service_unit.html)
 
-### Healthcare Service Unit Type
-You can define the standard properties of `Healthcare Service Units` you create using the Healthcare Service Unit Type. By configuring various types of the service unit in your facility with respective rates and other properties, you can easily create multiple Healthcare Service Units by merely selecting the type. You can configure various types by going to,
+### ประเภทหน่วยบริการสุขภาพ
+คุณสามารถกำหนดคุณสมบัติมาตรฐานของ "หน่วยบริการด้านสุขภาพ" ที่คุณสร้างขึ้นโดยใช้ประเภทหน่วยบริการด้านสุขภาพ ด้วยการกำหนดค่าหน่วยบริการประเภทต่างๆ ในสถานประกอบการของคุณด้วยอัตราและคุณสมบัติอื่น ๆ ตามลำดับ คุณสามารถสร้างหน่วยบริการด้านสุขภาพได้หลายหน่วยโดยเพียงแค่เลือกประเภท คุณสามารถกำหนดค่าประเภทต่างๆได้โดยไปที่
 
-`Healthcare > Setup > Healthcare Service Unit Type > New Healthcare Service Unit Type`
+`การดูแลสุขภาพ > การตั้งค่า > ประเภทหน่วยบริการสุขภาพ > ประเภทหน่วยบริการสุขภาพใหม่`
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_service_unit_type.png">
 
-ERPNext automatically creates an Item with the details you provide here, for the billing to function.
+ERPNext จะสร้างรายการโดยอัตโนมัติพร้อมรายละเอียดที่คุณให้ไว้ที่นี่ เพื่อให้การเรียกเก็บเงินทำงาน
 
-You can also create Healthcare Service Units to map consulting rooms and other areas where appointment scheduling is possible by checking the `Allow Appointments` option. Such service units are not linked to Item master as billing will make use of the Item selected in the [Healthcare Practitioner](/docs/user/manual/en/healthcare/healthcare_practitioner.html) master or the ones configured in [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings)
+คุณยังสามารถสร้างหน่วยบริการด้านสุขภาพเพื่อทำแผนที่ห้องให้คำปรึกษาและพื้นที่อื่น ๆ ที่สามารถทำตารางนัดหมายได้โดยเลือกตัวเลือก 'อนุญาตการนัดหมาย' หน่วยบริการดังกล่าวไม่ได้เชื่อมโยงกับ Item master เนื่องจากการเรียกเก็บเงินจะใช้รายการที่เลือกใน [Healthcare Practitioner](/docs/user/manual/th/healthcare/healthcare_practitioner.html) master หรือที่กำหนดค่าไว้ใน [Healthcare Settings] (/docs/user/manual/th/healthcare/healthcare_settings)
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_service_unit_type_1.png">
 
-Note that turning on the `Allow Overlap` will allow overlapping appointments for the Healthcare Practitioner available at service unit. This will be handy when you create service units where multiple Patients can be treated at the same time, for instance a yoga center or a physiotherapy room.
+โปรดทราบว่าการเปิด "อนุญาตการซ้อนทับ" จะอนุญาตให้มีการนัดหมายที่ทับซ้อนกันสำหรับผู้ปฏิบัติงานด้านการดูแลสุขภาพที่หน่วยบริการ ซึ่งจะเป็นประโยชน์อย่างยิ่งเมื่อคุณสร้างหน่วยบริการที่สามารถรักษาผู้ป่วยหลายรายพร้อมกันได้ เช่น ศูนย์โยคะหรือห้องกายภาพบำบัด
 
 {next}

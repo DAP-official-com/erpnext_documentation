@@ -1,55 +1,55 @@
 <!-- add-breadcrumbs -->
 
-# Healthcare Service Unit Type
+#ประเภทหน่วยบริการสุขภาพ
 
-You can define the standard properties of [Healthcare Service Unit](/docs/user/manual/en/healthcare/healthcare_service_unit) using the Healthcare Service Unit Type. By configuring various types of service units in your facility with respective rates and other properties, you can easily create multiple Healthcare Service Units by merely selecting the type. Healthcare Service Unit Type is a generic type. For example, "Operation Theatre" can be a Healthcare Service Unit Type and Neurology-OT, Procedure-Room-1, etc. could be Healthcare Service Units.
+คุณสามารถกำหนดคุณสมบัติมาตรฐานของ [หน่วยบริการสุขภาพ](/docs/user/manual/th/healthcare/healthcare_service_unit) โดยใช้ ประเภทหน่วยบริการสุขภาพ ด้วยการกำหนดค่าหน่วยบริการประเภทต่างๆ ในสถานประกอบการของคุณด้วยอัตราและคุณสมบัติอื่น ๆ ตามลำดับ คุณสามารถสร้างหน่วยบริการด้านสุขภาพได้หลายหน่วยโดยเพียงแค่เลือกประเภท ประเภทหน่วยบริการสุขภาพเป็นประเภททั่วไป ตัวอย่างเช่น "โรงละครปฏิบัติการ" อาจเป็นหน่วยบริการด้านสุขภาพและประสาทวิทยา - OT, ห้องผ่าตัด - 1 ฯลฯ อาจเป็นหน่วยบริการด้านสุขภาพ
 
-## 1. How to Create a Healthcare Service Unit Type
+## 1. วิธีสร้างประเภทหน่วยบริการสุขภาพ
 
-To create a Healthcare Service Unit Type, go to:
+หากต้องการสร้างประเภทหน่วยบริการด้านสุขภาพ ให้ไปที่:
 
-> Home > Healthcare > Masters > Healthcare Service Unit Type
+> หน้าหลัก > การดูแลสุขภาพ > ปริญญาโท > Healthcare Service Unit Type
 
-- **Service Unit Type**: Enter a unique name for the Service Unit Type.
+- **ประเภทหน่วยบริการ**: ป้อนชื่อเฉพาะสำหรับประเภทหน่วยบริการ
 
-Now there are two options:
+ตอนนี้มีสองตัวเลือก:
 
-- **Allow Appointments**: Check this if the unit type is for Out Patient facility.
-- **Inpatient Occupancy**: Check this if the unit type is for Inpatient facility.
+- **อนุญาตการนัดหมาย**: ตรวจสอบว่าประเภทยูนิตเป็นศูนย์สำหรับผู้ป่วยนอกหรือไม่
+- **การเข้าพักผู้ป่วยใน**: เลือกตัวเลือกนี้หากประเภทยูนิตเป็นแบบสำหรับผู้ป่วยใน
 
-But "Consulting Rooms" can only allow Appointments and
+แต่ "ห้องให้คำปรึกษา" อนุญาตเฉพาะการนัดหมายและ
 
-The following option shows up if you check "Allow Appointments":
+ตัวเลือกต่อไปนี้จะปรากฏขึ้นหากคุณเลือก "อนุญาตการนัดหมาย":
 
-- **Allow Overlap**: Check this if the unit type can be used by more than one patient or for more than one appointment at once.
+- **Allow Overlap**: ตรวจสอบว่าประเภทยูนิตสามารถใช้ได้กับผู้ป่วยมากกว่าหนึ่งรายหรือสำหรับการนัดหมายพร้อมกันมากกว่าหนึ่งราย
 
-For example, Physical Activity Centres will allow Appointments with overlap:
+ตัวอย่างเช่น ศูนย์กิจกรรมทางกายจะอนุญาตการนัดหมายที่ทับซ้อนกัน:
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_service_unit_type_1.png">
 
-However, Consultation rooms will only allow Appointments without overlap:
+อย่างไรก็ตาม ห้องให้คำปรึกษาจะอนุญาตการนัดหมายโดยไม่ทับซ้อนกันเท่านั้น:
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_service_unit_type_2.png">
 
-The following option shows up if you check "Inpatient Occupancy":
+ตัวเลือกต่อไปนี้จะปรากฏขึ้นหากคุณทำเครื่องหมายที่ "การพักผู้ป่วยใน":
 
-- **Is Billable**: Check this if the unit type for IPD is billable like Hospital Beds.
+- **เรียกเก็บเงินได้**: เลือกตัวเลือกนี้หากประเภทยูนิตสำหรับ IPD สามารถเรียกเก็บเงินได้ เช่น เตียงในโรงพยาบาล
 
-For example, Operation Theatres will have Inpatient Occupancy which will be billed. If you check "Inpatient Occupancy" and "Is Billable" the system asks for Item Details to create an item for the Service Unit Type which will be used for billing:
+ตัวอย่างเช่น ห้องปฏิบัติการ จะมีผู้ป่วยในซึ่งจะถูกเรียกเก็บเงิน หากคุณทำเครื่องหมายที่ "ผู้ป่วยใน" และ "สามารถเรียกเก็บเงินได้" ระบบจะขอรายละเอียดรายการเพื่อสร้างรายการสำหรับประเภทหน่วยบริการซึ่งจะใช้สำหรับการเรียกเก็บเงิน:
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_service_unit_type.png">
 
-The item is automatically created and linked to the document on save.
+รายการจะถูกสร้างขึ้นโดยอัตโนมัติและเชื่อมโยงกับเอกสารเมื่อบันทึก
 
-If the Healthcare Service Unit Type is not being used, you can disable it. Disabling will not allow selecting the item created for it while billing.
+หากไม่ได้ใช้ ประเภทหน่วยบริการสุขภาพ คุณสามารถปิดใช้งานได้ การปิดใช้งานจะไม่อนุญาตให้เลือกรายการที่สร้างขึ้นในขณะที่เรียกเก็บเงิน
 
-If you want to change the Item Code of the item created for the billable Healthcare Service Unit Type, click on **Change Item Code** button.
+หากคุณต้องการเปลี่ยน Item Code ของสินค้าที่สร้างขึ้นสำหรับ ประเภทหน่วยบริการสุขภาพ ที่เรียกเก็บเงินได้ ให้คลิกที่ปุ่ม **เปลี่ยนหมายเลขรายการ**
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare_service_unit_type_3.png">
 
-> This Form has been Changed in Version 13
+> แบบฟอร์มนี้มีการเปลี่ยนแปลงในเวอร์ชัน 13
 
-## 2. Related Topics
-1. [Healthcare Service Unit](/docs/user/manual/en/healthcare/healthcare_service_unit)
+## 2. หัวข้อที่เกี่ยวข้อง
+1. [หน่วยบริการสุขภาพ](/docs/user/manual/th/healthcare/healthcare_service_unit)
 
 {next}

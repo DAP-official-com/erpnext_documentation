@@ -1,80 +1,80 @@
 <!-- add-breadcrumbs -->
 
-# Therapy Type
+# ประเภทบำบัด
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-As therapists, you might be prescribing a number of different therapies for a patient right from Intensive Upper Limb Training to Functional Mobility and so on. Every therapy might have a set of exercises. ERPNext helps you templatize the therapies using the "Therapy Type" DocType. With this, you can create and link therapies to Healthcare Service Units, add standard rates and Item details for billing, and also add exercises according to Body Parts.
+ในฐานะนักบำบัด คุณอาจกำหนดวิธีการรักษาต่างๆ มากมายสำหรับผู้ป่วย ตั้งแต่การฝึกแขนขาส่วนบนแบบเร่งรัดไปจนถึงการเคลื่อนไหวตามหน้าที่ และอื่นๆ การบำบัดทุกครั้งอาจมีชุดของการออกกำลังกาย ERPNext ช่วยให้คุณสร้างเทมเพลตการรักษาโดยใช้ DocType "ประเภทการรักษา" ด้วยสิ่งนี้ คุณสามารถสร้างและเชื่อมโยงการบำบัดรักษากับหน่วยบริการสุขภาพ เพิ่มอัตรามาตรฐานและรายละเอียดรายการสำหรับการเรียกเก็บเงิน และยังเพิ่มการออกกำลังกายตามส่วนต่างๆ ของร่างกาย
 
-To create an Exercise Type, go to:
+หากต้องการสร้างประเภทการออกกำลังกาย ให้ไปที่:
 
-> Home > Healthcare > Rehabilitation and Physiotherapy > Therapy Type
+> หน้าหลัก > การดูแลสุขภาพ > การฟื้นฟูสมรรถภาพและกายภาพบำบัด > ประเภทการบำบัด
 
-## 1. How to Create a Therapy Type
+## 1. วิธีสร้างประเภทการบำบัด
 
-1. Go to Therapy Type list, click on New.
-2. Enter a unique Therapy Name.
-3. Enter the Item details such as Item Code, Item Name, Item Group and optionally some description.
-4. Check "Is Billable" if this Therapy Type will be billed and enter the rate for one therapy session.
-5. You can optionally add the default duration for one therapy session which will be used while booking an appointment for it.
-6. You can also add the Healthcare Service Unit and the Medical Department for the Therapy Type.
-7. Save.
+1. ไปที่รายการประเภทการบำบัด คลิกที่ใหม่
+2. ป้อนชื่อการบำบัดเฉพาะ
+3. ป้อนรายละเอียดของรายการ เช่น รหัสรายการ ชื่อรายการ กลุ่มรายการ และคำอธิบายบางส่วน
+4. ทำเครื่องหมายที่ "Is Billable" ถ้าการบำบัดประเภทนี้จะถูกเรียกเก็บเงินและป้อนอัตราสำหรับการบำบัดหนึ่งครั้ง
+5. คุณสามารถเลือกเพิ่มระยะเวลาเริ่มต้นสำหรับเซสชั่นการบำบัดหนึ่งครั้งซึ่งจะใช้ในขณะจองการนัดหมาย
+6. คุณสามารถเพิ่มหน่วยบริการสุขภาพและแผนกการแพทย์สำหรับประเภทการบำบัดได้
+7. บันทึก
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/therapy-type.png">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Add Exercises According to Body Parts
+### 2.1 เพิ่มการออกกำลังกายตามส่วนต่างๆ ของร่างกาย
 
-Many times, you might need to prescribe exercises that are specific to the affected body parts for Patients. You can easily add these Body Parts in the _Therapy For_ field and click on *Add Exercises* to add the Exercise Types for those body parts. For that, you will have to link Exercise Type to Body Parts in the Exercise Type document.
+หลายครั้ง คุณอาจต้องกำหนดการออกกำลังกายเฉพาะสำหรับส่วนต่างๆ ของร่างกายที่ได้รับผลกระทบสำหรับผู้ป่วย คุณสามารถเพิ่มส่วนต่างๆ ของร่างกายเหล่านี้ในช่อง _Therapy For_ และคลิกที่ *เพิ่มการออกกำลังกาย* เพื่อเพิ่มประเภทการออกกำลังกายสำหรับส่วนต่างๆ ของร่างกายเหล่านั้น เพื่อที่คุณจะต้องเชื่อมโยงประเภทการออกกำลังกายกับส่วนต่างๆของร่างกายในเอกสารประเภทการออกกำลังกาย
 
-For example:
+ตัวอย่างเช่น:
 
-- Exercise "Wall Pushups" is for Hand, Muscles and Joints.
+- การออกกำลังกาย "วิดพื้น" สำหรับมือ กล้ามเนื้อ และข้อต่อ
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/exercise-1.png">
 
-- Exercise "Sit to Stand" is for Legs and Core.
+- การออกกำลังกาย "ลุกยืน" สำหรับขาและลำตัว
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/exercise-2.png">
 
-- Exercise "Thera-band Upper Body" is for Muscles, Joints, Back, Legs.
+- การออกกำลังกาย "Thera-band Upper Body" สำหรับกล้ามเนื้อ, ข้อต่อ, หลัง, ขา
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/exercise-3.png">
 
-Then while creating the Therapy Type template, you can select the body parts in the "Therapy For" field and exercises for those Body Parts will be added to the Exercise table.
+จากนั้นในขณะที่สร้างเทมเพลตประเภทการบำบัด คุณสามารถเลือกส่วนต่างๆ ของร่างกายในช่อง "การบำบัดเพื่อ" และแบบฝึกหัดสำหรับส่วนต่างๆ ของร่างกายเหล่านั้นจะถูกเพิ่มลงในตารางการออกกำลังกาย
 
 <img class="screenshot" src="{{docs_base_url}}/assets/img/healthcare/add-exercises.gif">
 
-### 2.2 Disable Therapy Types
+### 2.2 ปิดการใช้งานประเภทการบำบัด
 
-You can also disable some Therapy Types if you are not conducting sessions for them. For example, your Physiotherapy Unit is under renovation and some Healthcare Service Units like the Aquatic Therapy pool are not available, then you can set the document as disabled and it will be filtered out while booking appointments or prescribing therapies in Patient Encounter, etc.
+คุณยังสามารถปิดใช้งานการบำบัดบางประเภทได้หากคุณไม่ได้ทำเซสชั่นสำหรับพวกเขา ตัวอย่างเช่น หน่วยกายภาพบำบัดของคุณอยู่ระหว่างการปรับปรุงและหน่วยบริการสุขภาพบางหน่วย เช่น สระว่ายน้ำบำบัดทางน้ำไม่พร้อมใช้งาน จากนั้นคุณสามารถตั้งค่าเอกสารเป็นปิดใช้งาน และจะถูกกรองออกในขณะที่จองการนัดหมายหรือกำหนดการรักษาในการพบผู้ป่วย ฯลฯ
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/therapy-disabled.png">
 
-### 2.3 Change Item Code
+### 2.3 เปลี่ยนรหัสรายการ
 
-You can also change the Item Code which will be used for billing from the Therapy Type screen itself. Click on **Change Item Code** button, enter the new Item Code and click "Change Item Code" in the dialog. The Item will be renamed.
+คุณยังสามารถเปลี่ยนรหัสรายการที่จะใช้สำหรับการเรียกเก็บเงินจากหน้าจอประเภทการบำบัดได้อีกด้วย คลิกที่ปุ่ม **เปลี่ยนรหัสสินค้า** ป้อนรหัสสินค้าใหม่และคลิก "เปลี่ยนรหัสสินค้า" ในกล่องโต้ตอบ รายการจะถูกเปลี่ยนชื่อ
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/therapy-change-item-code.png">
 
-### 2.4 Prescribe Therapies in Patient Encounter
+### 2.4 กำหนดการบำบัดในการพบผู้ป่วย
 
-You can prescribe therapies in Patient Encounter and a Therapy Plan will be created automatically on submit.
+คุณสามารถกำหนดวิธีการรักษาในการพบผู้ป่วยและแผนการบำบัดจะถูกสร้างขึ้นโดยอัตโนมัติเมื่อส่ง
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/therapy-encounter.jpg">
 
-### 2.5 Book Appointment for Therapy Type
+### 2.4 กำหนดการบำบัดในการเผชิญหน้าผู้ป่วย
 
-For booking Patient Appointment for any Therapy Type, select the therapy in _Therapy_ field. You can also use the **Get Prescribed Therapies** button to fetch all therapies prescribed for that Patient in the previous Patient Encounter.
+คุณสามารถกำหนดวิธีการรักษาในการเผชิญหน้าผู้ป่วยและแผนการบำบัดจะถูกสร้างขึ้นโดยอัตโนมัติเมื่อส่ง
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/therapy-appointment.png">
 
-## 3. Related Topics
-1. [Exercise Type](/docs/user/manual/en/healthcare/exercise_type)
-1. [Therapy Plan](/docs/user/manual/en/healthcare/therapy_plan)
-1. [Therapy Session](/docs/user/manual/en/healthcare/therapy_session)
-1. [Patient Appointment](/docs/user/manual/en/healthcare/patient_appointment)
-1. [Patient Encounter](/docs/user/manual/en/healthcare/patient_encounter)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [ประเภทการออกกำลังกาย](/docs/user/manual/th/healthcare/exercise_type)
+1. [แผนการบำบัด](/docs/user/manual/th/healthcare/therapy_plan)
+1. [ช่วงการบำบัด](/docs/user/manual/th/healthcare/therapy_session)
+1. [การนัดหมายผู้ป่วย](/docs/user/manual/th/healthcare/patient_appointment)
+1. [พบผู้ป่วย](/docs/user/manual/th/healthcare/patient_encounter)
 
 {next}

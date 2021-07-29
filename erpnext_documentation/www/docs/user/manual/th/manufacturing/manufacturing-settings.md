@@ -1,31 +1,30 @@
 <!-- add-breadcrumbs -->
-#Manufacturing Settings
+#การตั้งค่าการผลิต
 
-Manufacturing Settings can be found at:
+สามารถดูการตั้งค่าการผลิตได้ที่:
 
-> Home > Manufacturing > Settings > Manufacturing Settings
-
+> หน้าหลัก > การผลิต > การตั้งค่า > การตั้งค่าการผลิต
 <img class="screenshot" alt="Manufacturing Settings" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-settings-1.png">
 
-### Capacity Planning
-[Capacity planning](/docs/user/manual/en/manufacturing/capacity-planning) is the process in which an organization decides whether or not to accept the new orders based on the resources and existing work orders.
+### วางแผนกำลังการผลิต
+[วางแผนกำลังการผลิต](/docs/user/manual/th/manufacturing/capacity-planning) เป็นกระบวนการที่องค์กรตัดสินใจว่าจะยอมรับคำสั่งซื้อใหม่ตามทรัพยากรและใบสั่งงานที่มีอยู่หรือไม่
 
-### Over Production Allowance Percentage
+### เปอร์เซ็นต์ค่าเผื่อการผลิต
 
-While making Work Orders against a Sales Order, the system will only allow production item quantity to be lesser than or equal to the quantity in the Sales Order. In case you wish to allow Work Orders to be raised with greater quantity, you can mention the Over Production Allowance Percentage here.
+ขณะทำใบสั่งงานกับใบสั่งขาย ระบบจะอนุญาตเฉพาะปริมาณของสินค้าที่ผลิตให้น้อยกว่าหรือเท่ากับปริมาณในใบสั่งขายเท่านั้น ในกรณีที่คุณต้องการอนุญาตให้เพิ่มใบสั่งงานด้วยปริมาณที่มากขึ้น คุณสามารถพูดถึงเปอร์เซ็นต์ค่าเผื่อการผลิตเกินได้ที่นี่
 
-Example: In certain cases, a Workstation has to manufacture 100 units for cost effectiveness but the Work Order could be for 50 units. In this case, the Over Production Allowance Percentage would be 100.
+ตัวอย่าง: ในบางกรณี เวิร์กสเตชันต้องผลิต 100 หน่วยเพื่อความคุ้มค่า แต่ Work Order อาจเป็น 50 หน่วย ในกรณีนี้ เปอร์เซ็นต์ค่าเผื่อการผลิตเกินจะเท่ากับ 100
 
-### Default Work In Progress Warehouse
+### คลังสินค้ากำลังดำเนินการเริ่มต้น
 
-This Warehouse will be auto-updated in the 'Work In Progress' Warehouse field of Work Orders.
+คลังสินค้านี้จะได้รับการอัปเดตอัตโนมัติในฟิลด์คลังสินค้า 'งานที่กำลังดำเนินการ' ของคำสั่งงาน
 
-### Default Finished Goods Warehouse
+### เริ่มต้นคลังสินค้าสินค้าสำเร็จรูป
 
-This Warehouse will be auto-updated in the 'Target Warehouse' field of Work Order.
+คลังสินค้านี้จะได้รับการอัปเดตอัตโนมัติในฟิลด์ 'คลังสินค้าปลายทาง' ของใบสั่งงาน
 
-### Allow Multiple Material Consumption
-If ticked, multiple materials can be used for a single Work Order. This is useful if one or more time consuming products are being manufactured. For example a single product takes a month to manufacture and the raw materials are consumed daily. In a regular scenario, this won't be feasible with stock entries. Enabling this option will allow you to create stock entries for material consumption without having to create an entry to backflush. End result is that you can see the stock being consumed in the Warehouses and can update the final manufacure entry at a later stage.
+### อนุญาตให้ใช้วัสดุหลายอย่าง
+หากทำเครื่องหมาย สามารถใช้วัสดุได้หลายแบบสำหรับใบสั่งงานเดียว สิ่งนี้มีประโยชน์หากมีการผลิตผลิตภัณฑ์ที่ใช้เวลานานตั้งแต่หนึ่งรายการขึ้นไป ตัวอย่างเช่น ผลิตภัณฑ์เดียวใช้เวลาหนึ่งเดือนในการผลิตและวัตถุดิบมีการบริโภคทุกวัน ในสถานการณ์ปกติ การทำเช่นนี้จะไม่สามารถทำได้กับรายการหุ้น การเปิดใช้งานตัวเลือกนี้จะช่วยให้คุณสร้างรายการสต็อคสำหรับการใช้วัสดุโดยไม่ต้องสร้างรายการเพื่อแบ็คฟลัช ผลลัพธ์สุดท้ายคือ คุณสามารถเห็นสต็อกที่ใช้อยู่ในคลังสินค้า และสามารถอัปเดตรายการการผลิตขั้นสุดท้ายได้ในภายหลัง
 
-### Update BOM Cost Automatically
-If ticked, the BOM cost will be automatically updated based on Valuation Rate / Price List Rate / last purchase rate of raw materials.
+### อัปเดตต้นทุน BOM โดยอัตโนมัติ
+หากทำเครื่องหมาย ต้นทุน BOM จะได้รับการอัปเดตโดยอัตโนมัติตามอัตราการประเมินมูลค่า / อัตรารายการราคา / อัตราการซื้อวัตถุดิบครั้งล่าสุด

@@ -1,19 +1,18 @@
 <!-- add-breadcrumbs -->
-#Volunteer Type
+#ประเภทอาสาสมัคร
 
-Volunteer Types are a basic building block for Volunteering management. Typically an organization will set up a volunteer type for each of the different donation that they offer. For example, an organisation may define three volunteer types for 'regular', 'Student', and 'Member' donor.
+ประเภทอาสาสมัครเป็นองค์ประกอบพื้นฐานสำหรับการจัดการอาสาสมัคร โดยทั่วไปแล้ว องค์กรจะตั้งค่าประเภทอาสาสมัครสำหรับการบริจาคต่างๆ ที่พวกเขาเสนอ ตัวอย่างเช่น องค์กรอาจกำหนดประเภทอาสาสมัครสามประเภทสำหรับผู้บริจาค 'ปกติ', 'นักเรียน' และ 'สมาชิก'
 
-In this chapter we will cover the most common set-up for volunteer types.
+ในบทนี้ เราจะกล่าวถึงการตั้งค่าทั่วไปสำหรับประเภทอาสาสมัคร
 
-To create new volunteer Type go to:
+ในการสร้างอาสาสมัครใหม่ ประเภท ไปที่:
 
-> Non Profit > Volunteer Type > New
+> องค์กรไม่แสวงหากำไร > ประเภทอาสาสมัคร > ใหม่
 
 <img class="screenshot" alt="Volunteer" src="{{docs_base_url}}/assets/img/non_profit/volunteer/volunteer_type.png">
 
 
-**Volunteer Type:** The Volunteer Type is displayed throughout the system, on both public and backend pages so spend some time thinking about a membership type name that is appropriate to both audiences. It can be changed at a later date
+**ประเภทอาสาสมัคร:** ประเภทอาสาสมัครจะแสดงทั้งระบบ ทั้งในหน้าสาธารณะและหน้าส่วนหลัง ดังนั้นให้ใช้เวลาคิดเกี่ยวกับชื่อประเภทการเป็นสมาชิกที่เหมาะสมกับผู้ชมทั้งสอง สามารถเปลี่ยนแปลงได้ในภายหลัง
 
-**Amount:** If your Volunteering are free you should enter 0 (zero) in this field. Otherwise you should enter the amount that must be paid to the volunteer.
-
+**จำนวน:** หากอาสาสมัครของคุณว่าง คุณควรป้อน 0 (ศูนย์) ในช่องนี้ มิฉะนั้นคุณควรป้อนจำนวนเงินที่ต้องจ่ายให้กับอาสาสมัคร
 {next}

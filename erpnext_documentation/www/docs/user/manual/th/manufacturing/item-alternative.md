@@ -1,57 +1,57 @@
 <!-- add-breadcrumbs -->
-# Item Alternative
+# รายการทางเลือก
 
-**An Item Alternative is an Item similar to the original one and can be used instead of the original Item in manufacturing.**
+**ทางเลือกของรายการคือรายการที่คล้ายกับรายการดั้งเดิมและสามารถใช้แทนรายการดั้งเดิมในการผลิตได้**
 
-If the raw material defined in the BOM is not available during the production process then their respective available alternative Item can be used to complete the production process.
+หากวัตถุดิบที่กำหนดไว้ใน BOM ไม่พร้อมใช้งานในระหว่างกระบวนการผลิต สามารถใช้สินค้าทางเลือกอื่นที่เกี่ยวข้องเพื่อทำให้กระบวนการผลิตเสร็จสมบูรณ์ได้
 
-First you need to enable the "Allow Alternative Item" in the Item.
+ก่อนอื่นคุณต้องเปิดใช้งาน "อนุญาตรายการทางเลือก" ในรายการ
 <img class="screenshot" alt="Item" src="{{docs_base_url}}/assets/img/manufacturing/allow-alternative-item.png">
 
-To access the Item alternative list, go to:
-> Home > Stock > Items and Pricing > Item Alternative
+หากต้องการเข้าถึงรายการทางเลือกของรายการ ให้ไปที่:
+> หน้าหลัก > สต็อก > รายการและราคา > รายการทางเลือก
 
-This can also be done by clicking the plus sign next to 'Item Alternative' from the Item master dashboard.
-You can enable Two-Way replacement between an Item and their alternative item if both can be used as an alternative to each other.
+นอกจากนี้ยังสามารถทำได้โดยคลิกเครื่องหมายบวกที่อยู่ถัดจาก 'ทางเลือกของรายการ' จากแดชบอร์ดหลักของรายการ
+คุณสามารถเปิดใช้งานการแทนที่แบบสองทางระหว่างรายการและรายการทางเลือก หากสามารถใช้ทั้งสองอย่างเป็นทางเลือกแทนกันได้
 
 <img class="screenshot" alt="Item Alternative" src="{{docs_base_url}}/assets/img/manufacturing/item-alternative.png">
 
-## 1. Prerequisites
-Before creating and using an Item Alternative, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ รายการทางเลือก ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Item](/docs/user/manual/en/stock/item)
+* [รายการ](/docs/user/manual/th/stock/item)
 
-## 2. Item Alternative for Work Order
+## 2. รายการทางเลือกสำหรับการสั่งงาน
 
-To allow to using alternative Items in the manufacturing process, the user can configure to 'Allow Alternative Item' in the BOM/Work Order
+เพื่ออนุญาตให้ใช้รายการทางเลือกในกระบวนการผลิต ผู้ใช้สามารถกำหนดค่าให้ 'อนุญาตรายการทางเลือก' ใน BOM/ใบสั่งงาน
 
-### 2.1 Provision to allow the alternative item in the BOM
-You can enable 'Allow Alternative Item' in a BOM then select the alternative item in the Stock Entry. This can also be done with a Work Order.
+### 2.1 บทบัญญัติเพื่ออนุญาตรายการทางเลือกใน BOM
+คุณสามารถเปิดใช้งาน 'อนุญาตรายการทางเลือก' ใน BOM จากนั้นเลือกรายการสำรองในรายการสต็อค นอกจากนี้ยังสามารถทำได้ด้วยการสั่งงาน
 <img class="screenshot" alt="Item" src="{{docs_base_url}}/assets/img/manufacturing/allow-alternative-item-bom.png">
 
 
-### 2.2 Provision to Allow Alternative Item in the Work Order
-User can also enable/disable allow alternative item for individual Work Orders.
+### 2.2 ข้อกำหนดเพื่ออนุญาตรายการทางเลือกในใบสั่งงาน
+ผู้ใช้ยังสามารถเปิด/ปิดใช้งานการอนุญาตรายการทางเลือกสำหรับใบสั่งงานแต่ละรายการ
 <img class="screenshot" alt="Item" src="{{docs_base_url}}/assets/img/manufacturing/allow-alternative-item-wo.png">
 
 
-Ticking on the 'Allow Alternative Item' checkbox will show a button named 'Alternate Item'. You can click on this to set the Item Alternative in the Work Order. This is how you use Item Alternative in a Work Order:
+การทำเครื่องหมายที่ช่องทำเครื่องหมาย 'อนุญาตรายการสำรอง' จะแสดงปุ่มชื่อ 'รายการสำรอง' คุณสามารถคลิกที่นี่เพื่อตั้งค่าทางเลือกรายการในใบสั่งงาน นี่คือวิธีที่คุณใช้ รายการทางเลือก ในใบสั่งงาน:
 <img class="screenshot" alt="Item" src="{{docs_base_url}}/assets/img/manufacturing/work_order_item_alternative.gif">
 
-This is how you use Item Alternative with a Stock Entry:
+นี่คือวิธีที่คุณใช้ รายการทางเลือก กับรายการสต็อค:
 <img class="screenshot" alt="Item" src="{{docs_base_url}}/assets/img/manufacturing/se_item_alternative.gif">
 
-If the 'Allow Alternative Item' checkbox in the Item table is disabled, you cannot set an Alternate Item for this Item.
+หากช่องทำเครื่องหมาย 'อนุญาตรายการทางเลือก' ในตารางรายการถูกปิดใช้งาน คุณจะไม่สามารถตั้งค่ารายการสำรองสำหรับรายการนี้
 
-### 2.3 Item Alternative for subcontract
-In subcontract, the user has to transfer raw materials to the subcontracted supplier to get finished good from them. If the raw material is not available in the stock, with this feature, the user can transfer the alternate item of the subcontracted raw material to the supplier. This is done in the Stock Entry.
+### 2.3 รายการทางเลือกสำหรับการทำสัญญาช่วง
+ในผู้รับเหมาช่วง ผู้ใช้ต้องโอนวัตถุดิบไปยังซัพพลายเออร์ที่รับเหมาช่วงเพื่อให้ได้สินค้าที่เสร็จสิ้นจากพวกเขา หากไม่มีวัตถุดิบในสต็อค ด้วยคุณลักษณะนี้ ผู้ใช้สามารถโอนรายการสำรองของวัตถุดิบที่รับเหมารายย่อยไปยังซัพพลายเออร์ได้ สิ่งนี้ทำในรายการสต็อค
 
 <img class="screenshot" alt="Item" src="{{docs_base_url}}/assets/img/manufacturing/purchase_order_item_alternative.gif">
 
-After this, when you create a Purchase Receipt from the Work Order, the alternate item will be shown.
+หลังจากนี้ เมื่อคุณสร้างใบเสร็จรับเงินจากใบสั่งงาน รายการอื่นจะปรากฏขึ้น
 
-### 3. Related Topics
-1. [Bill Of Materials](/docs/user/manual/en/manufacturing/bill-of-materials)
-1. [Work Order](/docs/user/manual/en/manufacturing/work-order)
+### 3. หัวข้อที่เกี่ยวข้อง
+1. [รายการวัสดุ](/docs/user/manual/th/manufacturing/bill-of-materials)
+1. [ใบสั่งงาน](/docs/user/manual/th/manufacturing/work-order)
 
 {next}

@@ -1,15 +1,15 @@
 <!-- add-breadcrumbs -->
-# Setting Up Pharmacy
-ERPNext Healthcare do not have a Pharmacy module as such. However, [ERPNext Stock](/docs/user/manual/en/.html), [Buying](/docs/user/manual/en/buying.html) and [Accounts](/docs/user/manual/en/accounts.html) Module will do all that's needed to seamlessly manage your Pharmacy Stock as well as other supplies, their billing and purchases.
+# การจัดตั้งร้านขายยา
+ERPNext Healthcare ไม่มีโมดูลร้านขายยาเช่นนี้ อย่างไรก็ตาม [สต็อกใน ERPNext](/docs/user/manual/th/.html), [การซื้อ](/docs/user/manual/th/buying.html) และ [การบัญชี](/docs/user/manual/th /accounts.html) โมดูลจะทำทุกสิ่งที่จำเป็นเพื่อจัดการสต็อกร้านขายยาของคุณอย่างราบรื่นตลอดจนวัสดุสิ้นเปลืองอื่นๆ การเรียกเก็บเงินและการซื้อ
 
-You can also consider creating multiple POS Profiles for each Pharmacy user. ERPNext Stock module features like [Items](/docs/user/manual/en/stock/item.html) with Reorder Levels and Auto Reordering, [Batch Number and Expiry Dates](/docs/user/manual/en/stock/batch.html) etc. will be worth looking at.
+คุณยังสามารถพิจารณาสร้างโปรไฟล์ POS หลายรายการสำหรับผู้ใช้ร้านขายยาแต่ละราย คุณสมบัติของโมดูล ERPNext Stock เช่น [รายการ](/docs/user/manual/th/stock/item.html) พร้อมระดับการสั่งซื้อใหม่และการจัดลำดับใหม่อัตโนมัติ [หมายเลขแบทช์และวันหมดอายุ](/docs/user/manual/th/stock/ batch.html) ฯลฯ จะคุ้มค่าที่จะดู
 
-ERPNext Healthcare adds a few custom fields to `Item` document so that you can effectively configure medicines. Also read [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings) for setting up default Items, Accounts etc.
+ERPNext Healthcare เพิ่มฟิลด์ที่กำหนดเองสองสามฟิลด์ในเอกสาร "รายการ" เพื่อให้คุณสามารถกำหนดค่ายาได้อย่างมีประสิทธิภาพ โปรดอ่าน [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings) สำหรับการตั้งค่ารายการเริ่มต้น บัญชี ฯลฯ
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/item_custom_fields.png">
 
->Note that these fields are made available only if your setup has Healthcare domain enabled.
+>โปรดทราบว่าฟิลด์เหล่านี้จะพร้อมใช้งานก็ต่อเมื่อการตั้งค่าของคุณเปิดใช้งานโดเมน Healthcare ไว้
 
-Furthermore, all the three modules comes with exhaustive reporting and you can also configure auto email to have reports emailed automatically to you.
+นอกจากนี้ ทั้งสามโมดูลยังมาพร้อมกับการรายงานที่ละเอียดถี่ถ้วน และคุณยังสามารถกำหนดค่าอีเมลอัตโนมัติเพื่อให้รายงานส่งอีเมลถึงคุณโดยอัตโนมัติ
 
 {next}

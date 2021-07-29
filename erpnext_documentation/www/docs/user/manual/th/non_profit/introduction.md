@@ -1,20 +1,21 @@
-# Introduction
 
-Here is what a member page of a non-profit would look like in ERPNext:
+# บทนำ
+
+นี่คือลักษณะของหน้าสมาชิกขององค์กรไม่แสวงหากำไรใน ERPNext:
 
 <img class="screenshot" alt="Non Profit" src="{{docs_base_url}}/assets/img/non_profit/non-profit-hero-linus.png">
 
-## Manager Members, Donors, Voluteers and More
+## สมาชิกผู้จัดการ ผู้บริจาค อาสาสมัคร และอื่นๆ
 
-This is a centralized system, which maintains and updates all the activities related to an Organization.
+นี่คือระบบที่รวมศูนย์ซึ่งดูแลและปรับปรุงกิจกรรมทั้งหมดที่เกี่ยวข้องกับองค์กร
 
-This will track all activity related to Memberships, Chapters, Volunteer Management, Donor Management, Event and Grant etc.
+สิ่งนี้จะติดตามกิจกรรมทั้งหมดที่เกี่ยวข้องกับการเป็นสมาชิก, บท, การจัดการอาสาสมัคร, การจัดการผู้บริจาค, กิจกรรมและเงินช่วยเหลือ ฯลฯ
 
 <img class="screenshot" alt="Non Profit" src="{{docs_base_url}}/assets/img/non_profit/chapter.png">
 
-## Demonstration of ERPNext Non-Profit Domain
+## การสาธิตโดเมนที่ไม่แสวงหากำไรของ ERPNext
 
-Check the following video to educate yourself on each feature in the non-profit module.
+ตรวจสอบวิดีโอต่อไปนี้เพื่อให้ความรู้เกี่ยวกับคุณลักษณะแต่ละอย่างในโมดูลที่ไม่แสวงหากำไร
 
 <div>
     <div class='embed-container'>

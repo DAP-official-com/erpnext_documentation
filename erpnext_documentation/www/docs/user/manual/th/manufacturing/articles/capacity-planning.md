@@ -1,52 +1,52 @@
 <!-- add-breadcrumbs -->
-# Capacity Planning based on Work Order
+# การวางแผนกำลังการผลิตตามใบสั่งงาน
 
-Capacity Planning functionality helps you in tracking production jobs allocated on each Workstation.
+ฟังก์ชันการวางแผนกำลังการผลิตช่วยคุณในการติดตามงานการผลิตที่จัดสรรในแต่ละเวิร์กสเตชัน
 
 <img alt="Role Desk Permission" class="screenshot" src="{{docs_base_url}}/assets/img/articles/capacity-1.png">
 
-Follow are the steps to use Capacity Planning Feature in your ERPNext account.
+ทำตามขั้นตอนเพื่อใช้คุณสมบัติการวางแผนความจุในบัญชี ERPNext ของคุณ
 
-1.  Operations  
+1. การดำเนินงาน
 
-    To add operations, go to:  
+    หากต้องการเพิ่มการดำเนินการ ให้ไปที่:
 
-    `Manufacturing > Bill of Materials > Operations`
+    `การผลิต > รายการวัสดุ > การดำเนินงาน`
 
-2.  Workstation  
+2. เวิร์กสเตชัน
 
-    Add each Workstation in your ERPNext account from:  
+    เพิ่มแต่ละเวิร์กสเตชันในบัญชี ERPNext ของคุณจาก:
 
-    `Manufacturing > Bill of Materials > Workstation` 
+    `การผลิต > รายการวัสดุ > เวิร์กสเตชัน`
 
-    In the Workstation master, you can define which operations will be performed on it, what are the cost associated with it, and what are the working hours of that Workstation.  
+    ในต้นแบบเวิร์กสเตชัน คุณสามารถกำหนดได้ว่าจะดำเนินการใดกับเวิร์กสเตชันนั้น ค่าใช้จ่ายที่เกี่ยวข้องคืออะไร และชั่วโมงทำงานของเวิร์กสเตชันนั้นคือเท่าใด
 
-3.  Bill of Materials (BOM):  
+3. รายการวัสดุ (BOM):
 
-    In a BOM, with the list of raw material needed, for manufacturing, you can also list operation and workstations through which those raw materials will be processed.  
+    ใน BOM ที่มีรายการวัตถุดิบที่จำเป็นสำหรับการผลิต คุณยังสามารถแสดงรายการการดำเนินงานและเวิร์กสเตชันซึ่งวัตถุดิบเหล่านั้นจะได้รับการประมวลผล
 
-4.  Work Order:  
+4. ใบสั่งงาน:
 
-    On submission of Work Order, Timesheet for Operations. This helps you allocate production jobs on each Workstation, as well as you can update actual time taken for each Operation.  
+    ในการยื่นใบสั่งงาน ใบบันทึกเวลาการปฏิบัติงาน ซึ่งจะช่วยให้คุณจัดสรรงานการผลิตในแต่ละเวิร์กสเตชัน รวมทั้งคุณสามารถอัปเดตเวลาจริงที่ใช้สำหรับการดำเนินงานแต่ละรายการ
 
-### Error due to Capacity Planning
+### ข้อผิดพลาดเนื่องจากการวางแผนกำลังการผลิต
 
-**Question:** On Submission of Work Order, we are getting following error message.
+**คำถาม:** ในการส่งคำสั่งงาน เราได้รับข้อความแสดงข้อผิดพลาดดังต่อไปนี้
 
 <img alt="Role Desk Permission" class="screenshot" src="{{docs_base_url}}/assets/img/articles/capacity-2.png">
 
-**Answer: **Please check if you have updated Working Hours in the Workstation master? If not, then please update it and then try to submit Work Order.
+**คำตอบ: **โปรดตรวจสอบว่าคุณได้อัปเดตชั่วโมงการทำงานในต้นแบบเวิร์กสเตชันแล้วหรือยัง หากไม่เป็นเช่นนั้น โปรดอัปเดตแล้วลองส่ง ใบสั่งงาน
 
-On submission of Work Order, Operations (as added in the BOM) are allocated on the workstation. Each operation should start and end on the same day. If a system is not able to schedule that operation in a day, then system request you to divide that Project, so that system can allocate smaller operations in a day.
+ในการส่งใบสั่งงาน การดำเนินการ (ตามที่เพิ่มใน BOM) จะได้รับการจัดสรรบนเวิร์กสเตชัน การดำเนินการแต่ละครั้งควรเริ่มต้นและสิ้นสุดในวันเดียวกัน หากระบบไม่สามารถกำหนดเวลาการดำเนินการนั้นในหนึ่งวันได้ ระบบจะขอให้คุณแบ่งโปรเจ็กต์นั้น เพื่อให้ระบบจัดสรรการดำเนินการที่มีขนาดเล็กลงในหนึ่งวันได้
 
-If you have update working hours in the Workstation, but still getting this issue, that because one of your operation is taking too long, and cannot be completed in a day. Please divide that operation into smaller operations, so that it can be allocated on Workstation and completed on the same day.
+หากคุณมีการอัปเดตชั่วโมงทำงานในเวิร์กสเตชัน แต่ยังคงประสบปัญหานี้อยู่ นั่นเป็นเพราะหนึ่งในการดำเนินการของคุณใช้เวลานานเกินไป และไม่สามารถทำได้ในหนึ่งวัน โปรดแบ่งการดำเนินการออกเป็นการดำเนินการที่มีขนาดเล็กลง เพื่อให้สามารถจัดสรรบนเวิร์กสเตชันและดำเนินการให้แล้วเสร็จภายในวันเดียวกัน
 
-### Avoid Working Hours of Workstation
+### หลีกเลี่ยงชั่วโมงการทำงานของเวิร์กสเตชัน
 
-If you want to ignore above validation and allow scheduling of production job beyond the working hours of the Workstation, enable
-Overtime in the Manufacturing Settings.
+หากคุณต้องการละเว้นการตรวจสอบข้างต้นและอนุญาตให้มีการจัดกำหนดการงานการผลิตนอกเหนือจากชั่วโมงทำงานของเวิร์กสเตชัน ให้เปิดใช้งาน
+ค่าล่วงเวลาในการตั้งค่าการผลิต
 
 <img alt="Role Desk Permission" class="screenshot" src="{{docs_base_url}}/assets/img/articles/capacity-3.png">
 
-If you want to complete disable Capacity Planning feature, in the Manufacturing Settings, check field "Disable Capacity Planning and Time Tracking".
+หากคุณต้องการปิดใช้งานคุณลักษณะการวางแผนกำลังการผลิต ในการตั้งค่าการผลิต ให้เลือกช่อง "ปิดใช้งานการวางแผนกำลังการผลิตและการติดตามเวลา"
 

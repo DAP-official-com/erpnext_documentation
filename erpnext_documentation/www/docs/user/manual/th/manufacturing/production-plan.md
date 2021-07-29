@@ -1,111 +1,112 @@
 <!-- add breadcrumbs -->
-# Production Plan
+# แผนการผลิต
 
-**A Production Plan helps in production and material planning for the Items planned for manufacturing. These production items can be committed via Sales Order (to Customers) or Material Requests (internally).**
+**แผนการผลิตช่วยในการวางแผนการผลิตและวัสดุสำหรับสินค้าที่วางแผนไว้สำหรับการผลิต รายการการผลิตเหล่านี้สามารถส่งผ่านใบสั่งขาย (ให้กับลูกค้า) หรือคำขอวัสดุ (ภายใน)**
 
-Production Plan helps the user to plan production against multiple Sales Orders or the Material Requests. Also, it helps in Material Procurement planning for the raw material item, based on the quantity of finished products to be manufactured.
+แผนการผลิตช่วยให้ผู้ใช้สามารถวางแผนการผลิตกับใบสั่งขายหลายรายการหรือคำขอวัสดุ นอกจากนี้ยังช่วยในการวางแผนการจัดหาวัสดุสำหรับรายการวัตถุดิบตามปริมาณของผลิตภัณฑ์สำเร็จรูปที่จะผลิต
 
-To access the Production Plan list, go to:
+ในการเข้าถึงรายการแผนการผลิต ไปที่:
 
-> Home > Manufacturing > Production > Production Plan
+> หน้าหลัก > การผลิต > การผลิต > แผนการผลิต
 
-## 1. Prerequisites
-Before creating and using a Production Plan, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้แผนการผลิต ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Item](/docs/user/manual/en/stock/item)
-* [Material Request](/docs/user/manual/en/stock/material-request)
-* [Sales Order](/docs/user/manual/en/selling/sales-order)
-* [Bill Of Materials](/docs/user/manual/en/manufacturing/bill-of-materials)
-* [Routing](/docs/user/manual/en/manufacturing/routing)
+* [รายการ](/docs/user/manual/th/stock/item)
+* [คำขอวัสดุ](/docs/user/manual/th/stock/material-request)
+* [คำสั่งขาย](/docs/user/manual/th/selling/sales-order)
+* [รายการวัสดุ](/docs/user/manual/th/manufacturing/bill-of-materials)
+* [การกำหนดเส้นทาง](/docs/user/manual/th/manufacturing/routing)
 
-## 2. How to Create a Production Plan
-As mentioned earlier, a Production Plan can be used for planning the manufacture of Items against Sales Orders or Material Requests.
+## 2. วิธีสร้างแผนการผลิต
+ดังที่ได้กล่าวไว้ก่อนหน้านี้ แผนการผลิตสามารถใช้สำหรับการวางแผนการผลิตสินค้าเทียบกับใบสั่งขายหรือคำขอวัสดุ
 
-The common steps are:
+ขั้นตอนทั่วไปคือ:
 
-1. Go to the Production Plan list, click on New.
-1. Select whether to get items from a [Sales Order](/docs/user/manual/en/selling/sales-order) or a [Material Request](/docs/user/manual/en/stock/material-request).
+1. ไปที่รายการแผนการผลิต คลิกที่ ใหม่
+1. เลือกว่าจะรับรายการจาก [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order) หรือ [คำขอวัสดุ](/docs/user/manual/th/stock/material-request ).
 
-A Production Plan can also be created manually where you can select the Items to manufacture.
+แผนการผลิตยังสามารถสร้างได้ด้วยตนเอง ซึ่งคุณสามารถเลือกรายการที่จะผลิตได้
 
-### 2.1 Production Against Sales Orders
+### 2.1 การผลิตต่อใบสั่งขาย
 
-1. Select option as Sales Order from the 'Get Items From' drop-down list. The system will show the filters, using that you can pull the Sales Orders for the production. You don't need to use all these filters if you have only a few Sales Orders in a particular time frame.
+1. เลือกตัวเลือกเป็นคำสั่งขายจากรายการดรอปดาวน์ 'รับรายการจาก' ระบบจะแสดงตัวกรอง โดยคุณสามารถดึงใบสั่งขายสำหรับการผลิตได้ คุณไม่จำเป็นต้องใช้ตัวกรองเหล่านี้ทั้งหมด หากคุณมีใบสั่งขายเพียงไม่กี่รายการในกรอบเวลาหนึ่งๆ
 
   ![Production Plan fetch items]({{docs_base_url}}/assets/img/manufacturing/pp_fetch_from.png)
 
-1. Click on Get Sales Orders to fetch sales orders based on the above filters.
+1. คลิกที่ รับใบสั่งขาย เพื่อดึงใบสั่งขายตามตัวกรองด้านบน
 
   ![Sales Order Filters]({{docs_base_url}}/assets/img/manufacturing/sales_order_filter.png)
 
-1. Click on 'Get Items for Work Order' to fetch the items from the above Sales Orders. Items only for which a BOM is present will be fetched.
+1. คลิกที่ 'รับรายการสำหรับใบสั่งงาน' เพื่อดึงรายการจากใบสั่งขายด้านบน รายการที่มี BOM เท่านั้นจะถูกดึงออกมา
+
   ![Get items for Production Plan]({{docs_base_url}}/assets/img/manufacturing/get_items_wo.png)
 
-1. On expanding a row in the Items to Manufacture table, you'll see an option to 'Include Exploded Items'. Ticking this includes raw materials of the sub-assembly items in the production process.
+1. ในการขยายแถวในตารางรายการที่จะผลิต คุณจะเห็นตัวเลือกให้ 'รวมรายการที่ระเบิด' การเลือกนี้รวมถึงวัตถุดิบของรายการส่วนประกอบย่อยในกระบวนการผลิต
 
-### 2.2 Production Against Material Requests
+### 2.2 การผลิตกับคำขอวัสดุ
 
-1. Select option as Material Request from the Get Items From drop-down list. The system will show the filters, using that we can pull the Material Requests for the production.
+1. เลือกตัวเลือกเป็นคำขอวัสดุจากรายการแบบเลื่อนลงรับรายการ ระบบจะแสดงตัวกรอง โดยเราสามารถดึงคำขอวัสดุสำหรับการผลิตได้
 
   <img class="screenshot" alt="Material Request Filters" src="{{docs_base_url}}/assets/img/manufacturing/material_request_filter.png">
 
-1. Click on 'Get Material Request' to fetch material requests based on the above filters.
+1. คลิกที่ 'รับคำขอวัสดุ' เพื่อดึงคำขอวัสดุตามตัวกรองด้านบน
 
   <img class="screenshot" alt="Material Requests" src="{{docs_base_url}}/assets/img/manufacturing/material_requests.png">
 
-1. Click on Get Items for Work Order to fetch the items from the above material requests.
+1. คลิกที่ เลือกของสำหรับใบสั่งงาน เพื่อดึงรายการจากคำขอวัสดุด้านบน
 
   <img class="screenshot" alt="Material Request Item" src="{{docs_base_url}}/assets/img/manufacturing/material_request_items.png">
 
-### 2.3 Planning for Material Requests
+### 2.3 การวางแผนสำหรับคำขอวัสดุ
 
-Clicking on the 'Get Raw Materials for Production' button will fetch the required raw material Items in the Material Request Plan table. For example, to manufacture 200 plastic canes, you need 100 raw plastic Nos but have only 20 in your Warehouse, then clicking this button will add a row with 80 in the Required Quantity column.
+การคลิกที่ปุ่ม 'รับวัตถุดิบสำหรับการผลิต' จะเป็นการดึงรายการวัตถุดิบที่จำเป็นในตารางแผนการขอวัตถุดิบ ตัวอย่างเช่น ในการผลิต 200 แท่งพลาสติก คุณต้องมีหมายเลขพลาสติกดิบ 100 ชิ้นแต่มีเพียง 20 ชิ้นในโกดังของคุณ จากนั้นคลิกปุ่มนี้จะเพิ่มแถวที่มี 80 ลงในคอลัมน์ปริมาณที่ต้องการ
 
 <img class="screenshot" alt="Material Request Plan" src="{{docs_base_url}}/assets/img/manufacturing/material_request_plan.png">
 
-Use the following checkboxes to perform certain actions:
+ใช้ช่องทำเครื่องหมายต่อไปนี้เพื่อดำเนินการบางอย่าง:
 
-  * <b>Include Non Stock Items</b>: To include non-stock items in the material request planning. i.e. Items for which 'Maintain Stock' checkbox is unticked. Refer the [Item page](/docs/user/manual/en/stock/item#12-options-when-creating-an-item) for more details.
-  * <b>Include Subcontracted Items</b>: To add subcontracted Item's raw materials if include exploded items is disabled.
-  * <b>Ignore Existing Projected Quantity</b>: If enabled then the system will create the Material Request even if the user has already ordered or requested the respective items. For example if you need 100 quantity of raw material A and even if you already have 150, enabling this checkbox will add a request for 100 quantity of that raw material.
-  * <b>For Warehouse</b>: User can set the Warehouse for which they want to create the material request. When creating Stock Entries during the production process, the system will look for raw material stock in this Warehouse.
-  * <b>Download Materials Required</b>:- When this checkbox is ticked, the User will get the Excel sheet with the raw materials that are needed to complete this Production Plan. User can select the Warehouse to check the available quantity in the respective Warehouse. If the User has kept the 'For Warehouse' field as blank then the system will give the Excel sheet with raw materials and Warehouse-wise available quantity of the respective raw materials. Excel sheet will look similar to:
+  * <b>รวมรายการที่ไม่มีในสต็อก</b>: เพื่อรวมรายการที่ไม่มีสต็อกในการวางแผนคำขอวัสดุ เช่น รายการที่ยกเลิกการเลือกช่องทำเครื่องหมาย "รักษาสต็อก" ดู [หน้ารายการ](/docs/user/manual/th/stock/item#12-options-when-creating-an-item) สำหรับรายละเอียดเพิ่มเติม
+  * <b>รวมรายการที่รับเหมาช่วง</b>: หากต้องการเพิ่มวัตถุดิบของรายการที่รับเหมาช่วง หากการรวมรายการที่ระเบิดไว้ถูกปิดใช้งาน
+  * <b>ละเว้นปริมาณที่คาดการณ์ที่มีอยู่</b>: หากเปิดใช้งาน ระบบจะสร้างคำขอวัสดุแม้ว่าผู้ใช้จะสั่งซื้อหรือขอรายการที่เกี่ยวข้องแล้วก็ตาม ตัวอย่างเช่น หากคุณต้องการ 100 ปริมาณวัตถุดิบ A และแม้ว่าคุณจะมี 150 รายการอยู่แล้ว การเปิดใช้งานช่องทำเครื่องหมายนี้จะเพิ่มคำขอสำหรับปริมาณวัตถุดิบนั้น 100 รายการ
+  * <b>สำหรับคลังสินค้า</b>: ผู้ใช้สามารถตั้งค่าคลังสินค้าที่ต้องการสร้างคำขอวัสดุ เมื่อสร้างรายการสต็อคระหว่างกระบวนการผลิต ระบบจะค้นหาสต็อควัตถุดิบในคลังสินค้านี้
+  * <b>ดาวน์โหลดวัสดุที่จำเป็น</b>:- เมื่อทำเครื่องหมายที่ช่องนี้ ผู้ใช้จะได้รับแผ่นงาน Excel พร้อมวัตถุดิบที่จำเป็นสำหรับการทำแผนการผลิตนี้ให้เสร็จสมบูรณ์ ผู้ใช้สามารถเลือกคลังสินค้าเพื่อตรวจสอบปริมาณที่มีอยู่ในคลังสินค้าที่เกี่ยวข้อง หากผู้ใช้เก็บฟิลด์ 'สำหรับคลังสินค้า' ว่างไว้ ระบบจะให้แผ่นงาน Excel พร้อมวัตถุดิบและปริมาณวัตถุดิบที่หาได้ในคลังสินค้า แผ่นงาน Excel จะมีลักษณะคล้ายกับ:
 
  <img class="screenshot" alt="Material Request Plan" src="{{docs_base_url}}/assets/img/manufacturing/material_request_excel.png">
 
-### 2.4 After Submitting
+### 2.4 หลังจากส่ง
 
-Once the Production Plan is submitted, the User gets an option to make Work Orders for the production items and Material Requests for the raw materials. Users can also set the Status as **Closed** in the Production Plan.
+เมื่อส่งแผนการผลิตแล้ว ผู้ใช้จะได้รับตัวเลือกในการสั่งงานสำหรับรายการการผลิตและคำขอวัสดุสำหรับวัตถุดิบ ผู้ใช้ยังสามารถตั้งค่าสถานะเป็น **ปิด** ในแผนการผลิต
 
 <img class="screenshot" alt="Make PO or MR" src="{{docs_base_url}}/assets/img/manufacturing/make_prod_mr_wo.png">
 
-#### 2.4.1 Closing a Production Plan
+#### 2.4.1 การปิดแผนการผลิต
 
-There could be occurrences where a Production Plan is partially complete and is going to be discontinued. This could happen due to reasons such as:
+อาจมีกรณีที่แผนการผลิตเสร็จสมบูรณ์บางส่วนและกำลังจะถูกยกเลิก สิ่งนี้อาจเกิดขึ้นเนื่องจากสาเหตุเช่น:
 
-- One of the items was independently produced outside the Production Plan.
-- A change in plans occurred and pending items will not be produced.
+- หนึ่งในรายการถูกผลิตอย่างอิสระนอกแผนการผลิต
+- มีการเปลี่ยนแปลงแผนและจะไม่มีการผลิตรายการที่รอดำเนินการ
 
-In cases like these, Users can set the Production Plan status to **Closed**, so that no new Work Orders or Material Requests are created against it.
+ในกรณีเช่นนี้ ผู้ใช้สามารถตั้งค่าสถานะแผนการผลิตเป็น **ปิด** เพื่อไม่ให้มีการสร้างใบสั่งงานหรือคำขอวัสดุใหม่
 
 <img class="screenshot" alt="Closing a Production Plan" src="{{docs_base_url}}/assets/img/manufacturing/production_plan_status.gif">
 
-The same can be **Re-opened**.
+เหมือนเดิมได้ **เปิดใหม่**
 
-### 2.5 Making work order for the sub-assembly items
+### 2.5 การสั่งงานรายการประกอบย่อย
 
 <img class="screenshot" alt="Make PO or MR" src="{{docs_base_url}}/assets/img/manufacturing/nokia_phone_bom.png">
 
-In the above screenshot, the User creates the Nokia Headphone first and then creates the Nokia Charger and then creates final finished goods.
+ในภาพหน้าจอด้านบน ผู้ใช้สร้าง Nokia Headphone ก่อน จากนั้นจึงสร้าง Nokia Charger จากนั้นจึงสร้างสินค้าสำเร็จรูปขั้นสุดท้าย
 
-Here, the User wants to make the work order for the Nokia Headphone and Nokia Charger, to do this, the user has to enable the field "Make Work Order for Sub Assembly Items" in the Production Plan against the item Nokia Lumia.
+ในที่นี้ ผู้ใช้ต้องการสั่งงานสำหรับหูฟัง Nokia และที่ชาร์จของ Nokia ในการดำเนินการนี้ ผู้ใช้ต้องเปิดใช้งานฟิลด์ "ทำการสั่งซื้อสำหรับรายการประกอบย่อย" ในแผนการผลิตกับรายการ Nokia Lumia
 
 <img class="screenshot" alt="Make PO or MR" src="{{docs_base_url}}/assets/img/manufacturing/production_plan_for_subassembely.png">
 
-On clicking make Work Order, the system will generate the Work Order for the sub-assembly items and the finished good items:
+เมื่อคลิกทำ ใบสั่งงาน ระบบจะสร้าง ใบสั่งงาน สำหรับส่วนประกอบย่อยและสินค้าสำเร็จรูป:
 
 <img class="screenshot" alt="Make PO or MR" src="{{docs_base_url}}/assets/img/manufacturing/wo_against_the_production_plan.png">
 
-## 3. Related Topics
-1. [Work Order](/docs/user/manual/en/manufacturing/work-order)
-1. [Job Card](/docs/user/manual/en/manufacturing/job-card)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [ใบสั่งงาน](/docs/user/manual/th/manufacturing/work-order)
+1. [บัตรงาน](/docs/user/manual/th/manufacturing/job-card)

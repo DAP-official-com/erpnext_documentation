@@ -1,93 +1,93 @@
 <!-- add-breadcrumbs -->
-# Patient
+# อดทน
 
-In ERPNext Healthcare, the Patient document corresponds to any individual who is the recipient of the healthcare services you provide. For every document,  it is important to have a Patient associated with it.
+ใน ERPNext Healthcare เอกสารผู้ป่วยจะสอดคล้องกับบุคคลใดก็ตามที่เป็นผู้รับบริการด้านสุขภาพที่คุณให้ไว้ สำหรับเอกสารทุกฉบับ จำเป็นต้องมีผู้ป่วยที่เกี่ยวข้องด้วย
 
-To create a new Patient:
+ในการสร้างผู้ป่วยใหม่:
 
-> Home > Healthcare > Masters > Patient > New Patient
+> หน้าหลัก > การดูแลสุขภาพ > รายการหลัก > ผู้ป่วย > ผู้ป่วยใหม่
 
-## 1. How to Create a Patient
+## 1. วิธีสร้างผู้ป่วย
 
-1. Go to the Patient list and click on New.
-2. Enter the First Name, Gender, Blood Group, DOB, etc.
-3. Enter the patient's mobile number. This is important if you have enabled SMS alerts for patients.
-4. Enter the email address for the patient.
-5. For the "Customer" field you can create a customer and select it here. If you don't create select a Customer and you have enabled "Link Customer to Patient" in [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings), a customer will be automatically created and linked as soon as you save the document.
-6. Save.
+1. ไปที่รายชื่อผู้ป่วยแล้วคลิกใหม่
+2. ระบุชื่อ เพศ กรุ๊ปเลือด DOB ฯลฯ
+3. ป้อนหมายเลขโทรศัพท์มือถือของผู้ป่วย นี่เป็นสิ่งสำคัญหากคุณเปิดใช้งานการแจ้งเตือนทาง SMS สำหรับผู้ป่วย
+4. ป้อนที่อยู่อีเมลสำหรับผู้ป่วย
+5. สำหรับฟิลด์ "ลูกค้า" คุณสามารถสร้างลูกค้าและเลือกได้ที่นี่ หากคุณไม่ได้สร้าง เลือกลูกค้า และคุณได้เปิดใช้งาน "เชื่อมโยงลูกค้ากับผู้ป่วย" ใน [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings) ลูกค้าจะถูกสร้างขึ้นและเชื่อมโยงโดยอัตโนมัติทันที คุณบันทึกเอกสาร
+6. บันทึก
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient_1.png">
 
-> Note: Linking a Customer to the Patient is necessary for billing and invoicing.
+> หมายเหตุ: การเชื่อมโยงลูกค้ากับผู้ป่วยเป็นสิ่งจำเป็นสำหรับการเรียกเก็บเงินและการออกใบแจ้งหนี้
 
-Switch to "Image" view from the list sidebar to view and edit multiple patients along with their photos.
+สลับไปที่มุมมอง "รูปภาพ" จากแถบด้านข้างรายการเพื่อดูและแก้ไขผู้ป่วยหลายรายพร้อมกับรูปภาพของพวกเขา
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient-repo.png">
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Capture History
+### 2.1 บันทึกประวัติ
 
-#### 2.1.1 Personal History
+#### 2.1.1 ประวัติส่วนตัว
 
-You can optionally capture Personal History like Occupation and Marital Status along with Patient's Relations with existing patients.
+คุณสามารถเลือกบันทึกประวัติส่วนตัว เช่น อาชีพและสถานภาพการสมรสพร้อมกับความสัมพันธ์ของผู้ป่วยกับผู้ป่วยที่มีอยู่
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient_personal_history.png">
 
-#### 2.1.2 Capture Medical History
+#### 2.1.2 บันทึกประวัติทางการแพทย์
 
-Optionally capture Medical History like Allergies, Medications, Medical History and Surgical History.
+เลือกบันทึกประวัติทางการแพทย์ เช่น การแพ้ ยา ประวัติทางการแพทย์ และประวัติการผ่าตัด
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient_surgical_history.png">
 
-#### 2.1.3 Capture Risk Factors and More
+#### 2.1.3 จับปัจจัยเสี่ยงและอื่น ๆ
 
-Capture Risk Factors like Tobacco and Alcohol consumption habits, etc.
+จับปัจจัยเสี่ยง เช่น พฤติกรรมการบริโภค ยาสูบ และแอลกอฮอล์ เป็นต้น
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient_risk_factors.png">
 
-### 2.2 Patient as a Customer
+### 2.2 ผู้ป่วยในฐานะลูกค้า
 
-ERPNext, especially the Accounts module, makes use of **Customer** document for booking all transactions. So, you may want to associate every Patient with a Customer. By default, the system creates a Customer alongside a Patient and links to it. If for some reason you do not intend to use the ERPNext Accounts module you can turn this behavior off by disabling the flag "Link Customer to Patient" in [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings).
+ERPNext โดยเฉพาะโมดูลบัญชีใช้เอกสาร **ลูกค้า** ในการจองธุรกรรมทั้งหมด ดังนั้น คุณอาจต้องการเชื่อมโยงผู้ป่วยทุกรายกับลูกค้า ตามค่าเริ่มต้น ระบบจะสร้างลูกค้าควบคู่ไปกับผู้ป่วยและเชื่อมโยงไปยังลูกค้า หากคุณไม่ต้องการใช้โมดูลบัญชี ERPNext ด้วยเหตุผลบางประการ คุณสามารถปิดการทำงานนี้โดยปิดใช้งานแฟล็ก "เชื่อมโยงลูกค้ากับผู้ป่วย" ใน [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings)
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient_link_customer.png">
 
-In many cases, you may want to associate multiple Patients to a single Customer against whom you want to book the transactions. For instance, a Veterinarian would require the care services provided to different pets of an individual invoiced against a single Customer. In that case, select the same Customer in all these patients while creation.
+ในหลายกรณี คุณอาจต้องการเชื่อมโยงผู้ป่วยหลายรายกับลูกค้ารายเดียวกับคนที่คุณต้องการจองธุรกรรม ตัวอย่างเช่น สัตวแพทย์ต้องการบริการดูแลสัตว์เลี้ยงที่แตกต่างกันของบุคคลที่ออกใบแจ้งหนี้ให้กับลูกค้ารายเดียว ในกรณีนั้น เลือกลูกค้ารายเดียวกันในผู้ป่วยทั้งหมดเหล่านี้ในขณะที่สร้าง
 
-### 2.3 Registration Fee
+### 2.3 ค่าลงทะเบียน
 
-Many clinical facilities collect a registration fee during Patient Registration. You can enable this feature by checking the "Collect Registration Fee" in Healthcare Settings and set the registration fee amount.
+สถานพยาบาลหลายแห่งเก็บค่าธรรมเนียมการลงทะเบียนระหว่างการลงทะเบียนผู้ป่วย คุณสามารถเปิดใช้งานคุณสมบัตินี้โดยทำเครื่องหมายที่ "เก็บค่าธรรมเนียมการลงทะเบียน" ในการตั้งค่าการดูแลสุขภาพ และกำหนดจำนวนเงินค่าธรรมเนียมการลงทะเบียน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient_registration_fee.png">
 
-If you have this option enabled, all new Patients you create will be in the "Disabled" state by default and will only be enabled after Invoicing the Registration Fee. To create Invoice and record the payment receipt, you can use the **Invoice Patient Registration** button in the Patient document.
+หากคุณเปิดใช้งานตัวเลือกนี้ ผู้ป่วยใหม่ทั้งหมดที่คุณสร้างจะอยู่ในสถานะ "ปิดใช้งาน" โดยค่าเริ่มต้น และจะเปิดใช้งานหลังจากออกใบแจ้งหนี้ค่าธรรมเนียมการลงทะเบียนเท่านั้น ในการสร้างใบแจ้งหนี้และบันทึกใบเสร็จรับเงิน คุณสามารถใช้ปุ่ม **การลงทะเบียนผู้ป่วยตามใบแจ้งหนี้** ในเอกสารของผู้ป่วย
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient_disabled.png">
 
-> Note: "Disabled" Patients are filtered out in all ERPNext Healthcare documents.
+> หมายเหตุ: ผู้ป่วยที่ "พิการ" จะถูกกรองออกในเอกสาร ERPNext Healthcare ทั้งหมด
 
-### 2.4 Grant Access to Patient Portal
-ERPNext Healthcare allows you to create a portal user associated with a Patient by simply entering the user email id. A welcome email will be sent to the Patient email address to "Complete" registration.
+### 2.4 ให้สิทธิ์เข้าถึงพอร์ทัลผู้ป่วย
+ERPNext Healthcare ช่วยให้คุณสร้างผู้ใช้พอร์ทัลที่เกี่ยวข้องกับผู้ป่วยโดยเพียงแค่ป้อน ID อีเมลของผู้ใช้ อีเมลต้อนรับจะถูกส่งไปยังที่อยู่อีเมลของผู้ป่วยเพื่อลงทะเบียน "เสร็จสิ้น"
 
-### 2.5. Actions
+### 2.5. การกระทำ
 
-> Note: User should have appropriate privileges (User Role) to view the buttons
+> หมายเหตุ: ผู้ใช้ควรมีสิทธิ์ที่เหมาะสม (User Role) เพื่อดูปุ่ม
 
-You can use the document links in the dashboard to traverse the linked document list with the Patient filter applied or use the + icons to create new records. Apart from this, the Patient document allows you to,
+คุณสามารถใช้ลิงก์เอกสารในแดชบอร์ดเพื่อสำรวจรายการเอกสารที่เชื่อมโยงโดยใช้ตัวกรองผู้ป่วยหรือใช้ไอคอน + เพื่อสร้างเรกคอร์ดใหม่ นอกเหนือจากนี้ เอกสารผู้ป่วยยังช่วยให้คุณ
 
-* View Patient's Health History, using **View > Patient History** button.
+* ดูประวัติสุขภาพของผู้ป่วยโดยใช้ปุ่ม **ดู> ประวัติผู้ป่วย**
 
-* **Create > Vital Signs** to record the vitals of the Patient.
+* **สร้าง > Vital Signs** เพื่อบันทึกค่าพลังชีวิตของผู้ป่วย
 
-* Manually add data to a Patient's Medical Record, for instance, a scanned copy of a Lab Test performed in an external Laboratory or a quick note on the Patient's condition, using **Create > Medical Record** button.
+* เพิ่มข้อมูลลงในเวชระเบียนของผู้ป่วยด้วยตนเอง เช่น สำเนาการสแกนของการทดสอบในห้องปฏิบัติการที่ดำเนินการในห้องปฏิบัติการภายนอก หรือบันทึกย่อเกี่ยวกับสภาพของผู้ป่วย โดยใช้ปุ่ม **สร้าง > เวชระเบียน**
 
-* Record the details of an encounter by using **Create > Patient Encounter** button
+* บันทึกรายละเอียดการเผชิญหน้าโดยใช้ปุ่ม **สร้าง> พบผู้ป่วย**
 
-The Patient document holds the Patient barcode and can be used in any the default print formats or any [Custom Print Formats](/docs/user/manual/en/customize-erpnext/print-format) that you create for printing patient identification tags.
+เอกสารผู้ป่วยมีบาร์โค้ดของผู้ป่วยและสามารถใช้ในรูปแบบการพิมพ์เริ่มต้นหรือ [รูปแบบการพิมพ์แบบกำหนดเอง](/docs/user/manual/th/customize-erpnext/print-format) ที่คุณสร้างขึ้นสำหรับการพิมพ์แท็กระบุตัวผู้ป่วย .
 
-> This Form has been Changed in Version 13
+> แบบฟอร์มนี้มีการเปลี่ยนแปลงในเวอร์ชัน 13
 
-## 3. Related Topics
-1. [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings)
+## 3. หัวข้อที่เกี่ยวข้อง
+1. [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings)
 
 {next}

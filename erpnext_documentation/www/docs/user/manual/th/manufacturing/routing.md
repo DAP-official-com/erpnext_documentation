@@ -1,42 +1,41 @@
 <!-- add-breadcrumbs -->
-# Routing
+# การกำหนดเส้นทาง
 
-**Routing is a template of BOM Operations.**
+**การกำหนดเส้นทางเป็นเทมเพลตของกระบวนการทำงาน  BOM**
 
-A Routing stores all Operations along with the description, hourly rate, operation time, batch size, etc. Creating a Routing for your BOM Operations is useful when similar Operations are used for manufacturing different items.
+การกำหนดเส้นทางจะจัดเก็บการดำเนินการทั้งหมดพร้อมกับคำอธิบาย อัตรารายชั่วโมง เวลาดำเนินการ ขนาดแบทช์ ฯลฯ การสร้างการกำหนดเส้นทางสำหรับการดำเนินการ BOM ของคุณจะมีประโยชน์เมื่อมีการใช้การดำเนินการที่คล้ายคลึงกันสำหรับการผลิตรายการต่างๆ
 
-To access the Routing list, go to:
-> Home > Manufacturing > Bill of Materials > Routing
+ในการเข้าถึงรายการเส้นทาง ไปที่:
+> หน้าหลัก > การผลิต > รายการวัสดุ > การกำหนดเส้นทาง
 
-## 1. Prerequisites
-* [Operation](/docs/user/manual/en/manufacturing/operation)
-* [Workstation](/docs/user/manual/en/manufacturing/workstation)
+## 1. ข้อกำหนดเบื้องต้น
+* [การทำงาน](/docs/user/manual/th/manufacturing/operation)
+* [เวิร์กสเตชัน](/docs/user/manual/th/manufacturing/workstation)
 
-## 2. How to Create a Routing
-1. Go to the Routing list, click on New.
-1. Enter a name for the Routing.
-1. Enter the Operations in the BOM Operation table:
-    1. Select the Operation.
-    1. The default Workstation will be fetched.
-    1. Enter the Hourly Rate for running this Operation.
-    1. Enter the Operation Time in minutes.
-    1. Enter the Batch Size, i.e. the number of units processed in this Operation.
-    1. The Operating Cost will be calculated based on the Hourly Rate and the Operation Time.
-1. Save.
+## 2. วิธีสร้างเส้นทาง
+1. ไปที่รายการเส้นทาง คลิก ใหม่
+1. ป้อนชื่อสำหรับการกำหนดเส้นทาง
+1. ป้อน กระบวนการทำงาน ในตารางกระบวนการทำงาน BOM:
+    1. เลือกการดำเนินการ
+    1. เวิร์กสเตชันเริ่มต้นจะถูกดึงข้อมูล
+    1. ป้อนอัตรารายชั่วโมงสำหรับการดำเนินการนี้
+    1. ป้อนเวลาดำเนินการเป็นนาที
+    1. ป้อนขนาดแบชท์ นั่นคือจำนวนหน่วยที่ประมวลผลในการดำเนินการนี้
+    1. ค่าใช้จ่ายในการดำเนินงานจะคำนวณตามอัตรารายชั่วโมงและเวลาดำเนินการ
+1. บันทึก
 
     ![Routing](/docs/assets/img/manufacturing/routing.png)
 
-Once created, a Routing can be selected in a BOM to fetch the Operations stored in the Routing.
+เมื่อสร้างแล้ว คุณสามารถเลือกเส้นทาง ใน BOM เพื่อดึง กระบวนการทำงาน ที่จัดเก็บไว้ใน เส้นทาง ได้
 ![Routing BOM](/docs/assets/img/manufacturing/routing-bom.png)
 
-## 3. Sequence ID in Routing
+## 3. ลำดับในการกำหนดเส้นทาง
 ![Routing Sequence ID](/docs/assets/img/manufacturing/sequence-id-routing.png)
-Sequence ID enforces the users to complete the operations sequentially via Job Card. In case a user tries to complete an operation before completing any of its precedent operations as per the Sequence ID, the system throws a validation error as shown in the screenshot below.
+ลำดับบังคับให้ผู้ใช้ดำเนินการตามลำดับผ่านบัตรงาน ในกรณีที่ผู้ใช้พยายามดำเนินการให้เสร็จสิ้นก่อนที่จะดำเนินการใดๆ ก่อนหน้านี้ให้เสร็จสิ้นตามรหัสลำดับ ระบบจะแสดงข้อผิดพลาดในการตรวจสอบความถูกต้องตามที่แสดงในภาพหน้าจอด้านล่าง
 
 ![Error](/docs/assets/img/manufacturing/sequence-id-error.png)
 
-## 2. Related Topics
-1. [Work Order](/docs/user/manual/en/manufacturing/work-order)
-1. [Bill Of Materials](/docs/user/manual/en/manufacturing/bill-of-materials)
-
+## 2. หัวข้อที่เกี่ยวข้อง
+1. [ใบสั่งงาน](/docs/user/manual/th/manufacturing/work-order)
+1. [รายการวัสดุ](/docs/user/manual/th/manufacturing/bill-of-materials)
 {next}

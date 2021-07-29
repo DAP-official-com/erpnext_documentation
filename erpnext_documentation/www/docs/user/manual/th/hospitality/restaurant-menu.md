@@ -1,8 +1,8 @@
 <!-- add-breadcrumbs -->
-# Restaurant Menu
+# เมนูร้านอาหาร
 
-For every restaurant you must set an active Restaurant Menu from which orders can be placed. You can also set the rates for each of the item for the day.
+สำหรับร้านอาหารทุกแห่ง คุณต้องตั้งค่าเมนูร้านอาหารที่ใช้งานอยู่ซึ่งสามารถสั่งอาหารได้ คุณยังสามารถกำหนดอัตราสำหรับแต่ละรายการในวันนั้นได้อีกด้วย
 
-When you save the Restaurant Menu, a Price List is created for that Menu and all pricing is linked to that price list. This way you can easily control the items on offer and pricing from the menu.
+เมื่อคุณบันทึกเมนูร้านอาหาร รายการราคาจะถูกสร้างขึ้นสำหรับเมนูนั้นและราคาทั้งหมดจะเชื่อมโยงกับรายการราคานั้น วิธีนี้ทำให้คุณสามารถควบคุมรายการที่นำเสนอและราคาได้อย่างง่ายดายจากเมนู
 
 <img class="screenshot" alt="Restaurant Menu" src="{{docs_base_url}}/assets/img/restaurant/restaurant-menu.png">

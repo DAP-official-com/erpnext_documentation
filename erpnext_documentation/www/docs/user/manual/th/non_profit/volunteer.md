@@ -1,25 +1,25 @@
 <!-- add-breadcrumbs -->
-#Volunteer
+#อาสาสมัคร
 
-The Volunteer doctype allows you to record the Volunter details.
+ประเภทเอกสารอาสาสมัครช่วยให้คุณบันทึกรายละเอียดอาสาสมัครได้
 
-Volunteer are simply contacts in your ERPNext database with one or more volunteering program. The contact may be an individual, a household, an organisation, or some other contact sub-type
+อาสาสมัครเป็นเพียงผู้ติดต่อในฐานข้อมูล ERPNext ของคุณกับโปรแกรมอาสาสมัครตั้งแต่หนึ่งโปรแกรมขึ้นไป ผู้ติดต่ออาจเป็นบุคคล ครัวเรือน องค์กร หรือผู้ติดต่อประเภทย่อย
 
-To create new Volunteer go to:
+ในการสร้างอาสาสมัครใหม่ไปที่:
 
-> Non Profit > Volunteer > New
+> องค์กรไม่แสวงหากำไร > อาสาสมัคร > ใหม่
 
 <img class="screenshot" alt="Volunteer" src="{{docs_base_url}}/assets/img/non_profit/volunteer/volunteer.png">
 
-**Email:** Email field is the id of Member doctype.
+**อีเมล:** ฟิลด์อีเมลคือรหัสของ doctype สมาชิก
 
-**Volunteer Type:** Volunteer Type is link field to Volunteer Type Doctype. Volunteer can select available Doctype.
+**ประเภทอาสาสมัคร:** ประเภทอาสาสมัครคือช่องลิงก์ไปยังประเภทเอกสารประเภทอาสาสมัคร อาสาสมัครสามารถเลือก Doctype ที่มีอยู่ได้
 
-**Address and Contact Section:** This Section linked to address and contact doctypes.
+**ส่วนที่อยู่และการติดต่อ:** ส่วนนี้เชื่อมโยงกับที่อยู่และประเภทเอกสารการติดต่อ
 
-**Volunteer Availability Section:** This section is child table which contains select field about volunteer availability. a volunteer can select availability such as weekly, morning etc
+**ส่วนความพร้อมของอาสาสมัคร:** ส่วนนี้เป็นตารางย่อยซึ่งมีฟิลด์เลือกเกี่ยวกับความพร้อมของอาสาสมัคร อาสาสมัครสามารถเลือกห้องว่างได้ เช่น รายสัปดาห์ ตอนเช้า เป็นต้น
 
-**Volunteer Skills Section:** This section is child table which contains data field about the volunteer skills. a volunteer can add multiple skill for eg. Desk Job,
-Hospitality, Food management, computer operator etc.
+**หมวดทักษะอาสาสมัคร:** ส่วนนี้เป็นตารางย่อยที่มีช่องข้อมูลเกี่ยวกับทักษะอาสาสมัคร อาสาสมัครสามารถเพิ่มทักษะได้หลายอย่างเช่น งานโต๊ะทำงาน,
+การบริการ การจัดการอาหาร พนักงานคอมพิวเตอร์ ฯลฯ
 
 {next}

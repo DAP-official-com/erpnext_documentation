@@ -1,48 +1,47 @@
 <!-- add-breadcrumbs -->
-# Introduction
-ERPNext comes batteries included for all requirements of a manufacturing business like Bill of Materials tracking, Production Order planning and execution, procurement and a lot more.
-
+# บทนำ
+ERPNext มาพร้อมเครื่องมือต่างๆสำหรับความต้องการทั้งหมดของธุรกิจการผลิต เช่น การติดตาม Bill of Materials การวางแผนและการดำเนินการตามใบสั่งผลิต การจัดซื้อ และอื่นๆ อีกมากมาย
 <img class="screenshot" alt="BOM" src="{{docs_base_url}}/assets/img/manufacturing/BOM-hero.png">
 
-## 1. Bill of Material, Production Order, and More
+## 1. รายการวัสดุ ใบสั่งผลิต และอื่นๆ
 
-The Manufacturing module in ERPNext helps you to maintain multi-level Bill of Materials (BOMs) for your Items. It helps in product costing, production planning, creating work orders for your manufacturing shop floors, creating job cards, and planning inventory by getting your material requirement via BOMs (also called Material Requirements Planning MRP).
+โมดูลการผลิตใน ERPNext ช่วยให้คุณรักษารายการวัสดุ (BOM) หลายระดับสำหรับสินค้าของคุณ ช่วยในการคิดต้นทุนผลิตภัณฑ์ การวางแผนการผลิต การสร้างใบสั่งงานสำหรับพื้นที่การผลิตของคุณ การสร้างบัตรงาน และการวางแผนสินค้าคงคลังโดยรับความต้องการวัสดุของคุณผ่าน BOM (หรือที่เรียกว่า MRP การวางแผนความต้องการวัสดุ).
 
 <img class="screenshot" alt="BOM" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-hero.png">
 
-You can also effectively track operations like:
+คุณยังสามารถติดตามการดำเนินการได้อย่างมีประสิทธิภาพ เช่น:
 
-* Production Orders against a Customer's Sales Order
-* Material Planning
-* Purchasing based on Material Planning and reorder level
-* Track actual material transfer against a Production Order
-* Manufactured items dispatched to the Customers
-* View reports
+* ใบสั่งผลิตกับใบสั่งขายของลูกค้า
+* การวางแผนวัสดุ
+* การจัดซื้อตามการวางแผนวัสดุและการจัดลำดับใหม่
+* ติดตามการถ่ายโอนวัสดุจริงกับใบสั่งผลิต
+* สินค้าที่ผลิตส่งถึงมือลูกค้า
+* ดูรายงาน
 
-## 2. Types of Production Planning
+## 2. ประเภทของการวางแผนการผลิต
 
-Broadly there are three types of Production Planning Systems:
+ระบบการวางแผนการผลิตโดยทั่วไปมีสามประเภท:
 
- * __Make-to-Stock:__ In these systems, production is planned based on a forecast and the Items are then sold to distributors or customers. All fast-moving consumer goods that are sold in retail shops like soaps, packaged water, etc. and electronics like phones are Made-to-Stock.
- * __Make-to-Order:__ In these systems, items are manufactured only after the customer places an order of a certain number according to the customer's requirement. For example, a wedding cake.
- * __Engineer-to-Order:__ In this case, each sale is a separate project and has to be designed and engineered to the requirements of the customer. Common examples of this are any custom business-like furniture, machine tools, specialty devices, metal fabrication, etc.
+ * __Make-to-Stock:__ ในระบบเหล่านี้ การผลิตจะถูกวางแผนตามการคาดการณ์ จากนั้นสินค้าจะถูกขายให้กับผู้จัดจำหน่ายหรือลูกค้า สินค้าอุปโภคบริโภคที่เคลื่อนไหวเร็วทั้งหมดที่จำหน่ายในร้านค้าปลีก เช่น สบู่ น้ำบรรจุหีบห่อ ฯลฯ และอุปกรณ์อิเล็กทรอนิกส์ เช่น โทรศัพท์ เป็นสินค้าที่ผลิตในสต็อก
+ * __Make-to-Order:__ ในระบบเหล่านี้ สินค้าจะผลิตขึ้นหลังจากที่ลูกค้าทำการสั่งซื้อตามจำนวนที่กำหนดตามความต้องการของลูกค้าเท่านั้น ตัวอย่างเช่น เค้กแต่งงาน.
+ * __Engineer-to-Order:__ ในกรณีนี้ การขายแต่ละครั้งเป็นโครงการที่แยกจากกัน และต้องได้รับการออกแบบและปรับโครงสร้างตามความต้องการของลูกค้า ตัวอย่างทั่วไปของสิ่งนี้ ได้แก่ เฟอร์นิเจอร์ที่ปรับแต่งตามสั่งสำหรับธุรกิจ เครื่องมือกล อุปกรณ์พิเศษ การแปรรูปโลหะ ฯลฯ
 
-Most small and medium-sized manufacturing businesses are based on a make-to-
-order or engineer-to-order system and so is ERPNext.
+ธุรกิจการผลิตขนาดกลางและขนาดย่อมส่วนใหญ่อยู่บนพื้นฐานของการผลิตเพื่อ
+ระบบสั่งซื้อหรือวิศวกรตามคำสั่ง ERPNext ก็เช่นกัน
 
-For engineer-to-order systems, the Manufacturing module should be used along
-with the Project module.
+สำหรับระบบตามคำสั่งของวิศวกร ควรใช้โมดูลการผลิตควบคู่ไปด้วย
+ด้วยโมดูลโครงการ
 
-## 3. Manufacturing impact on Inventory
+## 3. ผลกระทบจากการผลิตต่อสินค้าคงคลัง
 
-You can track work-in-progress by checking the Work In Progress Warehouses.
+คุณสามารถติดตามงานระหว่างทำโดยการตรวจสอบคลังสินค้าที่กำลังดำเนินการอยู่
 
-ERPNext will help you track material movement by automatically creating Stock
-Entries from your Work Orders by creating Bill of Materials. When a work order finishes and an item is manufactured, the Stock Entry will be affected. Raw materials are consumed and finished items are created.
+ERPNext จะช่วยคุณติดตามการเคลื่อนไหวของวัสดุโดยการสร้าง Stock . โดยอัตโนมัติ
+รายการจากคำสั่งงานของคุณโดยการสร้างรายการวัสดุ เมื่อใบสั่งงานเสร็จสิ้นและมีการผลิตสินค้า รายการสต็อคจะได้รับผลกระทบ วัตถุดิบถูกใช้ไปและสินค้าสำเร็จรูปถูกสร้างขึ้น
 
-## 4. ERPNext Manufacturing Demo
+## 4. การสาธิตโมดูลการผลิตโดย ERPNext
 
-Check the following video to educate yourself on each feature in the manufacturing module.
+ตรวจสอบวิดีโอต่อไปนี้เพื่อให้ความรู้เกี่ยวกับคุณลักษณะแต่ละอย่างในโมดูลการผลิต
 
 <div class="embed-container">
  <iframe src="https://www.youtube.com/embed/xE74wdQU5cc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

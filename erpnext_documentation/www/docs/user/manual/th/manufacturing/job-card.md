@@ -1,97 +1,97 @@
 <!-- add breadcrumbs -->
-# Job Card
+# บัตรงาน
 
-**A Job Card stores actual production information about a particular Operation performed on a particular Workstation.**
+**บัตรงานเก็บข้อมูลการผลิตจริงเกี่ยวกับการดำเนินการเฉพาะที่ดำเนินการบนเวิร์กสเตชันเฉพาะ**
 
-A Job Card is created from the Work Order and given to each of the Workstations in the manufacturing floor to start the production of an item with a certain quantity in each of the operations defined in the Work Order.
+บัตรงานถูกสร้างขึ้นจากใบสั่งงานและมอบให้กับแต่ละเวิร์กสเตชันในชั้นการผลิตเพื่อเริ่มการผลิตรายการด้วยปริมาณที่แน่นอนในแต่ละการดำเนินการที่กำหนดไว้ในใบสั่งงาน
 
-Job Card allows each Operation's workstation to issue a “Material Request” and “Stock Transfer to Manufacture” for raw material required against a “Job Card”.
+การ์ดงานอนุญาตให้เวิร์กสเตชันของการดำเนินการแต่ละแห่งออก "คำขอวัสดุ" และ "การโอนสต็อคไปยังการผลิต" สำหรับวัตถุดิบที่จำเป็นสำหรับ "บัตรงาน"
 
-Job Card completion will change the production status in Work Order, we can track the completion of production progress for each of the Operations defined in the Work Order.
+การทำบัตรงานให้เสร็จสมบูรณ์จะเปลี่ยนสถานะการผลิตในใบสั่งงาน เราสามารถติดตามความสมบูรณ์ของความคืบหน้าในการผลิตสำหรับแต่ละการดำเนินการที่กำหนดไว้ในใบสั่งงาน
 
 <img class="screenshot" alt="Work Order" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-flow-jc.png">
 
-To access the Job Card list, go to:
-> Home > Manufacturing > Production > Job Card
+ในการเข้าถึงรายการบัตรงาน ไปที่:
+> หน้าหลัก > การผลิต > การผลิต > บัตรงาน
 
-## 1. Prerequisites
-Before creating and using a Job Card, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้บัตรงาน ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Bill Of Materials](/docs/user/manual/en/manufacturing/bill-of-materials)
-* [Operation](/docs/user/manual/en/manufacturing/operation)
-* [Workstation](/docs/user/manual/en/manufacturing/workstation)
-* [Work Order](/docs/user/manual/en/manufacturing/work-order)
+* [รายการวัสดุ](/docs/user/manual/th/manufacturing/bill-of-materials)
+* [การทำงาน](/docs/user/manual/th/manufacturing/operation)
+* [เวิร์กสเตชัน](/docs/user/manual/th/manufacturing/workstation)
+* [ใบสั่งงาน](/docs/user/manual/th/manufacturing/work-order)
 
-## 2. How to Create a Job Card
-Job Card for Operations is automatically created when a Work Order is submitted.
+## 2. วิธีสร้างบัตรงาน
+การ์ดงานสำหรับการปฏิบัติงานจะถูกสร้างขึ้นโดยอัตโนมัติเมื่อมีการส่งใบสั่งงาน
 
-This is what a Job Card looks like:
+นี่คือลักษณะของบัตรงาน:
 
 ![Job Card](/docs/assets/img/manufacturing/job-card.png)
 
-To use a Job Card follow these steps:
+ในการใช้บัตรงานให้ทำตามขั้นตอนเหล่านี้:
 
-1. Click on the Start Job button, then on Complete Job when you're done.
-1. Alternatively, you can also fill the From Time and To Time in the Time Logs table.
-1. Select the Employee to whom the Job Card was assigned.
-1. Enter the Completed Quantity. This is the number of Items on which the Operation was performed for the selected time interval.
-1. Add more rows in the Time Logs table and record time using the Start/Completed buttons.
-1. Click on Submit.
+1. คลิกที่ปุ่ม เริ่มงาน จากนั้นคลิก เสร็จงาน เมื่อคุณทำเสร็จแล้ว
+1. หรือคุณสามารถกรอก เวลาเริ่ม และ เวลาเสร็จ ในตารางบันทึกเวลา
+1. เลือกพนักงานที่ได้รับมอบหมายบัตรงาน
+1. ป้อนจำนวนที่เสร็จสมบูรณ์ นี่คือจำนวนรายการที่มีการดำเนินการสำหรับช่วงเวลาที่เลือก
+1. เพิ่มแถวในตารางบันทึกเวลาและบันทึกเวลาโดยใช้ปุ่มเริ่ม/เสร็จสิ้น
+1. คลิกที่ส่ง
 
-In a Work Order, the Operations and Workstations are fetched from the BOM of an Item. For ease of use, you should ensure that the [Routing](/docs/user/manual/en/manufacturing/routing) is configured in the BOM.
+ในใบสั่งงาน การดำเนินการและเวิร์กสเตชันจะถูกดึงมาจาก BOM ของรายการ เพื่อความสะดวกในการใช้งาน คุณควรตรวจสอบให้แน่ใจว่า [Routing](/docs/user/manual/th/manufacturing/routing) ได้รับการกำหนดค่าใน BOM
 
-Each Job Card created will have Workstation & Operations assigned. The raw material required from each Source Warehouse will be calculated based on quantity required for production.
+การ์ดงานแต่ละใบที่สร้างขึ้นจะมีเวิร์กสเตชันและการปฏิบัติงานที่ได้รับมอบหมาย วัตถุดิบที่ต้องการจาก Source Warehouse แต่ละแห่งจะถูกคำนวณตามปริมาณที่จำเป็นสำหรับการผลิต
 
-On submitting a Work Order, Job Cards will be auto-created based on the values in the Operations table.
+ในการส่งใบสั่งงาน การ์ดงานจะถูกสร้างขึ้นโดยอัตโนมัติตามค่าในตารางการดำเนินการ
 
 <img class="screenshot" alt="Create Shareholder" src="/docs/assets/img/manufacturing/work-order-job-card-creation.gif">
 
-### 2.1 Select Work Order with Item to Manufacture
+### 2.1 เลือกสั่งงานพร้อมรายการที่จะผลิต
 
-You can select 'Transfer Material Against' as 'Job Card' on the Bill of Materials to transfer raw materials for Production against Job Cards.
+คุณสามารถเลือก 'โอนวัสดุต่อ' เป็น 'บัตรงาน' ในรายการวัสดุเพื่อโอนวัตถุดิบสำหรับการผลิตกับบัตรงาน
 
-In the Work Order, you can select the option:
+ในใบสั่งงาน คุณสามารถเลือกตัวเลือก:
 
 <img class="screenshot" alt="Create Shareholder" src="/docs/assets/img/manufacturing/work-order-transfer-against-job-card.png">
 
-### 2.3 Using a Job Card
+### 2.3 การใช้บัตรงาน
 
-Employee assignment and timing detail will also be defined in Job Card. The time taken to do a job can be recorded. If multiple employees are working on the same Operation, add new job cards by clicking on the 'Create Job' Card button.
+รายละเอียดการมอบหมายและกำหนดเวลาพนักงานจะระบุไว้ในบัตรงานด้วย สามารถบันทึกเวลาที่ใช้ในการทำงาน หากมีพนักงานหลายคนทำงานใน Operation เดียวกัน ให้เพิ่มการ์ดงานใหม่โดยคลิกที่ปุ่ม 'สร้างงาน'
 
 <img class="screenshot" alt="Create Shareholder" src="/docs/assets/img/manufacturing/job-card-form.png">
 
-### 2.4 Material Request against Job Card
+### 2.4 การขอวัสดุกับบัตรงาน
 
-A Material Request will be raised from the Job Card as a basis/order to prepare raw material required for the manufacturing process. The Material Request raised will have its reference to the original Job Card number.
+คำขอวัสดุจะเพิ่มขึ้นจากบัตรงานเป็นพื้นฐาน/คำสั่งเพื่อเตรียมวัตถุดิบที่จำเป็นสำหรับกระบวนการผลิต คำขอวัสดุที่แจ้งจะมีการอ้างอิงถึงหมายเลขบัตรงานเดิม
 
 <img class="screenshot" alt="Create Shareholder" src="/docs/assets/img/manufacturing/material-request-against-job-card.png">
 
-Track the Manufacturing Progress in The Work Order by The Completion of Each Operations defined in Work Order.
+ติดตามความคืบหน้าของการผลิตในใบสั่งงานโดยความสมบูรณ์ของการดำเนินการแต่ละอย่างที่กำหนดไว้ในใบสั่งงาน
 
-Job Card completion allows you to track the manufacturing progress inside the Work Order by looking at the completion of each Operation related to the Work Order.
+การกรอกใบงานทำให้คุณสามารถติดตามความคืบหน้าในการผลิตภายในใบสั่งงานโดยดูที่ความสมบูรณ์ของการดำเนินการแต่ละรายการที่เกี่ยวข้องกับใบสั่งงาน
 
 <img class="screenshot" alt="Work Order Job Card Completion" src="/docs/assets/img/manufacturing/work-order-job-card-completion.png">
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Tracking Quality Inspection
+### 3.1 ติดตามการตรวจสอบคุณภาพ
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-For production orders, the quality of in-process (semi-finished) goods also needs to be tracked. It is defined by the process (operation) performed on it which is in turn defined in the Job Card. In-process tests are different than incoming and outgoing material tests. Monitoring quality during manufacturing helps to make sure that the finished product produced is of the desired quality. You can create a Quality Inspection for the Production Item against the Job Card.
+สำหรับใบสั่งผลิต จะต้องมีการติดตามคุณภาพของสินค้าระหว่างดำเนินการ (กึ่งสำเร็จรูป) ด้วย มันถูกกำหนดโดยกระบวนการ (การดำเนินการ) ที่ดำเนินการซึ่งจะถูกกำหนดในบัตรงาน การทดสอบในกระบวนการแตกต่างจากการทดสอบวัสดุขาเข้าและขาออก การตรวจสอบคุณภาพระหว่างการผลิตช่วยให้มั่นใจได้ว่าผลิตภัณฑ์สำเร็จรูปที่ผลิตได้นั้นมีคุณภาพตามที่ต้องการ คุณสามารถสร้างการตรวจสอบคุณภาพสำหรับรายการการผลิตกับบัตรงาน
 
 <img class="screenshot" alt="Quality Inspection Against Job Card" src="/docs/assets/img/manufacturing/qi-against-job-card.png">
 
 <img class="screenshot" alt="Quality Inspection link in Job Card" src="/docs/assets/img/manufacturing/qi-link-in-job-card.png">
 
-For more details, refer the [Quality Inspection](/docs/user/manual/en/stock/quality-inspection) page.
+สำหรับรายละเอียดเพิ่มเติม โปรดดูหน้า [การตรวจสอบคุณภาพ](/docs/user/manual/th/stock/quality-inspection)
 
-### 3.2 Scrap Items
+### 3.2 รายการของเสีย
 
-While completing the operations, there might be chances that scrap materials will be produced. This scrap materials are required to be added in the inventory. For that user needs to put the details of the scrap items in the job card.
+ขณะดำเนินการเสร็จสิ้น อาจมีโอกาสเกิดเศษวัสดุได้ ต้องเพิ่มเศษวัสดุนี้ลงในสินค้าคงคลัง สำหรับผู้ใช้รายนั้นต้องใส่รายละเอียดของรายการที่สนใจในบัตรงาน
 
 <img class="screenshot" alt="Scrap Items" src="/docs/assets/img/manufacturing/job-card-scrap-item.png">
 
-On completion of the work order, system will add this scrap items in the respective scrap warehouse.
+เมื่อใบสั่งงานเสร็จสมบูรณ์ ระบบจะเพิ่มรายการของเสียนี้ในคลังสินค้าของเสียที่เกี่ยวข้อง
 
 {next}

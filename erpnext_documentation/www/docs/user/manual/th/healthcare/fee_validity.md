@@ -1,28 +1,28 @@
-# Fee Validity
+# ความถูกต้องของค่าธรรมเนียม
 
-Many healthcare facilities do not charge for follow up consultations within a time period after the first visit. You can configure the number of free follow-ups allowed as well as the time period for free consultations in Healthcare Settings. This will create a Fee Validity document.
-
-
-## 1. How to Enable Free Follow Up:
+สถานพยาบาลหลายแห่งไม่คิดค่าใช้จ่ายสำหรับการให้คำปรึกษาติดตามผลภายในระยะเวลาหลังจากการเข้ารับการตรวจครั้งแรก คุณสามารถกำหนดจำนวนการติดตามฟรีที่อนุญาต รวมถึงระยะเวลาสำหรับการให้คำปรึกษาฟรีในการตั้งค่าการดูแลสุขภาพ นี้จะสร้างเอกสารความถูกต้องของค่าธรรมเนียม
 
 
-To enable free follow-ups go to:
+## 1. วิธีเปิดใช้งานการติดตามฟรี:
 
 
-> Home > Healthcare > Settings > Healthcare Settings
-
-- Check "Enable Free Follow Ups".
-- Enter the "Number of Patient Encounters in Valid Days".
-- Enter "Valid number of days"
+หากต้องการเปิดใช้งานการติดตามฟรี ให้ไปที่:
 
 
-For example, as shown below, a patient can have 3 free follow-ups within 30 days:
+> หน้าหลัก > การดูแลสุขภาพ > ตั้งค่า > การตั้งค่าการดูแลสุขภาพ
+
+- ตรวจสอบ "เปิดใช้งานการติดตามฟรี"
+- ป้อน "จำนวนการพบผู้ป่วยในวันที่ถูกต้อง"
+- ป้อน "จำนวนวันที่ถูกต้อง"
+
+
+ตัวอย่างเช่น ดังที่แสดงด้านล่าง ผู้ป่วยสามารถติดตามผลได้ฟรี 3 ครั้งภายใน 30 วัน:
 
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/fee_validity_settings.png">
 
 
-After this is configured, as soon as you create an Appointment for a new patient, a Fee Validity document will be created.
+หลังจากกำหนดค่านี้แล้ว ทันทีที่คุณสร้างการนัดหมายสำหรับผู้ป่วยรายใหม่ เอกสารความถูกต้องของค่าธรรมเนียมจะถูกสร้างขึ้น
 
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/fee_validity.png">
@@ -31,25 +31,25 @@ After this is configured, as soon as you create an Appointment for a new patient
 This Fee Validity document will be updated with every appointment:
 
 
-- **Status**: Status is set as _Pending_ till the number of free appointments is completed and the appointment dates are within the "Valid Till" deadline. Once all free appointments have been created the status is updated to _Completed_
-- **Max number of visits**: The maximum number of free visits allowed.
-- **Visited**: The number of free visits completed.
-- **Start Date**: The first free appointment's date.
-- **Valid Till**: The last date of Fee Validity. This is calculated as _Start Date + Valid Number of Days_ (from Healthcare Settings).
-- **Reference Appointments**: Links to all the appointments covered under the Fee Validity document.
+- **สถานะ**: สถานะถูกตั้งเป็น _Pending_ จนกว่าจำนวนการนัดหมายฟรีจะเสร็จสิ้น และวันที่นัดหมายอยู่ภายในกำหนดเวลา "ใช้ได้จนถึง" เมื่อสร้างการนัดหมายฟรีทั้งหมดแล้ว สถานะจะถูกอัปเดตเป็น _Completed_
+- **จำนวนการเข้าชมสูงสุด**: จำนวนการเข้าชมฟรีสูงสุดที่อนุญาต
+- **เข้าชมแล้ว**: จำนวนการเข้าชมฟรีที่เสร็จสิ้น
+- **วันที่เริ่มต้น**: วันที่นัดหมายฟรีครั้งแรก
+- **ใช้ได้จนถึง**: วันสุดท้ายของค่าธรรมเนียมที่ถูกต้อง ซึ่งคำนวณจาก _Start Date + Valid Number of Days_ (จากการตั้งค่าการดูแลสุขภาพ)
+- **การนัดหมายเพื่อการอ้างอิง**: ลิงก์ไปยังการนัดหมายทั้งหมดที่อยู่ในเอกสารความถูกต้องของค่าธรรมเนียม
 
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/fee_validity_completed.png">
 
 
-> This Form has been Changed in Version 13
+> แบบฟอร์มนี้มีการเปลี่ยนแปลงในเวอร์ชัน 13
 
-## 2. Related Topics
+## 2. หัวข้อที่เกี่ยวข้อง
 
 
-1. [Patient Appointment](/docs/user/manual/en/healthcare/patient_appointment)
-1. [Patient](/docs/user/manual/en/healthcare/patient)
-1. [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings)
+1. [การนัดหมายผู้ป่วย](/docs/user/manual/th/healthcare/patient_appointment)
+1. [ผู้ป่วย](/docs/user/manual/th/healthcare/patient)
+1. [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings)
 
 
 {next}

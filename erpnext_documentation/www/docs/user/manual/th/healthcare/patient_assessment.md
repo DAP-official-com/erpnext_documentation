@@ -1,30 +1,30 @@
 <!-- add-breadcrumbs -->
 
-# Patient Assessment
+# การประเมินผู้ป่วย
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-The Patient Assessments in Rehabilitation provide evidence to support the development of a rehabilitation plan, tailored to the client's needs, circumstances and goals. Healthcare Practitioners have to record assessments at regular intervals to track Patient Progress. There are various assessments that are conducted for the Patient like Motor Assessment Scale, Functional Mobility Scale, Stroke Rehabilitation Assessment of Movement (STREAM), etc. Patient Assessment DocType helps you capture these assessments at any point of time during the Therapy Plan.
+การประเมินผู้ป่วยในการฟื้นฟูสมรรถภาพแสดงหลักฐานเพื่อสนับสนุนการพัฒนาแผนฟื้นฟูซึ่งปรับให้เข้ากับความต้องการ สถานการณ์และเป้าหมายของลูกค้า บุคลากรทางการแพทย์ต้องบันทึกการประเมินเป็นระยะเพื่อติดตามความคืบหน้าของผู้ป่วย มีการประเมินต่างๆ ที่ดำเนินการสำหรับผู้ป่วย เช่น มาตราส่วนการประเมินการเคลื่อนไหว มาตราส่วนการเคลื่อนที่ตามหน้าที่ การประเมินการเคลื่อนไหวเพื่อฟื้นฟูโรคหลอดเลือดสมอง (STREAM) เป็นต้น การประเมินผู้ป่วย DocType ช่วยให้คุณบันทึกการประเมินเหล่านี้ได้ทุกเมื่อระหว่างแผนการบำบัด
 
-To create a Patient Assessment, go to:
+ในการสร้างการประเมินผู้ป่วย ไปที่:
 
-> Home > Healthcare > Rehabilitation and Physiotherapy > Patient Assessment
+> หน้าแรก > การดูแลสุขภาพ > การฟื้นฟูสมรรถภาพและกายภาพบำบัด > การประเมินผู้ป่วย
 
-## 1. How to Create a Patient Assessment
+## 1. วิธีสร้างการประเมินผู้ป่วย
 
-1. Go to the Patient Assessment list, click on New.
-2. You can optionally select a Therapy Session after which the evaluation is being conducted. Details like Patient and Healthcare Practitioner will be fetched automatically.
-3. Select the Patient Assessment Template. The Assessment Description and all the Assessment Parameters will be fetched automatically. The scale for patient evaluation will be set in the "Score" field in the Assessment table.
-4. You can then start the assessment by selecting the score against every parameter.
-5. Save.
-6. The _Total Score Obtained_ will be calculated as a sum of all the individual parameter scores obtained.
-7. You can also add Time and Comments while evaluating individual parameters in the Assessment table.
-8. Submit.
+1. ไปที่รายการการประเมินผู้ป่วย คลิกที่ใหม่
+2. คุณสามารถเลือกเซสชั่นการบำบัดหลังจากที่การประเมินกำลังดำเนินการอยู่ รายละเอียดเช่นผู้ป่วยและผู้ประกอบการด้านการดูแลสุขภาพจะถูกดึงโดยอัตโนมัติ
+3. เลือกเทมเพลตการประเมินผู้ป่วย คำอธิบายการประเมินและพารามิเตอร์การประเมินทั้งหมดจะถูกดึงมาโดยอัตโนมัติ มาตราส่วนสำหรับการประเมินผู้ป่วยจะถูกตั้งค่าในช่อง "คะแนน" ในตารางการประเมิน
+4. จากนั้น คุณสามารถเริ่มการประเมินโดยเลือกคะแนนเทียบกับทุกพารามิเตอร์
+5. บันทึก
+6. _คะแนนรวมที่ได้รับ_ จะถูกคำนวณเป็นผลรวมของคะแนนพารามิเตอร์แต่ละรายการที่ได้รับ
+7. คุณยังสามารถเพิ่มเวลาและความคิดเห็นในขณะที่ประเมินพารามิเตอร์แต่ละรายการในตารางการประเมินได้
+8. ส่ง
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient-assessment.png">
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/assessment-parameter.png">
 
-## 2. Related Topics
-1. [Patient Assessment Template](/docs/user/manual/en/healthcare/patient_assessment_template)
+## 2. หัวข้อที่เกี่ยวข้อง
+1. [เทมเพลตการประเมินผู้ป่วย](/docs/user/manual/th/healthcare/patient_assessment_template)
 
 {next}

@@ -1,201 +1,202 @@
 <!-- add-breadcrumbs -->
-# Work Order
+#ใบสั่งงาน
 
-**A Work Order is a document given to the manufacturing shop floor by the Production Planner as a signal to manufacture a certain quantity of a certain Item.**
+**ใบสั่งงานคือเอกสารที่ผู้วางแผนการผลิตให้ไว้กับโรงงานการผลิตเพื่อเป็นสัญญาณในการผลิตสินค้าบางรายการ**
 
-<img class="screenshot" alt="Work Order" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-flow-wo.png">
+<img class="screenshot" alt="สั่งงาน" src="{{docs_base_url}}/assets/img/manufacturing/manufacturing-flow-wo.png">
 
-The Work Order also helps generate the material requirements (Stock Entry) for the Item to be produced from its **Bill of Materials**.
+ใบสั่งงานยังช่วยสร้างข้อกำหนดด้านวัสดุ (รายการสต็อค) สำหรับรายการที่จะผลิตจาก **รายการวัสดุ**
 
-The **Work Order** can be generated from the [Production Plan](/docs/user/manual/en/manufacturing/production-plan) based on Sales Orders.
+**ใบสั่งงาน** สามารถสร้างได้จาก [แผนการผลิต](/docs/user/manual/th/manufacturing/production-plan) ตามใบสั่งขาย
 
-To access the Work Order list, go to:
+ในการเข้าถึงรายการสั่งงาน ไปที่:
 
-> Home > Manufacturing > Production > Work Order
+> หน้าหลัก > การผลิต > การผลิต > ใบสั่งงาน
 
-## 1. Prerequisites
-Before creating and using a Work Order, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้ Work Order ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Bill Of Materials](/docs/user/manual/en/manufacturing/bill-of-materials)
-* [Operation](/docs/user/manual/en/manufacturing/operation)
-* [Workstation](/docs/user/manual/en/manufacturing/workstation)
+* [รายการวัสดุ](/docs/user/manual/th/manufacturing/bill-of-materials)
+* [การทำงาน](/docs/user/manual/th/manufacturing/operation)
+* [เวิร์กสเตชัน](/docs/user/manual/th/manufacturing/workstation)
 
-## 2. How to Create a Work Order
-1. Go to the Work Order list, click on New.
-1. Select the Item to be manufactured.
-1. The default BOM for that item will be fetched by the system. You can also change the BOM.
-1. Enter the quantity to manufacture. Raw material Items will be fetched only when this is set.
-1. If the selected BOM has Operations mentioned in it, the system will fetch all Operations from BOM, these values can be changed. Refer [section 3.2](/docs/user/manual/en/manufacturing/work-order#32-operations-table) to know more.
-1. Set the Planned Start Date (an Estimated Date at which you want the Production to begin).
+## 2. วิธีสร้างใบสั่งงาน
+1. ไปที่รายการ Work Order คลิก New
+1. เลือกรายการที่จะผลิต
+1. BOM เริ่มต้นสำหรับรายการนั้นจะถูกดึงโดยระบบ คุณยังสามารถเปลี่ยน BOM
+1. ใส่จำนวนที่จะผลิต วัตถุดิบจะถูกดึงออกมาเมื่อมีการตั้งค่านี้เท่านั้น
+1. หาก BOM ที่เลือกมี Operations ระบุไว้ ระบบจะดึง Operations ทั้งหมดจาก BOM ค่าเหล่านี้สามารถเปลี่ยนแปลงได้ ดู [พาท 3.2](/docs/user/manual/th/manufacturing/work-order#32-operations-table) เพื่อทราบข้อมูลเพิ่มเติม
+1. กำหนดวันที่เริ่มต้นตามแผน (วันที่โดยประมาณที่คุณต้องการให้เริ่มการผลิต)
   <img class="screenshot" alt="Work Order" src="{{docs_base_url}}/assets/img/manufacturing/work-order.png">
-1. **Use Multi-Level BOM**: This is enabled by default. If you want to plan materials for sub-assemblies of the Item you're manufacturing leave this enabled. If you plan and manufacture the sub-assemblies separately, you can disable this checkbox. To know more, visit [this page](/docs/user/manual/en/manufacturing/articles/managing-multi-level-bom).
-1. Select Warehouses:
-  1. **Source Warehouses**: Select this Warehouse in the Item row. The warehouse where you store your raw materials. Each required item can have a separate source warehouse. Group warehouse also can be selected as source warehouse. On submission of the Work Order, the raw materials will be reserved in these warehouses for production usage.
-  1. **Work-in-Progress Warehouse**: The warehouse where your Items will be transferred when you begin production. Group Warehouse can also be selected as a Work in Progress warehouse.
-  1. **Target Warehouse**: The warehouse where you store finished Items before they are shipped.
-  1. **Scrap Warehouse**: If the BOM results in Scrap material, the Scrap Warehouse needs to be selected.
-1. **Required Items**: All the required items (raw materials) will be fetched from BOM and populated in this table. Here you can also change the Source Warehouse for any item. And during the production, you can track transferred raw materials from this table.
+1. **ใช้ BOM หลายระดับ**: เปิดใช้งานโดยค่าเริ่มต้น หากคุณต้องการวางแผนวัสดุสำหรับส่วนประกอบย่อยของสินค้าที่คุณกำลังผลิต ให้เปิดใช้งานตัวเลือกนี้ หากคุณวางแผนและผลิตส่วนประกอบย่อยแยกต่างหาก คุณสามารถปิดใช้งานช่องทำเครื่องหมายนี้ หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่ [หน้านี้](/docs/user/manual/th/manufacturing/articles/managing-multi-level-bom)
+1. เลือกคลังสินค้า:
+  1. **คลังสินค้าต้นทาง**: เลือก Warehouse นี้ในแถว Item คลังสินค้าที่คุณเก็บวัตถุดิบของคุณ แต่ละรายการที่ต้องการสามารถมีคลังสินค้าต้นทางแยกกันได้ สามารถเลือกคลังสินค้ากลุ่มเป็นคลังสินค้าต้นทางได้ เมื่อยื่นใบสั่งงาน วัตถุดิบจะถูกจองในคลังสินค้าเหล่านี้เพื่อใช้ในการผลิต
+  1. **คลังสินค้าที่กำลังดำเนินการ**: คลังสินค้าที่รายการของคุณจะถูกโอนเมื่อคุณเริ่มการผลิต กลุ่มคลังสินค้า สามารถเลือกเป็นคลังสินค้า งานที่กำลังทำอยู่ ได้
+  1. **คลังสินค้าปลายทาง**: คลังสินค้าที่คุณจัดเก็บสินค้าสำเร็จรูปก่อนจัดส่ง
+  1. **คลังสินค้าเศษวัสดุ**: หาก BOM ส่งผลให้เกิดเศษวัสดุ จำเป็นต้องเลือก คลังสินค้าเศษวัสดุ
+1. **รายการที่จำเป็น**: รายการที่จำเป็นทั้งหมด (วัตถุดิบ) จะถูกดึงมาจาก BOM และใส่ลงในตารางนี้ ที่นี่คุณยังสามารถเปลี่ยน คลังสินค้าต้นทาง สำหรับรายการใดก็ได้ และในระหว่างการผลิต คุณสามารถติดตามวัตถุดิบที่ถ่ายโอนได้จากตารางนี้
 
-> Note: You can save a Work Order without selecting the Warehouses, but Warehouses are mandatory for submitting a Work Order.
+> หมายเหตุ: คุณสามารถบันทึกใบสั่งงานโดยไม่ต้องเลือกคลังสินค้า แต่คลังสินค้าจำเป็นสำหรับการส่งใบสั่งงาน
 
-A Work Order can also be directly created from a [Sales Order](/docs/user/manual/en/selling/sales-order#214-after-submitting).
+คำสั่งงานสามารถสร้างได้โดยตรงจาก [ใบสั่งขาย](/docs/user/manual/th/selling/sales-order#214-after-submitting)
 
-### 2.1 Additional Options when Creating a Work Order
+### 2.1 ตัวเลือกเพิ่มเติมเมื่อสร้างใบสั่งงาน
 
-* **Sales Order**: If you create a Work Order from a Sales Order, it will be fetched here. You can also link an existing Sales Order which has the Item to be manufactured to this Work Order.
-* **Project**: Link the Work Order to a Project to track progress in cases like engineer to order.
-* **Allow Alternative Item**: Sometimes when manufacturing a finished good, specific materials may not be available. For example, using plastic beads instead of plastic crystals. The finished good itself could be different. Ticking this checkbox will allow you the select an Alternative Item. To know more, visit [this page](/docs/user/manual/en/manufacturing/item-alternative).
-* **Skip Material Transfer to WIP Warehouse**: Usually, a Stock Entry is created when the raw materials are transferred to a Work In Progress Warehouse. In this case, the raw material is considered to be consumed hence the Stock Entry is skipped. The next option will be shown if you tick this checkbox.
-* **Backflush Raw Materials From Work-in-Progress Warehouse**: Ticking this checkbox will automatically create a Stock Entry with the type 'Manufacture'. This means that the raw materials were consumed from the Source Warehouse, used to manufacture finished goods and another Stock Entry was created for your Target Warehouse.
+* **ใบสั่งขาย**: หากคุณสร้างใบสั่งงานจากใบสั่งขาย คำสั่งนั้นจะถูกดึงมาที่นี่ คุณยังสามารถเชื่อมโยงใบสั่งขายที่มีอยู่ซึ่งมีสินค้าที่จะผลิตกับใบสั่งงานนี้ได้
+* **โครงการ**: เชื่อมโยงใบสั่งงานกับโครงการเพื่อติดตามความคืบหน้าในกรณีต่างๆ เช่น วิศวกรสั่ง
+* **อนุญาตให้ใช้สินค้าทดแทน**: บางครั้งเมื่อทำการผลิตสินค้าสำเร็จรูป วัสดุบางอย่างอาจไม่สามารถใช้ได้ ตัวอย่างเช่น การใช้ลูกปัดพลาสติกแทนคริสตัลพลาสติก ความดีที่ทำเสร็จแล้วอาจแตกต่างกัน การทำเครื่องหมายที่ช่องนี้จะทำให้คุณสามารถเลือกรายการทางเลือกได้ หากต้องการทราบข้อมูลเพิ่มเติม โปรดไปที่ [หน้านี้](/docs/user/manual/th/manufacturing/item-alternative)
+* **ข้ามการโอนย้ายวัสดุไปยังคลังสินค้า WIP**: โดยปกติ รายการสต็อคจะถูกสร้างขึ้นเมื่อวัตถุดิบถูกโอนไปยังโกดังงานระหว่างดำเนินการ ในกรณีนี้จะถือว่าวัตถุดิบมีการบริโภคดังนั้นจึงข้ามรายการสต็อค ตัวเลือกถัดไปจะปรากฏขึ้นหากคุณทำเครื่องหมายที่ช่องทำเครื่องหมายนี้
+* **Backflush Raw Materials จาก Work-in-Progress Warehouse**: การทำเครื่องหมายที่ช่องทำเครื่องหมายนี้จะสร้างรายการสต็อคโดยอัตโนมัติด้วยประเภท 'ผู้หลิต' ซึ่งหมายความว่ามีการใช้วัตถุดิบจาก คลังสินค้าต้นทาง ซึ่งใช้ในการผลิตสินค้าสำเร็จรูปและมีการสร้างรายการสต็อคอื่นสำหรับ คลังสินค้าปลายทาง ของคุณ
   ![Options when creating WO](/docs/assets/img/manufacturing/work-order-options.png)
 
-## 3. Features
-### 3.1 Time
-The Planned Start Date and Expected Delivery Date can be set here. The default for Planned Start Date is the current date and time at the time of creating the Work Order.
+## 3. คุณสมบัติ
+### 3.1 เวลา
+สามารถกำหนดวันที่เริ่มต้นตามแผนและวันที่จัดส่งที่คาดไว้ได้ที่นี่ ค่าเริ่มต้นสำหรับวันที่เริ่มต้นตามแผนคือวันที่และเวลาปัจจุบันในขณะที่สร้างใบสั่งงาน
 
-### 3.2 Required Items table
-The Source Warehouse can be changed for the raw material items used here. The default Warehouse can be set at the Item level in the [Item](/docs/user/manual/en/stock/item#28-item-defaults) master or globally in [Stock Settings](/docs/user/manual/en/stock/stock-settings#23-default-warehouse).
+### 3.2 ตารางรายการที่จำเป็น
+สามารถเปลี่ยน Source Warehouse สำหรับรายการวัตถุดิบที่ใช้ที่นี่ โกดังเริ่มต้นสามารถตั้งค่าได้ที่ระดับไอเท็มใน [Item](/docs/user/manual/th/stock/item#28-item-defaults) master หรือ globally ใน [Stock Settings](/docs/user/manual /th/stock/stock-settings#23-default-warehouse).
 
-* **Required Quantity**: This will be calculated automatically based on the [Bill Of Materials](/docs/user/manual/en/manufacturing/bill-of-materials).
-* **Transferred Quantity**: Once the Work Order starts and Job Cards are run, items are transferred from the Source Warehouse to Work In Progress Warehouse. This field shows the quantity in the WIP Warehouse. Note that if you tick on 'Skip Material Transfer to WIP Warehouse', this column will not be updated.
-* **Consumed Quantity**: When the Item from the WIP Warehouse is consumed and the finished product is manufactured, this field will be updated.
-* **Allow Alternative Item**: If a particular Item (raw material or sub-assembly) is not available, ticking this checkbox will allow you to select an alternative item defined in the Item Alternative list.
-* **Skip Material Transfer**: If you don't want to transfer the specific raw material to the work in progress warehouse then you need to enable this checkbox.
+* **ปริมาณที่ต้องการ**: ค่านี้จะถูกคำนวณโดยอัตโนมัติตาม [Bill Of Materials](/docs/user/manual/th/manufacturing/bill-of-materials)
+* **ปริมาณที่โอน**: เมื่อใบสั่งงานเริ่มต้นและรันการ์ดงาน รายการจะถูกโอนจาก Source Warehouse ไปยัง Work In Progress Warehouse ฟิลด์นี้แสดงปริมาณใน WIP Warehouse โปรดทราบว่าหากคุณทำเครื่องหมายที่ 'ข้ามการถ่ายโอนวัสดุไปยัง WIP Warehouse' คอลัมน์นี้จะไม่ได้รับการอัปเดต
+* **ปริมาณที่ใช้ไป**: เมื่อมีการบริโภคสินค้าจากคลังสินค้า WIP และผลิตภัณฑ์สำเร็จรูปถูกผลิตขึ้น ช่องนี้จะได้รับการอัปเดต
+* **อนุญาตรายการทางเลือก**: หากไม่มีรายการใดรายการหนึ่ง (วัตถุดิบหรือส่วนประกอบย่อย) การทำเครื่องหมายที่ช่องทำเครื่องหมายนี้จะทำให้คุณสามารถเลือกรายการทางเลือกที่กำหนดไว้ในรายการทางเลือกรายการ
+* **ข้ามการโอนย้ายวัตถุดิบ**: หากคุณไม่ต้องการโอนวัตถุดิบเฉพาะไปยังคลังสินค้าของงานที่อยู่ระหว่างดำเนินการ คุณต้องเปิดใช้งานช่องทำเครื่องหมายนี้
 
-  Once uncheck this checkbox for an Item, you can still select it in the BOM and Work Order, but no Stock Entries will be created against it.
+  เมื่อยกเลิกการเลือกช่องทำเครื่องหมายนี้สำหรับรายการ คุณยังสามารถเลือกรายการดังกล่าวใน BOM และใบสั่งงานได้ แต่จะไม่มีการสร้างรายการสินค้าในสต็อค
 
-Once the Work Order is saved the following two fields will also show the availability in the respective Warehouses in the Required Items table:
+เมื่อบันทึกใบสั่งงานแล้ว สองฟิลด์ต่อไปนี้จะแสดงความพร้อมใช้งานในคลังสินค้าที่เกี่ยวข้องในตารางรายการที่จำเป็น:
 
-* Available Qty at Source Warehouse
-* Available Qty at WIP Warehouse
+* จำนวนที่มีจำหน่ายที่ คลังสินค้าต้นทาง
+* จำนวนที่มีจำหน่ายที่ WIP Warehouse
 
 ![WO material Qty](/docs/assets/img/manufacturing/work-order-material-qty.png)
 
 
-### 3.2 Operations table
-Materials can be transferred against a Work Order or a Job Card. This is usually fetched from the [Bill Of Materials](/docs/user/manual/en/manufacturing/bill-of-materials), but you can change it in the Work Order also.
+### 3.2 ตารางปฏิบัติการ
+วัสดุสามารถโอนไปยังใบสั่งงานหรือบัตรงานได้ โดยปกติแล้วจะดึงมาจาก [Bill Of Materials](/docs/user/manual/th/manufacturing/bill-of-materials) แต่คุณสามารถเปลี่ยนได้ใน Work Order ด้วย
 
-The following will be fetched from the BOM:
+ข้อมูลต่อไปนี้จะถูกดึงมาจาก BOM:
 
-* In the Operations table: The Workstations where the Operations will be performed
+* ในตารางปฏิบัติการ: เวิร์กสเตชันที่จะดำเนินการ
   <img class="screenshot" alt="PO Opeartions" src="{{docs_base_url}}/assets/img/manufacturing/PO-operations.png">
 
-* In the Items table: The Operations which will be performed on the Items
+* ในตารางรายการ: การดำเนินการที่จะดำเนินการกับรายการ
   <img class="screenshot" alt="PO reassigning Operations" src="{{docs_base_url}}/assets/img/manufacturing/PO-reassigning-operations.png">
 
-These values can also be changed.
+ค่าเหล่านี้ยังสามารถเปลี่ยนแปลงได้
 
 
 
-Once the Work Order is saved the following fields will be shown:
+เมื่อบันทึกใบสั่งงานแล้ว ฟิลด์ต่อไปนี้จะปรากฏขึ้น:
 
-* **Completed Qty**: The number of Items on which this Operation was performed.
-* **Status**: Whether the Operation is Pending, Work In Progress, or Completed. The status here is updated when the Job Cards are updated.
-* **Operation Time**: This is fetched from the BOM, but can be changed.
-* **Planned Operating Cost**: This is calculated based on the Operating Time, Hourly Rate, Quantity being manufactured, etc.
+* **จำนวนที่เสร็จสมบูรณ์**: จำนวนรายการที่ดำเนินการนี้
+* **สถานะ**: การดำเนินการอยู่ระหว่างรอดำเนินการ อยู่ระหว่างดำเนินการ หรือเสร็จสิ้น สถานะที่นี่จะอัปเดตเมื่อมีการอัปเดตการ์ดงาน
+* **เวลาดำเนินการ**: ดึงมาจาก BOM แต่สามารถเปลี่ยนแปลงได้
+* **ต้นทุนการดำเนินงานตามแผน**: คำนวณตามเวลาการทำงาน อัตรารายชั่วโมง ปริมาณที่ผลิต ฯลฯ
 
-The Actual Operation Time, Actual Operating Cost, Actual Start Time, and Actual End Time are updated when Job Cards are updated.
+เวลาดำเนินการจริง ต้นทุนการดำเนินงานจริง เวลาเริ่มต้นจริง และเวลาสิ้นสุดจริงจะได้รับการอัปเดตเมื่อมีการอัปเดตบัตรงาน
 
-### 3.3 Operation Cost
-In this section, the following are shown:
+### 3.3 ค่าใช้จ่ายในการดำเนินการ
+ในส่วนนี้จะแสดงสิ่งต่อไปนี้:
 
-* **Planned Operating Cost**: This is fetched as per the BOM and the Operations defined in it.
-* **Actual Operating Cost**: This is fetched from the Job Cards based on the Operations run on the Items.
-* **Additional Operating Cost**: Any additional expenses you may have incurred when manufacturing the Item can be added here.
-* **Total Operating Cost**: This is calculated as Actual Operating Cost + Additional Operating Cost.
+* **ต้นทุนการดำเนินงานตามแผน**: ข้อมูลนี้ถูกดึงมาตาม BOM และการดำเนินการที่กำหนดไว้ในนั้น
+* **ต้นทุนการดำเนินงานจริง**: ดึงมาจากการ์ดงานตามการดำเนินการที่รันบนรายการ
+* **ค่าใช้จ่ายในการดำเนินงานเพิ่มเติม**: คุณสามารถเพิ่มค่าใช้จ่ายเพิ่มเติมใดๆ ที่คุณอาจเกิดขึ้นเมื่อทำการผลิตสินค้าได้ที่นี่
+* **ต้นทุนการดำเนินงานทั้งหมด**: คำนวณจากต้นทุนการดำเนินงานจริง + ต้นทุนการดำเนินงานเพิ่มเติม
 
-These values are calculated as per the Job Cards.
+ค่าเหล่านี้คำนวณตามบัตรงาน
 
 ![Work Order Operation Costs](/docs/assets/img/manufacturing/wo-operation-cost.png)
 
-### 3.4 More Information
-Here the Item Description and Stock UOM is shown for the Item being manufactured.
+### 3.4 ข้อมูลเพิ่มเติม
+ที่นี่ รายละเอียดสินค้าและ สต็อค UOM จะแสดงสำหรับสินค้าที่กำลังผลิต
 
-When a Work Order is created from a [Material Request](/docs/user/manual/en/stock/material-request), it'll be shown here.
+เมื่อสร้างคำสั่งงานจาก [คำขอวัสดุ](/docs/user/manual/th/stock/material-request) คำสั่งนั้นจะแสดงที่นี่
 
 
-### 3.5 Transferring Materials for Manufacturing
+### 3.5 การถ่ายโอนวัสดุเพื่อการผลิต
 
-* Once you have submitted your Work Order, you need to Transfer the Raw Materials to initiate the Manufacturing Process.
-* This will create a Stock Entry with all the Items required to complete this Work Order to be added to the WIP Warehouse. This will add the sub-assembly Items as is or explode them to show the raw materials depending on whether you ticked 'Use Multi-Level BOM' or not.
+* เมื่อคุณส่งคำสั่งงานแล้ว คุณต้องโอนวัตถุดิบเพื่อเริ่มกระบวนการผลิต
+* สิ่งนี้จะสร้างรายการสต็อคพร้อมรายการทั้งหมดที่จำเป็นในการสั่งงานนี้ให้สมบูรณ์เพื่อเพิ่มลงใน WIP Warehouse สิ่งนี้จะเพิ่มรายการการประกอบย่อยตามที่เป็นอยู่หรือระเบิดเพื่อแสดงวัตถุดิบขึ้นอยู่กับว่าคุณได้เลือก 'ใช้ BOM หลายระดับ' หรือไม่
 
-* Click on 'Start'. Once you click on Start, Job Cards will be created for the [Operations](/docs/user/manual/en/manufacturing/job-card) involved.
+* คลิกที่ 'เริ่ม' เมื่อคุณคลิกที่ เริ่ม การ์ดงานจะถูกสร้างขึ้นสำหรับ [กระบวนการทำงาน](/docs/user/manual/th/manufacturing/job-card) ที่เกี่ยวข้อง
 
   <img class="screenshot" alt="Transfer Materials" src="{{docs_base_url}}/assets/img/manufacturing/PO-material-transfer.png">
 
-* Mention the quantity of materials to be transferred in this run.
+* ระบุจำนวนวัสดุที่จะโอนในรอบนี้
 
   <img class="screenshot" alt="Material Transfer Qty" src="{{docs_base_url}}/assets/img/manufacturing/PO-material-transfer-qty.png">
 
-* You'll be taken to a Stock Entry for 'Material Transfer for Manufacture'. Submit it.
+* คุณจะถูกนำไปที่รายการสต็อคสำหรับ 'การโอนย้ายวัตถุดิบเพื่อการผลิต' ส่งเลย.
 
-* Material Transferred for Manufacturing will be updated in the Work Order based on the Stock Entry.
+* วัสดุที่โอนเพื่อการผลิตจะได้รับการอัปเดตในใบสั่งงานตามรายการสต็อค
 
   <img class="screenshot" alt="Stock Entry for PO" src="{{docs_base_url}}/assets/img/manufacturing/PO-material-transfer-updated.png">
 
-### 3.6 Material Transfer through Stock Entry
-Use cases for this option are:
+### 3.6 การถ่ายโอนวัสดุผ่านรายการสต็อค
+กรณีการใช้งานสำหรับตัวเลือกนี้คือ:
 
-* If a material transfer is done in bulk and/or is not required to be tracked against a particular Work Order.
-* If the responsibility for Material Transfer and Production Entry lies with two separate Users.
+* หากมีการขนย้ายวัสดุจำนวนมากและ/หรือไม่จำเป็นต้องติดตามคำสั่งงานเฉพาะ
+* หากความรับผิดชอบในการถ่ายโอนวัสดุและรายการการผลิตอยู่กับผู้ใช้สองคนแยกกัน
 
-If this is the case, you can tick the 'Skip Material Transfer' checkbox, which will allow you to make the Stock Entry of type 'Manufacture' directly by clicking on the ‘Finish’ button.
+หากเป็นกรณีนี้ คุณสามารถทำเครื่องหมายที่ช่อง 'ข้ามการโอนวัสดุ' ซึ่งจะช่วยให้คุณสร้างรายการสต็อคประเภท 'การผลิต' ได้โดยตรงโดยคลิกที่ปุ่ม 'เสร็จสิ้น'
 
-### 3.7 Creating Job Cards
+### 3.7 การสร้างการ์ดงาน
 
-* Progress in the Work Order can be tracked using Job Cards
-* Drafts of Job Cards are created based on when a Work Order is Submitted.
-* To create more Job Cards against a Work Order click on the plus sign next to Job Card on the Work Order dashboard.
+* สามารถติดตามความคืบหน้าในการสั่งงานได้โดยใช้บัตรงาน
+* ร่างการ์ดงานจะถูกสร้างขึ้นตามเวลาที่ส่งคำสั่งงาน
+* หากต้องการสร้างบัตรงานเพิ่มเติมเทียบกับใบสั่งงาน ให้คลิกที่เครื่องหมายบวกถัดจากบัตรงานบนแดชบอร์ดใบสั่งงาน
 
-To know more about Job Cards, visit [this page](/docs/user/manual/en/manufacturing/job-card).
+หากต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับบัตรงาน โปรดไปที่ [หน้านี้](/docs/user/manual/th/manufacturing/job-card)
 
-### 3.8 Updating Finished Goods
+### 3.8 การอัปเดตสินค้าสำเร็จรูป
 
-* Once you are done with the Work Order you need to update the Finished Goods.
-* This will create a Stock Entry that will deduct all the items and sub-assemblies from the WIP Warehouse and add them to the Finished Goods Warehouse.
-* Click on 'Finish'.
+* เมื่อคุณเสร็จสิ้นการสั่งงานแล้ว คุณต้องอัปเดตสินค้าสำเร็จรูป
+* สิ่งนี้จะสร้างรายการสต็อคที่จะหักรายการและส่วนประกอบย่อยทั้งหมดจากคลังสินค้า WIP และเพิ่มไปยังคลังสินค้าสินค้าสำเร็จรูป
+* คลิกที่ 'เสร็จสิ้น'
 
   <img class="screenshot" alt="Update Finished Goods" src="{{docs_base_url}}/assets/img/manufacturing/PO-FG-update.png">
 
-* Mention the quantity of materials to be transferred.
+* ระบุจำนวนวัสดุที่จะโอน
 
 > Tip: You can also partially complete a Work Order by updating the Finished Goods stock creating a Stock Entry.
 
-### 3.9 Return Non Consumed Materials
+### 3.9 คืนวัสดุที่ไม่ใช้แล้ว
 
-In some cases, the user sends extra raw materials to the manufacturing stations, but sometimes the operator does not consume all the raw materials to complete the Finished Goods, or sometimes the quantity to manufacture gets reduce. In this case, the unconsumed raw materials are transferred back to the store. In ERPNext, to transfer the raw materials back to the store from the work in progress warehouse user has to click on the button Return Non Consumed Materials. On click of a button, the system opens the stock entry to transfer the raw materials from work in progress warehouse to the Stores warehouse.
+ในบางกรณี ผู้ใช้ส่งวัตถุดิบพิเศษไปยังสถานีการผลิต แต่บางครั้งผู้ปฏิบัติงานไม่ได้ใช้วัตถุดิบทั้งหมดเพื่อผลิตสินค้าสำเร็จรูปให้เสร็จสมบูรณ์ หรือบางครั้งปริมาณในการผลิตก็ลดลง ในกรณีนี้ วัตถุดิบที่ยังไม่ได้ใช้จะถูกส่งกลับไปยังร้านค้า ใน ERPNext ในการโอนวัตถุดิบกลับไปยังร้านค้าจากคลังสินค้าที่อยู่ระหว่างดำเนินการ ผู้ใช้ต้องคลิกที่ปุ่ม คืนวัสดุที่ไม่บริโภค เมื่อคลิกปุ่ม ระบบจะเปิดรายการสต็อคเพื่อโอนวัตถุดิบจากคลังสินค้าระหว่างดำเนินการไปยังคลังสินค้าของร้าน
 <img class="screenshot" alt="Return Unconsumed Materials" src="{{docs_base_url}}/assets/img/manufacturing/return_unconsumed_materials.png">
 
-Stock Entry to return raw materials is as below
+
+รายการสต็อคเพื่อคืนวัตถุดิบมีดังนี้
 
 <img class="screenshot" alt="Return Unconsumed Materials Stock Entry" src="{{docs_base_url}}/assets/img/manufacturing/return_unconsumed_materials_stock_entry.png">
 
-### 4.0 Stopping a Work Order
-When you stop a Work Order its status is changed to Stopped indicating that all production process against that Work Order has stopped. But before stopping the work order user has to make sure that the raw materials which were transferred to the Work In Progress warehouse have been returned or not. In case, if the user has tried to stop the work order without returning the raw materials then the system will throw the error and not allow the user to stop the work order.
+### 4.0 การหยุดสั่งงาน
+เมื่อคุณหยุดใบสั่งงาน สถานะจะถูกเปลี่ยนเป็นหยุดแล้ว ซึ่งบ่งชี้ว่ากระบวนการผลิตทั้งหมดเทียบกับใบสั่งงานนั้นได้หยุดลง แต่ก่อนที่จะหยุดสั่งงาน ผู้ใช้บริการต้องตรวจสอบให้แน่ใจว่าวัตถุดิบที่โอนไปยังคลังสินค้าของ งานระหว่างทำ ได้รับการส่งคืนหรือไม่ ในกรณีที่ผู้ใช้พยายามหยุดใบสั่งงานโดยไม่ส่งคืนวัตถุดิบ ระบบจะส่งข้อผิดพลาดและไม่อนุญาตให้ผู้ใช้หยุดใบสั่งงาน
 
-To stop a Work Order, click on the 'Stop' button.
+หากต้องการหยุดสั่งงาน ให้คลิกที่ปุ่ม 'หยุด'
 
 <img class="screenshot" alt="PO - stop" src="{{docs_base_url}}/assets/img/manufacturing/PO-stop.png">
 
-If raw materials have not returned and still available in the Work In Progress warehouse. Clicking the Stop button system will throw the below error.
+หากวัตถุดิบไม่ส่งคืนและยังมีอยู่ในคลังสินค้า อยู่ระหว่างดำเนินการ การคลิกที่ระบบปุ่มหยุดจะทำให้เกิดข้อผิดพลาดด้านล่าง
 
 <img class="screenshot" alt="Work Order Stop Error" src="{{docs_base_url}}/assets/img/manufacturing/work_order_cannot_stop.png">
 
-You can also re-open the stopped Work Order.
+คุณยังสามารถเปิดใบสั่งงานที่หยุดทำงานอีกครั้งได้
 
 <img class="screenshot" alt="Reopen Work Order" src="{{docs_base_url}}/assets/img/manufacturing/reopen-work-order.png">
 
 
-### 3.10 Capacity Planning in Work Order
+### 3.10 การวางแผนกำลังการผลิตในใบสั่งงาน
 
-* When a Work Order is submitted, based on the Planned Start Date and the availability of the Workstations, the system schedules all operations for the Work Order (if Work Order has Operations specified).
-* Drafts of Time Logs are also created based on the scheduled operations.
+* เมื่อมีการส่งใบสั่งงาน ตามวันที่เริ่มต้นที่วางแผนไว้และความพร้อมใช้งานของเวิร์กสเตชัน ระบบจะกำหนดเวลาการดำเนินการทั้งหมดสำหรับใบสั่งงาน (หากใบสั่งงานมีการดำเนินการที่ระบุ)
+* ร่างบันทึกเวลายังถูกสร้างขึ้นตามการดำเนินการตามกำหนดการ
 
-On Submitting the Work Order, the system will reserve a slot for each of the Work Order Operations serially after the planned start date based on the Workstation availability. The Workstation availability depends on the Workstation timings, holiday list, and if some other Work Order Operation is scheduled in that slot.
+ในการส่งใบสั่งงาน ระบบจะจองช่องสำหรับการดำเนินการใบสั่งงานแต่ละรายการตามลำดับหลังจากวันที่เริ่มต้นที่วางแผนไว้ตามความพร้อมของเวิร์กสเตชัน ความพร้อมใช้งานของเวิร์กสเตชันขึ้นอยู่กับการกำหนดเวลาของเวิร์กสเตชัน รายการวันหยุด และหากมีการจัดกำหนดการการดำเนินการสั่งงานอื่นๆ ในช่องนั้น
 
-You can mention the number of days for the system to try scheduling the operations in the Manufacturing Settings. This is set to 30 Days by default. If the operation requires time exceeding the available slot, the system will ask you to break the operations. Once the scheduling is done the system will create Time Logs and save them. You can Modify them and submit them later.
+คุณสามารถระบุจำนวนวันที่ระบบจะลองจัดกำหนดการการดำเนินการได้ในการตั้งค่าการผลิต ซึ่งถูกตั้งค่าเป็น 30 วันโดยค่าเริ่มต้น หากการดำเนินการต้องใช้เวลาเกินช่องที่มีอยู่ ระบบจะขอให้คุณหยุดการดำเนินการ เมื่อกำหนดเวลาเสร็จสิ้น ระบบจะสร้างบันทึกเวลาและบันทึก คุณสามารถแก้ไขและส่งได้ในภายหลัง
 
-## 4. Video
+## 4. วีดีโอ
 
 <div class="embed-container">
  <iframe width="560" height="315" src="https://www.youtube.com/embed/yv_KAIlHrO4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
@@ -203,7 +204,7 @@ You can mention the number of days for the system to try scheduling the operatio
 </div>
 
 ## 5. Related Topics
-1. [Job Card](/docs/user/manual/en/manufacturing/job-card)
-1. [Pick List](/docs/user/manual/en/stock/pick-list#22-create-pick-list-from-work-order)
+1. [Job Card](/docs/user/manual/th/manufacturing/job-card)
+1. [Pick List](/docs/user/manual/th/stock/pick-list#22-create-pick-list-from-work-order)
 
 {next}

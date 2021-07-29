@@ -1,19 +1,19 @@
 <!-- add-breadcrumbs -->
-# Agriculture
+# เกษตรกรรม
 
-The Agriculture Domain of ERPNext comes with features to record crops and land, track plant, soil, water, weather analytics, and even track diseases and fertilizers. You can check out the following topics after this brief [introduction](/docs/user/manual/en/agriculture/introduction) to the agriculture module in ERPNext.
+โดเมนเกษตรของ ERPNext มาพร้อมกับคุณสมบัติในการบันทึกพืชผลและที่ดิน ติดตามพืช ดิน น้ำ การวิเคราะห์สภาพอากาศ และแม้แต่ติดตามโรคและปุ๋ย คุณสามารถตรวจสอบหัวข้อต่อไปนี้หลังจาก [แนะนำ](/docs/user/manual/th/agriculture/introduction) สั้นๆ นี้ในโมดูลการเกษตรใน ERPNext
 
 
-## Topics
-##### 1. Crops and Land
-1. [Introduction](/docs/user/manual/en/agriculture/crops-introduction)
-1. [Land Unit](/docs/user/manual/en/agriculture/land_unit)
-1. [Crop](/docs/user/manual/en/agriculture/crop)
-1. [Crop Cycle](/docs/user/manual/en/agriculture/crop_cycle)
+## หัวข้อ
+####### 1. พืชผลและที่ดิน
+1. [บทนำ](/docs/user/manual/th/agriculture/crops-introduction)
+1. [หน่วยที่ดิน](/docs/user/manual/th/agriculture/land_unit)
+1. [ครอบตัด](/docs/user/manual/th/agriculture/crop)
+1. [Crop Cycle](/docs/user/manual/th/agriculture/crop_cycle)
 
-##### 2. Disease and Fertilizer
-1. [Disease](/docs/user/manual/en/agriculture/disease)
-1. [Fertilizer](/docs/user/manual/en/agriculture/fertilizer)
+##### 2. โรคและปุ๋ย
+1. [โรค](/docs/user/manual/th/agriculture/disease)
+1. [ปุ๋ย](/docs/user/manual/th/agriculture/fertilizer)
 
-##### 3. Analytics
-1. [Analytics](/docs/user/manual/en/agriculture/analytics)
+####### 3. การวิเคราะห์
+1. [Analytics](/docs/user/manual/th/agriculture/analytics)

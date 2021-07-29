@@ -1,40 +1,40 @@
 <!-- add-breadcrumbs -->
-#Managing Multi-level BOM
+#การจัดการ BOM หลายระดับ
 
-Consider a scenario where your manufacturing process involves producing sub-assembly items before the final product. In this case, how should you manage the BOM?
+พิจารณาสถานการณ์สมมติที่กระบวนการผลิตของคุณเกี่ยวข้องกับการผลิตส่วนประกอบย่อยก่อนผลิตภัณฑ์ขั้นสุดท้าย ในกรณีนี้ คุณควรจัดการ BOM อย่างไร?
 
-First of all, you need to have BOMs for the sub-assemblies, then these BOMs should be linked to the BOM of the final finished product. In the following screenshot, you can see that the BOM for Brush Bristles (subassembly) is linked to the BOM of the Shaving Brush (final product). This is seen in the Materials table in the Bill of Materials master.
+ก่อนอื่น คุณต้องมี BOM สำหรับแอสเซมบลีย่อย จากนั้น BOM เหล่านี้ควรเชื่อมโยงกับ BOM ของผลิตภัณฑ์สำเร็จรูปขั้นสุดท้าย ในภาพหน้าจอต่อไปนี้ คุณจะเห็นว่า BOM สำหรับแปรงขนแปรง (ส่วนประกอบย่อย) เชื่อมโยงกับ BOM ของแปรงโกนหนวด (ผลิตภัณฑ์ขั้นสุดท้าย) มีให้เห็นในตารางวัสดุในต้นแบบ Bill of Materials
 
 ![Multi-level BOM](/docs/assets/img/articles/multi-bom.png)
 
-The 'Materials' table will only show the sub-assemblies while the 'Materials Required (Exploded)' table will show all the raw materials required to manufacture the final product.
+ตาราง 'วัสดุ' จะแสดงเฉพาะส่วนประกอบย่อย ในขณะที่ตาราง 'วัสดุที่จำเป็น (ระเบิด)' จะแสดงวัตถุดิบทั้งหมดที่จำเป็นในการผลิตผลิตภัณฑ์ขั้นสุดท้าย
 
-BOM materials table where sub-assembly is shown:
+ตารางวัสดุ BOM ที่แสดงการประกอบย่อย:
 ![Multi-level BOM](/docs/assets/img/articles/bom-materials.png)
 
-In the exploded view only the raw materials are shown:
+แสดงเฉพาะวัตถุดิบ:
 ![Multi-level BOM](/docs/assets/img/articles/bom-materials-exploded.png)
 
 
-To use multi-level BOM in a Work Order, enable the 'Use Multi-Level BOM' checkbox. This is enabled by default. If you want to plan materials for sub-assemblies of the Item you're manufacturing leave this enabled. If you plan and manufacture the sub-assemblies separately disable this checkbox.
+หากต้องการใช้ BOM หลายระดับในใบสั่งงาน ให้เปิดใช้งานช่องกาเครื่องหมาย 'ใช้ BOM หลายระดับ' สิ่งนี้ถูกเปิดใช้งานโดยค่าเริ่มต้น หากคุณต้องการวางแผนวัสดุสำหรับส่วนประกอบย่อยของสินค้าที่คุณกำลังผลิต ให้เปิดใช้งานตัวเลือกนี้ หากคุณวางแผนและผลิตส่วนประกอบย่อยแยกกัน ให้ปิดใช้งานช่องทำเครื่องหมายนี้
 
 <!-- <img alt="Nested BOM" class="screenshot" src="{{docs_base_url}}/assets/img/articles/nested-bom-1.png"> -->
 
-Let's consider another example to understand this better where a computer is being assembled. The hard disk and DVD drive are also being manufactured and are the sub-assemblies. The multi-level or nested BOM will look like this:
+ลองพิจารณาอีกตัวอย่างหนึ่งเพื่อทำความเข้าใจสิ่งนี้ให้ดีขึ้นเมื่อประกอบคอมพิวเตอร์ ฮาร์ดดิสก์และไดรฟ์ดีวีดียังถูกผลิตขึ้นและเป็นส่วนประกอบย่อย BOM แบบหลายระดับหรือแบบซ้อนจะมีลักษณะดังนี้:
 
-    
-- Personal Computer (FG Item)
-    - Mother Board
+
+- คอมพิวเตอร์ส่วนบุคคล (รายการ FG)
+    - บอร์ดแม่
     - SMTP
-    - Accessories and wires
-    - Hard Disk (sub-assembly)
-        - Item A
-        - Item B
-        - Item C
-    - DVD Drive (sub-assembly)
-        - Item X
-        - Item Y
-        - Item Z
+    - อุปกรณ์เสริมและสายไฟ
+    - ฮาร์ดดิสก์ (ประกอบย่อย)
+        - ไอเทม A
+        - ไอเทม B
+        - ไอเทม C
+    - ไดรฟ์ดีวีดี (ประกอบย่อย)
+        - ไอเทม X
+        - ไอเทม Y
+        - ไอเทม Z
 
 
 

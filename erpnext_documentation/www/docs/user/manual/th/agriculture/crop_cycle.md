@@ -1,31 +1,31 @@
 <!-- add-breadcrumbs -->
-# Crop Cycle
+# วัฏจักรพืช
 
-Once we have defined our crop, we can create as many crop cycles as we like, using the parameters outlined previously
+เมื่อเรากำหนดพืชผลแล้ว เราสามารถสร้างวงจรของผลผลิตได้มากเท่าที่ต้องการ โดยใช้พารามิเตอร์ที่ระบุไว้ก่อนหน้านี้
 
-On the desk, clik on the Crop Cycle icon.  A list will show any existing Crop Cycles.
+ที่โต๊ะทำงาน คลิกไอคอน ผลผลิต รายการจะแสดงรอบการครอบตัดที่มีอยู่
 
-> Agriculture > Crop Cycle
+> เกษตรกรรม > วงจรของผลผลิต
 
-On the top right, click on New to create the first Crop Cycle. A new Crop Cycle document will open, and right away you see that two of the required items are a Land Unit and a Crop. We shall give it a descriptive name, to differentiate it from Crop Cycles we might create later.
+ที่ด้านบนขวา ให้คลิกที่ ใหม่ เพื่อสร้าง วงจรของผลผลิต แรก เอกสาร วงจรของผลผลิต ใหม่จะเปิดขึ้น และคุณจะเห็นได้ทันทีว่ารายการที่จำเป็นสองรายการคือหน่วยที่ดินและพืชผล เราจะตั้งชื่อที่สื่อความหมายเพื่อแยกความแตกต่างจาก วงจรของผลผลิต ที่เราอาจสร้างขึ้นในภายหลัง
 
-* Title: Carrot Planting 2017
-* Land Unit: Add a row, and select, Carrot Field 1
-* Crop: Carrot from carrot-top
-* Start Date: Today
-* Leave the ISO 8601 Standard (week count) box unchecked
-* Skip the next four fields for Crop Spacing
+* ชื่อเรื่อง: การปลูกแครอท 2017
+* หน่วยที่ดิน: เพิ่มแถวแล้วเลือก Carrot Field 1
+* พืชผล: แครอทจากแครอทด้านบน
+* วันที่เริ่มต้น: วันนี้
+* ไม่ทำเครื่องหมายที่ช่องมาตรฐาน ISO 8601 (จำนวนสัปดาห์)
+* ข้ามสี่ฟิลด์ถัดไปสำหรับ Crop Spacing
 
-Save the new Crop Cycle
+บันทึก วงจรของผลผลิต ใหม่
 
-It should now look something like this
+ตอนนี้ควรมีลักษณะเช่นนี้
 
 <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/agriculture/crops_and_land/crop_cycle.png">
 
-Repeat these for every Crop Cycle you need
+ทำซ้ำสิ่งเหล่านี้สำหรับทุกรอบการครอบตัดที่คุณต้องการ
 
-As you can see a Project was created, with the same name as the Crop Cycle and linked to the Crop Cycle. If you click on the project, you'll see all the 'Sample Tasks' from the linked Crop, i.e. 'Carrot from carrot-top' in this case, were converted into actual 'Tasks' and linked to the Project, for easy management
+อย่างที่คุณเห็น โครงการถูกสร้างขึ้น โดยใช้ชื่อเดียวกับ วงจรการการเก็บเกี่ยว และเชื่อมโยงกับ วงจรการการเก็บเกี่ยว หากคุณคลิกที่โครงการ คุณจะเห็น 'งานตัวอย่าง' ทั้งหมดจากพืชที่เชื่อมโยง เช่น 'แครอทจากแครอทด้านบน' ในกรณีนี้ ถูกแปลงเป็น 'งาน' จริงและเชื่อมโยงกับโครงการ เพื่อการจัดการที่ง่าย
 
-> Projects > Project
+> โครงการ > โครงการ
 
 <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/agriculture/crops_and_land/projects.png">

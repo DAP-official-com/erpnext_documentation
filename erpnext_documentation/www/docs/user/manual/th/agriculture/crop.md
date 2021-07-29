@@ -1,51 +1,51 @@
 <!-- add-breadcrumbs -->
-# Crop 
+#ผลผลิต
 
-Now we need to specify what our crop will be. A crop summarizes all that is necessary before creatng our first crop cycle or planting.
+ตอนนี้เราต้องระบุว่าพืชผลของเราจะเป็นอย่างไร พืชผลสรุปทุกสิ่งที่จำเป็นก่อนสร้างวงจรการครอบตัดหรือการปลูกครั้งแรกของเรา
 
-> Agriculture > Crop .
+> เกษตรกรรม > ผลผลิต
 
-On the desk, click on the Crop icon. A list will show any existing Crops.
+บนโต๊ะ ให้คลิกที่ไอคอน ผลผลิต รายการจะแสดงพืชที่มีอยู่
 
-On the top right, click on 'New'  to create the first Crop. A new Crop document will open, and we will enter basic information.
+ที่ด้านบนขวา ให้คลิกที่ 'ใหม่' เพื่อสร้าง ของผลผลิต แรก เอกสาร ของผลผลิต ใหม่จะเปิดขึ้น และเราจะป้อนข้อมูลพื้นฐาน
 
-The basic information should be entered as such:
+ควรป้อนข้อมูลพื้นฐานดังนี้:
 
-* Title: Carrot from carrot-top
-* Crop Name: Carrot
-* Scientific name: Daucus Carota
-* Type: Biennial
-* Planting UOM: Unit
-* Yield UOM: Grams
+* ชื่อเรื่อง: แครอทจากแครอทด้านบน
+* ชื่อพืช: แครอท
+* ชื่อวิทยาศาสตร์: Daucus Carota
+* ประเภท: ล้มลุก
+* การปลูก UOM: หน่วย
+* อัตราผลตอบแทน UOM: กรัม
 
-Click Save 
+คลิกบันทึก
 
-We will skip the Materials Required, Byproducts and Produce sections. In the Ideal Agriculture Task List we enter some planned tasks such as planting, watering, and harvesting. (Please note, our activity list will be intentionally abbreviated for illustraion purposes. For this example we will prepare our field, plant the next day, water only once, add a cover after germination on day 12, remove weeds at day 19, and harvest at day 90.
+เราจะข้ามส่วนวัสดุที่จำเป็น ผลพลอยได้ และผลิตผล ในรายการงานเกษตรกรรมในอุดมคติ เราเข้าสู่งานที่วางแผนไว้ เช่น การปลูก การให้น้ำ และการเก็บเกี่ยว (โปรดทราบว่ารายการกิจกรรมของเราจะย่อโดยเจตนาเพื่อจุดประสงค์ในการแสดงภาพประกอบ สำหรับตัวอย่างนี้ เราจะเตรียมทุ่งของเรา ปลูกในวันถัดไป รดน้ำเพียงครั้งเดียว เพิ่มที่กำบังหลังจากการงอกในวันที่ 12 กำจัดวัชพืชในวันที่ 19 และเก็บเกี่ยว ณ วันที่ 90
 
-The first row will look like this:
+แถวแรกจะมีลักษณะดังนี้:
 
-* Task Name: Preparation - Make rows
-* Start Day: 1
-* End Day: 1
-* Holiday Management: Ignore holidays
+* ชื่องาน: การจัดเตรียม - สร้างแถว
+* วันที่เริ่มต้น: 1
+* วันที่สิ้นสุด: 1
+* การจัดการวันหยุด: ละเว้นวันหยุด
 
-When done, you can click 'Save' to prevent any work from being lost.
+เมื่อเสร็จแล้ว คุณสามารถคลิก 'บันทึก' เพื่อป้องกันไม่ให้งานสูญหาย
 
-We are not done yet, we simply have saved the minimum required information!
-Continue filling the next rows with Task Name, Start Day, End Day and Holiday Management.
+เรายังทำไม่เสร็จ เราเพียงแค่บันทึกข้อมูลที่จำเป็นขั้นต่ำ!
+กรอกข้อมูลในแถวถัดไปด้วยชื่องาน วันเริ่มต้น วันสิ้นสุด และการจัดการวันหยุด
 
 
-* Row 2: Preparation - Add mulch cover, 1, 1, Previous Business Day
-* Row 3: Planting - Sow the seeds, 2, 2, Previous Business Day
-* Row 4: Water - 10ml per plant, 2, 2, Ignore holidays
-* Row 5: Disease - Pest control - Cover with Fine Net, 12, 12, Previous Business Day
-* Row 6: Weed Control - Remove weeds, 19, 19, Previous Business Day
-* Row 7: Harvest - When top is at 5cm, 90, 90, Previous Business Day
+* แถวที่ 2: การเตรียมการ - ใส่คลุมคลุมด้วยหญ้า 1, 1, วันทำการก่อนหน้า
+* แถวที่ 3: การปลูก - หว่านเมล็ด, 2, 2, วันทำการก่อนหน้า
+* แถวที่ 4: น้ำ - 10 มล. ต่อต้น, 2, 2, ละเว้นวันหยุด
+* แถวที่ 5: โรค - การควบคุมศัตรูพืช - ปิดด้วย Fine Net, 12, 12, วันทำการก่อนหน้า
+* แถวที่ 6: การควบคุมวัชพืช - กำจัดวัชพืช, 19, 19, วันทำการก่อนหน้า
+* แถวที่ 7: เก็บเกี่ยว - เมื่อยอดอยู่ที่ 5 ซม., 90, 90, วันทำการก่อนหน้า
 
-Click 'Save'
+คลิก 'บันทึก'
 
-You form should now look something like this
+แบบฟอร์มตอนนี้ควรมีลักษณะเช่นนี้
 
 <img class="screenshot" alt="Task" src="{{docs_base_url}}/assets/img/agriculture/crops_and_land/crop.png">
 
-Repeat step 2 for as many crops as you need. You can save some time by duplicating existing crops and modifying only the necessary items
+ทำซ้ำขั้นตอนที่ 2 สำหรับพืชผลมากเท่าที่คุณต้องการ คุณสามารถประหยัดเวลาได้โดยการทำซ้ำพืชผลที่มีอยู่และแก้ไขเฉพาะรายการที่จำเป็น

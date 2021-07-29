@@ -1,38 +1,38 @@
 <!-- add-breadcrumbs -->
-# Operation
+# การดำเนินการ
 
-**An Operation refers to any manufacturing operation performed on the raw materials to process it further in the manufacturing path.**
+**การดำเนินการหมายถึงการดำเนินการผลิตใดๆ ที่ดำเนินการกับวัตถุดิบเพื่อดำเนินการต่อไปในเส้นทางการผลิต**
 
-The Operation master stores a single manufacturing operation, its description and the Default Workstation for the Operation.
+ข้อมูลหลักในการดำเนินการจะจัดเก็บการดำเนินการด้านการผลิตรายการเดียว คำอธิบาย และเวิร์กสเตชันเริ่มต้นสำหรับการดำเนินการ
 
-To access the Operation list, go to:
+ในการเข้าถึงรายการปฏิบัติการ ไปที่:
 
-> Home > Manufacturing > Bill of Materials > Operation
+> หน้าหลัก > การผลิต > รายการวัสดุ > การดำเนินงาน
 
-## 1. Prerequisites
-Before creating and using an Operation, it is advised that you create the following first:
+## 1. ข้อกำหนดเบื้องต้น
+ก่อนสร้างและใช้งาน Operation ขอแนะนำให้สร้างสิ่งต่อไปนี้ก่อน:
 
-* [Workstation](/docs/user/manual/en/manufacturing/workstation)
+* [เวิร์กสเตชัน](/docs/user/manual/th/manufacturing/workstation)
 
-## 2. How to create and Operation
-1. Go to the Operation list, click on New.
-1. Enter a name for the Operation, for example, cutting.
-1. Select the Default Workstation where the Operation will be performed. This will be fetched in BOMs and Work Orders.
-1. Optionally, add a description to describe what the Operation involves.
-1. Save.
+## 2. วิธีสร้างและใช้งาน
+1. ไปที่รายการ การดำเนินการ คลิก ใหม่
+1. ป้อนชื่อปฏิบัติการ เช่น การตัด
+1. เลือกเวิร์กสเตชันเริ่มต้นที่จะดำเนินการ สิ่งนี้จะถูกดึงมาใน BOM และใบสั่งงาน
+1. เลือกเพิ่มคำอธิบายเพื่ออธิบายสิ่งที่ การดำเนินการที่เกี่ยวข้อง
+1. บันทึก
 
-Once saved, the following can be created against an Operation:
+เมื่อบันทึกแล้ว สามารถสร้างสิ่งต่อไปนี้กับ การดำเนินการ:
 <img class="screenshot" alt="Operation" src="{{docs_base_url}}/assets/img/manufacturing/operation.png">
 
-## 3. Video
+## 3. วีดีโอ
 
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/UVGfzwOOZC4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-## 4. Related Topics
-1. [Routing](/docs/user/manual/en/manufacturing/routing)
-1. [Job Card](/docs/user/manual/en/manufacturing/job-card)
+## 4. หัวข้อที่เกี่ยวข้อง
+1. [การกำหนดเส้นทาง](/docs/user/manual/th/manufacturing/routing)
+1. [บัตรงาน](/docs/user/manual/th/manufacturing/job-card)
 
 {next}

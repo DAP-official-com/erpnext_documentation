@@ -1,70 +1,70 @@
 <!-- add-breadcrumbs -->
 
-# Clinical Procedure
+#ขั้นตอนทางคลินิก
 
-ERPNext helps you create and map Clinical Procedures for patients like Wound Cleaning or a Cataract Surgery. The system allows you to preconfigure [Clinical Procedure Templates](/docs/user/manual/en/healthcare/sample_collection), so that you do not have to set the default properties like the consumables, rates, items every time you conduct a Clinical Procedure.
+ERPNext ช่วยให้คุณสร้างและทำแผนที่ขั้นตอนทางคลินิกสำหรับผู้ป่วย เช่น การทำความสะอาดบาดแผลหรือการผ่าตัดต้อกระจก ระบบอนุญาตให้คุณกำหนดค่าล่วงหน้า [เทมเพลตขั้นตอนทางคลินิก](/docs/user/manual/th/healthcare/sample_collection) เพื่อที่คุณจะได้ไม่ต้องตั้งค่าคุณสมบัติเริ่มต้น เช่น วัสดุสิ้นเปลือง อัตรา รายการ ทุกครั้งที่คุณดำเนินการทางคลินิก ขั้นตอน.
 
-## 1. How to Create a Clinical Procedure
+## 1. วิธีสร้างขั้นตอนทางคลินิก
 
-To create a Clinical Procedure go to:
+เพื่อสร้างขั้นตอนทางคลินิกไปที่:
 
-> Home > Healthcare > Consultation > Clinical Procedure
+> หน้าหลัก > การดูแลสุขภาพ > ให้คำปรึกษา > ขั้นตอนทางคลินิก
 
-### 1.1 Create a Clinical Procedure Manually
+### 1.1 สร้างขั้นตอนทางคลินิกด้วยตนเอง
 
-1. Select a Naming Series for the procedure.
-2. Select a Procedure Template. The Warehouse, Medical Department and Consumables will be fetched automatically.
-3. If you have created an appointment for the Clinical Procedure, you can select the Appointment. It will fetch the Procedure Template, Patient, Start Date and Time, etc. automatically.
-4. Select a Service Unit if it is not set and the Procedure will be conducted in that unit.
-5. Enter or edit details of consumables in the Consumables section.
-6. If some Sample will be collected during or after the Clinical Procedure, create a Sample Collection document and link it.
-7. Save.
-8. Submit.
+1. เลือกชุดการตั้งชื่อสำหรับขั้นตอน
+2. เลือกเทมเพลตขั้นตอน คลังสินค้า แผนกการแพทย์ และวัสดุสิ้นเปลืองจะถูกดึงออกมาโดยอัตโนมัติ
+3. หากคุณสร้างการนัดหมายสำหรับขั้นตอนทางคลินิก คุณสามารถเลือกการนัดหมาย มันจะดึงแม่แบบขั้นตอน ผู้ป่วย วันที่และเวลาเริ่มต้น ฯลฯ โดยอัตโนมัติ
+4. เลือกหน่วยบริการหากไม่ได้ตั้งค่าและขั้นตอนจะดำเนินการในหน่วยนั้น
+5. ป้อนหรือแก้ไขรายละเอียดของวัสดุสิ้นเปลืองในส่วนวัสดุสิ้นเปลือง
+6. หากจะมีการเก็บตัวอย่างในระหว่างหรือหลังขั้นตอนทางคลินิก ให้สร้างเอกสารการเก็บตัวอย่างและเชื่อมโยง
+7. บันทึก
+8. ส่ง
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/clinical_procedure.png">
 
-### 1.2 Create a Clinical Procedure from an Appointment
+### 1.2 สร้างขั้นตอนทางคลินิกจากการนัดหมาย
 
-You can lookup and book [Patient Appointment](/docs/user/manual/en/healthcare/patient_appointment) from the procedures that have been ordered for a patient in the previous [Patient Encounter](/docs/user/manual/en/healthcare/patient_encounter) by using the **Get Prescribed Procedures** button available in Patient Appointment.
+คุณสามารถค้นหาและจอง [การนัดหมายผู้ป่วย](/docs/user/manual/th/healthcare/patient_appointment) จากขั้นตอนที่สั่งไว้สำหรับผู้ป่วยใน [Patient Encounter](/docs/user/manual/th/ Healthcare/patient_encounter) โดยใช้ปุ่ม **รับขั้นตอนที่กำหนด** ที่มีอยู่ในการนัดหมายผู้ป่วย
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/prescribed_procedures.png">
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/prescribed_procedures_1.png">
 
-After the Appointment is booked, the performing practitioner can easily create a new procedure from a booked appointment using the **Create > Clinical Procedure** button.
+หลังจากการนัดหมายถูกจองแล้ว ผู้ปฏิบัติงานที่ปฏิบัติงานสามารถสร้างขั้นตอนใหม่จากการนัดหมายที่จองไว้ได้อย่างง่ายดายโดยใช้ปุ่ม **สร้าง > ขั้นตอนทางคลินิก**
 
-## 2. Features
+## 2. คุณสมบัติ
 
-### 2.1 Procedure Actions
+### 2.1 ขั้นตอนการดำเนินการ
 
-#### 2.1.1 Start Procedure
+#### 2.1.1 เริ่มขั้นตอน
 
-The Practitioner can update the procedure status to _In Progress_ by clicking the **Start** button.
+ผู้ปฏิบัติงานสามารถอัปเดตสถานะขั้นตอนเป็น _In Progress_ โดยคลิกปุ่ม **เริ่ม**
 
-If the procedure has consumables, for the procedure to start, an adequate quantity of all consumables must be present in the Healthcare Service Unit's Warehouse. If this fails, the system will ask you to confirm _Stock Transfer_. After you confirm, a [Stock Entry](/docs/user/manual/en/stock/stock-entry) with Entry Type "Material Transfer" will be created and displayed. Validate the Stock Entry auto-created document, Save and Submit. Then you can start the Procedure.
+หากขั้นตอนมีวัสดุสิ้นเปลือง สำหรับขั้นตอนที่จะเริ่มต้น จะต้องมีปริมาณวัสดุสิ้นเปลืองทั้งหมดเพียงพอในคลังสินค้าของหน่วยบริการสุขภาพ หากล้มเหลว ระบบจะขอให้คุณยืนยัน _Stock Transfer_ หลังจากที่คุณยืนยันแล้ว จะมีการสร้างและแสดง [รายการสต็อค](/docs/user/manual/th/stock/stock-entry) ที่มีประเภทรายการ "การโอนวัสดุ" ตรวจสอบเอกสารที่สร้างรายการสต็อคอัตโนมัติ บันทึก และส่ง จากนั้นคุณสามารถเริ่มขั้นตอนได้
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/procedure_consumption.png">
 
-#### 2.1.2 Complete Procedure
+#### 2.1.2 ทำตามขั้นตอนให้เสร็จสิ้น
 
-When the procedure is completed, the practitioner can update the _Consumables_ table with the actual values of the stock quantity that are used. The **Complete and Consume** button will record consumption by booking a stock entry and update the status of the Clinical Procedure to _Completed_. If the Procedure does not have any stock items in the Consumables table, the **Complete** button will be displayed.
+เมื่อขั้นตอนเสร็จสมบูรณ์ ผู้ประกอบวิชาชีพสามารถปรับปรุงตาราง _Consuables_ ด้วยมูลค่าที่แท้จริงของปริมาณสต็อคที่ใช้ ปุ่ม **เสร็จสิ้นและบริโภค** จะบันทึกการบริโภคโดยจองรายการสินค้าคงคลังและอัปเดตสถานะของขั้นตอนทางคลินิกเป็น _Completed_ หากขั้นตอนไม่มีสินค้าในสต็อกในตารางวัสดุสิ้นเปลือง ปุ่ม **เสร็จสิ้น** จะปรากฏขึ้น
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/complete_and_consume.png">
 
-### 2.2 Billing
+### 2.2 การเรียกเก็บเงิน
 
-You can create Invoices for procedures performed on a patient by going to
-> Home > Selling > Sales > Sales Invoice > Get Items From > Healthcare Services.
+คุณสามารถสร้างใบแจ้งหนี้สำหรับขั้นตอนที่ดำเนินการกับผู้ป่วยโดยไปที่
+> หน้าแรก > การขาย > การขาย > ใบกำกับสินค้า > รับรายการจาก > บริการด้านสุขภาพ
 
-This way the billing user need not access the Healthcare module documents and the un-billed services for a Patient will be listed which the user can choose from.
+วิธีนี้ทำให้ผู้ใช้ที่เรียกเก็บเงินไม่จำเป็นต้องเข้าถึงเอกสารโมดูล Healthcare และบริการที่ยังไม่ได้เรียกเก็บเงินสำหรับผู้ป่วยจะแสดงรายการซึ่งผู้ใช้สามารถเลือกได้
 
-If the _Invoice Consumables Separately_ option is turned on, the charges for the consumable Items will be added to the Sales Invoice separately.
+หากเปิดใช้งานตัวเลือก _Invoice Consumables Separately_ ค่าบริการสำหรับสินค้าสิ้นเปลืองจะถูกเพิ่มไปยัง Sales Invoice แยกต่างหาก
 
-> This Form has been Changed in Version 13
+> แบบฟอร์มนี้มีการเปลี่ยนแปลงในเวอร์ชัน 13
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Clinical Procedure Template](/docs/user/manual/en/healthcare/clinical_procedure_template)
-1. [Sample Collection](/docs/user/manual/en/healthcare/sample_collection)
+1. [เทมเพลตขั้นตอนทางคลินิก](/docs/user/manual/th/healthcare/clinical_procedure_template)
+1. [Sample Collection](/docs/user/manual/th/healthcare/sample_collection)
 
 {next}

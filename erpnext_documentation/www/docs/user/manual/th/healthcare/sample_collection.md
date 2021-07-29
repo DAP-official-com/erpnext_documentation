@@ -1,40 +1,39 @@
 <!-- add-breadcrumbs -->
-# Sample Collection
+# การเก็บตัวอย่าง
 
-It's critical for a Laboratory to manage collected samples and print labels for those samples, automate sample collection, etc.
+เป็นสิ่งสำคัญสำหรับห้องปฏิบัติการในการจัดการตัวอย่างที่รวบรวมและพิมพ์ฉลากสำหรับตัวอย่างเหล่านั้น รวบรวมตัวอย่างโดยอัตโนมัติ ฯลฯ
 
-## 1. How to create a Sample Collection
+## 1. วิธีสร้างคอลเล็กชันตัวอย่าง
 
-To create a Sample Collection go to
+หากต้องการสร้างคอลเล็กชันตัวอย่าง ให้ไปที่
 
-> Home > Healthcare> Laboratory > Sample Collection > New Sample Collection
+> หน้าแรก > การดูแลสุขภาพ> ห้องปฏิบัติการ > การเก็บตัวอย่าง > การเก็บตัวอย่างใหม่
 
-1. Enter the name of the Patient. All the patient details will be auto-fetched.
-2. Select the Lab Test Sample in the Sample field. You can configure the Lab Test Sample master as per your requirements. The Sample UOM is automatically fetched from the Lab Test Sample doc.
-3. Set the Quantity of the sample collected.
-4. Select the user who collected the sample in the "Collected By" field.
-5. Set the Date and Time of sample collection in the "Collected On" field.
-6. Save and Submit.
+1. ป้อนชื่อผู้ป่วย รายละเอียดของผู้ป่วยทั้งหมดจะถูกดึงโดยอัตโนมัติ
+2. เลือก Lab Test Sample ในช่อง Sample คุณสามารถกำหนดค่าต้นแบบตัวอย่างการทดสอบในห้องปฏิบัติการได้ตามความต้องการของคุณ UOM ตัวอย่างจะถูกดึงโดยอัตโนมัติจากเอกสารตัวอย่างการทดสอบในห้องปฏิบัติการ
+3. กำหนดจำนวนตัวอย่างที่เก็บ
+4. เลือกผู้ใช้ที่รวบรวมตัวอย่างในฟิลด์ "รวบรวมโดย"
+5. ตั้งค่าวันที่และเวลาของการรวบรวมตัวอย่างในฟิลด์ "Collected On"
+6. บันทึกและส่ง
 
   ![Sample Collection](/docs/assets/img/healthcare/sample-collection.png)
 
-## 2. Features
+## 2. คุณสมบัติ
 
-## 2.1 Sample Collection automation
+## 2.1 การเก็บตัวอย่างอัตโนมัติ
 
-You can also automate the creation of Sample Collection document for each Lab Test by enabling the 'Create Sample Collection document for Lab Test' option in [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings) and configure samples in the Lab Test Template.
-
+คุณยังสามารถสร้างเอกสารการเก็บตัวอย่างโดยอัตโนมัติสำหรับการทดสอบในห้องปฏิบัติการแต่ละครั้งโดยเปิดใช้งานตัวเลือก 'สร้างเอกสารการเก็บตัวอย่างสำหรับการทดสอบในห้องปฏิบัติการ' ใน [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings) และกำหนดค่าตัวอย่างใน เทมเพลตการทดสอบในห้องปฏิบัติการ
 ![Lab Sample Collection](/docs/assets/img/healthcare/lab-sample-collection.png)
 
-## 2.2 Sample labeling
+## 2.2 ตัวอย่างการติดฉลาก
 
-Printing of sample identification tags is also possible in ERPNext. By default a print format called "Sample ID Print" is made available, but you can always customize this directly using the [Print Format Builder](/docs/user/manual/en/setting-up/print/print-format-builder.html) or even create a custom [Print Format](/docs/user/manual/en/customize-erpnext/print-format.html) if required. The number of labels required has to be set in the "No. of prints" field in the Sample Collection document. Accordingly, those many labels will be generated in the print view.
+การพิมพ์แท็กระบุตัวอย่างสามารถทำได้ใน ERPNext โดยค่าเริ่มต้น รูปแบบการพิมพ์ที่เรียกว่า "Sample ID Print" จะพร้อมใช้งาน แต่คุณสามารถปรับแต่งสิ่งนี้ได้โดยตรงโดยใช้ [ตัวสร้างรูปแบบการพิมพ์](/docs/user/manual/th/setting-up/print/print-format-builder .html) หรือแม้แต่สร้าง [รูปแบบการพิมพ์](/docs/user/manual/th/customize-erpnext/print-format.html) ที่กำหนดเอง หากจำเป็น ต้องตั้งค่าจำนวนฉลากที่ต้องการในช่อง "จำนวนงานพิมพ์" ในเอกสารการเก็บตัวอย่าง ดังนั้น ฉลากจำนวนมากเหล่านี้จะถูกสร้างขึ้นในมุมมองการพิมพ์
 
 ![Sample Print](/docs/assets/img/healthcare/sample-print.png)
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Lab Test](/docs/user/manual/en/healthcare/lab_test)
-1. [Lab Test Template](/docs/user/manual/en/healthcare/lab_test_template)
+1. [Lab Test](/docs/user/manual/th/healthcare/lab_test)
+1. [Lab Test Template](/docs/user/manual/th/healthcare/lab_test_template)
 
 {next}

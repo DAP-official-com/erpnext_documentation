@@ -1,123 +1,122 @@
 <!-- add-breadcrumbs -->
-# Patient Appointment
+# นัดผู้ป่วย
 
-ERPNext Healthcare allows you to book Patient Appointments for any date and alert patients via Email or SMS. You can easily organize appointments for each Practitioner based on their availability schedules.
+ERPNext Healthcare ช่วยให้คุณสามารถจองการนัดหมายผู้ป่วยสำหรับวันที่ใดก็ได้และแจ้งเตือนผู้ป่วยผ่านทางอีเมลหรือ SMS คุณสามารถจัดระเบียบการนัดหมายสำหรับผู้ปฏิบัติงานแต่ละคนตามตารางความพร้อมของพวกเขาได้อย่างง่ายดาย
 
 <!-- <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/appointment_calendar.png"> -->
 
-To create a Patient Appointment, go to:
+ในการสร้างการนัดหมายผู้ป่วย ไปที่:
 
-> Home > Healthcare > Consultation > Patient Appointment
+> หน้าหลัก > การดูแลสุขภาพ > การให้คำปรึกษา > การนัดหมายผู้ป่วย
 
 
-## 1. Prerequisites
+## 1. ข้อกำหนดเบื้องต้น
 
-Before creating a Patient Appointment, these need to be created first:
+ก่อนสร้างการนัดหมายผู้ป่วย จำเป็นต้องสร้างสิ่งเหล่านี้ก่อน:
 
-* [Patient](/docs/user/manual/en/healthcare/patient)
-* [Healthcare Practitioner](/docs/user/manual/en/healthcare/healthcare_practitioner)
-* [Practitioner Schedule](/docs/user/manual/en/healthcare/practitioner_schedule)
+* [ผู้ป่วย](/docs/user/manual/th/healthcare/patient)
+* [แพทย์เวชปฏิบัติ](/docs/user/manual/th/healthcare/healthcare_practitioner)
+* [ตารางแพทย์](/docs/user/manual/th/healthcare/practitioner_schedule)
 
-You can book appointments for a registered Patient by searching for Patient by Patient ID, Name, Email or Mobile number. It is also possible to register a new Patient from the Appointment screen itself by selecting "Create a new Patient" in the Patient field.
+คุณสามารถจองการนัดหมายสำหรับผู้ป่วยที่ลงทะเบียนโดยการค้นหาผู้ป่วยตาม ID ผู้ป่วย ชื่อ อีเมล หรือหมายเลขโทรศัพท์มือถือ นอกจากนี้ยังสามารถลงทะเบียนผู้ป่วยใหม่ได้จากหน้าจอการนัดหมายโดยเลือก "สร้างผู้ป่วยใหม่" ในช่องผู้ป่วย
 
   <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient_appointment_link.png">
 
-## 2. How to Create a Patient Appointment
+## 2. วิธีสร้างการนัดหมายผู้ป่วย
 
-1. Go to the Patient Appointment list, click on New.
-2. Select the [Patient](/docs/user/manual/en/healthcare/patient) for which you want to set up an Appointment. The Patient Name, Gender, and Patient Age will be auto-fetched on selecting the Patient. If the patient is an Inpatient (Admitted) then the Inpatient Record will also be auto-fetched for them.
-3. You can optionally select the [Service Unit](/docs/user/manual/en/healthcare/healthcare_service_unit) where you would want to schedule the appointment. If you are booking an appointment for an inpatient, then you can also select the service unit where the patient has been admitted apart from the service units which have _Allow Appointments_ configuration enabled.
-4. If you need to book Appointment for Clinical Procedure select a [Clinical Procedure Template](/docs/user/manual/en/healthcare/clinical_procedure_template). If you want to select a Clinical Procedure which has been prescribed for the patient in the previous Patient Encounter click on **Get Prescribed Clinical Procedures** button to select from a list of Clinical Procedures that are prescribed for the selected Patient. The same process applies to fetch the prescribed Therapy Types using the **Get Prescribed Therapies** button or just selecting a [Therapy Type](/docs/user/manual/en/healthcare/therapy_type).
-5. You can optionally select the "Appointment Type" and the "Duration (in minutes)". Note that, selecting the "Appointment Type" will automatically set the duration of the appointment as configured in the Appointment Type. This will allow you to override the duration of appointments set by the Practitioner Schedule and the time slots will adjust to the next available time automatically.
-6. If you have checked "Automate Appointment Invoicing" in [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings), setting the "Mode of Payment" and "Amount" fields in Patient Appointment is mandatory.
-7. Then click on the **Check Availability** button. It will allow you to select the Medical Department, Healthcare Practitioner and Date for which the appointment is to be booked. On selecting the details, all the available time slots for the practitioner will be fetched from the [Practitioner Schedule](/docs/user/manual/en/healthcare/practitioner_schedule) and displayed with status indicators for the selected date. You can select a time slot and hit **Book**.
-8. Once booked, the scheduled time of the Appointment and the Service Unit as per the Practitioner and appropriate Status will be set in the document.
+1. ไปที่รายการนัดหมายผู้ป่วย คลิกที่ ใหม่
+2. เลือก [ผู้ป่วย](/docs/user/manual/th/healthcare/patient) ที่คุณต้องการตั้งค่าการนัดหมาย ชื่อผู้ป่วย เพศ และอายุของผู้ป่วยจะถูกดึงโดยอัตโนมัติเมื่อเลือกผู้ป่วย หากผู้ป่วยเป็นผู้ป่วยใน (เข้ารับการรักษาแล้ว) ระบบจะดึงข้อมูลผู้ป่วยในโดยอัตโนมัติด้วย
+3. คุณสามารถเลือก [Service Unit](/docs/user/manual/th/healthcare/healthcare_service_unit) ที่คุณต้องการกำหนดเวลานัดหมายได้ หากคุณกำลังจองการนัดหมายสำหรับผู้ป่วยใน คุณสามารถเลือกหน่วยบริการที่ผู้ป่วยเข้ารับการรักษา นอกเหนือจากหน่วยบริการที่เปิดใช้งานการกำหนดค่า _Allow Appointments_
+4. หากคุณต้องการจองการนัดหมายสำหรับขั้นตอนทางคลินิก ให้เลือก [เทมเพลตขั้นตอนทางคลินิก](/docs/user/manual/th/healthcare/clinical_procedure_template) หากคุณต้องการเลือกขั้นตอนทางคลินิกที่กำหนดไว้สำหรับผู้ป่วยในการเผชิญหน้าผู้ป่วยครั้งก่อน ให้คลิกที่ปุ่ม **รับขั้นตอนทางคลินิกที่กำหนด** เพื่อเลือกจากรายการขั้นตอนทางคลินิกที่กำหนดไว้สำหรับผู้ป่วยที่เลือก ขั้นตอนเดียวกันนี้ใช้กับการดึงข้อมูลประเภทการบำบัดที่กำหนดโดยใช้ปุ่ม **รับการบำบัดตามใบสั่งแพทย์** หรือเพียงแค่เลือก [ประเภทการบำบัด](/docs/user/manual/th/healthcare/therapy_type)
+5. คุณสามารถเลือก "ประเภทการนัดหมาย" และ "ระยะเวลา (เป็นนาที)" ได้ โปรดทราบว่าการเลือก "ประเภทการนัดหมาย" จะกำหนดระยะเวลาของการนัดหมายโดยอัตโนมัติตามที่กำหนดค่าไว้ในประเภทการนัดหมาย ซึ่งจะทำให้คุณสามารถแทนที่ระยะเวลาของการนัดหมายที่กำหนดโดยตารางผู้ปฏิบัติงานและช่วงเวลาจะปรับเป็นเวลาที่ว่างถัดไปโดยอัตโนมัติ
+6. หากคุณได้เลือก "ออกใบแจ้งหนี้นัดหมายอัตโนมัติ" ใน [การตั้งค่า Healthcare](/docs/user/manual/th/healthcare/healthcare_settings) ให้ตั้งค่าฟิลด์ "Mode of Payment" และ "Amount" ในการนัดหมายผู้ป่วย
+7. จากนั้นคลิกที่ปุ่ม **ตรวจสอบห้องว่าง** จะช่วยให้คุณสามารถเลือกแผนกการแพทย์ แพทย์ และวันที่จะทำการจองนัดหมายได้ ในการเลือกรายละเอียด ช่วงเวลาที่มีอยู่ทั้งหมดสำหรับผู้ประกอบวิชาชีพจะถูกดึงมาจาก [กำหนดการผู้ปฏิบัติงาน](/docs/user/manual/th/healthcare/practitioner_schedule) และแสดงพร้อมตัวบ่งชี้สถานะสำหรับวันที่ที่เลือก คุณสามารถเลือกช่วงเวลาและกด **จอง**
+8. เมื่อจองแล้ว เวลาที่กำหนดของการนัดหมายและหน่วยบริการตามผู้ปฏิบัติงานและสถานะที่เหมาะสมจะถูกกำหนดในเอกสาร
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/check_availability.png">
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/appointment.png">
 
-## 3. Features
+## 3. คุณสมบัติ
 
-### 3.1 Patient Appointment Calendar
+### 3.1 ปฏิทินนัดหมายผู้ป่วย
 
-You can click on "Calendar" view from the Patient Appointment list view. Types of Appointments can be differentiated by setting the "Color" field in [Appointment Type](/docs/user/manual/en/healthcare/appointment_type)
+คุณสามารถคลิกที่มุมมอง "ปฏิทิน" จากมุมมองรายการนัดหมายผู้ป่วย ประเภทของนัดหมายสามารถแยกความแตกต่างได้โดยการตั้งค่าฟิลด์ "สี" ใน [ประเภทการนัดหมาย](/docs/user/manual/th/healthcare/appointment_type)
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/healthcare-appointments.png">
 
-### 3.2 Appointment Rescheduling
+### 3.2 กำหนดการนัดหมายใหม่
 
-You can reschedule the Patient Appointment by clicking on the **Reschedule** button in the document and following the same steps.
+คุณสามารถกำหนดเวลานัดหมายผู้ป่วยใหม่ได้โดยคลิกที่ปุ่ม **กำหนดเวลาใหม่** ในเอกสารและทำตามขั้นตอนเดียวกัน
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/reschedule.png">
 
-### 3.3 Managing Schedules
+### 3.3 การจัดการกำหนดการ
 
-Patient Appointment booking considers any "Approved" Leave Applications for the Practitioner (Employee linked in the master) and does not allow booking Patient Appointments on such days.
+การจองการนัดหมายผู้ป่วยจะพิจารณาใบสมัครลาที่ "อนุมัติ" สำหรับผู้ปฏิบัติงาน (พนักงานที่เชื่อมโยงกับหลัก) และไม่อนุญาตให้จองการนัดหมายผู้ป่วยในวันดังกล่าว
 
-While booking it also checks for Appointment Overlaps and restricts the booking for the same slots.
+ขณะจอง ยังตรวจสอบการซ้อนทับของการนัดหมายและจำกัดการจองสำหรับช่วงเดียวกัน
 
-### 3.4 Notes and Referrals
+### 3.4 หมายเหตุและการอ้างอิง
 
-In the "More Info" section of the Patient Appointment document, the user can add "Notes" and also select a "Referring Practitioner" to help track referrals.
+ในส่วน "ข้อมูลเพิ่มเติม" ของเอกสารการนัดหมายผู้ป่วย ผู้ใช้สามารถเพิ่ม "หมายเหตุ" และเลือก "ผู้อ้างอิง" เพื่อช่วยติดตามการอ้างอิงได้
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/more_info.png">
 
-### 3.5 Out Patient SMS Alerts
+### 3.5 ออกการแจ้งเตือนทาง SMS ของผู้ป่วย
 
-Optionally, you can configure [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings) in ERPNext to automatically send an SMS alert to the Patients about the booking confirmation via "Out-Patient SMS Alerts".
-
+คุณสามารถกำหนดค่า [การตั้งค่า Healthcare](/docs/user/manual/th/healthcare/healthcare_settings) ใน ERPNext เพื่อส่ง SMS แจ้งเตือนไปยังผู้ป่วยโดยอัตโนมัติเกี่ยวกับการยืนยันการจองผ่าน "Out-Patient SMS Alerts"
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/outpatient_sms_alert.png">
 
-### 3.6 Automate Appointment Invoicing
+### 3.6 การออกใบแจ้งหนี้การนัดหมายอัตโนมัติ
 
-In order to automatically create a Sales Invoice as soon as you book a Patient Appointment, you can enable _Automate Appointment Invoicing_ configuration in the [Healthcare Settings](/docs/user/manual/en/healthcare/healthcare_settings).
+หากต้องการสร้างใบกำกับสินค้าโดยอัตโนมัติทันทีที่คุณจองการนัดหมายผู้ป่วย คุณสามารถเปิดใช้งานการกำหนดค่า _ออกใบแจ้งหนี้นัดหมายอัตโนมัติ_ ใน [การตั้งค่าการดูแลสุขภาพ](/docs/user/manual/th/healthcare/healthcare_settings)
 
-You can set up default charges for appointment booking in the Appointment Type master or in the Healthcare Practitioner master.
+คุณสามารถตั้งค่าค่าธรรมเนียมเริ่มต้นสำหรับการจองการนัดหมายในหลักประเภทการนัดหมายหรือในหลักแพทย์
 
-If the Appointment type is selected in the Patient Appointment and there are charges set up in the Appointment type master, then that charge and billing item is considered over the one set up in the Healthcare Practitioner master. While booking the appointment, the appropriate billing item, and the paid amount is fetched as per the above configuration.
+หากเลือกประเภทการนัดหมายในการนัดหมายผู้ป่วยและมีค่าใช้จ่ายที่กำหนดไว้ในข้อมูลหลักประเภทการนัดหมาย รายการการเรียกเก็บเงินและการเรียกเก็บเงินนั้นจะถือว่าเหนือรายการที่กำหนดไว้ในข้อมูลหลักของผู้ประกอบวิชาชีพด้านการดูแลสุขภาพ ขณะจองการนัดหมาย รายการเรียกเก็บเงินที่เหมาะสมและจำนวนเงินที่ชำระจะถูกดึงออกมาตามการกำหนดค่าข้างต้น
 
-The Patient Appointment will also prompt you to select the **Mode of Payment** for invoicing.
+การนัดหมายผู้ป่วยจะแจ้งให้คุณเลือก **วิธีการการชำระเงิน** สำหรับการออกใบแจ้งหนี้
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/automate_invoicing.png">
 
-> Note: If you have not enabled this, you can always use **Get Items From > Healthcare Services** in Sales Invoice
+> หมายเหตุ: หากคุณไม่ได้เปิดใช้งานสิ่งนี้ คุณสามารถใช้ **รับรายการจาก > บริการด้านสุขภาพ** ในใบกำกับสินค้า
 
-### 3.7 Status Indications
+### 3.7 ตัวบ่งชี้สถานะ
 
-Status indicates the state of the Patient Appointment. The various Statuses are:
+สถานะระบุสถานะของการนัดหมายผู้ป่วย สถานะต่างๆ ได้แก่
 
-- **Scheduled**: When the Patient Appointment has not yet started but scheduled on a future date.
-- **Open**: When the Patient Appointment has been scheduled for today.
-- **Closed**: When a Patient Encounter or Clinical Procedure has been created for the Patient Appointment.
-- **Cancelled**: When the Appointment is Cancelled.
+- **Scheduled**: เมื่อการนัดหมายผู้ป่วยยังไม่เริ่มต้น แต่มีกำหนดในวันที่ในอนาคต
+- **เปิด**: เมื่อกำหนดนัดหมายผู้ป่วยสำหรับวันนี้
+- **ปิด**: เมื่อมีการสร้างการเผชิญหน้าของผู้ป่วยหรือขั้นตอนทางคลินิกสำหรับการนัดหมายผู้ป่วย
+- **ยกเลิก**: เมื่อการนัดหมายถูกยกเลิก
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/status.png">
 
 
-## 4. Actions
+## 4. การดำเนินการ
 
-> Note: User should have appropriate privileges (User Role) to view the buttons
+> หมายเหตุ: ผู้ใช้ควรมีสิทธิ์ที่เหมาะสม (บทบาทของผู้ใช้) เพื่อดูปุ่ม
 
-  * Vital Signs: **Create > Vital Signs** button will take you to the new Vital Signs screen to record the vitals of the Patient.
+  * Vital Sign: ปุ่ม **สร้าง > Vital Sign** จะนำคุณไปยังหน้าจอ Vital Sign ใหม่เพื่อบันทึกพลังชีวิตของผู้ป่วย
 
-  * Encounter: From the Appointment screen you can directly create and record the "Patient Encounter" to record the details of the visit using the **Create > Patient Encounter** button.
+  * การเจอผู้ป่วย: จากหน้าจอการนัดหมาย คุณสามารถสร้างและบันทึก "การเจอผู้ป่วย" ได้โดยตรงเพื่อบันทึกรายละเอียดของการเยี่ยมชมโดยใช้ปุ่ม **สร้าง > พบผู้ป่วย**
 
-  * To view the medical history of that patient click on **View > Patient Medical History**.
+  * หากต้องการดูประวัติการรักษาของผู้ป่วยรายนั้น ให้คลิกที่ **มุมมอง > ประวัติทางการแพทย์ของผู้ป่วย**
 
-  * **Reschedule**: For rescheduling the Appointment.
+  * **กำหนดการใหม่**: สำหรับกำหนดวันนัดใหม่
 
-  * **Cancel**: For canceling the Appointment
+  * **ยกเลิก**: สำหรับยกเลิกการนัดหมาย
 
-> This Form has been Changed in Version 13
+> แบบฟอร์มนี้มีการเปลี่ยนแปลงในเวอร์ชัน 13
 
-## 5. Related Topics
-1. [Patient](/docs/user/manual/en/healthcare/patient)
-1. [Practitioner Schedule](/docs/user/manual/en/healthcare/practitioner_schedule)
-1. [Healthcare Practitioner](/docs/user/manual/en/healthcare/healthcare_practitioner)
-1. [Healthcare Service Unit](/docs/user/manual/en/healthcare/healthcare_service_unit)
-1. [Patient Encounter](/docs/user/manual/en/healthcare/patient_encounter)
-1. [Clinical Procedure](/docs/user/manual/en/healthcare/clinical_procedure)
-1. [Vital Sign](/docs/user/manual/en/healthcare/vital_signs)
+## 5. หัวข้อที่เกี่ยวข้อง
+1. [ผู้ป่วย](/docs/user/manual/th/healthcare/patient)
+1. [ตารางแพทย์](/docs/user/manual/th/healthcare/practitioner_schedule)
+1. [แพทย์เวชปฏิบัติ](/docs/user/manual/th/healthcare/healthcare_practitioner)
+1. [หน่วยบริการสุขภาพ](/docs/user/manual/th/healthcare/healthcare_service_unit)
+1. [พบผู้ป่วย](/docs/user/manual/th/healthcare/patient_encounter)
+1. [ขั้นตอนทางคลินิก](/docs/user/manual/th/healthcare/clinical_procedure)
+1. [Vital Sign](/docs/user/manual/th/healthcare/vital_signs)
 
 {next}

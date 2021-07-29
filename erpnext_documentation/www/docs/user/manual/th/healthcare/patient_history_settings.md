@@ -1,42 +1,42 @@
 <!-- add-breadcrumbs -->
 
-# Patient History Settings
+# การตั้งค่าประวัติผู้ป่วย
 
-> Introduced in Version 13
+> เปิดตัวในเวอร์ชัน 13
 
-Using Patient History Settings, you can configure the doctypes and fields you want in the Patient Medical Record and Patient History.
+เมื่อใช้การตั้งค่าประวัติผู้ป่วย คุณสามารถกำหนดค่าประเภทเอกสารและฟิลด์ที่คุณต้องการในบันทึกทางการแพทย์ของผู้ป่วยและประวัติผู้ป่วย
 
-To update the Patient History Settings, go to:
+หากต้องการอัปเดตการตั้งค่าประวัติผู้ป่วย ให้ไปที่:
 
-> Home > Healthcare > Settings > Patient History Settings
+> หน้าแรก > การดูแลสุขภาพ > การตั้งค่า > การตั้งค่าประวัติผู้ป่วย Patient
 
-## 1. Standard Document Types
+## 1. ประเภทเอกสารมาตรฐาน
 
-The following Standard Document Types are pre-configured in Patient History Settings.
+ประเภทเอกสารมาตรฐานต่อไปนี้ได้รับการกำหนดค่าล่วงหน้าในการตั้งค่าประวัติผู้ป่วย
 
-- [Patient Encounter](/docs/user/manual/en/healthcare/patient_encounter)
-- [Clinical Procedure](/docs/user/manual/en/healthcare/clinical_procedure)
-- [Lab Test](/docs/user/manual/en/healthcare/lab_test)
-- [Therapy Session](/docs/user/manual/en/healthcare/therapy_session)
-- [Vital Signs](/docs/user/manual/en/healthcare/vital_signs)
-- [Inpatient Medication Order](/docs/user/manual/en/healthcare/inpatient_medication_order)
+- [พบผู้ป่วย](/docs/user/manual/th/healthcare/patient_encounter)
+- [ขั้นตอนทางคลินิก](/docs/user/manual/th/healthcare/clinical_procedure)
+- [Lab Test](/docs/user/manual/th/healthcare/lab_test)
+- [ช่วงการบำบัด](/docs/user/manual/th/healthcare/therapy_session)
+- [สัญญาณชีพ](/docs/user/manual/th/healthcare/vital_signs)
+- [ใบสั่งยาผู้ป่วยใน](/docs/user/manual/th/healthcare/inpatient_medication_order)
 
-You can add or edit all fields you want to record in the Patient Medical Record and Patient History. Click on the **Add/Edit Fields** button against the doctype you want to edit the config for. A dialog will be shown with all the currently configured fields checked. You can then select what all fields (including custom) should be a part of the Patient Medical Record and click on Save. Then save the settings.
+คุณสามารถเพิ่มหรือแก้ไขฟิลด์ทั้งหมดที่คุณต้องการบันทึกในบันทึกทางการแพทย์ของผู้ป่วยและประวัติผู้ป่วย คลิกที่ปุ่ม **เพิ่ม/แก้ไขฟิลด์** กับประเภทเอกสารที่คุณต้องการแก้ไขการกำหนดค่า กล่องโต้ตอบจะปรากฏขึ้นพร้อมกับเลือกช่องที่กำหนดค่าไว้ในปัจจุบันทั้งหมด จากนั้นคุณสามารถเลือกฟิลด์ทั้งหมด (รวมถึงแบบกำหนดเอง) ที่ควรเป็นส่วนหนึ่งของบันทึกทางการแพทย์ของผู้ป่วย แล้วคลิกบันทึก จากนั้นบันทึกการตั้งค่า
 
-Depending upon your selection, a Patient Medical Record with the configured fields and values will be created on document submission and deleted on document cancellation. If you update the document, the corresponding medical record will also be updated.
+ขึ้นอยู่กับการเลือกของคุณ เวชระเบียนของผู้ป่วยพร้อมฟิลด์และค่าที่กำหนดค่าไว้จะถูกสร้างขึ้นในการส่งเอกสารและลบออกเมื่อยกเลิกเอกสาร หากคุณอัปเดตเอกสาร เวชระเบียนที่เกี่ยวข้องจะได้รับการอัปเดตด้วย
 
-## 2. Custom Document Types
+## 2. ประเภทเอกสารที่กำหนดเอง
 
-Similar to the Standard Document Type configuration, you can configure the Custom Document Types in this table.
+เช่นเดียวกับการกำหนดค่า ประเภทเอกสารมาตรฐาน คุณสามารถกำหนดค่า ประเภทเอกสารที่กำหนดเอง ในตารางนี้ได้
 
-- Select the Custom DocType
-- Enter the fieldname for the date field of the DocType. This will be used while filtering medical records in Patient History according to dates. For example, the date fieldname for Patient Encounter is encounter_date.
-- Then, click on **Add / Edit Fields** button to configure the fields.
+- เลือก DocType ที่กำหนดเอง
+- ป้อนชื่อฟิลด์สำหรับฟิลด์วันที่ของ DocType จะใช้ในขณะที่กรองเวชระเบียนในประวัติผู้ป่วยตามวันที่ ตัวอย่างเช่น ชื่อฟิลด์วันที่สำหรับการเผชิญหน้าผู้ป่วยคือ พบ_วันที่
+- จากนั้น คลิกที่ปุ่ม **เพิ่ม / แก้ไขฟิลด์** เพื่อกำหนดค่าฟิลด์
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient-history-settings.gif">
 
-## 3. Related Topics
+## 3. หัวข้อที่เกี่ยวข้อง
 
-1. [Patient History](/docs/user/manual/en/healthcare/patient_history)
+1. [ประวัติผู้ป่วย](/docs/user/manual/th/healthcare/patient_history)
 
 {next}
