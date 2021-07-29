@@ -26,8 +26,9 @@ website_context = {
 # app_include_js = "/assets/erpnext_documentation/js/erpnext_documentation.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/erpnext_documentation/css/erpnext_documentation.css"
-# web_include_js = "/assets/erpnext_documentation/js/erpnext_documentation.js"
+
+web_include_css = "/assets/erpnext_documentation/css/erpnext_documentation.css"
+web_include_js = "/assets/erpnext_documentation/js/erpnext_documentation.js"
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
@@ -50,7 +51,7 @@ website_context = {
 # }
 
 # Website user home page (by function)
-# get_website_user_home_page = "erpnext_documentation.utils.get_home_page"
+get_website_user_home_page = "erpnext_documentation.utils.get_home_page"
 
 base_template_map = {
 	r'docs/v\d{1,3}/user/manual.*': 'templates/erpnext_docs.html'
@@ -141,4 +142,3 @@ website_redirects = [
 # override_doctype_dashboards = {
 # 	"Task": "erpnext_documentation.task.get_dashboard_data"
 # }
-
